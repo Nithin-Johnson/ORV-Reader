@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 193: Ep. 36 - Story Horizon, V</title>
     <meta property="og:title" content="Ch 193: Ep. 36 - Story Horizon, V" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00193.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 193: Ep. 36 - Story Horizon, V</h1></div>
 <p class="orv_line">The texture of the dull quilt touched skin.</p>
@@ -198,8 +205,8 @@
 <p class="orv_line">"I'm asking you for an interview!"</p>
 <p class="orv_line">For a week, reporters had been clamouring in front of the house. She could glimpse flashes of light through the curtains. In front of the ruthless gazes of the cameras, Jung Heewon felt a strong sense of deja vu.</p>
 <p class="orv_line">"…It isn't just the constellations who are voyeurs."</p>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' is chuckling.]</p></div>
-<div class="orv_system"><p>[The constellation 'Secretive Plotter' agrees with your thoughts.]</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' is chuckling.</p></div>
+<div class="orv_system"><p>The constellation 'Secretive Plotter' agrees with your thoughts.</p></div>
 <p class="orv_line">Jung Heewon felt a new sense of emotion at all the gazes on her. Before the scenario began, the forms were different but there were similar things.</p>
 <p class="orv_line">The voyeuristic gazes and the struggle for survival. In this sense, the scenario might be around before the 'scenario' even started. Nobody knew it was a 'scenario'.</p>
 <p class="orv_line">Through the window, she saw the broken city area and the blocked Seoul Dome. It had already been a week since they left Seoul Dome but Jung Heewon couldn't believe she was out of the dome.</p>
@@ -232,12 +239,12 @@
 <p class="orv_line">"He is really foolish… I wouldn't have gone. What use is the army in this world?"</p>
 <p class="orv_line">Jung Heewon agreed with Lee Jihye's words but she didn't want to scold Lee Hyunsung. Everyone had different ways of dealing with loss. The children stayed in the room while Lee Hyunsung returned to the army.</p>
 <p class="orv_line">If it was just that…</p>
-<div class="orv_system"><p>[The following scenario will start in three days.]</p></div>
+<div class="orv_system"><p>The following scenario will start in three days.</p></div>
 <p class="orv_line">Jung Heewon gulped as she saw the message floating in the air. Three days later, hell would begin again.</p>
 <p class="orv_line">The more complicated problem was that the scenarios in the future were likely to be completely different from what they had already been through.</p>
-<div class="orv_system"><p>[You can now respond to the call of the sponsors and receive the personal trials they have set.]</p></div>
-<div class="orv_system"><p>[Personal trials are treated as hidden scenarios and can be replaced by the main scenario if it overlaps.]</p></div>
-<div class="orv_system"><p>[Scenario substitution is available only until the 25th main scenario begins.]</p></div>
+<div class="orv_system"><p>You can now respond to the call of the sponsors and receive the personal trials they have set.</p></div>
+<div class="orv_system"><p>Personal trials are treated as hidden scenarios and can be replaced by the main scenario if it overlaps.</p></div>
+<div class="orv_system"><p>Scenario substitution is available only until the 25th main scenario begins.</p></div>
 <p class="orv_line">They passed the tenth scenario and opened the 'personal trials'. Jung Heewon didn't have a sense of what they were yet.</p>
 <p class="orv_line">Lee Jihye spoke in a comforting manner. "Don't worry too much. Master said it isn't a big deal for the moment."</p>
 <p class="orv_line">"How about Yoo Joonghyuk-ssi?"</p>
@@ -265,7 +272,7 @@
 <p class="orv_line">Then… why? Today, Jung Heewon felt like saying something.</p>
 <p class="orv_line">"You are curious about what happened inside there?"</p>
 <p class="orv_line">Jung Heewon let go of Lee Jihye's hand and looked at the banner waving outside.</p>
-<div class="orv_system"><p>[Yangcheon-gu's Hero! Celebrating the safe return of Judge of Destruction Jung Heewon!]</p></div>
+<div class="orv_system"><p>Yangcheon-gu's Hero! Celebrating the safe return of Judge of Destruction Jung Heewon!</p></div>
 <p class="orv_line">…Hero? Her?</p>
 <p class="orv_line">Yangcheon-gu had long since disappeared. Nevertheless, this banner was hung and Jung Heewon couldn't withstand it anymore.</p>
 <p class="orv_line">"I'm not the hero you think I am. I wasn't a candidate for the national team and I didn't do well in kendo."</p>
@@ -276,13 +283,13 @@
 <p class="orv_line">The reporters kept asking her questions.</p>
 <p class="orv_line">How could a bartender become one of the last survivors?</p>
 <p class="orv_line">How could she survive and how did she become the Judge of Destruction?</p>
-<div class="orv_system"><p>[The constellation 'Bald General of Justice' is looking at you with sad eyes.]</p></div>
-<div class="orv_system"><p>[The constellation 'One-Eyed Maitreya' is reminded of someone by your words.]</p></div>
+<div class="orv_system"><p>The constellation 'Bald General of Justice' is looking at you with sad eyes.</p></div>
+<div class="orv_system"><p>The constellation 'One-Eyed Maitreya' is reminded of someone by your words.</p></div>
 <p class="orv_line">The indirect messages of the constellations came from all over the place. Jung Heewon opened her mouth without understanding her feelings.</p>
 <p class="orv_line">"Do you know Kim Dokja?"</p>
-<div class="orv_system"><p>[The constellation 'Maritime War God' is nodding.]</p></div>
-<div class="orv_system"><p>[The constellation 'Seo Ae Il Pil' remembers the name.]</p></div>
-<div class="orv_system"><p>[The constellation 'Last Hero of Hwangsanbeol' remembers him.]</p></div>
+<div class="orv_system"><p>The constellation 'Maritime War God' is nodding.</p></div>
+<div class="orv_system"><p>The constellation 'Seo Ae Il Pil' remembers the name.</p></div>
+<div class="orv_system"><p>The constellation 'Last Hero of Hwangsanbeol' remembers him.</p></div>
 <p class="orv_line">The voices of the reporters followed after the constellation.</p>
 <p class="orv_line">"Kim Dokja?"</p>
 <p class="orv_line">"Who is that?"</p>
@@ -299,41 +306,41 @@
 <br>
 <hr>
 <br>
-<div class="orv_quote"><p>「 At this time, Kim Dokja opened his eyes in the Demon Realm. 」</p></div>
+<div class="orv_quote"><p>At this time, Kim Dokja opened his eyes in the Demon Realm.</p></div>
 <p class="orv_line">"Heeeeeeok!"</p>
 <p class="orv_line">I screamed as I vomited and opened my eyes. The sound of my heartbeat was unfamiliar.</p>
 <p class="orv_line">A golden aura appeared around my heart and rough magic power was emitted. It might be broken but it was still the heart of a dragon hatchling. The strong magic power of the transplanted material was enough to stun me.</p>
 <p class="orv_line">If I could use this properly, I wouldn't be lacking magic power in combat for a while.</p>
-<div class="orv_system"><p>[The attribute 'Lamarck's Giraffe' has allowed you to absorb the power of the broken story.]</p></div>
+<div class="orv_system"><p>The attribute 'Lamarck's Giraffe' has allowed you to absorb the power of the broken story.</p></div>
 <p class="orv_line">In fact, absorbing a broken story was a dangerous idea. It would've been impossible for me without Lamarck's Giraffe.</p>
-<div class="orv_quote"><p>「 Lamarck's Giraffe isn't acknowledged among the other evolutionary attributes because it is less effective. However, it has the fewest side-effects and doesn't absorb the weakness of the story. 」</p></div>
+<div class="orv_quote"><p>Lamarck's Giraffe isn't acknowledged among the other evolutionary attributes because it is less effective. However, it has the fewest side-effects and doesn't absorb the weakness of the story.</p></div>
 <p class="orv_line">If I had obtained Darwin's Demon, another evolutionary attribute, I would've been killed the moment I ate the gold dragon's story.</p>
 <p class="orv_line">This absorption effect was good because my safety was guaranteed. I didn't have multiple lives anymore.</p>
-<div class="orv_system"><p>[The story fragment 'Broken Heart of a Young Gold Dragon' has been acquired.]</p></div>
+<div class="orv_system"><p>The story fragment 'Broken Heart of a Young Gold Dragon' has been acquired.</p></div>
 <p class="orv_line">The original name of this story fragment was 'heart of a young gold dragon who was torn to death by an outer god'. However, I didn't absorb the 'torn to death by an outer god' part.</p>
 <p class="orv_line">This was the advantage of Lamarck's Giraffe. The absorption rate of the story was low but the weakness wasn't absorbed.</p>
-<div class="orv_system"><p>[Your new body is being constructed.]</p></div>
-<div class="orv_system"><p>[The creation of a new body will delay the collapse of your existence.]</p></div>
-<div class="orv_system"><p>[This effect is temporary and it is recommended to quickly return to the scenario.]</p></div>
+<div class="orv_system"><p>Your new body is being constructed.</p></div>
+<div class="orv_system"><p>The creation of a new body will delay the collapse of your existence.</p></div>
+<div class="orv_system"><p>This effect is temporary and it is recommended to quickly return to the scenario.</p></div>
 <p class="orv_line">Magic power flowed from my new beating heart and I could breathe a bit. At the very least, the tragedy of losing my birth story wouldn't happen anymore.</p>
 <p class="orv_line">The reconstruction of my body would start from now on.</p>
 <p class="orv_line">I started to eat 'right arm of the poor sword master who was stabbed in the back by a colleague'. Rather than tearing off flesh, it was closer to peeping at a story that broke as soon as it was seen.</p>
-<div class="orv_system"><p>[The story fragment 'Right Arm of the Poor Sword Master' has been acquired.]</p></div>
+<div class="orv_system"><p>The story fragment 'Right Arm of the Poor Sword Master' has been acquired.</p></div>
 <p class="orv_line">I didn't know if it was just my imagination but I felt that I could use the sword a bit better.</p>
-<div class="orv_system"><p>[The attribute 'Lamarck's Giraffe' has reached its saturation limit.]</p></div>
-<div class="orv_system"><p>[Drop the saturation level to absorb new story fragments.]</p></div>
+<div class="orv_system"><p>The attribute 'Lamarck's Giraffe' has reached its saturation limit.</p></div>
+<div class="orv_system"><p>Drop the saturation level to absorb new story fragments.</p></div>
 <p class="orv_line">I felt better after eating two story fragments and sat down on a pile of garbage.</p>
 <p class="orv_line">"…It is a bit cold."</p>
 <p class="orv_line">It was less painful than before but the cold continued to prickle at my skin.</p>
 <p class="orv_line">The durability of my body had increased but the 'exile penalty' hadn't disappeared. I felt a big emptiness and loneliness from the loss of the story. I seemed to know why people wanted to hear, see or read something over and over.</p>
 <p class="orv_line">Then a slight warmth started to flow through my body.</p>
-<div class="orv_constellation"><p>[Someone is talking about you.]</p></div>
+<div class="orv_constellation"><p>Someone is talking about you.</p></div>
 <p class="orv_line">…Talking about me?</p>
-<div class="orv_system"><p>[Your story is being created on Planet Earth.]</p></div>
+<div class="orv_system"><p>Your story is being created on Planet Earth.</p></div>
 <p class="orv_line">I could see what happened. Someone was talking about me on Earth.</p>
 <p class="orv_line">Who was it? It couldn't be Yoo Joonghyuk. Lee Hyunsung? Jung Heewon? Or Shin Yoosung?</p>
 <p class="orv_line">…I didn't know. Still, it was funny. Someone was telling my story. Someone still remembered…</p>
-<div class="orv_system"><p>[The new story 'Kim Dojega's Legend' has been created on Peace Land.]</p></div>
+<div class="orv_system"><p>The new story 'Kim Dojega's Legend' has been created on Peace Land.</p></div>
 <p class="orv_line">…I hoped they would at least get my name right. I looked up at the night sky where the stars were invisible.</p>
 <p class="orv_line">This was the horizon of the story. I couldn't see the stars and the stars couldn't see me. Thus, the arrogant stars wouldn't know.</p>
 <p class="orv_line">In a place they couldn't see, the story that was going to destroy them had just begun.</p>
@@ -344,18 +351,12 @@
             <a href="./ch_192"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_194">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="193" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="184" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="192" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="192" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

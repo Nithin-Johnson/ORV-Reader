@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 66: Ep. 14 – Master of the Throne, II</title>
     <meta property="og:title" content="Ch 66: Ep. 14 – Master of the Throne, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,39 +177,39 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00066.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 66: Ep. 14 – Master of the Throne, II</h1></div>
 <p class="orv_line">The pages of Ways of Survival flashed in my head. A light streamed through my head and the strings of light started to line up. They were the text of Ways of Survival.</p>
-<div class="orv_constellation"><p>[Heok…?]</p></div>
+<div class="orv_constellation"><p>Heok…?</p></div>
 <p class="orv_line">Kim Yushin discovered something was wrong and his presence became noticeably thinner. The old fox noticed quickly.</p>
-<div class="orv_system"><p>[The echo of the constellation connected through Echo of the Stars has disappeared.]</p></div>
+<div class="orv_system"><p>The echo of the constellation connected through Echo of the Stars has disappeared.</p></div>
 <p class="orv_line">At the last moment, Kim Yushin's astounded voice was heard.</p>
-<div class="orv_constellation"><p>[What are you…?]</p></div>
+<div class="orv_constellation"><p>What are you…?</p></div>
 <p class="orv_line">Then Kim Yushin was gone.</p>
 <p class="orv_line">I was surprised as well. I expected it to be possible with Fourth Wall, but I didn't think the Ganpyeongui connection to the constellation could be broken so easily.</p>
 <p class="orv_line">The encounter in the Theater Dungeon was a hint. The Fourth Wall had destroyed the theatre master the moment he tried to look inside my head.</p>
 <p class="orv_line">I was hoping the same thing would happen to the constellation but Kim Yushin noticed quickly and ran away.</p>
-<div class="orv_system"><p>[The constellation 'King Heungmu the Great' has doubts about your existence.]</p></div>
-<div class="orv_system"><p>[The constellation 'King Heungmu the Great' will be watching you closely in the future.]</p></div>
+<div class="orv_system"><p>The constellation 'King Heungmu the Great' has doubts about your existence.</p></div>
+<div class="orv_system"><p>The constellation 'King Heungmu the Great' will be watching you closely in the future.</p></div>
 <p class="orv_line">In any case, I was still being followed by the old geezer.</p>
 <p class="orv_line">"…Are you okay?"</p>
 <p class="orv_line">"Yes. I'm fine. But…"</p>
@@ -226,9 +233,9 @@
 <p class="orv_line">The place that Kim Yushin's Gather the Hwarang swept through was devastated.</p>
 <p class="orv_line">The armed forces of the small kings were lying all over the place. This was the dignity of a proper constellation. Kim Yushin was a cowardly but useful constellation.</p>
 <p class="orv_line">I picked up three flags and built up my achievements.</p>
-<div class="orv_system"><p>[Your brown flag has absorbed the cumulative achievements of the brown flag.]</p></div>
-<div class="orv_system"><p>[Your brown flag has evolved into a purple flag.]</p></div>
-<div class="orv_system"><p>[You are able to use the perks of the purple flag.]</p></div>
+<div class="orv_system"><p>Your brown flag has absorbed the cumulative achievements of the brown flag.</p></div>
+<div class="orv_system"><p>Your brown flag has evolved into a purple flag.</p></div>
+<div class="orv_system"><p>You are able to use the perks of the purple flag.</p></div>
 <p class="orv_line">Indeed, the best thing was to grow without a fight. I looked around and saw that most flags had already been collected.</p>
 <p class="orv_line">From the purple flag onwards, the achievement values of the flag wouldn't rise well. In other words, it was useless to grab a small king from now on.</p>
 <p class="orv_line">"Jung Minseob-ssi, are you there?"</p>
@@ -246,9 +253,9 @@
 <p class="orv_line">"Yes, I only need three people right now."</p>
 <p class="orv_line">"I will enter if you call us."</p>
 <p class="orv_line">I appreciated the thought but it would just be a disruption. It was because the current Seoul Palace Museum was a dungeon.</p>
-<div class="orv_system"><p>[A new hidden scenario has arrived!]</p></div>
+<div class="orv_system"><p>A new hidden scenario has arrived!</p></div>
 <div class="orv_window">
-<h3 class="orv_window_title">[Hidden Scenario – Artifact Trials]</h3>
+<h3 class="orv_window_title">Hidden Scenario – Artifact Trials</h3>
 <p>Category: Hidden</p>
 <p>Difficulty: F ~ A+</p>
 <p>Clear Conditions: Clear the right 'artifact dungeon' with the proper personnel.</p>
@@ -262,14 +269,14 @@
 <p class="orv_line">"Hyung, are we going to get the legendary sword?"</p>
 <p class="orv_line">"No, not right now."</p>
 <p class="orv_line">Of course, I could find the Four Yin Demonic Beheading Sword in this dungeon. That's why I sowed the information.</p>
-<div class="orv_system"><p>[Please select the type of dungeon you want to enter.]</p></div>
+<div class="orv_system"><p>Please select the type of dungeon you want to enter.</p></div>
 <p class="orv_line">* Single player dungeon – Nagak</p>
 <p class="orv_line">* Three person dungeon – Acupuncture Copper Man</p>
 <p class="orv_line">* Five person dungeon – Dongui Bogam (Korean book compiled by a royal physician, considered as one of the classics of Oriental medicine)</p>
 <p class="orv_line">* Seven person dungeon – Dragon Jar</p>
 <p class="orv_line">However, the dungeon with the Four Yin Demonic Beheading Sword couldn't be entered in a normal manner. It was because the dungeon was only accessible using the Sang Pyong Tong Bo coin which was given as a reward when clearing a dungeon.</p>
 <p class="orv_line">"I will choose the three person dungeon, the Acupuncture Copper Man."</p>
-<div class="orv_system"><p>[You have entered the three person dungeon.]</p></div>
+<div class="orv_system"><p>You have entered the three person dungeon.</p></div>
 <p class="orv_line">Lee Gilyoung looked a bit disappointed. He had been expecting to get a great artifact.</p>
 <p class="orv_line">"Gilyoung. An artifact isn't about the outward appearance."</p>
 <p class="orv_line">"…Huh?"</p>
@@ -297,19 +304,19 @@
 <p class="orv_line">"That's right."</p>
 <p class="orv_line">In fact, the Acupuncture Copper Man was a relic that displayed 354 acupuncture points on the human body, including the front, back, arms, legs and head.</p>
 <p class="orv_line">It was an artifact used to study acupuncture in the Joseon Dynasty.</p>
-<div class="orv_system"><p>[Blade of Faith is activated!]</p></div>
+<div class="orv_system"><p>Blade of Faith is activated!</p></div>
 <p class="orv_line">I stabbed one of the acupuncture points on the copper man. Then I twisted it and the body scattered into powder. It was a meaningless end for a 7th grade reproduction species.</p>
-<div class="orv_system"><p>[You have hunted the first Acupuncture Copper Man!]</p></div>
+<div class="orv_system"><p>You have hunted the first Acupuncture Copper Man!</p></div>
 <p class="orv_line">"If you look closely, the colour for each acupuncture point was subtly different. Some are devoid of blood and some are deadly. Some of the points… there is a different effect every time an acupuncture point is hit."</p>
 <p class="orv_line">"Ah…!"</p>
 <p class="orv_line">The important thing was to find the acupuncture point that didn't break the flow.</p>
 <p class="orv_line">I demonstrated a few times and Lee Gilyoung and Yoo Sangah got the knack for it very quickly.</p>
 <p class="orv_line">Lee Gilyoung used Diverse Communication to shock the points with small insects, while Yoo Sangah applied Binding Thread. I honestly admired what I saw.</p>
 <p class="orv_line">These two people, they really had excellent growth.</p>
-<div class="orv_system"><p>[Your party is the first to hunt 100 Acupuncture Copper Men!]</p></div>
-<div class="orv_system"><p>[You have cleared the three person dungeon.]</p></div>
-<div class="orv_system"><p>[Four Sang Pyong Tong Bo coins are obtained as a basic reward.]</p></div>
-<div class="orv_system"><p>[The exclusive skill 'Hit a Pressure Point' has been acquired.]</p></div>
+<div class="orv_system"><p>Your party is the first to hunt 100 Acupuncture Copper Men!</p></div>
+<div class="orv_system"><p>You have cleared the three person dungeon.</p></div>
+<div class="orv_system"><p>Four Sang Pyong Tong Bo coins are obtained as a basic reward.</p></div>
+<div class="orv_system"><p>The exclusive skill 'Hit a Pressure Point' has been acquired.</p></div>
 <p class="orv_line">I got the skill I aimed for.</p>
 <p class="orv_line">Hit a Pressure Point. It was a unique technique to use the pressure points to subdue the enemy. It was an essential skill for me to maintain the 'King of No Killing'.</p>
 <p class="orv_line">Yoo Sangah looked at the Sang Pyong Tong Bo coins curiously and muttered, "Can we buy something with this?"</p>
@@ -329,18 +336,12 @@
             <a href="./ch_65"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_67">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="66" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="193" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="65" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="65" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

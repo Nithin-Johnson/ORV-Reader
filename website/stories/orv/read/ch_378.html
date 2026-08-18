@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 378: Ep. 72 - Three methods, II</title>
     <meta property="og:title" content="Ch 378: Ep. 72 - Three methods, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00378.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 378: Ep. 72 - Three methods, II</h1></div>
 <p class="orv_line">Erich Striker was the captain of Kaizenix Archipelago's royal guards.</p>
@@ -197,8 +204,8 @@
 <p class="orv_line">Erich sliced and cut the silent night of the training hall over and over again. Thick sweat drops fell non-stop. 'She' looked down on the droplets and thought that they should've been someone else's blood drops, instead.</p>
 <p class="orv_line">'I let them slip away. In front of her majesty, no less'.</p>
 <p class="orv_line">The rebellion of the First Prince – the assault on the audience chamber three days ago had found itself in the mouths of the gossipers already. Some minstrels began singing songs about it, too. Most of them were singing songs that extolled the First Prince.</p>
-<div class="orv_quote"><p>「 Oh, oh~ the great revolutionary Schweichen Von Kaizenix~. 」</p></div>
-<div class="orv_quote"><p>「 Look at his wide shoulders and his back~. 」</p></div>
+<div class="orv_quote"><p>Oh, oh~ the great revolutionary Schweichen Von Kaizenix~.</p></div>
+<div class="orv_quote"><p>Look at his wide shoulders and his back~.</p></div>
 <p class="orv_line">The bright sword light scythed past the darkness of the practice grounds. The hateful face of the Fourth Prince, who had escaped alongside the First Prince, floated up. It didn't want to disappear no matter how many times it was cut apart.</p>
 <p class="orv_line">The strange thing was, every time Erich recalled that face, 'she' felt a rather subtle emotion float up, too.</p>
 <p class="orv_line">Seeing the backs of the First Prince Schweichen and Fourth Prince Ricardo, as well as Bilston Framer, getting further away, Erich was overcome with this inexplicable longing.</p>
@@ -248,15 +255,15 @@
 <p class="orv_line">Bilston took a step towards 'her'. 'She' got startled and quickly issued her warning. "Take one more step, and I shall cut off the Fourth Prince's head."</p>
 <p class="orv_line">This is a trap. I must escape from here – Erich thought like that and scanned the exit to the training ground.</p>
 <p class="orv_line">However, something felt wrong.</p>
-<div class="orv_system"><p>[Stories related to you have begun going on a rampage!]</p></div>
+<div class="orv_system"><p>Stories related to you have begun going on a rampage!</p></div>
 <p class="orv_line">As if her entire body had become frozen, she couldn't move at all.</p>
-<div class="orv_system"><p>[Your Stories are resisting against the control of the 'Kaizenix Archipelago'!]</p></div>
+<div class="orv_system"><p>Your Stories are resisting against the control of the 'Kaizenix Archipelago'!</p></div>
 <p class="orv_line">"We promised never to forget, didn't we?"</p>
 <p class="orv_line">Bilston stared at her with sorrowful eyes.</p>
 <p class="orv_line">'No, but, his… name is…'</p>
-<div class="orv_system"><p>[Stories related to you are ruminating on the old memories.]</p></div>
+<div class="orv_system"><p>Stories related to you are ruminating on the old memories.</p></div>
 <p class="orv_line">"Heewon-ssi."</p>
-<div class="orv_system"><p>[Forgotten Stories have begun their storytelling.]</p></div>
+<div class="orv_system"><p>Forgotten Stories have begun their storytelling.</p></div>
 <p class="orv_line">At that moment, 'her' world crumbled away. Stories flooding in covered up Erich's memories.</p>
 <p class="orv_line">That was the story of the forgotten ten years. A story from when Erich wasn't Erich yet, while Bilston was not Bilston, either.</p>
 <br>
@@ -275,8 +282,8 @@
 <p class="orv_line">– Besides all that, Hyunsung-ssi, it looks like you took over a person pretty similar to you.</p>
 <p class="orv_line">– Heewon-ssi, you also suit your host really well.</p>
 <p class="orv_line">And finally, their sense of self would steadily erode away with the passage of time.</p>
-<div class="orv_system"><p>[Giant Story, 'Kaizenix Archipelago', is monitoring your actions.]</p></div>
-<div class="orv_system"><p>[Probability of the world is pressuring you to perform your given role.]</p></div>
+<div class="orv_system"><p>Giant Story, 'Kaizenix Archipelago', is monitoring your actions.</p></div>
+<div class="orv_system"><p>Probability of the world is pressuring you to perform your given role.</p></div>
 <p class="orv_line">Whenever they sensed the gaze of the Giant Story, they acted out their roles in order to not get on that thing's nerves.</p>
 <p class="orv_line">– It seems that Sooyoung-ssi has completely forgotten about everything. It doesn't matter what I say, she…</p>
 <p class="orv_line">– Will we end up in the same situation as her?</p>
@@ -285,12 +292,12 @@
 <p class="orv_line">– Are Jihye and the kids doing well, I wonder?</p>
 <p class="orv_line">– If it's them, they should be alright.</p>
 <p class="orv_line">They only had each other to rely on in this world.</p>
-<div class="orv_system"><p>[Story, 'Purest Companionship', has begun its storytelling.]</p></div>
+<div class="orv_system"><p>Story, 'Purest Companionship', has begun its storytelling.</p></div>
 <p class="orv_line">In a world where no one knew of their story, they simply had to continue talking to each other in order to protect themselves.</p>
 <p class="orv_line">Claaang!</p>
 <p class="orv_line">"Erich-nim! Please defeat it right now!"</p>
 <p class="orv_line">"Let us get going, Bilston-nim!"</p>
-<p class="orv_line">The hosts of the two being rivals came about quite naturally; they needed to create more opportunity to stay next to each other, as that would increase the opportunities to use [Voice Projection] to talk to each other.</p>
+<p class="orv_line">The hosts of the two being rivals came about quite naturally; they needed to create more opportunity to stay next to each other, as that would increase the opportunities to use <strong>[Voice Projection]</strong> to talk to each other.</p>
 <p class="orv_line">– Looks like your swordsmanship has improved by a lot. Your title of 'Emperor of Steelsword' perfectly suits you, no?</p>
 <p class="orv_line">– When we go back, I better ask Dokja-ssi to buy me a new sword.</p>
 <p class="orv_line">Every time their blades crossed, they shared voice projections.</p>
@@ -344,7 +351,7 @@
 <p class="orv_line">Their swords clashed intensely several times in the air.</p>
 <p class="orv_line">Wounds on Lee Hyunsung's body accumulated inside the storm of blinding sword lights. The trajectories of her sword swings were definitely different compared to when they were sparring in the past; each of her attacks contained her clear will to kill him.</p>
 <p class="orv_line">– Heewon-ssi!</p>
-<p class="orv_line">Even when subjected to the repeated [Voice Projection], Jung Heewon didn't reply. Her silence substituted for her answer.</p>
+<p class="orv_line">Even when subjected to the repeated <strong>[Voice Projection]</strong>, Jung Heewon didn't reply. Her silence substituted for her answer.</p>
 <p class="orv_line">As if she had been holding back until now, Erich's merciless sword swing sliced Lee Hyunsung down. The latter's vision seemed to grow distant, then. Even though he was staggering about, he still walked closer to Jung Heewon.</p>
 <p class="orv_line">One step, two steps…</p>
 <p class="orv_line">Finally managing to get close, Lee Hyunsung stared into her eyes and, for the first time, spoke the words he couldn't say for the longest time, words he quite likely would never get to say again.</p>
@@ -352,9 +359,9 @@
 <br>
 <hr>
 <br>
-<div class="orv_system"><p>[Story, 'Purest Companionship', has concluded its storytelling.]</p></div>
+<div class="orv_system"><p>Story, 'Purest Companionship', has concluded its storytelling.</p></div>
 <p class="orv_line">I wordlessly read the unfolding Story. Some words were quietly sorrowful, while some parts were painful enough to tear my heart out.</p>
-<div class="orv_system"><p>[Ego of Character, 'Jung Heewon', is waking up little by little.]</p></div>
+<div class="orv_system"><p>Ego of Character, 'Jung Heewon', is waking up little by little.</p></div>
 <p class="orv_line">Faint light floated around the bodies of both Bilston and Erich. I could sense that their souls were resonating with the Story.</p>
 <p class="orv_line">Lee Hyunsung collapsed, but a smile remained etched on his face. I quietly studied that face for a bit, before breaking the silence. "Looks like the company's internal rules need to be changed somewhat…"</p>
 <p class="orv_line">In any case, our second goal had been met. Next up would be…</p>
@@ -362,10 +369,10 @@
 <p class="orv_line">"Erich-nim is in danger!"</p>
 <p class="orv_line">Yoo Joonghyuk picked up both the unconscious Jung Heewon and Lee Hyunsung. But, before we could safely get out from there, the doors to the training ground burst open and the royal guards rushed in.</p>
 <p class="orv_line">However, it wasn't just them who showed up here. Someone else was walking out from the line of guards and towards us.</p>
-<div class="orv_quote"><p>「 The First Triple Master of Kaizenix Archipelago 」</p></div>
-<div class="orv_quote"><p>「 The genius who had reached the peak of Swordmaster at barely 18 years old 」</p></div>
-<div class="orv_quote"><p>「 The youngest-ever Ninth Circle Archmage 」</p></div>
-<div class="orv_quote"><p>「 The ruler of the Archipelago who controls an evil black dragon 」</p></div>
+<div class="orv_quote"><p>The First Triple Master of Kaizenix Archipelago</p></div>
+<div class="orv_quote"><p>The genius who had reached the peak of Swordmaster at barely 18 years old</p></div>
+<div class="orv_quote"><p>The youngest-ever Ninth Circle Archmage</p></div>
+<div class="orv_quote"><p>The ruler of the Archipelago who controls an evil black dragon</p></div>
 <p class="orv_line">No one in the Kaizenix Archipelago was capable of defeating her right now. The 'king' with a silver-coloured crown was quietly smiling at us.</p>
 <p class="orv_line">"You dare to steal away my loyal knight?"</p>
 <p class="orv_line">The royal guards all knelt down before her.</p>
@@ -378,7 +385,7 @@
 <p class="orv_line">Without a doubt, Han Sooyoung's ego was lying inside that queen, asleep. And I simply had to get her ego back from that character, no matter what. And, with things like this, we could use our Story and…</p>
 <p class="orv_line">"I'm aware. You came to tell me a story."</p>
 <p class="orv_line">Feeling startled just a little, I stared at her.</p>
-<div class="orv_system"><p>[Giant Story, 'Kaizenix Archipelago', is sending a mocking jeer in your direction.]</p></div>
+<div class="orv_system"><p>Giant Story, 'Kaizenix Archipelago', is sending a mocking jeer in your direction.</p></div>
 <p class="orv_line">"Why are you so surprised? This one, too, enjoys stories very much. However, this one enjoys telling stories rather than listening to them. So, keep your ears wide open and listen well, Ricardo Von Kaizenix."</p>
 <p class="orv_line">The queen spread her arms wide and grinned brightly towards me.</p>
 <p class="orv_line">"No, should that be the 'Demon King of Salvation', Kim Dokja?"</p>
@@ -389,18 +396,12 @@
             <a href="./ch_377"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_379">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="378" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="727" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="377" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="377" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

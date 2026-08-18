@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 461: Ep. 87 - The Heart of Steel, III</title>
     <meta property="og:title" content="Ch 461: Ep. 87 - The Heart of Steel, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,45 +177,45 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00461.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 461: Ep. 87 - The Heart of Steel, III</h1></div>
 <p class="orv_line">"If you really require a power source, then why don't we exchange Stories? We can supply you with Stories that can serve as useful replacements."</p>
-<div class="orv_constellation"><p>[I told you to go back.]</p></div>
+<div class="orv_constellation"><p>I told you to go back.</p></div>
 <p class="orv_line">As I thought, something was off here. If it was simply about using Lee Hyunsung as a power source, then there shouldn't be a reason to say no to my offer.</p>
 <p class="orv_line">"I'm sorry, but we must take his soul back with us. The Final Scenario will soon begin. Meaning, this is no time for us to worry about your well-being."</p>
-<div class="orv_system"><p>[Story, 'Demon King of Salvation', has begun its storytelling!]</p></div>
-<p class="orv_line">I unleashed my Status, causing the 'Master of Steel' to speak in a bit of a fluster. [You dare to oppose me inside &lt;Oz&gt;??]</p>
+<div class="orv_system"><p>Story, 'Demon King of Salvation', has begun its storytelling!</p></div>
+<p class="orv_line">I unleashed my Status, causing the 'Master of Steel' to speak in a bit of a fluster. <strong>[You dare to oppose me inside &lt;Oz&gt;??]</strong></p>
 <p class="orv_line">Accompanied by a 'Tsu-chuchuchut!' noise, sparks exploded inside the audience chamber. The 'Master of Steel' was a Narrative-grade Constellation, but when in &lt;Oz&gt;, his Status would…</p>
-<div class="orv_constellation"><p>[I've been generous by receiving you lot, yet you…!]</p></div>
+<div class="orv_constellation"><p>I've been generous by receiving you lot, yet you…!</p></div>
 <p class="orv_line">…Be almost on the same level as a Myth-grade Constellation.</p>
 <p class="orv_line">Ku-dudududu!!</p>
 <p class="orv_line">The whole planet seemingly writhed about violently like a heart repeating the actions of contracting and relaxing.</p>
 <p class="orv_line">Han Sooyoung stared at me with a pale complexion.</p>
 <p class="orv_line">– Are you insane, Kim Dokja?! Why are you trying to fight insi…</p>
 <p class="orv_line">I began unleashing the Stories next.</p>
-<div class="orv_system"><p>[Giant Story, 'Demon Realm's Spring', has begun its storytelling!]</p></div>
-<div class="orv_system"><p>[Giant Story, 'Torch that Swallowed the Myth', has begun its storytelling!]</p></div>
+<div class="orv_system"><p>Giant Story, 'Demon Realm's Spring', has begun its storytelling!</p></div>
+<div class="orv_system"><p>Giant Story, 'Torch that Swallowed the Myth', has begun its storytelling!</p></div>
 <p class="orv_line">The main Giant Stories started their storytelling and the audience chamber quaked as if it'd collapse at any given moment.</p>
-<p class="orv_line">I stepped across the violently-rocking floor and walked forward. The 'Master of Steel' shouted out. [Step back! If you don't, I shall…!]</p>
+<p class="orv_line">I stepped across the violently-rocking floor and walked forward. The 'Master of Steel' shouted out. <strong>[Step back! If you don't, I shall…!]</strong></p>
 <p class="orv_line">Yup, thought as much.</p>
 <p class="orv_line">There were plenty of opportunities to subdue me, yet this 'Master of Steel' only issued warnings repeatedly without actually doing anything.</p>
 <p class="orv_line">It was like dealing with the Cowardly Lion.</p>
@@ -222,7 +229,7 @@
 <br>
 <p class="orv_line">A short while later, we managed to get some useful info from the monkey.</p>
 <p class="orv_line">Han Sooyoung spoke first. "Okay, so. The 'Master of Steel' isn't here."</p>
-<div class="orv_constellation"><p>[I-if you do this, the 'Master of Steel' will…]</p></div>
+<div class="orv_constellation"><p>I-if you do this, the 'Master of Steel' will…</p></div>
 <p class="orv_line">"Switch off the true voice, now. It doesn't even sound like a proper true voice, anyway."</p>
 <p class="orv_line">"…probably forgive you," said the now-dejected monkey.</p>
 <p class="orv_line">It was likely that this monkey was a henchman of the real 'Master of Steel'. I wasn't sure why, but this little guy was acting like a Constellation in this place for some reason.</p>
@@ -299,30 +306,30 @@
 <br>
 <p class="orv_line">"…What are you two doing??"</p>
 <p class="orv_line">Jung Heewon discovered Han Sooyoung and I, and said that in dismay. But, that was understandable. Because… both of us were sporting an identical pair of wolf-ear headbands right now.</p>
-<div class="orv_system"><p>[Applicable item can't be taken off while inside the 'Memory Experience Centre'.]</p></div>
-<div class="orv_constellation"><p>[Please show off the close bond you share with your Incarnation to other Constellations!]</p></div>
+<div class="orv_system"><p>Applicable item can't be taken off while inside the 'Memory Experience Centre'.</p></div>
+<div class="orv_constellation"><p>Please show off the close bond you share with your Incarnation to other Constellations!</p></div>
 <p class="orv_line">Han Sooyoung replied to her in a shameless voice. "I'm working part-time in the dating industry."</p>
 <p class="orv_line">"Let's search for Hyunsung-ssi first, shall we?"</p>
 <p class="orv_line">According to the monkey, Lee Hyunsung's soul should be wandering around somewhere in this 'Memory Experience Centre'. Not sure why he was roaming around in this place, but…</p>
 <p class="orv_line">We had a little bit of time on our hands, so we walked around the 'Memory Experience Centre' with calm minds. I was wondering what exactly this place was, and we soon got to find out.</p>
-<div class="orv_constellation"><p>[Lee Hyunsung, born as a healthy and big baby weighing in at 5.4 kg!]</p></div>
-<div class="orv_constellation"><p>[Lee Hyunsung, five years old – rescues a friend from bullies!]</p></div>
+<div class="orv_constellation"><p>Lee Hyunsung, born as a healthy and big baby weighing in at 5.4 kg!</p></div>
+<div class="orv_constellation"><p>Lee Hyunsung, five years old – rescues a friend from bullies!</p></div>
 <p class="orv_line">This was where we would get to 'experience' his life.</p>
-<div class="orv_system"><p>[Only those holding the 'Free Pass' can enter.]</p></div>
-<div class="orv_system"><p>[The chamber's experience will begin once you enter. Will you enter?]</p></div>
+<div class="orv_system"><p>Only those holding the 'Free Pass' can enter.</p></div>
+<div class="orv_system"><p>The chamber's experience will begin once you enter. Will you enter?</p></div>
 <p class="orv_line">"Does this mean we will get to experience the feelings of a newborn? Who the heck would want to pay money to experience something like that??"</p>
 <p class="orv_line">This theme park seemed to be similar in nature to a generalised amusement park. We could enter individual 'Experience Centres' to experience Lee Hyunsung's life through either his eyes or someone near him.</p>
 <p class="orv_line">Jung Heewon spoke up. "I guess we really have become famous lately. Someone even came up with a thing like this, too."</p>
 <p class="orv_line">"…I'm kinda curious about that one over there."</p>
 <p class="orv_line">We became totally entranced and studied the various parts of Lee Hyunsung's life. It felt as if I had really become a Constellation… Hang on, I really was a Constellation, wasn't I?</p>
-<div class="orv_constellation"><p>[Lee Hyunsung, 17 years old – fails in his quest for his first love!]</p></div>
+<div class="orv_constellation"><p>Lee Hyunsung, 17 years old – fails in his quest for his first love!</p></div>
 <p class="orv_line">Jung Heewon stared at this particular 'centre' without saying anything.</p>
 <p class="orv_line">So, I naturally had to ask. "…Are you planning to go in?"</p>
 <p class="orv_line">"No."</p>
 <p class="orv_line">We continued to search for Lee Hyunsung. His soul gave off a unique Story reaction. And we could definitely sense that particular reaction nearby, but…</p>
-<div class="orv_constellation"><p>[Lee Hyunsung, encountering the Judge that destroys evil!]</p></div>
+<div class="orv_constellation"><p>Lee Hyunsung, encountering the Judge that destroys evil!</p></div>
 <p class="orv_line">After walking about for a while, we discovered several 'Experience Centres' related to the &lt;Kim Dokja's Company&gt;.</p>
-<div class="orv_constellation"><p>[Pure Steel Lee Hyunsung! With Judge that destroys evil, he…]</p></div>
+<div class="orv_constellation"><p>Pure Steel Lee Hyunsung! With Judge that destroys evil, he…</p></div>
 <p class="orv_line">Jung Heewon's steps gradually gained pace. We diligently followed after her. However, we still couldn't sense Lee Hyunsung's presence. We looked through a row of the Experience Centres and turned around to leave, but found someone unexpected behind us. It wasn't the guy we were looking for, though.</p>
 <p class="orv_line">"Uh? Ahjussi?"</p>
 <p class="orv_line">It was Lee Jihye wearing a fox-ear headband.</p>
@@ -352,7 +359,7 @@
 <p class="orv_line">There was no doubt about it. The dull-and-slow-moving Story unique to Lee Hyunsung could definitely be felt from this particular Experience Centre.</p>
 <p class="orv_line">He was inside this thing.</p>
 <p class="orv_line">I reconfirmed the name of this Experience Centre one more time.</p>
-<div class="orv_constellation"><p>[I lost a shell by mistake.]</p></div>
+<div class="orv_constellation"><p>I lost a shell by mistake.</p></div>
 <br>
 <hr>
         </article>
@@ -360,18 +367,12 @@
             <a href="./ch_460"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_462">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="461" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="511" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="460" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="460" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

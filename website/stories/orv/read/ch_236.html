@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 236: Ep. 44 - Swindler, IV</title>
     <meta property="og:title" content="Ch 236: Ep. 44 - Swindler, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00236.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 236: Ep. 44 - Swindler, IV</h1></div>
 <p class="orv_line">I reflexively raised my head at Yoo Joonghyuk's decisive words. "…Is it okay?"</p>
@@ -203,7 +210,7 @@
 <p class="orv_line">"Kim Dokja's Company?"</p>
 <p class="orv_line">"I'll quit right away if it is really named that."</p>
 <p class="orv_line">Yoo Joonghyuk turned his head away with a frown. I felt pleasantly surprised.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire'' is wiping her tears with a handkerchief.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire'' is wiping her tears with a handkerchief.</p></div>
 <p class="orv_line">It was something that was unthinkable when he first grabbed me by the neck. Yoo Joonghyuk and I really became colleagues. In any case, it was funny that I was hesitating when Yoo Joonghyuk told me this.</p>
 <p class="orv_line">I stood up and declared, "I'll go."</p>
 <br>
@@ -211,43 +218,43 @@
 <br>
 <p class="orv_line">That night, I was greeted by a Gourmet Association Guide who flew through the portal. The guide drove a small carriage with a black horse, while dressed in a western cowboy costume. He seemed to be one of the subordinates of the owner of Oro Castle.</p>
 <p class="orv_line">The guide descended from the carriage and bowed politely to me.</p>
-<div class="orv_constellation"><p>[Are you the Demon King of Salvation?]</p></div>
+<div class="orv_constellation"><p>Are you the Demon King of Salvation?</p></div>
 <p class="orv_line">"That's right."</p>
-<div class="orv_constellation"><p>[Take the carriage. The journey is quite long and you can rest.]</p></div>
+<div class="orv_constellation"><p>Take the carriage. The journey is quite long and you can rest.</p></div>
 <p class="orv_line">The guide didn't show any particular surprise or responses towards me. Was it because he was a guide of the Gourmet Association that he wasn't surprised by 'Demon King of Salvation'? The guide got on the carriage and turned to ask me.</p>
-<div class="orv_constellation"><p>[I will pick up some passengers along the way. Do you mind?]</p></div>
+<div class="orv_constellation"><p>I will pick up some passengers along the way. Do you mind?</p></div>
 <p class="orv_line">"Uh, that's okay."</p>
 <p class="orv_line">Some passengers… who? I missed the opportunity to ask as the guide immediately started the carriage.</p>
 <p class="orv_line">The interior of the carriage was spacious and comfortable. There was no shaking at all and it was like I wasn't moving. It was great. I could read Ways of Survival on the journey.</p>
 <p class="orv_line">I read Ways of Survival during these few hours. Maybe it wasn't a few hours but a few days. It was difficult to measure the time because I didn't know how fast the carriage was moving.</p>
-<div class="orv_quote"><p>「 …Thus, the 15th regression Yoo Joonghyuk thought as he died, 'I wasn't lucky'. 」</p></div>
-<div class="orv_quote"><p>「 …At the end of the 19th round, Yoo Joonghyuk thought, 'Next time'. 」</p></div>
-<div class="orv_quote"><p>「 …Yoo Joonghyuk finished his 25th life and murmured, "It really will be next time." 」</p></div>
+<div class="orv_quote"><p>…Thus, the 15th regression Yoo Joonghyuk thought as he died, 'I wasn't lucky'.</p></div>
+<div class="orv_quote"><p>…At the end of the 19th round, Yoo Joonghyuk thought, 'Next time'.</p></div>
+<div class="orv_quote"><p>…Yoo Joonghyuk finished his 25th life and murmured, "It really will be next time."</p></div>
 <p class="orv_line">…I had to cancel calling him a person. This jerk, he was still a sunfish in the first revision. It was the same whether I helped him or not.</p>
 <p class="orv_line">I didn't forget to find the information I needed on Yoo Joonghyuk's death. There weren't many details about the Gourmet Association. Yoo Joonghyuk visited the Gourmet Association in the later stages but it was to kill them, not get along with them. Those sections were mostly filled with "Kuaaaack!"</p>
-<div class="orv_quote"><p>「 The Flying Fox said, "Constellations are all bad. However, the Gourmet Association are the worst among them." 」</p></div>
+<div class="orv_quote"><p>The Flying Fox said, "Constellations are all bad. However, the Gourmet Association are the worst among them."</p></div>
 <p class="orv_line">It was also impossible to find any favourable contents about them. The more I read, the more I was uncertain that going to the Gourmet Association was the right thing to do. Anyway, I continued reading Ways of Survival.</p>
-<div class="orv_quote"><p>「 Yoo Joonghyuk was thinking, "It would've been nice if he had come with me'. 」</p></div>
+<div class="orv_quote"><p>Yoo Joonghyuk was thinking, "It would've been nice if he had come with me'.</p></div>
 <p class="orv_line">If there was a difference in taste between the original and the revision, it was the moment these words came out. They were traces of when I intervened in the original work. I paid particular attention whenever these lines appeared. It was because there were only a few scenes where the 'third regression' was mentioned.</p>
-<div class="orv_quote"><p>「 'You must do this. He said this is the right way'. 」</p></div>
+<div class="orv_quote"><p>'You must do this. He said this is the right way'.</p></div>
 <p class="orv_line">…The right way? What did this mean?</p>
-<div class="orv_constellation"><p>[It is time to eat. If you don't mind, I've prepared something simple.]</p></div>
+<div class="orv_constellation"><p>It is time to eat. If you don't mind, I've prepared something simple.</p></div>
 <p class="orv_line">"Thank you."</p>
 <p class="orv_line">The carriage stopped and the guide provided me with a meal. It was a type of in-flight meal. It resembled high-quality ham and smelled very fragrant. Of course, it wasn't really ham.</p>
-<div class="orv_system"><p>[The Last Gladiator of Planet Selegedon.]</p></div>
+<div class="orv_system"><p>The Last Gladiator of Planet Selegedon.</p></div>
 <p class="orv_line">It was a story meal typical of the Gourmet Association. It seemed to be a pretty strong story based on the concentration that I could feel…</p>
 <p class="orv_line">I touched the soft ham with a fork that the guide gave me. At this moment, some of the story contents flowed into my head.</p>
 <p class="orv_line">–S-Spare me. Please spare me…!</p>
 <p class="orv_line">A city that crumbled in a horrible manner due to the turmoil of the constellations. The appearance of incarnations bursting under huge pressure. The dying gladiator who lost all dignity…</p>
 <p class="orv_line">The bodies of torn incarnations pouring into the mouths of wickedly smiling constellations. The last scene of the world that had already disappeared. The screams and despair of the incarnations gathered together at the end of my nose.</p>
 <p class="orv_line">I looked down at the ham and quietly put down the fork.</p>
-<div class="orv_constellation"><p>[…The food doesn't suit your taste?]</p></div>
+<div class="orv_constellation"><p>…The food doesn't suit your taste?</p></div>
 <p class="orv_line">"I'm not hungry right now." I answered with a calm smile.</p>
-<div class="orv_constellation"><p>[I'm sorry. I didn't account for your taste as a constellation. New food…]</p></div>
+<div class="orv_constellation"><p>I'm sorry. I didn't account for your taste as a constellation. New food…</p></div>
 <p class="orv_line">"No, I'll eat what I brought."</p>
 <p class="orv_line">The guide took away the plates in a regretful manner and sat back down on the driver's seat. Once he was completely gone, I barely relaxed my expression. It felt like I was going to vomit.</p>
 <p class="orv_line">A sentence I had just read in Ways of Survival passed through my head.</p>
-<div class="orv_quote"><p>「 "It is a nightmare for the incarnations." 」</p></div>
+<div class="orv_quote"><p>"It is a nightmare for the incarnations."</p></div>
 <p class="orv_line">Once again, I realized where I was going and who I was dealing with. I foolishly acted like I was going on a picnic.</p>
 <p class="orv_line">I touched some of the stories that were in my pocket. Compared to the stories they ate, the stories abandoned in the 'Story Horizon' were almost colourless and odourless. They were the plain stories of ordinary incarnations living and dying in a normal way, just like trash. There was a reason why the Gourmet Association abandoned them.</p>
 <p class="orv_line">I absorbed the story fragments using Lamarck's Giraffe and quietly closed my eyes. Somehow, I felt like I was going to have a nightmare.</p>
@@ -255,19 +262,19 @@
 <hr>
 <br>
 <p class="orv_line">The trip continued for a few days and I used the interlude to look at some of the things I hadn't maintained.</p>
-<div class="orv_system"><p>[Coins Possessed: 1,252,353 C.]</p></div>
+<div class="orv_system"><p>Coins Possessed: 1,252,353 C.</p></div>
 <p class="orv_line">First, I checked the coins that I hadn't paid attention to lately. It was a really huge amount of money.</p>
 <p class="orv_line">1.2 million was enough to buy the Great Demon's Eyes. However, Anna Croft had already obtained it. I had a better skill so I didn't need it. But…</p>
 <p class="orv_line">I wondered how to use the remaining coins. It wasn't bad to increase my overall stats but the efficiency of the stats started to fall once the average exceeded 100. From then on, investing in skills was much better than investing in stats.</p>
 <p class="orv_line">Of course, there were times when the accumulated overall stats were overwhelming. Once I convinced the Fourth Wall, I should properly check my Attributes Window.</p>
-<div class="orv_constellation"><p>[A new passenger is going to enter. It is okay?]</p></div>
+<div class="orv_constellation"><p>A new passenger is going to enter. It is okay?</p></div>
 <p class="orv_line">I was so immersed in my thoughts that I wasn't aware the carriage stopped. "Yes, I"m fine."</p>
 <p class="orv_line">The left door of the carriage opened at my reply. I was a bit nervous as I looked at the people who were going to join me through the cracks in the door. The possibility of it being a constellation was high.</p>
 <p class="orv_line">"Ah! I've been waiting a long time. Why are you so late?"</p>
-<div class="orv_constellation"><p>[I'm sorry. The road was a bit rougher than I thought…]</p></div>
+<div class="orv_constellation"><p>I'm sorry. The road was a bit rougher than I thought…</p></div>
 <p class="orv_line">A voice that was somewhat familiar entered my ears. It was a high female voice mixed with a Russian accent.</p>
 <p class="orv_line">I could see three people through the cracks in the door.</p>
-<div class="orv_constellation"><p>[There is someone who has already boarded. I hope you have a pleasant journey.]</p></div>
+<div class="orv_constellation"><p>There is someone who has already boarded. I hope you have a pleasant journey.</p></div>
 <p class="orv_line">Whether it was lucky or unlucky, I didn't feel any constellations. In other words, they were all incarnations with stories.</p>
 <p class="orv_line">A woman with a gentle smile boarded the carriage first. "Excuse me.</p>
 <p class="orv_line">The woman who greeted me politely had brown hair that fluttered in the wind. The moment the woman raised her head, I reflexively asked, "Selena Kim?"</p>
@@ -295,18 +302,12 @@
             <a href="./ch_235"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_237">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="236" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="290" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="235" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="235" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

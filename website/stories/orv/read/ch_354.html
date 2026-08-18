@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 354: Ep. 66 - Beyond Good and Evil, IV</title>
     <meta property="og:title" content="Ch 354: Ep. 66 - Beyond Good and Evil, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,35 +177,35 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00354.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 354: Ep. 66 - Beyond Good and Evil, IV</h1></div>
 <p class="orv_line">At this moment, Bihyung was watching the screen of Duet Between Good and Evil at the bureau.</p>
-<div class="orv_constellation"><p>[The stage of the 2nd Great War of Saints and Demons will be the 'Reincarnation Island' located in the Dark Fault.]</p></div>
+<div class="orv_constellation"><p>The stage of the 2nd Great War of Saints and Demons will be the 'Reincarnation Island' located in the Dark Fault.</p></div>
 <p class="orv_line">The moment the great dokkaebi's declaration was heard, all the dokkaebis of the bureau were in an uproar.</p>
 <p class="orv_line">"No, why the island all of a sudden?"</p>
 <p class="orv_line">"What are the great dokkaebis thinking?"</p>
 <p class="orv_line">Even the great dokkaebis couldn't set the stage for the 80th main scenario. If the will of the Star Stream didn't move…</p>
-<div class="orv_system"><p>[The Star Stream is willing to open the 80th main scenario.]</p></div>
-<div class="orv_system"><p>[A new main scenario has been created.]</p></div>
+<div class="orv_system"><p>The Star Stream is willing to open the 80th main scenario.</p></div>
+<div class="orv_system"><p>A new main scenario has been created.</p></div>
 <p class="orv_line">Bihyung was surprised by the system message. "Did the Star Stream really move?"</p>
 <p class="orv_line">The series of shocking scenario changes made Bihyung stunned.</p>
 <p class="orv_line">"Bihyung! A revelation was just received!"</p>
@@ -232,27 +239,27 @@
 <p class="orv_line">The bureau was in chaos as the mouth kept on talking.</p>
 <p class="orv_line">–Can you hear me? I'm going to give you a revelation now. I'll only show you for a second so look and remember!</p>
 <p class="orv_line">Along with the clear and cheerful voice, there was the sound of pages turning. After a while, fragments of a story passed through the hole.</p>
-<div class="orv_quote"><p>「 How to survive in a ruined world, the third way. 」</p></div>
+<div class="orv_quote"><p>How to survive in a ruined world, the third way.</p></div>
 <p class="orv_line">The revelation appeared clearly. It was truly like a divine revelation.</p>
-<div class="orv_quote"><p>「 That method is on Reincarnation Island. 」</p></div>
+<div class="orv_quote"><p>That method is on Reincarnation Island.</p></div>
 <p class="orv_line">The story fragments scattered in the air and the voice said.</p>
 <p class="orv_line">–Have you seen it? Then goodbye!</p>
 <p class="orv_line">The hole closed and the voice disappeared.</p>
 <p class="orv_line">Bihyung muttered, "Oh my god."</p>
 <p class="orv_line">None of the shocked dokkaebis of the bureau could open their mouths. Bells were ringing from all over. The unstoppable inquiries of the constellations were pouring in.</p>
 <p class="orv_line">The Duet Between Good and Evil was still playing on the panel on the other side.</p>
-<div class="orv_constellation"><p>[I will say it once again.]</p></div>
+<div class="orv_constellation"><p>I will say it once again.</p></div>
 <p class="orv_line">The voice of Great Dokkaebi Baram rang out.</p>
-<div class="orv_constellation"><p>[The stage of the 2nd Great War of Saints and Demons will be the 'Reincarnation Island' located in the Dark Fault.]</p></div>
+<div class="orv_constellation"><p>The stage of the 2nd Great War of Saints and Demons will be the 'Reincarnation Island' located in the Dark Fault.</p></div>
 <br>
 <hr>
 <br>
 <p class="orv_line">After the Duet Between Good and Evil, our group immediately returned to Earth. All the way back to the industrial complex, the party members were excited. In particular, Jung Heewon and Lee Jihye were checking the performance of the plaques we received.</p>
-<div class="orv_system"><p>[Grand Prize of Duet Between Good and Evil.]</p></div>
+<div class="orv_system"><p>Grand Prize of Duet Between Good and Evil.</p></div>
 <p class="orv_line">In the Star Stream, the 'status' generally rose only through the accumulation of stories. However, there were extremely rare star relics that raised the status without needing the accumulation of stories. This was the case with the plaques awarded at the Duet Between Good and Evil.</p>
 <p class="orv_line">"My sword seems lighter… is this enough to be able to swing Hyunsung ahjussi lightly?" Lee Jihye's murmur caused Lee Hyunsung to tremble.</p>
 <p class="orv_line">Certainly, the plaque was more effective than getting two quasi-myth-grade stories. Given that all the quasi-myth-grade stories I acquired were those I gained after suffering and dying, it was a tremendous boost.</p>
-<div class="orv_system"><p>[5,000,000 coins Exchange Ticket]</p></div>
+<div class="orv_system"><p>5,000,000 coins Exchange Ticket</p></div>
 <p class="orv_line">In addition, they received five million coins as prize money.</p>
 <p class="orv_line">"Ha, Dokja-ssi… we're rich now…"</p>
 <p class="orv_line">"I won't have to worry about coins for a while."</p>
@@ -261,32 +268,32 @@
 <p class="orv_line">"Shin Yoosung, honestly, I was a bit more active. Give me another 100,000 coins."</p>
 <p class="orv_line">"What nonsense is this? It will naturally be split in half. It is the same with the story shares."</p>
 <p class="orv_line">Lee Hyunsung stopped the children. The party members seemed to be in good spirits for their own reasons, but on the other hand, they were also glancing at me.</p>
-<div class="orv_quote"><p>「 In fact, there is a question that everyone hasn't asked. 」</p></div>
+<div class="orv_quote"><p>In fact, there is a question that everyone hasn't asked.</p></div>
 <p class="orv_line">Why did Yoo Joonghyuk and I fight? The party members had seen the scene with their own eyes but no one asked me about it. Maybe they were instinctively avoiding the topic. Perhaps it was their own consideration as they waited for me to speak first.</p>
 <p class="orv_line">I was still listening to Yoo Sangah in my head while I carried the unconscious Yoo Joonghyuk on my back.</p>
 <p class="orv_line">'…You mean, you leaked the contents of Ways of Survival through the hole in the Fourth Wall?'</p>
-<div class="orv_quote"><p>「 (Yes.) 」</p></div>
+<div class="orv_quote"><p>(Yes.)</p></div>
 <p class="orv_line">'The constellations accepted it as a revelation?'</p>
-<div class="orv_quote"><p>「 (That's right.) 」</p></div>
+<div class="orv_quote"><p>(That's right.)</p></div>
 <p class="orv_line">I didn't understand at first. The information sent out of the Fourth Wall became a 'revelation' to the constellations? In the first place, the role of the 'revelation' in the original novel… no, wait.</p>
 <p class="orv_line">'Don't tell me?'</p>
 <p class="orv_line">There were many things in my head.</p>
 <p class="orv_line">Yoo Sangah asked,</p>
-<div class="orv_quote"><p>「 (Dokja-ssi, have you noticed the Fourth Wall might be the original words?) 」</p></div>
+<div class="orv_quote"><p>(Dokja-ssi, have you noticed the Fourth Wall might be the original words?)</p></div>
 <p class="orv_line">"Yes. I don't know the exact sense but…"</p>
-<div class="orv_quote"><p>「 (Originally, the Fourth Wall is a stage term. A wall separating the play from the audience. The characters in the play would never be able to recognize the Fourth Wall. It is because they don't exist outside the stage.) 」</p></div>
+<div class="orv_quote"><p>(Originally, the Fourth Wall is a stage term. A wall separating the play from the audience. The characters in the play would never be able to recognize the Fourth Wall. It is because they don't exist outside the stage.)</p></div>
 <p class="orv_line">Outside the stage. It was the 'reality' I lived in.</p>
 <p class="orv_line">Goosebumps formed on my arms. Indeed, if the name 'Fourth Wall' had its origins in the same meaning as Yoo Sangah's description, it was natural there would be a Ways of Survival inside this wall. It was because the contents of Ways of Survival were created in reality.</p>
 <p class="orv_line">In other words, the revelation was a 'spoiler' that flowed from the novel to reality. One couldn't find the source so it became a divine revelation in the eyes of the characters.</p>
 <p class="orv_line">Yoo Sangah continued speaking,</p>
-<div class="orv_quote"><p>「 (I always thought it was strange. The filtered information about Ways of Survival was suddenly released… however, that time coincided with when I entered the Fourth Wall.) 」</p></div>
+<div class="orv_quote"><p>(I always thought it was strange. The filtered information about Ways of Survival was suddenly released… however, that time coincided with when I entered the Fourth Wall.)</p></div>
 <p class="orv_line">'Coincides?'</p>
-<div class="orv_quote"><p>「 (Yes, the book blocking the hole I entered through was Ways of Survival. The title could be seen very well…) 」</p></div>
+<div class="orv_quote"><p>(Yes, the book blocking the hole I entered through was Ways of Survival. The title could be seen very well…)</p></div>
 <p class="orv_line">Now I understood everything. The reason why the constellations and demon kings suddenly knew about Ways of Survival. It was why the development that wasn't in the original novel suddenly unfolded. The information they knew had all leaked through the hole in the Fourth Wall.</p>
 <p class="orv_line">'It is a bit complicated but this is a good thing'.</p>
-<div class="orv_quote"><p>「 (Right?) 」</p></div>
+<div class="orv_quote"><p>(Right?)</p></div>
 <p class="orv_line">Yoo Sangah replied with a laugh. She was probably thinking the same thing as me.</p>
-<div class="orv_quote"><p>「 (By the way, I can't use it very often. I noticed a lot of looks… oh, I'm sorry. I have to go for a minute because the seniors are calling.) 」</p></div>
+<div class="orv_quote"><p>(By the way, I can't use it very often. I noticed a lot of looks… oh, I'm sorry. I have to go for a minute because the seniors are calling.)</p></div>
 <p class="orv_line">Then Yoo Sangah's voice disappeared from my head. She was the youngest member of the library but she had a lot of sense.</p>
 <p class="orv_line">In any case, thanks to Yoo Sangah's performance, we got a new card to use. The Fourth Wall allowed me to manipulate the revelations that the constellations received. Until it was revealed to be a false revelation, I could use the information to incite the constellations.</p>
 <p class="orv_line">Han Sooyoung walked beside me and opened her mouth. "You haven't spoken in a while?"</p>
@@ -341,18 +348,12 @@
             <a href="./ch_353"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_355">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="354" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="430" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="353" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="353" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

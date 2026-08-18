@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 457: Ep. 86 - The square circle, IV</title>
     <meta property="og:title" content="Ch 457: Ep. 86 - The square circle, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00457.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 457: Ep. 86 - The square circle, IV</h1></div>
 <p class="orv_line">The time limit for the scenario was until midnight today. It was already nine PM, so there were less than three hours remaining.</p>
@@ -201,42 +208,42 @@
 <p class="orv_line">Dokkaebis had jurisdiction over sub scenarios, so she should be able to control one just fine.</p>
 <p class="orv_line">Also, since the failure penalty was not 'death' but 'death(?)', I was thinking that they wouldn't kill me for real, and… Biyoo wasn't answering.</p>
 <p class="orv_line">"Where are you, our cute little Biyoo?"</p>
-<div class="orv_system"><p>[Constellation, 'Abyssal Black Flame Dragon', is cackling at your ill fortune.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Queen of the Darkest Spring', is urging you to seriously carry this scenario out…]</p></div>
+<div class="orv_system"><p>Constellation, 'Abyssal Black Flame Dragon', is cackling at your ill fortune.</p></div>
+<div class="orv_system"><p>Constellation, 'Queen of the Darkest Spring', is urging you to seriously carry this scenario out…</p></div>
 <p class="orv_line">Seeing that the channel was open, Biyoo must be nearby for sure, but…?</p>
 <p class="orv_line">I decided to pull out the hidden trump card.</p>
 <p class="orv_line">"Baat."</p>
 <p class="orv_line">That caused the empty air to quiver a little, then a ball of cotton with a small horn attached on top rose out from there.</p>
-<div class="orv_constellation"><p>[Abaat.]</p></div>
+<div class="orv_constellation"><p>Abaat.</p></div>
 <p class="orv_line">Biyoo popped out with a "Poof!" and began giggling away.</p>
 <p class="orv_line">I didn't smile back, though. "Biyoo-yah. I'm sorry about this, but can you, like, cancel this scenario…?"</p>
-<div class="orv_constellation"><p>[Eh-oh-bah-aht.]</p></div>
+<div class="orv_constellation"><p>Eh-oh-bah-aht.</p></div>
 <p class="orv_line">I couldn't tell whether she was trying to say 'eva' or 'over'.</p>
-<div class="orv_system"><p>[Constellations agreeing with the applicable scenario's Probability are rejecting the scenario cancellation.]</p></div>
+<div class="orv_system"><p>Constellations agreeing with the applicable scenario's Probability are rejecting the scenario cancellation.</p></div>
 <p class="orv_line">…Hang on, could this be a bounty scenario, instead?</p>
-<div class="orv_system"><p>[Constellation, 'Demon-like Judge of Fire', is arguing that this scenario is a necessity for you.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Abyssal Black Flame Dragon', is criticising you, telling you not to use a cowardly method.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Bald General of Justice', is saying that if you're a true companion to them, then you should use your valour and tenacious spirit to…]</p></div>
-<div class="orv_system"><p>[Constellation, 'Goryeo's First Sword', is simply denying the cancellation.]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon-like Judge of Fire', is arguing that this scenario is a necessity for you.</p></div>
+<div class="orv_system"><p>Constellation, 'Abyssal Black Flame Dragon', is criticising you, telling you not to use a cowardly method.</p></div>
+<div class="orv_system"><p>Constellation, 'Bald General of Justice', is saying that if you're a true companion to them, then you should use your valour and tenacious spirit to…</p></div>
+<div class="orv_system"><p>Constellation, 'Goryeo's First Sword', is simply denying the cancellation.</p></div>
 <p class="orv_line">…They are in sync with each other only in times like this, aren't they?</p>
 <p class="orv_line">"…Yes, yes. I get it now."</p>
-<div class="orv_system"><p>[Constellation, 'Most Ancient Liberator', is cheering on his maknae.]</p></div>
+<div class="orv_system"><p>Constellation, 'Most Ancient Liberator', is cheering on his maknae.</p></div>
 <p class="orv_line">I couldn't really get used to the new Modifier for the Great Sage Heaven's Equal. We parted ways right away after the 'Journey to the West' scenario came to an end, but I knew we'd get to see each other soon enough.</p>
 <p class="orv_line">In any case… Who should it be? Who should I speak to next? It should be someone holding the highest amount of complaints towards me, right?</p>
-<p class="orv_line">I studied my companions one by one, leisurely sitting around together after that fulfilling supper. That was when the [Midday Tryst] came flying in my way.</p>
+<p class="orv_line">I studied my companions one by one, leisurely sitting around together after that fulfilling supper. That was when the <strong>[Midday Tryst]</strong> came flying in my way.</p>
 <p class="orv_line">– What are you looking at?</p>
 <p class="orv_line">Okay, let's skip Han Sooyoung for now. Her problems weren't on the level that I could fix anyway.</p>
 <p class="orv_line">– You making fun of me?</p>
-<p class="orv_line">I continued to search for the next candidate. The next two I spotted were Yoosung-ie and Gilyoung-ie. While looking at the two lying side by side and patting their slightly bulging tummies, it almost felt as if the [Fruit of Good and Evil] was whispering to me from deep inside my mind.</p>
+<p class="orv_line">I continued to search for the next candidate. The next two I spotted were Yoosung-ie and Gilyoung-ie. While looking at the two lying side by side and patting their slightly bulging tummies, it almost felt as if the <strong>[Fruit of Good and Evil]</strong> was whispering to me from deep inside my mind.</p>
 <p class="orv_line">⸢If it's their troubles, can't I easily solve them?⸥</p>
 <p class="orv_line">Even if I set aside the cowardly reason for now, I still needed to have a serious talk with Gilyoung-ie.</p>
-<div class="orv_system"><p>[Constellation Lee Gilyoung's Sponsor is staring at you.]</p></div>
+<div class="orv_system"><p>Constellation Lee Gilyoung's Sponsor is staring at you.</p></div>
 <p class="orv_line">Although he looked the same on the outside as before, Lee Gilyoung's Status had a faint trace of demonic aura permeating it. Would it be okay to talk to him now? However, wasn't it too open here?</p>
-<div class="orv_system"><p>[Constellation, 'Master of Sky Walk', is observing your actions.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Lily Blooming in Aquarius', is focusing her attention on you.]</p></div>
+<div class="orv_system"><p>Constellation, 'Master of Sky Walk', is observing your actions.</p></div>
+<div class="orv_system"><p>Constellation, 'Lily Blooming in Aquarius', is focusing her attention on you.</p></div>
 <p class="orv_line">Not only that, Constellations were watching us, too. I couldn't really imagine how the channel's Constellations would react if I went and carelessly got in touch with 'that side' now.</p>
 <p class="orv_line">Even then, I should at least talk to him…</p>
-<div class="orv_system"><p>[Currently, 'Omniscient Reader's Viewpoint' 2nd Stage is in activation.]</p></div>
+<div class="orv_system"><p>Currently, 'Omniscient Reader's Viewpoint' 2nd Stage is in activation.</p></div>
 <p class="orv_line">…The inside of my head rang with a "Bzz!" and the skill was activated forcibly once more. This was happening rather often lately. I wasn't sure whether it was because I read the 'Ways of Survival' too much, or due to some other reason, but…</p>
 <p class="orv_line">⸢Ba-dump, ba-dump, ba-dump, ba-dump⸥</p>
 <p class="orv_line">Their voices soon entered my head.</p>
@@ -263,7 +270,7 @@
 <p class="orv_line">Maybe she didn't expect me to say something like that, because Lee Jihye began blinking her eyes next.</p>
 <p class="orv_line">"Ahjussi, don't try to act cool, okay?"</p>
 <p class="orv_line">She smirked and punched me in the shin with her sturdy fist. I thought my bone was broken or something.</p>
-<div class="orv_system"><p>[You have currently resolved 1 complaint.]</p></div>
+<div class="orv_system"><p>You have currently resolved 1 complaint.</p></div>
 <p class="orv_line">A simple chat on this level couldn't resolve Lee Jihye's troubles. Even then, I still had to speak to her.</p>
 <p class="orv_line">She lightly shook her beer glass around and while standing up, spoke to me. "…Alright, then. Since I'm full, I should go and stretch my limbs for a bit."</p>
 <p class="orv_line">"You shouldn't exercise after drinking, you know."</p>
@@ -278,31 +285,31 @@
 <p class="orv_line">"Where is Yoo Joonghyuk?"</p>
 <p class="orv_line">"Yoo Joonghyuk? He was over th… Uh?"</p>
 <p class="orv_line">Only then did she realize it, too. Honestly speaking, that guy usually acted on his own and often disappeared on us without warning, so this shouldn't come across as all that surprising. The problem had to with the fact that he didn't disappear alone this time.</p>
-<p class="orv_line">Han Sooyoung looked into the wide-open rear door of the [X-grade Ferrarghini] and spoke up. "…The 'Secretive Plotter' is gone, too."</p>
+<p class="orv_line">Han Sooyoung looked into the wide-open rear door of the <strong>[X-grade Ferrarghini]</strong> and spoke up. "…The 'Secretive Plotter' is gone, too."</p>
 <br>
 <hr>
 <br>
-<p class="orv_line">The 'Secretive Plotter' surrounded in the transparent Sealing Sphere landed on the ground with a thud and roughly rolled around in the dirt. He was still unconscious. Yoo Joonghyuk quietly looked down on him, then slowly unsheathed the [Black Heavenly Demon Sword] and addressed the Plotter.</p>
+<p class="orv_line">The 'Secretive Plotter' surrounded in the transparent Sealing Sphere landed on the ground with a thud and roughly rolled around in the dirt. He was still unconscious. Yoo Joonghyuk quietly looked down on him, then slowly unsheathed the <strong>[Black Heavenly Demon Sword]</strong> and addressed the Plotter.</p>
 <p class="orv_line">"I know that you're already awake."</p>
 <p class="orv_line">The Secretive Plotter slowly opened his eyes. Accompanied by faint sparks, energy from a Story surged throughout his body. For a moment there, his Stories were returning to him.</p>
 <div class="orv_outergod"><p>【You don't seem to know how to enjoy these brief moments of peace.】</p></div>
 <p class="orv_line">"I don't have a habit of enjoying my peace with an enemy near me."</p>
 <div class="orv_outergod"><p>【Are you planning to kill me? That is indeed a wise move. However, you should know by now that you can't really kill me.】</p></div>
 <p class="orv_line">That was true. The 'Secretive Plotter' was another Yoo Joonghyuk. Killing him simply meant the creation of another world-line.</p>
-<p class="orv_line">Even then, Yoo Joonghyuk didn't let go of his [Black Heavenly Demon Sword]. "It'll be far better than watching you mess up this world-line."</p>
+<p class="orv_line">Even then, Yoo Joonghyuk didn't let go of his <strong>[Black Heavenly Demon Sword]</strong>. "It'll be far better than watching you mess up this world-line."</p>
 <p class="orv_line">The Plotter laughed. They were both Yoo Joonghyuks. They may have lived two different lives, but their nature as Yoo Joonghyuk was the same. And that was why they could understand each other's thought process the best.</p>
 <div class="orv_outergod"><p>【Do you believe that your power alone is enough to kill me? Without Kim Dokja's Story, the current you can't fight against an 'Outer God'.】</p></div>
-<p class="orv_line">"That might be the case, but killing you will be rather simple. I only have to shatter that [Sealing Sphere]."</p>
+<p class="orv_line">"That might be the case, but killing you will be rather simple. I only have to shatter that <strong>[Sealing Sphere]</strong>."</p>
 <p class="orv_line">A faint trace of unrest flitted in and out of the Plotter's expression.</p>
-<p class="orv_line">Currently, the 'Secretive Plotter' was inside the unstable [Apocalypse Dragon's Sealing Sphere] created by the 999th turn's Uriel.</p>
-<p class="orv_line">"You're deliberately not removing the [Sealing Sphere]. If you break it, then the 'Hounds Chasing After the Abyss' will appear from the gap in space and time, that's why."</p>
+<p class="orv_line">Currently, the 'Secretive Plotter' was inside the unstable <strong>[Apocalypse Dragon's Sealing Sphere]</strong> created by the 999th turn's Uriel.</p>
+<p class="orv_line">"You're deliberately not removing the <strong>[Sealing Sphere]</strong>. If you break it, then the 'Hounds Chasing After the Abyss' will appear from the gap in space and time, that's why."</p>
 <p class="orv_line">It only had been for a brief moment, but still, Yoo Joonghyuk got to steal a glance into the memories of the 1864 regression turns engraved into the ⸢Hell of Eternity⸥. That's where he got to learn partial information on 'Outer Gods'. The Hounds that chased after the Abyss – he learned about the Hounds of Tindalos during that time, too.</p>
 <p class="orv_line">They were the cleaners capable of detecting the distortion in a world-line.</p>
 <p class="orv_line">"They can only intrude from where angles below 90 degrees exist. The normal you wouldn't be troubled by something like a few Hounds, but with how weakened you are, the story should change greatly."</p>
-<p class="orv_line">The flow of Status loaded onto the [Black Heavenly Demon Sword] grew thicker. Yoo Joonghyuk too hadn't fully recovered from his wounds, so fighting the Plotter head-on was impossible.</p>
+<p class="orv_line">The flow of Status loaded onto the <strong>[Black Heavenly Demon Sword]</strong> grew thicker. Yoo Joonghyuk too hadn't fully recovered from his wounds, so fighting the Plotter head-on was impossible.</p>
 <p class="orv_line">However, shattering the Sealing Sphere shouldn't pose a challenge.</p>
 <p class="orv_line">The Plotter's expression changed, perhaps after figuring out Yoo Joonghyuk's intentions. It was the face of a man who had accepted 'something'.</p>
-<p class="orv_line">And so, just as Yoo Joonghyuk's [Black Heavenly Demon Sword] was about to make a move…</p>
+<p class="orv_line">And so, just as Yoo Joonghyuk's <strong>[Black Heavenly Demon Sword]</strong> was about to make a move…</p>
 <p class="orv_line">"Oppa."</p>
 <p class="orv_line">Someone's head poked out from the bushes.</p>
 <p class="orv_line">"What are you doing?"</p>
@@ -316,8 +323,8 @@
 <p class="orv_line">Yoo Mia clearly enunciated every single word as she strode forward. Yoo Joonghyuk's judgement blurred for a moment then.</p>
 <p class="orv_line">She seized that opening and quickly ran towards the front of the 'Secretive Plotter'.</p>
 <p class="orv_line">"By the way, he looks exactly like you, oppa. Who are you exactly?"</p>
-<p class="orv_line">Before long, she was within the touching distance of the Plotter. Yoo Joonghyuk grew anxious. He wanted to swing his sword right now and shatter the [Sealing Sphere], but his little sister might get swept up in the air current if he made the slightest mistake here.</p>
-<p class="orv_line">As he began deliberating on his options, she placed her hand on the transparent [Sealing Sphere] and innocently asked the figure inside. "Are you trapped in this thing? You want me to help you get out of there?"</p>
+<p class="orv_line">Before long, she was within the touching distance of the Plotter. Yoo Joonghyuk grew anxious. He wanted to swing his sword right now and shatter the <strong>[Sealing Sphere]</strong>, but his little sister might get swept up in the air current if he made the slightest mistake here.</p>
+<p class="orv_line">As he began deliberating on his options, she placed her hand on the transparent <strong>[Sealing Sphere]</strong> and innocently asked the figure inside. "Are you trapped in this thing? You want me to help you get out of there?"</p>
 <p class="orv_line">Yoo Joonghyuk dearly wanted to move and pull her away from there right now. But for some reason, he couldn't.</p>
 <p class="orv_line">The 'Secretive Plotter' was staring at Yoo Mia.</p>
 <p class="orv_line">His eyes were trembling from a very powerful agitation. Even Yoo Joonghyuk was surprised to see such an expression appear on the Plotter's face, someone who had lived through an untold amount of time.</p>
@@ -330,18 +337,12 @@
             <a href="./ch_456"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_458">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="457" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="506" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="456" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="456" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

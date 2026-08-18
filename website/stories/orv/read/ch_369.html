@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 369: Ep. 70 - A Story that Can't Be Shared, I</title>
     <meta property="og:title" content="Ch 369: Ep. 70 - A Story that Can't Be Shared, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00369.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 369: Ep. 70 - A Story that Can't Be Shared, I</h1></div>
 <p class="orv_line">Anna Croft's expression hardened instantly and she sneakily pulled out her shortsword behind her back. "…'Supreme King'."</p>
@@ -198,7 +205,7 @@
 <p class="orv_line">Kugugugugu-!!</p>
 <p class="orv_line">"It's simply the 'things that had happened'. It's the past."</p>
 <p class="orv_line">Things that had happened, he said.</p>
-<p class="orv_line">Yoo Joonghyuk had to live through the story that I read while welcoming thousands of deaths in the process. As if to respond to all those years he had spent, the [Black Heavenly Demon Sword] held in his hand began to cry out viciously.</p>
+<p class="orv_line">Yoo Joonghyuk had to live through the story that I read while welcoming thousands of deaths in the process. As if to respond to all those years he had spent, the <strong>[Black Heavenly Demon Sword]</strong> held in his hand began to cry out viciously.</p>
 <p class="orv_line">Anna Croft snuck a glance in my direction.</p>
 <p class="orv_line">I replied to her. "You should go. This guy came to see me, not you."</p>
 <p class="orv_line">"I pray that I'll get to hear your end goal through your own words next time we meet."</p>
@@ -210,9 +217,9 @@
 <p class="orv_line">He shifted his gaze towards me and slowly unsheathed his sword.</p>
 <p class="orv_line">"That was in the past."</p>
 <p class="orv_line">The icy-cold rage permeating within his voice wasn't something that I could readily unpack.</p>
-<div class="orv_system"><p>[The unique skill, 'Omniscient Reader's Viewpoint' has been activated!]</p></div>
+<div class="orv_system"><p>The unique skill, 'Omniscient Reader's Viewpoint' has been activated!</p></div>
 <p class="orv_line">And so, I took yet another step into the curse of omniscience.</p>
-<div class="orv_system"><p>[Your degree of understanding on the applicable individual is lacking!]</p></div>
+<div class="orv_system"><p>Your degree of understanding on the applicable individual is lacking!</p></div>
 <p class="orv_line">Unfortunately, Yoo Joonghyuk's inner thoughts didn't permit my spying attempt, as if to assert that the person in front of my eyes was no longer the same guy that I knew all this time.</p>
 <p class="orv_line">"I can already guess what you want to talk to me about. It's probably about that book of yours."</p>
 <p class="orv_line">"…"</p>
@@ -221,17 +228,17 @@
 <p class="orv_line">"I…"</p>
 <p class="orv_line">I knew that. I definitely did. But…</p>
 <p class="orv_line">But, was the sense of betrayal everything he felt?</p>
-<div class="orv_system"><p>[Your degree of understanding on the applicable individual is increasing gradually bit by bit.]</p></div>
+<div class="orv_system"><p>Your degree of understanding on the applicable individual is increasing gradually bit by bit.</p></div>
 <p class="orv_line">Yoo Joonghyuk was waiting for me, as if he was the judge searching for that yet-undiscovered opportunity to frame me even further.</p>
 <p class="orv_line">Too bad, I had no idea what to say here.</p>
 <p class="orv_line">His emotions flooded into my head and filled it up to full in no time through the 'Omniscient Reader's Viewpoint'. All the texts that I knew were steadily being overwritten by the words completely foreign to me.</p>
 <p class="orv_line">The words that I should be saying, words that I wanted to say, they were all being buried under the blackened waves of emotions crashing in.</p>
 <p class="orv_line">And then, his sword moved.</p>
 <p class="orv_line">Even at that moment, it still didn't feel real to me. Indeed, it felt far too surreal that he'd forget about all those times we survived together and try to kill me right here.</p>
-<div class="orv_system"><p>['Fruit of Good and Evil' is influencing your emotions!]</p></div>
-<div class="orv_system"><p>['The Fourth Wall' is shaking around violently!]</p></div>
+<div class="orv_system"><p>'Fruit of Good and Evil' is influencing your emotions!</p></div>
+<div class="orv_system"><p>'The Fourth Wall' is shaking around violently!</p></div>
 <p class="orv_line">The moment I saw the blade flying in right in front of my nose, a guilty conscience, as well as a sense of unfairness, welled up in my heart.</p>
-<div class="orv_system"><p>['Fruit of Good and Evil' is dragging out your dark emotions to the fore!]</p></div>
+<div class="orv_system"><p>'Fruit of Good and Evil' is dragging out your dark emotions to the fore!</p></div>
 <p class="orv_line">I did my best in my own way. After these scenarios got underway, I really tried my best. In my own way, I did my best to put what I read to practice.</p>
 <p class="orv_line">I never once thought about hurting Yoo Joonghyuk or any of my companions. All I ever thought about was these scenarios – what should I do to minimise the harm? What should I do so that we could safely reach the true end of everything?</p>
 <p class="orv_line">That was all I did. Nothing more. Yet…</p>
@@ -257,7 +264,7 @@
 <p class="orv_line">Han Sooyoung felt this instinctive fear and took a couple of steps back. Unfortunately, she was still inside her own dream, and no person alive could run away from their dreams.</p>
 <p class="orv_line">– You see, me, I like throwing a wrench in someone else's schemes.</p>
 <p class="orv_line">The moment this woman of the dream extended her hand, strange, unexplainable information flooded into Han Sooyoung's head.</p>
-<div class="orv_system"><p>[Ability of 'Predictive Plagiarism' is being awoken inside you!]</p></div>
+<div class="orv_system"><p>Ability of 'Predictive Plagiarism' is being awoken inside you!</p></div>
 <p class="orv_line">And that was how Han Sooyoung woke up from her sleep. Unknown information swam inside her head, and her consciousness moved on its own volition to sort through her new-found knowledge base.</p>
 <p class="orv_line">A short while later, this one sentence formed in her head.</p>
 <p class="orv_line">– Yoo Joonghyuk will head towards the 'Middle Island No.3'.</p>
@@ -272,22 +279,22 @@
 <p class="orv_line">"What, you want to kill me, too? And what would you gain by doing that? Is this the compensation for all those times you've been deceived?"</p>
 <p class="orv_line">Yoo Joonghyuk didn't reply. Instead, his sword skill seemed to be forgotten for a moment there. His blade sliced down from the air and Han Sooyoung defended against the attack with a smirk.</p>
 <p class="orv_line">"…You and Kim Dokja are exactly the same when it comes to not listening to other people, you know."</p>
-<div class="orv_system"><p>[Constellation, 'Abyssal Black Flame Dragon', is roaring out in rage!]</p></div>
-<p class="orv_line">The power of [Black Flames] permeating within her entire figure clashed against his sword swing.</p>
+<div class="orv_system"><p>Constellation, 'Abyssal Black Flame Dragon', is roaring out in rage!</p></div>
+<p class="orv_line">The power of <strong>[Black Flames]</strong> permeating within her entire figure clashed against his sword swing.</p>
 <p class="orv_line">The weight behind Yoo Joonghyuk's sword strike after being boosted by the 2nd generation's power was quite heavy. She bit her lip hard enough to draw blood as she unleashed all of her strength.</p>
 <p class="orv_line">He was indeed strong. However, it wasn't as if she was fooling around doing nothing up until now.</p>
-<div class="orv_system"><p>[Story, 'Disciple of the Legendary Swordmaster', is shining brightly!]</p></div>
+<div class="orv_system"><p>Story, 'Disciple of the Legendary Swordmaster', is shining brightly!</p></div>
 <p class="orv_line">That was the Story she barely managed to earn by scraping and clawing her way through the scenario before coming here. The strength of a Swordmaster swirled around her figure and explosively rose up within her.</p>
 <p class="orv_line">Tsu-chuchuchuchut!!</p>
 <p class="orv_line">In other places, it may not work, but if it was this place, then…</p>
 <p class="orv_line">"When a person is saying something to you…"</p>
-<p class="orv_line">The strengthened [Black Flame] rushed towards Yoo Joonghyuk through the gaps of the dancing dark-blue sparks.</p>
+<p class="orv_line">The strengthened <strong>[Black Flame]</strong> rushed towards Yoo Joonghyuk through the gaps of the dancing dark-blue sparks.</p>
 <p class="orv_line">"…You! Should! Listen!"</p>
 <p class="orv_line">The barrage of the strengthened flames rained down in sync with her words. Yoo Joonghyuk's eyes shook around, hard, at the unexpectedly robust resistance put up by her. She didn't miss that opening and loudly yelled out.</p>
 <p class="orv_line">"All Kim Dokja did was read a novel! A stupidly long and boring novel!"</p>
 <p class="orv_line">Seeing Yoo Joonghyuk get pushed back bit by bit, she thought that she could pull this off. This was not a tough dilemma to solve. This misunderstanding only came about because of people's words. That was why she believed that more words could resolve it once and for all.</p>
 <p class="orv_line">"So, just talk to him, will ya! Speak to each other without holding back! Just like how everyone else does!"</p>
-<p class="orv_line">The flames of [Black Flame] remained persistent and stuck on to Yoo Joonghyuk's blade. He coldly spoke as he shook off the darkish flames. "You don't know anything."</p>
+<p class="orv_line">The flames of <strong>[Black Flame]</strong> remained persistent and stuck on to Yoo Joonghyuk's blade. He coldly spoke as he shook off the darkish flames. "You don't know anything."</p>
 <p class="orv_line">"No, I know already," growled Han Sooyoung, after hearing his words that cold-heartedly excluded her. "What are you so pissed off about? About Kim Dokja approaching you while knowing everything about you? But, aren't you the same? Just like him, you acquired info for yourself and have deceived everyone else until now, haven't you?"</p>
 <p class="orv_line">Perhaps those words became the seed, because rage began filling up Yoo Joonghyuk's eyes next. Their swords clashed in the air once more.</p>
 <p class="orv_line">"Of course, I know that you were being sincere. I know that you did those things to save people, to reach an even better world… But what about Kim Dokja, then?"</p>
@@ -302,9 +309,9 @@
 <p class="orv_line">"…A character, is it?"</p>
 <p class="orv_line">Yoo Joonghyuk's expression was changing back. He wasn't asking a question just now. She belatedly realized her mistake, but it was far too late to take back what she said by then.</p>
 <p class="orv_line">"You're the same as him."</p>
-<p class="orv_line">Enormous waves of magical energy spread out from the contact point of the two locked blades. Han Sooyoung's sword issued a cry of pain. The force behind [Black Flames] was now being pushed back one-sidedly.</p>
-<div class="orv_system"><p>[Story, 'Torch That Swallowed the Myth', is roaring out!]</p></div>
-<p class="orv_line">The [Giant Story] Yoo Joonghyuk had acquired was now going on a rampage.</p>
+<p class="orv_line">Enormous waves of magical energy spread out from the contact point of the two locked blades. Han Sooyoung's sword issued a cry of pain. The force behind <strong>[Black Flames]</strong> was now being pushed back one-sidedly.</p>
+<div class="orv_system"><p>Story, 'Torch That Swallowed the Myth', is roaring out!</p></div>
+<p class="orv_line">The <strong>[Giant Story]</strong> Yoo Joonghyuk had acquired was now going on a rampage.</p>
 <p class="orv_line">"I saw what you did during the 1863rd regression."</p>
 <p class="orv_line">"1863rd regression? What the hell are you…??"</p>
 <p class="orv_line">It was at that moment a certain something popped up in Han Sooyoung's mind.</p>
@@ -333,21 +340,21 @@
 <p class="orv_line">I couldn't sense any guilt, no shaken emotions within that voice.</p>
 <p class="orv_line">It was at that moment something inside me snapped.</p>
 <p class="orv_line">I slowly stood up from my spot.</p>
-<div class="orv_constellation"><p>[Yoo Joonghyuk.]</p></div>
+<div class="orv_constellation"><p>Yoo Joonghyuk.</p></div>
 <p class="orv_line">Stories were boiling over inside my head.</p>
 <p class="orv_line">– There are some Stories that are simply too big and are difficult to read properly. If your mind isn't centred right, you will end up getting swept away by the Story, instead.</p>
 <p class="orv_line">Yoo Hoseong told me that. I was aware of the dangers as well. The greater the Story, the larger the burden I had to carry.</p>
 <p class="orv_line">That was why I sought to make companions. And we worked together to create history, to create our own Stories. All for the sake of reaching a different conclusion than that of Yoo Joonghyuk's from the original storyline. That wish was what brought us this far.</p>
 <p class="orv_line">And the end result of that wish was this.</p>
 <p class="orv_line">Did I need to keep reading this story, then?</p>
-<div class="orv_system"><p>[Giant Story, 'Demon Realm's Spring', has begun its storytelling.]</p></div>
+<div class="orv_system"><p>Giant Story, 'Demon Realm's Spring', has begun its storytelling.</p></div>
 <p class="orv_line">I've imagined the final goal where every one of us would be there together. I truly believed that such a story was definitely achievable.</p>
-<div class="orv_system"><p>[Giant Story, 'Torch That Swallowed the Myth', has begun its storytelling.]</p></div>
+<div class="orv_system"><p>Giant Story, 'Torch That Swallowed the Myth', has begun its storytelling.</p></div>
 <p class="orv_line">However, if that was impossible, then…</p>
 <p class="orv_line">If all the histories that I've created so far were completely useless, then…</p>
-<div class="orv_system"><p>['Demon King Transformation' has been activated.]</p></div>
+<div class="orv_system"><p>'Demon King Transformation' has been activated.</p></div>
 <p class="orv_line">…Then, the end I've been dreaming about no longer held any meaning.</p>
-<div class="orv_constellation"><p>[I shall kill you, Yoo Joonghyuk.]</p></div>
+<div class="orv_constellation"><p>I shall kill you, Yoo Joonghyuk.</p></div>
 <br>
 <hr>
         </article>
@@ -355,18 +362,12 @@
             <a href="./ch_368"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_370">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="369" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="446" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="368" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="368" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

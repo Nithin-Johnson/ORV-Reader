@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 488: Ep. 93 - Omniscient Author's Viewpoint, II</title>
     <meta property="og:title" content="Ch 488: Ep. 93 - Omniscient Author's Viewpoint, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,28 +177,28 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00488.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 488: Ep. 93 - Omniscient Author's Viewpoint, II</h1></div>
-<div class="orv_constellation"><p>[Your ■■ is ■■.]</p></div>
+<div class="orv_constellation"><p>Your ■■ is ■■.</p></div>
 <p class="orv_line">When Jung Heewon first heard that message, she felt a bit weirded out. She recalled what Kim Dokja told her some time ago. He said that each individual had a specific ending reserved for them. So, she believed that she too would have something like that as well.</p>
 <p class="orv_line">However… it was ■■?</p>
 <p class="orv_line">Jung Heewon knew someone that suited such description far better than her.</p>
@@ -207,48 +214,48 @@
 <p class="orv_line">Lee Hyunsung managed to get to her and grabbed her shoulders.</p>
 <p class="orv_line">"Hold on-!"</p>
 <p class="orv_line">Even before he could continue with his words, a message popped up first, instead.</p>
-<div class="orv_system"><p>[The Final Scenario's streaming to all locations will begin!]</p></div>
+<div class="orv_system"><p>The Final Scenario's streaming to all locations will begin!</p></div>
 <p class="orv_line">Every channel within &lt;Star Stream&gt; was now opening up.</p>
 <p class="orv_line">Tsu-chut, chuchuchut…!</p>
 <p class="orv_line">The scenario message flickered about unstably.</p>
-<div class="orv_constellation"><p>[Everyone, don't panic and just focus on the scenario. This scenario will be the final one for you. Once you hunt down the Outer God King, your long journey will come to an end as well.]</p></div>
-<div class="orv_constellation"><p>[This story shall be recorded on the 'Final Wall', and the journeys of the stars will become the 'epic tale' that shall be handed down for all eternity!]</p></div>
+<div class="orv_constellation"><p>Everyone, don't panic and just focus on the scenario. This scenario will be the final one for you. Once you hunt down the Outer God King, your long journey will come to an end as well.</p></div>
+<div class="orv_constellation"><p>This story shall be recorded on the 'Final Wall', and the journeys of the stars will become the 'epic tale' that shall be handed down for all eternity!</p></div>
 <p class="orv_line">Great Dokkaebis greedily shouted out. Their eyes were burning with naked desire to record the Story they had guided till here on the Final Wall.</p>
-<div class="orv_system"><p>[Giant Story, 'Brilliance of the Ancient Dawn', dreams of the final story!]</p></div>
-<div class="orv_system"><p>[Giant Story, 'Master of Asgard', dreams of the final story!]</p></div>
+<div class="orv_system"><p>Giant Story, 'Brilliance of the Ancient Dawn', dreams of the final story!</p></div>
+<div class="orv_system"><p>Giant Story, 'Master of Asgard', dreams of the final story!</p></div>
 <p class="orv_line">Giant Stories were writhing viciously now. To remain as the 'One Single Story', these Giant Stories were urging on the Constellations and Incarnations.</p>
-<div class="orv_system"><p>[Constellation, 'Spear that Draws the Borders of the Oceans', is pulling out his weapon!]</p></div>
-<div class="orv_system"><p>[Constellation, 'Master of Abydos', is incarnating into the scenario!]</p></div>
-<div class="orv_system"><p>[Constellation, 'River Nile's Monster Bird', is roaring out viciously!]</p></div>
+<div class="orv_system"><p>Constellation, 'Spear that Draws the Borders of the Oceans', is pulling out his weapon!</p></div>
+<div class="orv_system"><p>Constellation, 'Master of Abydos', is incarnating into the scenario!</p></div>
+<div class="orv_system"><p>Constellation, 'River Nile's Monster Bird', is roaring out viciously!</p></div>
 <p class="orv_line">However, not everyone was being led around by that urging.</p>
 <p class="orv_line">Despite the orders from the first-seat god Zeus, several gods from &lt;Olympus&gt;, including Dionysus, were hesitating to attack. It was the same story for the Incarnations, as well.</p>
 <p class="orv_line">"…Do we really need to kill that person?"</p>
 <p class="orv_line">The one to say that was the Japanese Incarnation, 'Asuka Ren'.</p>
 <p class="orv_line">"The 'Kim Dokja' I met was not a villain."</p>
 <p class="orv_line">"She's right! Kim Dogeza is not a bad person!"</p>
-<p class="orv_line">They were people who received help from Kim Dokja's companions during the fight against other Japanese that chose to become the calamities of the [Peace Land].</p>
+<p class="orv_line">They were people who received help from Kim Dokja's companions during the fight against other Japanese that chose to become the calamities of the <strong>[Peace Land]</strong>.</p>
 <p class="orv_line">Besides them, several Incarnations affiliated with &lt;Emperor&gt; and &lt;Olympus&gt; agreed with them.</p>
-<div class="orv_system"><p>[Quite a few Constellations agree with the opinions of the Incarnations!]</p></div>
-<div class="orv_system"><p>[&lt;Star Stream&gt;'s Probability is falling into unrest!]</p></div>
+<div class="orv_system"><p>Quite a few Constellations agree with the opinions of the Incarnations!</p></div>
+<div class="orv_system"><p>&lt;Star Stream&gt;'s Probability is falling into unrest!</p></div>
 <p class="orv_line">Once they detected the Probability moving towards a suspicious direction, the Great Dokkaebis quickly stepped forward to rectify that.</p>
-<div class="orv_constellation"><p>[Do not forget, everyone. He's the 'Enemy of the Scenario'.]</p></div>
-<div class="orv_constellation"><p>[You may not be aware of this, but from the beginning, 'Kim Dokja' had been clearing the scenarios with the purpose of ruining this world-line.]</p></div>
+<div class="orv_constellation"><p>Do not forget, everyone. He's the 'Enemy of the Scenario'.</p></div>
+<div class="orv_constellation"><p>You may not be aware of this, but from the beginning, 'Kim Dokja' had been clearing the scenarios with the purpose of ruining this world-line.</p></div>
 <p class="orv_line">Quite unlike themselves, these usually-arrogant Great Dokkaebis began speaking in a polite tone of voice. And as the footages of Stories began playing in the vast skies above, the Dokkaebis' speciality began as well.</p>
-<div class="orv_constellation"><p>[He betrayed this world-line and made deals with the 'Outer Gods'.]</p></div>
+<div class="orv_constellation"><p>He betrayed this world-line and made deals with the 'Outer Gods'.</p></div>
 <p class="orv_line">Inside the screen, Kim Dokja was making a deal with the 'Secretive Plotter'. Since there was no voice being transmitted, his expression came across as especially sinister.</p>
 <p class="orv_line">That wasn't all. Everything he had done so far was now being laid bare to the rest of the world. From when he released the grasshoppers in the subway and didn't try to save anyone else, to when he didn't do anything back in the Geumho station even though he could've saved many others…</p>
 <p class="orv_line">This collection of only the worst moments of someone was trying to create a brand new Kim Dokja in this world.</p>
-<div class="orv_constellation"><p>[If he achieves his goal, then only the pure destruction awaits this world.]</p></div>
+<div class="orv_constellation"><p>If he achieves his goal, then only the pure destruction awaits this world.</p></div>
 <p class="orv_line">Soon, the screen changed to that from the ⸢Journey to the West⸥.</p>
 <p class="orv_line">The Giant Story ⸢Liberator of the Forgotten Ones⸥.</p>
 <p class="orv_line">It was the scene of him, surrounded by the Outer Gods, liberating the 'Nameless Ones' trapped inside the scenario. Unfortunately, perhaps due to the Dokkaebis' interference, him inside the Story no longer looked saintly. No, he truly looked like the leader of a cult freeing demons in order to really destroy this world.</p>
-<div class="orv_constellation"><p>[He acquired the knowledge of the future through uncommon means, and he used that for his own benefit.]</p></div>
+<div class="orv_constellation"><p>He acquired the knowledge of the future through uncommon means, and he used that for his own benefit.</p></div>
 <p class="orv_line">Kim Dokja holding onto his smartphone was now ordering his companions around.</p>
-<div class="orv_constellation"><p>[Him becoming the 'Demon King of Salvation', then the 'Watcher of Light and Darkness', they were all simply part of his plan.]</p></div>
+<div class="orv_constellation"><p>Him becoming the 'Demon King of Salvation', then the 'Watcher of Light and Darkness', they were all simply part of his plan.</p></div>
 <p class="orv_line">The storytellers worked together to drag Kim Dokja's position down from 'protagonist' to the villain. They were changing his Story into a sly and cowardly one.</p>
-<div class="orv_system"><p>[&lt;Star Stream&gt;'s Probability is mobilising!]</p></div>
+<div class="orv_system"><p>&lt;Star Stream&gt;'s Probability is mobilising!</p></div>
 <p class="orv_line">This action definitely went against the nature of the storytellers themselves. Even then, these Great Dokkaebis didn't hesitate one second. Because these storytellers also desired their own ■■, as well.</p>
-<div class="orv_constellation"><p>[And now, he has become the 'Outer God' Monarch to destroy this world.]</p></div>
+<div class="orv_constellation"><p>And now, he has become the 'Outer God' Monarch to destroy this world.</p></div>
 <p class="orv_line">Tsu-chuchuchuchut!</p>
 <p class="orv_line">The public sentiment within &lt;Star Stream&gt; was rapidly changing.</p>
 <p class="orv_line">Asuka Ren's complexion paled greatly. Anna Croft and her unreadable expression walked past the Japanese woman's side and muttered to the latter.</p>
@@ -264,7 +271,7 @@
 <p class="orv_line">She didn't know the conclusion Kim Dokja truly wanted. However, she believed that she knew without being told what it was. She thought that the end of the world she wanted was the same as what he wanted.</p>
 <p class="orv_line">⸢However, could this be the end he truly wished for?⸥</p>
 <p class="orv_line">Maybe, there was no such thing as companions to him?</p>
-<div class="orv_system"><p>[Constellation, 'Demon-like Judge of Fire', is…!]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon-like Judge of Fire', is…!</p></div>
 <p class="orv_line">She knew. Jung Heewon knew better than anyone what Uriel was trying to say. She also knew that Kim Dokja treasured his companions. Perhaps too much, and that's why he was capable of doing something like this.</p>
 <p class="orv_line">Kim Dokja, he was planning to sacrifice himself and allow his companions to see the end of this world.</p>
 <p class="orv_line">⸢No matter how far she reaches out, she just couldn't touch him.⸥</p>
@@ -272,11 +279,11 @@
 <p class="orv_line">"Just how…"</p>
 <p class="orv_line">Perhaps, Jung Heewon was too exhausted now to long for the desired conclusion.</p>
 <p class="orv_line">⸢Kim Dokja is a type of person who didn't listen to anyone.⸥</p>
-<p class="orv_line">The grip of the sword in her hand felt cold. This sword that Kim Dokja had personally crafted for her and placed in her grasp. This sword that remained as the symbol of her beliefs from the [Paradise] all the way to here.</p>
-<div class="orv_system"><p>['Judge's Sword' is crying out!]</p></div>
+<p class="orv_line">The grip of the sword in her hand felt cold. This sword that Kim Dokja had personally crafted for her and placed in her grasp. This sword that remained as the symbol of her beliefs from the <strong>[Paradise]</strong> all the way to here.</p>
+<div class="orv_system"><p>'Judge's Sword' is crying out!</p></div>
 <p class="orv_line">The sword that should react only in the vicinity of 'evil' was now crying out.</p>
 <p class="orv_line">The Great Dokkaebis declared as if to make a mockery out of her.</p>
-<div class="orv_system"><p>[This is the hidden truth regarding the Enemy of the Story, 'Kim Dokja'.]</p></div>
+<div class="orv_system"><p>This is the hidden truth regarding the Enemy of the Story, 'Kim Dokja'.</p></div>
 <p class="orv_line">She wanted to confirm it.</p>
 <p class="orv_line">If you are truly the 'Kim Dokja' that I know.</p>
 <p class="orv_line">And, if what you want isn't the same as what I want, then…</p>
@@ -299,14 +306,14 @@
 <p class="orv_line">White breath leaked out from that huge head.</p>
 <p class="orv_line">"Kim Dok…"</p>
 <p class="orv_line">Even though she knew she shouldn't, Jung Heewon still ended up taking several steps back. His huge jaw was opening towards her.</p>
-<div class="orv_system"><p>[Scenario's Probability is activating!]</p></div>
-<div class="orv_system"><p>[All of your Stories are warning you!]</p></div>
+<div class="orv_system"><p>Scenario's Probability is activating!</p></div>
+<div class="orv_system"><p>All of your Stories are warning you!</p></div>
 <p class="orv_line">The Outer God King's large black eye reflected her current expression.</p>
 <p class="orv_line">She didn't want to make that kind of a face. She didn't want to look at Kim Dokja with that sort of eyes. Unfortunately, her hands were already moving, independent of her will.</p>
 <div class="orv_image"><img src="../../../assets/images/488 - She didn't want to make that kind of a face. She didn't want to look at Kim Dokja with that sort of eyes.jpg" alt="" loading="lazy"></div>
 <div class="orv_notice"><p>* Unofficial fan illustration (non-canonical)</p></div>
 <p class="orv_line">"Aaaaaaaah!!"</p>
-<p class="orv_line">The [Judge's Sword] cut down the tentacle reaching out to her. As if they were now irreconcilable enemies, her sword moved uncontrollably.</p>
+<p class="orv_line">The <strong>[Judge's Sword]</strong> cut down the tentacle reaching out to her. As if they were now irreconcilable enemies, her sword moved uncontrollably.</p>
 <p class="orv_line">The tentacle burst open noisily and Story leaked out from it.</p>
 <p class="orv_line">⸢"Dokja-ssi, we're happier now compared to back then, right?"</p>
 <p class="orv_line">"…If you mean now is better than before, then yes, you're right."⸥</p>
@@ -317,7 +324,7 @@
 <p class="orv_line">He now resembled a massive wall standing tall all by himself.</p>
 <div class="orv_outergod"><p>【■■■■■■■■■■■■■■■■■■■■■■■■…】</p></div>
 <p class="orv_line">A wall that would never be filled up no matter what was written on it. And as she stood in front of this wall, Jung Heewon despaired.</p>
-<p class="orv_line">Who cared about the [Final Wall]? She couldn't even manage to overcome a wall of just one person.</p>
+<p class="orv_line">Who cared about the <strong>[Final Wall]</strong>? She couldn't even manage to overcome a wall of just one person.</p>
 <p class="orv_line">She then spotted Han Sooyoung shouting at her in the distance while trying to get here. If it was her, could she be able to cross this wall?</p>
 <p class="orv_line">– It must be nice, being a writer and all.</p>
 <p class="orv_line">During the &lt;Kim Dokja's Company&gt;'s vacation, Jung Heewon lying on the middle of a mountainside said that to Han Sooyoung.</p>
@@ -326,7 +333,7 @@
 <p class="orv_line">– What, so you can write a love letter to Lee Hyunsung?</p>
 <p class="orv_line">– No, not that.</p>
 <p class="orv_line">Jung Heewon wordlessly stared in Kim Dokja's direction. Just from that stare alone, Han Sooyoung seemed to have figured out what her conversation partner wanted to say.</p>
-<p class="orv_line">Kim Dokja, struggling so hard in front of his own companions. The fool that was idiotically trying to carry out a joke-like scenario of [Workers' day-off] – Han Sooyoung saw him and replied like this.</p>
+<p class="orv_line">Kim Dokja, struggling so hard in front of his own companions. The fool that was idiotically trying to carry out a joke-like scenario of <strong>[Workers' day-off]</strong> – Han Sooyoung saw him and replied like this.</p>
 <p class="orv_line">– Anyone can write a story.</p>
 <p class="orv_line">Jung Heewon raised her head and looked at this creature that used to be Kim Dokja.</p>
 <p class="orv_line">She was not a writer like Han Sooyoung. On the other hand, she was also not an avid reader like Kim Dokja. So, she could neither write like Han Sooyoung nor read like Kim Dokja.</p>
@@ -359,9 +366,9 @@
 <p class="orv_line">⸢Some salvations aren't completed by the one giving them out, but by those receiving them.⸥</p>
 <p class="orv_line">Jung Heewon's palm left a deep imprint on the tightly-held Outer God's skin. She stared at that imprint for a very long time, then slowly raised her head, her hand grasping the sword tightly.</p>
 <p class="orv_line">And when she did, a certain message resounded out within her ears.</p>
-<div class="orv_system"><p>[Completion of the Incarnation 'Jung Heewon's' ■■ is imminent!]</p></div>
+<div class="orv_system"><p>Completion of the Incarnation 'Jung Heewon's' ■■ is imminent!</p></div>
 <p class="orv_line">Just like holding the hand tightly, she strengthened her grip on the sword.</p>
-<div class="orv_system"><p>[Your ■■ is 'Salvation'.]</p></div>
+<div class="orv_system"><p>Your ■■ is 'Salvation'.</p></div>
 <br>
 <hr>
         </article>
@@ -369,18 +376,12 @@
             <a href="./ch_487"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_489">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="488" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="536" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="487" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="487" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

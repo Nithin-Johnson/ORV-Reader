@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 416: Ep. 79 - The Secretive Plotter, I</title>
     <meta property="og:title" content="Ch 416: Ep. 79 - The Secretive Plotter, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,34 +177,34 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00416.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 416: Ep. 79 - The Secretive Plotter, I</h1></div>
 <p class="orv_line">Two days passed by since the end of the 'Great War of Saints and Demons'.</p>
 <p class="orv_line">The nightmare-filled 'Isle of Reincarnators' could no longer be seen; Constellations were gradually leaving the Ark for their rightful spots in the night sky.</p>
 <p class="orv_line">– This stop is for &lt;Olympus&gt;.</p>
 <p class="orv_line">Constellations from &lt;Olympus&gt; stood up from their seats after the ship made the announcement. Dionysus, standing as their representative, shifted his gaze over to Jung Heewon and addressed her.</p>
-<div class="orv_constellation"><p>[My apologies for leaving first, even though this is a difficult period for you.]</p></div>
+<div class="orv_constellation"><p>My apologies for leaving first, even though this is a difficult period for you.</p></div>
 <p class="orv_line">"No, we'll be fine, thank you."</p>
-<div class="orv_constellation"><p>[Do not be overly worried, however. He's no ordinary Constellation, after all. Without a doubt, he's still alive.]</p></div>
+<div class="orv_constellation"><p>Do not be overly worried, however. He's no ordinary Constellation, after all. Without a doubt, he's still alive.</p></div>
 <p class="orv_line">He lightly tapped her shoulder and soon, disappeared beyond the Dark Dimension while leading other Constellations. She stood there and silently waited until they were gone from her view before climbing down from the bow of the Ark. When she got to the bottom of the stairs, she found a person waiting for her – Han Sooyoung.</p>
 <p class="orv_line">"Dionysus?"</p>
 <p class="orv_line">"He left."</p>
@@ -244,7 +251,7 @@
 <hr>
 <br>
 <p class="orv_line">This happened back when I was still in the middle of reading the 'Ways of Survival'.</p>
-<p class="orv_line">I was scrolling down the chapter, fully satisfied knowing that I had completed the day's work, only to discover something written on the [Author's words] corner at the bottom.</p>
+<p class="orv_line">I was scrolling down the chapter, fully satisfied knowing that I had completed the day's work, only to discover something written on the <strong>[Author's words]</strong> corner at the bottom.</p>
 <p class="orv_line">– Dokja-nim, what do you think?</p>
 <p class="orv_line">I've already forgotten what that question related to. It might have been about the plot development, or he might be implying something about the novel itself. Now, how did I answer him back then?</p>
 <p class="orv_line">– Mm. Well, such a simple twist is a bit…</p>
@@ -275,13 +282,13 @@
 <p class="orv_line">I had blacked out once more, and after waking up, kept my eyes closed and tried really hard to figure out what the heck was going on here. At least, I needed to get a bead on the current situation.</p>
 <p class="orv_line">Firstly, the 'Great War of Saints and Demons' was over.</p>
 <p class="orv_line">I was certain of that; messages waiting in the log proved that fact, at least.</p>
-<div class="orv_system"><p>[You have acquired the Giant Story, 'Season of Light and Darkness'!]</p></div>
-<div class="orv_system"><p>[Your third Giant Story has completed its 'Twist/轉'!]</p></div>
-<div class="orv_system"><p>[Third condition for the hidden scenario – the 'One Single Story', has been met!]</p></div>
-<div class="orv_system"><p>[Final Story is waiting for you.]</p></div>
-<div class="orv_system"><p>[The entirety of &lt;Star Stream&gt; is set abuzz over your achievement!]</p></div>
-<div class="orv_system"><p>[Majority of &lt;Star Stream&gt;'s Constellations are now paying attention to your Nebula!]</p></div>
-<div class="orv_system"><p>[Regarding your Story, the absolute majority of the Constellations are…]</p></div>
+<div class="orv_system"><p>You have acquired the Giant Story, 'Season of Light and Darkness'!</p></div>
+<div class="orv_system"><p>Your third Giant Story has completed its 'Twist/轉'!</p></div>
+<div class="orv_system"><p>Third condition for the hidden scenario – the 'One Single Story', has been met!</p></div>
+<div class="orv_system"><p>Final Story is waiting for you.</p></div>
+<div class="orv_system"><p>The entirety of &lt;Star Stream&gt; is set abuzz over your achievement!</p></div>
+<div class="orv_system"><p>Majority of &lt;Star Stream&gt;'s Constellations are now paying attention to your Nebula!</p></div>
+<div class="orv_system"><p>Regarding your Story, the absolute majority of the Constellations are…</p></div>
 <p class="orv_line">I had finally completed the 'One Single Story's Twist/轉. The energy belonging to an unimaginably enormous Story was now roiling powerfully inside me.</p>
 <p class="orv_line">The Giant Story, the ⸢Season of Light and Darkness.⸥</p>
 <p class="orv_line">It was my first time hearing about such a Giant Story. But that made sense – the collision of the Nameless Mist and the Apocalypse Dragon didn't occur in the original story, after all… With that as the starting point, the entire world-line should begin experiencing sudden and violent change.</p>
@@ -305,11 +312,11 @@
 <p class="orv_line">…Where the hell was I?</p>
 <p class="orv_line">I thought hard and long, but nothing came up. A room with such peculiar furnishing would be more than memorable enough, but I couldn't remember ever reading about it in the 'Ways of Survival'.</p>
 <p class="orv_line">Wondering if I stumbled into an area for a new scenario accidentally, I summoned the scenario window, only to be smacked in the head with the following message.</p>
-<div class="orv_system"><p>[Currently, &lt;Star Stream&gt; is in the middle of scenario system maintenance.]</p></div>
+<div class="orv_system"><p>Currently, &lt;Star Stream&gt; is in the middle of scenario system maintenance.</p></div>
 <p class="orv_line">Meaning, there was pretty much nothing I could learn in my current situation.</p>
 <p class="orv_line">"Looks like he's almost done with analysing his situation."</p>
 <p class="orv_line">"I shall ask again. Are you the one called Kim Dokja?"</p>
-<p class="orv_line">The kkoma Yoo Joonghyuk with a hot-tempered facial expression asked me. Now that I took a closer look, there were different numbered cards stuck to the chest of each kkoma Yoo Joonghyuk, and the one who asked me just now had [999] written on his.</p>
+<p class="orv_line">The kkoma Yoo Joonghyuk with a hot-tempered facial expression asked me. Now that I took a closer look, there were different numbered cards stuck to the chest of each kkoma Yoo Joonghyuk, and the one who asked me just now had <strong>[999]</strong> written on his.</p>
 <p class="orv_line">I decided to answer them for the time being. "Correct. I'm Kim Dokja."</p>
 <p class="orv_line">The kkoma Yoo Joonghyuks looked at each other and nodded their heads simultaneously. These little guys, even though they were much smaller than the original, they acted exactly the same as Yoo Joonghyuk.</p>
 <p class="orv_line">"Looks like the correct one has been brought over, then."</p>
@@ -317,52 +324,52 @@
 <p class="orv_line">I didn't know what was going on here, but by this time, I had to accept it. I was not stuck in a dream. And thanks to some unknown crazy whims of the Probability, I somehow ended up in a strange, fantastical kingdom where kkoma Yoo Joonghyuks lived.</p>
 <p class="orv_line">"Who are you guys?"</p>
 <p class="orv_line">I decided to ask them first. I knew that they wouldn't answer me straightforward if they were anything like the original Yoo Joonghyuk, but still. One of the kkomas began muttering out. "How pathetic. Can't you tell by looking?"</p>
-<p class="orv_line">Yup, thought as much. If I was to be stuck in a world like this, then I'd have preferred to be surrounded by the kind, gentle kkoma version of Yoo Sangah, instead. I was wondering how should I retort back in order to hear a proper answer from these guys, but then, the 'Yoo Joonghyuk' with [888] written on his card spoke some rather unexpected words. "With your dull head, you'd never arrive at the correct answer no matter how long you agonise over it. So, I shall tell you. We are a part of the 'great Plotter'."</p>
+<p class="orv_line">Yup, thought as much. If I was to be stuck in a world like this, then I'd have preferred to be surrounded by the kind, gentle kkoma version of Yoo Sangah, instead. I was wondering how should I retort back in order to hear a proper answer from these guys, but then, the 'Yoo Joonghyuk' with <strong>[888]</strong> written on his card spoke some rather unexpected words. "With your dull head, you'd never arrive at the correct answer no matter how long you agonise over it. So, I shall tell you. We are a part of the 'great Plotter'."</p>
 <p class="orv_line">…Great Plotter? Could it be?</p>
 <p class="orv_line">A chilly sensation flitted in and out of my head just then.</p>
-<p class="orv_line">The 'Yoo Joonghyuk' with [777] on his chest must've interpreted my silence on his own way and spoke in a mocking tone. "Your pathetic intelligence shouldn't be enough to understand it now."</p>
+<p class="orv_line">The 'Yoo Joonghyuk' with <strong>[777]</strong> on his chest must've interpreted my silence on his own way and spoke in a mocking tone. "Your pathetic intelligence shouldn't be enough to understand it now."</p>
 <p class="orv_line">Right, these guys, they were definitely Yoo Joonghyuk. There was absolutely no doubt about that now.</p>
 <p class="orv_line">"If you're fully awake, then get up. Someone is waiting for you."</p>
 <p class="orv_line">"Who's waiting for me?"</p>
 <p class="orv_line">"You'll see when you get there."</p>
-<p class="orv_line">I got up unsteadily and followed after that kkoma. The round door opened up and a huge corridor appeared before me. The one to take the lead was the kkoma Yoo Joonghyuk number [999]. I followed him. The rest of the kkomas trotted after us, too.</p>
+<p class="orv_line">I got up unsteadily and followed after that kkoma. The round door opened up and a huge corridor appeared before me. The one to take the lead was the kkoma Yoo Joonghyuk number <strong>[999]</strong>. I followed him. The rest of the kkomas trotted after us, too.</p>
 <p class="orv_line">I asked one of them. "What is this place?"</p>
 <p class="orv_line">That prompted one of the Yoo Joonghyuks following me to speak up. "Eun gui ei soup."</p>
 <p class="orv_line">"What was that?"</p>
 <p class="orv_line">"It means, the N'Gai's Forest. You're supposed to be a prophet, yet you can't even tell that?"</p>
 <p class="orv_line">What the hell. Why did you say that in English, then?</p>
-<p class="orv_line">The kkoma Yoo Joonghyuk number [666] glared at me as if he was disappointed and turned his head away, obviously unhappy.</p>
+<p class="orv_line">The kkoma Yoo Joonghyuk number <strong>[666]</strong> glared at me as if he was disappointed and turned his head away, obviously unhappy.</p>
 <p class="orv_line">It was around then I began thinking that maybe, those numbers represented the regression turns each Yoo Joonghyuk had lived through.</p>
 <p class="orv_line">…What did Yoo Joonghyuk do around the 666th turn? Was that when he partnered up with the Abyssal Black Flame Dragon?</p>
 <p class="orv_line">I spotted the view of a silver forest outside the windows lining up the corridor. N'Gai's Forest, was it? Sounded familiar, as if I had heard about it somewhere. However, I wasn't sure whether this place ever appeared within the 'Ways of Survival'…</p>
 <p class="orv_line">It was then when our group encountered another one walking towards from the other side of the corridor.</p>
-<div class="orv_constellation"><p>[So, is he the one the Plotter had brought along?]</p></div>
+<div class="orv_constellation"><p>So, is he the one the Plotter had brought along?</p></div>
 <p class="orv_line">No, could I even describe their movements as 'walking'?</p>
 <p class="orv_line">Overcome with the sensation of all the hair on my body standing up, I subconsciously gripped the hilt of my Unbroken Faith tighter.</p>
 <p class="orv_line">Because 'Outer Gods' were walking towards us from the opposite side.</p>
 <p class="orv_line">Existences that emitted auras incomparably more unstable and ominous than any Constellations. One of them sported a horse's head, while others were monstrous creatures covered in disgusting-looking tentacles. Those tentacles extending up to the air seemed to tilt their 'heads' for a bit, before shuffling closer to my direction. No matter who looked at that, they wouldn't be able to describe their intentions as friendly at all.</p>
-<p class="orv_line">Unexpectedly, the one to step in their paths was none other than the kkoma Yoo Joonghyuk number [999].</p>
+<p class="orv_line">Unexpectedly, the one to step in their paths was none other than the kkoma Yoo Joonghyuk number <strong>[999]</strong>.</p>
 <p class="orv_line">"He's our guest. Don't even think about harassing him."</p>
-<div class="orv_constellation"><p>[But, it should not be a problem just to have a little chat?]</p></div>
+<div class="orv_constellation"><p>But, it should not be a problem just to have a little chat?</p></div>
 <p class="orv_line">"I shan't permit it."</p>
-<p class="orv_line">The kkoma Yoo Joonghyuk number [999] declared as thus, and unsheathed the miniature version of [Splitting the Sky Sword] from his back.</p>
-<p class="orv_line">Following that, the kkomas numbers [888], [777], and even the number [666], they all unsheathed their weapons mounted on their backs and hips.</p>
+<p class="orv_line">The kkoma Yoo Joonghyuk number <strong>[999]</strong> declared as thus, and unsheathed the miniature version of <strong>[Splitting the Sky Sword]</strong> from his back.</p>
+<p class="orv_line">Following that, the kkomas numbers <strong>[888]</strong>, <strong>[777]</strong>, and even the number <strong>[666]</strong>, they all unsheathed their weapons mounted on their backs and hips.</p>
 <p class="orv_line">…These guys, could they even really fight? I mean, they all kind of looked like action figures, so…</p>
 <p class="orv_line">Maybe the other party thought the same as me, because they began emitting stubbornly persistent hostile aura towards us.</p>
-<div class="orv_constellation"><p>[How dare you… Just because you're the dependents of the 'great Plotter'…]</p></div>
+<div class="orv_constellation"><p>How dare you… Just because you're the dependents of the 'great Plotter'…</p></div>
 <p class="orv_line">As the stand-off quickly became even more volatile and the tentacles and the kkomas were about to start fighting, a loud 'Thud' resounded out from somewhere. Outer Gods busy wiggling their tentacles about suddenly all knelt down.</p>
 <p class="orv_line">The only one among them still standing was the horse-head that showed animosity towards me.</p>
-<div class="orv_constellation"><p>[■■■…!!]</p></div>
+<div class="orv_constellation"><p>■■■…!!</p></div>
 <p class="orv_line">Another 'Thud' resounded out. Finally, even the horse-head had to slam its head on the floor. Those tremors couldn't have been a simple shockwaves of an earthquake.</p>
 <p class="orv_line">No, someone was intimidating these Outer Gods with incredible Status right now.</p>
-<div class="orv_constellation"><p>[Wu, wuwu…]</p></div>
+<div class="orv_constellation"><p>Wu, wuwu…</p></div>
 <p class="orv_line">Outer Gods groaned in pain and moved out of the way. At the end of the corridor, there was an entrance leading to a huge hall. It was an open-type, with the massive circular ceiling decorated by the tumbling, roiling branches of trees. I walked into this hall accompanied by the kkoma Yoo Joonghyuks.</p>
 <p class="orv_line">Thin rays of sunlight permeating in between the branches illuminated an ancient, worn-out throne right in the middle of that great hall.</p>
 <p class="orv_line">No one needed to tell me, but I knew it right away. The being sitting on that throne, he was the king of this forest.</p>
 <p class="orv_line">Not only that, I knew who he was already, too.</p>
 <p class="orv_line">The scar on his face, revealed under the faint rays of the sun, and the exact same white coat as mine.</p>
 <p class="orv_line">The being I thought I'd not get to meet again was sitting right on that throne.</p>
-<div class="orv_constellation"><p>[It's been a while, Kim Dokja.]</p></div>
+<div class="orv_constellation"><p>It's been a while, Kim Dokja.</p></div>
 <div class="orv_image"><img src="../../../assets/images/416 - The being I thought I'd not get to meet again was sitting right on that throne.jpg" alt="" loading="lazy"></div>
 <div class="orv_notice"><p>* Official novel illustration (canonical)</p></div>
 <br>
@@ -372,18 +379,12 @@
             <a href="./ch_415"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_417">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="416" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="816" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="415" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="415" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

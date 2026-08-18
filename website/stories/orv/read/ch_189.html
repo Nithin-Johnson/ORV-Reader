@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 189: Ep. 36 - Story Horizon, I</title>
     <meta property="og:title" content="Ch 189: Ep. 36 - Story Horizon, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,35 +177,35 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00189.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         <div class="orv_cover"><img src="../../../assets/images/Cover%20Part%202%20-%20189%20-%20Vol%201%20-%20Episodes%2036-41.jpg" alt=""></div>
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 189: Ep. 36 - Story Horizon, I</h1></div>
 <p class="orv_line">On this day, everyone in Seoul Dome was immersed in a dazzling light.</p>
-<div class="orv_system"><p>[Someone has cleared the tenth main scenario.]</p></div>
-<div class="orv_system"><p>[Congratulations. You have passed the tenth scenario.]</p></div>
+<div class="orv_system"><p>Someone has cleared the tenth main scenario.</p></div>
+<div class="orv_system"><p>Congratulations. You have passed the tenth scenario.</p></div>
 <p class="orv_line">Those who were hiding in corners of Seoul Dome to avoid the demonic people and those who barely survived on the first and second floors of Dark Castle.</p>
 <p class="orv_line">All the incarnations who somehow survived the threat of the scenario received the same message.</p>
-<div class="orv_system"><p>[You have accomplished the 'Liberator of Seoul Dome' achievement.]</p></div>
+<div class="orv_system"><p>You have accomplished the 'Liberator of Seoul Dome' achievement.</p></div>
 <p class="orv_line">Liberator. People didn't understand it at first but their bodies were convinced before their minds. Their limbs cramped, their pupils expanded and their lips trembled.</p>
-<div class="orv_system"><p>[You can escape Seoul Dome.]</p></div>
+<div class="orv_system"><p>You can escape Seoul Dome.</p></div>
 <p class="orv_line">Their long wish had finally become reality. The people on the first and second floors of Dark Castle were summoned out into the city.</p>
 <p class="orv_line">Then everyone saw the same sight.</p>
 <p class="orv_line">The Dark Castle collapsed with a loud sound. The terrible nightmare gripping all of Seoul collapsed like a sand castle. The broken chunks soon turned into powder. People were filled with unknown emotions as they watched the scene.</p>
@@ -231,14 +238,14 @@
 <p class="orv_line">"Dokja hyung said so! He isn't dead! He will live again! Then why…!"</p>
 <p class="orv_line">"Yoo Joonghyuk-ssi! Please tell me how to save Dokja-ssi!"</p>
 <p class="orv_line">Yoo Joonghyuk shook his head at Lee Gilyoung and Lee Hyunsung's cries. If there was a way to save Kim Dokja, he would've already done it. There was nothing he could do. It wasn't just him, it was everyone.</p>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' feels a great emptiness.]</p></div>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' is lying down.]</p></div>
-<div class="orv_system"><p>[The constellation 'Seo Ae Il Pil' has broken his pen.]</p></div>
-<div class="orv_system"><p>[The constellation 'God of Wine and Ecstasy' is looking at the abyss.]</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' feels a great emptiness.</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' is lying down.</p></div>
+<div class="orv_system"><p>The constellation 'Seo Ae Il Pil' has broken his pen.</p></div>
+<div class="orv_system"><p>The constellation 'God of Wine and Ecstasy' is looking at the abyss.</p></div>
 <p class="orv_line">.</p>
 <p class="orv_line">.</p>
-<div class="orv_system"><p>[Constellations on the Korean Peninsula are mourning the death of one constellation.]</p></div>
-<div class="orv_system"><p>[Constellations on the Korean Peninsula remember someone's name.]</p></div>
+<div class="orv_system"><p>Constellations on the Korean Peninsula are mourning the death of one constellation.</p></div>
+<div class="orv_system"><p>Constellations on the Korean Peninsula remember someone's name.</p></div>
 <p class="orv_line">Yoo Joonghyuk had never seen so many constellations talking about a single constellation. The arrogant constellations were expressing emotions other than frustration or pleasure.</p>
 <p class="orv_line">They became aware of new feelings. The night sky was shining with more colour than any of his previous regressions.</p>
 <p class="orv_line">Sadness, great despair, sorrow… The night sky, made up of many constellations, was shining sadly.</p>
@@ -256,22 +263,22 @@
 <p class="orv_line">The choice that had always been possible was now irreversible. He met Kim Dokja in his third regression and they became companions. Then he lost Kim Dokja.</p>
 <p class="orv_line">–Don't imagine that you will get better if you throw away this round. Maybe this is the round where you will see the end of this world as a 'human'.</p>
 <p class="orv_line">Yoo Joonghyuk got up from his spot and bit his lips. Only these words remained. Just as everything in the Star Stream was a story, Yoo Joonghyuk couldn't help acknowledging that Kim Dokja's words were part of himself.</p>
-<div class="orv_constellation"><p>[Huh, why aren't you moving? Didn't you receive the system message?]</p></div>
+<div class="orv_constellation"><p>Huh, why aren't you moving? Didn't you receive the system message?</p></div>
 <p class="orv_line">The dokkaebi dispatched from the bureau looked down at them from the air.</p>
-<div class="orv_constellation"><p>[Aha, I see. Everybody is mourning 'his' death.]</p></div>
+<div class="orv_constellation"><p>Aha, I see. Everybody is mourning 'his' death.</p></div>
 <p class="orv_line">The party members resented his ridiculing tone, while some kept their cool, Jung Heewon barely managing to stay calm, asked,</p>
 <p class="orv_line">"…How is Dokja-ssi?"</p>
-<div class="orv_constellation"><p>[He has been expelled from the scenario.]</p></div>
+<div class="orv_constellation"><p>He has been expelled from the scenario.</p></div>
 <p class="orv_line">"Can I ask what that means? Is he dead or alive?"</p>
-<div class="orv_constellation"><p>[I also don't know. However, it isn't possible to survive being expelled from the scenario, whether it is an incarnation or a constellation. That is all I know.]</p></div>
+<div class="orv_constellation"><p>I also don't know. However, it isn't possible to survive being expelled from the scenario, whether it is an incarnation or a constellation. That is all I know.</p></div>
 <p class="orv_line">Even a constellation couldn't survive. The party members stiffened at the words and their expressions became colder than before. Lee Jihye retorted.</p>
 <p class="orv_line">"Isn't there a way? A way to save…!"</p>
-<div class="orv_constellation"><p>[There is nothing you can do. Honestly, it's amazing that you still have this type of mindset. I will give you one piece of advice. Don't think about unnecessary things and focus on the scenario in front of you. You haven't escaped from Seoul Dome yet.]</p></div>
+<div class="orv_constellation"><p>There is nothing you can do. Honestly, it's amazing that you still have this type of mindset. I will give you one piece of advice. Don't think about unnecessary things and focus on the scenario in front of you. You haven't escaped from Seoul Dome yet.</p></div>
 <p class="orv_line">The dokkaebi sneered and flicked his fingers. Then messages once again poured from the air.</p>
-<div class="orv_system"><p>[The escape scenario has been given.]</p></div>
-<div class="orv_system"><p>[Seoul Dome will be closed soon! You have half a day to escape from Seoul Dome.]</p></div>
-<div class="orv_system"><p>[The escape path is automatically provided.]</p></div>
-<div class="orv_system"><p>[You will die if you don't escape from the dome within the time limit.]</p></div>
+<div class="orv_system"><p>The escape scenario has been given.</p></div>
+<div class="orv_system"><p>Seoul Dome will be closed soon! You have half a day to escape from Seoul Dome.</p></div>
+<div class="orv_system"><p>The escape path is automatically provided.</p></div>
+<div class="orv_system"><p>You will die if you don't escape from the dome within the time limit.</p></div>
 <p class="orv_line">"Dammit…"</p>
 <p class="orv_line">The party members looked at each other but there were no solutions on their faces. In any case, there was nothing they could choose.</p>
 <p class="orv_line">"…Let's move."</p>
@@ -306,7 +313,7 @@
 <br>
 <hr>
 <br>
-<div class="orv_quote"><p>「 In the darkness, the lone Kim Dokja finally woke up. 」</p></div>
+<div class="orv_quote"><p>In the darkness, the lone Kim Dokja finally woke up.</p></div>
 <br>
 <hr>
         </article>
@@ -314,18 +321,12 @@
             <a href="./ch_188"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_190">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="189" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="789" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="188" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="188" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

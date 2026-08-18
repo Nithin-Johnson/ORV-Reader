@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 401: Ep. 76 - Book of Revelation, III</title>
     <meta property="og:title" content="Ch 401: Ep. 76 - Book of Revelation, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,29 +177,29 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00401.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 401: Ep. 76 - Book of Revelation, III</h1></div>
-<div class="orv_system"><p>[Members from the same camp have clashed!]</p></div>
-<div class="orv_system"><p>[Current Chaos Points: 85]</p></div>
+<div class="orv_system"><p>Members from the same camp have clashed!</p></div>
+<div class="orv_system"><p>Current Chaos Points: 85</p></div>
 <p class="orv_line">We were left completely dazed at the same time after looking at those system messages.</p>
 <p class="orv_line">"…Just who is it?"</p>
 <p class="orv_line">Han Sooyoung threw out that question after somehow squeezing it out of her lips. No one could answer her, however.</p>
@@ -203,7 +210,7 @@
 <p class="orv_line">I looked at Anna Croft and addressed her. "Anna."</p>
 <p class="orv_line">"I'm still searching."</p>
 <p class="orv_line">Although the page of the future had been ripped away, the events leading up to its disappearance should still remain. Just like how a defective book would still need some time before it got destroyed.</p>
-<div class="orv_system"><p>[Chaos Points are increasing!]</p></div>
+<div class="orv_system"><p>Chaos Points are increasing!</p></div>
 <p class="orv_line">"We can't leisurely wait any longer."</p>
 <p class="orv_line">The first one to fly out of the room was Yoo Joonghyuk.</p>
 <p class="orv_line">Anna Croft's forehead was soaked in sweatdrops as she endeavoured to find the pages of the future. In the end, both Han Sooyoung and I decided to move, as well.</p>
@@ -243,17 +250,17 @@
 <p class="orv_line">She scowled ever so slightly and flew towards the east.</p>
 <p class="orv_line">This punk, I was only worried about her, but even then…</p>
 <p class="orv_line">– You be careful, instead. Idiot.</p>
-<p class="orv_line">The [Midday Tryst] arriving a beat later made me feel a bit strange. Was I overthinking it when I found both Yoo Joonghyuk and Han Sooyoung had changed a lot?</p>
-<div class="orv_system"><p>[Chaos Points are increasing!]</p></div>
-<div class="orv_system"><p>[Current Chaos Points: 86]</p></div>
-<p class="orv_line">I activated [Way of the Wind] and dashed across the air.</p>
-<p class="orv_line">As I was in the middle of [Demon King Transformation], the skill's accelerative force had become truly astonishing. I crossed the sky in an instant and arrived at the origin of the sparks. I began to closely scan the vicinity.</p>
+<p class="orv_line">The <strong>[Midday Tryst]</strong> arriving a beat later made me feel a bit strange. Was I overthinking it when I found both Yoo Joonghyuk and Han Sooyoung had changed a lot?</p>
+<div class="orv_system"><p>Chaos Points are increasing!</p></div>
+<div class="orv_system"><p>Current Chaos Points: 86</p></div>
+<p class="orv_line">I activated <strong>[Way of the Wind]</strong> and dashed across the air.</p>
+<p class="orv_line">As I was in the middle of <strong>[Demon King Transformation]</strong>, the skill's accelerative force had become truly astonishing. I crossed the sky in an instant and arrived at the origin of the sparks. I began to closely scan the vicinity.</p>
 <p class="orv_line">…In hiding, was it?</p>
 <p class="orv_line">Corpses of Reincarnators were strewn about on the battlefield. And there were a handful of terrified survivors that had fallen on their butts, looking at all the dead bodies.</p>
 <p class="orv_line">Without a doubt, someone went on to massacre the people from the same side here.</p>
-<div class="orv_system"><p>[Exclusive skill, 'Reading Comprehension', is activating!]</p></div>
-<div class="orv_system"><p>[Attribute, 'Scenario Interpreter', is activating!]</p></div>
-<div class="orv_system"><p>[Your insight that analyses the situation by collecting circumstantial evidence of the incident has increased!]</p></div>
+<div class="orv_system"><p>Exclusive skill, 'Reading Comprehension', is activating!</p></div>
+<div class="orv_system"><p>Attribute, 'Scenario Interpreter', is activating!</p></div>
+<div class="orv_system"><p>Your insight that analyses the situation by collecting circumstantial evidence of the incident has increased!</p></div>
 <p class="orv_line">I quickly read the fragments of Stories scattered about. I was right about a massacre taking place here. However, I couldn't spot any traces of the culprit running away.</p>
 <p class="orv_line">"S-save us, Demon King-nim!"</p>
 <p class="orv_line">Six remaining Reincarnators knelt down and began prostrating before me. I carefully observed them; most of the six were wounded gravely, blood and Stories continuously pouring out from their bodies.</p>
@@ -262,7 +269,7 @@
 <p class="orv_line">The eyes of the man slowly raising his head up were filled with a certain evil leer. I spoke while meeting those eyes straight-on. "You, are you a 'Seeker of the End'?"</p>
 <p class="orv_line">At that moment, the man desperately lunged at me. But I was already ready for him and easily evaded his attack, before grabbing his neck.</p>
 <p class="orv_line">"Keok, keo-heok…!"</p>
-<div class="orv_system"><p>[Exclusive skill, 'Character List', is activating!]</p></div>
+<div class="orv_system"><p>Exclusive skill, 'Character List', is activating!</p></div>
 <p class="orv_line">As I thought, he was the culprit I was searching for – a Demon King's subordinate. There was no real need to peer deeply into his Attribute Window anymore.</p>
 <p class="orv_line">"You've begun your actions already? But, it shouldn't be the right time yet?"</p>
 <p class="orv_line">The man with his neck grabbed by me formed a disgusting grin.</p>
@@ -271,7 +278,7 @@
 <p class="orv_line">Right, most of the 'Seekers of the End' were like this guy back in the original story, weren't they.</p>
 <p class="orv_line">They believed that there was only one 'Absolute Story' that supported this world, and that every scenario was merely the will of that Story coming to fruition.</p>
 <p class="orv_line">⸢Ke kekeke.⸥</p>
-<p class="orv_line">I heard [the Fourth Wall]'s mocking cackle resound in my head.</p>
+<p class="orv_line">I heard <strong>[the Fourth Wall]</strong>'s mocking cackle resound in my head.</p>
 <p class="orv_line">Without a doubt, these 'Seekers of the End' had no idea that the Story they thought they knew was actually a novel that I had read already.</p>
 <p class="orv_line">⸢It's tr ue that a ll are des tined to be des troy ed.⸥</p>
 <p class="orv_line">'There's no such thing as destiny'.</p>
@@ -283,18 +290,18 @@
 <p class="orv_line">"Do you wish to free the Apocalypse Dragon? You do that, and everything will come to an end. Rather than reaching the end of the Story you've been chasing after, the Story itself will be over, instead."</p>
 <p class="orv_line">The man didn't reply and simply cackled on.</p>
 <p class="orv_line">I sighed out. "Looks like you don't want to answer."</p>
-<div class="orv_system"><p>[Demon King, 'Demon King of Salvation', has unleashed his Status!]</p></div>
+<div class="orv_system"><p>Demon King, 'Demon King of Salvation', has unleashed his Status!</p></div>
 <p class="orv_line">The Reincarnators around us screamed at the ripples of the Status and quickly backed away. The man who received the brunt of my Status head-on shuddered greatly, before blood oozed out from all seven of his orifices.</p>
 <p class="orv_line">I spoke without opening my lips. </p>
-<div class="orv_constellation"><p>[Recite the list of your friends that are participating in this battle.]</p></div>
+<div class="orv_constellation"><p>Recite the list of your friends that are participating in this battle.</p></div>
 <p class="orv_line">Even under the threat of the imposing Status, the man didn't fall into the clutches of fear. No, it was quite the opposite, actually.</p>
 <p class="orv_line">"De, mon King, of, Sal, vation…"</p>
 <p class="orv_line">He began forming an expression of sheer rapturous ecstasy. As blood continued to leak out of his lips, he began speaking in a voice of someone being saved.</p>
 <p class="orv_line">"Kill me! Hurry!! Please kill meeee!"</p>
 <p class="orv_line">I couldn't figure out what the hell was wrong with this guy's head. In any case, I couldn't waste any more time here. If I couldn't extract the list from this guy, then I'd have to personally search around.</p>
 <p class="orv_line">I was about to smash the man's head in without hesitation, but then, a message suddenly floated up.</p>
-<div class="orv_system"><p>[Members from the same camp have…]</p></div>
-<div class="orv_system"><p>[Current Chaos Points: 87]</p></div>
+<div class="orv_system"><p>Members from the same camp have…</p></div>
+<div class="orv_system"><p>Current Chaos Points: 87</p></div>
 <p class="orv_line">Damn it, I forgot that he was also 'Evil'.</p>
 <p class="orv_line">Just as I let go of his neck, the Story leaking out of his seven orifices suddenly increased in volume and his body began rapidly expanding. And then, he began smiling in a bizarre manner.</p>
 <p class="orv_line">… Self-detonation sequence, was it?</p>
@@ -306,18 +313,18 @@
 <p class="orv_line">He lost all signs of vitality in an instant, and died after turning into jet-black ash.</p>
 <p class="orv_line">I studied the Story of light being scattered all around me.</p>
 <p class="orv_line">…Wait, didn't I know that Story already?</p>
-<div class="orv_constellation"><p>[You've forgotten to call for me on such a grand celebration. I'm disappointed, oh, Demon King of Salvation.]</p></div>
+<div class="orv_constellation"><p>You've forgotten to call for me on such a grand celebration. I'm disappointed, oh, Demon King of Salvation.</p></div>
 <p class="orv_line">The moment I heard that true voice, I figured out who it was.</p>
 <p class="orv_line">"Surya!"</p>
 <p class="orv_line">It was the 'Supreme God of Light' Surya.</p>
 <p class="orv_line">He used to be a Constellation of &lt;Vedas&gt; once upon a time, but after the Olympus battle, ended up sharing a 'Giant Story' with us, instead.</p>
-<div class="orv_constellation"><p>[You've achieved an amazing level of Status since the last time I saw you. I heard that you have defeated Indra.]</p></div>
+<div class="orv_constellation"><p>You've achieved an amazing level of Status since the last time I saw you. I heard that you have defeated Indra.</p></div>
 <p class="orv_line">"I simply got lucky."</p>
-<div class="orv_constellation"><p>[True, the absent-minded Indra might come across as a neighbourhood dummy sometimes, but still, he's not someone you can defeat by relying on luck.]</p></div>
+<div class="orv_constellation"><p>True, the absent-minded Indra might come across as a neighbourhood dummy sometimes, but still, he's not someone you can defeat by relying on luck.</p></div>
 <p class="orv_line">Perhaps because he had left &lt;Vedas&gt;, Surya didn't seem all that perturbed while talking about Indra's fate. He scanned the fragments of the 'Seeker of the End' he ended just now, and spoke.</p>
-<div class="orv_constellation"><p>[I was wondering why the Giant Story's state felt off, but now I see that 'Seekers of the End' have shown up in this place.]</p></div>
+<div class="orv_constellation"><p>I was wondering why the Giant Story's state felt off, but now I see that 'Seekers of the End' have shown up in this place.</p></div>
 <p class="orv_line">"Were you aware of them?"</p>
-<div class="orv_constellation"><p>[These bastards had infiltrated &lt;Vedas&gt; once before.]</p></div>
+<div class="orv_constellation"><p>These bastards had infiltrated &lt;Vedas&gt; once before.</p></div>
 <p class="orv_line">…Even &lt;Vedas&gt;?</p>
 <p class="orv_line">Now that I thought about it, I heard somewhere that there was an internal conflict taking place in Vedas before. Maybe the 'Seekers of the End' were responsible for that?</p>
 <p class="orv_line">Tsu-chut, tsu-chuchut!</p>
@@ -325,32 +332,32 @@
 <p class="orv_line">"…It seems that it's been taken care of, more or less. Maybe, there weren't that many who managed to infiltrate this battlefield in the first place."</p>
 <p class="orv_line">Even though the 'Seekers of the End' had made their entrance, this was a rather tame conclusion.</p>
 <p class="orv_line">But, then…</p>
-<div class="orv_system"><p>[Members from the same camp have clashed!]</p></div>
-<div class="orv_system"><p>[Current Chaos Points: 88]</p></div>
+<div class="orv_system"><p>Members from the same camp have clashed!</p></div>
+<div class="orv_system"><p>Current Chaos Points: 88</p></div>
 <p class="orv_line">…What??</p>
 <p class="orv_line">I hurriedly scanned the battlefield, but couldn't see a single spark exploding anywhere. Forget about the same camp this and that, there was no battle taking place at all.</p>
-<div class="orv_system"><p>[Members from the same camp have clashed!]</p></div>
-<div class="orv_system"><p>[Current Chaos Points: 89]</p></div>
+<div class="orv_system"><p>Members from the same camp have clashed!</p></div>
+<div class="orv_system"><p>Current Chaos Points: 89</p></div>
 <p class="orv_line">Even then, the Chaos Points continued to climb higher. A chilling sensation crept down my spine.</p>
 <p class="orv_line">Hang on, could this be…?</p>
-<div class="orv_constellation"><p>[It's not on the surface.]</p></div>
+<div class="orv_constellation"><p>It's not on the surface.</p></div>
 <p class="orv_line">I heard Surya's words and reflexively looked up into the sky.</p>
 <p class="orv_line">More correctly, at the grey-coloured sphere floating up there. Archangels and Demon Kings should be having a conference within it, yet it was rocking viciously to and fro while an incredible amount of sparks exploded from it.</p>
 <p class="orv_line">…A 'Seeker of the End' was in there, too?</p>
-<div class="orv_system"><p>[Members from the same camp have clashed!]</p></div>
-<div class="orv_system"><p>[Current Chaos Points: 90]</p></div>
+<div class="orv_system"><p>Members from the same camp have clashed!</p></div>
+<div class="orv_system"><p>Current Chaos Points: 90</p></div>
 <p class="orv_line">The Chaos Points would climb only when those in the same side fought against each other. But, if such a thing was happening inside that sphere…</p>
-<div class="orv_system"><p>[Atmosphere of the great battlefield is beginning to change!]</p></div>
+<div class="orv_system"><p>Atmosphere of the great battlefield is beginning to change!</p></div>
 <p class="orv_line">Clouds gathered in the sky began spinning into a massive whirlpool.</p>
-<div class="orv_system"><p>[Aura of Calamity at the hottest place in Hell is opening its eyes!]</p></div>
+<div class="orv_system"><p>Aura of Calamity at the hottest place in Hell is opening its eyes!</p></div>
 <p class="orv_line">…God damn it.</p>
 <p class="orv_line">Ku-gugugugu!!</p>
 <p class="orv_line">Even Surya's expression had hardened noticeably.</p>
-<div class="orv_constellation"><p>[It seems that I've come seeking my own grave today.]</p></div>
+<div class="orv_constellation"><p>It seems that I've come seeking my own grave today.</p></div>
 <p class="orv_line">Right then, a message I really didn't want to see floated up.</p>
-<div class="orv_system"><p>[Chaos Points have exceeded 90!]</p></div>
-<div class="orv_system"><p>[Giant Story of Apocalypse is beginning to stir.]</p></div>
-<div class="orv_system"><p>[Giant Story, 'Final Dragon of the Book of Revelation', is getting ready to tell its story!]</p></div>
+<div class="orv_system"><p>Chaos Points have exceeded 90!</p></div>
+<div class="orv_system"><p>Giant Story of Apocalypse is beginning to stir.</p></div>
+<div class="orv_system"><p>Giant Story, 'Final Dragon of the Book of Revelation', is getting ready to tell its story!</p></div>
 <p class="orv_line">An earthquake erupted throughout the entire great battlefield.</p>
 <p class="orv_line">The indescribable despair I felt during the 95th scenario was reviving again.</p>
 <br>
@@ -360,18 +367,12 @@
             <a href="./ch_400"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_402">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="401" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="464" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="400" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="400" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 261: Ep. 49 - The Best at Something, III</title>
     <meta property="og:title" content="Ch 261: Ep. 49 - The Best at Something, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,47 +177,47 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00261.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 261: Ep. 49 - The Best at Something, III</h1></div>
 <p class="orv_line">The moment I heard the system message, the surrounding landscape started to change.</p>
 <p class="orv_line">The Mythical Battlefield. The feature of this Mythical Battlefield was to virtually borrow the stage of a giant story.</p>
-<div class="orv_system"><p>[You have entered the Armageddon battlefield. The game will start after three minutes.]</p></div>
+<div class="orv_system"><p>You have entered the Armageddon battlefield. The game will start after three minutes.</p></div>
 <p class="orv_line">On one side of the sky, a stairway of heaven opened while the other side was a door of hell. If this was real, the archangels of Eden would've flocked to the staircase while the demon kings of the Demon Realm would've come out of the gate of hell.</p>
 <p class="orv_line">Fortunately, there was no such thing. This was a 'hypothetical stage'.</p>
-<div class="orv_constellation"><p>[The constellation 'Guardian of Youths and Travel' is frowning at the familiar stage.]</p></div>
-<div class="orv_system"><p>[The demon king 'Devil of Lust and Wrath' is showing hostility to 'Guardian of Youths and Travel'.]</p></div>
-<div class="orv_system"><p>[Many constellations and demon kings are confronting each other.]</p></div>
+<div class="orv_constellation"><p>The constellation 'Guardian of Youths and Travel' is frowning at the familiar stage.</p></div>
+<div class="orv_system"><p>The demon king 'Devil of Lust and Wrath' is showing hostility to 'Guardian of Youths and Travel'.</p></div>
+<div class="orv_system"><p>Many constellations and demon kings are confronting each other.</p></div>
 <p class="orv_line">…I really hoped it wouldn't be a big deal.</p>
 <p class="orv_line">"It is eerie…"</p>
 <p class="orv_line">Jang Hayoung held his shoulders while looking up at the sky. I heard an eerie sound in the background. I looked at the huge shield that surrounded us. The shield would protect us until the game started.</p>
 <p class="orv_line">"Stay alert. Please check your selected position."</p>
 <p class="orv_line">The party members regained their composure at my words.</p>
 <p class="orv_line">"Who's the tanker?"</p>
-<div class="orv_constellation"><p>[I am.]</p></div>
+<div class="orv_constellation"><p>I am.</p></div>
 <p class="orv_line">The tanker was Samyeongdang, the close range damage dealers were me and the Breaking the Sky Master and the long range damage dealers were Jang Hayoung and Osu. Han Myungoh was the supporter. Finally, the all-rounder was…</p>
 <p class="orv_line">"Yoo Joonghyuk?"</p>
 <p class="orv_line">"He might've fallen somewhere else."</p>
 <p class="orv_line">The Mythical Battlefield depended on where you were summoned from.</p>
-<div class="orv_system"><p>[The helper 'Yoo Joonghyuk' has responded to the summons.]</p></div>
+<div class="orv_system"><p>The helper 'Yoo Joonghyuk' has responded to the summons.</p></div>
 <p class="orv_line">This message appeared so Yoo Joonghyuk should be somewhere on the battlefield.</p>
 <p class="orv_line">Jang Hayoung asked, "Is this game on a battlefield of time and space? I've seen it. If the enemy's stronghold is destroyed…"</p>
 <p class="orv_line">"That's right. Still, it is a bit different."</p>
@@ -241,22 +248,22 @@
 <p class="orv_line">…I had forgotten two of my companions. The Dog Who Threw Himself into the Flames was sniffing around the periphery while the Breaking the Sky Master was lying down like she wasn't interested. I turned my head toward my last hope.</p>
 <p class="orv_line">"Samyeongdang."</p>
 <p class="orv_line">He seemed to be listening to advice from other constellations so he was the only one I could expect anything from.</p>
-<div class="orv_constellation"><p>[I don't understand because you are using difficult words. Uhhh… game… what is this?]</p></div>
+<div class="orv_constellation"><p>I don't understand because you are using difficult words. Uhhh… game… what is this?</p></div>
 <p class="orv_line">Samyeongdang had an incredibly annoyed expression.</p>
-<div class="orv_system"><p>[Some of the constellations of the Korean Peninsula are frustrated with the Bald General of Justice.]</p></div>
+<div class="orv_system"><p>Some of the constellations of the Korean Peninsula are frustrated with the Bald General of Justice.</p></div>
 <p class="orv_line">I never considered that he was an elder. Samyeongdang didn't know the modern game terminology.</p>
-<div class="orv_constellation"><p>[In any case, I just have to kill all of them?]</p></div>
+<div class="orv_constellation"><p>In any case, I just have to kill all of them?</p></div>
 <p class="orv_line">"Yes, it is similar…"</p>
-<div class="orv_constellation"><p>[If that's the case, we'll be the winner! I am your helper!]</p></div>
+<div class="orv_constellation"><p>If that's the case, we'll be the winner! I am your helper!</p></div>
 <p class="orv_line">Samyeongdang started to run while wielding his bamboo stick.</p>
-<div class="orv_system"><p>[The game has started!]</p></div>
+<div class="orv_system"><p>The game has started!</p></div>
 <p class="orv_line">Then the stage's shield was finally lifted.</p>
-<div class="orv_system"><p>[The stats of the players will be automatically adjusted based on the difficulty of the game.]</p></div>
-<div class="orv_system"><p>[In the first round, all participants can only use 10% of their original stats.]</p></div>
-<div class="orv_system"><p>[This penalty will be reduced as the number of rounds increases.]</p></div>
+<div class="orv_system"><p>The stats of the players will be automatically adjusted based on the difficulty of the game.</p></div>
+<div class="orv_system"><p>In the first round, all participants can only use 10% of their original stats.</p></div>
+<div class="orv_system"><p>This penalty will be reduced as the number of rounds increases.</p></div>
 <p class="orv_line">Then in our 'stairway to heaven' side, small angels resembling fairies started to fly.</p>
-<div class="orv_system"><p>[The team's support group is created!]</p></div>
-<div class="orv_system"><p>[The low-grade angels are helping you!]</p></div>
+<div class="orv_system"><p>The team's support group is created!</p></div>
+<div class="orv_system"><p>The low-grade angels are helping you!</p></div>
 <p class="orv_line">The surprised Osu barked at the angels.</p>
 <p class="orv_line">"Hey! Don't bite them. They're on our side. Samyeongdang, wait! Let's go together!"</p>
 <p class="orv_line">It was a rollercoaster from the start. Samyeongdang was in the front line and the Breaking the Sky Master and Osu started sprinting after him. Jang Hayoung and I chased them while Han Myungoh was timid at the back of the party.</p>
@@ -266,81 +273,81 @@
 <p class="orv_line">"Ah, the map changed?"</p>
 <p class="orv_line">We left our main area and a vast plains area unfolded in front of us. Both sides of the plains had a valley and forest respectively. If I remembered correctly, there was the Apocalypse Imoogi on the valley side and the Fallen Seraphim on the forest side. In addition, there were quite a number of monsters that gave a buff effect if they were caught early in the map…</p>
 <p class="orv_line">"Wait a minute! Samyeongdang! Don't go too fast!"</p>
-<div class="orv_constellation"><p>[Believe in me! I'm strong in a war!]</p></div>
+<div class="orv_constellation"><p>Believe in me! I'm strong in a war!</p></div>
 <p class="orv_line">Samyeongdang let out a brilliant true voice and reached into the air.</p>
-<div class="orv_constellation"><p>[Fallen spirits of the Korean Peninsula! Give me the power to win!]</p></div>
+<div class="orv_constellation"><p>Fallen spirits of the Korean Peninsula! Give me the power to win!</p></div>
 <p class="orv_line">Who would give strength to Samyeongdang? Surprisingly, messages were heard.</p>
-<div class="orv_system"><p>[The constellation 'Slumbering Lady of Fine Brocade' is supporting the constellation 'Bald General of Justice'!]</p></div>
-<div class="orv_system"><p>[The constellation 'Last Hero of Hwangsanbeol' is cheering on the constellation 'Bald General of Justice'!]</p></div>
-<div class="orv_system"><p>[The constellation 'King Heungmu the Great' has sponsored 100 coins to the constellation 'Bald General of Justice'!]</p></div>
+<div class="orv_system"><p>The constellation 'Slumbering Lady of Fine Brocade' is supporting the constellation 'Bald General of Justice'!</p></div>
+<div class="orv_system"><p>The constellation 'Last Hero of Hwangsanbeol' is cheering on the constellation 'Bald General of Justice'!</p></div>
+<div class="orv_system"><p>The constellation 'King Heungmu the Great' has sponsored 100 coins to the constellation 'Bald General of Justice'!</p></div>
 <p class="orv_line">It was literally a simple cheer.</p>
-<div class="orv_constellation"><p>[Ohhhhhh!]</p></div>
+<div class="orv_constellation"><p>Ohhhhhh!</p></div>
 <p class="orv_line">Soon after, the enemy appeared in front of him. Every constellation in an incarnation body was holding a weapon.</p>
-<div class="orv_system"><p>[General of Vanara.]</p></div>
-<div class="orv_system"><p>[Poked Out His Eyes.]</p></div>
-<div class="orv_system"><p>[Thunder Eating Bird.]</p></div>
+<div class="orv_system"><p>General of Vanara.</p></div>
+<div class="orv_system"><p>Poked Out His Eyes.</p></div>
+<div class="orv_system"><p>Thunder Eating Bird.</p></div>
 <p class="orv_line">There was a monstrous monkey dressed in armour with golden feathers. In addition, King Oedipus whom I once met… the constellations were encountered seemed to be from the Melledon Industrial Complex.</p>
 <p class="orv_line">It was a party where narrative-grade constellations were mixed. However, there was still a chance of winning because they had less insight into the game.</p>
-<div class="orv_constellation"><p>[Come on, you barbarians!]</p></div>
+<div class="orv_constellation"><p>Come on, you barbarians!</p></div>
 <p class="orv_line">Samyeongdang discovered the enemies and made a sudden attack. His voice was so loud that I felt some expectations for a moment.</p>
 <p class="orv_line">Yes, I didn't know until I saw him fight. On the battlefield where only 10% of stats could be used, I didn't know the strength of Samyeongdang. I couldn't belittle a historical-grade constellation. There were strong people like Cheok Jungyeong among them.</p>
-<div class="orv_constellation"><p>[This Guardian God of Victory will break down this battle formation!]</p></div>
+<div class="orv_constellation"><p>This Guardian God of Victory will break down this battle formation!</p></div>
 <p class="orv_line">Samyeongdang swept the bamboo stick. The confused constellations screamed and an explosion swept through the battlefield. Flesh scattered everywhere. A weapon was broken. Blood scattered from a wound.</p>
-<div class="orv_system"><p>[The first death has occurred!]</p></div>
+<div class="orv_system"><p>The first death has occurred!</p></div>
 <p class="orv_line">Samyeongdang fought well. I looked around at the party members and cried out, "Everyone, run away!"</p>
-<div class="orv_system"><p>[The helper 'Bald General of Justice' was defeated by the helper 'General of Vanara.]</p></div>
-<div class="orv_system"><p>[The industrial complex 'Melledon' team has earned one point.]</p></div>
+<div class="orv_system"><p>The helper 'Bald General of Justice' was defeated by the helper 'General of Vanara.</p></div>
+<div class="orv_system"><p>The industrial complex 'Melledon' team has earned one point.</p></div>
 <br>
 <hr>
 <br>
 <p class="orv_line">"Shit, what was with that monk? Believe in him?"</p>
 <p class="orv_line">Han Myungoh was the fastest when it came to running away. I thought it would be like this but Samyeongdang wasn't just trolling.</p>
-<div class="orv_system"><p>[Samyeongdang's soul is roaming the battlefield.]</p></div>
-<div class="orv_constellation"><p>[Ohhhhh!]</p></div>
+<div class="orv_system"><p>Samyeongdang's soul is roaming the battlefield.</p></div>
+<div class="orv_constellation"><p>Ohhhhh!</p></div>
 <p class="orv_line">The dead soul of Samyeongdang wandered around the battlefield and attacked the constellations coming after us. It was thanks to this that we found a chance to run away. However, the enemy's pursuit was fast.</p>
 <p class="orv_line">The first one chasing us was a huge bird covering the sky. It was the Thunder Eating Bird. If I remembered correctly, the bird's real name was Garuda. He was the mount of Vishnu, one of the three lords of Vedas. His beak changed trajectory in the air and turned towards me.</p>
-<div class="orv_system"><p>[The constellation 'Dog Who Threw Himself into the Flames' is throwing his body to protect you!]</p></div>
+<div class="orv_system"><p>The constellation 'Dog Who Threw Himself into the Flames' is throwing his body to protect you!</p></div>
 <p class="orv_line">At this moment, Osu ran forward. He struck Garuda's big body from the side.</p>
 <p class="orv_line">Grrrr!</p>
 <p class="orv_line">Fortunately, Osu clung onto the feathers of Garuda. Flames rose as Osu barked at us to run away.</p>
 <p class="orv_line">Bark bark! Bark! Yiiiip!</p>
 <p class="orv_line">It was a situation where Osu was clinging to a constellation. It was too late to save him.</p>
-<div class="orv_system"><p>[The helper 'Dog Who Threw Himself into the Flames' has died!]</p></div>
+<div class="orv_system"><p>The helper 'Dog Who Threw Himself into the Flames' has died!</p></div>
 <p class="orv_line">…Dammit. The situation was getting worse. The Breaking the Sky Master was nowhere to be seen. The people left were Jang Hayoung, Han Myungoh and I.</p>
 <p class="orv_line">"I-I'm sorry!"</p>
 <p class="orv_line">Then Han Myungoh suddenly committed an abrupt act. Han Myungoh cut off one of his legs.</p>
-<div class="orv_system"><p>[The character 'Han Myungoh' has activated 'One-Legged Swift Runner Lv. 10'.]</p></div>
+<div class="orv_system"><p>The character 'Han Myungoh' has activated 'One-Legged Swift Runner Lv. 10'.</p></div>
 <p class="orv_line">…Oh, Han Myungoh had that damn stigma. Han Myungoh started running like an ostrich. Yes, it was all over if Han Myungoh got caught so it was better for him to run away. By the way, that skill had already reached level 10.</p>
 <p class="orv_line">"Kim Dokja. Now what…?"</p>
 <p class="orv_line">I blocked Jang Hayoung and immediately jumped into the surrounding grass.</p>
-<div class="orv_system"><p>[You have concealed yourself in the nearby terrain.]</p></div>
-<div class="orv_system"><p>[The effect of the 'bush' means the enemies can't detect you.]</p></div>
+<div class="orv_system"><p>You have concealed yourself in the nearby terrain.</p></div>
+<div class="orv_system"><p>The effect of the 'bush' means the enemies can't detect you.</p></div>
 <p class="orv_line">Grrrrrrr…</p>
 <p class="orv_line">I looked up at Garuda and whispered to Jang Hayoung.</p>
 <p class="orv_line">–We can't fight against them with our current power. We have to aim to win by default due to the other players dropping out. It was important to buy time.</p>
 <p class="orv_line">–…Do you plan to consume time?</p>
 <p class="orv_line">–For now.</p>
 <p class="orv_line">There was something I believed in. It was strange since I thought I was going to win with just this member. Somehow, I had to drag out the time a bit more. At least, until he came.</p>
-<div class="orv_constellation"><p>[The Demon King of Salvation! Where are you?]</p></div>
+<div class="orv_constellation"><p>The Demon King of Salvation! Where are you?</p></div>
 <p class="orv_line">The true voice echoed in front of the bush.</p>
-<div class="orv_constellation"><p>[It has been a while since our ill-fated relationship. Fleeing fate and living in a place like this… the blind prophet couldn't read it.]</p></div>
+<div class="orv_constellation"><p>It has been a while since our ill-fated relationship. Fleeing fate and living in a place like this… the blind prophet couldn't read it.</p></div>
 <p class="orv_line">The humble but arrogant way of speaking made me instantly aware of his identity. After a while, the presence of King Oedipus, the blind and shrewd king appeared in the forest. I knew he had participated in this selection. However, I didn't expect to encounter him so quickly.</p>
-<div class="orv_constellation"><p>[You know that hiding is useless. This blind prophet already knows where you are.]</p></div>
+<div class="orv_constellation"><p>You know that hiding is useless. This blind prophet already knows where you are.</p></div>
 <p class="orv_line">The moment Jang Hayoung's shoulders flinched, I placed a finger to his mouth.</p>
 <p class="orv_line">–Don't worry. He can't read my future with his ability.</p>
 <p class="orv_line">Thus, it was a clear trap. The moment we revealed ourselves, all the nearby constellations would run.</p>
-<div class="orv_constellation"><p>[It isn't too late now. Olympus is still open to you.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon King of Salvation' says to go away and not speak bullshit.]</p></div>
-<div class="orv_constellation"><p>[…How funny.]</p></div>
+<div class="orv_constellation"><p>It isn't too late now. Olympus is still open to you.</p></div>
+<div class="orv_system"><p>The constellation 'Demon King of Salvation' says to go away and not speak bullshit.</p></div>
+<div class="orv_constellation"><p>…How funny.</p></div>
 <p class="orv_line">King Oedipus laughed but his expression was completely stiff.</p>
-<div class="orv_constellation"><p>[I'll see if you can keep staying still.]</p></div>
+<div class="orv_constellation"><p>I'll see if you can keep staying still.</p></div>
 <p class="orv_line">The surrounding constellations started to sweep through the bushes. Their attacks were devastating as they used all types of explosions, acid and fire to damage the nearby bushes. The acidic liquid melted my feet and burned my neck and wrists. However, I held Jang Hayoung's wrists tightly and didn't move.</p>
 <p class="orv_line">A little bit more. Just a bit more.</p>
 <p class="orv_line">The bombardment swept through the area. Fortunately, they didn't seem to have found us. They started gradually moving away from us.</p>
 <p class="orv_line">…Just a bit more. I listened to the sound and estimated their distance. 10 steps, 20 steps, 30 steps… Suddenly, all the explosions disappeared.</p>
 <p class="orv_line">"Run."</p>
 <p class="orv_line">Jang Hayoung and I ran out of the bush. We didn't see any constellations. At this moment, a scream was heard out of nowhere. It was a long and terrible scream. In the distant sky, a bird was falling down with a giant sword through its neck.</p>
-<div class="orv_system"><p>[The helper 'Thunder Eating Bird' has been killed!]</p></div>
+<div class="orv_system"><p>The helper 'Thunder Eating Bird' has been killed!</p></div>
 <p class="orv_line">…He came.</p>
 <br>
 <hr>
@@ -349,18 +356,12 @@
             <a href="./ch_260"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_262">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="261" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="334" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="260" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="260" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

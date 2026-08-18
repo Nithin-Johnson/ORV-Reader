@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 96: Ep. 19 – Singularity, IV</title>
     <meta property="og:title" content="Ch 96: Ep. 19 – Singularity, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00096.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 96: Ep. 19 – Singularity, IV</h1></div>
 <p class="orv_line">That night, the child didn't die. Yoo Sangah didn't want to kill her and I agreed.</p>
@@ -198,15 +205,15 @@
 <p class="orv_line">"Dokja-ssi, do you know this with your ability?"</p>
 <p class="orv_line">"It is something similar."</p>
 <p class="orv_line">I recalled a sentence from Ways of Survival.</p>
-<div class="orv_quote"><p>「 The final disaster of the fifth scenario. The Disaster of Floods is the most dangerous and saddest disaster. 」</p></div>
+<div class="orv_quote"><p>The final disaster of the fifth scenario. The Disaster of Floods is the most dangerous and saddest disaster.</p></div>
 <p class="orv_line">Yoo Sangah bit her lips and asked, "Is she the same as the Disaster of Questions?"</p>
 <p class="orv_line">"It is similar but a bit different."</p>
 <p class="orv_line">The Disaster of Floods. If she used all her strength, she would be an unmatched disaster compared to the Disaster of Questions. The Disaster of Questions would just affect Gangdong-gu but the Disaster of Floods was different. With her power, Seoul would be wiped out in less than an hour.</p>
 <p class="orv_line">"No matter how I look, she doesn't seem like a disaster. Can this kid become a disaster in just five days?" Yoo Sangah wondered.</p>
 <p class="orv_line">In fact, Yoo Sangah was right. Right now, the child wasn't a disaster.</p>
-<div class="orv_system"><p>[The exclusive skill, Character List is activated.]</p></div>
+<div class="orv_system"><p>The exclusive skill, Character List is activated.</p></div>
 <div class="orv_window">
-<h3 class="orv_window_title">[Character Summary]</h3>
+<h3 class="orv_window_title">Character Summary</h3>
 <p>Name: Shin Yoosung</p>
 <p>Age: 11 years old</p>
 <p>Sponsor: None (Two constellations are currently showing interest in this person).</p>
@@ -252,9 +259,9 @@
 <p class="orv_line">"If you hadn't killed him then the Delusional Demon Kim Namwoon could've…"</p>
 <p class="orv_line">Unfortunately, this time there wasn't the Delusional Demon to kill the young Shin Yoosung.</p>
 <p class="orv_line">"I certainly said that I am opposed to it. I warn you, do you think I will do nothing?"</p>
-<div class="orv_system"><p>[Some constellations dislike the burning of the sweet potatoes.]</p></div>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is getting out some cider to go with the sweet potatoes.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' expects your wise judgment.]</p></div>
+<div class="orv_system"><p>Some constellations dislike the burning of the sweet potatoes.</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is getting out some cider to go with the sweet potatoes.</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' expects your wise judgment.</p></div>
 <p class="orv_line">Perhaps this conversation wasn't properly filtered. The filtering of future information was slowly loosening up…</p>
 <p class="orv_line">Yoo Sangah sighed after talking to Shin Yoosung and came this way. "Dokja-ssi, you can't think about it."</p>
 <p class="orv_line">Her face was desperate.</p>
@@ -289,14 +296,14 @@
 <p class="orv_line">"Why?"</p>
 <p class="orv_line">"I am already a bad person."</p>
 <p class="orv_line">She didn't have to tell me why. I already knew how Shin Yoosung was able to survive in this world.</p>
-<div class="orv_system"><p>[Your understanding of the character 'Shin Yoosung' has increased.]</p></div>
-<div class="orv_system"><p>[Exclusive skill, Omniscient Reader's Viewpoint stage 2 has been activated!]</p></div>
-<div class="orv_quote"><p>「 I killed him. 」</p></div>
+<div class="orv_system"><p>Your understanding of the character 'Shin Yoosung' has increased.</p></div>
+<div class="orv_system"><p>Exclusive skill, Omniscient Reader's Viewpoint stage 2 has been activated!</p></div>
+<div class="orv_quote"><p>I killed him.</p></div>
 <p class="orv_line">She killed her dog in order to survive the first scenario.</p>
-<div class="orv_quote"><p>「 I'm sorry. 」</p></div>
+<div class="orv_quote"><p>I'm sorry.</p></div>
 <p class="orv_line">She stole a coat from an old man who collapsed from an attack. She killed a woman who always looked after her to protect her own green zone. She handed over a person chased by someone in order to get food.</p>
 <p class="orv_line">In this world, everyone was forced to commit crimes. Not everyone could rationalize such things.</p>
-<div class="orv_quote"><p>「 I will be punished. It isn't worth living. 」</p></div>
+<div class="orv_quote"><p>I will be punished. It isn't worth living.</p></div>
 <p class="orv_line">Determination filled the child's frightened eyes. The expression of a person determined to die was no different for an adult or a child.</p>
 <p class="orv_line">"You can kill me. I'm ready."</p>
 <p class="orv_line">If I was the protagonist of this story, I would've killed Shin Yoosung without hesitation. However, I was a reader. A reader had to make a reader's choice.</p>
@@ -304,8 +311,8 @@
 <p class="orv_line">Yoo Joonghyuk's regression would have no meaning if I killed this child. He was fighting to change the past. If someone killed another person because the future was fixed, what did this suggest?</p>
 <p class="orv_line">Thus, I would prevent this child's death for Yoo Joonghyuk.</p>
 <p class="orv_line">Her eyes shook.</p>
-<div class="orv_system"><p>[The character 'Shin Yoosung' feels a faint loyalty to you.]</p></div>
-<div class="orv_system"><p>[Your understanding of the character 'Shin Yoosung' has increased.]</p></div>
+<div class="orv_system"><p>The character 'Shin Yoosung' feels a faint loyalty to you.</p></div>
+<div class="orv_system"><p>Your understanding of the character 'Shin Yoosung' has increased.</p></div>
 <p class="orv_line">"But I must die…"</p>
 <p class="orv_line">"There is a way to stop the disaster."</p>
 <p class="orv_line">I could hear Han Sooyoung sighing behind me. By her side, Yoo Sangah was watching with tightly closed lips.</p>
@@ -313,10 +320,10 @@
 <p class="orv_line">In the first place, the ending I wanted was impossible. Yet if I changed small impossible things one by one, I might end up changing it to the impossible ending. Shin Yoosung would be one of the small cornerstones of this impossible story.</p>
 <p class="orv_line">I immediately opened the Dokkaebi Bag and bought a few items. Shin Yoosung muttered without any confidence, "What can I do? I don't have a sponsor."</p>
 <p class="orv_line">"Why does it matter if you don't have a sponsor?"</p>
-<div class="orv_system"><p>[You have sponsored the 'Growth Package I' to the incarnation 'Shin Yoosung'.]</p></div>
+<div class="orv_system"><p>You have sponsored the 'Growth Package I' to the incarnation 'Shin Yoosung'.</p></div>
 <p class="orv_line">Shin Yoosung's mouth dropped open.</p>
-<div class="orv_system"><p>[You have sponsored the 'Growth Package II' to the incarnation 'Shin Yoosung'.]</p></div>
-<div class="orv_system"><p>[You have sponsored the 'New Scenario Commemorative Package' to the incarnation 'Shin Yoosung'.]</p></div>
+<div class="orv_system"><p>You have sponsored the 'Growth Package II' to the incarnation 'Shin Yoosung'.</p></div>
+<div class="orv_system"><p>You have sponsored the 'New Scenario Commemorative Package' to the incarnation 'Shin Yoosung'.</p></div>
 <p class="orv_line">…</p>
 <p class="orv_line">The messages continued rising. Shin Yoosung paled.</p>
 <p class="orv_line">"W-What is this?"</p>
@@ -332,18 +339,12 @@
             <a href="./ch_95"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_97">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="96" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="172" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="95" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="95" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

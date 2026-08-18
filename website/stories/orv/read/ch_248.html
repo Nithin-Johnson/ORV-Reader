@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 248: Ep. 47 - Demon King Selection, II</title>
     <meta property="og:title" content="Ch 248: Ep. 47 - Demon King Selection, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00248.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 248: Ep. 47 - Demon King Selection, II</h1></div>
 <p class="orv_line">There were two types of 'disaster scenarios' in the Star Stream. The first was the apocalypse scenarios named after the relevant nebulae and had become a type of myth, such as Ragnarok and Gigantomachia.</p>
@@ -207,13 +214,13 @@
 <p class="orv_line">The 'destruction scenario' was a scenario that tested the possibilities of the incarnations. If the accumulated probability value was never filled up, the 'disaster' would never begin. In this Blue Dragon Castle, there was only one thing that recently triggered probability.</p>
 <p class="orv_line">The Breaking the Sky Sword Saint opened her mouth. "It was the martial arts competition."</p>
 <p class="orv_line">The martial arts competition. The probability that the Brash Swamp Predator and other constellations used eventually triggered the disaster.</p>
-<div class="orv_system"><p>[A few constellations who dislike you are enjoying the situation.]</p></div>
+<div class="orv_system"><p>A few constellations who dislike you are enjoying the situation.</p></div>
 <p class="orv_line">Damn bastards.</p>
 <p class="orv_line">"Kim Dokja. What the hell did you do there?"</p>
 <p class="orv_line">Yoo Joonghyuk didn't know exactly what happened at the Gourmet Association and was angry at me. I had no excuses. There was no way to reverse a scenario that had already begun.</p>
-<div class="orv_system"><p>[In a few moments, the destruction scenario will begin!]</p></div>
-<div class="orv_system"><p>[The 'Outer God' is preparing to attack!]</p></div>
-<div class="orv_system"><p>[All non-participants in the scenario should quickly leave the scenario area!]</p></div>
+<div class="orv_system"><p>In a few moments, the destruction scenario will begin!</p></div>
+<div class="orv_system"><p>The 'Outer God' is preparing to attack!</p></div>
+<div class="orv_system"><p>All non-participants in the scenario should quickly leave the scenario area!</p></div>
 <p class="orv_line">The messages were heard from the sky and a disturbance began in the Blue Dragon Castle.</p>
 <p class="orv_line">"Crazy! What is this?"</p>
 <p class="orv_line">"Hurry and flee!"</p>
@@ -227,15 +234,15 @@
 <p class="orv_line">I was overwhelmed by the terrible presence that permeated the syllables. The colossal greed caused the escaping people to collapse and piss themselves.</p>
 <p class="orv_line">"U-Uwaaaaah!"</p>
 <p class="orv_line">It was huge chaos that disrupted the spirit just from the true voice. Of course, it was unreasonable to confront such a person, no matter how strong Yoo Joonghyuk was. Even a weak outer god had the power to trample on constellations. It was hard to expect a chance using the Fourth Wall like I did with the Devourer of Dreams.</p>
-<div class="orv_system"><p>[There are 30 minutes until the start of the destruction scenario.]</p></div>
+<div class="orv_system"><p>There are 30 minutes until the start of the destruction scenario.</p></div>
 <p class="orv_line">We had to run away from here. Maybe that was the better choice.</p>
 <p class="orv_line">"Breaking the Sky Sword Saint."</p>
 <p class="orv_line">I gazed at the Breaking the Sky Sword Saint and she was looking back at me. It was an unfathomable expression.</p>
-<div class="orv_quote"><p>「 To the Breaking the Sky Sword Namgung Minyoung, the First Murim was home. 」</p></div>
+<div class="orv_quote"><p>To the Breaking the Sky Sword Namgung Minyoung, the First Murim was home.</p></div>
 <p class="orv_line">All I knew were the sentences written in Ways of Survival. According to those sentences, there was no reason for the Breaking the Sky Sword Saint to defend this place.</p>
-<div class="orv_quote"><p>「 Of course, not everyone likes their 'home'. 」</p></div>
+<div class="orv_quote"><p>Of course, not everyone likes their 'home'.</p></div>
 <p class="orv_line">To her, the First Murim was just the breeding ground of a corrupt world. It was a world that lost recognition and compassion.</p>
-<div class="orv_quote"><p>「 "Murim was already destroyed long before the First Murim was destroyed. 」</p></div>
+<div class="orv_quote"><p>"Murim was already destroyed long before the First Murim was destroyed.</p></div>
 <p class="orv_line">So far, there was no reason for the Breaking the Sky Sword Saint to stay here. The First Murim would perish. To be exact, it had to perish.</p>
 <p class="orv_line">"Teacher." Yoo Joonghyuk's voice pushed for us to leave.</p>
 <p class="orv_line">Then why didn't the Breaking the Sky Sword Saint move? She stood like a mountain as she silently stared at the street across from her. The city was chaotic from rioting and desertion. Then I saw a group of people approaching. They were those who were looking at transcendence or had seen transcendence.</p>
@@ -271,8 +278,8 @@
 <p class="orv_line">"T-That…"</p>
 <p class="orv_line">"If you had any thoughts, you wouldn't have come here. I don't know if you're brave or stupid. Don't you know why the Breaking the Sky Sword Saint split apart from your Namgung Family?"</p>
 <p class="orv_line">A child born between a giant god and a human. I knew better than anyone the trials that the Breaking the Sky Sword Saint experienced as she grew up, perhaps even more than Yoo Joonghyuk.</p>
-<div class="orv_quote"><p>「 How is a female…! 」</p></div>
-<div class="orv_quote"><p>「 It is the cursed blood of the giant gods. 」</p></div>
+<div class="orv_quote"><p>How is a female…!</p></div>
+<div class="orv_quote"><p>It is the cursed blood of the giant gods.</p></div>
 <p class="orv_line">The Breaking the Sky Sword Saint made a questionable face. She must be wondering why I knew these things. Usually, it would be a dangerous remark but now her question was beneficial for me. She would follow me in order to resolve this question.</p>
 <p class="orv_line">"What do you know…?!"</p>
 <p class="orv_line">"Shut up! Breaking the Sky Sword Saint, who is this person?"</p>
@@ -288,9 +295,9 @@
 <p class="orv_line">Murim had died a long time ago. The Breaking the Sky Sword Saint had declared it just now. "Let's go."</p>
 <p class="orv_line">The god of Murim turned her back and betrayed this world. It seemed easier to resolve than I expected. I was satisfied and followed after the Breaking the Sky Sword Saint. Yoo Joonghyuk was watching me while Jang Hayoung and Han Myungoh packed quickly as they ate dumplings.</p>
 <p class="orv_line">At this moment, a strange message was heard.</p>
-<div class="orv_system"><p>[Your actions have had a profound impact on the direction of ■■.]</p></div>
+<div class="orv_system"><p>Your actions have had a profound impact on the direction of ■■.</p></div>
 <p class="orv_line">…What?</p>
-<div class="orv_system"><p>[The 'second revision' update will begin.]</p></div>
+<div class="orv_system"><p>The 'second revision' update will begin.</p></div>
 <br>
 <hr>
         </article>
@@ -298,18 +305,12 @@
             <a href="./ch_247"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_249">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="248" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="317" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="247" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="247" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

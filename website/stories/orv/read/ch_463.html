@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 463: Ep. 88 - Myth-grade Constellation, I</title>
     <meta property="og:title" content="Ch 463: Ep. 88 - Myth-grade Constellation, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00463.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 463: Ep. 88 - Myth-grade Constellation, I</h1></div>
 <p class="orv_line">Uriel's mood wasn't so good.</p>
@@ -199,50 +206,50 @@
 <p class="orv_line">She knew that versions of herself existed in other worldlines. But, she didn't expect the experiences of knowing it and meeting one would be this different.</p>
 <p class="orv_line">The 999th regression turn's worldline.</p>
 <p class="orv_line">Just what exactly did she do in that world?</p>
-<div class="orv_constellation"><p>[…Urgh, so irritating. I'm not curious about the stories of another worldline. Trying to follow the stories of my kids alone is plenty hard enough already.]</p></div>
+<div class="orv_constellation"><p>…Urgh, so irritating. I'm not curious about the stories of another worldline. Trying to follow the stories of my kids alone is plenty hard enough already.</p></div>
 <p class="orv_line">Uriel grumbled while hugging her head.</p>
 <p class="orv_line">Besides, the &lt;Star Stream&gt;'s atmosphere seemed rather unsettled lately. As the Final Scenario approached, this vague, strange sense of tension circulated among all the Constellations. So much so that a groundless rumour of the Bureau abandoning this worldline was doing the rounds, too.</p>
-<div class="orv_system"><p>[&lt;Bureau&gt; has summoned the Constellation, 'Demon-like Judge of Fire'-nim!]</p></div>
-<div class="orv_system"><p>[Will you answer the summon?]</p></div>
+<div class="orv_system"><p>&lt;Bureau&gt; has summoned the Constellation, 'Demon-like Judge of Fire'-nim!</p></div>
+<div class="orv_system"><p>Will you answer the summon?</p></div>
 <p class="orv_line">Uriel's head shot up after hearing that sudden message.</p>
 <p class="orv_line">…Why, with such a timing?</p>
 <p class="orv_line">She pondered for a moment, before tapping on the 'confirm' button. When she did, she was transported to another location along with blinding rays of light.</p>
-<div class="orv_system"><p>[Transmission is complete.]</p></div>
+<div class="orv_system"><p>Transmission is complete.</p></div>
 <p class="orv_line">The place she arrived in was an unfamiliar empty field. Besides her, other Constellations had arrived there before her.</p>
-<div class="orv_constellation"><p>[What's this, Gabriel? You're also here?]</p></div>
-<div class="orv_constellation"><p>[The Bureau will spam you with messages if you refuse their call, after all.]</p></div>
+<div class="orv_constellation"><p>What's this, Gabriel? You're also here?</p></div>
+<div class="orv_constellation"><p>The Bureau will spam you with messages if you refuse their call, after all.</p></div>
 <p class="orv_line">She looked around and spotted several dozen Constellations gathering here. Just like her, many seemed to be curious about why they had been summoned. Even if the Bureau was a bunch of thugs, they wouldn't summon them here without a reason.</p>
 <p class="orv_line">Not only that, she recognised a few familiar faces, too. Such as a short height with bandages tightly wrapped around in one arm…</p>
-<div class="orv_constellation"><p>[Oh my gosh, oh my gosh! Isn't this our little Flame Dragon?!]</p></div>
+<div class="orv_constellation"><p>Oh my gosh, oh my gosh! Isn't this our little Flame Dragon?!</p></div>
 <p class="orv_line">Uriel dashed towards the figure of the Abyssal Black Flame Dragon and performed a head-lock.</p>
 <div class="orv_image"><img src="../../../assets/images/463 - Uriel dashed towards the figure of the Abyssal Black Flame Dragon and performed a head-lock.jpg" alt="" loading="lazy"></div>
 <div class="orv_notice"><p>* Official novel illustration (canonical)</p></div>
-<div class="orv_constellation"><p>[Keuk! An enemy's sneak attack?!]</p></div>
-<div class="orv_constellation"><p>[It's me, your Archangel noonim.]</p></div>
-<div class="orv_constellation"><p>[Release me at once!]</p></div>
+<div class="orv_constellation"><p>Keuk! An enemy's sneak attack?!</p></div>
+<div class="orv_constellation"><p>It's me, your Archangel noonim.</p></div>
+<div class="orv_constellation"><p>Release me at once!</p></div>
 <p class="orv_line">Abyssal Dragon freaked out and struggled inside Uriel's 'embrace'.</p>
 <p class="orv_line">While watching that spectacle unfold, Gabriel muttered out.</p>
-<div class="orv_constellation"><p>[…Uriel, that guy is an 'Absolute Evil', you know.]</p></div>
-<div class="orv_constellation"><p>[Who cares. &lt;Eden&gt; is destroyed, anyway. We should be friends with one another.]</p></div>
+<div class="orv_constellation"><p>…Uriel, that guy is an 'Absolute Evil', you know.</p></div>
+<div class="orv_constellation"><p>Who cares. &lt;Eden&gt; is destroyed, anyway. We should be friends with one another.</p></div>
 <p class="orv_line">The Nebula &lt;Eden&gt; was almost completely wiped out at the end of the prior 'Great War of Saints and Demons'. Most of the once-powerful Archangel army was decimated, and the only Archangels that could move were Uriel and Gabriel.</p>
 <p class="orv_line">The former stopped thinking about the bitter matters and scanned her vicinity. </p>
-<div class="orv_constellation"><p>[Hey, that's the Goryeo's First Sword, isn't he?]</p></div>
+<div class="orv_constellation"><p>Hey, that's the Goryeo's First Sword, isn't he?</p></div>
 <p class="orv_line">Not only him, but also the Korean Peninsula's Constellations that included 'Bald General of Justice', 'First Sorcerer of Joseon', and even 'Last Hero of Hwangsanbeol'; Nebulas such as &lt;Olympus&gt;, plus a host of Constellations and even Surya could be seen.</p>
 <p class="orv_line">Uriel's eyes moved about even more urgently than before.</p>
 <p class="orv_line">The more she spotted familiar Constellations, the greater the foreboding grew. Every Constellation gathered here, they all had one thing in common.</p>
 <p class="orv_line">The Abyssal Dragon finally managed to extract himself from her grasp and muttered loudly. </p>
-<div class="orv_constellation"><p>[…Everyone here is from Kim Dokja's channel.]</p></div>
+<div class="orv_constellation"><p>…Everyone here is from Kim Dokja's channel.</p></div>
 <p class="orv_line">He was right; Everyone gathered here, they…</p>
 <p class="orv_line">…Pah-chuchut!</p>
 <p class="orv_line">Right then, Uriel's perception picked up on the movement of a threatening Status. Beings were surrounding this empty field. Each and every one of them possessed more than enough Status to almost rival a Narrative-grade Constellation.</p>
 <p class="orv_line">Uriel and her quick wits immediately saw through their identity.</p>
-<div class="orv_constellation"><p>[…&lt;Papyrus&gt;, &lt;Vedas&gt;, and even &lt;Emperor&gt;. What is the meaning of this? To think that you lot with plenty of bad blood between you would unite like this.]</p></div>
+<div class="orv_constellation"><p>…&lt;Papyrus&gt;, &lt;Vedas&gt;, and even &lt;Emperor&gt;. What is the meaning of this? To think that you lot with plenty of bad blood between you would unite like this.</p></div>
 <p class="orv_line">Uriel spoke up, feeling slightly tense. Even if it was her, fighting off against this many Narrative-grade Constellations was asking for too much. Not only that…</p>
-<div class="orv_constellation"><p>[Even a bum-heavy geezer, too… What brings an existence from the 'Final Scenario' here?]</p></div>
+<div class="orv_constellation"><p>Even a bum-heavy geezer, too… What brings an existence from the 'Final Scenario' here?</p></div>
 <p class="orv_line">She was sure of it; the goosebumps rising up on her arms were proof of the incredibly powerful being's existence hiding nearby.</p>
 <p class="orv_line">Even if the &lt;Star Stream&gt; was vast, there were only a handful of beings possessing this level of Status. She glanced to the side and noticed that even the 'Abyssal Black Flame Dragon' was making a visibly hardened expression.</p>
 <p class="orv_line">There was no doubt – this creature, it was…</p>
-<div class="orv_constellation"><p>[Is everyone here?]</p></div>
+<div class="orv_constellation"><p>Is everyone here?</p></div>
 <p class="orv_line">…A true Myth-grade Constellation.</p>
 <p class="orv_line">Tsu-chuchuchuchut!</p>
 <p class="orv_line">The moment that true voice rang out, the surrounding air suddenly changed. It felt as if the oxygen floating around was ignited instantly.</p>
@@ -250,74 +257,74 @@
 <p class="orv_line">…Why was a 'Myth-grade Constellation' here?</p>
 <p class="orv_line">With the very rare exceptions like the King of the Underworld, Metatron or the Great Sage, the majority of 'Myth-grade Constellations' didn't interfere with the matters of lower-ranked scenarios. Because they were beings that had already completed their 'Conclusion' and placed their names on the candidate list for the 'One Single Story'.</p>
 <p class="orv_line">They had already reached the Final Scenario, and their Stories had been guaranteed.</p>
-<div class="orv_constellation"><p>[Looks like the monkey bastard and the King of the Underworld are the only absentees. However, it's not possible to delay any further, so I shall start with the explanation.]</p></div>
-<div class="orv_constellation"><p>[Hold up!]</p></div>
-<div class="orv_system"><p>[Constellation, 'Midday Sun' is looking at 'Demon-like Judge of Fire'.]</p></div>
+<div class="orv_constellation"><p>Looks like the monkey bastard and the King of the Underworld are the only absentees. However, it's not possible to delay any further, so I shall start with the explanation.</p></div>
+<div class="orv_constellation"><p>Hold up!</p></div>
+<div class="orv_system"><p>Constellation, 'Midday Sun' is looking at 'Demon-like Judge of Fire'.</p></div>
 <p class="orv_line">The moment she met that gaze, Uriel realized who the owner of that true voice was.</p>
 <p class="orv_line">There were many 'suns' to be found within the &lt;Star Stream&gt;. However, suns that occupied the centre of the universe were extremely rare even among them. Especially so, if it was an existence that occupied the 'midday' smack-bang in the middle of time itself…</p>
-<div class="orv_constellation"><p>[God of the Sun, Ra. Did you summon us here?]</p></div>
+<div class="orv_constellation"><p>God of the Sun, Ra. Did you summon us here?</p></div>
 <p class="orv_line">He was none other than Ra, the top Constellation of the great Nebula, &lt;Papyrus&gt;.</p>
-<div class="orv_constellation"><p>[Correct.]</p></div>
-<div class="orv_constellation"><p>[How odd. I thought that the 'Bureau' called us here?]</p></div>
+<div class="orv_constellation"><p>Correct.</p></div>
+<div class="orv_constellation"><p>How odd. I thought that the 'Bureau' called us here?</p></div>
 <p class="orv_line">Ra didn't reply to her.</p>
 <p class="orv_line">Actually, Uriel could sense a presence of a Great Dokkaebi among all the others surrounding her. She decided to calmly respond for now. If that side really chose to align themselves with the Bureau even at the exorbitant loss of their Probability, then this situation couldn't be described as good at all.</p>
-<div class="orv_constellation"><p>[Okay, so. Shall we hear what's so important that you're even willing to expose your cosy relationship with the Bureau?]</p></div>
-<div class="orv_constellation"><p>[I've summoned you here because of the 'Final Scenario'. Soon, the 'One Single Story' will be chosen. Meaning, the story that will represent this worldline will be decided.]</p></div>
+<div class="orv_constellation"><p>Okay, so. Shall we hear what's so important that you're even willing to expose your cosy relationship with the Bureau?</p></div>
+<div class="orv_constellation"><p>I've summoned you here because of the 'Final Scenario'. Soon, the 'One Single Story' will be chosen. Meaning, the story that will represent this worldline will be decided.</p></div>
 <p class="orv_line">The One Single Story.</p>
 <p class="orv_line">There was not one Constellation present that didn't know what that was. Even  &lt;Kim Dokja's Company&gt; they had been watching until now was a Nebula creating their own One Single Story, after all.</p>
-<div class="orv_constellation"><p>[Okay? What's that got to do with us?]</p></div>
-<div class="orv_constellation"><p>[Most of you have not earned the right of the 'Final Scenario'. However, it'll be a different story if you side with me. I shall take you to the 'Final Scenario'. Meaning, I shall give you an opportunity to place your Modifiers on the 'One Single Story'.]</p></div>
+<div class="orv_constellation"><p>Okay? What's that got to do with us?</p></div>
+<div class="orv_constellation"><p>Most of you have not earned the right of the 'Final Scenario'. However, it'll be a different story if you side with me. I shall take you to the 'Final Scenario'. Meaning, I shall give you an opportunity to place your Modifiers on the 'One Single Story'.</p></div>
 <p class="orv_line">That proposition caused the eyes of a few Constellations to rock visibly. Most of them were unaffiliated Historical-grades.</p>
 <p class="orv_line">Uriel observed Ra for a moment there before breaking out in a smirk. </p>
-<div class="orv_constellation"><p>[What the hell, that's it? It wasn't anything important, so if you're done talking, I'm leaving.]</p></div>
+<div class="orv_constellation"><p>What the hell, that's it? It wasn't anything important, so if you're done talking, I'm leaving.</p></div>
 <p class="orv_line">She turned around, but couldn't take another step. An incredibly powerful Status had rooted her to the spot.</p>
-<div class="orv_constellation"><p>[…What's the meaning of this?]</p></div>
-<div class="orv_constellation"><p>[I haven't finished talking yet.]</p></div>
-<div class="orv_constellation"><p>[But, I can already guess what you're about to say without hearing it?]</p></div>
+<div class="orv_constellation"><p>…What's the meaning of this?</p></div>
+<div class="orv_constellation"><p>I haven't finished talking yet.</p></div>
+<div class="orv_constellation"><p>But, I can already guess what you're about to say without hearing it?</p></div>
 <p class="orv_line">Uriel's true voice carried a sharp edge. Only the Constellations from the channel BY-9158 and not any others were brought here. And the one who gathered them was none other than the top Constellation of &lt;Papyrus&gt;.</p>
-<div class="orv_constellation"><p>[You're about to propose that we attack &lt;Kim Dokja's Company&gt;, right?]</p></div>
+<div class="orv_constellation"><p>You're about to propose that we attack &lt;Kim Dokja's Company&gt;, right?</p></div>
 <p class="orv_line">For a very short moment there, silence dominated the proceedings.</p>
-<div class="orv_constellation"><p>[…Why do you think that?]</p></div>
-<div class="orv_constellation"><p>[Because they earned the qualification of the 'Final Scenario', that's why. And eliminating them naturally would lead to one of the strongest candidates for the 'One Single Story' exiting the picture.]</p></div>
+<div class="orv_constellation"><p>…Why do you think that?</p></div>
+<div class="orv_constellation"><p>Because they earned the qualification of the 'Final Scenario', that's why. And eliminating them naturally would lead to one of the strongest candidates for the 'One Single Story' exiting the picture.</p></div>
 <p class="orv_line">Visible turmoil spread among the Constellations. Uriel sensed the Statuses of the Constellations surrounding them get agitated as well.</p>
 <p class="orv_line">She snorted derisively.</p>
-<div class="orv_constellation"><p>[Really now, you lot called Constellations just don't change even until the end, no? And also, Ra. You have already reached the Final Scenario, so interfering in the lower scenario like this is really petty, you know. Zeus, and even you…]</p></div>
-<div class="orv_constellation"><p>[…]</p></div>
-<div class="orv_constellation"><p>[Are you by any chance worried about your kids? You angry that your offsprings that inherited your Story couldn't win against a fledgling Nebula and failed to become the candidates of the 'One Final Story', and…]</p></div>
+<div class="orv_constellation"><p>Really now, you lot called Constellations just don't change even until the end, no? And also, Ra. You have already reached the Final Scenario, so interfering in the lower scenario like this is really petty, you know. Zeus, and even you…</p></div>
+<div class="orv_constellation"><p>…</p></div>
+<div class="orv_constellation"><p>Are you by any chance worried about your kids? You angry that your offsprings that inherited your Story couldn't win against a fledgling Nebula and failed to become the candidates of the 'One Final Story', and…</p></div>
 <p class="orv_line">There was an incredible explosion, and Uriel's figure was buried deep into the ground. As she spat out a slew of expletives, Ra's true voice entered her ears.</p>
-<div class="orv_constellation"><p>[Fu■, what the hell…]</p></div>
-<div class="orv_constellation"><p>[Indeed, you're correct. This is the rage of a parent who didn't educate his children properly. This is the righteous rage of a parent who couldn't sit still and watch his children's future go astray because of pathetic losers who gave up on their Conclusions, and a little Nebula not even a decade old.]</p></div>
+<div class="orv_constellation"><p>Fu■, what the hell…</p></div>
+<div class="orv_constellation"><p>Indeed, you're correct. This is the rage of a parent who didn't educate his children properly. This is the righteous rage of a parent who couldn't sit still and watch his children's future go astray because of pathetic losers who gave up on their Conclusions, and a little Nebula not even a decade old.</p></div>
 <p class="orv_line">As if she was already expecting that, Uriel shouted back.</p>
-<div class="orv_constellation"><p>[And you finally reveal your true colours. Sorry, but there are no Constellations here who will side with your kids. Looks like you don't know whose channel we're subscribers of.]</p></div>
+<div class="orv_constellation"><p>And you finally reveal your true colours. Sorry, but there are no Constellations here who will side with your kids. Looks like you don't know whose channel we're subscribers of.</p></div>
 <p class="orv_line">The Abyssal Dragon and Gabriel reached out and helped Uriel out of the crater. Behind them, the Korean Peninsula's Constellations, including Goryeo's First Sword and Bald General, were nodding their heads.</p>
 <p class="orv_line">Uriel felt this inexplicable sense of contentment after meeting their gazes. Right now, here in this place, folks that cheered on someone's Story in one heart had gathered.</p>
 <p class="orv_line">From the start of the first scenario, the 'proof of credentials', all the way to the 'Final Scenario' where the fate of the worldline was to be decided.</p>
 <p class="orv_line">Uriel couldn't be certain that everyone here thought the same as her. However, without a doubt, someone among these people must've loved &lt;Kim Dokja's Company&gt;'s Story more than their own. Just like she did.</p>
-<div class="orv_constellation"><p>[And that is why you're all losers.]</p></div>
-<div class="orv_constellation"><p>[What?]</p></div>
-<div class="orv_constellation"><p>[Have you all lost yourselves to voyeurism and forgotten that you are also a part of the scenario?]</p></div>
+<div class="orv_constellation"><p>And that is why you're all losers.</p></div>
+<div class="orv_constellation"><p>What?</p></div>
+<div class="orv_constellation"><p>Have you all lost yourselves to voyeurism and forgotten that you are also a part of the scenario?</p></div>
 <p class="orv_line">In the next moment, a powerful storm of Probability's aftermath whipped about and a certain figure made an entrance.</p>
 <p class="orv_line">Tsu-chuchuchut!</p>
 <p class="orv_line">It was a doll with an exterior of steel. A Narrative-grade Constellation riddled with wounds was bound by the sturdy ring of light.</p>
-<div class="orv_constellation"><p>[This fool had been supporting a stupid Story, just like you have.]</p></div>
+<div class="orv_constellation"><p>This fool had been supporting a stupid Story, just like you have.</p></div>
 <p class="orv_line">Uriel dazedly stared at this Constellation. She had never met this guy before, yet the moment he appeared, she could tell who he might be. Not only that, she had exchanged several indirect messages with him in the past, too.</p>
-<div class="orv_system"><p>[Constellation, 'Master of Steel', is shrinking back from pain.]</p></div>
+<div class="orv_system"><p>Constellation, 'Master of Steel', is shrinking back from pain.</p></div>
 <p class="orv_line">The Master of Steel. He was the Incarnation 'Lee Hyunsung's' Sponsor.</p>
 <p class="orv_line">Ra's laughter could be heard next. </p>
-<div class="orv_constellation"><p>[He would have been safe if he remained quietly back in &lt;Oz&gt;, yet this fool got in touch with an existence from another worldline, hoping to aid that stupid Story.]</p></div>
-<div class="orv_constellation"><p>[Just what the hell are you…!]</p></div>
-<div class="orv_constellation"><p>[You all do not have a choice. Either you help us put an end to &lt;Kim Dokja's Company&gt;'s Story, or…]</p></div>
+<div class="orv_constellation"><p>He would have been safe if he remained quietly back in &lt;Oz&gt;, yet this fool got in touch with an existence from another worldline, hoping to aid that stupid Story.</p></div>
+<div class="orv_constellation"><p>Just what the hell are you…!</p></div>
+<div class="orv_constellation"><p>You all do not have a choice. Either you help us put an end to &lt;Kim Dokja's Company&gt;'s Story, or…</p></div>
 <p class="orv_line">Along with those words, the rings of light binding the Master of Steel's body began tightening. He thrashed in pain but still stared straight at Uriel.</p>
-<div class="orv_system"><p>[Constellation, 'Master of Steel', says that his death today has no meaning.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Master of Steel', announces that his Story and Modifier have been succeeded by someone else!]</p></div>
+<div class="orv_system"><p>Constellation, 'Master of Steel', says that his death today has no meaning.</p></div>
+<div class="orv_system"><p>Constellation, 'Master of Steel', announces that his Story and Modifier have been succeeded by someone else!</p></div>
 <p class="orv_line">The ring was getting tighter and tighter. Uriel hurriedly moved.</p>
 <p class="orv_line">And then…</p>
-<div class="orv_system"><p>[Constellation, 'Master of Steel', asks you not to give up on that story.]</p></div>
+<div class="orv_system"><p>Constellation, 'Master of Steel', asks you not to give up on that story.</p></div>
 <p class="orv_line">Squeeze!!</p>
 <p class="orv_line">The Master of Steel's body got crushed without any resistance whatsoever, and Stories exploded out from his body. It was truly a meaningless death of a Narrative-grade Constellation.</p>
 <p class="orv_line">Everyone from the same channel watched that spectacle as if they were frozen to the spot.</p>
 <p class="orv_line">In front of a planet's death, Ra continued to speak. </p>
-<div class="orv_constellation"><p>[Or, die like this one.]</p></div>
+<div class="orv_constellation"><p>Or, die like this one.</p></div>
 <p class="orv_line">Along with a madness-filled roar, Uriel unleashed her Status in full.</p>
 <br>
 <hr>
@@ -326,18 +333,12 @@
             <a href="./ch_462"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_464">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="463" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="517" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="462" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="462" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 380: Ep. 72 - Three Methods, IV</title>
     <meta property="og:title" content="Ch 380: Ep. 72 - Three Methods, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,35 +177,35 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00380.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 380: Ep. 72 - Three Methods, IV</h1></div>
 <p class="orv_line">"…Han Sooyoung?"</p>
 <p class="orv_line">I thought I heard her voice, but her aura disappeared rather quickly.</p>
-<div class="orv_system"><p>[Giant Story, 'Kaizenix Archipelago', cannot acknowledge your selection!]</p></div>
-<div class="orv_system"><p>[Worldview is displaying an abnormal reaction.]</p></div>
+<div class="orv_system"><p>Giant Story, 'Kaizenix Archipelago', cannot acknowledge your selection!</p></div>
+<div class="orv_system"><p>Worldview is displaying an abnormal reaction.</p></div>
 <p class="orv_line">Yuri di Aristel, inadvertently now holding Unbroken Faith, began trembling and shouted out loudly. "You d-dare to do something like this…!!"</p>
-<div class="orv_constellation"><p>[You're a suitable heir to the crown of Kaizenix Archipelago.]</p></div>
-<div class="orv_system"><p>[Your throne is being handed over to the character 'Han Sooyoung'.]</p></div>
-<div class="orv_system"><p>[Worldview cannot understand your choice.]</p></div>
+<div class="orv_constellation"><p>You're a suitable heir to the crown of Kaizenix Archipelago.</p></div>
+<div class="orv_system"><p>Your throne is being handed over to the character 'Han Sooyoung'.</p></div>
+<div class="orv_system"><p>Worldview cannot understand your choice.</p></div>
 <p class="orv_line">Rays of bright light began leaking out from Yuri di Aristel's body.</p>
 <p class="orv_line">Those were Stories that didn't belong to her; indeed, they were Han Sooyoung's, stuff that I knew very well.</p>
 <p class="orv_line">Yuri di Aristel hugged her shoulders as if she didn't want to let any of those Stories to slip out of her.</p>
@@ -206,13 +213,13 @@
 <p class="orv_line">Tsu-chut, chuchuchut!!</p>
 <p class="orv_line">"Be still! I told you that I'll take full responsibility, didn't I??" She wasn't speaking to me right now. "I didn't want this sort of development, either! I, I only thought that, if you continued to stay in this island…!"</p>
 <p class="orv_line">I could guess who Yuri di Aristel was talking to, and what the topic of their conversation right now was.</p>
-<div class="orv_system"><p>[Exclusive skill, 'Omniscient Reader's Viewpoint', has activated.]</p></div>
+<div class="orv_system"><p>Exclusive skill, 'Omniscient Reader's Viewpoint', has activated.</p></div>
 <p class="orv_line">The time Yuri di Aristel and Han Sooyoung had spent together was flowing by like a river of fragments.</p>
-<div class="orv_quote"><p>「 "You said that you'll stay with me! You said that you'll become my guardian, didn't you?! I really loved the scenario you've shown me. I can't let you go like this! I…!!" 」</p></div>
-<div class="orv_quote"><p>「 "My bad, Yuri." 」</p></div>
+<div class="orv_quote"><p>"You said that you'll stay with me! You said that you'll become my guardian, didn't you?! I really loved the scenario you've shown me. I can't let you go like this! I…!!"</p></div>
+<div class="orv_quote"><p>"My bad, Yuri."</p></div>
 <p class="orv_line">Blood bubbled out of her mouth and she staggered unsteadily before collapsing on the ground. I hurriedly held her in an embrace. Most likely, there was a war being fought between Han Sooyoung and Yuri di Aristel inside this body right about now.</p>
-<div class="orv_system"><p>[Giant Story, 'Kaizenix Archipelago', is…]</p></div>
-<div class="orv_system"><p>[Giant Story, 'Torch That Swallowed the Myth', is…]</p></div>
+<div class="orv_system"><p>Giant Story, 'Kaizenix Archipelago', is…</p></div>
+<div class="orv_system"><p>Giant Story, 'Torch That Swallowed the Myth', is…</p></div>
 <p class="orv_line">Giant Stories were bitterly fighting against each other in order to take over her body.</p>
 <p class="orv_line">The surrounding folks also fell into a pit of sudden confusion as well.</p>
 <p class="orv_line">"Our king has changed?"</p>
@@ -221,7 +228,7 @@
 <p class="orv_line">The royal guards and the kingdom's citizens were exchanging glances with complicated eyes and whispered amongst themselves.</p>
 <p class="orv_line">"In that case, what about our world's genre…"</p>
 <p class="orv_line">"Shh! Have you forgotten that such words are still prohibited? Just focus on sticking to your role!"</p>
-<p class="orv_line">Then again, I'd also form an expression similar to theirs if I heard that this world's genre had suddenly become [Kim Dokja's Company].</p>
+<p class="orv_line">Then again, I'd also form an expression similar to theirs if I heard that this world's genre had suddenly become <strong>[Kim Dokja's Company]</strong>.</p>
 <p class="orv_line">Yoo Joonghyuk standing next to me spoke up. "Kim Dokja, we acted too rashly."</p>
 <p class="orv_line">"I know."</p>
 <p class="orv_line">"This archipelago isn't prepared enough yet to accept Han Sooyoung as its ruler."</p>
@@ -229,13 +236,13 @@
 <p class="orv_line">"She wasn't its rightful ruler. Because there is a faction unwilling to acknowledge her that we still have the 'revolutionaries'."</p>
 <p class="orv_line">A forceful change of the throne would always lead to a great deal of birthing pain. For instance, Yuri di Aristel's 'throne usurpation' during this scenario was not a part of the original 'Kaizenix Archipelago' scenario.</p>
 <p class="orv_line">The queen's unpredictable action, and our subsequent actions, were completely foreign events to the Reincarnators of the 'Kaizenix Archipelago' who had repeated the exact same scenario over and over again.</p>
-<div class="orv_system"><p>[Genre selection has been completed.]</p></div>
-<div class="orv_system"><p>[Applicable genre's clear conditions have not been met.]</p></div>
+<div class="orv_system"><p>Genre selection has been completed.</p></div>
+<div class="orv_system"><p>Applicable genre's clear conditions have not been met.</p></div>
 <p class="orv_line">This world was not yet ready to accept the brand-new genre that we had created.</p>
 <br>
 <hr>
 <br>
-<div class="orv_system"><p>[&lt;Star Stream&gt; is discussing the topic of the applicable scenario's clear condition.]</p></div>
+<div class="orv_system"><p>&lt;Star Stream&gt; is discussing the topic of the applicable scenario's clear condition.</p></div>
 <p class="orv_line">"Things have become complicated."</p>
 <p class="orv_line">Yoo Joonghyuk and I were looking at Han Sooyoung lying on top of a luxurious bed.</p>
 <p class="orv_line">From a while ago, the sounds of chaotic explosions continued to ring out from beyond the royal castle's walls. All the ruckus was made by two factions fighting a bloody battle, one agreeing to the ascension of their new ruler, and the other being the citizens who rejected her.</p>
@@ -251,7 +258,7 @@
 <p class="orv_line">Han Sooyoung who had to endure the time frame of 50 years – could she still maintain a normal, functioning mind?</p>
 <p class="orv_line">Was she able to maintain the ego of the Han Sooyoung that I know of?</p>
 <p class="orv_line">"This is all because I made a deal with the 'King of Reincarnators'."</p>
-<div class="orv_quote"><p>「 It 'd b een be tter if I sac rificed myself ins tead. 」</p></div>
+<div class="orv_quote"><p>It 'd b een be tter if I sac rificed myself ins tead.</p></div>
 <p class="orv_line">I turned my head to discover Yoo Joonghyuk glaring at me as if I was a pathetic fool. His lips bobbed up and down several times, but then, squeezed his eyes shut as if to suppress his anger and leaned his back against the couch's cushions.</p>
 <p class="orv_line">"I'd like to say something, but it seems that someone else will do that for me, instead."</p>
 <p class="orv_line">"What?"</p>
@@ -296,10 +303,10 @@
 <p class="orv_line">Damn it, that's how it was?</p>
 <p class="orv_line">Han Sooyoung spat out a groan and continued on. "So? What are we going to do now?"</p>
 <p class="orv_line">The revolutionaries, or the royal guards – didn't matter which side we pick, the situation would quickly descend into the worst situation imaginable.</p>
-<div class="orv_system"><p>[Error has occurred in the scenario.]</p></div>
-<div class="orv_system"><p>[Worldview cannot accept the conclusion to the applicable scenario.]</p></div>
-<div class="orv_system"><p>[Worldview is uncertain whether the character 'Han Sooyoung' possesses the qualifications of the ruler or not.]</p></div>
-<div class="orv_system"><p>[&lt;Star Stream&gt; is discussing the topic of the applicable scenario's clear condition.]</p></div>
+<div class="orv_system"><p>Error has occurred in the scenario.</p></div>
+<div class="orv_system"><p>Worldview cannot accept the conclusion to the applicable scenario.</p></div>
+<div class="orv_system"><p>Worldview is uncertain whether the character 'Han Sooyoung' possesses the qualifications of the ruler or not.</p></div>
+<div class="orv_system"><p>&lt;Star Stream&gt; is discussing the topic of the applicable scenario's clear condition.</p></div>
 <p class="orv_line">Citizens were fighting amongst themselves, and we were unable to leave the scenario.</p>
 <p class="orv_line">I looked at Han Sooyoung and spoke. "I'm really sorry for being so late."</p>
 <p class="orv_line">She shrugged her shoulders and replied. "Yup, it's been long, these past 50 years."</p>
@@ -309,7 +316,7 @@
 <p class="orv_line">"Do you honestly believe that I'd really live out those 50 years, just like that?"</p>
 <p class="orv_line">"What then?"</p>
 <p class="orv_line">"I forgot most of them. More correctly, I erased them deliberately. If I did remember them, I'd probably have gone crazy by now."</p>
-<p class="orv_line">Only then did I finally realize what her situation was. She possessed the skill [Avatar]. And it was a pretty useful skill in erasing her memories, depending on how it was utilised.</p>
+<p class="orv_line">Only then did I finally realize what her situation was. She possessed the skill <strong>[Avatar]</strong>. And it was a pretty useful skill in erasing her memories, depending on how it was utilised.</p>
 <p class="orv_line">"The reason why I left that book behind was to preserve the stuff I'd forget."</p>
 <p class="orv_line">"You made a wise decision."</p>
 <p class="orv_line">"It was a cowardly method, you know. Not something to be praised, anyhow."</p>
@@ -358,18 +365,12 @@
             <a href="./ch_379"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_381">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="380" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="731" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="379" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="379" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

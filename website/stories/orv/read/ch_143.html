@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 143: Ep. 28 - The Ultimate Sacrifice, III</title>
     <meta property="og:title" content="Ch 143: Ep. 28 - The Ultimate Sacrifice, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,32 +177,32 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00143.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         <div class="orv_cover"><img src="../../../assets/images/Cover%20Part%201%20-%20143%20-%20Vol%207%20-%20Episodes%2028-32.jpg" alt=""></div>
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 143: Ep. 28 - The Ultimate Sacrifice, III</h1></div>
 <p class="orv_line">Our party arrived near Gwanghwamun half an hour before the promised time. In the meantime, the same message appeared in my head.</p>
-<div class="orv_system"><p>[You are currently the strongest incarnation in Seoul.]</p></div>
+<div class="orv_system"><p>You are currently the strongest incarnation in Seoul.</p></div>
 <p class="orv_line">Damn, I wanted to say that I already knew. Frankly, I felt embarrassed every time I heard it. I couldn't guarantee victory against Yoo Joonghyuk even if I used all my power and I barely managed to beat Nirvana. Why was I the strongest?</p>
 <p class="orv_line">Then a sentence from the 51st regression in Ways of Survival appeared.</p>
-<div class="orv_quote"><p>「 Strength and weakness in the Star Stream have nothing to do with the power or skill proficiency. The standards of strength come from the 'story'. 」</p></div>
+<div class="orv_quote"><p>Strength and weakness in the Star Stream have nothing to do with the power or skill proficiency. The standards of strength come from the 'story'.</p></div>
 <p class="orv_line">Then there were the words that Nirvana had said. "Strength and weaknesses are ultimately determined by the story."</p>
 <p class="orv_line">"Dokja-ssi!"</p>
 <p class="orv_line">In the distance, Lee Hyunsung and Jung Heewon were approaching. It seemed their bond with each other was stronger after overcoming the difficult situation together. Jung Heewon waved at me.</p>
@@ -230,7 +237,7 @@
 <p class="orv_line">I couldn't be hasty. Even Nirvana wouldn't dare touch the terminal of the nebula Olympus unless he was thinking about a war between nebulae.</p>
 <p class="orv_line">All of Gwanghwamun was becoming heated up by the incarnations when a shining message appeared in the air.</p>
 <div class="orv_window">
-<h3 class="orv_window_title">[Hint 2]</h3>
+<h3 class="orv_window_title">Hint 2</h3>
 <p>The ninth strongest incarnation in Seoul Dome is 'Insect Boy Lee Gilyoung'.</p>
 </div>
 <p class="orv_line">Lee Gilyoung's eyes shone when his name was called.</p>
@@ -268,17 +275,17 @@
 <p class="orv_line">"W-What is this?"</p>
 <p class="orv_line">"Are they fighting already?"</p>
 <p class="orv_line">I knew what they were thinking.</p>
-<div class="orv_quote"><p>「 What if we can clear the scenario like this? 」</p></div>
-<div class="orv_quote"><p>「 Regardless of whether it is the Salvation leader or the Supreme King, isn't it good for us if both of them die in this fight? 」</p></div>
+<div class="orv_quote"><p>What if we can clear the scenario like this?</p></div>
+<div class="orv_quote"><p>Regardless of whether it is the Salvation leader or the Supreme King, isn't it good for us if both of them die in this fight?</p></div>
 <p class="orv_line">Every human was a coward. Nirvana knew when humans were the most cowardly. It was time for the 'unattainable future'. Some people had already died while others would fight back and find a way to live.</p>
 <p class="orv_line">I approached the dome and hit the wall.</p>
-<div class="orv_system"><p>[The incarnation 'Jeon Ildo' is using Fair Duel Lv. 3.]</p></div>
-<div class="orv_system"><p>[All incarnations apart from those involved in the duel aren't allowed to enter the stage.]</p></div>
+<div class="orv_system"><p>The incarnation 'Jeon Ildo' is using Fair Duel Lv. 3.</p></div>
+<div class="orv_system"><p>All incarnations apart from those involved in the duel aren't allowed to enter the stage.</p></div>
 <p class="orv_line">…He used the stigma of Gwanghaegun. In this case, no one apart from Yoo Joonghyuk and Nirvana could physically get involved in the battle.</p>
 <p class="orv_line">I spoke to Jung Heewon and Lee Jihye. "Kill Jeon Ildo!"</p>
 <p class="orv_line">The next moment, something burst from inside the stadium. Finally, the battle between Yoo Joonghyuk and Nirvana started.</p>
 <p class="orv_line">There was a gigantic screen above the dome that was created by the dokkaebi.</p>
-<div class="orv_constellation"><p>[You are doing something interesting. I think it will be a fun fight so I'm prepared to let everyone see it.]</p></div>
+<div class="orv_constellation"><p>You are doing something interesting. I think it will be a fun fight so I'm prepared to let everyone see it.</p></div>
 <p class="orv_line">On the screen, I could see Yoo Joonghyuk's two swords and Nirvana's white magic power colliding.</p>
 <p class="orv_line">Yoo Joonghyuk's Breaking the Sky Sword and Nirvana's Mandala caused a storm in the space.</p>
 <p class="orv_line">Dozens of exchanges were done in a short amount of time. It was a cautious and elaborate battle.</p>
@@ -292,20 +299,20 @@
 <p class="orv_line">"Come on, Yoo Joonghyuk!"</p>
 <p class="orv_line">At this moment, the size of the Heavenly Sword of Gathering Clouds suddenly changed. It was transformed into a giant sword and started to grow to the size of a tall building.</p>
 <p class="orv_line">Yoo Joonghyuk's arm holding the sword was the same. It was like the right arm of a giant god.</p>
-<div class="orv_system"><p>[Giant Body Transformation.]</p></div>
+<div class="orv_system"><p>Giant Body Transformation.</p></div>
 <p class="orv_line">The surprised Nirvana tried to leave the range of the blade but it was already too late. The weight of the blade that split the sky literally fell onto Nirvana.</p>
 <p class="orv_line">There was a huge roar and the entire stage was filled with dust.</p>
 <p class="orv_line">"Kuooh!"</p>
 <p class="orv_line">Nirvana was hit hard and lay in a deep pit made by Yoo Joonghyuk's sword. The incarnations exclaimed. Numerous arms had emerged from the mandala.</p>
 <p class="orv_line">The Thousand Hands of Avalokiteśvara. The hands of the Bodhisattva were fighting against the giant sword. If it wasn't for the dome, the area would've been destroyed by the collision. All the incarnations were overwhelmed by the sight.</p>
-<div class="orv_quote"><p>「 This is a showdown between the strongest in Seoul. 」</p></div>
+<div class="orv_quote"><p>This is a showdown between the strongest in Seoul.</p></div>
 <p class="orv_line">The strongest… I somehow felt bitter. I swallowed the bitter taste and used Omniscient Reader's Viewpoint.</p>
 <p class="orv_line">On the surface, it seemed like a simple confrontation of strength but in this moment, there was a flow of thoughts between Nirvana and Yoo Joonghyuk.</p>
 <p class="orv_line">Nirvana thought,</p>
-<div class="orv_quote"><p>「 Did the level of Mental Barrier go up? The magic power wavelength is becoming stronger. 」</p></div>
-<div class="orv_quote"><p>「 Your skill level is lower than I thought. What did you gain from Succession? 」</p></div>
-<div class="orv_quote"><p>「 You act like your left shoulder is hurt but that is a trap. 」</p></div>
-<div class="orv_quote"><p>「 Giant Body Transformation has a short duration. You should look at the whole of the match. 」</p></div>
+<div class="orv_quote"><p>Did the level of Mental Barrier go up? The magic power wavelength is becoming stronger.</p></div>
+<div class="orv_quote"><p>Your skill level is lower than I thought. What did you gain from Succession?</p></div>
+<div class="orv_quote"><p>You act like your left shoulder is hurt but that is a trap.</p></div>
+<div class="orv_quote"><p>Giant Body Transformation has a short duration. You should look at the whole of the match.</p></div>
 <p class="orv_line">····.</p>
 <p class="orv_line">It was a battlefield that only I could see. The two thoughts that didn't touch each other were depicting a battle that hadn't yet occurred.</p>
 <p class="orv_line">I felt pure admiration and appreciated the view.</p>
@@ -316,7 +323,7 @@
 <p class="orv_line">Han Sooyoung was wearing a blue combat suit that clung to her body. Perhaps it was a hidden piece from Peace Land.</p>
 <p class="orv_line">"You couldn't stay away after hearing the loudspeaker."</p>
 <p class="orv_line">"Tsk."</p>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' shows its teeth towards you.]</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' shows its teeth towards you.</p></div>
 <p class="orv_line">As expected, Han Sooyoung chose her sponsor. Han Sooyoung approached me and sat on the railing. "It was fun. Why did you call me?"</p>
 <p class="orv_line">"Why are you watching? Don't you want to clear the scenario?"</p>
 <p class="orv_line">"Ah, I need to clearly know who the strongest is… wait. You know who it is?"</p>
@@ -336,18 +343,12 @@
             <a href="./ch_142"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_144">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="143" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="127" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="142" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="142" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

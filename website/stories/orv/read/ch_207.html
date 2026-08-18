@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 207: Ep. 39 - Unidentified Wall, IV</title>
     <meta property="og:title" content="Ch 207: Ep. 39 - Unidentified Wall, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,35 +177,35 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00207.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 207: Ep. 39 - Unidentified Wall, IV</h1></div>
-<div class="orv_quote"><p>「 Kim Dokja thought: I don't know if people are doing well. 」</p></div>
+<div class="orv_quote"><p>Kim Dokja thought: I don't know if people are doing well.</p></div>
 <p class="orv_line">I wondered if I could see the story of Earth again on the screen but there was nothing to be seen. It wasn't easy for the wenny people to just steal the videos of the dokkaebis.</p>
 <p class="orv_line">Night was fast approaching. I hadn't slept well for a few days but the condition of my body wasn't bad because Aileen had repaired my stories.</p>
 <p class="orv_line">"I have temporarily fixed it but you need to be careful with outside activities. Don't you know? You are still outside the main scenario."</p>
 <p class="orv_line">"You sound like a doctor."</p>
 <p class="orv_line">"I can't speak like a clock maker because I'm not dealing with clocks now."</p>
 <p class="orv_line">Aileen watched me before standing up with their repair equipment. Many things had happened in the past two days but she didn't seem dissatisfied with the current situation.</p>
-<div class="orv_quote"><p>「 Kim Dokja thought: If I hadn't come, Aileen would've kept being a clock maker. 」</p></div>
+<div class="orv_quote"><p>Kim Dokja thought: If I hadn't come, Aileen would've kept being a clock maker.</p></div>
 <p class="orv_line">In many regressions when Yoo Joonghyuk hadn't come to the Demon Realm, Aileen would've actually survived. She quietly made clocks that told the time of her home planet and reflected alone on the disappearance of her planet. Sometimes she would struggle with Jang Hayoung or go out to eat dishes made by Mark… maybe it was a happier life for Aileen.</p>
 <p class="orv_line">"Do you know? The number of people who had been looking for clocks has increased in the last few days."</p>
 <p class="orv_line">Aileen looked at me with an unknown gaze. I hesitated for a moment before asking, "Did their clocks break as a group?"</p>
@@ -233,7 +240,7 @@
 <p class="orv_line">"I'm afraid it will take at least three days… I will try my best."</p>
 <p class="orv_line">"I know. Then do your best."</p>
 <p class="orv_line">I left Aileen's workshop and headed towards the pub. The people who found me on the streets stared with strange eyes. Some greeted me after making eye contact and others lightly gathered both hands together. As Aileen said, I could see something that looked like watches on their wrists.</p>
-<div class="orv_quote"><p>「 Yoo Joonghyuk felt lonely as he saw these watches. They got their time back but he still wasn't living in this time. Yoo Joonghyuk suddenly thought. If so, where do I live in those countless hours? 」</p></div>
+<div class="orv_quote"><p>Yoo Joonghyuk felt lonely as he saw these watches. They got their time back but he still wasn't living in this time. Yoo Joonghyuk suddenly thought. If so, where do I live in those countless hours?</p></div>
 <p class="orv_line">It was the monologue of Yoo Joonghyuk, who once saved the Demon Realm. It was also one of my favourite scenes from Ways of Survival.</p>
 <p class="orv_line">I suddenly seemed to understand a bit of his mind. To the regressor Yoo Joonghyuk, the time in these worlds didn't belong to him. In a life that could go back over and over again, the present time was meaningless.</p>
 <p class="orv_line">Once this was over, I would ask Aileen to make me a watch. If he had something like this, he might become more attached to this world. Maybe the regression depression would get better…</p>
@@ -268,11 +275,11 @@
 <p class="orv_line">Then Jang Hayoung was amazed. "Can I use something like this?"</p>
 <p class="orv_line">"You just have to get his attention once."</p>
 <p class="orv_line">The Great Sage Heaven's Equal was a lazy guy. It must be to this degree to get a reply. Less than 10 seconds after Jang Hayoung sent this message, the following notification popped up.</p>
-<div class="orv_system"><p>[A reply has arrived!]</p></div>
+<div class="orv_system"><p>A reply has arrived!</p></div>
 <p class="orv_line">"A-A reply is here!"</p>
 <p class="orv_line">"Is that right?"</p>
 <p class="orv_line">For reference, the message I sent was as followed:</p>
-<div class="orv_constellation"><p>[Regrow your hair.]</p></div>
+<div class="orv_constellation"><p>Regrow your hair.</p></div>
 <p class="orv_line">Every time I did something, he would pull out his hair in the indirect message. Thus, I figured that he had hair loss. I asked, "What did he say?"</p>
 <p class="orv_line">"If we meet, he will kill me."</p>
 <p class="orv_line">"What else?"</p>
@@ -320,18 +327,12 @@
             <a href="./ch_206"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_208">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="207" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="54" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="206" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="206" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

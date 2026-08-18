@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 305: Ep. 58 - Context of the Constellations, I</title>
     <meta property="og:title" content="Ch 305: Ep. 58 - Context of the Constellations, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00305.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 305: Ep. 58 - Context of the Constellations, I</h1></div>
 <p class="orv_line">During the past three years, Jung Heewon had changed a lot.</p>
@@ -200,45 +207,45 @@
 <p class="orv_line">Her sponsor suddenly disappeared after the incident three years ago. Thus, Jung Heewon was forced to try harder than other incarnations. She had been trained by transcendents such as Breaking the Sky Sword Saint and Kyrgios every day. It was in order to not lag behind the party members or sacrifice anyone else.</p>
 <p class="orv_line">"It would've been a lot less unfair if you were there."</p>
 <p class="orv_line">Jung Heewon was really strong. Then in front of her strong self, the vanished sponsor once again appeared.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is silent.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is silent.</p></div>
 <p class="orv_line">Jung Heewon sighed. "That… what are you saying to me just now?"</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is smiling.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is smiling.</p></div>
 <p class="orv_line">Jung Heewon didn't smile. She quietly raised her hand to grip her sword.</p>
-<div class="orv_system"><p>[The incarnation 'Jung Heewon' is prepared to invoke Hour of Judgement on her sponsor!]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is surprised!]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' says that Hour of Judgement can only be used against the wicked.]</p></div>
+<div class="orv_system"><p>The incarnation 'Jung Heewon' is prepared to invoke Hour of Judgement on her sponsor!</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is surprised!</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' says that Hour of Judgement can only be used against the wicked.</p></div>
 <p class="orv_line">Jung Heewon replied, "I know."</p>
 <p class="orv_line">Indirect messages poured out.</p>
-<div class="orv_system"><p>[Some constellations of the absolute good system have agreed with Jung Heewon's request.]</p></div>
-<div class="orv_system"><p>[The constellation 'Guardian of Youths and Travel' has agreed to the request.]</p></div>
-<div class="orv_system"><p>[The constellation 'Friend of Justice and Harmony' has agreed to the request.]</p></div>
-<div class="orv_system"><p>[The constellation 'Master of the Ark' has agreed to the request.]</p></div>
-<div class="orv_system"><p>[Some constellations of the absolute good system have opposed the request.]</p></div>
-<div class="orv_system"><p>[The activation of the skill is cancelled!]</p></div>
+<div class="orv_system"><p>Some constellations of the absolute good system have agreed with Jung Heewon's request.</p></div>
+<div class="orv_system"><p>The constellation 'Guardian of Youths and Travel' has agreed to the request.</p></div>
+<div class="orv_system"><p>The constellation 'Friend of Justice and Harmony' has agreed to the request.</p></div>
+<div class="orv_system"><p>The constellation 'Master of the Ark' has agreed to the request.</p></div>
+<div class="orv_system"><p>Some constellations of the absolute good system have opposed the request.</p></div>
+<div class="orv_system"><p>The activation of the skill is cancelled!</p></div>
 <p class="orv_line">Jung Heewon stared at the air with wide eyes.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is avoiding the eyes of her incarnation.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is avoiding the eyes of her incarnation.</p></div>
 <p class="orv_line">Jung Heewon released her sword and sighed once again. In her head, the feelings of her sponsor were conveyed.</p>
 <p class="orv_line">Sorrow and joy. Regret and guilt.</p>
 <p class="orv_line">In fact, Jung Heewon knew why Uriel was detained for the past three years. It was miraculous that she was just confined in Eden after the events of the Demon King Selection.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' says she is sorry.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' says she is sorry.</p></div>
 <p class="orv_line">However, she was still disappointed. Furthermore, her sponsor appeared for the first time in three years…</p>
 <p class="orv_line">"If you want to see Dokja-ssi, why don't you go and see him yourself? You know he is at the top of the fortress."</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' says that it isn't possible to summon a symbolic body because the probation period isn't over yet.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' says that it isn't possible to summon a symbolic body because the probation period isn't over yet.</p></div>
 <p class="orv_line">The worried Jung Heewon hesitated for a long time before opening her mouth. "…I understand. Instead, don't do anything weird."</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is greatly pleased!]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is asking if Kim Dokja is really imprisoned.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is greatly pleased!</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is asking if Kim Dokja is really imprisoned.</p></div>
 <p class="orv_line">"…Why do you like it?"</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is asking if Kim Dokja really became a squid.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire'…]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is asking if Kim Dokja really became a squid.</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire'…</p></div>
 <p class="orv_line">"I'll go now and look directly."</p>
 <p class="orv_line">Not long after, Jung Heewon arrived at the top of the fortress where Kim Dokja was trapped.</p>
-<div class="orv_system"><p>[This is a space where the Celestial Emperor's Sturdy Ward is enforced.]</p></div>
-<div class="orv_system"><p>[The incarnation 'Jung Heewon' is permitted to enter.]</p></div>
+<div class="orv_system"><p>This is a space where the Celestial Emperor's Sturdy Ward is enforced.</p></div>
+<div class="orv_system"><p>The incarnation 'Jung Heewon' is permitted to enter.</p></div>
 <p class="orv_line">The door opened and the interior of a lavish room appeared. It was a prison but it was a room worthy of being a suite in a five star hotel. There was a sumptuous feast on the dining table that could be eaten whenever a person was hungry and a king-size bed to help with sleep. On the side were a few fantasy novels published before the fall of the world. Come to think of it, Kim Dokja liked fantasy novels.</p>
 <p class="orv_line">Jung Heewon tried one of them as a test. Title: The World After the Fall. Author: Sing Shong…</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is screaming!]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is screaming!</p></div>
 <p class="orv_line">She turned her head and saw Kim Dokja sitting on a soft rocking chair. A catheter was plugged into his arm to feed him story packs.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is looking at the Demon King of Salvation.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is looking at the Demon King of Salvation.</p></div>
 <p class="orv_line">The pack also contained sleeping pills made by Lee Seolhwa. She came closer and could see Kim Dokja's face. At the gaze, Kim Dokja opened his eyes. "…Heewon-ssi?"</p>
 <p class="orv_line">Jung Heewon didn't know that she was biting her lips. Kim Dokja's defenseless face that was weary from the hard times. A corner of her heart ached at the sight.</p>
 <p class="orv_line">"This place…"</p>
@@ -246,7 +253,7 @@
 <p class="orv_line">Jung Heewon controlled the amount of sleeping pills flowing through the catheter.</p>
 <p class="orv_line">"The person who wants to see Dokja-ssi… no, it is an angel."</p>
 <p class="orv_line">A white light shone around Jung Heewon's hand. It was a warm light reminiscent of an archangel. Jung Heewon raised Kim Dokja's body and laid him down on the bed. Not long after, Kim Dokja fell asleep with a light breathing sound. Jung Heewon's hand surrounded by the white light passed over Kim Dokja's head several times.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is looking at the Demon King of Salvation.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is looking at the Demon King of Salvation.</p></div>
 <p class="orv_line">It was a valuable emotion that couldn't be conveyed in words. In the meantime, Jung Heewon hadn't understood Uriel's companionship but somehow, she felt like she knew it a bit.</p>
 <br>
 <hr>
@@ -262,9 +269,9 @@
 <p class="orv_line">At first glance, it seemed like my mother's face. I thought about it. If this was a dream, I would rather not wake up.</p>
 <p class="orv_line">–Hey, he's going to wake up! Quickly get another dose of sleeping pills!</p>
 <p class="orv_line">I listened to Han Sooyoung's loud voice and smiled. In other words, this dream was a play for only one person. Just like Ways of Survival was to me.</p>
-<div class="orv_quote"><p>「 In fact, he could wake up anytime he wanted but Kim Dokja didn't do this. 」</p></div>
+<div class="orv_quote"><p>In fact, he could wake up anytime he wanted but Kim Dokja didn't do this.</p></div>
 <p class="orv_line">Thus, I decided to be the audience of the play.</p>
-<div class="orv_quote"><p>「 For the first time since the fall began, Kim Dokja slept comfortably. 」</p></div>
+<div class="orv_quote"><p>For the first time since the fall began, Kim Dokja slept comfortably.</p></div>
 <p class="orv_line">It was the first time I felt this way. My heart was always impatient. Now I could be protected by someone. There were people I could trust.</p>
 <p class="orv_line">–Take a break, Dokja-ssi.</p>
 <p class="orv_line">…Yes, there was still some time until the 46th scenario. The moment I made up my mind, a full sleep came over me.</p>
@@ -326,9 +333,9 @@
 <p class="orv_line">They laughed as the barrier was broken and the door opened.</p>
 <p class="orv_line">–Shall we see the workmanship of the Moonlight Empress? Everybody, get ready to infiltrate!</p>
 <p class="orv_line">The moment they touched the door handle, an unexpected message entered their ears.</p>
-<div class="orv_system"><p>[The constellation 'Black Sword Assassin' is giving a warning!]</p></div>
-<div class="orv_system"><p>[The constellation 'Hunter of the Dark Moon' is astounded!]</p></div>
-<div class="orv_system"><p>[The constellation 'Knight of the Frozen Heart' is convulsing.]</p></div>
+<div class="orv_system"><p>The constellation 'Black Sword Assassin' is giving a warning!</p></div>
+<div class="orv_system"><p>The constellation 'Hunter of the Dark Moon' is astounded!</p></div>
+<div class="orv_system"><p>The constellation 'Knight of the Frozen Heart' is convulsing.</p></div>
 <p class="orv_line">They were all the sponsors of the incarnations.</p>
 <p class="orv_line">–What is this? My sponsor…</p>
 <p class="orv_line">–D-Did you hear it as well?</p>
@@ -345,18 +352,12 @@
             <a href="./ch_304"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_306">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="305" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="378" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="304" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="304" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

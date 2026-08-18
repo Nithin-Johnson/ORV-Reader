@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 283: Ep. 53 - Demon King of Salvation, V</title>
     <meta property="og:title" content="Ch 283: Ep. 53 - Demon King of Salvation, V" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00283.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 283: Ep. 53 - Demon King of Salvation, V</h1></div>
 <p class="orv_line">The Crawling Chaos. One of the outer gods that was closest to the 'origin' of the universe and favourable to humans… this was according to mythology. In fact, there was no mention of him in Ways of Survival.</p>
@@ -196,7 +203,7 @@
 <p class="orv_line">"It's just my guess."</p>
 <div class="orv_outergod"><p>【 It is literature left by the 'recorders of fear'. Believing in records that aren't even 100 years old, you are more naive than I thought. The unknown can't be revealed in human language. 】</p></div>
 <p class="orv_line">I bit my lips. There wasn't much known about the outer gods in the myths that were the prototypes for Ways of Survival. In the 74th turn of Ways of Survival, one of the 'recorders of fear' left the following remark:</p>
-<div class="orv_quote"><p>「 "Everything we wrote was a lie. It was the only lie we could use to explain the unknown horrors." 」</p></div>
+<div class="orv_quote"><p>"Everything we wrote was a lie. It was the only lie we could use to explain the unknown horrors."</p></div>
 <p class="orv_line">I was a bit daunted as I asked, "…Are the myths on Earth wrong?"</p>
 <div class="orv_outergod"><p>【 I am Secretive Plotter. That is enough. 】</p></div>
 <p class="orv_line">It was an ambiguous answer but also a sufficient one. I didn't know if he was the 'Crawling Chaos' or not. At the very least, it was clear that Secretive Plotter was undoubtedly a strong outer god.</p>
@@ -216,15 +223,15 @@
 <p class="orv_line">As I spoke, I simulated dozens of questions and answers in my head. Both my hands were sweating. I couldn't fail here. No matter what, I had to convince the Secretive Plotter in this conversation.</p>
 <div class="orv_outergod"><p>【 What if they don't want it? 】</p></div>
 <p class="orv_line">I slowly opened my mouth.</p>
-<div class="orv_quote"><p>「 Dammit, Kim Dokja! Stop! Please! Come back! 」</p></div>
-<div class="orv_quote"><p>「 I don't want this! I don't want to survive this way. 」</p></div>
-<div class="orv_quote"><p>「 I'll do anything. If you are going to sit still, I'll sit still. If you die, I'll die. Please don't do this! Please! 」</p></div>
+<div class="orv_quote"><p>Dammit, Kim Dokja! Stop! Please! Come back!</p></div>
+<div class="orv_quote"><p>I don't want this! I don't want to survive this way.</p></div>
+<div class="orv_quote"><p>I'll do anything. If you are going to sit still, I'll sit still. If you die, I'll die. Please don't do this! Please!</p></div>
 <p class="orv_line">The voices of my party members were heard using Omniscient Reader's Viewpoint. They didn't say it but I heard the words.</p>
 <div class="orv_outergod"><p>【 What if the ending they wanted was to die with you there? Do you still want to save them? 】</p></div>
 <p class="orv_line">I barely managed to open my mouth. "…Yes."</p>
 <div class="orv_outergod"><p>【 It isn't salvation. It is a curse. 】</p></div>
 <p class="orv_line">I couldn't come up with an excuse. It was my story that answered on my behalf.</p>
-<div class="orv_system"><p>[ The story 'Demon King of Salvation' is continuing. ]</p></div>
+<div class="orv_system"><p>The story 'Demon King of Salvation' is continuing.</p></div>
 <p class="orv_line">The Secretive Plotter watched the story coming from me and kept asking,</p>
 <div class="orv_outergod"><p>【 Using those who should've died, changing the world line, hurting everyone and reaching the ending you desire… what is the meaning? 】</p></div>
 <p class="orv_line">The empty eyes of the shadow were shining. An eerie chill went down my spine.</p>
@@ -280,11 +287,11 @@
 <div class="orv_outergod"><p>【 I still have nine fingers left. 】</p></div>
 <p class="orv_line">"I accept."</p>
 <p class="orv_line">In any case, the worst situation was escaped. The party members safely returned to Earth and everything was as planned.</p>
-<div class="orv_system"><p>[A new sub scenario has been acquired!]</p></div>
-<div class="orv_system"><p>[The Star Stream's scenario system has encountered an error.]</p></div>
-<div class="orv_system"><p>[The information of this scenario is being reconstructed.]</p></div>
-<div class="orv_system"><p>[You have acquired the possibility of a new story!]</p></div>
-<div class="orv_system"><p>[A story that can't be understood by the Star Stream is germinating.]</p></div>
+<div class="orv_system"><p>A new sub scenario has been acquired!</p></div>
+<div class="orv_system"><p>The Star Stream's scenario system has encountered an error.</p></div>
+<div class="orv_system"><p>The information of this scenario is being reconstructed.</p></div>
+<div class="orv_system"><p>You have acquired the possibility of a new story!</p></div>
+<div class="orv_system"><p>A story that can't be understood by the Star Stream is germinating.</p></div>
 <p class="orv_line">I was the only one left. If I did this well, everything would end smoothly.</p>
 <p class="orv_line">The Secretive Plotter lifted his right hand, the darkness of the universe distorted and a small portal started to open.</p>
 <div class="orv_outergod"><p>【 Actually, there was another person beside you who made a covenant. 】</p></div>
@@ -294,7 +301,7 @@
 <div class="orv_outergod"><p>【 Another outer god will transfer you. Be careful not to disobey him. 】</p></div>
 <p class="orv_line">At the end, I was sucked into the portal. The foundations were built up and the whole world spread out like a post-modern oil painting where the intention couldn't be read. The brilliant colours caused me to feel nauseated and once I lifted my head again, there was a huge door in front of me.</p>
 <p class="orv_line">Facing me was a giant bubble that filled the endless universe and a circular door occupied the centre. The moment the door opened its big eyes at me, the Fourth Wall was triggered.</p>
-<div class="orv_system"><p>[The Fourth Wall is issuing a warning!]</p></div>
+<div class="orv_system"><p>The Fourth Wall is issuing a warning!</p></div>
 <p class="orv_line">There was only one such gigantic door in Ways of Survival.</p>
 <div class="orv_outergod"><p>【 An exis tence se nt by the plot ter. 】</p></div>
 <p class="orv_line">I nodded. The door looked down at me with its own will.</p>
@@ -307,7 +314,7 @@
 <div class="orv_outergod"><p>【 The past and pre sent aren't dif fe rent from the fu ture. On ly free will is le ft. 】</p></div>
 <p class="orv_line">The door opened with a loud noise. A door that linked the past, present and future. If I stepped in there, I wouldn't be able to go back.</p>
 <p class="orv_line">Before that, there was something I had to do. I hesitated before placing my hand into my clothes. I pulled out a warm and tiny cotton ball.</p>
-<div class="orv_constellation"><p>[Baat!]</p></div>
+<div class="orv_constellation"><p>Baat!</p></div>
 <p class="orv_line">Biyoo was crying as she shouted at me.</p>
 <br>
 <hr>
@@ -316,18 +323,12 @@
             <a href="./ch_282"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_284">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="283" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="514" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="282" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="282" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

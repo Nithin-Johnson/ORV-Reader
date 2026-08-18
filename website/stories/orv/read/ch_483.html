@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 483: Ep. 92 - Final Scenario, II</title>
     <meta property="og:title" content="Ch 483: Ep. 92 - Final Scenario, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,53 +177,53 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00483.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 483: Ep. 92 - Final Scenario, II</h1></div>
 <p class="orv_line">My declaration caused unrest among the crowd. Reporters ceaselessly snapped away with their cameras; lower- and mid-rank Dokkaebis reporting the situation on their own channels were now carrying astonished expressions on their faces.</p>
-<div class="orv_system"><p>[Many Constellations find your statement quite interesting!]</p></div>
-<div class="orv_system"><p>[Great Dokkaebis are closely listening to your statement.]</p></div>
-<div class="orv_system"><p>[Every Dokkaebi from the &lt;Bureau&gt; is focusing on your words and actions!]</p></div>
+<div class="orv_system"><p>Many Constellations find your statement quite interesting!</p></div>
+<div class="orv_system"><p>Great Dokkaebis are closely listening to your statement.</p></div>
+<div class="orv_system"><p>Every Dokkaebi from the &lt;Bureau&gt; is focusing on your words and actions!</p></div>
 <p class="orv_line">– What do you mean by that?!</p>
 <p class="orv_line">– Representative Kim Dokja-nim!</p>
 <p class="orv_line">It was truly something else to witness the Constellations, Incarnations, and even the Dokkaebis carrying the exact same expressions.</p>
-<p class="orv_line">With a friendly little smile on my face, I opened my mouth once more. [It's exactly as I said. I simply can't see the reason to save you all.]</p>
+<p class="orv_line">With a friendly little smile on my face, I opened my mouth once more. <strong>[It's exactly as I said. I simply can't see the reason to save you all.]</strong></p>
 <p class="orv_line">– Are you saying you will throw away Korea?</p>
 <p class="orv_line">– In that case, what will happen to all the Incarnations that supported you until now?!</p>
 <p class="orv_line">Support, was it?</p>
-<div class="orv_constellation"><p>[How did they support us, then?]</p></div>
+<div class="orv_constellation"><p>How did they support us, then?</p></div>
 <p class="orv_line">Agitation spread out in an instant. My quizzical tone of voice caused the reporters to shoot up from their seats and start yelling at me. As expected, the power of media seemed to be mighty enough to even oppose a Myth-grade Constellation's Status.</p>
 <p class="orv_line">– Who do you think has been overlooking the &lt;Kim Dokja's Company&gt;'s tyranny?!</p>
 <p class="orv_line">– Didn't everyone go along with your wishes until now?!</p>
 <p class="orv_line">Overlooking the tyranny, was it…?</p>
 <p class="orv_line">Before I could respond, though, Constellations chimed in first.</p>
-<div class="orv_system"><p>[A portion of Constellations are mocking the reporters' statements.]</p></div>
-<div class="orv_system"><p>[Korean Peninsula's ancient Constellations are in lamentation!]</p></div>
-<div class="orv_system"><p>[Constellation, 'Goryeo's First Sword', is glaring at the descendants.]</p></div>
+<div class="orv_system"><p>A portion of Constellations are mocking the reporters' statements.</p></div>
+<div class="orv_system"><p>Korean Peninsula's ancient Constellations are in lamentation!</p></div>
+<div class="orv_system"><p>Constellation, 'Goryeo's First Sword', is glaring at the descendants.</p></div>
 <p class="orv_line">Never mind whether it was a tyranny or not, I didn't even know what exactly they had been 'overlooking' so far. Wasn't there demonstrations against &lt;Kim Dokja's Company&gt; taking place every single day on the devastated Yeouido even now?</p>
-<p class="orv_line">I quietly stared at the various shouting reporters, before asking them. [And what exactly were my wishes?]</p>
+<p class="orv_line">I quietly stared at the various shouting reporters, before asking them. <strong>[And what exactly were my wishes?]</strong></p>
 <p class="orv_line">– That is…!</p>
-<div class="orv_constellation"><p>[Have I ever asked any one of you to do something for me?]</p></div>
+<div class="orv_constellation"><p>Have I ever asked any one of you to do something for me?</p></div>
 <p class="orv_line">Right there and then, the reporters shut their mouths and glanced at each other. Dokkaebis were now forming expressions of genuine interest. To them, even things like this should prove to be an entertaining Story. Well, it was an event of the 'Demon King of Salvation' forsaking his own land, after all.</p>
-<p class="orv_line">What rescued the reporters falling into the pit of confusion was a group of Incarnations biding their time on the side of the [Industrial Complex].</p>
+<p class="orv_line">What rescued the reporters falling into the pit of confusion was a group of Incarnations biding their time on the side of the <strong>[Industrial Complex]</strong>.</p>
 <p class="orv_line">– It's only natural for the one possessing great power to shoulder the responsibility. And you are abandoning that responsibility right now.</p>
 <p class="orv_line">An old man wearing a shabby hat suddenly stepped forward and said that out aloud. Shady, cunning glare in his eyes could be seen beneath the crooked rim of his headgear. I couldn't immediately remember who it was, but that line, it also appeared in the 'Ways of Survival'. I heard Lee Jihye's voice coming from behind.</p>
 <p class="orv_line">"What the hell. That geezer also showed up here?"</p>
@@ -229,9 +236,9 @@
 <p class="orv_line">– Please, take us with you to the Final Scenario! Everyone who managed to survive until now has the right to be rewarded properly!</p>
 <p class="orv_line">– No one among us wanted to become a part of the 'scenario'! Are you planning to abandon all these innocent people? Can you even claim to be this Peninsula's Constellation, then?!</p>
 <p class="orv_line">In a certain way, they were right. No one among us wanted to be a part of the scenarios. Not initially, anyway.</p>
-<div class="orv_constellation"><p>[I see that the various heads of the alliances are present as well. That's good.]</p></div>
+<div class="orv_constellation"><p>I see that the various heads of the alliances are present as well. That's good.</p></div>
 <p class="orv_line">However, was the story still the same even now?</p>
-<div class="orv_constellation"><p>[I wanted to ask you all something. Just what exactly have you been doing until now, when the 'Final Scenario' is just around the corner?]</p></div>
+<div class="orv_constellation"><p>I wanted to ask you all something. Just what exactly have you been doing until now, when the 'Final Scenario' is just around the corner?</p></div>
 <p class="orv_line">The alliance members all looked at each other when they heard me.</p>
 <p class="orv_line">– We, we… protected the Peninsula while you were away…!</p>
 <p class="orv_line">– Are you looking down on all the hard work the alliances have performed?! It was us that protected our Peninsula during your absence!</p>
@@ -244,27 +251,27 @@
 <p class="orv_line">⸢As long as he's born in this land, there are some things he can't go against.⸥</p>
 <p class="orv_line">⸢Even if he now possesses great power and fame…⸥</p>
 <p class="orv_line">They still believed in the system. They believed in the story of ⸢democracy⸥ upheld by humanity for a long time, the Stories like ⸢rationalism⸥ and ⸢institution⸥, or even something like ⸢majority decision⸥.</p>
-<div class="orv_system"><p>[Ancient Stories are now looking at you.]</p></div>
+<div class="orv_system"><p>Ancient Stories are now looking at you.</p></div>
 <p class="orv_line">I could see it now; everyone believed they held a share in these Stories, but in reality, no one did. Even before &lt;Star Stream&gt; arrived on Earth, this place had been under the rule of a Giant Story. And those believing in this Giant Story were under the impression that they couldn't be wrong. The alliance members continued to shout.</p>
 <p class="orv_line">– Didn't &lt;Kim Dokja's Company&gt; monopolise the scenarios from the very start?! What can we be expected to achieve under such unfair competitive conditions?!</p>
-<div class="orv_constellation"><p>[But, the Industrial Complex's door is always open to you? All the skills and Stories we acquired are all publicly available, aren't they?]</p></div>
+<div class="orv_constellation"><p>But, the Industrial Complex's door is always open to you? All the skills and Stories we acquired are all publicly available, aren't they?</p></div>
 <p class="orv_line">– No, but, because you people entered the scenarios first…!</p>
-<div class="orv_constellation"><p>[There are plenty of people from other countries who entered the scenarios belatedly. Divisions led by Fei Hu or Ranveer Khan are home to many who have joined only a few months ago, but now find themselves in the latter half of the scenarios.]</p></div>
+<div class="orv_constellation"><p>There are plenty of people from other countries who entered the scenarios belatedly. Divisions led by Fei Hu or Ranveer Khan are home to many who have joined only a few months ago, but now find themselves in the latter half of the scenarios.</p></div>
 <p class="orv_line">– That's the story for other countries! Our situation isn't the same!</p>
-<div class="orv_constellation"><p>[They don't have the 'Industrial Complex'. Their support structure is focused on extremely few individuals, too. However, what is it like for Seoul?]</p></div>
-<p class="orv_line">I snapped my fingers and Biyoo created a panel in the empty air above. A shot of the [Industrial Complex]'s interior was displayed on it.</p>
-<div class="orv_constellation"><p>[We publicly made available the methods to clear the lower-ranked scenarios, and even released the list of 'Giant Story scenarios' as well. And we didn't hold back with our support to those willing to diligently enter the scenarios, too. We didn't place any restrictions on sex, age, race – none of those. Because what we were looking for were brave people willing to fight alongside us.]</p></div>
+<div class="orv_constellation"><p>They don't have the 'Industrial Complex'. Their support structure is focused on extremely few individuals, too. However, what is it like for Seoul?</p></div>
+<p class="orv_line">I snapped my fingers and Biyoo created a panel in the empty air above. A shot of the <strong>[Industrial Complex]</strong>'s interior was displayed on it.</p>
+<div class="orv_constellation"><p>We publicly made available the methods to clear the lower-ranked scenarios, and even released the list of 'Giant Story scenarios' as well. And we didn't hold back with our support to those willing to diligently enter the scenarios, too. We didn't place any restrictions on sex, age, race – none of those. Because what we were looking for were brave people willing to fight alongside us.</p></div>
 <p class="orv_line">The panel now displayed Incarnations going through repeated harsh training regimes, and my mother commanding them. The faces of both Jo Yeong-Ran and Lee Bok-Sun working as instructors could be seen next.</p>
 <p class="orv_line">And so, they reached this far after going through hellish training and earned their own Stories.</p>
-<div class="orv_constellation"><p>[I'm talking about these people right before you.]</p></div>
+<div class="orv_constellation"><p>I'm talking about these people right before you.</p></div>
 <p class="orv_line">There were Incarnations possessing indomitable air and vigorous Statuses guarding the centre of the conference venue. They were none other than the 'wanderers' my mother had raised. The heroes that helped my mother stop the tsunami waves by the eastern shoreline were these very people.</p>
-<div class="orv_constellation"><p>[Is there anyone among you present today that received worse support than these people?]</p></div>
+<div class="orv_constellation"><p>Is there anyone among you present today that received worse support than these people?</p></div>
 <p class="orv_line">No one replied. They were all overwhelmed by the fighting spirit emanating from the 'wanderers' right before their noses.</p>
 <p class="orv_line">People faltering and biting their lips started shouting again.</p>
 <p class="orv_line">– It's not like we kicked back and enjoyed ourselves all this time! We, we've been preparing for various things! Maintaining the systems and infrastructures, and getting ready to rebuild our nation once you finish the scenario and come back…</p>
-<div class="orv_constellation"><p>[But, why are you getting ready for that? Do you even know what kind of 'Conclusion' is waiting at the end?]</p></div>
+<div class="orv_constellation"><p>But, why are you getting ready for that? Do you even know what kind of 'Conclusion' is waiting at the end?</p></div>
 <p class="orv_line">– What??</p>
-<div class="orv_constellation"><p>[Why do you believe that this world's 'Conclusion' will be peaceful?]</p></div>
+<div class="orv_constellation"><p>Why do you believe that this world's 'Conclusion' will be peaceful?</p></div>
 <p class="orv_line">This world had changed a lot from the one found in the 'Ways of Survival'. Yoo Joonghyuk, Lee Hyunsung, Lee Jihye, Shin Yoosung – everyone had changed somewhat from what I used to remember.</p>
 <p class="orv_line">However, some things didn't change.</p>
 <p class="orv_line">⸢Everyone Yoo Joonghyuk had met all wished for things to go back to how they were.⸥</p>
@@ -282,9 +289,9 @@
 <p class="orv_line">⸢Does that mean… we are all going to die?⸥</p>
 <p class="orv_line">The cameras and their shutter flashes continued to go off, but I only stared at that girl for a long time.</p>
 <p class="orv_line">And eventually, I opened my mouth.</p>
-<div class="orv_constellation"><p>[I'm not a hero. From the beginning, I never planned to save any of you, and I'm not planning on doing that in the future, as well. However…]</p></div>
+<div class="orv_constellation"><p>I'm not a hero. From the beginning, I never planned to save any of you, and I'm not planning on doing that in the future, as well. However…</p></div>
 <p class="orv_line">I slowly looked behind to find…</p>
-<div class="orv_system"><p>[…It's possible that the other 'representative' might be holding a different opinion than mine.]</p></div>
+<div class="orv_system"><p>…It's possible that the other 'representative' might be holding a different opinion than mine.</p></div>
 <p class="orv_line">…Yoo Joonghyuk standing there.</p>
 <br>
 <hr>
@@ -352,18 +359,12 @@
             <a href="./ch_482"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_484">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="483" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="869" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="482" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="482" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

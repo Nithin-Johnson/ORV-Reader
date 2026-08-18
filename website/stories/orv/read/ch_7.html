@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 7: Ep. 2 – Protagonist, I</title>
     <meta property="og:title" content="Ch 7: Ep. 2 – Protagonist, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00007.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 7: Ep. 2 – Protagonist, I</h1></div>
 <p class="orv_line">The subway train stopped around halfway past Dongho Bridge.</p>
@@ -198,14 +205,14 @@
 <p class="orv_line">I recognized their identity at once. An ichthyosaur. A monster that was commonly called a sea serpent, it would later be classified as a 7th grade monster in the world of Ways of Survival. One of the ichthyosaurs looked in this direction.</p>
 <p class="orv_line">"U-Uwaaah! It is coming!"</p>
 <p class="orv_line">People screamed with fright. However, I just looked apathetically at the approaching ichthyosaur. These guys couldn't be a threat. The ichthyosaur circled around the bottom of Dongho Bridge and vanished into an air bubble. In the world of Ways of Survival, 'scenarios' took precedence over anything else. As long as we were protected by the scenario, we wouldn't have to deal with such monsters straight away. At least for now.</p>
-<div class="orv_system"><p>[Compensation settlement is delayed due to an unexpected scenario check. Please wait.]</p></div>
+<div class="orv_system"><p>Compensation settlement is delayed due to an unexpected scenario check. Please wait.</p></div>
 <p class="orv_line">The compensation settlement should've started right now but only an error message floated in the air. It was probably due to me. I looked down at Kim Namwoon's body which only had the torso remaining. According to the original Ways of Survival, Kim Namwoon killed most of the people in this carriage and moved on to the next scenario.</p>
 <p class="orv_line">However, I stopped it. If my thoughts were right, those who would be angry at Kim Namwoon's death would appear. Here? Not here. They were in the sky above.</p>
-<div class="orv_system"><p>[Due to the death of character 'Kim Namwoon', two constellations show a faint hostility towards you.]</p></div>
+<div class="orv_system"><p>Due to the death of character 'Kim Namwoon', two constellations show a faint hostility towards you.</p></div>
 <p class="orv_line">Constellations. They were mysterious beings in Ways of Survival. They sat watching from the distant nebulas and were the masterminds of this tragedy. Once the constellation's preferences notification appeared, I realized that it was now starting in earnest.</p>
 <p class="orv_line">It was funny. A day ago, our positions were opposite. Now they were the ones watching me.</p>
-<div class="orv_system"><p>[A handful of constellations admire your scenario.]</p></div>
-<div class="orv_system"><p>[Constellations have sponsored you 500 coins.]</p></div>
+<div class="orv_system"><p>A handful of constellations admire your scenario.</p></div>
+<div class="orv_system"><p>Constellations have sponsored you 500 coins.</p></div>
 <p class="orv_line">If there were some constellations who disliked me, there would also be some who liked me. Either way, it was an uncomfortable situation. However, I couldn't do anything about them right now. It was my turn to be a clown. I picked up Kim Namwoon's Swiss Army knife on the ground and thought—feel free to watch. They will end up paying the admission fee with their lives.</p>
 <p class="orv_line">"…Dokja-ssi? Are you okay?"</p>
 <p class="orv_line">I looked up and saw Yoo Sangah's face. Her shoulders were sagging. Blood covered her white blouse and there was a run in her stockings. The Yoo Sangah I knew was gone. I held Yoo Sangah's hand and said, "I'm sorry. I couldn't save the grandmother."</p>
@@ -217,15 +224,15 @@
 <p class="orv_line">"That, I…"</p>
 <p class="orv_line">I belatedly thought back to the previous scene. I had thrown the net in Yoo Sangah's direction. I knew what she was thinking and said, "It was just a coincidence. It won't happen twice."</p>
 <p class="orv_line">"Ah…" Yoo Sangah nodded silently. She didn't know the truth but she was smart. She knew what I meant. Someone lived because of my choice and someone else died. No matter how she survived, I didn't deserve a thank you.</p>
-<div class="orv_constellation"><p>[Wow, amazing.]</p></div>
+<div class="orv_constellation"><p>Wow, amazing.</p></div>
 <p class="orv_line">The dokkaebi appeared in the air.</p>
-<div class="orv_constellation"><p>[What on earth happened here? I was just watching the other carriages…]</p></div>
+<div class="orv_constellation"><p>What on earth happened here? I was just watching the other carriages…</p></div>
 <p class="orv_line">There was a mixture of delight and surprise on the dokkaebi's face. Twinkling stars floated over the dokkaebi's head. I counted the number of stars. One, two, three… Twenty, twenty one. Twenty one in total. He would be happy.</p>
-<div class="orv_constellation"><p>[For 21 people to be connected to my channel… Haha, isn't this quite good? Gosh, thank you for your sponsorship. Constellations. Haha, everyone! Did you properly show off your value?]</p></div>
+<div class="orv_constellation"><p>For 21 people to be connected to my channel… Haha, isn't this quite good? Gosh, thank you for your sponsorship. Constellations. Haha, everyone! Did you properly show off your value?</p></div>
 <p class="orv_line">The number of stars meant the number of constellations connected to the channel. 21 wasn't a lot, but it was a strange number for a beginner dokkaebi.</p>
-<div class="orv_constellation"><p>[The number of survivors is quite high? The fellow in the next carriage was a nutter as well… It seems that things are quite interesting today.]</p></div>
+<div class="orv_constellation"><p>The number of survivors is quite high? The fellow in the next carriage was a nutter as well… It seems that things are quite interesting today.</p></div>
 <p class="orv_line">The dokkaebi manipulated something in the air. A moment later, a list of survivors came up.</p>
-<div class="orv_constellation"><p>[Survivors from the 3434 Train to Bulgwang, Carriage 3807: Kim Dokja, Lee Hyunsung, Yoo Sangah, Han Myungoh and Lee Gilyoung. A total of five survivors.]</p></div>
+<div class="orv_constellation"><p>Survivors from the 3434 Train to Bulgwang, Carriage 3807: Kim Dokja, Lee Hyunsung, Yoo Sangah, Han Myungoh and Lee Gilyoung. A total of five survivors.</p></div>
 <p class="orv_line">Five people. There were more survivors than I thought. I looked at the faces of the survivors one by one.</p>
 <p class="orv_line">Lee Hyunsung had a good physique and excellent motor skills, so it was expected that he would survive. I even expected Yoo Sangah to survive—to a certain extent. Additionally, there was Lee Gilyoung. If my guess was right, 'Lee Gilyoung' was the name of the boy standing next to me. The fluid of the crushed grasshopper was still on the boy's hands. He squeezed the grasshopper I had given him.</p>
 <p class="orv_line">The boy was looking at his mother, who lost her head. The boy's mother had abandoned him to join in on killing the grandmother. The boy had just watched the whole thing from beginning to end. I hesitated for a moment before touching the boy's shoulder. It wasn't foolish sympathy. To put it simply, this was…</p>
@@ -234,20 +241,20 @@
 <p class="orv_line">The boy's eyes shook anxiously. His body trembled with a force that couldn't be resisted. Then little by little, the boy's head moved.</p>
 <p class="orv_line">"Then let's go together."</p>
 <p class="orv_line">Lee Gilyoung moved slowly and came close to my legs. Yoo Sangah was watching me with an impressed expression. I unintentionally caused another misunderstanding. In fact, it was meant to be seen. However, the target wasn't Yoo Sangah.</p>
-<div class="orv_system"><p>[A few constellations are impressed with your good deed.]</p></div>
-<div class="orv_system"><p>[Constellations have sponsored you 200 coins.]</p></div>
+<div class="orv_system"><p>A few constellations are impressed with your good deed.</p></div>
+<div class="orv_system"><p>Constellations have sponsored you 200 coins.</p></div>
 <p class="orv_line">I couldn't help thinking that it was a low move, but I also wanted to live. Given the upcoming major events, it was essential to draw the attention of the constellations right now.</p>
 <p class="orv_line">"W-Will you release us now? Didn't you get what you wanted?" Han Myungoh, whose shirt was torn, shouted from half a dozen steps away.</p>
 <p class="orv_line">Department Head Han Myungoh. He was a lucky human. I couldn't help wondering: Why was Han Myungoh riding the subway when he had so much money? This was the man who had shown off a new Mercedes-Benz S-Class not long ago.</p>
-<div class="orv_constellation"><p>[Hrmm, release? Haven't you looked outside? Do you really want to go out there?]</p></div>
+<div class="orv_constellation"><p>Hrmm, release? Haven't you looked outside? Do you really want to go out there?</p></div>
 <p class="orv_line">The dokkaebi chuckled. </p>
-<div class="orv_constellation"><p>[It is somehow admirable. In fact, I didn't expect much from this carriage but you managed to pass the first scenario. This proves that even bugs deserve to survive.]</p></div>
+<div class="orv_constellation"><p>It is somehow admirable. In fact, I didn't expect much from this carriage but you managed to pass the first scenario. This proves that even bugs deserve to survive.</p></div>
 <p class="orv_line">His words made us realize our position. Maybe we were like grasshoppers in his eyes.</p>
-<div class="orv_constellation"><p>[Now now, shouldn't there be a reward for overcoming the hardships? As a reward for the first scenario, you are entitled to the sponsorship of the 'constellations'. Waahhh! How about it? Aren't you looking forward to it? Hmm, you are all unenthusiastic. This is really a big deal.]</p></div>
+<div class="orv_constellation"><p>Now now, shouldn't there be a reward for overcoming the hardships? As a reward for the first scenario, you are entitled to the sponsorship of the 'constellations'. Waahhh! How about it? Aren't you looking forward to it? Hmm, you are all unenthusiastic. This is really a big deal.</p></div>
 <p class="orv_line">The reaction was natural—I was the only one here who knew what 'constellation' or 'sponsorship' was. The sponsorship of the constellations. The meaning was obvious. One of the key events of Ways of Survival, 'Sponsor Selection' was about to begin.</p>
-<div class="orv_constellation"><p>[Hmm, everybody has confused expressions. I can easily tell you. Right now, you are incredibly weak. If you are thrown into the scenarios that will take place, you will be killed when you meet a weak ground rat, let alone a 'kruk'. Benevolently, there are some great people in the universe who pity you and would like to sponsor you. Do you understand what I am saying?]</p></div>
+<div class="orv_constellation"><p>Hmm, everybody has confused expressions. I can easily tell you. Right now, you are incredibly weak. If you are thrown into the scenarios that will take place, you will be killed when you meet a weak ground rat, let alone a 'kruk'. Benevolently, there are some great people in the universe who pity you and would like to sponsor you. Do you understand what I am saying?</p></div>
 <p class="orv_line">Lee Hyunsung finally couldn't stand it anymore and opened his mouth, "What are you saying? Who is sponsoring whom…"</p>
-<div class="orv_constellation"><p>[Hmm, my words are just entering dirty ears. Isn't there an old saying in South Korea? It is better to see it once than listen a hundred times. So experience it directly. Well, the less fortunate ones might not get the chance. Hahaha!]</p></div>
+<div class="orv_constellation"><p>Hmm, my words are just entering dirty ears. Isn't there an old saying in South Korea? It is better to see it once than listen a hundred times. So experience it directly. Well, the less fortunate ones might not get the chance. Hahaha!</p></div>
 <p class="orv_line">I was tense. From now on—a good choice here would make my survival in the future easier.</p>
 <p class="orv_line">"Dokja-ssi? Two strange choices suddenly appeared in front of me…"</p>
 <p class="orv_line">"I don't know even if you ask me."</p>
@@ -258,7 +265,7 @@
 <p class="orv_line">"Ah… I understand."</p>
 <p class="orv_line">Yoo Sangah closed her mouth and started staring into space. It was a profound expression, as if she had encountered something curious. The others suddenly became silent. Everyone was reading the options in front of them. I also had my own choices to look at.</p>
 <div class="orv_window">
-<h3 class="orv_window_title">[Sponsor Selection]</h3>
+<h3 class="orv_window_title">Sponsor Selection</h3>
 <p>– Please select your sponsor</p>
 <p>– Your chosen sponsor will be your strong supporter.</p>
 <p>1. Abyssal Black Flame Dragon</p>
@@ -283,7 +290,7 @@
 <p class="orv_line">Among the characters that appeared in the novel, there was one supported by Sun Wukong. A wondrous power that could sweep through hundreds of incarnations and to kill thousands with one lightning strike. The author had described this part with a lot of energy so my memory of it was clear.</p>
 <p class="orv_line">I didn't know why such a powerful constellation was showing me interest but if I became the incarnation of the Great Sage Heaven's Equal, I would be able to survive in this new world more easily than anyone else. However…</p>
 <p class="orv_line">I quickly looked at the door connected to the carriage in front. Beyond that door, 'he' was looking at the selection screen like me. If I chose The Great Sage Heaven's Equal… Could I win against him?</p>
-<div class="orv_system"><p>[There is one minute left to complete the Sponsor Selection.]</p></div>
+<div class="orv_system"><p>There is one minute left to complete the Sponsor Selection.</p></div>
 <p class="orv_line">Time was running out. I breathed lightly and looked through my options. My worries didn't last long.</p>
 <br>
 <hr>
@@ -292,18 +299,12 @@
             <a href="./ch_6"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_8">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="7" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="28" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="6" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="6" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

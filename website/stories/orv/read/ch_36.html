@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 36: Ep. 8 – Emergency Defense, IV</title>
     <meta property="og:title" content="Ch 36: Ep. 8 – Emergency Defense, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,32 +177,32 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00036.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 36: Ep. 8 – Emergency Defense, IV</h1></div>
 <p class="orv_line">One hour after the battle began, Gong Pildu fought and fought. The number of monsters had barely decreased but it was still great. Gong Pildu was considered to have the strongest defense among the 10 Evils for a reason.</p>
 <p class="orv_line">"You scum!"</p>
-<div class="orv_system"><p>[The character Gong Pildu's Armed Zone has levelled up.]</p></div>
-<div class="orv_system"><p>[The character Gong Pildu's Private Land has levelled up!]</p></div>
-<div class="orv_system"><p>[The character Gong Pildu has acquired the Protective Wall skill.]</p></div>
+<div class="orv_system"><p>The character Gong Pildu's Armed Zone has levelled up.</p></div>
+<div class="orv_system"><p>The character Gong Pildu's Private Land has levelled up!</p></div>
+<div class="orv_system"><p>The character Gong Pildu has acquired the Protective Wall skill.</p></div>
 <p class="orv_line">The level up speed of Armed Zone was fast. The sponsor behind Gong Pildu was rushing to support his growth. If he could survive here, Gong Pildu's growth would be enormous.</p>
 <p class="orv_line">As long as he could survive here.</p>
 <p class="orv_line">"Uhweeeh…!"</p>
@@ -211,44 +218,44 @@
 <p class="orv_line">I opened the dokkaebi communication.</p>
 <p class="orv_line">'Bihyung'.</p>
 <p class="orv_line">Bihyung floating in the air turned to look at me.</p>
-<div class="orv_constellation"><p>[What is it? Calling me so suddenly.]</p></div>
+<div class="orv_constellation"><p>What is it? Calling me so suddenly.</p></div>
 <p class="orv_line">'Open the Dokkaebi Bag'.</p>
-<div class="orv_constellation"><p>[What? N-No! I am currently getting a lot of subscriptions!]</p></div>
+<div class="orv_constellation"><p>What? N-No! I am currently getting a lot of subscriptions!</p></div>
 <p class="orv_line">I know. My stock price was rising due to my actions with Gong Pildu. My actions of laying a trap and then sitting back meant the constellations of the 'fun seekers' group wouldn't still be on the channel which Gong Pildu belonged to.</p>
 <p class="orv_line">Where would the constellations go after leaving the channel?</p>
-<div class="orv_system"><p>[New constellations have entered the channel!]</p></div>
+<div class="orv_system"><p>New constellations have entered the channel!</p></div>
 <p class="orv_line">It was naturally Bihyung's channel.</p>
-<div class="orv_system"><p>[#BI-7623 channel is ready for an expansion.]</p></div>
-<div class="orv_constellation"><p>[Huhu, huhuhut, look at this, look at this! Now my channel is also…!]</p></div>
+<div class="orv_system"><p>#BI-7623 channel is ready for an expansion.</p></div>
+<div class="orv_constellation"><p>Huhu, huhuhut, look at this, look at this! Now my channel is also…!</p></div>
 <p class="orv_line">It wasn't unreasonable for Bihyung to be acting like this. But this wasn't the time for amusement.</p>
 <p class="orv_line">'If you don't want your channel to be ruined, open it quickly. You can see that there will be an advertisement in preparation for the channel expansion'.</p>
-<div class="orv_constellation"><p>[Ah, shit… really…]</p></div>
+<div class="orv_constellation"><p>Ah, shit… really…</p></div>
 <p class="orv_line">Bihyung grumbled but opened the Dokkaebi Bag after showing an advertisement. It was finally time to use the coins I had saved.</p>
 <p class="orv_line">'I'll give you 5,000 coins. Upgrade me to a gold member'.</p>
 <p class="orv_line">Bihyung stared at me quietly and sighed. It was followed by system messages.</p>
-<div class="orv_system"><p>[5,000 coins have been consumed.]</p></div>
-<div class="orv_system"><p>[Congratulations! You have become a gold member of the Dokkaebi Bag!]</p></div>
+<div class="orv_system"><p>5,000 coins have been consumed.</p></div>
+<div class="orv_system"><p>Congratulations! You have become a gold member of the Dokkaebi Bag!</p></div>
 <p class="orv_line">My member rating changed and the background of the Dokkaebi Bag also changed. Coins were really good. New item listings were added. I put the necessary items into the shopping cart.</p>
 <p class="orv_line">* Behind the Scenes Contract – 10,000 C.</p>
 <p class="orv_line">* Intermediate Magic Power Recovery Potion X 10 – 5,000 C.</p>
 <p class="orv_line">One contract and 10 intermediate potions… this should be enough.</p>
 <p class="orv_line">The spending was a bit big but the channel was going to be expanded. It wouldn't be long before I recovered it. Bihyung was nervous when he saw the items I bought.</p>
-<div class="orv_constellation"><p>[…Why is there a contract? Have you already forgotten the terms? You can't have a sponsor!]</p></div>
+<div class="orv_constellation"><p>…Why is there a contract? Have you already forgotten the terms? You can't have a sponsor!</p></div>
 <p class="orv_line">'What do you mean? Why would I get a sponsor now?''</p>
 <p class="orv_line">Even if I was doing that, why would I buy the contract with my own coins? At any rate, this Bihyung still needed a lot of work.</p>
-<div class="orv_system"><p>[15,000 coins have been consumed.]</p></div>
-<div class="orv_system"><p>[A 'Behind the Scenes Contract' has been acquired.]</p></div>
-<div class="orv_system"><p>[10 Intermediate Magic Power Recovery Potions have been acquired.]</p></div>
+<div class="orv_system"><p>15,000 coins have been consumed.</p></div>
+<div class="orv_system"><p>A 'Behind the Scenes Contract' has been acquired.</p></div>
+<div class="orv_system"><p>10 Intermediate Magic Power Recovery Potions have been acquired.</p></div>
 <p class="orv_line">Yoo Sangah showed curiosity when the items appeared out of thin air.</p>
 <p class="orv_line">"What is that?"</p>
 <p class="orv_line">"A contract to make a 'gap' an 'eul'."</p>
 <p class="orv_line">I filled out the contract carefully, wrote my name in the 'gap' section and waited quietly. It was time for the 'eul' to come.</p>
-<div class="orv_system"><p>[The sponsor for character 'Gong Pildu' is asking for help from nearby constellations.]</p></div>
+<div class="orv_system"><p>The sponsor for character 'Gong Pildu' is asking for help from nearby constellations.</p></div>
 <p class="orv_line">Finally, the sponsor behind Gong Pildu reached his limits and started sending messages outside the channel. It was natural since the sponsor didn't have many coins in the first place. Not everybody was rich just because they were a constellation.</p>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' scoffs.]</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' scoffs.</p></div>
 <p class="orv_line">The other constellations in Gong Pildu's channel would've stopped sponsoring and the incarnation was dying… everything was going according to plan.</p>
 <p class="orv_line">Bihyung noticed something and muttered.</p>
-<div class="orv_constellation"><p>[Wait a minute, surely you aren't…]</p></div>
+<div class="orv_constellation"><p>Wait a minute, surely you aren't…</p></div>
 <p class="orv_line">I talked towards Gong Pildu, who was in a half dead state.</p>
 <p class="orv_line">"Hey, you over there."</p>
 <p class="orv_line">Dududududu! Gong Pildu fired crazily and looked up at me while breathing heavily.</p>
@@ -261,44 +268,44 @@
 <p class="orv_line">I waved the 'contract' in one hand and the 'Intermediate Magic Power Recovery Potion' in the other hand.</p>
 <p class="orv_line">"Answer quickly. I will give these items to you if you sign with me."</p>
 <p class="orv_line">A message window flashed in front of me.</p>
-<div class="orv_system"><p>[The sponsor behind character 'Gong Pildu' has revealed himself.]</p></div>
-<div class="orv_system"><p>[The constellation 'Defense Master' is looking at you like you are crazy.]</p></div>
+<div class="orv_system"><p>The sponsor behind character 'Gong Pildu' has revealed himself.</p></div>
+<div class="orv_system"><p>The constellation 'Defense Master' is looking at you like you are crazy.</p></div>
 <p class="orv_line">Indeed. He wasn't yet ready to be an 'eul'. Don't worry. He would be in a hurry as time passed.</p>
 <p class="orv_line">Bihyung was watching me.</p>
-<div class="orv_constellation"><p>[You… are you crazy?]</p></div>
+<div class="orv_constellation"><p>You… are you crazy?</p></div>
 <p class="orv_line">'This one as well'.</p>
-<div class="orv_constellation"><p>[You are the first to try and support a constellation.]</p></div>
+<div class="orv_constellation"><p>You are the first to try and support a constellation.</p></div>
 <p class="orv_line">'I can't do it?'</p>
-<div class="orv_constellation"><p>[This is a constellation! Will it sign with an insignificant human?]</p></div>
+<div class="orv_constellation"><p>This is a constellation! Will it sign with an insignificant human?</p></div>
 <p class="orv_line">'That is just your thoughts'.</p>
 <p class="orv_line">The intermediate constellation, Defense Master. He was a low level constellation compared to his ability.</p>
 <p class="orv_line">His world had long become a 'scenario' and was completely destroyed. Therefore, the Defense Master's myth was no longer discussed. The myth had disappeared and the constellation couldn't get coins. One day, even his existence would disappear.</p>
 <p class="orv_line">That's why some constellations, including the Defense Master' were obsessed with looking for an 'incarnation'. The constellations were remembered in the world through their chosen incarnation.</p>
 <p class="orv_line">'That guy, he doesn't have any coins left'.</p>
-<div class="orv_constellation"><p>[What?]</p></div>
+<div class="orv_constellation"><p>What?</p></div>
 <p class="orv_line">Gong Pildu's power had fallen sharply compared to before. Unlike the 'Monarch of the Small Fries', the Defense Master was someone who cared about his incarnation. The fact that Gong Pildu was going to die meant he had run out of coins.</p>
 <p class="orv_line">It was obvious but without coins, a new 'sponsor contract' was impossible. Then what happened to a constellation who couldn't create a new incarnation?</p>
 <p class="orv_line">'Once Gong Pildu dies, that guy will be forgotten'.</p>
 <p class="orv_line">For a constellation, being forgotten meant death.</p>
 <p class="orv_line">Faint fear filled Bihyung's eyes.</p>
-<div class="orv_constellation"><p>[You are…?]</p></div>
+<div class="orv_constellation"><p>You are…?</p></div>
 <p class="orv_line">Gong Pildu was a great card if I could afford it. Even Yoo Joonghyuk had attempted to subjugate Gong Pildu several times in countless regressions. Of course, he had never been successful.</p>
 <p class="orv_line">Yoo Sangah spoke.</p>
 <p class="orv_line">"Dokja-ssi, that person will die."</p>
 <p class="orv_line">Gong Pildu was biting his lips so hard that blood was flowing. Now there were only two mini-turrets left in Armed Zone. It was time to end this.</p>
-<div class="orv_system"><p>[The constellation 'Defense Master' is wondering about the contents of the contract.]</p></div>
+<div class="orv_system"><p>The constellation 'Defense Master' is wondering about the contents of the contract.</p></div>
 <p class="orv_line">He was coming. Bihyung's eyes widened at the sight in front of him.</p>
-<div class="orv_constellation"><p>[…Really? No, is this real?]</p></div>
+<div class="orv_constellation"><p>…Really? No, is this real?</p></div>
 <p class="orv_line">I showed the contract immediately.</p>
-<div class="orv_system"><p>[The constellation 'Defense Master' has started reading the contract.]</p></div>
+<div class="orv_system"><p>The constellation 'Defense Master' has started reading the contract.</p></div>
 <p class="orv_line">Gong Pildu, who was shedding blood on the lower floor, suddenly shouted. He had probably heard a message from his sponsor.</p>
 <p class="orv_line">"W-What? What is this message?"</p>
 <p class="orv_line">What? He was being sold.</p>
 <p class="orv_line">"W-What is going on Pildu-ssi?"</p>
-<div class="orv_system"><p>[The constellation 'Defense Master' is asking for some time to think.]</p></div>
+<div class="orv_system"><p>The constellation 'Defense Master' is asking for some time to think.</p></div>
 <p class="orv_line">After a while, I heard some good news.</p>
-<div class="orv_system"><p>[The constellation 'Defense Master' has added a condition to the contract.]</p></div>
-<div class="orv_system"><p>[If you agree with this condition, the constellation 'Defense Master' will agree to contract with you.]</p></div>
+<div class="orv_system"><p>The constellation 'Defense Master' has added a condition to the contract.</p></div>
+<div class="orv_system"><p>If you agree with this condition, the constellation 'Defense Master' will agree to contract with you.</p></div>
 <p class="orv_line">I immediately read the contract.</p>
 <p class="orv_line">…</p>
 <p class="orv_line">14. Incarnation Kim Dokja (Gap) recognizes the property rights of Constellation Defense Master (Eul)and should ensure the survival of 'Gong Pildu'.</p>
@@ -309,10 +316,10 @@
 <p class="orv_line">I checked the contract and nodded.</p>
 <p class="orv_line">"I will sign the contract."</p>
 <p class="orv_line">Before long, a faint thread connected me and Gong Pildu. Then system messages were heard.</p>
-<div class="orv_constellation"><p>[The contract has been completed.]</p></div>
-<div class="orv_system"><p>[You have become the co-sponsor of 'Gong Pildu' due to the contract.]</p></div>
-<div class="orv_system"><p>[Due to the contract, you have been given the right to command incarnation 'Gong Pildu'.]</p></div>
-<div class="orv_system"><p>[The duration of the contract is five years and it won't be automatically renewed.]</p></div>
+<div class="orv_constellation"><p>The contract has been completed.</p></div>
+<div class="orv_system"><p>You have become the co-sponsor of 'Gong Pildu' due to the contract.</p></div>
+<div class="orv_system"><p>Due to the contract, you have been given the right to command incarnation 'Gong Pildu'.</p></div>
+<div class="orv_system"><p>The duration of the contract is five years and it won't be automatically renewed.</p></div>
 <p class="orv_line">Yoo Joonghyuk would be stunned if he knew that Gong Pildu could be obtained so easily. If I hadn't read to the latter half of Ways of Survival, I wouldn't have known to use the Behind the Scenes Contract this way.</p>
 <p class="orv_line">I handed the recovery potions to Yoo Sangah.</p>
 <p class="orv_line">"Give this to Gong Pildu. You should give him one every 40 minutes."</p>
@@ -321,11 +328,11 @@
 <p class="orv_line">"What is this?"</p>
 <p class="orv_line">"Drink it and fight."</p>
 <p class="orv_line">Gong Pildu was suspicious for a moment but soon opened the potion's lid. Blue smoke emerged around his body and the destroyed turrets returned to their original appearance.</p>
-<div class="orv_system"><p>[The character 'Gong Pildu' has completely recovered his magic power.]</p></div>
+<div class="orv_system"><p>The character 'Gong Pildu' has completely recovered his magic power.</p></div>
 <p class="orv_line">Gong Pildu wiped the potion stained lips and looked up at me.</p>
 <p class="orv_line">"Stupid guy. Do you think I will forgive you because of this? Once I get out of here, it will be your end…"</p>
 <p class="orv_line">"Shut up, Gong Pildu."</p>
-<div class="orv_system"><p>[Under the terms of the contract, 'Command Rights' is activated!]</p></div>
+<div class="orv_system"><p>Under the terms of the contract, 'Command Rights' is activated!</p></div>
 <p class="orv_line">"O-Oof? Oof oof oof?"</p>
 <p class="orv_line">Poor guy, he didn't even know what situation he was in.</p>
 <p class="orv_line">"Fight hard. Don't touch my party members."</p>
@@ -337,27 +344,27 @@
 <p class="orv_line">"…Did you write something?"</p>
 <p class="orv_line">"Now you can rest assured about Gong Pildu."</p>
 <p class="orv_line">Then the bombardment of messages from the constellations poured out.</p>
-<div class="orv_system"><p>[The constellation 'Secretive Plotter' finds your idea interesting.]</p></div>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' has dropped his stick at your strategy.]</p></div>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' thinks that you are impudent.]</p></div>
+<div class="orv_system"><p>The constellation 'Secretive Plotter' finds your idea interesting.</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' has dropped his stick at your strategy.</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' thinks that you are impudent.</p></div>
 <p class="orv_line">…</p>
 <p class="orv_line">I had secretly signed the contract but these guys already noticed. The Defense Master was only intermediate level but he was still a constellation.</p>
 <p class="orv_line">A mere human became a co-sponsor with a constellation, the impact on the constellations would be enormous. There would be a backlash among those like the Abyssal Black Flame Dragon. But.</p>
-<div class="orv_system"><p>[Many constellations are paying attention to you.]</p></div>
-<div class="orv_system"><p>[A number of constellations want to become your sponsor.]</p></div>
+<div class="orv_system"><p>Many constellations are paying attention to you.</p></div>
+<div class="orv_system"><p>A number of constellations want to become your sponsor.</p></div>
 <p class="orv_line">The constellations who realized my value were overwhelmingly larger. If they became my sponsor, they would be able to use the power of Defense Master.</p>
 <p class="orv_line">Then the owner of Gong Pildu's channel, Dokkaebi Biryu appeared in the air.</p>
-<div class="orv_constellation"><p>[Constellations! W-Why… are you suddenly leaving? D-Don't go! Just wait a little longer…!]</p></div>
+<div class="orv_constellation"><p>Constellations! W-Why… are you suddenly leaving? D-Don't go! Just wait a little longer…!</p></div>
 <p class="orv_line">Biryu, whose channel was being ruined, made a desperate appeal. It was the dokkaebi who created the food penalty and 'survival cost' in Gumho Station.</p>
-<div class="orv_constellation"><p>[H-Hiiik! N-No…]</p></div>
+<div class="orv_constellation"><p>H-Hiiik! N-No…</p></div>
 <p class="orv_line">Dokkaebi Biryu gradually blurred and disappeared.</p>
-<div class="orv_system"><p>[Channel # BIR-3642 has been forced to leave after having the subscriptions reduced.]</p></div>
+<div class="orv_system"><p>Channel # BIR-3642 has been forced to leave after having the subscriptions reduced.</p></div>
 <p class="orv_line">Bihyung muttered in a trembling voice after seeing one channel falling to ruin.</p>
-<div class="orv_constellation"><p>[Excuse me… Dokja-nim?]</p></div>
+<div class="orv_constellation"><p>Excuse me… Dokja-nim?</p></div>
 <p class="orv_line">'What is it?'</p>
-<div class="orv_constellation"><p>[You… were you aiming for Gong Pildu from the beginning?]</p></div>
+<div class="orv_constellation"><p>You… were you aiming for Gong Pildu from the beginning?</p></div>
 <p class="orv_line">I shrugged.</p>
-<div class="orv_constellation"><p>[Crazy… human… what human did I sign with?]</p></div>
+<div class="orv_constellation"><p>Crazy… human… what human did I sign with?</p></div>
 <p class="orv_line">Bihyung couldn't close his mouth. I didn't care. This place was organized and I needed to move on to the next place.</p>
 <p class="orv_line">I spoke to the bewildered party members who still hadn't grasped the situation.</p>
 <p class="orv_line">"Everyone. I'm sorry but I have to leave for a while'.</p>
@@ -404,18 +411,12 @@
             <a href="./ch_35"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_37">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="36" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="55" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="35" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="35" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

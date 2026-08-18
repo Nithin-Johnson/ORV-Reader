@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 254: Ep. 47 - Demon King Selection, VIII</title>
     <meta property="og:title" content="Ch 254: Ep. 47 - Demon King Selection, VIII" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,58 +177,58 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00254.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 254: Ep. 47 - Demon King Selection, VIII</h1></div>
-<div class="orv_system"><p>[The Fourth Wall is showing its teeth in a threatening manner.]</p></div>
+<div class="orv_system"><p>The Fourth Wall is showing its teeth in a threatening manner.</p></div>
 <p class="orv_line">Fierce sparks filled the air. I quickly ordered Mark to leave the office. I wouldn't be able to figure out what was happening if he was present.</p>
 <p class="orv_line">'Wait a minute, listen to me'.</p>
 <p class="orv_line">I thought about what I could do to appease this damn wall. 'You love stories. Once this is over, I'll feed you many things that you want to eat.</p>
-<div class="orv_system"><p>[The Fourth Wall is looking at you with a frown.]</p></div>
+<div class="orv_system"><p>The Fourth Wall is looking at you with a frown.</p></div>
 <p class="orv_line">The growling pressured seemed to calm down a bit. It didn't seem to have any effect.</p>
 <p class="orv_line">'I have something I need to check. I could die if I don't know it. Is that what you want?'</p>
 <p class="orv_line">The Fourth Wall was silent. Fortunately, this guy didn't want me to die at the moment. The Fourth Wall was silent for a long time before speaking.</p>
-<div class="orv_quote"><p>「 The Fourth Wall says, Kim Dok ja. 」</p></div>
+<div class="orv_quote"><p>The Fourth Wall says, Kim Dok ja.</p></div>
 <p class="orv_line">"Yes."</p>
-<div class="orv_quote"><p>「 It wi ll be dan ge rous with out me. 」</p></div>
+<div class="orv_quote"><p>It wi ll be dan ge rous with out me.</p></div>
 <p class="orv_line">I thought I knew what it was talking about. One of the Fourth Wall's functions included protecting me from the eyes of the constellations. Thus, it was worried about the constellations harming me once it was turned off.</p>
 <p class="orv_line">'I know. However, this time I have to look'.</p>
 <p class="orv_line">In front of my firm will, the Fourth Wall was silent for a moment before opening its mouth.</p>
-<div class="orv_quote"><p>「 10 se conds on ly. 」</p></div>
+<div class="orv_quote"><p>10 se conds on ly.</p></div>
 <p class="orv_line">10 seconds. Yes, it was a bit tight but it was fine.</p>
-<div class="orv_quote"><p>「 All chan nels must be block ed. 」</p></div>
+<div class="orv_quote"><p>All chan nels must be block ed.</p></div>
 <p class="orv_line">I nodded.</p>
 <p class="orv_line">–Biyoo. Play an ad on the channel.</p>
 <p class="orv_line">The moment the order was sent via the dokkaebi communication, the screen turned off.</p>
-<div class="orv_system"><p>[Many constellations are confused by the sudden advertisement.]</p></div>
+<div class="orv_system"><p>Many constellations are confused by the sudden advertisement.</p></div>
 <p class="orv_line">Okay, this was enough. However, the Fourth Wall wasn't satisfied.</p>
-<div class="orv_quote"><p>「 The Fourth Wall says, Not e nough yet. 」</p></div>
+<div class="orv_quote"><p>The Fourth Wall says, Not e nough yet.</p></div>
 <p class="orv_line">'Not enough? What?'</p>
 <p class="orv_line">The Fourth Wall didn't answer. I looked up and Biyoo was blinking innocently.</p>
-<div class="orv_constellation"><p>[…Baat?]</p></div>
+<div class="orv_constellation"><p>…Baat?</p></div>
 <p class="orv_line">Biyoo was clearly blocking the channel properly. It wasn't enough yet…</p>
 <p class="orv_line">At this moment, the previous scenario came to mind.</p>
 <p class="orv_line">Hidden Scenario - Kim Dokja Proof of Identity. In this industrial complex, there was a dokkaebi carrying out the scenario. I stared out the window at the ruins of the scenario.</p>
 <p class="orv_line">The Star Stream created the hidden scenarios but it was the dokkaebis that guided the direction of the scenario.</p>
-<div class="orv_system"><p>[Many constellations are protesting the unstable channel conditions.]</p></div>
+<div class="orv_system"><p>Many constellations are protesting the unstable channel conditions.</p></div>
 <p class="orv_line">In retrospect, 'Kim Dokja Proof of Identity' was a rather unusual scenario. It was a scenario that precisely knew the demands of the constellations and even contained information about 'me' before the first scenario…</p>
 <p class="orv_line">No matter how I thought about it, there was only one person who would do this. I sighed and slowly opened my mouth. "Bihyung, won't you come out?"</p>
 <br>
@@ -293,42 +300,42 @@
 <br>
 <hr>
 <br>
-<div class="orv_constellation"><p>[ …Kim Dokja is truly Kim Dokja. How did you know?]</p></div>
+<div class="orv_constellation"><p>…Kim Dokja is truly Kim Dokja. How did you know?</p></div>
 <p class="orv_line">Bihyung appeared out of thin air. His fur was shiny and he was now wearing good quality cloth materials. The dokkaebi used to only wear tiger underwear but that was an old story now.</p>
 <p class="orv_line">"What about the Korean Peninsula channel?"</p>
-<div class="orv_constellation"><p>[I was demoted. Can't you tell?]</p></div>
+<div class="orv_constellation"><p>I was demoted. Can't you tell?</p></div>
 <p class="orv_line">"It looks like you're not doing well without me?"</p>
-<div class="orv_constellation"><p>[You'll know if you come back.]</p></div>
+<div class="orv_constellation"><p>You'll know if you come back.</p></div>
 <p class="orv_line">Bihyung didn't use honorifics as before. Perhaps it was proof that the relationship between us had changed. In fact, my contract with him had ended with my death.</p>
 <p class="orv_line">Bihyung stared at me for a while and I gazed back.</p>
-<div class="orv_constellation"><p>[Have you been well?]</p></div>
+<div class="orv_constellation"><p>Have you been well?</p></div>
 <p class="orv_line">"It is as you can see."</p>
-<div class="orv_constellation"><p>[Yes, I've heard many stories about you.]</p></div>
+<div class="orv_constellation"><p>Yes, I've heard many stories about you.</p></div>
 <p class="orv_line">I lightly nodded.</p>
-<div class="orv_constellation"><p>[Do you want to come back to my channel again? I will treat you well.]</p></div>
+<div class="orv_constellation"><p>Do you want to come back to my channel again? I will treat you well.</p></div>
 <p class="orv_line">Perhaps Bihyung's words were sincere. It was a more dangerous proposal because it was genuine.</p>
 <p class="orv_line">"Well…"</p>
 <p class="orv_line">I didn't hate Bihyung now. However, I wasn't naive enough to join hands with Bihyung. Bihyung was a dokkaebi with strings to the bureau and the bureau was one of the most dangerous groups in the world.</p>
-<div class="orv_constellation"><p>[Indeed, you were originally such a person.]</p></div>
+<div class="orv_constellation"><p>Indeed, you were originally such a person.</p></div>
 <p class="orv_line">Bihyung's expression was changing. It was natural for the dokkaebis to be aloof to those who left their channels. The idea that Bihyung could become an enemy wasn't impossible. Even so, the time had come sooner than I thought.</p>
-<div class="orv_constellation"><p>[Then what about this? Build a joint channel with me. It is fine since this is the Demon Realm.]</p></div>
+<div class="orv_constellation"><p>Then what about this? Build a joint channel with me. It is fine since this is the Demon Realm.</p></div>
 <p class="orv_line">For a moment, I thought I heard wrong. "…Are you serious?"</p>
-<div class="orv_constellation"><p>[Think about it once.]</p></div>
+<div class="orv_constellation"><p>Think about it once.</p></div>
 <p class="orv_line">In fact, it wasn't a bad suggestion. If I built a joint channel with Biyoo, it would allow Biyoo to learn and grow quickly. "I understand. More than that, now…"</p>
 <p class="orv_line">At this moment, I heard Bihyung through the dokkaebi communication.</p>
 <p class="orv_line">–Do you want me to turn the channel off?</p>
 <p class="orv_line">I nodded. As expected, Bihyung only pretended to be stupid.</p>
 <p class="orv_line">–I don't know what you're trying to do but I wish you well. I have a few things to do so… let's resolve the rest at a later time.</p>
 <p class="orv_line">I didn't understand why Bihyung was so favourable towards me. In any case, I was fortunate. Bihyung changed the settings and then a message from the constellations was heard.</p>
-<div class="orv_system"><p>[All constellations in the channel are dissatisfied with the channel's connection!]</p></div>
+<div class="orv_system"><p>All constellations in the channel are dissatisfied with the channel's connection!</p></div>
 <p class="orv_line">I immediately looked at the Fourth Wall.</p>
-<div class="orv_quote"><p>「 The Fourth Wall says, Do not look for too lo ng. 」</p></div>
-<div class="orv_system"><p>[The exclusive skill 'Fourth Wall' has been released.]</p></div>
+<div class="orv_quote"><p>The Fourth Wall says, Do not look for too lo ng.</p></div>
+<div class="orv_system"><p>The exclusive skill 'Fourth Wall' has been released.</p></div>
 <p class="orv_line">I felt the curtain surrounding my world disappearing. I didn't miss this time and turned on the Attributes Window.</p>
-<div class="orv_system"><p>[Checking the Attributes Window.]</p></div>
+<div class="orv_system"><p>Checking the Attributes Window.</p></div>
 <p class="orv_line">A vast amount of information entered my mind.</p>
 <div class="orv_window">
-<h3 class="orv_window_title">[Character Summary]</h3>
+<h3 class="orv_window_title">Character Summary</h3>
 <p>Name: Kim Dokja</p>
 <p>Age: 28 years old</p>
 <p>Sponsor: None</p>
@@ -339,8 +346,8 @@
 </div>
 <p class="orv_line">I could now see my attributes that I couldn't confirm properly last time. To be honest, it was surprising. I thought my attribute would be 'reader'…</p>
 <p class="orv_line">Scenario Interpreter? Besides, what was ■■ Apostle? Why wasn't the attribute rating shown?</p>
-<div class="orv_system"><p>[You have checked your Attributes Window for the first time.]</p></div>
-<div class="orv_system"><p>[The effect of the 'Scenario Interpreter' is activated!]</p></div>
+<div class="orv_system"><p>You have checked your Attributes Window for the first time.</p></div>
+<div class="orv_system"><p>The effect of the 'Scenario Interpreter' is activated!</p></div>
 <p class="orv_line">In any case, I kept checking the information. The part I watched most carefully was the 'Exclusive Skills'.</p>
 <div class="orv_window">
 <p>Exclusive Skills: Omniscient Reader's Viewpoint Lv. ?, Bookmark Lv. ?, Character List Lv. ?, Fourth Wall Lv. ?, Reading Comprehension Lv. ?, …</p>
@@ -350,12 +357,12 @@
 <p class="orv_line">I raised my hand to the Attributes Window without thinking. Then there was the sound of sparks appearing and the Attributes Window started breaking apart.</p>
 <p class="orv_line">…Was it already 10 seconds? I thought so at first but the problem wasn't that simple.</p>
 <p class="orv_line">A faint ringing was heard in my ears and my head suddenly throbbed. The finger touching the Attributes Window was numb and the world became dizzy. I felt like vomiting. Beyond the insurmountable wall, something was calling me.</p>
-<div class="orv_system"><p>[The exclusive skill 'Fourth Wall' is strongly activated!]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Fourth Wall' is strongly activated!</p></div>
 <p class="orv_line">The situation wasn't improved despite the Fourth Wall activating. The surrounding landscapes started to mix together. It was a scene where things that shouldn't go together were merged. In the midst of this terrible mood, I felt a strange sense of unity. It felt like something I had been wanting for a long time.</p>
 <p class="orv_line">Then I heard a strange message.</p>
-<div class="orv_system"><p>[Your understanding of the character 'Kim Dokja' has increased.]</p></div>
+<div class="orv_system"><p>Your understanding of the character 'Kim Dokja' has increased.</p></div>
 <p class="orv_line">What…? The moment my consciousness flickered, someone spoke to me.</p>
-<div class="orv_quote"><p>「 (So, you were told not to look for too long). 」</p></div>
+<div class="orv_quote"><p>(So, you were told not to look for too long).</p></div>
 <br>
 <hr>
         </article>
@@ -363,18 +370,12 @@
             <a href="./ch_253"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_255">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="254" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="327" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="253" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="253" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

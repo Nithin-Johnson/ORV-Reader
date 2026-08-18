@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 252: Ep. 47 - Demon King Selection, VI</title>
     <meta property="og:title" content="Ch 252: Ep. 47 - Demon King Selection, VI" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,43 +177,43 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00252.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 252: Ep. 47 - Demon King Selection, VI</h1></div>
-<div class="orv_system"><p>[You have entered the hidden scenario area.]</p></div>
-<div class="orv_system"><p>[Would you like to participate in the hidden scenario ― the Kim Dokja Game?]</p></div>
+<div class="orv_system"><p>You have entered the hidden scenario area.</p></div>
+<div class="orv_system"><p>Would you like to participate in the hidden scenario ― the Kim Dokja Game?</p></div>
 <p class="orv_line">Han Myungoh stared at me and muttered in a dumbfounded manner. "…What is going on?"</p>
 <p class="orv_line">I stared at Biyoo.</p>
-<div class="orv_constellation"><p>[Baat, baaat…]</p></div>
+<div class="orv_constellation"><p>Baat, baaat…</p></div>
 <p class="orv_line">Biyoo repeatedly shook her head. It wasn't Biyoo who did this.</p>
 <p class="orv_line">Most hidden scenarios were activated according to the will of the Star Stream, just like the main scenario. Then why at this time? A subsequent system message gave a hint.</p>
-<div class="orv_system"><p>[The owner of the industrial complex is currently absent.]</p></div>
-<div class="orv_system"><p>[An emergency promotion scenario is activated.]</p></div>
+<div class="orv_system"><p>The owner of the industrial complex is currently absent.</p></div>
+<div class="orv_system"><p>An emergency promotion scenario is activated.</p></div>
 <p class="orv_line">It seemed that I had been away for too long. "I think the Star Stream has determined that I have no intending of inheriting the duke's position."</p>
 <p class="orv_line">"Isn't it okay now that you're here?"</p>
 <p class="orv_line">"That would be good."</p>
 <p class="orv_line">The scenario remained unchanged after I entered the industrial complex. Maybe the Star Stream scenario was twisted by the impersonation act that Yoo Joonghyuk and I committed. At the time, there was a message that an error occurred.</p>
 <p class="orv_line">"…What is the Kim Dokja Game? It is a free participation scenario?"</p>
 <p class="orv_line">Jang Hayoung opened his eyes in the back seat and stretched.</p>
-<div class="orv_system"><p>[We are currently electing the 'real Kim Dokja' of the industrial complex.]</p></div>
+<div class="orv_system"><p>We are currently electing the 'real Kim Dokja' of the industrial complex.</p></div>
 <p class="orv_line">At this rate, my name was going to be stolen. I turned towards Han Myungoh and asked, "Will you participate?"</p>
 <p class="orv_line">"Why would I do that?"</p>
 <p class="orv_line">"What about you, Jang Hayoung?"</p>
@@ -218,7 +225,7 @@
 <p class="orv_line">"No matter what happens, I have to go. This is my industrial complex."</p>
 <p class="orv_line">Immediately after joining the scenario, a message window emerged.</p>
 <div class="orv_window">
-<h3 class="orv_window_title">[Hidden Scenario - Kim Dokja Proof of Identity]</h3>
+<h3 class="orv_window_title">Hidden Scenario - Kim Dokja Proof of Identity</h3>
 <p>Category: Main</p>
 <p>Difficulty: ???</p>
 <p>Clear Conditions: Prove to the constellations of the 'Kim Dokja Industrial Complex' channel that you are Kim Dokja.</p>
@@ -229,16 +236,16 @@
 <p>* During the time limit, the aspiring 'Kim Dokja' who receives the most points from the constellations will inherit the Kim Dokja Industrial Complex.</p>
 </div>
 <p class="orv_line">…It was the first time I had seen such a scenario. This scenario naturally wasn't in the original.</p>
-<div class="orv_system"><p>[A new aspiring 'Kim Dokja' has entered.]</p></div>
-<div class="orv_system"><p>[There are three hours left in the scenario.]</p></div>
-<div class="orv_system"><p>[You must be acknowledged as 'Kim Dokja' by most of the constellations.]</p></div>
-<div class="orv_system"><p>[You are the 1131st aspiring Kim Dokja.]</p></div>
+<div class="orv_system"><p>A new aspiring 'Kim Dokja' has entered.</p></div>
+<div class="orv_system"><p>There are three hours left in the scenario.</p></div>
+<div class="orv_system"><p>You must be acknowledged as 'Kim Dokja' by most of the constellations.</p></div>
+<div class="orv_system"><p>You are the 1131st aspiring Kim Dokja.</p></div>
 <p class="orv_line">The scenario started and I was summoned to the outskirts of the plaza in the Kim Dokja Industrial Complex. There was already a struggle to prove they were Kim Dokja.</p>
-<div class="orv_constellation"><p>[Haha, everyone! Do you want to be recognized by the constellations? Show us that you are the real Kim Dokja!]</p></div>
+<div class="orv_constellation"><p>Haha, everyone! Do you want to be recognized by the constellations? Show us that you are the real Kim Dokja!</p></div>
 <p class="orv_line">I heard the voice of a dokkaebi. While I was away, the bureau had successfully advanced into the Demon Realm. It would be a hindrance to the wenny people… in any case, they gathered like ghosts whenever there was a story.</p>
-<div class="orv_constellation"><p>[Baaat!]</p></div>
+<div class="orv_constellation"><p>Baaat!</p></div>
 <p class="orv_line">Biyoo became determined and started to expand the channel.</p>
-<div class="orv_system"><p>[Multiple constellations have entered the channel.]</p></div>
+<div class="orv_system"><p>Multiple constellations have entered the channel.</p></div>
 <p class="orv_line">I looked around slowly at the other aspiring 'Kim Dokja'.</p>
 <p class="orv_line">"I am Kim Dokja! Look!"</p>
 <p class="orv_line">"I'm Kim Dokja!"</p>
@@ -247,61 +254,61 @@
 <p class="orv_line">However, not all of them were the same.</p>
 <p class="orv_line">"I am the prophet Kim Dokja!"</p>
 <p class="orv_line">"I am the Demon King of Salvation!"</p>
-<div class="orv_system"><p>[Some constellations are interested.]</p></div>
-<div class="orv_system"><p>[Candidate 986 has gained 10 points.]</p></div>
+<div class="orv_system"><p>Some constellations are interested.</p></div>
+<div class="orv_system"><p>Candidate 986 has gained 10 points.</p></div>
 <p class="orv_line">I stopped for a moment as I saw some candidates screaming 'Kim Dokja' in a plausible costume.</p>
 <p class="orv_line">"I am the King of a Kingless World!"</p>
-<div class="orv_system"><p>[A few constellations are interested in this candidate.]</p></div>
-<div class="orv_system"><p>[Candidate 986 has gained 20 points.]</p></div>
+<div class="orv_system"><p>A few constellations are interested in this candidate.</p></div>
+<div class="orv_system"><p>Candidate 986 has gained 20 points.</p></div>
 <p class="orv_line">…Wasn't he quite good? I entered the centre of the industrial complex and more and more people started saying plausible things. Some Kim Dokjas could be seen duelling. I wanted to know why this area was so bloody when I heard a message from a familiar constellation.</p>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is arguing that Kim Dokja is a brave person.]</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is arguing that Kim Dokja is a brave person.</p></div>
 <p class="orv_line">…I was wondering why the Great Sage Heaven's Equal was so quiet. He was already in the middle of this situation. There was the sound of a blade cutting through the air and the aspiring Kim Dokja collapsed.</p>
 <p class="orv_line">"Kuaaack!"</p>
 <p class="orv_line">A sharp magic power cut at the waist of another aspiring Kim Dokja. Some candidates fled and the winning Kim Dokja shouted,</p>
 <p class="orv_line">"This is proof that I am Kim Dokja."</p>
 <p class="orv_line">A blade made of blue magic power was in his hand. I was honestly a bit surprised.</p>
-<div class="orv_system"><p>[A great number of constellations are interested in this candidate!]</p></div>
-<div class="orv_system"><p>[Candidate 312 has gained 100 points.]</p></div>
+<div class="orv_system"><p>A great number of constellations are interested in this candidate!</p></div>
+<div class="orv_system"><p>Candidate 312 has gained 100 points.</p></div>
 <p class="orv_line">Candidate 312 wasn't using the Purest Sword Force but it was similar in appearance. Candidate 312 glanced at me before starting to wipe out other candidates again. It was only a fleeting moment but the moment I met his eyes, Aileen's words went through my head.</p>
 <p class="orv_line">–Since the duke left, I have been struggling with the other industrial complexes… the party members handle it well.</p>
 <p class="orv_line">I had a rough idea of how things turned out like this. Some of the aspiring Kim Dokjas here were from other industrial complexes. In other words, there were those who received sponsored information about me and posed as Kim Dokja.</p>
 <p class="orv_line">My mind was a bit complicated. If I was defeated in this game, the wrong Kim Dokja would enter the Demon King Selection.</p>
-<div class="orv_system"><p>[A few constellations are interested in you.]</p></div>
-<div class="orv_system"><p>[A few constellations are demanding that you prove you are Kim Dokja.]</p></div>
+<div class="orv_system"><p>A few constellations are interested in you.</p></div>
+<div class="orv_system"><p>A few constellations are demanding that you prove you are Kim Dokja.</p></div>
 <p class="orv_line">How could I prove my identity? I had no resident registration or identification card to prove myself.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' says the true Kim Dokja loves companionship.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' says the true Kim Dokja loves companionship.</p></div>
 <p class="orv_line">…Uriel? I was about to shout at her when a candidate in the centre of the square knelt down and started crying. "Yoo Joonghyuk! Yoo Joonghyuuuuk! Wake up! Please wake up!"</p>
 <p class="orv_line">Kim Dokja screamed as he held the imaginary Yoo Joonghyuk in his arms. I couldn't help laughing. I didn't do such a thing. Uriel couldn't be fooled by such acting…</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is shedding tears.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is begging you to show her again next time.]</p></div>
-<div class="orv_system"><p>[Candidate 32 has gained 300 points.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is shedding tears.</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is begging you to show her again next time.</p></div>
+<div class="orv_system"><p>Candidate 32 has gained 300 points.</p></div>
 <p class="orv_line">…I couldn't believe it. I shook my head and passed Candidate 32, only to hear an unexpected statement.</p>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' claims that the real Kim Dokja is a chuuni.]</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' claims that the real Kim Dokja is a chuuni.</p></div>
 <p class="orv_line">Abyssal Black Flame Dragon? When did he come…</p>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' claims that the real Kim Dokja surely knows the true middle-school second-year syndrome.]</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' claims that the real Kim Dokja surely knows the true middle-school second-year syndrome.</p></div>
 <p class="orv_line">A true chuuni? I think I knew what happened… surprisingly, at the same time, there was a candidate who started shouting,</p>
 <p class="orv_line">"Uhhhh, Yoo Sangah-ssi. Do you know? Kukuk. I am a reader. I have the life of a reader."</p>
 <p class="orv_line">My thoughts became incredibly complicated. It was a story before the scenario appeared. How did he know… no, wait, I never said it that way.</p>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' is satisfied.]</p></div>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' has given Candidate 97 300 points.]</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' is satisfied.</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' has given Candidate 97 300 points.</p></div>
 <p class="orv_line">I felt desolated and my lips were trembling. At this rate, I would lose my name to these ridiculous people.</p>
 <p class="orv_line">I should think calmly. In order to show that I was Kim Dokja, I needed to remind them of the events shared by only me and the constellations.</p>
 <p class="orv_line">"Get your hand off me and get lost, you damn jerk!"</p>
-<div class="orv_system"><p>[Candidate 32 has gained 200 points!]</p></div>
+<div class="orv_system"><p>Candidate 32 has gained 200 points!</p></div>
 <p class="orv_line">Something only the constellations and I knew…</p>
 <p class="orv_line">"I like to smile like this!"</p>
-<div class="orv_system"><p>[Candidate 97 has gained 250 points!]</p></div>
+<div class="orv_system"><p>Candidate 97 has gained 250 points!</p></div>
 <p class="orv_line">The constellations and I…</p>
 <p class="orv_line">"My favourite thing is a Chinese dress and garter belt!"</p>
-<div class="orv_system"><p>[Candidate 312 has gained 400 points!]</p></div>
+<div class="orv_system"><p>Candidate 312 has gained 400 points!</p></div>
 <p class="orv_line">Damn, what the hell was happening? I organized my complicated thoughts and decided to use an easy method. I would directly inform them that I was Kim Dokja through the Demon King of Salvation's indirect message.</p>
-<div class="orv_system"><p>[During the course of the scenario, the constellation 'Demon King of Salvation' can't speak.]</p></div>
+<div class="orv_system"><p>During the course of the scenario, the constellation 'Demon King of Salvation' can't speak.</p></div>
 <p class="orv_line">…Son of a bitch.</p>
-<div class="orv_system"><p>[There is one hour left in the scenario.]</p></div>
+<div class="orv_system"><p>There is one hour left in the scenario.</p></div>
 <p class="orv_line">There wasn't much time left now. I quietly held Unbroken Faith in my hand. There was a limit to the number of aspiring Kim Dokjas. If I killed all the aspiring Kim Dokjas, the last candidate would become the true Kim Dokja.</p>
 <p class="orv_line">However, I didn't want to use this method. They were currently blinded by power but most of them were citizens of my industrial complex…</p>
 <p class="orv_line">I sighed and shook my head as I gripped and released the hilt of my weapon repeatedly.</p>
-<div class="orv_quote"><p>「 These actions aren't like you. 」</p></div>
+<div class="orv_quote"><p>These actions aren't like you.</p></div>
 <p class="orv_line">To my chagrin, Yoo Joonghyuk was right. Kim Dokja would never solve things this way. I thought about it. How do I prove my identity? No, what did it mean to prove I was 'me' in the first place?</p>
 <p class="orv_line">At this time, there was a sudden change.</p>
 <p class="orv_line">"This is Electrification, the ultimate technique taught by the Paradox Baekchong…!"</p>
@@ -310,9 +317,9 @@
 <p class="orv_line">The blue-white lightning hit the candidate's blade and tore his body apart. Some candidates screamed and retreated while some constellations liked it and randomly gave points. At the crucible of the confusion, I looked up at the sky. Something small was falling from the sky.</p>
 <p class="orv_line">…I thought it was time for him to come but I didn't expect it to be this fast. The small dot that gave off huge pressure landed in the square of the industrial complex with a deafening roar.</p>
 <p class="orv_line">A blue-white light flooded the square. A small man stood in the centre of the lightning and emitted a huge presence. Sparks flew as a voice was heard from the dust.</p>
-<div class="orv_constellation"><p>[Where is my disciple?]</p></div>
+<div class="orv_constellation"><p>Where is my disciple?</p></div>
 <p class="orv_line">After a while, the appearance of the voice's owner was revealed.</p>
-<div class="orv_system"><p>[Many constellations are astonished.]</p></div>
+<div class="orv_system"><p>Many constellations are astonished.</p></div>
 <p class="orv_line">The small man didn't care if the constellations were astonished or not. There were some constellations who realized the identity of the man.</p>
 <p class="orv_line">"This small body…"</p>
 <p class="orv_line">"Wait, don't tell me?"</p>
@@ -324,10 +331,10 @@
 <p class="orv_line">"Kuaaaack!"</p>
 <p class="orv_line">The Kim Dokjas were attacked by the blue-white lightning and turned to ashes. I looked at the teacher kind enough to personally come to pick up his disciple and realized something.</p>
 <p class="orv_line">…I see. In the first place, 'I' wasn't something that could be proven.</p>
-<div class="orv_system"><p>[Your unique story will be played.]</p></div>
-<div class="orv_system"><p>[The story 'Returnee's Disciple' has begun.]</p></div>
+<div class="orv_system"><p>Your unique story will be played.</p></div>
+<div class="orv_system"><p>The story 'Returnee's Disciple' has begun.</p></div>
 <p class="orv_line">It was because 'I' was made up of things that didn't only belong to me. Amidst the fleeing Kim Dokja, there was one person who knew the real Kim Dokja.</p>
-<div class="orv_constellation"><p>[Where is my real disciple?]</p></div>
+<div class="orv_constellation"><p>Where is my real disciple?</p></div>
 <p class="orv_line">If I came forward, I would be ripped apart like the other fakes. Then I heard a familiar voice.</p>
 <p class="orv_line">"Damn, what is this? Are they all Kim Dokjas?" I looked back and saw Jang Hayoung grumbling.</p>
 <p class="orv_line">I spoke to Jang Hayoung. "Jang Hayoung."</p>
@@ -342,18 +349,12 @@
             <a href="./ch_251"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_253">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="252" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="232" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="251" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="251" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

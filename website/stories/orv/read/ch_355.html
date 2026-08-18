@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 355: Ep. 66 - Beyond Good and Evil, V</title>
     <meta property="og:title" content="Ch 355: Ep. 66 - Beyond Good and Evil, V" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,31 +177,31 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00355.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 355: Ep. 66 - Beyond Good and Evil, V</h1></div>
 <p class="orv_line">The expressions of the party members changed at my words. Jung Heewon's eyes were wide while Lee Jihye looked confused. Lee Hyunsung had big eyes. Finally, Shin Yoosung…</p>
-<div class="orv_quote"><p>「 Kim Dok ja has the wrong id ea. 」</p></div>
+<div class="orv_quote"><p>Kim Dok ja has the wrong id ea.</p></div>
 <p class="orv_line">The Fourth Wall was heard in my head.</p>
-<div class="orv_quote"><p>「 It isn't too la te now. 」</p></div>
+<div class="orv_quote"><p>It isn't too la te now.</p></div>
 <p class="orv_line">I didn't know if it was the will of the Fourth Wall or the weak part of my mind. The Fourth Wall reflected my feelings to some extent so both might be true. Either way, this time I made a decision.</p>
 <p class="orv_line">"I know it is hard to understand my words." I had to tell this story to the group of people. "I'll slowly explain it from the beginning."</p>
 <p class="orv_line">I talked for a long time. One day, the novel I was reading became reality. In that story, I met them. I didn't tell them the whole story but at the same time, I didn't lie.</p>
@@ -203,7 +210,7 @@
 <p class="orv_line">I knew about the group members before I met them. I didn't speak properly about the fact that I knew the future. I monopolized information alone and deceived people. I spoke about all of it. It was as if I was bringing out the old darkness.</p>
 <p class="orv_line">A little further away from the party, Han Sooyoung was staring at me with a frown. I understood her feelings. It was the same with Han Sooyoung of the 1863rd round.</p>
 <p class="orv_line">However, I couldn't live like Han Sooyoung. This story should be done properly. To move forward properly, some stories must be communicated. Someday… just as Yoo Joonghyuk.</p>
-<div class="orv_quote"><p>「 I am a regressor. 」</p></div>
+<div class="orv_quote"><p>I am a regressor.</p></div>
 <p class="orv_line">Maybe Yoo Joonghyuk also felt like me. He knew the future, experienced the same story again and again and met the party members in countless rounds. Then… he sent them away. I could understand Yoo Joonghyuk's feelings when he poured out the story without any tricks.</p>
 <p class="orv_line">"…Thus, I brought you here."</p>
 <p class="orv_line">My story was over. Yet no one opened their mouths after the story was over. It wasn't that they didn't understand my story. It was a long story that even a young child could comprehend. Nevertheless, the party members didn't speak.</p>
@@ -211,14 +218,14 @@
 <p class="orv_line">I wanted to know. What was the group thinking? What were they feeling? Even so, I didn't use Omniscient Reader's Viewpoint. In this situation, it really would be a deception if I read them using this skill.</p>
 <p class="orv_line">I wanted to use my own strength without relying on any skills. I wanted to believe that whatever they thought and felt inside, the actions they chose were really their decision.</p>
 <p class="orv_line">I slowly looked up and met Lee Jihye's eyes. Lee Jihye's eyes were red. The moment I saw these eyes, I suddenly realized something. I already knew these eyes.</p>
-<div class="orv_quote"><p>「 "Then Master knew all of the future…" 」</p></div>
+<div class="orv_quote"><p>"Then Master knew all of the future…"</p></div>
 <p class="orv_line">They were exactly the same as when Lee Jihye heard Yoo Joonghyuk's story. Lee Jihye slowly opened her mouth. "Then until now, you knew all about the future…"</p>
 <p class="orv_line">As if the original character was reading the given script, Lee Jihye spoke. I also responded to her like there was a script.</p>
-<div class="orv_quote"><p>「 "That's right." 」</p></div>
+<div class="orv_quote"><p>"That's right."</p></div>
 <p class="orv_line">"Yes."</p>
 <p class="orv_line">Lee Jihye gritted her teeth and told me, "Then now… why are you telling us this?"</p>
 <p class="orv_line">The wounded Sword Demon was furious. I read the original novel and could predict what she would say.</p>
-<div class="orv_quote"><p>「 "What the hell are we to you?" 」</p></div>
+<div class="orv_quote"><p>"What the hell are we to you?"</p></div>
 <p class="orv_line">Lee Jihye's shoulders trembled slightly as she bowed her head. The situation that followed continued to flow in my mind. Lee Jihye would pull out her sword and might attack me because she couldn't suppress her anger.</p>
 <p class="orv_line">There were many such occasions in the original novel. However, Lee Jihye chose a way that I didn't expect at all. "Let's say that you knew the future."</p>
 <p class="orv_line">"…"</p>
@@ -226,7 +233,7 @@
 <p class="orv_line">I saw the tears falling down her cheeks and tried to open my mouth several times. It was an unexpected question. It was because it was unexpected that I couldn't answer…</p>
 <p class="orv_line">"Answer me! If we are really characters in a fictional novel, why did you die for us over and over?"</p>
 <p class="orv_line">It was a question that I couldn't answer with the Ways of Survival that I read.</p>
-<div class="orv_system"><p>[The 'Fourth Wall' is shaking violently.]</p></div>
+<div class="orv_system"><p>The 'Fourth Wall' is shaking violently.</p></div>
 <p class="orv_line">Lee Jihye wiped her eyes and hit my shoulder as she walked past me. Jung Heewon hurriedly chased after her.</p>
 <p class="orv_line">"…Dokja-ssi, we'll talk later."</p>
 <p class="orv_line">Shin Yoosung hesitated as she stared at me helplessly before following after Jung Heewon. Lee Hyunsung had blank eyes as he walked out of the room with a bowed head.</p>
@@ -277,7 +284,7 @@
 <p class="orv_line">"Don't be gloomy and depressed by yourself and look forward to the future. If you like, give me a promotion faster. Now, this is a handshake to cheer up."</p>
 <p class="orv_line">Jung Heewon grabbed my hand with a strong force. Something warm suddenly rose inside me.</p>
 <p class="orv_line">I firmly bit my lips.</p>
-<div class="orv_quote"><p>「 Jung Heewon, she isn't okay. 」</p></div>
+<div class="orv_quote"><p>Jung Heewon, she isn't okay.</p></div>
 <p class="orv_line">I could feel the pulse from Jung Heewon's hand. She would also be sad. She would be in pain and it would be hard for her. Even so…</p>
 <p class="orv_line">Jung Heewon held my hand tightly for a while before letting go with a smile. Then she asked, "By the way Dokja-ssi… I have a question."</p>
 <p class="orv_line">"Yes, ask."</p>
@@ -300,15 +307,15 @@
 <p class="orv_line">Those were Aileen's words. She exchanged the story pack and left, leaving only Yoo Joonghyuk and I in the room.</p>
 <p class="orv_line">The floating dust settled on his nose. I opened my mouth while watching Yoo Joonghyuk. "You grabbed me first and dropped me down the bridge."</p>
 <p class="orv_line">I knew he couldn't hear me but I still wanted to talk.</p>
-<div class="orv_quote"><p>「 "Get your hand off me and get lost, you damn jerk." 」</p></div>
-<div class="orv_quote"><p>「 "I believe you. You are definitely a prophet." 」</p></div>
+<div class="orv_quote"><p>"Get your hand off me and get lost, you damn jerk."</p></div>
+<div class="orv_quote"><p>"I believe you. You are definitely a prophet."</p></div>
 <p class="orv_line">The first time I encountered him on the bridge. Suddenly, a laugh emerged.</p>
 <p class="orv_line">"Honestly, you aren't in a position to blame me for anything. You are a regressor… how many people died because of you?"</p>
 <p class="orv_line">Once I started speaking, the memories poured out like a waterfall. It was like Pandora's Box. It felt as if a lot of time had passed. I had spent a lot of time with this person.</p>
 <p class="orv_line">"I thought I understood you better than anyone but I don't know these days. Why did you do that during the Flood of Disasters?"</p>
-<div class="orv_quote"><p>「 "…That person is my companion." 」</p></div>
+<div class="orv_quote"><p>"…That person is my companion."</p></div>
 <p class="orv_line">"Why did you call me a companion? You wouldn't say that normally… Stabbing me in Dark Castle… even though I told you to kill me at the time."</p>
-<div class="orv_quote"><p>「 "Kim Dokja! No! Kim Dokja!" 」</p></div>
+<div class="orv_quote"><p>"Kim Dokja! No! Kim Dokja!"</p></div>
 <p class="orv_line">Every single memory caused numerous emotions to rise. The scenarios, which were really serious at the time, became stories once they were over. We were left with the stories.</p>
 <p class="orv_line">"Still, I am grateful for the revolutionary game. I lived at that time because of you. Still, it is weird. Why did you sell my name when hitting the wrong industrial complex? Well… maybe you were trying to fuck with me."</p>
 <p class="orv_line">I poured out the things I was thinking about and gradually became sleepy. I hadn't slept properly…</p>
@@ -320,9 +327,9 @@
 <p class="orv_line">'Yoo Joonghyuk'.</p>
 <p class="orv_line">At this moment, there was a stinging pain from my head and words appeared. It was a scene from Ways of Survival. The scene where Yoo Joonghyuk was betrayed by Anna Croft and lived miserably.</p>
 <p class="orv_line">They were the last words Yoo Joonghyuk left.</p>
-<div class="orv_quote"><p>「 "I will absolutely never forgive you." 」</p></div>
+<div class="orv_quote"><p>"I will absolutely never forgive you."</p></div>
 <p class="orv_line">Yoo Joonghyuk turned around and spoke to me. Killing energy was emitted from the Black Heavenly Demon Sword.</p>
-<div class="orv_quote"><p>「 "Kim Dokja." 」</p></div>
+<div class="orv_quote"><p>"Kim Dokja."</p></div>
 <p class="orv_line">I felt a coolness from my neck and woke up. I gasped while sweating before realizing it was a dream. The dim moonlight was coming in through the window. It was a bare hospital room.</p>
 <p class="orv_line">I slowly rubbed my eyes. Then I realized something was wrong.</p>
 <p class="orv_line">"…Yoo Joonghyuk?"</p>
@@ -336,18 +343,12 @@
             <a href="./ch_354"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_356">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="355" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="431" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="354" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="354" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

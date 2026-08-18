@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 103: Ep. 21 – Things That Can't Be Changed, I</title>
     <meta property="og:title" content="Ch 103: Ep. 21 – Things That Can't Be Changed, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,52 +177,52 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00103.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 103: Ep. 21 – Things That Can't Be Changed, I</h1></div>
-<div class="orv_quote"><p>「 "…Captain, what did you just say?" 」</p></div>
+<div class="orv_quote"><p>"…Captain, what did you just say?"</p></div>
 <p class="orv_line">I came to my senses because of Shin Yoosung's disbelieving voice.</p>
-<div class="orv_quote"><p>「 "Say it again. What did you say just now? What? Companion?"<br>"…"<br>"That man is your companion?" 」</p></div>
+<div class="orv_quote"><p>"Say it again. What did you say just now? What? Companion?"<br>"…"<br>"That man is your companion?"</p></div>
 <p class="orv_line">Yoo Joonghyuk didn't reply to the voice filled with distrust. I was surprised as well but Shin Yoosung's shock was devastating. The Yoo Joonghyuk with a strong ego had called me his 'companion'.</p>
-<div class="orv_quote"><p>「 "Yes." 」</p></div>
+<div class="orv_quote"><p>"Yes."</p></div>
 <p class="orv_line">This suddenly scared me. No matter how I thought about it, he wasn't someone who would call me a 'companion'. Didn't this bastard know I was going to be resurrected?</p>
-<div class="orv_system"><p>[The constellation 'Maritime War God' is touched by your companionship.]</p></div>
-<div class="orv_system"><p>[The constellation 'Bald General of Justice' is blushing at your companionship.]</p></div>
-<div class="orv_system"><p>[500 coins have been sponsored.]</p></div>
+<div class="orv_system"><p>The constellation 'Maritime War God' is touched by your companionship.</p></div>
+<div class="orv_system"><p>The constellation 'Bald General of Justice' is blushing at your companionship.</p></div>
+<div class="orv_system"><p>500 coins have been sponsored.</p></div>
 <p class="orv_line">Yes, now I understood. Yoo Joonghyuk, he was looking for donations. It was a little strange to see that Uriel wasn't involved, but he must be aiming for sponsorships by the constellations.</p>
 <p class="orv_line">I was convinced as I watched him bleeding. Since this is his third regression, it wasn't impossible for Yoo Joonghyuk to say the word 'companion'. In the early rounds, he had called Lee Hyunsung and Lee Seolhwa 'companions' when they died.</p>
 <p class="orv_line">It hurt to think about the large number of coins he would be receiving right now. I couldn't help my emotions frosting over. Damn, I should've said that line.</p>
-<div class="orv_quote"><p>「 "Captain, how can you say that?" 」</p></div>
+<div class="orv_quote"><p>"Captain, how can you say that?"</p></div>
 <p class="orv_line">Of course, Shin Yoosung didn't know Yoo Joonghyuk's thoughts and looked as if the world had collapsed.</p>
 <p class="orv_line">This could be the only outcome. The 41st regression Shin Yoosung…</p>
 <p class="orv_line">She never once heard Yoo Joonghyuk call someone his companion. Shin Yoosung's fist hit Yoo Joonghyuk's blade.</p>
 <p class="orv_line">Despite the clash between the body and the weapon, what received damage was Yoo Joonghyuk's sword, the SS-grade Splitting the Sky Sword. Putting aside the special options, its durability and strength were one of the best to exist, and yet... this sword was damaged by Shin Yoosung's fist.</p>
 <p class="orv_line">In the end, the Splitting the Sky Sword failed to overcome the shock, was bent and helplessly deflected.</p>
-<div class="orv_quote"><p>「 "How dare you say this in front of me?" 」</p></div>
+<div class="orv_quote"><p>"How dare you say this in front of me?"</p></div>
 <p class="orv_line">Shin Yoosung shouted and didn't use any special skills. She just threw a punch that contained ether condensed to the limit.</p>
 <p class="orv_line">Yoo Joonghyuk coughed up blood and flew back at this blow. Her attacks, her speed and her variations. Shin Yoosung was superior to Yoo Joonghyuk in all aspects.</p>
 <p class="orv_line">The Red Phoenix Shunpo and Splitting the Sky Sword that Yoo Joonghyuk was proud of were dealt with like a flickering flame in front of Shin Yoosung.</p>
 <p class="orv_line">There was the terrible sound of the body breaking and Yoo Joonghyuk was pushed back. It wasn't a matter of talent but a matter of time.</p>
 <p class="orv_line">Despite being weakened by the descent, the 41st Shin Yoosung, the Beast Lord was near the peak of her power. On the other hand, the current Yoo Joonghyuk was only in the early stages of his growth.</p>
-<div class="orv_quote"><p>「 "Why call him a companion? Is it because he sacrificed himself for you? Just because of this?" 」</p></div>
+<div class="orv_quote"><p>"Why call him a companion? Is it because he sacrificed himself for you? Just because of this?"</p></div>
 <p class="orv_line">Blood spilled endlessly. However, Yoo Joonghyuk didn't give up. He didn't stop and kept wielding his sword. That jerk, why the hell was he fighting?</p>
 <p class="orv_line">I watched the bleeding Yoo Joonghyuk and became increasingly frustrated. Shouldn't he run away after realizing something was wrong? Wasn't that what he normally did?</p>
 <p class="orv_line">Once again, Shin Yoosung opened her mouth.</p>
@@ -224,36 +231,36 @@
 <p class="orv_line">"What?"</p>
 <p class="orv_line">"There is only one thing I know." Yoo Joonghyuk wiped the blood from his lips and said "You killed my companion in this round. Thus, you will also die." 」</p>
 <p class="orv_line">Damn, this time I couldn't help feeling touched.</p>
-<div class="orv_system"><p>[Excessive immersion has restricted some of the features of Fourth Wall.]</p></div>
+<div class="orv_system"><p>Excessive immersion has restricted some of the features of Fourth Wall.</p></div>
 <p class="orv_line">I was fooled by his acting. Yes, I read Ways of Survival for this taste. Come to think of it, I had been in tears when Yoo Joonghyuk said something similar to Lee Hyunsung.</p>
 <p class="orv_line">I suddenly felt restless. A mere reader became a companion of the main character, Yoo Joonghyuk.</p>
 <p class="orv_line">Shin Yoosung looked at Yoo Joonghyuk with a face that seemed to have lost everything.</p>
-<div class="orv_quote"><p>「 "You can't be like this…" 」</p></div>
+<div class="orv_quote"><p>"You can't be like this…"</p></div>
 <p class="orv_line">An ominous aura filled her surroundings. It was a process where emptiness turned to betrayal and betrayal turned to anger.</p>
-<div class="orv_quote"><p>「 "You are changing. I can't tolerate it." 」</p></div>
+<div class="orv_quote"><p>"You are changing. I can't tolerate it."</p></div>
 <p class="orv_line">Ether filled Shin Yoosung's fists. I wanted to watch a bit more, but a sense of crisis came over me.</p>
-<div class="orv_system"><p>[Excessive immersion leads to a profound increase in the proficiency of Omniscient Reader's Viewpoint.]</p></div>
+<div class="orv_system"><p>Excessive immersion leads to a profound increase in the proficiency of Omniscient Reader's Viewpoint.</p></div>
 <p class="orv_line">If this went wrong, then Yoo Joonghyuk would really die. I couldn't let him be killed here. I quickly switched the mode of Omniscient Reader's Viewpoint.</p>
 <p class="orv_line">From 3rd person to 1st person protagonist's point of view.</p>
-<div class="orv_system"><p>[Changing your viewpoint to 1st person.]</p></div>
+<div class="orv_system"><p>Changing your viewpoint to 1st person.</p></div>
 <p class="orv_line">…</p>
-<div class="orv_system"><p>[Changing to the 1st person protagonist's point of view has failed.]</p></div>
+<div class="orv_system"><p>Changing to the 1st person protagonist's point of view has failed.</p></div>
 <p class="orv_line">What? Why?</p>
-<div class="orv_system"><p>[You have failed to meet the conditions to change the viewpoint.]</p></div>
+<div class="orv_system"><p>You have failed to meet the conditions to change the viewpoint.</p></div>
 <p class="orv_line">It felt like I had been slammed in the back of the head. There were two conditions to use 1st person protagonist's point of view.</p>
 <p class="orv_line">One, I must be dead and in an out of body state. Two, the target and I should be thinking about each other.</p>
 <p class="orv_line">The first condition was met but the problem was with the second condition. That jerk wasn't thinking about me right now?</p>
 <p class="orv_line">Then what's with all the running amok because of revenge? I watched Yoo Joonghyuk frantically attacking and it dawned on me.</p>
-<div class="orv_quote"><p>「 "Die. I will kill you." 」</p></div>
+<div class="orv_quote"><p>"Die. I will kill you."</p></div>
 <p class="orv_line">…That bastard, was he thinking about anything? Shin Yoosung watched Yoo Joonghyuk and opened her mouth.</p>
-<div class="orv_quote"><p>「 "It can't be helped. I was going to finish it quickly but I changed my mind." 」</p></div>
+<div class="orv_quote"><p>"It can't be helped. I was going to finish it quickly but I changed my mind."</p></div>
 <p class="orv_line">Shin Yoosung smiled like a devil.</p>
-<div class="orv_quote"><p>「 "I will finish off Captain's world in the most terrible way." 」</p></div>
+<div class="orv_quote"><p>"I will finish off Captain's world in the most terrible way."</p></div>
 <p class="orv_line">Shin Yoosung's eyes shifted away from Yoo Joonghyuk. My heart sank the moment I followed her gaze. Shit, I really couldn't wait here and watch. If I couldn't transfer to Yoo Joonghyuk then someone else…</p>
 <p class="orv_line">At this moment, a sharp sensation crossed my mind. An unexpected character was thinking of me.</p>
 <p class="orv_line">…Could I transfer to this person? Was it possible? Ah, that's right. It was because Yoo Joonghyuk said those words. Yes, maybe it would be better to transfer to this person. I don't know, let's just try it.</p>
 <p class="orv_line">I started projecting my mind towards that person. Then after a while, my vision shook and I became dizzy.</p>
-<div class="orv_system"><p>[Changing your viewpoint to 1st person.]</p></div>
+<div class="orv_system"><p>Changing your viewpoint to 1st person.</p></div>
 <p class="orv_line">My consciousness was sucked to another place.</p>
 <br>
 <hr>
@@ -309,18 +316,12 @@
             <a href="./ch_102"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_104">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="103" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="301" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="102" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="102" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

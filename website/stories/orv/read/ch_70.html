@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 70: Ep. 14 – Master of the Throne, VI</title>
     <meta property="og:title" content="Ch 70: Ep. 14 – Master of the Throne, VI" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00070.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 70: Ep. 14 – Master of the Throne, VI</h1></div>
 <p class="orv_line">Nevertheless, a main character was a main character. I sent him to Gangbuk Station but he already had a black flag.</p>
@@ -200,21 +207,21 @@
 <p class="orv_line">Han Sooyoung's eyes were shaken as Yoo Joonghyuk moved. I exclaimed, "Gilyoung!"</p>
 <p class="orv_line">Lee Gilyoung's eyes turned white like he had been waiting. I heard a tearing sound and something pounding on the dungeon.</p>
 <p class="orv_line">Then after a while. The sickle of a praying mantis flew through one wall.</p>
-<div class="orv_system"><p>[The 6th grade insect king, Titanoptera has appeared!]</p></div>
+<div class="orv_system"><p>The 6th grade insect king, Titanoptera has appeared!</p></div>
 <p class="orv_line">Lee Gilyoung's ability was the best. The whole cave shook with the enormous power of the giant insect king. As Yoo Joonghyuk looked back, I struck Han Sooyoung.</p>
 <p class="orv_line">"A-Ack…!"</p>
 <p class="orv_line">Han Sooyoung groaned and let go of the Four Yin Demonic Beheading Sword. I picked up the sword as well as the flag hanging from Han Sooyoung's neck as a bonus.</p>
-<div class="orv_system"><p>[You have won the flag of the 'Hongik University' group.]</p></div>
-<div class="orv_system"><p>[Your purple flag has absorbed the cumulative achievements of the black flag.]</p></div>
-<div class="orv_system"><p>[Your purple flag has evolved into a black flag.]</p></div>
-<div class="orv_system"><p>[You are able to use the perks of the black flag.]</p></div>
-<div class="orv_system"><p>[Congratulations! You have completed the first king's qualification.]</p></div>
-<div class="orv_system"><p>[Number of kings remaining: 6.]</p></div>
+<div class="orv_system"><p>You have won the flag of the 'Hongik University' group.</p></div>
+<div class="orv_system"><p>Your purple flag has absorbed the cumulative achievements of the black flag.</p></div>
+<div class="orv_system"><p>Your purple flag has evolved into a black flag.</p></div>
+<div class="orv_system"><p>You are able to use the perks of the black flag.</p></div>
+<div class="orv_system"><p>Congratulations! You have completed the first king's qualification.</p></div>
+<div class="orv_system"><p>Number of kings remaining: 6.</p></div>
 <p class="orv_line">I ran straight towards the Tyrant King. The Tyrant King was lying down between a pile of stones, his body crushed like dough. It was terrible. He tried to kill everyone only to die in vain like this.</p>
 <p class="orv_line">Han Sooyoung shouted from behind me. "You thief!"</p>
 <p class="orv_line">I ignored her and quickly swept up the Tyrant King's items.</p>
-<div class="orv_system"><p>[The item 'Three Ring Loop' has been acquired.]</p></div>
-<div class="orv_system"><p>[The item 'Dragon Jar' has been acquired.]</p></div>
+<div class="orv_system"><p>The item 'Three Ring Loop' has been acquired.</p></div>
+<div class="orv_system"><p>The item 'Dragon Jar' has been acquired.</p></div>
 <p class="orv_line">The revival 'Dragon Jar'. The Tyrant King obtained it by clearing the seven person dungeon.</p>
 <p class="orv_line">"…Kim Dokja!"</p>
 <p class="orv_line">Yoo Joonghyuk was chasing after me at a scary speed. Despite the fact that I had 30 agility, he narrowed the distance to me in an instant. I looked around and hid behind the nearest king.</p>
@@ -222,7 +229,7 @@
 <p class="orv_line">It was the king of Later Baekje, Gu Daesung.</p>
 <p class="orv_line">"Kuaaaak!"</p>
 <p class="orv_line">Yoo Joonghyuk's relentless blow cracked his head while Yoo Joonghyuk obtained his flag.</p>
-<div class="orv_system"><p>[The constellation 'Founder of Hannamgun' is looking at you.]</p></div>
+<div class="orv_system"><p>The constellation 'Founder of Hannamgun' is looking at you.</p></div>
 <p class="orv_line">I felt sorry for Gyeon Hwon but it couldn't be helped. I promised to make it up to him next time.</p>
 <p class="orv_line">At this time, I decided to stop running away.</p>
 <p class="orv_line">"Joonghyuk, stop for a minute. Let's talk."</p>
@@ -233,8 +240,8 @@
 <p class="orv_line">"What about your sister?"</p>
 <p class="orv_line">"Where did you hide my sister?"</p>
 <p class="orv_line">"What are you talking about?"</p>
-<div class="orv_system"><p>[The character Yoo Joonghyuk is currently using Lie Detection Lv. 6.]</p></div>
-<div class="orv_system"><p>[The character Yoo Joonghyuk has confirmed that your words are false.]</p></div>
+<div class="orv_system"><p>The character Yoo Joonghyuk is currently using Lie Detection Lv. 6.</p></div>
+<div class="orv_system"><p>The character Yoo Joonghyuk has confirmed that your words are false.</p></div>
 <p class="orv_line">"If you don't tell me right away, you really will die."</p>
 <p class="orv_line">I knew it was true even without Lie Detection. The reason why Yoo Joonghyuk was like this was entirely due to my plot.</p>
 <p class="orv_line">I drove him to go north to save his sister, causing him to waste time searching the north. Yoo Joonghyuk's less worn-out personality in this third regression made the plan possible.</p>
@@ -248,28 +255,28 @@
 <p class="orv_line">"Why do you think?"</p>
 <p class="orv_line">Yoo Joonghyuk noticed that I was buying time and his expression cooled. "I should've killed you at that time… then die."</p>
 <p class="orv_line">The moment that Yoo Joonghyuk raised his sword, a voice was heard from the air.</p>
-<div class="orv_constellation"><p>[Everyone here, please calm down. Why are you still fighting? Let's see, you've met the qualifications.]</p></div>
+<div class="orv_constellation"><p>Everyone here, please calm down. Why are you still fighting? Let's see, you've met the qualifications.</p></div>
 <p class="orv_line">The intermediate dokkaebi appeared at this moment.</p>
 <p class="orv_line">Yoo Joonghyuk also confirmed the number board floating in the air.</p>
-<div class="orv_system"><p>[Number of kings remaining: 5.]</p></div>
-<div class="orv_system"><p>[The 'Last King's Qualification' has begun.]</p></div>
+<div class="orv_system"><p>Number of kings remaining: 5.</p></div>
+<div class="orv_system"><p>The 'Last King's Qualification' has begun.</p></div>
 <p class="orv_line">The bodies of the remaining kings, including me and Yoo Joonghyuk, started to be forcibly moved through space.</p>
 <p class="orv_line">"Kim Dok…!"</p>
 <p class="orv_line">Yoo Joonghyuk reached out for me but it was too late.</p>
 <p class="orv_line">I finally reached the last phase of this scenario.</p>
-<div class="orv_system"><p>[The qualified kings will move to the final testing place.]</p></div>
+<div class="orv_system"><p>The qualified kings will move to the final testing place.</p></div>
 <p class="orv_line">The landscape started changing. It felt like my body was being sucked somewhere else. The next moment, tung! There was the sound of me bumping my head against something. A moment later, I became conscious again.</p>
-<div class="orv_system"><p>[You aren't qualified to take part in the 'Last King's Qualifications.]</p></div>
+<div class="orv_system"><p>You aren't qualified to take part in the 'Last King's Qualifications.</p></div>
 <p class="orv_line">…What?</p>
 <p class="orv_line">I looked around and saw that I was standing in the centre of Gwanghwamun. I had bumped into a barrier the size of a schoolyard. The centre contained the Absolute Throne, the last reward of this scenario.</p>
 <p class="orv_line">Why couldn't I enter?</p>
-<div class="orv_constellation"><p>[Hahaha! This, this! You were only looking at the big picture and missed something important!]</p></div>
+<div class="orv_constellation"><p>Hahaha! This, this! You were only looking at the big picture and missed something important!</p></div>
 <p class="orv_line">I looked up at the sound of laughter and saw the ridiculing face of the intermediate dokkaebi. I thought he was playing tricks on me but then an unexpected message flashed.</p>
-<div class="orv_system"><p>[You have failed to occupy the 'target station' of the fourth scenario.]</p></div>
-<div class="orv_system"><p>[You must first take the target station to be qualified for the 'Last King's Qualifications'.]</p></div>
-<div class="orv_system"><p>[Your group's target station is Changsin Station.]</p></div>
+<div class="orv_system"><p>You have failed to occupy the 'target station' of the fourth scenario.</p></div>
+<div class="orv_system"><p>You must first take the target station to be qualified for the 'Last King's Qualifications'.</p></div>
+<div class="orv_system"><p>Your group's target station is Changsin Station.</p></div>
 <p class="orv_line">Ah… I was only thinking about the kings and forgot. I hadn't occupied it yet.</p>
-<div class="orv_constellation"><p>[The last phase can't be performed unless the previous phase is cleared properly. Did you think you could get away with it?]</p></div>
+<div class="orv_constellation"><p>The last phase can't be performed unless the previous phase is cleared properly. Did you think you could get away with it?</p></div>
 <p class="orv_line">There was already fighting going on inside the barrier. If this continued, everything I had done would be in vain. I thought I should run to Changsin Station before it was too late.</p>
 <p class="orv_line">By the way… damn. Wouldn't all the scenarios end if I ran there?</p>
 <p class="orv_line">"Dokja-ssi!"</p>
@@ -305,20 +312,20 @@
 <p class="orv_line">…I never thought of this. Was this method possible? No one had tried this in Ways of Survival.</p>
 <p class="orv_line">Jung Heewon shamelessly said, "Don't you need the flagpole to occupy the station?"</p>
 <p class="orv_line">What type of ignorant human would think up an idea like this? Jung Heewon had cut up the floor that contained the flag holder of Changshin Station.</p>
-<div class="orv_system"><p>[The constellation 'Adventurer who Stands Up an Egg' admires Jung Heewon's idea.]</p></div>
+<div class="orv_system"><p>The constellation 'Adventurer who Stands Up an Egg' admires Jung Heewon's idea.</p></div>
 <p class="orv_line">I tried to say something but fell silent.</p>
 <p class="orv_line">"Why, is something wrong?"</p>
 <p class="orv_line">"…No."</p>
 <p class="orv_line">"Then what are you doing? Go ahead and insert the flag."</p>
 <p class="orv_line">I nodded and pulled out the flag.</p>
-<div class="orv_system"><p>[You have occupied Changsin Station.]</p></div>
-<div class="orv_system"><p>[You have earned 2,000 coins as a reward for 'Struggle for the Flag'.]</p></div>
+<div class="orv_system"><p>You have occupied Changsin Station.</p></div>
+<div class="orv_system"><p>You have earned 2,000 coins as a reward for 'Struggle for the Flag'.</p></div>
 <p class="orv_line">I really did it.</p>
-<div class="orv_system"><p>[Your group has occupied the target station.]</p></div>
-<div class="orv_system"><p>[Your body has moved to the battlefield of the 'Last King's Qualification'.]</p></div>
+<div class="orv_system"><p>Your group has occupied the target station.</p></div>
+<div class="orv_system"><p>Your body has moved to the battlefield of the 'Last King's Qualification'.</p></div>
 <p class="orv_line">My consciousness flickered again. A message popped up as a king's qualification was added.</p>
 <div class="orv_window">
-<h3 class="orv_window_title">[King's Qualification]</h3>
+<h3 class="orv_window_title">King's Qualification</h3>
 <p>1. 「 The owner of the throne should be braver than anyone else. 」</p>
 <p>–The Absolute Throne never wants a 'weak king'. To challenge the throne, you must own at least a black flag.</p>
 <p>2. 「 He who dreams of the throne must desire it. 」</p>
@@ -326,21 +333,21 @@
 <p>3. 「 A single king stands alone without any help. 」</p>
 <p>–The king who can challenge the throne must be able to prove his strength with just his body.</p>
 </div>
-<div class="orv_system"><p>[The constellation 'Maritime War God' is calmly watching the situation.]</p></div>
-<div class="orv_system"><p>[The constellation 'Bald General of Justice' is cheering for the historical-grade constellations.]</p></div>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is laughing.]</p></div>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' scoffs at the historical-grade constellations.]</p></div>
+<div class="orv_system"><p>The constellation 'Maritime War God' is calmly watching the situation.</p></div>
+<div class="orv_system"><p>The constellation 'Bald General of Justice' is cheering for the historical-grade constellations.</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is laughing.</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' scoffs at the historical-grade constellations.</p></div>
 <p class="orv_line">The constellations had opposite reactions unlike other times. It was because the constellations had different ranks.</p>
 <p class="orv_line">The gap between historical-grade and narrative-grade was like the difference between a child and an adult.</p>
 <p class="orv_line">That's why the reaction of the constellations watching the broadcast differed. Like adults not paying attention to a child's game of hide-and-seek, this scenario was meaningless for constellations above narrative-grade.</p>
 <p class="orv_line">But the historical-grade constellations were different.</p>
 <p class="orv_line">In this scenario, the triumphant historical-grade constellation would climb to the absolute throne and build up their 'story'. This was why the historical-grade constellations were impatient once the King's Qualification scenario began.</p>
 <p class="orv_line">I opened my eyes and the King's Battlefield began.</p>
-<div class="orv_system"><p>[From now on, all kings can't receive the support of their sponsor.]</p></div>
-<div class="orv_system"><p>[From now on, the attack and defense of all items will be limited.]</p></div>
-<div class="orv_system"><p>[From now on, all skills, stigmas and special item options will be sealed.]</p></div>
-<div class="orv_system"><p>[From now on, the total stats of all kings will change to 10/10/10/10/10.]</p></div>
-<div class="orv_system"><p>[The Last King's Qualification will continue until one person is left.]</p></div>
+<div class="orv_system"><p>From now on, all kings can't receive the support of their sponsor.</p></div>
+<div class="orv_system"><p>From now on, the attack and defense of all items will be limited.</p></div>
+<div class="orv_system"><p>From now on, all skills, stigmas and special item options will be sealed.</p></div>
+<div class="orv_system"><p>From now on, the total stats of all kings will change to 10/10/10/10/10.</p></div>
+<div class="orv_system"><p>The Last King's Qualification will continue until one person is left.</p></div>
 <br>
 <hr>
         </article>
@@ -348,18 +355,12 @@
             <a href="./ch_69"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_71">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="70" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="218" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="69" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="69" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

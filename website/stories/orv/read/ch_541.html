@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 541: Epilogue 4 - The Omniscient Reader's Viewpoint, VI</title>
     <meta property="og:title" content="Ch 541: Epilogue 4 - The Omniscient Reader's Viewpoint, VI" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00541.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 541: Epilogue 4 - The Omniscient Reader's Viewpoint, VI</h1></div>
 <p class="orv_line">They immediately took Kim Dokja back to their headquarters located in Gwanghwamun.</p>
@@ -204,21 +211,21 @@
 <p class="orv_line">"The problem is with Dokja-ssi's soul, yes?"</p>
 <p class="orv_line">In that case, they only needed to restore his soul, then.</p>
 <p class="orv_line">So, the companions sought out the assistance of the Constellation most well versed in everything soul-related.</p>
-<div class="orv_constellation"><p>[This child's soul didn't come to the 'Underworld'. No, his soul didn't go to any of the afterlives found in the other worldviews.]</p></div>
+<div class="orv_constellation"><p>This child's soul didn't come to the 'Underworld'. No, his soul didn't go to any of the afterlives found in the other worldviews.</p></div>
 <p class="orv_line">The queen of the Underworld, Persephone, could only stroke Kim Dokja's forehead with a sorrowful expression.</p>
-<div class="orv_constellation"><p>[…This was this child's choice.]</p></div>
+<div class="orv_constellation"><p>…This was this child's choice.</p></div>
 <p class="orv_line">"His choice?! Please don't make me laugh. You also saw it too, didn't you? Back in that subway, we all saw the Stories Dokja-ssi possessed, didn't we?! He, he wanted to be with us, he wanted to us to save…!"</p>
-<div class="orv_constellation"><p>[There are countless Stories within a person's soul. The words we saw were simply a small part of that.]</p></div>
+<div class="orv_constellation"><p>There are countless Stories within a person's soul. The words we saw were simply a small part of that.</p></div>
 <p class="orv_line">"Don't… Don't say something like that as if it means nothing."</p>
 <p class="orv_line">Jung Heewon shouted out. There was no other way for her to endure except to shout.</p>
 <p class="orv_line">It was his choice? This, this was Kim Dokja's choice??</p>
 <p class="orv_line">⸢The companions didn't give up.⸥</p>
 <p class="orv_line">Even the collecting of Stories, even the recovery of his soul, they were impossible. In that case, only one method remained.</p>
-<div class="orv_constellation"><p>[I was waiting for you.]</p></div>
+<div class="orv_constellation"><p>I was waiting for you.</p></div>
 <p class="orv_line">The master of the 'Isle of Reincarnators', Sakyamuni, welcomed them with a benevolent smile – as if he knew they would come here.</p>
-<div class="orv_constellation"><p>[It's truly lamentable, but he's not someone this one can reincarnate.]</p></div>
+<div class="orv_constellation"><p>It's truly lamentable, but he's not someone this one can reincarnate.</p></div>
 <p class="orv_line">"A portion of his soul still remains. We can divide and share the Stories we all possess. Just like how I did it back then, if we utilise the powers of samsara…"</p>
-<div class="orv_constellation"><p>[Ah, my dear arhat. I understand your sorrow. I do. However, he can't be reincarnated.]</p></div>
+<div class="orv_constellation"><p>Ah, my dear arhat. I understand your sorrow. I do. However, he can't be reincarnated.</p></div>
 <p class="orv_line">Sakyamuni looked at Yoo Sangah with a regretful expression before letting a soft sigh escape from his lips.</p>
 <p class="orv_line">Soon, a truly countless number of threads began floating up before his eyes that observed Kim Dokja quietly slumbering away. There were so many of these red threads that counting them all was impossible. Yoo Sangah too could see them.</p>
 <p class="orv_line">The threads of fate.</p>
@@ -227,20 +234,20 @@
 <p class="orv_line">She didn't want to acknowledge it. Even then, the truth didn't change.</p>
 <p class="orv_line">"His soul, it… It has already reincarnated in another world-line."</p>
 <p class="orv_line">Sakyamuni nodded his head.</p>
-<div class="orv_constellation"><p>[More correctly, we should say his 'souls'.]</p></div>
+<div class="orv_constellation"><p>More correctly, we should say his 'souls'.</p></div>
 <br>
 <hr>
 <br>
 <p class="orv_line">In front of everyone, Han Sooyoung passed on the things she'd been told.</p>
 <p class="orv_line">"…Kim Dokja's soul has been scattered throughout the whole universe."</p>
-<p class="orv_line">The memories from the moments when she faced off against [The Fourth Wall] inside the darkened room – she didn't leave a single word out and repeated every part of that conversation to her companions. Someone fell down, some despaired.</p>
-<p class="orv_line">Lee Jihye cried out. "Let's go find that guy again. [The Fourth Wall] might know a way, right?! We might be able to recover Dokja ahjussi's soul somehow!"</p>
+<p class="orv_line">The memories from the moments when she faced off against <strong>[The Fourth Wall]</strong> inside the darkened room – she didn't leave a single word out and repeated every part of that conversation to her companions. Someone fell down, some despaired.</p>
+<p class="orv_line">Lee Jihye cried out. "Let's go find that guy again. <strong>[The Fourth Wall]</strong> might know a way, right?! We might be able to recover Dokja ahjussi's soul somehow!"</p>
 <p class="orv_line">"If you do that, then what about Kim Dokjas reincarnating in other worlds? They must be living their own lives, won't they?"</p>
-<p class="orv_line">"T-that is…" Lee Jihye panting like a bull gulped down a glass of water on the table, before carrying on. "There must be some other way. Whatever that thing was, [The Fourth Wall] or whatever, you said it knows something."</p>
+<p class="orv_line">"T-that is…" Lee Jihye panting like a bull gulped down a glass of water on the table, before carrying on. "There must be some other way. Whatever that thing was, <strong>[The Fourth Wall]</strong> or whatever, you said it knows something."</p>
 <p class="orv_line">"…We don't have any methods to meet that guy again. We used up all of our fragments when opening the wall."</p>
 <p class="orv_line">Another four days flew by in an instant. The companions had become utterly devastated, ravaged – some missed their meals, while some didn't even bother to sleep. How long passed by like that? Jung Heewon sought out Yoo Joonghyuk.</p>
 <p class="orv_line">"Joonghyuk-ssi."</p>
-<p class="orv_line">Yoo Joonghyuk polishing his [Black Heavenly Demon Sword] out of an old habit raised his head. He frowned slightly as if the sunlight stung, before shifting his gaze back to the sword. No matter how much he polished it, the dark stain on the blade didn't want to come off. The stain came from Kim Dokja's letters that he cut down. He quietly stared at the stain, before finally opening his mouth.</p>
+<p class="orv_line">Yoo Joonghyuk polishing his <strong>[Black Heavenly Demon Sword]</strong> out of an old habit raised his head. He frowned slightly as if the sunlight stung, before shifting his gaze back to the sword. No matter how much he polished it, the dark stain on the blade didn't want to come off. The stain came from Kim Dokja's letters that he cut down. He quietly stared at the stain, before finally opening his mouth.</p>
 <p class="orv_line">"Four days is quite fast for making up your mind."</p>
 <p class="orv_line">"That's because we don't have any other choice."</p>
 <p class="orv_line">Yoo Joonghyuk's emotionless eyes locked on to Jung Heewon. Despite experiencing so many tragedies until now, her eyes still burned vigorously. He too used to have such eyes, once upon a time.</p>
@@ -263,7 +270,7 @@
 <p class="orv_line">"Is it true? Is it…??"</p>
 <p class="orv_line">He finally replied while staring at his own attribute window floating before his eyes.</p>
 <p class="orv_line">"I'm no longer the regressor."</p>
-<p class="orv_line">The category of [Regressor] no longer existed among his attributes. His Stigmata had vanished, too – both [Regression] and [Group Regression]. He didn't possess any Stigma to turn back the clock.</p>
+<p class="orv_line">The category of <strong>[Regressor]</strong> no longer existed among his attributes. His Stigmata had vanished, too – both <strong>[Regression]</strong> and <strong>[Group Regression]</strong>. He didn't possess any Stigma to turn back the clock.</p>
 <p class="orv_line">Winds began blowing in from somewhere. While letting the winds hit him, Yoo Joonghyuk looked up at the clear skies of &lt;Star Stream&gt;.</p>
 <p class="orv_line">He couldn't sense the gaze he used to feel all the time. No matter how much he sharpened his perception, he simply couldn't locate it like before.</p>
 <p class="orv_line">⸢He was no longer the protagonist of the story.⸥</p>
@@ -274,7 +281,7 @@
 <br>
 <p class="orv_line">"We can cross over to another world-line."</p>
 <p class="orv_line">And then, someone said something like that.</p>
-<p class="orv_line">"It doesn't really have to be a regression, does it? We cross the world-line, and enter the location of a different scenario. We then gather the fragments of 'Final Wall' one more time and meet [The Fourth Wall]."</p>
+<p class="orv_line">"It doesn't really have to be a regression, does it? We cross the world-line, and enter the location of a different scenario. We then gather the fragments of 'Final Wall' one more time and meet <strong>[The Fourth Wall]</strong>."</p>
 <p class="orv_line">It was a crazy plan.</p>
 <p class="orv_line">What made it even crazier was the fact that the person suggesting it was none other than the usually-composed Yoo Sangah.</p>
 <p class="orv_line">Han Sooyoung replied. "That guy might not even help us."</p>
@@ -290,10 +297,10 @@
 <p class="orv_line">It was at that moment something, a certain thought, brushed past Han Sooyoung's mind.</p>
 <p class="orv_line">⸢There was one more method.⸥</p>
 <p class="orv_line">Accompanied by the thunderous "Ku-gugugu!" noise, a gigantic shadow was cast upon Gwanghwamun right then. It came from a massive flying object large enough to completely blanket the main street and then some.</p>
-<div class="orv_constellation"><p>[Fufufu. Long time no see, everyone.]</p></div>
+<div class="orv_constellation"><p>Fufufu. Long time no see, everyone.</p></div>
 <p class="orv_line">Bihyung was riding on that flying object.</p>
 <p class="orv_line">He had become the Dokkaebi King of this world after the Bureau was completely ruined. And it seemed that this ruined world was exactly to his liking.</p>
-<div class="orv_constellation"><p>[Right, so you need this thing, is that it?]</p></div>
+<div class="orv_constellation"><p>Right, so you need this thing, is that it?</p></div>
 <p class="orv_line">That was the item only found in the 'last scenario'.</p>
 <p class="orv_line">⸢The Final Ark.⸥</p>
 <p class="orv_line">Han Sooyoung slowly approached the ark.</p>
@@ -301,34 +308,34 @@
 <p class="orv_line">Yoo Sangah spoke up. "However, if we use this… We'll end up being no different to Dokkaebis."</p>
 <p class="orv_line">"You should've raised such points before we used the group regression, you know."</p>
 <p class="orv_line">Han Sooyoung reached the ark. That prompted Bihyung to issue a warning.</p>
-<div class="orv_constellation"><p>[Let me make this crystal clear. This ark is a lot older than it looks, so it can be used only once.]</p></div>
+<div class="orv_constellation"><p>Let me make this crystal clear. This ark is a lot older than it looks, so it can be used only once.</p></div>
 <p class="orv_line">"Doesn't matter."</p>
 <p class="orv_line">Being able to travel to another world-line implied that they could use this ark in a similar capacity as Yoo Joonghyuk's own 'regression'.</p>
 <p class="orv_line">What if, they could move to another world-line's specific point in history? If they could do something like that, then they might be able to change world-lines in a far more efficient, effective manner than Yoo Joonghyuk's regression.</p>
 <p class="orv_line">Han Sooyoung hurriedly shouted out. "Bihyung. The world-line we want to go to is…!"</p>
 <p class="orv_line">However, even before she could finish, a message came to her first.</p>
-<div class="orv_system"><p>[It's impossible to set sail to the applicable world-line.]</p></div>
+<div class="orv_system"><p>It's impossible to set sail to the applicable world-line.</p></div>
 <p class="orv_line">Bihyung's expression became confused.</p>
-<div class="orv_constellation"><p>[Mm? What's gotten into it? I don't think it has ever said something like this before?]</p></div>
+<div class="orv_constellation"><p>Mm? What's gotten into it? I don't think it has ever said something like this before?</p></div>
 <p class="orv_line">"What's wrong? Is it broken?"</p>
-<div class="orv_constellation"><p>[Call out a different world-line.]</p></div>
+<div class="orv_constellation"><p>Call out a different world-line.</p></div>
 <p class="orv_line">Han Sooyoung spoke up again. That resulted in yet another message.</p>
-<div class="orv_system"><p>[It's impossible to set sail to the applicable world-line.]</p></div>
+<div class="orv_system"><p>It's impossible to set sail to the applicable world-line.</p></div>
 <p class="orv_line">She repeatedly mentioned other world-lines. She spoke, then spoke again. However, the message floating up remained the same.</p>
-<div class="orv_system"><p>[It's impossible to set sail to the applicable world-line.]</p></div>
-<div class="orv_system"><p>[It's impossible to set sail to the applicable world-line.]</p></div>
+<div class="orv_system"><p>It's impossible to set sail to the applicable world-line.</p></div>
+<div class="orv_system"><p>It's impossible to set sail to the applicable world-line.</p></div>
 <p class="orv_line">…</p>
 <p class="orv_line">…</p>
-<div class="orv_system"><p>[It's impossible to set sail to the applicable world-line.]</p></div>
+<div class="orv_system"><p>It's impossible to set sail to the applicable world-line.</p></div>
 <p class="orv_line">Utterly flustered now, Bihyung began muttering out.</p>
-<div class="orv_constellation"><p>[Passageways to all those world-lines have been closed off. It means the possibilities that used to be open between the world-lines have completely shut down.]</p></div>
+<div class="orv_constellation"><p>Passageways to all those world-lines have been closed off. It means the possibilities that used to be open between the world-lines have completely shut down.</p></div>
 <p class="orv_line">"We can't go?!"</p>
-<div class="orv_constellation"><p>[Looks that way. Huh, can something like this even happen?]</p></div>
+<div class="orv_constellation"><p>Looks that way. Huh, can something like this even happen?</p></div>
 <p class="orv_line">All the world-lines related to the 'Ways of Survival', the ones she could remember, were blocked off.</p>
 <p class="orv_line">"…Does that mean we can't go anywhere?"</p>
-<div class="orv_constellation"><p>[No, there is one.]</p></div>
+<div class="orv_constellation"><p>No, there is one.</p></div>
 <p class="orv_line">"Really? Which one?"</p>
-<div class="orv_constellation"><p>[But, it's a world-line with all the scenarios already concluded.]</p></div>
+<div class="orv_constellation"><p>But, it's a world-line with all the scenarios already concluded.</p></div>
 <p class="orv_line">Bihyung displayed the entered route.</p>
 <p class="orv_line">Surprisingly enough, the destination was a location they all knew quite intimately.</p>
 <p class="orv_line">Yoo Joonghyuk's 1864th regression turn.</p>
@@ -341,18 +348,12 @@
             <a href="./ch_540"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_542">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="541" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="752" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="540" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="540" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

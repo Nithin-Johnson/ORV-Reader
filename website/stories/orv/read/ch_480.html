@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 480: Ep. 91 - One Single Story, IV</title>
     <meta property="og:title" content="Ch 480: Ep. 91 - One Single Story, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00480.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 480: Ep. 91 - One Single Story, IV</h1></div>
 <p class="orv_line">Pah-su-sut.</p>
@@ -239,7 +246,7 @@
 <p class="orv_line">"You're blessed, aren't you. You even have a 'companion' who worries about you to that extent."</p>
 <p class="orv_line">The word 'companion' caused Kim Namwoon's empty eyes to tremble.</p>
 <p class="orv_line">It wasn't just Lee Jihye rushing towards this place, either. I thought that my back was growing hot, which was followed by the threatening sensation encroaching upon the nape of my neck.</p>
-<p class="orv_line">It was the [Flames of Retribution].</p>
+<p class="orv_line">It was the <strong>[Flames of Retribution]</strong>.</p>
 <div class="orv_outergod"><p>【What are you scheming now?】</p></div>
 <p class="orv_line">The 999th turn's Uriel, who had been engaged in a battle against Yoo Joonghyuk only a second ago, was standing right behind me even before I had noticed it. I slowly shifted my head towards her.</p>
 <p class="orv_line">She must've escaped from the battle in a great hurry, because her pure-white wings were all torn to shreds, with deep wounds visible all over her figure. Just a casual glance told me that she was grievously injured.</p>
@@ -247,12 +254,12 @@
 <p class="orv_line">There were some things that wouldn't change even after becoming an Outer God.</p>
 <p class="orv_line">Companions willing to risk their lives for the sake of just 'one person' – because they were such people, they got to see the end of the 999th turn without Yoo Joonghyuk's presence.</p>
 <p class="orv_line">"My scheme, is it. That's what I want to ask you."</p>
-<p class="orv_line">Along with a soft landing noise, Yoo Joonghyuk appeared behind the 999th turn's Uriel. His [Black Heavenly Demon Sword] was aiming at her neck.</p>
+<p class="orv_line">Along with a soft landing noise, Yoo Joonghyuk appeared behind the 999th turn's Uriel. His <strong>[Black Heavenly Demon Sword]</strong> was aiming at her neck.</p>
 <p class="orv_line">The emotions in his eyes were clearly complicated. His expressions seemed to be criticising me, but at the same time, also sympathising with my choice, too. Maybe it was both. His eyes seemed to imply that, now that things had turned out this way, I should do what I wanted here.</p>
 <p class="orv_line">I was going to do that without someone giving me his permission, anyway.</p>
 <p class="orv_line">"You and other 'Outer God Kings' could have easily destroyed Earth if you really wanted to."</p>
 <p class="orv_line">My words caused the eyes of the 999th turn's Uriel to faintly tremble.</p>
-<div class="orv_system"><p>[The 'Great Apocalypse Scenario' is currently in progress!]</p></div>
+<div class="orv_system"><p>The 'Great Apocalypse Scenario' is currently in progress!</p></div>
 <p class="orv_line">We weren't talking about any other scenario, but the 'Great Apocalypse' taking place within the 98th scenario. A scenario that not even the Constellations of the distant skies dared to participate in, out of fear of their complete, eternal destruction.</p>
 <p class="orv_line">At a bare minimum, the descending 'Outer Gods' in this scenario wielded absolute power to easily scorn every single Constellation.</p>
 <p class="orv_line">⸢With just a flick of one hand, every island on the Pacific Ocean was annihilated.⸥</p>
@@ -274,7 +281,7 @@
 <p class="orv_line">And would the 999th turn's Uriel really agree to go along with that?</p>
 <p class="orv_line">"From the very beginning, all of you weren't capable of doing that. This fight was your loss from the very start."</p>
 <p class="orv_line">That was the answer I had arrived at.</p>
-<div class="orv_system"><p>[The absolute majority of the Constellations are greatly shocked by your judgement.]</p></div>
+<div class="orv_system"><p>The absolute majority of the Constellations are greatly shocked by your judgement.</p></div>
 <p class="orv_line">The way to protect our regression turn without denying the 999th turn.</p>
 <p class="orv_line">My confident declaration caused the 999th turn's Uriel to glare at me with complicated eyes. Lee Jihye from the same turn staggered towards her side and quietly placed her hand on Kim Namwoon's head.</p>
 <p class="orv_line">He was staring at me dazedly, before shifting his head away.</p>
@@ -291,15 +298,15 @@
 <div class="orv_outergod"><p>【I also do not know that. However, I have a certain feeling. This feeling that, the reason why we from the 999th turn became 'Outer Gods' and survived this long was all for this moment… Don't you feel that way, too?】</p></div>
 <p class="orv_line">The 999th Uriel looked up to the sky.</p>
 <p class="orv_line">The heavens were crying; stars up there were thoughtlessly blinking away.</p>
-<div class="orv_system"><p>[&lt;Star Stream&gt; is urging for the conclusion of the Story it had waited for the longest time.]</p></div>
+<div class="orv_system"><p>&lt;Star Stream&gt; is urging for the conclusion of the Story it had waited for the longest time.</p></div>
 <p class="orv_line">I looked around to discover our companions had already arrived here. Han Sooyoung, Yoo Sangah, Jung Heewon, Lee Jihye, Shin Yoosung, Lee Gilyoung…</p>
 <p class="orv_line">They encircled the 'Outer Gods' as if to surround them, and waited for my signal while remaining ready to take action at any second.</p>
 <p class="orv_line">The 999th turn's Uriel asked out aloud. 【Why is it possible for these people, but not us?】</p>
-<p class="orv_line">The [Flames of the Retribution] burning viciously cried out, too.</p>
+<p class="orv_line">The <strong>[Flames of the Retribution]</strong> burning viciously cried out, too.</p>
 <div class="orv_outergod"><p>【…Why, why did we fail?】</p></div>
 <p class="orv_line">It was then, someone dared to open his mouth. "Why do you think that you have failed?"</p>
 <p class="orv_line">It was Yoo Joonghyuk.</p>
-<p class="orv_line">He asked while his [Black Heavenly Demon Sword] was still trained on Uriel's neck.</p>
+<p class="orv_line">He asked while his <strong>[Black Heavenly Demon Sword]</strong> was still trained on Uriel's neck.</p>
 <p class="orv_line">"Is the conclusion you didn't want to see a failure of an ending?"</p>
 <p class="orv_line">Perhaps surprisingly, I knew exactly who those words belonged to.</p>
 <p class="orv_line">⸢"Even if the end of this world is a tragedy… Do not think that you have all failed."⸥</p>
@@ -317,7 +324,7 @@
 <p class="orv_line">"If he tells you to surrender, will you do exactly that? If he tells you to listen to our demands, then are you going to follow his orders again?"</p>
 <p class="orv_line">The complexion of the 999th turn's Uriel grew paler and paler with every word spoken. I wanted to tell him that was enough – too bad, he didn't stop there. His words poured out like merciless sword strikes. And from a certain point on, I realized something else.</p>
 <p class="orv_line">What refused my request was neither 'Yoo Joonghyuk' nor the 'Secretive Plotter'.</p>
-<div class="orv_system"><p>[999th turn's 'Yoo Joonghyuk' is keeping his silence.]</p></div>
+<div class="orv_system"><p>999th turn's 'Yoo Joonghyuk' is keeping his silence.</p></div>
 <p class="orv_line">It was 999th turn's Yoo Joonghyuk himself who refused to show up. In that moment, a belated realization washed over me.</p>
 <p class="orv_line">"So much time has passed by already, yet you still can't decide on anything without his presence?"</p>
 <p class="orv_line">Only now did it feel like I could understand everything – like, on why he refused to heed my request.</p>
@@ -338,18 +345,12 @@
             <a href="./ch_479"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_481">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="480" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="1112" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="479" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="479" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

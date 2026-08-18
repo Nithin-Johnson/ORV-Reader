@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 494: Ep. 94 - Beginning of the end, II</title>
     <meta property="og:title" content="Ch 494: Ep. 94 - Beginning of the end, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,34 +177,34 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00494.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 494: Ep. 94 - Beginning of the end, II</h1></div>
 <p class="orv_line">I thought that 'it' had finally happened when I became the Outer God King.</p>
-<div class="orv_system"><p>[You have become the 'Enemy of the Story'.]</p></div>
+<div class="orv_system"><p>You have become the 'Enemy of the Story'.</p></div>
 <p class="orv_line">This wouldn't be my first time experiencing the sensation of Story in my entire body shattering into tiny little pieces. A similar thing happened back when I was booted out of the scenario and fell in the 'story's horizon'.</p>
 <p class="orv_line">If there was one thing different between then and now, it would be me not getting expelled from the scenario even after becoming an altered existence. No, it was the exact opposite.</p>
-<div class="orv_system"><p>[You have become the boss monster of the last scenario.]</p></div>
-<div class="orv_constellation"><p>[You will be alone forever.]</p></div>
-<div class="orv_constellation"><p>[No one will understand you in this worldview.]</p></div>
+<div class="orv_system"><p>You have become the boss monster of the last scenario.</p></div>
+<div class="orv_constellation"><p>You will be alone forever.</p></div>
+<div class="orv_constellation"><p>No one will understand you in this worldview.</p></div>
 <p class="orv_line">I memorised the loneliness I felt in that moment. This feeling of being cast away all alone in this universe. The feeling of becoming a monster that no one could understand for all eternity.</p>
 <p class="orv_line">However, this also wasn't my first time experiencing such a feeling either.</p>
 <p class="orv_line">⸢"I'm XX Time's reporter. Do you have some time to speak with me?"⸥</p>
@@ -209,9 +216,9 @@
 <p class="orv_line">Neither he nor I were wrong. Just that the Stories we compiled were different, that's all.</p>
 <p class="orv_line">Kwa-kwakwakwakwa!!</p>
 <p class="orv_line">The tsunami wave of Stories unfolded right before my eyes. And the blinding sparks of Probability spread out above this wave. And on top of them all, the gazes from the Constellations were streaming in.</p>
-<div class="orv_system"><p>[Constellation, 'Queen of the Darkest Spring', is watching your Story.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Father of the Rich Night', is watching your Story.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Mass Production Maker', is watching your Story.]</p></div>
+<div class="orv_system"><p>Constellation, 'Queen of the Darkest Spring', is watching your Story.</p></div>
+<div class="orv_system"><p>Constellation, 'Father of the Rich Night', is watching your Story.</p></div>
+<div class="orv_system"><p>Constellation, 'Mass Production Maker', is watching your Story.</p></div>
 <p class="orv_line">…</p>
 <p class="orv_line">This wasn't a gamble that I alone could realize. Me becoming an Outer God King was merely the beginning of the final pages.</p>
 <p class="orv_line">Yoo Joonghyuk fought hard, my companions held on bravely, and Han Sooyoung gamely attracted the Constellations.</p>
@@ -226,7 +233,7 @@
 <p class="orv_line">These kings had been excluded from the scenario until now. After escaping from the reaches of the 'Hounds chasing after the Abyss' through the abundant Probability, they had personally descended to the scenario.</p>
 <p class="orv_line">The 'Secretive Plotter' was looking in my direction. I nodded my head in return.</p>
 <p class="orv_line">⸢And now, it was time for their stage to open.⸥</p>
-<div class="orv_constellation"><p>[U-uwuuuuh-!]</p></div>
+<div class="orv_constellation"><p>U-uwuuuuh-!</p></div>
 <p class="orv_line">Several terror-stricken Constellations forgot their stations and began hastily running away. The 'Monarch of the Great Abyss' grabbed the nape of one of those Constellations. The 999th turn's Kim Namwoon began laughing.</p>
 <div class="orv_outergod"><p>【Now, now. You leaving so soon makes it a wee bit troublesome. It only just began, after all.】</p></div>
 <p class="orv_line">He must've recovered some of his energy through the Probability's overflow. He glanced at me and muttered out.</p>
@@ -236,53 +243,53 @@
 <p class="orv_line">"I know. Thanks."</p>
 <p class="orv_line">As expected, Lee Hyunsung remained a trustworthy person regardless of the number of regressions he lived.</p>
 <p class="orv_line">The 'Master of the Sunken Island', 999th turn's Lee Jihye, also made her move. Narrative-grade Constellations hurriedly rushed in from both sides and tried to block them somehow, but it was a waste of time.</p>
-<div class="orv_constellation"><p>[T-the island, it's, it's moving-!]</p></div>
-<p class="orv_line">From the front of the island covered in verdant moss, silvery cannons shone brightly. The biggest warship in the world-line, the perfected [Turtle Dragon], spat out flames towards the rest of the world.</p>
+<div class="orv_constellation"><p>T-the island, it's, it's moving-!</p></div>
+<p class="orv_line">From the front of the island covered in verdant moss, silvery cannons shone brightly. The biggest warship in the world-line, the perfected <strong>[Turtle Dragon]</strong>, spat out flames towards the rest of the world.</p>
 <p class="orv_line">Kwa-aaaaaah!!</p>
 <p class="orv_line">The overwhelming spectacle of an entire corner of the battlefield being blowing away without a trace caused me, Han Sooyoung, and even Yoo Joonghyuk to become utterly dazed.</p>
 <p class="orv_line">And at the furthest front of the battlefield, two 'Kings' were facing off against the Myth-grade Constellations.</p>
 <p class="orv_line">⸢Two people who fought together a really long time ago were there.⸥</p>
-<p class="orv_line">The 999th turn's Uriel was wrapped around in the [Hellfire]'s corona. And the other was Yoo Joonghyuk who had survived the 1863 hellscapes to eventually become an 'Outer God'.</p>
+<p class="orv_line">The 999th turn's Uriel was wrapped around in the <strong>[Hellfire]</strong>'s corona. And the other was Yoo Joonghyuk who had survived the 1863 hellscapes to eventually become an 'Outer God'.</p>
 <p class="orv_line">⸢In that moment, Kim Dokja recalled a certain ancient battlefield.⸥</p>
 <p class="orv_line">It was from Yoo Joonghyuk's 999th turn.</p>
 <p class="orv_line">Yoo Joonghyuk and Uriel entrusted their backs to each other and fought together during the great war against Constellations. Yoo Joonghyuk, blind in both eyes and roaring out, and Uriel protecting him – it was one of the scenes that I loved the most from the entirety of the 'Ways of Survival'. And that scene was being re-enacted right before my eyes.</p>
-<div class="orv_system"><p>[Story, 'Battlefield of a Hero and Flame', is waking up from its prolonged slumber!]</p></div>
+<div class="orv_system"><p>Story, 'Battlefield of a Hero and Flame', is waking up from its prolonged slumber!</p></div>
 <p class="orv_line">A Story that had disappeared a really long time ago was now connecting the two kings.</p>
 <div class="orv_outergod"><p>【…I shall leave &lt;Olympus&gt; to you.】</p></div>
 <p class="orv_line">The 999th turn's Uriel spread open her wings wide first. Just as she unleashed her Status, Constellations pounced on her as if they were waiting for that moment.</p>
 <p class="orv_line">They were the top Constellations from &lt;Papyrus&gt; and &lt;Vedas&gt;, as well as some other lower-ranked Constellations that fought against us in the 'Demon King Selection' – the 'Last Pharaoh', and the 'Bird that Eats the Thunder'.</p>
-<div class="orv_system"><p>[Story, 'Flame of Annihilation', has begun its storytelling!]</p></div>
+<div class="orv_system"><p>Story, 'Flame of Annihilation', has begun its storytelling!</p></div>
 <p class="orv_line">The moment the 999th turn's Uriel wielded her sword, the first lines of the Historical-grade Constellations rushing in at her turned into powder and scattered away. Incarnations with pale complexions hurriedly turned around to run, while Narrative-grade Constellations shouted out venomously.</p>
-<div class="orv_constellation"><p>[Stop that sword! Stop her from swinging it, no matter what!!]</p></div>
+<div class="orv_constellation"><p>Stop that sword! Stop her from swinging it, no matter what!!</p></div>
 <p class="orv_line">Uriel's sword carved out a burning path, and the 'Secretive Plotter' ran on it. It felt as if the history of the universe flowed within every step he took. His steps seemed neither too fast nor too slow, yet no one dared to stop him.</p>
-<div class="orv_system"><p>[Story, 'Hell of Eternity', has begun its storytelling.]</p></div>
+<div class="orv_system"><p>Story, 'Hell of Eternity', has begun its storytelling.</p></div>
 <p class="orv_line">The most dreadful Story in all of the world-lines began telling its story.</p>
-<div class="orv_system"><p>[Giant Story, 'Pilgrim of the Lonely Apocalypse', has begun its storytelling.]</p></div>
+<div class="orv_system"><p>Giant Story, 'Pilgrim of the Lonely Apocalypse', has begun its storytelling.</p></div>
 <p class="orv_line">Everywhere his foot landed resounded with the cries of a destroyed world. The original sin of the worlds stuck to him like a shadow and continued to chase after him.</p>
 <p class="orv_line">⸢No Constellation could stand in his way, and no Story could save him.⸥</p>
 <p class="orv_line">Didn't matter whether one was an enemy or an ally, as long as one was a Constellation, one couldn't help but get seduced by his story.</p>
 <p class="orv_line">When I abruptly regained my wits from that vast sorrow stained in wonderment, he was already grabbing at Poseidon's neck.</p>
 <p class="orv_line">The latter managed to recover himself in time as well, and hurriedly shoved the 'Secretive Plotter's' hand away all the while unleashing his own Status.</p>
-<div class="orv_system"><p>[Constellation, 'Spear that Draws the Borders in the Oceans', is greatly enraged!]</p></div>
-<p class="orv_line">&lt;Olympus&gt;'s Giant Story began making its move. Poseidon's [Traiana] bared its fangs while enveloped in a powerful Story. This was the might of a Myth-grade Constellation that anyone should quake in fear from.</p>
+<div class="orv_system"><p>Constellation, 'Spear that Draws the Borders in the Oceans', is greatly enraged!</p></div>
+<p class="orv_line">&lt;Olympus&gt;'s Giant Story began making its move. Poseidon's <strong>[Traiana]</strong> bared its fangs while enveloped in a powerful Story. This was the might of a Myth-grade Constellation that anyone should quake in fear from.</p>
 <p class="orv_line">However, I too was a Myth-grade now and I was perceiving his actions differently.</p>
 <p class="orv_line">⸢Poseidon is terrified.⸥</p>
 <p class="orv_line">His spear uselessly cut through the air, and it was no longer as sharp as before. It was a mistake unbecoming of an arrogant Constellation, and Zeus next to him roared out in alarm.</p>
 <p class="orv_line">However, it was too late by then.</p>
 <p class="orv_line">Sliiiice!</p>
 <p class="orv_line">Something cut Poseidon's torso down, and on his chest covered in blue scales, the lengthy and black wound could be seen. From this wound, Giant Stories began flooding out nonstop.</p>
-<div class="orv_constellation"><p>[Keo-heo-uhk…!]</p></div>
-<p class="orv_line">Poseidon tried to press down on his chest while swinging his [Traiana] all over the place.</p>
-<p class="orv_line">The spear that drew the borders in the oceans – wherever his [Traiana] drew a line, that place would become an ocean. However, such a thing didn't happen this time. For the first time ever, the spear's blade that feared no one couldn't find what to aim at and simply trembled helplessly.</p>
+<div class="orv_constellation"><p>Keo-heo-uhk…!</p></div>
+<p class="orv_line">Poseidon tried to press down on his chest while swinging his <strong>[Traiana]</strong> all over the place.</p>
+<p class="orv_line">The spear that drew the borders in the oceans – wherever his <strong>[Traiana]</strong> drew a line, that place would become an ocean. However, such a thing didn't happen this time. For the first time ever, the spear's blade that feared no one couldn't find what to aim at and simply trembled helplessly.</p>
 <p class="orv_line">⸢The place where his ocean couldn't reach.⸥</p>
 <p class="orv_line">Both of Poseidon's eyes were soon dyed in the pitch-black abyss.</p>
 <p class="orv_line">Most likely, he was watching the darkest Story known in this world right now. The one about the outer space, where both the ground and the sky held no meaning as effects of gravity didn't reach there. A complete devastation with not one precious thing remaining after everything was destroyed.</p>
 <p class="orv_line">And the master of that devastation was looking up at the &lt;Olympus&gt;'s constellations.</p>
 <div class="orv_outergod"><p>【Doesn't matter which world-line it is, you don't seem to change at all.】</p></div>
 <p class="orv_line">He didn't sound sad. If anything, he sounded relieved, actually.</p>
-<p class="orv_line">Along with the cold metallic noise, the blades of the [Splitting the Sky Sword] extended out to the night sky.</p>
-<div class="orv_constellation"><p>[Shut your mouth-!!]</p></div>
-<p class="orv_line">Poseidon managed to beat back the fear and hurriedly swung his [Traiana] once more, But in that exact moment, the [Splitting the Sky Sword] also made its move, as well.</p>
+<p class="orv_line">Along with the cold metallic noise, the blades of the <strong>[Splitting the Sky Sword]</strong> extended out to the night sky.</p>
+<div class="orv_constellation"><p>Shut your mouth-!!</p></div>
+<p class="orv_line">Poseidon managed to beat back the fear and hurriedly swung his <strong>[Traiana]</strong> once more, But in that exact moment, the <strong>[Splitting the Sky Sword]</strong> also made its move, as well.</p>
 <p class="orv_line">I remembered seeing Yoo Joonghyuk use a similar skill to that once before. It was a skill to cut down the stars designed by a Transcendent who had surpassed his own limit through incredible dedication and hard work.</p>
 <p class="orv_line">However, something felt different. That attack, as if…</p>
 <p class="orv_line">⸢As if, it was a sword technique created so that one man could face off against the entire world.⸥</p>
@@ -294,16 +301,16 @@
 <p class="orv_line">His blade caused the world to split apart.</p>
 <p class="orv_line">Kwa-dudududu!</p>
 <p class="orv_line">The sword strike cracked apart a nebula in its entirety and scattered stardust away. And at the end of that magic-like rays of light was Poseidon. Along with 'puh-ga-gak!' noise, his arm and leg got cut off simultaneously.</p>
-<div class="orv_constellation"><p>[Poseidon!!]</p></div>
+<div class="orv_constellation"><p>Poseidon!!</p></div>
 <p class="orv_line">Zeus freaked out and shouted loudly.</p>
 <p class="orv_line">Stories exploding forth from the 'Secretive Plotter' were swallowing up the battlefield. The emptiness he felt while living through the scenarios was expanding.</p>
 <p class="orv_line">Tsu-chuchuchuchut!</p>
-<p class="orv_line">Poseidon vomited out Stories and fell on his knees, prompting the &lt;Olympus&gt;'s 12 gods to rush in. Ares and Hephaistus roared out and swung their sword and hammer. Unfortunately for them, however, they were smacked away by the [Splitting the Sky Sword]'s blade like a bunch of children.</p>
+<p class="orv_line">Poseidon vomited out Stories and fell on his knees, prompting the &lt;Olympus&gt;'s 12 gods to rush in. Ares and Hephaistus roared out and swung their sword and hammer. Unfortunately for them, however, they were smacked away by the <strong>[Splitting the Sky Sword]</strong>'s blade like a bunch of children.</p>
 <p class="orv_line">Zeus yelled out in pure anger.</p>
-<div class="orv_constellation"><p>[Oh, the great schemer! Do not get too full of yourself! You haven't even witnessed a fragment of the myth that created &lt;Olympus&gt; yet!]</p></div>
+<div class="orv_constellation"><p>Oh, the great schemer! Do not get too full of yourself! You haven't even witnessed a fragment of the myth that created &lt;Olympus&gt; yet!</p></div>
 <p class="orv_line">Even as he was saying that, Zeus's figure was beating a hasty retreat.</p>
 <p class="orv_line">It was so obvious – the ark was waiting in the direction he was heading to.</p>
-<div class="orv_constellation"><p>[Father!]</p></div>
+<div class="orv_constellation"><p>Father!</p></div>
 <p class="orv_line">The &lt;Olympus&gt;'s Constellations abandoned by him spewed out Stories from their whole bodies as the Nameless Ones gnawed on them. Dionysus carried a resentful expression as he roared in anger towards his father.</p>
 <p class="orv_line">I quietly stared at those Constellations before speaking to Han Sooyoung and Yoo Joonghyuk. "We need to stop Zeus."</p>
 <p class="orv_line">Inside of the ark Zeus headed to was filled with sleeping Giant Stories not just belonging to &lt;Olympus&gt; but countless other myths, as well. If we let him be, this scenario would become disadvantageous for us once more.</p>
@@ -315,12 +322,12 @@
 <p class="orv_line">No, what he stared at was a certain something located much, much further away.</p>
 <p class="orv_line">The ⸢Final Wall.⸥</p>
 <p class="orv_line">Endless pages were flipping within his eyes as if he was utterly determined to see what was beyond that thing this time.</p>
-<div class="orv_system"><p>[&lt;Star Stream&gt;'s Probability is experiencing a rapid change!]</p></div>
+<div class="orv_system"><p>&lt;Star Stream&gt;'s Probability is experiencing a rapid change!</p></div>
 <p class="orv_line">Great Dokkaebis began shouting out at the unexpected distortion of the Probability.</p>
-<div class="orv_constellation"><p>[Hang on! This, this is…!]</p></div>
-<div class="orv_constellation"><p>[Oh, the 'Oldest Dream', this…!]</p></div>
-<div class="orv_system"><p>[Due to the &lt;Star Stream&gt;'s rapid change, the scenario content has been revised!]</p></div>
-<div class="orv_system"><p>[Clear condition for the applicable scenario will change depending on the camp you have chosen to side with.]</p></div>
+<div class="orv_constellation"><p>Hang on! This, this is…!</p></div>
+<div class="orv_constellation"><p>Oh, the 'Oldest Dream', this…!</p></div>
+<div class="orv_system"><p>Due to the &lt;Star Stream&gt;'s rapid change, the scenario content has been revised!</p></div>
+<div class="orv_system"><p>Clear condition for the applicable scenario will change depending on the camp you have chosen to side with.</p></div>
 <p class="orv_line">I confirmed the revised scenario detail.</p>
 <div class="orv_window">
 <p>&lt;Main Scenario #99 - ■■■&gt;</p>
@@ -338,9 +345,9 @@
 <p class="orv_line">"It's you…!"</p>
 <p class="orv_line">The clearly-astonished Asuka Ren was looking at me. It seemed that even she could now see my true appearance, at least faintly.</p>
 <p class="orv_line">As the sparks wildly danced about, the creatures of fear and disgust, 'Outer Gods' were revealing their true appearances. They were no longer the beings outside of the scenario.</p>
-<div class="orv_system"><p>[The absolute majority of the Constellations are watching your Story.]</p></div>
+<div class="orv_system"><p>The absolute majority of the Constellations are watching your Story.</p></div>
 <p class="orv_line">The scenario we had created was now being officially birthed into this world.</p>
-<div class="orv_system"><p>['Oldest Dream' is now looking at your existence.]</p></div>
+<div class="orv_system"><p>'Oldest Dream' is now looking at your existence.</p></div>
 <p class="orv_line">Quite likely, the 'Secretive Plotter' also heard these messages. More specifically, the messages popping up before my eyes.</p>
 <div class="orv_window">
 <p>Reward: Final Wall</p>
@@ -352,18 +359,12 @@
             <a href="./ch_493"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_495">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="494" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="544" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="493" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="493" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

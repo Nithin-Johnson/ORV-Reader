@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 145: Ep. 28 - The Ultimate Sacrifice, V</title>
     <meta property="og:title" content="Ch 145: Ep. 28 - The Ultimate Sacrifice, V" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00145.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 145: Ep. 28 - The Ultimate Sacrifice, V</h1></div>
 <p class="orv_line">The moment that the third and second rankings were announced in Seoul, the incarnations fell into a panic.</p>
@@ -198,7 +205,7 @@
 <p class="orv_line">To make matters worse, one of the 5th grade monsters pierced through the defenses. The miserable incarnations were torn apart by the beast's teeth.</p>
 <p class="orv_line">"Aaaagh!"</p>
 <p class="orv_line">The situation was becoming worse. The 5th grade monsters weren't easy and the incarnations were less united than expected.</p>
-<div class="orv_system"><p>[* Current number of incarnations: 89,041.]</p></div>
+<div class="orv_system"><p>* Current number of incarnations: 89,041.</p></div>
 <p class="orv_line">Thousands of incarnations died. Lee Hyunsung broke the head of a monster with Great Mountain Smash.</p>
 <p class="orv_line">"Soldier ahjussi! What the hell is going on?" Lee Jihye and Jung Heewon rushed towards him.</p>
 <p class="orv_line">They had also been responsible for defending against the monsters.</p>
@@ -218,7 +225,7 @@
 <p class="orv_line">"It is because you can't die that you are comforted by the deaths of others."</p>
 <p class="orv_line">Every human placed value on their life because they only died once.</p>
 <p class="orv_line">"That's why you preached to the Salvation Church. You watched them live a one-time life and also wanted to be absorbed into their lives. You want to share the emotions they feel."</p>
-<div class="orv_system"><p>[Your understanding of the character 'Nirvana Moebius' has increased.]</p></div>
+<div class="orv_system"><p>Your understanding of the character 'Nirvana Moebius' has increased.</p></div>
 <p class="orv_line">I knew Nirvana. I didn't just know him because he was a character in the novel. Nirvana yearned for something he could never be. Nirvana resembled me.</p>
 <p class="orv_line">"Don't speak nonsense."</p>
 <p class="orv_line">Unexpectedly, Nirvana's voice was calm. It was when he was really angry that he made a voice like this.</p>
@@ -236,21 +243,21 @@
 <p class="orv_line">"Then kill me. I'm not afraid of death as you said." Nirvana's eyes were burning with vengeance. "Still, you better keep something in mind. I'll come back again and again. I will come back to life a number of times, kill you and show you the worst pain. Just like I did to your mother."</p>
 <p class="orv_line">I was surprised. "…Did you meet my mother?"</p>
 <p class="orv_line">"She is a very good mother."</p>
-<div class="orv_system"><p>[The exclusive skill, 'Fourth Wall' is shaking!]</p></div>
+<div class="orv_system"><p>The exclusive skill, 'Fourth Wall' is shaking!</p></div>
 <p class="orv_line">"It is fun to make her submit. You know, I like to corrupt a virtuous spirit."</p>
-<div class="orv_system"><p>[The exclusive skill, 'Fourth Wall' is shaking!]</p></div>
+<div class="orv_system"><p>The exclusive skill, 'Fourth Wall' is shaking!</p></div>
 <p class="orv_line">"The scene where she struggled and begged for her life is still vivid in my eyes."</p>
 <p class="orv_line">There was such provocation in this world. I was hooked despite knowing it was a provocation. This was despite knowing my mother wouldn't have done that.</p>
-<div class="orv_system"><p>[The exclusive skill, 'Fourth Wall' is steadily shaking.]</p></div>
+<div class="orv_system"><p>The exclusive skill, 'Fourth Wall' is steadily shaking.</p></div>
 <p class="orv_line">"Hahaha! You are caught!"</p>
 <div class="orv_image"><img src="../../../assets/images/145 - Hahaha! You are caught!.jpg" alt="" loading="lazy"></div>
 <div class="orv_notice"><p>* Unofficial fan illustration (non-canonical)</p></div>
 <p class="orv_line">My vision shook and the world became black.</p>
-<div class="orv_system"><p>[The character 'Nirvana Moebius' has used 108 Worries Lv. 2!]</p></div>
+<div class="orv_system"><p>The character 'Nirvana Moebius' has used 108 Worries Lv. 2!</p></div>
 <p class="orv_line">My consciousness was sucked somewhere and I was thrown into a world other than the stadium. I heard familiar voices in the darkness.</p>
-<div class="orv_quote"><p>「 Master, run away! 」</p></div>
-<div class="orv_quote"><p>「 Please, please save this world. 」</p></div>
-<div class="orv_quote"><p>「 You can easily throw away this world. But I…! 」</p></div>
+<div class="orv_quote"><p>Master, run away!</p></div>
+<div class="orv_quote"><p>Please, please save this world.</p></div>
+<div class="orv_quote"><p>You can easily throw away this world. But I…!</p></div>
 <p class="orv_line">They were voices filled with resentment. I knew where this world was. It was the place where the Fourth Wall was shaking. It was the inner part of Yoo Joonghyuk, who was infested with many worries.</p>
 <p class="orv_line">"Yoo Joonghyuk! You finally allowed me in! Now… you will be one with me."</p>
 <p class="orv_line">Nirvana was standing in front of me. I smiled as I looked at him. Preparing a counterattack at the last minute, a reincarnator was truly a reincarnator.</p>
@@ -259,86 +266,86 @@
 <p class="orv_line">Nirvana grew to the size of a giant in a flash. The pressure of the soul that accumulated countless stories was really great. Once again, it was natural for him to have built up such stories.</p>
 <p class="orv_line">Hundreds of arms grew like wings from his back while his legs were half covered with the feathers of a bird and half covered with the scales of a snake. A wolf-like snout protruded and horns grew from his head.</p>
 <p class="orv_line">It looked like he was concentrating all the reincarnations he had experienced.</p>
-<div class="orv_constellation"><p>[I am Nirvana Moebius.]</p></div>
+<div class="orv_constellation"><p>I am Nirvana Moebius.</p></div>
 <p class="orv_line">This was Nirvana 'himself'.</p>
-<div class="orv_constellation"><p>[A reincarnator who leads the unfortunate people to Nirvana.]</p></div>
+<div class="orv_constellation"><p>A reincarnator who leads the unfortunate people to Nirvana.</p></div>
 <p class="orv_line">He looked confident, but Nirvana didn't know. I deliberately let myself get hit by his 108 Worries. I smiled and opened my mouth. "Nirvana, do you know the principle of reincarnation?"</p>
 <p class="orv_line">The space trembled ominously. I kept speaking.</p>
 <p class="orv_line">"Your soul is bound to the mandala's guardian. Once you die, you don't go to the Underworld. According to the unique laws of the constellations, your soul is nestled in a body that was just born."</p>
-<div class="orv_constellation"><p>[…What are you talking about?]</p></div>
+<div class="orv_constellation"><p>…What are you talking about?</p></div>
 <p class="orv_line">"You aren't immortal. Your body is born again but your soul isn't."</p>
-<div class="orv_constellation"><p>[Nonsense!]</p></div>
+<div class="orv_constellation"><p>Nonsense!</p></div>
 <p class="orv_line">The hundreds of arms on Nirvana's back poured towards me. The Thousand Hands of Avalokiteśvara poured out like a waterfall. If I was hit by that in reality, my body would burst and I would be dead. However, this place was different.</p>
 <p class="orv_line">Now I was Yoo Joonghyuk. In other words, this was also my 'inner self'. The Thousand Hands of Avalokiteśvara melted away in front of my nose.</p>
 <p class="orv_line">Nirvana looked baffled. I saw the numerous pages that surrounded me.</p>
-<div class="orv_system"><p>[The exclusive skill, 'Fourth Wall' is activated!]</p></div>
+<div class="orv_system"><p>The exclusive skill, 'Fourth Wall' is activated!</p></div>
 <p class="orv_line">There was the sound of pages turning and the pages started to flutter around. There were words written on the white pages. The countless words that I read formed a huge wall.</p>
 <p class="orv_line">The astounded Nirvana tried to escape but it was already too late. Sparks formed as Nirvana's body hit the wall.</p>
-<div class="orv_constellation"><p>[What have you done?]</p></div>
+<div class="orv_constellation"><p>What have you done?</p></div>
 <p class="orv_line">The Fourth Wall could even repel the constellations. I was curious. Maybe it was possible to use this to wipe out a 'reincarnator'.</p>
-<div class="orv_constellation"><p>[Release this wall! This, this is…!]</p></div>
+<div class="orv_constellation"><p>Release this wall! This, this is…!</p></div>
 <p class="orv_line">The perplexed Nirvana looked at the wall. A blinding light emerged from the letters on the wall.</p>
-<div class="orv_quote"><p>「 If this world continues to be reborn, we can clear it. 」</p></div>
-<div class="orv_constellation"><p>[This… don't tell me…!]</p></div>
+<div class="orv_quote"><p>If this world continues to be reborn, we can clear it.</p></div>
+<div class="orv_constellation"><p>This… don't tell me…!</p></div>
 <p class="orv_line">Nirvana stared at the pages that contained his truth.</p>
-<div class="orv_quote"><p>「 Yoo Joonghyuk, I can take you to the end of this world. 」</p></div>
-<div class="orv_constellation"><p>[H-How do you have this?]</p></div>
+<div class="orv_quote"><p>Yoo Joonghyuk, I can take you to the end of this world.</p></div>
+<div class="orv_constellation"><p>H-How do you have this?</p></div>
 <p class="orv_line">I approached Nirvana and said, "You don't have to go until the end of this world."</p>
 <p class="orv_line">Every time letters appeared on the world, Nirvana's huge body started to disintegrate. Nirvana's body split into countless letters and started to be sucked into the Fourth Wall.</p>
 <p class="orv_line">"You will die here."</p>
 <p class="orv_line">There was a strange emotion on Nirvana's face as he saw his soul disintegrating.</p>
-<div class="orv_quote"><p>「 At last, the reincarnator Nirvana reached a 'single life' after hundreds of years of wandering. 」</p></div>
+<div class="orv_quote"><p>At last, the reincarnator Nirvana reached a 'single life' after hundreds of years of wandering.</p></div>
 <p class="orv_line">Nirvana laughed as he saw the sentence on the wall.</p>
-<div class="orv_constellation"><p>[Ha… haha, hahaha!]</p></div>
-<div class="orv_quote"><p>「 He greeted his first real 'death'. 」</p></div>
+<div class="orv_constellation"><p>Ha… haha, hahaha!</p></div>
+<div class="orv_quote"><p>He greeted his first real 'death'.</p></div>
 <p class="orv_line">Nirvana's expression was jubilant.</p>
-<div class="orv_quote"><p>「 This is… dying. 」</p></div>
-<div class="orv_constellation"><p>[I see. This is it.]</p></div>
-<div class="orv_quote"><p>「 At that moment, Nirvana realized what he had long been waiting for. 」</p></div>
+<div class="orv_quote"><p>This is… dying.</p></div>
+<div class="orv_constellation"><p>I see. This is it.</p></div>
+<div class="orv_quote"><p>At that moment, Nirvana realized what he had long been waiting for.</p></div>
 <p class="orv_line">It had been hundreds of years. He reached the end after countless incarnations. Nirvana closed his eyes at this long-awaited moment. Despite closing his eyes, Nirvana's inner thoughts were still written on the wall.</p>
-<div class="orv_quote"><p>「 Then why? This is what I've been hoping for. 」</p></div>
+<div class="orv_quote"><p>Then why? This is what I've been hoping for.</p></div>
 <p class="orv_line">Nirvana's entire body was covered with minor cracks. His feet, legs, thighs, chest… The broken pieces were being sucked into the Fourth Wall.</p>
-<div class="orv_quote"><p>「 Why am I feeling afraid? 」</p></div>
+<div class="orv_quote"><p>Why am I feeling afraid?</p></div>
 <p class="orv_line">He felt the fear of death for the first time.</p>
 <p class="orv_line">To die. There was no future. He couldn't think, move, talk or even feel his own existence.</p>
-<div class="orv_quote"><p>「 I don't exist. 」</p></div>
+<div class="orv_quote"><p>I don't exist.</p></div>
 <p class="orv_line">Nirvana's eyes flashed open for a moment.</p>
-<div class="orv_quote"><p>「 Don't… I don't want to! 」</p></div>
-<div class="orv_quote"><p>「 However, Nirvana's mouth was gone and he couldn't shout it. 」</p></div>
-<div class="orv_quote"><p>「 His disappearing arms stretched helplessly towards me. 」</p></div>
-<div class="orv_quote"><p>「 In the first place, existence isn't beautiful. 」</p></div>
+<div class="orv_quote"><p>Don't… I don't want to!</p></div>
+<div class="orv_quote"><p>However, Nirvana's mouth was gone and he couldn't shout it.</p></div>
+<div class="orv_quote"><p>His disappearing arms stretched helplessly towards me.</p></div>
+<div class="orv_quote"><p>In the first place, existence isn't beautiful.</p></div>
 <p class="orv_line">No one would hold a philosophical view when fated to die. All beings were helpless before death.</p>
-<div class="orv_quote"><p>「 No! Please! Stop! Don't kill me! 」</p></div>
-<div class="orv_quote"><p>「 Yes, your mother's secret. I know it! I know the story that your mother never told you― 」</p></div>
-<div class="orv_quote"><p>「 Save me. Please. If you save me…! 」</p></div>
+<div class="orv_quote"><p>No! Please! Stop! Don't kill me!</p></div>
+<div class="orv_quote"><p>Yes, your mother's secret. I know it! I know the story that your mother never told you―</p></div>
+<div class="orv_quote"><p>Save me. Please. If you save me…!</p></div>
 <p class="orv_line">I looked at him. It was as if witnessing the end of a character in the novel.</p>
-<div class="orv_quote"><p>「 In his last moments, Nirvana repeated the words he hated the most. 」</p></div>
-<div class="orv_quote"><p>「 I don't want to die. 」</p></div>
+<div class="orv_quote"><p>In his last moments, Nirvana repeated the words he hated the most.</p></div>
+<div class="orv_quote"><p>I don't want to die.</p></div>
 <p class="orv_line">Soon, Nirvana's soul completely disappeared.</p>
-<div class="orv_system"><p>[The Fourth Wall has eaten the character 'Nirvana Moebius'.]</p></div>
+<div class="orv_system"><p>The Fourth Wall has eaten the character 'Nirvana Moebius'.</p></div>
 <p class="orv_line">This was the first message I heard. The wall reacted differently from when it killed the Theatre Dungeon's boss. I was frightened at first.</p>
-<div class="orv_system"><p>[The Fourth Wall is smiling with satisfaction.]</p></div>
+<div class="orv_system"><p>The Fourth Wall is smiling with satisfaction.</p></div>
 <p class="orv_line">It was fine to kill Nirvana. However, once I thought about it, I didn't know exactly what the Fourth Wall was.</p>
-<div class="orv_system"><p>[The Fourth Wall is looking at you with greedy eyes.]</p></div>
+<div class="orv_system"><p>The Fourth Wall is looking at you with greedy eyes.</p></div>
 <p class="orv_line">It wriggled like it was alive. The wall wanted a taste of me, like swallowing Nirvana wasn't enough. Something popped up on the wall.</p>
-<div class="orv_quote"><p>「 At this moment, Kim Dokja thought, 'Maybe someday, I will also be eaten by this wall'. 」</p></div>
-<div class="orv_system"><p>[108 Worries has been disabled.]</p></div>
+<div class="orv_quote"><p>At this moment, Kim Dokja thought, 'Maybe someday, I will also be eaten by this wall'.</p></div>
+<div class="orv_system"><p>108 Worries has been disabled.</p></div>
 <p class="orv_line">My vision started to return to its original state. The wall, Nirvana, Yoo Joonghyuk. It was as if nothing had happened from the beginning.</p>
 <p class="orv_line">…</p>
 <p class="orv_line">I blinked and found I was back at the Gwanghwamun stadium. Nirvana was scattering in front of my eyes. After a long time wandering, he finally found rest.</p>
 <p class="orv_line">The area was silent, as if cold water had been poured on it. I slowly moved Yoo Joonghyuk's feet.</p>
 <p class="orv_line">The dokkaebi started talking.</p>
-<div class="orv_constellation"><p>[This… It is already the end of the scenario. Shall I now announce who the strongest incarnation is?]</p></div>
+<div class="orv_constellation"><p>This… It is already the end of the scenario. Shall I now announce who the strongest incarnation is?</p></div>
 <p class="orv_line">I found it hard to move due to fatigue. The voice of the dokkaebi was heard above my head.</p>
-<div class="orv_system"><p>[The strongest incarnation, he is…]</p></div>
+<div class="orv_system"><p>The strongest incarnation, he is…</p></div>
 <p class="orv_line">At this moment, my consciousness blurred and I couldn't hear the voice anymore.</p>
 <p class="orv_line">It seemed that my time had run out. I couldn't hear the final words as my consciousness disappeared.</p>
-<div class="orv_system"><p>[Excessive mental exhaustion has turned off Omniscient Reader's Viewpoint stage three.]</p></div>
-<div class="orv_system"><p>[1st person protagonist's point of view has been released.]</p></div>
+<div class="orv_system"><p>Excessive mental exhaustion has turned off Omniscient Reader's Viewpoint stage three.</p></div>
+<div class="orv_system"><p>1st person protagonist's point of view has been released.</p></div>
 <p class="orv_line">.</p>
 <p class="orv_line">.</p>
 <p class="orv_line">.</p>
-<div class="orv_system"><p>[You have died.]</p></div>
+<div class="orv_system"><p>You have died.</p></div>
 <br>
 <hr>
 <br>
@@ -350,18 +357,12 @@
             <a href="./ch_144"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_146">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="145" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="130" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="144" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="144" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

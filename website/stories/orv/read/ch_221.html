@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 221: Ep. 42 - Asmodeus, I</title>
     <meta property="og:title" content="Ch 221: Ep. 42 - Asmodeus, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,38 +177,38 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00221.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         <div class="orv_cover"><img src="../../../assets/images/Cover%20Part%202%20-%20221%20-%20Vol%202%20-%20Episodes%2042-47.jpg" alt=""></div>
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 221: Ep. 42 - Asmodeus, I</h1></div>
 <p class="orv_line">A sleeper car was rolling around. The citizens of the council, including Aileen, were busy moving me somewhere. I could feel the fragments of my stories constantly entering, like a patient in critical condition.</p>
 <p class="orv_line">Putting aside the urgent situation, my mind was gradually becoming calm. I decided to sort out the situation.</p>
-<div class="orv_system"><p>[Currently, you have the inheritance rights to the Gilobat Industrial Complex.]</p></div>
+<div class="orv_system"><p>Currently, you have the inheritance rights to the Gilobat Industrial Complex.</p></div>
 <p class="orv_line">How did I become a revolutionary and gain the inheritance rights of the Gilobat Industrial Complex?</p>
 <p class="orv_line">The answer was simple.</p>
-<div class="orv_quote"><p>「 'Kim Dokja' killed the ruler of the Gilobat Industrial Complex. 」</p></div>
+<div class="orv_quote"><p>'Kim Dokja' killed the ruler of the Gilobat Industrial Complex.</p></div>
 <p class="orv_line">At first glance, it seemed like a circular argument but this wasn't the case. It was because 'Kim Dokja' wasn't my body. In other words, it was easy for someone to impersonate me, build up a reputation there and finally kill the ruler.</p>
-<div class="orv_system"><p>[The Star Stream is correcting the scenario error.]</p></div>
-<div class="orv_system"><p>[A new story related to you is scheduled.]</p></div>
+<div class="orv_system"><p>The Star Stream is correcting the scenario error.</p></div>
+<div class="orv_system"><p>A new story related to you is scheduled.</p></div>
 <p class="orv_line">What crazy person could do such a thing? There obviously couldn't be two such crazy guys.</p>
-<div class="orv_quote"><p>「 Kim Dokja thought: Yoo Joonghyuk is now in the Gilobat Industrial Complex. 」</p></div>
+<div class="orv_quote"><p>Kim Dokja thought: Yoo Joonghyuk is now in the Gilobat Industrial Complex.</p></div>
 <p class="orv_line">At first, I purely felt gratitude. Ah! Yoo Joonghyuk was a decent person! That jerk hit the industrial complex to save me! I felt thrilled for a while without thinking much.</p>
 <p class="orv_line">Then once I thought about it, I couldn't believe it. That Yoo Joonghyuk entered the Gilobat Industrial Complex to save me? In the first place, it was strange that Yoo Joonghyuk knew about my crisis. How could a guy who wasn't a constellation or have access to a channel know about my crisis?</p>
 <p class="orv_line">Thus, Yoo Joonghyuk was likely to do the opposite of coming to my rescue. He noticed that I impersonated him and came to the Demon Realm to pick me up. In the meantime, something went wrong and he headed to the Gilobat Industrial Complex first where he went through an unnecessary dispute and overturned the industrial complex. I couldn't even fathom how much rage it felt to do that.</p>
@@ -210,38 +217,38 @@
 <p class="orv_line">"Don't talk nonsense in your current physical condition." Aileen sighed but her expression didn't look bad. "I can only see it as a miracle. You are slowly recovering. The damage to your stories is so big it will be hard to move around but… I think you will be fine.</p>
 <p class="orv_line">Maybe it was because I entered the main scenario again but my sense of breathing had changed.</p>
 <p class="orv_line">Those who didn't know what it felt like to be an exile and return to the scenario wouldn't understand.</p>
-<div class="orv_quote"><p>「 Kim Dokja thought: This is the 'story'. 」</p></div>
+<div class="orv_quote"><p>Kim Dokja thought: This is the 'story'.</p></div>
 <p class="orv_line">It felt like a cozy and huge world was embracing me. Funnily enough, it felt like I was now living properly. It was frightening to think about who designed these 'senses'.</p>
 <p class="orv_line">"Kuek…"</p>
 <p class="orv_line">"Don't move!"</p>
 <p class="orv_line">Aileen's sharp voice was heard along with the strong pangs.</p>
-<div class="orv_system"><p>[Your current story configuration is incomplete.]</p></div>
+<div class="orv_system"><p>Your current story configuration is incomplete.</p></div>
 <p class="orv_line">I had entered the scenario and was in the recovery phase but things were still serious. It was a miracle that I survived long enough to kill Duke Syswitz. It was a reckless battle. It was uncharacteristic of me and I didn't know why I acted like that.</p>
-<div class="orv_system"><p>[Some constellations are asking about you.]</p></div>
+<div class="orv_system"><p>Some constellations are asking about you.</p></div>
 <p class="orv_line">Moreover, I summoned the story weapon so my future stories would become very complicated. I opened the message log that I had been putting off.</p>
-<div class="orv_system"><p>[Many constellations in the channel are greatly impressed by your performance!]</p></div>
-<div class="orv_system"><p>[3,000 coins have been sponsored.]</p></div>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is nodding at your confidence.]</p></div>
-<div class="orv_system"><p>[4,000 coins have been sponsored.]</p></div>
+<div class="orv_system"><p>Many constellations in the channel are greatly impressed by your performance!</p></div>
+<div class="orv_system"><p>3,000 coins have been sponsored.</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is nodding at your confidence.</p></div>
+<div class="orv_system"><p>4,000 coins have been sponsored.</p></div>
 <p class="orv_line">There was some sponsorship. Somehow I wasn't impressed.</p>
-<div class="orv_system"><p>[The 20th main scenario has ended.]</p></div>
-<div class="orv_system"><p>[The main scenario 'Demon Realm Revolution' has been cleared.]</p></div>
-<div class="orv_system"><p>[The excessive main scenario skip is delaying the compensation.]</p></div>
-<div class="orv_system"><p>[The collection of stories due to clearing the main scenario is pending.]</p></div>
+<div class="orv_system"><p>The 20th main scenario has ended.</p></div>
+<div class="orv_system"><p>The main scenario 'Demon Realm Revolution' has been cleared.</p></div>
+<div class="orv_system"><p>The excessive main scenario skip is delaying the compensation.</p></div>
+<div class="orv_system"><p>The collection of stories due to clearing the main scenario is pending.</p></div>
 <p class="orv_line">There were some problems but the scenario messages came up correctly.</p>
-<div class="orv_system"><p>[Some constellations are wondering about your identity.]</p></div>
-<div class="orv_system"><p>[Some constellations would like to invite you to their nebula!]</p></div>
-<div class="orv_system"><p>[Someone is eyeing your story!]</p></div>
+<div class="orv_system"><p>Some constellations are wondering about your identity.</p></div>
+<div class="orv_system"><p>Some constellations would like to invite you to their nebula!</p></div>
+<div class="orv_system"><p>Someone is eyeing your story!</p></div>
 <p class="orv_line">The familiar shenanigans had also begun. It was understandable why they were running around like this.</p>
-<div class="orv_quote"><p>「 The story weapon Pluto. 」</p></div>
+<div class="orv_quote"><p>The story weapon Pluto.</p></div>
 <p class="orv_line">Even the narrative-grade constellations coveted the giant soldier. The giant soldier was a rare weapon that could only be seen in the huge stories of Gigantomachia. It was a weapon that could trample on the legendary story, the Factory like it was a toy. There was no way the constellations wouldn't covet such a weapon.</p>
 <p class="orv_line">By the way, 'he' hadn't come yet…</p>
-<div class="orv_system"><p>[The constellation 'Father of the Rich Night' is watching you.]</p></div>
+<div class="orv_system"><p>The constellation 'Father of the Rich Night' is watching you.</p></div>
 <p class="orv_line">…He came, shit.</p>
-<div class="orv_system"><p>[The constellation 'Father of the Rich Night' is watching you.]</p></div>
+<div class="orv_system"><p>The constellation 'Father of the Rich Night' is watching you.</p></div>
 <p class="orv_line">Father of the Rich Night. Fortunately, he didn't take any action apart from looking at me. It was normal for him to be angry because I used his story weapon… No, Hades looking at me might be a terrible thing in itself. He was the king of the Underworld.</p>
-<div class="orv_system"><p>[The exclusive skill 'Fourth Wall' is strongly activated!]</p></div>
-<div class="orv_system"><p>[The Fourth Wall is laughing.]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Fourth Wall' is strongly activated!</p></div>
+<div class="orv_system"><p>The Fourth Wall is laughing.</p></div>
 <p class="orv_line">Dammit, I disliked this mean fellow.</p>
 <p class="orv_line">Of course, I was narrative-grade and could touch Hades' toes but the problem was my current condition. The bandages wrapped around my body represented my present situation.</p>
 <p class="orv_line">The incarnation body was the phenotype of my status. The phenotype was ruined so the status of the constellation inevitably shrunk. It was the first time I had been injured like this…</p>
@@ -257,14 +264,14 @@
 <p class="orv_line">It was a question I had anticipated and I nodded. "That's right, I'm not him."</p>
 <p class="orv_line">"However, the owner of this industrial complex is now Yoo Joonghyuk."</p>
 <p class="orv_line">Certainly, it was true. In fact, there was a mention in my messages.</p>
-<div class="orv_system"><p>[The current owner of the industrial complex is Duke Yoo Joonghyuk.]</p></div>
+<div class="orv_system"><p>The current owner of the industrial complex is Duke Yoo Joonghyuk.</p></div>
 <p class="orv_line">Duke Yoo Joonghyuk… That jerk should be thanking me. I glanced at Aileen and told her, "The duke will soon come."</p>
 <p class="orv_line">Aileen's expression filled with a strange tension. "…Yoo Joonghyuk is a demon?"</p>
 <p class="orv_line">"He isn't a demon although sometimes he feels like a demon." I was worried about how to explain and finally decided to say, "In this round, Yoo Joonghyuk is a good guy."</p>
 <p class="orv_line">Aileen didn't understand what I meant. I shook my head. "I have a favour to ask. Can you call Jang Hayoung and Han Myungoh to me? I have something to say to them."</p>
 <p class="orv_line">"…I understand."</p>
 <p class="orv_line">I had passed one crisis but it was literally only 'one'. The 'Revolutionary' scenario was over but the following scenarios were incomparably larger in scale.</p>
-<div class="orv_system"><p>[Some demon kings are interested in your actions.]</p></div>
+<div class="orv_system"><p>Some demon kings are interested in your actions.</p></div>
 <p class="orv_line">If I wasn't cautious, I would be eaten. Thus, from now on, I had to prepare step by step. As soon as Aileen disappeared, I opened the file on the panel screen without hesitation.</p>
 <p class="orv_line">–Three Ways to Survive in a Ruined World (1st Revision).txt</p>
 <p class="orv_line">It was the long-awaited Ways of Survival. My heart was already beating quickly. What did first revision mean? In addition, why did the writer give this to me?</p>
@@ -275,17 +282,17 @@
 <p class="orv_line">In order to see where the story was modified, I had to read it again from the beginning and compare it to my memories. I started reading the first ten pages.</p>
 <p class="orv_line">…There didn't seem to be much change? It started with the subway and Yoo Joonghyuk's actions…</p>
 <p class="orv_line">This was a revision so why was this jerk still like this? Then a sentence that didn't exist in the original Ways of Survival appeared for the first time.</p>
-<div class="orv_quote"><p>「 Yoo Joonghyuk thought, 'If it was him, I wouldn't have thought of this'. 」</p></div>
+<div class="orv_quote"><p>Yoo Joonghyuk thought, 'If it was him, I wouldn't have thought of this'.</p></div>
 <p class="orv_line">I stopped as I felt cold.</p>
-<div class="orv_quote"><p>「 'If he had been here, I would've judged things a bit differently…' 」</p></div>
+<div class="orv_quote"><p>'If he had been here, I would've judged things a bit differently…'</p></div>
 <p class="orv_line">I subconsciously scrolled back to the first page. The performance of the smartphone caused the text to be mixed up but I couldn't afford to worry about it. An eerie feeling filled my heart. I was missing something.</p>
 <p class="orv_line">…The first scene was the same? No. It was a completely different beginning. I scrolled to the first page of the first chapter of Ways of Survival and stared with a stunned expression.</p>
 <p class="orv_line">"…It isn't the third regression."</p>
 <p class="orv_line">The first revision of Three Ways to Survive in a Ruined World. I read the first sentence of the novel again.</p>
-<div class="orv_quote"><p>「 Thus, Yoo Joonghyuk's fourth life began. 」</p></div>
+<div class="orv_quote"><p>Thus, Yoo Joonghyuk's fourth life began.</p></div>
 <p class="orv_line">The first revision started from Yoo Joonghyuk's fourth regression.</p>
-<div class="orv_quote"><p>「 Yoo Joonghyuk had a thought. 」</p></div>
-<div class="orv_quote"><p>「 In this round, that guy doesn't exist. 」</p></div>
+<div class="orv_quote"><p>Yoo Joonghyuk had a thought.</p></div>
+<div class="orv_quote"><p>In this round, that guy doesn't exist.</p></div>
 <br>
 <hr>
         </article>
@@ -293,18 +300,12 @@
             <a href="./ch_220"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_222">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="221" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="254" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="220" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="220" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

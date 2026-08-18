@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 141: Ep. 28 - The Ultimate Sacrifice, I</title>
     <meta property="og:title" content="Ch 141: Ep. 28 - The Ultimate Sacrifice, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00141.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 141: Ep. 28 - The Ultimate Sacrifice, I</h1></div>
 <p class="orv_line">30 minutes later, all the 6th grade monsters were cleaned up. My party members and I were very active, particularly Gong Pildu. It was a rewarding moment for one of the 10 Evils.</p>
@@ -197,7 +204,7 @@
 <p class="orv_line">"Father! Please wake up! Father!"</p>
 <p class="orv_line">"Somebody help!"</p>
 <p class="orv_line">Many incarnations who didn't have the know-how yet couldn't resist the 6th grade monsters. There were those who suffered severe trauma from the heavy hound's paws or had their internal organs burst. Most of them were new incarnations.</p>
-<div class="orv_system"><p>[* Current number of incarnations: 90,531 people.]</p></div>
+<div class="orv_system"><p>* Current number of incarnations: 90,531 people.</p></div>
 <p class="orv_line">It was only the first wave and one-tenth of Seoul Dome had died. A little further away, Yoo Joonghyuk was watching the incarnations. I became a bit nervous as I watched Yoo Joonghyuk.</p>
 <p class="orv_line">The dokkaebi stated that the sacrifice of the strongest incarnation would save all the incarnations in Seoul Dome.</p>
 <p class="orv_line">"Hey, Yoo Joonghyuk."</p>
@@ -208,11 +215,11 @@
 <hr>
 <br>
 <p class="orv_line">We went to the rooftop of a high rise building. On the way, I used Character List on Yoo Joonghyuk for the first time in a while.</p>
-<div class="orv_system"><p>[The exclusive skill, Character List is activated.]</p></div>
-<div class="orv_system"><p>[There is too much information about this person. Character List is converted to Character Summary.]</p></div>
-<div class="orv_system"><p>[Only randomly specified items will be displayed according to User's convenience.]</p></div>
+<div class="orv_system"><p>The exclusive skill, Character List is activated.</p></div>
+<div class="orv_system"><p>There is too much information about this person. Character List is converted to Character Summary.</p></div>
+<div class="orv_system"><p>Only randomly specified items will be displayed according to User's convenience.</p></div>
 <div class="orv_window">
-<h3 class="orv_window_title">[Character Summary]</h3>
+<h3 class="orv_window_title">Character Summary</h3>
 <p>Name: Yoo Joonghyuk.</p>
 <p>Sponsor: ???</p>
 <p>Exclusive Attributes: Regressor (3rd turn) (Myth), Pro Gamer (Rare), Supreme King (Hero)</p>
@@ -258,7 +265,7 @@
 <p class="orv_line">"Do you think you will be able to keep the same mindset after repeating it 100 or 200 times?"</p>
 <p class="orv_line">"I won't regress that many times."</p>
 <p class="orv_line">I silently stared at Yoo Joonghyuk.</p>
-<div class="orv_quote"><p>「 …Don't tell me?  Yoo Joonghyuk's eyes slowly widened. 」</p></div>
+<div class="orv_quote"><p>…Don't tell me?  Yoo Joonghyuk's eyes slowly widened.</p></div>
 <p class="orv_line">I kept speaking, "Are you having nightmares these days?"</p>
 <p class="orv_line">"…"</p>
 <p class="orv_line">"You won't be saved, even if you save the world. The moment you save the world, the worlds you have forsaken will come to you. Despite saving one world, all the other worlds you abandoned will drag you to hell."</p>
@@ -269,7 +276,7 @@
 <p class="orv_line">"…"</p>
 <p class="orv_line">Yoo Joonghyuk closed his mouth. He wanted to say something but the words didn't come out. There was an intense conflict on his face.</p>
 <p class="orv_line">Yes, Yoo Joonghyuk. Feel conflicted. What would happen to me if he regressed?</p>
-<div class="orv_system"><p>[The mental state of the character 'Yoo Joonghyuk' is slightly restored.]</p></div>
+<div class="orv_system"><p>The mental state of the character 'Yoo Joonghyuk' is slightly restored.</p></div>
 <p class="orv_line">I could see a faint light of determination in Yoo Joonghyuk's face. Every world was goddamn hard. It was the same for this world. Every time you restart, live with all your strength.</p>
 <p class="orv_line">A cool wind blew and we looked down at the ruined city together.</p>
 <p class="orv_line">"This scenario has a strong event propensity. The flow will return to the direction we know. The future you know will be available again. Don't you still have many hidden pieces that only you know? If Seoul Dome is somehow liberated…"</p>
@@ -279,9 +286,9 @@
 <p class="orv_line">"A man shouldn't interfere with a person's conversation."</p>
 <p class="orv_line">"A man is a rat…"</p>
 <p class="orv_line">…I could roughly guess the situation.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire''s eyes are shining.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire''s eyes are shining.</p></div>
 <p class="orv_line">"All of of you…" I spoke before Lee Jihye spoke more bullshit. "Don't joke around today. I'm not in the mood."</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is sad.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is sad.</p></div>
 <p class="orv_line">It didn't matter if the constellation was sad or not. The important one right now was Yoo Joonghyuk.</p>
 <p class="orv_line">Uriel wasn't giving us coins now so I hoped she would go to Jung Heewon. Yoo Joonghyuk opened his mouth. "I have been making a plan for this scenario."</p>
 <p class="orv_line">"A plan? What is it?"</p>
@@ -329,18 +336,12 @@
             <a href="./ch_140"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_142">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="141" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="540" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="140" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="140" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

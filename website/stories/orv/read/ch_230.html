@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 230: Ep. 43 - Breaking the Sky Sword Saint, IV</title>
     <meta property="og:title" content="Ch 230: Ep. 43 - Breaking the Sky Sword Saint, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00230.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 230: Ep. 43 - Breaking the Sky Sword Saint, IV</h1></div>
 <p class="orv_line">The preparations were soon over. I entrusted the Yoo Joonghyuk Industrial Complex to Aileen and the Kim Dokja Industrial Complex to Mark and some council members.</p>
@@ -208,8 +215,8 @@
 <p class="orv_line">"…"</p>
 <p class="orv_line">"I also have a good eye when it comes to martial arts. I read many martial arts novels when I was young."</p>
 <p class="orv_line">In fact, I knew why Han Myungoh wanted to follow. To be precise, it was Han Myungoh's boss, not Han Myungoh.</p>
-<div class="orv_system"><p>[The demon king 'Devil of Lust and Wrath' is looking at you.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is glaring at Demon King Asmodeus.]</p></div>
+<div class="orv_system"><p>The demon king 'Devil of Lust and Wrath' is looking at you.</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is glaring at Demon King Asmodeus.</p></div>
 <p class="orv_line">I felt sorry for Uriel but I couldn't help right now. It was best to maintain a good relationship with Asmodeus for now, as I didn't know about the development of the third regression in the revised version. There was also something more worrisome than Uriel and Asmodeus.</p>
 <p class="orv_line">"There are too many dregs."</p>
 <p class="orv_line">"Do you complain about the world?"</p>
@@ -227,17 +234,17 @@
 <p class="orv_line">I didn't see where Yoo Joonghyuk had disappeared to.</p>
 <p class="orv_line">…He probably didn't want to meet the Breaking the Sky Sword Saint.</p>
 <p class="orv_line">"Ohh, this place…" The overexcited Han Myungoh urged us forward with a childlike expression. I probably looked like this at the beginning of Ways of Survival.</p>
-<div class="orv_system"><p>[You have arrived at the Blue Dragon Castle.]</p></div>
+<div class="orv_system"><p>You have arrived at the Blue Dragon Castle.</p></div>
 <p class="orv_line">The portal in the sky closed with this message and I started examining the area.</p>
-<div class="orv_quote"><p>「 The Blue Dragon Castle is one of the four great fortresses of the First Murim. 」</p></div>
+<div class="orv_quote"><p>The Blue Dragon Castle is one of the four great fortresses of the First Murim.</p></div>
 <p class="orv_line">According to the description in Ways of Survival, this was one of the largest castles in the First Murim. Based on the size of the square, the city must be enormous. It was a sprawling city centred around the big palace.</p>
 <p class="orv_line">The markets and lively streets were selling various things. There were Murim people sitting in front of small and large houses. No one showed apparent hostility but I could guess how powerful they were.</p>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is making an interested expression.]</p></div>
-<div class="orv_system"><p>[Some constellations are nostalgic at the sight of the First Murim.]</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is making an interested expression.</p></div>
+<div class="orv_system"><p>Some constellations are nostalgic at the sight of the First Murim.</p></div>
 <p class="orv_line">The First Murim was a place where countless strong people were born and raised. Perhaps some of the constellations had passed through this place. Jang Hayoung glanced around the surroundings like he was overwhelmed by the atmosphere and opened his mouth. "…It is a Chinese style? Is it originally like this?'</p>
 <p class="orv_line">"The 'martial arts' background is originally like this."</p>
 <p class="orv_line">Despite saying it was the Chinese style, the red lanterns were Japanese-style while some Southeast Asian architecture was mixed in. Of course, there were things unique to China. For example, the Chinese dress…</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is looking at you.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is looking at you.</p></div>
 <p class="orv_line">I walked while pretending I didn't hear it. The fortress was so wide that I couldn't get a feel for the size. However, if I read it correctly, the Breaking the Sky Sword Saint shouldn't be in this area.</p>
 <p class="orv_line">First… we should head towards the market. Since we came all the way here, I wanted to try the dishes of the First Murim. The best things to eat were dumplings and chicken broth. These two dishes were the food that Yoo Joonghyuk ate the most in the First Murim.</p>
 <p class="orv_line">He often described the scene of himself eating dumplings with hot chicken broth. At night, I would clutch my empty stomach and head to the convenience store to buy a 1,000 won steamed bun.</p>
@@ -266,7 +273,7 @@
 <p class="orv_line">"Since I came to Murim, shouldn't I learn the sword?"</p>
 <p class="orv_line">"Ahaha, indeed. That's right. Your words are correct."</p>
 <p class="orv_line">Han Myungoh's lips curved in satisfaction.</p>
-<div class="orv_system"><p>[The character 'Chu Gukmyung' has triggered 'Bargaining Lv. 4'.]</p></div>
+<div class="orv_system"><p>The character 'Chu Gukmyung' has triggered 'Bargaining Lv. 4'.</p></div>
 <p class="orv_line">It was a really bad case from the start. "However, you seem to be misunderstanding something. These days, we don't learn martial arts from martial arts halls."</p>
 <p class="orv_line">"Huh? What does that mean?"</p>
 <p class="orv_line">"Haha, those sweaty traditional martial arts teaching methods are used only in places like the rural 100th Murim World. No one learns martial arts like that these days. You seem to be from a dark corner of the world, so I will give you some special information - consider yourself lucky."</p>
@@ -274,7 +281,7 @@
 <p class="orv_line">"We use this."</p>
 <p class="orv_line">The merchant brushed off the dust accumulated on the goods. The box that the merchant held contained something that was similar to a small MP3 player.</p>
 <div class="orv_window">
-<h3 class="orv_window_title">[Heaven and Earth Ice Spirit Sword - Unopened Set]</h3>
+<h3 class="orv_window_title">Heaven and Earth Ice Spirit Sword - Unopened Set</h3>
 <p>-A recording engraved with information directly from the brain of the martial artist, the Ice Flower Goddess!</p>
 <p>–Repeated learning is the key! Gain enlightenment about the principles by repetitive learning from a young age!</p>
 <p>–Six month installment plan avialable! At only 500 coins per month, anyone can become a master!</p>
@@ -290,11 +297,11 @@
 <p class="orv_line">"Huhu, this is a limited edition. It was directly recorded by the Ice Flower Goddess herself. You know her, right? She's the sweetheart of Murim's eardrums. Here, have a listen - it works wonders even when you're not asleep."</p>
 <p class="orv_line">Han Myungoh plugged the earphones in his ears while Jang Hayoung rummaged through the merchant's goods.</p>
 <div class="orv_window">
-<h3 class="orv_window_title">[Phantom Flyer Home Training — 6 Months Set]</h3>
+<h3 class="orv_window_title">Phantom Flyer Home Training — 6 Months Set</h3>
 <p>-You can become a master if you follow it 10,000 times!</p>
 </div>
 <div class="orv_window">
-<h3 class="orv_window_title">[Follow the South Palace Sword King's Lessons!]</h3>
+<h3 class="orv_window_title">Follow the South Palace Sword King's Lessons!</h3>
 <p>-Reach the peak through the safest and fastest way - online lectures of Murim's top instructor, the South Palace Sword King!</p>
 <p>–A 24-hour Q&amp;A board is active. No need to worry about coins - Feel free to contact us anytime!</p>
 </div>
@@ -322,18 +329,12 @@
             <a href="./ch_229"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_231">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="230" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="286" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="229" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="229" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

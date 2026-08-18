@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 54: Ep. 11 – Night of the Prophets, V</title>
     <meta property="og:title" content="Ch 54: Ep. 11 – Night of the Prophets, V" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,34 +177,34 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00054.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 54: Ep. 11 – Night of the Prophets, V</h1></div>
 <p class="orv_line">The self-styled No. 1168 looked at the flames beyond the shield and asked,</p>
 <p class="orv_line">"My identity? What are you talking about suddenly…?"</p>
 <p class="orv_line">"Have you forgotten? I have Sage's Eye."</p>
 <p class="orv_line">In fact, this guy's information wasn't available to me.</p>
-<div class="orv_system"><p>[The exclusive skill, Character List is activated.]</p></div>
-<div class="orv_system"><p>[The information of this person can't be read in 'Character List'.]</p></div>
-<div class="orv_system"><p>[This person isn't registered in 'Character List'.]</p></div>
+<div class="orv_system"><p>The exclusive skill, Character List is activated.</p></div>
+<div class="orv_system"><p>The information of this person can't be read in 'Character List'.</p></div>
+<div class="orv_system"><p>This person isn't registered in 'Character List'.</p></div>
 <p class="orv_line">What was the difference between an updated person and a non-updated person? I still didn't know the exact reason why.</p>
 <p class="orv_line">But whatever the reason was, deceiving this person wasn't difficult. It was because he believed I was Yoo Joonghyuk.</p>
 <p class="orv_line">"…I didn't think Yoo Joonghyuk-nim would notice."</p>
@@ -212,7 +219,7 @@
 <p class="orv_line">"You are killing the larvae before they become butterflies."</p>
 <p class="orv_line">"The larvae that are about to become pupa are the easiest to kill."</p>
 <p class="orv_line">The fierce heat died down and the chemical reactions in the surrounding area were subsiding. The Absolute Shield was soon turned off.</p>
-<div class="orv_system"><p>[After one minute, the positions of the footholds will be recreated.]</p></div>
+<div class="orv_system"><p>After one minute, the positions of the footholds will be recreated.</p></div>
 <p class="orv_line">The hidden scenario would end when footholds appeared 10 times and they survived the attacks. We had just passed one so there were nine left.</p>
 <p class="orv_line">I tried pressing against the shield with my feet. The heat was high but it was enough to endure.</p>
 <p class="orv_line">–Representative-nim!</p>
@@ -245,17 +252,17 @@
 <p class="orv_line">"Originally, we had no plans to participate. If only you Yoo Joonghyuk-nim wasn't here."</p>
 <p class="orv_line">"So?"</p>
 <p class="orv_line">"Don't you already know the answer?"</p>
-<div class="orv_system"><p>[The positions of the footholds will be created!]</p></div>
-<div class="orv_system"><p>[The 5th grade fire dragon species, 'Lesser Dragon Igneel' is preparing the 'Flames of Destruction'.]</p></div>
+<div class="orv_system"><p>The positions of the footholds will be created!</p></div>
+<div class="orv_system"><p>The 5th grade fire dragon species, 'Lesser Dragon Igneel' is preparing the 'Flames of Destruction'.</p></div>
 <p class="orv_line">My party members successful found footholds this time. The apostle and I also found a foothold that fit two people.</p>
 <p class="orv_line">To be precise, the apostle tossed the person already occupying it out with force. The drops of blood landed on the brutal apostle. He wiped it off and said, "We have to slay the lesser dragon."</p>
 <p class="orv_line">Ku ku ku ku!</p>
-<div class="orv_system"><p>[The 5th grade fire dragon species, 'Lesser Dragon Igneel' is using the 'Flames of Destruction'.]</p></div>
+<div class="orv_system"><p>The 5th grade fire dragon species, 'Lesser Dragon Igneel' is using the 'Flames of Destruction'.</p></div>
 <p class="orv_line">The Absolute Shield activated and once again blocked the flames.</p>
 <p class="orv_line">Kuooooh!</p>
 <p class="orv_line">Only two stages had occurred but there were less than a quarter prophets remaining. The party members had been keeping pace but it was uncertain how long they would last.</p>
-<div class="orv_system"><p>[A hidden piece penalty has occurred.]</p></div>
-<div class="orv_system"><p>[The number of footholds created in the next turn will be reduced.]</p></div>
+<div class="orv_system"><p>A hidden piece penalty has occurred.</p></div>
+<div class="orv_system"><p>The number of footholds created in the next turn will be reduced.</p></div>
 <p class="orv_line">I spoke with narrowed eyes, "With your power alone?"</p>
 <p class="orv_line">"It is possible. I have prepared enough."</p>
 <p class="orv_line">I felt uneasy as I heard his confident voice. That reminded me, he wasn't shedding a single drop of sweat in this heat. A bluish chill spread over his skin.</p>
@@ -321,33 +328,33 @@
 <p class="orv_line">What would happen to them in a world where the protagonist was dead? They didn't know.</p>
 <p class="orv_line">"Catch him quickly!"</p>
 <p class="orv_line">Just like me.</p>
-<div class="orv_system"><p>[The 5th grade fire dragon species, 'Lesser Dragon Igneel' is using the 'Flames of Destruction'.]</p></div>
+<div class="orv_system"><p>The 5th grade fire dragon species, 'Lesser Dragon Igneel' is using the 'Flames of Destruction'.</p></div>
 <p class="orv_line">The moment that flames burst out from the centre of the platform, I exploded all the strength in my muscles and ran towards the legs of the dragon. Then I put my flag into the flag holder of Anguk Station located there.</p>
-<div class="orv_system"><p>[You have occupied Anguk Station.]</p></div>
-<div class="orv_system"><p>[Currently Occupied: Chungmuro (Main Base), Myeongdong, Dongdaemun History and Culture Park, Dongdaemun, Dongmyo, Sindang Station, Cheonggu Station, Yaksu Station, Sinseol-dong Station, Anguk Station]</p></div>
-<div class="orv_system"><p>[The achievement points of the brown flag are rising.]</p></div>
-<div class="orv_system"><p>[You have occupied 10 stations!]</p></div>
-<div class="orv_system"><p>[The hidden scenario – 'King's Road' has been achieved.]</p></div>
-<div class="orv_system"><p>[Depending on the path you walk, you will receive a new 'king' attribute.]</p></div>
+<div class="orv_system"><p>You have occupied Anguk Station.</p></div>
+<div class="orv_system"><p>Currently Occupied: Chungmuro (Main Base), Myeongdong, Dongdaemun History and Culture Park, Dongdaemun, Dongmyo, Sindang Station, Cheonggu Station, Yaksu Station, Sinseol-dong Station, Anguk Station</p></div>
+<div class="orv_system"><p>The achievement points of the brown flag are rising.</p></div>
+<div class="orv_system"><p>You have occupied 10 stations!</p></div>
+<div class="orv_system"><p>The hidden scenario – 'King's Road' has been achieved.</p></div>
+<div class="orv_system"><p>Depending on the path you walk, you will receive a new 'king' attribute.</p></div>
 <p class="orv_line">1. King of Arrogance and Hypocrisy</p>
 <p class="orv_line">2. King of Solitude and Taste</p>
 <p class="orv_line">3. King of No Killing</p>
 <p class="orv_line">·····.</p>
 <p class="orv_line">I replied without reading the rising options.</p>
 <p class="orv_line">"King of No Killing."</p>
-<div class="orv_system"><p>[The new attribute, King of No Killing has been obtained!]</p></div>
+<div class="orv_system"><p>The new attribute, King of No Killing has been obtained!</p></div>
 <p class="orv_line">This was enough. I hadn't wanted to do this but it was necessary to get rid of the people here.</p>
 <p class="orv_line">The apostles discovered the flames and hurried back to the footholds. However, it was already too late.</p>
 <p class="orv_line">"You should've been careful. You only have one life."</p>
 <p class="orv_line">The wave of flames covered them. It was an attack that couldn't be endured even if they ate the ice pill.</p>
-<div class="orv_system"><p>[The durability of the External Enhanced Suit has decreased dramatically.]</p></div>
-<div class="orv_system"><p>[The durability of the External Enhanced Suit has run out.]</p></div>
+<div class="orv_system"><p>The durability of the External Enhanced Suit has decreased dramatically.</p></div>
+<div class="orv_system"><p>The durability of the External Enhanced Suit has run out.</p></div>
 <p class="orv_line">My vision soon became dim. There was the feeling of flesh being burnt and I lost consciousness.</p>
-<div class="orv_system"><p>[You have died.]</p></div>
+<div class="orv_system"><p>You have died.</p></div>
 <p class="orv_line">.</p>
 <p class="orv_line">.</p>
 <p class="orv_line">A moment later, a system message was heard.</p>
-<div class="orv_system"><p>[The privilege of the King of No Killing is activated.]</p></div>
+<div class="orv_system"><p>The privilege of the King of No Killing is activated.</p></div>
 <br>
 <hr>
         </article>
@@ -355,18 +362,12 @@
             <a href="./ch_53"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_55">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="54" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="76" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="53" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="53" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

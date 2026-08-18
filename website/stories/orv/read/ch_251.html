@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 251: Ep. 47 - Demon King Selection, V</title>
     <meta property="og:title" content="Ch 251: Ep. 47 - Demon King Selection, V" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00251.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 251: Ep. 47 - Demon King Selection, V</h1></div>
 <p class="orv_line">We soon arrived at the Yoo Joonghyuk Industrial Complex (formerly Syswitz).</p>
@@ -233,9 +240,9 @@
 <p class="orv_line">It was a list of those who came to visit while I was away. The dokkaebi was probably from the bureau and the sinister family with a lump was probably a wenny person. I couldn't guess the constellations because they didn't leave their modifiers.</p>
 <p class="orv_line">–Be careful, there are many strong people in the Demon Realm watching you.</p>
 <p class="orv_line">There was no need to tell me. I just needed to look at the channel.</p>
-<div class="orv_system"><p>[Many constellations are paying attention to your actions.]</p></div>
-<div class="orv_system"><p>[Your modifier is spreading among the constellations of the absolute evil system.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is watching you with anxious eyes.]</p></div>
+<div class="orv_system"><p>Many constellations are paying attention to your actions.</p></div>
+<div class="orv_system"><p>Your modifier is spreading among the constellations of the absolute evil system.</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is watching you with anxious eyes.</p></div>
 <p class="orv_line">There were now three days until the Demon King Selection. I looked to the back seat where Jang Hayoung and the Breaking the Sky Master were hugging each other while sleeping. The Breaking the Sky Master and Jang Hayoung must be tired.</p>
 <p class="orv_line">In particular, Jang Hayoung was forced to operate the Unidentified Wall because of me. Still, their presence meant I could think of something to try.</p>
 <p class="orv_line">I glanced at the driver's seat and asked, "Department Head Han Myungoh."</p>
@@ -291,25 +298,25 @@
 <p class="orv_line">However, it was laughable from the beginning. Han Myungoh's words…</p>
 <p class="orv_line">Yes, this story wasn't properly born yet. I opened the file of Ways of Survival without hesitation. Then I started reading as I always did.</p>
 <p class="orv_line">The second revision of Ways of Survival started from the fourth round.</p>
-<div class="orv_quote"><p>「 It was just like what happened at that time. In the third round, Teacher would've died there if it wasn't for him. 」</p></div>
+<div class="orv_quote"><p>It was just like what happened at that time. In the third round, Teacher would've died there if it wasn't for him.</p></div>
 <p class="orv_line">Some statements relieved me.</p>
-<div class="orv_quote"><p>「 Nevertheless, I couldn't change it. 」</p></div>
+<div class="orv_quote"><p>Nevertheless, I couldn't change it.</p></div>
 <p class="orv_line">Some of the descriptions still hadn't changed.</p>
-<div class="orv_quote"><p>「 That guy isn't in this round. 」</p></div>
+<div class="orv_quote"><p>That guy isn't in this round.</p></div>
 <p class="orv_line">I still wasn't present in Yoo Joonghyuk's fourth regression.</p>
-<div class="orv_quote"><p>「 I failed the third round. 」</p></div>
+<div class="orv_quote"><p>I failed the third round.</p></div>
 <p class="orv_line">I didn't panic because I had already expected it. I didn't know why the author sent me something like this. It might be to frighten me or to use me for the ending that he wanted. I didn't even know if it was the writer who originally sent this.</p>
 <p class="orv_line">I slowly closed my eyes, took a deep breath and opened it. Then I thought at the Fourth Wall.</p>
-<div class="orv_quote"><p>「 Kim Dokja thought. 」</p></div>
+<div class="orv_quote"><p>Kim Dokja thought.</p></div>
 <p class="orv_line">It was as if I was writing a sentence in a novel.</p>
-<div class="orv_quote"><p>「 I don't know what he wants in the end. However, no matter the result, I will only make the ending that I want. 」</p></div>
+<div class="orv_quote"><p>I don't know what he wants in the end. However, no matter the result, I will only make the ending that I want.</p></div>
 <p class="orv_line">I wrote the sentence and stared at the air for a while. Understandably, there was no return answer. Instead, it was the Fourth Wall that reacted.</p>
-<div class="orv_system"><p>[The Fourth Wall is wriggling happily.]</p></div>
+<div class="orv_system"><p>The Fourth Wall is wriggling happily.</p></div>
 <p class="orv_line">I suddenly looked out and saw the industrial complex in the distance. It was the first time I was visiting the Kim Dokja Industrial Complex. By the way, Han Myungoh suddenly reduced the speed.</p>
 <p class="orv_line">"What happened?"</p>
 <p class="orv_line">"…The scenario is progressing."</p>
 <p class="orv_line">Scenario? No way… The Demon King Selection hadn't started yet?</p>
-<div class="orv_system"><p>[Do you want to enter the hidden scenario area?]</p></div>
+<div class="orv_system"><p>Do you want to enter the hidden scenario area?</p></div>
 <p class="orv_line">Han Myungoh cautiously approached the industrial complex. The entrance of the industrial complex was bare without a single guard.</p>
 <p class="orv_line">I opened the window and could hear words being shouted from inside the industrial complex.</p>
 <p class="orv_line">"I'm Kim Dokja!"</p>
@@ -318,7 +325,7 @@
 <p class="orv_line">Han Myungoh and I glanced at each other at the same time.</p>
 <p class="orv_line">"What is this…?"</p>
 <p class="orv_line">A system message followed.</p>
-<div class="orv_system"><p>[Hidden scenario ― the Kim Dokja Game is in progress.]</p></div>
+<div class="orv_system"><p>Hidden scenario ― the Kim Dokja Game is in progress.</p></div>
 <p class="orv_line">Something strange had happened in my industrial complex while I was away.</p>
 <br>
 <hr>
@@ -327,18 +334,12 @@
             <a href="./ch_250"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_252">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="251" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="320" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="250" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="250" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

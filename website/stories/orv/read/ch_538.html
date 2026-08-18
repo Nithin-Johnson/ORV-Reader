@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 538: Epilogue 4 - The Omniscient Reader's Viewpoint, III</title>
     <meta property="og:title" content="Ch 538: Epilogue 4 - The Omniscient Reader's Viewpoint, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00538.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 538: Epilogue 4 - The Omniscient Reader's Viewpoint, III</h1></div>
 <p class="orv_line">The sentence floated up to the air. When she heard the voice that utterly ignored spelling rules or word spacing, Han Sooyoung grew deeply flustered.</p>
@@ -205,8 +212,8 @@
 <p class="orv_line">She had heard of that title somewhere before.</p>
 <p class="orv_line">Tsu-chuchuchuchuchut!</p>
 <p class="orv_line">The Probability's sparks wildly exploded and the companions all screamed out. The vicious storm of aftermath even managed to blow away the 'Hounds Chasing After the Abyss' outside the subway.</p>
-<div class="orv_system"><p>['The Final Wall' is not permitting your group's entry.]</p></div>
-<div class="orv_system"><p>[Your group does not have the qualifications to meet the 'Oldest Dream'.]</p></div>
+<div class="orv_system"><p>'The Final Wall' is not permitting your group's entry.</p></div>
+<div class="orv_system"><p>Your group does not have the qualifications to meet the 'Oldest Dream'.</p></div>
 <p class="orv_line">The pain akin to their bodies being shredded apart into tiny bits slammed into them. This was no doubt a ploy to push the companions outside the subway.</p>
 <p class="orv_line">⸢T his is t h e fi nal stop⸥</p>
 <p class="orv_line">One of Han Sooyoung's knees was bent in an abnormal direction. However, she didn't even scream once and simply glared at the pitch-black circle right before her eyes.</p>
@@ -214,23 +221,23 @@
 <p class="orv_line">⸢The 1865th turn's Han Sooyoung didn't select the 'Abyssal Black Flame Dragon'.⸥</p>
 <p class="orv_line">An unbelievable level of forceful aura flooded out from her entire figure.</p>
 <p class="orv_line">⸢Han Sooyoung became a Constellation on her own.⸥</p>
-<div class="orv_system"><p>[Constellation, 'Architect of the False Last Act', is revealing her Status!]</p></div>
+<div class="orv_system"><p>Constellation, 'Architect of the False Last Act', is revealing her Status!</p></div>
 <p class="orv_line">It was the same Modifier that the 1863rd turn's Han Sooyoung had acquired.</p>
 <p class="orv_line">She unleashed every bit of Story she had been saving up until now. Brilliantly-pure blue rays of light swirled violently from one of her irises.</p>
-<div class="orv_system"><p>[Exclusive skill, 'Eye of Truth', has been activated!]</p></div>
+<div class="orv_system"><p>Exclusive skill, 'Eye of Truth', has been activated!</p></div>
 <p class="orv_line">Back during the 1863rd turn, this skill failed to penetrate past that wall. However, Han Sooyoung of this regression turn was a different being altogether.</p>
-<div class="orv_system"><p>[Story, 'Revision Specialist', has begun its storytelling!]</p></div>
+<div class="orv_system"><p>Story, 'Revision Specialist', has begun its storytelling!</p></div>
 <p class="orv_line">In this turn, she had been diligently acquiring a lot more Stories related to 'writing' than before.</p>
 <p class="orv_line">Tsu-chuchuchuchu…!</p>
-<p class="orv_line">Just like how the foundations of other characters were a collection of sentences, it should be the same story for [The Fourth Wall], as well. As long as this world was a novel, this wall must've been made up of words and sentences.</p>
+<p class="orv_line">Just like how the foundations of other characters were a collection of sentences, it should be the same story for <strong>[The Fourth Wall]</strong>, as well. As long as this world was a novel, this wall must've been made up of words and sentences.</p>
 <p class="orv_line">Even if she failed to decipher its foundation, there should still be sentences left behind somewhere that helped her make a guess.</p>
-<p class="orv_line">[The Fourth Wall] cottoned on to what Han Sooyoung was planning to do and ballooned up its overall thickness.</p>
+<p class="orv_line"><strong>[The Fourth Wall]</strong> cottoned on to what Han Sooyoung was planning to do and ballooned up its overall thickness.</p>
 <p class="orv_line">⸢U s e le ss⸥</p>
-<div class="orv_system"><p>['The Fourth Wall' is increasing its thickness even more!]</p></div>
+<div class="orv_system"><p>'The Fourth Wall' is increasing its thickness even more!</p></div>
 <p class="orv_line">The spinning black circle grew even more robust.</p>
 <p class="orv_line">The Fourth Wall. The mind defense skill that couldn't be penetrated by the existences found within the 'Ways of Survival'.</p>
 <p class="orv_line">Han Sooyoung didn't try to forcibly penetrate the wall. Instead, she quietly stared at it.</p>
-<div class="orv_system"><p>[Story, 'Guide of the Line Spacing', has begun its storytelling!]</p></div>
+<div class="orv_system"><p>Story, 'Guide of the Line Spacing', has begun its storytelling!</p></div>
 <p class="orv_line">⸢Some things would grow even more obvious the more you try to hide them.⸥</p>
 <p class="orv_line">Han Sooyoung scanned the outer appearance of the wall. There were plenty of scratches and cracks visible on it. Its past history of not sparing itself when trying to protect Kim Dokja was left behind as fully-visible traces all over the wall.</p>
 <p class="orv_line">⸢That great one must be protected.⸥</p>
@@ -249,7 +256,7 @@
 <p class="orv_line">The existence that remained even more indifferent to the tragedies of this world than her, and…</p>
 <p class="orv_line">And, the existence that lived for the sole purpose of 'completing the story'.</p>
 <p class="orv_line">⸢The existence that opened the 'scenario' in this world, and the one who connected the two world-lines as one.⸥</p>
-<div class="orv_system"><p>[The Fourth Wall spoke up instead of Han Sooyoung's trembling lips.]</p></div>
+<div class="orv_system"><p>The Fourth Wall spoke up instead of Han Sooyoung's trembling lips.</p></div>
 <p class="orv_line">⸢D on t be so su rpri sed ev en I rea lis ed it ju st now⸥</p>
 <p class="orv_line">"What did you say?"</p>
 <p class="orv_line">⸢I al so di dn't kn ow who I w as⸥</p>
@@ -332,14 +339,14 @@
 <p class="orv_line">Then maybe, just maybe, you might finally want to come out of that place.</p>
 <p class="orv_line">"Please! Say something! Anything! Please-!"</p>
 <p class="orv_line">And so, Jang Hayoung's palm slammed into the full stop. And in the very next moment…</p>
-<div class="orv_system"><p>['Wall of Impossible Communication' is revealing its power!]</p></div>
-<p class="orv_line">The full stop began to shake little by little. For the first time ever, [The Fourth Wall]'s aura changed.</p>
+<div class="orv_system"><p>'Wall of Impossible Communication' is revealing its power!</p></div>
+<p class="orv_line">The full stop began to shake little by little. For the first time ever, <strong>[The Fourth Wall]</strong>'s aura changed.</p>
 <p class="orv_line">⸢Y o u da re⸥</p>
 <p class="orv_line">Yoo Sangah didn't miss this opening and shouted out. "Dokja-ssi! We promised to meet during the next life, didn't we?!"</p>
-<div class="orv_system"><p>['Wall That Decides Samsara' is revealing its capability!]</p></div>
+<div class="orv_system"><p>'Wall That Decides Samsara' is revealing its capability!</p></div>
 <p class="orv_line">Lee Gilyoung also shouted out as if he didn't want to lose. "Hyung, you always think you are at fault for everything!"</p>
 <p class="orv_line">Jung Heewon carried on where the boy's words ended. "I don't care whether you're good or evil, Dokja-ssi! I don't plan on judging you according to the standards of this world. That's why…!"</p>
-<div class="orv_system"><p>['Wall That Divides Good and Evil' is revealing its theme!]</p></div>
+<div class="orv_system"><p>'Wall That Divides Good and Evil' is revealing its theme!</p></div>
 <p class="orv_line">"…So, please open this door!"</p>
 <p class="orv_line">Right next moment, a powerful rebound coming out from the door blew away the companions.</p>
 <p class="orv_line">The cacophony of loud exploding noises utterly deafened them. Once the ringing in their ears went away, only the cold silence remained in the surroundings.</p>
@@ -360,9 +367,9 @@
 <p class="orv_line">The full stop's spinning speed was slowing down. Bit by agonising bit, the worn-down surface of the full stop began developing cracks.</p>
 <p class="orv_line">⸢Their Story was not enough.⸥</p>
 <p class="orv_line">The full stop's size was gradually shrinking down. It continued to get smaller, as if to never permit their entry in this place. It was then, some people suddenly intruded into the subway.</p>
-<div class="orv_system"><p>[Constellation, 'Queen of the Darkest Spring', is incarnating!]</p></div>
+<div class="orv_system"><p>Constellation, 'Queen of the Darkest Spring', is incarnating!</p></div>
 <p class="orv_line">They were two members of &lt;Kim Dokja's Company&gt; who had not revealed themselves up until now.</p>
-<div class="orv_constellation"><p>[My apologies for showing up late.]</p></div>
+<div class="orv_constellation"><p>My apologies for showing up late.</p></div>
 <p class="orv_line">One of them was the queen of the Underworld, Persephone. And the other was…</p>
 <p class="orv_line">"…Dokja-yah."</p>
 <p class="orv_line">Rather than looking at the full stop, Lee Sookyung was now looking at at the other Kim Dokja plopped down on the floor. He looked back at her in a daze, but then, bit down hard on his lip and grabbed onto her hand.</p>
@@ -377,8 +384,8 @@
 <p class="orv_line">"…Help us."</p>
 <p class="orv_line">Kim Dokja's hand touched the full stop.</p>
 <p class="orv_line">Tsu-chuchuchuchu…!</p>
-<div class="orv_system"><p>['The Fourth Wall' is increasing its thickness even more!]</p></div>
-<p class="orv_line">Hands were laid on top of hands. [The Fourth Wall] was shouting out at them.</p>
+<div class="orv_system"><p>'The Fourth Wall' is increasing its thickness even more!</p></div>
+<p class="orv_line">Hands were laid on top of hands. <strong>[The Fourth Wall]</strong> was shouting out at them.</p>
 <p class="orv_line">⸢Y o u lot mu st fa il h ere⸥</p>
 <p class="orv_line">⸢T hi s sto ry h as b een com ple ted th is way al rea dy⸥</p>
 <p class="orv_line">Was it forbidden to change a complete story?</p>
@@ -397,7 +404,7 @@
 <p class="orv_line">Han Sooyoung's hands powerfully gripped onto the circle's crack.</p>
 <p class="orv_line">The surface of the gripped wall began tearing apart.</p>
 <p class="orv_line">⸢If that story can make someone happy, then…⸥</p>
-<p class="orv_line">The companions' stories crumbled as an incredible storm exploded. Kim Dokja's coat was ripped apart, and their weapons shattered to bits and pieces. The blindingly-pure rays of light blanketed their view. Within this incredible explosion of light, Han Sooyoung thought to herself. [The Fourth Wall] was right, the 'Ways of Survival' was indeed now over. With his own hands, he brought it to its conclusion.</p>
+<p class="orv_line">The companions' stories crumbled as an incredible storm exploded. Kim Dokja's coat was ripped apart, and their weapons shattered to bits and pieces. The blindingly-pure rays of light blanketed their view. Within this incredible explosion of light, Han Sooyoung thought to herself. <strong>[The Fourth Wall]</strong> was right, the 'Ways of Survival' was indeed now over. With his own hands, he brought it to its conclusion.</p>
 <p class="orv_line">However, that didn't mean Kim Dokja's story had come to an end there, either.</p>
 <p class="orv_line">Ku-gugugugu…</p>
 <p class="orv_line">Eventually, the storm died down, revealing the messed-up hands of the companions. Hands, laid on top of each other as if they had fused into one. And these hands had destroyed the 'completed' full stop. The crack ran down on the circle's edge like a tear.</p>
@@ -410,18 +417,12 @@
             <a href="./ch_537"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_539">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="538" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="585" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="537" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="537" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

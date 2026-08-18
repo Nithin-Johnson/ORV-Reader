@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 440: Ep. 83 - Dokja's Incarnation, II</title>
     <meta property="og:title" content="Ch 440: Ep. 83 - Dokja's Incarnation, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00440.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 440: Ep. 83 - Dokja's Incarnation, II</h1></div>
 <p class="orv_line">The sounds of explosions spread out from the centre of the battlefield. The surrounding atmosphere was going through a change.</p>
@@ -203,15 +210,15 @@
 <p class="orv_line">"And more importantly, the true battlefield doesn't seem to be here."</p>
 <p class="orv_line">As those words came to an end, Fei Hu flung himself in the direction of the 'sacred texts', along with Erlang Shen and Prince Nezha.</p>
 <p class="orv_line">Jung Heewon was about to hurriedly chase after them, but then, a battleship suddenly summoned onto the river took them away at a rapid pace.</p>
-<div class="orv_system"><p>[Activation of 'Hour of Judgement' has ended.]</p></div>
+<div class="orv_system"><p>Activation of 'Hour of Judgement' has ended.</p></div>
 <p class="orv_line">…That was a really close call.</p>
 <p class="orv_line">If the fight continued on for a little bit longer, she would've lost for sure. As expected of Fei Hu. He wasn't a direct Incarnation of the &lt;Emperor&gt; for nothing, it seemed.</p>
-<div class="orv_system"><p>[Constellation, 'Demon-like Judge of Fire', is worriedly scanning the centre of the battlefield.]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon-like Judge of Fire', is worriedly scanning the centre of the battlefield.</p></div>
 <p class="orv_line">Wings of an Archangel grew on Jung Heewon's shoulders. She began half-running and half-flying on the water.</p>
 <p class="orv_line">"…Just what is going on here?"</p>
 <p class="orv_line">Several skirmishes were unfolding all around her and she couldn't tell where she should go first.</p>
 <p class="orv_line">Lee Jihye, battling against &lt;Emperor&gt;'s fleet. Yoo Joonghyuk, fighting against the 28 Mansions Constellations. Lee Gilyoung, dealing with the Lords of Nine Stars…</p>
-<p class="orv_line">Dozens upon dozens of [Great Holes] had opened up in the sky and the Outer Gods crossing over had all transformed into Yogoes to battle the Constellations.</p>
+<p class="orv_line">Dozens upon dozens of <strong>[Great Holes]</strong> had opened up in the sky and the Outer Gods crossing over had all transformed into Yogoes to battle the Constellations.</p>
 <p class="orv_line">And in the centre of it all…</p>
 <p class="orv_line">"Yoosung-ah!"</p>
 <p class="orv_line">A young girl was reaching out towards a star.</p>
@@ -219,22 +226,22 @@
 <hr>
 <br>
 <p class="orv_line">Shin Yoosung studied &lt;Emperor&gt;'s Constellations rushing at her.</p>
-<div class="orv_system"><p>[Nebula &lt;Emperor&gt;'s Twelve Star Lords are descending!]</p></div>
-<div class="orv_system"><p>[Nebula &lt;Emperor&gt;'s Dragon Kings of the Four Seas are descending!]</p></div>
+<div class="orv_system"><p>Nebula &lt;Emperor&gt;'s Twelve Star Lords are descending!</p></div>
+<div class="orv_system"><p>Nebula &lt;Emperor&gt;'s Dragon Kings of the Four Seas are descending!</p></div>
 <p class="orv_line">(One by one, Sun Wukong's sworn enemies were gathering.)</p>
-<div class="orv_constellation"><p>[It's not over yet!]</p></div>
-<div class="orv_constellation"><p>[It's fine as long as Tang Sanzang doesn't touch the 'sacred texts'!]</p></div>
-<div class="orv_constellation"><p>[Divide the army. One side shall retrieve the texts, while the others will suppress their Sanzang!]</p></div>
+<div class="orv_constellation"><p>It's not over yet!</p></div>
+<div class="orv_constellation"><p>It's fine as long as Tang Sanzang doesn't touch the 'sacred texts'!</p></div>
+<div class="orv_constellation"><p>Divide the army. One side shall retrieve the texts, while the others will suppress their Sanzang!</p></div>
 <p class="orv_line">She grabbed tightly onto the Chimera Dragon's mane, currently in its Jade Dragon form. The main attack force of &lt;Emperor&gt; was now taking aim at her.</p>
 <p class="orv_line">Kim Dokja, meanwhile, was still too far from her.</p>
-<div class="orv_system"><p>[&lt;Emperor&gt;'s Twelve Star Lords are baring their Statuses!]</p></div>
+<div class="orv_system"><p>&lt;Emperor&gt;'s Twelve Star Lords are baring their Statuses!</p></div>
 <p class="orv_line">Ka-booooom!</p>
 <p class="orv_line">Light exploded before her eyes.</p>
 <p class="orv_line">The Chimera Dragon protected her by wrapping around her body. Choking heat penetrated into her entire figure. The second and third explosions went off one after the other and the Dragon screeched out loudly. Shin Yoosung gritted her teeth and leapt up by stepping on her mount's back.</p>
-<div class="orv_system"><p>[Your Sponsor's blessing is influencing you.]</p></div>
-<div class="orv_system"><p>[Your stunning talent has blossomed!]</p></div>
-<div class="orv_system"><p>[You have comprehended the 'Way of the Wind' on your own!]</p></div>
-<p class="orv_line">She didn't know how this was possible but still, Yoosung ran on the river's surface. The blessing of [Way of the Wind] was exploding out from the tips of her feet, and golden ripples spread out everywhere they landed.</p>
+<div class="orv_system"><p>Your Sponsor's blessing is influencing you.</p></div>
+<div class="orv_system"><p>Your stunning talent has blossomed!</p></div>
+<div class="orv_system"><p>You have comprehended the 'Way of the Wind' on your own!</p></div>
+<p class="orv_line">She didn't know how this was possible but still, Yoosung ran on the river's surface. The blessing of <strong>[Way of the Wind]</strong> was exploding out from the tips of her feet, and golden ripples spread out everywhere they landed.</p>
 <p class="orv_line">⸢Shin Yoosung ran as Kim Dokja had.⸥</p>
 <p class="orv_line">This was the same method that her Sponsor used to run.</p>
 <p class="orv_line">A mixture of blades and spears pounced on her from the surroundings.</p>
@@ -244,7 +251,7 @@
 <p class="orv_line">And as she found herself right in front of such a monster, Shin Yoosung pulled out a dagger from her inner pocket.</p>
 <p class="orv_line">⸢Shin Yoosung analysed the situation like Yoo Joonghyuk.⸥</p>
 <p class="orv_line">There was something she learned from Yoo Joonghyuk some time ago.</p>
-<div class="orv_system"><p>[Story, 'Supreme King's Disciple', has begun its storytelling!]</p></div>
+<div class="orv_system"><p>Story, 'Supreme King's Disciple', has begun its storytelling!</p></div>
 <p class="orv_line">⸢"In the future, you shall become the 'Beast Lord'. Countless monstrous beings will cower before your feet and serve you."⸥</p>
 <p class="orv_line">⸢"However, that does not mean you can become friends with every monster out there."⸥</p>
 <p class="orv_line">During Kim Dokja's three-year absence, Yoo Joonghyuk taught her how to hunt.</p>
@@ -271,8 +278,8 @@
 <p class="orv_line">"W-what are you… Kuwaaahk?!"</p>
 <p class="orv_line">⸢Shin Yoosung became as cold-hearted as Han Sooyoung.⸥</p>
 <p class="orv_line">She discarded the Incarnation Body riddled with grisly holes and continued to run forward.</p>
-<div class="orv_constellation"><p>[She's a pretty smart kid.]</p></div>
-<div class="orv_constellation"><p>[Do not let her get away!]</p></div>
+<div class="orv_constellation"><p>She's a pretty smart kid.</p></div>
+<div class="orv_constellation"><p>Do not let her get away!</p></div>
 <p class="orv_line">The distance to Kim Dokja had closed up quite a bit.</p>
 <p class="orv_line">"Ahjussi!"</p>
 <p class="orv_line">Kim Dokja's figure stopped as if he heard her call.</p>
@@ -285,35 +292,35 @@
 <p class="orv_line">Slice!</p>
 <p class="orv_line">A long spear brushed past her cheek. She unconsciously touched there as blood trickled down. No one was around to help her. Neither Yoo Joonghyuk's back that protected his companions, nor Jung Heewon's sword that she could always rely on, were here.</p>
 <p class="orv_line">A lengthy arm used the moment that she had lowered her guard and grabbed her collar. &lt;Emperor&gt;'s Twelve Star Lords were getting closer and closer.</p>
-<div class="orv_constellation"><p>[…Didn't expect her to be a real kid.]</p></div>
-<div class="orv_constellation"><p>[They let a child play such an important role?]</p></div>
+<div class="orv_constellation"><p>…Didn't expect her to be a real kid.</p></div>
+<div class="orv_constellation"><p>They let a child play such an important role?</p></div>
 <p class="orv_line">The Status of &lt;Emperor&gt; that defied all attempts to resist pressured her entire frame.</p>
 <p class="orv_line">In any other normal circumstances, she'd never be able to fight against these enemies. Running away was the obvious route to take, and seeking help from her companions was the best she could do.</p>
 <p class="orv_line">But, Shin Yoosung didn't try to run away.</p>
-<div class="orv_system"><p>[Condensed Story has caused an abnormal event!]</p></div>
+<div class="orv_system"><p>Condensed Story has caused an abnormal event!</p></div>
 <p class="orv_line">She slowly blinked and opened her eyes. Her heart previously pounding away like crazy suddenly grew calm. A cold glint flickered in her eyes next.</p>
-<div class="orv_system"><p>[Incarnation, 'Shin Yoosung's', Attribute evolution is imminent.]</p></div>
-<div class="orv_system"><p>[You have found the opportunity to evolve your Attribute!]</p></div>
+<div class="orv_system"><p>Incarnation, 'Shin Yoosung's', Attribute evolution is imminent.</p></div>
+<div class="orv_system"><p>You have found the opportunity to evolve your Attribute!</p></div>
 <p class="orv_line">"I'm not just a little child."</p>
-<div class="orv_constellation"><p>[…What did you say?]</p></div>
+<div class="orv_constellation"><p>…What did you say?</p></div>
 <p class="orv_line">Shin Yoosung grabbed the Star Lord's left arm. The powerful grip emanating from the child's hand caused the Constellation's arm to tremble.</p>
 <p class="orv_line">"My name is Shin Yoosung."</p>
-<div class="orv_system"><p>[You have acquired a legendary Attribute.]</p></div>
-<div class="orv_system"><p>[You have become the 'Beast Lord'.]</p></div>
+<div class="orv_system"><p>You have acquired a legendary Attribute.</p></div>
+<div class="orv_system"><p>You have become the 'Beast Lord'.</p></div>
 <p class="orv_line">"Shin Yoosung, from &lt;Kim Dokja's Company&gt;."</p>
 <p class="orv_line">A Status as white as snow ran amok on the surface of the river. As the Star Lords screamed and backed away, a girl wearing a white coat made an appearance before their shocked eyes.</p>
-<div class="orv_system"><p>[Beast King's Sensitivity.]</p></div>
+<div class="orv_system"><p>Beast King's Sensitivity.</p></div>
 <p class="orv_line">It was the greatest defensive skill of the 'Beast Lord' deployed by Shin Yoosung from the 41st turn.</p>
 <p class="orv_line">The surrounding river water overflowed and every Yogoe, as well as monsters submerged under it, leapt out at once.</p>
 <p class="orv_line">Gu-ooohhhhhh!</p>
 <p class="orv_line">As if they wanted to pay respect to their 'king'.</p>
-<div class="orv_constellation"><p>[Son of a… Where did these things come from…?!]</p></div>
-<div class="orv_constellation"><p>[Attack! Kill these beasts first!]</p></div>
+<div class="orv_constellation"><p>Son of a… Where did these things come from…?!</p></div>
+<div class="orv_constellation"><p>Attack! Kill these beasts first!</p></div>
 <p class="orv_line">&lt;Emperor&gt;'s Constellations began their bombardment. But a rising tide of monsters protected her.</p>
 <p class="orv_line">"Chimera Dragon!"</p>
 <p class="orv_line">Gu-aaaaahhh!</p>
-<p class="orv_line">Affected by her Attribute, the [Chimera Dragon]'s body had grown even bigger. The creature swam in the water like an Imoogi and swallowed up the Star Lords while screeching out loudly. Constellations being torn apart by the sharp fangs cried out.</p>
-<div class="orv_constellation"><p>[You stinking lizard…!]</p></div>
+<p class="orv_line">Affected by her Attribute, the <strong>[Chimera Dragon]</strong>'s body had grown even bigger. The creature swam in the water like an Imoogi and swallowed up the Star Lords while screeching out loudly. Constellations being torn apart by the sharp fangs cried out.</p>
+<div class="orv_constellation"><p>You stinking lizard…!</p></div>
 <p class="orv_line">Shin Yoosung disregarded those Constellations and ran forward.</p>
 <div class="orv_outergod"><p>【OhOhOhOhOhOhOh】</p></div>
 <div class="orv_outergod"><p>【YoosungYoosungYoosungYoosungYoosung】</p></div>
@@ -322,24 +329,24 @@
 <p class="orv_line">"Ahjussi!"</p>
 <p class="orv_line">She shouted at Kim Dokja. However, he showed no signs of movement as if her voice didn't reach him.</p>
 <p class="orv_line">It was then she heard the Wenny King's laughter resound out as it battled the Great Dokkaebis.</p>
-<div class="orv_constellation"><p>[It's too late. He now belongs to the 'Great Plotter'.]</p></div>
+<div class="orv_constellation"><p>It's too late. He now belongs to the 'Great Plotter'.</p></div>
 <p class="orv_line">Those words seemed to be the trigger; the heavens above powerfully shook right away.</p>
 <p class="orv_line">Tsu-chuchuchuchut!</p>
-<p class="orv_line">A [Great Hole] boasting a size so immense that others couldn't even be compared to was slowly revealing itself.</p>
-<p class="orv_line">Great Yogoes on the river's surface simultaneously lowered themselves. All the fur on the white coat of the [Beast King's Sensitivity] rose up like fuzzy hair.</p>
+<p class="orv_line">A <strong>[Great Hole]</strong> boasting a size so immense that others couldn't even be compared to was slowly revealing itself.</p>
+<p class="orv_line">Great Yogoes on the river's surface simultaneously lowered themselves. All the fur on the white coat of the <strong>[Beast King's Sensitivity]</strong> rose up like fuzzy hair.</p>
 <p class="orv_line">She could sense it without anyone telling her. The one descending right now, it was an existence far surpassing all the Constellations of the &lt;Emperor&gt; Nebula.</p>
 <p class="orv_line">And Kim Dokja was now that creature's possession.</p>
 <p class="orv_line">"I won't allow that."</p>
-<div class="orv_system"><p>[Tang Sanzang has recited the 'Constrictive Sutra'!]</p></div>
+<div class="orv_system"><p>Tang Sanzang has recited the 'Constrictive Sutra'!</p></div>
 <p class="orv_line">The moment Shin Yoosung activated the skill, the golden headband on Kim Dokja's head began emitting bright light.</p>
-<div class="orv_system"><p>[Item, 'Constrictive Headband', is reacting!]</p></div>
+<div class="orv_system"><p>Item, 'Constrictive Headband', is reacting!</p></div>
 <p class="orv_line">The Constrictive Headband was a treasure to control Sun Wukong.</p>
 <p class="orv_line">Didn't matter whether it was an Yogoe transformation or not, every change taking place in Sun Wukong would come to a halt when the Sutra was being recited.</p>
-<div class="orv_constellation"><p>[What foolishness…!]</p></div>
-<p class="orv_line">The Wenny King's Status bore down on Shin Yoosung's whole body. She tasted blood in the deepest part of her mouth. The coat created through [Beast King's Sensitivity] flapped around crazily. She staggered on her feet as she walked closer to Kim Dokja. One step closer, and yet one more step.</p>
+<div class="orv_constellation"><p>What foolishness…!</p></div>
+<p class="orv_line">The Wenny King's Status bore down on Shin Yoosung's whole body. She tasted blood in the deepest part of her mouth. The coat created through <strong>[Beast King's Sensitivity]</strong> flapped around crazily. She staggered on her feet as she walked closer to Kim Dokja. One step closer, and yet one more step.</p>
 <p class="orv_line">She saw his messed-up face, his gaunt cheeks. Her Sponsor, his eyes quietly closed.</p>
 <p class="orv_line">"Ahjussi!"</p>
-<div class="orv_system"><p>[A brand new Story is sprouting in you.]</p></div>
+<div class="orv_system"><p>A brand new Story is sprouting in you.</p></div>
 <p class="orv_line">She still had so many things to tell him.</p>
 <p class="orv_line">She'd tell him about that stuff that saddened her.</p>
 <p class="orv_line">And also tell him that ahjussi looked terrible right now.</p>
@@ -351,8 +358,8 @@
 <p class="orv_line">Her vision quaked and tears streamed down without rest.</p>
 <p class="orv_line">Finally, her hand touched the ends of Kim Dokja's fingertips.</p>
 <p class="orv_line">One hand covered in scars wrapped around yet another, also covered in wounds. It hurt as wounds rubbed against each other. Even then, Shin Yoosung didn't let go of that hand.</p>
-<div class="orv_system"><p>[Quasi Myth-grade Story, 'Saviour of a Star', has been acquired!]</p></div>
-<div class="orv_system"><p>[Story, 'Saviour of a Star', has begun its storytelling.]</p></div>
+<div class="orv_system"><p>Quasi Myth-grade Story, 'Saviour of a Star', has been acquired!</p></div>
+<div class="orv_system"><p>Story, 'Saviour of a Star', has begun its storytelling.</p></div>
 <p class="orv_line">"I still have too many things I haven't told you yet!"</p>
 <p class="orv_line">Like, when she was studying history with Sangah unni.</p>
 <p class="orv_line">Or, when she was cooking the hunted game with Joonghyuk ahjussi.</p>
@@ -368,33 +375,33 @@
 <p class="orv_line">"I just wanted to be normal…"</p>
 <p class="orv_line">The stars in the sky were moving quickly.</p>
 <p class="orv_line">Individual heavenly bodies sang their own Stories and looked at her.</p>
-<div class="orv_system"><p>[Many audience members are looking at you.]</p></div>
+<div class="orv_system"><p>Many audience members are looking at you.</p></div>
 <p class="orv_line">Actually, she understood it already.</p>
 <p class="orv_line">She knew that the ordinary happiness of an ordinary person in this world would not be able to attract any interest whatsoever.</p>
 <p class="orv_line">And that was why that ordinary happiness…</p>
 <p class="orv_line">…Was the greatest luxury in a ruined world.</p>
 <p class="orv_line">Even then…</p>
-<div class="orv_system"><p>[Audience members are paying the cost to reveal their Modifiers.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Queen of the Darkest Spring', is…]</p></div>
-<div class="orv_system"><p>[Constellation, 'Bald General of Justice', is…]</p></div>
+<div class="orv_system"><p>Audience members are paying the cost to reveal their Modifiers.</p></div>
+<div class="orv_system"><p>Constellation, 'Queen of the Darkest Spring', is…</p></div>
+<div class="orv_system"><p>Constellation, 'Bald General of Justice', is…</p></div>
 <p class="orv_line">Even then, if someone was willing to hear her story…</p>
-<div class="orv_system"><p>[Constellation, 'Demon-like Judge of Fire', is…]</p></div>
-<div class="orv_system"><p>[Constellation, 'Abyssal Black Flame Dragon', is…]</p></div>
-<div class="orv_system"><p>[Constellation, 'Goryeo's First Sword', is…]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon-like Judge of Fire', is…</p></div>
+<div class="orv_system"><p>Constellation, 'Abyssal Black Flame Dragon', is…</p></div>
+<div class="orv_system"><p>Constellation, 'Goryeo's First Sword', is…</p></div>
 <p class="orv_line">As the indirect messages continued to pour in, Shin Yoosung held Kim Dokja's hand even tighter.</p>
 <p class="orv_line">It was precisely at that moment that a certain indirect message landed in her ear.</p>
-<div class="orv_system"><p>[Judge, 'Prisoner of the Golden Headband', has heard your story.]</p></div>
+<div class="orv_system"><p>Judge, 'Prisoner of the Golden Headband', has heard your story.</p></div>
 <p class="orv_line">Warmth began returning to Kim Dokja's hand.</p>
 <p class="orv_line">A blinding torrent of golden rays shot out from Sun Wukong's headband, and that was followed up by a raging storm of Probability's powerful sparks.</p>
 <p class="orv_line">Constellations of &lt;Emperor&gt; shouted in their great astonishment.</p>
-<div class="orv_constellation"><p>[C-could it be?? But that doesn't make sense…!]</p></div>
+<div class="orv_constellation"><p>C-could it be?? But that doesn't make sense…!</p></div>
 <p class="orv_line">From several places in the sky, lightning-bolt-like rays gathered towards Kim Dokja's figure.</p>
-<div class="orv_system"><p>[Judge, 'Bimawen', has heard your story.]</p></div>
+<div class="orv_system"><p>Judge, 'Bimawen', has heard your story.</p></div>
 <p class="orv_line">(And in that moment.)</p>
 <p class="orv_line">(Something that had never happened before in the history of 'Journey to the West' finally happened.)</p>
-<div class="orv_system"><p>[Judge, 'Meihouwang', has heard your story.]</p></div>
+<div class="orv_system"><p>Judge, 'Meihouwang', has heard your story.</p></div>
 <p class="orv_line">(The retired Sun Wukong has finally turned over a new leaf.)</p>
-<div class="orv_system"><p>[Judge, 'Dou-zhan-sheng-fo (Victorious Fighting Buddha)', wishes to hear your next story.]</p></div>
+<div class="orv_system"><p>Judge, 'Dou-zhan-sheng-fo (Victorious Fighting Buddha)', wishes to hear your next story.</p></div>
 <br>
 <hr>
         </article>
@@ -402,18 +409,12 @@
             <a href="./ch_439"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_441">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="440" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="490" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="439" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="439" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

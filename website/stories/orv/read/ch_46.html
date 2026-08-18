@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 46: Ep. 10 – Future War, IV</title>
     <meta property="og:title" content="Ch 46: Ep. 10 – Future War, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,39 +177,39 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00046.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 46: Ep. 10 – Future War, IV</h1></div>
 <p class="orv_line">"Push through to the flag holder!"</p>
 <p class="orv_line">Based on the direction he was running from, he seemed to be the representative of the Myeongdong Group. They had joined hands with Dongdaemun.</p>
-<div class="orv_system"><p>[The Myeongdong representative 'Kim Hyuntae' has used the additional effect of the 'red flag'!]</p></div>
+<div class="orv_system"><p>The Myeongdong representative 'Kim Hyuntae' has used the additional effect of the 'red flag'!</p></div>
 <p class="orv_line">It was someone who already changed the colour of the flag. Furthermore, it was 'red'.</p>
 <p class="orv_line">In fact, the key to 'Struggle for the Flag' was the colour of the flag. It was from white to red, navy, brown, purple and black. The flag provided increasingly better effects as the colour changed.</p>
-<div class="orv_system"><p>[The Myeongdong Group has received the buff effect of the red flag!]</p></div>
-<div class="orv_system"><p>[Attack and defense has increased by 5% each!]</p></div>
+<div class="orv_system"><p>The Myeongdong Group has received the buff effect of the red flag!</p></div>
+<div class="orv_system"><p>Attack and defense has increased by 5% each!</p></div>
 <p class="orv_line">If the flag was already red, it meant he had occupied one or more stations or had killed the flag bearer of another station.</p>
 <p class="orv_line">Looking at his eyes, he seemed to have pretty good fighting power. But…</p>
 <p class="orv_line">He shouldn't have aimed for Chungmuro.</p>
-<div class="orv_system"><p>[The character 'Gong Pildu' has activated 'Armed Zone Lv. 6!]</p></div>
-<div class="orv_system"><p>[The character 'Gong Pildu' has activated 'Private Property Lv. 6!]</p></div>
+<div class="orv_system"><p>The character 'Gong Pildu' has activated 'Armed Zone Lv. 6!</p></div>
+<div class="orv_system"><p>The character 'Gong Pildu' has activated 'Private Property Lv. 6!</p></div>
 <p class="orv_line">Gong Pildu didn't move too late.</p>
 <p class="orv_line">"Trivial pups…!"</p>
 <p class="orv_line">I was glad I didn't have to use the Command Rights. If this was the case, I could leave Chungmuro's defense to Gong Pildu.</p>
@@ -219,8 +226,8 @@
 <p class="orv_line">"Retreat!"</p>
 <p class="orv_line">But there was no place for them to run away.</p>
 <p class="orv_line">"Where are you going?"</p>
-<div class="orv_system"><p>[The special option of Unbroken Faith is activated.]</p></div>
-<div class="orv_system"><p>[The ether property is converted to 'fire'.]</p></div>
+<div class="orv_system"><p>The special option of Unbroken Faith is activated.</p></div>
+<div class="orv_system"><p>The ether property is converted to 'fire'.</p></div>
 <p class="orv_line">The ether blade made of flames created a wall of fire that blocked their escape. The moment that the confused people hesitated, Gong Pildu shot at them.</p>
 <p class="orv_line">Dududududu!</p>
 <p class="orv_line">"P-Pierce through! Quickl…cough!"</p>
@@ -229,16 +236,16 @@
 <p class="orv_line">The running Gong Pildu stiffened.</p>
 <p class="orv_line">"Damn…"</p>
 <p class="orv_line">I immediately picked up the Myeongdong flag that had fallen onto the tracks. Focus vanished from the eyes of the desperate Myeongdong Group members.</p>
-<div class="orv_system"><p>[You have won the flag of the 'Myeongdong Group'.]</p></div>
-<div class="orv_system"><p>[Your white flag has absorbed the cumulative achievements of the red flag.]</p></div>
-<div class="orv_system"><p>[Your white flag has evolved into a red flag.]</p></div>
+<div class="orv_system"><p>You have won the flag of the 'Myeongdong Group'.</p></div>
+<div class="orv_system"><p>Your white flag has absorbed the cumulative achievements of the red flag.</p></div>
+<div class="orv_system"><p>Your white flag has evolved into a red flag.</p></div>
 <p class="orv_line">I felt a stronger force swirling inside my body.</p>
-<div class="orv_system"><p>[You are one step closer to the King's Road.]</p></div>
+<div class="orv_system"><p>You are one step closer to the King's Road.</p></div>
 <p class="orv_line">The flags after the red flag improved not just the abilities of the representative but also the surrounding group members.</p>
 <p class="orv_line">Apart from overall stats or S-grade and above items, the flag was one of the few ways to improve basic combat power. Due to this, groups aimed at stations other than the 'target' station.</p>
 <p class="orv_line">The other 'king candidates' would've already entered a full-fledged war to change the colour of their flags.</p>
 <p class="orv_line">The stronger they became, the more they could enjoy this world.</p>
-<div class="orv_system"><p>[The remaining members of the Myeongdong Group are waiting for your decision.]</p></div>
+<div class="orv_system"><p>The remaining members of the Myeongdong Group are waiting for your decision.</p></div>
 <p class="orv_line">I grabbed one of the wounded Myeongdong members in the area and asked.</p>
 <p class="orv_line">"Why did you aim for Chungmuro?"</p>
 <p class="orv_line">I had realized something when I first heard Kang Ilhun's words. It was true that Chungmuro had just opened but it didn't make sense for them to rush in like they had been waiting. The observations of the party and the strange look he made when he knew I was the representative…</p>
@@ -318,7 +325,7 @@
 <p class="orv_line">"…I understand."</p>
 <p class="orv_line">She said so but Lee Jihye would definitely read it. However, Lee Jihye wouldn't be able to understand it since it was filled with things only Yoo Joonghyuk would know.</p>
 <p class="orv_line">By the way, did the information on the paper also look like ■■■ for the constellations?</p>
-<div class="orv_constellation"><p>[The constellation 'Prisoner of the Golden Headband' hates ■.]</p></div>
+<div class="orv_constellation"><p>The constellation 'Prisoner of the Golden Headband' hates ■.</p></div>
 <p class="orv_line">Indeed. I was turning around when Lee Jihye opened her mouth.</p>
 <p class="orv_line">"By the way, can I ask you something?"</p>
 <p class="orv_line">"What?"</p>
@@ -350,11 +357,11 @@
 <p class="orv_line">"Wait! How did you give birth to a child?"</p>
 <p class="orv_line">"Ask Yoo Joonghyuk."</p>
 <p class="orv_line">Yes, Yoo Joonghyuk, I leave everything to you. The next moment, indirect messages exploded in my head.</p>
-<div class="orv_system"><p>[Some constellations are greatly affected by the truth of the filtering.]</p></div>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' respects your taste.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' likes your companionship.]</p></div>
-<div class="orv_system"><p>[The constellation 'Secretive Plotter' thinks it is ridiculous.]</p></div>
-<div class="orv_system"><p>[600 coins have been sponsored.]</p></div>
+<div class="orv_system"><p>Some constellations are greatly affected by the truth of the filtering.</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' respects your taste.</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' likes your companionship.</p></div>
+<div class="orv_system"><p>The constellation 'Secretive Plotter' thinks it is ridiculous.</p></div>
+<div class="orv_system"><p>600 coins have been sponsored.</p></div>
 <p class="orv_line">…Damn, there were other idiots. In any case, I told Yoo Joonghyuk what I needed to.</p>
 <p class="orv_line">I hurried through the theater. During the time Yoo Joonghyuk was the sleeping prince, I had to gain as much benefits as possible.</p>
 <br>
@@ -364,18 +371,12 @@
             <a href="./ch_45"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_47">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="46" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="98" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="45" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="45" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

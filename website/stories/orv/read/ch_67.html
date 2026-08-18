@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 67: Ep. 14 – Master of the Throne, III</title>
     <meta property="og:title" content="Ch 67: Ep. 14 – Master of the Throne, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00067.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 67: Ep. 14 – Master of the Throne, III</h1></div>
 <p class="orv_line">We were going to enter the dungeon but not to get the Four Yin Demonic Beheading Sword.</p>
@@ -199,9 +206,9 @@
 <p class="orv_line">Yoo Sangah looked down at Lee Gilyoung with surprised eyes. The interesting thing was that Lee Gilyoung looked up at Yoo Sangah with disappointment.</p>
 <p class="orv_line">"Hyung, leave the finishing touches to me."</p>
 <p class="orv_line">This boy… he already noticed that I couldn't directly kill a person.</p>
-<div class="orv_system"><p>[The exclusive skill, Character List is activated.]</p></div>
-<div class="orv_system"><p>[This person isn't registered in 'Character List'.]</p></div>
-<div class="orv_system"><p>[Currently collecting information about the corresponding figure.]</p></div>
+<div class="orv_system"><p>The exclusive skill, Character List is activated.</p></div>
+<div class="orv_system"><p>This person isn't registered in 'Character List'.</p></div>
+<div class="orv_system"><p>Currently collecting information about the corresponding figure.</p></div>
 <p class="orv_line">Lee Gilyoung's information still wasn't available.</p>
 <p class="orv_line">I turned my head and encountered Yoo Sangah's worried eyes. She looked between Lee Gilyoung and I before bowing her head. I spoke to Lee Gilyoung, "Do as you please."</p>
 <p class="orv_line">I could see what Yoo Sangah was worried about. Lee Gilyoung wasn't even in middle school yet. But she should be aware of it. The morals that we used to have were now useless in this world.</p>
@@ -210,17 +217,17 @@
 <p class="orv_line">I listened to Lee Gilyoung's voice and hid the flag on my back.</p>
 <p class="orv_line">Until now, the flag was a good bait to attract the small kings. However, from now on, it would just be bait for predators. There was nothing good about advertising that I was a king on this battlefield.</p>
 <p class="orv_line">The intermediate dokkaebi's voice was heard.</p>
-<div class="orv_constellation"><p>[Huhu, everyone is doing well! If so many people are doing the hidden scenario then what is the meaning of 'hidden'?]</p></div>
+<div class="orv_constellation"><p>Huhu, everyone is doing well! If so many people are doing the hidden scenario then what is the meaning of 'hidden'?</p></div>
 <p class="orv_line">It had no nerves. I would find it embarrassing now and again.</p>
-<div class="orv_constellation"><p>[Someone has already fulfilled the requirements for the first qualification. Once again, this is interesting.]</p></div>
+<div class="orv_constellation"><p>Someone has already fulfilled the requirements for the first qualification. Once again, this is interesting.</p></div>
 <p class="orv_line">A king had already achieved the black flag. It was probably one of the Seven Kings.</p>
-<div class="orv_constellation"><p>[After a while, the requirements of the second qualifications will be revealed.]</p></div>
+<div class="orv_constellation"><p>After a while, the requirements of the second qualifications will be revealed.</p></div>
 <p class="orv_line">I turned to look at the party members and said, "Quickly. The dokkaebi's 'after a while' might not be long."</p>
 <p class="orv_line">I put together the Sang Pyong Tong Bo coins in the lobby one by one.</p>
-<div class="orv_system"><p>[You have entered a hidden field using 10 Sang Pyong Tong Bo coins.]</p></div>
-<div class="orv_constellation"><p>[Do you want to enter the hidden chapter, the Big Dipper?]</p></div>
+<div class="orv_system"><p>You have entered a hidden field using 10 Sang Pyong Tong Bo coins.</p></div>
+<div class="orv_constellation"><p>Do you want to enter the hidden chapter, the Big Dipper?</p></div>
 <p class="orv_line">Right now, I had the purple flag. The kings with the same purple flags would flock to the Big Dipper. In other words, my prey were all gathered in one place.</p>
-<div class="orv_system"><p>[You have entered the Big Dipper chapter.]</p></div>
+<div class="orv_system"><p>You have entered the Big Dipper chapter.</p></div>
 <p class="orv_line">My vision waved and the lobby soon changed. The white marble lobby was transformed into a spacious waiting room.</p>
 <p class="orv_line">There were seven doors at the end of the waiting room.</p>
 <p class="orv_line">"Uh…!"</p>
@@ -235,8 +242,8 @@
 <p class="orv_line">"You are a newcomer. Who is your king?"</p>
 <p class="orv_line">Some people secretly moved behind our party while others drew our attention. The encirclement was gradually becoming narrower.</p>
 <p class="orv_line">"Is it you? Or maybe the woman next to you? It can't be the kid."</p>
-<div class="orv_system"><p>[Many of the constellations are annoyed by the pests.]</p></div>
-<div class="orv_system"><p>[A few constellations want you to take serious action.]</p></div>
+<div class="orv_system"><p>Many of the constellations are annoyed by the pests.</p></div>
+<div class="orv_system"><p>A few constellations want you to take serious action.</p></div>
 <p class="orv_line">I was already planning on that.</p>
 <p class="orv_line">"Hey, why aren't you answering… aack!"</p>
 <p class="orv_line">The white light of Unbroken Faith filled the air. The unstoppable trajectory cut off the limbs of a person. A confused person shouted, "Damn! Just kill him!"</p>
@@ -248,7 +255,7 @@
 <p class="orv_line">The attack that followed cut off a hand holding a weapon. I pierced another wrist.</p>
 <p class="orv_line">"Kuaaaak!"</p>
 <p class="orv_line">The severed limbs flew unrealistically through the air. I walked behind a man screaming painfully and used a skill.</p>
-<div class="orv_system"><p>[The exclusive skill 'Hit a Pressure Point Lv. 1' is activated.]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Hit a Pressure Point Lv. 1' is activated.</p></div>
 <p class="orv_line">I had cut off the man's limbs but there was no need to be cruel.</p>
 <p class="orv_line">There was a dark blue dagger hidden in the man's arms. This was the poisonous dagger that could be obtained at the end of the 5 person dungeon, the 'Dongui Bogam'. If my response had been even a bit late, this would've been us.</p>
 <p class="orv_line">As soon as the people collapsed, I called to Lee Gilyoung.</p>
@@ -271,8 +278,8 @@
 <p class="orv_line">There would be many twists and turns in the future. Sometimes we might feel like collapsing or want to give up. But we had to overcome it.</p>
 <p class="orv_line">Most of the Seven Kings we would soon meet would have higher stats than us and they would also possess unique skills. There would certainly be situations where we couldn't win without being hit by the enemies.</p>
 <p class="orv_line">We silently picked up the items that the group dropped.</p>
-<div class="orv_system"><p>[You have earned 2,300 coins.]</p></div>
-<div class="orv_system"><p>[The item 'Dongui Bogam – Various Diseases (Upper Half of the Body)' has been acquired.]</p></div>
+<div class="orv_system"><p>You have earned 2,300 coins.</p></div>
+<div class="orv_system"><p>The item 'Dongui Bogam – Various Diseases (Upper Half of the Body)' has been acquired.</p></div>
 <p class="orv_line">As expected, they were people who cleared the five person dungeon. A total of eight books were available from the five person dungeon, each with different usages. I was sure there were a few people who cleared the five person dungeon so the others should be moderately easy to find.</p>
 <p class="orv_line">Unfortunately, there was no 'king' in the group I just killed.</p>
 <p class="orv_line">Clap clap clap.</p>
@@ -324,18 +331,12 @@
             <a href="./ch_66"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_68">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="67" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="90" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="66" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="66" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 294: Ep. 55 - Happy Memories, IV</title>
     <meta property="og:title" content="Ch 294: Ep. 55 - Happy Memories, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,46 +177,46 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00294.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 294: Ep. 55 - Happy Memories, IV</h1></div>
 <p class="orv_line">Two days had passed since I started staying at Han Sooyoung's headquarters.</p>
 <p class="orv_line">In the meantime, I had to concentrate on a few things. One was to reveal exactly what Han Sooyoung meant by 'the death of Yoo Joonghyuk'. The second was to find out what Han Sooyoung ultimately wanted to achieve through it.</p>
 <p class="orv_line">Either way, finding out wasn't easy. This wasn't the only problem.</p>
-<div class="orv_constellation"><p>[It is really destroyed? Our Eden?]</p></div>
+<div class="orv_constellation"><p>It is really destroyed? Our Eden?</p></div>
 <p class="orv_line">I looked at Gabriel who was exuding a ferocious spirit.</p>
 <p class="orv_line">"That's right. Didn't you hear anything about it from the third round Metatron?"</p>
-<div class="orv_constellation"><p>[…The scribe knows about the destruction of Eden?]</p></div>
+<div class="orv_constellation"><p>…The scribe knows about the destruction of Eden?</p></div>
 <p class="orv_line">I nodded. "If you go back, ask him yourself. Of course, that's if you can go back safely."</p>
 <p class="orv_line">The stems of Gabriel and Jophiel started to shake. I thought they were angry with me but they seemed to be talking to each other. I pulled out the Uriel doll. She was caught by the Confinement of Good and Evil and couldn't use her strength for the next five days.</p>
-<div class="orv_quote"><p>「 The Fourth Wall is looking at you. 」</p></div>
+<div class="orv_quote"><p>The Fourth Wall is looking at you.</p></div>
 <p class="orv_line">Maybe I could borrow the power of the Fourth Wall to give her memories of the third round. However, the idea that Uriel would be moved by my memories was just a fantasy. Maybe after seeing the memories, Uriel would say:</p>
-<div class="orv_quote"><p>「 ■■, so what? 」</p></div>
+<div class="orv_quote"><p>■■, so what?</p></div>
 <p class="orv_line">The memories of the third round would sound like a novel to Uriel who had lived through the 1863rd round.</p>
 <p class="orv_line">"Kim Dokja-ssi, are you going to hunt with us?"</p>
 <p class="orv_line">I looked up and saw Lee Hyunsung standing there with steel gauntlets on. "Is it okay if I go with you?"</p>
 <p class="orv_line">"Yes, well… there is no meaning in identifying a picked up bullet."</p>
 <p class="orv_line">I smiled at Lee Hyunsung's words. Whether it was the third round or the 1863rd round, the strange analogies were still there. I calculated how many times Lee Hyunsung must've been confined in the guardhouse so far.</p>
-<div class="orv_system"><p>[Your understanding of the character 'Lee Hyunsung' has increased.]</p></div>
-<div class="orv_system"><p>[The character 'Lee Hyunsung' shows a weak liking towards you.]</p></div>
+<div class="orv_system"><p>Your understanding of the character 'Lee Hyunsung' has increased.</p></div>
+<div class="orv_system"><p>The character 'Lee Hyunsung' shows a weak liking towards you.</p></div>
 <p class="orv_line">I recalled the first scenario and suddenly felt a bit distracted. I added a sentence to alleviate Lee Hyunsung's wariness. "Shouldn't you be more vigilant? I am Yoo Joonghyuk's companion."</p>
 <p class="orv_line">"Um… Captain didn't say anything and… as a matter of fact, I feel that Dokja-ssi isn't a bad person. I guess this is the intuition I gained after 94 scenarios."</p>
 <p class="orv_line">Throughout the novel, Lee Hyunsung's intuition was mostly off the mark. Whenever Lee Hyunsung said this, I used to think that Yoo Joonghyuk would be stabbed in the back.</p>
@@ -242,7 +249,7 @@
 <p class="orv_line">…This guy passed through every round without noticing. Kim Namwoon glanced between Lee Jihye and I before stammering.</p>
 <p class="orv_line">"H-How do you know that?"</p>
 <p class="orv_line">"It would be strange if I didn't know. Dye your hair first and get rid of the bandages. Replace them with half gloves on both sides. After the hunt, don't say things like nice attack."</p>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' hates you.]</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' hates you.</p></div>
 <p class="orv_line">"It will be more helpful if you act like the guy behind me."</p>
 <p class="orv_line">Kim Namwoon blinked as he looked at the person behind me. Yoo Joonghyuk was standing there blankly. His coat was crooked and he hadn't washed himself but he couldn't hide his good looks.</p>
 <p class="orv_line">"That person is 'evil. Still, he looks cool."</p>
@@ -277,9 +284,9 @@
 <p class="orv_line">The 95th scenario was a scenario where 'five swords' were the key. A scenario where the sealed Apocalypse Dragon was released through the key five swords. But this sword…</p>
 <p class="orv_line">A sense of discomfort passed through my head. I looked up at the sky and saw the Apocalypse Dragon's Sealing Ball heading this way. Sleeping inside the dark sphere was the worst ruin dragon in Ways of Survival.</p>
 <p class="orv_line">Originally, Yoo Joonghyuk was supposed to liberate the dragon and gain the giant story 'Liberator of the Apocalypse Dragon', entering the final scenario.</p>
-<div class="orv_quote"><p>「 At this moment, Kim Dokja realized how to kill Yoo Joonghyuk. 」</p></div>
+<div class="orv_quote"><p>At this moment, Kim Dokja realized how to kill Yoo Joonghyuk.</p></div>
 <p class="orv_line">The hand holding the hilt trembled.</p>
-<div class="orv_quote"><p>「 In addition, Han Sooyoung was thinking exactly the same thing as him. 」</p></div>
+<div class="orv_quote"><p>In addition, Han Sooyoung was thinking exactly the same thing as him.</p></div>
 <br>
 <hr>
 <br>
@@ -290,21 +297,21 @@
 <p class="orv_line">How many times did he read? Kim Dokja's eyes, shining like stars, dimmed little by little. Kim Dokja fell into a shallow sleep.</p>
 <p class="orv_line">Yoo Joonghyuk stared at the scene with empty eyes. The back of the weary Kim Dokja. A snoring sound came out at regular intervals.</p>
 <p class="orv_line">There were very small sparks as Yoo Joonghyuk's eyes recovered. Killing intent filled the blank eyes and this killing intent was aimed at precisely one person. Yoo Joonghyuk quietly moved the Splitting the Sky Sword. He didn't make a sound as he approached and aimed a sword at Kim Dokja's neck.</p>
-<div class="orv_quote"><p>「 Ha ha do not do su ch a th ing. 」</p></div>
+<div class="orv_quote"><p>Ha ha do not do su ch a th ing.</p></div>
 <p class="orv_line">Yoo Joonghyuk frowned. The Fourth Wall caused sparks to fly, as if going to wake up Kim Dokja straight away. Yoo Joonghyuk sent a message to the illusionary wall using Sound Transmission.</p>
 <p class="orv_line">–Don't wake him up. I will cut off his head straight away if you do.</p>
-<div class="orv_quote"><p>「 Hu um. 」</p></div>
+<div class="orv_quote"><p>Hu um.</p></div>
 <p class="orv_line">The sparks produced by the Fourth Wall rapidly reduced. Yoo Joonghyuk didn't remove the sword and the Fourth Wall drew characters in the air.</p>
-<div class="orv_quote"><p>「 Wh at do you wa nt? 」</p></div>
+<div class="orv_quote"><p>Wh at do you wa nt?</p></div>
 <p class="orv_line">Yoo Joonghyuk didn't say anything. It seemed like he was finding his words or he didn't know what to say. At this time, the Fourth Wall let out bizarre laughter.</p>
-<div class="orv_quote"><p>「 A ha, I under stand. 」</p></div>
+<div class="orv_quote"><p>A ha, I under stand.</p></div>
 <p class="orv_line">"…"</p>
-<div class="orv_quote"><p>「 Are you cu rious? 」</p></div>
+<div class="orv_quote"><p>Are you cu rious?</p></div>
 <p class="orv_line">Yoo Joonghyuk still didn't answer and the Fourth Wall laughed like it knew everything. The letters of the Fourth Wall started to increase. Gold letters soon filled the room. Yoo Joonghyuk stared at the letters drifting around him and reached out for one of them. The letters seemed to respond to his hand and started to speak.</p>
-<div class="orv_quote"><p>「 "My name is Dokja." 」</p></div>
-<div class="orv_quote"><p>「 I usually introduced myself to people like this and then the following misunderstanding would occur. 」</p></div>
+<div class="orv_quote"><p>"My name is Dokja."</p></div>
+<div class="orv_quote"><p>I usually introduced myself to people like this and then the following misunderstanding would occur.</p></div>
 <p class="orv_line">It was the story of a world he had never experienced. The Fourth Wall giggled.</p>
-<div class="orv_quote"><p>「 Very in te res ting. 」</p></div>
+<div class="orv_quote"><p>Very in te res ting.</p></div>
 <p class="orv_line">Yoo Joonghyuk quietly listened to the story. This last until the night was deep and then the faint light of dawn was seen.</p>
 <p class="orv_line">.</p>
 <p class="orv_line">.</p>
@@ -320,18 +327,12 @@
             <a href="./ch_293"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_295">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="294" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="53" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="293" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="293" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

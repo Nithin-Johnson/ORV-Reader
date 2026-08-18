@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 411: Ep. 78 - Twist/轉, III</title>
     <meta property="og:title" content="Ch 411: Ep. 78 - Twist/轉, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,28 +177,28 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00411.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 411: Ep. 78 - Twist/轉, III</h1></div>
-<p class="orv_line">During her adventures on the 'Isle of Reincarnators', Jang Hayoung utilised the [Unidentifiable Wall] several times; she used its first-stage function, [Chat System], to engage Constellations in conversation.</p>
+<p class="orv_line">During her adventures on the 'Isle of Reincarnators', Jang Hayoung utilised the <strong>[Unidentifiable Wall]</strong> several times; she used its first-stage function, <strong>[Chat System]</strong>, to engage Constellations in conversation.</p>
 <p class="orv_line">– Demon King of Salvation-nim.</p>
 <p class="orv_line">– …Why are you calling me like that?</p>
 <p class="orv_line">From a certain moment on, she even got to talk to Kim Dokja as if nothing had happened, too.</p>
@@ -220,44 +227,44 @@
 <p class="orv_line">He resolutely remained as the 'Demon King of Salvation', just like what she asked of him.</p>
 <p class="orv_line">"Come on now. What do you want from me when you say stuff like that?"</p>
 <p class="orv_line">That was why… she wanted to hear Kim Dokja's voice.</p>
-<div class="orv_system"><p>['Unidentifiable Wall', is bearing its own name!]</p></div>
+<div class="orv_system"><p>'Unidentifiable Wall', is bearing its own name!</p></div>
 <p class="orv_line">That was why, Jang Hayoung was standing in this place.</p>
-<div class="orv_system"><p>['Unidentifiable Wall' is evolving into the 'Wall of Impossible Communication'!]</p></div>
-<div class="orv_system"><p>[2nd stage functionality of 'Wall of Impossible Communication' is now available!]</p></div>
+<div class="orv_system"><p>'Unidentifiable Wall' is evolving into the 'Wall of Impossible Communication'!</p></div>
+<div class="orv_system"><p>2nd stage functionality of 'Wall of Impossible Communication' is now available!</p></div>
 <p class="orv_line">She unlocked the power of her new wall, persuaded all the Constellations that could aide &lt;Kim Dokja's Company&gt;, and brought them to this place.</p>
 <p class="orv_line">All for the sake of the life she wanted to live, and not for anyone else.</p>
 <p class="orv_line">Tsu-chuchuchut!!</p>
 <p class="orv_line">The stupefied faces of the &lt;Kim Dokja's Company&gt; members could be seen looking back at her. Jang Hayoung shouted out, as the sensation of the Status filling her head made her consciousness dimmer and dimmer. "All of you, wake up and get a move on! I can't stay like this for long!"</p>
 <p class="orv_line">She shouted, her mind submerging deeper and deeper. The presence of a Constellation was taking over her entire Incarnation Body.</p>
-<div class="orv_system"><p>['Wall of Impossible Communication' is currently activating 'Impossible Longing Lv.1'!]</p></div>
+<div class="orv_system"><p>'Wall of Impossible Communication' is currently activating 'Impossible Longing Lv.1'!</p></div>
 <p class="orv_line">The 'Impossible Longing' – an ability of the 'Wall of Impossible Communication' that allowed Jang Hayoung to form a temporary 'Sponsorship Contract' with a Constellation, even though she had no sponsor backing.</p>
-<div class="orv_system"><p>[Constellation, 'Prisoner of the Golden Headband', is looking at his Incarnation Body.]</p></div>
+<div class="orv_system"><p>Constellation, 'Prisoner of the Golden Headband', is looking at his Incarnation Body.</p></div>
 <p class="orv_line">The 'Prisoner of the Golden Headband' – the Great Sage Heaven's Equal, Sun Wukong. According to Kim Dokja, one of the greatest Constellations in the &lt;Star Stream&gt; itself.</p>
 <p class="orv_line">That great and noble Constellation scanned the world with his aloof, arrogant eyes, and spoke in a lofty tone of voice.</p>
-<div class="orv_constellation"><p>[Now that I'm here, it's kind of annoying.]</p></div>
+<div class="orv_constellation"><p>Now that I'm here, it's kind of annoying.</p></div>
 <p class="orv_line">Jang Hayoung became dumbfounded by that and yelled out.</p>
 <p class="orv_line">"Ah?! But, you said you'd help! And I even listened to your personal troubles, too! So, hurry up! Please!"</p>
 <p class="orv_line">From her perspective, she couldn't help but be flabbergasted by this situation, but it wasn't as if she couldn't understand why the Great Sage Heaven's Equal said that. For some reason, his condition after incarnating into her body felt strange.</p>
 <p class="orv_line">Ju-jujujut…</p>
 <p class="orv_line">It was as if several different beings temporarily had become 'one' creature, and his status felt unstable as a result. That 'annoyance' he talked about might have something to do with that condition. However, that was his problem, not hers.</p>
 <p class="orv_line">"If you don't keep your promise, then your hair will…"</p>
-<div class="orv_constellation"><p>[I'm doing it! Look, I'm doing it!]</p></div>
+<div class="orv_constellation"><p>I'm doing it! Look, I'm doing it!</p></div>
 <p class="orv_line">Sun Wukong replied in a voice full of dissatisfaction and grasped the Ruyi Bang. The Status leaking out from his body caused several Constellations to display their interest.</p>
-<div class="orv_constellation"><p>[Great Sage, it'll be a suicide trying to send them back. Even if it's you…]</p></div>
-<div class="orv_constellation"><p>[And who you might be?]</p></div>
-<div class="orv_constellation"><p>[…I'm Cheok Jungyeong.]</p></div>
+<div class="orv_constellation"><p>Great Sage, it'll be a suicide trying to send them back. Even if it's you…</p></div>
+<div class="orv_constellation"><p>And who you might be?</p></div>
+<div class="orv_constellation"><p>…I'm Cheok Jungyeong.</p></div>
 <p class="orv_line">As if to resist the Great Sage's Status, Cheok Jungyeong opened his chest wide. The former wordlessly studied the emotions etched in the latter's eyes, before throwing a question out.</p>
-<div class="orv_constellation"><p>[Hey, you. Do you know who this Master Sun is, then?]</p></div>
+<div class="orv_constellation"><p>Hey, you. Do you know who this Master Sun is, then?</p></div>
 <p class="orv_line">Cheok Jungyeong needed a moment or two before realizing that this 'Master Sun' was the way the Great Sage Heaven's Equal referred to himself as.</p>
-<div class="orv_constellation"><p>[I'm well aware that you used to be a famous Constellation in the past. Even then…]</p></div>
-<div class="orv_constellation"><p>[Well, yeah, sure. It's been way too long since this great me did something in a scenario, hasn't it?]</p></div>
+<div class="orv_constellation"><p>I'm well aware that you used to be a famous Constellation in the past. Even then…</p></div>
+<div class="orv_constellation"><p>Well, yeah, sure. It's been way too long since this great me did something in a scenario, hasn't it?</p></div>
 <p class="orv_line">Sun Wukong yawned disinterestedly and after shrinking the size of the Ruyi Bang, he began digging his ear. Cheok Jungyeong was about to blow his top from that arrogance, but then…</p>
-<div class="orv_system"><p>[Constellation, 'Prisoner of the Golden Headband', is unleashing his Status!]</p></div>
+<div class="orv_system"><p>Constellation, 'Prisoner of the Golden Headband', is unleashing his Status!</p></div>
 <p class="orv_line">Not just Cheok Jungyeong, but the Incarnation Bodies of other Constellations near him were blown away in the air. His eyes opened wide in shock after sensing the powerful presence that could make other Constellations shrink away by simply releasing its Status.</p>
-<div class="orv_constellation"><p>[Look, the sparks…!]</p></div>
+<div class="orv_constellation"><p>Look, the sparks…!</p></div>
 <p class="orv_line">One of the suffering Constellations cried out in pain. Jung Hayoung's body with the Great Sage incarnated into it was now completely enveloped with an insane amount of sparks. It was not an odd thing to see Probability's sparks appear when Constellations unleash their Statuses.</p>
 <p class="orv_line">The actual problem here was the fact that this area was currently going through the 89th scenario. In an area that could deal with most types of Probability, such a blinding show of sparks taking place meant…</p>
-<div class="orv_constellation"><p>[Now, look.]</p></div>
+<div class="orv_constellation"><p>Now, look.</p></div>
 <p class="orv_line">The sides of the Eight Trigram, the Bagua, began spreading on all four cardinal directions of the Great Sage Heaven's Equal.</p>
 <p class="orv_line">Geon (乾, Heaven/Firmament), Tae (兌, Lake/Marsh), Yee (離, Heart of Fire), Jin (震, Thunder), Son (巽, Wind), Gam (坎, Water), Gan (艮, Mountain), Gon (坤, Ground/Earth).</p>
 <p class="orv_line">Those letters energetically spun around his Ruyi Jingu Bang (如意金箍棒) and emitted swirling golden light rays. The clones of the 'Indescribable Distance' detected that vigorous aura and began flooding towards him.</p>
@@ -272,7 +279,7 @@
 <p class="orv_line">On top of that, one of the clones even tried to dodge the Ruyi Jingu Bang.</p>
 <p class="orv_line">Every Constellation in the battlefield couldn't take their eyes off from the Great Sage's Status as he dyed the sky in a spectacular shower of light and fought against the 'Indescribable Distance'.</p>
 <p class="orv_line">That included Dionysus, Surya, and Cheok Jungyeong.</p>
-<div class="orv_constellation"><p>[It's a technique of 'Chaos'.]</p></div>
+<div class="orv_constellation"><p>It's a technique of 'Chaos'.</p></div>
 <p class="orv_line">Hades immediately and accurately read the seditious power permeating within the Ruyi Jingu Bang held by the Great Sage. That power was neither 'Good' nor 'Evil'.</p>
 <p class="orv_line">It was a distinct Taoist technique that only the Great Sage, who had compiled unique Stories for himself, could use.</p>
 <p class="orv_line">The Mei Houwang. (獼猴王, Handsome Monkey King)</p>
@@ -281,18 +288,18 @@
 <p class="orv_line">The 'Prisoner of the Golden Headband', Sun Wukong, who continued to exist under many different names, was fighting now.</p>
 <p class="orv_line">And he was engaged in a one-versus-many battle against the calamities of the void, something that even Cheok Jungyeong could only barely defeat by giving his all.</p>
 <p class="orv_line">As if they didn't want to lose to him, two Constellations decided to pitch in right then.</p>
-<div class="orv_system"><p>[Constellation, 'Demon-like Judge of Fire', is wringing out all of her true powers!]</p></div>
-<div class="orv_system"><p>[Constellation, 'Abyssal Black Flame Dragon', is roaring out as if he doesn't want to lose!]</p></div>
-<p class="orv_line">These two's Statuses were being overlaid on top of the Great Sage's. The [Black Flame] from the Dragon and Uriel's [Hellfire] were combined into one and caused the Riyu Jingu Bang to grow to an abnormal size.</p>
-<div class="orv_system"><p>[Story forgotten under a lengthy period of time has begun its storytelling.]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon-like Judge of Fire', is wringing out all of her true powers!</p></div>
+<div class="orv_system"><p>Constellation, 'Abyssal Black Flame Dragon', is roaring out as if he doesn't want to lose!</p></div>
+<p class="orv_line">These two's Statuses were being overlaid on top of the Great Sage's. The <strong>[Black Flame]</strong> from the Dragon and Uriel's <strong>[Hellfire]</strong> were combined into one and caused the Riyu Jingu Bang to grow to an abnormal size.</p>
+<div class="orv_system"><p>Story forgotten under a lengthy period of time has begun its storytelling.</p></div>
 <p class="orv_line">⸢And so, stars of Good, Evil, and Neutral have gathered in one place.⸥</p>
 <p class="orv_line">Three kinds of Statuses were combined to cause an explosion of a blinding flash.</p>
 <p class="orv_line">Go-ooooooh!</p>
 <p class="orv_line">The Riyu Jingu Bang, now boasting tremendous girth, slammed into the sky. The heaven and earth rocked violently, and the enormous shockwave distorted time and space itself.</p>
 <p class="orv_line">By the time the screaming Constellations opened their eyes again, a huge hole had opened up in the sky once covered in the fog of darkness.</p>
 <p class="orv_line">The Great Sage spoke.</p>
-<div class="orv_constellation"><p>[Now, go.]</p></div>
-<p class="orv_line">Three people didn't miss that opening and made their move. Yoo Joonghyuk used [Air Steps] to run in the air, Han Sooyoung rode on the shadow clone of the Black Flame Dragon while Jung Heewon borrowed the wings of the Archangel to shoot up vertically.</p>
+<div class="orv_constellation"><p>Now, go.</p></div>
+<p class="orv_line">Three people didn't miss that opening and made their move. Yoo Joonghyuk used <strong>[Air Steps]</strong> to run in the air, Han Sooyoung rode on the shadow clone of the Black Flame Dragon while Jung Heewon borrowed the wings of the Archangel to shoot up vertically.</p>
 <p class="orv_line">All three of them penetrated past the fog of darkness and breached the boundary of the sky in an instant.</p>
 <p class="orv_line">The moment they escaped the atmosphere, though, their movements dulled rapidly. The cosmic space created by the clashes between the 'Indescribable Distance' and the 'Final Dragon of the Book of Revelation' was filled up with an astonishing amount of Stories chaotically swirling around.</p>
 <p class="orv_line">"Keuph…"</p>
@@ -309,16 +316,16 @@
 <p class="orv_line">Even if that Story was meant for other people.</p>
 <p class="orv_line">"God damn it, since when did I ask you for this kind of story??"</p>
 <p class="orv_line">The clones of the 'Indescribable Distance' discovered the trio and rushed towards their location.</p>
-<p class="orv_line">Han Sooyoung shot [Black Flame] out from her hand, while Jung Heewon's [Sword of Judgement] activated [Hellfire]; Yoo Joonghyuk's [Breaking the Sky Swordsmanship] sliced through the space and opened up the path for them.</p>
+<p class="orv_line">Han Sooyoung shot <strong>[Black Flame]</strong> out from her hand, while Jung Heewon's <strong>[Sword of Judgement]</strong> activated <strong>[Hellfire]</strong>; Yoo Joonghyuk's <strong>[Breaking the Sky Swordsmanship]</strong> sliced through the space and opened up the path for them.</p>
 <p class="orv_line">Normally, they shouldn't have been able to fight against this calamity. The only reason why they could was because of the star existing at the end of that path.</p>
-<div class="orv_system"><p>[Constellation, 'Demon King of Salvation', is still activating Stigma, 'Sacrificial Will Lv.9'!]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon King of Salvation', is still activating Stigma, 'Sacrificial Will Lv.9'!</p></div>
 <p class="orv_line">The 'Sacrificial Will' – a deadly Stigma that raised the combat capabilities of one's companions by risking one's life.</p>
 <p class="orv_line">After being strengthened by that starlight, Yoo Joonghyuk swung his sword, Jung Heewon unleashed more Hellfire, and Han Sooyoung continued to punch over and over again.</p>
 <p class="orv_line">And eventually, they began sensing the faint presence of Kim Dokja. Like the breathing of a dying man, his weakened Stories were telling them of his current location.</p>
 <p class="orv_line">Tsu-chuchuchut…!</p>
 <p class="orv_line">Suddenly, Uriel's and the Black Flame Dragon's Status began dwindling rapidly. They had finally reached their limit, in other words.</p>
-<div class="orv_system"><p>[Constellation, 'Demon-like Judge of Fire' is issuing a warning!]</p></div>
-<div class="orv_system"><p>[Constellation, 'Abyssal Black Flame Dragon', says that he needs to use the bathroom and it'll be harder to use his powers…]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon-like Judge of Fire' is issuing a warning!</p></div>
+<div class="orv_system"><p>Constellation, 'Abyssal Black Flame Dragon', says that he needs to use the bathroom and it'll be harder to use his powers…</p></div>
 <p class="orv_line">They finally spotted a pale, faint star on the far side of the thick fog of darkness. Yoo Joonghyuk and Han Sooyoung both saw it. It felt so desperately within reach, if only they could extend their hands out.</p>
 <p class="orv_line">Unfortunately, the path to that star was fraught with much danger. The number of clones rushing in continued to grow, and the pressure of the Statuses surrounding them was getting heavier quite quickly.</p>
 <p class="orv_line">All three no longer had much magical energy left in them as they had been flying like a one-way rocket with total disregard for fuel preservation.</p>
@@ -336,18 +343,12 @@
             <a href="./ch_410"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_412">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="411" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="815" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="410" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="410" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

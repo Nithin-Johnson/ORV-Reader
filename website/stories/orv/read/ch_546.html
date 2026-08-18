@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 546: Epilogue 5 - The Eternity and Epilogue, I</title>
     <meta property="og:title" content="Ch 546: Epilogue 5 - The Eternity and Epilogue, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00546.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 546: Epilogue 5 - The Eternity and Epilogue, I</h1></div>
 <p class="orv_line">Han Sooyoung and Yoo Joonghyuk were taken away in stretchers to the hospital where Kim Dokja was staying.</p>
@@ -209,7 +216,7 @@
 <p class="orv_line">Han Sooyoung started her explanation in a composed voice. "The 'Oldest Dream' is Kim Dokja. And that Kim Dokja was broken down into many pieces and scattered around to the rest of the world-lines before reincarnating into different existences. You with me so far?"</p>
 <p class="orv_line">"…You think I'm a dummy because I got an F last time?? Okay, so what's next?"</p>
 <p class="orv_line">"The important part starts from there. The newly-reincarnated Kim Dokja might not be 'Kim Dokja' anymore. However, that doesn't mean he isn't the 'Oldest Dream', either. They themselves might not be aware of it, but all those souls are the 'Oldest Dream' that maintains this universe."</p>
-<p class="orv_line">Back when they escaped from the [Final Wall] for the last time, no one was left behind in the subway. Yet the universe's time didn't stop. Meaning, the 'Oldest Dream' hadn't disappeared.</p>
+<p class="orv_line">Back when they escaped from the <strong>[Final Wall]</strong> for the last time, no one was left behind in the subway. Yet the universe's time didn't stop. Meaning, the 'Oldest Dream' hadn't disappeared.</p>
 <p class="orv_line">The souls that used to be Kim Dokja had scattered to the rest of the universe and reincarnated, and unbeknownst to even themselves, they were dreaming of the different universes.</p>
 <p class="orv_line">Yoo Sangah nodded her head as if she understood it. "So, you meant to use their power of imaginations."</p>
 <p class="orv_line">"The imagination of the Oldest Dream is reality, after all."</p>
@@ -298,16 +305,16 @@
 <p class="orv_line">"Both of you, will you just put a lid on it?! Kim Dokja is the main character of this story! I'm telling you, this isn't your story!" Han Sooyoung yelled at them.</p>
 <p class="orv_line">Even Constellations came to visit one by one after hearing about the news.</p>
 <p class="orv_line">For instance, Uriel carrying huge piles of unidentifiable documents while kitted out in a disguise of sunglasses and a face mask.</p>
-<div class="orv_constellation"><p>[You should've called me right away if you were planning to write something like this! And I have this much extensive data on the subject matter, too!]</p></div>
+<div class="orv_constellation"><p>You should've called me right away if you were planning to write something like this! And I have this much extensive data on the subject matter, too!</p></div>
 <p class="orv_line">"…Can any of this data even be trusted? I mean, what you said differed quite a lot from what Lee Jihye told me, you know?"</p>
-<div class="orv_constellation"><p>[N-no, well, it can be a tiiiiny bit different, but, but! This universe is truly vast and countless Kim Dokjas are living out there in countless world-lines, so…]</p></div>
+<div class="orv_constellation"><p>N-no, well, it can be a tiiiiny bit different, but, but! This universe is truly vast and countless Kim Dokjas are living out there in countless world-lines, so…</p></div>
 <p class="orv_line">After that, the Great Sage Heaven's Equal.</p>
-<div class="orv_constellation"><p>[If you're going to write about my Story, you should've at least read the fully translated Journey to the West. Have you?]</p></div>
+<div class="orv_constellation"><p>If you're going to write about my Story, you should've at least read the fully translated Journey to the West. Have you?</p></div>
 <p class="orv_line">"I read it as manga."</p>
-<div class="orv_constellation"><p>[In that case, you should know by now who the real protagonist of the Journey to the West is.]</p></div>
+<div class="orv_constellation"><p>In that case, you should know by now who the real protagonist of the Journey to the West is.</p></div>
 <p class="orv_line">"I thought it was Tang Sanzang?"</p>
 <p class="orv_line">Then, the Abyssal Black Flame Dragon.</p>
-<div class="orv_constellation"><p>[How disappointing. Have you really forgotten about my true name? It's already the second part, so how come my true name hasn't been-]</p></div>
+<div class="orv_constellation"><p>How disappointing. Have you really forgotten about my true name? It's already the second part, so how come my true name hasn't been-</p></div>
 <p class="orv_line">"You never told me in the first place. And you know what, you don't have to tell me, either."</p>
 <p class="orv_line">And so – around the time the first draft of the manuscript with about 250 chapters was completed, Han Sooyoung became almost completely wasted from all the fatigue building up inside her. It'd be her first time writing a novel so arduously like this. So many parts of it weren't to her liking, and too many portions needed lots of revising. But right now, the 'quantity' was her priority. Because…</p>
 <p class="orv_line">– Han Sooyoung. It'll be this week, Saturday.</p>
@@ -319,18 +326,12 @@
             <a href="./ch_545"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_547">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="546" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="592" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="545" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="545" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

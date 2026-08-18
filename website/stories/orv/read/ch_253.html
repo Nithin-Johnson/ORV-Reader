@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 253: Ep. 47 - Demon King Selection, VII</title>
     <meta property="og:title" content="Ch 253: Ep. 47 - Demon King Selection, VII" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00253.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 253: Ep. 47 - Demon King Selection, VII</h1></div>
 <p class="orv_line">Kyrgios had accepted three disciples so far. One was after his first transcendence and another was 50 years later. Then he didn't accept any disciples for a while.</p>
@@ -196,39 +203,39 @@
 <p class="orv_line">It was the events triggered by these two deaths that made the 'Paradox Baekchung' Kyrgios Rodgraim become famous. Enraged by his disciples' deaths, Kyrgios struck the homes of the Heavenly Demon School and the Blood Demon School. It wasn't known exactly what happened in Murim at that time. One thing was for certain…</p>
 <p class="orv_line">Half of the 100,000 Great Mountain Ranges became a bare mountain. The Blood Demon School withdrew its forces from the First Murim.</p>
 <p class="orv_line">100 years later, Kyrgios once again accepted a disciple. Kyrgios asked the disciple whom he met after much trouble.</p>
-<div class="orv_constellation"><p>[…What is this about?]</p></div>
+<div class="orv_constellation"><p>…What is this about?</p></div>
 <p class="orv_line">"This poor disciple is greeting you."</p>
 <p class="orv_line">Kyrgios looked at his disciple with a bitter expression. This was the last disciple he received with his heart.</p>
-<div class="orv_constellation"><p>[I asked you. Why is it like this?]</p></div>
+<div class="orv_constellation"><p>I asked you. Why is it like this?</p></div>
 <p class="orv_line">This disciple wasn't talented and didn't have any spots to like. The moment they met, he acted familiar and like they knew each other for a long time. He was 'friendly' to the Paradox Baekchung. The paradox was so bizarre that Kyrgios wanted to learn a bit about him.</p>
 <p class="orv_line">"I've been to the First Murim."</p>
 <p class="orv_line">Kyrgios glared at his disciple who was covered in blood. He was a person full of mischief on Peace Land. The reason Kyrgios didn't punish him for the sin of stealing the technique and fleeing was because he saved Kyrgio's planet.</p>
 <p class="orv_line">Thus, Kyrgios waited. Someday, his disciple would reflect on himself and show up again. Yet his disciple appeared like this…</p>
 <p class="orv_line">Kyrgios' eyes narrowed as he spoke.</p>
-<div class="orv_constellation"><p>[There are traces of the Breaking the Sky Swordsmanship from your wounds.]</p></div>
+<div class="orv_constellation"><p>There are traces of the Breaking the Sky Swordsmanship from your wounds.</p></div>
 <p class="orv_line">"…"</p>
-<div class="orv_constellation"><p>[Did you encounter the disciple of the Breaking the Sky Sword Saint? Or was it the Breaking the Sky Sword Saint?]</p></div>
+<div class="orv_constellation"><p>Did you encounter the disciple of the Breaking the Sky Sword Saint? Or was it the Breaking the Sky Sword Saint?</p></div>
 <p class="orv_line">The disciple didn't answer. Kyrgios' force became stronger.</p>
-<div class="orv_constellation"><p>[Answer me.]</p></div>
+<div class="orv_constellation"><p>Answer me.</p></div>
 <p class="orv_line">The entire industrial complex wriggled like a trampled bug. The presence spread and all the Kim Dokjas in the industrial complex kneeled from the pain. It was just a wave of magic power but it was like he showed off his 'status'. This was the presence of the Paradox Baekchung. The only one who didn't kneel was his disciple.</p>
 <p class="orv_line">"I didn't want you to see me like this."</p>
-<div class="orv_constellation"><p>[What does that mean?]</p></div>
+<div class="orv_constellation"><p>What does that mean?</p></div>
 <p class="orv_line">"I have defiled the name of Baekchung."</p>
-<div class="orv_constellation"><p>[…]</p></div>
+<div class="orv_constellation"><p>…</p></div>
 <p class="orv_line">"Please kill me."</p>
 <p class="orv_line">Kyrgios' eyebrows wriggled at the words. It was because he remembered the message he received before coming here.</p>
 <p class="orv_line">–Please kill me.</p>
 <p class="orv_line">Kyrgios small teeth made a sound as they grinded together.</p>
-<div class="orv_constellation"><p>[It is true that I came to punish you. But…]</p></div>
+<div class="orv_constellation"><p>It is true that I came to punish you. But…</p></div>
 <p class="orv_line">His disciple was beaten up in a distant place. Moreover, it was a situation where his disciple told him to kill him because his disciple couldn't overcome the disgrace.</p>
 <p class="orv_line">In such a situation, what type of teacher could punish his student? There would certainly be such a teacher but at the very least, Kyrgios wasn't like that.</p>
-<div class="orv_constellation"><p>[…Why are you so keen to be killed?]</p></div>
+<div class="orv_constellation"><p>…Why are you so keen to be killed?</p></div>
 <p class="orv_line">"…"</p>
-<div class="orv_constellation"><p>[Foolish guy.]</p></div>
+<div class="orv_constellation"><p>Foolish guy.</p></div>
 <p class="orv_line">Kyrgios turned his back to his disciple. He didn't know what happened to his prideful disciple but he would find out if he went to Murim.</p>
-<div class="orv_constellation"><p>[Did you say it was the First Murim?]</p></div>
+<div class="orv_constellation"><p>Did you say it was the First Murim?</p></div>
 <p class="orv_line">His disciple didn't answer but Kyrgios was already moving.</p>
-<div class="orv_constellation"><p>[That world will know that there is a 'paradox' above the 'breaking the sky'.]</p></div>
+<div class="orv_constellation"><p>That world will know that there is a 'paradox' above the 'breaking the sky'.</p></div>
 <br>
 <hr>
 <br>
@@ -240,7 +247,7 @@
 <p class="orv_line">"What if he kills the Breaking the Sky Sword Saint?"</p>
 <p class="orv_line">"Don't worry about it." I responded while placing a story fragment on the wounds caused by Jang Hayoung.</p>
 <p class="orv_line">It seemed that Kyrgios was going to get revenge for me but it remained to be seen how things would turn out. A transcendent of Kyrgios' level would notice the trouble occurring in the First Murim.</p>
-<div class="orv_system"><p>[You have triggered a new sub scenario.]</p></div>
+<div class="orv_system"><p>You have triggered a new sub scenario.</p></div>
 <p class="orv_line">Perhaps by now, Kyrgios would've gained a sub scenario to intervene in the First Murim. Kyrgios was also unhappy with the outer gods. Once he found out the situation, he would be forced to help the Breaking the Sky Sword Saint.</p>
 <p class="orv_line">"You should be more worried about us."</p>
 <p class="orv_line">"What? Why?"</p>
@@ -248,32 +255,32 @@
 <p class="orv_line">Despite the countless crises I had experienced, I didn't call Kyrgios thought Jang Hayoung. I originally intended to call him during the Demon King Selection.</p>
 <p class="orv_line">However, I used that card to save the Breaking the Sky Sword Saint. I didn't know if it was the wrong choice but at least it was an honourable choice.</p>
 <p class="orv_line">I looked up at the night sky.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is watching you with anxious eyes.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is watching you with anxious eyes.</p></div>
 <p class="orv_line">Some stars were worried about me.</p>
-<div class="orv_system"><p>[Some constellations are smiling at you.]</p></div>
+<div class="orv_system"><p>Some constellations are smiling at you.</p></div>
 <p class="orv_line">Some stars were taking my crisis as an opportunity. I smiled bitterly towards those stars. "If you've seen enough, can you make a decision now?"</p>
 <p class="orv_line">I took a deep breath and declared towards the sky. "I'm the real Kim Dokja."</p>
 <p class="orv_line">The conversation with Kyrgios was open to the public and no further proof was needed. The stars in the night sky shone at the same time.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' admits that you are the real Kim Dokja.]</p></div>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' admits that you are the real Kim Dokja.]</p></div>
-<div class="orv_system"><p>[The constellation Queen of the Darkest Spring admits that you are the real Kim Dokja.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' admits that you are the real Kim Dokja.</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' admits that you are the real Kim Dokja.</p></div>
+<div class="orv_system"><p>The constellation Queen of the Darkest Spring admits that you are the real Kim Dokja.</p></div>
 <p class="orv_line">.</p>
 <p class="orv_line">.</p>
-<div class="orv_system"><p>[A very small number of constellations disagree with the results.]</p></div>
+<div class="orv_system"><p>A very small number of constellations disagree with the results.</p></div>
 <p class="orv_line">Those who wanted something else disagreed but this was a majority vote.</p>
-<div class="orv_system"><p>[Many constellations recognize you as the real Kim Dokja.]</p></div>
-<div class="orv_system"><p>[You have been recognized as the real Kim Dokja.]</p></div>
-<div class="orv_system"><p>[The hidden scenario has been completed!]</p></div>
-<div class="orv_system"><p>[200,000 coins have been acquired as a scenario reward.]</p></div>
+<div class="orv_system"><p>Many constellations recognize you as the real Kim Dokja.</p></div>
+<div class="orv_system"><p>You have been recognized as the real Kim Dokja.</p></div>
+<div class="orv_system"><p>The hidden scenario has been completed!</p></div>
+<div class="orv_system"><p>200,000 coins have been acquired as a scenario reward.</p></div>
 <p class="orv_line">The faces of the aspiring Kim Dokjas started to change one by one. The mosaic scattered and their real faces were exposed to the sky. For the first time, the citizens confirmed the true owner of the industrial complex and cried out with amazement. "Kim Dokja! The real Kim Dokja!"</p>
 <p class="orv_line">"T-The master of this industrial complex is back…!"</p>
 <p class="orv_line">More messages popped up.</p>
-<div class="orv_system"><p>[You have formally inherited the former Gilobat Industrial Complex.]</p></div>
-<div class="orv_system"><p>[The former Gilobat Industrial Complex has been officially declared as the Kim Dokja Industrial Complex.]</p></div>
-<div class="orv_system"><p>[Your notoriety is spreading in the Demon Realm!]</p></div>
-<div class="orv_system"><p>[Your fame is strengthening your current stories.]</p></div>
+<div class="orv_system"><p>You have formally inherited the former Gilobat Industrial Complex.</p></div>
+<div class="orv_system"><p>The former Gilobat Industrial Complex has been officially declared as the Kim Dokja Industrial Complex.</p></div>
+<div class="orv_system"><p>Your notoriety is spreading in the Demon Realm!</p></div>
+<div class="orv_system"><p>Your fame is strengthening your current stories.</p></div>
 <p class="orv_line">A bright light surrounded my body and my stories were further strengthened.</p>
-<div class="orv_system"><p>[You are the 'duke' of the industrial complex.]</p></div>
+<div class="orv_system"><p>You are the 'duke' of the industrial complex.</p></div>
 <p class="orv_line">Soon, a lonely fight would begin.</p>
 <br>
 <hr>
@@ -289,7 +296,7 @@
 <p class="orv_line">"A war can't be fought alone. Don't you know?"</p>
 <p class="orv_line">"It is foolish to hold onto those who have no will to fight."</p>
 <p class="orv_line">Most of them would die from the penalty of 'leaving the scenario area'. Even so, they decided to move. It meant the situation was desperate.</p>
-<div class="orv_system"><p>[The population of the industrial complex is decreasing and the power of the Factory is reduced.]</p></div>
+<div class="orv_system"><p>The population of the industrial complex is decreasing and the power of the Factory is reduced.</p></div>
 <p class="orv_line">The story weapon, the Factory was maintained through the work of the citizens. It was natural for the power to go down once the labour force shrank. However, I spoke like it wasn't a big deal. "We can't see the outcome with just the power of the industrial complex. The main focus of the enemy isn't the industrial complex anyway."</p>
 <p class="orv_line">I had to deal with Melledon and Bercan. Melledon had joined hands with Vedas while Bercan was working with Papyrus.</p>
 <p class="orv_line">It shouldn't be a direct alliance with the nebulae based on the scale of the alliance. They had probably just contracted with some constellations of the nebulae.</p>
@@ -298,17 +305,17 @@
 <p class="orv_line">To be honest, the odds weren't very high. I had just become a constellation and it would be suicidal to fight them, even with Yoo Joonghyuk's help.</p>
 <p class="orv_line">"I have a way."</p>
 <p class="orv_line">I couldn't say it now. There were too many eyes watching.</p>
-<div class="orv_system"><p>[Many constellations are admiring your ambition!]</p></div>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is wondering what that means.]</p></div>
-<div class="orv_system"><p>[2,000 coins have been sponsored.]</p></div>
+<div class="orv_system"><p>Many constellations are admiring your ambition!</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is wondering what that means.</p></div>
+<div class="orv_system"><p>2,000 coins have been sponsored.</p></div>
 <p class="orv_line">In fact, there were a few things that I had thought about. It would've been impossible before but now it was possible. Before I could use these methods, there was something I had to check first.</p>
-<div class="orv_system"><p>[The Fourth Wall is wriggling.]</p></div>
+<div class="orv_system"><p>The Fourth Wall is wriggling.</p></div>
 <p class="orv_line">It read my mind and responded. I slowly blinked as I thought, 'I need your help'.</p>
 <p class="orv_line">It would know what I wanted to say without me needing to open my mouth.</p>
 <p class="orv_line">'Let me see my Attributes Window'.</p>
 <p class="orv_line">Until now, I have somehow fought without properly knowing my information.</p>
 <p class="orv_line">Until now.</p>
-<div class="orv_system"><p>[The Fourth Wall is shaking nervously.]</p></div>
+<div class="orv_system"><p>The Fourth Wall is shaking nervously.</p></div>
 <p class="orv_line">It would be difficult to do so from now on. It would be hard to know the enemy without knowing myself. I already knew a bit about the enemy so I had to know about 'myself'.</p>
 <br>
 <hr>
@@ -317,18 +324,12 @@
             <a href="./ch_252"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_254">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="253" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="321" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="252" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="252" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

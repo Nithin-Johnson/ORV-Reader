@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 519: Epilogue 1 - The World of Zero, III</title>
     <meta property="og:title" content="Ch 519: Epilogue 1 - The World of Zero, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,38 +177,38 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00519.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 519: Epilogue 1 - The World of Zero, III</h1></div>
-<div class="orv_system"><p>[Currently, the applicable regression turn is under the 'Overwrite restriction'.]</p></div>
-<div class="orv_system"><p>[Currently, the applicable world-line's copyright holder is absent.]</p></div>
-<div class="orv_system"><p>[As the owner of the 'Final Wall', you can act as the substitute copyright holder.]</p></div>
-<div class="orv_system"><p>[Will you activate 'Overwrite' to interfere with the worldview?]</p></div>
-<p class="orv_line">The warning messages floated up one after the other in the empty air. Almost at the same time, [The Fourth Wall]'s voice entered my ears.</p>
+<div class="orv_system"><p>Currently, the applicable regression turn is under the 'Overwrite restriction'.</p></div>
+<div class="orv_system"><p>Currently, the applicable world-line's copyright holder is absent.</p></div>
+<div class="orv_system"><p>As the owner of the 'Final Wall', you can act as the substitute copyright holder.</p></div>
+<div class="orv_system"><p>Will you activate 'Overwrite' to interfere with the worldview?</p></div>
+<p class="orv_line">The warning messages floated up one after the other in the empty air. Almost at the same time, <strong>[The Fourth Wall]</strong>'s voice entered my ears.</p>
 <p class="orv_line">⸢Kim Dok ja⸥</p>
 <p class="orv_line">'…I know already, so stop trying to scare me'.</p>
-<p class="orv_line">I could already tell what [The Fourth Wall] was going to say. Probably, it'd be something along the line of there's no meaning in changing the predetermined past.</p>
+<p class="orv_line">I could already tell what <strong>[The Fourth Wall]</strong> was going to say. Probably, it'd be something along the line of there's no meaning in changing the predetermined past.</p>
 <p class="orv_line">⸢…⸥</p>
 <p class="orv_line">I sensed a certain glare squarely locking onto me from the empty air, but I tried my best to ignore that.</p>
-<p class="orv_line">Although I had no clue how the original 0th turn unfolded, if the paragraph I read in passing inside [The Fourth Wall]'s library was true, then… The 0th turn's Yoo Joonghyuk shouldn't select his backer until much later.</p>
+<p class="orv_line">Although I had no clue how the original 0th turn unfolded, if the paragraph I read in passing inside <strong>[The Fourth Wall]</strong>'s library was true, then… The 0th turn's Yoo Joonghyuk shouldn't select his backer until much later.</p>
 <p class="orv_line">He would lose Lee Seolhwa and Lee Jihye during this turn.</p>
 <p class="orv_line">He'd lose the ones precious to him, those he barely managed to meet, and then…</p>
 <p class="orv_line">…And then, he'd desperately think about this one thing as his death approached him.</p>
@@ -216,41 +223,41 @@
 <p class="orv_line">It was quite likely that the cause of this event was the younger me not knowing anything about Yoo Joonghyuk's 0th turn. Whatever the case might have been, one thing's for certain; at the very least, I could take on that role during this world-line.</p>
 <p class="orv_line">I could become Yoo Joonghyuk's sponsor during this world-line.</p>
 <p class="orv_line">⸢Wi ll y ou ma ke him re gre ss?⸥</p>
-<p class="orv_line">[The Fourth Wall] asked as if it was intrigued. I shook my head.</p>
+<p class="orv_line"><strong>[The Fourth Wall]</strong> asked as if it was intrigued. I shook my head.</p>
 <p class="orv_line">'No. I'll make sure he doesn't'.</p>
 <p class="orv_line">⸢Ev en if he's cha nged, the fu ture won't…⸥</p>
 <p class="orv_line">'I know. That's why I feel even more relieved'.</p>
 <p class="orv_line">The past I changed wouldn't deny the Yoo Joonghyuk I know of.</p>
 <p class="orv_line">⸢If Yoo Joonghyuk got to experience a regression turn that wasn't tragic, even if it's just once…⸥</p>
 <p class="orv_line">I slowly extended my hand towards the air.</p>
-<div class="orv_system"><p>['Overwrite' has commenced!]</p></div>
-<div class="orv_system"><p>[Interfering with the applicable worldview has begun!]</p></div>
-<div class="orv_system"><p>[As your mastery over the dream is insufficient, currently it's impossible to interfere too aggressively.]</p></div>
+<div class="orv_system"><p>'Overwrite' has commenced!</p></div>
+<div class="orv_system"><p>Interfering with the applicable worldview has begun!</p></div>
+<div class="orv_system"><p>As your mastery over the dream is insufficient, currently it's impossible to interfere too aggressively.</p></div>
 <p class="orv_line">As the sparks exploded with a loud 'Tsu-chuchuchut!', messages popped up one after the other.</p>
-<div class="orv_system"><p>[The 'Demon King of Salvation' is registering his temporary Constellation name.]</p></div>
-<div class="orv_system"><p>[You're currently participating in the 'sponsor selection' as a Constellation.]</p></div>
-<div class="orv_system"><p>[&lt;Star Stream&gt;'s system is suspicious of your eligibility.]</p></div>
-<div class="orv_system"><p>[Low-grade Dokkaebi 'Bihyung' finds your Modifier unfamiliar.]</p></div>
-<div class="orv_system"><p>[Small number of Constellations are flustered by your sudden entrance!]</p></div>
+<div class="orv_system"><p>The 'Demon King of Salvation' is registering his temporary Constellation name.</p></div>
+<div class="orv_system"><p>You're currently participating in the 'sponsor selection' as a Constellation.</p></div>
+<div class="orv_system"><p>&lt;Star Stream&gt;'s system is suspicious of your eligibility.</p></div>
+<div class="orv_system"><p>Low-grade Dokkaebi 'Bihyung' finds your Modifier unfamiliar.</p></div>
+<div class="orv_system"><p>Small number of Constellations are flustered by your sudden entrance!</p></div>
 <p class="orv_line">I bit down on my lip while observing Yoo Joonghyuk's pale expression.</p>
 <p class="orv_line">This might prove to be a bad decision. Yoo Joonghyuk might end up even more miserable because I changed this world-line.</p>
 <p class="orv_line">However, if it was the me of right now…</p>
-<div class="orv_constellation"><p>[Ho-oh-ra, the 'Demon King of Salvation'? Well now, a new Constellation-nim has decided to enter the stage!]</p></div>
+<div class="orv_constellation"><p>Ho-oh-ra, the 'Demon King of Salvation'? Well now, a new Constellation-nim has decided to enter the stage!</p></div>
 <p class="orv_line">If it was Kim Dokja the 'Oldest Dream' who had witnessed the end of one world and had the knowledge of the scenario's epilogues, then wouldn't it be possible to change the predetermined destiny?</p>
-<div class="orv_constellation"><p>[Looks like we might need to extend the time since the candidates have increased.]</p></div>
+<div class="orv_constellation"><p>Looks like we might need to extend the time since the candidates have increased.</p></div>
 <p class="orv_line">Bihyung updated the message floating in mid-air.</p>
-<div class="orv_system"><p>[Sponsor selection time period has been extended by 5 minutes.]</p></div>
+<div class="orv_system"><p>Sponsor selection time period has been extended by 5 minutes.</p></div>
 <p class="orv_line">The survivors in the near vicinity, having somehow lived through that ordeal, began opening their mouths one by one.</p>
 <p class="orv_line">"…Just what is all this?"</p>
 <p class="orv_line">"Sponsor selection, is it…"</p>
 <p class="orv_line">I didn't find it weird since I had read the 'Ways of Survival' before, but still, I could guess how confused they must feel after facing a situation like this for the first time ever.</p>
-<div class="orv_system"><p>[Incarnation 'Yoo Joonghyuk' is activating his attribute!]</p></div>
+<div class="orv_system"><p>Incarnation 'Yoo Joonghyuk' is activating his attribute!</p></div>
 <p class="orv_line">In the midst of all this, only Yoo Joonghyuk was regaining his cool. His calm eyes were proof of that.</p>
 <p class="orv_line">…Well, I'm getting curious about what he's thinking here, so.</p>
-<div class="orv_system"><p>[Exclusive skill, 'Omniscient Reader's Viewpoint Lv.???', is activating!]</p></div>
+<div class="orv_system"><p>Exclusive skill, 'Omniscient Reader's Viewpoint Lv.???', is activating!</p></div>
 <p class="orv_line">Although I felt a bit sorry about taking a peek inside the feeble 0th turn's head, I simply had to look this time. What if, in a one-in-a-million chance, he chose a different backer, then…</p>
-<div class="orv_system"><p>[You are the 'Oldest Dream'.]</p></div>
-<div class="orv_system"><p>[You can utilise 100 percent of your skill's abilities regardless of your understanding on the target!]</p></div>
+<div class="orv_system"><p>You are the 'Oldest Dream'.</p></div>
+<div class="orv_system"><p>You can utilise 100 percent of your skill's abilities regardless of your understanding on the target!</p></div>
 <p class="orv_line">The inside of Yoo Joonghyuk's head spread out like an anatomy chart.</p>
 <p class="orv_line">⸢What about Mia? What happened to her?⸥</p>
 <p class="orv_line">⸢I must rescue Mia.⸥</p>
@@ -259,13 +266,13 @@
 <p class="orv_line">I grew slightly tense.</p>
 <p class="orv_line">During the original 0th turn, this guy apparently didn't choose anyone as his backer this early on, but that'd always be nothing more than a story from the original. No one could tell what might happen this time.</p>
 <p class="orv_line">Unexpectedly though, it wasn't Yoo Joonghyuk displaying his interest in me, but other Constellations.</p>
-<div class="orv_system"><p>[Constellation, 'God of Wine and Ecstasy', is greeting you.]</p></div>
-<div class="orv_system"><p>[Constellation, 'God of Wine and Ecstasy', thinks your Modifier is a cool one.]</p></div>
+<div class="orv_system"><p>Constellation, 'God of Wine and Ecstasy', is greeting you.</p></div>
+<div class="orv_system"><p>Constellation, 'God of Wine and Ecstasy', thinks your Modifier is a cool one.</p></div>
 <p class="orv_line">It seemed that Dionysus's outgoing personality was the same regardless of the regression turns. If he didn't yield to us back in the Final Ark, the ensuing battle would've been so much harder.</p>
 <p class="orv_line">Just as I was about to greet him back, someone else butted in.</p>
-<div class="orv_system"><p>[Constellation, 'Abyssal Black Flame Dragon' is keeping his eyes on you.]</p></div>
+<div class="orv_system"><p>Constellation, 'Abyssal Black Flame Dragon' is keeping his eyes on you.</p></div>
 <p class="orv_line">…Now that I thought about it, this dude was also here, wasn't he? Hey, you, aren't you supposed to be eyeing Kim Namwoon in the next subway car? Just how many bridges are you planning to straddle here?</p>
-<div class="orv_system"><p>[Constellation, 'Abyssal Black Flame Dragon', thinks you are copying from his Modifier.]</p></div>
+<div class="orv_system"><p>Constellation, 'Abyssal Black Flame Dragon', thinks you are copying from his Modifier.</p></div>
 <p class="orv_line">I was about to ask just which part sounded the same to him, but in the end, held back. Only three minutes remained; no need to waste my energy on something completely unnecessary.</p>
 <p class="orv_line">I shifted my head to discover that Yoo Joonghyuk had begun considering his choices earnestly.</p>
 <p class="orv_line">I swallowed back my nervous saliva.</p>
@@ -293,20 +300,20 @@
 <p class="orv_line">⸢Maybe, it might be an unexpectedly powerful sponsor.⸥</p>
 <p class="orv_line">It's true that he's powerful, but… That guy, he makes his Incarnations recite weird summoning spells, you know?</p>
 <p class="orv_line">Hey, Joonghyuk-ah, please open your eyes properly and take a closer look. The only ones that can handle this guy are Kim Namwoon or Han Sooyoung, that's it.</p>
-<div class="orv_system"><p>[Constellation, 'Abyssal Black Flame Dragon', is boasting in your direction.]</p></div>
-<div class="orv_system"><p>[One minute remaining until the conclusion of the sponsor selection.]</p></div>
+<div class="orv_system"><p>Constellation, 'Abyssal Black Flame Dragon', is boasting in your direction.</p></div>
+<div class="orv_system"><p>One minute remaining until the conclusion of the sponsor selection.</p></div>
 <p class="orv_line">And finally, Yoo Joonghyuk's eyes landed on the fourth candidate.</p>
 <div class="orv_window">
 <p>4. Demon King of Salvation</p>
 </div>
 <p class="orv_line">I barely managed to calm my mind and along with Yoo Joonghyuk, looked at the backer selection list from behind him.</p>
 <p class="orv_line">The God of Wine and Ecstasy, Mouse that Eats Fingernails, Abyssal Black Flame Dragon, and the Demon King of Salvation…</p>
-<p class="orv_line">'[The Fourth Wall], what do you think?'</p>
-<p class="orv_line">As if it didn't get the intention behind the question, [The Fourth Wall] took its time answering back.</p>
+<p class="orv_line">'<strong>[The Fourth Wall]</strong>, what do you think?'</p>
+<p class="orv_line">As if it didn't get the intention behind the question, <strong>[The Fourth Wall]</strong> took its time answering back.</p>
 <p class="orv_line">'What I'm asking you is, who sounds strongest to you?'</p>
 <p class="orv_line">⸢Th at is…⸥</p>
 <p class="orv_line">'Not including the actual combat prowess, just judging from the Modifiers alone'.</p>
-<p class="orv_line">I thought that a reply should be forthcoming pretty quickly, but it seemed that [The Fourth Wall] was actually in a dilemma here.</p>
+<p class="orv_line">I thought that a reply should be forthcoming pretty quickly, but it seemed that <strong>[The Fourth Wall]</strong> was actually in a dilemma here.</p>
 <p class="orv_line">I didn't wait and spoke up first. 'Not saying this because I'm the ⸢Demon King of Salvation⸥, but in truth, and also, objectively speaking…'</p>
 <p class="orv_line">Hang on, no need to look at it objectively, either. Just think about it logically.</p>
 <p class="orv_line">The God of Wine and Ecstasy? He simply sounded like a drunkard.</p>
@@ -320,9 +327,9 @@
 <p class="orv_line">Even before I could shout something out, Yoo Joonghyuk shot up from his spot and spoke. "I've made up my mind. I will…"</p>
 <p class="orv_line">As he formed a triumphant grin, his lips slowly parted.</p>
 <p class="orv_line">I silently stared at the subway's ceiling. Accompanied by the 'Tsu-chuchuchut!' noise, vicious heat burned on my hand.</p>
-<div class="orv_constellation"><p>[You're interfering in the world-line.]</p></div>
-<div class="orv_system"><p>['Overwrite' has commenced.]</p></div>
-<div class="orv_system"><p>[Excessive interference might cause the world-line to strongly resist…]</p></div>
+<div class="orv_constellation"><p>You're interfering in the world-line.</p></div>
+<div class="orv_system"><p>'Overwrite' has commenced.</p></div>
+<div class="orv_system"><p>Excessive interference might cause the world-line to strongly resist…</p></div>
 <p class="orv_line">I used all of my strength to smack the back of Yoo Joonghyuk's head.</p>
 <br>
 <hr>
@@ -342,7 +349,7 @@
 <p class="orv_line">"Hurry up and let's go! I'm starving!"</p>
 <p class="orv_line">Kim Dokja saw this spectacle and finally remembered what today was.</p>
 <p class="orv_line">⸢This world's scenario had ended.⸥</p>
-<p class="orv_line">When he turned his head, he saw warm rays of sunlight seeping through the [Industrial Complex]'s windows.</p>
+<p class="orv_line">When he turned his head, he saw warm rays of sunlight seeping through the <strong>[Industrial Complex]</strong>'s windows.</p>
 <p class="orv_line">⸢And today was &lt;Kim Dokja's Company&gt;'s first field trip.⸥</p>
 <br>
 <hr>
@@ -376,7 +383,7 @@
 <p class="orv_line">Right in front of the Yeouinaru Station, Lee Seolhwa, wearing a white fur coat, was waving both of her hands with a bright smile. And next to her was Gong Pildu, staring in another direction with a cantankerous expression.</p>
 <p class="orv_line">"You didn't want to show up for so long that we thought you forgot about us again."</p>
 <p class="orv_line">Perhaps she felt guilty after hearing that, Jung Heewon quickly replied. "Eiii, there's no way that's true, though?"</p>
-<p class="orv_line">"…But, you did abandon us and returned to the [Industrial Complex] first, didn't you?"</p>
+<p class="orv_line">"…But, you did abandon us and returned to the <strong>[Industrial Complex]</strong> first, didn't you?"</p>
 <p class="orv_line">"Hmm, hmm. W-we did go back to find you later, didn't we?"</p>
 <p class="orv_line">"What do you mean, find us?! We only were able to come back because the librarians let us leave! Seriously, if I look back to that time, I still…"</p>
 <p class="orv_line">"What about Han Myungoh?"</p>
@@ -450,18 +457,12 @@
             <a href="./ch_518"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_520">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="519" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="571" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="518" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="518" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

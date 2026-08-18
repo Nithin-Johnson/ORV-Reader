@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 150: Ep. 29 - Constellation Banquet, V</title>
     <meta property="og:title" content="Ch 150: Ep. 29 - Constellation Banquet, V" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00150.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 150: Ep. 29 - Constellation Banquet, V</h1></div>
 <p class="orv_line">At the beginning of the Story Succession, six small rooms were created at the end of the stage. The number of rooms was exactly equal to the number of incarnations participating in the Story Succession.</p>
@@ -196,109 +203,109 @@
 <p class="orv_line">The system of the Story Succession was simple. The incarnations would communicate with the constellations through the Room of Secrets and hear all their conditions. Later, they would go up on the stage and announce the story they would receive.</p>
 <p class="orv_line">There was a nameplate that said 'Incarnation Kim Dokja'. I said towards Yoo Joonghyuk, "I'll see you later."</p>
 <p class="orv_line">Yoo Joonghyuk didn't respond and disappeared into his room. I entered the room and sat at a table, while the sounds from outside were completely cut off. It felt like the space was distorted.</p>
-<div class="orv_system"><p>[The Room of Secrets.]</p></div>
+<div class="orv_system"><p>The Room of Secrets.</p></div>
 <p class="orv_line">It was one of the most confidential places in the Star Stream. The things that happened here couldn't be seen by even the dokkaebis of the channel.</p>
-<div class="orv_system"><p>[You have become the master of the Room of Secrets for one hour.]</p></div>
-<div class="orv_system"><p>[You have been given the administrative rights of the Room of Secrets.]</p></div>
-<div class="orv_system"><p>[The maximum time you can use the Room of Secrets is one hour.]</p></div>
-<div class="orv_system"><p>[Please make contact with as many constellations as possible in this time.]</p></div>
+<div class="orv_system"><p>You have become the master of the Room of Secrets for one hour.</p></div>
+<div class="orv_system"><p>You have been given the administrative rights of the Room of Secrets.</p></div>
+<div class="orv_system"><p>The maximum time you can use the Room of Secrets is one hour.</p></div>
+<div class="orv_system"><p>Please make contact with as many constellations as possible in this time.</p></div>
 <p class="orv_line">I looked at the door with anticipation. Okay, who would be the first guest? Someone came through the door at this time. It was a floating yellow book with sacred scripture.</p>
-<div class="orv_system"><p>[Incarnation Kim Dokja. Select the Feast of Resurrection.]</p></div>
+<div class="orv_system"><p>Incarnation Kim Dokja. Select the Feast of Resurrection.</p></div>
 <p class="orv_line">…The first better was Indian mythology.</p>
 <br>
 <hr>
 <br>
-<div class="orv_system"><p>[The constellation 'Founder of Humanity' is looking at you.]</p></div>
+<div class="orv_system"><p>The constellation 'Founder of Humanity' is looking at you.</p></div>
 <p class="orv_line">The negotiator from Vedas was the constellation 'Manu', who had the modifier of 'Founder of Humanity'. I also knew Manu's story. Of course, it wasn't because I knew Indian myths but because of Ways of Survival.</p>
-<div class="orv_quote"><p>「 According to the Indian epic, Manu was the survivor of the great flood. In exchange for saving a fish, he was able to escape to the top of the Malaya Mountains in a ship prepared by the fish… 」</p></div>
+<div class="orv_quote"><p>According to the Indian epic, Manu was the survivor of the great flood. In exchange for saving a fish, he was able to escape to the top of the Malaya Mountains in a ship prepared by the fish…</p></div>
 <p class="orv_line">…I recalled this story and knew why Manu had come to negotiate. Manu was a constellation who frequently argued over the copyright for the 'Ark's Master' narrative with the constellations from Eden. In other words, this Manu was a specialist in copyright disputes among the constellations of Vedas.</p>
 <p class="orv_line">"…The Master of December 25th didn't come directly?"</p>
-<div class="orv_constellation"><p>[Do you think he is that free? Answer simply. Will you accept the Feast of Resurrection?]</p></div>
+<div class="orv_constellation"><p>Do you think he is that free? Answer simply. Will you accept the Feast of Resurrection?</p></div>
 <p class="orv_line">He was coming out with this attitude? In addition, the person in charge of the story, Mithra¹ didn't come.</p>
 <div class="orv_notice"><p>[1] Mithra, or Mitra, is an ancient Indo-Iranian deity associated with contracts, covenants, oaths, and the sun. He is also a judicial figure, a protector of truth (Asha), and the guardian of cattle, the harvest, and the waters. Mithra's worship spread from India to Persia and then to the Hellenic world and the Roman Empire</p></div>
-<div class="orv_constellation"><p>[If you have ears, you will know that Vedas is one of the biggest nebula. A myriad of myths are born in Vedas and many nebulae plagiarize our myths. Especially those Eden guys…]</p></div>
+<div class="orv_constellation"><p>If you have ears, you will know that Vedas is one of the biggest nebula. A myriad of myths are born in Vedas and many nebulae plagiarize our myths. Especially those Eden guys…</p></div>
 <p class="orv_line">"Those personal issues don't concern me. More importantly, if I accept the Feast of Resurrection, what can Vedas give me?"</p>
-<div class="orv_system"><p>[The protection of the sun god will be with you.]</p></div>
+<div class="orv_system"><p>The protection of the sun god will be with you.</p></div>
 <p class="orv_line">"What is the blessing of the sun god?"</p>
-<div class="orv_constellation"><p>[Do I have to explain everything to you? Insignificant mortal…!]</p></div>
+<div class="orv_constellation"><p>Do I have to explain everything to you? Insignificant mortal…!</p></div>
 <p class="orv_line">"I have one question."</p>
-<div class="orv_constellation"><p>[What?]</p></div>
+<div class="orv_constellation"><p>What?</p></div>
 <p class="orv_line">"Again with the 'insignificant mortal', don't you think it is an antiquated cliché? You all are constellations who love unconventional stories, yet just how long will you continue to look down on humans with such hackneyed lines?"</p>
 <p class="orv_line">Manu's eyes widened and he glared at me.</p>
-<div class="orv_constellation"><p>[How dare you talk such nonsense…!]</p></div>
+<div class="orv_constellation"><p>How dare you talk such nonsense…!</p></div>
 <p class="orv_line">"It is what I think."</p>
-<div class="orv_system"><p>[You have used the administrative rights of the Room of Secrets.]</p></div>
-<div class="orv_system"><p>[The constellation 'Founder of Humanity' has been expelled from the room!]</p></div>
+<div class="orv_system"><p>You have used the administrative rights of the Room of Secrets.</p></div>
+<div class="orv_system"><p>The constellation 'Founder of Humanity' has been expelled from the room!</p></div>
 <p class="orv_line">At my command, the Founder of Humanity was surrounded with a pale light and disappeared with a shout. He should've done well when he had the chance.</p>
 <p class="orv_line">I wouldn't be suppressed by force, even if the other person was a narrative-grade constellation. It might be different after the Story Succession but now I was the one with the advantage.</p>
 <p class="orv_line">"Next." I just finished speaking when someone else opened the door. It was a wanderer with an old crown. Who was this?</p>
-<div class="orv_constellation"><p>[Incarnation Kim Dokja, join Olympus.]</p></div>
+<div class="orv_constellation"><p>Incarnation Kim Dokja, join Olympus.</p></div>
 <p class="orv_line">These jerks, did they read an 'Incarnation Kim Dokja' manual or something?</p>
-<div class="orv_system"><p>[The constellation 'Poked Out His Eyes' is laughing at you.]</p></div>
+<div class="orv_system"><p>The constellation 'Poked Out His Eyes' is laughing at you.</p></div>
 <p class="orv_line">…Poked Out His Eyes?</p>
-<div class="orv_constellation"><p>[It looks like you know me.]</p></div>
+<div class="orv_constellation"><p>It looks like you know me.</p></div>
 <p class="orv_line">"I heard your story when I was a university student."</p>
-<div class="orv_constellation"><p>[Is that so? How unexpected. A small Oriental country…!]</p></div>
+<div class="orv_constellation"><p>Is that so? How unexpected. A small Oriental country…!</p></div>
 <p class="orv_line">'Poked Out His Eyes'. He was King Oedipus who was taught in liberal arts classes. A person hated by Sophocles.</p>
 <p class="orv_line">"By the way, I've already heard the proposal from the God of Wine and Ecstasy. You are here to tell me to join the Bacchus sect?"</p>
-<div class="orv_constellation"><p>[Bacchus? It seems that he has already approached.]</p></div>
+<div class="orv_constellation"><p>Bacchus? It seems that he has already approached.</p></div>
 <p class="orv_line">Something felt strange. Persephone attended the banquet for 'Olympus' while Dionysus told me not to believe anyone. Both of them didn't tell me to join Olympus. Yet King Oedipus was one of the first at this door.</p>
-<div class="orv_constellation"><p>[I'm not here about Bacchus. I didn't even come to exercise the copyright for the resurrection story.]</p></div>
+<div class="orv_constellation"><p>I'm not here about Bacchus. I didn't even come to exercise the copyright for the resurrection story.</p></div>
 <p class="orv_line">In other words, King Oedipus visited me for a reason that was completely different from the other constellations.</p>
 <p class="orv_line">…Maybe this might be the representative of the 'real' Olympus?</p>
-<div class="orv_system"><p>[The story that Olympus will present to you is Carnival of Lightning.]</p></div>
+<div class="orv_system"><p>The story that Olympus will present to you is Carnival of Lightning.</p></div>
 <p class="orv_line">"Huh?"</p>
 <p class="orv_line">I was shocked. Carnival of Lightning was the story of Zeus, one of the three leaders. Oedipus saw my expression and smiled strangely.</p>
-<div class="orv_constellation"><p>[It looks like you also know this story. Yes, you are right. The story we are suggesting is different from the resurrection stories of other nebulae.]</p></div>
+<div class="orv_constellation"><p>It looks like you also know this story. Yes, you are right. The story we are suggesting is different from the resurrection stories of other nebulae.</p></div>
 <p class="orv_line">"…Why are you offering me this?"</p>
-<div class="orv_constellation"><p>[It is because the three goddesses of fate have caught a glimpse of your fate.]</p></div>
+<div class="orv_constellation"><p>It is because the three goddesses of fate have caught a glimpse of your fate.</p></div>
 <p class="orv_line">…My fate.</p>
-<div class="orv_constellation"><p>[Sooner or later, you will be eligible to inherit the Carnival of Lightning. Of course, you could inherit my story and take the 'Blind Prophet' but… you are already rumoured to be a prophet and won't inherit my story.]</p></div>
+<div class="orv_constellation"><p>Sooner or later, you will be eligible to inherit the Carnival of Lightning. Of course, you could inherit my story and take the 'Blind Prophet' but… you are already rumoured to be a prophet and won't inherit my story.</p></div>
 <p class="orv_line">"Wait a minute. What do you mean? Why is my fate…"</p>
-<div class="orv_constellation"><p>[The decision is yours. However, you will definitely need Olympus. Well, until we meet again.]</p></div>
+<div class="orv_constellation"><p>The decision is yours. However, you will definitely need Olympus. Well, until we meet again.</p></div>
 <p class="orv_line">Oedipus disappeared from the room. My heart was a bit disturbed. I didn't know what the 'fate' Oedipus mentioned was like but if the three goddesses of fate were involved, something similar to what they saw would happen in the future.</p>
 <p class="orv_line">By the way, why was I suitable for inheriting the story of a Greek god? Their stories were inevitably…</p>
-<div class="orv_constellation"><p>[Hello?]</p></div>
+<div class="orv_constellation"><p>Hello?</p></div>
 <p class="orv_line">Something was about to flash through my head when a person entered my room. There was a fresh and sweet scent. A beautiful angel's face appeared in front of me. The female angel resembled a small demon.</p>
 <p class="orv_line">It seemed to be Eden's turn.</p>
 <p class="orv_line">"…I thought the Master of the Ark would come but you came personally."</p>
-<div class="orv_constellation"><p>[Are you upset that I came?]</p></div>
+<div class="orv_constellation"><p>Are you upset that I came?</p></div>
 <p class="orv_line">My heart thumped after I heard the voice.</p>
 <p class="orv_line">…Uriel was so cute.</p>
 <p class="orv_line">"Nope, it is nice."</p>
-<div class="orv_constellation"><p>[I wanted to see you! Kim Dokja.]</p></div>
+<div class="orv_constellation"><p>I wanted to see you! Kim Dokja.</p></div>
 <p class="orv_line">Uriel pulled me into a surprise embrace. Our arms touched and I could feel her skin through the thin silk she was wearing. A demon… this was a demon's touch. It was an open back dress, meaning there was nowhere to place my hands. Uriel rubbed my face like I was a lovely doll and I sighed.</p>
 <div class="orv_image"><img src="../../../assets/images/150 - Uriel pulled me into a surprise embrace.jpg" alt="" loading="lazy"></div>
 <div class="orv_notice"><p>* Official novel illustration (canonical)</p></div>
 <p class="orv_line">"I also… wanted to see you."</p>
-<div class="orv_constellation"><p>[Yes yes!]</p></div>
+<div class="orv_constellation"><p>Yes yes!</p></div>
 <p class="orv_line">It was a bit embarrassing but I was glad to meet her. Uriel was a constellation who had been with me since the beginning of the scenario.</p>
 <p class="orv_line">"You are here to offer me the Messiah's Path?"</p>
-<div class="orv_constellation"><p>[…Ah, right! I came because of it!]</p></div>
+<div class="orv_constellation"><p>…Ah, right! I came because of it!</p></div>
 <p class="orv_line">Uriel raised her head with surprise. It was an expression that showed she didn't remember why she came here. It seemed she was quite pleased to meet me.</p>
-<div class="orv_constellation"><p>[It must be because you are too handsome.]</p></div>
+<div class="orv_constellation"><p>It must be because you are too handsome.</p></div>
 <p class="orv_line">"Your words are convincing."</p>
 <p class="orv_line">Uriel smiled and said.</p>
-<div class="orv_constellation"><p>[Kim Dokja, will you accept Eden's story?]</p></div>
+<div class="orv_constellation"><p>Kim Dokja, will you accept Eden's story?</p></div>
 <p class="orv_line">"That… I need to think a bit."</p>
-<div class="orv_constellation"><p>[Why? Our story is the best! It isn't comparable to other places!]</p></div>
+<div class="orv_constellation"><p>Why? Our story is the best! It isn't comparable to other places!</p></div>
 <p class="orv_line">This was certainly true. The Messiah's Path was the best story in the resurrection system. There was one problem.</p>
 <p class="orv_line">"I will lose something precious if I accept that story."</p>
-<div class="orv_constellation"><p>[Eh? Ah. T-That's right. If you choose our story, you'll become an eunuch… That can't be.]</p></div>
+<div class="orv_constellation"><p>Eh? Ah. T-That's right. If you choose our story, you'll become an eunuch… That can't be.</p></div>
 <p class="orv_line">I didn't expect for her to be convinced, but unexpectedly, Uriel seemed greatly agitated as if it was something that personally affected her. Was it such a big deal for Uriel that I would become an eunuch? Why?</p>
-<div class="orv_constellation"><p>[W-What to do? Metatron said he won't let me use the internet if I don't bring in Kim Dokja… but if I take him, Kim Dokja will become an eunuch… if that happens… Oh, wait– Even if he becomes an eunuch, what if the position is switch a bit…?]</p></div>
+<div class="orv_constellation"><p>W-What to do? Metatron said he won't let me use the internet if I don't bring in Kim Dokja… but if I take him, Kim Dokja will become an eunuch… if that happens… Oh, wait– Even if he becomes an eunuch, what if the position is switch a bit…?</p></div>
 <p class="orv_line">…What position?</p>
-<div class="orv_constellation"><p>[O-Okay! Kim Dokja! Don't worry too much about this problem. I'll solve this one way or another…!]</p></div>
+<div class="orv_constellation"><p>O-Okay! Kim Dokja! Don't worry too much about this problem. I'll solve this one way or another…!</p></div>
 <p class="orv_line">Uriel had a look in her eyes as if she had made a big decision on her own. I sternly shook my head. "I don't want to be an eunuch."</p>
-<div class="orv_constellation"><p>[Yeah! So that is okay even if you became a eunuch–!]</p></div>
+<div class="orv_constellation"><p>Yeah! So that is okay even if you became a eunuch–!</p></div>
 <p class="orv_line">"Next."</p>
 <br>
 <hr>
 <br>
 <p class="orv_line">After that, many constellations visited me. There were places like Tamna and Guiok, as well as independent constellations.</p>
 <p class="orv_line">In particular, the historical-grade constellations of the Korean Peninsula gave me a lot of encouragement and didn't want me to establish a relationship with a particular nebula.</p>
-<div class="orv_constellation"><p>[You are the hope of our world.]</p></div>
-<div class="orv_constellation"><p>[Please don't bend your will.]</p></div>
+<div class="orv_constellation"><p>You are the hope of our world.</p></div>
+<div class="orv_constellation"><p>Please don't bend your will.</p></div>
 <p class="orv_line">Their hearts were understanding. The historical-grade constellations who had been suffering from the narrative-grade constellations were envious of me.</p>
 <p class="orv_line">The negotiation time soon ended. The incarnations went up to the stage one by one. It was time to review the proposed stories and determine which ones they would inherit.</p>
 <p class="orv_line">–Now, let's announce the result of the Story Succession! First, Selena Kim from the United States!</p>
@@ -319,9 +326,9 @@
 <p class="orv_line">I jumped up towards the stage. I grabbed the confused Yoo Joonghyuk's hand and raised it high into the sky.</p>
 <p class="orv_line">"I have something to say to you." I said while looking at the audience. The constellations looked astonished. I was able to see Uriel's expression, who seemed on the verge of fainting. I quickly glanced over the faces of the constellations.</p>
 <p class="orv_line">The reason why the Story Succession wasn't fair was because the succession of a story was done in the form of one-sided 'sponsorship'. The relationship between constellation and incarnation was never equal.</p>
-<div class="orv_system"><p>[The constellation 'Maritime War God' is focused on your words!]</p></div>
+<div class="orv_system"><p>The constellation 'Maritime War God' is focused on your words!</p></div>
 <p class="orv_line">The strength of the narrative-grade constellations differed from the historical-grade ones. Those who were in a nebulae looked down on others.</p>
-<div class="orv_system"><p>[The nebula 'Vedas' is focused on your words!]</p></div>
+<div class="orv_system"><p>The nebula 'Vedas' is focused on your words!</p></div>
 <p class="orv_line">"We have decided not to inherit your stories."</p>
 <p class="orv_line">An enormous silence descended on the audience. Many eyeballs popped out as pressure poured towards Yoo Joonghyuk. Yoo Joonghyuk stared at me as I held his hand.</p>
 <p class="orv_line">I grinned at him and told the constellations. "We will 'buy' your stories."</p>
@@ -335,18 +342,12 @@
             <a href="./ch_149"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_151">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="150" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="135" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="149" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="149" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

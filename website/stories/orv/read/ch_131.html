@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 131: Ep. 26 - Scenario Destroyer, I</title>
     <meta property="og:title" content="Ch 131: Ep. 26 - Scenario Destroyer, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,29 +177,29 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00131.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 131: Ep. 26 - Scenario Destroyer, I</h1></div>
-<div class="orv_system"><p>[200,000 coins have been acquired as compensation for your achievement.]</p></div>
-<div class="orv_system"><p>[We are currently discussing the compensation for the major contributors.]</p></div>
+<div class="orv_system"><p>200,000 coins have been acquired as compensation for your achievement.</p></div>
+<div class="orv_system"><p>We are currently discussing the compensation for the major contributors.</p></div>
 <p class="orv_line">After the death of Izumi, Yamata no Orochi's incarnation, the Japanese people immediately surrendered. The collapse of the Absolute Throne loosened the power controlling them and the hidden anti-disaster people started appearing.</p>
 <p class="orv_line">"Thank you, Kim Dokja."</p>
 <p class="orv_line">I recognized the speaker's face. The greeting was from one of the Japanese people that Yoo Joonghyuk visited, just like I found Asuka Ren. I nodded and greeted the speaker. "Kizuki Hiroshi."</p>
@@ -202,8 +209,8 @@
 <p class="orv_line">Of course I didn't hear it from Yoo Joonghyuk. I was aware of it because I read the original novel. If I remembered correctly, this person had a sponsor related to the myths of Susanoo and Yamata no Orochi.</p>
 <p class="orv_line">"You managed to kill the Sovereign of Eight Heads… Many things have been settled thanks to you. I will surely repay this kindness." Kizuki lead the remaining Japanese people and disappeared.</p>
 <p class="orv_line">The Japanese who chose to become disasters took advantage of the fact that they wouldn't die even when failing the scenario. Izumi was the incarnation of Yamata no Orochi but Kizuki was also a powerful and clever incarnation. He would be able to lead the incarnations well for the time being after returning to Tokyo Dome.</p>
-<div class="orv_system"><p>[A constellation born from the sea and storm has revealed his modifier.]</p></div>
-<div class="orv_system"><p>[The constellation 'Snake Cutter' has developed a great liking towards you.]</p></div>
+<div class="orv_system"><p>A constellation born from the sea and storm has revealed his modifier.</p></div>
+<div class="orv_system"><p>The constellation 'Snake Cutter' has developed a great liking towards you.</p></div>
 <p class="orv_line">The constellation 'Snake Cutter' was Susanoo, the original master of the SSS-grade item Totsuka-no-tsurugi.</p>
 <p class="orv_line">I glanced at the Totsuka-no-tsurugi that I gave back to Yoo Joonghyuk. Totsuka-no-tsurugi had been greatly damaged. It wasn't strange that it was said to have broken after killing Yamata no Orochi.</p>
 <p class="orv_line">Yoo Joonghyuk stared at me and the party members who had fallen asleep after eating the Ellain Forest's Vital Energy.</p>
@@ -221,8 +228,8 @@
 <p class="orv_line">"Hyung, it wasn't that hard." Lee Gilyoung interrupted and pushed Shin Yoosung away from my arms. Despite the arguing, the two children seemed quite familiar with each other. As expected, kids understood kids the best. It was worth leaving the two of them together.</p>
 <p class="orv_line">"You're popular with children." I looked at the small person who spoke. Was his name Gillemium? "There will be a royal banquet in the evening. The castle has almost collapsed and the scale will be very small but… I would like to invite you to attend."</p>
 <p class="orv_line">I looked up at the sky.</p>
-<div class="orv_system"><p>[Time remaining until the end of the scenario: 27 days.]</p></div>
-<div class="orv_system"><p>[The disasters have given up the scenario and the sixth scenario is scheduled for an early termination.]</p></div>
+<div class="orv_system"><p>Time remaining until the end of the scenario: 27 days.</p></div>
+<div class="orv_system"><p>The disasters have given up the scenario and the sixth scenario is scheduled for an early termination.</p></div>
 <p class="orv_line">It might take a bit of time because of the disasters scattered throughout the world. However, once Hiroshi went around Peace Land then the scenario would end automatically.</p>
 <p class="orv_line">A banquet…</p>
 <p class="orv_line">Was it to play and drink? Ah, then perhaps?</p>
@@ -233,35 +240,35 @@
 <p class="orv_line">"It looks like you are very fond of drinking."</p>
 <p class="orv_line">"Well… it's been hard to come across it these days."</p>
 <p class="orv_line">I brought out a lot of distilled spirits that remained in the warehouse with Gillemium's help. Peace Land's drinks had very low alcohol content so I needed a lot to make the drink I wanted.</p>
-<div class="orv_system"><p>[The constellation 'Snake Cutter' is interested in your brewing.]</p></div>
+<div class="orv_system"><p>The constellation 'Snake Cutter' is interested in your brewing.</p></div>
 <p class="orv_line">I poured alcohol into a bucket the size of a human, threw in all the ingredients I had and started to stir.</p>
-<div class="orv_system"><p>[Eighth Head of the Sovereign of Eight Heads.]</p></div>
-<div class="orv_system"><p>[Seventh Tail of the Sovereign of Eight Heads.]</p></div>
+<div class="orv_system"><p>Eighth Head of the Sovereign of Eight Heads.</p></div>
+<div class="orv_system"><p>Seventh Tail of the Sovereign of Eight Heads.</p></div>
 <p class="orv_line">These were items that came out when defeating Yamata no Orochi. They were fragments rather than proper body parts because the true body hadn't appeared. Still, they contained part of the constellation's power.</p>
 <p class="orv_line">It was only Yoo Joonghyuk who realized what I was going to do. "You know this hidden piece."</p>
 <p class="orv_line">"Aren't I a prophet? Now give me your sword."</p>
 <p class="orv_line">Yoo Joonghyuk knew what I was going to do and obediently offered his sword. I threw the Totsuka-no-tsurugi that I received from Yoo Joonghyuk into the alcohol. Originally it shouldn't be made like this but I used a shortcut. The Totsuka-no-tsurugi melted into the alcohol.</p>
-<div class="orv_system"><p>[Two stories give meaning to your actions.]</p></div>
-<div class="orv_system"><p>[The narrative of the Sovereign of Eight Heads and the Snake Cutter has been combined.]</p></div>
-<div class="orv_system"><p>[Some parts of the story are damaged due to incorrect transmission.]</p></div>
+<div class="orv_system"><p>Two stories give meaning to your actions.</p></div>
+<div class="orv_system"><p>The narrative of the Sovereign of Eight Heads and the Snake Cutter has been combined.</p></div>
+<div class="orv_system"><p>Some parts of the story are damaged due to incorrect transmission.</p></div>
 <p class="orv_line">The damaged part was a bit disappointing but it couldn't be helped.</p>
-<div class="orv_system"><p>[The narrative of Ame no Murakumo no Tsurugi is expressed!]</p></div>
+<div class="orv_system"><p>The narrative of Ame no Murakumo no Tsurugi is expressed!</p></div>
 <p class="orv_line">According to the stories, Ame no Murakumo no Tsurugi was the sword that came out of the tail of a drunk Yamata no Orochi. However, it was possible to acquire it using a shortcut. In any case, I just needed to drink.</p>
 <p class="orv_line">Lee Jihye asked doubtfully, "Why did you throw the sword into the precious alcohol?"</p>
 <p class="orv_line">"Wait and see."</p>
 <p class="orv_line">A moment later, a mysterious aura flowed from the alcohol and a sword surrounded by a pure white light rose.</p>
-<div class="orv_system"><p>[The star relic 'Heavenly Sword of Gathering Clouds' has appeared!]</p></div>
+<div class="orv_system"><p>The star relic 'Heavenly Sword of Gathering Clouds' has appeared!</p></div>
 <p class="orv_line">As expected, it appeared. There was nothing wrong with the method from Ways of Survival.</p>
 <p class="orv_line">Yoo Joonghyuk reached out his hand. "This is mine."</p>
 <p class="orv_line">"Hey! We caught him together."</p>
 <p class="orv_line">"I was the one who caught him."</p>
 <p class="orv_line">Usually, I would've insisted, but Yoo Joonghyuk's eyes were serious this time. This son of a bitch…</p>
 <p class="orv_line">Of course, the relic itself wasn't my goal but it was still bitter to have the star relic taken away right in front of me. I couldn't fight him here so I gave up on the sword.</p>
-<div class="orv_system"><p>[The star relic 'Grass-Cutting Sword' has appeared!]</p></div>
+<div class="orv_system"><p>The star relic 'Grass-Cutting Sword' has appeared!</p></div>
 <p class="orv_line">A knife rose from the alcohol.</p>
 <p class="orv_line">…Eh?</p>
 <p class="orv_line">The contents of Ways of Survival flowed quickly through my head.</p>
-<div class="orv_quote"><p>「 Names give birth to narratives and narratives are reproduced in reality. In the world of the Star Stream, Ame no Murakumo no Tsurugi has a total of five names. In other words, Ame no Murakumo no Tsurugi isn't 'one sword'. 」</p></div>
+<div class="orv_quote"><p>Names give birth to narratives and narratives are reproduced in reality. In the world of the Star Stream, Ame no Murakumo no Tsurugi has a total of five names. In other words, Ame no Murakumo no Tsurugi isn't 'one sword'.</p></div>
 <p class="orv_line">I belatedly realized. Perhaps the name of Ame no Murakumo no Tsurugi was used for five things in total. In other words, one sword appeared in Ways of Survival and the other four weren't mentioned.</p>
 <p class="orv_line">I quickly grabbed the knife. "Then this is mine. Any complaints?"</p>
 <p class="orv_line">"That…" Yoo Joonghyuk's narrowed eyes stared at me before he turned away. "Do what you want."</p>
@@ -322,18 +329,12 @@
             <a href="./ch_130"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_132">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="131" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="417" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="130" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="130" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

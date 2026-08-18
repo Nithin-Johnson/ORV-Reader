@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 495: Ep. 94 - Beginning of the end, III</title>
     <meta property="og:title" content="Ch 495: Ep. 94 - Beginning of the end, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,67 +177,67 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00495.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 495: Ep. 94 - Beginning of the end, III</h1></div>
 <p class="orv_line">"…Hyung, it says that the reward is the 'Final Wall'."</p>
 <p class="orv_line">Lee Gilyoung catching up to us spoke in a puzzled voice. However, I too had no idea about this.</p>
-<p class="orv_line">The reward was the [Final Wall]…?</p>
+<p class="orv_line">The reward was the <strong>[Final Wall]</strong>…?</p>
 <p class="orv_line">I wasn't sure of what that vague description could mean – was us reaching the Final Wall the reward itself, or after the scenario ended, we'd be given the ownership of the wall?</p>
 <p class="orv_line">Besides, could someone even claim ownership of the concept of the Wall in the first place?</p>
 <p class="orv_line">Nothing was certain at the current juncture. But, it was a certainty that we'd reach the truth of this world when this scenario comes to an end.</p>
 <div class="orv_outergod"><p>【Please, go ahead.】</p></div>
 <p class="orv_line">Under the 999th turn's Lee Hyunsung's protection, the companions ran forward. As for the Constellations trying to chase us down, the 'Secretive Plotter' and the other Outer Gods blocked them.</p>
 <p class="orv_line">The ark was right before us. Destroying it would take us to the end of all scenarios.</p>
-<div class="orv_constellation"><p>[Stop them-!!]</p></div>
+<div class="orv_constellation"><p>Stop them-!!</p></div>
 <p class="orv_line">Starlight descended from the night sky once more. It was shocking to see that there were so many stars left still. It was also hard to tell just where these Constellations had been hiding all this time.</p>
-<div class="orv_constellation"><p>[It's the Outer God King! Kill him!]</p></div>
+<div class="orv_constellation"><p>It's the Outer God King! Kill him!</p></div>
 <p class="orv_line">Constellations pointed their weapons at me and jumped in. Even though they lived like puppets of large Nebulas and never truly cleared scenarios until now, they still managed to acquire the qualifications to enter the 'Final Scenario'.</p>
 <p class="orv_line">Surprisingly enough, some of them were either former or the current subscribers of my channel. Ones that donated something every now and then to urge me on – ones that desired powerful sources of cider, and asked me for more stimulating plot development.</p>
 <p class="orv_line">And now, they were standing against me.</p>
-<div class="orv_constellation"><p>[Kill him!]</p></div>
+<div class="orv_constellation"><p>Kill him!</p></div>
 <p class="orv_line">A few of my companions seemed to be surprised by their hostility towards us.</p>
 <p class="orv_line">Han Sooyoung couldn't hold it back in and opened her mouth. "You guys still hadn't exited yet?"</p>
 <p class="orv_line">What popped up in my head just then was the words the 'Mandala's Guardian' said to me back in the Isle of Reincarnators.</p>
 <p class="orv_line">⸢No matter how shoddy a story is, an existence hearing and watching it for a long time will grow to love it.⸥</p>
-<p class="orv_line">Back then, I didn't understand what he meant by that. I only thought that the 'Mandala's Guardian' saw the tragedy of the scenario called [Great War of Saints and Demons] in such a light, that's all.</p>
-<p class="orv_line">However, after I mulled over it some more, I realized that that statement probably didn't only apply to the [Great War].</p>
-<p class="orv_line">The Constellations originating from Japan and fought against us during [Peace Land] were incarnating before our eyes one by one. I even saw the 'Eight Pieces of Fire' Kagu-tsuchi and 'Controller of High and Low tides', the Water Dragon Ryujin.</p>
+<p class="orv_line">Back then, I didn't understand what he meant by that. I only thought that the 'Mandala's Guardian' saw the tragedy of the scenario called <strong>[Great War of Saints and Demons]</strong> in such a light, that's all.</p>
+<p class="orv_line">However, after I mulled over it some more, I realized that that statement probably didn't only apply to the <strong>[Great War]</strong>.</p>
+<p class="orv_line">The Constellations originating from Japan and fought against us during <strong>[Peace Land]</strong> were incarnating before our eyes one by one. I even saw the 'Eight Pieces of Fire' Kagu-tsuchi and 'Controller of High and Low tides', the Water Dragon Ryujin.</p>
 <p class="orv_line">The one confronting them among our companions was the protector of the skies.</p>
-<div class="orv_system"><p>[Incarnation, 'Lee Jihye', is unleashing her Status!]</p></div>
-<div class="orv_system"><p>[Constellation, 'Maritime War God', is unleashing his Status!]</p></div>
+<div class="orv_system"><p>Incarnation, 'Lee Jihye', is unleashing her Status!</p></div>
+<div class="orv_system"><p>Constellation, 'Maritime War God', is unleashing his Status!</p></div>
 <p class="orv_line">Along with the sensation of a boundless ocean spreading out, the surrounding stage was submerged in abundant Status. The opponents may be Narrative-grade Constellations, but the current Lee Jihye would never be pushed around by them.</p>
 <p class="orv_line">However, she didn't fire away and took a look in my direction instead.</p>
 <p class="orv_line">"Ahjussi."</p>
 <p class="orv_line">I too knew why she was hesitating like this.</p>
-<div class="orv_constellation"><p>[Go! If you can't be of any use, then go and blow yourselves up!]</p></div>
+<div class="orv_constellation"><p>Go! If you can't be of any use, then go and blow yourselves up!</p></div>
 <p class="orv_line">Constellations were pushing the backs of the Incarnations forward. These Incarnations from the Japanese side, their eyes blank, staggered towards us.</p>
 <p class="orv_line">Just before we could unsheathe our weapons, someone cried out from a nearby location.</p>
 <p class="orv_line">"Everyone, please wake up! Please, you must take a good look at who you're trying to fight against!"</p>
 <p class="orv_line">That was a voice I definitely recognised.</p>
-<p class="orv_line">"Izumi is dead, and Hiroshi also died. Just how many more must die before we all wake up? Have you all forgotten the tragedy back in the [Peace Land]?"</p>
+<p class="orv_line">"Izumi is dead, and Hiroshi also died. Just how many more must die before we all wake up? Have you all forgotten the tragedy back in the <strong>[Peace Land]</strong>?"</p>
 <p class="orv_line">It was Asuka Ren.</p>
-<div class="orv_system"><p>[Incarnation, 'Asuka Ren', has become the 'Enemy of the Story'.]</p></div>
+<div class="orv_system"><p>Incarnation, 'Asuka Ren', has become the 'Enemy of the Story'.</p></div>
 <p class="orv_line">Surprisingly enough, she had already chosen to side with us.</p>
-<div class="orv_system"><p>[Incarnation, 'Asuka Ren's', attribute, 'Mangaka' is activating!]</p></div>
+<div class="orv_system"><p>Incarnation, 'Asuka Ren's', attribute, 'Mangaka' is activating!</p></div>
 <p class="orv_line">Her sword moved like a pen.</p>
 <p class="orv_line">The moment her attribute came to life, Stories of not just me but the surrounding 'Nameless Ones' began shifting. Our broken Stories, the scattered phrases, were being woven into a single piece of footage.</p>
 <p class="orv_line">When I thought about it, it wasn't just Han Sooyoung who possessed 'author'-type attributes. Although different in some ways, Asuka Ren's attribute was also rather similar in other ways to hers.</p>
@@ -239,44 +246,44 @@
 <p class="orv_line">Incarnations half-controlled by their sponsors were about to attack us, but then, began dropping their weapons one by one. With terror-stricken expressions, they either plopped down on the ground or cried out in sorrow.</p>
 <p class="orv_line">"Can't… do this… I, I can't do this anymore…"</p>
 <p class="orv_line">Incarnations knelt down and muttered out while holding their heads. Meanwhile, the Constellations were exposed to danger in an instant after their puppets stopped listening to their commands. They hurriedly shouted out.</p>
-<div class="orv_constellation"><p>[G-get up! Hurry!]</p></div>
+<div class="orv_constellation"><p>G-get up! Hurry!</p></div>
 <p class="orv_line">Incarnations understood the pain of fellow Incarnations very well. Meaning, they were different from the Constellations that fell into the dime-a-dozen villainous roles after carrying out the scenarios for far too long.</p>
 <p class="orv_line">"Jihye-yah."</p>
 <p class="orv_line">Even before I could finish, the turtle ship fired its cannons.</p>
 <p class="orv_line">Kwa-aaaaaah!</p>
 <p class="orv_line">The group of the Constellations were swept away as the percussion noises resounded out. Some managed to endure, though, and soon collided with my companions.</p>
-<div class="orv_constellation"><p>[Uwaaaah!!]</p></div>
+<div class="orv_constellation"><p>Uwaaaah!!</p></div>
 <p class="orv_line">A faint light leaked out from the hull of the ark.</p>
 <p class="orv_line">We couldn't afford to let more Myth-grade Constellations wake up from their slumber within the vessel.</p>
-<p class="orv_line">Fortunately, our advancing speed was not slow at all. Yoo Joonghyuk's [Breaking the Sky Swordsmanship] and Han Sooyoung's [Black Flame] continued to assist me from the side and we made good headway.</p>
+<p class="orv_line">Fortunately, our advancing speed was not slow at all. Yoo Joonghyuk's <strong>[Breaking the Sky Swordsmanship]</strong> and Han Sooyoung's <strong>[Black Flame]</strong> continued to assist me from the side and we made good headway.</p>
 <p class="orv_line">If there was one thing tugging at my mind, it'd be the Probability.</p>
 <p class="orv_line">Tsu-chuchuchu…</p>
 <p class="orv_line">The Probability created out of the Coins donated by the Constellations…</p>
 <p class="orv_line">I looked up to find Biyoo controlling the channel with a pained grimace on her face. It hadn't been that long since she hatched as a Dokkaebi, so it was taking a lot out of her to exchange that many Coins into Probability. Stories began dripping out from her lips now.</p>
 <p class="orv_line">"We're almost there!"</p>
 <p class="orv_line">The unexpected event happened at the same time as Han Sooyoung's voice resounded out.</p>
-<div class="orv_system"><p>[The Bureau is exercising the authority to restrict the channel BY-9158!]</p></div>
+<div class="orv_system"><p>The Bureau is exercising the authority to restrict the channel BY-9158!</p></div>
 <p class="orv_line">Tsu-chuchuchuchut!</p>
 <p class="orv_line">At that moment, my heart grew cold.</p>
-<p class="orv_line">Originally, individual channels belonged to each Dokkaebi. However, the system called [channel] was a power founded upon the 'Giant Story' in the Bureau's possession.</p>
-<div class="orv_system"><p>[The Bureau is restricting the Coin donations to the channel BY-9158!]</p></div>
+<p class="orv_line">Originally, individual channels belonged to each Dokkaebi. However, the system called <strong>[channel]</strong> was a power founded upon the 'Giant Story' in the Bureau's possession.</p>
+<div class="orv_system"><p>The Bureau is restricting the Coin donations to the channel BY-9158!</p></div>
 <p class="orv_line">Suddenly, my movements became sluggish. It was the same for my companions. The tailwind pushing us from the back was swiftly changing into the headwind, instead.</p>
 <p class="orv_line">In the distance, I spotted the ten Great Dokkaebis raising their hands together at the heavens.</p>
 <p class="orv_line">"Those stinking sons of bitches…!"</p>
 <p class="orv_line">It seemed that Han Sooyoung had realized what was going on here.</p>
-<div class="orv_constellation"><p>[Baaaaaaht!]</p></div>
+<div class="orv_constellation"><p>Baaaaaaht!</p></div>
 <p class="orv_line">Biyoo let out a painful cry as if she got electrocuted and fell from the sky. Yoo Sangah dashed out way before I could and carefully caught the small falling figure.</p>
-<div class="orv_system"><p>[Constellation, 'Father of the Rich Night', is protesting against the cowardly action of the Bureau, and…!]</p></div>
-<div class="orv_system"><p>[Constellation, 'Queen of the Darkest Spring', is greatly enraged by the unfair treatment from the Bureau, and…!]</p></div>
-<div class="orv_system"><p>[Constellation, 'Demon-like Judge of Fire', is shouting out "Those ■tty Dokkaebi sons of bit■s should…!!"]</p></div>
+<div class="orv_system"><p>Constellation, 'Father of the Rich Night', is protesting against the cowardly action of the Bureau, and…!</p></div>
+<div class="orv_system"><p>Constellation, 'Queen of the Darkest Spring', is greatly enraged by the unfair treatment from the Bureau, and…!</p></div>
+<div class="orv_system"><p>Constellation, 'Demon-like Judge of Fire', is shouting out "Those ■tty Dokkaebi sons of bit■s should…!!"</p></div>
 <p class="orv_line">…</p>
 <p class="orv_line">Our channel was breaking down.</p>
-<p class="orv_line">The Great Dokkaebi Garang spoke up. [Your Story cannot be permitted. We simply cannot present such a Story to the 'Oldest Dream'.]</p>
+<p class="orv_line">The Great Dokkaebi Garang spoke up. <strong>[Your Story cannot be permitted. We simply cannot present such a Story to the 'Oldest Dream'.]</strong></p>
 <p class="orv_line">I failed to understand it. They had already become a part of the scenario, so they would be met with an incredible storm of aftermath simply by trying to exercise the Bureau's Giant Story.</p>
-<div class="orv_constellation"><p>[Horong, Noksu, we shall remember your sacrifices.]</p></div>
+<div class="orv_constellation"><p>Horong, Noksu, we shall remember your sacrifices.</p></div>
 <p class="orv_line">Two Great Dokkaebis were being extinguished in the middle of the sky. Debris of Story were falling off from Garang's figure, as well.</p>
 <p class="orv_line">I felt a chill run down my whole body. Only now did I realize how determined those damnable Great Dokkaebis were.</p>
-<div class="orv_system"><p>[&lt;Star Stream&gt;'s Probability is going through another rapid change!]</p></div>
+<div class="orv_system"><p>&lt;Star Stream&gt;'s Probability is going through another rapid change!</p></div>
 <p class="orv_line">The number of 'Nameless Ones' flooding the surroundings rapidly declined. Their faces, back to their original selves through the grace of the Probability, were reverting back to the heads of the monsters once more.</p>
 <div class="orv_outergod"><p>【…Hounds are coming.】</p></div>
 <p class="orv_line">Along with the 'Secretive Plotter's' declaration, all the kings from the 999th turns gathered in the centre. Those needing to exhaust an inordinate amount of Probability would invariably suffer greatly from the suspension of the donation.</p>
@@ -285,12 +292,12 @@
 <p class="orv_line">The 999th turn's Kim Namwoon roared out.</p>
 <p class="orv_line">Meanwhile, Yoo Joonghyuk cut down the Constellations rushing in at us and shouted out. "Kim Dokja!"</p>
 <p class="orv_line">I looked up to the sky. The atmosphere up there was suspicious. This change wasn't as simple as a Myth-grade Constellation controlling the weather. Something incredibly horrific that I had never experienced before was about to unfold here.</p>
-<div class="orv_constellation"><p>[Onsae, Heoche. Thank you for all your hard work until now.]</p></div>
+<div class="orv_constellation"><p>Onsae, Heoche. Thank you for all your hard work until now.</p></div>
 <p class="orv_line">Two more Great Dokkaebis were being extinguished now.</p>
 <p class="orv_line">⸢Great Dokkaebis were trying to end their story in this place.⸥</p>
 <p class="orv_line">Hair rose up on my arms. I had never felt fear on this level during my time carrying out the scenario.</p>
-<div class="orv_system"><p>[Oh, the 'Oldest Dream'!]</p></div>
-<p class="orv_line">The sky was opening up. I took a closer look before realizing that it actually wasn't the sky, but the wall – the [Final Wall] that surrounded the entire universe.</p>
+<div class="orv_system"><p>Oh, the 'Oldest Dream'!</p></div>
+<p class="orv_line">The sky was opening up. I took a closer look before realizing that it actually wasn't the sky, but the wall – the <strong>[Final Wall]</strong> that surrounded the entire universe.</p>
 <p class="orv_line">And now, something was crossing over the gap in the Wall resembling a torn page.</p>
 <p class="orv_line">⸢In that moment, Kim Dokja intuitively foresaw the destruction of this world.⸥</p>
 <p class="orv_line">My vocabulary was not good enough to adequately describe what that was. Just what was that?</p>
@@ -298,8 +305,8 @@
 <p class="orv_line">What I knew for certain, though, was that an unknown something was falling in this direction.</p>
 <p class="orv_line">Tsu-chuchuchuchu!</p>
 <p class="orv_line">For the briefest moment there, I thought I saw something like someone's 'hand' within the gap where that formless mass fell out from.</p>
-<div class="orv_system"><p>[Constellation, 'Demon-like Judge of Fire', is…!]</p></div>
-<div class="orv_system"><p>[Constellation, 'Abyssal Black Flame Dragon', is…!]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon-like Judge of Fire', is…!</p></div>
+<div class="orv_system"><p>Constellation, 'Abyssal Black Flame Dragon', is…!</p></div>
 <p class="orv_line">And now, only one thing was for certain – getting hit by that would kill us all.</p>
 <p class="orv_line">⸢Kim Dokja unleashed all of his Status.⸥</p>
 <p class="orv_line">Every 'Giant Story' in my possession began their storytelling simultaneously. I quickly looked back at my companions.</p>
@@ -311,7 +318,7 @@
 <p class="orv_line">Tsu-chuchuchuchut!</p>
 <p class="orv_line">Bihyung quietly stared at the Great Dokkaebis melting into the scenario one by one.</p>
 <p class="orv_line">Storytellers were becoming a part of the last scenario. As he stood there watching, both big and small lower-ranked Dokkaebis quickly rushed around him.</p>
-<div class="orv_constellation"><p>[Bihyung-nim! Just what is the meaning of…?]</p></div>
+<div class="orv_constellation"><p>Bihyung-nim! Just what is the meaning of…?</p></div>
 <p class="orv_line">The Bureau that had been maintaining a neutral stance until now began changing the entire aspect of the scenario through force.</p>
 <p class="orv_line">As a consequence, the topography of the Bureau was changing. The storages that contained Stories all broke down at the same time, and those infamous Constellations currently under arrest by the Bureau's security force were being freed as well.</p>
 <p class="orv_line">Bihyung stared at a certain Constellation right in the middle of this chaotic scene.</p>
@@ -326,24 +333,24 @@
 <p class="orv_line">Meanwhile, this stage would be annihilated with the descent of that fragment.</p>
 <p class="orv_line">⸢In that moment, Dokkaebi Bihyung made up his mind.⸥</p>
 <p class="orv_line">The remaining Great Dokkaebis, gathered in one place to perform the ceremony, realized Bihyung's intention and cried out. The first one to grab him was Baram.</p>
-<div class="orv_constellation"><p>[Bihyung! What do you think you're doing?!]</p></div>
+<div class="orv_constellation"><p>Bihyung! What do you think you're doing?!</p></div>
 <p class="orv_line">Bihyung didn't reply and stared at the ground below. The ones he'd been watching until now were down there.</p>
 <p class="orv_line">Incarnations he sent his clone to speak with. And now, they were in the same place as he was. Bihyung looked at his own hands. His palms that used to be so small back then, were now as big as a grown adult male's.</p>
-<div class="orv_constellation"><p>[I've been observing that Story for a very long time.]</p></div>
+<div class="orv_constellation"><p>I've been observing that Story for a very long time.</p></div>
 <p class="orv_line">Their first encounter wasn't all that positive; one of them was the culprit selling the tragedies called the scenarios, while the other had no choice but to carry those scenarios out while risking his life.</p>
 <p class="orv_line">That was why Bihyung had to make a move now.</p>
 <p class="orv_line">He had to do this one thing, since he had opened this tragic stage with his own two hands. This action had to be done if he wanted to remain as the 'storyteller' right until the end.</p>
-<div class="orv_constellation"><p>[Baram. You told me that there will come a time for every Dokkaebi to choose their own 'One Single Story'.]</p></div>
-<div class="orv_constellation"><p>[You must listen to me, Bihyung! You're wrong this time! That Story isn't right! That Story, it's…]</p></div>
+<div class="orv_constellation"><p>Baram. You told me that there will come a time for every Dokkaebi to choose their own 'One Single Story'.</p></div>
+<div class="orv_constellation"><p>You must listen to me, Bihyung! You're wrong this time! That Story isn't right! That Story, it's…</p></div>
 <p class="orv_line">Bihyung let go of Baram's hands and smiled.</p>
 <p class="orv_line">He knew of a guy who always smirked just before dying. He couldn't understand it before, but now he thought he could figure it out. That guy must've been feeling this way, too.</p>
-<div class="orv_constellation"><p>[It's likely that I have grown to love that story.]</p></div>
+<div class="orv_constellation"><p>It's likely that I have grown to love that story.</p></div>
 <p class="orv_line">Bihyung then unleashed his own Status towards the Bureau's Great Dokkaebis.</p>
 <p class="orv_line">Puh-gur-guhk!</p>
 <p class="orv_line">The horn of Garang, working as the representative of the Great Dokkaebis and abusing the Bureau's powers of interference, broke off.</p>
 <p class="orv_line">The Probability controlled by the Bureau scattered away in an instant and a ripple effect suddenly occurred.</p>
 <p class="orv_line">That storm of aftermaths came back to Bihyung in full. He turned around to leave while vomiting out his Story that was changed to a pitch-black colour.</p>
-<div class="orv_constellation"><p>[Bihyung!! You dare to…!!]</p></div>
+<div class="orv_constellation"><p>Bihyung!! You dare to…!!</p></div>
 <p class="orv_line">More specifically, he stood in the way of the delusion's fragment falling towards the ground.</p>
 <p class="orv_line">All the Stories he had recorded until now began crying. Every Constellation watching this storyteller added their own Probability to his action.</p>
 <p class="orv_line">Bihyung began thinking as horrifying pain of the aftermath's storm tore into his body. The protagonist of the Story he had been reading wouldn't welcome his actions at all. Because that dude wanted to save everyone's life.</p>
@@ -353,7 +360,7 @@
 <p class="orv_line">⸢Dokkaebi Bihyung had finally decided on his full stop.⸥</p>
 <p class="orv_line">The 'Pah-su-sut' noise of something being pierced could be heard next.</p>
 <p class="orv_line">He looked back and for a second there, he thought he saw Kim Dokja's face.</p>
-<div class="orv_system"><p>[Your ■■ is 'sacrifice'.]</p></div>
+<div class="orv_system"><p>Your ■■ is 'sacrifice'.</p></div>
 <br>
 <hr>
         </article>
@@ -361,18 +368,12 @@
             <a href="./ch_494"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_496">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="495" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="722" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="494" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="494" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

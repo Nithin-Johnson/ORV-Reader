@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 542: Epilogue 4 - The Omniscient Reader's Viewpoint, VII</title>
     <meta property="og:title" content="Ch 542: Epilogue 4 - The Omniscient Reader's Viewpoint, VII" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00542.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 542: Epilogue 4 - The Omniscient Reader's Viewpoint, VII</h1></div>
 <p class="orv_line">The ending to the 1865th regression turn was more perfect than any other world-lines.</p>
@@ -231,7 +238,7 @@
 <p class="orv_line">– The world was enveloped in the acrid smoke of the apocalypse's cannons, and they had lost their precious ones…</p>
 <p class="orv_line">The lyrics of a song coming from somewhere caused Han Sooyoung to frown quite heavily.</p>
 <p class="orv_line">"Is this a funeral dirge or something?"</p>
-<div class="orv_constellation"><p>[No, it's actually a trending song these days. A story that exalts you and your group.]</p></div>
+<div class="orv_constellation"><p>No, it's actually a trending song these days. A story that exalts you and your group.</p></div>
 <p class="orv_line">The cackling Bihyung opened the door to the ark.</p>
 <p class="orv_line">The vessel, with its Story energy fully recharged, greeted them.</p>
 <p class="orv_line">One by one, regressors who chose to return home climbed aboard the vessel. Not everyone chose to do so, however – some decided to remain.</p>
@@ -241,22 +248,22 @@
 <p class="orv_line">"Anyone else wanting to stay behind?" Han Sooyoung calmly raised her voice. "You should give it some serious thought, okay? If you leave, then your parents, lovers, friends, etc… You will never get to see them ever again. Will you be fine with that? So, think it over…"</p>
 <p class="orv_line">Shin Yoosung then grabbed Han Sooyoung's hand tightly. "This isn't our world-line, you know? Dokja ahjussi will probably think that way, too."</p>
 <p class="orv_line">The majority of &lt;Kim Dokja's Company&gt;'s Incarnations and Constellations chose to return. In the middle of them all was young Kim Dokja lying on the stretcher, unmoving.</p>
-<div class="orv_constellation"><p>[Oh, my dear Persephone, are you really planning to leave me?]</p></div>
+<div class="orv_constellation"><p>Oh, my dear Persephone, are you really planning to leave me?</p></div>
 <p class="orv_line">Han Sooyoung could only smile wryly after witnessing Hades, unable to mop around any longer, started his desperate song-and-dance to appeal to his dearly beloved. Was Hades's personality originally like that?</p>
 <p class="orv_line">Persephone directed her troubled smile at such Hades.</p>
-<div class="orv_constellation"><p>[I'm truly sorry, Hades. But, I'm not the 'Persephone' you used to know.]</p></div>
-<div class="orv_constellation"><p>[You're undoubtedly Persephone. The queen of the darkest spring and the Underworld.]</p></div>
+<div class="orv_constellation"><p>I'm truly sorry, Hades. But, I'm not the 'Persephone' you used to know.</p></div>
+<div class="orv_constellation"><p>You're undoubtedly Persephone. The queen of the darkest spring and the Underworld.</p></div>
 <p class="orv_line">Persephone softly shook her head.</p>
-<div class="orv_constellation"><p>[If you insist on doing this, I shall go with you.]</p></div>
-<div class="orv_constellation"><p>[This is your world-line, dear. And you're also the king of the Underworld, too. Please, don't forget your dignity.]</p></div>
-<div class="orv_constellation"><p>[But my world is you, Persephone!]</p></div>
+<div class="orv_constellation"><p>If you insist on doing this, I shall go with you.</p></div>
+<div class="orv_constellation"><p>This is your world-line, dear. And you're also the king of the Underworld, too. Please, don't forget your dignity.</p></div>
+<div class="orv_constellation"><p>But my world is you, Persephone!</p></div>
 <p class="orv_line">Bihyung shook his head helplessly. And then, asked Han Sooyoung.</p>
-<div class="orv_constellation"><p>[I'm sure there's no point in me asking, but… Hey, are you really leaving? If you stay, you know you will be treated like a king for the rest of your life.]</p></div>
+<div class="orv_constellation"><p>I'm sure there's no point in me asking, but… Hey, are you really leaving? If you stay, you know you will be treated like a king for the rest of your life.</p></div>
 <p class="orv_line">"I didn't come to this world-line for that purpose."</p>
 <p class="orv_line">Han Sooyoung looked at the young Kim Dokja lying on the stretcher.</p>
 <p class="orv_line">For the last few months, Han Sooyoung and her colleagues immersed themselves in scouring the entirety of &lt;Star Stream&gt; to find a way to revive Kim Dokja. However, they couldn't locate anything like that. The best they could do was to keep his life going like this, not dead but not alive, either.</p>
 <p class="orv_line">"Bihyung. As a goodbye present, why don't you share a bit of the Bureau's Story with us?"</p>
-<div class="orv_constellation"><p>[…The Bureau's Story?]</p></div>
+<div class="orv_constellation"><p>…The Bureau's Story?</p></div>
 <p class="orv_line">"The system in our world-line is destroyed. We don't know what might happen, so give us a little bit, okay?"</p>
 <p class="orv_line">Bihyung pouted with a very unhappy face, but eventually, handed down a portion of the Story to Han Sooyoung.</p>
 <p class="orv_line">It was then, a man dashed towards them from afar while kicking up a storm of dust clouds. A big man with unkempt bushy beard on his face, as a matter of fact. It was Lee Hyunsung.</p>
@@ -278,11 +285,11 @@
 <p class="orv_line">⸢However, was that what Kim Dokja really wanted?⸥</p>
 <p class="orv_line">The ark's window reflected the faces of Yoo Joonghyuk and Yoo Sangah walking up next to her almost at the same time. They too carried the exact same expression as hers, staring at the exact same view as her. The moment she saw their faces, she realized something. She realized that they were thinking the same thing as her. And that was why that plan could never come to reality.</p>
 <p class="orv_line">It was then, the ark started thumping and clonking next.</p>
-<div class="orv_system"><p>[The vessel has entered a new world-line!]</p></div>
+<div class="orv_system"><p>The vessel has entered a new world-line!</p></div>
 <p class="orv_line">"Already? Isn't this way too…?!"</p>
 <p class="orv_line">As if it was entering the atmosphere, the ark began to suddenly nosedive.</p>
 <p class="orv_line">It felt as if gravity itself had disappeared for a second there, but then, the vessel's hull slammed into something with a loud explosive noise. The light within the interior went out from a moment before coming back on.</p>
-<div class="orv_system"><p>[The vessel has reached the destination.]</p></div>
+<div class="orv_system"><p>The vessel has reached the destination.</p></div>
 <p class="orv_line">Han Sooyoung held her pulsing head and scanned her companions.</p>
 <p class="orv_line">"Dammit, never mind being old, it's a bloody antique, this thing. Is everyone alright?"</p>
 <p class="orv_line">"I'm fine! What about the others…?"</p>
@@ -313,7 +320,7 @@
 <p class="orv_line">The world where they completed the scenarios for the first time.</p>
 <p class="orv_line">Some managed to return, while some, couldn't.</p>
 <p class="orv_line">Some things had to remain as the past that nothing could change.</p>
-<p class="orv_line">She saw the sight of the [Industrial Complex] spreading out in the far distance.</p>
+<p class="orv_line">She saw the sight of the <strong>[Industrial Complex]</strong> spreading out in the far distance.</p>
 <p class="orv_line">Kim Dokja's fading bronze statue stood before it. Next to his figure assuming a slightly awkward pose was a massive statue of a squid.</p>
 <p class="orv_line">⸢To commemorate Kim Dokja's return⸥</p>
 <p class="orv_line">While looking at that bizarre monstrosity of a squid, Han Sooyoung alternated between breathless sobbing and hysterical laughter. She didn't want to admit it. If she insisted on it, then she felt that something somewhere might change, somehow. But right now, right in this moment, she simply had to admit to it.</p>
@@ -334,18 +341,12 @@
             <a href="./ch_541"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_543">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="542" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="587" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="541" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="541" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

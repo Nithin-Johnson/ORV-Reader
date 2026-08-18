@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 181: Ep. 34 - Unable to be Eaten, III</title>
     <meta property="og:title" content="Ch 181: Ep. 34 - Unable to be Eaten, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,34 +177,34 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00181.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 181: Ep. 34 - Unable to be Eaten, III</h1></div>
 <p class="orv_line">I could see the Attributes Window? I finally understood a few things that didn't make sense.</p>
 <p class="orv_line">The reason I hadn't been able to see my Attributes Window was due to Fourth Wall. The Fourth Wall protected me from other beings but at the same time, it was a skill that isolated me from myself.</p>
-<div class="orv_system"><p>[Checking the Attributes Window.]</p></div>
-<div class="orv_system"><p>[The system configuration is unstable. Some skill names and levels are limited.]</p></div>
+<div class="orv_system"><p>Checking the Attributes Window.</p></div>
+<div class="orv_system"><p>The system configuration is unstable. Some skill names and levels are limited.</p></div>
 <p class="orv_line">Then for the first time, I saw my Attributes Window.</p>
 <div class="orv_window">
-<h3 class="orv_window_title">[Personal Information]</h3>
+<h3 class="orv_window_title">Personal Information</h3>
 <p>Name: Kim Dokja</p>
 <p>Age: 28 years old</p>
 <p>Sponsor: None</p>
@@ -205,13 +212,13 @@
 <p>Exclusive Attributes: Eight Lives (Hero), Scenario…</p>
 </div>
 <p class="orv_line">Before the Attributes Window was fully revealed, the screen crashed and sudden messages emerged.</p>
-<div class="orv_system"><p>[Some constellations are approaching your mental barrier.]</p></div>
+<div class="orv_system"><p>Some constellations are approaching your mental barrier.</p></div>
 <p class="orv_line">At this moment, I wanted to say oops. Maybe the constellations had been looking for this opportunity—for the day that my information was revealed to the world.</p>
-<div class="orv_system"><p>[Constellations of the nebula 'Vedas' are approaching you.]</p></div>
-<div class="orv_system"><p>[Constellations of the nebula 'Olympus' are approaching you.]</p></div>
-<div class="orv_system"><p>[Constellations of the nebula 'Papyrus' are approaching you.]</p></div>
+<div class="orv_system"><p>Constellations of the nebula 'Vedas' are approaching you.</p></div>
+<div class="orv_system"><p>Constellations of the nebula 'Olympus' are approaching you.</p></div>
+<div class="orv_system"><p>Constellations of the nebula 'Papyrus' are approaching you.</p></div>
 <p class="orv_line">The constellations who sought to improve my existence started to forcibly open my mind. At this moment.</p>
-<div class="orv_system"><p>[The exclusive skill 'Fourth Wall' is reactivated independently of your will!]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Fourth Wall' is reactivated independently of your will!</p></div>
 <div class="orv_window">
 <p>Exclusive Skills: Omniscient Reader's Viewpoint Lv. ?, Bookmark Lv. ?, Character List Lv. ?, Fourth Wall Lv. ?, ■■■■ Lv. ?, ■■■■■■■■…</p>
 <p>.</p>
@@ -220,79 +227,79 @@
 </div>
 <p class="orv_line">A lot of the information was hidden by '■'.</p>
 <p class="orv_line">As numerous bricks piled up, strong sparks that concealed my information appeared.</p>
-<div class="orv_system"><p>[The constellation 'Founder of Humanity' is groaning.]</p></div>
-<div class="orv_system"><p>[The constellation 'Poked Out His Eyes' is covering his eyes and stepping back.]</p></div>
-<div class="orv_system"><p>[The constellation 'Scorpion Goddess' steps back while protecting her tail.]</p></div>
+<div class="orv_system"><p>The constellation 'Founder of Humanity' is groaning.</p></div>
+<div class="orv_system"><p>The constellation 'Poked Out His Eyes' is covering his eyes and stepping back.</p></div>
+<div class="orv_system"><p>The constellation 'Scorpion Goddess' steps back while protecting her tail.</p></div>
 <p class="orv_line">.</p>
 <p class="orv_line">.</p>
-<div class="orv_system"><p>[Some of the constellations approaching you are struck and have retreated!]</p></div>
+<div class="orv_system"><p>Some of the constellations approaching you are struck and have retreated!</p></div>
 <p class="orv_line">The countless letters rotated reliably.</p>
 <p class="orv_line">The fierce sparks of the Fourth Wall were protecting me from the constellations. The guy who was fighting me a while ago was now emitting a fierce aura towards the constellations.</p>
-<div class="orv_system"><p>[The Fourth Wall is baring its teeth towards the Star Stream.]</p></div>
+<div class="orv_system"><p>The Fourth Wall is baring its teeth towards the Star Stream.</p></div>
 <p class="orv_line">I stared at the Fourth Wall. The last thing I heard was a message from a well-known constellation.</p>
-<div class="orv_system"><p>[The constellation 'Secretive Plotter' is smiling at you.]</p></div>
+<div class="orv_system"><p>The constellation 'Secretive Plotter' is smiling at you.</p></div>
 <p class="orv_line">The message was distinctively different from the other constellations.</p>
 <p class="orv_line">…Surely he didn't see my information in such a short period of time? Even if he did see it, he wouldn't have been able to check everything. I couldn't confirm all the information despite opening the Attributes Window.</p>
 <p class="orv_line">The sparks calmed down and the wall turned towards me again.</p>
-<div class="orv_system"><p>[The Fourth Wall is angry with you.]</p></div>
+<div class="orv_system"><p>The Fourth Wall is angry with you.</p></div>
 <p class="orv_line">I stared at the wall.</p>
 <p class="orv_line">For a long time, I thought this wall was the boundary between the novel and reality. The wall allowed me to adapt to the new world and show unusual judgment in terrible situations.</p>
 <p class="orv_line">However, once I asked about the actual identity of the 'wall', I couldn't come to a conclusion. The only thing I could be certain of was that this wall had protected me for a long time.</p>
 <p class="orv_line">There were a few crises but I overcame them due to the presence of this wall. It was thanks to this wall that I could arrive here.</p>
 <p class="orv_line">I brought my hands towards the letters making up the wall.</p>
 <p class="orv_line">"I'm sorry."</p>
-<div class="orv_system"><p>[The Fourth Wall is shaking.]</p></div>
+<div class="orv_system"><p>The Fourth Wall is shaking.</p></div>
 <p class="orv_line">The strange texture of the letters wrapped around my fingers. The Fourth Wall felt like this.</p>
 <p class="orv_line">The letters of the wall clung to my hands like doctor fish (red garra). They seemed to be licking and biting me. It was a feeling that couldn't be clearly shared. There was no analogy for it. The Fourth Wall was like a wet puppy, an abandoned child, a teenager who didn't listen etc.</p>
 <p class="orv_line">The Fourth Wall… The Fourth Wall was like me.</p>
 <p class="orv_line">Then a sentence appeared on the wall.</p>
-<div class="orv_quote"><p>「 Kim Dok ja is an i diot. 」</p></div>
+<div class="orv_quote"><p>Kim Dok ja is an i diot.</p></div>
 <p class="orv_line">The sentence seemed to have been written by a child just learning Hangul. It wasn't a story related to me or the world. It was the words of the Fourth Wall.</p>
 <p class="orv_line">I smiled at the wall.</p>
-<div class="orv_quote"><p>「 …$#^#$^#$%@#$… 」</p></div>
+<div class="orv_quote"><p>…$#^#$^#$%@#$…</p></div>
 <p class="orv_line">The Fourth Wall wrote unrecognized characters, as if it was confused for a moment. Then after a while, it wrote a sentence again.</p>
-<div class="orv_quote"><p>「 Kim Dokja thought, 'The Fourth Wall is an existence with its own will as well'. 」</p></div>
+<div class="orv_quote"><p>Kim Dokja thought, 'The Fourth Wall is an existence with its own will as well'.</p></div>
 <p class="orv_line">…It was starting again.</p>
-<div class="orv_quote"><p>「 Then were the words written in brackets from the Fourth Wall? However, the Fourth Wall's tone is too static compared to that… then who wrote those words? If this really is a wall, there is something else in the wall… 」</p></div>
+<div class="orv_quote"><p>Then were the words written in brackets from the Fourth Wall? However, the Fourth Wall's tone is too static compared to that… then who wrote those words? If this really is a wall, there is something else in the wall…</p></div>
 <p class="orv_line">"Stop reading other people's thoughts."</p>
-<div class="orv_system"><p>[The Fourth Wall is turning its head away.]</p></div>
-<div class="orv_system"><p>[The Fourth Wall is telling you not to forcibly turn it off again.]</p></div>
+<div class="orv_system"><p>The Fourth Wall is turning its head away.</p></div>
+<div class="orv_system"><p>The Fourth Wall is telling you not to forcibly turn it off again.</p></div>
 <p class="orv_line">I kept talking while touching the Fourth Wall. "I know. Instead, I have a request."</p>
-<div class="orv_system"><p>[The Fourth Wall is looking at you.]</p></div>
+<div class="orv_system"><p>The Fourth Wall is looking at you.</p></div>
 <p class="orv_line">I took a brief breath before saying, "Give me back my mother."</p>
 <p class="orv_line">The wall shook briefly, as if to judge if my words were true or not.</p>
 <p class="orv_line">Then a sentence appeared on the wall.</p>
-<div class="orv_quote"><p>「 Kim Dokja hates his mother. 」</p></div>
+<div class="orv_quote"><p>Kim Dokja hates his mother.</p></div>
 <p class="orv_line">"That's right."</p>
-<div class="orv_quote"><p>「 Kim Dokja knows what happened with his mother. He knows what his mother has been through, the life she lived and what she was hiding. Just because he knows doesn't mean he understands everything. 」</p></div>
+<div class="orv_quote"><p>Kim Dokja knows what happened with his mother. He knows what his mother has been through, the life she lived and what she was hiding. Just because he knows doesn't mean he understands everything.</p></div>
 <p class="orv_line">"…Yes."</p>
-<div class="orv_quote"><p>「 Because of this, Kim Dokja still hates his mother. This is what human emotions are like. There is no magic that will heal all wounds just because someone else has a deep wound as well. 」</p></div>
+<div class="orv_quote"><p>Because of this, Kim Dokja still hates his mother. This is what human emotions are like. There is no magic that will heal all wounds just because someone else has a deep wound as well.</p></div>
 <p class="orv_line">"You have great insight. I agree."</p>
-<div class="orv_quote"><p>「 Thus, Kim Dokja can't understand it himself. Why is he trying to save his mother? 」</p></div>
+<div class="orv_quote"><p>Thus, Kim Dokja can't understand it himself. Why is he trying to save his mother?</p></div>
 <p class="orv_line">"I can't explain."</p>
-<div class="orv_quote"><p>「 ······ 」</p></div>
+<div class="orv_quote"><p>······</p></div>
 <p class="orv_line">"Not everything can be expressed in sentences."</p>
 <p class="orv_line">I quietly looked at the wall and said, "I don't have much energy left. Please help me. I'm asking you."</p>
 <p class="orv_line">The Fourth Wall was silent for a long time before displaying the following sentence,</p>
-<div class="orv_quote"><p>「 Kim Dokja… 」</p></div>
+<div class="orv_quote"><p>Kim Dokja…</p></div>
 <p class="orv_line">Could an existence who already entered the wall come out again? I didn't know if it was possible or not. Still, I had to try.</p>
 <p class="orv_line">Then the wall started to move. Something was vomited out from the wall.</p>
 <p class="orv_line">There were numerous letters. The letters gathered to become words and the words came together to become sentences. The sentences gathered into paragraphs and the paragraphs gathered again to become a story.</p>
 <p class="orv_line">The story soon formed a person.</p>
 <p class="orv_line">I embraced my mother who was lying in the letters. Then I told the Fourth Wall, "Thank you."</p>
 <p class="orv_line">The Fourth Wall shook and started to disperse.</p>
-<div class="orv_quote"><p>「 Sl, ee, py. 」</p></div>
+<div class="orv_quote"><p>Sl, ee, py.</p></div>
 <p class="orv_line">Little by little, the surrounding space was broken.</p>
-<div class="orv_system"><p>[The constellation 'Secretive Plotter' is snapping at the 'great old ones' spying on you.]</p></div>
+<div class="orv_system"><p>The constellation 'Secretive Plotter' is snapping at the 'great old ones' spying on you.</p></div>
 <p class="orv_line">The darkness of the outer universe was clearing away.</p>
 <p class="orv_line">Time and space were broken and the surrounding scenery changed to the second floor of Dark Castle.</p>
 <p class="orv_line">Then the subsequent messages appeared.</p>
-<div class="orv_system"><p>[Your Dark Castle ranking has changed.]</p></div>
-<div class="orv_system"><p>[Your current Dark Castle ranking is 2nd place.]</p></div>
+<div class="orv_system"><p>Your Dark Castle ranking has changed.</p></div>
+<div class="orv_system"><p>Your current Dark Castle ranking is 2nd place.</p></div>
 <p class="orv_line">.</p>
 <p class="orv_line">.</p>
-<div class="orv_system"><p>[You have met the hidden goal of the main scenario.]</p></div>
-<div class="orv_system"><p>[You are eligible to participate in the last scenario of Dark Castle.]</p></div>
+<div class="orv_system"><p>You have met the hidden goal of the main scenario.</p></div>
+<div class="orv_system"><p>You are eligible to participate in the last scenario of Dark Castle.</p></div>
 <br>
 <hr>
 <br>
@@ -339,7 +346,7 @@
 <p class="orv_line">Above all, the big hurdle that was the next scenario would soon arrive.</p>
 <p class="orv_line">Thus, Yoo Joonghyuk needed to choose.</p>
 <p class="orv_line">He silently stared up at the sky. It was like he was looking for something there. After a while, his gaze was returned.</p>
-<div class="orv_system"><p>[The constellation '???' is looking at his incarnation.]</p></div>
+<div class="orv_system"><p>The constellation '???' is looking at his incarnation.</p></div>
 <p class="orv_line">The constellation '???'. It was the third regression but Yoo Joonghyuk still didn't know who his sponsor was. It was the source of the regression and the one who made Yoo Joonghyuk suffer a terrible tragedy.</p>
 <p class="orv_line">Yoo Joonghyuk took a breath and opened his mouth. 'Sponsor. I have to ask you something'.</p>
 <br>
@@ -349,18 +356,12 @@
             <a href="./ch_180"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_182">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="181" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="164" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="180" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="180" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

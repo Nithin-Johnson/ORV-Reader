@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 346: Ep. 65 - Good and Evil, II</title>
     <meta property="og:title" content="Ch 346: Ep. 65 - Good and Evil, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,47 +177,47 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00346.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 346: Ep. 65 - Good and Evil, II</h1></div>
 <p class="orv_line">Asmodeus continued speaking.</p>
-<div class="orv_constellation"><p>[Three Ways to Survive in a Ruined World. Among the incarnations, it is a story known as the Revelation… have you heard of it?]</p></div>
+<div class="orv_constellation"><p>Three Ways to Survive in a Ruined World. Among the incarnations, it is a story known as the Revelation… have you heard of it?</p></div>
 <p class="orv_line">At Asmodeus' words, the pale-faced Han Sooyoung stepped forward. "You! What the hell did you come here to do?"</p>
 <p class="orv_line">Asmodeus just ignored Han Sooyoung and studied Yoo Joonghyuk's expression.</p>
-<div class="orv_system"><p>[An unknown power is putting a brake to incarnation Yoo Joonghyuk's imagination.]</p></div>
+<div class="orv_system"><p>An unknown power is putting a brake to incarnation Yoo Joonghyuk's imagination.</p></div>
 <p class="orv_line">Sparks once again appeared in Yoo Joonghyuk's vicinity. In fact, Asmodeus' words sounded like this to Yoo Joonghyuk.</p>
-<div class="orv_constellation"><p>[Have you heard of Three ■■ to ■■■■ in a Ruined ■■■?]</p></div>
+<div class="orv_constellation"><p>Have you heard of Three ■■ to ■■■■ in a Ruined ■■■?</p></div>
 <p class="orv_line">Yoo Joonghyuk got a headache as he asked, "…What did you say?"</p>
 <p class="orv_line">Asmodeus sighed.</p>
-<div class="orv_constellation"><p>[Hmmm, you aren't yet allowed…]</p></div>
+<div class="orv_constellation"><p>Hmmm, you aren't yet allowed…</p></div>
 <p class="orv_line">"What are you talking about?"</p>
-<div class="orv_constellation"><p>[Well, it isn't a big deal. Then… based on the situation, the Demon King of Salvation is still asleep.]</p></div>
+<div class="orv_constellation"><p>Well, it isn't a big deal. Then… based on the situation, the Demon King of Salvation is still asleep.</p></div>
 <p class="orv_line">Asmodeus grinned and glanced at the Factory.</p>
-<div class="orv_constellation"><p>[Unfortunately, I will go back for today. Please tell this to the Demon King of Salvation. Thanks to what he has done, the balance of good and evil is shaken. Jackals will emerge to take advantage of that imbalance.]</p></div>
+<div class="orv_constellation"><p>Unfortunately, I will go back for today. Please tell this to the Demon King of Salvation. Thanks to what he has done, the balance of good and evil is shaken. Jackals will emerge to take advantage of that imbalance.</p></div>
 <p class="orv_line">"Wait, just wait!"</p>
 <p class="orv_line">Yoo Joonghyuk pressed a hand to his temple and called out to Asmodeus, who had turned around.</p>
 <p class="orv_line">He replied without turning around.</p>
-<div class="orv_constellation"><p>[Regressor Yoo Joonghyuk. Do you want to know the truth of the world?]</p></div>
+<div class="orv_constellation"><p>Regressor Yoo Joonghyuk. Do you want to know the truth of the world?</p></div>
 <p class="orv_line">"…The truth?"</p>
-<div class="orv_constellation"><p>[If you want to know, come to the Seekers of the End.]</p></div>
+<div class="orv_constellation"><p>If you want to know, come to the Seekers of the End.</p></div>
 <p class="orv_line">With these words, Asmodeus' body disappeared. Han Sooyoung quickly approached the staggering Yoo Joonghyuk. "Yoo Joonghyuk. Are you okay?"</p>
 <p class="orv_line">"…"</p>
 <p class="orv_line">"Yoo Joonghyuk?"</p>
@@ -227,11 +234,11 @@
 <br>
 <p class="orv_line">Yoo Sangah was able to fully enjoy the experience of being a 'newcomer' as she organized the books.</p>
 <p class="orv_line">In the last two days, Yoo Sangah learnt a lot from her three seniors. From the identity of this library to the identities of her seniors.</p>
-<div class="orv_quote"><p>「 (Please organize it slowly. Once Kim Dokja starts thinking unnecessary things, it gets messy.) 」</p></div>
+<div class="orv_quote"><p>(Please organize it slowly. Once Kim Dokja starts thinking unnecessary things, it gets messy.)</p></div>
 <p class="orv_line">The theatre master, Simulation.</p>
-<div class="orv_quote"><p>「 (It will take a long time to clean up with only two hands. I wanted a successor with many hands to replace me.) 」</p></div>
+<div class="orv_quote"><p>(It will take a long time to clean up with only two hands. I wanted a successor with many hands to replace me.)</p></div>
 <p class="orv_line">The outer god, Devourer of Dreams.</p>
-<div class="orv_quote"><p>「 (Do you want me to teach you Thousand Hands of Avalokiteśvara?) 」</p></div>
+<div class="orv_quote"><p>(Do you want me to teach you Thousand Hands of Avalokiteśvara?)</p></div>
 <p class="orv_line">The reincarnator, Nirvana Moebius.</p>
 <p class="orv_line">All the seniors were slightly odd but they were generally kind to her. It would've been nice if they were part of Mino Soft's human resources team.</p>
 <p class="orv_line">Shelves covered with countless books. They were all the books Kim Dokja had read or forgotten. Most of the books were one 'novel'.</p>
@@ -240,44 +247,44 @@
 <p class="orv_line">Once she realized, Yoo Sangah felt faint despair and sympathy at the same time. However, Yoo Sangah didn't show it. She knew that sometimes not expressing it was a way of taking care of the wounded. Instead, she thought about other things.</p>
 <p class="orv_line">'If it developed like the original…'</p>
 <p class="orv_line">The following Earth scenario could have several implications. Among them, the most likely one…</p>
-<div class="orv_quote"><p>「 Work har d Yoo Sang ah. 」</p></div>
+<div class="orv_quote"><p>Work har d Yoo Sang ah.</p></div>
 <p class="orv_line">Yoo Sangah raised her head at the voice heard from the air.</p>
-<div class="orv_quote"><p>「 (I will work hard.) 」</p></div>
+<div class="orv_quote"><p>(I will work hard.)</p></div>
 <p class="orv_line">She felt like she was living a rented life but there was a possibility for her to live again. Fortunately, the general manager of this place was a cute boss.</p>
-<div class="orv_quote"><p>「 (Thank you for the job. I really like it here.) 」</p></div>
-<div class="orv_quote"><p>「 Bah. 」</p></div>
-<div class="orv_quote"><p>「 (I'm serious.) 」</p></div>
-<div class="orv_quote"><p>「 Yoo Sang ah li kes books? 」</p></div>
-<div class="orv_quote"><p>「 (I like it very much.) 」</p></div>
-<div class="orv_quote"><p>「 Wh at book? 」</p></div>
-<div class="orv_quote"><p>「 (For example… Lord of the Rings…) 」</p></div>
-<div class="orv_quote"><p>「 H oh. 」</p></div>
+<div class="orv_quote"><p>(Thank you for the job. I really like it here.)</p></div>
+<div class="orv_quote"><p>Bah.</p></div>
+<div class="orv_quote"><p>(I'm serious.)</p></div>
+<div class="orv_quote"><p>Yoo Sang ah li kes books?</p></div>
+<div class="orv_quote"><p>(I like it very much.)</p></div>
+<div class="orv_quote"><p>Wh at book?</p></div>
+<div class="orv_quote"><p>(For example… Lord of the Rings…)</p></div>
+<div class="orv_quote"><p>H oh.</p></div>
 <p class="orv_line">Luckily, the cute boss seemed quite interested in her. She decided to ask about something she was curious about.</p>
-<div class="orv_quote"><p>「 (Then can I ask one question?) 」</p></div>
-<div class="orv_quote"><p>「 Wh at? 」</p></div>
-<div class="orv_quote"><p>「 (What exactly is the Fourth Wall?) 」</p></div>
+<div class="orv_quote"><p>(Then can I ask one question?)</p></div>
+<div class="orv_quote"><p>Wh at?</p></div>
+<div class="orv_quote"><p>(What exactly is the Fourth Wall?)</p></div>
 <p class="orv_line">A giggle filled the entire library.</p>
-<div class="orv_quote"><p>「 I pro tect Kim Dok ja. 」</p></div>
-<div class="orv_quote"><p>「 (Protect him?) 」</p></div>
-<div class="orv_quote"><p>「 Kim Dok ja would die with out me. 」</p></div>
+<div class="orv_quote"><p>I pro tect Kim Dok ja.</p></div>
+<div class="orv_quote"><p>(Protect him?)</p></div>
+<div class="orv_quote"><p>Kim Dok ja would die with out me.</p></div>
 <p class="orv_line">It was a voice filled with conviction.</p>
-<div class="orv_quote"><p>「 Th en Kim Dok ja did some thing stu pid. 」</p></div>
+<div class="orv_quote"><p>Th en Kim Dok ja did some thing stu pid.</p></div>
 <p class="orv_line">The entire library trembled faintly.</p>
-<div class="orv_quote"><p>「 It is hard er recent ly be cause of you. 」</p></div>
-<div class="orv_quote"><p>「 (…Because of me?) 」</p></div>
-<div class="orv_quote"><p>「 My work is leak ing out. 」</p></div>
+<div class="orv_quote"><p>It is hard er recent ly be cause of you.</p></div>
+<div class="orv_quote"><p>(…Because of me?)</p></div>
+<div class="orv_quote"><p>My work is leak ing out.</p></div>
 <p class="orv_line">The sound of sparks pointed to a certain direction in the library. The Fourth Wall was indicating to a hole bigger than Yoo Sangah's fist.</p>
-<div class="orv_quote"><p>「 Ev en though I block ed it, it is de stroyed by Kim Dok ja. 」</p></div>
+<div class="orv_quote"><p>Ev en though I block ed it, it is de stroyed by Kim Dok ja.</p></div>
 <p class="orv_line">The cover of an old book was blocking the hole. It seemed to be a temporary action urgently carried out. Yoo Sangah carefully examined the cover of the book.</p>
-<div class="orv_quote"><p>「 (The hole, is it going to the outside?) 」</p></div>
-<div class="orv_quote"><p>「 Yes. 」</p></div>
+<div class="orv_quote"><p>(The hole, is it going to the outside?)</p></div>
+<div class="orv_quote"><p>Yes.</p></div>
 <p class="orv_line">Yoo Sangah pondered the hole for a while before making a playful expression.</p>
-<div class="orv_quote"><p>「 (Fourth Wall. I have a good idea.) 」</p></div>
+<div class="orv_quote"><p>(Fourth Wall. I have a good idea.)</p></div>
 <br>
 <hr>
 <br>
 <p class="orv_line">I slept comfortably. It was as deep as when I had been forcibly confined. It felt like fluffy feathers were wrapped around my head. Or maybe someone came into my head and cleared up all the uncomfortable worries.</p>
-<div class="orv_quote"><p>「 (Dokja-ssi, it is a big deal. Dokja-ssi.) 」</p></div>
+<div class="orv_quote"><p>(Dokja-ssi, it is a big deal. Dokja-ssi.)</p></div>
 <p class="orv_line">A mysterious voice rang in my head and I got out of bed in a startled manner. A hospital room with no one inside. My skin was tanned after being burnt by the sparks.</p>
 <p class="orv_line">"Uh…"</p>
 <p class="orv_line">I looked around but there was no one by the bed. None of the party members could be seen. Then who woke me up?</p>
@@ -301,13 +308,13 @@
 <p class="orv_line">"We aren't gangsters…"</p>
 <p class="orv_line">An 'incitement' of this level wasn't something that ordinary humans could do. Every alliance on the Korean Peninsula was taken over by my party members and the Gyeongi Alliance, which was the largest stumbling block, was destroyed by Yoo Joonghyuk not long ago.</p>
 <p class="orv_line">The fact that so many people gathered together meant it was likely that someone outside had intervened. Then where were Yoo Joonghyuk and Han Sooyoung? What caused this division in the Factory? It seemed there were many things I didn't know.</p>
-<div class="orv_system"><p>[Many constellations are interested in what is happening in the industrial complex.]</p></div>
+<div class="orv_system"><p>Many constellations are interested in what is happening in the industrial complex.</p></div>
 <p class="orv_line">I had to stop this before it became bigger. I was calculating things in my head and about to move towards the party members when I heard a dokkaebi's voice.</p>
-<div class="orv_constellation"><p>[Revolution…! I am someone who advocates for democracy!]</p></div>
+<div class="orv_constellation"><p>Revolution…! I am someone who advocates for democracy!</p></div>
 <p class="orv_line">An ominous feeling rushed through me.</p>
-<div class="orv_constellation"><p>[Since a probability of this scale has been gathered, it is possible to open up a scenario?]</p></div>
+<div class="orv_constellation"><p>Since a probability of this scale has been gathered, it is possible to open up a scenario?</p></div>
 <div class="orv_window">
-<h3 class="orv_window_title">[Sub Scenario - Seoul Revolution]</h3>
+<h3 class="orv_window_title">Sub Scenario - Seoul Revolution</h3>
 <p>Category: Sub</p>
 <p>Difficulty: ???</p>
 <p>Clear Conditions: Seoul is currently under the leadership of Kim Dokja's Company. Incarnations have emerged to resist the dominance of the nebula. Many constellations want both groups to fight for control of Seoul.</p>
@@ -331,10 +338,10 @@
 <p class="orv_line">Lee Hyunsung, Lee Jihye, Shin Yoosung and Lee Gilyoung. Gong Pildu looked unhappy but…</p>
 <p class="orv_line">Everyone agreed this was the best way to minimize the sacrifice of the citizens.</p>
 <p class="orv_line">The dokkaebi saw the progress from the air and laughed.</p>
-<div class="orv_constellation"><p>[…Good. Will this event be a 'Representative Exhibition'?]</p></div>
+<div class="orv_constellation"><p>…Good. Will this event be a 'Representative Exhibition'?</p></div>
 <p class="orv_line">At the same time, the contents of the sub scenario were changed.</p>
-<div class="orv_system"><p>[Sub scenario - Seoul Revolution is updated!]</p></div>
-<div class="orv_system"><p>[Through the representatives of both forces, the owner of Seoul will be determined!]</p></div>
+<div class="orv_system"><p>Sub scenario - Seoul Revolution is updated!</p></div>
+<div class="orv_system"><p>Through the representatives of both forces, the owner of Seoul will be determined!</p></div>
 <p class="orv_line">Jung Heewon yelled at the people beyond the walls. "The representatives, come up now. This side is ready."</p>
 <p class="orv_line">It was a confident smile. Maybe Jung Heewon's determination stemmed from the faithful time she spent training.</p>
 <p class="orv_line">The people who had been talking about revolution and the spring of Seoul suddenly fell silent when Jung Heewon came out so confidently. Then their shouts became louder.</p>
@@ -346,12 +353,12 @@
 <p class="orv_line">Perhaps Jung Heewon aimed for this from the beginning. She learned to maintain her sense of justice while being pragmatic.</p>
 <p class="orv_line">She was already one of the strongest in Seoul. She had no chance of losing in a one-on-one fight against an incarnation.</p>
 <p class="orv_line">The dokkaebi in the air stroked his chin.</p>
-<div class="orv_constellation"><p>[Kim Dokja's Company has two representatives missing. Who will come forward?]</p></div>
+<div class="orv_constellation"><p>Kim Dokja's Company has two representatives missing. Who will come forward?</p></div>
 <p class="orv_line">The party members raised their hands at the same time. However, Jung Heewon was first. "I will do it."</p>
 <p class="orv_line">"Heewon-ssi."</p>
 <p class="orv_line">"Don't worry. You know that I'm strong."</p>
 <p class="orv_line">Certainly, Jung Heewon was the strongest in our nebula apart from Yoo Joonghyuk. Lee Hyunsung, Lee Gilyoung, Shin Yoosung and Gong Pildu… none of them could surpass Jung Heewon when it came to individual combat power. In addition, Jung Heewon seemed to notice something. This was one of the reasons why Jung Heewon should be a representative.</p>
-<div class="orv_quote"><p>「 …I will go. 」</p></div>
+<div class="orv_quote"><p>…I will go.</p></div>
 <p class="orv_line">The reason for this was the three incarnations approaching through the crowd. One of their faces was especially familiar.</p>
 <p class="orv_line">…This guy. The man who passed over the walls opened his mouth. "I will be a representative."</p>
 <br>
@@ -361,18 +368,12 @@
             <a href="./ch_345"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_347">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="346" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="422" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="345" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="345" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 8: Ep. 2 – Protagonist, II</title>
     <meta property="og:title" content="Ch 8: Ep. 2 – Protagonist, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,50 +177,50 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00008.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 8: Ep. 2 – Protagonist, II</h1></div>
-<div class="orv_system"><p>[Sponsor Selection has ended.]</p></div>
+<div class="orv_system"><p>Sponsor Selection has ended.</p></div>
 <p class="orv_line">I took a deep breath as I watched the messages floating in the air.</p>
-<div class="orv_system"><p>[Some constellations are greatly affected by your choice.]</p></div>
+<div class="orv_system"><p>Some constellations are greatly affected by your choice.</p></div>
 <p class="orv_line">Yes, it was starting now.</p>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' is greatly displeased at your choice.]</p></div>
-<div class="orv_system"><p>[Constellations belonging to Black Cloud are shaken by the anger of the Abyssal Black Flame Dragon. You won't be sponsored by any of the Black Cloud constellations for a while.]</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' is greatly displeased at your choice.</p></div>
+<div class="orv_system"><p>Constellations belonging to Black Cloud are shaken by the anger of the Abyssal Black Flame Dragon. You won't be sponsored by any of the Black Cloud constellations for a while.</p></div>
 <p class="orv_line">I wasn't surprised because it was an expected message. To make every member of his group turn away because he was rejected…it seemed that this guy was Kim Namwoon's sponsor in the original work. As expected of the incarnation of this constellation.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is disappointed in you.]</p></div>
-<div class="orv_system"><p>[She will persistently monitor your justice in the future.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is disappointed in you.</p></div>
+<div class="orv_system"><p>She will persistently monitor your justice in the future.</p></div>
 <p class="orv_line">In the case of Archangel Uriel, it was just disappointment. In the first place, the constellations of absolute good would rarely hate someone unless they committed a great injustice.</p>
-<div class="orv_system"><p>[The constellation 'Secretive Plotter' is interested in your choice.]</p></div>
-<div class="orv_system"><p>[200 coins have been sponsored.]</p></div>
+<div class="orv_system"><p>The constellation 'Secretive Plotter' is interested in your choice.</p></div>
+<div class="orv_system"><p>200 coins have been sponsored.</p></div>
 <p class="orv_line">The Secretive Plotter's case was unexpected. Given the characteristics of the name, maybe he valued my caution.</p>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is interested in your choice.]</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is interested in your choice.</p></div>
 <p class="orv_line">As for the Great Sage Heaven's Equal…</p>
 <p class="orv_line">I was concerned. Did I make the right choice? I didn't know. Maybe I had lost the tremendous opportunity right in front of me.</p>
-<div class="orv_system"><p>[You haven't selected a sponsor.]</p></div>
+<div class="orv_system"><p>You haven't selected a sponsor.</p></div>
 <p class="orv_line">However, choosing a certain constellation meant being limited by that possibility. The sponsor contract was never a fair deal. I would survive, but I would've survived by being their toy. If my expectations were right, there was a way to become strong without a constellation. Maybe it was a way to become stronger than the incarnation of the strongest sponsor.</p>
-<div class="orv_constellation"><p>[Haha, is this true…isn't there one interesting choice? Well, yes. There will be another chance.]</p></div>
+<div class="orv_constellation"><p>Haha, is this true…isn't there one interesting choice? Well, yes. There will be another chance.</p></div>
 <p class="orv_line">The dokkaebi's crescent moon eyes stayed on me for a moment.</p>
-<div class="orv_constellation"><p>[Now now, everyone has finished the selection. Rest here for a while. I have to go prepare the next scenario. I'll see you in 10 minutes!]</p></div>
+<div class="orv_constellation"><p>Now now, everyone has finished the selection. Rest here for a while. I have to go prepare the next scenario. I'll see you in 10 minutes!</p></div>
 <p class="orv_line">After the Sponsor Selection finished, the dokkaebi disappeared. He told us to rest, but these 10 minutes were really crucial. In 10 minutes, I needed to sort out this situation and prepare for the following scenarios. I tried to recall my abilities in my head.</p>
-<p class="orv_line">[Character List] and [Omniscient Reader's Viewpoint]. I didn't know the precise use yet but I had a general sense of these skills. This would work somehow.</p>
+<p class="orv_line"><strong>[Character List]</strong> and <strong>[Omniscient Reader's Viewpoint]</strong>. I didn't know the precise use yet but I had a general sense of these skills. This would work somehow.</p>
 <p class="orv_line">"Let's all gather together." The survivors gathered at my words. The first one to reach out a hand was Lee Hyunsung.</p>
 <p class="orv_line">"Hello, I am Lee Hyunsung."</p>
 <p class="orv_line">"Kim Dokja."</p>
@@ -249,8 +256,8 @@
 <p class="orv_line">Lee Hyunsung sighed, "This is like a novel I was reading while standing on duty, but I still can't feel it. This really isn't a dream?"</p>
 <p class="orv_line">"This is reality."</p>
 <p class="orv_line">My stern answer caused Lee Hyunsung's eyes to slightly change.</p>
-<div class="orv_system"><p>[The character 'Lee Hyunsung' feels a faint trust in you.]</p></div>
-<div class="orv_system"><p>[Your understanding of the character 'Lee Hyunsung' has increased.]</p></div>
+<div class="orv_system"><p>The character 'Lee Hyunsung' feels a faint trust in you.</p></div>
+<div class="orv_system"><p>Your understanding of the character 'Lee Hyunsung' has increased.</p></div>
 <p class="orv_line">Lee Hyunsung nodded. "It is good that you are certain. Then what do we do now? Dokja-ssi, do you have an opinion?"</p>
 <p class="orv_line">"We have to go." I answered without hesitation.</p>
 <p class="orv_line">"G-Go? Are you insane?"</p>
@@ -288,18 +295,12 @@
             <a href="./ch_7"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_9">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="8" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="12" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="7" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="7" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

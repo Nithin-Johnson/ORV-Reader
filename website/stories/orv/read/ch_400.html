@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 400: Ep. 76 - Book of Revelation, II</title>
     <meta property="og:title" content="Ch 400: Ep. 76 - Book of Revelation, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,41 +177,41 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00400.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 400: Ep. 76 - Book of Revelation, II</h1></div>
 <p class="orv_line">If you were to unpack the contents of my declaration, then they went along the lines of "kill us, and you will definitely die, too".</p>
 <p class="orv_line">At first, the Constellations were agitated, then they began whispering among themselves, and finally, silence descended in their midst. Some stared at Agares, while the others, at Metatron. They were the holders of the highest authorities on this battlefield, but they simply maintained their silence with unreadable expressions on their faces.</p>
 <p class="orv_line">However, even though no orders were issued, the clouds of war unexpectedly began churning slowly on the outskirts of the gathered masses.</p>
-<div class="orv_constellation"><p>[&lt;Kim Dokja's Company&gt;. We know very well what you're trying to do.]</p></div>
+<div class="orv_constellation"><p>&lt;Kim Dokja's Company&gt;. We know very well what you're trying to do.</p></div>
 <p class="orv_line">It was a Constellation from &lt;Papyrus&gt; who roared out with true voice.</p>
-<div class="orv_constellation"><p>[However, we still have a score to settle with you.]</p></div>
+<div class="orv_constellation"><p>However, we still have a score to settle with you.</p></div>
 <p class="orv_line">"I wonder about that. It's hard to tell who is owing who here."</p>
 <p class="orv_line">My retort prompted the Constellations of &lt;Papyrus&gt; to free their weapons from their sheaths.</p>
-<div class="orv_constellation"><p>[You said that you're neither 'Good' nor 'Evil'. That also means you are both 'Good' and 'Evil', too.]</p></div>
+<div class="orv_constellation"><p>You said that you're neither 'Good' nor 'Evil'. That also means you are both 'Good' and 'Evil', too.</p></div>
 <p class="orv_line">Nebula &lt;Papyrus&gt; had chosen to affiliate themselves with 'Evil'.</p>
-<div class="orv_constellation"><p>[We will kill all those bastards that have sided with 'Good', at the least!]</p></div>
+<div class="orv_constellation"><p>We will kill all those bastards that have sided with 'Good', at the least!</p></div>
 <p class="orv_line">What a wise decision that was. The Chaos Points only rose up when 'Good' fought against 'Good' and likewise, when 'Evil' fought against 'Evil'. &lt;Papyrus&gt; had figured out a way to judge us without going against the rules of this battlefield.</p>
-<div class="orv_system"><p>[The Oldest Evil wishes for your elimination.]</p></div>
-<div class="orv_system"><p>[The Oldest Good wishes for your elimination.]</p></div>
+<div class="orv_system"><p>The Oldest Evil wishes for your elimination.</p></div>
+<div class="orv_system"><p>The Oldest Good wishes for your elimination.</p></div>
 <p class="orv_line">We were nothing more than viruses in this 'Great War of Saints and Demons'; pathogens that interfered with a system that was operating normally to spread infections around.</p>
 <p class="orv_line">With &lt;Papyrus&gt; as the centre, the waves of 'Good' and 'Evil' were growing larger and larger.</p>
 <p class="orv_line">Constellations burning in animosity towards each other only a few moments ago were now all redirecting their hostilities towards us.</p>
@@ -213,9 +220,9 @@
 <p class="orv_line">He must've known it, too – even if &lt;Underworld&gt; and &lt;Asgard&gt; were with us, even if the members of &lt;Kim Dokja's Company&gt; were in one place…</p>
 <p class="orv_line">…If we clashed directly against them, then someone in our group would definitely die.</p>
 <p class="orv_line">Suddenly, my perception sped up and time slowed down somewhat.</p>
-<div class="orv_quote"><p>「 Their advancing speed is quicker than I thought. 」</p></div>
-<div class="orv_quote"><p>「 Too many Constellations came to their decision too quickly. 」</p></div>
-<div class="orv_quote"><p>「 Maybe, I should've reached 80 in the Chaos Points first. 」</p></div>
+<div class="orv_quote"><p>Their advancing speed is quicker than I thought.</p></div>
+<div class="orv_quote"><p>Too many Constellations came to their decision too quickly.</p></div>
+<div class="orv_quote"><p>Maybe, I should've reached 80 in the Chaos Points first.</p></div>
 <p class="orv_line">Several sentences flitted in and out of my head.</p>
 <p class="orv_line">I recalled the 'Ways of Survival'. Who should I ask for help if I were to emerge victorious from this situation?</p>
 <p class="orv_line">My adopted parents in the &lt;Underworld&gt;?</p>
@@ -224,12 +231,12 @@
 <p class="orv_line">Cheok Jungyeong and the Constellations from the Korean Peninsula?</p>
 <p class="orv_line">Even the faces of my teachers and Jang Hayoung floated up to the fore, too.</p>
 <p class="orv_line">Especially Jang Hayoung; although I desperately needed help, I thought that it'd be for the best if she didn't show up.</p>
-<div class="orv_system"><p>['Fruit of Good and Evil' is stimulating your guilty conscience.]</p></div>
+<div class="orv_system"><p>'Fruit of Good and Evil' is stimulating your guilty conscience.</p></div>
 <p class="orv_line">Maybe, this could be my sense of responsibility. I hoped that Jang Hayoung, born to this world because of me, wouldn't get swept up in the scenarios. My small wish that she'd get to live her own story in her own terms.</p>
 <p class="orv_line">The reason why I didn't advise Jang Hayoung to join &lt;Kim Dokja's Company&gt; or reveal the information on the future was that I felt such ambivalent emotions.</p>
 <p class="orv_line">"Aaaahhhhk!"</p>
 <p class="orv_line">The ranks of the Reincarnators meeting the enemies at the forefront were collapsing. They screamed as tsunami waves swept them up and tore them apart.</p>
-<div class="orv_constellation"><p>[Die!]</p></div>
+<div class="orv_constellation"><p>Die!</p></div>
 <p class="orv_line">Han Sooyoung looked at the Constellations and Demon Kings rushing at us while spouting trite remarks, and smiled nervously. "Looks like we're going to win. Those muttering such lines would die the quickest."</p>
 <p class="orv_line">The corners of the companions' lips twitched energetically at her timely joke.</p>
 <p class="orv_line">"Here they come."</p>
@@ -244,9 +251,9 @@
 <p class="orv_line">100 metres.</p>
 <p class="orv_line">Yoo Joonghyuk spoke. "Now."</p>
 <p class="orv_line">Everyone knew what their roles were. The members of &lt;Kim Dokja's Company&gt; unleashed their Statuses simultaneously.</p>
-<div class="orv_system"><p>[Narrators of Nebula &lt;Kim Dokja's Company&gt; have gathered.]</p></div>
-<div class="orv_system"><p>[Story, 'Demon Realm's Spring', has begun its storytelling!]</p></div>
-<div class="orv_system"><p>[Story, 'Torch that Swallowed the Myth', has begun its storytelling!]</p></div>
+<div class="orv_system"><p>Narrators of Nebula &lt;Kim Dokja's Company&gt; have gathered.</p></div>
+<div class="orv_system"><p>Story, 'Demon Realm's Spring', has begun its storytelling!</p></div>
+<div class="orv_system"><p>Story, 'Torch that Swallowed the Myth', has begun its storytelling!</p></div>
 <p class="orv_line">'Demon Realm's Spring' wrapped around us as if to protect us, and 'Torch that Swallowed the Myth' began screeching as if it'd rip anyone approaching us to shreds. Still, these two alone wouldn't be enough to stop them from coming.</p>
 <p class="orv_line">Even if they were the same 'Giant Stories', the time experienced was different. That enormous gap couldn't be bridged with the 50 years in Kaizenix Archipelago.</p>
 <p class="orv_line">Even then, this was our story.</p>
@@ -267,12 +274,12 @@
 <p class="orv_line">I realized the reason pretty soon.</p>
 <p class="orv_line">A single Constellation and a single Demon King were floating up above the frozen tsunami wave, that was why.</p>
 <p class="orv_line">They were Metatron and Agares. Two of the strongest beings in this battlefield had for the first time, unleashed their true voices.</p>
-<div class="orv_constellation"><p>[All Constellations, withdraw your hostilities and return to your positions!]</p></div>
-<div class="orv_constellation"><p>[The battle will be paused for the time being.]</p></div>
+<div class="orv_constellation"><p>All Constellations, withdraw your hostilities and return to your positions!</p></div>
+<div class="orv_constellation"><p>The battle will be paused for the time being.</p></div>
 <p class="orv_line">I raised my head up towards the air above after hearing their sudden declaration of a cease-fire.</p>
 <p class="orv_line">The reason for the cease-fire could be seen etched in that spot.</p>
-<div class="orv_system"><p>[Chaos Points have surpassed 80.]</p></div>
-<div class="orv_system"><p>[Countdown to Apocalypse has begun.]</p></div>
+<div class="orv_system"><p>Chaos Points have surpassed 80.</p></div>
+<div class="orv_system"><p>Countdown to Apocalypse has begun.</p></div>
 <br>
 <hr>
 <br>
@@ -281,38 +288,38 @@
 <p class="orv_line">What saved us wasn't Constellations or the Demon Kings. No, it was the weakest faction in this battlefield, instead.</p>
 <p class="orv_line">"There must've been the cases of the same camps clashing during the Reincarnators dying at the frontline."</p>
 <p class="orv_line">Weak 'Good' was still 'Good', and weak 'Evil' was still 'Evil'. The 'Good and Evil' became obsessed only with killing us, and as a consequence of disregarding such 'weaklings', it was now on the path towards the apocalypse.</p>
-<div class="orv_system"><p>[From here on, Chaos Points will rise by one point every thirty minutes.]</p></div>
+<div class="orv_system"><p>From here on, Chaos Points will rise by one point every thirty minutes.</p></div>
 <p class="orv_line">Once the Chaos Points exceeded 80, its rate of increase would speed up. Even if there was no clash from here onwards, it'd continue to climb up, and in exactly ten hours, it'd reach the critical point.</p>
 <p class="orv_line">In other words, the revival of the Apocalypse Dragon would commence.</p>
-<div class="orv_system"><p>[The Most Ancient Calamity at the deepest part of Hell is feeling pleased.]</p></div>
+<div class="orv_system"><p>The Most Ancient Calamity at the deepest part of Hell is feeling pleased.</p></div>
 <p class="orv_line">One of the absolute worst calamities in the history of the &lt;Star Stream&gt;, the Apocalypse Dragon. Whether it be the 'Good' or 'Evil' camp, none wanted to see its revival.</p>
 <p class="orv_line">Once the dragon revives, at least a quarter of all Constellations in the &lt;Star Stream&gt; would die, that was why. Anyone from this battlefield could become part of that quarter.</p>
-<div class="orv_system"><p>[Great battlefield of 'Great War of Saints and Demons' has come to a temporary standstill.]</p></div>
-<div class="orv_system"><p>[Representatives of 'Good' and 'Evil' are currently in an emergency conference.]</p></div>
+<div class="orv_system"><p>Great battlefield of 'Great War of Saints and Demons' has come to a temporary standstill.</p></div>
+<div class="orv_system"><p>Representatives of 'Good' and 'Evil' are currently in an emergency conference.</p></div>
 <p class="orv_line">And so, that message floating in the air signified both 'Good' and 'Evil' struggling bitterly in order to survive no matter what.</p>
-<div class="orv_system"><p>[You have accomplished a feat no one has achieved so far!]</p></div>
-<div class="orv_system"><p>[A Myth-grade Story is germinating within you!]</p></div>
-<div class="orv_system"><p>[Your new Modifier will reflect this Story.]</p></div>
+<div class="orv_system"><p>You have accomplished a feat no one has achieved so far!</p></div>
+<div class="orv_system"><p>A Myth-grade Story is germinating within you!</p></div>
+<div class="orv_system"><p>Your new Modifier will reflect this Story.</p></div>
 <p class="orv_line">"Chet. I wanted to see how much stronger I got, though."</p>
 <p class="orv_line">I patted Lee Gilyoung's head as the boy grumbled to himself.</p>
-<p class="orv_line">We were currently sitting inside the passenger compartment of the battleship, [Turtle Dragon]. Jung Heewon and Shin Yoosung were nursing Lee Hyunsung as he lay unmoving like a dead man, while Lee Jihye looked wholly unconvinced by something else.</p>
+<p class="orv_line">We were currently sitting inside the passenger compartment of the battleship, <strong>[Turtle Dragon]</strong>. Jung Heewon and Shin Yoosung were nursing Lee Hyunsung as he lay unmoving like a dead man, while Lee Jihye looked wholly unconvinced by something else.</p>
 <p class="orv_line">"Is this really the end? But, we haven't even fought for real, though?"</p>
 <p class="orv_line">Even though she said that, there was a relieved expression on her face as well.</p>
-<div class="orv_system"><p>[Constellation, 'Demon-like Judge of Fire', is congratulating you on your success.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Demon-like Judge of Fire', is feeling apologetic towards you.]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon-like Judge of Fire', is congratulating you on your success.</p></div>
+<div class="orv_system"><p>Constellation, 'Demon-like Judge of Fire', is feeling apologetic towards you.</p></div>
 <p class="orv_line">"…Uriel? It'll be fine to speak in your true voice."</p>
 <p class="orv_line">Uriel currently squatting by the corner of the cabin lowered her head towards me. For some reason, I thought I could understand where she was coming from, just a little bit.</p>
 <p class="orv_line">Right now, she felt responsible. The fact that her Nebula had attacked &lt;Kim Dokja's Company&gt;, and then, in regards to the things done by those claiming to be 'Absolute Good', too.</p>
-<div class="orv_system"><p>[Constellation, 'Demon-like Judge of Fire', is looking up at you with tearful eyes.]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon-like Judge of Fire', is looking up at you with tearful eyes.</p></div>
 <p class="orv_line">"You don't have to worry, Uriel. We don't hate you. And as for &lt;Eden&gt;… Honestly speaking, my grievances towards them aren't much. We've received their help before, too."</p>
-<div class="orv_system"><p>[Constellation, 'Demon-like Judge of Fire', asks if you're telling the truth.]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon-like Judge of Fire', asks if you're telling the truth.</p></div>
 <p class="orv_line">I was lying.</p>
 <p class="orv_line">However, it'd only hurt Uriel if I revealed how angry I was.</p>
-<div class="orv_system"><p>[Constellation, 'Demon-like Judge of Fire', says that the Scribe isn't such a bad being…]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon-like Judge of Fire', says that the Scribe isn't such a bad being…</p></div>
 <p class="orv_line">"I also know what kind of a Constellation Metatron is. Please, you should rest for a bit," I said, before leaving the cabin.</p>
-<div class="orv_system"><p>[30 minutes have elapsed.]</p></div>
-<div class="orv_system"><p>[Chaos Points are rising up by one.]</p></div>
-<div class="orv_system"><p>[Current Chaos Points: 82]</p></div>
+<div class="orv_system"><p>30 minutes have elapsed.</p></div>
+<div class="orv_system"><p>Chaos Points are rising up by one.</p></div>
+<div class="orv_system"><p>Current Chaos Points: 82</p></div>
 <p class="orv_line">Alongside the messages entering my ears, there it was, a giant grey sphere floating up in the air.</p>
 <p class="orv_line">Its inside couldn't be spied on. Most likely, every single top-ranked Demon King and Archangel was in there, having a conference right about now.</p>
 <p class="orv_line">And it was also quite likely that the 'Good' and 'Evil' were talking crap about &lt;Kim Dokja's Company&gt; and 'Demon King of Salvation' in one voice, too.</p>
@@ -325,7 +332,7 @@
 <p class="orv_line">"It's because they don't want to die, either."</p>
 <p class="orv_line">"You really think that's all?"</p>
 <p class="orv_line">She narrowed her eyes and glared at me.</p>
-<div class="orv_system"><p>[Story, 'Predictive Plagiarism', is continuing its storytelling.]</p></div>
+<div class="orv_system"><p>Story, 'Predictive Plagiarism', is continuing its storytelling.</p></div>
 <p class="orv_line">Judging from the whitish fragments of the Story floating around, it seemed that she had activated 'Predictive Plagiarism' and kept it up ever since that conference had commenced.</p>
 <p class="orv_line">I asked her. "What do you think, then?"</p>
 <p class="orv_line">"They are just too quiet. Even if they are terrified of the Apocalypse Dragon… Something just feels off, you know."</p>
@@ -352,20 +359,20 @@
 <p class="orv_line">Anna Croft spoke. "Let me get right to it, then. I can't see the future."</p>
 <p class="orv_line">"What do you mean by that?"</p>
 <p class="orv_line">Several thoughts floated up in my head, then.</p>
-<p class="orv_line">Now that I thought about it, Anna Croft couldn't predict the future related to me. I remembered that [the Fourth Wall] had something to do with it. What did she say back then? Was it, there's noise hiding the future as if someone drew graffiti all over it?</p>
+<p class="orv_line">Now that I thought about it, Anna Croft couldn't predict the future related to me. I remembered that <strong>[the Fourth Wall]</strong> had something to do with it. What did she say back then? Was it, there's noise hiding the future as if someone drew graffiti all over it?</p>
 <p class="orv_line">But then, Anna Croft was shaking her head. "It's not the noise obscuring the future, but I simply can't read it at all. It's not as if someone has doodled on the page, but more like the page with the doodling on it didn't exist in the first place."</p>
 <p class="orv_line">Han Sooyoung and I exchanged glances. An ominous foreboding slowly crept up over me.</p>
 <p class="orv_line">"Kim Dokja, this…"</p>
 <p class="orv_line">Not like doodlings on a page, but the page itself had disappeared. No matter how hard I thought about it, there could only be one type of future like that.</p>
 <p class="orv_line">"…Can it be?"</p>
 <p class="orv_line">As if it was waiting for this moment, messages suddenly floated up in the air.</p>
-<div class="orv_system"><p>[Chaos Points is rising up by one point.]</p></div>
-<div class="orv_system"><p>[Current Chaos Points: 83]</p></div>
+<div class="orv_system"><p>Chaos Points is rising up by one point.</p></div>
+<div class="orv_system"><p>Current Chaos Points: 83</p></div>
 <p class="orv_line">"But, it hasn't been 30 minutes yet?"</p>
 <p class="orv_line">"It's not rising up because the time has elapsed," said Yoo Joonghyuk in a hardened voice.</p>
 <p class="orv_line">Time hadn't passed by, yet the Chaos Points had risen up. In that case, there could only be one possibility.</p>
-<div class="orv_system"><p>[Members from the same camp have clashed!]</p></div>
-<div class="orv_system"><p>[Current Chaos Points: 84]</p></div>
+<div class="orv_system"><p>Members from the same camp have clashed!</p></div>
+<div class="orv_system"><p>Current Chaos Points: 84</p></div>
 <p class="orv_line">Someone was trying to destroy this world.</p>
 <br>
 <hr>
@@ -374,18 +381,12 @@
             <a href="./ch_399"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_401">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="400" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="736" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="399" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="399" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

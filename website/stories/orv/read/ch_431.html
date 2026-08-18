@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 431: Ep. 81 - A dumpling's reminiscence, IV</title>
     <meta property="og:title" content="Ch 431: Ep. 81 - A dumpling's reminiscence, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,53 +177,53 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00431.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 431: Ep. 81 - A dumpling's reminiscence, IV</h1></div>
 <p class="orv_line">The ensuing scenario afterwards proved to be plain sailing. Zhu Bajie had a big role to play in that.</p>
-<div class="orv_system"><p>[Current rate of Journey to the West's progress: 24%]</p></div>
+<div class="orv_system"><p>Current rate of Journey to the West's progress: 24%</p></div>
 <p class="orv_line">The Journey to the West had the storyline of overcoming a total of 81 different adversities in the 14-year period. But, as the original work used the stories passed down orally as its foundation, this level of changes didn't seem to matter one jot.</p>
 <p class="orv_line">Even then, I couldn't help but wonder if the story was progressing a bit too fast when we hadn't even met Sha Wujing yet. And I also kind of wondered who'd play that role, too.</p>
 <p class="orv_line">"Ku-waaahk!"</p>
-<p class="orv_line">Currently, Yoo Joonghyuk's [Black Heavenly Demon Sword] was busy cutting the heads off the unlucky bandits that showed up as a sort of intermission event.</p>
-<div class="orv_system"><p>[A portion of judges are dissatisfied by the viciousness of 'Zhu Bajie'!]</p></div>
-<div class="orv_system"><p>[Audience members are satisfied with the taste of the Journey to the West's cider!]</p></div>
-<div class="orv_system"><p>[10 additional points have been acquired.]</p></div>
+<p class="orv_line">Currently, Yoo Joonghyuk's <strong>[Black Heavenly Demon Sword]</strong> was busy cutting the heads off the unlucky bandits that showed up as a sort of intermission event.</p>
+<div class="orv_system"><p>A portion of judges are dissatisfied by the viciousness of 'Zhu Bajie'!</p></div>
+<div class="orv_system"><p>Audience members are satisfied with the taste of the Journey to the West's cider!</p></div>
+<div class="orv_system"><p>10 additional points have been acquired.</p></div>
 <p class="orv_line">Even back in the original story, Zhu Bajie and Sun Wukong often killed all human-type villains they came across. That resulted in 'Tang Sanzang' lecturing them, or when the matter became too serious, they even suffered expulsion, too.</p>
 <p class="orv_line">There were quite a few readers who felt turned-off by the stuffy uptightness of Tang Sanzang, though.</p>
 <p class="orv_line">"Joonghyuk ahjussi, how about sparing those people…?"</p>
-<div class="orv_system"><p>[A portion of judges are satisfied by the reflection of the original work.]</p></div>
-<div class="orv_system"><p>[Many audience members are arrested by Tang Sanzang's adorableness.]</p></div>
-<div class="orv_system"><p>[20 additional points have been acquired.]</p></div>
+<div class="orv_system"><p>A portion of judges are satisfied by the reflection of the original work.</p></div>
+<div class="orv_system"><p>Many audience members are arrested by Tang Sanzang's adorableness.</p></div>
+<div class="orv_system"><p>20 additional points have been acquired.</p></div>
 <p class="orv_line">For sure, the question of who was playing the role seemed to make a big difference overall.</p>
 <p class="orv_line">The leader of the bandits, beaten up to within an inch of his life by Yoo Joonghyuk, yelled out as if he was furious about his treatment. "Keu-euh-euk! Who would've thought that a mere Zhu Bajie was that strong!"</p>
 <p class="orv_line">Surprisingly, he was someone that I knew.</p>
 <p class="orv_line">Kids next to me whispered to each other.</p>
 <p class="orv_line">"Poor Myungoh ahjussi."</p>
-<p class="orv_line">The department chief Han Myungoh activated [One-legged Swift Horse] and while running away as if his butt was on fire, sent us a knowing wink.</p>
+<p class="orv_line">The department chief Han Myungoh activated <strong>[One-legged Swift Horse]</strong> and while running away as if his butt was on fire, sent us a knowing wink.</p>
 <p class="orv_line">To think that Han Myungoh was one of the players participating here, too.</p>
 <p class="orv_line">It seemed that he was hired to perform multiple roles, specifically as leaders of various bandit troupes. Shin Yoosung softly muttered as we watched his distancing back. "Heewon unni said that it was okay."</p>
-<p class="orv_line">Yoo Joonghyuk returned to our side while lightly polishing the [Black Heavenly Demon Sword]. He especially paid more attention to the centre of the blade. When I took a closer look, a minute crack could be spotted there.</p>
+<p class="orv_line">Yoo Joonghyuk returned to our side while lightly polishing the <strong>[Black Heavenly Demon Sword]</strong>. He especially paid more attention to the centre of the blade. When I took a closer look, a minute crack could be spotted there.</p>
 <p class="orv_line">His sword was broken on the battlefield of the 'Great War of Saints and Demons'.</p>
-<p class="orv_line">This would be his second sword to be broken after the [Splitting the Sky Sword]. Even if he didn't show it, he must've been hurting over this whole thing.</p>
+<p class="orv_line">This would be his second sword to be broken after the <strong>[Splitting the Sky Sword]</strong>. Even if he didn't show it, he must've been hurting over this whole thing.</p>
 <p class="orv_line">It'd be good if he could get himself a new weapon from this 'Journey to the West'…</p>
 <p class="orv_line">But, I couldn't recall any weapons that might suit him. Sun Wukong's Ruyi Jingu Bang wasn't the type of weapon that Yoo Joonghyuk was familiar with, and Zhu Bajie's Nine-Tooth Spike Rake didn't match his taste. No need to even mention Sha Wujing's Demon Slaying Staff, either…</p>
 <p class="orv_line">Maybe he found me, deeply submerged in my thoughts, suspicious, as he suddenly addressed me off-handedly. "Thankfully, you behaved yourself."</p>
@@ -228,11 +235,11 @@
 <p class="orv_line">I became slightly dismayed and glared at the sky.</p>
 <p class="orv_line">Hey, there's just no way he'd be thinking like that. Besides, Yoo Joonghyuk would never laugh "Fufufu" in his life.</p>
 <p class="orv_line">Han Sooyoung, you dumbass…</p>
-<div class="orv_system"><p>[A fair number of audience members are greatly moved by Zhu Bajie's inner thoughts!]</p></div>
-<div class="orv_system"><p>[A fair number of audience members have fallen deeply for Zhu Bajie's magnetism!]</p></div>
-<div class="orv_system"><p>[One of the audience members wish to sponsor Coins.]</p></div>
-<div class="orv_system"><p>[Judge, 'Cleanser of Altars', is greatly satisfied!]</p></div>
-<div class="orv_system"><p>[50 additional points have been acquired!]</p></div>
+<div class="orv_system"><p>A fair number of audience members are greatly moved by Zhu Bajie's inner thoughts!</p></div>
+<div class="orv_system"><p>A fair number of audience members have fallen deeply for Zhu Bajie's magnetism!</p></div>
+<div class="orv_system"><p>One of the audience members wish to sponsor Coins.</p></div>
+<div class="orv_system"><p>Judge, 'Cleanser of Altars', is greatly satisfied!</p></div>
+<div class="orv_system"><p>50 additional points have been acquired!</p></div>
 <p class="orv_line">…What an outstanding author she was.</p>
 <p class="orv_line">(The journey proved to be rather uneventful. Sun Wukong began thinking. Is this what it means to lead a 'retired life'?)</p>
 <p class="orv_line">In any case, the trip was indeed quite stress-free, as long as I excluded the constant war of nerves with Yoo Joonghyuk, that was.</p>
@@ -240,16 +247,16 @@
 <p class="orv_line">"Oii, Mister Demon King of Salvation. You must be really comfortable, aren't you?"</p>
 <p class="orv_line">"Yes. It's all thanks to you the Masters."</p>
 <p class="orv_line">I should also thank Han Sooyoung for me getting referred to as the 'Demon King of Salvation' even though my identity hadn't been revealed yet.</p>
-<p class="orv_line">This [I've become the retired SSSSS-rank Sun Wukong] had a strange backstory of Sun Wukong being nicknamed the 'Demon King of Salvation' in his past. I couldn't really figure out why she'd use such a nickname here…</p>
-<div class="orv_system"><p>[A portion of audience members like the story where the 'Demon King of Salvation' is treated poorly.]</p></div>
-<div class="orv_system"><p>[10 additional points have been acquired.]</p></div>
+<p class="orv_line">This <strong>[I've become the retired SSSSS-rank Sun Wukong]</strong> had a strange backstory of Sun Wukong being nicknamed the 'Demon King of Salvation' in his past. I couldn't really figure out why she'd use such a nickname here…</p>
+<div class="orv_system"><p>A portion of audience members like the story where the 'Demon King of Salvation' is treated poorly.</p></div>
+<div class="orv_system"><p>10 additional points have been acquired.</p></div>
 <p class="orv_line">…Nope, I think I know now.</p>
 <p class="orv_line">"Stop picking a fight with someone you're not familiar with, you dummy."</p>
 <p class="orv_line">"No, that's not it. I mean, he should earn his keep, right? Dokja hyung told me that even if your body's relaxing, your head should still be working overtime."</p>
 <p class="orv_line">I definitely never said that. When you were relaxing, you should relax your mind, too.</p>
 <p class="orv_line">Lee Gilyoung narrowed his eyes to a slit and stared at me while adding a few more words on top. "That's why you should give up some tasty info already. I mean, you're supposed to be a second-turn Sun Wukong according to the backstory, right? Don't you know where we can find some hidden elixirs or something?"</p>
 <p class="orv_line">"…Mm. Sure, I know of a few."</p>
-<p class="orv_line">Indeed, the 'Journey to the West' did feature quite a few useful elixirs. Such as, the [Peach of Immortality] that Sun Wukong ate, or the [Ginseng Fruit] the group finds during the journey itself.</p>
+<p class="orv_line">Indeed, the 'Journey to the West' did feature quite a few useful elixirs. Such as, the <strong>[Peach of Immortality]</strong> that Sun Wukong ate, or the <strong>[Ginseng Fruit]</strong> the group finds during the journey itself.</p>
 <p class="orv_line">"One of the best elixirs can be found nearby."</p>
 <p class="orv_line">"Really? Where?"</p>
 <p class="orv_line">I didn't reply and simply stared at Lee Gilyoung.</p>
@@ -263,7 +270,7 @@
 <p class="orv_line">Watching the kids growl at each other like that, I couldn't help but snicker on the side. The dumpling on my shoulder didn't seem to be happy with my current actions and whispered to me.</p>
 <p class="orv_line">– This is no time to snicker like a fool. It's you who needs an elixir or two, not them.</p>
 <p class="orv_line">Along with his rebuke, a window popped up in my view.</p>
-<div class="orv_system"><p>[Outer God transformation progress percentage: 48%]</p></div>
+<div class="orv_system"><p>Outer God transformation progress percentage: 48%</p></div>
 <p class="orv_line">…The rate of assimilation was chill-inducingly fast. I didn't expect this one to be quicker than the Journey to the West's progress.</p>
 <p class="orv_line">– It's because your Incarnation Body's rate of recovery is too slow.</p>
 <p class="orv_line">'…This was not a part of the deal'.</p>
@@ -277,43 +284,43 @@
 <p class="orv_line">At the bare minimum, I needed over a week.</p>
 <p class="orv_line">– In that case, there is only one method remaining. We need to strengthen your frail Incarnation Body.</p>
 <p class="orv_line">I nodded my head and checked out my body's condition.</p>
-<div class="orv_system"><p>[Current Incarnation Body recovery rate: 45%]</p></div>
-<div class="orv_system"><p>[Damage to your foundational Story is critical.]</p></div>
-<div class="orv_system"><p>[You can consume a new type of elixir to boost the rate of recovery.]</p></div>
+<div class="orv_system"><p>Current Incarnation Body recovery rate: 45%</p></div>
+<div class="orv_system"><p>Damage to your foundational Story is critical.</p></div>
+<div class="orv_system"><p>You can consume a new type of elixir to boost the rate of recovery.</p></div>
 <p class="orv_line">The reason for the rate of transforming into an Outer God speeding up was simply because my Incarnation Body hadn't recovered fully from the damage I suffered during the 'Great War of Saints and Demons'.</p>
-<div class="orv_system"><p>[Story fragment, 'Young Gold Dragon's Broken Heart', is unable to function properly.]</p></div>
+<div class="orv_system"><p>Story fragment, 'Young Gold Dragon's Broken Heart', is unable to function properly.</p></div>
 <p class="orv_line">Now that I thought about it, I was too focused on gathering Stories and neglected on enhancing my Incarnation Body's durability. Well, I half gave up on the idea after I kept dying and stuff, so… As for the 'Young Gold Dragon's Broken Heart', now that was a Story fragment I acquired a really long time ago.</p>
 <p class="orv_line">Just like what the 'One Invincible Fist' Yoo Hoseong told me, though, I needed to train my Incarnation Body if I wanted to bring out the full might of the Stories.</p>
 <p class="orv_line">Because if Stories were 'words', then one's Incarnation Body was the 'paper' those words could be written on.</p>
 <p class="orv_line">– Every elixir that can be found in here should all be replicas. Still, it'll be better than not consuming one.</p>
-<div class="orv_system"><p>[Score: 2963]</p></div>
-<div class="orv_system"><p>[Currently, five judges are watching the applicable Story chamber.]</p></div>
-<div class="orv_system"><p>[Currently, many audience members are interested in the upward trajectory of the Story chamber.]</p></div>
-<div class="orv_system"><p>[Current ranking of the applicable Story chamber is 31st.]</p></div>
+<div class="orv_system"><p>Score: 2963</p></div>
+<div class="orv_system"><p>Currently, five judges are watching the applicable Story chamber.</p></div>
+<div class="orv_system"><p>Currently, many audience members are interested in the upward trajectory of the Story chamber.</p></div>
+<div class="orv_system"><p>Current ranking of the applicable Story chamber is 31st.</p></div>
 <p class="orv_line">In a fairly short period of time, the scenario created by Han Sooyoung managed to earn the support from many people out there. And a story where many were sharing the cost of 'Probability' could exhibit pretty strong power as a result.</p>
 <p class="orv_line">As the chamber's ranking climbed up, every item that showed up here would get closer and closer to the grade of their original counterparts, and if we manage to win, then they would become originals outright.</p>
 <p class="orv_line">In other words, everything we find in this Story chamber would become 'real' things.</p>
 <p class="orv_line">If our chamber's ranking continues to climb as smoothly as it had done so far, and if I manage to successfully gather the elixirs, then…</p>
-<div class="orv_system"><p>[Giant Story, 'Season of Light and Darkness', is currently asleep.]</p></div>
-<div class="orv_system"><p>[You don't have the qualification to use the applicable Story.]</p></div>
+<div class="orv_system"><p>Giant Story, 'Season of Light and Darkness', is currently asleep.</p></div>
+<div class="orv_system"><p>You don't have the qualification to use the applicable Story.</p></div>
 <p class="orv_line">…Then maybe, I might get to utilise the power of this 'Giant Story' that I earned but hadn't been able to unleash until now.</p>
-<div class="orv_system"><p>[Giant Story, 'Torch that Swallowed the Myth', is afraid of 'Season of Light and Darkness'.]</p></div>
-<p class="orv_line">Even the [Torch that Swallowed the Myth] was scared of this Story. Right now, I couldn't even begin to imagine how incredible the power of this Story was.</p>
+<div class="orv_system"><p>Giant Story, 'Torch that Swallowed the Myth', is afraid of 'Season of Light and Darkness'.</p></div>
+<p class="orv_line">Even the <strong>[Torch that Swallowed the Myth]</strong> was scared of this Story. Right now, I couldn't even begin to imagine how incredible the power of this Story was.</p>
 <p class="orv_line">"Stop."</p>
 <p class="orv_line">It was at that moment when Yoo Joonghyuk walking out in front came to a stop.</p>
 <p class="orv_line">The sky that used to be clear and blue was now dyed in a yellowish hue. I took a closer look to find that the yellowish fog had blanketed the surrounding landscape as well as the sky above.</p>
-<div class="orv_system"><p>[You have arrived in Yellow Wind Cave at Yellow Wind Ridge.]</p></div>
+<div class="orv_system"><p>You have arrived in Yellow Wind Cave at Yellow Wind Ridge.</p></div>
 <p class="orv_line">Yellow Wind Ridge, was it?</p>
 <p class="orv_line">This was the residence of one of the Journey's villains, 'Yellow Wind' Demon King. If my thoughts were correct, then one of the elixirs I need should be found nearby.</p>
 <p class="orv_line">It was here that we heard an incoming message.</p>
-<div class="orv_system"><p>[A large number of Players are joining this 'Story chamber'!]</p></div>
+<div class="orv_system"><p>A large number of Players are joining this 'Story chamber'!</p></div>
 <p class="orv_line">The original number of Players for this chamber was eight. However, there was a sudden influx of additional Players.</p>
 <p class="orv_line">Lee Gilyoung muttered as if he was dumbfounded by it. "…But, why now?"</p>
 <p class="orv_line">It was logically difficult to explain. The newly-entering Players to a Story chamber that no longer recruited roles could only become 'extras' and not much else. And these extras would not get any proper rewards even after the chamber was concluded successfully.</p>
 <p class="orv_line">That was the situation for the top-ten ranked Story chambers, so there was no need to even mention participating in this 31st… No, hang on, there was.</p>
-<div class="orv_system"><p>[A small number of audience members are wary of the 6731st Story chamber's rise in the rankings.]</p></div>
-<div class="orv_system"><p>[A portion of audience members are looking forward to your destruction.]</p></div>
-<div class="orv_system"><p>[Many audience members are paying attention to the Story chamber's sudden upheaval!]</p></div>
+<div class="orv_system"><p>A small number of audience members are wary of the 6731st Story chamber's rise in the rankings.</p></div>
+<div class="orv_system"><p>A portion of audience members are looking forward to your destruction.</p></div>
+<div class="orv_system"><p>Many audience members are paying attention to the Story chamber's sudden upheaval!</p></div>
 <p class="orv_line">The current situation was this: our Story chamber had shot up from the bottom of the ranking all the way up near the top in a proverbial blink of an eye.</p>
 <p class="orv_line">Yoo Joonghyuk spoke, his expression hardening. "Bastards are trying to ruin our scenario."</p>
 <p class="orv_line">It was unknown who might be the instigator in this case, but I could think of something.</p>
@@ -331,17 +338,17 @@
 <p class="orv_line">"So, that's the 'Sun Wukong'?"</p>
 <p class="orv_line">"He must be a weakling, judging from his Status."</p>
 <p class="orv_line">"Did they really think we'd be scared by them attaching the 'Demon King of Salvation' moniker onto a weakling like him?"</p>
-<p class="orv_line">Only then did I figure out what their real goal was. No matter what, the main protagonist of the [Journey to the West] was 'Sun Wukong'. If he dies, the Journey would end, too.</p>
-<div class="orv_system"><p>[A portion of judges are worried about your safety.]</p></div>
-<div class="orv_system"><p>[A portion of audience members are worried about your safety.]</p></div>
+<p class="orv_line">Only then did I figure out what their real goal was. No matter what, the main protagonist of the <strong>[Journey to the West]</strong> was 'Sun Wukong'. If he dies, the Journey would end, too.</p>
+<div class="orv_system"><p>A portion of judges are worried about your safety.</p></div>
+<div class="orv_system"><p>A portion of audience members are worried about your safety.</p></div>
 <p class="orv_line">I watched the Constellations come closer and felt really conflicted about this whole thing.</p>
 <p class="orv_line">(Retired Sun Wukong didn't want to fight. Why? Because it was annoying.)</p>
-<div class="orv_system"><p>['Retirement penalty' has steeply decreased your will to fight.]</p></div>
+<div class="orv_system"><p>'Retirement penalty' has steeply decreased your will to fight.</p></div>
 <p class="orv_line">Yup, it was all because of that damn 'retired' setting.</p>
-<div class="orv_system"><p>[Judge, 'Prisoner of the Golden Headband', is digging his ear as if he can't be bothered.]</p></div>
-<div class="orv_system"><p>[Judge, 'Bimawen', is opening a book to read with a refined expression.]</p></div>
-<div class="orv_system"><p>[Judge, 'Meihouwang', is yawning out in boredom.]</p></div>
-<p class="orv_line">Those 'Sun Wukongs', feeling sick and tired of hard-carrying the [Journey to the West] by themselves originally, wouldn't enjoy this type of development at all. Utterly not caring about that, the 'extra' Constellations wielding scary-looking weapons finally arrived in my near vicinity.</p>
+<div class="orv_system"><p>Judge, 'Prisoner of the Golden Headband', is digging his ear as if he can't be bothered.</p></div>
+<div class="orv_system"><p>Judge, 'Bimawen', is opening a book to read with a refined expression.</p></div>
+<div class="orv_system"><p>Judge, 'Meihouwang', is yawning out in boredom.</p></div>
+<p class="orv_line">Those 'Sun Wukongs', feeling sick and tired of hard-carrying the <strong>[Journey to the West]</strong> by themselves originally, wouldn't enjoy this type of development at all. Utterly not caring about that, the 'extra' Constellations wielding scary-looking weapons finally arrived in my near vicinity.</p>
 <p class="orv_line">"Kill him!"</p>
 <p class="orv_line">(Interpretation: Haha, kill that baldy monkey.)</p>
 <p class="orv_line">"Kill him!"</p>
@@ -349,13 +356,13 @@
 <p class="orv_line">"Kill him!"</p>
 <p class="orv_line">(Interpretation: A roc■-for-brains monkey.)</p>
 <p class="orv_line">I was about to throw a tackle, arguing about the validity of such interpretations, but then, the channel was suddenly flooded with an explosion of messages.</p>
-<div class="orv_system"><p>[Judge, 'Prisoner of the Golden Headband', is enraged while holding onto his hair!]</p></div>
-<div class="orv_system"><p>[Judge, 'Bimawen', is shuddering angrily at the filthiness of this story.]</p></div>
-<div class="orv_system"><p>[Judge, Meihouwang', wishes for the heads of those fools to roll.]</p></div>
-<div class="orv_system"><p>[A portion of judges are providing a great amount of Probability towards the progression of the applicable Story chamber!]</p></div>
-<div class="orv_system"><p>[If this story's direction is changed, then a large amount of additional points will be acquired.]</p></div>
+<div class="orv_system"><p>Judge, 'Prisoner of the Golden Headband', is enraged while holding onto his hair!</p></div>
+<div class="orv_system"><p>Judge, 'Bimawen', is shuddering angrily at the filthiness of this story.</p></div>
+<div class="orv_system"><p>Judge, Meihouwang', wishes for the heads of those fools to roll.</p></div>
+<div class="orv_system"><p>A portion of judges are providing a great amount of Probability towards the progression of the applicable Story chamber!</p></div>
+<div class="orv_system"><p>If this story's direction is changed, then a large amount of additional points will be acquired.</p></div>
 <p class="orv_line">…Ehng?</p>
-<div class="orv_system"><p>[A private message has arrived from the Scenario Master.]</p></div>
+<div class="orv_system"><p>A private message has arrived from the Scenario Master.</p></div>
 <p class="orv_line">– "Hey, you said you can fight a bit, right?"</p>
 <p class="orv_line">The narration began even before I had time to reply.</p>
 <p class="orv_line">(There was one thing that all these Yogoes rushing in didn't know. Without a doubt, he was the 'retired Sun Wunkong'. However…)</p>
@@ -369,18 +376,12 @@
             <a href="./ch_430"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_432">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="431" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="484" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="430" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="430" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

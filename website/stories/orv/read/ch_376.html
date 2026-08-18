@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 376: Ep. 71 - 50 years later, IV</title>
     <meta property="og:title" content="Ch 376: Ep. 71 - 50 years later, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,84 +177,84 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00376.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 376: Ep. 71 - 50 years later, IV</h1></div>
 <p class="orv_line">– Capture them! Apprehend the eldest Prince first!</p>
 <p class="orv_line">– They are taking the Fourth Prince away!</p>
 <p class="orv_line">Angry Reincarnators inside the screen were pouring out a barrage of arrows and sword lights. And there were two men running within the thick, choking smoke – Yoo Joonghyuk and Kim Dokja.</p>
-<div class="orv_constellation"><p>[Baat, baaaht!]</p></div>
+<div class="orv_constellation"><p>Baat, baaaht!</p></div>
 <p class="orv_line">With a very restless expression on her face, Biyoo jumped up and down in the air like a ball of mochi.</p>
 <p class="orv_line">Arrows flew past Kim Dokja's head with barely any room to spare; some of them even accurately fell towards his back, but the First Prince quickly swung his sword to deflect them all.</p>
 <p class="orv_line">– Retreat!</p>
 <p class="orv_line">With that order, the revolutionaries receded away. And there were Constellations watching this spectacle from afar.</p>
-<div class="orv_system"><p>[Constellation, 'Father of the Rich Night', is gazing at 'Kaizenix Archipelago'.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Queen of the Darkest Spring', is looking at the Underworld's successor.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Abyssal Black Flame Dragon', is roaring out in frustration!]</p></div>
+<div class="orv_system"><p>Constellation, 'Father of the Rich Night', is gazing at 'Kaizenix Archipelago'.</p></div>
+<div class="orv_system"><p>Constellation, 'Queen of the Darkest Spring', is looking at the Underworld's successor.</p></div>
+<div class="orv_system"><p>Constellation, 'Abyssal Black Flame Dragon', is roaring out in frustration!</p></div>
 <p class="orv_line">Unfortunately, their messages couldn't reach the Incarnations within the channel.</p>
-<div class="orv_system"><p>[Constellation, 'Demon-like Judge of Fire', is pleading for at least one message to get through!]</p></div>
-<div class="orv_system"><p>[Constellation, 'Demon-like Judge of Fire', is requesting for the permission to send indirect messages…]</p></div>
-<div class="orv_constellation"><p>[Baat, baaaht.]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon-like Judge of Fire', is pleading for at least one message to get through!</p></div>
+<div class="orv_system"><p>Constellation, 'Demon-like Judge of Fire', is requesting for the permission to send indirect messages…</p></div>
+<div class="orv_constellation"><p>Baat, baaaht.</p></div>
 <p class="orv_line">With a sad look, Biyoo shook her head.</p>
 <p class="orv_line">Dokkaebis might possess the authority to change broadcast set-up of their channels, but the situation this time with the 'Isle of Reincarnators' was a rather unique one.</p>
-<div class="orv_system"><p>[Constellation, 'Demon-like Judge of Fire', is glaring at the 'Mandala's Guardian'.]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon-like Judge of Fire', is glaring at the 'Mandala's Guardian'.</p></div>
 <p class="orv_line">The one who offered up the stage for the scenario of the 'Great War of Saints and Demons' was the master of the 'Isle of Reincarnators', 'Mandala's Guardian'. He was not allowed to participate in this scenario personally, but at the same time, was given the same level of authority to interfere as the high-ranking Dokkaebis during this war.</p>
-<div class="orv_constellation"><p>[Oh, young angel, that is regrettably impossible to do so. Unless, you decide to convert to the path of Buddhism through this opportunity.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Demon-like Judge of Fire', is throwing a temper tantrum.]</p></div>
-<div class="orv_constellation"><p>[You should be mindful of your temper. Those with much anger in them will get consumed by it later.]</p></div>
-<div class="orv_system"><p>[A great number of Constellations are expressing their indignation!]</p></div>
+<div class="orv_constellation"><p>Oh, young angel, that is regrettably impossible to do so. Unless, you decide to convert to the path of Buddhism through this opportunity.</p></div>
+<div class="orv_system"><p>Constellation, 'Demon-like Judge of Fire', is throwing a temper tantrum.</p></div>
+<div class="orv_constellation"><p>You should be mindful of your temper. Those with much anger in them will get consumed by it later.</p></div>
+<div class="orv_system"><p>A great number of Constellations are expressing their indignation!</p></div>
 <p class="orv_line">Not caring whether they were furious or not, the 'Mandala's Guardian' continued to stare with quiet, distant eyes at Kim Dokja inside the screen – as if he was searching for a certain profound epiphany from that man's face.</p>
-<div class="orv_system"><p>[Channels nearby are momentarily being frozen!]</p></div>
+<div class="orv_system"><p>Channels nearby are momentarily being frozen!</p></div>
 <p class="orv_line">Tsu-chuchuchut…</p>
 <p class="orv_line">It was around then that someone revealed himself in the air accompanied by a sudden storm of sparks. The 'Mandala's Guardian' shifted his disinterested eyes in that direction.</p>
-<div class="orv_constellation"><p>[This one doesn't recall giving entry permission to a Dokkaebi from the Bureau.]</p></div>
-<div class="orv_constellation"><p>[I simply had to come with the situation being what it is, oh, 'King of Reincarnators'.]</p></div>
+<div class="orv_constellation"><p>This one doesn't recall giving entry permission to a Dokkaebi from the Bureau.</p></div>
+<div class="orv_constellation"><p>I simply had to come with the situation being what it is, oh, 'King of Reincarnators'.</p></div>
 <p class="orv_line">The one that appeared was the historical-grade Dokkaebi, Bihyung. He courteously performed the Buddhist-style greeting and began his questioning right away.</p>
-<div class="orv_constellation"><p>[I'm aware that you possess ten different names. Sakya, Sakyamuni, Siddhartha, Tathagata, Sugata, Buddha… Which one among them are you, exactly?]</p></div>
+<div class="orv_constellation"><p>I'm aware that you possess ten different names. Sakya, Sakyamuni, Siddhartha, Tathagata, Sugata, Buddha… Which one among them are you, exactly?</p></div>
 <p class="orv_line">The expression on the Guardian's face shifted ever so slightly after hearing Bihyung's question. The fact was, he would transform into a different existence according to the name he currently possessed.</p>
-<div class="orv_constellation"><p>[This one is currently Sakyamuni.]</p></div>
-<div class="orv_constellation"><p>[Sakyamuni, please cancel the abnormal scenario currently imposed on the Nebula &lt;Kim Dokja's Company&gt;.]</p></div>
-<div class="orv_constellation"><p>[That is contrary to our prior agreement. Have you not handed over all control of the preparatory scenarios to me?]</p></div>
-<div class="orv_constellation"><p>[I believe you were strongly requested to remain neutral in the upcoming 'Great War of Saints and Demons'.]</p></div>
+<div class="orv_constellation"><p>This one is currently Sakyamuni.</p></div>
+<div class="orv_constellation"><p>Sakyamuni, please cancel the abnormal scenario currently imposed on the Nebula &lt;Kim Dokja's Company&gt;.</p></div>
+<div class="orv_constellation"><p>That is contrary to our prior agreement. Have you not handed over all control of the preparatory scenarios to me?</p></div>
+<div class="orv_constellation"><p>I believe you were strongly requested to remain neutral in the upcoming 'Great War of Saints and Demons'.</p></div>
 <p class="orv_line">Bihyung's sharp gaze landed firmly on Sakyamuni. The Warrior Monk's eyes quietly held that gaze, and the mandala within them reversed their spinning direction.</p>
-<div class="orv_constellation"><p>[Well. This one isn't the first person to stop being neutral, it seems.]</p></div>
-<div class="orv_constellation"><p>[Can you clarify that, please?]</p></div>
-<div class="orv_constellation"><p>[I heard recently that there is an historical-grade Dokkaebi greatly favouring Incarnations from a certain Nebula.]</p></div>
+<div class="orv_constellation"><p>Well. This one isn't the first person to stop being neutral, it seems.</p></div>
+<div class="orv_constellation"><p>Can you clarify that, please?</p></div>
+<div class="orv_constellation"><p>I heard recently that there is an historical-grade Dokkaebi greatly favouring Incarnations from a certain Nebula.</p></div>
 <p class="orv_line">Right after Sakyamuni finished replying in a subtle but accusatory tone of voice, Biyoo popped up in mid-air and plopped her soft tummy on top of Bihyung's head.</p>
-<div class="orv_constellation"><p>[Are you here because of the Bureau, or by your own volition?]</p></div>
+<div class="orv_constellation"><p>Are you here because of the Bureau, or by your own volition?</p></div>
 <p class="orv_line">Bihyung lightly bit his lip, but didn't provide an answer. Instead, he looked at Kim Dokja on the screen, currently breaking past the clouds of explosions and running away.</p>
-<div class="orv_constellation"><p>[The trial you have put them in is far too excessive. It might be only a blink to the Constellations, but that length of time is as much as one's lifespan from a human's perspective.]</p></div>
-<div class="orv_constellation"><p>[This one was also a human once upon a time. And this scenario is a necessity. Especially if they are to reach the ■■.]</p></div>
-<div class="orv_constellation"><p>[…Sakyamuni.]</p></div>
-<div class="orv_constellation"><p>[Oh Dokkaebi, the celebration of the end will soon commence.]</p></div>
+<div class="orv_constellation"><p>The trial you have put them in is far too excessive. It might be only a blink to the Constellations, but that length of time is as much as one's lifespan from a human's perspective.</p></div>
+<div class="orv_constellation"><p>This one was also a human once upon a time. And this scenario is a necessity. Especially if they are to reach the ■■.</p></div>
+<div class="orv_constellation"><p>…Sakyamuni.</p></div>
+<div class="orv_constellation"><p>Oh Dokkaebi, the celebration of the end will soon commence.</p></div>
 <p class="orv_line">The mandala within Sakyamuni's eyes continued to spin. And the faint figures of Kim Dokja and Yoo Joonghyuk could be seen above the spinning Mandalas.</p>
-<div class="orv_constellation"><p>[Which ■■ will you vote for?]</p></div>
+<div class="orv_constellation"><p>Which ■■ will you vote for?</p></div>
 <br>
 <hr>
 <br>
 <p class="orv_line">With the aid of Yoo Joonghyuk, I was able to safely escape from the audience chamber. The pursuit attempt by the guards proved to be annoyingly persistent, but thanks to the sacrifices of a few revolutionaries, we made it to the safe house in the end.</p>
 <p class="orv_line">Yoo Joonghyuk chucked the unconscious Bilston – the host body of Lee Hyunsung – on the floor and opened his lips to speak. "Why did you show up this late?"</p>
 <p class="orv_line">"It wasn't because I wanted to, okay."</p>
-<div class="orv_system"><p>[The worldview is growing suspicious of your conversation.]</p></div>
-<div class="orv_system"><p>['Midday Tryst' has been activated!]</p></div>
+<div class="orv_system"><p>The worldview is growing suspicious of your conversation.</p></div>
+<div class="orv_system"><p>'Midday Tryst' has been activated!</p></div>
 <p class="orv_line">Yoo Joonghyuk shot me his trademark murderous glare for a little while, and then continued on with his story.</p>
 <p class="orv_line">– I arrived in this place around two years ago.</p>
 <p class="orv_line">I calmly listened to his experiences.</p>
@@ -256,7 +263,7 @@
 <p class="orv_line">– By the time I arrived here, Lee Hyunsung, Jung Heewon, and even Han Sooyoung were already in that state.</p>
 <p class="orv_line">– Are the three of them the only ones here? Where are the others?</p>
 <p class="orv_line">– Haven't found anyone besides them. It's likely that only they were summoned to this world.</p>
-<p class="orv_line">Yoo Joonghyuk possessed the [Sage's Eye]. In some regard, that skill allowed him to spy on far more complete information than my own [Character List]. He had been relying on this skill to search for the other companions. He probably discovered me through it, too – since the [Sage's Eye] didn't work on me.</p>
+<p class="orv_line">Yoo Joonghyuk possessed the <strong>[Sage's Eye]</strong>. In some regard, that skill allowed him to spy on far more complete information than my own <strong>[Character List]</strong>. He had been relying on this skill to search for the other companions. He probably discovered me through it, too – since the <strong>[Sage's Eye]</strong> didn't work on me.</p>
 <p class="orv_line">I observed the still-unconscious Lee Hyunsung.</p>
 <p class="orv_line">Yoo Joonghyuk said he got here two years ago. In that case, just how long was Lee Hyunsung trapped in this worldview for?</p>
 <p class="orv_line">– They have all been swallowed up by the Giant Story, haven't they?</p>
@@ -264,10 +271,10 @@
 <p class="orv_line">– What about you? You alright?</p>
 <p class="orv_line">– You think a measly couple of years is enough to break me down?</p>
 <p class="orv_line">I belatedly recalled what an amazing dude Yoo Joonghyuk was. The trustworthy Lee Hyunsung, the driven Jung Heewon, and even Han Sooyoung all broke down and lost themselves.</p>
-<div class="orv_system"><p>[Giant Story, 'Kaizenix Archipelago', is shooting a dissatisfied glare at Incarnation 'Yoo Joonghyuk'.]</p></div>
+<div class="orv_system"><p>Giant Story, 'Kaizenix Archipelago', is shooting a dissatisfied glare at Incarnation 'Yoo Joonghyuk'.</p></div>
 <p class="orv_line">However, Yoo Joonghyuk was completely unscathed.</p>
 <p class="orv_line">But then again, that was pretty obvious when I thought about it. The method employed by this worldview's 'Giant Story' to break us down was 'time' itself. However, Yoo Joonghyuk possessed far stronger resistance towards the passage of time than anyone. Well, he had already spent hundreds of years in the Dark Stratum going through harsh training, after all.</p>
-<div class="orv_system"><p>[The worldview is expressing its puzzlement over your lengthy silence.]</p></div>
+<div class="orv_system"><p>The worldview is expressing its puzzlement over your lengthy silence.</p></div>
 <p class="orv_line">I raised my head towards the sky.</p>
 <p class="orv_line">The current scenario was governed by the rules set out by the worldview. Even Yoo Joonghyuk seemed to have realized how we should start acting from here onwards.</p>
 <p class="orv_line">I finished preparing myself and opened my lips. "Hyung."</p>
@@ -278,7 +285,7 @@
 <p class="orv_line">Yoo Joonghyuk opened his lips. "Speak, Ricardo."</p>
 <p class="orv_line">"What are you going to do next? It looks to me that even the revolution has failed now. No, besides all that, why did you even appear in the execution ground, anyway?"</p>
 <p class="orv_line">"I was planning to kill the false king."</p>
-<div class="orv_system"><p>[Character, 'Ricardo Von Kaizenix', is being agitated.]</p></div>
+<div class="orv_system"><p>Character, 'Ricardo Von Kaizenix', is being agitated.</p></div>
 <p class="orv_line">I was pretty sure of him being dead serious here. The Yoo Joonghyuk I know was fully capable of doing something like that, after all.</p>
 <p class="orv_line">Too bad, that wasn't my style.</p>
 <p class="orv_line">"But, should you be doing something like that? She's originally your bride, isn't she?"</p>
@@ -286,13 +293,13 @@
 <p class="orv_line">Oh, I see. So, it's that sort of development? I felt just a bit relieved now.</p>
 <p class="orv_line">Han Sooyoung and Yoo Joonghyuk as a couple? &lt;Kim Dokja's Company&gt; hadn't allowed any dating at the workplace yet, so hell no.</p>
 <p class="orv_line">It was at this point in time that an unexpected message entered my ears.</p>
-<div class="orv_system"><p>[The worldview finds your words interesting.]</p></div>
-<div class="orv_system"><p>[The genre of the applicable scenario has tilted slightly towards 'Romance'.]</p></div>
+<div class="orv_system"><p>The worldview finds your words interesting.</p></div>
+<div class="orv_system"><p>The genre of the applicable scenario has tilted slightly towards 'Romance'.</p></div>
 <p class="orv_line">…The genre had tilted?</p>
 <p class="orv_line">Yoo Joonghyuk continued on. "It was already far late to save her. She was stained by the corrupted magic and lost her original humanity."</p>
 <p class="orv_line">Oh, really?</p>
-<div class="orv_system"><p>[The worldview finds Incarnation Yoo Joonghyuk's words interesting.]</p></div>
-<div class="orv_system"><p>[The genre of the applicable scenario has minutely tilted towards 'Fantasy'.]</p></div>
+<div class="orv_system"><p>The worldview finds Incarnation Yoo Joonghyuk's words interesting.</p></div>
+<div class="orv_system"><p>The genre of the applicable scenario has minutely tilted towards 'Fantasy'.</p></div>
 <p class="orv_line">I gave another signal to Yoo Joonghyuk with my eyes.</p>
 <p class="orv_line">– Did you hear that?</p>
 <p class="orv_line">He nodded his head.</p>
@@ -301,11 +308,11 @@
 <p class="orv_line">After saying that, I shifted my gaze down to Bilston on the ground, still snoring away, and carried on. "Maybe, three."</p>
 <p class="orv_line">"Those three will be everyone."</p>
 <p class="orv_line">"Who knows? There might be more. Maybe, a miracle happens and an existence crossing over from another dimension will help us out."</p>
-<div class="orv_system"><p>[The worldview finds your words interesting.]</p></div>
-<div class="orv_system"><p>[The genre of the applicable scenario has acquired the possibility of being 'Fusion Fantasy'.]</p></div>
+<div class="orv_system"><p>The worldview finds your words interesting.</p></div>
+<div class="orv_system"><p>The genre of the applicable scenario has acquired the possibility of being 'Fusion Fantasy'.</p></div>
 <p class="orv_line">And in the following moment, new scenario messages popped up right before my eyes.</p>
-<div class="orv_system"><p>[The Selection Point for the Sub-Scenario, 'Genre Selection', has been generated!]</p></div>
-<div class="orv_system"><p>[A new scenario message has arrived!]</p></div>
+<div class="orv_system"><p>The Selection Point for the Sub-Scenario, 'Genre Selection', has been generated!</p></div>
+<div class="orv_system"><p>A new scenario message has arrived!</p></div>
 <p class="orv_line">We quickly accessed the scenario window.</p>
 <div class="orv_window">
 <p>&lt;Sub Scenario – Genre Selection&gt;</p>
@@ -360,7 +367,7 @@
 <p class="orv_line">I was flustered.</p>
 <p class="orv_line">Currently, we were in a situation where neither of us – Yoo Joonghyuk the Regressor, and me, the sole reader – had any idea on the future storyline. Sure, there had been a few times when the progress of the story didn't match up with the 'Ways of Survival' in the past, but this would be the first time we couldn't predict what the future held for us.</p>
 <p class="orv_line">The 'Ways of Survival' I knew didn't contain any potential solutions to a scenario like this one.</p>
-<div class="orv_quote"><p>「 Ma ybe you sho uld have read the Final Re vision. 」</p></div>
+<div class="orv_quote"><p>Ma ybe you sho uld have read the Final Re vision.</p></div>
 <p class="orv_line">Regret belatedly rushed in.</p>
 <p class="orv_line">It was at this time that someone knocked on the door.</p>
 <p class="orv_line">"Enter."</p>
@@ -379,18 +386,12 @@
             <a href="./ch_375"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_377">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="376" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="725" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="375" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="375" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 57: Ep. 12 – First Person Protagonist's Point of View, III</title>
     <meta property="og:title" content="Ch 57: Ep. 12 – First Person Protagonist's Point of View, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,39 +177,39 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00057.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 57: Ep. 12 – First Person Protagonist's Point of View, III</h1></div>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' applauds your spirit!]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' praises your courage!]</p></div>
-<div class="orv_system"><p>[The constellation 'Secretive Plotter' is curious about your tactics.]</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' applauds your spirit!</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' praises your courage!</p></div>
+<div class="orv_system"><p>The constellation 'Secretive Plotter' is curious about your tactics.</p></div>
 <p class="orv_line">····.</p>
-<div class="orv_system"><p>[Some constellations are greatly impressed by your performance.]</p></div>
-<div class="orv_system"><p>[20,000 coins have been sponsored.]</p></div>
+<div class="orv_system"><p>Some constellations are greatly impressed by your performance.</p></div>
+<div class="orv_system"><p>20,000 coins have been sponsored.</p></div>
 <p class="orv_line">I frowned as the indirect messages poured in without a filter. No one disliked praise. However, dozens of praises pouring in at once was too much.</p>
 <p class="orv_line">Where did Bihyung go and why didn't he manage the messages? Ah… he would've been called by the Administrator Bureau right now.</p>
 <p class="orv_line">There was no compensation for the hidden scenario and the intermediate dokkaebi disappeared without saying something.</p>
 <p class="orv_line">By the way, the total number of sponsored coins was 20,000 coins… The 'minority channels' were different from the 'large channels.</p>
 <p class="orv_line">I quickly looked at the fire dragon's body and pulled out the core.</p>
-<div class="orv_system"><p>[5th grade Fire Dragon's Core]</p></div>
+<div class="orv_system"><p>5th grade Fire Dragon's Core</p></div>
 <p class="orv_line">A core surrounded by a soft red light. The quality of the core that came out from the disaster was unusual.</p>
 <p class="orv_line">It was deteriorated but it was still a dragon. There were many beneficial parts. For example, the bones and leather. It could be processed by a good blacksmith or exchanged.</p>
 <p class="orv_line">I looked down at the body of the fire dragon. I had caught a disaster but to only obtain this much…</p>
@@ -283,22 +290,22 @@
 <p class="orv_line">"Everybody rest. I have to look at something for a while. We will move in 10 minutes. You can also collect the items."</p>
 <p class="orv_line">The party members gathered the items scattered all over the place while I used the smartphone to access the Internet.</p>
 <p class="orv_line">I pretended to be unconcerned but I was actually a little nervous.</p>
-<div class="orv_system"><p>[The hidden scenario compensation settlement will be delayed.]</p></div>
-<div class="orv_system"><p>[The 'probability' request is currently underway at the Administration Bureau.]</p></div>
+<div class="orv_system"><p>The hidden scenario compensation settlement will be delayed.</p></div>
+<div class="orv_system"><p>The 'probability' request is currently underway at the Administration Bureau.</p></div>
 <p class="orv_line">It was due to these messages.</p>
 <p class="orv_line">The probability judgment. This was why the coins compensation from the hidden scenario weren't received.</p>
 <p class="orv_line">I wanted to check the relevant parts in Ways of Survival but my smartphone was burned.</p>
 <p class="orv_line">It was a mistake that wasn't like me. This was ominous. What if the mail sent by the author was erased…?</p>
 <p class="orv_line">At this moment, a message appeared on the screen of my smartphone.</p>
-<div class="orv_system"><p>[Synching to a new device is available.]</p></div>
-<div class="orv_system"><p>[Do you still want to proceed with the sync?]</p></div>
+<div class="orv_system"><p>Synching to a new device is available.</p></div>
+<div class="orv_system"><p>Do you still want to proceed with the sync?</p></div>
 <p class="orv_line">…What is this?</p>
 <p class="orv_line">I pressed OK, the download of the file proceeded and a new file was created on the background screen.</p>
-<div class="orv_system"><p>[Three Ways to Survive in a Ruined World.TXT]</p></div>
+<div class="orv_system"><p>Three Ways to Survive in a Ruined World.TXT</p></div>
 <p class="orv_line">I see. There was this. Indeed, a file that couldn't be read by the dokkaebis or constellations couldn't disappear so easily.</p>
 <p class="orv_line">I looked at Lee Sungkook and Jung Minseob collecting the items. I suddenly wondered. Would they be able to read this? Still… I should be careful as possible.</p>
 <p class="orv_line">I opened up Ways of Survival and started to read.</p>
-<div class="orv_system"><p>[Your reading speed has increased due to the effect of the exclusive attribute.]</p></div>
+<div class="orv_system"><p>Your reading speed has increased due to the effect of the exclusive attribute.</p></div>
 <p class="orv_line">I found the 'probability' request that took place during Yoo Joonghyuk's 6th regression.</p>
 <hr>
 <p class="orv_line">「 The intermediate dokkaebi of the Seoul Bureau 'Baram' frowned upon reading the scenario in front of him.</p>
@@ -334,7 +341,7 @@
 <p class="orv_line">In any case, I was now in a situation similar to Yoo Joonghyuk in Ways of Survival. I thought that this would happen someday but… this was why it wasn't good to be noticed.</p>
 <p class="orv_line">This… what if the judgment caused me damages?</p>
 <p class="orv_line">At that moment, a trembling voice was heard in the air.</p>
-<div class="orv_constellation"><p>[How many times do I have to be called to the Bureau because of you…]</p></div>
+<div class="orv_constellation"><p>How many times do I have to be called to the Bureau because of you…</p></div>
 <p class="orv_line">Bihyung. I opened the dokkaebi communication.</p>
 <p class="orv_line">"How did it go?"</p>
 <br>
@@ -344,18 +351,12 @@
             <a href="./ch_56"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_58">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="57" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="81" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="56" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="56" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 505: Ep. 97 - The star that can't be seen, II</title>
     <meta property="og:title" content="Ch 505: Ep. 97 - The star that can't be seen, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,35 +177,35 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00505.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 505: Ep. 97 - The star that can't be seen, II</h1></div>
-<div class="orv_system"><p>[&lt;Star Stream&gt; wishes to name your last Story.]</p></div>
-<div class="orv_system"><p>[You are now given the choices of Final Story.]</p></div>
-<div class="orv_system"><p>[Nebula &lt;Kim Dokja's Company&gt;'s epic has become the final candidate for the 'One Single Story'!]</p></div>
-<div class="orv_system"><p>[Stars that will be born in &lt;Star Stream&gt; will extol your Story!]</p></div>
+<div class="orv_system"><p>&lt;Star Stream&gt; wishes to name your last Story.</p></div>
+<div class="orv_system"><p>You are now given the choices of Final Story.</p></div>
+<div class="orv_system"><p>Nebula &lt;Kim Dokja's Company&gt;'s epic has become the final candidate for the 'One Single Story'!</p></div>
+<div class="orv_system"><p>Stars that will be born in &lt;Star Stream&gt; will extol your Story!</p></div>
 <p class="orv_line">While reading the messages popping up one after the other, we took stock of our current situation. Although they all still looked shellshocked, we simply couldn't afford to stop here. Gong Pildu suddenly raised his voice.</p>
 <p class="orv_line">"…Will the main scenario end with this?"</p>
 <p class="orv_line">Unlike how it usually was, no new scenario was issued even though a main scenario had come to an end. What entered our ears instead was a system message.</p>
-<div class="orv_system"><p>[&lt;Star Stream&gt;'s main scenario system has entered the closing sequence.]</p></div>
+<div class="orv_system"><p>&lt;Star Stream&gt;'s main scenario system has entered the closing sequence.</p></div>
 <p class="orv_line">It was a message none of us had ever heard before.</p>
 <p class="orv_line">Curtains were finally closing on the vast world of scenarios. We all formed blank expressions, not knowing what to say.</p>
 <p class="orv_line">"If this thing ends… what will happen to the world?"</p>
@@ -214,10 +221,10 @@
 <p class="orv_line">"That bastard took away my family and my lands. I, I must definitely…!!"</p>
 <p class="orv_line">Gong Pildu spoke up to there, and keeled over as bloody foams bubbled out of his mouth. Lee Seolhwa quickly supported him and felt his pulse.</p>
 <p class="orv_line">"…The damage to his Incarnation Body is extensive."</p>
-<p class="orv_line">During the battle inside the cabin, Gong Pildu protected the companions along with Lee Hyunsung. His proud [Armed Fortress] was seriously damaged. The Status of his sponsor, the Defense Master, could barely be felt, too. It was quite likely that this was as far as he could go.</p>
+<p class="orv_line">During the battle inside the cabin, Gong Pildu protected the companions along with Lee Hyunsung. His proud <strong>[Armed Fortress]</strong> was seriously damaged. The Status of his sponsor, the Defense Master, could barely be felt, too. It was quite likely that this was as far as he could go.</p>
 <p class="orv_line">"I'll take him with us. He also has the right to witness the end, after all."</p>
 <p class="orv_line">"Please take care of him."</p>
-<p class="orv_line">Lee Seolhwa activated her unique skill [Stretcher], and placed Gong Pildu on the bed made out of magic net.</p>
+<p class="orv_line">Lee Seolhwa activated her unique skill <strong>[Stretcher]</strong>, and placed Gong Pildu on the bed made out of magic net.</p>
 <p class="orv_line">In the meantime, both Lee Jihye and Jung Heewon regained their energy and stood up from their spots.</p>
 <p class="orv_line">"Let's go, Dokja-ssi. Whatever happens, we should still try to see the end, at least."</p>
 <p class="orv_line">I was ashamed by the fact that Jung Heewon had to say those words. Because she must've been the one to resent me the most among our group.</p>
@@ -232,7 +239,7 @@
 <p class="orv_line">Could my companions see that sentence?</p>
 <p class="orv_line">Was it okay for someone like me to read that sentence?</p>
 <p class="orv_line">Tsu-chuchuchu…!</p>
-<div class="orv_system"><p>[Will you enter the interior of the 'Final Wall'?]</p></div>
+<div class="orv_system"><p>Will you enter the interior of the 'Final Wall'?</p></div>
 <p class="orv_line">A new message floated up soon afterwards.</p>
 <p class="orv_line">The Probability's sparks whipped about madly above the Wall. With those sparks as the centre, the Wall seemed to retract; letters above the white surface rescinded and a small entrance we could go through was generated.</p>
 <p class="orv_line">Han Sooyoung asked in a suspicious voice.</p>
@@ -245,62 +252,62 @@
 <p class="orv_line">The only remaining thing was to enter. Although, my last concern was…</p>
 <p class="orv_line">"…Please go ahead. 'Zarathustras' can't go any further. We've been informed that we don't have the qualifications to enter."</p>
 <p class="orv_line">Unlike Anna Croft, her subordinates 'Zarathustras' didn't possess all that many Stories connected to &lt;Kim Dokja's Company&gt;. They looked at me with sorrowful eyes for a little while, then silently moved out of the way and created a path.</p>
-<div class="orv_system"><p>[Incarnation, 'Selena Kim' has accepted her ■■.]</p></div>
-<div class="orv_system"><p>[Incarnation Selena Kim's ■■ is 'Unreachable Dream'.]</p></div>
+<div class="orv_system"><p>Incarnation, 'Selena Kim' has accepted her ■■.</p></div>
+<div class="orv_system"><p>Incarnation Selena Kim's ■■ is 'Unreachable Dream'.</p></div>
 <p class="orv_line">– Please, take care of Anna.</p>
 <p class="orv_line">Selena Kim's voice was transmitted through voice projection. I slowly but deeply nodded my head and turned around to leave.</p>
 <p class="orv_line">Footsteps belonging to my companions could be heard coming from behind me. My companions had become one constellation; my companions, who didn't emit light in the same direction as everyone else.</p>
 <p class="orv_line">"Let's get going."</p>
 <p class="orv_line">⸢Even then, everyone here all wished to confirm the conclusion.⸥</p>
 <p class="orv_line">It was right then, a shadow suddenly appeared drifting around in the fog before us. Anna Croft's blonde hair spread in the air. However, the one controlling her body wasn't her.</p>
-<p class="orv_line">Yoo Joonghyuk focused on the Wenny King's movements while tightly grasping the hilt of the [Black Heavenly Demon Sword].</p>
+<p class="orv_line">Yoo Joonghyuk focused on the Wenny King's movements while tightly grasping the hilt of the <strong>[Black Heavenly Demon Sword]</strong>.</p>
 <p class="orv_line">"Are you thinking of trusting the Wenny King?"</p>
 <p class="orv_line">He hadn't lowered his wariness since a while ago, and continued to emit intense bloodlust towards the Wenny King at every opportunity he could find.</p>
 <p class="orv_line">I also didn't like the Wennys. They tried to kidnap Biyoo, and even tried to pull a fast one on me back in the Demon Realm, too.</p>
 <p class="orv_line">"I don't trust him. We're just entering a temporary alliance, that's all. We made a deal in the past."</p>
 <p class="orv_line">"A deal?"</p>
 <p class="orv_line">I didn't offer up a detailed explanation. Because the one who could do it for me made his appearance, that's why.</p>
-<div class="orv_constellation"><p>[Looks like you don't trust me at all, regressor.]</p></div>
+<div class="orv_constellation"><p>Looks like you don't trust me at all, regressor.</p></div>
 <p class="orv_line">Seeing the Wenny King speak through Anna Croft's mouth, I couldn't help but think that this had to be the worst combination imaginable. To think that two individuals Yoo Joonghyuk hated had been combined into one…</p>
-<p class="orv_line">Yoo Joonghyuk wordlessly sent his magical energy to the [Black Heavenly Demon Sword]. He was getting ready to strike down at the slightest hint of provocation.</p>
-<div class="orv_constellation"><p>[I heard the story from other Wennys. It seems that you've cut off the lumps of my children.]</p></div>
+<p class="orv_line">Yoo Joonghyuk wordlessly sent his magical energy to the <strong>[Black Heavenly Demon Sword]</strong>. He was getting ready to strike down at the slightest hint of provocation.</p>
+<div class="orv_constellation"><p>I heard the story from other Wennys. It seems that you've cut off the lumps of my children.</p></div>
 <p class="orv_line">"And do you wish for yours to be cut off, too?"</p>
 <p class="orv_line">The Wenny King cackled as if he was deeply amused.</p>
 <p class="orv_line">"What's so funny?"</p>
-<div class="orv_constellation"><p>[I truly enjoy your unnecessary aloofness. You were the same back in the Demon Realm and in Murim. I had been spending a really long, boring time there, but things became rather entertaining all thanks to you.]</p></div>
+<div class="orv_constellation"><p>I truly enjoy your unnecessary aloofness. You were the same back in the Demon Realm and in Murim. I had been spending a really long, boring time there, but things became rather entertaining all thanks to you.</p></div>
 <p class="orv_line">"One more word, and I shall cut off your lumps."</p>
 <p class="orv_line">"Oiii, Yoo Joonghyuk."</p>
 <p class="orv_line">Yoo Joonghyuk seemed to be more fired up than usual, so I quickly stopped him. Nothing good would come about by getting into a scuffle with the Wennys here.</p>
 <p class="orv_line">Why did it happen, though? His unfocused aura was different from his usual self. Maybe his thoughts had gotten complicated now that the end was upon us.</p>
 <p class="orv_line">The Wenny King alternated his gaze between Yoo Joonghyuk and me before opening his mouth.</p>
-<div class="orv_constellation"><p>[I see that you two are good friends.]</p></div>
+<div class="orv_constellation"><p>I see that you two are good friends.</p></div>
 <p class="orv_line">Even as the scary glare in Yoo Joonghyuk's eyes was rekindled, the Wenny King carried on.</p>
-<div class="orv_constellation"><p>[I too had someone like that once upon a time. He used to love the stories a lot, just like the 'Demon King of Salvation' over here.]</p></div>
+<div class="orv_constellation"><p>I too had someone like that once upon a time. He used to love the stories a lot, just like the 'Demon King of Salvation' over here.</p></div>
 <p class="orv_line">"I don't want to hear about your sob story."</p>
-<div class="orv_constellation"><p>[We carried out the scenarios together. We overcame many close shaves and fought against the absolute beings that ridiculed us. We compiled Stories to create more Stories, and after compiling Giant Stories, we even created an epic yarn, too. And with that epic, we eventually reached the 'Final Wall'.]</p></div>
+<div class="orv_constellation"><p>We carried out the scenarios together. We overcame many close shaves and fought against the absolute beings that ridiculed us. We compiled Stories to create more Stories, and after compiling Giant Stories, we even created an epic yarn, too. And with that epic, we eventually reached the 'Final Wall'.</p></div>
 <p class="orv_line">…The 'Wenny King' had reached this 'Final Wall' before?</p>
 <p class="orv_line">This information never appeared in the 'Ways of Survival'.</p>
-<div class="orv_constellation"><p>[You probably never heard about it. That story doesn't even remain as a Story anymore. Maybe someone like the 'Apocalypse Dragon', who had gone insane from the repeated history, might be able to barely recall it.]</p></div>
+<div class="orv_constellation"><p>You probably never heard about it. That story doesn't even remain as a Story anymore. Maybe someone like the 'Apocalypse Dragon', who had gone insane from the repeated history, might be able to barely recall it.</p></div>
 <p class="orv_line">"…There was &lt;Star Stream&gt; even back in your day?"</p>
-<div class="orv_constellation"><p>[Back then, it was called a slightly different name. The name &lt;Star Stream&gt; was given only after we saw the end of this world.]</p></div>
+<div class="orv_constellation"><p>Back then, it was called a slightly different name. The name &lt;Star Stream&gt; was given only after we saw the end of this world.</p></div>
 <p class="orv_line">Here was a being that saw the 'end of the world' before us.</p>
 <p class="orv_line">What was the ■■ for them back then? And just what happened back then that caused this creature to become the 'Wenny King' and drift around the scenarios?</p>
-<div class="orv_constellation"><p>[And that bastard is now called the 'King of the Stories'.]</p></div>
+<div class="orv_constellation"><p>And that bastard is now called the 'King of the Stories'.</p></div>
 <p class="orv_line">The sound of something collapsing heavily could be heard from beyond the fog.</p>
-<div class="orv_constellation"><p>[That's why I'm looking forward to your last verses. I'm genuinely curious. Curious, on who'd end up as the final winner of this scenario…]</p></div>
+<div class="orv_constellation"><p>That's why I'm looking forward to your last verses. I'm genuinely curious. Curious, on who'd end up as the final winner of this scenario…</p></div>
 <p class="orv_line">Tsu-chuchuchu…</p>
 <p class="orv_line">The fog before us began rumbling loudly.</p>
-<div class="orv_constellation"><p>[Looks like it's time to go meet my old friend.]</p></div>
+<div class="orv_constellation"><p>Looks like it's time to go meet my old friend.</p></div>
 <p class="orv_line">Along with those words, all traces of the Wenny King vanished. However, his message continued to be heard.</p>
-<div class="orv_constellation"><p>[It'll be wise for you to start moving soon. Before you all get devoured, that is.]</p></div>
+<div class="orv_constellation"><p>It'll be wise for you to start moving soon. Before you all get devoured, that is.</p></div>
 <p class="orv_line">…Devoured??</p>
 <p class="orv_line">"Ahjussi!!"</p>
 <p class="orv_line">Lee Jihye following us from behind suddenly cried out and disappeared through the floor. And then, hands-like things suddenly emerged from the floor and nearby walls to grab and yank at our arms and legs.</p>
 <p class="orv_line">"Jihye-yah!!"</p>
-<div class="orv_system"><p>[Character 'Lee Jihye' has become a part of the great story.]</p></div>
+<div class="orv_system"><p>Character 'Lee Jihye' has become a part of the great story.</p></div>
 <p class="orv_line">Jung Heewon reached out towards Lee Jihye being sucked into the floor. However, it was too late. Even Jung Heewon herself was being sucked in now.</p>
 <p class="orv_line">Walls transformed into bottomless quicksand and swallowed her up.</p>
-<div class="orv_system"><p>[Character 'Jung Heewon' has become a part of the great story.]</p></div>
+<div class="orv_system"><p>Character 'Jung Heewon' has become a part of the great story.</p></div>
 <p class="orv_line">"Heewon-ssi!"</p>
 <p class="orv_line">I watched Lee Hyunsung dash towards Jung Heewon, but that only made me lose my bearing.</p>
 <p class="orv_line">Did something like this happen back in the 'Ways of Survival'? Just what the hell…?!</p>
@@ -308,19 +315,19 @@
 <p class="orv_line">I had overlooked that simple fact. Not even once did Yoo Joonghyuk try to cross this passage with these many people before.</p>
 <p class="orv_line">"Everyone, gather around me!"</p>
 <p class="orv_line">Unfortunately, it was too late by then. Lee Hyunsung, Lee Seolhwa, Gong Pildu, and even Yoo Sangah and the kids, were all snatched up by the hands of the walls and got absorbed.</p>
-<div class="orv_system"><p>[Character 'Shin Yoosung' has become a part of the great story.]</p></div>
-<div class="orv_system"><p>[Character 'Yoo Sangah' has become a part of the great story.]</p></div>
+<div class="orv_system"><p>Character 'Shin Yoosung' has become a part of the great story.</p></div>
+<div class="orv_system"><p>Character 'Yoo Sangah' has become a part of the great story.</p></div>
 <p class="orv_line">My heart was racing nonstop. The word 'Character' especially got on my nerves amidst all those messages.</p>
 <p class="orv_line">"Han Sooyoung! Yoo Joonghyuk!"</p>
 <p class="orv_line">He was already half-sucked into the floor by now. There wasn't even enough time to resist.</p>
 <p class="orv_line">"Step back!"</p>
 <p class="orv_line">The sword wind Yoo Joonghyuk fired pushed me back. I barely managed to evade the texts trying to grab my ankles.</p>
-<div class="orv_system"><p>[Character 'Yoo Joonghyuk' has become a part of the great story.]</p></div>
+<div class="orv_system"><p>Character 'Yoo Joonghyuk' has become a part of the great story.</p></div>
 <p class="orv_line">Eventually, even Yoo Joonghyuk was taken away. Han Sooyoung was the only one remaining. However, one of her arms was already being swallowed up.</p>
 <p class="orv_line">"Hurry, this way…!"</p>
-<p class="orv_line">I used every ounce of my strength to pull her out. The effects of the [Way of the Wind] permeated into my feet and the explosive forward momentum wrapped around me.</p>
-<div class="orv_system"><p>['Final Wall' is exposing its greed over your epic!]</p></div>
-<div class="orv_system"><p>['Final Wall' is looking at the individual not yet included in its story!]</p></div>
+<p class="orv_line">I used every ounce of my strength to pull her out. The effects of the <strong>[Way of the Wind]</strong> permeated into my feet and the explosive forward momentum wrapped around me.</p>
+<div class="orv_system"><p>'Final Wall' is exposing its greed over your epic!</p></div>
+<div class="orv_system"><p>'Final Wall' is looking at the individual not yet included in its story!</p></div>
 <p class="orv_line">Tsu-chuchuchut…!</p>
 <p class="orv_line">Han Sooyoung's body was trembling as if she was having a seizure.</p>
 <p class="orv_line">⸢The only other person who wasn't a 'Character' besides himself was Han Sooyoung.⸥</p>
@@ -369,7 +376,7 @@
 <p class="orv_line">Eventually, the sentences were cut off.</p>
 <p class="orv_line">And a small, white door waited for me where the words had ended.</p>
 <p class="orv_line">It was the exact same door the 1863rd turn's Yoo Joonghyuk had opened.</p>
-<p class="orv_line">⸢The [Epilogue] to the all the stories he hadn't read yet was beyond that door.⸥</p>
+<p class="orv_line">⸢The <strong>[Epilogue]</strong> to the all the stories he hadn't read yet was beyond that door.⸥</p>
 <p class="orv_line">I wordlessly stared at the doorknob.</p>
 <p class="orv_line">⸢Just to turn this doorknob…⸥</p>
 <p class="orv_line">The entire story that began with Yoo Joonghyuk flitted in and out of my head. And in this very moment, that one question I had from a very long time ago, but never spoken out aloud, floated back up to the fore.</p>
@@ -384,18 +391,12 @@
             <a href="./ch_504"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_506">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="505" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="555" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="504" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="504" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

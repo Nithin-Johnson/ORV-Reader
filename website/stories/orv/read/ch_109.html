@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 109: Ep. 22 – Three Promises, I</title>
     <meta property="og:title" content="Ch 109: Ep. 22 – Three Promises, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,120 +177,120 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00109.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 109: Ep. 22 – Three Promises, I</h1></div>
 <p class="orv_line">The Executive Branch's emergency arrest.</p>
 <p class="orv_line">According to Ways of Survival, an emergency arrest was only possible when a dokkaebi acted in a manner that severely violated the probability of a scenario.</p>
-<div class="orv_constellation"><p>[Intermediate dokkaebi 'Paul'. From now on, you will be led to the Executive Branch. You will remain silent about all scenarios and be deprived of all progress in the main scenarios.]</p></div>
+<div class="orv_constellation"><p>Intermediate dokkaebi 'Paul'. From now on, you will be led to the Executive Branch. You will remain silent about all scenarios and be deprived of all progress in the main scenarios.</p></div>
 <p class="orv_line">The expression of the intermediate dokkaebi Paul kept changing.</p>
-<div class="orv_system"><p>[You will lose the achievement points of all the scenarios you have built up and will be demoted to a low-grade dokkaebi after your punishment…]</p></div>
-<div class="orv_constellation"><p>[D-Demoted? Wait! Wait a minute!]</p></div>
+<div class="orv_system"><p>You will lose the achievement points of all the scenarios you have built up and will be demoted to a low-grade dokkaebi after your punishment…</p></div>
+<div class="orv_constellation"><p>D-Demoted? Wait! Wait a minute!</p></div>
 <p class="orv_line">The intermediate dokkaebi Paul hurriedly shouted. He made an outraged expression and looked at the dokkaebis around him.</p>
-<div class="orv_constellation"><p>[A sudden demotion? Shouldn't you tell me what I did wrong?]</p></div>
-<div class="orv_constellation"><p>[Are you really asking because you don't know?]</p></div>
+<div class="orv_constellation"><p>A sudden demotion? Shouldn't you tell me what I did wrong?</p></div>
+<div class="orv_constellation"><p>Are you really asking because you don't know?</p></div>
 <p class="orv_line">Another dokkaebi of the Executive Branch asked. Paul hesitated for a moment at the dignified voice before continuing.</p>
-<div class="orv_constellation"><p>[I don't know. What the hell did I do wrong?]</p></div>
+<div class="orv_constellation"><p>I don't know. What the hell did I do wrong?</p></div>
 <p class="orv_line">He even had the audacity to move forward.</p>
-<div class="orv_constellation"><p>[Look at the constellations. Aren't they all happy? Didn't the scenario end brilliantly?]</p></div>
+<div class="orv_constellation"><p>Look at the constellations. Aren't they all happy? Didn't the scenario end brilliantly?</p></div>
 <p class="orv_line">The executive dokkaebi frowned at Paul's confident words.</p>
-<div class="orv_constellation"><p>[There is no problem with the probability. I used the scenario enforcement with the consent of the constellations and the constellation also…]</p></div>
-<div class="orv_constellation"><p>[…This is the problem with streamers. They sing songs of the constellations.]</p></div>
+<div class="orv_constellation"><p>There is no problem with the probability. I used the scenario enforcement with the consent of the constellations and the constellation also…</p></div>
+<div class="orv_constellation"><p>…This is the problem with streamers. They sing songs of the constellations.</p></div>
 <p class="orv_line">Not all dokkaebis respected the constellations. It was because among the dokkaebis of the Executive Branch, there were some who had once been constellations.</p>
 <p class="orv_line">They were constellations but they lost their characteristics and were forced to live as dokkaebis. They were the dokkaebis of the Executive Branch. Paul continued despite his customers being insulted.</p>
-<div class="orv_constellation"><p>[Your words are going too far.]</p></div>
-<div class="orv_constellation"><p>[Don't panic Paul.]</p></div>
-<div class="orv_constellation"><p>[You might be an enforcer but I can't tolerate insults to my customers.]</p></div>
+<div class="orv_constellation"><p>Your words are going too far.</p></div>
+<div class="orv_constellation"><p>Don't panic Paul.</p></div>
+<div class="orv_constellation"><p>You might be an enforcer but I can't tolerate insults to my customers.</p></div>
 <p class="orv_line">Paul rode the momentum and continued.</p>
-<div class="orv_constellation"><p>[I can guess why the executives came here. It is probably because I used the enforcement rights.]</p></div>
-<div class="orv_constellation"><p>[The scenario enforcement can only be used when the majority of constellations support the probability of the scenario.]</p></div>
-<div class="orv_constellation"><p>[I'm aware of that. Otherwise, there is the risk of a probability storm. But the constellations' satisfaction is high…]</p></div>
-<div class="orv_constellation"><p>[Satisfaction? Paul, look at yourself and tell me.]</p></div>
+<div class="orv_constellation"><p>I can guess why the executives came here. It is probably because I used the enforcement rights.</p></div>
+<div class="orv_constellation"><p>The scenario enforcement can only be used when the majority of constellations support the probability of the scenario.</p></div>
+<div class="orv_constellation"><p>I'm aware of that. Otherwise, there is the risk of a probability storm. But the constellations' satisfaction is high…</p></div>
+<div class="orv_constellation"><p>Satisfaction? Paul, look at yourself and tell me.</p></div>
 <p class="orv_line">Paul looked down at himself and he paled.</p>
-<div class="orv_constellation"><p>[T-This…?]</p></div>
+<div class="orv_constellation"><p>T-This…?</p></div>
 <p class="orv_line">The space around him was filled with blue sparks. It was the forerunner of a probability storm.</p>
-<div class="orv_constellation"><p>[Why am I receiving a probability storm…?]</p></div>
+<div class="orv_constellation"><p>Why am I receiving a probability storm…?</p></div>
 <p class="orv_line">The probability storm was a punishment for going against the flow. The probability of the world now wanted to erase Paul's existence. The enforcer dokkaebis laughed.</p>
-<div class="orv_constellation"><p>[The enforcement right is a power that demands the greatest amount of probability from a dokkaebi. Did you think you would be safe using this authority for such a crude development?]</p></div>
-<div class="orv_constellation"><p>[That, that isn't the case!]</p></div>
-<div class="orv_constellation"><p>[Paul. You had a chance to end the scenario without using the executive rights. It was a fresh development I had never seen before. Why did you stop it? Thanks to your brutality, an emergency was dropped on Seoul Dome's bureau.]</p></div>
-<div class="orv_constellation"><p>[T-That… no, wait a minute. I exercised the enforcement rights according to the opinions of the constellations!!]</p></div>
+<div class="orv_constellation"><p>The enforcement right is a power that demands the greatest amount of probability from a dokkaebi. Did you think you would be safe using this authority for such a crude development?</p></div>
+<div class="orv_constellation"><p>That, that isn't the case!</p></div>
+<div class="orv_constellation"><p>Paul. You had a chance to end the scenario without using the executive rights. It was a fresh development I had never seen before. Why did you stop it? Thanks to your brutality, an emergency was dropped on Seoul Dome's bureau.</p></div>
+<div class="orv_constellation"><p>T-That… no, wait a minute. I exercised the enforcement rights according to the opinions of the constellations!!</p></div>
 <p class="orv_line">Paul looked around.</p>
-<div class="orv_constellation"><p>[C-Constellations! Didn't you agree with my development?]</p></div>
+<div class="orv_constellation"><p>C-Constellations! Didn't you agree with my development?</p></div>
 <p class="orv_line">However, no constellations answered.</p>
-<div class="orv_constellation"><p>[…Constellations?]</p></div>
+<div class="orv_constellation"><p>…Constellations?</p></div>
 <p class="orv_line">The numerous indirect messages from the constellations died out.</p>
-<div class="orv_constellation"><p>[Unbelievable… Why?]</p></div>
+<div class="orv_constellation"><p>Unbelievable… Why?</p></div>
 <p class="orv_line">All the constellations who supported his development had left the Korean channels.</p>
 <p class="orv_line">The executive frowned.</p>
-<div class="orv_constellation"><p>[You stupid fool. Can't you see that the constellations are gone?]</p></div>
+<div class="orv_constellation"><p>You stupid fool. Can't you see that the constellations are gone?</p></div>
 <p class="orv_line">Many of the constellations who wanted to kill me and who instigated him had left the Korean peninsula in large numbers once it turned into a 'drama'.</p>
 <p class="orv_line">It was natural. It was strange to keep watching when an unwanted development occurred. In fact, Bihyung's channel lost close to a third of its subscribers.</p>
 <p class="orv_line">The remaining ones were:</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is looking at the intermediate dokkaebi 'Paul'.]</p></div>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is chuckling at the intermediate dokkaebi 'Paul'.]</p></div>
-<div class="orv_system"><p>[The constellation 'Secretive Plotter' is mocking the intermediate dokkaebi 'Paul'.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is looking at the intermediate dokkaebi 'Paul'.</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is chuckling at the intermediate dokkaebi 'Paul'.</p></div>
+<div class="orv_system"><p>The constellation 'Secretive Plotter' is mocking the intermediate dokkaebi 'Paul'.</p></div>
 <p class="orv_line">…</p>
 <p class="orv_line">They were all constellations who didn't agree with the intermediate dokkaebi's development.</p>
-<div class="orv_constellation"><p>[N-No. I can't be destroyed in this way. Executive!]</p></div>
-<div class="orv_constellation"><p>[Don't worry. You won't be destroyed.]</p></div>
-<div class="orv_constellation"><p>[W-What does this mean…?]</p></div>
+<div class="orv_constellation"><p>N-No. I can't be destroyed in this way. Executive!</p></div>
+<div class="orv_constellation"><p>Don't worry. You won't be destroyed.</p></div>
+<div class="orv_constellation"><p>W-What does this mean…?</p></div>
 <p class="orv_line">A glimmer of hope appeared on Paul's face.</p>
 <p class="orv_line">The executive dokkaebi said something that turned off the light completely.</p>
-<div class="orv_constellation"><p>[You will be given a worse punishment than destruction. Our bureau received a large probability debt because of you.]</p></div>
-<div class="orv_system"><p>[The executives will use Dokkaebi Paul's Redemption Code.]</p></div>
+<div class="orv_constellation"><p>You will be given a worse punishment than destruction. Our bureau received a large probability debt because of you.</p></div>
+<div class="orv_system"><p>The executives will use Dokkaebi Paul's Redemption Code.</p></div>
 <p class="orv_line">Then the body of the dokkaebi Paul was forcibly pulled into the world. The intermediate dokkaebi Paul trembled. His true voice emerged because he lost his broadcasting rights.</p>
 <p class="orv_line">"T-This is a conspiracy. It can't be like this!"</p>
 <p class="orv_line">Then Bihyung spoke from beside him,</p>
-<div class="orv_constellation"><p>[This is why you didn't want to finish the scenario quickly.]</p></div>
+<div class="orv_constellation"><p>This is why you didn't want to finish the scenario quickly.</p></div>
 <p class="orv_line">"Bihyung!"</p>
 <p class="orv_line">In the end, Paul exploded. Paul held the Redemption Code and pointed at Bihyung.</p>
 <p class="orv_line">"Executives! Arrest him as well. I have evidence that his channel broke the rules of the Star Stream!"</p>
-<div class="orv_constellation"><p>[He will naturally come along as well.]</p></div>
+<div class="orv_constellation"><p>He will naturally come along as well.</p></div>
 <p class="orv_line">Paul's expression brightened. However, the people of Korea knew that people should listen to the dokkaebis' words to the end.</p>
-<div class="orv_constellation"><p>[It is because he is the dokkaebi who called us.]</p></div>
+<div class="orv_constellation"><p>It is because he is the dokkaebi who called us.</p></div>
 <p class="orv_line">"W-What… don't tell me?"</p>
 <p class="orv_line">The executive dokkaebi said.</p>
-<div class="orv_constellation"><p>[Yes, the dokkaebi who reported you is Bihyung.]</p></div>
+<div class="orv_constellation"><p>Yes, the dokkaebi who reported you is Bihyung.</p></div>
 <p class="orv_line">Bihyung briefly waved towards the red-eyed Paul. The executive smiled coldly.</p>
-<div class="orv_constellation"><p>[Dokkaebi Bihyung. He is a very good dokkaebi. Look at his humility. He has the integrity of a streamer who ignores everything and immerses himself in the scenarios. It is different from you and the dokkaebis who only wear luxurious clothing.]</p></div>
+<div class="orv_constellation"><p>Dokkaebi Bihyung. He is a very good dokkaebi. Look at his humility. He has the integrity of a streamer who ignores everything and immerses himself in the scenarios. It is different from you and the dokkaebis who only wear luxurious clothing.</p></div>
 <p class="orv_line">Bihyung had a shy expression on his face. He didn't know that his poverty would help him in this way.</p>
 <p class="orv_line">"N-No! That guy Bihyung is…!"</p>
-<div class="orv_constellation"><p>[Shut up.]</p></div>
+<div class="orv_constellation"><p>Shut up.</p></div>
 <p class="orv_line">Paul screamed terribly from where he was tied to the Redemption Code. The executive dokkaebi kept talking.</p>
-<div class="orv_constellation"><p>[You have been punished twice before. This is your third time. You are familiar with the third punishment, right?]</p></div>
+<div class="orv_constellation"><p>You have been punished twice before. This is your third time. You are familiar with the third punishment, right?</p></div>
 <p class="orv_line">"T-This is ridiculous! Do you think my superiors will allow this? You are making a mistake right now. If you touch me…"</p>
-<div class="orv_constellation"><p>[I will listen to your bullshit after going to the bureau.]</p></div>
+<div class="orv_constellation"><p>I will listen to your bullshit after going to the bureau.</p></div>
 <p class="orv_line">A glowing portal appeared in the air. It was finally time to say goodbye to the intermediate dokkaebi. Perhaps I wouldn't see him in the future scenarios anymore. Paul's eyes glared at me. A flame burned inside me the moment I met his eyes.</p>
-<div class="orv_system"><p>[The 'Fourth Wall' is shaking due to your high emotions.]</p></div>
+<div class="orv_system"><p>The 'Fourth Wall' is shaking due to your high emotions.</p></div>
 <p class="orv_line">The Shin Yoosung of the future had scattered into ash. She might've been saved if it wasn't for the intermediate dokkaebi.</p>
 <p class="orv_line">She could never return to her time but she might've been able to live in this new world. The intermediate dokkaebi trampled on that last possibility. That was why I opened my mouth. "Wait a minute."</p>
 <p class="orv_line">He might receive the death punishment but I couldn't be satisfied. My words shocked my party members.</p>
-<div class="orv_constellation"><p>[…Are you calling us?]</p></div>
+<div class="orv_constellation"><p>…Are you calling us?</p></div>
 <p class="orv_line">The dokkaebis were surprised. They didn't expect an incarnation to stop the dokkaebis of the Executive Branch. The executive dokkaebi looked at me quietly and opened his mouth.</p>
-<div class="orv_constellation"><p>[That's right. You are the incarnation Kim Dokja. Right?]</p></div>
+<div class="orv_constellation"><p>That's right. You are the incarnation Kim Dokja. Right?</p></div>
 <p class="orv_line">The other executive dokkaebi laughed.</p>
-<div class="orv_constellation"><p>[Do you know this person?]</p></div>
-<div class="orv_constellation"><p>[He is a famous incarnation in this area. He is one of the strongest incarnations on the peninsula but he hasn't signed with a sponsor.]</p></div>
-<div class="orv_constellation"><p>[Hoh?]</p></div>
+<div class="orv_constellation"><p>Do you know this person?</p></div>
+<div class="orv_constellation"><p>He is a famous incarnation in this area. He is one of the strongest incarnations on the peninsula but he hasn't signed with a sponsor.</p></div>
+<div class="orv_constellation"><p>Hoh?</p></div>
 <p class="orv_line">I watched the leisurely dokkaebis and spoke to Bihyung through the Dokkaebi Communication.</p>
 <p class="orv_line">'Bihyung. I'll give you 100,000 coins'.</p>
 <p class="orv_line">–What?</p>
@@ -293,22 +300,22 @@
 <p class="orv_line">'Just do it'.</p>
 <p class="orv_line">–Shit…</p>
 <p class="orv_line">I looked at the executives and rushed Bihyung. Bihyung sighed and started to manipulate something in the air.</p>
-<div class="orv_system"><p>[100,000 coins have been consumed.]</p></div>
-<div class="orv_system"><p>[Congratulations! You have become a platinum member of the Dokkaebi Bag!]</p></div>
+<div class="orv_system"><p>100,000 coins have been consumed.</p></div>
+<div class="orv_system"><p>Congratulations! You have become a platinum member of the Dokkaebi Bag!</p></div>
 <p class="orv_line">Originally, there would be splendid special effects for the promotion but I asked Bihyung to omit it. Unlike the gold membership that could be obtained for 5,000 coins, the treatment of platinum members were different.</p>
-<div class="orv_constellation"><p>[Yes, Incarnation Kim Dokja. Why did you call us?]</p></div>
+<div class="orv_constellation"><p>Yes, Incarnation Kim Dokja. Why did you call us?</p></div>
 <p class="orv_line">The executives didn't know about my promotion and asked me again. These dokkaebis were really big and I was nervous facing them. They might've fallen but some of them were originally great people.</p>
 <p class="orv_line">I breathed lightly and opened my mouth. "I am requesting the Dokkaebi Solo Meeting Right."</p>
-<div class="orv_constellation"><p>[What?]</p></div>
+<div class="orv_constellation"><p>What?</p></div>
 <p class="orv_line">The executive dokkaebis were confused by my words. Then laughter soon emerged.</p>
-<div class="orv_constellation"><p>[Only platinum members can ask for the solo meeting right… Don't tell me?]</p></div>
+<div class="orv_constellation"><p>Only platinum members can ask for the solo meeting right… Don't tell me?</p></div>
 <p class="orv_line">"That's right. Please check it."</p>
 <p class="orv_line">The two dokkaebis looked at each other again. They manipulated the system to identify a few things and soon let out a cry of amazement.</p>
-<div class="orv_constellation"><p>[It is real.]</p></div>
-<div class="orv_constellation"><p>[How can an incarnation become a platinum member?]</p></div>
+<div class="orv_constellation"><p>It is real.</p></div>
+<div class="orv_constellation"><p>How can an incarnation become a platinum member?</p></div>
 <p class="orv_line">"Aren't I qualified now?"</p>
 <p class="orv_line">The executives hesitated for a moment before nodding.</p>
-<div class="orv_constellation"><p>[That's right. What do you want with the solo meeting right? The platinum qualifications allows you to meet with a senior dokkaebi. The appointment schedule…]</p></div>
+<div class="orv_constellation"><p>That's right. What do you want with the solo meeting right? The platinum qualifications allows you to meet with a senior dokkaebi. The appointment schedule…</p></div>
 <p class="orv_line">"I don't want that. The dokkaebi I want is currently with you." I pointed a finger at the dokkaebi I wanted. "I want a solo meeting with the intermediate dokkaebi Paul."</p>
 <br>
 <hr>
@@ -317,18 +324,12 @@
             <a href="./ch_108"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_110">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="109" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="307" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="108" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="108" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 493: Ep. 94 - Beginning of the end, I</title>
     <meta property="og:title" content="Ch 493: Ep. 94 - Beginning of the end, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00493.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 493: Ep. 94 - Beginning of the end, I</h1></div>
 <p class="orv_line">Seeing him smile with such a thick skin, she suddenly felt compelled to hurl several choice words at him. She wanted to say, she'll definitely kill him if he went ahead and did something like this again.</p>
@@ -199,9 +206,9 @@
 <p class="orv_line">His entire body, having fought Constellations as an Outer God King earlier, was riddled full with wounds, so much so that it'd not be strange for him to keel over right now.</p>
 <p class="orv_line">"…Are you alright?"</p>
 <p class="orv_line">And him worrying about her instead of himself only made Han Sooyoung unable to figure out how to digest her current emotions.</p>
-<div class="orv_system"><p>[Constellation, 'Father of the Rich Night', is looking at you.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Queen of the Darkest Spring', is satisfied with your reply.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Maritime War God', is nodding his head.]</p></div>
+<div class="orv_system"><p>Constellation, 'Father of the Rich Night', is looking at you.</p></div>
+<div class="orv_system"><p>Constellation, 'Queen of the Darkest Spring', is satisfied with your reply.</p></div>
+<div class="orv_system"><p>Constellation, 'Maritime War God', is nodding his head.</p></div>
 <p class="orv_line">…</p>
 <p class="orv_line">The gazes of the stars shone from the sky. Even though the indirect messages continued to rain down, Han Sooyoung's back remained cold. The blacked-out channel of a few moments ago still remained vivid in her mind.</p>
 <p class="orv_line">⸢If she had made even the slightest mistake…⸥</p>
@@ -225,10 +232,10 @@
 <p class="orv_line">Everyone from the abandoned world-lines, from the 0th turn to the 1863rd, had gathered here.</p>
 <div class="orv_outergod"><p>【Go!! Everyone!!】</p></div>
 <p class="orv_line">Han Sooyoung felt emotions swell up in her chest after watching their march. These people gathering here to resist the pre-determined conclusion were all &lt;Kim Dokja's Company&gt;'s allies.</p>
-<div class="orv_system"><p>[Nebula, &lt;Kim Dokja's Company&gt;'s entire roster has become the 'Enemies of the Story'!]</p></div>
+<div class="orv_system"><p>Nebula, &lt;Kim Dokja's Company&gt;'s entire roster has become the 'Enemies of the Story'!</p></div>
 <p class="orv_line">Companions approached them in their unsteady steps. They too, could finally see Kim Dokja's world.</p>
-<div class="orv_system"><p>[Story, 'Predictive Plagiarism', is sharing its understanding with the rest of &lt;Kim Dokja's Company&gt;'s members!]</p></div>
-<div class="orv_system"><p>[Story, 'Saviour of the Star', is sharing its thoughts with the rest of &lt;Kim Dokja's Company&gt;'s members.]</p></div>
+<div class="orv_system"><p>Story, 'Predictive Plagiarism', is sharing its understanding with the rest of &lt;Kim Dokja's Company&gt;'s members!</p></div>
+<div class="orv_system"><p>Story, 'Saviour of the Star', is sharing its thoughts with the rest of &lt;Kim Dokja's Company&gt;'s members.</p></div>
 <p class="orv_line">All the Stories were talking to each other now.</p>
 <p class="orv_line">Companions scanned their surroundings with dazed expressions. They too were witnessing the sight of the horrifying masks covering up the Outer Gods slipping away.</p>
 <p class="orv_line">Han Sooyoung observed each and every one of her companions, before abruptly realizing something.</p>
@@ -242,7 +249,7 @@
 <p class="orv_line">Han Sooyoung hurriedly scanned her surroundings.</p>
 <p class="orv_line">KWA-BOOOOM!</p>
 <p class="orv_line">An explosion occurred in the frontline and thick dust cloud was kicked up. Constellations from Asgard were busy crushing the Outer Gods.</p>
-<div class="orv_constellation"><p>[…You disgusting bastards.]</p></div>
+<div class="orv_constellation"><p>…You disgusting bastards.</p></div>
 <p class="orv_line">Dozens upon dozens of 'Nameless Ones' died every time Constellations crossed the battlefield.</p>
 <p class="orv_line">If it was before, this scene would've been one of monsters dying; but now, it depicted the deaths of actual persons. 'Nameless Ones' lost their arms, their legs were torn off, and their guts were spilt.</p>
 <p class="orv_line">They couldn't even mount a proper challenge. Most of the 'Outer Gods' that heeded Kim Dokja's call and showed up here were the lower-ranked variety. Although there were a few higher-ranked creatures mixed within, they had already been felled after being subjected to a concentrated barrage of attacks from the Myth-grade Constellations. Defending against the concerted attacks of the Constellations with the remaining forces was impossible.</p>
@@ -252,13 +259,13 @@
 <p class="orv_line">Tsu-chuchuchut!</p>
 <p class="orv_line">Darkish-blue sword light swept across the battlefield.</p>
 <p class="orv_line">Golden afterimages scattered in the air where the sword's trajectory scythed by.</p>
-<div class="orv_constellation"><p>[Kuwaaaaahk!!]</p></div>
+<div class="orv_constellation"><p>Kuwaaaaahk!!</p></div>
 <p class="orv_line">The head of a Constellation stomping on an 'Outer God' just now flew away without warning. And then, another one. Then, yet another one. A pitch-black figure, currently bathed in the baptism of spewing Stories rather than blood, was continuously wielding his sword.</p>
 <p class="orv_line">"Isn't that…?!"</p>
 <p class="orv_line">She was well aware of the fact that there was a seriously powerful individual among the 'Outer Gods' fighting out in the furthest front. Initially, she thought that, 'since this is the Final Scenario, the really strong ones have come out of the woodwork'.</p>
 <p class="orv_line">This 'Outer God' continued to cut down Constellations like pieces of papers, its sharp tail wagging this way and that.</p>
 <p class="orv_line">But now that she took a closer look, that was no tail at all but a pitch-black sword, instead.</p>
-<div class="orv_system"><p>[Attribute, 'Iron-Blooded Supreme King', is activating!]</p></div>
+<div class="orv_system"><p>Attribute, 'Iron-Blooded Supreme King', is activating!</p></div>
 <p class="orv_line">Corpses of Constellations formed a mountain. And on top of this very mountain was a throne of blood. The master of this throne was arrogantly looking down on all the stars of the world.</p>
 <p class="orv_line">"This swordsmanship… you, you're Yoo Joonghyuk."</p>
 <p class="orv_line">Anna Croft gritted her teeth and emitted her sword aura.</p>
@@ -270,17 +277,17 @@
 <p class="orv_line">And lastly, Ranvir Khan's palms made their move; his palms left behind clear shadows like Kali's hands, while pouring out around hundred or so ripples.</p>
 <p class="orv_line">Kwa-aaaaaaah!!</p>
 <p class="orv_line">The battlefield was rocked by yet another loud explosion. Stories continued to tell their stories beyond that explosion noise, however.</p>
-<div class="orv_system"><p>[Story, 'Life and Death Companions', is continuing on with its storytelling.]</p></div>
-<div class="orv_system"><p>[A portion of Stories are being shared due to the special effect of 'Life and Death Companions'.]</p></div>
-<div class="orv_system"><p>[Story, 'Hell of Eternity', is continuing on with its storytelling.]</p></div>
+<div class="orv_system"><p>Story, 'Life and Death Companions', is continuing on with its storytelling.</p></div>
+<div class="orv_system"><p>A portion of Stories are being shared due to the special effect of 'Life and Death Companions'.</p></div>
+<div class="orv_system"><p>Story, 'Hell of Eternity', is continuing on with its storytelling.</p></div>
 <p class="orv_line">While witnessing this spectacle of swords slicing down indiscriminately and both Constellations and Outer Gods dying with their bellies cut wide open, Han Sooyoung abruptly recalled a certain old question that circulated among the gossipers.</p>
 <p class="orv_line">Who was the strongest Incarnation in the world?</p>
-<div class="orv_constellation"><p>[Everyone, kill that guy! We can break through as long as that man is dead!]</p></div>
+<div class="orv_constellation"><p>Everyone, kill that guy! We can break through as long as that man is dead!</p></div>
 <p class="orv_line">Now, she could answer it without a shred of hesitation. There couldn't be differences in opinion on this one.</p>
 <p class="orv_line">⸢The world's strongest Incarnation was Yoo Joonghyuk.⸥</p>
 <p class="orv_line">Constellations that had long discarded any semblance of their pride pounced on him. Even though his shoulder split open and his thigh ruptured, Yoo Joonghyuk's expression remained calm as he blocked the Constellation army rushing in at the frontlines.</p>
 <p class="orv_line">Such a battle was only possible because he had regained a portion of his past memories. However, there was one thing she still couldn't figure it out.</p>
-<div class="orv_system"><p>[Incarnation Yoo Joonghyuk is currently the 'Enemy of the Story'.]</p></div>
+<div class="orv_system"><p>Incarnation Yoo Joonghyuk is currently the 'Enemy of the Story'.</p></div>
 <p class="orv_line">"How can that guy be the first…??"</p>
 <p class="orv_line">How did Yoo Joonghyuk join Kim Dokja even before Han Sooyoung or the rest of the companions could?</p>
 <p class="orv_line">Yoo Joonghyuk's battlefield was steadily being pushed back after the Myth-grade Constellations pitched in. The closer he got, the more visible the murky aura of Chaos surrounding him became. It was the power of Chaos usually seen from the 'Outer Gods'.</p>
@@ -299,8 +306,8 @@
 <p class="orv_line">He opened his mouth first. "You were late."</p>
 <p class="orv_line">"Shut the hell up."</p>
 <p class="orv_line">Three of them lined up side by side.</p>
-<p class="orv_line">Yoo Joonghyuk's [Black Heavenly Demon Sword] roared out a keen, vicious cry, while Kim Dokja's pair of black wings spread wide open as if to protect the two people next to him.</p>
-<p class="orv_line">Han Sooyoung clenched and unfurled her fist currently enveloped in [Black Flame] and spoke up. "…I can't figure out why this feels like it's been a really long time."</p>
+<p class="orv_line">Yoo Joonghyuk's <strong>[Black Heavenly Demon Sword]</strong> roared out a keen, vicious cry, while Kim Dokja's pair of black wings spread wide open as if to protect the two people next to him.</p>
+<p class="orv_line">Han Sooyoung clenched and unfurled her fist currently enveloped in <strong>[Black Flame]</strong> and spoke up. "…I can't figure out why this feels like it's been a really long time."</p>
 <p class="orv_line">Their companions finally reached their rear.</p>
 <p class="orv_line">"Dokja-ssi! Sooyoung-ssi!"</p>
 <p class="orv_line">"Hyung-!!"</p>
@@ -309,7 +316,7 @@
 <p class="orv_line">"Load the cannons!"</p>
 <p class="orv_line">Cannons were shoring up their strengths at the ends of the vessel.</p>
 <p class="orv_line">Gong Pildu established his fortress atop the battleship and aimed his own cannons at the ground as if to imply that he could take care of everything here.</p>
-<div class="orv_system"><p>[Every star in Nebula, &lt;Kim Dokja's Company&gt;, is shining brightly!]</p></div>
+<div class="orv_system"><p>Every star in Nebula, &lt;Kim Dokja's Company&gt;, is shining brightly!</p></div>
 <p class="orv_line">Biyoo was shining like a blue sun amidst the dancing sparks; she was sweating profusely while receiving the Coins pouring in the &lt;Kim Dokja's Company&gt;'s direction.</p>
 <p class="orv_line">Probability gleaming richly was now giving them blessings.</p>
 <p class="orv_line">Kim Dokja then spoke to his quiet companions manning his sides.</p>
@@ -332,20 +339,20 @@
 <p class="orv_line">…Lee Seolhwa ended the conversation.</p>
 <p class="orv_line">"Here they come!"</p>
 <p class="orv_line">The march of the Constellations commenced once more.</p>
-<div class="orv_constellation"><p>[Do not panic! Their numbers have grown a little bit, that's all!]</p></div>
-<div class="orv_constellation"><p>[They are nothing more than a small Nebula!]</p></div>
+<div class="orv_constellation"><p>Do not panic! Their numbers have grown a little bit, that's all!</p></div>
+<div class="orv_constellation"><p>They are nothing more than a small Nebula!</p></div>
 <p class="orv_line">The story that couldn't find its bearing continued to flow within the rapidly-changing scenario.</p>
-<p class="orv_line">Han Sooyoung swung her fist; [Black Flame] shooting out from her knuckles pierced through the heads of the Incarnations. Yoo Joonghyuk's [Breaking the Sky Swordsmanship] deflected both Anna Croft's and Fei Hu's blades, while Jang Hayoung's [Breaking the Sky Force Punch] shoved away the group of Constellations trying to rush in from the side.</p>
-<div class="orv_system"><p>['Hour of Judgement' is activating!]</p></div>
-<p class="orv_line">Jung Heewon's [Hellfire] burned away the stars rushing in from the front. And Lee Hyunsung's forged-steel shield blocked the unseen weapons cutting through the air.</p>
+<p class="orv_line">Han Sooyoung swung her fist; <strong>[Black Flame]</strong> shooting out from her knuckles pierced through the heads of the Incarnations. Yoo Joonghyuk's <strong>[Breaking the Sky Swordsmanship]</strong> deflected both Anna Croft's and Fei Hu's blades, while Jang Hayoung's <strong>[Breaking the Sky Force Punch]</strong> shoved away the group of Constellations trying to rush in from the side.</p>
+<div class="orv_system"><p>'Hour of Judgement' is activating!</p></div>
+<p class="orv_line">Jung Heewon's <strong>[Hellfire]</strong> burned away the stars rushing in from the front. And Lee Hyunsung's forged-steel shield blocked the unseen weapons cutting through the air.</p>
 <p class="orv_line">"Everyone, get down!"</p>
 <p class="orv_line">Lee Jihye's turtle ship finished loading its cannons and began spitting flames out. Along with blinding flashes of explosions, the enemies in the frontlines were swept away.</p>
 <p class="orv_line">"Bring down that ship first!"</p>
 <p class="orv_line">Incarnations waiting for their chance all leapt up into the sky. That prompted Gong Pildu's turrets to spit out fire and noise, as well.</p>
 <p class="orv_line">"Kuwaaaahk!"</p>
-<div class="orv_constellation"><p>[You pathetic fools!]</p></div>
+<div class="orv_constellation"><p>You pathetic fools!</p></div>
 <p class="orv_line">A handful of Constellations used the falling Incarnations as their footholds to fly up. They flew up higher than the turtle ship and began firing their charged-up magical attacks.</p>
-<div class="orv_constellation"><p>[Die…?!]</p></div>
+<div class="orv_constellation"><p>Die…?!</p></div>
 <p class="orv_line">Even before the Constellation could finish its words, its body was torn apart in half. The Chimera Dragon roared out and ripped the Constellation's body to pieces with its massive maw.</p>
 <p class="orv_line">"Hyung! Behind you!"</p>
 <p class="orv_line">Lee Gilyoung's locusts stopped the Constellations trying to fly in.</p>
@@ -354,20 +361,20 @@
 <p class="orv_line">In the eyes of other Constellations, they must've looked like monsters trying to destroy this world. However, that didn't matter – because that was the more exciting alternative, after all.</p>
 <p class="orv_line">"Kim Dokja! Destroy that ark!"</p>
 <p class="orv_line">They could see the ark beyond the Constellations rushing in like storm clouds to protect it. And even now, more Constellations were rushing out from the hull of the broken ark.</p>
-<p class="orv_line">They were actually stars asleep within the [Ark], waiting to depart from this world-line.</p>
-<div class="orv_system"><p>['Enemy of the Story' is approaching the ark.]</p></div>
-<div class="orv_system"><p>['Enemy of the Story' will destroy all Stories in this world!]</p></div>
+<p class="orv_line">They were actually stars asleep within the <strong>[Ark]</strong>, waiting to depart from this world-line.</p>
+<div class="orv_system"><p>'Enemy of the Story' is approaching the ark.</p></div>
+<div class="orv_system"><p>'Enemy of the Story' will destroy all Stories in this world!</p></div>
 <p class="orv_line">That ark had to be destroyed in order to end the influx of the Constellations.</p>
 <p class="orv_line">"Hurry!"</p>
-<div class="orv_system"><p>[Collision of Probability has caused the rapid change to the scenario!]</p></div>
-<div class="orv_system"><p>[&lt;Star Stream&gt; has begun revising the Final Scenario's condition!]</p></div>
+<div class="orv_system"><p>Collision of Probability has caused the rapid change to the scenario!</p></div>
+<div class="orv_system"><p>&lt;Star Stream&gt; has begun revising the Final Scenario's condition!</p></div>
 <p class="orv_line">But then, there were certain Constellations standing before the ark.</p>
-<div class="orv_system"><p>[Constellation, 'One Responsible for the Universe's Cycle', is intervening in the battlefield!]</p></div>
-<div class="orv_system"><p>[Constellation, 'Mirror that Emits Smoke', is intervening in the scenario!]</p></div>
-<div class="orv_system"><p>[Constellation, 'Master of Thunder and War', is intervening in the scenario!]</p></div>
+<div class="orv_system"><p>Constellation, 'One Responsible for the Universe's Cycle', is intervening in the battlefield!</p></div>
+<div class="orv_system"><p>Constellation, 'Mirror that Emits Smoke', is intervening in the scenario!</p></div>
+<div class="orv_system"><p>Constellation, 'Master of Thunder and War', is intervening in the scenario!</p></div>
 <p class="orv_line">These Myth-grade Constellations had been observing the unfolding situation until now. Only by defeating them could the ark be within reach.</p>
 <p class="orv_line">Each individual combat power was more than enough, but they still lost out in the overall combat force.</p>
-<div class="orv_system"><p>[Constellation, 'Spear that Draws the Borders in the Oceans', is greatly enraged!]</p></div>
+<div class="orv_system"><p>Constellation, 'Spear that Draws the Borders in the Oceans', is greatly enraged!</p></div>
 <p class="orv_line">Poseidon and Zeus busy slaughtering the 'Nameless Ones' out by the frontlines joined in, leaving the companions stuck in a boxed-in position.</p>
 <p class="orv_line">Ku-dudududu!</p>
 <p class="orv_line">Yoo Joonghyuk watched the spear slice past the ocean of corpses and return to its wielder, and spat out venomously. "…Poseidon."</p>
@@ -385,7 +392,7 @@
 <p class="orv_line">⸢No star would dare to compare itself to her brightness – the 'Living Flame'.⸥</p>
 <p class="orv_line">And on the opposite side of the burning, screaming stars, a pure-blue ocean was crashing in. A tsunami wave flooded in from the west, as the 'Sunken Island' rose up once more.</p>
 <p class="orv_line">⸢The calamity of the western world, 'Master of the Sunken Island'.⸥</p>
-<div class="orv_constellation"><p>[Kuwaaaahk!!]</p></div>
+<div class="orv_constellation"><p>Kuwaaaahk!!</p></div>
 <p class="orv_line">Constellations got swept away by the wave and dissolved away as sacks of Stories in an instant.</p>
 <p class="orv_line">Soon afterwards, the northern skies grew jet-black, and Constellations there began crashing to the ground like falling raindrops.</p>
 <p class="orv_line">⸢The ruler of the northern universe, 'Monarch of the Great Abyss'.⸥</p>
@@ -393,7 +400,7 @@
 <p class="orv_line">And the existence incarnating into Lee Hyunsung blocked the storm of aftermaths they had created.</p>
 <p class="orv_line">⸢The 'King of the Silver Heart', the ruler of the interstellar space in the south.⸥</p>
 <p class="orv_line">And then, an existence approached them from a place of nothing.</p>
-<p class="orv_line">With every step he took, the gigantic [Splitting the Sky Sword] clawed the night sky and brought down many stars shining up there.</p>
+<p class="orv_line">With every step he took, the gigantic <strong>[Splitting the Sky Sword]</strong> clawed the night sky and brought down many stars shining up there.</p>
 <div class="orv_outergod"><p>【It's been a while, Poseidon.】</p></div>
 <p class="orv_line">It was a man with the exact same face as Yoo Joonghyuk, replete with a long scar on the cheek, too.</p>
 <p class="orv_line">The 'Secretive Plotter' nonchalantly strode over and grabbed Poseidon by the latter's neck, before grinning brightly.</p>
@@ -405,18 +412,12 @@
             <a href="./ch_492"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_494">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="493" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="543" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="492" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="492" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

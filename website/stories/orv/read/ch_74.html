@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 74: Ep. 15 – A Kingless World, IV</title>
     <meta property="og:title" content="Ch 74: Ep. 15 – A Kingless World, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00074.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 74: Ep. 15 – A Kingless World, IV</h1></div>
 <p class="orv_line">Han Sooyoung was thrown into a cage.</p>
@@ -196,8 +203,8 @@
 <p class="orv_line">Han Sooyoung must've been moved to the area near here. She was a writer so she might have a management or publishing company nearby.</p>
 <p class="orv_line">"Aren't you quite good looking? Hey, you haven't touched her already have you?"</p>
 <p class="orv_line">"No. I know that the constellations are all gathered here."</p>
-<div class="orv_system"><p>[A constellation who likes obscenity is excited.]</p></div>
-<div class="orv_system"><p>[A few constellations have eyes that are shining in a lascivious manner.]</p></div>
+<div class="orv_system"><p>A constellation who likes obscenity is excited.</p></div>
+<div class="orv_system"><p>A few constellations have eyes that are shining in a lascivious manner.</p></div>
 <p class="orv_line">White underwear was revealed by Han Sooyoung's torn jeans. There were men already playing rock paper scissors.</p>
 <p class="orv_line">I stared at Han Sooyoung beyond the bars. No matter how I looked, there were no signs that anything happened.</p>
 <p class="orv_line">·····.</p>
@@ -245,7 +252,7 @@
 <p class="orv_line">"Yes, it is. Would you like me to let you know?"</p>
 <p class="orv_line">"It would be good if you share the know-how!"</p>
 <p class="orv_line">"The constellations really like…'</p>
-<div class="orv_system"><p>[Blade of Faith is activated!]</p></div>
+<div class="orv_system"><p>Blade of Faith is activated!</p></div>
 <p class="orv_line">"…This."</p>
 <p class="orv_line">There was the sound of the bars being cut apart. I swung my blade indiscriminately towards the wanderers surrounding the cage. I cut the Achilles tendon of those running away.</p>
 <p class="orv_line">The knees of those who weren't prepared for resistance became twisted.</p>
@@ -261,10 +268,10 @@
 <p class="orv_line">I turned to look at Deputy Yoon.</p>
 <p class="orv_line">"I created a situation that the constellations really like because of you."</p>
 <p class="orv_line">With just two knives, none of the men who entered Han Sooyoung's cage could do anything against me.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is pleased with your judgment.]</p></div>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is snorting from the relentless punishment.]</p></div>
-<div class="orv_system"><p>[Many of the constellations who dislike the atrocities of some constellations are greatly satisfied with your judgment.]</p></div>
-<div class="orv_system"><p>[8,000 coins have been sponsored.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is pleased with your judgment.</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is snorting from the relentless punishment.</p></div>
+<div class="orv_system"><p>Many of the constellations who dislike the atrocities of some constellations are greatly satisfied with your judgment.</p></div>
+<div class="orv_system"><p>8,000 coins have been sponsored.</p></div>
 <p class="orv_line">Deputy Yoon turned white and flopped to the ground.</p>
 <p class="orv_line">I laughed at him.</p>
 <p class="orv_line">"Why bother creating something like the coin farm? It is easy to earn money."</p>
@@ -276,16 +283,16 @@
 <p class="orv_line">Han Sooyoung's voice was weak.</p>
 <p class="orv_line">"If you save me, won't the constellations in your channel run away? Don't you know what the constellation's hate most?"</p>
 <p class="orv_line">"There are some who like it."</p>
-<div class="orv_system"><p>[The constellation who has been waiting for a harem carefully puts both hands together.]</p></div>
-<div class="orv_system"><p>[The constellation who likes 'enemies turning into allies' is delighted.]</p></div>
+<div class="orv_system"><p>The constellation who has been waiting for a harem carefully puts both hands together.</p></div>
+<div class="orv_system"><p>The constellation who likes 'enemies turning into allies' is delighted.</p></div>
 <p class="orv_line">Han Sooyoung frowned.</p>
 <p class="orv_line">"Now this is a cliché. Right? The moment that the woman is about to be raped, the hero will rescue her. Why are you acting like this despite saying that you dislike clichés?"</p>
 <p class="orv_line">"You are mistaken about two things."</p>
 <p class="orv_line">I started while lightly cutting a wanderer's legs.</p>
 <p class="orv_line">"One, I'm not a hero. And two…"</p>
-<div class="orv_system"><p>[You have saved a life.]</p></div>
-<div class="orv_system"><p>[Your karma points have increased by one.]</p></div>
-<div class="orv_system"><p>[Current karma points: 14/100]</p></div>
+<div class="orv_system"><p>You have saved a life.</p></div>
+<div class="orv_system"><p>Your karma points have increased by one.</p></div>
+<div class="orv_system"><p>Current karma points: 14/100</p></div>
 <p class="orv_line">Karma points were gained when the system determined that a person had been 'saved'. In other words, if I left it alone, it was likely Han Sooyoung would've died.</p>
 <p class="orv_line">"You're not a woman."</p>
 <p class="orv_line">"…Put me down!"</p>
@@ -301,7 +308,7 @@
 <p class="orv_line">The terrified wanderers started to flee the coin farm.</p>
 <p class="orv_line">"This is a complete profit."</p>
 <p class="orv_line">I looked at the coins that I got from the wanderers while Han Sooyoung staggered with a smile.</p>
-<div class="orv_system"><p>[You have acquired 18,400 coins.]</p></div>
+<div class="orv_system"><p>You have acquired 18,400 coins.</p></div>
 <p class="orv_line">Her contribution wasn't as high as mine but she would've got a decent amount of coins. I didn't get as much coins as I would've without Han Sooyoung present but I decided to think of it as a tip.</p>
 <p class="orv_line">I looked in front to where Deputy Yoon was still sitting on the ground.</p>
 <p class="orv_line">"Haha… psychopath. I thought you would be like this. I should've known when I heard the rumour…'</p>
@@ -322,14 +329,14 @@
 <p class="orv_line">I ignored Han Sooyoung and rummaged through the items that had dropped. Most of it was garbage but there was a suit that I could wear.</p>
 <div class="orv_image"><img src="../../../assets/images/074 - Old Gentleman's Close Combat Suit.jpg" alt="" loading="lazy"></div>
 <div class="orv_notice"><p>* Unofficial fan illustration (non-canonical)</p></div>
-<div class="orv_system"><p>[Old Gentleman's Close Combat Suit]</p></div>
+<div class="orv_system"><p>Old Gentleman's Close Combat Suit</p></div>
 <p class="orv_line">It was a B-grade item and only slightly improved defense but it was better than not wearing it. I couldn't wear Samyeongdang's Mat forever… come to think of it, I should start item farming.</p>
 <p class="orv_line">The fleeing wanderers seemed to be heading to their lair. It would be better to pursue and hit the wanderers.</p>
 <p class="orv_line">If I remembered currently, Seocho had a few 'meteorite stones' to use in the fifth scenario. If it fell here then I had to obtain it.</p>
 <p class="orv_line">Once I got a secondary battery…</p>
-<div class="orv_system"><p>[You have saved a life.]</p></div>
-<div class="orv_system"><p>[Your karma points have increased by one.]</p></div>
-<div class="orv_system"><p>[Current karma points: 25/100]</p></div>
+<div class="orv_system"><p>You have saved a life.</p></div>
+<div class="orv_system"><p>Your karma points have increased by one.</p></div>
+<div class="orv_system"><p>Current karma points: 25/100</p></div>
 <p class="orv_line">One or two people approached. They were all those who had been stuck behind bars.</p>
 <p class="orv_line">Colour returned to the faces of some people who remembered my face.</p>
 <p class="orv_line">I raised my hand before they could speak.</p>
@@ -354,18 +361,12 @@
             <a href="./ch_73"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_75">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="74" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="230" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="73" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="73" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

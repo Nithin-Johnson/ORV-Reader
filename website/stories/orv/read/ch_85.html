@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 85: Ep. 17 – SSS-grade Talent, IV</title>
     <meta property="og:title" content="Ch 85: Ep. 17 – SSS-grade Talent, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,35 +177,35 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00085.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 85: Ep. 17 – SSS-grade Talent, IV</h1></div>
-<div class="orv_quote"><p>「 The greatest good person can turn into the worst killer at any time. 」</p></div>
+<div class="orv_quote"><p>The greatest good person can turn into the worst killer at any time.</p></div>
 <p class="orv_line">This was a sentence that described Guam Divine Doctor in Ways of Survival.</p>
 <p class="orv_line">Guam Divine Doctor Heo Jun.</p>
 <p class="orv_line">According to the records in Ways of Survival, the task that Heo Jun devoted his last years to wasn't medicine but poison. Like many great people who later became constellations, Heo Jun reached a level beyond the actual history records.</p>
-<div class="orv_quote"><p>「 "If I make a poison that can kill anyone, I can make a pill that can save anyone." 」</p></div>
+<div class="orv_quote"><p>"If I make a poison that can kill anyone, I can make a pill that can save anyone."</p></div>
 <p class="orv_line">Heo Jun was banished after the death of King Seonjo and devoted his last seven years to this question.</p>
 <p class="orv_line">Why was poison a medicine for some people and a poison for others? One day in his last years, he finally reached a mystical answer.</p>
-<div class="orv_quote"><p>「 "It isn't the body but the spirit that determines the action of the poison." 」</p></div>
+<div class="orv_quote"><p>"It isn't the body but the spirit that determines the action of the poison."</p></div>
 <p class="orv_line">A poison made by analyzing a thousand souls. The result was the heavenly poison that flowed out of Lee Seolhwa's body, the Thousand Spirits Poison.</p>
 <p class="orv_line">Dongui Bogam was actually written from Heo Jun's failure to reach Thousand Spirits Poison.</p>
 <p class="orv_line">"Kiik, kiiik!"</p>
@@ -206,14 +213,14 @@
 <p class="orv_line">Lee Seolhwa flew through the air. It wasn't hard to defeat Lee Seolhwa if her poison was disabled.</p>
 <p class="orv_line">It was the Thousand Spirits Poison that solidified her reputation as one of the Ten Evils. If I hadn't got the Dongui Bogam, I would've become a sacrifice of her reputation…</p>
 <p class="orv_line">This time her luck was bad.</p>
-<div class="orv_system"><p>[The constellation 'Guam Divine Doctor' is looking at you like he is sorry.]</p></div>
-<div class="orv_system"><p>[The constellation 'Guam Divine Doctor' is looking forward to you dealing with this properly.]</p></div>
-<div class="orv_system"><p>[300 coins have been sponsored.]</p></div>
+<div class="orv_system"><p>The constellation 'Guam Divine Doctor' is looking at you like he is sorry.</p></div>
+<div class="orv_system"><p>The constellation 'Guam Divine Doctor' is looking forward to you dealing with this properly.</p></div>
+<div class="orv_system"><p>300 coins have been sponsored.</p></div>
 <p class="orv_line">The 'Parasite' infection was irrelevant to Guam Divine Doctor's intentions. In other words, Lee Seolhwa's attack on me wasn't according to Lee Seolhwa's will.</p>
 <p class="orv_line">By the way, only sponsoring 300 coins…</p>
-<div class="orv_system"><p>[The constellation 'Seo Ae Il Pil' is looking forward to you dealing with this properly.]</p></div>
-<div class="orv_system"><p>[The constellation 'Bald General of Justice' expects you to do your best.]</p></div>
-<div class="orv_system"><p>[300 coins have been sponsored.]</p></div>
+<div class="orv_system"><p>The constellation 'Seo Ae Il Pil' is looking forward to you dealing with this properly.</p></div>
+<div class="orv_system"><p>The constellation 'Bald General of Justice' expects you to do your best.</p></div>
+<div class="orv_system"><p>300 coins have been sponsored.</p></div>
 <p class="orv_line">I ignored the response of the constellations and approached Lee Seolhwa. Lee Seolhwa crawled across the ground with fear.</p>
 <p class="orv_line">I could feel Yoo Joonghyuk's gaze in the distance. Yoo Joonghyuk would probably be hurt badly if Lee Seolhwa died here.</p>
 <p class="orv_line">I looked at the fallen Lee Seolhwa and opened my mouth. "Hey."</p>
@@ -232,13 +239,13 @@
 <p class="orv_line">I watched the smiling Antinus and sighed. If she didn't go out on her own, I would have to force her out.</p>
 <p class="orv_line">In fact, I didn't want to use this method. It wasn't just due to the pain Lee Seolhwa would go through. I didn't want the burden of dealing with Antinus after she left the body.</p>
 <p class="orv_line">I glanced up at the sky. The constellations of the Korean peninsula. I owed them a debt last time so this time I had to make a concession.</p>
-<div class="orv_system"><p>[The special option of Dongui Bogam – Incomplete has been activated.]</p></div>
-<div class="orv_system"><p>[Dongui Bogam – Incomplete has conveyed the essence of Oriental medicine to you.]</p></div>
+<div class="orv_system"><p>The special option of Dongui Bogam – Incomplete has been activated.</p></div>
+<div class="orv_system"><p>Dongui Bogam – Incomplete has conveyed the essence of Oriental medicine to you.</p></div>
 <p class="orv_line">I had an incomplete version of Dongui Bogam so I couldn't do miracles like making a powerful poison or saving a dying person. However, I could do simple treatments.</p>
 <p class="orv_line">For example, taking a parasite out of a body.</p>
 <p class="orv_line">Her body had to be bound for a smooth treatment, so I held Lee Seolhwa's arms from behind, holding her to the ground. It was a misleading position but her consciousness was buried deep inside her.</p>
 <p class="orv_line">Common sense told me not to go after Yoo Joonghyuk's ex-girlfriend unless I was a madman. Especially in front of Yoo Joonghyuk's eyes.</p>
-<div class="orv_system"><p>[The exclusive skill 'Hit a Pressure Point Lv. 2' is activated.]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Hit a Pressure Point Lv. 2' is activated.</p></div>
 <p class="orv_line">I started to press at different pressure points on Lee Seolhwa's body.</p>
 <p class="orv_line">Soon after, her skin turned red and I planted a needle made of magic power into her reacting blood. It was my first time doing this so I didn't know if it would work.</p>
 <p class="orv_line">"Kiiit! It hurts! It huuuuurts!"</p>
@@ -246,14 +253,14 @@
 <p class="orv_line">"Kiiit! Kihit! Kyaaaak…!"</p>
 <p class="orv_line">Then Lee Seolhwa's screams gradually changed. It changed from the cry of an insect to a human voice.</p>
 <p class="orv_line">The mysterious thing was using Oriental medicine to remove a parasite from the body. I was embarrassed that a person who had relied on Western medicine so far was now practicing Eastern medicine.</p>
-<div class="orv_system"><p>[The essence of Oriental medicine is effective!]</p></div>
-<div class="orv_system"><p>[The constellation 'Guam Divine Doctor' is looking at you with a warm expression.]</p></div>
+<div class="orv_system"><p>The essence of Oriental medicine is effective!</p></div>
+<div class="orv_system"><p>The constellation 'Guam Divine Doctor' is looking at you with a warm expression.</p></div>
 <p class="orv_line">I got up while Lee Seolhwa gasped for breath.</p>
 <p class="orv_line">Yellow mucus was flowing from the glands in her body where poison had been secreted. The mucus was the main body of a Parasite.</p>
 <p class="orv_line">"K…Kuock…"</p>
 <p class="orv_line">This would've satisfied the constellations.</p>
-<div class="orv_system"><p>[The constellation 'Guam Divine Doctor' thanks you for your good deed.]</p></div>
-<div class="orv_system"><p>[500 coins have been sponsored.]</p></div>
+<div class="orv_system"><p>The constellation 'Guam Divine Doctor' thanks you for your good deed.</p></div>
+<div class="orv_system"><p>500 coins have been sponsored.</p></div>
 <p class="orv_line">Lee Seolhwa's eyes slowly opened. Consciousness had returned to her eyes but there was still no focus.</p>
 <p class="orv_line">It was because she had been infected with a Parasite not long ago. She wouldn't be able to see my face right now with her five senses half dead.</p>
 <p class="orv_line">"You… who are you?"</p>
@@ -282,8 +289,8 @@
 <p class="orv_line">The real battle started now.</p>
 <p class="orv_line">"Get away before you are infected!"</p>
 <p class="orv_line">The sharp tail aimed for my stomach.</p>
-<div class="orv_system"><p>[The effect of the Dongui Bogam – Incomplete has been activated.]</p></div>
-<div class="orv_system"><p>[Your body is immune from a parasitic infection.]</p></div>
+<div class="orv_system"><p>The effect of the Dongui Bogam – Incomplete has been activated.</p></div>
+<div class="orv_system"><p>Your body is immune from a parasitic infection.</p></div>
 <p class="orv_line">It was so fast I couldn't avoid it despite having over 50 agility. I narrowly caught the tail before it pierced me. But if it hit, I would've definitely got a hole in my stomach.</p>
 <p class="orv_line">Kik.</p>
 <p class="orv_line">She used the fact that I was holding her tail to fly towards me and hit me. I was knocked onto the ground and a strong pain filled my body.</p>
@@ -307,18 +314,12 @@
             <a href="./ch_84"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_86">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="85" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="293" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="84" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="84" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

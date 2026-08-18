@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 341: Ep. 64 - A Road That Isn't a Road, II</title>
     <meta property="og:title" content="Ch 341: Ep. 64 - A Road That Isn't a Road, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,29 +177,29 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00341.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 341: Ep. 64 - A Road That Isn't a Road, II</h1></div>
 <p class="orv_line">All types of thoughts passed through my head.</p>
-<div class="orv_system"><p>[The 'Fourth Wall' is shaking violently.]</p></div>
+<div class="orv_system"><p>The 'Fourth Wall' is shaking violently.</p></div>
 <p class="orv_line">There were two doors and someone seemed to be whispering to me. I could go inside one of them. However, if I chose one then I had to give up the other one. I couldn't do that.</p>
 <p class="orv_line">"Demon King of Salvation."</p>
 <p class="orv_line">"…Yes."</p>
@@ -201,14 +208,14 @@
 <p class="orv_line">In my dizzy vision, the corridor across from the two hospital rooms was seen. The words of the Mass Production Maker crossed my mind.</p>
 <p class="orv_line">–It's nothing. It is just a blocked road.</p>
 <p class="orv_line">The end of the corridor was dim so I couldn't see anything. Yet everyone knew that there was nothing at the end of that corridor. In the first place, the corridor was made to have nothing.</p>
-<div class="orv_quote"><p>「 Kim Dokja thought: It isn't possible. 」</p></div>
+<div class="orv_quote"><p>Kim Dokja thought: It isn't possible.</p></div>
 <p class="orv_line">Stay calm. There must be a way. I had come all this way and now I had to choose between the two people? Who should live and who should die? I couldn't do that.</p>
-<div class="orv_system"><p>[The Fourth Wall is looking at you.]</p></div>
-<div class="orv_quote"><p>「 But you ha ve al ready cho sen. 」</p></div>
+<div class="orv_system"><p>The Fourth Wall is looking at you.</p></div>
+<div class="orv_quote"><p>But you ha ve al ready cho sen.</p></div>
 <p class="orv_line">At the moment, the scene of the first scenario filled my head. The shaky subway. The appearance of those who died. Maybe I could've saved everyone there.</p>
-<div class="orv_quote"><p>「 Th us, you can ch oose this ti me too. 」</p></div>
+<div class="orv_quote"><p>Th us, you can ch oose this ti me too.</p></div>
 <p class="orv_line">…It was different now.</p>
-<div class="orv_quote"><p>「 Wh at is diffe rent? 」</p></div>
+<div class="orv_quote"><p>Wh at is diffe rent?</p></div>
 <p class="orv_line">Rather than replying to the Fourth Wall, I asked Aileen, "How much time is left?"</p>
 <p class="orv_line">"Around 20 minutes… Lee Sookyung-ssi's side is more critical. After that…"</p>
 <p class="orv_line">20 minutes. It was short but there was enough time to try this and that. It was too early to give up.</p>
@@ -226,11 +233,11 @@
 <p class="orv_line">–Tired, don't call me.</p>
 <p class="orv_line">Perhaps it was tired from swallowing the giant soldier earlier but the Old to New Toad fell asleep.</p>
 <p class="orv_line">I put it away and decided to try a second method. If I couldn't duplicate it, I had to get a new one.</p>
-<div class="orv_system"><p>[The demon king 'Demon King of Salvation'…]</p></div>
-<div class="orv_system"><p>[The use of the indirect message is cancelled.]</p></div>
-<div class="orv_system"><p>[The indirect messaging function is currently disabled due to checking and repairing certain scenarios.]</p></div>
+<div class="orv_system"><p>The demon king 'Demon King of Salvation'…</p></div>
+<div class="orv_system"><p>The use of the indirect message is cancelled.</p></div>
+<div class="orv_system"><p>The indirect messaging function is currently disabled due to checking and repairing certain scenarios.</p></div>
 <p class="orv_line">…What?</p>
-<div class="orv_system"><p>[The scenario being checked is the 60th scenario.]</p></div>
+<div class="orv_system"><p>The scenario being checked is the 60th scenario.</p></div>
 <p class="orv_line">It was an unexpected situation I hadn't thought of. I didn't think the aftermath of the 60th scenario would reach this far…</p>
 <p class="orv_line">I needed the help of other constellations to get new star fluids.</p>
 <p class="orv_line">"Jang Hayoung!"</p>
@@ -239,25 +246,25 @@
 <p class="orv_line">The fragments of the story scattered from Yoo Sangah hovered in the air. I tried to ignore it and turned to Jang Hayoung. Jang Hayoung was sleeping in a corner of the hospital room. "Jang Hayoung! Wake up! Quickly!"</p>
 <p class="orv_line">"Wait a minute! He is also in critical condition!"</p>
 <p class="orv_line">The medical staff rushed over and pulled me away. Jang Hayoung had a large number of story packs inserted in him and bandages were wrapped around his body. He was seriously wounded in the Returnees War. However, I needed Jang Hayoung's skill.</p>
-<div class="orv_system"><p>[The Unidentified Wall is looking at you.]</p></div>
-<div class="orv_system"><p>[The Fourth Wall is facing the Unidentified Wall.]</p></div>
+<div class="orv_system"><p>The Unidentified Wall is looking at you.</p></div>
+<div class="orv_system"><p>The Fourth Wall is facing the Unidentified Wall.</p></div>
 <p class="orv_line">Sparks bounced as I felt the gaze of the wall. It was a coldness with no sense of cooperation at all.</p>
 <p class="orv_line">…It was going to be like this? I opened Bookmark. In the end, the Unidentified Wall was also a skill. I still didn't have a good understanding of Jang Hayoung and needed some luck but…</p>
 <p class="orv_line">I started looking for Jang Hayoung's name in the list of Bookmarks. Perhaps it felt uncomfortable due to my actions? The Unidentified Wall warned,</p>
-<div class="orv_system"><p>[The 'Unidentified Wall' says: You are not my master. Don't do anything unnecessary.]</p></div>
+<div class="orv_system"><p>The 'Unidentified Wall' says: You are not my master. Don't do anything unnecessary.</p></div>
 <p class="orv_line">"I need your help." I told it honestly. It was urgent. "If you don't help me, you have to wake up your master."</p>
 <p class="orv_line">The wall was silent for a moment. It was a silence that showed it was thinking about something. A moment later, a message from the wall came back.</p>
-<div class="orv_system"><p>[The 'Unidentified Wall' says: …I'll help you.]</p></div>
+<div class="orv_system"><p>The 'Unidentified Wall' says: …I'll help you.</p></div>
 <p class="orv_line">At the same time, a small partition of space was created around me. It was a space reminiscent of a Mino Soft intern a long time ago. A large panel was created in front of me and there was a familiar type of input device.</p>
 <p class="orv_line">Perhaps Jang Hayoung had listened to the stories of countless constellations in this small wall. Jang Hayoung listened to stories that were written on this wall like graffiti and…</p>
-<div class="orv_system"><p>[The 'Unidentified Wall' says: Do a good job.]</p></div>
+<div class="orv_system"><p>The 'Unidentified Wall' says: Do a good job.</p></div>
 <p class="orv_line">…I had nothing to say. I looked down at the sleeping Jang Hayoung for a moment before turning my head.</p>
 <p class="orv_line">First of all, it was important to turn off the emergency light.</p>
-<div class="orv_system"><p>[The 'Unidentified Wall' has temporarily granted you a license.]</p></div>
-<div class="orv_system"><p>[Enter the destination to send a message to.]</p></div>
+<div class="orv_system"><p>The 'Unidentified Wall' has temporarily granted you a license.</p></div>
+<div class="orv_system"><p>Enter the destination to send a message to.</p></div>
 <p class="orv_line">The first constellation was Dionysus.</p>
-<div class="orv_system"><p>[The message can't be sent to the constellation.]</p></div>
-<div class="orv_system"><p>[At present, all communications with the nebula Olympus is paralyzed.]</p></div>
+<div class="orv_system"><p>The message can't be sent to the constellation.</p></div>
+<div class="orv_system"><p>At present, all communications with the nebula Olympus is paralyzed.</p></div>
 <p class="orv_line">I ran into a snag from the beginning. I quickly changed the receiver of the message. Then a reply immediately came back.</p>
 <p class="orv_line">–You need more Soma? I'm sorry but… I gave all the Soma I had to you.</p>
 <p class="orv_line">The reply was from Surya. The situation here also wasn't easy.</p>
@@ -272,7 +279,7 @@
 <p class="orv_line">It was impossible to ask for anything further when I already received Surya's help in Gigantomachia.</p>
 <p class="orv_line">I thought about various types of star fluids that appeared in Ways of Survival through my head. However, none that could replace Nectar and Soma were available right away.</p>
 <p class="orv_line">I desperately bit my lips. If treatment wasn't possible then I had to find another way.</p>
-<div class="orv_system"><p>[Sending a message to constellation 'Queen of the Darkest Spring'.]</p></div>
+<div class="orv_system"><p>Sending a message to constellation 'Queen of the Darkest Spring'.</p></div>
 <p class="orv_line">Since Persephone and Hades weren't members of Olympus, it was possible to communicate with them through the Unidentified Wall. I didn't want to use this method but it wasn't time to cover up cold water with warm water.</p>
 <p class="orv_line">Nevertheless, the answer that came back from Persephone wasn't very positive.</p>
 <p class="orv_line">–Son, as you might know, a presence broken through the flow of consciousness is… All souls of this world go to the Underworld but that is a case when the soul is intact.</p>
@@ -283,18 +290,18 @@
 <p class="orv_line">–Son.</p>
 <p class="orv_line">–It is a situation where the succession isn't properly established yet. Don't call me that right now.</p>
 <p class="orv_line">I responded quickly before disconnecting. I opened the smartphone and then the file of Ways of Survival. There was still a method. There had to be.</p>
-<div class="orv_system"><p>[The Unidentified Wall says: You have done too many things that went against probability.]</p></div>
+<div class="orv_system"><p>The Unidentified Wall says: You have done too many things that went against probability.</p></div>
 <p class="orv_line">…Shut up.</p>
-<div class="orv_system"><p>[The Unidentified Wall says: That probability was bound to come back to you. It is a law of this world.]</p></div>
+<div class="orv_system"><p>The Unidentified Wall says: That probability was bound to come back to you. It is a law of this world.</p></div>
 <p class="orv_line">"I told you to shut up."</p>
 <p class="orv_line">I quickly read Ways of Survival. I found several times when Yoo Joonghyuk met similar challenges in Ways of Survival. For example, the 161st and 275th rounds.</p>
 <p class="orv_line">In those rounds, Yoo Joonghyuk was in a situation where he could only save one of his two colleagues. When told he could only save Lee Seolhwa or Lee Jihye, Yoo Joonghyuk had replied:</p>
-<div class="orv_quote"><p>「 "I will save both." 」</p></div>
+<div class="orv_quote"><p>"I will save both."</p></div>
 <p class="orv_line">The same was true for the 275th round. Lee Hyunsung and Shin Yoosung. In a situation where only one of them could be saved, Yoo Joonghyuk declared,</p>
-<div class="orv_quote"><p>「 "I will save both of them." 」</p></div>
+<div class="orv_quote"><p>"I will save both of them."</p></div>
 <p class="orv_line">This was Yoo Joonghyuk's answer. Thus, Yoo Joonghyuk of the 161st and 275th round failed. He couldn't save Lee Seolhwa, Lee Jihye, Lee Hyunsung or Shin Yoosung. Then he died himself. Yet every time, Yoo Joonghyuk made the same choice and I would choose the same.</p>
 <p class="orv_line">My right hand holding the phone trembled nervously and I gripped it tightly.</p>
-<div class="orv_quote"><p>「 Bu t Kim Dok ja isn't Yoo Joong hyuk. 」</p></div>
+<div class="orv_quote"><p>Bu t Kim Dok ja isn't Yoo Joong hyuk.</p></div>
 <p class="orv_line">Yoo Joonghyuk was able to make such a choice because he was a regressor. A regressor was different from me. An existence who could repeat life many times.</p>
 <p class="orv_line">On the other hand, I only had this one life. Therefore, this life didn't allow me to make any mistakes.</p>
 <p class="orv_line">If I made a mistake, someone would die. Thus, I couldn't make any mistakes.</p>
@@ -302,46 +309,46 @@
 <p class="orv_line">Briareus had told me.</p>
 <p class="orv_line">–The real fate is inevitable. If you avoid it, probability must be distorted. The twisting of probability had to be resolved by someone.</p>
 <p class="orv_line">I knew. I knew it very well. Just, I was dissatisfied. Why?</p>
-<div class="orv_quote"><p>「 …ja-ssi. 」</p></div>
+<div class="orv_quote"><p>…ja-ssi.</p></div>
 <p class="orv_line">Why… why should they be the ones to resolve it?</p>
-<div class="orv_quote"><p>「 Dokja-ssi. 」</p></div>
+<div class="orv_quote"><p>Dokja-ssi.</p></div>
 <p class="orv_line">One drop, two drops. The voice that touched me was like a drop of water through hard granite.</p>
 <p class="orv_line">I looked behind me.</p>
-<div class="orv_quote"><p>「 Dokja-ssi, I'm fine. 」</p></div>
+<div class="orv_quote"><p>Dokja-ssi, I'm fine.</p></div>
 <p class="orv_line">Through the curtains of the hospital room where Yoo Sangah lay, the fragments of the broken story flowed out and spoke to me.</p>
-<div class="orv_quote"><p>「 Save Sookyung-ssi. 」</p></div>
+<div class="orv_quote"><p>Save Sookyung-ssi.</p></div>
 <p class="orv_line">No voice came from my half-open mouth. Yet she replied like she heard my words.</p>
-<div class="orv_quote"><p>「 I have a way to survive. I have already found a way through Hermes' system. 」</p></div>
-<div class="orv_system"><p>[The exclusive skill 'Lie Detection Lv. 7' is activated!]</p></div>
-<div class="orv_system"><p>[You have confirmed that the statement is false.]</p></div>
+<div class="orv_quote"><p>I have a way to survive. I have already found a way through Hermes' system.</p></div>
+<div class="orv_system"><p>The exclusive skill 'Lie Detection Lv. 7' is activated!</p></div>
+<div class="orv_system"><p>You have confirmed that the statement is false.</p></div>
 <p class="orv_line">"Yoo Sang…"</p>
-<div class="orv_quote"><p>「 Dokja-ssi. 」</p></div>
+<div class="orv_quote"><p>Dokja-ssi.</p></div>
 <p class="orv_line">It wasn't meant to call out to me. Yoo Sangah's voice was unbelievably firm. One day, I remembered a time when I teamed up with Yoo Sangah.</p>
 <p class="orv_line">Even then, Yoo Sangah was the same. Every time she insisted on something she thought was right, she would never bend herself. Yoo Sangah would speak in this calm but strong tone. It was like appeasing a panicked little child.</p>
-<div class="orv_quote"><p>「 Dokja-ssi, listen carefully to me. Please be calm and rational. 」</p></div>
+<div class="orv_quote"><p>Dokja-ssi, listen carefully to me. Please be calm and rational.</p></div>
 <p class="orv_line">Why? Yoo Sangah's words were familiar.</p>
-<div class="orv_quote"><p>「 I still have some time remaining. However, Sookyung-ssi wouldn't be able to recover unless she is saved now. 」</p></div>
+<div class="orv_quote"><p>I still have some time remaining. However, Sookyung-ssi wouldn't be able to recover unless she is saved now.</p></div>
 <p class="orv_line">Why did I feel like I was sitting in a subway seat and why did it feel like this trembling hand wasn't mine?</p>
-<div class="orv_quote"><p>「 It is like a game quest. A quest that can be cleared properly if we follow the set route. 」</p></div>
+<div class="orv_quote"><p>It is like a game quest. A quest that can be cleared properly if we follow the set route.</p></div>
 <p class="orv_line">"…Yoo Sangah-ssi."</p>
-<div class="orv_quote"><p>「 Dokja-ssi, it is time to carry out the quest properly now. 」</p></div>
+<div class="orv_quote"><p>Dokja-ssi, it is time to carry out the quest properly now.</p></div>
 <p class="orv_line">I understood Yoo Sangah's words. Perhaps I could understand better than anyone in the world. However, I couldn't understand the Yoo Sangah speaking right now. Perhaps I would never understand in this lifetime. Or I should say that I didn't dare understand it.</p>
-<div class="orv_system"><p>[The 'Fourth Wall' has increased its thickness.]</p></div>
+<div class="orv_system"><p>The 'Fourth Wall' has increased its thickness.</p></div>
 <p class="orv_line">Like the Yoo Sangah who stood up on the subway, I stood up and declared, "Aileen."</p>
 <p class="orv_line">Aileen noticed my intentions and nodded. The medical staff standing next to Yoo Sangah rushed to the other side of the room. I also slowly turned to the opposite side of the room. The moment I went beyond the threshold, I couldn't help looking back.</p>
-<div class="orv_quote"><p>「 Don't worry. I'll be waiting here. 」</p></div>
+<div class="orv_quote"><p>Don't worry. I'll be waiting here.</p></div>
 <p class="orv_line">Beyond the curtain, Yoo Sangah's silhouette had already scattered a lot. Maybe, beyond that would be a Yoo Sangah I already didn't know. She might be torn and scattered apart, something that was no longer recognizable. I might be hearing the voice of Yoo Sangah, who was already disappearing.</p>
 <p class="orv_line">Nevertheless.</p>
 <p class="orv_line">"Yoo Sangah-ssi. I don't know if you remember but I screened people's lives in the first scenario."</p>
 <p class="orv_line">I continued speaking towards the Yoo Sangah I remembered. "I only let people I thought should survive, live. I thought I should've done it in order to see the end of this world."</p>
-<div class="orv_quote"><p>「 …Dokja-ssi. 」</p></div>
+<div class="orv_quote"><p>…Dokja-ssi.</p></div>
 <p class="orv_line">"However, if this is the one way I can see the ending of this story, I would rather not see the ending."</p>
 <p class="orv_line">In order to revive someone, another person had to die.</p>
 <p class="orv_line">"If there is a choice over lives, it is a bad story in the first place."</p>
 <p class="orv_line">At my answer, the Mass Production Maker might say this: It is a road that isn't a road.</p>
-<div class="orv_system"><p>[The Fourth Wall is looking at you.]</p></div>
+<div class="orv_system"><p>The Fourth Wall is looking at you.</p></div>
 <p class="orv_line">Nevertheless, this wasn't a choice. There was only one way from the beginning.</p>
-<div class="orv_system"><p>[The constellation 'Demon King of Salvation' is looking at the Fourth Wall.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon King of Salvation' is looking at the Fourth Wall.</p></div>
 <p class="orv_line">I wasn't Yoo Joonghyuk. Yet when it came to this issue, my answer was the same as that guy.</p>
 <p class="orv_line">"I'll smash that story. So that Yoo Sangah-ssi won't die. My mother too."</p>
 <p class="orv_line">There was a dead-end wall covered in darkness in front of my eyes. It was a hard and thick wall that I couldn't smash. I slowly reached out for that wall.</p>
@@ -352,18 +359,12 @@
             <a href="./ch_340"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_342">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="341" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="653" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="340" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="340" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

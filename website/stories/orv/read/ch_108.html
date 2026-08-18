@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 108: Ep. 21 – Things That Can't Be Changed, VI</title>
     <meta property="og:title" content="Ch 108: Ep. 21 – Things That Can't Be Changed, VI" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,72 +177,72 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00108.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 108: Ep. 21 – Things That Can't Be Changed, VI</h1></div>
 <p class="orv_line">Jung Heewon ran forward. Her muscles were strengthened by Judgment Time to the limit and the Demon Slaying buff gave her a sharp edge.</p>
 <p class="orv_line">Along with Uriel's Hell Flames Ignition, her combat power was enhanced to the most ideal form.</p>
 <p class="orv_line">The blazing flames of judgment. They weren't judging Shin Yoosung. Even so, it was Shin Yoosung who would receive the flames.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is watching the battlefield with sad eyes.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is watching the battlefield with sad eyes.</p></div>
 <p class="orv_line">Jung Heewon's blade declared the opening.</p>
-<div class="orv_system"><p>[The character 'Jung Heewon' has used Hell Flames Ignition Lv. 1.]</p></div>
+<div class="orv_system"><p>The character 'Jung Heewon' has used Hell Flames Ignition Lv. 1.</p></div>
 <p class="orv_line">The stigma was only level one but the hell flames burned through Shin Yoosung's ether storm.</p>
 <p class="orv_line">The power of a great demon, the Beast King's Breath poured out but Jung Heewon didn't care. She just grasped her sword as firmly as possible and drew a line connecting the sky and earth. The Beast King's Breath turned to smoke as soon as it met Hell Flames Ignition.</p>
 <p class="orv_line">Someone muttered, "Oh my god, what is that?"</p>
 <p class="orv_line">Hell Flames Ignition was a stigma that could evaporate the sea of a planet when it reached the final level. When the 'Messiah' appeared in the original novel, it was Uriel who opened the way in preparation for him.</p>
 <p class="orv_line">The archangel feared by all demons, the great demons' enemy that was closest to a great demon.</p>
 <p class="orv_line">Shin Yoosung nodded as she saw Jung Heewon rushing through the flames.</p>
-<div class="orv_quote"><p>「 I see. Uriel. You were waiting for this. 」</p></div>
+<div class="orv_quote"><p>I see. Uriel. You were waiting for this.</p></div>
 <p class="orv_line">The disaster didn't back down in the presence of the terrible archangel.</p>
-<div class="orv_quote"><p>「 It is enough to make an ending. 」</p></div>
+<div class="orv_quote"><p>It is enough to make an ending.</p></div>
 <p class="orv_line">No, she looked rather relaxed. It was as if she had finally fulfilled her duty.</p>
 <p class="orv_line">The ether wrapped around Shin Yoosung's fist and the flames that clung to Jung Heewon's blade collided. Shin Yoosung stumbled and Jung Heewon pushed forward without missing this gap. No matter how good the overlapped skills, the powerful buffs would have a short duration.</p>
 <p class="orv_line">Jung Heewon was well aware of this and accelerated her attacks. The surrounding land was affected by the holy flames.</p>
 <p class="orv_line">Shin Yoosung persisted despite being long exhausted. She was like a seasoned actor playing the last performance of her life as she tried her best to live.</p>
-<div class="orv_system"><p>[Many constellations are excited about your design.]</p></div>
+<div class="orv_system"><p>Many constellations are excited about your design.</p></div>
 <p class="orv_line">The constellations that came over from Dokgak's channel were excited.</p>
-<div class="orv_system"><p>[15,000 coins have been sponsored.]</p></div>
+<div class="orv_system"><p>15,000 coins have been sponsored.</p></div>
 <p class="orv_line">The hateful donations of the constellations rose sharply. Affection and hatred were just a moment of entertainment for the constellations. Unfortunately, the story that lasted a moment for them was a life for humans.</p>
-<div class="orv_system"><p>[Constellations of the Korean Peninsula are looking at you sadly.]</p></div>
+<div class="orv_system"><p>Constellations of the Korean Peninsula are looking at you sadly.</p></div>
 <p class="orv_line">In front of the many watchers, I drew the ending of this scenario by myself.</p>
-<div class="orv_system"><p>[The constellation 'Secretive Plotter' is focused on your choice.]</p></div>
+<div class="orv_system"><p>The constellation 'Secretive Plotter' is focused on your choice.</p></div>
 <p class="orv_line">In the meantime, Jung Heewon had turned the Beast King's Sensitivity into rags and the flames of Hell Flames Ignition were gradually burning Shin Yoosung. Injuries were also piling up on Jung Heewon's body. It was a close match but victory wasn't on the side of the exhausted Shin Yoosung.</p>
 <p class="orv_line">Jung Heewon ignored all defenses and plunged through the ether storm, stabbing her sword into Shin Yoosung's belly.</p>
 <p class="orv_line">A bright blaze of flames surrounded Shin Yoosung's body. The holy flames burned at the energy of the great demon in her body. The black aura coming from her turned to smoke.</p>
 <p class="orv_line">Blood splattered from the place where the sword was pulled out. Shin Yoosung looked down at her blood like it was a prop on a stage. It was finally settled.</p>
 <p class="orv_line">I suddenly saw the collapsed King Masswood and Heavy Metal Kong. The Monster Gate had closed and the fight against the monsters was ending. I approached Shin Yoosung.</p>
 <p class="orv_line">Control of her flesh had come back but her body wasn't normal. Shin Yoosung looked down at her body and stated.</p>
-<div class="orv_quote"><p>「 …I am dying now. 」</p></div>
+<div class="orv_quote"><p>…I am dying now.</p></div>
 <p class="orv_line">In normal cases, the Beast Lord wouldn't die from these wounds. The Beast King's Vitality was as good as Yoo Joonghyuk's Recovery. Unfortunately, she was hit by Hell Flames Ignition.</p>
 <p class="orv_line">The flames of hell were deeply embedded in her body, burning her vitality to extinguish all evil. Uriel's stigma was a fire that never burned out until all the evil was gone.</p>
-<div class="orv_system"><p>[The exclusive skill, 'Fourth Wall' is shaking!]</p></div>
-<div class="orv_system"><p>[Due to excessive immersion, stage 2 of Omniscient Reader's Viewpoint will always be activated.]</p></div>
+<div class="orv_system"><p>The exclusive skill, 'Fourth Wall' is shaking!</p></div>
+<div class="orv_system"><p>Due to excessive immersion, stage 2 of Omniscient Reader's Viewpoint will always be activated.</p></div>
 <p class="orv_line">The fire was inside her body and Shin Yoosung would never survive. Shin Yoosung watched me and smiled weakly. "I'm glad to be here during this round of regression. It was good to hear Captain say those words."</p>
-<div class="orv_quote"><p>「 It hurts. I'm going to disappear like this. 」</p></div>
+<div class="orv_quote"><p>It hurts. I'm going to disappear like this.</p></div>
 <p class="orv_line">"Now I can die in peace. Something really might change."</p>
-<div class="orv_quote"><p>「 I don't want to die… 」</p></div>
+<div class="orv_quote"><p>I don't want to die…</p></div>
 <p class="orv_line">The omniscience was a curse. Knowing someone's heart meant always deceiving someone.</p>
 <p class="orv_line">She smiled and stared up at the air. There was an intermediate dokkaebi with a stiff expression. "I'm going to die now. Isn't it okay as a drama? This was a great scenario."</p>
-<div class="orv_system"><p>[Some constellations are nodding.]</p></div>
-<div class="orv_system"><p>[Some constellations are complaining.]</p></div>
+<div class="orv_system"><p>Some constellations are nodding.</p></div>
+<div class="orv_system"><p>Some constellations are complaining.</p></div>
 <p class="orv_line">The intermediate dokkaebi was silent. Well, he hadn't expected this. The scenario was completed but it wasn't as he intended. Now he would pay for what he intended.</p>
 <p class="orv_line">I looked back and saw Yoo Joonghyuk approaching. He asked, "Is she going to die?"</p>
 <p class="orv_line">"…Perhaps."</p>
@@ -243,45 +250,45 @@
 <p class="orv_line">This bastard was really…</p>
 <p class="orv_line">Yoo Joonghyuk pulled out his sword. I was about to stop him from trying to kill Shin Yoosung when his Splitting the Sky Sword stopped. The cold blade was supporting Shin Yoosung's head. Shin Yoosung said, "Hold on until the end. I will die soon Captain."</p>
 <p class="orv_line">Shin Yoosung's thoughts flowed into my ears.</p>
-<div class="orv_quote"><p>「 There is something I want to hear from you. 」</p></div>
-<div class="orv_quote"><p>「 Just once. 」</p></div>
-<div class="orv_quote"><p>「 I wish to hear it just once. 」</p></div>
+<div class="orv_quote"><p>There is something I want to hear from you.</p></div>
+<div class="orv_quote"><p>Just once.</p></div>
+<div class="orv_quote"><p>I wish to hear it just once.</p></div>
 <p class="orv_line">They were words that could never be said. Yoo Joonghyuk couldn't hear these words and spoke nonchalantly. "I have something to ask."</p>
 <p class="orv_line">"What is it?"</p>
 <p class="orv_line">I felt miserable as I saw the anticipation on Shin Yoosung's face. It was because I knew her expectations would never be rewarded.</p>
 <p class="orv_line">"Who is the great demon that helped you cross over to this world?"</p>
 <p class="orv_line">She stared blankly at Yoo Joonghyuk for a moment before laughing. "…Captain is the captain to the end."</p>
-<div class="orv_quote"><p>「 You don't change. 」</p></div>
+<div class="orv_quote"><p>You don't change.</p></div>
 <p class="orv_line">"Tell me."</p>
 <p class="orv_line">"Have you heard of the 'Great Demon of the Horizon'?"</p>
-<div class="orv_quote"><p>「 That is why I admired you. 」</p></div>
+<div class="orv_quote"><p>That is why I admired you.</p></div>
 <p class="orv_line">"I know the name."</p>
 <p class="orv_line">"If Captain's luck is bad, you will meet him soon. However, never fight him. It is almost impossible for Captain to kill him…"</p>
-<div class="orv_quote"><p>「 For a long time, a really long time… 」</p></div>
+<div class="orv_quote"><p>For a long time, a really long time…</p></div>
 <p class="orv_line">Her earnest sincerity didn't reach its target and I struggled. I wanted to say something. This stupid Yoo Joonghyuk, who couldn't hear the vivid voice in front of him. The moment I opened my mouth, Shin Yoosung's hand grabbed me.</p>
 <p class="orv_line">Yoo Joonghyuk kept speaking. "I will remember."</p>
 <p class="orv_line">Yoo Joonghyuk turned around at these words. Then Yoo Joonghyuk's inner thoughts were conveyed to me.</p>
-<div class="orv_quote"><p>「 I will get revenge for you. 」</p></div>
+<div class="orv_quote"><p>I will get revenge for you.</p></div>
 <p class="orv_line">I trembled at the sadness in these words. I looked down at disaster Shin Yoosung. I see. This person was already aware of it. She didn't need to hear it to already know.</p>
 <p class="orv_line">Something was pouring down from Shin Yoosung's eyes. For the first time, I thought that Omniscient Reader's Viewpoint might not be omniscient.</p>
-<div class="orv_quote"><p>「 Goodbye, Captain. 」</p></div>
-<div class="orv_quote"><p>「 Good job. 」</p></div>
-<div class="orv_quote"><p>「 I'll leave it to you. 」</p></div>
-<div class="orv_quote"><p>「 Rest. 」</p></div>
+<div class="orv_quote"><p>Goodbye, Captain.</p></div>
+<div class="orv_quote"><p>Good job.</p></div>
+<div class="orv_quote"><p>I'll leave it to you.</p></div>
+<div class="orv_quote"><p>Rest.</p></div>
 <p class="orv_line">Only a few stray sentences were left as I stared at the two people. Their thoughts had definitely reached each other. I clearly read this story. Then Shin Yoosung started to scatter into ashes.</p>
-<div class="orv_quote"><p>「 Pretty… 」</p></div>
+<div class="orv_quote"><p>Pretty…</p></div>
 <p class="orv_line">The young Shin Yoosung approached me and held onto me. What did she feel when she saw her future self disappearing? No matter how many books I read, there were some emotions I couldn't reach. The disaster Shin Yoosung smiled at me and the young Shin Yoosung.</p>
-<div class="orv_quote"><p>「 …I'm envious. 」</p></div>
+<div class="orv_quote"><p>…I'm envious.</p></div>
 <p class="orv_line">The lower body of the disaster Shin Yoosung had almost disappeared. The speed of her destruction was accelerating.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' has closed her eyes.]</p></div>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is sighing.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' has closed her eyes.</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is sighing.</p></div>
 <p class="orv_line">As the constellations watched her, I kneeled and grabbed the hand of the disaster Shin Yoosung. Shin Yoosung was surprised by my unexpected behaviour and looked at me.</p>
 <p class="orv_line">I invoked Beast King's Sensitivity with my last remaining magic power. It was to pass on a gift to her.</p>
 <p class="orv_line">The mysterious senses of the beast kings touched and for a short moment, Shin Yoosung's soul was connected to mine. It was a sensibility that only beasts shared.</p>
 <p class="orv_line">The passing wind whispered something. It was a story that neither the constellations or dokkaebi could hear. The dying Shin Yoosung's eyes widened like she couldn't believe it.</p>
-<div class="orv_quote"><p>「 …Are you serious? Really? 」</p></div>
+<div class="orv_quote"><p>…Are you serious? Really?</p></div>
 <p class="orv_line">Fortunately, the message was properly delivered. Her chest had already turned to ashes and now she had no voice left.</p>
-<div class="orv_quote"><p>「 Why… 」</p></div>
+<div class="orv_quote"><p>Why…</p></div>
 <p class="orv_line">Tears slowly filled her eyes. She tried to tell me something but the cold wind stopped her. The connected films of two worlds were breaking again.</p>
 <p class="orv_line">The pieces that she was made of turned to ashes and scattered. Her eyes, nose and mouth. Her voice. The person who lived over one thousand years scattered into pure white ashes like snow.</p>
 <p class="orv_line">The ashes like a trail as it disappeared into the sky. It was like a distant journey or even a dance.</p>
@@ -298,12 +305,12 @@
 <p class="orv_line">The donations of the constellation flowed here and there. The responses were different but there was one thing they all agreed on.</p>
 <p class="orv_line">The 'Disaster of Floods' Shin Yoosung had died.</p>
 <p class="orv_line">There was a frozen intermediate dokkaebi staring up at the sky. Bihyung, who had been watching silently, finally opened his mouth.</p>
-<div class="orv_constellation"><p>[Intermediate dokkaebi. The scenario has ended.]</p></div>
-<div class="orv_constellation"><p>[ How? This… ]</p></div>
-<div class="orv_constellation"><p>[If you don't do it then I will end it.]</p></div>
+<div class="orv_constellation"><p>Intermediate dokkaebi. The scenario has ended.</p></div>
+<div class="orv_constellation"><p>How? This…</p></div>
+<div class="orv_constellation"><p>If you don't do it then I will end it.</p></div>
 <p class="orv_line">A moment later, a message was heard.</p>
-<div class="orv_system"><p>[The fifth main scenario is activated!]</p></div>
-<div class="orv_system"><p>[The compensation settlement is being prepared.]</p></div>
+<div class="orv_system"><p>The fifth main scenario is activated!</p></div>
+<div class="orv_system"><p>The compensation settlement is being prepared.</p></div>
 <p class="orv_line">Finally, the scenario declared her death. The future Shin Yoosung had died and the disaster was over. This was the conclusion of the fifth scenario. Everyone thought so and believed so.</p>
 <p class="orv_line">.</p>
 <p class="orv_line">.</p>
@@ -316,9 +323,9 @@
 <p class="orv_line">Two white dokkaebis emerged from the portal. The low-grade dokkaebis found the two dokkaebis wearing white armour and backed away at once.</p>
 <p class="orv_line">It was natural.</p>
 <p class="orv_line">These dokkaebis were people that all dokkaebis hoped to never meet. The bureau. They were the dokkaebis of the Executive Branch, responsible for investigating the 'probability' in scenarios. The two dokkaebis had a fearsome atmosphere as they approached the intermediate dokkaebi and arrested him.</p>
-<div class="orv_constellation"><p>[ …Executives. What are you doing?]</p></div>
+<div class="orv_constellation"><p>…Executives. What are you doing?</p></div>
 <p class="orv_line">An executive dokkaebi declared to the shocked intermediate dokkaebi.</p>
-<div class="orv_system"><p>[Intermediate dokkaebi 'Paul'. You shall be arrested for violating the Star Stream regulations.]</p></div>
+<div class="orv_system"><p>Intermediate dokkaebi 'Paul'. You shall be arrested for violating the Star Stream regulations.</p></div>
 <br>
 <hr>
         </article>
@@ -326,18 +333,12 @@
             <a href="./ch_107"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_109">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="108" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="306" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="107" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="107" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

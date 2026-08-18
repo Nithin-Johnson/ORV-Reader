@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 208: Ep. 39 - Unidentified Wall, V</title>
     <meta property="og:title" content="Ch 208: Ep. 39 - Unidentified Wall, V" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00208.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 208: Ep. 39 - Unidentified Wall, V</h1></div>
 <p class="orv_line">There was the sound of a blade penetrating the heart and the last man fell.</p>
@@ -257,10 +264,10 @@
 <p class="orv_line">Han Sooyoung saw her determination and felt somehow defeated.</p>
 <p class="orv_line">'You are a lucky person, Kim Dokja. People are worrying about you'.</p>
 <p class="orv_line">Han Sooyoung was about to open her mouth when a message was heard in the air.</p>
-<div class="orv_system"><p>[A new main scenario has started!]</p></div>
+<div class="orv_system"><p>A new main scenario has started!</p></div>
 <p class="orv_line">"Son of a bitch."</p>
 <p class="orv_line">The Great Hole was opening in the air. The cries of monsters were heard from somewhere. The surprised Yoo Sangah and Han Sooyoung stood back to back. A giant monster was swooping down through the Great Hole. Then the dokkaebi's voice was heard.</p>
-<div class="orv_constellation"><p>[The wave pattern is obvious and very slow, but I put it in because people seem to be too free these days!]</p></div>
+<div class="orv_constellation"><p>The wave pattern is obvious and very slow, but I put it in because people seem to be too free these days!</p></div>
 <p class="orv_line">Yoo Sangah frowned at the sudden emergence of a situation and frowned. "…Was this the original content?"</p>
 <p class="orv_line">"I don't know. I don't remember everything."</p>
 <p class="orv_line">This was why she didn't want to do it alone. She knew the future but the information she knew was about flimsy things. Kim Dokja knew many rounds and Yoo Joonghyuk who made it through the rounds might be able to make a breakthrough but not Han Sooyoung.</p>
@@ -268,48 +275,48 @@
 <p class="orv_line">This was a third grade strange dragon species, the Kragagon. It was the name of the monster who descended as a disaster in the 12th scenario.</p>
 <p class="orv_line">'How do we beat that?'</p>
 <p class="orv_line">Han Sooyoung tried hard to recall the contents of the original novel but no matter how she thought about it, a strategy didn't pop up. Then the only way left was a full-scale battle. Fortunately, there was Yoo Sangah right next to her. They weren't colleagues but it was better than nothing.</p>
-<div class="orv_system"><p>[The stigma 'Black Flames Lv. 6' has been activated!]</p></div>
+<div class="orv_system"><p>The stigma 'Black Flames Lv. 6' has been activated!</p></div>
 <p class="orv_line">She focused her magic power on her dagger while activating the skills of the weapon.</p>
-<div class="orv_system"><p>[The third grade strange dragon species 'Kragagon' has defended against the attack using 'Fire Resistance'.]</p></div>
-<div class="orv_system"><p>[The third grade strange dragon species 'Kragagon' has defended against the attack using 'Shadow Resistance'.]</p></div>
+<div class="orv_system"><p>The third grade strange dragon species 'Kragagon' has defended against the attack using 'Fire Resistance'.</p></div>
+<div class="orv_system"><p>The third grade strange dragon species 'Kragagon' has defended against the attack using 'Shadow Resistance'.</p></div>
 <p class="orv_line">"Ahh, you are no help against a damn lizard!"</p>
 <p class="orv_line">The enemy had fire and dark resistance so Han Sooyoung's skills didn't affect it at all. The attacks just seemed to tickle and annoy the strange dragon.</p>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' is gloomy.]</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' is gloomy.</p></div>
 <p class="orv_line">She looked around and Yoo Sangah's situation didn't seem much better. Han Sooyoung thought to herself, If only she had inherited the story of the Abyssal Black Flame Dragon…</p>
 <p class="orv_line">'Dammit, how do I inherit that damn story?'</p>
 <p class="orv_line">Han Sooyoung's expression darkened as she looked at the group of incoming strange dragons. If that jerk Kim Dokja was here, he could've told her what to do.</p>
 <p class="orv_line">It was at this moment.</p>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' tells you that if you want, he can tell you their weakness.]</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' tells you that if you want, he can tell you their weakness.</p></div>
 <p class="orv_line">"…You know their weakness?"</p>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' is nodding.]</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' is nodding.</p></div>
 <p class="orv_line">"Don't make a fool of yourself. You don't know much about the scenarios."</p>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' is jumping around wildly.]</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' is jumping around wildly.</p></div>
 <p class="orv_line">Han Sooyoung listened to the black dragon's childish message and inwardly sighed. 'That brat Kim Dokja, he must've laughed at me when I chose the black dragon?'</p>
 <p class="orv_line">The Abyssal Black Flame Dragon was clearly a powerful constellation. However, his intelligence was much lower compared to other constellations. Why? This guy was too strong since his birth and didn't need much strategy to attack the scenarios. It was cool to hear but it wasn't good from the position of his incarnation.</p>
 <p class="orv_line">However, this time something was different.</p>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' says that the kragagon's weakness is the silver scale on top of its head.]</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' says that the kragagon's weakness is the silver scale on top of its head.</p></div>
 <p class="orv_line">"Really? Last time you told me the wrong thing."</p>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' claims on his black flame dragon that this is real.]</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' claims on his black flame dragon that this is real.</p></div>
 <p class="orv_line">"You said that last time as well."</p>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' claims this story was told by a reliable source.]</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' claims this story was told by a reliable source.</p></div>
 <p class="orv_line">"Reliable source?"</p>
 <p class="orv_line">Since there was no other method, Han Sooyoung decided to follow the words of the black flame dragon. Han Sooyoung jumped onto the strange dragon's tail and used footwork to run up. She crossed the streamlined body. She really saw a silver scale near the crown of his head.</p>
 <p class="orv_line">"Haaap!"</p>
 <p class="orv_line">The dagger dug into the scale and the kragagon collapsed with a terrible scream. The breath of the giant monster stopped in an instant. Han Sooyoung was stunned and muttered, "…Really? Aren't you quite useful?"</p>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' is puffing up his chest with a triumphant expression.]</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' is puffing up his chest with a triumphant expression.</p></div>
 <p class="orv_line">Yoo Sangah flew through the air and said,</p>
 <p class="orv_line">"Do you know its weakness?"</p>
 <p class="orv_line">"No, not me… in any case, the silver scale is its weakness. That's all you have to attack."</p>
 <p class="orv_line">Thanks to the information given by the black dragon, the two of them safely suppressed the kragagons.</p>
-<div class="orv_system"><p>[The constellation 'Bald General of Justice' admires your performance.]</p></div>
+<div class="orv_system"><p>The constellation 'Bald General of Justice' admires your performance.</p></div>
 <p class="orv_line">Han Sooyoung received the messages of the constellations and slightly frowned. Usually it would be a pleasant situation but today something was wrong. She always felt like this when she was teased by Kim Dokja. At this moment, something ran through her head.</p>
 <p class="orv_line">"Hey, black flame dragon."</p>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' is surprised and looks at his incarnation.]</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' is surprised and looks at his incarnation.</p></div>
 <p class="orv_line">"…Tell me honestly. Who did you hear this from?"</p>
 <br>
 <hr>
 <br>
-<div class="orv_system"><p>[The third Night has arrived.]</p></div>
+<div class="orv_system"><p>The third Night has arrived.</p></div>
 <p class="orv_line">I listened to the message and recalled what happened a while ago. He really did as I told him. Just like Kim Namwoon, perhaps the Abyssal Black Flame Dragon wasn't as bad as I knew. Either way, he was Han Sooyoung's sponsor.</p>
 <p class="orv_line">Thus, it was okay to tell him this.</p>
 <p class="orv_line">'I am safe, don't worry'. Tell this to the person who asked.</p>
@@ -325,18 +332,18 @@
 <p class="orv_line">"…Do you really think so? I only learnt the skill two hours ago."</p>
 <p class="orv_line">"Two hours is enough."</p>
 <p class="orv_line">I spoke with confidence. It wasn't just to reassure Jang Hayoung.</p>
-<div class="orv_quote"><p>「 "Who is the most perfect incarnation?" 」</p></div>
+<div class="orv_quote"><p>"Who is the most perfect incarnation?"</p></div>
 <p class="orv_line">One day, the flippant commentators of the Star Stream discussed this topic.</p>
-<div class="orv_quote"><p>「 "The strongest incarnation in a one on one fight is definitely Yoo Joonghyuk. There is no one who can fight as well as him." 」</p></div>
-<div class="orv_quote"><p>「 "No one can beat Anna Croft when it comes to information." 」</p></div>
-<div class="orv_quote"><p>「 "How about Lee Hyunsung? He is the best tanker." 」</p></div>
-<div class="orv_quote"><p>「 "It is Ranveer Khan in major wars." 」</p></div>
+<div class="orv_quote"><p>"The strongest incarnation in a one on one fight is definitely Yoo Joonghyuk. There is no one who can fight as well as him."</p></div>
+<div class="orv_quote"><p>"No one can beat Anna Croft when it comes to information."</p></div>
+<div class="orv_quote"><p>"How about Lee Hyunsung? He is the best tanker."</p></div>
+<div class="orv_quote"><p>"It is Ranveer Khan in major wars."</p></div>
 <p class="orv_line">Jang Hayoung's name wasn't mentioned at all. He was inferior to Yoo Joonghyuk in a one on one fight. He had less information than Anna Croft. His defense wasn't better than Lee Hyunsung. He wasn't as effective as Ranveer Khan in a major war. However…</p>
-<div class="orv_quote"><p>「 "The most perfect incarnation is someone who must do well in everything." 」</p></div>
-<div class="orv_quote"><p>「 "Then it has been decided." 」</p></div>
+<div class="orv_quote"><p>"The most perfect incarnation is someone who must do well in everything."</p></div>
+<div class="orv_quote"><p>"Then it has been decided."</p></div>
 <p class="orv_line">He had more defense than Yoo Joonghyuk. He was better in a one on one fight than Anna Croft. He was better in a large war than Lee Hyunsung. He was an outstanding presence with more information than Ranveer Khan.</p>
-<div class="orv_system"><p>[The character 'Jang Hayoung' has used Fighter Transformation Lv. 9.]</p></div>
-<div class="orv_quote"><p>「 "Jang Hayoung is the most perfect incarnation." 」</p></div>
+<div class="orv_system"><p>The character 'Jang Hayoung' has used Fighter Transformation Lv. 9.</p></div>
+<div class="orv_quote"><p>"Jang Hayoung is the most perfect incarnation."</p></div>
 <p class="orv_line">Jang Hayoung's body moved in a burning curve and painted the sky red. He wasn't exceptional in one area but he had the most attributes and skills of everyone in Ways of Survival.</p>
 <p class="orv_line">The moment he acquired a skill, he had the ability to reach the highest level of the skill sooner than anyone else.</p>
 <p class="orv_line">The master of the Unidentified Wall, the 'King of Transcendents' Jang Hayoung. The second part of Ways of Survival began with this guy.</p>
@@ -347,18 +354,12 @@
             <a href="./ch_207"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_209">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="208" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="203" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="207" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="207" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

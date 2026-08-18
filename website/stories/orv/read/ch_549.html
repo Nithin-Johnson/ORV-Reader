@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 549: Epilogue 5 - The Eternity and Epilogue, IV</title>
     <meta property="og:title" content="Ch 549: Epilogue 5 - The Eternity and Epilogue, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00549.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 549: Epilogue 5 - The Eternity and Epilogue, IV</h1></div>
 <p class="orv_line">Yoo Joonghyuk dreamed a particular dream. It was about the time he participated in the 'Journey to the West scenario' with the rest of the &lt;Kim Dokja's Company&gt; members. In the dream, he was running on top of the Tongtian River's surface. He could see the figures of Jung Heewon, Yoo Sangah, Lee Hyunsung and Shin Yoosung running next to him.</p>
@@ -211,24 +218,24 @@
 <p class="orv_line">The Tongtian River was upturned. Yogoes rising up from every corner of the river's surface pounced on Yoo Joonghyuk. The discarded stories clung onto his body all at the same time. The forgotten Stories were being sucked into his mouth and nose. He gradually sank beneath the water as the head-wrecking pain swallowed him up.</p>
 <div class="orv_outergod"><p>【Do not forget. We aren't even permitted the luxury of death.】</p></div>
 <p class="orv_line">With that true voice as the signal, his view was flipped around. Yoo Joonghyuk woke up heavily panting as if he was vomiting out the river's water. Yogoes that clung onto him in the dream were nowhere to be seen now, having disappeared to somewhere unknown. However, someone else's presence could be felt, instead.</p>
-<div class="orv_constellation"><p>[Whew. You really shocked me there, making me think you were dead and all.]</p></div>
+<div class="orv_constellation"><p>Whew. You really shocked me there, making me think you were dead and all.</p></div>
 <p class="orv_line">A clear, gentle voice greeted him. Yoo Joonghyuk shook his still-dizzy head. A blurry figure was before his eyes. A warm, caring aura emitted from this silhouette gently wrapped around his entire body.</p>
 <p class="orv_line">…Was he still dreaming?</p>
 <p class="orv_line">His vision recovered gradually, and the face of the blurry figure could finally be seen. Yoo Joonghyuk hurriedly rubbed his eyes without even realizing it. Was he hallucinating, instead? This young girl's external appearance resembled Kim Dokja's, somehow. Her eyes sparkling like stars were quietly observing him.</p>
-<div class="orv_constellation"><p>[I didn't expect to see you here, captain. You probably can understand now how I felt while wandering around the world-lines. Right?]</p></div>
+<div class="orv_constellation"><p>I didn't expect to see you here, captain. You probably can understand now how I felt while wandering around the world-lines. Right?</p></div>
 <p class="orv_line">This child, she…</p>
-<div class="orv_constellation"><p>[You don't have to worry. I've already repaired most of your scattered Story. And just in case, I've even started a sub scenario so you should be fine for the time being.]</p></div>
+<div class="orv_constellation"><p>You don't have to worry. I've already repaired most of your scattered Story. And just in case, I've even started a sub scenario so you should be fine for the time being.</p></div>
 <p class="orv_line">Could she be…</p>
-<div class="orv_constellation"><p>[That's so disappointing. Do I have to speak like this for you to recognise me?]</p></div>
+<div class="orv_constellation"><p>That's so disappointing. Do I have to speak like this for you to recognise me?</p></div>
 <p class="orv_line">As the girl smiled mischievously, a small horn suddenly grew out of her head. Her lips parted a little, and a familiar cry he'd been missing for so long jumped out.</p>
-<div class="orv_constellation"><p>[Baat.]</p></div>
+<div class="orv_constellation"><p>Baat.</p></div>
 <br>
 <hr>
 <br>
 <p class="orv_line">"Has master got in touch yet?"</p>
 <p class="orv_line">"Nope. I'm sure he's taking good care of things," replied Han Sooyoung.</p>
 <p class="orv_line">It had already been three months since Yoo Joonghyuk left on his voyage. The work on the manuscript continued on without a hitch, and the updates were continuously being sent through the Cloud System.</p>
-<div class="orv_system"><p>[Number of file downloads: 0]</p></div>
+<div class="orv_system"><p>Number of file downloads: 0</p></div>
 <p class="orv_line">However, Yoo Joonghyuk had not logged in once to the Cloud System using the Stigma during the past three months.</p>
 <p class="orv_line">'Yoo Joonghyuk, that idiot. Just what is he doing?'</p>
 <p class="orv_line">The ominous foreboding slowly mushroomed in Han Sooyoung's heart. She even began thinking that maybe she should've been the one to head out.</p>
@@ -236,57 +243,57 @@
 <p class="orv_line">"I'll become strong enough to break both of my oppa's legs."</p>
 <p class="orv_line">Han Sooyoung looked at Yoo Mia and the girl's blazing eyes, and could only nod her head as a sign of encouragement.</p>
 <p class="orv_line">And how long did she tap on the keyboard afterwards? Suddenly, a message entered her head.</p>
-<div class="orv_system"><p>[Your Incarnation has logged into the 'Cloud System'.]</p></div>
+<div class="orv_system"><p>Your Incarnation has logged into the 'Cloud System'.</p></div>
 <br>
 <hr>
 <br>
 <p class="orv_line">After Biyoo heard about the general gist of the situation, she responded in the following manner.</p>
-<div class="orv_constellation"><p>[…Okay, so. You'll spread the story you receive via Han Sooyoung's Stigma to other world-lines. That's the core of the plan, right?]</p></div>
+<div class="orv_constellation"><p>…Okay, so. You'll spread the story you receive via Han Sooyoung's Stigma to other world-lines. That's the core of the plan, right?</p></div>
 <p class="orv_line">"Correct."</p>
-<div class="orv_constellation"><p>[And you're hoping that the reincarnated versions of Dokja ahjussi will read that story.]</p></div>
+<div class="orv_constellation"><p>And you're hoping that the reincarnated versions of Dokja ahjussi will read that story.</p></div>
 <p class="orv_line">"Also correct."</p>
-<div class="orv_constellation"><p>[Not bad. To think that you'd come up with a plan to take advantage of the 'Oldest Dream's nature like this…]</p></div>
+<div class="orv_constellation"><p>Not bad. To think that you'd come up with a plan to take advantage of the 'Oldest Dream's nature like this…</p></div>
 <p class="orv_line">"I also thought it's not a bad-sounding p…"</p>
-<div class="orv_constellation"><p>[…Did you really think I'd be impressed by that plan? How did you even cook up such a hair-brained scheme, seriously?!]</p></div>
+<div class="orv_constellation"><p>…Did you really think I'd be impressed by that plan? How did you even cook up such a hair-brained scheme, seriously?!</p></div>
 <p class="orv_line">…Was Biyoo's personality originally like this?</p>
-<div class="orv_constellation"><p>[But then again, captain, you're completely capable of doing something this crazy without batting an eyelid.]</p></div>
+<div class="orv_constellation"><p>But then again, captain, you're completely capable of doing something this crazy without batting an eyelid.</p></div>
 <p class="orv_line">Yoo Joonghyuk frowned deeply at that somewhat mocking tone of voice. The more he heard her talk, the more she began sounding like Kim Dokja for some reason.</p>
-<div class="orv_constellation"><p>[The odds of success are not very good, you know.]</p></div>
+<div class="orv_constellation"><p>The odds of success are not very good, you know.</p></div>
 <p class="orv_line">"I know."</p>
-<div class="orv_constellation"><p>[The 'Oldest Dream' of that world-line might not even read the story. And the more advanced a civilisation is, the less important the contents made up purely of letters becomes. So you may not even get a chance to approach such a world, too.]</p></div>
+<div class="orv_constellation"><p>The 'Oldest Dream' of that world-line might not even read the story. And the more advanced a civilisation is, the less important the contents made up purely of letters becomes. So you may not even get a chance to approach such a world, too.</p></div>
 <p class="orv_line">"Before that, crossing the world-lines is the biggest problem."</p>
 <p class="orv_line">Yoo Joonghyuk stared at the half-destroyed ark. Although he got lucky with Biyoo's help and managed to survive, it was impossible to visit other world-lines without the vessel.</p>
 <p class="orv_line">Biyoo thought about something for a while then spoke what's in her mind.</p>
-<div class="orv_constellation"><p>[Why can't you go? What are the coordinates? Give to me.]</p></div>
+<div class="orv_constellation"><p>Why can't you go? What are the coordinates? Give to me.</p></div>
 <p class="orv_line">With a slightly unconvinced face, Yoo Joonghyuk handed over the list of coordinates Yoo Sangah gave him earlier. Biyoo confirmed all the world-lines on it and smiled refreshingly.</p>
-<div class="orv_constellation"><p>[You do know who I am, right? I'm none other than the 'Dokkaebi King', you know.]</p></div>
+<div class="orv_constellation"><p>You do know who I am, right? I'm none other than the 'Dokkaebi King', you know.</p></div>
 <p class="orv_line">It was right then, Yoo Joonghyuk recalled an obvious fact.</p>
-<p class="orv_line">The [Final Ark] was an item belonging to the Bureau. And the top representative of the Bureau was precisely the 'Dokkaebi King'.</p>
-<div class="orv_constellation"><p>[Can you guess what I had been doing in the 'Dark Stratum'? While you and other companions went to the 1865th turn, I too had been working my butt off somewhere, that's what.]</p></div>
+<p class="orv_line">The <strong>[Final Ark]</strong> was an item belonging to the Bureau. And the top representative of the Bureau was precisely the 'Dokkaebi King'.</p>
+<div class="orv_constellation"><p>Can you guess what I had been doing in the 'Dark Stratum'? While you and other companions went to the 1865th turn, I too had been working my butt off somewhere, that's what.</p></div>
 <p class="orv_line">The deep, boundless wisdom could be sensed behind Biyoo's eyes drawing a smiling arc.</p>
 <p class="orv_line">The Dark Stratum. A place where the time's density was far greater than any other spacetime.</p>
 <p class="orv_line">Just how long had Biyoo been staying in such a space?</p>
 <p class="orv_line">She pulled out a Wenny pouch from her inner pocket and continued on.</p>
-<div class="orv_constellation"><p>[I've got my hands on the dead Wenny King's dimensional doorway so jumping to the nearest world-line isn't going to be a problem at all. As for those in the far-flung distance… Well, it should be doable after repairing the ark a bit, I think. The problem is with the energy to be used as the fuel…]</p></div>
+<div class="orv_constellation"><p>I've got my hands on the dead Wenny King's dimensional doorway so jumping to the nearest world-line isn't going to be a problem at all. As for those in the far-flung distance… Well, it should be doable after repairing the ark a bit, I think. The problem is with the energy to be used as the fuel…</p></div>
 <p class="orv_line">Yoo Joonghyuk looked down at his own Incarnation body. Thanks to Biyoo saving his life, most of his injuries had been healed, but the majority of his Stories were left badly mangled after they protected him for over 300 days of adrift at space, as well as during the battle against the hounds.</p>
-<div class="orv_constellation"><p>[I guess that's also been sorted out now, too.]</p></div>
+<div class="orv_constellation"><p>I guess that's also been sorted out now, too.</p></div>
 <p class="orv_line">"…Mm?"</p>
 <p class="orv_line">He wasn't sure how it happened, but his inside was overflowing with Stories. A truly extraordinary amount of Stories were writhing around within him, getting ready to be unleashed.</p>
-<div class="orv_constellation"><p>[Just where did you acquire the Stories of the 'Nameless Ones'? Not only that, such a humongous amount, too…]</p></div>
+<div class="orv_constellation"><p>Just where did you acquire the Stories of the 'Nameless Ones'? Not only that, such a humongous amount, too…</p></div>
 <p class="orv_line">Stories that had been discarded by the scenario was now trying to speak to him.</p>
-<div class="orv_system"><p>[Stories with unknown names from 'Outer Gods' wish to accompany you.]</p></div>
+<div class="orv_system"><p>Stories with unknown names from 'Outer Gods' wish to accompany you.</p></div>
 <p class="orv_line">Stories from the 'Nameless Ones' he had run across in the final scenario once upon a time. Existences born in a place no stars paid attention to, and who had to die in a place no one was looking at.</p>
 <p class="orv_line">They were currently talking to Yoo Joonghyuk.</p>
-<div class="orv_system"><p>[Stories with unknown names are picking up the scent of an ancient dream from you.]</p></div>
-<div class="orv_constellation"><p>[Now that I think about it, something felt a bit off when I was picking you up. The 'Nameless Ones' that didn't possess any ego were busy protecting you, you know?]</p></div>
+<div class="orv_system"><p>Stories with unknown names are picking up the scent of an ancient dream from you.</p></div>
+<div class="orv_constellation"><p>Now that I think about it, something felt a bit off when I was picking you up. The 'Nameless Ones' that didn't possess any ego were busy protecting you, you know?</p></div>
 <p class="orv_line">Yoo Joonghyuk recalled the dream he had not too long ago – the Journey to the West scenario, the voices of the 'Secretive Plotter' as well as the 999th turn's individuals.</p>
 <p class="orv_line">…But, it couldn't be.</p>
 <p class="orv_line">He hurriedly enhanced his perception, but couldn't detect anything. While listening to Biyoo's voice, Yoo Joonghyuk quietly observed the view of the space spreading out like an endless ocean.</p>
-<div class="orv_constellation"><p>[By using those Stories as our fuel, we shouldn't have any problems travelling long distances. Okay, let's get a move on, then. The hounds' territory is nearby, so if we take our time lounging around here, things might get dicey again.]</p></div>
+<div class="orv_constellation"><p>By using those Stories as our fuel, we shouldn't have any problems travelling long distances. Okay, let's get a move on, then. The hounds' territory is nearby, so if we take our time lounging around here, things might get dicey again.</p></div>
 <p class="orv_line">Since Yoo Joonghyuk had no thoughts of encountering those hounds again, he quickly nodded his head as well.</p>
-<div class="orv_constellation"><p>[It's a bit cramped inside for two people, so… Baat!]</p></div>
+<div class="orv_constellation"><p>It's a bit cramped inside for two people, so… Baat!</p></div>
 <p class="orv_line">Pure-white and abundant fur sprouted from Biyoo's body, then she suddenly shrunk down to the size of a single fist.</p>
-<div class="orv_system"><p>[Dokkaebi King 'Biyoo' has started the ark's voyage!]</p></div>
+<div class="orv_system"><p>Dokkaebi King 'Biyoo' has started the ark's voyage!</p></div>
 <p class="orv_line">Along with that message, the ark's main engine came to life. The vessel left behind the blue-hued Story traces and disappeared from there in the blink of an eye.</p>
 <p class="orv_line">…</p>
 <p class="orv_line">…</p>
@@ -348,35 +355,35 @@
 <br>
 <hr>
 <br>
-<div class="orv_constellation"><p>[Wait a minute, captain!! What are you doing, knocking the guy out!!]</p></div>
+<div class="orv_constellation"><p>Wait a minute, captain!! What are you doing, knocking the guy out!!</p></div>
 <p class="orv_line">Biyoo cried out sharply.</p>
-<p class="orv_line">They were currently in the planetary system Z865123. They had to go through no less than 17 layers of [Dark Stratum] from Earth they had been living in to barely reach this world-line.</p>
+<p class="orv_line">They were currently in the planetary system Z865123. They had to go through no less than 17 layers of <strong>[Dark Stratum]</strong> from Earth they had been living in to barely reach this world-line.</p>
 <p class="orv_line">"It couldn't be helped. He was too talkative."</p>
-<div class="orv_constellation"><p>[…Now what are we going to do?]</p></div>
+<div class="orv_constellation"><p>…Now what are we going to do?</p></div>
 <p class="orv_line">Yoo Joonghyuk began pulling out several instruments from his inner pocket. "From now on, we need to forcibly insert the novel Han Sooyoung has written into this man's brain."</p>
-<div class="orv_constellation"><p>[What are you talking about?! Do you even know how long that will take?! Are you going to brainwash people like this every time you enter a new world-line??]</p></div>
+<div class="orv_constellation"><p>What are you talking about?! Do you even know how long that will take?! Are you going to brainwash people like this every time you enter a new world-line??</p></div>
 <p class="orv_line">"That is…"</p>
 <p class="orv_line">When he thought about it, he realized that this method could only take them so far. They couldn't stick around and keep their eyes on this man forever, and the brainwashing could stop working after Yoo Joonghyuk had left this world-line.</p>
-<div class="orv_constellation"><p>[You said that Han Sooyoung hadn't finished writing the novel yet, right? We don't have the time to visit this world again later. At this rate, even if we hand over the novel, the serialisation might stop in the middle, you know!]</p></div>
+<div class="orv_constellation"><p>You said that Han Sooyoung hadn't finished writing the novel yet, right? We don't have the time to visit this world again later. At this rate, even if we hand over the novel, the serialisation might stop in the middle, you know!</p></div>
 <p class="orv_line">"Han Sooyoung, that fool…"</p>
-<div class="orv_constellation"><p>[Stop blaming someone else, and activate that thing called Cloud System or something. Hurry.]</p></div>
+<div class="orv_constellation"><p>Stop blaming someone else, and activate that thing called Cloud System or something. Hurry.</p></div>
 <p class="orv_line">Since she sounded as if she had a plan here, Yoo Joonghyuk didn't argue and did as he was told.</p>
-<div class="orv_constellation"><p>[Sync your display with mine.]</p></div>
-<p class="orv_line">Biyoo then began browsing and poking at the [Cloud System]'s files floating up before her eyes. Soon, her hands stopped moving before a specific file.</p>
-<div class="orv_system"><p>[Dokkaebi King 'Biyoo' is trying to approach the Cloud System using the authority of the Bureau.]</p></div>
-<div class="orv_system"><p>[Will you allow the access to the portion of the files?]</p></div>
+<div class="orv_constellation"><p>Sync your display with mine.</p></div>
+<p class="orv_line">Biyoo then began browsing and poking at the <strong>[Cloud System]</strong>'s files floating up before her eyes. Soon, her hands stopped moving before a specific file.</p>
+<div class="orv_system"><p>Dokkaebi King 'Biyoo' is trying to approach the Cloud System using the authority of the Bureau.</p></div>
+<div class="orv_system"><p>Will you allow the access to the portion of the files?</p></div>
 <p class="orv_line">Yoo Joonghyuk clicked on the confirmation icon. When he did, a transparent thread extended out from the file and got connected to the head of the unconscious webnovel writer.</p>
-<div class="orv_system"><p>[Dokkaebi King 'Biyoo' has exercised her authority and altered the 'Cloud System'.]</p></div>
-<div class="orv_system"><p>[The system's influence is minimal in this worldview. Additional Probability will be consumed!]</p></div>
-<div class="orv_system"><p>[The set-up, 'Inspiration Sharing', has been created!]</p></div>
+<div class="orv_system"><p>Dokkaebi King 'Biyoo' has exercised her authority and altered the 'Cloud System'.</p></div>
+<div class="orv_system"><p>The system's influence is minimal in this worldview. Additional Probability will be consumed!</p></div>
+<div class="orv_system"><p>The set-up, 'Inspiration Sharing', has been created!</p></div>
 <p class="orv_line">Biyoo wiped away the strands of sweat from her forehead and spoke.</p>
-<div class="orv_constellation"><p>[I've synchronised the cloud's files with this guy's subconsciousness. From now on, the stories Han Sooyoung writes in the future will be updated automatically to this guy's subconscious mind.]</p></div>
+<div class="orv_constellation"><p>I've synchronised the cloud's files with this guy's subconsciousness. From now on, the stories Han Sooyoung writes in the future will be updated automatically to this guy's subconscious mind.</p></div>
 <p class="orv_line">Now that was a truly stunning Story manipulation ability. Even Han Sooyoung needed quite a lot of time to create a single Stigma, so this…</p>
 <p class="orv_line">Yoo Joonghyuk asked her. "Is this method safe? What if this fool unnecessarily starts suspecting something…?"</p>
-<div class="orv_constellation"><p>[Suspect? Not very likely. No, he's gonna love the change, actually. I mean, he's being showered by inspirations, so which writer wouldn't welcome that with open arms? He'll definitely believe that he's the one writing this story.]</p></div>
+<div class="orv_constellation"><p>Suspect? Not very likely. No, he's gonna love the change, actually. I mean, he's being showered by inspirations, so which writer wouldn't welcome that with open arms? He'll definitely believe that he's the one writing this story.</p></div>
 <p class="orv_line">Biyoo smirked and looked down at the still-unconscious man. Yoo Joonghyuk alternated his gaze between such Biyoo and the unmoving webnovel writer as a strange little thought crept into his mind. Could it be that a 'novel', any novel, was written like this, to begin with?</p>
 <p class="orv_line">Biyoo lightly knocked on the head of the unconscious writer and spoke.</p>
-<div class="orv_constellation"><p>[He will probably think that a muse came to bless him or something.]</p></div>
+<div class="orv_constellation"><p>He will probably think that a muse came to bless him or something.</p></div>
 <br>
 <hr>
 <br>
@@ -406,18 +413,12 @@
             <a href="./ch_548"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_550">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="549" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="595" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="548" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="548" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

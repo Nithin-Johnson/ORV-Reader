@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 222: Ep. 42 - Asmodeus, II</title>
     <meta property="og:title" content="Ch 222: Ep. 42 - Asmodeus, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,54 +177,54 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00222.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 222: Ep. 42 - Asmodeus, II</h1></div>
 <p class="orv_line">In this round, that guy doesn't exist…</p>
 <p class="orv_line">As soon as I read this sentence, an electric current flowed from my head to my toes.</p>
 <p class="orv_line">…Perhaps, no, it couldn't be. Of course not. There were many people who could be called 'that guy' by Yoo Joonghyuk. In the previous regressions, there were a few 'guys' that Yoo Joonghyuk met…</p>
 <p class="orv_line">Then I remembered Yoo Joonghyuk's thoughts that often appeared and my mind became complicated.</p>
-<div class="orv_quote"><p>「 Yoo Joonghyuk had a thought. 」</p></div>
-<div class="orv_quote"><p>「 'Don't think it will improve by repeating the regressions'. 」</p></div>
-<div class="orv_quote"><p>「 'My birthday only exists in this life'. 」</p></div>
-<div class="orv_quote"><p>「 'I don't know if I can do it. Still, I won't give up'. 」</p></div>
+<div class="orv_quote"><p>Yoo Joonghyuk had a thought.</p></div>
+<div class="orv_quote"><p>'Don't think it will improve by repeating the regressions'.</p></div>
+<div class="orv_quote"><p>'My birthday only exists in this life'.</p></div>
+<div class="orv_quote"><p>'I don't know if I can do it. Still, I won't give up'.</p></div>
 <p class="orv_line">Shit, by all appearances, these were my words. I quickly scrolled through the pages towards other scenes. The words 'that guy' often appeared. He never wrote the name 'Kim Dokja' but it was clearly me.</p>
 <p class="orv_line">Of course, I couldn't be sure 100% because I didn't remember everything I said. Even so, I couldn't imagine anyone else saying these words to Yoo Joonghyuk. If someone else had spoken such cheeky things, Yoo Joonghyuk would've cut off their heads.</p>
 <p class="orv_line">"…I'm having a psychotic break."</p>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is wondering about your words.]</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is wondering about your words.</p></div>
 <p class="orv_line">I ignored the message from the Great Sage Heaven's Equal and slowly took a deep breath. I needed to organize my thoughts. There was still time. Unexpectedly, the Fourth Wall helped me.</p>
-<div class="orv_quote"><p>「 Kim Dokja thought: In short, this is the current situation. 」</p></div>
+<div class="orv_quote"><p>Kim Dokja thought: In short, this is the current situation.</p></div>
 <p class="orv_line">Yes, tell me.</p>
-<div class="orv_quote"><p>「 One, the first revision of Ways of Survival had arrived. 」</p></div>
-<div class="orv_quote"><p>「 Two, the revision started from Yoo Joonghyuk's fourth regression. 」</p></div>
-<div class="orv_quote"><p>「 Three, a person presumed to be 'Kim Dokja' appeared in the recollections of the fourth regression Yoo Joonghyuk. 」</p></div>
+<div class="orv_quote"><p>One, the first revision of Ways of Survival had arrived.</p></div>
+<div class="orv_quote"><p>Two, the revision started from Yoo Joonghyuk's fourth regression.</p></div>
+<div class="orv_quote"><p>Three, a person presumed to be 'Kim Dokja' appeared in the recollections of the fourth regression Yoo Joonghyuk.</p></div>
 <p class="orv_line">It was a very straightforward organization. These three facts were proof of only one thing.</p>
-<div class="orv_quote"><p>「 Yoo Joonghyuk failed the third regression. 」</p></div>
+<div class="orv_quote"><p>Yoo Joonghyuk failed the third regression.</p></div>
 <p class="orv_line">I couldn't think of anything else, no matter how I looked at it. If Yoo Joonghyuk and I reached the end of this world, he wouldn't have moved onto the fourth regression.</p>
 <p class="orv_line">This was the most logical reasoning. The third round that I intervened in was a failure. The time after the failure was newly recorded in the revision of Ways of Survival.</p>
 <p class="orv_line">I wondered how it was possible but this was a world where many impossible things had already happened. I let out a brief sigh and searched Ways of Survival again.</p>
 <p class="orv_line">One question was resolved but many more opened. Through the Fourth Wall, I tried to sort out the questions that came up one by one.</p>
-<div class="orv_quote"><p>「 Why don't I exist in the fourth round of Yoo Joonghyuk? 」</p></div>
+<div class="orv_quote"><p>Why don't I exist in the fourth round of Yoo Joonghyuk?</p></div>
 <p class="orv_line">No matter how I thought about it, I couldn't get an answer. It might be because I wasn't a character or it might be due to other problems. In any case, it was obvious that 'I' no longer existed from the fourth regression onwards. There was a second problem I had to focus on.</p>
-<div class="orv_quote"><p>「 If the first revision is a depiction of future events, could there be a second revision depending on my actions? 」</p></div>
+<div class="orv_quote"><p>If the first revision is a depiction of future events, could there be a second revision depending on my actions?</p></div>
 <p class="orv_line">Nothing was certain. Maybe this first revision couldn't be ruled out as a 'definite future'. Still, I was certain that it wasn't a high probability. If this was a 'definite future', the author wouldn't have sent it to me.</p>
 <p class="orv_line">I didn't know why but the author was giving me an opportunity through this 'revision'. If I kept going along this path, the third regression would end in failure. Then in the fourth regression, Yoo Joonghyuk would repeat things alone.</p>
 <p class="orv_line">The author was sending a warning. Of course, the author might have a terrible stench but… in any case, I decided not to consider it because there was no answer.</p>
@@ -231,9 +238,9 @@
 <p class="orv_line">'Fuck, there is too much explanation…'</p>
 <p class="orv_line">'…No, the sentences seem a bit better? Did the author grow?'</p>
 <p class="orv_line">Stuck in these thoughts, I returned to the reader's identity and fell into Ways of Survival again. He was still a sunfish but the interesting thing was that my intervention reduced Yoo Joonghyuk's minor mistakes. The most notable part was that he caught the 'ichthyosaur' like me at the beginning of the fourth round.</p>
-<div class="orv_quote"><p>「 Yoo Joonghyuk thought, 'That guy got a hidden scenario here'. 」</p></div>
+<div class="orv_quote"><p>Yoo Joonghyuk thought, 'That guy got a hidden scenario here'.</p></div>
 <p class="orv_line">He also didn't die from the Theatre Dungeon in the 8th and 11th regressions.</p>
-<div class="orv_quote"><p>「 "…I lived because of that guy. Well, I still would've somehow survived'. 」</p></div>
+<div class="orv_quote"><p>"…I lived because of that guy. Well, I still would've somehow survived'.</p></div>
 <p class="orv_line">I was almost moved to tears when I read this part. If I had a place to show off then I would've boasted.</p>
 <p class="orv_line">'Everyone, take a look. That damn sunfish has grown'.</p>
 <p class="orv_line">Of course, I was the only reader of Ways of Survival so there was nowhere to boast. My quick scrolling suddenly stopped as I thought of a question. Wait a minute, this guy was doing better than I thought? Then what happened next? Yoo Joonghyuk who was affected by me… would he reach the 'proper' ending of this world?</p>
@@ -292,41 +299,41 @@
 <p class="orv_line">'It was too early to open the first stage of transcendence'.</p>
 <p class="orv_line">However, it was impossible to handle his work in the Demon Realm in a short amount of time without opening the power. It was a power that was deliberately hidden from the constellations but he was caught by one of them. Yoo Joonghyuk watched the Uriel doll sitting on his shoulder.</p>
 <p class="orv_line">'I don't think this person has any ideas'.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is satisfied with your achievement.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is touched by your companionship.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is satisfied with your achievement.</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is touched by your companionship.</p></div>
 <p class="orv_line">"…The duke gives a lot of coins. Thus I killed him."</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is laughing.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is laughing.</p></div>
 <p class="orv_line">Yoo Joonghyuk didn't answer and looked at the panel screen in the duke's office. There were low-quality scenes that seemed to be taped by the wenny people.</p>
 <p class="orv_line">–Yoo Joonghyuk!</p>
 <p class="orv_line">–I am Yoo Joonghyuk!"</p>
 <p class="orv_line">It was an absurd scene. Hundreds of people shouted that they were 'Yoo Joonghyuk'. The most disturbing thing was the huge guy yelling it in the centre.</p>
 <p class="orv_line">–Yoo Joonghyuk! Yoo Joonghyuk! Wah!</p>
 <p class="orv_line">Yoo Joonghyuk watched the scene with a frown before turning his head.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is turning red.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is urging you to go and meet Kim Dokja.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is turning red.</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is urging you to go and meet Kim Dokja.</p></div>
 <p class="orv_line">Yoo Joonghyuk shook his head. "…I've confirmed that he is alive. Cancel your personal scenario and send me back to the original world.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is surprised.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' says the personal scenario hasn't ended yet.]</p></div>
-<div class="orv_system"><p>[The contents of the personal scenario of the constellation 'Demon-like Judge of Fire' is to meet Kim Dokja…]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is surprised.</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' says the personal scenario hasn't ended yet.</p></div>
+<div class="orv_system"><p>The contents of the personal scenario of the constellation 'Demon-like Judge of Fire' is to meet Kim Dokja…</p></div>
 <p class="orv_line">"Do you really think I will accept that personal scenario?"</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is greatly shocked.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is greatly shocked.</p></div>
 <p class="orv_line">The shoulders of the Uriel doll trembled and she had an expression that she wouldn't make even if Eden was destroyed. Yoo Joonghyuk watched for a while before sighing.</p>
 <p class="orv_line">"Is this okay?"</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is raising her head with a sullen expression.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is raising her head with a sullen expression.</p></div>
 <p class="orv_line">"I have become a duke of the Demon Realm with this. But you are an archangel. I'm asking if there is a problem with this."</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is greatly embarrassed.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' says she hasn't thought about it.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is greatly embarrassed.</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' says she hasn't thought about it.</p></div>
 <p class="orv_line">"…Shit." Yoo Joonghyuk spoke all types of curses as he wondered how he could act in the future with the archangel.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is warning you!]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is warning you!</p></div>
 <p class="orv_line">A tremendous darkness started gathering around him. Yoo Joonghyuk instinctively drew the Splitting the Sky Sword at the formidable aura. However, the opponent was someone he couldn't win against just by drawing a sword.</p>
 <p class="orv_line">A dark abyss gathered into an essence. The deepest darkness of the Demon Realm was manifested before his eyes. Yoo Joonghyuk knew this darkness very well.</p>
 <p class="orv_line">"Run away. I can't protect your symbolic body."</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' says it isn't possible.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire'…]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' says it isn't possible.</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire'…</p></div>
 <p class="orv_line">Yoo Joonghyuk's shoulders were shaking slightly. The Uriel doll had never seen such a sight before and grabbed Yoo Joonghyuk's shoulder with a panicked expression. It wasn't easy to calm down the trembling. As if he didn't want to acknowledge the fear, Yoo Joonghyuk opened his mouth with a nasty expression.</p>
 <p class="orv_line">"…I was once killed by this guy."</p>
 <p class="orv_line">The next moment, the body of darkness revealed itself with a tremendous aura that burst the bodies of the incarnations in the area.</p>
-<div class="orv_constellation"><p>[You are in a place like this, Demon King of Salvation.]</p></div>
+<div class="orv_constellation"><p>You are in a place like this, Demon King of Salvation.</p></div>
 <br>
 <hr>
         </article>
@@ -334,18 +341,12 @@
             <a href="./ch_221"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_223">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="222" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="255" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="221" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="221" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

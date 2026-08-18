@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 33: Ep. 8 – Emergency Defense, I</title>
     <meta property="og:title" content="Ch 33: Ep. 8 – Emergency Defense, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,30 +177,30 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00033.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 33: Ep. 8 – Emergency Defense, I</h1></div>
-<div class="orv_quote"><p>「 Lee Hyunsung was dozing like an officer on duty, 」</p></div>
+<div class="orv_quote"><p>Lee Hyunsung was dozing like an officer on duty,</p></div>
 <p class="orv_line">Perhaps there would be such a description in Ways of Survival. And maybe there was this sentence.</p>
-<div class="orv_quote"><p>「 Maybe Lee Hyunsung didn't know. What would happen to him today. 」</p></div>
+<div class="orv_quote"><p>Maybe Lee Hyunsung didn't know. What would happen to him today.</p></div>
 <p class="orv_line">"Hyunsung-ssi?"</p>
 <p class="orv_line">"…Ah, hmm, I fell asleep for a moment. Dokja-ssi, are you well rested?"</p>
 <p class="orv_line">"Yes, I'm fine. By the way, you were talking. Officer on duty…"</p>
@@ -216,7 +223,7 @@
 <p class="orv_line">"Did you see the demonstration? Just do what I did."</p>
 <p class="orv_line">"Yes. Well…pretty much. But why do we have to do this?"</p>
 <p class="orv_line">There was a reason for it.</p>
-<div class="orv_system"><p>[The character 'Lee Hyunsung' has started to feel responsible.]</p></div>
+<div class="orv_system"><p>The character 'Lee Hyunsung' has started to feel responsible.</p></div>
 <p class="orv_line">Lee Hyunsung was currently wiping his shield with an innocent expression.</p>
 <p class="orv_line">Omniscient Reader's Viewpoint was a scam. At least, as far as 'characters' went.</p>
 <p class="orv_line">"I want to help Hyunsung-ssi. He looks a bit down these days. Won't he feel better if you cheer him up?"</p>
@@ -248,17 +255,17 @@
 <p class="orv_line">In fact, they seemed to be doing well.</p>
 <p class="orv_line">"Hyunsung-ssi is really dependable. You are like a pine tree."</p>
 <p class="orv_line">"Haha, thank you Heewon-ssi. My favourite song is Green Pine."</p>
-<div class="orv_system"><p>[The character 'Lee Hyunsung' feels proud.]</p></div>
+<div class="orv_system"><p>The character 'Lee Hyunsung' feels proud.</p></div>
 <p class="orv_line">"I didn't ask."</p>
-<div class="orv_system"><p>[The character 'Lee Hyunsung' feels a bit sullen.]</p></div>
+<div class="orv_system"><p>The character 'Lee Hyunsung' feels a bit sullen.</p></div>
 <p class="orv_line">"I don't think I've seen a righteous person like Hyunsung-ssi."</p>
 <p class="orv_line">"Ah… that isn't the case. Still, thank you. Yoo Sangah-ssi."</p>
-<div class="orv_system"><p>[The character 'Lee Hyunsung' has started to worry about justice.]</p></div>
+<div class="orv_system"><p>The character 'Lee Hyunsung' has started to worry about justice.</p></div>
 <p class="orv_line">"Hyunsung hyung has the best muscles."</p>
 <p class="orv_line">"Thank you, everyone."</p>
-<div class="orv_system"><p>[The character 'Lee Hyunsung' has increased his self-esteem.]</p></div>
+<div class="orv_system"><p>The character 'Lee Hyunsung' has increased his self-esteem.</p></div>
 <p class="orv_line">It was fortunate that Lee Hyunsung was a simple person and such empty praises worked well. After repeating the same conversation several times like this, the system messages started to change.</p>
-<div class="orv_system"><p>[The character 'Lee Hyunsung' is waiting for a chance to evolve his attribute.]</p></div>
+<div class="orv_system"><p>The character 'Lee Hyunsung' is waiting for a chance to evolve his attribute.</p></div>
 <p class="orv_line">Okay. It went smoothly.</p>
 <p class="orv_line">Yoo Sangah asked in a slightly worried tone. "But I think Hyunsung-ssi is a bit burdened…"</p>
 <p class="orv_line">Yoo Sangah was really nice. Even in this situation, she was concerned about someone else's heart. I didn't have that ability.</p>
@@ -283,7 +290,7 @@
 <p class="orv_line">"I'm listening. Tell him I'm thinking about it."</p>
 <p class="orv_line">The alliance members looked at each other and chuckled at my words. They could laugh like that now.</p>
 <p class="orv_line">I was walking up the escalator when a blade suddenly reached my neck. I felt very few signs it was coming… there was only one skill that boasted this type of concealed movements in the beginning.</p>
-<div class="orv_system"><p>[Ghost Walk.]</p></div>
+<div class="orv_system"><p>Ghost Walk.</p></div>
 <p class="orv_line">"I'm disappointed, ahjussi."</p>
 <p class="orv_line">Lee Jihye. A proud girl with outstanding fighting skills. She wasn't chosen by the Duke of Loyalty and Warfare for nothing.</p>
 <p class="orv_line">"Ahjussi, don't you know what will happen to those women if you make a deal with them?"</p>
@@ -309,7 +316,7 @@
 <p class="orv_line">"Today, I will shatter Gong Pildu's party."</p>
 <p class="orv_line">"…Are you serious?"</p>
 <p class="orv_line">Lee Jihye looked at me like she was trying to see my heart.</p>
-<div class="orv_system"><p>[Your understanding of the character 'Lee Jihye' has increased.]</p></div>
+<div class="orv_system"><p>Your understanding of the character 'Lee Jihye' has increased.</p></div>
 <p class="orv_line">"Ahjussi isn't strong enough. You won't be able to get rid of them."</p>
 <p class="orv_line">"Even if you help me?'</p>
 <p class="orv_line">Lee Jihye's head jerked like her pride was damaged.</p>
@@ -332,12 +339,12 @@
 <p class="orv_line">"It was a video where you killed your friend to survive."</p>
 <p class="orv_line">"…Stop."</p>
 <p class="orv_line">"In fact, you didn't want to do that."</p>
-<div class="orv_system"><p>[The character 'Lee Jihye' is greatly disturbed.]</p></div>
+<div class="orv_system"><p>The character 'Lee Jihye' is greatly disturbed.</p></div>
 <p class="orv_line">"What do you know?"</p>
 <p class="orv_line">"I know what I know. Of course I don't know. I'm just talking to myself."</p>
 <p class="orv_line">"…"</p>
 <p class="orv_line">"But since I am talking, I wanted to say this. If you turn away today, you will regret it for the rest of your life. Definitely."</p>
-<div class="orv_system"><p>[The character 'Lee Jihye' has fallen into deep agony.]</p></div>
+<div class="orv_system"><p>The character 'Lee Jihye' has fallen into deep agony.</p></div>
 <p class="orv_line">I didn't know the 'human' Lee Jihye but I knew the 'character' Lee Jihye. This girl was a loyal subordinate of Yoo Joonghyuk. But that was a story for the future, not now. She admired Yoo Joonghyuk's strength but she was essentially different from Yoo Joonghyuk.</p>
 <p class="orv_line">Lee Jihye opened her mouth a few minutes later.</p>
 <p class="orv_line">"If I help, people can live?"</p>
@@ -351,10 +358,10 @@
 <p class="orv_line">"…Honestly, I don't think it will work. I'll tell you in advance. I don't think I can help."</p>
 <p class="orv_line">"The choice is yours."</p>
 <p class="orv_line">She said this but Lee Jihye would surely move. She was the person who was chosen by the Duke of Loyalty and Warfare.</p>
-<div class="orv_system"><p>[The constellation 'Secretive Plotter' likes your impudence.]</p></div>
-<div class="orv_system"><p>[100 coins have been sponsored.]</p></div>
-<div class="orv_system"><p>[Lee Jihye's sponsor likes you.]</p></div>
-<div class="orv_system"><p>[100 coins have been sponsored.]</p></div>
+<div class="orv_system"><p>The constellation 'Secretive Plotter' likes your impudence.</p></div>
+<div class="orv_system"><p>100 coins have been sponsored.</p></div>
+<div class="orv_system"><p>Lee Jihye's sponsor likes you.</p></div>
+<div class="orv_system"><p>100 coins have been sponsored.</p></div>
 <p class="orv_line">Now all the preparations were finished.</p>
 <br>
 <hr>
@@ -363,18 +370,12 @@
             <a href="./ch_32"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_34">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="33" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="85" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="32" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="32" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

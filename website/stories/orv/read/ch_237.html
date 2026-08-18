@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 237: Ep. 45 - Gourmet Association, I</title>
     <meta property="og:title" content="Ch 237: Ep. 45 - Gourmet Association, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00237.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 237: Ep. 45 - Gourmet Association, I</h1></div>
 <p class="orv_line">Anna Croft was silent on the way to Oro Castle. She sometimes smiled strangely when our eyes met but she didn't speak first.</p>
@@ -242,27 +249,27 @@
 <p class="orv_line">"You don't know. It is unclear how and when Fate will work."</p>
 <p class="orv_line">…Fate? The atmosphere momentarily shook. The surrounding air filled with an ominous aura and the entire carriage trembled. Iris and Selena Kim's expressions stiffened. They had goosebumps on their arms as they watched me with a frightened expression.</p>
 <p class="orv_line">I hadn't wanted to do this. I didn't want to scare them by seeming like a villain. However, Anna Croft crossed a line she shouldn't have crossed.</p>
-<div class="orv_constellation"><p>[If something like that happens.]</p></div>
+<div class="orv_constellation"><p>If something like that happens.</p></div>
 <p class="orv_line">Sparks of probability appeared as I used my true voice.</p>
-<div class="orv_system"><p>[The nebula 'Asgard' is concerned.]</p></div>
-<div class="orv_system"><p>[Constellations of the 'Asgard' nebula are warning you!]</p></div>
+<div class="orv_system"><p>The nebula 'Asgard' is concerned.</p></div>
+<div class="orv_system"><p>Constellations of the 'Asgard' nebula are warning you!</p></div>
 <p class="orv_line">I heard the indirect messages of the Asgard constellations enter my ears. Nevertheless, I didn't stop.</p>
-<div class="orv_constellation"><p>[If that happens, I will destroy all the worlds that caused that Fate.]</p></div>
+<div class="orv_constellation"><p>If that happens, I will destroy all the worlds that caused that Fate.</p></div>
 <p class="orv_line">The impact of the shock caused the windows of the carriage to burst at the same time. The startled driver looked back this way. There was even vague astonishment on Anna Croft's normally calm face. Perhaps she wasn't aware of exactly how much 'status' I had.</p>
 <p class="orv_line">Shortly afterwards, the carriage stopped and the voice of the guide was heard.</p>
-<div class="orv_constellation"><p>[We have arrived at Oro Castle.]</p></div>
+<div class="orv_constellation"><p>We have arrived at Oro Castle.</p></div>
 <p class="orv_line">I smiled at the three people who were still stiff. "Let's go."</p>
 <br>
 <hr>
 <br>
 <p class="orv_line">We got down from the carriage and were guided into Oro Castle.</p>
 <p class="orv_line">Oro Castle. The castle was one of the main homes of the Gourmet Association scattered all over the world and was owned directly by a member of the Gourmet Association. Perhaps it was… I remember that it was one of the 72 demon kings. Was it 'Immeasurable Austerity?</p>
-<div class="orv_constellation"><p>[They have been granted permission to enter.]</p></div>
-<div class="orv_constellation"><p>[I've confirmed it. Come in.]</p></div>
+<div class="orv_constellation"><p>They have been granted permission to enter.</p></div>
+<div class="orv_constellation"><p>I've confirmed it. Come in.</p></div>
 <p class="orv_line">The interior of the castle had more of a modern than medieval style. It was reminiscent of a luxurious hotel lobby. The forms of the intermediate symbolic bodies could be seen scattered around.</p>
-<div class="orv_system"><p>[Some constellations are paying attention to your presence.]</p></div>
+<div class="orv_system"><p>Some constellations are paying attention to your presence.</p></div>
 <p class="orv_line">We were guided to a waiting room in the corner of the first floor lobby. Perhaps some people hadn't arrived yet. The three incarnations of Asgard and I were the only ones present.</p>
-<div class="orv_constellation"><p>[Please wait in the waiting room. There are still more incarnations arriving… ah, the Demon King of Salvation is a constellation. I will arrange a separate waiting room for you.]</p></div>
+<div class="orv_constellation"><p>Please wait in the waiting room. There are still more incarnations arriving… ah, the Demon King of Salvation is a constellation. I will arrange a separate waiting room for you.</p></div>
 <p class="orv_line">"No, I'm fine. I'll just be here."</p>
 <p class="orv_line">The guide stared at me like I was strange but soon disappeared. Frankly, it was more comfortable here. I needed some time to prepare my mind.</p>
 <p class="orv_line">There were panels hung on the wall of the waiting room. They played sub scenarios currently going on all over the dimensions…</p>
@@ -271,7 +278,7 @@
 <p class="orv_line">Selena Kim's expression slightly softened. "No, we were too rude. I'm sorry, Demon King of Salvation."</p>
 <p class="orv_line">Her words were much more formal than before. I didn't mean to refuse the apology but something felt bad. Selena Kim did nothing wrong. She was one of the few people I liked in Ways of Survival. The one I hated was the shameless person standing in the corner and watching this scene.</p>
 <p class="orv_line">Then the door of the waiting room opened and another guide appeared.</p>
-<div class="orv_constellation"><p>[Incarnations of Asgard, please follow me.]</p></div>
+<div class="orv_constellation"><p>Incarnations of Asgard, please follow me.</p></div>
 <p class="orv_line">The constellations of Asgard were probably looking for them. Selena Kim and Iris nodded to me before leaving.</p>
 <p class="orv_line">On the other hand, Anna Croft watched me without leaving the room. "You have too many constellations as enemies."</p>
 <p class="orv_line">"It isn't something for you to worry about."</p>
@@ -290,7 +297,7 @@
 <p class="orv_line">Depending on the impression I made here and what I talked about, the direction of the following scenarios would change.</p>
 <p class="orv_line">At this moment, the door of the waiting room opened.</p>
 <p class="orv_line">I thought it was a guide but this time, an unexpected presence was waiting for me. The moment I was about to say something, the other person spoke first.</p>
-<div class="orv_constellation"><p>[It's been a while, Kim Dokja. I've been waiting for a long time.]</p></div>
+<div class="orv_constellation"><p>It's been a while, Kim Dokja. I've been waiting for a long time.</p></div>
 <p class="orv_line">I heard the bright tone of the True Voice and realized what the other person was. Really, the queen of the Underworld was too mischievous.</p>
 <p class="orv_line">I sighed and asked, "…Why the hell do you look like that?"</p>
 <br>
@@ -300,18 +307,12 @@
             <a href="./ch_236"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_238">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="237" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="223" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="236" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="236" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

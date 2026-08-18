@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 450: Ep. 85 - The Final Wall, II</title>
     <meta property="og:title" content="Ch 450: Ep. 85 - The Final Wall, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00450.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 450: Ep. 85 - The Final Wall, II</h1></div>
 <p class="orv_line">Bihyung was in a very good mood. It couldn't be helped, since the Dokkaebi had witnessed the scenario playing out in the panel right before his eyes.</p>
@@ -198,54 +205,54 @@
 <p class="orv_line">'He did it. That Kim Dokja, he really pulled it off'.</p>
 <p class="orv_line">A storyteller was supposed to remain neutral. The thing was, though, all judges secretly rooted for a team they liked. This was true for Bihyung as well.</p>
 <p class="orv_line">Like a parent looking at his wonderfully-matured children, Bihyung stroked the faces appearing on the screen with a deeply moved expression.</p>
-<div class="orv_constellation"><p>[Congratulations, Bihyung Director-nim.]</p></div>
+<div class="orv_constellation"><p>Congratulations, Bihyung Director-nim.</p></div>
 <p class="orv_line">The subordinate Dokkaebis around him offered their congratulations. They all knew that Bihyung had been watching &lt;Kim Dokja's Company&gt; for a long time.</p>
-<div class="orv_constellation"><p>[I just knew they would pull through.]</p></div>
-<div class="orv_constellation"><p>[M-me too. Me too…!]</p></div>
+<div class="orv_constellation"><p>I just knew they would pull through.</p></div>
+<div class="orv_constellation"><p>M-me too. Me too…!</p></div>
 <p class="orv_line">Not only that, some of them had been cheering on the &lt;Kim Dokja's Company&gt; alongside him, too. Several carried expressions just as excited as Bihyung's.</p>
 <p class="orv_line">For these Dokkaebis that only sought out new, potential stimulations in order to find the next story's objective, being this earnest about something was indeed an exceedingly rare thing.</p>
-<div class="orv_constellation"><p>[These kids are mine. Stop drooling over them.]</p></div>
-<div class="orv_constellation"><p>[Haha! Of course we wouldn't…]</p></div>
+<div class="orv_constellation"><p>These kids are mine. Stop drooling over them.</p></div>
+<div class="orv_constellation"><p>Haha! Of course we wouldn't…</p></div>
 <p class="orv_line">It was then an urgent piece of news arrived for him.</p>
-<div class="orv_constellation"><p>[Director. The Great Dokkaebi, 'Baram' is…]</p></div>
-<div class="orv_constellation"><p>[You've been promoted!]</p></div>
+<div class="orv_constellation"><p>Director. The Great Dokkaebi, 'Baram' is…</p></div>
+<div class="orv_constellation"><p>You've been promoted!</p></div>
 <p class="orv_line">…A promotion?</p>
-<div class="orv_constellation"><p>[Bihyung Director-nim, truly, honestly, congratulations!]</p></div>
-<div class="orv_constellation"><p>[Looks like the Bureau is doing its job properly for once!]</p></div>
+<div class="orv_constellation"><p>Bihyung Director-nim, truly, honestly, congratulations!</p></div>
+<div class="orv_constellation"><p>Looks like the Bureau is doing its job properly for once!</p></div>
 <p class="orv_line">Bihyung couldn't make heads nor tails while subjected to the outpouring of messages.</p>
 <p class="orv_line">He was an 'upper-rank Dokkaebi', not to mention the director of the Seoul branch. He had already climbed to the highest-possible position through one's hard work alone.</p>
 <p class="orv_line">However, getting a promotion here could only mean…</p>
-<div class="orv_constellation"><p>[…Director-nim?]</p></div>
+<div class="orv_constellation"><p>…Director-nim?</p></div>
 <p class="orv_line">Without a doubt, this should be a good thing.</p>
 <p class="orv_line">But why was he overcome with this ominous foreboding?</p>
-<div class="orv_constellation"><p>[Great Dokkaebi is waiting for you.]</p></div>
+<div class="orv_constellation"><p>Great Dokkaebi is waiting for you.</p></div>
 <p class="orv_line">Bihyung was guided by lower-ranked Dokkaebis to a portal, and entered it. Soon, the thick fog receded away to reveal the figure of a Great Dokkaebi waiting for him at the end of a grey-coloured passage.</p>
-<div class="orv_constellation"><p>[You've come, Bihyung.]</p></div>
-<div class="orv_constellation"><p>[Baram-nim.]</p></div>
+<div class="orv_constellation"><p>You've come, Bihyung.</p></div>
+<div class="orv_constellation"><p>Baram-nim.</p></div>
 <p class="orv_line">As if to imply that Bihyung had worked hard, Baram patted him on the shoulder and spoke up. </p>
-<div class="orv_constellation"><p>[Congratulations. Your promotion has been decided.]</p></div>
-<div class="orv_constellation"><p>[…Pardon me?]</p></div>
-<div class="orv_constellation"><p>[We need to do something about your dazed expression. Don't you understand? It's been decided that you'll be chosen as the last one to become the 'Great Dokkaebi'.]</p></div>
+<div class="orv_constellation"><p>Congratulations. Your promotion has been decided.</p></div>
+<div class="orv_constellation"><p>…Pardon me?</p></div>
+<div class="orv_constellation"><p>We need to do something about your dazed expression. Don't you understand? It's been decided that you'll be chosen as the last one to become the 'Great Dokkaebi'.</p></div>
 <p class="orv_line">The Great Dokkaebi. The highest honour that all storytellers dreamed of reaching. Something that he only daydreamed about had now become a reality, leaving Bihyung utterly bewildered and lost.</p>
-<div class="orv_constellation"><p>[…Great Dokkaebi? You mean, I am?]</p></div>
-<div class="orv_constellation"><p>[That's right. This promotion is unprecedented in the history of &lt;Star Stream&gt;.]</p></div>
+<div class="orv_constellation"><p>…Great Dokkaebi? You mean, I am?</p></div>
+<div class="orv_constellation"><p>That's right. This promotion is unprecedented in the history of &lt;Star Stream&gt;.</p></div>
 <p class="orv_line">Baram chuckled contently and took the lead. Bihyung didn't even know where they were going and simply chased after him. He had so many things he wanted to ask.</p>
 <p class="orv_line">Just where was this place, and also…</p>
-<div class="orv_constellation"><p>[You'll soon become a Great Dokkaebi, so it's about time that you meet that 'person', no?]</p></div>
+<div class="orv_constellation"><p>You'll soon become a Great Dokkaebi, so it's about time that you meet that 'person', no?</p></div>
 <p class="orv_line">Baram smiled as if he could see through Bihyung's thoughts.</p>
-<div class="orv_constellation"><p>[When you say 'that person', could you be…]</p></div>
+<div class="orv_constellation"><p>When you say 'that person', could you be…</p></div>
 <p class="orv_line">Even though he did ask, Bihyung could already guess the answer.</p>
 <p class="orv_line">The surrounding air seemed to distort and faint traces of sparks bounced around in the atmosphere. When he took a closer look, those sparks were taking on the shapes of letters. Something was before him, a being that he had never seen before.</p>
-<div class="orv_constellation"><p>[We've arrived.]</p></div>
+<div class="orv_constellation"><p>We've arrived.</p></div>
 <p class="orv_line">They circled around the gallery and went past the fog-covered passageway to reach a massive hall.</p>
 <p class="orv_line">No, could this place even be called a 'hall'?</p>
 <p class="orv_line">It was so humongous that its dimensions couldn't even be estimated. And inside this place, there was a wide wall spanning across it. The length of this mysterious wall could also not be measured due to its sheer, immense size.</p>
 <p class="orv_line">Letters engraved on the surface of the wall seemed to be burning; many cracks and various damages, both large and small, could be seen on its surface.</p>
 <p class="orv_line">In that moment, Bihyung got the feeling that he had seen that wall from somewhere.</p>
-<div class="orv_constellation"><p>[…The Plate of Revelation?]</p></div>
+<div class="orv_constellation"><p>…The Plate of Revelation?</p></div>
 <p class="orv_line">It was undoubtedly the Plate of Revelation. Although its shape was different, that 'wall' the Constellations received their revelations from possessed the similar overall vibe.</p>
 <p class="orv_line">However, why was another 'Plate of Revelation' here? And also, what was up with its humongous size…?</p>
-<div class="orv_constellation"><p>[Everyone has gathered, I see.]</p></div>
+<div class="orv_constellation"><p>Everyone has gathered, I see.</p></div>
 <p class="orv_line">The moment he heard that voice, Bihyung prostrated on the floor even before he realized it. He might have dealt with countless Constellations until now, but at least this time, he couldn't control his nervousness.</p>
 <p class="orv_line">He couldn't even guess the vastness of the Status felt from that voice.</p>
 <p class="orv_line">He glanced to his side and saw that all the Great Dokkaebis, including Baram, were prostrating towards the front as well.</p>
@@ -255,16 +262,16 @@
 <p class="orv_line">That creature was the absolute being that ruled the &lt;Bureau&gt; and controlled the &lt;Star Stream&gt;.</p>
 <p class="orv_line">The 'King of Stories'.</p>
 <p class="orv_line">The King extended his lengthy and pale hand to stroke the wall while slowly opening its mouth.</p>
-<div class="orv_constellation"><p>[The 'One Story' that decides the next world will now be chosen.]</p></div>
+<div class="orv_constellation"><p>The 'One Story' that decides the next world will now be chosen.</p></div>
 <br>
 <hr>
 <br>
 <p class="orv_line">"You saying that I have the last fragment of the 'Final Wall'?"</p>
 <p class="orv_line">"That's right."</p>
-<p class="orv_line">[41]'s words made me frown deeply.</p>
+<p class="orv_line"><strong>[41]</strong>'s words made me frown deeply.</p>
 <p class="orv_line">I could guess more or less on what they were talking about. The 'Final Wall' – I tried to gather information on that thing during this regression turn, too. It was one of the things that never got fully explained in the original 'Ways of Survival'. I was pretty sure of this 'Wall' being the clue that would determine the end of this regression turn.</p>
 <p class="orv_line">And as for this 'last fragment' thing they were talking about…</p>
-<div class="orv_system"><p>[Exclusive skill, 'The Fourth Wall', is powerfully activating!]</p></div>
+<div class="orv_system"><p>Exclusive skill, 'The Fourth Wall', is powerfully activating!</p></div>
 <p class="orv_line">⸢Kim Dok ja⸥</p>
 <p class="orv_line">Don't worry. I'll never hand you over to them.</p>
 <p class="orv_line">I slowly blinked my eyes and focused. The 'Secretive Plotter' was staring at me. He might have lost a lot of his Status, but he was still the strongest Constellation I knew, and he was an 'Outer God' to boot.</p>
@@ -273,12 +280,12 @@
 <p class="orv_line">"You actually want to see the end of this world, don't you? You might be saying this and that, but you too have placed your hope on this world-line."</p>
 <p class="orv_line">The Plotter's brows quivered ever so slightly.</p>
 <p class="orv_line">No matter how hard he denied being Yoo Joonghyuk, he still failed to get rid of his old habits.</p>
-<p class="orv_line">"And for that purpose, you need the [Fourth Wall] that I possess. That's why you're keeping me alive. Am I right?"</p>
+<p class="orv_line">"And for that purpose, you need the <strong>[Fourth Wall]</strong> that I possess. That's why you're keeping me alive. Am I right?"</p>
 <p class="orv_line">He didn't answer me. If he was planning to behave like that, I could think of a way to get him to talk.</p>
 <p class="orv_line">Tsu-chuchuchut.</p>
 <p class="orv_line">"I didn't get to hear that final answer to the Three Divine Questions."</p>
-<div class="orv_system"><p>['Three Divine Questions and Answers' has resumed!]</p></div>
-<div class="orv_system"><p>[You have one more right to ask a question.]</p></div>
+<div class="orv_system"><p>'Three Divine Questions and Answers' has resumed!</p></div>
+<div class="orv_system"><p>You have one more right to ask a question.</p></div>
 <p class="orv_line">Back then, I asked the 'Secretive Plotter' this.</p>
 <p class="orv_line">The ⸢Three Ways to Survive a Ruined World.⸥</p>
 <p class="orv_line">– 'Secretive Plotter'. Are you someone who knows the epilogue of that novel?</p>
@@ -286,7 +293,7 @@
 <p class="orv_line">The 'Ways of Survival' I read ended with the 3149th chapter. However, the Plotter lived on past that, even though I didn't get to see it. He survived that unrecorded history and reached the conclusion reserved only for him.</p>
 <p class="orv_line">Just what did he see in that place?</p>
 <p class="orv_line">What was there that it prompted him to become an 'Outer God' and appear in this world-line?</p>
-<p class="orv_line">[41] stepped forward first to answer my question. He shouted at me with a slightly angry face. "That question is…!!"</p>
+<p class="orv_line"><strong>[41]</strong> stepped forward first to answer my question. He shouted at me with a slightly angry face. "That question is…!!"</p>
 <div class="orv_outergod"><p>【41st.】</p></div>
 <p class="orv_line">Kkoma Yoo Joonghyuks all shut their mouths up after the Plotter stopped them. The 'Yoo Joonghyuk' currently in the shape of a boy – the 'Secretive Plotter' – was looking straight at me.</p>
 <p class="orv_line">For a moment there, I felt a bit weirded out. Yoo Joonghyuk's childhood years had never been fully explained in 'Ways of Survival'. No, it just got a few brief passing mentions in the form of reminiscence.</p>
@@ -309,7 +316,7 @@
 <p class="orv_line">My lips barely managed to bob up and down.</p>
 <p class="orv_line">I wasn't prepared for that question. However, I still needed to answer it regardless of whether I was ready or not.</p>
 <p class="orv_line">⸢In that very moment, she realized that this world had completely left her hands.⸥</p>
-<p class="orv_line">Memories from [Peace Land] came bubbling up – the mangaka Asuka Ren's expression as she let go of the world she had created. The duty of the person who had created a new world…</p>
+<p class="orv_line">Memories from <strong>[Peace Land]</strong> came bubbling up – the mangaka Asuka Ren's expression as she let go of the world she had created. The duty of the person who had created a new world…</p>
 <p class="orv_line">I wasn't like her. I didn't write 'Ways of Survival', but I was…</p>
 <p class="orv_line">⸢This story was able to see the light of the world all thanks to you, Dokja-nim.⸥</p>
 <p class="orv_line">…I was someone who had witnessed the story's end.</p>
@@ -338,18 +345,12 @@
             <a href="./ch_449"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_451">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="450" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="832" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="449" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="449" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

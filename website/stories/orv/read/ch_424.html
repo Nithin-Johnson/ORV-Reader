@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 424: Ep. 80 - Our greatest ally, II</title>
     <meta property="og:title" content="Ch 424: Ep. 80 - Our greatest ally, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00424.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 424: Ep. 80 - Our greatest ally, II</h1></div>
 <p class="orv_line">A white figure of a person rose up in the pitch-black darkness.</p>
@@ -201,8 +208,8 @@
 <p class="orv_line">"By how much?"</p>
 <p class="orv_line">"Even after unlocking the Transcendence level 5, I couldn't win against him."</p>
 <p class="orv_line">The fifth level of Transcendence was the absolute limit that the current Yoo Joonghyuk had reached.</p>
-<p class="orv_line">The Breaking the Sky Saint quietly observed him for a little while, before opening her lips. "When you break past the Transcendence's sixth level, you'll no longer be bound by the [Breaking the Sky Swordsmanship]'s gender requirements."</p>
-<p class="orv_line">Originally, the [Breaking the Sky Swordsmanship] was a martial technique designed for women. But, as was the case with every martial technique out there, once one stepped past a certain level, they would reach the stage of 'Breaking Beyond Boundaries'.</p>
+<p class="orv_line">The Breaking the Sky Saint quietly observed him for a little while, before opening her lips. "When you break past the Transcendence's sixth level, you'll no longer be bound by the <strong>[Breaking the Sky Swordsmanship]</strong>'s gender requirements."</p>
+<p class="orv_line">Originally, the <strong>[Breaking the Sky Swordsmanship]</strong> was a martial technique designed for women. But, as was the case with every martial technique out there, once one stepped past a certain level, they would reach the stage of 'Breaking Beyond Boundaries'.</p>
 <p class="orv_line">The process of endlessly exceeding many boundaries was the part of a Transcendent's training regime.</p>
 <p class="orv_line">"There is no guarantee of defeating him even if I reach the sixth level."</p>
 <p class="orv_line">"Why do you think that?"</p>
@@ -235,13 +242,13 @@
 <p class="orv_line">– Where is the representative of your Nebula?</p>
 <p class="orv_line">In the end, everything boiled down to Kim Dokja's absence.</p>
 <p class="orv_line">After the person possessing the highest percentage of the Nebula's Story shares left the group, the aggregate amount of Stories for the whole Nebula had become simply too inadequate.</p>
-<p class="orv_line">It was unknown what Yoo Joonghyuk was thinking to himself as he maintained his silence. And how long went by like that? He slowly raised himself up off the floor, sheathed the [Black Heavenly Demon Sword] and although still unsteady on his feet, got ready to leave.</p>
+<p class="orv_line">It was unknown what Yoo Joonghyuk was thinking to himself as he maintained his silence. And how long went by like that? He slowly raised himself up off the floor, sheathed the <strong>[Black Heavenly Demon Sword]</strong> and although still unsteady on his feet, got ready to leave.</p>
 <p class="orv_line">"Where are you planning to go?"</p>
 <p class="orv_line">"I'm leaving to acquire a new Giant Story, Master."</p>
 <p class="orv_line">He needed to acquire the qualification to get to the 'Final Scenario' even without Kim Dokja's shares. &lt;Kim Dokja's Company&gt; was neither that fool's private army nor his underlings. This group needed to be able to protect themselves without him around, and even if they end up losing him somehow…</p>
 <p class="orv_line">…They needed to be capable enough to clear the 'Final Scenario'.</p>
-<div class="orv_constellation"><p>[Baat…]</p></div>
-<p class="orv_line">Biyoo murmured in despondency from somewhere in the empty air. Yoo Joonghyuk silently stared at her for a little while, before activating the [Sage's Eye] to sift through the information he possessed in his head.</p>
+<div class="orv_constellation"><p>Baat…</p></div>
+<p class="orv_line">Biyoo murmured in despondency from somewhere in the empty air. Yoo Joonghyuk silently stared at her for a little while, before activating the <strong>[Sage's Eye]</strong> to sift through the information he possessed in his head.</p>
 <p class="orv_line">There weren't that many locations left at this point in time where he could acquire a 'Giant Story'. When flipping that statement around, it also meant that the remaining Stories would be that much more powerful than others.</p>
 <p class="orv_line">He had already acquired one powerful Giant Story called the ⸢Season of Light and Darkness⸥. If he managed to earn 'that Story' on top of this, then it might be possible to fight against the 'Secretive Plotter' once more.</p>
 <p class="orv_line">The Breaking the Sky Sword Saint watched Yoo Joonghyuk walk away and asked him. "Are you planning to go alone?"</p>
@@ -265,31 +272,31 @@
 <p class="orv_line">– You must never reveal the truth that you're 'Kim Dokja'.</p>
 <p class="orv_line">All thanks to the stinking agreement I had with the 'Wenny King'.</p>
 <p class="orv_line">Because of it, I couldn't enter Biyoo's channel or send word of my wellbeing to the &lt;Kim Dokja's Company&gt;.</p>
-<p class="orv_line">In the end, I had no choice but to personally drive the [X-grade Ferrarghini] I purchased from the 'Mass Production Maker' to the destination.</p>
-<p class="orv_line">The kkoma Yoo Joonghyuk number [999] polishing his [Splitting the Sky Sword] atop my shoulder grumbled softly. "Your driving sucks."</p>
+<p class="orv_line">In the end, I had no choice but to personally drive the <strong>[X-grade Ferrarghini]</strong> I purchased from the 'Mass Production Maker' to the destination.</p>
+<p class="orv_line">The kkoma Yoo Joonghyuk number <strong>[999]</strong> polishing his <strong>[Splitting the Sky Sword]</strong> atop my shoulder grumbled softly. "Your driving sucks."</p>
 <p class="orv_line">"Then, why don't you drive? By the way, you're not planning to stick to that appearance now, are you?"</p>
 <p class="orv_line">Without a doubt, we'd run into Constellations that will recognise us once we entered the scenario location. The existence of the kkoma Yoo Joonghyuk was just too eye-catching.</p>
 <p class="orv_line">Well, Yoo Joonghyuk himself was just too famous by now, so…</p>
 <p class="orv_line">"Indeed, I am too conspicuous like this."</p>
-<p class="orv_line">[999] seemed to be pondering something. His body suddenly jolted a bit, before a 'Pow!' noise resounded out and he transformed into a Murim dumpling.]</p>
-<p class="orv_line">I was shocked silly by this event. But [999] sounded utterly disinterested as he addressed me.</p>
+<p class="orv_line"><strong>[999]</strong> seemed to be pondering something. His body suddenly jolted a bit, before a 'Pow!' noise resounded out and he transformed into a Murim dumpling.]</p>
+<p class="orv_line">I was shocked silly by this event. But <strong>[999]</strong> sounded utterly disinterested as he addressed me.</p>
 <p class="orv_line">– This should be fine.</p>
 <p class="orv_line">"…Hey, you. Carrying a dumpling around on my shoulder will be even more eye-catching, you know?"</p>
 <p class="orv_line">– Why don't you change your pathetic appearance as well?</p>
 <p class="orv_line">Just as the kkoma Yoo Joonghyuk couldn't maintain his original appearance, I too needed to make sure that my identity as 'Kim Dokja' wasn't discovered.</p>
 <p class="orv_line">The now-dumpling-fied Yoo Joonghyuk roughly rubbed the dumpling skin all over my face as if he was trying to paint a wall. I sensed the Story on my face change as creaking noises resounded out. How long passed by like that?</p>
 <p class="orv_line">By the time I opened my eyes, I ended up freaking out by what I saw.</p>
-<p class="orv_line">[999] spoke to me as I stared dumbfoundedly at the mirror, my eyes blinking non-stop.</p>
+<p class="orv_line"><strong>[999]</strong> spoke to me as I stared dumbfoundedly at the mirror, my eyes blinking non-stop.</p>
 <p class="orv_line">– It's done.</p>
 <p class="orv_line">Holy moly. This might not be enough to slap Yoo Joonghyuk's cheek silly, but still… It should be enough to make me ponder whether I should slap him or not, at least.</p>
 <p class="orv_line">I rubbed my new statuesque face and muttered to myself. "…Can't I keep this face forever?"</p>
 <p class="orv_line">– If you do, you'll be struck by the storm of Probability's aftermath.</p>
-<p class="orv_line">As if he had touched something dirty, [999] diligently patted down his dumpling body. Completely disregarding whether he was doing that or not, I continued to stare at the mirror.</p>
+<p class="orv_line">As if he had touched something dirty, <strong>[999]</strong> diligently patted down his dumpling body. Completely disregarding whether he was doing that or not, I continued to stare at the mirror.</p>
 <p class="orv_line">A long time ago, I absorbed the Story fragment of the 'Casanova Who Died During Sexual Acts' and became pretty good looking for a while, but this was on another scale compared to that.</p>
 <p class="orv_line">I spoke in an admiring tone of voice. "It's true that the 999th regression turn is amazing. The 3rd turn doesn't have skills like this one, you know."</p>
 <p class="orv_line">– …3rd turn?</p>
 <p class="orv_line">"Oh, you didn't know? Yoo Joonghyuk in this place is the 3rd turn. And this is the 3rd turn world-line, too."</p>
-<p class="orv_line">The kkoma Yoo Joonghyuk number [999] stared deeply at me for a while after hearing those words, and asked me a question.</p>
+<p class="orv_line">The kkoma Yoo Joonghyuk number <strong>[999]</strong> stared deeply at me for a while after hearing those words, and asked me a question.</p>
 <p class="orv_line">– Why do you think that?"</p>
 <p class="orv_line">"What do you mean why…?"</p>
 <p class="orv_line">I was about to reply with "Because the 'Ways of Survival' starts off with the 3rd turn, that's why" but stopped. I decided to refine my answer just a bit.</p>
@@ -302,28 +309,28 @@
 <p class="orv_line">I wasn't going to follow the 3rd turn's story as it was in the original, so there wouldn't have been a reason for me to start in this particular turn even if that's where the novel began.</p>
 <p class="orv_line">…I don't know. It's not as if I can figure this out right now, anyway.</p>
 <p class="orv_line">"Yoo Joonghyuk in this world-line said that he was the 'third turn'. So, this place is the third regression turn."</p>
-<p class="orv_line">And the information I confirmed through the [Character List] said so, too.</p>
-<p class="orv_line">But then, [999] spoke in a mocking tone.</p>
+<p class="orv_line">And the information I confirmed through the <strong>[Character List]</strong> said so, too.</p>
+<p class="orv_line">But then, <strong>[999]</strong> spoke in a mocking tone.</p>
 <p class="orv_line">– Trusting such information at its face value. How naïve.</p>
 <p class="orv_line">"What?"</p>
 <p class="orv_line">– Never mind. We've seemed to have arrived.</p>
 <p class="orv_line">Along with the blinding light, the lengthy dimension tunnel finally came to an end. What appeared next was a giant Gate leading to the new scenario's location.</p>
-<p class="orv_line">I spotted a group of beings waiting to enter in front of the Gate. I collected the [X-grade Ferrarghini] and joined the group.</p>
+<p class="orv_line">I spotted a group of beings waiting to enter in front of the Gate. I collected the <strong>[X-grade Ferrarghini]</strong> and joined the group.</p>
 <p class="orv_line">A Constellation was manning the entrance to the scenario location, rather than the usual Dokkaebis. But that made sense, since the host for this 'Giant Story' scenario was a Nebula.</p>
 <p class="orv_line">Although it was one of the largest Nebulas out there, it had almost no point of contact with me until now.</p>
-<div class="orv_constellation"><p>[Next.]</p></div>
+<div class="orv_constellation"><p>Next.</p></div>
 <p class="orv_line">It was a Constellation holding a massive three-pronged spear on one hand, while wearing a combination of aged crimson crown and armour set.</p>
 <p class="orv_line">The domineering Status exuding from his entire body attested to the fact that he was a Narrative-grade Constellation possessing a pretty hefty Status.</p>
 <p class="orv_line">The Guardian of Buddhist Laws, Virudhaka.</p>
 <p class="orv_line">He was one of the Four Heavenly Kings that protected the entrance of the &lt;Heavenly Palace&gt;, the headquarters of the Nebula &lt;Emperor&gt;.</p>
-<div class="orv_constellation"><p>[Next.]</p></div>
+<div class="orv_constellation"><p>Next.</p></div>
 <p class="orv_line">Not too long afterwards, my turn came around.</p>
 <p class="orv_line">Virudhaka glared at my face intently as if he wanted to discover anything suspicious on it and eventually, threw out his first question.</p>
-<div class="orv_constellation"><p>[Your purpose for visiting?]</p></div>
-<div class="orv_constellation"><p>[I came to participate in the Giant Story.]</p></div>
-<div class="orv_constellation"><p>[Your Modifier.]</p></div>
+<div class="orv_constellation"><p>Your purpose for visiting?</p></div>
+<div class="orv_constellation"><p>I came to participate in the Giant Story.</p></div>
+<div class="orv_constellation"><p>Your Modifier.</p></div>
 <p class="orv_line">Obviously, I couldn't use the 'Demon King of Salvation' here. Fortunately, I did have a brand new Modifier I received not too long ago.</p>
-<div class="orv_constellation"><p>[It's the 'Watcher of Light and Darkness'.]</p></div>
+<div class="orv_constellation"><p>It's the 'Watcher of Light and Darkness'.</p></div>
 <br>
 <hr>
         </article>
@@ -331,18 +338,12 @@
             <a href="./ch_423"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_425">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="424" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="479" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="423" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="423" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

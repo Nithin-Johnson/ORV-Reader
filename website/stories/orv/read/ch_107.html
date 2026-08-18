@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 107: Ep. 21 – Things That Can't Be Changed, V</title>
     <meta property="og:title" content="Ch 107: Ep. 21 – Things That Can't Be Changed, V" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,37 +177,37 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00107.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 107: Ep. 21 – Things That Can't Be Changed, V</h1></div>
-<div class="orv_system"><p>[The level of the Bookmark skill is low, shortening the activation time.]</p></div>
-<div class="orv_system"><p>[Activation Time: 30 minutes]</p></div>
-<div class="orv_system"><p>[Your understanding of the character is significant. You can select some of her skills to import.]</p></div>
+<div class="orv_system"><p>The level of the Bookmark skill is low, shortening the activation time.</p></div>
+<div class="orv_system"><p>Activation Time: 30 minutes</p></div>
+<div class="orv_system"><p>Your understanding of the character is significant. You can select some of her skills to import.</p></div>
 <p class="orv_line">Shin Yoosung ran towards me and I ran towards her. No one wanted to kill each other and there was no sincerity. This was only a fight for the constellations' amusement. Everything was a scenario and therefore everything was fake. However, the result of this battle was that someone was going to die.</p>
-<div class="orv_system"><p>['Judgment Time Lv. 5' has been activated.]</p></div>
+<div class="orv_system"><p>'Judgment Time Lv. 5' has been activated.</p></div>
 <p class="orv_line">The activation skill was level 5. It seemed that Jung Heewon had been training hard. Jung Heewon wasn't here but it wasn't bad.</p>
-<div class="orv_system"><p>[The constellation 'Scribe of Heaven' is embarrassed.]</p></div>
-<div class="orv_system"><p>[Constellations of the Absolute Good system are deep in thought.]</p></div>
+<div class="orv_system"><p>The constellation 'Scribe of Heaven' is embarrassed.</p></div>
+<div class="orv_system"><p>Constellations of the Absolute Good system are deep in thought.</p></div>
 <p class="orv_line">It was natural to be confused since someone who wasn't a judge had used an unauthorized skill. Yet they were bound to give me permission. It was because the presence in front of me was obviously evil.</p>
-<div class="orv_system"><p>[The Absolute Good constellations have agreed to the use of this skill.]</p></div>
+<div class="orv_system"><p>The Absolute Good constellations have agreed to the use of this skill.</p></div>
 <p class="orv_line">A hot aura sprang up from deep inside my body. It was a blind sense of righteousness that would punish all evils in the world. The history of the archangels who fought a holy war with the great demons passed through my head in pieces.</p>
 <p class="orv_line">–Punish evil.</p>
 <p class="orv_line">Judgment Time was originally a skill used by the great valkyries. Thus, the user of this skill received the archangels' favour.</p>
@@ -236,11 +243,11 @@
 <p class="orv_line">It was only possible to use Bookmark for 30 minutes. Thus, I had to end it in only 30 minutes. The black aura flowing from Shin Yoosung's body thickened. It meant that her physical stats were increasing due to the evil energy.</p>
 <p class="orv_line">Yoo Joonghyuk's expression hardened. "…It seems that she joined hands with a great demon to cross worlds."</p>
 <p class="orv_line">Yoo Joonghyuk's guess was right. In fact, now her soul was mortgaged to a great demon. Then that great demon turned her over to the damn dokkaebis.</p>
-<div class="orv_constellation"><p>[Hahaha, interesting. Very interesting.]</p></div>
+<div class="orv_constellation"><p>Hahaha, interesting. Very interesting.</p></div>
 <p class="orv_line">The intermediate dokkaebi sounded pleasantly surprised.</p>
-<div class="orv_system"><p>[The scenario is now like this.]</p></div>
+<div class="orv_system"><p>The scenario is now like this.</p></div>
 <p class="orv_line">It was a battlefield were blood splattered and flesh was damaged. The destruction of Seoul Dome, which I wanted to prevent, was approaching with every second.</p>
-<div class="orv_system"><p>[Many constellations are excited by the battle.]</p></div>
+<div class="orv_system"><p>Many constellations are excited by the battle.</p></div>
 <p class="orv_line">"Let's go."</p>
 <p class="orv_line">Yoo Joonghyuk launched himself quickly along with his words. Shin Yoosung puffed up and blew a breath towards us.</p>
 <p class="orv_line">Beast King's Breath. It was an ether storm of destructive that was comparable to the 5th grade sea species' Ice Breath.</p>
@@ -255,47 +262,47 @@
 <p class="orv_line">Yoo Joonghyuk had dealt some blows but the damage hardly accumulated. How long did we exchange blows? It had been already 20 minutes when I came to my senses.</p>
 <p class="orv_line">Yoo Joonghyuk's physical strength dropped sharply and the magic power potions I drank like juice were running out.</p>
 <p class="orv_line">Strong. I never thought I would struggle so much despite using Hour of Judgement. My stiff body creaked violently. The side effects of Judgment Time were gradually being felt.</p>
-<div class="orv_constellation"><p>[Hahaha! This is a really nice scenario. Constellations, don't you agree?]</p></div>
+<div class="orv_constellation"><p>Hahaha! This is a really nice scenario. Constellations, don't you agree?</p></div>
 <p class="orv_line">I listened to the voice of the intermediate dokkaebi and moved forward with all my strength. The fur of the Beast King's Sensitivity flapped like crazy.</p>
 <p class="orv_line">My skin became black from the ether storm. One step, two steps. I got near but time wasn't on our side. I wouldn't be able to do enough damage before the 30 minutes was up.</p>
 <p class="orv_line">Then something happened inside Shin Yoosung's body. Her body shook like she was struck by lightning and her dark eyes temporarily recovered its senses.</p>
-<div class="orv_quote"><p>「 Attack me. 」</p></div>
+<div class="orv_quote"><p>Attack me.</p></div>
 <p class="orv_line">The disaster Shin Yoosung was controlling her body with her will.</p>
-<div class="orv_quote"><p>「 Stop me. 」</p></div>
+<div class="orv_quote"><p>Stop me.</p></div>
 <p class="orv_line">I didn't say it but I heard it.</p>
-<div class="orv_quote"><p>「 Protect this 'round'. 」</p></div>
+<div class="orv_quote"><p>Protect this 'round'.</p></div>
 <p class="orv_line">I broke through the temporarily weakened ether storm and ran forward with Yoo Joonghyuk. I swung my sword and blood splattered from Shin Yoosung's body.</p>
-<div class="orv_system"><p>[The constellation 'Scribe of Heaven' is looking at you.]</p></div>
+<div class="orv_system"><p>The constellation 'Scribe of Heaven' is looking at you.</p></div>
 <p class="orv_line">I did my best not to show the worst performance.</p>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is looking at you.]</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is looking at you.</p></div>
 <p class="orv_line">Shin Yoosung screamed as she was cut by the blade and the storm blew Yoo Joonghyuk back.</p>
 <p class="orv_line">"…Go, Kim Dokja."</p>
 <p class="orv_line">I pierced through the gap that Yoo Joonghyuk made. The Blade of Faith dug exactly into Shin Yoosung's shoulder without hesitation.</p>
 <p class="orv_line">Magic power ran through the blade and ripped through the Beast King's Sensitivity. Then Shin Yoosung's left arm was cut off.</p>
 <p class="orv_line">Blood fell. I stared into Shin Yoosung's face. Just like in Ways of Survival, Shin Yoosung was smiling. I realized that she deliberately allowed herself to be hit by my sword.</p>
-<div class="orv_system"><p>[A number of constellations can't take their eyes off your battle.]</p></div>
+<div class="orv_system"><p>A number of constellations can't take their eyes off your battle.</p></div>
 <p class="orv_line">"Dammit…" I smiled weakly and the sword fell from my hands.</p>
 <p class="orv_line">Shin Yoosung laughed.</p>
-<div class="orv_quote"><p>「 Don't you look stupid? 」</p></div>
+<div class="orv_quote"><p>Don't you look stupid?</p></div>
 <p class="orv_line">She grabbed me and threw me to the ground without any screams of anger. However, it didn't hurt. It wasn't an attack.</p>
-<div class="orv_quote"><p>「 Do you want to continue? 」</p></div>
+<div class="orv_quote"><p>Do you want to continue?</p></div>
 <p class="orv_line">"Yes."</p>
 <p class="orv_line">I swung my sword towards her and Shin Yoosung fired a breath at me again. It was like an answer to a question. We frantically damaged each other.</p>
 <p class="orv_line">"It can't continue like this."</p>
 <p class="orv_line">My Beast King's Sensitivity was losing its effect because I was lacking magic power. Hour of Judgement strengthened my body to the limits but it was just a temporary crutch. Blood flowed and the world spun because of dizziness. However, I didn't stop. The damage was definitely accumulating.</p>
-<div class="orv_system"><p>[Some constellations reluctant towards you have become curious.]</p></div>
+<div class="orv_system"><p>Some constellations reluctant towards you have become curious.</p></div>
 <p class="orv_line">Go crazy.</p>
-<div class="orv_system"><p>[Constellations roaming the battlefields are paying attention to your battle.]</p></div>
+<div class="orv_system"><p>Constellations roaming the battlefields are paying attention to your battle.</p></div>
 <p class="orv_line">Make a lot of fuss.</p>
-<div class="orv_system"><p>[Constellations of the great battlefields praise your will.]</p></div>
+<div class="orv_system"><p>Constellations of the great battlefields praise your will.</p></div>
 <p class="orv_line">Just wait until the day I go and pull out your tongues.</p>
 <p class="orv_line">How many more blows did we exchange? My weakened body staggered back.</p>
-<div class="orv_system"><p>[There are 30 seconds left for Bookmark.]</p></div>
+<div class="orv_system"><p>There are 30 seconds left for Bookmark.</p></div>
 <p class="orv_line">Some internal organs were damaged and a broken rib kept irritating my lungs. I did the best I could yet the disaster was still strong. The recovered eyes of Shin Yoosung were once again turning black.</p>
 <p class="orv_line">In any case, this Disaster of Floods seemed stronger than the original novel. The disaster Shin Yoosung looked at me with anxious eyes.</p>
-<div class="orv_quote"><p>「 It isn't enough. 」</p></div>
+<div class="orv_quote"><p>It isn't enough.</p></div>
 <p class="orv_line">She couldn't commit suicide. The intermediate dokkaebi wouldn't allow her to die that way. This was the limit that she could penalize herself. I was also at my limit in a different way.</p>
-<div class="orv_quote"><p>「 How are you going to stop me? 」</p></div>
+<div class="orv_quote"><p>How are you going to stop me?</p></div>
 <p class="orv_line">"Don't worry. They'll come soon. The person who will stop you."</p>
 <p class="orv_line">From the beginning, I had no intention of killing Shin Yoosung with my own hands. It was impossible for Yoo Joonghyuk in his current state. There was still one person remaining who could kill her.</p>
 <p class="orv_line">The moment Shin Yoosung's mouth was about to open, the ground around her exploded.</p>
@@ -309,14 +316,14 @@
 <p class="orv_line">A red aura rose as she activated Hour of Judgement. It was much more powerful than the skill I stole. Jung Heewon was the last card I had left. If this failed…</p>
 <p class="orv_line">Had I done enough damage to Shin Yoosung? Would Jung Heewon finish the job well?</p>
 <p class="orv_line">"What are you so worried about?" Jung Heewon asked with a smile. Confidence that was different than usual filled her voice. It wasn't just Judgment Time that she believed in.</p>
-<div class="orv_system"><p>[The constellation 'Scribe of Heaven' is talking to himself.]</p></div>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' shows hostility towards Jung Heewon's sponsor.]</p></div>
+<div class="orv_system"><p>The constellation 'Scribe of Heaven' is talking to himself.</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' shows hostility towards Jung Heewon's sponsor.</p></div>
 <p class="orv_line">That reminded me, Jung Heewon had a sponsor. Who had she chosen? Shin Yoosung watched Jung Heewon with shaky eyes.</p>
-<div class="orv_quote"><p>「 You… 」</p></div>
+<div class="orv_quote"><p>You…</p></div>
 <p class="orv_line">"I roughly know the situation. My sponsor was making a lot of noise along the way." Jung Heewon faced Shin Yoosung with sad eyes. "Thus, there is no need to worry."</p>
 <p class="orv_line">Jung Heewon lightly swept her sword in front of her. Flames started to rise from the places her hands touched.</p>
 <p class="orv_line">It was early in the morning. On a night where the darkness of Seoul was the darkest, Jung Heewon's blade burned. The flames on the blade were brighter than any flames I had seen. It was the holy white flames of a stigma that would punish all evil.</p>
-<div class="orv_constellation"><p>[Hell Flames Ignition.]</p></div>
+<div class="orv_constellation"><p>Hell Flames Ignition.</p></div>
 <p class="orv_line">I naturally knew this stigma very well. I remembered the description of the stigma from Ways of Survival.</p>
 <p class="orv_line">In some cases, it was one of the greatest stigmas of Ways of Survival and boasted powerful destructive power comparable to the stigma of The Great Sage Heaven's Equal.</p>
 <p class="orv_line">Hell Flames Ignition was the stigma of Demon-like Judge of Fire.</p>
@@ -329,18 +336,12 @@
             <a href="./ch_106"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_108">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="107" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="305" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="106" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="106" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 185: Ep. 35 - The 73rd Demon King, IV</title>
     <meta property="og:title" content="Ch 185: Ep. 35 - The 73rd Demon King, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,36 +177,36 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00185.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 185: Ep. 35 - The 73rd Demon King, IV</h1></div>
 <p class="orv_line">"Hey! What nonsense are you saying?" I shouted while hurriedly running towards Yoo Joonghyuk.</p>
 <p class="orv_line">Aura started to emerge from Yoo Joonghyuk's body as he held the piece of jade.</p>
-<div class="orv_system"><p>[The selected person is evolving into a demon king!]</p></div>
+<div class="orv_system"><p>The selected person is evolving into a demon king!</p></div>
 <p class="orv_line">The person who was selected by the jade would become the 73rd demon king.</p>
 <p class="orv_line">–Can you promise not to give up on that goal, no matter what?</p>
 <p class="orv_line">A few days ago, Yoo Joonghyuk had asked me a meaningful question about my goal. Was my goal to reach the end of the scenarios…</p>
 <p class="orv_line">Don't tell me…? No, it was impossible. I almost had a fit as I screamed, "Yoo Joonghyuk you son of a bitch!"</p>
 <p class="orv_line">Then the sound of steel wire moving through the air was heard. Dozens of wires poured down towards Yoo Joonghyuk, one of them snatching the jade that was in Yoo Joonghyuk's hand.</p>
-<div class="orv_system"><p>[The succession of the demon king is cancelled.]</p></div>
+<div class="orv_system"><p>The succession of the demon king is cancelled.</p></div>
 <p class="orv_line">A bewildered expression appeared on Yoo Joonghyuk's face.</p>
 <p class="orv_line">"Dokja-ssi!"</p>
 <p class="orv_line">I looked back and saw dozens of threads stretching out from Yoo Sangah's hand. As everyone was frozen, only she kept her mind. She tied up the demon king's jade with Binding Thread and it flew to this side. Yoo Joonghyuk let out a huge burst of killing intent.</p>
@@ -224,7 +231,7 @@
 <p class="orv_line">"Shouldn't you know as well? There is only one way to clear this scenario."</p>
 <p class="orv_line">I glanced at the scenario window floating in the air.</p>
 <div class="orv_window">
-<h3 class="orv_window_title">[Main Scenario #10 - 73rd Demon King]</h3>
+<h3 class="orv_window_title">Main Scenario #10 - 73rd Demon King</h3>
 <p>Category: Main</p>
 <p>Difficulty level: SS+</p>
 <p>Clear Conditions: You can choose one of two ways. Take possession of the throne and become the 73rd demon king, or kill the newly born 73rd demon king. The scenario can only be cleared by choosing one of these two methods and there is no other way to proceed.</p>
@@ -246,14 +253,14 @@
 <p class="orv_line">"Get out of the way Kim Dokja."</p>
 <p class="orv_line">My Unbroken Faith cried out while his Splitting the Sky Sword pointed at me. In this stubborn confrontational state, I desperately thought about it. How could I persuade this person?</p>
 <p class="orv_line">No matter how much I squeezed my head, I couldn't come up with a method. If this continued, this jerk would become the demon king and take the damn regression route.</p>
-<div class="orv_system"><p>[The exclusive skill, 'Omniscient Reader's Viewpoint' stage 2 has been activated!]</p></div>
+<div class="orv_system"><p>The exclusive skill, 'Omniscient Reader's Viewpoint' stage 2 has been activated!</p></div>
 <p class="orv_line">I started to soak up his thoughts like a sponge.</p>
-<div class="orv_quote"><p>「 The cost of failing this scenario is expulsion from the scenario. 」</p></div>
-<div class="orv_quote"><p>「 There is no one who can survive being expelled from the scenario. Then Kim Dokja's resurrection ability is meaningless. 」</p></div>
-<div class="orv_quote"><p>「 Perhaps this is the death that his fate is pointing to. 」</p></div>
-<div class="orv_quote"><p>「 If Kim Dokja becomes the demon king, he will die here. 」</p></div>
+<div class="orv_quote"><p>The cost of failing this scenario is expulsion from the scenario.</p></div>
+<div class="orv_quote"><p>There is no one who can survive being expelled from the scenario. Then Kim Dokja's resurrection ability is meaningless.</p></div>
+<div class="orv_quote"><p>Perhaps this is the death that his fate is pointing to.</p></div>
+<div class="orv_quote"><p>If Kim Dokja becomes the demon king, he will die here.</p></div>
 <p class="orv_line">My heart was heavy as I received the waterfall of thoughts.</p>
-<div class="orv_quote"><p>「 Thus, it is me who should sacrifice themselves here. 」</p></div>
+<div class="orv_quote"><p>Thus, it is me who should sacrifice themselves here.</p></div>
 <p class="orv_line">This guy was really going to sacrifice himself. The arrogant and aloof Yoo Joonghyuk. It was for the sake of others, not himself.</p>
 <p class="orv_line">Suddenly, unknown emotions rose inside me. "Then you? What about you? If you die here, what about your damn goal?!"</p>
 <p class="orv_line">"You will do it for me."</p>
@@ -261,7 +268,7 @@
 <p class="orv_line">Yoo Joonghyuk watched our companions behind me. "The one who can save the world… it might be you, not me."</p>
 <p class="orv_line">Lee Hyunsung, Lee Jihye, Shin Yoosung, Lee Seolhwa…</p>
 <p class="orv_line">There was deep regret in Yoo Joonghyuk's eyes as he gazed at every single person. I seemed to know what he was thinking.</p>
-<div class="orv_quote"><p>「 There have never been so many people who made it to here. And maybe it won't happen again in the future. 」</p></div>
+<div class="orv_quote"><p>There have never been so many people who made it to here. And maybe it won't happen again in the future.</p></div>
 <p class="orv_line">This was the Yoo Joonghyuk who had experienced several lives and received advance information from the 41st regression.</p>
 <p class="orv_line">There were no cases like this regression. This fact caused Yoo Joonghyuk to shake.</p>
 <p class="orv_line">My mind worked quickly. How could I persuade him…</p>
@@ -295,7 +302,7 @@
 <p class="orv_line">"I wish but… fate says differently."</p>
 <p class="orv_line">"You don't think that fate can be overcome? To me…"</p>
 <p class="orv_line">In the end, Lee Boksoon retold the story of how she raised her six siblings through all types of hardships. Lee Sookyug smiled bitterly. No one would've suffered if fate was so easily overcome.</p>
-<div class="orv_quote"><p>「 If he doesn't go to the next scenario, Incarnation Kim Dokja can live. 」</p></div>
+<div class="orv_quote"><p>If he doesn't go to the next scenario, Incarnation Kim Dokja can live.</p></div>
 <p class="orv_line">Lee Sookyung sacrificed 20 years of her life and read this sentence from 'fate'.</p>
 <p class="orv_line">Kim Dokja could live if he didn't go to the next scenario. In other words, Kim Dokja would surely die when he went to the next scenario.</p>
 <p class="orv_line">'…Dokja'.</p>
@@ -307,11 +314,11 @@
 <p class="orv_line">'…What the hell is it?'</p>
 <p class="orv_line">There, Lee Sookyung confronted the presence inside the wall. Her existence was crushed and recreated so there weren't many accurate memories left.</p>
 <p class="orv_line">The exact structure of the interior of the wall… she didn't remember. Still, there was one thing she remembered. It was the answer to a question.</p>
-<div class="orv_quote"><p>「 What is the way for my son to survive? How can he get rid of that damn fate? 」</p></div>
+<div class="orv_quote"><p>What is the way for my son to survive? How can he get rid of that damn fate?</p></div>
 <p class="orv_line">Lee Sookyung asked this even when her existence was fading away. The being inside the wall laughed like it was having fun.</p>
-<div class="orv_quote"><p>「 There is only one way to escape from fate. 」</p></div>
+<div class="orv_quote"><p>There is only one way to escape from fate.</p></div>
 <p class="orv_line">There was a strange smile, as if this whole situation was a joke.</p>
-<div class="orv_quote"><p>「 Kim Dokja already knows how to do it. 」</p></div>
+<div class="orv_quote"><p>Kim Dokja already knows how to do it.</p></div>
 <br>
 <hr>
         </article>
@@ -319,18 +326,12 @@
             <a href="./ch_184"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_186">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="185" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="168" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="184" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="184" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

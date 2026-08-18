@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 92: Ep. 18 – A Reader's Fight, V</title>
     <meta property="og:title" content="Ch 92: Ep. 18 – A Reader's Fight, V" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,31 +177,31 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00092.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 92: Ep. 18 – A Reader's Fight, V</h1></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' will judge your sincerity.]</p></div>
-<div class="orv_system"><p>[The constellation 'Secretive Plotter' is somewhat annoyed.]</p></div>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is actively giving off annoyance.]</p></div>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' asks if you really want to move channels.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' will judge your sincerity.</p></div>
+<div class="orv_system"><p>The constellation 'Secretive Plotter' is somewhat annoyed.</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is actively giving off annoyance.</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' asks if you really want to move channels.</p></div>
 <p class="orv_line">Dokgak smiled like he was interested.</p>
 <p class="orv_line">"A bridge?"</p>
 <p class="orv_line">"Connect your channel to me."</p>
@@ -218,9 +225,9 @@
 <p class="orv_line">"Before that, I want to say hello for a moment. Is that okay?"</p>
 <p class="orv_line">"…Please do so."</p>
 <p class="orv_line">Dokgak made a disgruntled expression but he eventually allowed it. I started talking with my eyes closed. "Constellations of Tokyo Dome. Can you hear me?"</p>
-<div class="orv_system"><p>[Some of the constellations who hate the Korean peninsula are looking at you.]</p></div>
+<div class="orv_system"><p>Some of the constellations who hate the Korean peninsula are looking at you.</p></div>
 <p class="orv_line">"I'm sure that some of you have heard my story. I am Kim Dokja, the one who smashed the Absolute Throne and became the king of a kingless world. Please note that I have no sponsor… um, well. That's correct. I hope to get along with you in the future."</p>
-<div class="orv_system"><p>[Constellations of Tokyo Dome are listening to you.]</p></div>
+<div class="orv_system"><p>Constellations of Tokyo Dome are listening to you.</p></div>
 <p class="orv_line">I only gave a brief introduction and some constellations were already starting to approach me indirectly.</p>
 <p class="orv_line">Good. The start wasn't bad?</p>
 <p class="orv_line">"By the way. As a memorial to my channel, I will do a small event. I mean, a joint event between South Korea and Japan… If you are curious, please connect to #BI-7623 right now. I will draw tickets for the early constellations and give coins―"</p>
@@ -230,16 +237,16 @@
 <p class="orv_line">I would gladly give him a surprise because he cut me off at the point where people were feeling curious. Then Dokgak's body started to slowly change.</p>
 <p class="orv_line">"Wait, constellations. Where are you going?"</p>
 <p class="orv_line">The flow was changing. Constellations started pouring into Bihyung's channel little by little.</p>
-<div class="orv_system"><p>[A number of constellations have entered channel #BI-7623.]</p></div>
-<div class="orv_system"><p>[The channel level has risen.]</p></div>
+<div class="orv_system"><p>A number of constellations have entered channel #BI-7623.</p></div>
+<div class="orv_system"><p>The channel level has risen.</p></div>
 <p class="orv_line">I smiled widely. "A lot of you came. Thank you. Are you here for the event?"</p>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is annoyed at the appearance of these constellations.]</p></div>
-<div class="orv_system"><p>[The constellation 'Maritime War God' resents the appearance of hostile constellations.]</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is annoyed at the appearance of these constellations.</p></div>
+<div class="orv_system"><p>The constellation 'Maritime War God' resents the appearance of hostile constellations.</p></div>
 <p class="orv_line">"Wait, don't fight. I didn't call you here to fight."</p>
-<div class="orv_system"><p>[The constellation who likes Murasama is urging you to proceed with the coin lottery.]</p></div>
-<div class="orv_system"><p>[Some constellations are asking about the coin event.]</p></div>
+<div class="orv_system"><p>The constellation who likes Murasama is urging you to proceed with the coin lottery.</p></div>
+<div class="orv_system"><p>Some constellations are asking about the coin event.</p></div>
 <p class="orv_line">"Don't be in a hurry. I'll do it in a bit. Think about it. Is it so important to get a coin or two? What is the point if you don't have incarnations to spend the coins on? Go slowly, slowly."</p>
-<div class="orv_system"><p>[Some constellations are looking at you with disgruntled eyes.]</p></div>
+<div class="orv_system"><p>Some constellations are looking at you with disgruntled eyes.</p></div>
 <p class="orv_line">"You may have heard of this but I'll tell you again. I am Kim Dokja and I don't have a sponsor. I won the war between kings and prevented a disaster before it began. There are probably few incarnations stronger than me if you look around the world. There will be none with no sponsor. By the way… it will be hard to last until the end."</p>
 <p class="orv_line">Dokgak started to turn pale as he noticed my intentions.</p>
 <p class="orv_line">"Wait! You…!"</p>
@@ -247,11 +254,11 @@
 <p class="orv_line">"Seoul Dome is now ahead of the fifth scenario. If you are smart, you will know what that means. Yes, that's right. There will soon be an event that you will like."</p>
 <p class="orv_line">Now there was less than a week until the start of the scenario. Before the entire disaster scenario started, a special event would be hosted. A banquet for all the constellations in the Star Stream. Soon, the second Sponsor Selection would start.</p>
 <p class="orv_line">I continued speaking. "In celebration, I would like to do a surprise event. If the number of subscriptions to this channel reaches 10,000 on the day of the Sponsor Selection…"</p>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is gulping.]</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is gulping.</p></div>
 <p class="orv_line">"I will make one of the constellations in this channel my partner."</p>
-<div class="orv_system"><p>[The constellation 'Secretive Plotter' is looking at you with interest.]</p></div>
+<div class="orv_system"><p>The constellation 'Secretive Plotter' is looking at you with interest.</p></div>
 <p class="orv_line">"It doesn't matter what gender, race or world you originated from. It doesn't matter if you are strong or weak, famous or not famous. Anything is okay. What I am looking for is passion. I hope you have the passion to see the end of this damn story with me."</p>
-<div class="orv_system"><p>[The constellation 'Bald General of Justice' wipes his head.]</p></div>
+<div class="orv_system"><p>The constellation 'Bald General of Justice' wipes his head.</p></div>
 <p class="orv_line">"Whoever is good. I will be waiting for you. 10,000 viewers. Do you remember? Please convey it to other people properly."</p>
 <p class="orv_line">"W-Wait a minute! Wait! Just wait!"</p>
 <p class="orv_line">Dokgak cried out but it was already too late. There was a wicked voice and unstoppable channel messages. I was dizzy from the indirect messages that came from everywhere.</p>
@@ -289,16 +296,16 @@
 <p class="orv_line">I couldn't tell if he was laughing or crying. Perhaps this was the expression that dokkaebis made when they were really happy.</p>
 <p class="orv_line">"Do you know what I am seeing right now?"</p>
 <p class="orv_line">I didn't know but I had an idea. It probably wasn't much different from what I'm seeing.</p>
-<div class="orv_system"><p>[The channel level has risen.]</p></div>
-<div class="orv_system"><p>[The channel level has risen.]</p></div>
-<div class="orv_system"><p>[The channel level has risen.]</p></div>
+<div class="orv_system"><p>The channel level has risen.</p></div>
+<div class="orv_system"><p>The channel level has risen.</p></div>
+<div class="orv_system"><p>The channel level has risen.</p></div>
 <p class="orv_line">.</p>
 <p class="orv_line">.</p>
 <p class="orv_line">.</p>
-<div class="orv_system"><p>[A constellation who likes the Korean peninsula wants to be your sponsor.]</p></div>
-<div class="orv_system"><p>[A constellation who wants historical reconciliation wants to be your sponsor.]</p></div>
-<div class="orv_system"><p>[A constellation who likes to change gender wonders about your heart.]</p></div>
-<div class="orv_system"><p>[A constellation that enjoys subculture is interested in you.]</p></div>
+<div class="orv_system"><p>A constellation who likes the Korean peninsula wants to be your sponsor.</p></div>
+<div class="orv_system"><p>A constellation who wants historical reconciliation wants to be your sponsor.</p></div>
+<div class="orv_system"><p>A constellation who likes to change gender wonders about your heart.</p></div>
+<div class="orv_system"><p>A constellation that enjoys subculture is interested in you.</p></div>
 <p class="orv_line">The endless messages started to fill the ears of me and Bihyung. Now the stage would expand to the world.</p>
 <br>
 <hr>
@@ -307,18 +314,12 @@
             <a href="./ch_91"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_93">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="92" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="244" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="91" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="91" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 518: Epilogue 1 - The World of Zero, II</title>
     <meta property="og:title" content="Ch 518: Epilogue 1 - The World of Zero, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00518.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 518: Epilogue 1 - The World of Zero, II</h1></div>
 <p class="orv_line">Yoo Joonghyuk was reading the article of a portal site on a person's phone next to him.</p>
@@ -213,15 +220,15 @@
 <p class="orv_line">⸢The terror.⸥</p>
 <p class="orv_line">The lights in the subway went away the next second. The train came to a sudden emergency stop, and the surroundings rapidly filled up with darkness.</p>
 <p class="orv_line">Yoo Joonghyuk felt all the hair on his arms stand up. The inside of his head felt dizzy. Was this really an act of terror? Something that he'd only ever heard about was really happening in South Korea, too? Where should he evacuate to? Should the police be notified? Or…</p>
-<div class="orv_constellation"><p>[Welcome, everyone. Nice to meet you.]</p></div>
+<div class="orv_constellation"><p>Welcome, everyone. Nice to meet you.</p></div>
 <p class="orv_line">Yoo Joonghyuk's dilemmas were carefully extinguished by a small CGI-like lump suddenly appearing in mid-air.</p>
-<div class="orv_constellation"><p>[It's getting tiring to make the same introduction over and over again, but… Anyway, this situation isn't a movie shoot nor is it a terror inciden… Huh?]</p></div>
+<div class="orv_constellation"><p>It's getting tiring to make the same introduction over and over again, but… Anyway, this situation isn't a movie shoot nor is it a terror inciden… Huh?</p></div>
 <p class="orv_line">These creatures would later introduce themselves as 'Dokkaebis'.</p>
 <p class="orv_line">That unknown existence floating in the air observed the situation within the train and broke out into a wide smile.</p>
-<div class="orv_constellation"><p>[What's this? Hahahaha! Dear Constellations, please take a look over here! The scenarios haven't even begun yet, but something entertaining is already underway!]</p></div>
+<div class="orv_constellation"><p>What's this? Hahahaha! Dear Constellations, please take a look over here! The scenarios haven't even begun yet, but something entertaining is already underway!</p></div>
 <p class="orv_line">The Dokkaebi spoke in a languid but cruel tone of voice and laughed.</p>
-<div class="orv_constellation"><p>[I'm already beginning to look forward to this particular car. I pray that you'll all show us an entertaining tale.]</p></div>
-<div class="orv_system"><p>[Main Scenario has arrived.]</p></div>
+<div class="orv_constellation"><p>I'm already beginning to look forward to this particular car. I pray that you'll all show us an entertaining tale.</p></div>
+<div class="orv_system"><p>Main Scenario has arrived.</p></div>
 <div class="orv_window">
 <p>&lt;Main Scenario #1 – Proof of Worth&gt;</p>
 <p>Type: Main</p>
@@ -254,7 +261,7 @@
 <p class="orv_line">⸢If Choi Han-Gyu manages to survive, he'll evolve into 'demonic bomber' at a later stage.⸥</p>
 <p class="orv_line">Choi Han-Gyu pulled out a hammer from his side, and proceeded to hit the back of a middle-aged man's head right next to him. The victim's knees powerlessly buckled.</p>
 <p class="orv_line">"I-if I do this…"</p>
-<div class="orv_system"><p>[Incarnation 'Choi Han-Gyu' has achieved the feat of 'first murder'!]</p></div>
+<div class="orv_system"><p>Incarnation 'Choi Han-Gyu' has achieved the feat of 'first murder'!</p></div>
 <p class="orv_line">Choi Han-Gyu began his awakening as he stared at the Coins raining down before him.</p>
 <p class="orv_line">Just like how it always had been, the ones that adapted fastest to &lt;Star Stream&gt; were those that couldn't adapt to the real world.</p>
 <p class="orv_line">"D-did you all see that? I, I, just now?"</p>
@@ -267,8 +274,8 @@
 <p class="orv_line">Sprays of sticky bloody rose up from the back of the man.</p>
 <p class="orv_line">"…Then, e-everyone can become rich."</p>
 <p class="orv_line">The timer in the air was ticking down bit by bit.</p>
-<div class="orv_system"><p>[Remaining time has decreased.]</p></div>
-<div class="orv_system"><p>[Remaining time: 10 minutes]</p></div>
+<div class="orv_system"><p>Remaining time has decreased.</p></div>
+<div class="orv_system"><p>Remaining time: 10 minutes</p></div>
 <p class="orv_line">Yoo Joonghyuk wordlessly stared at the spanner that rolled towards his feet. Even then, the crowd showed no signs of movement.</p>
 <p class="orv_line">Choi Han-Gyu shook his head as if he was disappointed, and stood up from his spot. "S-should I just k-kill everyone?"</p>
 <p class="orv_line">But then, a man suddenly reached out and grabbed hold of a hammer that Choi Han-Gyu had thrown.</p>
@@ -280,9 +287,9 @@
 <p class="orv_line">"Uwaaaah!!"</p>
 <p class="orv_line">As voices futilely spread out, people began waking up to the new reality. They couldn't tell what kind of a situation this was, but they were sure of one thing.</p>
 <p class="orv_line">⸢They'll die if they don't kill each other.⸥</p>
-<div class="orv_system"><p>[Extremely small number of Constellations are satisfied by the sight of the applicable subway car.]</p></div>
-<div class="orv_system"><p>[Extremely small number of Constellations are expressing their interest in Incarnation 'Choi Han-Gyu'.]</p></div>
-<div class="orv_system"><p>[A Constellation who hasn't revealed their Modifier is sponsoring Incarnation 'Choi Han-Gyu' with 100 Coins.]</p></div>
+<div class="orv_system"><p>Extremely small number of Constellations are satisfied by the sight of the applicable subway car.</p></div>
+<div class="orv_system"><p>Extremely small number of Constellations are expressing their interest in Incarnation 'Choi Han-Gyu'.</p></div>
+<div class="orv_system"><p>A Constellation who hasn't revealed their Modifier is sponsoring Incarnation 'Choi Han-Gyu' with 100 Coins.</p></div>
 <p class="orv_line">Choi Han-Gyu was laughing in satisfaction at the crowd. As for me, I was watching all these happenings next to this man.</p>
 <p class="orv_line">⸢Kim Dok ja⸥</p>
 <p class="orv_line">I slowly removed my hand from Choi Han-Gyu's neck.</p>
@@ -297,7 +304,7 @@
 <p class="orv_line">Not from the 4th, not 5th, and definitely not from the 1863rd, either.</p>
 <p class="orv_line">⸢He was the 0th turn.⸥</p>
 <p class="orv_line">Yoo Joonghyuk of the 0th turn.</p>
-<p class="orv_line">His feet broke into a sprint. His feet that couldn't use either the [Red Phoenix Shunpo] nor [Ways of the Wind] yet.</p>
+<p class="orv_line">His feet broke into a sprint. His feet that couldn't use either the <strong>[Red Phoenix Shunpo]</strong> nor <strong>[Ways of the Wind]</strong> yet.</p>
 <p class="orv_line">There were plenty of targets present. A trembling college student hurdled on the floor; a middle-aged man hiding next to the disabled seating; an office worker, too absorbed in assaulting the others and not having enough time to look behind.</p>
 <p class="orv_line">Yoo Joonghyuk ran past all of them. And then…</p>
 <p class="orv_line">⸢He selected the hardest opponent within this subway car as his target.⸥</p>
@@ -308,14 +315,14 @@
 <p class="orv_line">Choi Han-Gyu still carried several other tools, and not only that, he was in possession of a home-made explosive, as well. On the other hand, all Yoo Joonghyuk had was a spanner as thick as a child's arm.</p>
 <p class="orv_line">Even then, I wasn't worried.</p>
 <p class="orv_line">Although I didn't know the finer details of the 0th turn, Yoo Joonghyuk wouldn't die in this place. Not before he got to experience all these tragedies, and not before they led him to that vast cycle of regressions, Yoo Joonghyuk… wouldn't get killed.</p>
-<div class="orv_system"><p>[Incarnation 'Yoo Joonghyuk's' attribute, 'Pro Gamer' is awakening!]</p></div>
+<div class="orv_system"><p>Incarnation 'Yoo Joonghyuk's' attribute, 'Pro Gamer' is awakening!</p></div>
 <div class="orv_image"><img src="../../../assets/images/518 - Incarnation 'Yoo Joonghyuk's' attribute, 'Pro Gamer' is awakening.jpg" alt="" loading="lazy"></div>
 <div class="orv_notice"><p>* Unofficial fan illustration (non-canonical)</p></div>
 <p class="orv_line">He was awakening his exclusive attribute, the one that I was quite familiar with. It was a skill that allowed him to digitise everything in this world like a video game and analyse them. A skill to control his body, as if he was moving his game avatar.</p>
 <p class="orv_line">His spanner accurately struck Choi Han-Gyu's wrist. The bomber screamed out for a moment as the home-made explosive fell out from his grasp.</p>
 <p class="orv_line">Yoo Joonghyuk's spanner then accurately flew in towards the neck of flustered Choi Han-Gyu next. It was an unavoidable attack, a perfect counter that his talent had calculated.</p>
 <p class="orv_line">Unfortunately, even he had failed to take into account this one thing.</p>
-<div class="orv_system"><p>[Incarnation 'Choi Han-Gyu' is investing 900 Coins to 'stamina'!]</p></div>
+<div class="orv_system"><p>Incarnation 'Choi Han-Gyu' is investing 900 Coins to 'stamina'!</p></div>
 <p class="orv_line">And that was precisely the system of this new world.</p>
 <p class="orv_line">"T-that, hurts."</p>
 <p class="orv_line">Although a dark-red mark was left behind on Choi Han-Gyu's neck, it wasn't broken.</p>
@@ -336,7 +343,7 @@
 <p class="orv_line">I could sense everything in this world. Everything in the scenarios, including individual Incarnations all the way to the Constellations blanketing the heavens above.</p>
 <p class="orv_line">However, I failed to sense just this one thing.</p>
 <p class="orv_line">'Where is the Oldest Dream right now?'</p>
-<p class="orv_line">[The Fourth Wall] didn't answer me.</p>
+<p class="orv_line"><strong>[The Fourth Wall]</strong> didn't answer me.</p>
 <p class="orv_line">Yoo Joonghyuk's spinning spanner flew in, and was about to reach the home-made explosive.</p>
 <p class="orv_line">'Could it be…'</p>
 <p class="orv_line">⸢How did the 'Oldest Dream' manage to form a contract with the 0th turn's Yoo Joonghyuk?⸥</p>
@@ -349,24 +356,24 @@
 <p class="orv_line">⸢If that's the case, then just who was the 'Constellation Sponsor' that appeared during Yoo Joonghyuk's 0th turn?⸥</p>
 <p class="orv_line">The bomb exploded. The shower of debris flying out stabbed into Choi Han-Gyu's back, then into the bodies of people busy hacking away at each other. Accompanied by a loud screeching noise, the subway's ceiling was caving in. Several pieces of debris were flying straight towards Yoo Joonghyuk's heart and neck.</p>
 <p class="orv_line">Tsu-chuchuchut!</p>
-<div class="orv_system"><p>[You're the owner of the 'Final Wall'.]</p></div>
-<div class="orv_system"><p>[Your 'Mastery' isn't sufficient enough to interfere with the world-line.]</p></div>
-<div class="orv_system"><p>[The world-line's Probability is resisting you!]</p></div>
+<div class="orv_system"><p>You're the owner of the 'Final Wall'.</p></div>
+<div class="orv_system"><p>Your 'Mastery' isn't sufficient enough to interfere with the world-line.</p></div>
+<div class="orv_system"><p>The world-line's Probability is resisting you!</p></div>
 <p class="orv_line">I ignored the Probability and caught the flying debris. Along with the vicious heat enveloping my hand, the debris scattered into ashes in my palm.</p>
-<div class="orv_system"><p>[A deux ex machina the world-line doesn't recognise is activating!]</p></div>
-<div class="orv_system"><p>[The world has sensed your interference!]</p></div>
+<div class="orv_system"><p>A deux ex machina the world-line doesn't recognise is activating!</p></div>
+<div class="orv_system"><p>The world has sensed your interference!</p></div>
 <p class="orv_line">⸢Right at that moment, Yoo Joonghyuk raised his head.⸥</p>
 <p class="orv_line">Yoo Joonghyuk crawled out from underneath the collapsed Choi Han-Gyu and stared at me.</p>
 <p class="orv_line">⸢Although it was for the briefest of brief moments, Yoo Joonghyuk felt that there was someone standing before him.⸥</p>
 <p class="orv_line">"Who…?"</p>
-<div class="orv_system"><p>[Main Scenario #1 – Proof of Worth has concluded.]</p></div>
-<div class="orv_system"><p>[You have acquired the normal clear reward of 300 Coins.]</p></div>
-<div class="orv_system"><p>[100 Coins have been deducted as the channel usage fee.]</p></div>
-<div class="orv_system"><p>[Additional reward calculation has commenced.]</p></div>
+<div class="orv_system"><p>Main Scenario #1 – Proof of Worth has concluded.</p></div>
+<div class="orv_system"><p>You have acquired the normal clear reward of 300 Coins.</p></div>
+<div class="orv_system"><p>100 Coins have been deducted as the channel usage fee.</p></div>
+<div class="orv_system"><p>Additional reward calculation has commenced.</p></div>
 <p class="orv_line">Along with the scenario calculations, the heads of the people began exploding. And as the deluge of blood rained down, I silently looked at Yoo Joonghyuk on the floor.</p>
-<p class="orv_line">Bihyung's excited voice coming from the distance, as well as [The Fourth Wall]'s words of warning, could be heard next. Even the messages of Constellations suspecting the Probability streamed in, too.</p>
+<p class="orv_line">Bihyung's excited voice coming from the distance, as well as <strong>[The Fourth Wall]</strong>'s words of warning, could be heard next. Even the messages of Constellations suspecting the Probability streamed in, too.</p>
 <p class="orv_line">In the meantime, Yoo Joonghyuk was staring at the message spreading out before him with quaking eyes.</p>
-<div class="orv_system"><p>['Sponsor selection' is commencing!]</p></div>
+<div class="orv_system"><p>'Sponsor selection' is commencing!</p></div>
 <div class="orv_window">
 <p>&lt;Sponsor Selection&gt;</p>
 <p>– Please select your sponsor.</p>
@@ -375,8 +382,8 @@
 <p>2. Mouse that Eats Fingernails</p>
 <p>3. Abyssal Black Flame Dragon</p>
 </div>
-<div class="orv_system"><p>[A new Constellation has entered the channel!]</p></div>
-<div class="orv_system"><p>[A new Constellation is participating in the 'sponsor selection'!]</p></div>
+<div class="orv_system"><p>A new Constellation has entered the channel!</p></div>
+<div class="orv_system"><p>A new Constellation is participating in the 'sponsor selection'!</p></div>
 <div class="orv_window">
 <p>4. Demon King of Salvation</p>
 </div>
@@ -387,18 +394,12 @@
             <a href="./ch_517"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_519">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="518" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="570" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="517" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="517" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

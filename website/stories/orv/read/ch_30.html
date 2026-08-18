@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 30: Ep. 7 – Landlord, III</title>
     <meta property="og:title" content="Ch 30: Ep. 7 – Landlord, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,49 +177,49 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00030.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 30: Ep. 7 – Landlord, III</h1></div>
 <p class="orv_line">Yoo Joonghyuk was looking at everyone except for Lee Hyunsung. The three remaining people were standing together and I couldn't figure out exactly who Yoo Joonghyuk was looking at.</p>
-<div class="orv_quote"><p>「 …How is this possible? 」</p></div>
+<div class="orv_quote"><p>…How is this possible?</p></div>
 <p class="orv_line">Who was he looking at? I wanted to ask but I was afraid that my skill would be exposed. Yoo Joonghyuk still didn't know that I knew his thoughts. However, I guessed that he might've seen the information of Jung Heewon. Jung Heewon saw Yoo Joonghyuk's gaze and confronted him. "What are you looking at?"</p>
-<div class="orv_quote"><p>「 ······. 」</p></div>
+<div class="orv_quote"><p>······.</p></div>
 <p class="orv_line">Good job, Jung Heewon.</p>
-<div class="orv_quote"><p>「 Kill… 」</p></div>
+<div class="orv_quote"><p>Kill…</p></div>
 <p class="orv_line">"Yoo Joonghyuk."</p>
 <p class="orv_line">I quickly opened my mouth, "I was wondering about one thing." He turned to look at me. His eyes were questioning. "Why are you leaving Gong Pildu alone?"</p>
 <p class="orv_line">"If you are a prophet, you should know."</p>
 <p class="orv_line">"I don't know everything."</p>
 <p class="orv_line">To be exact, I didn't remember everything.</p>
-<div class="orv_system"><p>[The character 'Yoo Joonghyuk' has used [Lie Detection].]</p></div>
-<div class="orv_system"><p>[The character Yoo Joonghyuk has confirmed that your words are true.]</p></div>
+<div class="orv_system"><p>The character 'Yoo Joonghyuk' has used [Lie Detection].</p></div>
+<div class="orv_system"><p>The character Yoo Joonghyuk has confirmed that your words are true.</p></div>
 <p class="orv_line">He was thorough.</p>
-<p class="orv_line">"…Indeed, I see. A prophet whose level of [Future Sight] is low."</p>
+<p class="orv_line">"…Indeed, I see. A prophet whose level of <strong>[Future Sight]</strong> is low."</p>
 <p class="orv_line">Think what you want. Yoo Joonghyuk continued speaking, "I need Gong Pildu alive."</p>
 <p class="orv_line">"Is it because of a future scenario?"</p>
 <p class="orv_line">Yoo Joonghyuk didn't answer. It was like he was trying to gauge the information I knew.</p>
 <p class="orv_line">"I know that you need Gong Pildu for future scenarios. But you only need Gong Pildu. You don't need the entire group that follows him."</p>
-<div class="orv_quote"><p>「 ······. 」</p></div>
+<div class="orv_quote"><p>······.</p></div>
 <p class="orv_line">"Isn't it your style to remove what you don't need? Why are you just leaving them?"</p>
-<div class="orv_quote"><p>「 …How annoying. 」</p></div>
+<div class="orv_quote"><p>…How annoying.</p></div>
 <p class="orv_line">What?</p>
 <p class="orv_line">"I have a lot to do." Yoo Joonghyuk stared at me quietly and said, "You will never understand."</p>
 <p class="orv_line">"Wait! That isn't the problem. If you don't move now, most of the humans in Chungmuro will…!"</p>
@@ -221,27 +228,27 @@
 <p class="orv_line">"Yoo Joonghyuk. Can I hit you?"</p>
 <p class="orv_line">"If you have confidence."</p>
 <p class="orv_line">I angrily formed a fist as I heard a message.</p>
-<div class="orv_system"><p>[The character Yoo Joonghyuk has used [Strong Self-Defense] Lv. 5.]</p></div>
+<div class="orv_system"><p>The character Yoo Joonghyuk has used [Strong Self-Defense] Lv. 5.</p></div>
 <p class="orv_line">I dropped my fist. Cowardly bastard.</p>
 <p class="orv_line">"Are you finished?" Yoo Joonghyuk asked.</p>
 <p class="orv_line">"…"</p>
 <p class="orv_line">"Let's go."</p>
 <p class="orv_line">Lee Jihye flinched at Yoo Joonghyuk's call. Lee Jihye, who belated following Yoo Joonghyuk, looked at me with confused eyes.</p>
-<div class="orv_system"><p>[The constellation 'Bald General of Justice' is impressed by your chivalrous spirit.]</p></div>
-<div class="orv_system"><p>[100 coins have been sponsored.]</p></div>
+<div class="orv_system"><p>The constellation 'Bald General of Justice' is impressed by your chivalrous spirit.</p></div>
+<div class="orv_system"><p>100 coins have been sponsored.</p></div>
 <p class="orv_line">Of course, it was completely misleading.</p>
 <br>
 <hr>
 <br>
-<div class="orv_system"><p>[There are 1 hour and 30 minutes before the third scenario is activated.]</p></div>
+<div class="orv_system"><p>There are 1 hour and 30 minutes before the third scenario is activated.</p></div>
 <p class="orv_line">There wasn't much time left and my mind was complicated.</p>
-<div class="orv_system"><p>[The constellation 'Bald General of Justice' is angry that people's lives must be risked.]</p></div>
-<div class="orv_system"><p>[The constellation 'Bald General of Justice' wants an uprising.]</p></div>
+<div class="orv_system"><p>The constellation 'Bald General of Justice' is angry that people's lives must be risked.</p></div>
+<div class="orv_system"><p>The constellation 'Bald General of Justice' wants an uprising.</p></div>
 <p class="orv_line">Samyeongdang's message rang loudly in my head but he didn't think of a good way to resolve it. The third scenario lasted exactly one week. Maybe Yoo Joonghyuk was planning to gain some other advantage during the third scenario. Of course, I couldn't let it go. I couldn't let it go…</p>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is wondering what you are thinking.]</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is wondering what you are thinking.</p></div>
 <p class="orv_line">"That jerk Yoo Joonghyuk."</p>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is satisfied.]</p></div>
-<div class="orv_system"><p>[100 coins have been sponsored.]</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is satisfied.</p></div>
+<div class="orv_system"><p>100 coins have been sponsored.</p></div>
 <p class="orv_line">In fact, the problem in front of me wasn't Yoo Joonghyuk but Gong Pildu. In order to break through the third scenario, Gong Pildu's help was absolutely necessary. If I couldn't get his help…</p>
 <p class="orv_line">Suddenly, Jung Heewon looked up and smiled, "Who is it?"</p>
 <p class="orv_line">"…Huh?"</p>
@@ -250,12 +257,12 @@
 <p class="orv_line">"Those scum are upstairs."</p>
 <p class="orv_line">"I'll go and throw them out." Jung Heewon picked up the ground rat blade. That reminded me, I should change their weapons. There was a lot to be done.</p>
 <p class="orv_line">"Your actions are absurd."</p>
-<p class="orv_line">"We can win if we join forces. Don't you remember Gumho Station?" Jung Heewon's expression was confident. It was natural. Jung Heewon had the [Judgment Time] skill as a trump card. She had good senses and was quick to adapt, so she would've already figured out her attribute and skills.</p>
+<p class="orv_line">"We can win if we join forces. Don't you remember Gumho Station?" Jung Heewon's expression was confident. It was natural. Jung Heewon had the <strong>[Judgment Time]</strong> skill as a trump card. She had good senses and was quick to adapt, so she would've already figured out her attribute and skills.</p>
 <p class="orv_line">"Don't dawdle! Let's go and kill them!"</p>
-<p class="orv_line">As long as her opponents were 'wicked', her [Judgment Time] boasted the highest power.</p>
-<div class="orv_system"><p>[The character 'Jung Heewon' has activated the exclusive skill [Judgment Time].]</p></div>
-<div class="orv_system"><p>[Constellations of the Absolute Good system are silent at Jung Heewon's request.]</p></div>
-<div class="orv_system"><p>[The skill has been cancelled.]</p></div>
+<p class="orv_line">As long as her opponents were 'wicked', her <strong>[Judgment Time]</strong> boasted the highest power.</p>
+<div class="orv_system"><p>The character 'Jung Heewon' has activated the exclusive skill [Judgment Time].</p></div>
+<div class="orv_system"><p>Constellations of the Absolute Good system are silent at Jung Heewon's request.</p></div>
+<div class="orv_system"><p>The skill has been cancelled.</p></div>
 <p class="orv_line">Jung Heewon's face filled with confusion. "No, this…what? Is it broken?" Jung Heewon tried to activate the skill again. However, the skill wasn't triggered. "No…why isn't it activating? Aren't they obviously wicked?"</p>
 <p class="orv_line">I laughed at Jung Heewon's question. "That is what we humans think."</p>
 <p class="orv_line">"…What are you talking about?"</p>
@@ -274,8 +281,8 @@
 <p class="orv_line">I looked around and lowered my voice. "Get Gong Pildu out of the Armed Zone."</p>
 <p class="orv_line">"What is the Armed Zone?"</p>
 <p class="orv_line">"His stigma. It is optimized to defend an area."</p>
-<p class="orv_line">[Armed Zone]. The reason why it was difficult to go against Gong Pildu was this stigma. It was a fraudulent ability that could build 'turrets' in an area. Right now, it was just [Armed Zone]. Once the stigma evolved in the future, it would become [Armed Fortress] and a siege needed to be prepared to catch him. However, Gong Pildu had an obvious weakness.</p>
-<p class="orv_line">"His [Armed Zone] will be released as soon as he leaves his designated area. His mini-turrets will also become useless. Usually, there are many restrictions on such a wide defense skill."</p>
+<p class="orv_line"><strong>[Armed Zone]</strong>. The reason why it was difficult to go against Gong Pildu was this stigma. It was a fraudulent ability that could build 'turrets' in an area. Right now, it was just <strong>[Armed Zone]</strong>. Once the stigma evolved in the future, it would become <strong>[Armed Fortress]</strong> and a siege needed to be prepared to catch him. However, Gong Pildu had an obvious weakness.</p>
+<p class="orv_line">"His <strong>[Armed Zone]</strong> will be released as soon as he leaves his designated area. His mini-turrets will also become useless. Usually, there are many restrictions on such a wide defense skill."</p>
 <p class="orv_line">At the same time, Lee Hyunsung and Jung Heewon looked at me with admiration.</p>
 <p class="orv_line">"Ah…I see."</p>
 <p class="orv_line">"You figured this out after seeing it once? Is this Dokja-ssi's attribute?"</p>
@@ -289,7 +296,7 @@
 <p class="orv_line">"It is the biggest 'room' in Chungmuro."</p>
 <p class="orv_line">"…Room?"</p>
 <p class="orv_line">That reminds me, Jung Heewon still didn't know about the rooms. But there was no need for me to explain.</p>
-<div class="orv_system"><p>[There is 1 hour before the third scenario is activated.]</p></div>
+<div class="orv_system"><p>There is 1 hour before the third scenario is activated.</p></div>
 <p class="orv_line">She would soon find out.</p>
 <p class="orv_line">"We also need to find a room."</p>
 <p class="orv_line">The moment our party got up, the people around us flinched.</p>
@@ -297,16 +304,16 @@
 <p class="orv_line">In particular, the man with a knife who was protecting a single person room on the No. 3 line platform showed high vigilance. However, other people rushed towards him before we could approach.</p>
 <p class="orv_line">"Get out, you fucker!"</p>
 <p class="orv_line">They attacked indiscriminately. As soon as the man was pushed out, the mark on the green zone changed. The owner had changed.</p>
-<div class="orv_system"><p>[Green Zone 1/1-> Green Zone 0/1.]</p></div>
+<div class="orv_system"><p>Green Zone 1/1-> Green Zone 0/1.</p></div>
 <p class="orv_line">The people were engaging in a bloody fight over the room. Someone was stabbed in the thigh while someone had their nose broken. Jung Heewon frowned. "Shouldn't we stop that?"</p>
 <p class="orv_line">"Even if we intervene, the result will be the same. In the end, somebody will die."</p>
 <p class="orv_line">"Why does someone have to die?"</p>
 <p class="orv_line">"It isn't possible to avoid in this scenario."</p>
 <p class="orv_line">I had just finished speaking when Bihyung emerged in the air.</p>
-<div class="orv_constellation"><p>[Now now, shall we start the third day of the main scenario? New faces have arrived today so won't it be fun? Hahaha!]</p></div>
+<div class="orv_constellation"><p>Now now, shall we start the third day of the main scenario? New faces have arrived today so won't it be fun? Hahaha!</p></div>
 <p class="orv_line">Bihyung glanced my way. There were three dokkaebis in charge of the Chungmuro scenario. It seemed that Bihyung was temporarily the representative. It was a natural consequence of being the smallest of the three channels. Then the third scenario arrived in front of us.</p>
 <div class="orv_window">
-<h3 class="orv_window_title">[Main Scenario #3 – Green Zone (Day 3)]</h3>
+<h3 class="orv_window_title">Main Scenario #3 – Green Zone (Day 3)</h3>
 <p>Category: Main</p>
 <p>Difficulty: C</p>
 <p>Clear Conditions: Occupy the 'green zone' in the station and survive the monsters that emerge every night at midnight. This scenario will last 7 days.</p>
@@ -316,7 +323,7 @@
 </div>
 <p class="orv_line">Lee Hyunsung's eyes widened.</p>
 <p class="orv_line">"T-This…!"</p>
-<div class="orv_constellation"><p>[It is simple. Occupy the green zone before other people. Of course, you can take away the green zone of others. By the way, you should hurry. If you don't have a green zone after the scenario starts, you will have a terrible experience. Haha, then everyone should try it!]</p></div>
+<div class="orv_constellation"><p>It is simple. Occupy the green zone before other people. Of course, you can take away the green zone of others. By the way, you should hurry. If you don't have a green zone after the scenario starts, you will have a terrible experience. Haha, then everyone should try it!</p></div>
 <p class="orv_line">People's expressions hardened as they heard Bihyung's words. In the meantime, the screams of the people continued.</p>
 <p class="orv_line">"Die! Die!"</p>
 <p class="orv_line">"I-I'm not doing this because I have a grudge! I must survive…"</p>
@@ -332,7 +339,7 @@
 <p class="orv_line">"If we can't find a room, then 20 minutes before the scenario starts, we will gather here again."</p>
 <p class="orv_line">"I understand. Then I'm going."</p>
 <p class="orv_line">The team scattered in an orderly fashion. Jung Heewon and Lee Gilyoung went to B2 while Yoo Sangah and Lee Hyunsung went to B3. I watched my companions leave before turning on my smartphone. As soon as I opened Ways of Survival, a sentence immediately popped up.</p>
-<div class="orv_quote"><p>「 There were no rooms left in Chungmuro. 」</p></div>
+<div class="orv_quote"><p>There were no rooms left in Chungmuro.</p></div>
 <p class="orv_line">This fact was written clearly. It was likely that they wouldn't be able to find any rooms. Then they could only choose one way. In order to survive, kill someone else and take their room. But could Lee Hyunsung and Jung Heewon do it? Not everyone here was 'wicked'. There were some who exploited others, like Gong Pildu. But in fact, most of them bared their teeth in order to protect themselves.</p>
 <p class="orv_line">Could Yoo Sangah and Lee Gilyoung bare their teeth at people like that? I would know the answer very soon.</p>
 <br>
@@ -342,18 +349,12 @@
             <a href="./ch_29"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_31">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="30" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="71" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="29" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="29" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

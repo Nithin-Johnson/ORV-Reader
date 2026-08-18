@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 105: Ep. 21 – Things That Can't Be Changed, III</title>
     <meta property="og:title" content="Ch 105: Ep. 21 – Things That Can't Be Changed, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,47 +177,47 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00105.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 105: Ep. 21 – Things That Can't Be Changed, III</h1></div>
 <p class="orv_line">Controlling the body of a disaster? I didn't intend on this from the beginning. Originally my plan was something else. I decided to modify the plan the moment my mind transferred to Shin Yoosung's body.</p>
-<div class="orv_system"><p>[Exclusive skill, Omniscient Reader's Viewpoint stage 3 has been activated!]</p></div>
-<div class="orv_system"><p>[The 1st person supporting role viewpoint has been activated.]</p></div>
+<div class="orv_system"><p>Exclusive skill, Omniscient Reader's Viewpoint stage 3 has been activated!</p></div>
+<div class="orv_system"><p>The 1st person supporting role viewpoint has been activated.</p></div>
 <p class="orv_line">To be exact, I had to modify it.</p>
-<div class="orv_quote"><p>「 …I can't admit it. 」</p></div>
-<div class="orv_quote"><p>「 Then what am I? How long have I lived? 」</p></div>
-<div class="orv_quote"><p>「 What can I get for returning? 」</p></div>
+<div class="orv_quote"><p>…I can't admit it.</p></div>
+<div class="orv_quote"><p>Then what am I? How long have I lived?</p></div>
+<div class="orv_quote"><p>What can I get for returning?</p></div>
 <p class="orv_line">In the midst of Shin Yoosung's turbulent pain, I saw the world with her eyes. I breathed through Shin Yoosung's nose and killed people with Shin Yoosung's hand. I expressed Shin Yoosung's thoughts with her voice. I was Shin Yoosung.</p>
-<div class="orv_system"><p>[The exclusive skill, 'Fourth Wall' is shaking!]</p></div>
+<div class="orv_system"><p>The exclusive skill, 'Fourth Wall' is shaking!</p></div>
 <p class="orv_line">Then I met Lee Jihye. I knew the moment I met her that Lee Jihye would die here. Thus, for the first time I tried something that I hadn't done before.</p>
-<div class="orv_system"><p>[The 1st person supporting role viewpoint interferes with the behaviour of the character.]</p></div>
-<div class="orv_system"><p>[The exclusive skill, 'Fourth Wall' is shaking ominously.]</p></div>
+<div class="orv_system"><p>The 1st person supporting role viewpoint interferes with the behaviour of the character.</p></div>
+<div class="orv_system"><p>The exclusive skill, 'Fourth Wall' is shaking ominously.</p></div>
 <p class="orv_line">There was an electric current in my head followed by tremendous pain. Yet the moment Shin Yoosung dealt the decisive blow, I was able to pull back her right hand. It was a fine adjustment so Shin Yoosung didn't notice, but I definitely did it.</p>
 <p class="orv_line">Lee Jihye didn't die.</p>
-<div class="orv_system"><p>[Your understanding of the character 'Shin Yoosung' has increased.]</p></div>
+<div class="orv_system"><p>Your understanding of the character 'Shin Yoosung' has increased.</p></div>
 <p class="orv_line">The same thing was repeated with Lee Hyunsung. My mind had become a bit ragged but I thought that I might be able to do something. I poured more of my heart into it and increased my grip on Shin Yoosung's body.</p>
 <p class="orv_line">Finally, it happened when Shin Yoosung grabbed Lee Gilyoung's neck.</p>
 <p class="orv_line">"W-Who are you?"</p>
 <p class="orv_line">I succeeded in controlling Shin Yoosung's right hand.</p>
-<div class="orv_system"><p>[You have a very high understanding of the character 'Shin Yoosung'.]</p></div>
+<div class="orv_system"><p>You have a very high understanding of the character 'Shin Yoosung'.</p></div>
 <p class="orv_line">Someone else's arm moved according to my will. It was an amazing experience.</p>
 <p class="orv_line">"…Ahjussi?" Shin Yoosung asked.</p>
 <p class="orv_line">"Get out of me!"</p>
@@ -218,22 +225,22 @@
 <p class="orv_line">"Ahjussi, you're in there right? Ahjussi!"</p>
 <p class="orv_line">The young Shin Yoosung grabbed my right arm. At this moment, a strong spark entered the right arm. It was a spark similar to a probability storm. The surprised people came running but the sparks blew them away.</p>
 <p class="orv_line">The 'disaster' Shin Yoosung and the 'young' Shin Yoosung saw each other at the same time. The wave of memories were gathering.</p>
-<div class="orv_quote"><p>「 "Ahjussi." 」</p></div>
-<div class="orv_quote"><p>「 "Captain." 」</p></div>
+<div class="orv_quote"><p>"Ahjussi."</p></div>
+<div class="orv_quote"><p>"Captain."</p></div>
 <p class="orv_line">It wasn't possible. If the 'Disconnected Film' theory was correct, the two people shouldn't have a shared history.</p>
-<div class="orv_quote"><p>「 "You… can kill me. It's okay." 」</p></div>
-<div class="orv_quote"><p>「 "I wanted to survive." 」</p></div>
+<div class="orv_quote"><p>"You… can kill me. It's okay."</p></div>
+<div class="orv_quote"><p>"I wanted to survive."</p></div>
 <p class="orv_line">When I thought about it, the Disconnected Film theory only applied to 'characters'. I came from outside the novel. What if my existence played a role in connecting their memories? What if I connected the two films?</p>
 <p class="orv_line">I could feel both Shin Yoosungs holding my hand. The third round and the 41st round. The two different times were facing each other.</p>
 <div class="orv_image"><img src="../../../assets/images/105 - The two different times were facing each other.jpg" alt="" loading="lazy"></div>
 <div class="orv_notice"><p>* Official novel illustration (canonical)</p></div>
-<div class="orv_quote"><p>「 "Is it worth it for me to live?" 」</p></div>
-<div class="orv_quote"><p>「 "Then what is the value of this life?" 」</p></div>
+<div class="orv_quote"><p>"Is it worth it for me to live?"</p></div>
+<div class="orv_quote"><p>"Then what is the value of this life?"</p></div>
 <p class="orv_line">"No! This… these memories…"</p>
 <p class="orv_line">The panicked disaster Shin Yoosung stuttered and bit on her blue lips. A mighty energy was being created inside Shin Yoosung's body.</p>
 <p class="orv_line">There was the sound of something tearing and the young Shin Yoosung was thrown away from the right arm.</p>
 <p class="orv_line">Shin Yoosung was damaging her own body in an attempt to get me out. Blood flowed from her and her combat power started to rapidly drop. The balance of her flesh was being broken due to the excessive magic power.</p>
-<div class="orv_quote"><p>「 Shin Yoosung! Wait, stop this! 」</p></div>
+<div class="orv_quote"><p>Shin Yoosung! Wait, stop this!</p></div>
 <p class="orv_line">"Aaaack!"</p>
 <p class="orv_line">Shin Yoosung grabbed her head and struggled to expel me. I shared her senses and felt like I was going crazy from the nausea and pain. Shin Yoosung's mind was blank.</p>
 <p class="orv_line">I was troubled for a moment. If this continued, the disaster Shin Yoosung…</p>
@@ -241,23 +248,23 @@
 <p class="orv_line">.</p>
 <p class="orv_line">.</p>
 <p class="orv_line">My consciousness left Shin Yoosung's body and all five senses disappeared.</p>
-<div class="orv_system"><p>[The skill conflict error is normalized.]</p></div>
-<div class="orv_system"><p>[The delayed privilege of the King of No Killing has reappeared.]</p></div>
-<div class="orv_system"><p>[Your body is resurrected from death.]</p></div>
+<div class="orv_system"><p>The skill conflict error is normalized.</p></div>
+<div class="orv_system"><p>The delayed privilege of the King of No Killing has reappeared.</p></div>
+<div class="orv_system"><p>Your body is resurrected from death.</p></div>
 <p class="orv_line">…</p>
 <p class="orv_line">Maybe this wasn't the right choice. However, I wanted to give it a try.</p>
-<div class="orv_system"><p>[A constellation who likes to change gender is sad.]</p></div>
+<div class="orv_system"><p>A constellation who likes to change gender is sad.</p></div>
 <p class="orv_line">I would always regret it if I didn't.</p>
-<div class="orv_system"><p>[The recreation of your flesh has begun.]</p></div>
-<div class="orv_system"><p>[The exclusive skill 'Fourth Wall' offsets the mental shock caused by your death.]</p></div>
-<div class="orv_system"><p>[Compensation is being prepared for the Omniscient Reader's Viewpoint stage 3.]</p></div>
+<div class="orv_system"><p>The recreation of your flesh has begun.</p></div>
+<div class="orv_system"><p>The exclusive skill 'Fourth Wall' offsets the mental shock caused by your death.</p></div>
+<div class="orv_system"><p>Compensation is being prepared for the Omniscient Reader's Viewpoint stage 3.</p></div>
 <p class="orv_line">It was my second resurrection after dying from the fire dragon.</p>
 <p class="orv_line">I felt my nerves being reconstructed and struggled once again. The regenerated lungs filled with air and the optic nerves were connected, restoring my vision. The abstract activity of the mind was transplanted onto the cerebral cortex.</p>
-<div class="orv_system"><p>[The privilege of the King of No Killing has been completed.]</p></div>
-<div class="orv_system"><p>[100 karma points have been consumed.]</p></div>
-<div class="orv_system"><p>[The wastes of your flesh have been completely removed and the performance of your body has increased.]</p></div>
-<div class="orv_system"><p>[Physique and magic power has increased by 2 levels each.]</p></div>
-<div class="orv_system"><p>[You have exceeded in overall stats limit for the scenario.]</p></div>
+<div class="orv_system"><p>The privilege of the King of No Killing has been completed.</p></div>
+<div class="orv_system"><p>100 karma points have been consumed.</p></div>
+<div class="orv_system"><p>The wastes of your flesh have been completely removed and the performance of your body has increased.</p></div>
+<div class="orv_system"><p>Physique and magic power has increased by 2 levels each.</p></div>
+<div class="orv_system"><p>You have exceeded in overall stats limit for the scenario.</p></div>
 <p class="orv_line">Fortunately, it was the second resurrection and I didn't have an unseemly appearance.</p>
 <p class="orv_line">I looked around and saw my scattered items and clothing. It was lucky that no one had taken them. I started putting on my clothes when I heard an eerie voice behind me.</p>
 <p class="orv_line">"…Kim Dokja?"</p>
@@ -289,7 +296,7 @@
 <p class="orv_line">Shin Yoosung's eyes shook uneasily. "…You have been waiting? Who are you?"</p>
 <p class="orv_line">"A person who wants the same world you do."</p>
 <p class="orv_line">At this point, Shin Yoosung's eyes changed drastically.</p>
-<div class="orv_quote"><p>「 I… 」</p></div>
+<div class="orv_quote"><p>I…</p></div>
 <p class="orv_line">Little by little, Yoo Sangah touched my shoulder.</p>
 <p class="orv_line">"Dokja-ssi."</p>
 <p class="orv_line">I nodded and got up. My companions were looking at me. I looked at them and opened my mouth.</p>
@@ -332,9 +339,9 @@
 <p class="orv_line">Ironically, she understood the man who she hated for thousands of years due to all the years she lived.</p>
 <p class="orv_line">"Captain… wait. Captain!"</p>
 <p class="orv_line">I was able to feel the ripples in Shin Yoosung's heart.</p>
-<div class="orv_quote"><p>「 …Is this really okay? 」</p></div>
-<div class="orv_quote"><p>「 Keep going for this reason. 」</p></div>
-<div class="orv_quote"><p>「 This world, you don't have to abandon it… 」</p></div>
+<div class="orv_quote"><p>…Is this really okay?</p></div>
+<div class="orv_quote"><p>Keep going for this reason.</p></div>
+<div class="orv_quote"><p>This world, you don't have to abandon it…</p></div>
 <p class="orv_line">Some anger hadn't disappeared and some sorrows hadn't been erased. However, as long as she lived, salvation would come one day.</p>
 <p class="orv_line">I told Shin Yoosung, "Shin Yoosung, this is your 'round' now."</p>
 <p class="orv_line">I couldn't change anything when I was a reader. It was because I was a reader that I could change it now. I thought I could change it.</p>
@@ -346,18 +353,12 @@
             <a href="./ch_104"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_106">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="105" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="303" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="104" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="104" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

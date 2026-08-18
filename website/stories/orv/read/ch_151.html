@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 151: Ep. 30 - Dark Castle, I</title>
     <meta property="og:title" content="Ch 151: Ep. 30 - Dark Castle, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,31 +177,31 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00151.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 151: Ep. 30 - Dark Castle, I</h1></div>
 <p class="orv_line">In fact, I was most worried about Yoo Joonghyuk. He was more trustworthy than anyone else here but at the same time, I couldn't be sure of his position. If Yoo Joonghyuk shook off my hand then my actions would be useless.</p>
 <p class="orv_line">Fortunately, Yoo Joonghyuk was calm. He might have a violent temper but this guy was amazingly good at controlling his anger and sent me a secret message.</p>
 <p class="orv_line">–What are you doing?</p>
-<div class="orv_system"><p>[The character 'Yoo Joonghyuk' has activated Midday Tryst.]</p></div>
+<div class="orv_system"><p>The character 'Yoo Joonghyuk' has activated Midday Tryst.</p></div>
 <p class="orv_line">…The item that I had previously bought belatedly came to my mind. I didn't know that the Midday Tryst I registered at that time would still be valid. I deliberately spoke in a brazen manner.</p>
 <p class="orv_line">–I will do this more than once or twice. You should get used to it.</p>
 <p class="orv_line">–What?</p>
@@ -202,96 +209,96 @@
 <p class="orv_line">Yoo Joonghyuk flinched at my words.</p>
 <p class="orv_line">–…I don't know how you know such things.</p>
 <p class="orv_line">In fact, declaring a 'nebula' with me wasn't bad for Yoo Joonghyuk. In the progression of the original novel, Yoo Joonghyuk didn't inherit any stories here. It was due to the constraints on Yoo Joonghyuk.</p>
-<div class="orv_system"><p>[The regression constraints.]</p></div>
+<div class="orv_system"><p>The regression constraints.</p></div>
 <p class="orv_line">He could turn back the clock after dying but he couldn't inherit the stories of other constellations.</p>
-<div class="orv_constellation"><p>[Incarnation Yoo Joonghyuk. Is Incarnation Kim Dokja correct? Are the two of you making a nebula?]</p></div>
+<div class="orv_constellation"><p>Incarnation Yoo Joonghyuk. Is Incarnation Kim Dokja correct? Are the two of you making a nebula?</p></div>
 <p class="orv_line">The dokkaebi host watching the situation stepped in. Everyone looked at Yoo Joonghyuk while I nervously waited for his answer.</p>
 <p class="orv_line">"Yes."</p>
 <p class="orv_line">I inwardly sighed with relief. The first hurdle was overcome. However, the real hurdles were from now on.</p>
 <p class="orv_line">In the complete silence, someone on the second floor laughed. The soft laugh was somewhat pleasant. I could feel Persephone's mood through this laughter.</p>
-<div class="orv_quote"><p>「 Kim Dokja, you did it after all. This is why I like you. 」</p></div>
+<div class="orv_quote"><p>Kim Dokja, you did it after all. This is why I like you.</p></div>
 <p class="orv_line">Of course she liked me. Persephone's style fit this type of story. Thanks to her laughter, the other constellations also started to laugh. Most of them were constellations on the second floor. Unfortunately, their laughter didn't contain the same meaning as Persephone.</p>
-<div class="orv_system"><p>[The nebula 'Vedas' is disappointed in you.]</p></div>
-<div class="orv_system"><p>[The nebula 'Guiok' despises you.]</p></div>
+<div class="orv_system"><p>The nebula 'Vedas' is disappointed in you.</p></div>
+<div class="orv_system"><p>The nebula 'Guiok' despises you.</p></div>
 <p class="orv_line">Uriel held a handkerchief to her mouth and frowned at the reactions of the constellations around her.</p>
-<div class="orv_constellation"><p>[What? Why are you like this? This is good!]</p></div>
+<div class="orv_constellation"><p>What? Why are you like this? This is good!</p></div>
 <p class="orv_line">The constellations on the first floor watched silently. Their eyes contained a mixture of longing and worry. Maritime War God and Bald General of Justice also looked nervous. The one who was most interested was Goryeo's First Sword, who was looking this way.</p>
 <p class="orv_line">The laughter died down and more direct contempt flew from the second floor.</p>
-<div class="orv_constellation"><p>[A person who hasn't climbed to the throne of a constellation wants to create a nebula?]</p></div>
-<div class="orv_constellation"><p>[Dokkaebi, does this make sense?]</p></div>
-<div class="orv_constellation"><p>[Can any cat or dog open a nebula?]</p></div>
+<div class="orv_constellation"><p>A person who hasn't climbed to the throne of a constellation wants to create a nebula?</p></div>
+<div class="orv_constellation"><p>Dokkaebi, does this make sense?</p></div>
+<div class="orv_constellation"><p>Can any cat or dog open a nebula?</p></div>
 <p class="orv_line">The dokkaebi seemed confused at all the questions that poured towards him.</p>
-<div class="orv_constellation"><p>[That… Incarnation Kim Dokja has clearly received recognition from the Star Stream.]</p></div>
+<div class="orv_constellation"><p>That… Incarnation Kim Dokja has clearly received recognition from the Star Stream.</p></div>
 <p class="orv_line">Along with these words, the stories I've made were projected onto the ceiling screen.</p>
-<div class="orv_system"><p>[King of a Kingless World]</p></div>
+<div class="orv_system"><p>King of a Kingless World</p></div>
 <p class="orv_line">The first scene that appeared was when I destroyed the Absolute Throne by borrowing the power of the Four Yin Demonic Beheading Sword. Strictly speaking, my narrative started from there. Fragments of the throne appeared on the screen.</p>
 <p class="orv_line">Some constellations nodded like they were convinced and some constellations looked at each other with astonishment.</p>
-<div class="orv_constellation"><p>[He broke the throne of divinity!]</p></div>
-<div class="orv_constellation"><p>[…Did he really open with that story?]</p></div>
+<div class="orv_constellation"><p>He broke the throne of divinity!</p></div>
+<div class="orv_constellation"><p>…Did he really open with that story?</p></div>
 <p class="orv_line">There were probably some attendees who didn't know my information. I thought I was quite famous but I was still lacking. I suddenly looked around and saw the Russian child staring at me with blank eyes.</p>
 <div class="orv_window">
-<h3 class="orv_window_title">[Person who Opposes the Miracle.]</h3>
+<h3 class="orv_window_title">Person who Opposes the Miracle.</h3>
 </div>
 <p class="orv_line">The second story was when I took down the returnee Myung Ilsang who was a disaster.</p>
-<div class="orv_system"><p>[Some constellations are favourable towards you.]</p></div>
+<div class="orv_system"><p>Some constellations are favourable towards you.</p></div>
 <p class="orv_line">Since the returnees were disliked by constellations then this was a suitable story to acquire the liking of the constellations. At this time, curious expressions appeared on the faces of the constellations.</p>
-<div class="orv_constellation"><p>[…What is this?]</p></div>
+<div class="orv_constellation"><p>…What is this?</p></div>
 <p class="orv_line">It was due to the third story that appeared, where I beat up the intermediate dokkaebi Paul. I was a bit surprised when I saw the screen. I only wanted revenge for Shin Yoosung… was it included in my 'stories'?</p>
 <p class="orv_line">The dokkaebi Paul screamed and the embarrassed dokkaebi host quickly fast-forwarded. Then the complaints of the constellations were heard.</p>
-<div class="orv_constellation"><p>[Hey, what is that?]</p></div>
-<div class="orv_constellation"><p>[T-That. Haha, it seems to be the wrong data.]</p></div>
+<div class="orv_constellation"><p>Hey, what is that?</p></div>
+<div class="orv_constellation"><p>T-That. Haha, it seems to be the wrong data.</p></div>
 <p class="orv_line">However, unlike the dokkaebi's words, a story name appeared on the screen.</p>
 <div class="orv_window">
-<h3 class="orv_window_title">[One Who Showed Contempt for a Streamer]</h3>
+<h3 class="orv_window_title">One Who Showed Contempt for a Streamer</h3>
 </div>
 <p class="orv_line">Laughter was heard from the landing of the stairs. It was Goryeo's First Sword who was laughing.</p>
-<div class="orv_constellation"><p>[This is crazy! Hahahaha!]</p></div>
+<div class="orv_constellation"><p>This is crazy! Hahahaha!</p></div>
 <p class="orv_line">Then the fourth story appeared.</p>
-<div class="orv_system"><p>[One Who Hunted the King of Disasters]</p></div>
+<div class="orv_system"><p>One Who Hunted the King of Disasters</p></div>
 <p class="orv_line">It was when I hunted the shadow of the constellation Yamata no Orochi in Peace Land. The constellations' mouths dropped open when they saw Orochi killed with my Electrification.</p>
-<div class="orv_constellation"><p>[The shadow of a narrative-grade constellation…]</p></div>
-<div class="orv_constellation"><p>[He has already accumulated four legendary stories?]</p></div>
+<div class="orv_constellation"><p>The shadow of a narrative-grade constellation…</p></div>
+<div class="orv_constellation"><p>He has already accumulated four legendary stories?</p></div>
 <p class="orv_line">Confusion spread among the constellations. The screen turned off and the dokkaebi continued speaking.</p>
-<div class="orv_constellation"><p>[In any case, Incarnation Kim Dokja is now facing the throne of a constellation. If he gains his fifth story through this occasion…]</p></div>
+<div class="orv_constellation"><p>In any case, Incarnation Kim Dokja is now facing the throne of a constellation. If he gains his fifth story through this occasion…</p></div>
 <p class="orv_line">Those who knew I was aiming to be a constellation weren't confused but the other constellations were startled.</p>
-<div class="orv_constellation"><p>[Becoming a constellation before the 10th scenario is over?]</p></div>
-<div class="orv_constellation"><p>[He is a new constellation…]</p></div>
+<div class="orv_constellation"><p>Becoming a constellation before the 10th scenario is over?</p></div>
+<div class="orv_constellation"><p>He is a new constellation…</p></div>
 <p class="orv_line">I suddenly received a lot of heated gazes. Certainly, this was a formidable event even in Ways of Survival. There were only a few constellations or returnees who had gained the recognition of the Star Stream before the 10th scenario.</p>
 <p class="orv_line">In the midst of the increasingly confused atmosphere, it was Manu of Vedas who opened his mouth.</p>
-<div class="orv_constellation"><p>[I will acknowledge Incarnation Kim Dokja. However, I can't acknowledge the nebula. There are two problems.]</p></div>
+<div class="orv_constellation"><p>I will acknowledge Incarnation Kim Dokja. However, I can't acknowledge the nebula. There are two problems.</p></div>
 <p class="orv_line">The constellations focused on Manu's voice.</p>
-<div class="orv_constellation"><p>[One, we don't know if Incarnation Kim Dokja has sufficient payment ability. Isn't it necessary to have the minimum of funds before establishing a nebula?]</p></div>
+<div class="orv_constellation"><p>One, we don't know if Incarnation Kim Dokja has sufficient payment ability. Isn't it necessary to have the minimum of funds before establishing a nebula?</p></div>
 <p class="orv_line">"The coins are sufficient."</p>
 <p class="orv_line">Turmoil occurred again at my words.</p>
 <p class="orv_line">Manu stared at me with suspicious eyes.</p>
-<div class="orv_constellation"><p>[We will know once it is checked. The second problem is who will 'support' your nebula.]</p></div>
+<div class="orv_constellation"><p>We will know once it is checked. The second problem is who will 'support' your nebula.</p></div>
 <p class="orv_line">I gulped. It was finally the real challenge.</p>
-<div class="orv_constellation"><p>[The establishment of a nebula needs to be supported by at least five constellations. Do you have the support of any constellation?]</p></div>
+<div class="orv_constellation"><p>The establishment of a nebula needs to be supported by at least five constellations. Do you have the support of any constellation?</p></div>
 <p class="orv_line">"That…"</p>
 <p class="orv_line">I couldn't easily answer and Manu laughed.</p>
-<div class="orv_constellation"><p>[No, is there even a name for the nebula in the first place?]</p></div>
+<div class="orv_constellation"><p>No, is there even a name for the nebula in the first place?</p></div>
 <p class="orv_line">I opened my mouth as I glanced at Yoo Joonghyuk. "The name of our nebula is… Kim Dokja's Company…"</p>
 <p class="orv_line">"There isn't a name yet. In addition, we will gain the supporters now." Yoo Joonghyuk casually interrupted me.</p>
 <p class="orv_line">"Are there any constellations who want to support our nebula?"</p>
 <p class="orv_line">No one responded to Yoo Joonghyuk's words. Manu laughed.</p>
-<div class="orv_constellation"><p>[I knew it. It is a waste of time. Dokkaebi. Continue with the Story Succession…]</p></div>
+<div class="orv_constellation"><p>I knew it. It is a waste of time. Dokkaebi. Continue with the Story Succession…</p></div>
 <p class="orv_line">At this time, someone raised their hand.</p>
-<div class="orv_system"><p>[The Olympus 'Underworld' will support your nebula.]</p></div>
-<div class="orv_constellation"><p>[Queen!]</p></div>
+<div class="orv_system"><p>The Olympus 'Underworld' will support your nebula.</p></div>
+<div class="orv_constellation"><p>Queen!</p></div>
 <p class="orv_line">The angry Manu growled at Persephone.</p>
 <p class="orv_line">Persephone's aura rose sharply.</p>
-<div class="orv_constellation"><p>[It is my decision. Are there any complaints?]</p></div>
-<div class="orv_constellation"><p>[Urgh…]</p></div>
+<div class="orv_constellation"><p>It is my decision. Are there any complaints?</p></div>
+<div class="orv_constellation"><p>Urgh…</p></div>
 <p class="orv_line">No matter the strength of Vedas, the constellation Manu couldn't stand alone against Persephone, Queen of the Underworld. In the end, he turned towards the other constellations.</p>
-<div class="orv_constellation"><p>[Surely there won't be anyone else?]</p></div>
-<div class="orv_constellation"><p>[I will support it.]</p></div>
+<div class="orv_constellation"><p>Surely there won't be anyone else?</p></div>
+<div class="orv_constellation"><p>I will support it.</p></div>
 <p class="orv_line">The voice came from the second floor and the constellations were once again amazed. It was the Great Sage Heaven's Equal.</p>
-<div class="orv_constellation"><p>[P-Prisoner of the Golden Headband?]</p></div>
-<div class="orv_constellation"><p>[Really? Are you serious?]</p></div>
+<div class="orv_constellation"><p>P-Prisoner of the Golden Headband?</p></div>
+<div class="orv_constellation"><p>Really? Are you serious?</p></div>
 <p class="orv_line">I looked towards him in gratitude. The Great Sage Heaven's Equal was picking at his ears while looking down here like it was troublesome.</p>
-<div class="orv_constellation"><p>[Eh I don't know… sorry! I also support it!]</p></div>
+<div class="orv_constellation"><p>Eh I don't know… sorry! I also support it!</p></div>
 <p class="orv_line">Uriel of Eden declared her support.</p>
-<div class="orv_constellation"><p>[I will also give you the name for your nebula! The nebula name is Forbidden… mmph mprh!]</p></div>
+<div class="orv_constellation"><p>I will also give you the name for your nebula! The nebula name is Forbidden… mmph mprh!</p></div>
 <p class="orv_line">The ninth rank angels around her were flabbergasted and covered her mouth. No matter her intentions, I was thankful. Now the rest of the constellations glanced at each other.</p>
 <p class="orv_line">The three constellations who declared their support were powerful enough not to worry about others. The rest were different. It was unusual for historical-grade and narrative-grade constellations to challenge Manu just to help establish a new nebula.</p>
 <p class="orv_line">I looked to the side and saw that Yoo Joonghyuk had half given up. He messaged me:</p>
@@ -301,34 +308,34 @@
 <p class="orv_line">–What?</p>
 <p class="orv_line">–I wasn't expecting anything. The important thing was to buy some time.</p>
 <p class="orv_line">From the beginning, I didn't intend to inherit the story of any constellation here. I thought of the original novel and the banquet's ending was fixed. At this time, something unusual happened.</p>
-<div class="orv_constellation"><p>[I, Goryeo's First Sword, will support your nebula.]</p></div>
+<div class="orv_constellation"><p>I, Goryeo's First Sword, will support your nebula.</p></div>
 <p class="orv_line">Goryeo's First Sword declared support for us. Then the historical-grade constellations stood up at once.</p>
-<div class="orv_constellation"><p>[Then I, Maritime War God…!]</p></div>
-<div class="orv_constellation"><p>[The Bald General of Justice won't stay still!]</p></div>
+<div class="orv_constellation"><p>Then I, Maritime War God…!</p></div>
+<div class="orv_constellation"><p>The Bald General of Justice won't stay still!</p></div>
 <p class="orv_line">Once the constellations on the first floor started to support us, the constellations on the second floor and the dokkaebi became greatly confused.</p>
-<div class="orv_constellation"><p>[W-Wait a minute! Such a random declaration of support…!]</p></div>
+<div class="orv_constellation"><p>W-Wait a minute! Such a random declaration of support…!</p></div>
 <p class="orv_line">The next moment.</p>
-<div class="orv_system"><p>[The constellation 'Secretive Plotter' will support your nebula.]</p></div>
+<div class="orv_system"><p>The constellation 'Secretive Plotter' will support your nebula.</p></div>
 <p class="orv_line">…Huh? Secretive Plotter? Where the hell was he?</p>
-<div class="orv_system"><p>[You have won a Provisional Nebula Creation ticket!]</p></div>
+<div class="orv_system"><p>You have won a Provisional Nebula Creation ticket!</p></div>
 <p class="orv_line">…Don't tell me? At this moment, the banquet hall started to shake and the space distorted. I looked up at the sky. The banquet had finally ended. 'They' had come.</p>
-<div class="orv_constellation"><p>[…This aura is?]</p></div>
-<div class="orv_constellation"><p>[Everyone retreat!]</p></div>
+<div class="orv_constellation"><p>…This aura is?</p></div>
+<div class="orv_constellation"><p>Everyone retreat!</p></div>
 <p class="orv_line">Even the constellations became nervous. The sky was greatly distorted and powerful sparks appeared. It was like the sky was splitting apart.</p>
-<div class="orv_system"><p>[The Great Hole.]</p></div>
+<div class="orv_system"><p>The Great Hole.</p></div>
 <p class="orv_line">The strange hole, which only appeared when a scenario was activated, suddenly appeared above the banquet hall. The startled Manu shouted,</p>
-<div class="orv_constellation"><p>[The gods of the other world! How dare you come here?]</p></div>
+<div class="orv_constellation"><p>The gods of the other world! How dare you come here?</p></div>
 <p class="orv_line">The constellations roared and raised their own aura. Then a terrible voice came from the hole in the sky.</p>
 <div class="orv_outergod"><p>【Why… Weren't we invited?】</p></div>
 <p class="orv_line">Persephone and Uriel instantly blocked Yoo Joonghyuk's and my ears. It was to prevent the foreign true voice from intruding. They stood in front of us, lowering the pressure from the hall.</p>
-<div class="orv_constellation"><p>[I'm sorry but the party is over. It's time to go back.]</p></div>
-<div class="orv_constellation"><p>[Then I'll see you next time!]</p></div>
+<div class="orv_constellation"><p>I'm sorry but the party is over. It's time to go back.</p></div>
+<div class="orv_constellation"><p>Then I'll see you next time!</p></div>
 <p class="orv_line">The moment Persephone and Uriel spoke, Yoo Joonghyuk and I were surrounded by a transparent circle. It was the space transformation using the power of the constellations. They wanted to save us from the terrible battle that would soon take place at the banquet hall.</p>
 <p class="orv_line">By the way, the god of another world was a bit faster than expected. Wait…</p>
-<div class="orv_system"><p>[The gods of another world are looking at you!]</p></div>
-<div class="orv_system"><p>[The gods of another world are looking at you!]</p></div>
+<div class="orv_system"><p>The gods of another world are looking at you!</p></div>
+<div class="orv_system"><p>The gods of another world are looking at you!</p></div>
 <p class="orv_line">At the last moment, I heard Uriel's scream.</p>
-<div class="orv_constellation"><p>[Kim Dokja!]</p></div>
+<div class="orv_constellation"><p>Kim Dokja!</p></div>
 <p class="orv_line">Then darkness covered my eyes.</p>
 <br>
 <hr>
@@ -367,8 +374,8 @@
 <p class="orv_line">"Waaaaahhhhh!"</p>
 <p class="orv_line">"W-What… kuaaack!"</p>
 <p class="orv_line">The shocked Lee Dongpa fell down and started shaking. The hero, who had just been dead, was holding onto the shoulder of a robber. Then every being in Seoul heard the following message.</p>
-<div class="orv_system"><p>[Someone has acquired five stories.]</p></div>
-<div class="orv_system"><p>[A new constellation is born in Seoul's night sky!]</p></div>
+<div class="orv_system"><p>Someone has acquired five stories.</p></div>
+<div class="orv_system"><p>A new constellation is born in Seoul's night sky!</p></div>
 <br>
 <hr>
         </article>
@@ -376,18 +383,12 @@
             <a href="./ch_150"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_152">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="151" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="136" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="150" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="150" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

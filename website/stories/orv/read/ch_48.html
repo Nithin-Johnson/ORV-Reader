@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 48: Ep. 10 – Future War, VI</title>
     <meta property="og:title" content="Ch 48: Ep. 10 – Future War, VI" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00048.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         <div class="orv_cover"><img src="../../../assets/images/Cover%20Part%201%20-%20048%20-%20Vol%203%20-%20Episodes%2011-15.jpg" alt=""></div>
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 48: Ep. 10 – Future War, VI</h1></div>
 <p class="orv_line">It wasn't an illusion. The guy's eyes instantly widened when he heard my name.</p>
@@ -236,8 +243,8 @@
 <p class="orv_line">Lee Sungkook's face stiffened. The men slowly surrounded me, giving off a nasty atmosphere. Jung Heewon and Lee Hyunsung were nervous because they didn't know why I was suddenly doing such a crazy thing. I continued speaking.</p>
 <p class="orv_line">"Does it sound like I am joking? Two."</p>
 <p class="orv_line">Was it hard to remember after reading the novel 10 years ago? It looked like he forgot who Yoo Joonghyuk was. Then I had to jog his memory.</p>
-<div class="orv_system"><p>[The exclusive skill 'Purest Sword Force Lv. 2' has been activated.]</p></div>
-<div class="orv_system"><p>[Blade of Faith is activated!]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Purest Sword Force Lv. 2' has been activated.</p></div>
+<div class="orv_system"><p>Blade of Faith is activated!</p></div>
 <p class="orv_line">Chiiiiiing!</p>
 <p class="orv_line">I saw Lee Sungkook's pale face beyond the burning white blade. This was a game of chicken.</p>
 <p class="orv_line">Remembering Yoo Joonghyuk meant he knew a bit about who Yoo Joonghyuk was.</p>
@@ -273,8 +280,8 @@
 <p class="orv_line">"Okay, show me the way."</p>
 <p class="orv_line">Lee Sungkook's expression brightened and he added useless words.</p>
 <p class="orv_line">"Don't worry. I swear on the King's Honour that I won't harm Yoo Joonghyuk-nim."</p>
-<div class="orv_system"><p>[Dongmyo Station's deputy, Lee Sungkook has sworn on the King's Honour.]</p></div>
-<div class="orv_system"><p>[If he breaks this vow, Lee Sungkook can be punished by you.]</p></div>
+<div class="orv_system"><p>Dongmyo Station's deputy, Lee Sungkook has sworn on the King's Honour.</p></div>
+<div class="orv_system"><p>If he breaks this vow, Lee Sungkook can be punished by you.</p></div>
 <p class="orv_line">What a great guy. But he did the right thing if he really thought I was Yoo Joonghyuk. Wasn't his understanding of Yoo Joonghyuk better than I expected?</p>
 <p class="orv_line">Then he would pay for it.</p>
 <p class="orv_line">"Hurt me? You guys?"</p>
@@ -284,9 +291,9 @@
 <p class="orv_line">I pointed to the flag holder.</p>
 <p class="orv_line">"Give me that."</p>
 <p class="orv_line">"…"</p>
-<div class="orv_system"><p>[You have received the transfer of Dongdaemun History and Culture Park.]</p></div>
-<div class="orv_system"><p>[Currently Occupied: Chungmuro (Main Base), Myeongdong, Dongdaemun History and Culture Park]</p></div>
-<div class="orv_system"><p>[The achievement points of the red flag are rising.]</p></div>
+<div class="orv_system"><p>You have received the transfer of Dongdaemun History and Culture Park.</p></div>
+<div class="orv_system"><p>Currently Occupied: Chungmuro (Main Base), Myeongdong, Dongdaemun History and Culture Park</p></div>
+<div class="orv_system"><p>The achievement points of the red flag are rising.</p></div>
 <p class="orv_line">The flag was changing before my eyes.</p>
 <p class="orv_line">It was a good start.</p>
 <p class="orv_line">No, wasn't this too easy?</p>
@@ -313,7 +320,7 @@
 <p class="orv_line">Anyone who saw it would think about medieval knights. The funny thing was that the surprised Lee Hyunsung did the same thing.</p>
 <p class="orv_line">"I-I will do as you say…!"</p>
 <p class="orv_line">Lee Sungkook, at the head of the group, was surprised to hear these two voices. It was embarrassing but the result was good. I couldn't read Lee Sungkook's inner thoughts but it would be like this if I could read it.</p>
-<div class="orv_quote"><p>「 He must be Yoo Joonghyuk. 」</p></div>
+<div class="orv_quote"><p>He must be Yoo Joonghyuk.</p></div>
 <p class="orv_line">Lee Sungkook met my gaze and quickly turned his head back to the front. This was how a main character felt.</p>
 <p class="orv_line">Not long afterwards, we arrived at Dongmyo Station.</p>
 <p class="orv_line">They were a pretty powerful group seeing as many people were on the platform. There were some people with weapons like Lee Sungkook's group, but most of them didn't have any.</p>
@@ -337,9 +344,9 @@
 <p class="orv_line">Well, I read over 3,000 chapters. It would be unfair if they received the same perks as me when they only read a few chapters.</p>
 <p class="orv_line">Speaking of which, I don't think they had a text version…</p>
 <p class="orv_line">By the way, what was this person looking so hard at? Lee Sungkook was looking at his smartphone.</p>
-<div class="orv_system"><p>[5,000 coins have been invested in agility.]</p></div>
-<div class="orv_system"><p>[Agility Lv. 20 -> Agility Lv. 30]</p></div>
-<div class="orv_system"><p>[An amazing agility lies in your body.]</p></div>
+<div class="orv_system"><p>5,000 coins have been invested in agility.</p></div>
+<div class="orv_system"><p>Agility Lv. 20 -> Agility Lv. 30</p></div>
+<div class="orv_system"><p>An amazing agility lies in your body.</p></div>
 <p class="orv_line">I approached Lee Sungkook like a ghost.</p>
 <p class="orv_line">"What are you looking at so hard?"</p>
 <p class="orv_line">"H-Huh? It is nothing!"</p>
@@ -353,18 +360,12 @@
             <a href="./ch_47"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_49">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="48" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="99" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="47" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="47" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

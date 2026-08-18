@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 10: Ep. 2 – Protagonist, IV</title>
     <meta property="og:title" content="Ch 10: Ep. 2 – Protagonist, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00010.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 10: Ep. 2 – Protagonist, IV</h1></div>
 <p class="orv_line">At this moment, Yoo Sangah shouted, "Dokja-ssi! Behind you!"</p>
@@ -198,22 +205,22 @@
 <p class="orv_line">"…Kim Namwoon."</p>
 <p class="orv_line">The guy whose head burst a few minutes ago was now aiming for me as a demonic person. Kim Namwoon's vocal cords that burst out were in a bizarre shape.</p>
 <p class="orv_line">"Kuweeeoooh."</p>
-<div class="orv_system"><p>[Exclusive skill, [Omniscient Reader's Viewpoint] Lv. 1 has been activated!]</p></div>
-<div class="orv_system"><p>[This person doesn't have any consciousness. The skill [Omniscient Reader's Viewpoint] will be cancelled.]</p></div>
+<div class="orv_system"><p>Exclusive skill, [Omniscient Reader's Viewpoint] Lv. 1 has been activated!</p></div>
+<div class="orv_system"><p>This person doesn't have any consciousness. The skill [Omniscient Reader's Viewpoint] will be cancelled.</p></div>
 <p class="orv_line">Damn, it was as expected. My thigh was scratched by Kim Namwoon's overgrown black fingernails. A pain that felt like a burn spread through my leg. The skin which hadn't been cut by a knife was now torn by fingernails. This was the main reason why demonic people were dangerous. The demonic people became several times stronger than when they were human.</p>
 <p class="orv_line">"Yoo Sangah-ssi, immediately―" I felt something as I spoke. Without looking back, I could see what was going on.</p>
 <p class="orv_line">"Let me go! Let go! Dokja-ssi! Dokja-ssi!"</p>
 <p class="orv_line">Han Myungoh, who had just been limping, was carrying Yoo Sangah over one shoulder and moving across the bridge at an astonishing rate.</p>
-<div class="orv_system"><p>[The constellation 'Secretive Plotter' admires how easy you are to trick.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is impressed with your sacrifice.]</p></div>
-<div class="orv_system"><p>[100 coins have been sponsored.]</p></div>
+<div class="orv_system"><p>The constellation 'Secretive Plotter' admires how easy you are to trick.</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is impressed with your sacrifice.</p></div>
+<div class="orv_system"><p>100 coins have been sponsored.</p></div>
 <p class="orv_line">…Indeed. Planning to leave me? By the way, the way he was running was a little strange. Despite being on one leg, he was running as fast as an Olympic athlete. This couldn't be the exclusive skill of Han Myungoh, who had a big belly. Therefore, it must be the stigma of his sponsor.</p>
-<p class="orv_line">I already knew the constellation who provided that stigma. It was the [One-legged Swift Horse]. I used [Character List] on the distant Han Myungoh.</p>
-<div class="orv_system"><p>[The information of this person can't be read in [Character List].]</p></div>
-<p class="orv_line">Once again, Character List didn't work properly. If I remembered correctly, the stigma of [One-legged Swift Horse] came from the constellation Lame Trickster. Lame Trickster didn't give any stigmas in the mental barrier system. In addition, Han Myungoh couldn't possess such a skill from the beginning. In other words, my skill failed not because of Han Myungoh's ability.</p>
+<p class="orv_line">I already knew the constellation who provided that stigma. It was the <strong>[One-legged Swift Horse]</strong>. I used <strong>[Character List]</strong> on the distant Han Myungoh.</p>
+<div class="orv_system"><p>The information of this person can't be read in [Character List].</p></div>
+<p class="orv_line">Once again, Character List didn't work properly. If I remembered correctly, the stigma of <strong>[One-legged Swift Horse]</strong> came from the constellation Lame Trickster. Lame Trickster didn't give any stigmas in the mental barrier system. In addition, Han Myungoh couldn't possess such a skill from the beginning. In other words, my skill failed not because of Han Myungoh's ability.</p>
 <p class="orv_line">…I was stupid. I looked at the message window floating in front of me and laughed.</p>
-<div class="orv_system"><p>[This person isn't registered in [Character List].]</p></div>
-<p class="orv_line">I was thinking too hard when it meant literally that. [Character List] literally read the information of characters. Yoo Sangah and Han Myungoh were characters who didn't originally appear in Ways of Survival. They were people who would've died if I hadn't saved them. It was natural that I couldn't confirm their information with [Character List].</p>
+<div class="orv_system"><p>This person isn't registered in [Character List].</p></div>
+<p class="orv_line">I was thinking too hard when it meant literally that. <strong>[Character List]</strong> literally read the information of characters. Yoo Sangah and Han Myungoh were characters who didn't originally appear in Ways of Survival. They were people who would've died if I hadn't saved them. It was natural that I couldn't confirm their information with <strong>[Character List]</strong>.</p>
 <p class="orv_line">"Gruk! Gruk! Gruk!"</p>
 <p class="orv_line">On one side, the incoming Kim Namwoon and demonic people were jabbering nonsense at me. On the other side, Han Myungoh was already halfway across the bridge. Lee Hyunsung and Lee Gilyoung had already entered the safety zone across the bridge so I couldn't ask for help from them.</p>
 <p class="orv_line">This was truly a predicament. I couldn't cross the bridge alone. My brain moved quickly. Should I capture one of the demonic people and cross the bridge? It was worth trying, but the success rate was too low. Unlike the name, the demonic people were categorized as non-human, meaning they didn't count as a person.</p>
@@ -232,48 +239,48 @@
 <p class="orv_line">I had to break the flow. I barely avoided the flying fingernails and kicked his legs.</p>
 <p class="orv_line">"Kyah?"</p>
 <p class="orv_line">This person lost all senses and wasn't hurt at all. I stepped back, hitting a broken steel frame. I could hear the raging sound of the ichthyosaur at the bottom of the pillars.</p>
-<div class="orv_system"><p>[A few constellations are rejoicing in your adversity.]</p></div>
-<div class="orv_system"><p>[Constellations have sponsored you 200 coins.]</p></div>
+<div class="orv_system"><p>A few constellations are rejoicing in your adversity.</p></div>
+<div class="orv_system"><p>Constellations have sponsored you 200 coins.</p></div>
 <p class="orv_line">It was a steady accumulation of coins. Now I held 5,000 coins. It was a significant number of coins for the beginning.</p>
-<div class="orv_constellation"><p>[Wow, you are quite good at surviving. Now now! Will any constellations help this poor friend?]</p></div>
+<div class="orv_constellation"><p>Wow, you are quite good at surviving. Now now! Will any constellations help this poor friend?</p></div>
 <p class="orv_line"> It was the dokkaebi's merchant-like voice. I wanted to tear it apart.</p>
-<div class="orv_constellation"><p>[Geez, there is really nobody?]</p></div>
+<div class="orv_constellation"><p>Geez, there is really nobody?</p></div>
 <p class="orv_line">Of course. It would be strange for a constellation to support me after what happened during the Sponsor Selection.</p>
-<div class="orv_constellation"><p>[What did I say? You should've chosen well when you had the chance. How pitiful.]</p></div>
+<div class="orv_constellation"><p>What did I say? You should've chosen well when you had the chance. How pitiful.</p></div>
 <p class="orv_line">Kim Namwoon attacked me again and again, resulting in damage to my waist. Of course, I also injured Kim Namwoon's left side with the knife. Thanks to that, his stomach was hanging out like a skipping rope. In order to kill a demonic person, I had to completely destroy the heart. However, the skin of a demonic person was hardest near the heart. The Swiss Army knife wasn't able to pierce it with sharpness alone.</p>
 <p class="orv_line">Dammit, it wouldn't be so hard if I had just one combat skill.</p>
-<div class="orv_system"><p>[The exclusive skill [Bookmark] is activated.]</p></div>
+<div class="orv_system"><p>The exclusive skill [Bookmark] is activated.</p></div>
 <p class="orv_line">…Bookmark?</p>
-<div class="orv_system"><p>['Character Bookmarks' is activated.]</p></div>
-<div class="orv_system"><p>[Available Bookmark Slots: 3]</p></div>
-<div class="orv_system"><p>[Bringing up the list of available bookmarks.]</p></div>
+<div class="orv_system"><p>'Character Bookmarks' is activated.</p></div>
+<div class="orv_system"><p>Available Bookmark Slots: 3</p></div>
+<div class="orv_system"><p>Bringing up the list of available bookmarks.</p></div>
 <div class="orv_window">
-<h3 class="orv_window_title">[People Listed in the Bookmark Slots]</h3>
+<h3 class="orv_window_title">People Listed in the Bookmark Slots</h3>
 <p>1. The Delusion Demon Kim Namwoon (Understanding 25).</p>
 <p>2. Steel Sword Lee Hyunsung (Understanding 35).</p>
 <p>3. Empty slot.</p>
 </div>
-<p class="orv_line">[Bookmark]. I've read over 3,000 chapters of Ways of Survival and I never saw this skill name before. Still, I intuitively knew how to use it.</p>
+<p class="orv_line"><strong>[Bookmark]</strong>. I've read over 3,000 chapters of Ways of Survival and I never saw this skill name before. Still, I intuitively knew how to use it.</p>
 <p class="orv_line">"Activate bookmark number one."</p>
 <p class="orv_line">There was the feelings of pages turning in my head. It was the scenes of Kim Namwoon in Ways of Survival.</p>
-<div class="orv_quote"><p>「 Hahahaha! I'm full of strength! 」</p></div>
-<div class="orv_quote"><p>「 Die! Die! Die! Die! 」</p></div>
-<div class="orv_quote"><p>「 A new world requires new laws. 」</p></div>
+<div class="orv_quote"><p>Hahahaha! I'm full of strength!</p></div>
+<div class="orv_quote"><p>Die! Die! Die! Die!</p></div>
+<div class="orv_quote"><p>A new world requires new laws.</p></div>
 <p class="orv_line">Kim Namwoon's memories crowded in and all of my muscle nerves started to tense up. The power of another person was spiking within me.</p>
-<div class="orv_system"><p>[The number one bookmark has been activated.]</p></div>
-<div class="orv_system"><p>[The level of the [Bookmark] skill is low, shortening the activation time.]</p></div>
-<div class="orv_system"><p>[Activation Time: One minute.]</p></div>
+<div class="orv_system"><p>The number one bookmark has been activated.</p></div>
+<div class="orv_system"><p>The level of the [Bookmark] skill is low, shortening the activation time.</p></div>
+<div class="orv_system"><p>Activation Time: One minute.</p></div>
 <p class="orv_line">One minute. That was enough.</p>
-<div class="orv_system"><p>[Your understanding of the character is low, so only a part of the character's skill is activated.]</p></div>
-<div class="orv_system"><p>[Blackening Lv.1 has been activated.]</p></div>
+<div class="orv_system"><p>Your understanding of the character is low, so only a part of the character's skill is activated.</p></div>
+<div class="orv_system"><p>Blackening Lv.1 has been activated.</p></div>
 <p class="orv_line">Kim Namwoon was breathing roughly as he rushed towards me. His body was covered with a black energy that was threatening me. I firmly placed strength on the heels of my feet and rushed towards Kim Namwoon. If we had the same skill, I absolutely wouldn't lose.</p>
 <p class="orv_line">At this moment, I really was Kim Namwoon. I was the crazy killer who ruled the world of 'Ways of Survival' with the protagonist. In a situation where Blackening was properly played, the Delusion Demon of the battlefield couldn't be easily beaten.</p>
 <p class="orv_line">"Kyaaack!"</p>
 <p class="orv_line">The Swiss Army knife cut through uncomfortable sensations. It tore through muscles and flesh. From the upper left arm to the heart. There was the sound of a whole human being cut up as Kim Namwoon staggered. If he still had eyes, he would be glaring at me right now.</p>
 <p class="orv_line">"Kuoh, kill. Ohhh. D.i.e" The young man who felt pessimistic towards the world and dreamt of breaking away from it. If Ways of Survival hadn't started, he might've gone to university after sitting his CSAT¹ and enjoyed campus life. "…Don't, want…to…die"</p>
 <p class="orv_line">I watched Kim Namwoon falling down the bridge without saying farewell. Despite him being a hated figure, I couldn't help feeling strange emotions.</p>
-<div class="orv_system"><p>[Your understanding of the character 'Kim Namwoon' has increased.]</p></div>
-<div class="orv_system"><p>[The number one bookmark has been disabled.]</p></div>
+<div class="orv_system"><p>Your understanding of the character 'Kim Namwoon' has increased.</p></div>
+<div class="orv_system"><p>The number one bookmark has been disabled.</p></div>
 <p class="orv_line">A surge of fatigue overcame me as the power went away. It was hard, really hard.</p>
 <p class="orv_line">"Kuwoooook!"</p>
 <p class="orv_line">There was 10 minutes remaining. There were still many demonic people moving about. It was unreasonable to take on so many even with Lv. 10 physique. However, from the beginning, I had no intention of taking care of them alone. It was a little late but he should appear around now.</p>
@@ -285,11 +292,11 @@
 <p class="orv_line">The headless demonic people realized that something was strange and started turning around. However, it was too late. The man destroyed all the demonic people threatening me and appeared in front of me. An overwhelming force without any weapons. He beat the demonic people with only two fists.</p>
 <p class="orv_line">I had prepared my mind in advance but sweat still flowed down my back. Dealing with this guy? It was absolutely impossible. I couldn't win even if my overall stats rose by more than double what they were now.</p>
 <p class="orv_line">"You, who are you?"</p>
-<p class="orv_line">The man's cool gaze turned to me. I reflexively turned on [Character List] in order to overcome the fear.</p>
-<div class="orv_system"><p>[The exclusive skill, [Character List] is activated.]</p></div>
-<div class="orv_system"><p>[There is too much information about this person. [Character List] is converted to [Character Summary].]</p></div>
+<p class="orv_line">The man's cool gaze turned to me. I reflexively turned on <strong>[Character List]</strong> in order to overcome the fear.</p>
+<div class="orv_system"><p>The exclusive skill, [Character List] is activated.</p></div>
+<div class="orv_system"><p>There is too much information about this person. [Character List] is converted to [Character Summary].</p></div>
 <div class="orv_window">
-<h3 class="orv_window_title">[Character Summary]</h3>
+<h3 class="orv_window_title">Character Summary</h3>
 <p>Name: Yoo Joonghyuk.</p>
 <p>Exclusive Attributes: Regressor (3rd turn) (Myth), Pro Gamer (Rare)</p>
 <p>Exclusive Skills: Sage's Eye Lv. 8, Hand to Hand Combat Lv. 8, Weapons Training Lv. 8, Mental Barrier Lv. 5, Crowd Control Lv. 5, Reasoning Lv. 5, Lie Detection Lv. 4…</p>
@@ -304,18 +311,12 @@
             <a href="./ch_9"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_11">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="10" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="30" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="9" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="9" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 38: Ep. 9 – Omniscient Sunfish, II</title>
     <meta property="og:title" content="Ch 38: Ep. 9 – Omniscient Sunfish, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,32 +177,32 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00038.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 38: Ep. 9 – Omniscient Sunfish, II</h1></div>
 <p class="orv_line">The moment the yellow eyes looked at us, a deafening roar echoed in our ears.</p>
 <p class="orv_line">Kuoooooh!</p>
-<div class="orv_system"><p>[The 7th grade, Tyrannosaurus Rex has recognized you.]</p></div>
-<div class="orv_system"><p>[The 'Tyrannosaurus Rex' has triggered the 'Fear the Predator' skill!]</p></div>
-<div class="orv_system"><p>[The exclusive skill Fourth Wall has blocked the effect of the 'Fear the Predator' skill.]</p></div>
+<div class="orv_system"><p>The 7th grade, Tyrannosaurus Rex has recognized you.</p></div>
+<div class="orv_system"><p>The 'Tyrannosaurus Rex' has triggered the 'Fear the Predator' skill!</p></div>
+<div class="orv_system"><p>The exclusive skill Fourth Wall has blocked the effect of the 'Fear the Predator' skill.</p></div>
 <p class="orv_line">My mind was calm thanks to Fourth Wall, but I could stop the chills that occurred. This was the fear towards a predator.</p>
 <p class="orv_line">"Everyone, get out of the way!"</p>
 <p class="orv_line">The petrified Jung Heewon and Lee Jihye regained their spirits. I fell back with Lee Gilyoung beside me.</p>
@@ -206,7 +213,7 @@
 <p class="orv_line">I shouted to Lee Gilyoung lying down next to me.</p>
 <p class="orv_line">"Gilyoung fall back, while Heewon-ssi and Jihye-ssi scatter to the left and right!"</p>
 <p class="orv_line">Then a message popped up.</p>
-<div class="orv_system"><p>[The character 'Lee Gilyoung' has activated the 'Dinosaur Book' skill!]</p></div>
+<div class="orv_system"><p>The character 'Lee Gilyoung' has activated the 'Dinosaur Book' skill!</p></div>
 <p class="orv_line">…Huh?</p>
 <p class="orv_line">"Tyrannosaurus are agile compared to their size, but they are vulnerable due to their narrow field of view."</p>
 <p class="orv_line">"…What?"</p>
@@ -215,7 +222,7 @@
 <p class="orv_line">"…Younger than I am now."</p>
 <p class="orv_line">I stared blankly at Lee Gilyoung. This wasn't the time to tackle it.</p>
 <p class="orv_line">Kuoooooh!</p>
-<div class="orv_system"><p>[The exclusive skill 'Purest Sword Force' has been activated.]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Purest Sword Force' has been activated.</p></div>
 <p class="orv_line">I started waving the iridescent blade to attract the attention of the T-Rex. Lee Jihye and Jung Heewon weren't tankers. I didn't even need to mention Lee Gilyoung. Therefore, I was the only one who could take the risk here.</p>
 <p class="orv_line">"While I draw its attention, attack its rear―"</p>
 <p class="orv_line">I hadn't finished talking when I saw Lee Jihye and Jung Heewon already at the T-Rex's rear. They noticed quickly.</p>
@@ -234,16 +241,16 @@
 <p class="orv_line">Wasn't this guy actually a hugely fraudulent character? No wonder why Yoo Joonghyuk coveted him.</p>
 <p class="orv_line">Kuwoooh!</p>
 <p class="orv_line">Thanks to Lee Gilyoung's success, the battlefield quickly became advantageous. The T-Rex's movements became duller while a red light shone in Jung Heewon and Lee Jihye's eyes.</p>
-<div class="orv_system"><p>[Demon Slayer.]</p></div>
+<div class="orv_system"><p>Demon Slayer.</p></div>
 <p class="orv_line">It made them vulnerable to mental attacks but it was a good skill that made them stronger when they were excited. The sight of the two women's eyes burning as they watched the rainforest was truly spectacular.</p>
 <p class="orv_line">It was a pity that I had lost Lee Jihye to Yoo Joonghyuk. However, Jung Heewon also had overwhelming growth potential. Judge of Destruction was a good attribute and she didn't have a sponsor yet.</p>
 <p class="orv_line">It felt like the T-Rex's stamina had decreased considerably. It was time to deal the final blow.</p>
-<div class="orv_system"><p>[Blade of Faith is activated!]</p></div>
+<div class="orv_system"><p>Blade of Faith is activated!</p></div>
 <p class="orv_line">I started to focus my remaining magic power. I didn't have a sponsor, nor was I as fast as Jung Heewon or Lee Jihye. But that didn't mean my attack power was weak. I had a fraudulent system that overcame all of this.</p>
 <p class="orv_line">Kuoooooh!</p>
 <p class="orv_line">Ether Blade.</p>
-<div class="orv_system"><p>[The special option of Unbroken Faith is activated.]</p></div>
-<div class="orv_system"><p>[The ether property is converted to 'fire'.]</p></div>
+<div class="orv_system"><p>The special option of Unbroken Faith is activated.</p></div>
+<div class="orv_system"><p>The ether property is converted to 'fire'.</p></div>
 <p class="orv_line">An enormous amount of magic power was sucked in and my physical fatigue became extreme. But I didn't mind because there was a way to supplement it later.</p>
 <p class="orv_line">The blade increased by one metre and was surrounded by flames.</p>
 <p class="orv_line">I ran to the rear of the Tyrannosaurus.</p>
@@ -252,8 +259,8 @@
 <p class="orv_line">Kuoooooh!</p>
 <p class="orv_line">The T-Rex poured out blood and its body rolled across the ground. I rammed the blade in wherever I could. Flames poured into the wounds caused by the blade.</p>
 <p class="orv_line">The yellow eyes of the T-Rex stared at me as it gasped painfully, before finally dying.</p>
-<div class="orv_system"><p>[You have succeeded in being the first to hunt the 7th grade species 'Tyrannosaurus Rex!']</p></div>
-<div class="orv_system"><p>[You have obtained 1,000 coins as compensation.]</p></div>
+<div class="orv_system"><p>You have succeeded in being the first to hunt the 7th grade species 'Tyrannosaurus Rex!'</p></div>
+<div class="orv_system"><p>You have obtained 1,000 coins as compensation.</p></div>
 <p class="orv_line">"Ah…we really got it."</p>
 <p class="orv_line">"I knew we could do it."</p>
 <p class="orv_line">Jung Heewon breathed heavily as she spoke with a proud expression on her face. She could be proud because the T-Rex was top-ranked among the 7th grade monsters. Lee Jihye belatedly rushed towards me.</p>
@@ -265,15 +272,15 @@
 <p class="orv_line">"…Huh?"</p>
 <p class="orv_line">"The genre is fantasy, action and adventure. This should be enough."</p>
 <p class="orv_line">At this moment, a system message flashed in my head.</p>
-<div class="orv_system"><p>[The theater owner is satisfied with the changed ending of the movie.]</p></div>
+<div class="orv_system"><p>The theater owner is satisfied with the changed ending of the movie.</p></div>
 <p class="orv_line">Jung Heewon screamed like it was absurd.</p>
 <p class="orv_line">"Eek?"</p>
 <p class="orv_line">Yes. The strategy of Theatre Dungeon wasn't to see the 'real ending'.</p>
 <p class="orv_line">If so, Yoo Joonghyuk wouldn't have been able to beat this dungeon. It was to create the desired ending for the 'theatre master' at the core of this dungeon. Please note that the theatre owner was an extreme psychopath.</p>
 <p class="orv_line">"Do you understand now? We just need to smash it."</p>
 <p class="orv_line">In other words, if we removed all the obstacles to the ending, the movie would end naturally.</p>
-<div class="orv_system"><p>[Now you can move to the next floor.]</p></div>
-<div class="orv_system"><p>[Go to the helipad on top of the research laboratory.]</p></div>
+<div class="orv_system"><p>Now you can move to the next floor.</p></div>
+<div class="orv_system"><p>Go to the helipad on top of the research laboratory.</p></div>
 <p class="orv_line">"We will move in a little while. We have to get some rewards."</p>
 <p class="orv_line">I started exploring the area around the T-Rex. Soon after, I found one of the guys who entered before us. The rest were eaten or mutilated by the T-Rex.</p>
 <p class="orv_line">"Hey, wake up."</p>
@@ -315,10 +322,10 @@
 <p class="orv_line">We encountered several raptors on the way but they were easy after the T-Rex.</p>
 <p class="orv_line">There were many flasks and ampoules in the laboratory. There were small incubators containing dinosaur embryos and blood samples collected. There was only one thing missing.</p>
 <p class="orv_line">My eyes caught a few items as we entered the inner corridor.</p>
-<div class="orv_system"><p>[Physique Enhancing Ampoule]</p></div>
-<div class="orv_system"><p>[Magic Power Enhancing Ampoule]</p></div>
-<div class="orv_system"><p>[Agility Enhancing Ampoule]</p></div>
-<div class="orv_system"><p>[Strength Enhancing Ampoule]</p></div>
+<div class="orv_system"><p>Physique Enhancing Ampoule</p></div>
+<div class="orv_system"><p>Magic Power Enhancing Ampoule</p></div>
+<div class="orv_system"><p>Agility Enhancing Ampoule</p></div>
+<div class="orv_system"><p>Strength Enhancing Ampoule</p></div>
 <p class="orv_line">As expected, it was here. I started to pack the ampoules. Just like the Ichthyosaur's Core, these comprehensive stat growth items were available only in the early scenarios.</p>
 <p class="orv_line">It wasn't just one or two ampoules. There were close to 20 bottles. If this was the case, my stats would be able to level up explosively. It was in anticipation of this hidden scenario that I saved coins instead of investing them in my stats.</p>
 <p class="orv_line">These ampoules were only available when the corresponding stat was less than level 30.</p>
@@ -333,13 +340,13 @@
 <p class="orv_line">"Oh my god… what are these items?"</p>
 <p class="orv_line">"…This is a hidden scenario."</p>
 <p class="orv_line">I spoke with a bit of disgruntlement. Damn, this was a bit difficult. I didn't catch the T-Rex alone so taking all the items pricked my conscience…</p>
-<div class="orv_system"><p>[Some constellations are displeased with the situation.]</p></div>
+<div class="orv_system"><p>Some constellations are displeased with the situation.</p></div>
 <p class="orv_line">Lee Jihye looked at the Strength Enhancement Ampoule and opened her mouth.</p>
 <p class="orv_line">"Can you give me the Strength Enhancement Ampoule? I am a bit lacking in strength."</p>
-<div class="orv_system"><p>[The exclusive skill, Character List is activated.]</p></div>
+<div class="orv_system"><p>The exclusive skill, Character List is activated.</p></div>
 <p class="orv_line">It was a summary version that only contained the comprehensive stats.</p>
 <div class="orv_window">
-<h3 class="orv_window_title">[Character Summary]</h3>
+<h3 class="orv_window_title">Character Summary</h3>
 <p>Name: Lee Jihye</p>
 <p>Exclusive Attributes: Scarred Sword Demon (Rare)</p>
 <p>Exclusive Skills: Sword Training Lv. 4, Demon Slaying Lv. 1, Absolute Sense Lv. 2, Ghost Walk Lv. 2.</p>
@@ -350,7 +357,7 @@
 <p class="orv_line">"Huh? Heewon unni, can't I have it?"</p>
 <p class="orv_line">"Um, Dokja-ssi was the one who discovered it so it is his decision…"</p>
 <p class="orv_line">Frankly, it didn't matter if the other party members received them but giving them to Lee Jihye was a bit of a waste. She was part of Yoo Joonghyuk's group anyway.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' expects your fairness.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' expects your fairness.</p></div>
 <p class="orv_line">Fairness… yes, let's pick the most unbiased game I knew.</p>
 <p class="orv_line">I smiled and made a suggestion.</p>
 <p class="orv_line">"How about rock paper scissors?"</p>
@@ -367,8 +374,8 @@
 <p class="orv_line">"I'm good at rock paper scissors. Will it be okay?"</p>
 <p class="orv_line">"Ah, is that so?"</p>
 <p class="orv_line">I smiled at Lee Jihye.</p>
-<div class="orv_system"><p>[Exclusive skill, Omniscient Reader's Viewpoint stage 1 has been activated!]</p></div>
-<div class="orv_system"><p>[The character 'Lee Jihye' has prepared 'scissors'. ]</p></div>
+<div class="orv_system"><p>Exclusive skill, Omniscient Reader's Viewpoint stage 1 has been activated!</p></div>
+<div class="orv_system"><p>The character 'Lee Jihye' has prepared 'scissors'.</p></div>
 <br>
 <hr>
         </article>
@@ -376,18 +383,12 @@
             <a href="./ch_37"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_39">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="38" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="93" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="37" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="37" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

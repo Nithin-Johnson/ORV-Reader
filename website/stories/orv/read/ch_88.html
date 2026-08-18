@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 88: Ep. 18 – A Reader's Fight, I</title>
     <meta property="og:title" content="Ch 88: Ep. 18 – A Reader's Fight, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,58 +177,58 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00088.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 88: Ep. 18 – A Reader's Fight, I</h1></div>
 <p class="orv_line">The dokkaebi's voice rang out.</p>
 <p class="orv_line">A group of low-grade dokkaebis were looking down like they were watching a burning house. Bihyung's figure could also be seen. He whistled when he met my eyes.</p>
 <p class="orv_line">The dokkaebi in the middle of the crowd slowly opened his mouth and spoke to all of Seoul.</p>
-<div class="orv_constellation"><p>[Incarnations of Seoul! I have to tell you unfortunate news. Unfortunately, due to the actions of some people, one of the disasters has woken up in Gangdong-gu.]</p></div>
+<div class="orv_constellation"><p>Incarnations of Seoul! I have to tell you unfortunate news. Unfortunately, due to the actions of some people, one of the disasters has woken up in Gangdong-gu.</p></div>
 <p class="orv_line">The dokkaebi smiled as he met my eyes. This bastard?</p>
-<div class="orv_constellation"><p>[Ah, the sound of your sighs can be heard from here. I can see people who are already leaving Gangdong-gu. Haha, everyone. You should listen to the end. You will regret it later if you run away now. This disaster is definitely an opportunity for you.]</p></div>
+<div class="orv_constellation"><p>Ah, the sound of your sighs can be heard from here. I can see people who are already leaving Gangdong-gu. Haha, everyone. You should listen to the end. You will regret it later if you run away now. This disaster is definitely an opportunity for you.</p></div>
 <p class="orv_line">The dokkaebi spoke in a loud voice.</p>
-<div class="orv_constellation"><p>[Haven't you been having a hard time gathering coins? I know it all. Your life collapsed overnight and now strange existences are taking your coins. The people who were friends yesterday are suddenly stabbing you today. I'm glad I'm not you. Right now, the stars in the sky are probably telling you, "Hey, shake your ass a little better. I'll give you 100 coins."]</p></div>
-<div class="orv_system"><p>[A handful of constellations are giggling and laughing.]</p></div>
+<div class="orv_constellation"><p>Haven't you been having a hard time gathering coins? I know it all. Your life collapsed overnight and now strange existences are taking your coins. The people who were friends yesterday are suddenly stabbing you today. I'm glad I'm not you. Right now, the stars in the sky are probably telling you, "Hey, shake your ass a little better. I'll give you 100 coins."</p></div>
+<div class="orv_system"><p>A handful of constellations are giggling and laughing.</p></div>
 <p class="orv_line">The dokkaebi didn't laugh.</p>
-<div class="orv_constellation"><p>[I understand that you feel like shit and hate these jerks. Since the world is destroyed, you just want to live the way you want. You are very courageous but you feel a sense of helplessness when you realize that this world is divided in two. You feel disappointed when you realize that your constellation, which was barely obtained after shaking your ass, is inferior to the constellation of a successful person. You feel angry about the unfair world. I'm well aware.]</p></div>
-<div class="orv_system"><p>[Some constellations oppose the dokkaebi's speech.]</p></div>
+<div class="orv_constellation"><p>I understand that you feel like shit and hate these jerks. Since the world is destroyed, you just want to live the way you want. You are very courageous but you feel a sense of helplessness when you realize that this world is divided in two. You feel disappointed when you realize that your constellation, which was barely obtained after shaking your ass, is inferior to the constellation of a successful person. You feel angry about the unfair world. I'm well aware.</p></div>
+<div class="orv_system"><p>Some constellations oppose the dokkaebi's speech.</p></div>
 <p class="orv_line">Speaking of which, this dokkaebi wasn't ordinary. A low-grade dokkaebi with weak courage wouldn't be able to say this. Their channel would be ruined if there was a backlash from the constellations.</p>
 <p class="orv_line">But this was only for minority channels. The bigger the channel, the more different the dokkaebi.</p>
 <p class="orv_line">They knew the laws of the story. They couldn't tell a big story if they were only obsessed with subscriptions. A true storyteller must deal with the 'person' rather than the 'audience'.</p>
 <p class="orv_line">I closely observed the dokkaebi who was still talking.</p>
-<div class="orv_constellation"><p>[I have prepared something for all of you. You who are unlucky, lucky or worked hard, you have a chance to become 'someone' overnight.]</p></div>
+<div class="orv_constellation"><p>I have prepared something for all of you. You who are unlucky, lucky or worked hard, you have a chance to become 'someone' overnight.</p></div>
 <p class="orv_line">The pointed horn on the crown. The leg shown through the white cap looked like a one-legged crow.</p>
 <p class="orv_line">Wait a minute, surely this bastard wasn't…Dokgak?</p>
 <p class="orv_line">At this moment, a huge screen appeared in the air. A bleeding boy fleeing was shown on the screen.</p>
-<div class="orv_constellation"><p>[Now, this boy you are seeing is an SSS-grade item walking around! Are you looking at him from head to toe? His name is Myung Ilsang. He was fortunate enough to be picked by the Star Stream to go to another world. Can you imagine it? Imagine being summoned to another dimension, suddenly receiving a powerful strength, spending a hot night with a cute elf girlfriend, saving the world and being loved as a warrior! That's right. This damn guy is the 'disaster' you have to catch today.]</p></div>
+<div class="orv_constellation"><p>Now, this boy you are seeing is an SSS-grade item walking around! Are you looking at him from head to toe? His name is Myung Ilsang. He was fortunate enough to be picked by the Star Stream to go to another world. Can you imagine it? Imagine being summoned to another dimension, suddenly receiving a powerful strength, spending a hot night with a cute elf girlfriend, saving the world and being loved as a warrior! That's right. This damn guy is the 'disaster' you have to catch today.</p></div>
 <p class="orv_line">It was somewhat strange.</p>
 <p class="orv_line">I was wondering why a low-grade dokkaebi replaced the position of an intermediate dokkaebi. It was because he was the dokkaebi of a major channel.</p>
-<div class="orv_constellation"><p>[I can already hear your resentment. How the hell can you kill an SSS-grade? Haha, there is no need to worry. This guy currently has a penalty on him. His powers are sealed. He is strong but he is a treasure chest if you hit him all at once.]</p></div>
+<div class="orv_constellation"><p>I can already hear your resentment. How the hell can you kill an SSS-grade? Haha, there is no need to worry. This guy currently has a penalty on him. His powers are sealed. He is strong but he is a treasure chest if you hit him all at once.</p></div>
 <p class="orv_line">"…He is creepy." Han Sooyoung clicked her tongue. As a writer, she had already grasped the dokkaebi's intentions.</p>
 <p class="orv_line">If a disaster was called a disaster, no one would come. Then what if the disaster was a treasure chest?</p>
-<div class="orv_constellation"><p>[Your life hasn't been ruined yet. Rather, I can say that you have good luck. The sub scenario that I offer now will be a great stepping stone to reverse your life. Now, the chance will only be for one day! Move immediately! Only those who move the quickest can become the owner of an SSS-grade item!]</p></div>
+<div class="orv_constellation"><p>Your life hasn't been ruined yet. Rather, I can say that you have good luck. The sub scenario that I offer now will be a great stepping stone to reverse your life. Now, the chance will only be for one day! Move immediately! Only those who move the quickest can become the owner of an SSS-grade item!</p></div>
 <p class="orv_line">As soon as they heard this, the incarnations scattered throughout Seoul would gather in Gangdong-gu.</p>
-<div class="orv_system"><p>[The sub scenario has been updated.]</p></div>
+<div class="orv_system"><p>The sub scenario has been updated.</p></div>
 <div class="orv_window">
-<h3 class="orv_window_title">[Sub-scenario – SSS-grade Hunt]</h3>
+<h3 class="orv_window_title">Sub-scenario – SSS-grade Hunt</h3>
 <p>Category: Sub</p>
 <p>Difficulty: B ~ ???</p>
 <p>Clear Conditions: Get rid of the SSS-grade Myung Ilsang.</p>
@@ -235,7 +242,7 @@
 <p class="orv_line">"…Won't he be affected by probability?"</p>
 <p class="orv_line">"The probability is offset to some extent by the interest of the constellations."</p>
 <p class="orv_line">This was why dokkaebis preferred exciting scenarios. The stories that many constellations wanted offset the probabilities. Of course, it would be the responsibility of the dokkaebis if it failed, but this situation was different.</p>
-<div class="orv_system"><p>[The eyes of many constellations are shining.]</p></div>
+<div class="orv_system"><p>The eyes of many constellations are shining.</p></div>
 <p class="orv_line">If it went as Dokgak planned, Seoul would end before the fifth scenario began. Han Sooyoung immediately used all her magic power to summon the avatars to search.</p>
 <p class="orv_line">Five minutes passed before Han Sooyoung shouted, "I found him. He is 2km northwest from here!"</p>
 <p class="orv_line">I ran along the road with Han Sooyoung and soon heard voices.</p>
@@ -251,18 +258,18 @@
 <p class="orv_line">"Of course. I will send you. You really want to go right?"</p>
 <p class="orv_line">"If I can go then of course I want to go! It is better than this shitty world…"</p>
 <p class="orv_line">Myung Ilsang nodded and extended his right arm towards the crowd.</p>
-<div class="orv_system"><p>[The eighth seal of the returnee 'Myung Ilsang' has been released.]</p></div>
-<div class="orv_system"><p>[The ninth seal of the returnee 'Myung Ilsang' has been released.]</p></div>
+<div class="orv_system"><p>The eighth seal of the returnee 'Myung Ilsang' has been released.</p></div>
+<div class="orv_system"><p>The ninth seal of the returnee 'Myung Ilsang' has been released.</p></div>
 <p class="orv_line">·····.</p>
 <p class="orv_line">"Then go well. Although I have no idea if it is better than here."</p>
 <p class="orv_line">"What?"</p>
-<div class="orv_system"><p>[The twelfth seal of the returnee 'Myung Ilsang' has been released.]</p></div>
-<div class="orv_system"><p>[The thirteenth seal of the returnee 'Myung Ilsang' has been released.]</p></div>
-<div class="orv_system"><p>[The fourteenth seal of the returnee 'Myung Ilsang' has been released.]</p></div>
+<div class="orv_system"><p>The twelfth seal of the returnee 'Myung Ilsang' has been released.</p></div>
+<div class="orv_system"><p>The thirteenth seal of the returnee 'Myung Ilsang' has been released.</p></div>
+<div class="orv_system"><p>The fourteenth seal of the returnee 'Myung Ilsang' has been released.</p></div>
 <p class="orv_line">·····.</p>
 <p class="orv_line">I felt a sense of hopelessness as I watched the messages appearing in the sky. It was too late.</p>
 <p class="orv_line">"Because that place, I destroyed it."</p>
-<div class="orv_system"><p>[The character 'Myung Ilsang' has triggered 'Small Black Fire Cannon' Lv. 3!]</p></div>
+<div class="orv_system"><p>The character 'Myung Ilsang' has triggered 'Small Black Fire Cannon' Lv. 3!</p></div>
 <p class="orv_line">I grabbed Han Sooyoung and rushed behind a building.</p>
 <p class="orv_line">A violet flash overturned the forest of buildings. Up to half a dozen high-rise buildings were hit and an entire street disappeared. Those who ran towards him disintegrated without leaving even bone dust behind.</p>
 <p class="orv_line">A single entity that could be a disaster. This was the real strength of a returnee.</p>
@@ -270,8 +277,8 @@
 <p class="orv_line">This was real fear. It was fear that caused our bodies to shake, rather than a skill. I spoke in an effort to resist it. "We can win."</p>
 <p class="orv_line">"Don't speak nonsense and let's go back. We can never kill that guy."</p>
 <p class="orv_line">"No. I can catch him. We will be better off if I kill him now'.</p>
-<div class="orv_system"><p>[The character 'Han Sooyoung' has used 'Lie Detection Lv. 2'.]</p></div>
-<div class="orv_system"><p>[The character Han Sooyoung has confirmed that the statement is true.]</p></div>
+<div class="orv_system"><p>The character 'Han Sooyoung' has used 'Lie Detection Lv. 2'.</p></div>
+<div class="orv_system"><p>The character Han Sooyoung has confirmed that the statement is true.</p></div>
 <p class="orv_line">Han Sooyoung's eyes widened. "…Really? You couldn't kill him before."</p>
 <p class="orv_line">"A person who only thinks about one thing, how can you live?" I was only speaking a half truth. In fact, the original plan was to defeat the Disaster of Questions and build up a second 'story'.</p>
 <p class="orv_line">The problem was that my plan was based on learning Way of the Wind.</p>
@@ -287,7 +294,7 @@
 <p class="orv_line">–I'm not a regressor like you. I have to be careful in case of failure. If I don't think until the end…</p>
 <p class="orv_line">–Careful? Don't be so cocky. Do you think you are a constellation? Knowing the future doesn't mean you can control everything.</p>
 <p class="orv_line">I felt like someone had punched me. Funnily enough, I thought that Yoo Joonghyuk's words were right.</p>
-<div class="orv_system"><p>[The exclusive skill, 'Fourth Wall' is in use.]</p></div>
+<div class="orv_system"><p>The exclusive skill, 'Fourth Wall' is in use.</p></div>
 <p class="orv_line">It was arrogance from knowing the future. I thought I could somehow make it even if the story was distorted. Maybe that led to the current situation.</p>
 <p class="orv_line">–Then why don't you fight a little?</p>
 <p class="orv_line">I couldn't answer.</p>
@@ -304,41 +311,41 @@
 <p class="orv_line">"…"</p>
 <p class="orv_line">"I was trying to live well. Kill some S-grade incarnations, defeat the bad groups and love the pretty noonas. But what is this? I have completely become a villain. What should I do?"</p>
 <p class="orv_line">I grasped my sword instead of answering.</p>
-<div class="orv_system"><p>[The stigma 'Song of the Sword Lv. 1' has been used.]</p></div>
-<div class="orv_system"><p>[Your sword is filled with the words left by the Duke of Loyalty and Warfare.]</p></div>
-<div class="orv_quote"><p>「 Today I am prepared for death. I pray to God in Heaven, may I destroy the enemy. 」</p></div>
+<div class="orv_system"><p>The stigma 'Song of the Sword Lv. 1' has been used.</p></div>
+<div class="orv_system"><p>Your sword is filled with the words left by the Duke of Loyalty and Warfare.</p></div>
+<div class="orv_quote"><p>Today I am prepared for death. I pray to God in Heaven, may I destroy the enemy.</p></div>
 <p class="orv_line">The Duke of Loyalty and Warfare's words recorded in his war diary. Fortunately, the Duke of Loyalty and Warfare took my side this time.</p>
-<div class="orv_system"><p>[The stigma 'Song of the Sword' has been used.]</p></div>
-<div class="orv_system"><p>[The decision to die has improved your fighting power.]</p></div>
+<div class="orv_system"><p>The stigma 'Song of the Sword' has been used.</p></div>
+<div class="orv_system"><p>The decision to die has improved your fighting power.</p></div>
 <p class="orv_line">I squeezed out all of my magic power at once.</p>
-<div class="orv_system"><p>[Blade of Faith is activated!]</p></div>
+<div class="orv_system"><p>Blade of Faith is activated!</p></div>
 <p class="orv_line">The Blade of Faith burst out. I ran towards him. Myung Ilsang's hands lightly struck the Blade of Faith.</p>
 <p class="orv_line">The splitting pain caused me to loosen my grip. It was only one blow but I could clearly know it. The overall stats of Myung Ilsang had already exceeded the limit of this scenario.</p>
 <p class="orv_line">"What, you want to fight? Really? Didn't you just see me fighting?"</p>
 <p class="orv_line">I looked at him laughing and was reminded of Ways of Survival. What could I do well? It was to 'read'.</p>
-<div class="orv_system"><p>[Exclusive skill, Omniscient Reader's Viewpoint stage 1 has been activated!]</p></div>
+<div class="orv_system"><p>Exclusive skill, Omniscient Reader's Viewpoint stage 1 has been activated!</p></div>
 <p class="orv_line">Then I started to hear his movements.</p>
-<div class="orv_quote"><p>「 Right shoulder. 」</p></div>
-<div class="orv_quote"><p>「 Left thigh. 」</p></div>
+<div class="orv_quote"><p>Right shoulder.</p></div>
+<div class="orv_quote"><p>Left thigh.</p></div>
 <p class="orv_line">The strikes still hit me despite me reading the moves. The fists surrounded by a purple light ruthlessly poured towards me.</p>
-<div class="orv_quote"><p>「 The belly, the belly, the belly, the belly. 」</p></div>
+<div class="orv_quote"><p>The belly, the belly, the belly, the belly.</p></div>
 <p class="orv_line">Blood poured from my mouth and my vision shook. I didn't give up. I thought and thought again.</p>
-<div class="orv_system"><p>[The character 'Myung Ilsang' admires your spirit.]</p></div>
-<div class="orv_system"><p>[Your understanding of the character 'Myung Ilsang' has increased.]</p></div>
+<div class="orv_system"><p>The character 'Myung Ilsang' admires your spirit.</p></div>
+<div class="orv_system"><p>Your understanding of the character 'Myung Ilsang' has increased.</p></div>
 <p class="orv_line">The information contained in Ways of Survival alone couldn't beat him. It was different from when I hunted the Dark Keeper. I couldn't fight despite calculating everything.</p>
-<div class="orv_quote"><p>「 Strong, weak, torso, head… 」</p></div>
+<div class="orv_quote"><p>Strong, weak, torso, head…</p></div>
 <p class="orv_line">Too much information poured in at once, causing my dizziness to worsen. This was despite borrowing the power of the stigma. At this rate, the battle would be over in no time. I wiped the blood at my mouth and backed away.</p>
 <p class="orv_line">…Did I have to use Ganpyeongui? I felt bitter that the last method I had was to borrow the power of the constellations. If I called a powerful constellation, I could probably win.</p>
 <p class="orv_line">However, there was a burden of the probability after the last incident and most of all, I didn't like to owe the constellations.</p>
 <p class="orv_line">Damn, I wish I had talent. It would be preferable if I could steal someone's talent.</p>
 <p class="orv_line">…Eh? Wait. Steal? A dull shock filled my head. So far, my main weapon was 'information'. However, there was so much 'information' that I actually forgot some of it.</p>
 <p class="orv_line">Pathetic. Why the hell did I forget about this skill? Wasn't this the first thing I should've done?</p>
-<div class="orv_system"><p>[The exclusive skill 'Bookmark' can now be activated.]</p></div>
-<div class="orv_system"><p>['Character Bookmarks' is activated.]</p></div>
-<div class="orv_system"><p>[Available Bookmark Slots: 4]</p></div>
-<div class="orv_system"><p>[Bringing up the list of available bookmarks.]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Bookmark' can now be activated.</p></div>
+<div class="orv_system"><p>'Character Bookmarks' is activated.</p></div>
+<div class="orv_system"><p>Available Bookmark Slots: 4</p></div>
+<div class="orv_system"><p>Bringing up the list of available bookmarks.</p></div>
 <div class="orv_window">
-<h3 class="orv_window_title">[People Listed in the Bookmark Slots]</h3>
+<h3 class="orv_window_title">People Listed in the Bookmark Slots</h3>
 <p>1. The Delusion Demon Kim Namwoon (Understanding 35).</p>
 <p>2. Steel Sword Lee Hyunsung (Understanding 75).</p>
 <p>3. Demagogue Cheon Inho (Understanding 20).</p>
@@ -347,7 +354,7 @@
 <p class="orv_line">There was no change apart from the one additional slot.</p>
 <p class="orv_line">I chose the empty slot.</p>
 <div class="orv_window">
-<h3 class="orv_window_title">[List of People who can be Registered on the Bookmarks]</h3>
+<h3 class="orv_window_title">List of People who can be Registered on the Bookmarks</h3>
 <p>1. Poisoner Lee Seolhwa (Understanding 10).</p>
 <p>2. King of Beauty Min Jiwon (Understanding 25).</p>
 <p>3. Tyrant King Jung Youngho (Understanding 10).</p>
@@ -361,15 +368,15 @@
 <p class="orv_line">In addition, people who weren't characters like Han Sooyoung, Yoo Sangah and Lee Gilyoung weren't on the list.</p>
 <p class="orv_line">It didn't matter. They weren't the people I needed right now. I scrolled for a bit and finally found the person I wanted.</p>
 <p class="orv_line">There he was. Why did I forget that he was also a 'character'. I didn't hesitate to put him in the fourth bookmark.</p>
-<div class="orv_system"><p>[The level of the Bookmark skill is low, shortening the activation time.]</p></div>
-<div class="orv_system"><p>[Activation Time: 30 minutes]</p></div>
-<div class="orv_system"><p>[Your understanding of the character is significant. You can select some of his skills to import.]</p></div>
+<div class="orv_system"><p>The level of the Bookmark skill is low, shortening the activation time.</p></div>
+<div class="orv_system"><p>Activation Time: 30 minutes</p></div>
+<div class="orv_system"><p>Your understanding of the character is significant. You can select some of his skills to import.</p></div>
 <p class="orv_line">I chose a skill. The next moment, a silver storm emerged around my body. I felt the courage of a wolf nestle in my body.</p>
 <p class="orv_line">Damn, I felt like a fool. What had I been trying to learn so far? I wasn't a regressor or a returnee.</p>
-<div class="orv_system"><p>[The character 'Prince Lycaon of the Imyuntar' has been registered on bookmark 4.]</p></div>
-<div class="orv_system"><p>[The number four bookmark has been activated.]</p></div>
+<div class="orv_system"><p>The character 'Prince Lycaon of the Imyuntar' has been registered on bookmark 4.</p></div>
+<div class="orv_system"><p>The number four bookmark has been activated.</p></div>
 <p class="orv_line">I was a 'reader'.</p>
-<div class="orv_system"><p>[Way of the Wind Lv. 8 has been activated.]</p></div>
+<div class="orv_system"><p>Way of the Wind Lv. 8 has been activated.</p></div>
 <p class="orv_line">And this was the way I fought.</p>
 <br>
 <hr>
@@ -378,18 +385,12 @@
             <a href="./ch_87"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_89">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="88" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="128" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="87" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="87" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

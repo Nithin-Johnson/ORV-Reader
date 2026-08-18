@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 19: Ep. 4 – Line of Hypocrisy, IV</title>
     <meta property="og:title" content="Ch 19: Ep. 4 – Line of Hypocrisy, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00019.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 19: Ep. 4 – Line of Hypocrisy, IV</h1></div>
 <p class="orv_line">The next morning, I was almost out of supplies. Jung Heewon stared at the convenience store bags as if she couldn't believe it. "Oh my god, it is sold out?"</p>
@@ -235,11 +242,11 @@
 <p class="orv_line">"What is it?"</p>
 <p class="orv_line">"A deal. We will be happy to exchange food for anything we determine to be of value. Every person can give something different. Isn't that right?"</p>
 <p class="orv_line">Cheon Inho's cold gaze caused the people to tremble. It was mostly the people who came to me yesterday and bought food.</p>
-<div class="orv_system"><p>[The character 'Cheon Inho' has activated [Incite] Lv. 2.]</p></div>
+<div class="orv_system"><p>The character 'Cheon Inho' has activated [Incite] Lv. 2.</p></div>
 <p class="orv_line">"Originally, I wasn't going to do this, but yesterday, Kim Dokja-ssi told me something nice. That's right, everyone. Is there anything free in the world? If you want food, you have to prove your worth. This is the way it is. Haha, thank you for telling me something good, Kim Dokja-ssi."</p>
 <p class="orv_line">…Look at this? At this moment, everyone's attention was focused on me. Their eyes were mostly filled with resentment.</p>
 <p class="orv_line">"Because of that bastard…"</p>
-<p class="orv_line">People wanted to be stupid and Cheon Inho had the [Incite] skill. It was a skill that most good group leaders would have. But this way, the hostility would turn towards me again…</p>
+<p class="orv_line">People wanted to be stupid and Cheon Inho had the <strong>[Incite]</strong> skill. It was a skill that most good group leaders would have. But this way, the hostility would turn towards me again…</p>
 <p class="orv_line">I looked at the back of Cheon Inho. It was a cute level, at least compared to the people at Chungmuro and Seoul Station. The people gathered in front of the podium were already trying to bargain.</p>
 <p class="orv_line">"I-I will buy it with coins. How much do you want?"</p>
 <p class="orv_line">"200 coins."</p>
@@ -252,10 +259,10 @@
 <p class="orv_line">"…I see."</p>
 <p class="orv_line">"Don't touch him because I will kill him myself. Understood?"</p>
 <p class="orv_line">Her killing intent was impressive. Was she chosen by a sponsor or was it a late blooming attribute?</p>
-<div class="orv_system"><p>[The exclusive skill, [Character List] is activated.]</p></div>
+<div class="orv_system"><p>The exclusive skill, [Character List] is activated.</p></div>
 <p class="orv_line">I was a little worried about using this skill. This woman would've died if I hadn't saved her. Would she be registered as a character?</p>
 <div class="orv_window">
-<h3 class="orv_window_title">[Character Summary]</h3>
+<h3 class="orv_window_title">Character Summary</h3>
 <p>Name: Jung Heewon</p>
 <p>Age: 27 years old.</p>
 <p>Sponsor: None (Three constellations are currently showing interest in this person).</p>
@@ -298,35 +305,35 @@
 <p class="orv_line">I looked at my watch instead of answering. It was time.</p>
 <p class="orv_line">Crack!</p>
 <p class="orv_line">Yes, he showed up. The air split apart and a familiar figure was revealed. Screams came from everywhere. The nightmare of humanity that opened up this tragedy.</p>
-<div class="orv_constellation"><p>[H-How are you all doing? Haven't you been free for a while?]</p></div>
+<div class="orv_constellation"><p>H-How are you all doing? Haven't you been free for a while?</p></div>
 <p class="orv_line">The dokkaebi.</p>
 <p class="orv_line">"A-Aaaagh!"</p>
 <p class="orv_line">The people panicked at the appearance of the dokkaebi. It was never a good thing when this guy showed up. Even Jung Heewon, who was full of energy, flinched momentarily. By the way, it wasn't Bihyung. Originally, Bihyung was the dokkaebi responsible for all nearby channels, but this was a different guy. Unlike the pure white fur of Bihyung, this dokkaebi had black fur.</p>
-<div class="orv_constellation"><p>[M-My friend who was originally in charge of this channel is undergoing disciplinary action… S-So, I am responsible for this scenario.]</p></div>
+<div class="orv_constellation"><p>M-My friend who was originally in charge of this channel is undergoing disciplinary action… S-So, I am responsible for this scenario.</p></div>
 <p class="orv_line">The dokkaebi's timid tone was very memorable.</p>
-<div class="orv_constellation"><p>[T-Then everyone. D-Don't you look very peaceful? T-That Bihyung, he pretended to be pretentious only to set this level of scenario difficulty…]</p></div>
+<div class="orv_constellation"><p>T-Then everyone. D-Don't you look very peaceful? T-That Bihyung, he pretended to be pretentious only to set this level of scenario difficulty…</p></div>
 <p class="orv_line">"W-What are you saying? Tell us what you want!"</p>
-<div class="orv_constellation"><p>[H-Hik. Don't be angry, everyone. A-Anyway, I came for you guys…]</p></div>
+<div class="orv_constellation"><p>H-Hik. Don't be angry, everyone. A-Anyway, I came for you guys…</p></div>
 <p class="orv_line">"For us?"</p>
 <p class="orv_line">"T-Then give us food!"</p>
-<div class="orv_constellation"><p>[F-Food? Aha… if you want food…]</p></div>
+<div class="orv_constellation"><p>F-Food? Aha… if you want food…</p></div>
 <p class="orv_line">After his words ended, the dokkaebi moved his hand.</p>
-<div class="orv_system"><p>[A scenario penalty has been added.]</p></div>
-<div class="orv_system"><p>[From now on, food stockpiling is limited.]</p></div>
-<div class="orv_system"><p>[All existing stockpiled food has disappeared.]</p></div>
+<div class="orv_system"><p>A scenario penalty has been added.</p></div>
+<div class="orv_system"><p>From now on, food stockpiling is limited.</p></div>
+<div class="orv_system"><p>All existing stockpiled food has disappeared.</p></div>
 <p class="orv_line">"U-Uhh! What?"</p>
 <p class="orv_line">The people with emergency food screamed. Whether it was from the mainstream group or the marginalized group, everything that was called 'food' floated in the air.</p>
-<div class="orv_constellation"><p>[He-hehe. Then, everyone: you can't. Y-You have to think about how to break the scenario.]</p></div>
+<div class="orv_constellation"><p>He-hehe. Then, everyone: you can't. Y-You have to think about how to break the scenario.</p></div>
 <p class="orv_line">And then the food gathered by the people dissipated into nothing.</p>
 <p class="orv_line">With one gesture from the dokkaebi, the canned goods, the biscuits, the calorie bars—all were destroyed. The people's expressions became grim as they saw it.</p>
-<div class="orv_constellation"><p>[Y-You want to eat? In any case, Earth trash…]</p></div>
+<div class="orv_constellation"><p>Y-You want to eat? In any case, Earth trash…</p></div>
 <p class="orv_line">His tone suddenly changed. I seemed to remember his name. According to the original setting, there was one dokkaebi like this. His tone was timid but he was more cruel than any other dokkaebi. In the distance, Cheon Inho was watching me with confused eyes.</p>
-<div class="orv_constellation"><p>[Everyone, let's have fun from now on. Hehe…]</p></div>
+<div class="orv_constellation"><p>Everyone, let's have fun from now on. Hehe…</p></div>
 <p class="orv_line">It was followed by system messages.</p>
-<div class="orv_system"><p>[A scenario penalty has been added.]</p></div>
-<div class="orv_system"><p>[The 'survival cost' clause has been added.]</p></div>
-<div class="orv_system"><p>[From now on, 100 coins will be deducted every night for the 'survival cost'. If you can't pay the 'survival cost,' you will die.]</p></div>
-<div class="orv_system"><p>[The 'survival cost' penalty will be maintained until the second main scenario is cleared.]</p></div>
+<div class="orv_system"><p>A scenario penalty has been added.</p></div>
+<div class="orv_system"><p>The 'survival cost' clause has been added.</p></div>
+<div class="orv_system"><p>From now on, 100 coins will be deducted every night for the 'survival cost'. If you can't pay the 'survival cost,' you will die.</p></div>
+<div class="orv_system"><p>The 'survival cost' penalty will be maintained until the second main scenario is cleared.</p></div>
 <p class="orv_line">I laughed as I read the rising messages. Yes, now it was like Ways of Survival.</p>
 <br>
 <hr>
@@ -335,18 +342,12 @@
             <a href="./ch_18"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_20">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="19" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="40" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="18" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="18" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

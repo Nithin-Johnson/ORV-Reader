@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 187: Ep. 35 - The 73rd Demon King, VI</title>
     <meta property="og:title" content="Ch 187: Ep. 35 - The 73rd Demon King, VI" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00187.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 187: Ep. 35 - The 73rd Demon King, VI</h1></div>
 <p class="orv_line">The party members were still watching me with confused expressions. The expressions showed they didn't know what the hell was going on. Yoo Joonghyuk was still coughing up blood against the wall.</p>
@@ -199,8 +206,8 @@
 <p class="orv_line">Yoo Sangah and Lee Jihye shouted.</p>
 <p class="orv_line">Jung Heewon, Lee Hyunsung, Lee Gilyoung, Shin Yoosung… even Cho Youngran and Gong Pildu. Everyone was looking at me with shocked expressions.</p>
 <p class="orv_line">I watched them and opened my mouth. "From now on, you will have to hunt me."</p>
-<div class="orv_system"><p>[The first phase of the '73rd demon king' will begin.]</p></div>
-<div class="orv_system"><p>[The attack time limit is 30 minutes.]</p></div>
+<div class="orv_system"><p>The first phase of the '73rd demon king' will begin.</p></div>
+<div class="orv_system"><p>The attack time limit is 30 minutes.</p></div>
 <p class="orv_line">"There is no time. Quickly start."</p>
 <p class="orv_line">A formidable energy was flowing through my body. Even if I was passively hit, I couldn't help wondering if the party members would be able to decrease my health in the given time.</p>
 <p class="orv_line">Jung Heewon and Lee Hyunsung looked at me desperately and cried out. "I don't want to fight Dokja-ssi!"</p>
@@ -252,12 +259,12 @@
 <p class="orv_line">"D-Dokja-ssi…"</p>
 <p class="orv_line">"This isn't just one cartridge."</p>
 <p class="orv_line">Lee Hyunsung's eyes were shaking like the sea that met the wind.</p>
-<div class="orv_system"><p>[The constellation 'Master of Steel' is deeply immersed.]</p></div>
+<div class="orv_system"><p>The constellation 'Master of Steel' is deeply immersed.</p></div>
 <p class="orv_line">Time passed before Lee Hyunsung shouted at the sky. He used Steel Transformation and rushed towards me. The hard body bumped into me and there was a strong shock.</p>
 <p class="orv_line">My vision shook slightly. Lee Hyunsung used Great Mountain Smash but he seemed on the defensive rather than attacking me. When would I see the sight of a bearish man weeping again?</p>
 <p class="orv_line">Next was the sound of magic turrets being fired. I laughed when I heard the sound and turned towards that side.</p>
 <p class="orv_line">Indeed, this was why I couldn't hate him. Gong Pildu was frowning as hard as he could as he activated the turrets of Armed Fortress. Of course, I wasn't just getting hit.</p>
-<div class="orv_system"><p>[The probability of the scenario is dominating your body.]</p></div>
+<div class="orv_system"><p>The probability of the scenario is dominating your body.</p></div>
 <p class="orv_line">Regardless of my will, my body would act as the demon king. Of course, the attacks were in perfect patterns so the party members could easily cope.</p>
 <p class="orv_line">"Everybody, stay awake. Now it is the second phase."</p>
 <p class="orv_line">The second phase of the 73rd demon king was starting. In order to thwart it, special support was needed.</p>
@@ -288,29 +295,29 @@
 <p class="orv_line">Jung Heewon raised her sword towards me. The power of Hell Flames Ignition appeared around Jung Heewon's body.</p>
 <p class="orv_line">Jung Heewon's eyes were red as she started to concentrate her strength. Her real strength was when the power of Judge of Destruction was added to Hell Flames Ignition.</p>
 <p class="orv_line">Kim Dokja became a demon king and was a suitable target for that power.</p>
-<div class="orv_system"><p>[The character 'Jung Heewon' has activated Judgment Time!]</p></div>
-<div class="orv_system"><p>[Many of the constellations of the absolute good system agree to trigger the skill.]</p></div>
-<div class="orv_system"><p>[There is only one constellation who is strongly opposed to the activation of the skill.]</p></div>
-<div class="orv_system"><p>[The skill activation has been cancelled.]</p></div>
+<div class="orv_system"><p>The character 'Jung Heewon' has activated Judgment Time!</p></div>
+<div class="orv_system"><p>Many of the constellations of the absolute good system agree to trigger the skill.</p></div>
+<div class="orv_system"><p>There is only one constellation who is strongly opposed to the activation of the skill.</p></div>
+<div class="orv_system"><p>The skill activation has been cancelled.</p></div>
 <p class="orv_line">The confused Jung Heewon stared at me and I gazed into the air. It was obvious who had opposed the activation of Judgment Time.</p>
 <p class="orv_line">"Demon-like Judge of Fire."</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is covering her eyes with a pained expression.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is covering her eyes with a pained expression.</p></div>
 <p class="orv_line">"…Uriel."</p>
 <p class="orv_line">Sparks filled the air in response to my call.</p>
 <p class="orv_line">"Please agree to the activation of Judgment Time."</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is shaking her head violently!]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is shaking her head violently!</p></div>
 <p class="orv_line">"If you don't do this, your incarnation will die."</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' says that if she does this, you will die.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' says that if she does this, you will die.</p></div>
 <p class="orv_line">How good would it be if all the constellations were like her? It was regrettable that I had to hurt Uriel.</p>
 <p class="orv_line">"Uriel, you know. This is just a story." I spoke like a dokkaebi. "You must've seen many people die in the meantime."</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' feels despair.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' feels despair.</p></div>
 <p class="orv_line">The messages alone portrayed it clearly. I remembered the small and beautiful Uriel I saw at the banquet.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is weeping and repeatedly shaking her head.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is weeping and repeatedly shaking her head.</p></div>
 <p class="orv_line">The little face that kept crying and shaking. She was an angel that didn't match the modifier of 'demon'.</p>
 <p class="orv_line">"Do what you need to do. Only then will this story be completed."</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is looking down at you.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is looking down at you.</p></div>
 <p class="orv_line">After a moment, I heard the message I had been waiting for.</p>
-<div class="orv_system"><p>[All constellations of the absolute good system are in favour of Judgment Time.]</p></div>
+<div class="orv_system"><p>All constellations of the absolute good system are in favour of Judgment Time.</p></div>
 <p class="orv_line">Finally, a bloody aura rose from Jung Heewon's body. "…Shit, I really hate the name of this skill."</p>
 <p class="orv_line">The aura of Judgment Time combined with the power of Hell Flames Ignition and created a tremendous wave of magic power. It had the power to destroy all the evil in the world.</p>
 <p class="orv_line">The Judge of Destruction slashed at the demon king's chest with her sword of fire.</p>
@@ -321,18 +328,12 @@
             <a href="./ch_186"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_188">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="187" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="179" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="186" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="186" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 244: Ep. 46 - New Story, I</title>
     <meta property="og:title" content="Ch 244: Ep. 46 - New Story, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,82 +177,82 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00244.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 244: Ep. 46 - New Story, I</h1></div>
-<div class="orv_constellation"><p>[I will create a 'new story' that never existed before.]</p></div>
+<div class="orv_constellation"><p>I will create a 'new story' that never existed before.</p></div>
 <p class="orv_line">The constellations shut their mouths at my words. It wasn't just because they were shocked. Rather, they didn't understand what I was saying.</p>
 <p class="orv_line">The first one to speak was a constellation drinking beside Thor.</p>
-<div class="orv_constellation"><p>[What do you mean by a new story?]</p></div>
+<div class="orv_constellation"><p>What do you mean by a new story?</p></div>
 <p class="orv_line">According to Ways of Survival, the Dokkaebi King left these words a long time ago:</p>
-<div class="orv_quote"><p>「 There are no new stories in the Star Stream. All stories are just based on old stories. 」</p></div>
+<div class="orv_quote"><p>There are no new stories in the Star Stream. All stories are just based on old stories.</p></div>
 <p class="orv_line">This old saying was the humility of the dokkaebis and was a phrase that needed to be overcome.</p>
 <p class="orv_line">I hesitated to answer and a hot-tempered constellation came out first.</p>
-<div class="orv_constellation"><p>[Is there a sword master in the story?]</p></div>
+<div class="orv_constellation"><p>Is there a sword master in the story?</p></div>
 <p class="orv_line">Sword master… I nodded at the unexpected question.</p>
-<div class="orv_constellation"><p>[There is.]</p></div>
+<div class="orv_constellation"><p>There is.</p></div>
 <p class="orv_line">Some constellations sighed at my response while others had shining eyes. Then another constellation asked.</p>
-<div class="orv_constellation"><p>[Is there a great magician?]</p></div>
-<div class="orv_constellation"><p>[Maybe one will appear.]</p></div>
-<div class="orv_constellation"><p>[A reincarnator?]</p></div>
-<div class="orv_constellation"><p>[Yes.]</p></div>
-<div class="orv_constellation"><p>[An SSS-grade hunter? For reference, I like friends who are rewarded for a reasonable effort.]</p></div>
-<div class="orv_constellation"><p>[It is a possibility. I don't dislike those who try hard.]</p></div>
-<div class="orv_constellation"><p>[A returnee will naturally come out?]</p></div>
+<div class="orv_constellation"><p>Is there a great magician?</p></div>
+<div class="orv_constellation"><p>Maybe one will appear.</p></div>
+<div class="orv_constellation"><p>A reincarnator?</p></div>
+<div class="orv_constellation"><p>Yes.</p></div>
+<div class="orv_constellation"><p>An SSS-grade hunter? For reference, I like friends who are rewarded for a reasonable effort.</p></div>
+<div class="orv_constellation"><p>It is a possibility. I don't dislike those who try hard.</p></div>
+<div class="orv_constellation"><p>A returnee will naturally come out?</p></div>
 <p class="orv_line">The various questions continued for a while, as if it was fun. In the process, there were those who smiled and those who shook their heads. No matter their expression, they were all imagining a story.</p>
 <p class="orv_line">It was a story that hadn't been created yet. However, it was a story that might exist. Was it because it had been a long time since the Gourmet Association jumped into such 'imagination?' For a while, there was a gentle atmosphere in the hall that didn't fit the Gourmet Association.</p>
 <p class="orv_line">However, the atmosphere didn't stay like this.</p>
-<div class="orv_constellation"><p>[I don't understand. Aren't there many of these stories already?]</p></div>
+<div class="orv_constellation"><p>I don't understand. Aren't there many of these stories already?</p></div>
 <p class="orv_line">The one who poured cold water on it was the Morning Star Goddess.</p>
-<div class="orv_constellation"><p>[Sword masters, great magicians reincarnators, returnees… what is new about this story? I don't know how such a product can be considered as 'new'.]</p></div>
+<div class="orv_constellation"><p>Sword masters, great magicians reincarnators, returnees… what is new about this story? I don't know how such a product can be considered as 'new'.</p></div>
 <p class="orv_line">I thought for a moment before replying,</p>
-<div class="orv_constellation"><p>[It isn't just new materials that make up a new story. Aren't the first generation stories that the Gourmet Association likes also made up of ordinary materials?]</p></div>
-<div class="orv_constellation"><p>[Are you comparing the first generation of art with your story?]</p></div>
-<div class="orv_constellation"><p>[I don't mean to compare it. In the first place, I'm not trying to make art.]</p></div>
+<div class="orv_constellation"><p>It isn't just new materials that make up a new story. Aren't the first generation stories that the Gourmet Association likes also made up of ordinary materials?</p></div>
+<div class="orv_constellation"><p>Are you comparing the first generation of art with your story?</p></div>
+<div class="orv_constellation"><p>I don't mean to compare it. In the first place, I'm not trying to make art.</p></div>
 <p class="orv_line">Some constellations looked disappointed at my words. The Morning Star goddess laughed like it was ridiculous.</p>
-<div class="orv_constellation"><p>[You are speaking vulgar words. Yes, good. Then what is new about your story?]</p></div>
+<div class="orv_constellation"><p>You are speaking vulgar words. Yes, good. Then what is new about your story?</p></div>
 <p class="orv_line">The atmosphere of the constellations was changing again. As expected, I couldn't throw a few things around casually. I faced them and declared in my true voice,</p>
-<div class="orv_constellation"><p>[In the story I'm creating, there will be an end to all scenarios.]</p></div>
+<div class="orv_constellation"><p>In the story I'm creating, there will be an end to all scenarios.</p></div>
 <p class="orv_line">The end of all the scenarios. The atmosphere instantly froze.</p>
-<div class="orv_constellation"><p>[H-How dare you…]</p></div>
+<div class="orv_constellation"><p>H-How dare you…</p></div>
 <p class="orv_line">Some people muttered while other constellations became pale. There was a backlash that didn't occur even when I mentioned the first generation. Perhaps it was because I broke their taboo.</p>
 <p class="orv_line">I felt the gazes pouring towards me and closed my eyes. This wouldn't dramatically change the situation. However, my story would remain deep in the mind of the constellations. It was enough for now.</p>
-<div class="orv_constellation"><p>[…Crazy bastard.]</p></div>
+<div class="orv_constellation"><p>…Crazy bastard.</p></div>
 <p class="orv_line">By the way, it seemed that the impression I gave them was too deep. The voice filled with hostility continued.</p>
-<div class="orv_constellation"><p>[I knew that there were all types of crazy people in the Gourmet Association but this time it is quite good. Are you in your right mind to say such words?]</p></div>
+<div class="orv_constellation"><p>I knew that there were all types of crazy people in the Gourmet Association but this time it is quite good. Are you in your right mind to say such words?</p></div>
 <p class="orv_line">It was a green doll with a dragon's head. It was the Brash Swamp Predator. A constellation who was active in the previous scenario. His smile was full of ridicule as he continued,</p>
-<div class="orv_constellation"><p>[Then what do you want us to help you with? Let's go together to the end of the scenario, is that what you want to say?]</p></div>
-<div class="orv_constellation"><p>[That's right. I came here to find constellations who will reach the end of the scenario with me.]</p></div>
+<div class="orv_constellation"><p>Then what do you want us to help you with? Let's go together to the end of the scenario, is that what you want to say?</p></div>
+<div class="orv_constellation"><p>That's right. I came here to find constellations who will reach the end of the scenario with me.</p></div>
 <p class="orv_line">My calm declaration caused the countenance of the constellations to change. Some of them had already joined a nebula. Thus, my words would sound like a provocation.</p>
-<div class="orv_constellation"><p>[Nebula? What is the name of the nebula?]</p></div>
-<div class="orv_constellation"><p>[There is no name yet. I haven't formally established it.]</p></div>
-<div class="orv_constellation"><p>[Hmm… how many founding members are there?]</p></div>
-<div class="orv_constellation"><p>[Two.]</p></div>
+<div class="orv_constellation"><p>Nebula? What is the name of the nebula?</p></div>
+<div class="orv_constellation"><p>There is no name yet. I haven't formally established it.</p></div>
+<div class="orv_constellation"><p>Hmm… how many founding members are there?</p></div>
+<div class="orv_constellation"><p>Two.</p></div>
 <p class="orv_line">The scorn of the constellations increased. I felt a bit upset but I put up with it.</p>
 <p class="orv_line">In any case, this was considered 'courtesy' in the Gourmet Association. I didn't think any of them would just accept it.</p>
 <p class="orv_line">The Morning Star Goddess asked,</p>
-<div class="orv_constellation"><p>[One is you and the other person? Is it a constellation?]</p></div>
-<div class="orv_constellation"><p>[It isn't a constellation…]</p></div>
+<div class="orv_constellation"><p>One is you and the other person? Is it a constellation?</p></div>
+<div class="orv_constellation"><p>It isn't a constellation…</p></div>
 <p class="orv_line">I hesitated to reveal Yoo Joonghyuk. The Brash Swamp Predator wondered,</p>
-<div class="orv_constellation"><p>[Perhaps it is that guy?]</p></div>
+<div class="orv_constellation"><p>Perhaps it is that guy?</p></div>
 <p class="orv_line">Images were playing from a panel on the screen. It was playing the finals of the martial arts competition in First Murim.</p>
 <p class="orv_line">–It is finally the confrontation you are waiting for!</p>
 <p class="orv_line">The camera focused on a man as the moderator spoke.</p>
@@ -254,66 +261,66 @@
 <p class="orv_line">–One of the Murim's 10 Grand Masters, the Ice Flower Goddess, Zhuge Lingling!</p>
 <p class="orv_line">A splendid spotlight shone on Zhuge Lingling, who was dressed in a light t-shirt and jeans.</p>
 <p class="orv_line">The Ice Flower Goddess wasn't an easy opponent. She was one of the transcendent existences that represented Murim. Originally, Yoo Joonghyuk wouldn't have been able to compete with her. It depended on how much progress he made in the Breaking the Sky Swordsmanship in the meantime…</p>
-<div class="orv_constellation"><p>[Cough…]</p></div>
+<div class="orv_constellation"><p>Cough…</p></div>
 <p class="orv_line">My mind became wide awake the moment someone made a sound. I looked around. Then I gradually became angry.</p>
 <p class="orv_line">…Dammit. Someone had uploaded this video. I stared at Anna Croft who was standing in a corner of the stage. However, based on her expression, it didn't seem to be her. If so, the video…</p>
-<div class="orv_constellation"><p>[Huhu… a feast of mortals…]</p></div>
+<div class="orv_constellation"><p>Huhu… a feast of mortals…</p></div>
 <p class="orv_line">The Brash Swamp Predator laughed.</p>
-<div class="orv_constellation"><p>[Gosh, this is really losing steam. An existence that just reached the narrative level and a trivial mortal is discussing the 'end of the story'?]</p></div>
+<div class="orv_constellation"><p>Gosh, this is really losing steam. An existence that just reached the narrative level and a trivial mortal is discussing the 'end of the story'?</p></div>
 <p class="orv_line">Several constellations laughed like they had been waiting. It was a laugh that denied all the words I had spoken. Maybe I expected it to be like this. It might've been wrong to expect anything from the constellations in the first place.</p>
-<div class="orv_constellation"><p>[Hahaha, what is the modifier of this constellation? Was it Demon King of Bragging?]</p></div>
-<div class="orv_constellation"><p>[Queen of the Underworld! You brought a very delightful friend!]</p></div>
+<div class="orv_constellation"><p>Hahaha, what is the modifier of this constellation? Was it Demon King of Bragging?</p></div>
+<div class="orv_constellation"><p>Queen of the Underworld! You brought a very delightful friend!</p></div>
 <p class="orv_line">On the screen, Yoo Joonghyuk was confronting the Ice Flower Goddess. The Brash Swamp Predator chuckled like he thought it was cute.</p>
-<div class="orv_constellation"><p>[This scenario seems tough for him, let alone the end of the scenarios.]</p></div>
+<div class="orv_constellation"><p>This scenario seems tough for him, let alone the end of the scenarios.</p></div>
 <p class="orv_line">I quietly clenched my fists. I knew the path Yoo Joonghyuk would walk and the achievement he would make in the future. I knew very well that the hard-working guy would one day kill every member of this damn Gourmet Association.</p>
 <p class="orv_line">Yet in the eyes of the constellations present here, the current Yoo Joonghyuk was just a trivial mortal.</p>
-<div class="orv_constellation"><p>[This worked out well. I am bored because the scenario is over. Do you want to make a bet? Who will win between the two bugs?]</p></div>
-<div class="orv_constellation"><p>[Oh, good, good!]</p></div>
+<div class="orv_constellation"><p>This worked out well. I am bored because the scenario is over. Do you want to make a bet? Who will win between the two bugs?</p></div>
+<div class="orv_constellation"><p>Oh, good, good!</p></div>
 <p class="orv_line">A number of constellations agreed with the proposal of the Brash Swamp Predator. Then a system message appeared.</p>
-<div class="orv_system"><p>[A new sub-scenario has arrived!]</p></div>
-<div class="orv_system"><p>[The sub scenario ― Gourmet Association Betting has begun.]</p></div>
+<div class="orv_system"><p>A new sub-scenario has arrived!</p></div>
+<div class="orv_system"><p>The sub scenario ― Gourmet Association Betting has begun.</p></div>
 <p class="orv_line">Numerous selection windows emerged in front of the constellations.</p>
-<div class="orv_constellation"><p>[I'll bet 50,000 coins on that female.]</p></div>
+<div class="orv_constellation"><p>I'll bet 50,000 coins on that female.</p></div>
 <p class="orv_line">The moment the Brash Swamp Predator cried out, the other constellations laughed and bet a few coins. Then the Brash Swamp Predator glanced at me.</p>
-<div class="orv_constellation"><p>[Newcomer. You should also bet.]</p></div>
-<div class="orv_constellation"><p>[I already did it.]</p></div>
-<div class="orv_constellation"><p>[Who did you bet on?]</p></div>
-<div class="orv_system"><p>[100,000 coins to Yoo Joonghyuk.]</p></div>
+<div class="orv_constellation"><p>Newcomer. You should also bet.</p></div>
+<div class="orv_constellation"><p>I already did it.</p></div>
+<div class="orv_constellation"><p>Who did you bet on?</p></div>
+<div class="orv_system"><p>100,000 coins to Yoo Joonghyuk.</p></div>
 <p class="orv_line">The fact that I bet twice as much as him caused the Brash Swamp Predator's eyes to widen.</p>
-<div class="orv_constellation"><p>[Cheeky fellow. You will regret it.]</p></div>
+<div class="orv_constellation"><p>Cheeky fellow. You will regret it.</p></div>
 <p class="orv_line">He seemed to know how this bet would turn out. In the distance, Anna Croft was watching me with serene eyes. Yoo Joonghyuk's struggle was entering the mid-stages on the screen.</p>
-<div class="orv_constellation"><p>[Hoh, he is fairly decent? Should I make him my incarnation?]</p></div>
+<div class="orv_constellation"><p>Hoh, he is fairly decent? Should I make him my incarnation?</p></div>
 <p class="orv_line">Yoo Joonghyuk seemed to be pushed at first but his momentum was slowly becoming stronger. Some of the constellations admired the unexpected flow of events. Then they shut up as soon as the Brash Swamp Predator glared at them.</p>
 <p class="orv_line">As expected from Yoo Joonghyuk. His encounter with the Breaking the Sky Sword Saint was much earlier than planned and his Breaking the Sky Swordsmanship had reached higher than the original level.</p>
 <p class="orv_line">Inside the stadium, the Breaking the Sky energy exploded and the Ice Flower Goddess coughed up blood as she rolled through the dust. The situation had completely tilted to one side. The story flowed to an unexpected place and the expression of the Brash Swamp Predator changed.</p>
-<div class="orv_constellation"><p>[…Hmm, it isn't fun like this.]</p></div>
+<div class="orv_constellation"><p>…Hmm, it isn't fun like this.</p></div>
 <p class="orv_line">The moment I had an ominous feeling, sparks appeared around several members of the Gourmet Association, including the Brash Swamp Predator. I quickly realized what they were doing. Their sparks spread to the screen showing the martial arts competition. To be exact, it was to the Ice Flower Goddess.</p>
 <p class="orv_line">–Aaaaack!</p>
 <p class="orv_line">The Ice Flower Goddess screamed and this was followed by the host's words.</p>
 <p class="orv_line">–W-What is this?</p>
 <p class="orv_line">Yoo Joonghyuk also seemed surprised. Yoo Joonghyuk's expression stiffened as the Ice Flower Goddess mutated into a monster. I stared at the Brash Swamp Predator and spoke in a cold voice,</p>
-<div class="orv_constellation"><p>[Didn't you say this was a bet?]</p></div>
+<div class="orv_constellation"><p>Didn't you say this was a bet?</p></div>
 <p class="orv_line">The Brash Swamp Predator laughed.</p>
-<div class="orv_constellation"><p>[I didn't say there could be no interference.]</p></div>
+<div class="orv_constellation"><p>I didn't say there could be no interference.</p></div>
 <p class="orv_line">Thanks to the probability supplied by many constellations, the body of the Ice Flower Goddess was covered in green scales.</p>
 <p class="orv_line">Both Yoo Joonghyuk and I knew what it meant. It was a constellation's 'advent'. It was the same in Peace Land and Dark Castle. At the time, Yoo Joonghyuk and I fought together but not anymore.</p>
-<div class="orv_system"><p>[Exclusive skill, Omniscient Reader's Viewpoint has been activated!]</p></div>
-<div class="orv_system"><p>[You can't connect with the current target.]</p></div>
+<div class="orv_system"><p>Exclusive skill, Omniscient Reader's Viewpoint has been activated!</p></div>
+<div class="orv_system"><p>You can't connect with the current target.</p></div>
 <p class="orv_line">…Damn jerk, what was he doing at a time like this? It was impossible to use Omniscient Reader's Viewpoint because Yoo Joonghyuk wasn't thinking about me at all.</p>
 <p class="orv_line">On the screen, the Ice Flower Goddess who was half a green dragon roared.</p>
 <p class="orv_line">The Brash Swamp Predator. The ancient being who was born on the planet 'Selegedon' was a constellation who just reached the narrative-grade like me. However, the number of stories he accumulated was far beyond me so our abilities were on a different level.</p>
 <p class="orv_line">With one breath, the monster half-destroyed the venue of the martial arts competition. Maybe he signed a Sponsor Contract with the Ice Flower Goddess for a short period of time. The low rate of synchronization meant not a lot of his strength was expressed. Still, it would be nothing to end the competition since it was strengthened with such a degree of probability.</p>
 <p class="orv_line">It would be hard to deal with a narrative-grade constellation who had accumulated such stories, even if it was Yoo Joonghyuk.</p>
-<div class="orv_constellation"><p>[You look uneasy. Don't you believe in your colleague?]</p></div>
+<div class="orv_constellation"><p>You look uneasy. Don't you believe in your colleague?</p></div>
 <p class="orv_line">I looked around and saw Persephone smiling as usual.</p>
 <p class="orv_line">I didn't believe in him? It was a natural story. I couldn't believe in that sunfish who often died…</p>
-<div class="orv_constellation"><p>[I believe in him.]</p></div>
+<div class="orv_constellation"><p>I believe in him.</p></div>
 <p class="orv_line">Even so, I answered it like this. Persephone's eyes flashed at my natural answer.</p>
-<div class="orv_constellation"><p>[In the first place, I came here because I believed in him.]</p></div>
+<div class="orv_constellation"><p>In the first place, I came here because I believed in him.</p></div>
 <p class="orv_line">I stared at Yoo Joonghyuk on the screen. It didn't matter how many times he was defeated, broken or felt despair. He was a person who didn't give up until the end. If I couldn't believe in him, who could I believe in the first place? Even if this round failed…</p>
 <p class="orv_line">This guy would surely see the ending of this world eventually.</p>
 <p class="orv_line">I slowly closed my eyes before opening them again.</p>
-<div class="orv_constellation"><p>[I'll raise my bet. I'll make it one million coins.]</p></div>
+<div class="orv_constellation"><p>I'll raise my bet. I'll make it one million coins.</p></div>
 <br>
 <hr>
         </article>
@@ -321,18 +328,12 @@
             <a href="./ch_243"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_245">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="244" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="312" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="243" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="243" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

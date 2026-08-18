@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 460: Ep. 87 - The Heart of Steel, II</title>
     <meta property="og:title" content="Ch 460: Ep. 87 - The Heart of Steel, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,29 +177,29 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00460.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 460: Ep. 87 - The Heart of Steel, II</h1></div>
-<div class="orv_system"><p>[The ship's hull will now enter the stabilisation process.]</p></div>
-<div class="orv_constellation"><p>[Please be on standby.]</p></div>
+<div class="orv_system"><p>The ship's hull will now enter the stabilisation process.</p></div>
+<div class="orv_constellation"><p>Please be on standby.</p></div>
 <p class="orv_line">While listening to the system messages, my companions dazedly looked out of the windows.</p>
 <p class="orv_line">The house that got swept away by a tornado, and entering a brand-new world… Surely, some of them should've realized what exactly was going on here.</p>
 <p class="orv_line">"…Ahjussi, this, this is 'that', right? That 'Wizard of Oz'?"</p>
@@ -216,8 +223,8 @@
 <p class="orv_line">"What the heck?"</p>
 <p class="orv_line">It was as I said.</p>
 <p class="orv_line">The ages of those beings that became Stories would gradually get harder to distinguish as time went on. A Constellation would start from a source Story, but even such a Story would minutely change as time elapsed.</p>
-<div class="orv_system"><p>[The ship stabilisation process has concluded.]</p></div>
-<div class="orv_system"><p>[Exit will now open.]</p></div>
+<div class="orv_system"><p>The ship stabilisation process has concluded.</p></div>
+<div class="orv_system"><p>Exit will now open.</p></div>
 <p class="orv_line">"Well, we'll find out once we get there," said Han Sooyoung, as she lightly leaped out first. Lee Jihye and the two kids, looking clearly excited, quickly followed after her.</p>
 <p class="orv_line">"Let's get going, as well," said I.</p>
 <p class="orv_line">The remaining companions nodded their heads and exited from this 'ship'.</p>
@@ -256,8 +263,8 @@
 <p class="orv_line">I recalled a certain sentence after hearing him.</p>
 <p class="orv_line">⸢The Oz's metal is permeated with the most ancient type of magic, so…⸥</p>
 <p class="orv_line">Indeed, &lt;Oz&gt; was the place of origin for the metal permeated with the oldest Story in the &lt;Star Stream&gt;. Even Yoo Joonghyuk's weapon from the original was reinforced with the steel from this place.</p>
-<p class="orv_line">The greatest supreme sword reborn as the Star Relic after the &lt;Oz&gt;'s metal and Yoo Joonghyuk's Story were intertwined – that was the Star Relic he used in the latter half of the novel, [Splitting the Sky Sword].</p>
-<p class="orv_line">Of course, that was the story from the original, and the one to get reinforced this time around would be the [Black Heavenly Demon Sword], but still…</p>
+<p class="orv_line">The greatest supreme sword reborn as the Star Relic after the &lt;Oz&gt;'s metal and Yoo Joonghyuk's Story were intertwined – that was the Star Relic he used in the latter half of the novel, <strong>[Splitting the Sky Sword]</strong>.</p>
+<p class="orv_line">Of course, that was the story from the original, and the one to get reinforced this time around would be the <strong>[Black Heavenly Demon Sword]</strong>, but still…</p>
 <p class="orv_line">"Oz's steel is the strongest in the &lt;Star Stream&gt;. Securing suitable weapons is an utmost priority."</p>
 <p class="orv_line">After declaring such, Yoo Joonghyuk didn't even wait for our permission and simply went on his way. Companions looked at me, silently asking if this was okay, and I replied with a simple shrug of my shoulders.</p>
 <p class="orv_line">Since I had multiple reasons for coming to &lt;Oz&gt; anyway, there was a need to split the group here. Also, the whole group wasn't really necessary to save Lee Hyunsung.</p>
@@ -288,36 +295,36 @@
 <p class="orv_line">No reply came back. The door remained resolutely shut.</p>
 <p class="orv_line">It seemed that I made a slip of tongue somewhere. I quickly recalled the 'Ways of Survival'. What did they say in the 999th turn again?</p>
 <p class="orv_line">While I remained engrossed in my thoughts, Jung Heewon suddenly unsheathed her sword and spoke up. "Return Hyunsung-ssi's soul before I split this damn tower in half."</p>
-<p class="orv_line">The Status of an Archangel exploded out from her entire figure. And just as the intense flames of [Hellfire] started burning on the Steelsword's blade, the door hesitantly opened up.</p>
-<div class="orv_constellation"><p>[The Emerald Castle is welcoming all of you.]</p></div>
+<p class="orv_line">The Status of an Archangel exploded out from her entire figure. And just as the intense flames of <strong>[Hellfire]</strong> started burning on the Steelsword's blade, the door hesitantly opened up.</p>
+<div class="orv_constellation"><p>The Emerald Castle is welcoming all of you.</p></div>
 <p class="orv_line">I wondered if this was fine, but since we didn't have a lot of time, I figured might as well.</p>
 <p class="orv_line">Han Sooyoung had found an ideal opportunity here so she muttered in an impressed voice. "As expected of our Dorothy."</p>
 <p class="orv_line">"Shut up. I didn't come here to fool around."</p>
-<p class="orv_line">Han Sooyoung sneaked closer to my side and whispered through the [Midday Tryst].</p>
+<p class="orv_line">Han Sooyoung sneaked closer to my side and whispered through the <strong>[Midday Tryst]</strong>.</p>
 <p class="orv_line">– Super scary. Is that the power of love?</p>
 <p class="orv_line">Jung Heewon was marching forward while her Steelsword drew arcs in the air. She was originally a spirited person, to begin with, but seeing her like this, I couldn't help but admit that her current aura was indeed astonishing.</p>
 <p class="orv_line">– I guess so.</p>
 <p class="orv_line">The interior of the tower was rather plain and boring. There weren't any eye-catching decorations to speak of, and only the most necessary items were placed here and there. It was like the inside of Lee Hyunsung's military backpack.</p>
 <p class="orv_line">We walked for another five minutes or so before a room resembling an audience chamber made its appearance. We opened its doors and entered immediately. Colourful spotlights came to life and a giant, silver-coloured mask floated up in the middle of the chamber. A pair of hollow eyes were now looking at us.</p>
-<div class="orv_constellation"><p>[The &lt;Kim Dokja's Company&gt;, is it.]</p></div>
+<div class="orv_constellation"><p>The &lt;Kim Dokja's Company&gt;, is it.</p></div>
 <p class="orv_line">The Steel's true voice reverberated within the audience chamber.</p>
 <p class="orv_line">I immediately realized that this guy was the 'Master of Steel', the Narrative-grade Constellation and Lee Hyunsung's backer. This mask was probably a symbolic item.</p>
 <p class="orv_line">"That's correct. Pleasure to make your acquaintance."</p>
-<div class="orv_constellation"><p>[I'm guessing that you're the 'Demon King of Salvation'.]</p></div>
-<p class="orv_line">I nodded my head. The silver mask looked at me as if this whole thing was rather annoying. [What is the purpose of your visit here?]</p>
+<div class="orv_constellation"><p>I'm guessing that you're the 'Demon King of Salvation'.</p></div>
+<p class="orv_line">I nodded my head. The silver mask looked at me as if this whole thing was rather annoying. <strong>[What is the purpose of your visit here?]</strong></p>
 <p class="orv_line">Going straight to the topic, is it? I thought that this was for the better.</p>
 <p class="orv_line">"Please return Lee Hyunsung's soul to us. We know that you have the ownership over it."</p>
-<div class="orv_constellation"><p>[That's impossible.]</p></div>
+<div class="orv_constellation"><p>That's impossible.</p></div>
 <p class="orv_line">"Why not?"</p>
-<div class="orv_constellation"><p>[His soul is required to maintain this planet.]</p></div>
+<div class="orv_constellation"><p>His soul is required to maintain this planet.</p></div>
 <p class="orv_line">That was completely unexpected. I glanced to my side, only to discover Jung Heewon glaring daggers in my direction.</p>
 <p class="orv_line">I quickly followed up. "I'm well aware that sponsorship contracts are usually like this, but regardless of what, Hyunsung-ssi is our companion. I was under the impression that you liked our story so far?"</p>
-<div class="orv_constellation"><p>[…]</p></div>
+<div class="orv_constellation"><p>…</p></div>
 <p class="orv_line">"Besides, doesn't &lt;Oz&gt; possess more than enough Giant Stories? Surely, there isn't a reason to use Hyunsung-ssi's soul as the power source?"</p>
 <p class="orv_line">The Story of ⸢Wizard of Oz⸥ was famous enough to be well-known back on Earth, too. Sure, the fame had cooled down a little in recent times, but this story managed to generate a shocking level of popularity throughout the planet once upon a time.</p>
 <p class="orv_line">It was that famous on Earth, so how popular would it have been in the &lt;Star Stream&gt;? So, the lack of a power source simply didn't make any sense at all.</p>
 <p class="orv_line">Even then, the 'Master of Steel' remained resolutely stubborn.</p>
-<div class="orv_constellation"><p>[Go back. I can't return his soul.]</p></div>
+<div class="orv_constellation"><p>Go back. I can't return his soul.</p></div>
 <br>
 <hr>
         </article>
@@ -325,18 +332,12 @@
             <a href="./ch_459"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_461">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="460" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="509" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="459" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="459" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

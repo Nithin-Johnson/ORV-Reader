@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 435: Ep. 82 - Outer God, IV</title>
     <meta property="og:title" content="Ch 435: Ep. 82 - Outer God, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,28 +177,28 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00435.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 435: Ep. 82 - Outer God, IV</h1></div>
-<div class="orv_system"><p>[The final event of the 'Journey to the West Remake' will start now.]</p></div>
+<div class="orv_system"><p>The final event of the 'Journey to the West Remake' will start now.</p></div>
 <p class="orv_line">Jung Heewon bit her lip as she listened to the voice coming out of the panel in the air. She wanted to be there as well. She wanted to fight alongside her companions.</p>
 <p class="orv_line">"…Hyunsung-ssi."</p>
 <p class="orv_line">However, she couldn't go because of the man lying in slumber on the hospital bed. It was Lee Hyunsung, currently covered from head to toe in steel, with no signs of a heartbeat.</p>
@@ -200,10 +207,10 @@
 <p class="orv_line">– You take a breather for a bit. I don't have any roles to give you, anyway.</p>
 <p class="orv_line">She understood very well that this was Han Sooyoung's, and her companions', way of showing their concern towards her.</p>
 <p class="orv_line">She had been inflicted with simply too heavy a wound. Both her body and mind were in a mess. She failed to rescue Kim Dokja again, and the man trying to protect her had fallen into a coma. That was how the sharpest blade in the &lt;Kim Dokja's Company&gt; had lost her edge.</p>
-<p class="orv_line">Her [Sword of Judgement] resting against a corner of the bed trembled noticeably.</p>
+<p class="orv_line">Her <strong>[Sword of Judgement]</strong> resting against a corner of the bed trembled noticeably.</p>
 <p class="orv_line">This weapon would vibrate only when 'evil' was nearby. A weapon that Kim Dokja had gifted her. Its tip was pointing straight at the display panel. Perhaps it also knew that the place she should be right now wasn't here.</p>
 <p class="orv_line">Jung Heewon cautiously reached out and as if to pacify the blade, embraced its hilt.</p>
-<div class="orv_system"><p>[Constellation, 'Demon-like Judge of Fire', is looking at her Incarnation with a helpless expression.]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon-like Judge of Fire', is looking at her Incarnation with a helpless expression.</p></div>
 <p class="orv_line">As a result of the Great War of Saints and Demons, both &lt;Eden&gt; and the Demon Realm had collapsed. Countless Archangels and Demon Kings died, and the 'justice' Jung Heewon believed in couldn't be found there.</p>
 <p class="orv_line">Even then, she had to wield this sword.</p>
 <p class="orv_line">It was then that she felt a subtle movement on the bed.</p>
@@ -232,7 +239,7 @@
 <hr>
 <br>
 <p class="orv_line">As the Great Dokkaebi's voice resounded out, a new scenario window popped up in the air.</p>
-<div class="orv_system"><p>[Linked Main Scenario is starting!]</p></div>
+<div class="orv_system"><p>Linked Main Scenario is starting!</p></div>
 <div class="orv_window">
 <p>&lt;Main Scenario #95 – Owner of the [Journey to the West]&gt;</p>
 <p>Type: Main</p>
@@ -248,7 +255,7 @@
 <div class="orv_outergod"><p>【KillthemKillthemKillthemKillthemKillthem】</p></div>
 <div class="orv_outergod"><p>【AhAhAhAhAhAhAh】</p></div>
 <p class="orv_line">The horde boasted far greater numbers than the Yogoes following us currently.</p>
-<div class="orv_system"><p>[Current shares of 'Outer God' for the applicable scenario is 15.872%.]</p></div>
+<div class="orv_system"><p>Current shares of 'Outer God' for the applicable scenario is 15.872%.</p></div>
 <p class="orv_line">The remaining 'Outer God' shares to fulfil the agreement with the Wenny King were 14.128%.</p>
 <p class="orv_line">Meaning, I had to reach the rest of the amount during this event.</p>
 <div class="orv_outergod"><p>【WuWuWuWuWu…】</p></div>
@@ -261,7 +268,7 @@
 <p class="orv_line">"I'm the real Sun Wukong!"</p>
 <p class="orv_line">Some rode on the Somersault Cloud, while others resorted to magic spells to fly over the river's tumbling water. It seemed that they were planning to cross this river by gliding over it.</p>
 <p class="orv_line">Unfortunately, that was a really bad decision to make, if my knowledge on the 'Journey to the West' was correct.</p>
-<div class="orv_system"><p>[All skills and Stigmas related to 'Flight' are restricted from use in the applicable scenario.]</p></div>
+<div class="orv_system"><p>All skills and Stigmas related to 'Flight' are restricted from use in the applicable scenario.</p></div>
 <p class="orv_line">Powerful sparks danced in the sky and everyone flying in the air crashed into the river below along with their screams.</p>
 <p class="orv_line">"What's the meaning of this?!"</p>
 <p class="orv_line">After falling into the river water, the members of other Story chambers began shouting in anger at the Great Dokkaebi up in the air. However, it simply shrugged its shoulders nonchalantly.</p>
@@ -277,21 +284,21 @@
 <p class="orv_line">For sure, several teams had already jumped into the water and started swimming vigorously. It was unknown where those things had been acquired, but well, some teams were busy paddling their boats forward, while some others were riding on logs, propelling themselves forward by using wind magic.</p>
 <p class="orv_line">Lee Jihye watched that unfolding spectacle and lightly slapped the boy's shoulder before stepping forward. "Hey, don't worry about it. We aren't going to do that."</p>
 <p class="orv_line">Along with her confident voice, a new message came from the sky above.</p>
-<div class="orv_system"><p>[An audience member is revealing himself.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Maritime War God', is nodding his head.]</p></div>
+<div class="orv_system"><p>An audience member is revealing himself.</p></div>
+<div class="orv_system"><p>Constellation, 'Maritime War God', is nodding his head.</p></div>
 <p class="orv_line">…I had completely forgotten about him.</p>
 <p class="orv_line">"Come, Geobukseon!"</p>
-<div class="orv_system"><p>[Giant Story, 'Next City', has begun its storytelling!]</p></div>
+<div class="orv_system"><p>Giant Story, 'Next City', has begun its storytelling!</p></div>
 <p class="orv_line">Lee Jihye raised her Twin Dragon Sword up high into the sky.</p>
 <p class="orv_line">The river water before us parted in the middle and the hull of a massive battleship rose up to the surface accompanied by a magnificent light show.</p>
 <p class="orv_line">Several Incarnations getting swept up by the waves screamed out.</p>
 <p class="orv_line">"What the hell?! What's this??"</p>
-<p class="orv_line">The battleship sporting a turtle-like back and the head of a dragon – the [Turtle Dragon]. The Star Relic Lee Jihye and the kids earned by clearing the 'Next City' scenario revealed itself before our very eyes.</p>
+<p class="orv_line">The battleship sporting a turtle-like back and the head of a dragon – the <strong>[Turtle Dragon]</strong>. The Star Relic Lee Jihye and the kids earned by clearing the 'Next City' scenario revealed itself before our very eyes.</p>
 <p class="orv_line">However, I couldn't help but wonder if it was okay for us to ride that. Because in the 'Journey to the West'…</p>
-<div class="orv_system"><p>[Star Relic, 'Turtle Dragon', corresponds with the ⸢Journey to the West Remake⸥!]</p></div>
+<div class="orv_system"><p>Star Relic, 'Turtle Dragon', corresponds with the ⸢Journey to the West Remake⸥!</p></div>
 <p class="orv_line">(As the group fell into danger and struggled to move forward, a gigantic white turtle Yogoe appeared to give them a ride.)</p>
-<div class="orv_system"><p>[A portion of judges are satisfied by the minutely-detailed reflection of the original story.]</p></div>
-<div class="orv_system"><p>[20 additional points have been awarded!]</p></div>
+<div class="orv_system"><p>A portion of judges are satisfied by the minutely-detailed reflection of the original story.</p></div>
+<div class="orv_system"><p>20 additional points have been awarded!</p></div>
 <p class="orv_line">…To think that such an event happened in the 'Journey to the West'. What an excellent development that was.</p>
 <p class="orv_line">We quickly climbed aboard the battleship.</p>
 <p class="orv_line">"Set sail!"</p>
@@ -305,9 +312,9 @@
 <p class="orv_line">Perhaps these creatures interfered with their own journeys, the Sun Wukongs from other Story chambers began wielding their Ruyi Bangs.</p>
 <p class="orv_line">"Those sons of bitches…!"</p>
 <p class="orv_line">The enraged Lee Jihye clenched her fists tightly, but it was not possible to save everyone. The deaths of Yogoes were unfolding all over the Tongtian River, after all.</p>
-<div class="orv_constellation"><p>[Gu-waaaaahk!]</p></div>
+<div class="orv_constellation"><p>Gu-waaaaahk!</p></div>
 <p class="orv_line">The members of other Story chambers advanced forward while slaughtering Yogoes blocking their paths. Yogoe's flesh and blood rained down from everywhere.</p>
-<div class="orv_system"><p>[A large number of audience members are cheering on this spectacle of slaughter!]</p></div>
+<div class="orv_system"><p>A large number of audience members are cheering on this spectacle of slaughter!</p></div>
 <p class="orv_line">Yogoes continued to die. The monsters that didn't earn their meanings because they failed to create their Stories. They were sacrifices offered up to complete this 'Journey to the West'.</p>
 <p class="orv_line">The novel, 'Journey to the West'. A lengthy journey for the goal of transcending one's humanity.</p>
 <p class="orv_line">To let the audience watching the Story reach enlightenment of their own, Yogoes had to be buried under this Tongtian River's waters.</p>
@@ -320,18 +327,18 @@
 <p class="orv_line">And if only they could become the main characters of this 'Giant Story'…</p>
 <p class="orv_line">"Myungoh ahjussi, just stay still, will ya! I'm telling you, it's safe here."</p>
 <p class="orv_line">"Safe, my ass! You think I'll fall for that again?!"</p>
-<div class="orv_system"><p>[Stigma, 'One-legged Swift Horse Lv.???' is ready to activate.]</p></div>
+<div class="orv_system"><p>Stigma, 'One-legged Swift Horse Lv.???' is ready to activate.</p></div>
 <p class="orv_line">Whether one's leg was cut off or its arm was lost… That creature would be remembered by this world.</p>
-<div class="orv_system"><p>[7133rd Story chamber's entire roster has been annihilated.]</p></div>
-<div class="orv_system"><p>[487th Story chamber's entire roster has been annihilated.]</p></div>
+<div class="orv_system"><p>7133rd Story chamber's entire roster has been annihilated.</p></div>
+<div class="orv_system"><p>487th Story chamber's entire roster has been annihilated.</p></div>
 <p class="orv_line">With every passing second, the number of Story chambers being ejected continued to increase. And as if to proportionally match that figure, the number of Yogoes crashing down also increased exponentially.</p>
 <div class="orv_outergod"><p>【AhAhAhAhAhAh】</p></div>
 <div class="orv_outergod"><p>【SavemSavemSavemeSavemeSaveme】</p></div>
-<div class="orv_system"><p>[Currently, shares of 'Outer God' for the applicable scenario is 15.773%.]</p></div>
+<div class="orv_system"><p>Currently, shares of 'Outer God' for the applicable scenario is 15.773%.</p></div>
 <p class="orv_line">The 'Outer God' shares that I worked so hard to increase began dropping little by little. Even though so many Yogoes still remained…</p>
-<div class="orv_system"><p>[Currently, shares of 'Outer God' for the applicable scenario is 14.973%.]</p></div>
+<div class="orv_system"><p>Currently, shares of 'Outer God' for the applicable scenario is 14.973%.</p></div>
 <p class="orv_line">And then, the shares began tumbling down at an alarming rate next.</p>
-<div class="orv_system"><p>[Currently, shares of 'Outer God' for the applicable scenario is 14.473%.]</p></div>
+<div class="orv_system"><p>Currently, shares of 'Outer God' for the applicable scenario is 14.473%.</p></div>
 <p class="orv_line">But then again, maybe it was an obvious result.</p>
 <p class="orv_line">Because they were villains to be defeated in this world, not its main characters.</p>
 <div class="orv_outergod"><p>【AhAhAhAhAhAhAh】</p></div>
@@ -349,18 +356,12 @@
             <a href="./ch_434"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_436">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="435" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="831" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="434" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="434" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

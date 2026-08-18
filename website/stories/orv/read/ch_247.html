@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 247: Ep. 47 - Demon King Selection, I</title>
     <meta property="og:title" content="Ch 247: Ep. 47 - Demon King Selection, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00247.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 247: Ep. 47 - Demon King Selection, I</h1></div>
 <p class="orv_line">It had been a week since I went to the Gourmet Association. During this week, I was very busy. There were only four days left until the Demon King Selection. Until then, I had to complete all of my preparations.</p>
@@ -209,7 +216,7 @@
 <p class="orv_line">"Why?" Jang Hayoung stepped back with a suspicious look.</p>
 <p class="orv_line">I sighed and told him, "I'm not going to take it away. You can't eat it like this anyway."</p>
 <p class="orv_line">Based on his dark expression, he had already heard about it from Yoo Joonghyuk. I'm sure he told the story while picking out the Black Heavenly Demon Sword.</p>
-<div class="orv_quote"><p>「 If you eat it, you will experience a qi deviation and all the blood vessels in your body will explode, killing you. There is only one person here who can safely absorb the Demon Spirit Bead. 」</p></div>
+<div class="orv_quote"><p>If you eat it, you will experience a qi deviation and all the blood vessels in your body will explode, killing you. There is only one person here who can safely absorb the Demon Spirit Bead.</p></div>
 <p class="orv_line">…I thought this and understood why Jang Hayoung was acting like this. "You don't have to give it to me if you don't want to. You are the one who earned it yourself."</p>
 <p class="orv_line">It couldn't be helped if Jang Hayoung didn't believe me since not enough trust had been built up yet. At this moment, Jang Hayoung extended a small hand. "…It isn't like that. In the first place, I wouldn't have gained this if it wasn't for you."</p>
 <p class="orv_line">A small pill fell into my hand with a thud. This was one of the three major drugs of First Murim, the Demon Spirit Bead. I spoke with a smile, "Wait and see."</p>
@@ -218,23 +225,23 @@
 <p class="orv_line">In the original novel, Yoo Joonghyuk always found it delicious but Jang Hayoung would surely die if he took it.</p>
 <p class="orv_line">"Let's see…"</p>
 <p class="orv_line">However, as with any scenario, it wasn't impossible to use a cursed item. In fact, I clearly remembered a scene from Ways of Survival where the Flying Fox absorbed this tribulation.</p>
-<div class="orv_quote"><p>「 All I need is three Great Return Pills. After all, everything is about balance and harmony. If demonic energy is a problem, we can supply it regularly. 」</p></div>
+<div class="orv_quote"><p>All I need is three Great Return Pills. After all, everything is about balance and harmony. If demonic energy is a problem, we can supply it regularly.</p></div>
 <p class="orv_line">The curse could be avoided if three Great Return Pills were ground together with the Demon Spirit Bead.</p>
 <p class="orv_line">It was easier said than done. The problem was how to get the Demon Spirit Bead, one of the top three drugs, along with three Great Return Pills. However, this wasn't a big problem for me.</p>
 <p class="orv_line">"Biyoo."</p>
 <p class="orv_line">I called Biyoo and opened the Dokkaebi Bag. The Great Return Pill was already on the 'Recommended Goods List'. The dokkaebis' big data was scary.</p>
 <div class="orv_window">
-<h3 class="orv_window_title">[Recommended Products List]</h3>
+<h3 class="orv_window_title">Recommended Products List</h3>
 <p>* Great Return Pill―200,000 C</p>
 <p>Stock: 5</p>
 </div>
 <p class="orv_line">200,000 coins. I normally would've been distressed by the price but not anymore. I deliberately switched the screen to public and purchased the goods.</p>
-<div class="orv_system"><p>[600,000 coins have been consumed.]</p></div>
-<div class="orv_system"><p>[You have purchased three Great Return Pills.]</p></div>
+<div class="orv_system"><p>600,000 coins have been consumed.</p></div>
+<div class="orv_system"><p>You have purchased three Great Return Pills.</p></div>
 <p class="orv_line">Then channel messages kept appearing.</p>
-<div class="orv_system"><p>[Some constellations envy your overspending.]</p></div>
-<div class="orv_system"><p>[A few constellations are curious about the performance of the Great Return Pill.]</p></div>
-<div class="orv_system"><p>[Some constellations say they will sponsor 500 coins if you tell them the performance of the Great Return Pill.]</p></div>
+<div class="orv_system"><p>Some constellations envy your overspending.</p></div>
+<div class="orv_system"><p>A few constellations are curious about the performance of the Great Return Pill.</p></div>
+<div class="orv_system"><p>Some constellations say they will sponsor 500 coins if you tell them the performance of the Great Return Pill.</p></div>
 <p class="orv_line">"6-600,000 coins?!" The passing Han Myungoh shook while holding a bowl of dog food. He was probably preparing a meal for the Breaking the Sky Master. "That… I heard you were rich."</p>
 <p class="orv_line">"Things turned out well. Please take this and grind it together."</p>
 <p class="orv_line">"W-What is this? Is it a panacea?"</p>
@@ -326,18 +333,12 @@
             <a href="./ch_246"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_248">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="247" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="316" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="246" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="246" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

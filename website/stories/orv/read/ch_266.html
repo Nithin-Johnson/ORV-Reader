@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 266: Ep. 50 - Dokja's Story, III</title>
     <meta property="og:title" content="Ch 266: Ep. 50 - Dokja's Story, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,69 +177,69 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00266.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 266: Ep. 50 - Dokja's Story, III</h1></div>
 <p class="orv_line">My vision blackened before coming back. It felt like my consciousness had experienced a power outage. I blinked blankly but only the dark ceiling was visible.</p>
 <p class="orv_line">…What happened? I took deep breaths and moved my heavy head as I started thinking.</p>
 <p class="orv_line">I was participating in the second round of the Demon King Selection. I killed Duke Bercan and at almost the same time, I was killed by Surya. Then the system messages poured out.</p>
 <p class="orv_line">Did I win the second round? Or… did I lose? I thought about it but I wasn't sure.</p>
-<div class="orv_system"><p>[You have taken away the enemy's sentence and won the game!]</p></div>
+<div class="orv_system"><p>You have taken away the enemy's sentence and won the game!</p></div>
 <p class="orv_line">I seemed to have heard this message.</p>
-<div class="orv_system"><p>[Your sentence was taken away and you have lost the game!]</p></div>
+<div class="orv_system"><p>Your sentence was taken away and you have lost the game!</p></div>
 <p class="orv_line">I also seemed to have heard this message. Maybe it was both. Then which one was first? For now, I had no way of knowing.</p>
-<div class="orv_system"><p>[You have died.]</p></div>
+<div class="orv_system"><p>You have died.</p></div>
 <p class="orv_line">The only thing I was sure about was this message. I died in the game and awakened in this place.</p>
 <p class="orv_line">"Ugh…"</p>
 <p class="orv_line">I slowly rose from my seat and the place where I was lying was seen more clearly. Numerous lamps were set up between niches, illuminating the vast darkness. It was an unfamiliar place I had never visited before.</p>
-<p class="orv_line">There was a sign stating [000~100] in the place where I stood and large bookshelves around the sign. There was the smell of books. It was reminiscent of a university library.</p>
+<p class="orv_line">There was a sign stating <strong>[000~100]</strong> in the place where I stood and large bookshelves around the sign. There was the smell of books. It was reminiscent of a university library.</p>
 <p class="orv_line">…Library? Why was I here? I pulled out a book on the closest shelf and turned a page.</p>
-<div class="orv_quote"><p>「 After Lee Seolhwa's death, Yoo Joonghyuk thought he should die many times. He could never win against them with talent and skills alone. The end of the scenario wasn't visible and the power of the constellations was unbelievably strong. Revenge for Lee Jihye and Lee Seolhwa couldn't be achieved. Yoo Joonghyuk thought in the midst of his despair. 」</p></div>
+<div class="orv_quote"><p>After Lee Seolhwa's death, Yoo Joonghyuk thought he should die many times. He could never win against them with talent and skills alone. The end of the scenario wasn't visible and the power of the constellations was unbelievably strong. Revenge for Lee Jihye and Lee Seolhwa couldn't be achieved. Yoo Joonghyuk thought in the midst of his despair.</p></div>
 <p class="orv_line">The sentences in the familiar style were lined up and I read the sentences as if they were being sucked in.</p>
-<div class="orv_quote"><p>「 'What if I have a sponsor?' 」</p></div>
+<div class="orv_quote"><p>'What if I have a sponsor?'</p></div>
 <p class="orv_line">It was a scene that didn't appear in detail in Ways of Survival. Even so, I knew this scene. It was because the scene was repeated dozens or hundreds of times in my imagination.</p>
-<div class="orv_quote"><p>「 [The constellation '???' wants you to be his incarnation'. 」</p></div>
+<div class="orv_quote"><p>[The constellation '???' wants you to be his incarnation'.</p></div>
 <p class="orv_line">This was the first time Yoo Joonghyuk received his sponsor. Yoo Joonghyuk in the 0th regression repeatedly trained to his limit without a sponsor but had to kneel in front of the scenarios.</p>
-<div class="orv_quote"><p>「 A new attribute, Regressor will blossom! 」</p></div>
+<div class="orv_quote"><p>A new attribute, Regressor will blossom!</p></div>
 <p class="orv_line">It was the story of when Yoo Joonghyuk first became a 'regressor'. I reflexively closed the book and looked at the title.</p>
-<div class="orv_system"><p>[Yoo Joonghyuk, 56th record of the 0th round.]</p></div>
+<div class="orv_system"><p>Yoo Joonghyuk, 56th record of the 0th round.</p></div>
 <p class="orv_line">I suddenly had an idea of what this place was. As my eyes became accustomed to the darkness, the surroundings looked better. This was the library where all the records of Ways of Survival were gathered.</p>
 <p class="orv_line">I muttered in a slightly weary manner. "…It seems to be more than 3,149."</p>
 <p class="orv_line">Ways of Survival was long but not to this extent. This huge space was filled with books. I wasn't sure if I could read half the books even if I devoted my whole life to it.</p>
 <p class="orv_line">Then I got a headache. The curled memories were breaking out like a eggshell cracking. This place that had just seemed unfamiliar now felt familiar. The lamps in the niches and the shelves of books.</p>
 <p class="orv_line">I slowly got goosebumps and an intense feeling struck my head. I had already come to this place once. When was it? When…</p>
-<div class="orv_quote"><p>「 Kim Dok ja. 」</p></div>
+<div class="orv_quote"><p>Kim Dok ja.</p></div>
 <p class="orv_line">The voice echoed through the library. I knew this tone. "…The Fourth Wall?"</p>
 <p class="orv_line">Then the entire library shook faintly.</p>
-<div class="orv_quote"><p>「 Yo ur so ul was in dan ger. 」</p></div>
+<div class="orv_quote"><p>Yo ur so ul was in dan ger.</p></div>
 <p class="orv_line">"Danger?"</p>
-<div class="orv_quote"><p>「 I call ed you… 」</p></div>
+<div class="orv_quote"><p>I call ed you…</p></div>
 <p class="orv_line">The Fourth Wall called me here. It wasn't difficult to figure out what he meant. "Perhaps, are you also in here?"</p>
-<div class="orv_quote"><p>「 Co rrect. 」</p></div>
+<div class="orv_quote"><p>Co rrect.</p></div>
 <p class="orv_line">"How do I get out of here? Where is the exit?"</p>
-<div class="orv_quote"><p>「 … 」</p></div>
+<div class="orv_quote"><p>…</p></div>
 <p class="orv_line">"…Hey?"</p>
 <p class="orv_line">I called out a few more times but the Fourth Wall didn't answer. He was a guy who slept when sleepy so he might've fallen asleep again this time. I had to find a way out myself.</p>
-<div class="orv_system"><p>[You can't use Omniscient Reader's Viewpoint in this location.]</p></div>
-<div class="orv_system"><p>[You can't use Bookmark in this location.]</p></div>
+<div class="orv_system"><p>You can't use Omniscient Reader's Viewpoint in this location.</p></div>
+<div class="orv_system"><p>You can't use Bookmark in this location.</p></div>
 <p class="orv_line">All my available skills were blocked. I couldn't see the end of the library no matter how far I walked. I couldn't see the exit as I looked to the north, south, east and west. I became convinced that I couldn't escape and felt a drug-like comfort.</p>
 <p class="orv_line">"…Heaven."</p>
 <p class="orv_line">Everywhere I looked was Ways of Survival. It was a world full of Ways of Survival. I might've been happy if I came here before the scenario started. It was a story that would never end no matter how much I read. I wouldn't go hungry because I was just a soul.</p>
@@ -248,35 +255,35 @@
 <p class="orv_line">There was no one in this place and I naturally spoke to myself. I wasn't conscious about any listeners. Thus, I read a few more books. There was a sense of pride in my heart and warmth rose.</p>
 <p class="orv_line">Suddenly, I felt weak. Why didn't I just give up and stay here? It wouldn't be too bad if I never woke up from here. There was no scenario here to kill me.</p>
 <p class="orv_line">I didn't need to see the constellations. After reading a number of books, I ran past some bookshelves, reading those in the middle.</p>
-<div class="orv_quote"><p>「 Yoo Joonghyuk sometimes thought this. 」</p></div>
-<div class="orv_quote"><p>「 'If I hadn't met that guy on the bridge, what would've happened? Or if I had killed him there… what would've happened to my remaining life?' 」</p></div>
+<div class="orv_quote"><p>Yoo Joonghyuk sometimes thought this.</p></div>
+<div class="orv_quote"><p>'If I hadn't met that guy on the bridge, what would've happened? Or if I had killed him there… what would've happened to my remaining life?'</p></div>
 <p class="orv_line">I saw the familiar phrases and reflexively looked at the title of the book.</p>
-<div class="orv_system"><p>[Yoo Joonghyuk, 12th record of the 3rd round.]</p></div>
+<div class="orv_system"><p>Yoo Joonghyuk, 12th record of the 3rd round.</p></div>
 <p class="orv_line">…As expected, it was the third round. I opened a few more books Some of them were written about me.</p>
-<div class="orv_quote"><p>「 'Damn Kim Dokja'. 」</p></div>
+<div class="orv_quote"><p>'Damn Kim Dokja'.</p></div>
 <p class="orv_line">Some books contained:</p>
-<div class="orv_quote"><p>「 "Kim Dokja, wake up! Kim Dokja!" 」</p></div>
+<div class="orv_quote"><p>"Kim Dokja, wake up! Kim Dokja!"</p></div>
 <p class="orv_line">Some good words were written. In some books, nothing was written.</p>
-<div class="orv_quote"><p>「 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ 」</p></div>
+<div class="orv_quote"><p>■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■</p></div>
 <p class="orv_line">The sentences were filtered and couldn't be read. Some of the episodes had blank pages. It was as if the story hadn't been recorded yet.</p>
 <p class="orv_line">All books were organized in accordance to the order of the rounds. It was as if someone had arranged it so I could find it easily when needed. But who…</p>
 <p class="orv_line">I just had this thought when I saw something on the other side of the bookshelf. I reflexively put the book back and looked. It was a very short moment but there seemed to be the shadow of a person.</p>
 <p class="orv_line">"Who's there?"</p>
 <p class="orv_line">The sound of footsteps started heading further away. I started chasing the sound. I almost stumbled over a few books on the floor but persistently followed the shadow. The signs of the bookshelves changed quickly.</p>
-<p class="orv_line">From [000~100] to [100~200]. Then it was [200~300].</p>
-<div class="orv_system"><p>[Yoo Joonghyuk, 24th record of the 373rd round.]</p></div>
-<div class="orv_system"><p>[Yoo Joonghyuk, 31st record of the 473rd round.]</p></div>
+<p class="orv_line">From <strong>[000~100]</strong> to <strong>[100~200]</strong>. Then it was <strong>[200~300]</strong>.</p>
+<div class="orv_system"><p>Yoo Joonghyuk, 24th record of the 373rd round.</p></div>
+<div class="orv_system"><p>Yoo Joonghyuk, 31st record of the 473rd round.</p></div>
 <p class="orv_line">Countless books passed by quickly.</p>
-<div class="orv_system"><p>[Yoo Joonghyuk, 27th record of the 573rd round.]</p></div>
-<div class="orv_system"><p>[Yoo Joonghyuk, 12th record of the 681st round.]</p></div>
+<div class="orv_system"><p>Yoo Joonghyuk, 27th record of the 573rd round.</p></div>
+<div class="orv_system"><p>Yoo Joonghyuk, 12th record of the 681st round.</p></div>
 <p class="orv_line">…</p>
 <p class="orv_line">I was a bit breathless and still couldn't see the end of the books. It was obviously a soul body but I was breathless. I kept running. This was an opportunity. If I missed this person here, I wouldn't be able to catch it again.</p>
 <p class="orv_line">How far did I go? I was getting a bit closer.</p>
 <p class="orv_line">"Wait!"</p>
 <p class="orv_line">The moment I shouted, the floor in front of me suddenly disappeared. My body failed to overcome inertia and fell forward. I might've fallen down if I hadn't reflexively grabbed the bookshelf next to me.</p>
-<div class="orv_system"><p>[Yoo Joonghyuk, 22nd record of the 1863rd round.]</p></div>
-<div class="orv_system"><p>[Yoo Joonghyuk, 23rd record of the 1863rd round.]</p></div>
-<div class="orv_system"><p>[Yoo Joonghyuk, 26th record of the 1863rd round.]</p></div>
+<div class="orv_system"><p>Yoo Joonghyuk, 22nd record of the 1863rd round.</p></div>
+<div class="orv_system"><p>Yoo Joonghyuk, 23rd record of the 1863rd round.</p></div>
+<div class="orv_system"><p>Yoo Joonghyuk, 26th record of the 1863rd round.</p></div>
 <p class="orv_line">…</p>
 <p class="orv_line">Books poured towards my head. It hurt as much as Yoo Joonghyuk's fists. I barely dug myself out of the pile of books and the shadow I was pursuing had already disappeared.</p>
 <p class="orv_line">"Shit…"</p>
@@ -284,7 +291,7 @@
 <p class="orv_line">"Ah…"</p>
 <p class="orv_line">I stared down the cliff like I was possessed. This was the end of the library. It was the end of all the stories. I stared at it and felt the urge to throw myself in. I felt like I could know something I had long wondered about. If I could go inside there…</p>
 <p class="orv_line">The moment my body tilted towards the bottom of the cliff, someone tightly grabbed my shoulders.</p>
-<div class="orv_quote"><p>「 (You will die if you fall. It is really 'beyond' the wall.) 」</p></div>
+<div class="orv_quote"><p>(You will die if you fall. It is really 'beyond' the wall.)</p></div>
 <br>
 <hr>
 <br>
@@ -308,14 +315,14 @@
 <p class="orv_line">Jang Hayoung's eyes were glowing as he shook Yoo Sangah's hand. Yoo Sangah smiled lightly and stared into the air.</p>
 <p class="orv_line">"By the way… did we win or lose?"</p>
 <p class="orv_line">Only one unknown system message was floating in the air.</p>
-<div class="orv_system"><p>[We are currently determining the winning team of the second round.]</p></div>
+<div class="orv_system"><p>We are currently determining the winning team of the second round.</p></div>
 <p class="orv_line">Jang Hayoung said, "I think Kim Dokja killed him first. Then shouldn't we win?"</p>
 <p class="orv_line">"But our sentence was stolen…"</p>
 <p class="orv_line">Yoo Joonghyuk shook his head. "Kim Dokja was faster."</p>
 <p class="orv_line">The words filled with strong conviction caused Jang Hayoung and Yoo Sangah to brighten. It was likely to be true if Yoo Joonghyuk said so.</p>
 <p class="orv_line">Then a cloud of dust appeared on the other side of the wilderness. It was a scene filled with a powerful 'status'. There were no need to ask about the identity of the incoming beings.</p>
 <p class="orv_line">Yoo Joonghyuk stared at the sky and his expression hardened.</p>
-<div class="orv_system"><p>[We are currently determining the winning team of the second round.]</p></div>
+<div class="orv_system"><p>We are currently determining the winning team of the second round.</p></div>
 <p class="orv_line">It was still the only sentence floating in the sky. It had been the same for 30 minutes.</p>
 <p class="orv_line">"Be prepared."</p>
 <p class="orv_line">"Huh?"</p>
@@ -332,18 +339,12 @@
             <a href="./ch_265"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_267">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="266" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="338" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="265" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="265" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

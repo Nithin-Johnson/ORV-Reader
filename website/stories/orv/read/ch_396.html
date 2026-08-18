@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 396: Ep. 75 - A certain heart, III</title>
     <meta property="og:title" content="Ch 396: Ep. 75 - A certain heart, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,46 +177,46 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00396.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 396: Ep. 75 - A certain heart, III</h1></div>
 <p class="orv_line">In that brief moment, the gazes of these two met each other.</p>
-<div class="orv_quote"><p>「 "Everyone knows how to deal with Demon Kings, right?" 」</p></div>
+<div class="orv_quote"><p>"Everyone knows how to deal with Demon Kings, right?"</p></div>
 <p class="orv_line">They carried the same pain, and they lived with the same hurt.</p>
 <p class="orv_line">They had lost people they cared about right before their eyes.</p>
-<div class="orv_quote"><p>「 "Let's begin the final scenario." 」</p></div>
+<div class="orv_quote"><p>"Let's begin the final scenario."</p></div>
 <p class="orv_line">They had failed to save their companions many times over.</p>
 <p class="orv_line">And that was why they could never turn their backs on the people dying right in front of them.</p>
 <p class="orv_line">The lives they had lived so far made sure of that.</p>
 <p class="orv_line">"Let's go!"</p>
 <p class="orv_line">Jung Heewon lightly jumped up and landed on Lee Hyunsung's hand, and he powerfully threw her forward.</p>
-<p class="orv_line">She flew like a streak of light and crossed the battlefield. The flames of [Hellfire] drew a stylish arc in the air and shot forward, causing the Demon King Haagenti to gasp out in pain.</p>
+<p class="orv_line">She flew like a streak of light and crossed the battlefield. The flames of <strong>[Hellfire]</strong> drew a stylish arc in the air and shot forward, causing the Demon King Haagenti to gasp out in pain.</p>
 <p class="orv_line">The creature quickly put out the fire that managed to slice apart a portion of its flesh and roared out viciously in reply.</p>
-<div class="orv_constellation"><p>[So, that's where you've been hiding!]</p></div>
+<div class="orv_constellation"><p>So, that's where you've been hiding!</p></div>
 <p class="orv_line">Haagenti didn't dally any longer and dashed forward while raising a thick cloud of dust.</p>
 <p class="orv_line">"Kuwahhhph!"</p>
 <p class="orv_line">As Lee Hyunsung grabbed Haagenti's horn to start wrestling with the creature, Jung Heewon began shaking the unconscious Kyle.</p>
 <p class="orv_line">"Kyle! Get a hold of yourself! Kyle!"</p>
 <p class="orv_line">It was as if she had reverted back to being Erich Striker; she desperately called out Kyle's name. She placed her hand near his nose and much to her relief, found out that he hadn't died yet.</p>
-<div class="orv_quote"><p>「 "Let's try one more time with the scenario…" 」</p></div>
+<div class="orv_quote"><p>"Let's try one more time with the scenario…"</p></div>
 <p class="orv_line">These people came this far after they heard her voice and the words of &lt;Kim Dokja's Company&gt;. They followed after her in order to find their own stories.</p>
 <p class="orv_line">That was why she simply couldn't let them die here.</p>
 <p class="orv_line">"Allow me to take him away."</p>
@@ -219,7 +226,7 @@
 <p class="orv_line">The knight nodded his head solemnly and quickly ran towards the back of the battlefield. She then grasped her sword tighter, planning to help Lee Hyunsung. But then, right at that moment…</p>
 <p class="orv_line">…A chilling premonition tickled her entire figure.</p>
 <p class="orv_line">She had never felt such a thing before in her entire life.</p>
-<p class="orv_line">Not even when she was about to lose Kim Dokja in the [Dark Castle], not when she lost him one more time back in the 73rd Demon Realm, and then…</p>
+<p class="orv_line">Not even when she was about to lose Kim Dokja in the <strong>[Dark Castle]</strong>, not when she lost him one more time back in the 73rd Demon Realm, and then…</p>
 <p class="orv_line">"Heewon-ssi! Get down!!"</p>
 <p class="orv_line">At the same time, Lee Hyunsung bear-hugged her and rolled down on the ground. A thin ray of light brushed past her forearm. It was at that moment that she finally realized such a terrifying scream could come out of her own mouth.</p>
 <p class="orv_line">It was a bullet fired by Barbatos.</p>
@@ -229,30 +236,30 @@
 <p class="orv_line">He sent a voice projection, the skill that connected her to Lee Hyunsung when they were still stuck inside 'Kaizenix Archipelago'. With that very skill, he was talking to her.</p>
 <p class="orv_line">– I can still withstand this! But I won't be able to while trying to protect you, as well!</p>
 <p class="orv_line">Back then, or now; Lee Hyunsung always insisted that he could do things he couldn't possibly do. That was why Jung Heewon couldn't escape.</p>
-<p class="orv_line">She deflected the incoming silver-coloured claws of Demon King Stolas and gritted her teeth. The flames of [Hellfire] were progressively getting weaker, and cracks on Lee Hyunsung's carapace grew larger and more numerous.</p>
+<p class="orv_line">She deflected the incoming silver-coloured claws of Demon King Stolas and gritted her teeth. The flames of <strong>[Hellfire]</strong> were progressively getting weaker, and cracks on Lee Hyunsung's carapace grew larger and more numerous.</p>
 <p class="orv_line">The 'Demon King of Seduction and Infertility' Zepar laughed.</p>
-<div class="orv_constellation"><p>[What a sad fate this is. But, I do enjoy a tragedy like this.]</p></div>
+<div class="orv_constellation"><p>What a sad fate this is. But, I do enjoy a tragedy like this.</p></div>
 <p class="orv_line">"Shut up."</p>
-<div class="orv_system"><p>[A few Constellations are tearing up at the story of the Incarnations.]</p></div>
+<div class="orv_system"><p>A few Constellations are tearing up at the story of the Incarnations.</p></div>
 <p class="orv_line">Jung Heewon desperately wielded her sword so that she could leave behind definite proof of their lives not being some stories of entertainment for the others.</p>
 <p class="orv_line">Reincarnators running away watched their struggle.</p>
 <p class="orv_line">To save them, Jung Heewon and Lee Hyunsung fought.</p>
-<div class="orv_system"><p>[Influence of the Nebula, &lt;Kim Dokja's Company&gt; is growing larger.]</p></div>
-<div class="orv_system"><p>[Foundation of 'Great War of Saints and Demons' is being rocked.]</p></div>
+<div class="orv_system"><p>Influence of the Nebula, &lt;Kim Dokja's Company&gt; is growing larger.</p></div>
+<div class="orv_system"><p>Foundation of 'Great War of Saints and Demons' is being rocked.</p></div>
 <p class="orv_line">For the first time ever, the Demon Kings basking in a relaxed air changed their expressions.</p>
-<div class="orv_constellation"><p>[It's regretful that we can't enjoy this anymore.]</p></div>
-<p class="orv_line">And for one more time, another blackish beam of light exploded forth. The bullet tore through space and flew forward. It was Barbatos's speciality, [Star Destruction Bullet].</p>
+<div class="orv_constellation"><p>It's regretful that we can't enjoy this anymore.</p></div>
+<p class="orv_line">And for one more time, another blackish beam of light exploded forth. The bullet tore through space and flew forward. It was Barbatos's speciality, <strong>[Star Destruction Bullet]</strong>.</p>
 <p class="orv_line">It couldn't be dodged this time.</p>
 <p class="orv_line">Jung Heewon crouched into a huddle, trying to minimise the potential area of damage, only for someone to cover her. Along with the sensation of a dull, heavy impact, she heard something exploding away.</p>
 <p class="orv_line">BLAM!</p>
 <p class="orv_line">The bullet didn't end with just one.</p>
 <p class="orv_line">BLAM!!</p>
 <p class="orv_line">The first one, then the second, and another; bullets fired one after the other blew up, broke, and destroyed 'something'.</p>
-<div class="orv_system"><p>[Story, 'Purest Companionship', is getting agitated.]</p></div>
+<div class="orv_system"><p>Story, 'Purest Companionship', is getting agitated.</p></div>
 <p class="orv_line">Jung Heewon struggled desperately and hugged the person protecting her to roll around on the ground. It was a person's body, torn to bits by the bullets. A bloodied face was smiling towards her. He was saying something, but slowly, so slowly, he closed his eyes.</p>
-<div class="orv_system"><p>[Story, 'Sword and Shield', has stopped its storytelling.]</p></div>
+<div class="orv_system"><p>Story, 'Sword and Shield', has stopped its storytelling.</p></div>
 <p class="orv_line">"Hyunsung-ssi?"</p>
-<div class="orv_system"><p>[Constellation, 'Master of Steel', has received great damage.]</p></div>
+<div class="orv_system"><p>Constellation, 'Master of Steel', has received great damage.</p></div>
 <p class="orv_line">"Hyunsung-ssi, please wake up."</p>
 <p class="orv_line">As if they had reached the intermission, the gunfires came to a halt just then.</p>
 <p class="orv_line">Something inside her head snapped in that moment. Jung Heewon shook Lee Hyunsung one more time.</p>
@@ -271,9 +278,9 @@
 <p class="orv_line">Jung Heewon ran as tears streamed down her face. Although it was nothing more than buying time, that time was critical in changing everything.</p>
 <p class="orv_line">So, she ran. And, she ran some more. How long did she run like that? Her vision grew blurrier and eventually, she collapsed into a puddle of mud. The putrid stench of dead Reincarnators filled up the landscape. There wasn't a drop of energy left in her body.</p>
 <p class="orv_line">As for Lee Hyunsung's heartbeat, she couldn't hear it anymore.</p>
-<div class="orv_constellation"><p>[Incarnation of Uriel, where are you hiding?]</p></div>
+<div class="orv_constellation"><p>Incarnation of Uriel, where are you hiding?</p></div>
 <p class="orv_line">She sensed the presence of Demon Kings approaching closer and held her breath. Whether it was due to luck or not, her current Status had been broken to an unrecognisable degree right now and it was difficult to differentiate her from the other Reincarnators.</p>
-<div class="orv_constellation"><p>[If you don't want to come out, then well, we'll just kill the rest.]</p></div>
+<div class="orv_constellation"><p>If you don't want to come out, then well, we'll just kill the rest.</p></div>
 <p class="orv_line">Demon King Amy laughed and began swinging its flame spear.</p>
 <p class="orv_line">There were still many surviving Reincarnators around her. They were people Jung Heewon should be saving. They were people she should have saved.</p>
 <p class="orv_line">She squeezed her eyes shut.</p>
@@ -289,7 +296,7 @@
 <p class="orv_line">And next to him was the knight that carried the injured Kyle away.</p>
 <p class="orv_line">"No, I'm Jung Heewon!"</p>
 <p class="orv_line">"No, it is I! I am she! Come and kill me instead!"</p>
-<div class="orv_constellation"><p>[…You bastards, have you all gone mad as a group?]</p></div>
+<div class="orv_constellation"><p>…You bastards, have you all gone mad as a group?</p></div>
 <p class="orv_line">Reincarnators weren't running away.</p>
 <p class="orv_line">Those that came along with her from the 'Kaizenix Archipelago', those she managed to save during other regional conflicts, they were all standing by her side to shout at the top of their lungs.</p>
 <p class="orv_line">"I'm Jung Heewon!"</p>
@@ -305,9 +312,9 @@
 <p class="orv_line">"Uwaaaah!!"</p>
 <p class="orv_line">After crying out her name, Kyle began dashing towards the nearest Demon King. Reincarnators running away in the opposite direction were now coming back.</p>
 <p class="orv_line">Some were in tears, some were in a rage, while some were in despair.</p>
-<div class="orv_system"><p>[Influence of &lt;Kim Dokja's Company&gt; in the applicable scenario is strengthening even further!]</p></div>
+<div class="orv_system"><p>Influence of &lt;Kim Dokja's Company&gt; in the applicable scenario is strengthening even further!</p></div>
 <p class="orv_line">The Demon Kings became flustered and began unleashing their Statuses.</p>
-<div class="orv_constellation"><p>[How dare these insane fools…!]</p></div>
+<div class="orv_constellation"><p>How dare these insane fools…!</p></div>
 <p class="orv_line">Reincarnators were being ripped to shreds right before her eyes.</p>
 <p class="orv_line">They couldn't even endure a light nudge from a Demon King. Even then, they didn't stop shouting out. Some cried out Jung Heewon's name, while some, Lee Hyunsung's. Some called out Kim Dokja's name while flinging themselves into the embrace of death.</p>
 <p class="orv_line">Trapped within this battlefield of complete pandemonium, Jung Heewon began shuddering.</p>
@@ -319,12 +326,12 @@
 <p class="orv_line">"…I."</p>
 <p class="orv_line">And then, she ran towards the Demon Kings.</p>
 <p class="orv_line">"I am Jung Heewon!!"</p>
-<div class="orv_constellation"><p>[So, that's where you were!]</p></div>
+<div class="orv_constellation"><p>So, that's where you were!</p></div>
 <p class="orv_line">Claws flew in and scratched her back before going away.</p>
-<div class="orv_system"><p>[You have requested the activation of the exclusive skill, 'Hour of Judgement'!]</p></div>
+<div class="orv_system"><p>You have requested the activation of the exclusive skill, 'Hour of Judgement'!</p></div>
 <p class="orv_line">Even if it's just this once, doesn't matter who it is – as long as they can lend me their strength…</p>
-<div class="orv_system"><p>[Majority of the Absolute Good-type Constellations are opposing the activation of the skill.]</p></div>
-<div class="orv_system"><p>[Skill activation has been cancelled.]</p></div>
+<div class="orv_system"><p>Majority of the Absolute Good-type Constellations are opposing the activation of the skill.</p></div>
+<div class="orv_system"><p>Skill activation has been cancelled.</p></div>
 <p class="orv_line">Why couldn't those she desperately wanted to, be judged?</p>
 <p class="orv_line">What was 'Good', and what was 'Evil', then?</p>
 <p class="orv_line">"…What rubbish is this 'Absolute' crap?"</p>
@@ -332,23 +339,23 @@
 <p class="orv_line">And why am I supposed to abide by it?</p>
 <p class="orv_line">Barbatos's bullet flew in.</p>
 <p class="orv_line">Her worn-down emotions became the kindling that began burning fiercely.</p>
-<div class="orv_system"><p>[All of your Stories are reacting to your misfortune.]</p></div>
+<div class="orv_system"><p>All of your Stories are reacting to your misfortune.</p></div>
 <p class="orv_line">Every single one of her emotions was now pointing towards just one.</p>
-<div class="orv_system"><p>[All of your Stories are reacting to your will.]</p></div>
+<div class="orv_system"><p>All of your Stories are reacting to your will.</p></div>
 <p class="orv_line">And that was 'revenge'.</p>
-<div class="orv_system"><p>[&lt;Star Stream&gt; is now looking at your Story.]</p></div>
-<div class="orv_quote"><p>「 I wish to judge them all. 」</p></div>
-<div class="orv_system"><p>[New Story is germinating within you!]</p></div>
+<div class="orv_system"><p>&lt;Star Stream&gt; is now looking at your Story.</p></div>
+<div class="orv_quote"><p>I wish to judge them all.</p></div>
+<div class="orv_system"><p>New Story is germinating within you!</p></div>
 <p class="orv_line">In the next moment, powerful rays of light exploded out from her entire body.</p>
-<p class="orv_line">The enormous explosion of light forced the trajectory of [Star Destruction Bullet] off course, and at the same time, the Demon Kings in the near vicinity were pushed back, as well.</p>
+<p class="orv_line">The enormous explosion of light forced the trajectory of <strong>[Star Destruction Bullet]</strong> off course, and at the same time, the Demon Kings in the near vicinity were pushed back, as well.</p>
 <p class="orv_line">Jung Heewon then heard the messages entering her ear.</p>
-<div class="orv_system"><p>[Evolution of Incarnation Jung Heewon's Attribute is approaching.]</p></div>
-<div class="orv_system"><p>[Opportunity to evolve your Attribute has come!]</p></div>
+<div class="orv_system"><p>Evolution of Incarnation Jung Heewon's Attribute is approaching.</p></div>
+<div class="orv_system"><p>Opportunity to evolve your Attribute has come!</p></div>
 <p class="orv_line">The 'one who shrunk away' once upon a time became 'Judge of Evil' in order to pass judgement on all the evils she encountered.</p>
 <p class="orv_line">In that case, what would happen to the judge who was betrayed by 'Good'?</p>
-<div class="orv_system"><p>[You have acquired a legendary Attribute.]</p></div>
+<div class="orv_system"><p>You have acquired a legendary Attribute.</p></div>
 <p class="orv_line">An aura of brilliant white light exploded out from her sword; the boiling, overflowing energy of the Story was released from her entire figure. And then, the Ring of Chaos materialised within Jung Heewon's eyes as she took in the sight of the Demon Kings.</p>
-<div class="orv_system"><p>[You have become 'Judge of Destruction'.]</p></div>
+<div class="orv_system"><p>You have become 'Judge of Destruction'.</p></div>
 <div class="orv_image"><img src="../../../assets/images/396 - And then, the Ring of Chaos materialised within Jung Heewon's eyes as she took in the sight of the Demon Kings.jpg" alt="" loading="lazy"></div>
 <div class="orv_notice"><p>* Unofficial fan illustration (non-canonical)</p></div>
 <br>
@@ -358,18 +365,12 @@
             <a href="./ch_395"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_397">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="396" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="457" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="395" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="395" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

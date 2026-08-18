@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 51: Ep. 11 – Night of the Prophets, II</title>
     <meta property="og:title" content="Ch 51: Ep. 11 – Night of the Prophets, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00051.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 51: Ep. 11 – Night of the Prophets, II</h1></div>
 <p class="orv_line">"A prophet like us?"</p>
@@ -198,7 +205,7 @@
 <p class="orv_line">"T-There is a guy like that…?"</p>
 <p class="orv_line">Of course there was. The person was right in front of you.</p>
 <p class="orv_line">"He even seems to be impersonating me. When I encountered him last time, he was on the verge of death but he is still likely to be active near Chungmuro."</p>
-<div class="orv_system"><p>[The constellation 'Secretive Plotter' admires your impudence.]</p></div>
+<div class="orv_system"><p>The constellation 'Secretive Plotter' admires your impudence.</p></div>
 <p class="orv_line">"…Chungmuro? Don't tell me?"</p>
 <p class="orv_line">Jung Minseob was surprised and opened his smartphone, tapping the keyboard like Lee Sungkook. Maybe he was informing the other prophets.</p>
 <p class="orv_line">Jung Minseob asked me a few more questions and I answered them briefly.</p>
@@ -263,8 +270,8 @@
 <br>
 <p class="orv_line">After the talk, Jung Heewon, Lee Hyunsung and I gathered in the accommodations provided by Lee Sungkook. I looked at the flag of Chungmuro Station.</p>
 <p class="orv_line">Throughout the afternoon, my flag was changed to 'navy' due to the transfer of Dongdaemun Station and Cheonggu Station.</p>
-<div class="orv_system"><p>[You have used the benefits of the navy flag.]</p></div>
-<div class="orv_system"><p>[From now on, you can use the 'group chat' with the group members.]</p></div>
+<div class="orv_system"><p>You have used the benefits of the navy flag.</p></div>
+<div class="orv_system"><p>From now on, you can use the 'group chat' with the group members.</p></div>
 <p class="orv_line">From now on, we didn't have to worry about conversations. The group chat couldn't be intercepted unless another group member was in the same area.</p>
 <p class="orv_line">I briefly explained to them about what happened today. Jung Heewon vaguely noticed but Lee Hyunsung was surprised.</p>
 <p class="orv_line">–Oh my god, it is unbelievable. They know part of the future… that's why Dokja-ssi is acting as Yoo Joonghyuk?</p>
@@ -300,9 +307,9 @@
 <p class="orv_line">Some time after being fed the stimulant, Han Donghoon's eyes changed. The Hypnosis effect was loosened and the boy's sense of reason started to return.</p>
 <p class="orv_line">"U-Uhh, you…"</p>
 <p class="orv_line">Hypnosis didn't mean that he forgot everything. In this little boy's head, all types of trauma would be running through them. Once the Hypnosis slipped, his sponsor would start to intervene to some extent.</p>
-<div class="orv_system"><p>[The sponsor behind character 'Han Donghoon' has revealed himself.]</p></div>
-<div class="orv_system"><p>[The constellation 'Shadow behind the Curtain' has thanked you.]</p></div>
-<div class="orv_system"><p>[500 coins have been sponsored.]</p></div>
+<div class="orv_system"><p>The sponsor behind character 'Han Donghoon' has revealed himself.</p></div>
+<div class="orv_system"><p>The constellation 'Shadow behind the Curtain' has thanked you.</p></div>
+<div class="orv_system"><p>500 coins have been sponsored.</p></div>
 <p class="orv_line">Han Donghoon stepped back while holding the flag in his hand. I watched the flag closely and deliberately stepped away.</p>
 <p class="orv_line">"Don't worry. I'm not here to snatch the flag."</p>
 <p class="orv_line">"Uh-Uwah, ah…"</p>
@@ -312,8 +319,8 @@
 <p class="orv_line">Han Donghoon's eyes shook. I waited for a moment. It was until the turbulence in his head calmed down. But Han Donghoon wasn't able to speak easily. That reminded me, this guy had a problem.</p>
 <p class="orv_line">"Is it hard to speak directly? If you don't mind, I'd like to talk through this."</p>
 <p class="orv_line">Han Donghoon looked at the smartphone held in his hands and started muttering something.</p>
-<div class="orv_system"><p>[The character 'Han Donghoon' used 'Wide-area Internet Lv. 5' on your smartphone.]</p></div>
-<div class="orv_system"><p>[You can use the Internet anywhere in 'Seoul Dome' unless the consciousness of 'Han Donghoon' is interrupted.]</p></div>
+<div class="orv_system"><p>The character 'Han Donghoon' used 'Wide-area Internet Lv. 5' on your smartphone.</p></div>
+<div class="orv_system"><p>You can use the Internet anywhere in 'Seoul Dome' unless the consciousness of 'Han Donghoon' is interrupted.</p></div>
 <p class="orv_line">After a while, Han Donghoon's name appeared in the smartphone messenger.</p>
 <p class="orv_line">–Who are you?</p>
 <p class="orv_line">–I've been looking for you.</p>
@@ -323,7 +330,7 @@
 <p class="orv_line">The boy's trembling fingers couldn't produce any more sentences. I instinctively realized. It was impossible to persuade this boy right now.</p>
 <p class="orv_line">For more than 10 days, the boy's wounds had festered to the point where it couldn't be easily restored.</p>
 <p class="orv_line">–I understand you. It is scary and confusing.</p>
-<div class="orv_system"><p>[The character 'Han Donghoon' is greatly disturbed.]</p></div>
+<div class="orv_system"><p>The character 'Han Donghoon' is greatly disturbed.</p></div>
 <p class="orv_line">–Don't be ridiculous.</p>
 <p class="orv_line">–I am different from those people.</p>
 <p class="orv_line">–I can't believe you.</p>
@@ -366,16 +373,16 @@
 <p class="orv_line">I lightly swept the ether blade towards the fallen Jung Minseob and cut the armour he was wearing. Jung Minseob screamed.</p>
 <p class="orv_line">"Aack!"</p>
 <p class="orv_line">His flesh was torn and a piece of cloth fell out. I picked up the piece of cloth that had fallen out.</p>
-<div class="orv_system"><p>[You have won the flag of the 'Dongmyo Group'.]</p></div>
-<div class="orv_system"><p>[Your navy flag has absorbed the cumulative achievements of the navy flag.]</p></div>
-<div class="orv_system"><p>[Your navy flag has evolved into a brown flag.]</p></div>
-<div class="orv_system"><p>[A strong flag protects you.]</p></div>
+<div class="orv_system"><p>You have won the flag of the 'Dongmyo Group'.</p></div>
+<div class="orv_system"><p>Your navy flag has absorbed the cumulative achievements of the navy flag.</p></div>
+<div class="orv_system"><p>Your navy flag has evolved into a brown flag.</p></div>
+<div class="orv_system"><p>A strong flag protects you.</p></div>
 <p class="orv_line">"You are the real representative of Dongmyo."</p>
 <p class="orv_line">"H-How…?"</p>
 <p class="orv_line">"No matter how stupid you guys are, you wouldn't show the flag so proudly."</p>
 <p class="orv_line">In the first place, it was strange for them to give the representative position to Han Donghoon. They knew the future and wouldn't give the representative position to a character in the novel.</p>
 <p class="orv_line">However, Lee Sungkook wasn't the representative. There was only one answer.</p>
-<div class="orv_system"><p>[The remaining members of the Dongmyo Group are waiting for your decision.]</p></div>
+<div class="orv_system"><p>The remaining members of the Dongmyo Group are waiting for your decision.</p></div>
 <p class="orv_line">Now the guards were meaningless. The hopeless Jung Minseob stuttered. "Y-Yoo Joonghyuk! The other prophets will know this…"</p>
 <p class="orv_line">"How will you let them know when the Internet doesn't work?"</p>
 <p class="orv_line">Lee Sungkook cried out as he realized that all their plans were broken.</p>
@@ -391,18 +398,12 @@
             <a href="./ch_50"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_52">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="51" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="73" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="50" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="50" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

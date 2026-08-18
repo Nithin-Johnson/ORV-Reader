@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 59: Ep. 12 – First Person Protagonist's Point of View, V</title>
     <meta property="og:title" content="Ch 59: Ep. 12 – First Person Protagonist's Point of View, V" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00059.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 59: Ep. 12 – First Person Protagonist's Point of View, V</h1></div>
 <p class="orv_line">Writer. It was one of the few occupations in Ways of Survival that could give the Avatar ability.</p>
@@ -196,17 +203,17 @@
 <p class="orv_line">The lips of the 1st Apostle subtly twisted.</p>
 <p class="orv_line">"Writer… do you mean the creator of the Book of Revelations? You have found out. That's right, I wrote the Book of Revelations."</p>
 <p class="orv_line">I didn't mean this but this bastard was suddenly talking nonsense. For me, it was a truth that wasn't possible. I looked towards Yoo Joonghyuk.</p>
-<div class="orv_system"><p>[Exclusive skill, Omniscient Reader's Viewpoint has been activated!]</p></div>
-<div class="orv_system"><p>[The character Yoo Joonghyuk is currently using Lie Detection Lv. 6.]</p></div>
+<div class="orv_system"><p>Exclusive skill, Omniscient Reader's Viewpoint has been activated!</p></div>
+<div class="orv_system"><p>The character Yoo Joonghyuk is currently using Lie Detection Lv. 6.</p></div>
 <p class="orv_line">I knew it. He was a meticulous jerk. I asked once again, "You wrote the Book of Revelations?"</p>
 <p class="orv_line">"Yes. At the same time, I am also the sole owner of the Book of Revelations."</p>
 <p class="orv_line">A confident laugh emerged. Really? Let's challenge it once.</p>
-<div class="orv_system"><p>[The character 'Yoo Joonghyuk' has used 'Lie Detection Lv. 6'.]</p></div>
-<div class="orv_system"><p>[The character Yoo Joonghyuk has confirmed that the statement is true.]</p></div>
+<div class="orv_system"><p>The character 'Yoo Joonghyuk' has used 'Lie Detection Lv. 6'.</p></div>
+<div class="orv_system"><p>The character Yoo Joonghyuk has confirmed that the statement is true.</p></div>
 <p class="orv_line">…What? This guy was telling the truth? I suddenly panicked and my circuits got tangled up. It wasn't possible no matter how I thought about it.</p>
 <p class="orv_line">I hid my confusion and asked again, "What exactly is the 'revelation' you are talking about?"</p>
 <p class="orv_line">"Why are you asking when you already know? A great epic about the future."</p>
-<div class="orv_system"><p>[The character Yoo Joonghyuk has confirmed that the statement is true.]</p></div>
+<div class="orv_system"><p>The character Yoo Joonghyuk has confirmed that the statement is true.</p></div>
 <p class="orv_line">…Strange. There was some truth about it?</p>
 <p class="orv_line">"Now it is your turn. How did you know about the plan of me and the apostles? Are you also an apostle?"</p>
 <p class="orv_line">"You wrote the Book of Revelations yourself? Then shouldn't you know?"</p>
@@ -221,7 +228,7 @@
 <p class="orv_line">"I know information about the future."</p>
 <p class="orv_line">I deliberately interrupted him. Now was the time to sprinkle a bit of spice for Yoo Joonghyuk.</p>
 <p class="orv_line">"In addition, I know much more than you."</p>
-<div class="orv_system"><p>[The character Yoo Joonghyuk has confirmed that your words are true.]</p></div>
+<div class="orv_system"><p>The character Yoo Joonghyuk has confirmed that your words are true.</p></div>
 <p class="orv_line">The expression of the 1st Apostle stiffened.</p>
 <p class="orv_line">"You're barking nonsense. I know more than you…"</p>
 <p class="orv_line">At this moment, something flashed in his eyes.</p>
@@ -244,17 +251,17 @@
 <p class="orv_line">"Yoo Joonghyuk! Work with me!"</p>
 <p class="orv_line">He was silly.</p>
 <p class="orv_line">"As I said before, I know all of the revelations. Only I can take you to the end of this road in this world!"</p>
-<div class="orv_system"><p>[Exclusive skill, Omniscient Reader's Viewpoint stage 2 has been activated!]</p></div>
-<div class="orv_system"><p>[Due to high fatigue, you are unable to activate Omniscient Reader's Viewpoint stage 2.]</p></div>
+<div class="orv_system"><p>Exclusive skill, Omniscient Reader's Viewpoint stage 2 has been activated!</p></div>
+<div class="orv_system"><p>Due to high fatigue, you are unable to activate Omniscient Reader's Viewpoint stage 2.</p></div>
 <p class="orv_line">Damn, right now?</p>
 <p class="orv_line">"Think carefully! You can't break through the 46th scenario alone. You have to hold hands with me to defeat Anna Croft and the Zarathustra!"</p>
 <p class="orv_line">This jerk was speaking the same words I did. Yoo Joonghyuk shook his head.</p>
 <p class="orv_line">"I have never heard of the revelations."</p>
 <p class="orv_line">"It is like a prophecy! Can't you see my attribute? It even says that I am the 'last'!"</p>
-<div class="orv_system"><p>[The character 'Yoo Joonghyuk' has used Sage's Eye Lv. 8!]</p></div>
+<div class="orv_system"><p>The character 'Yoo Joonghyuk' has used Sage's Eye Lv. 8!</p></div>
 <p class="orv_line">I also activated the skill.</p>
-<div class="orv_system"><p>[The information of this person can't be read in 'Character List'.]</p></div>
-<div class="orv_system"><p>[This person isn't registered in 'Character List'.]</p></div>
+<div class="orv_system"><p>The information of this person can't be read in 'Character List'.</p></div>
+<div class="orv_system"><p>This person isn't registered in 'Character List'.</p></div>
 <p class="orv_line">Damn, I couldn't see it. Yoo Joonghyuk verified something with Sage's Eye and looked at me. The severed head continued to speak.</p>
 <p class="orv_line">"Kill him! You should know that he is dangerous. He pretended to be you and will seriously damage you in the future. If you leave him alone, he will cause a serious butterfly effect and ruin all your plans!"</p>
 <p class="orv_line">I was outraged. Did this jerk want to die together with me?</p>
@@ -383,18 +390,12 @@
             <a href="./ch_58"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_60">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="59" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="144" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="58" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="58" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 462: Ep. 87 - The Heart of Steel, IV</title>
     <meta property="og:title" content="Ch 462: Ep. 87 - The Heart of Steel, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00462.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 462: Ep. 87 - The Heart of Steel, IV</h1></div>
 <p class="orv_line">"Hyunsung-ie will do it right."</p>
@@ -207,7 +214,7 @@
 <p class="orv_line">Lee Hyunsung endured the trainee life even as he was subjected to various insults and ridicules.</p>
 <p class="orv_line">By the time he completed the training course, he became someone who could finish showering in five minutes or pack his sleeping gear in less than one minute.</p>
 <p class="orv_line">Not too long afterwards, the moment he'd be dispatched to a base had arrived. This was the moment he had been waiting forever since he got drafted.</p>
-<p class="orv_line">– Giving away sweet tips to those about to join the army. Follow these instructions after you get to a base. (HOT!) [812]</p>
+<p class="orv_line">– Giving away sweet tips to those about to join the army. Follow these instructions after you get to a base. (HOT!) <strong>[812]</strong></p>
 <p class="orv_line">From the shoe inserts to use during prolonged marching, to being loved by his seniors after he got assigned to a base – the so-called 'sweet tips' on the internet he diligently studied the day before joining the military was his only hope.</p>
 <p class="orv_line">His fellow trainees left one by one.</p>
 <p class="orv_line">He was the last one remaining. And the person to come fetch him was a person named 'Sergeant first class Jung'. A steel hat deeply pressed on this person's head obscured their face.</p>
@@ -290,9 +297,9 @@
 <p class="orv_line">"That's enough! It's your downtime now! All of you, read webnovels."</p>
 <p class="orv_line">"Lo! Yalty!"</p>
 <p class="orv_line">That's how Lee Hyunsung's dream-like soldier life began. However, he had no idea.</p>
-<div class="orv_system"><p>[Currently, &lt;Kim Dokja's Company&gt; is challenging the Memory Experience Centre's 'I lost a shell by mistake'.]</p></div>
-<div class="orv_system"><p>[Applicable Experience Centre's difficulty is rated hardest.]</p></div>
-<div class="orv_system"><p>[Number of attempts to clear it is currently 3.]</p></div>
+<div class="orv_system"><p>Currently, &lt;Kim Dokja's Company&gt; is challenging the Memory Experience Centre's 'I lost a shell by mistake'.</p></div>
+<div class="orv_system"><p>Applicable Experience Centre's difficulty is rated hardest.</p></div>
+<div class="orv_system"><p>Number of attempts to clear it is currently 3.</p></div>
 <p class="orv_line">He had no idea that this soldier life wasn't his first time.</p>
 <br>
 <hr>
@@ -346,38 +353,38 @@
 <p class="orv_line">"Yes, he's adapting well, but the problem is with how poorly he's treating me, his senior in rank. The military nowadays have become really soft, I have to say. Back when I was in the army…"</p>
 <p class="orv_line">"Dokja-ssi, you're just sour that Joonghyuk-ssi never served, right? I mean, he was exempted, wasn't he?"</p>
 <p class="orv_line">I replied to her in a calm manner. "…In any case, the situation isn't so bad if we exclude that part. Just by us being here, the planet &lt;Oz&gt;'s profile is rising up, after all."</p>
-<div class="orv_system"><p>[Currently, a large number of Constellations are paying attention to the applicable scenario!]</p></div>
+<div class="orv_system"><p>Currently, a large number of Constellations are paying attention to the applicable scenario!</p></div>
 <p class="orv_line">Maybe the rumour of &lt;Kim Dokja's Company&gt; creating yet another bizarre Story had made rounds out there because visitors to Biyoo's channel had increased.</p>
 <p class="orv_line">I couldn't be sure, but those Nebulas targetting us right outside the planet were probably watching us right now. If they couldn't attack us immediately, then taking advantage of the situation would be a smart thing to do.</p>
-<div class="orv_system"><p>[Many Constellations have entered the applicable channel!]</p></div>
-<div class="orv_system"><p>[Planet &lt;Oz&gt;'s fame is spreading far and wide!]</p></div>
-<div class="orv_system"><p>[Brand new Story related to Incarnation 'Lee Hyunsung' is germinating!]</p></div>
+<div class="orv_system"><p>Many Constellations have entered the applicable channel!</p></div>
+<div class="orv_system"><p>Planet &lt;Oz&gt;'s fame is spreading far and wide!</p></div>
+<div class="orv_system"><p>Brand new Story related to Incarnation 'Lee Hyunsung' is germinating!</p></div>
 <p class="orv_line">The strange thing was, the newly-entering Constellations weren't the people that I knew of. Uriel, the Great Sage, the Abyssal Black Flame Dragon, Goreyo's First Sword… as if they were the tidewater receding away, all the Modifiers I was glad to see were nowhere to be found.</p>
 <p class="orv_line">An ominous foreboding crept up in my mind. Did something happen to them?</p>
-<div class="orv_system"><p>[Portion of Constellations are eagerly waiting for Incarnation 'Lee Hyunsung's return!]</p></div>
+<div class="orv_system"><p>Portion of Constellations are eagerly waiting for Incarnation 'Lee Hyunsung's return!</p></div>
 <p class="orv_line">I need to conclude this scenario quickly so that I may get to find out what's going on, but…</p>
 <p class="orv_line">"Is there really a need to clear it, though?"</p>
 <p class="orv_line">"Pardon?"</p>
 <p class="orv_line">Jung Heewon didn't reply and stared in Lee Hyunsung's direction. While under the guidance of Yoo Joonghyuk, he was continuing to perform the exercise routine as sweat trickled down his face. Maybe he got the order right this time because Yoo Joonghyuk could be seen nodding his head. Lee Hyunsung looked elated.</p>
-<div class="orv_system"><p>[Character 'Lee Hyunsung' is feeling happy!]</p></div>
+<div class="orv_system"><p>Character 'Lee Hyunsung' is feeling happy!</p></div>
 <p class="orv_line">"Because he always harped on about manual this and manual that, I thought that Hyunsung-ssi was a natural-born soldier."</p>
 <p class="orv_line">I agreed with her assessment, so I ended up nodding along.</p>
 <p class="orv_line">Lee Hyunsung's backstory wasn't discussed in-depth within the Ways of Survival.</p>
 <p class="orv_line">The man named Lee Hyunsung, who lived and died by the rules of the field manual. But such a man was in reality, as far removed from those manuals than anything else out there.</p>
 <p class="orv_line">This world was where Lee Hyunsung's manual had come to life.</p>
-<div class="orv_system"><p>[Character 'Lee Hyunsung' likes this place.]</p></div>
+<div class="orv_system"><p>Character 'Lee Hyunsung' likes this place.</p></div>
 <p class="orv_line">Jung Heewon smiled powerlessly and spoke in a sorrowful voice. "In a way, taking him away from here could be us being greedy."</p>
 <p class="orv_line">Certainly, Lee Hyunsung might be happier by remaining in &lt;Oz&gt;. Instead of wandering inside the hellish scenarios, spending simple, comfortable time within his memories could be a better life for him.</p>
 <p class="orv_line">Ku-gugugu…</p>
 <p class="orv_line">It was then, we heard yet another deafening boom.</p>
 <p class="orv_line">Just as I was about to exchange glances with Jung Heewon, several channel messages floated up one after the other.</p>
-<div class="orv_system"><p>[Constellation, 'Demon-like Judge of Fire' has entered the channel!]</p></div>
-<div class="orv_system"><p>[Constellation, 'Abyssal Black Flame Dragon' has entered the channel!]</p></div>
-<div class="orv_system"><p>[Constellation, 'Goreyo's First Sword' has entered the channel!]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon-like Judge of Fire' has entered the channel!</p></div>
+<div class="orv_system"><p>Constellation, 'Abyssal Black Flame Dragon' has entered the channel!</p></div>
+<div class="orv_system"><p>Constellation, 'Goreyo's First Sword' has entered the channel!</p></div>
 <p class="orv_line">All those vanished Constellations had returned to the channel at once. Just before I could ask what happened, though…</p>
-<div class="orv_system"><p>[Constellation, 'Demon-like Judge of Fire' is trying to warn you of…!]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon-like Judge of Fire' is trying to warn you of…!</p></div>
 <p class="orv_line">Tsu-chuchuchut!</p>
-<div class="orv_system"><p>[All indirect messaging within the channel has been restricted.]</p></div>
+<div class="orv_system"><p>All indirect messaging within the channel has been restricted.</p></div>
 <p class="orv_line">…The indirect message was cut off.</p>
 <p class="orv_line">I raised my head to discover Biyoo forming a surprised expression. Obviously, this wasn't her doing, so… In that case, who?</p>
 <p class="orv_line">Another boom spread out from the skies. Accompanying the noise akin to a giant drum being torn apart, the heavens far away began cracking up.</p>
@@ -391,18 +398,12 @@
             <a href="./ch_461"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_463">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="462" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="512" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="461" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="461" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

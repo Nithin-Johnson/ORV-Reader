@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 140: Ep. 27 - Unreadable, IV</title>
     <meta property="og:title" content="Ch 140: Ep. 27 - Unreadable, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,46 +177,46 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00140.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 140: Ep. 27 - Unreadable, IV</h1></div>
-<div class="orv_system"><p>[Your body has woken up due to a powerful shock.]</p></div>
-<div class="orv_system"><p>[Omniscient Reader's Viewpoint stage 3 has been turned off.]</p></div>
+<div class="orv_system"><p>Your body has woken up due to a powerful shock.</p></div>
+<div class="orv_system"><p>Omniscient Reader's Viewpoint stage 3 has been turned off.</p></div>
 <p class="orv_line">My senses gradually returned as my consciousness settled into my flesh. By the way, something was strange.</p>
 <p class="orv_line">…Why didn't I see the resurrection message?</p>
-<div class="orv_system"><p>[You can't be rewarded for 'Omniscient Reader's Viewpoint' stage three because of the unstable connection of 1st person supporting role viewpoint.]</p></div>
+<div class="orv_system"><p>You can't be rewarded for 'Omniscient Reader's Viewpoint' stage three because of the unstable connection of 1st person supporting role viewpoint.</p></div>
 <p class="orv_line">As I was feeling surprised by this unexpected message, I slowly felt the pain and weight of my flesh. There was something wrong.</p>
 <p class="orv_line">I saw Yoo Joonghyuk who was staring at me. Shit, I was almost surprised to death.</p>
 <p class="orv_line">"Kim Dokja, are you dead?"</p>
 <p class="orv_line">I thought I knew a bit about what was going on. I knew why the resurrection message didn't come up and why there wasn't compensation for Omniscient Reader's Viewpoint stage three. I never died in the first place.</p>
 <p class="orv_line">"Kim Dokja."</p>
 <p class="orv_line">I was just hit really hard. Damn bastard, why didn't he kill me? This jerk, not killing me when I wanted to be killed…</p>
-<div class="orv_quote"><p>「 …Should I have just killed him in the beginning? 」</p></div>
+<div class="orv_quote"><p>…Should I have just killed him in the beginning?</p></div>
 <p class="orv_line">I heard an unexpected thought and shut my mouth. Omniscient Reader's Viewpoint had automatically activated. Yoo Joonghyuk's thoughts poured in like a waterfall.</p>
-<div class="orv_quote"><p>「 Everything is twisted because of this person. 」</p></div>
-<div class="orv_quote"><p>「 It is different from what I know in the earlier regressions. The amount of information available is too limited. I can't save the world like this. 」</p></div>
+<div class="orv_quote"><p>Everything is twisted because of this person.</p></div>
+<div class="orv_quote"><p>It is different from what I know in the earlier regressions. The amount of information available is too limited. I can't save the world like this.</p></div>
 <p class="orv_line">What was this?</p>
-<div class="orv_quote"><p>「 The reason I was hurt by the Salvation Church was because I spent too much time in the last round. It was a mistake to train for 100 years then. My mind was permanently damaged. 」</p></div>
-<div class="orv_quote"><p>「 Maybe it was a mistake not to get the Absolute Throne. 」</p></div>
-<div class="orv_quote"><p>「 I will start from the beginning again… 」</p></div>
+<div class="orv_quote"><p>The reason I was hurt by the Salvation Church was because I spent too much time in the last round. It was a mistake to train for 100 years then. My mind was permanently damaged.</p></div>
+<div class="orv_quote"><p>Maybe it was a mistake not to get the Absolute Throne.</p></div>
+<div class="orv_quote"><p>I will start from the beginning again…</p></div>
 <p class="orv_line">Dammit, the regressor's depression had begun. Was it due to the mental attack? I cried out in fear of what he would decide. "I'm hurt you jerk!"</p>
 <p class="orv_line">Yoo Joonghyuk looked over at my provocation and spoke in a subdued voice. "…You are the one who wanted me to kill you. Is the matter resolved?"</p>
 <p class="orv_line">"Roughly. The urgent fire has been put out."</p>
@@ -242,8 +249,8 @@
 <p class="orv_line">"Honourable Supreme King! Please accept me!"</p>
 <p class="orv_line">"I respect you!"</p>
 <p class="orv_line">The flattering words that were difficult to hear came from the new incarnations who entered the scenario. The rumour that we returned from Peace Land had spread. I looked to the side and saw the frowning Yoo Joonghyuk.</p>
-<div class="orv_quote"><p>「 Those people can't save the world, even with 100 trucks. 」</p></div>
-<div class="orv_quote"><p>「 Once again, the answer is regression… 」</p></div>
+<div class="orv_quote"><p>Those people can't save the world, even with 100 trucks.</p></div>
+<div class="orv_quote"><p>Once again, the answer is regression…</p></div>
 <p class="orv_line">"Now now, our Supreme King isn't in a good mood right now so back off. Do you want to die?" I personally stepped forward to get rid of any causes of depression.</p>
 <p class="orv_line">The new incarnations glared at me like fans kicked out by a celebrity's manager.</p>
 <p class="orv_line">"Who is this bastard?"</p>
@@ -285,19 +292,19 @@
 <p class="orv_line">Gong Pildu shouted, "They're coming again!"</p>
 <p class="orv_line">"Everyone, come this way!"</p>
 <p class="orv_line">I had to reduce the damage so I evacuated the new incarnations and cut off the head of the heavy hound with the Blade of Faith. Of course, I didn't forget to collect the cores of the fallen monsters.</p>
-<div class="orv_system"><p>[The constellation 'Secretive Plotter' is wondering about your reasoning.]</p></div>
+<div class="orv_system"><p>The constellation 'Secretive Plotter' is wondering about your reasoning.</p></div>
 <p class="orv_line">However, there was something uncomfortable. This development didn't appear in the original third regression of the novel. It didn't appear in the fourth, fifth… or even the 10th regression.</p>
 <p class="orv_line">It felt like I was missing something important. Think. Kim Dokja. When did this scenario happen?</p>
-<div class="orv_system"><p>[Due to the effect of your exclusive attribute, memories from the books you have read will become stronger.]</p></div>
+<div class="orv_system"><p>Due to the effect of your exclusive attribute, memories from the books you have read will become stronger.</p></div>
 <p class="orv_line">…Perhaps?</p>
-<div class="orv_constellation"><p>[I wish to inform all incarnations of Seoul Dome.]</p></div>
+<div class="orv_constellation"><p>I wish to inform all incarnations of Seoul Dome.</p></div>
 <p class="orv_line">Then the message of the dokkaebi came. It wasn't Bihyung but a voice I was hearing for the first time.</p>
-<div class="orv_constellation"><p>[Aren't you surprised by the monsters suddenly appearing? Sigh… as you might've expected, the next scenario has started. We also wanted to give you a break… it is regrettable. This scenario wasn't created by the dokkaebi but is an automatic scenario.]</p></div>
-<div class="orv_system"><p>[A new main scenario has arrived.]</p></div>
-<div class="orv_system"><p>[Main scenario # 8 - The Strongest Sacrifice has begun.]</p></div>
+<div class="orv_constellation"><p>Aren't you surprised by the monsters suddenly appearing? Sigh… as you might've expected, the next scenario has started. We also wanted to give you a break… it is regrettable. This scenario wasn't created by the dokkaebi but is an automatic scenario.</p></div>
+<div class="orv_system"><p>A new main scenario has arrived.</p></div>
+<div class="orv_system"><p>Main scenario # 8 - The Strongest Sacrifice has begun.</p></div>
 <p class="orv_line">It was a different name from the eighth scenario I knew. I opened the contents of the scenario.</p>
 <div class="orv_window">
-<h3 class="orv_window_title">[Main scenario # 8 - The Strongest Sacrifice]</h3>
+<h3 class="orv_window_title">Main scenario # 8 - The Strongest Sacrifice</h3>
 <p>Category: Main</p>
 <p>Difficulty: S</p>
 <p>Clear Conditions: Survive the wave of monsters (this scenario requires caution because the rank of the monsters rises every four hours).</p>
@@ -307,15 +314,15 @@
 <p>* There are additional clear conditions.</p>
 <p>* Hints are provided once every four hours.</p>
 </div>
-<div class="orv_constellation"><p>[Ah, for your information. It starts from the 6th grade. In four hours, the 5th grade species will emerge and then four hours after that, it will be 4th grade. Then four hours later… huhu, well. Don't you know?]</p></div>
+<div class="orv_constellation"><p>Ah, for your information. It starts from the 6th grade. In four hours, the 5th grade species will emerge and then four hours after that, it will be 4th grade. Then four hours later… huhu, well. Don't you know?</p></div>
 <p class="orv_line">Then one of the incarnations shouted, "What? What is an automatic scenario?"</p>
 <p class="orv_line">"Eh? There isn't a time limit?"</p>
-<div class="orv_constellation"><p>[A time limit? Haha. There is no such thing.]</p></div>
+<div class="orv_constellation"><p>A time limit? Haha. There is no such thing.</p></div>
 <p class="orv_line">I knew the words were true. Nirvana appeared and Yoo Joonghyuk's party was much stronger than the original third regression…</p>
 <p class="orv_line">I vaguely guessed what was going on. This development had appeared in Ways of Survival.</p>
-<div class="orv_constellation"><p>[It is because all of you are too strong. Oh my god, the Korean incarnations have become so strong that they don't fit the balance anymore. Aren't you being a bit too greedy? This is a scenario that automatically occurs when the incarnations of certain domes become too strong.]</p></div>
+<div class="orv_constellation"><p>It is because all of you are too strong. Oh my god, the Korean incarnations have become so strong that they don't fit the balance anymore. Aren't you being a bit too greedy? This is a scenario that automatically occurs when the incarnations of certain domes become too strong.</p></div>
 <p class="orv_line">The Seoul incarnations were at a loss.</p>
-<div class="orv_constellation"><p>[As mentioned, there are two solutions to this scenario.]</p></div>
+<div class="orv_constellation"><p>As mentioned, there are two solutions to this scenario.</p></div>
 <p class="orv_line">Additional conditions appeared in the air.</p>
 <div class="orv_window">
 <p>Additional Clear Conditions (Pick 1):</p>
@@ -323,11 +330,11 @@
 <p>* Current number of incarnations (107,624).</p>
 </div>
 <p class="orv_line">The dokkaebi spoke with admiration.</p>
-<div class="orv_constellation"><p>[Hmm, there are still so many people? It is good that it is an even number.]</p></div>
+<div class="orv_constellation"><p>Hmm, there are still so many people? It is good that it is an even number.</p></div>
 <p class="orv_line">"Shit! Don't talk nonsense!"</p>
 <p class="orv_line">"You are telling us to just die? Dokkaebi scum!"</p>
 <p class="orv_line">The dokkaebi smiled and added,</p>
-<div class="orv_constellation"><p>[Please calm down. There is a second condition.]</p></div>
+<div class="orv_constellation"><p>Please calm down. There is a second condition.</p></div>
 <div class="orv_window">
 <p>Additional Clear Conditions (Pick 1):</p>
 <p>1. The death of the strongest incarnation in Seoul Dome.</p>
@@ -337,19 +344,19 @@
 <p class="orv_line">In other words, even if half of Seoul didn't die, the scenario would end with the death of the strongest incarnation.</p>
 <p class="orv_line">The incarnations shouted excitedly, "The strongest incarnation? What? Who is that referring to?"</p>
 <p class="orv_line">"Tell us who it is!"</p>
-<div class="orv_constellation"><p>[Haha, I can't tell you that. Is it any fun if I tell you? Well, he is the strongest so he would know the best.]</p></div>
+<div class="orv_constellation"><p>Haha, I can't tell you that. Is it any fun if I tell you? Well, he is the strongest so he would know the best.</p></div>
 <p class="orv_line">The dokkaebi said,</p>
-<div class="orv_constellation"><p>[Then work hard to find them. Or do you already know? Perhaps the strongest incarnation is the apostle of justice who will sacrifice themselves for you. Ah, I'm a bit bored so let me give you a hint. I wish you the blessing of the story.]</p></div>
+<div class="orv_constellation"><p>Then work hard to find them. Or do you already know? Perhaps the strongest incarnation is the apostle of justice who will sacrifice themselves for you. Ah, I'm a bit bored so let me give you a hint. I wish you the blessing of the story.</p></div>
 <div class="orv_window">
-<h3 class="orv_window_title">[Hint 1]</h3>
+<h3 class="orv_window_title">Hint 1</h3>
 <p>The tenth strongest incarnation in Seoul Dome is 'Maritime Admiral Lee Jihye'.</p>
 </div>
 <p class="orv_line">"Wow, what? Nonsense. I am only 10th?" Lee Jihye grumbled.</p>
 <p class="orv_line">However, no one was able to laugh at her. Everyone was busy watching one person. He was the person I was eavesdropping on right now.</p>
-<div class="orv_quote"><p>「 Everything is too twisted. 」</p></div>
-<div class="orv_quote"><p>「 A scenario I don't know about has appeared. 」</p></div>
+<div class="orv_quote"><p>Everything is too twisted.</p></div>
+<div class="orv_quote"><p>A scenario I don't know about has appeared.</p></div>
 <p class="orv_line">Ah, please. Yoo Joonghyuk…</p>
-<div class="orv_quote"><p>「 I can't think of a way to fix it. Maybe I should regress… 」</p></div>
+<div class="orv_quote"><p>I can't think of a way to fix it. Maybe I should regress…</p></div>
 <p class="orv_line">Damn, what would happen to me if he regressed? I absolutely refused to be swept up in his death without knowing anything. I glared at Yoo Joonghyuk in front of me and formed a fist.</p>
 <br>
 <hr>
@@ -358,18 +365,12 @@
             <a href="./ch_139"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_141">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="140" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="539" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="139" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="139" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

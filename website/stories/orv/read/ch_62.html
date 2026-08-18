@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 62: Ep. 13 – War of Kings, III</title>
     <meta property="og:title" content="Ch 62: Ep. 13 – War of Kings, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,28 +177,28 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00062.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 62: Ep. 13 – War of Kings, III</h1></div>
-<div class="orv_system"><p>[The constellation 'Slumbering Lady of Fine Brocade' is waiting for your response.]</p></div>
+<div class="orv_system"><p>The constellation 'Slumbering Lady of Fine Brocade' is waiting for your response.</p></div>
 <p class="orv_line">I shrugged towards the confident Min Jiwon and replied, "I don't want to."</p>
 <p class="orv_line">Min Jiwon's eyes shook violently. Some of the men opened their mouths and even the actor Min Jiwon couldn't control her face. She spoke in a dumbfounded voice.</p>
 <p class="orv_line">"…Huh?" Rather than accepting the given reality, she chose to doubt her hearing. "I think I heard wrong… can you tell me again?"</p>
@@ -242,7 +249,7 @@
 <p class="orv_line">"Y-You don't have that many coins."</p>
 <p class="orv_line">"I wonder what you will say when I show you this."</p>
 <p class="orv_line">I pressed my index finger and thumb together. Then at the end of my index finger, the part of my coins showed up.</p>
-<div class="orv_system"><p>[20,000 coins.]</p></div>
+<div class="orv_system"><p>20,000 coins.</p></div>
 <p class="orv_line">Min Jiwon's barely maintained poker face finally collapsed.</p>
 <p class="orv_line">"T-This is ridiculous!"</p>
 <p class="orv_line">"Do you believe me now?"</p>
@@ -263,7 +270,7 @@
 <p class="orv_line">Battle of Hwangsanbeo</p>
 <p class="orv_line">The confused man's eyes widened.</p>
 <p class="orv_line">"You… are you from Baekje?"</p>
-<div class="orv_system"><p>[The constellation 'Hwarang³ Knows No Retreat' is angry at your comments.]</p></div>
+<div class="orv_system"><p>The constellation 'Hwarang³ Knows No Retreat' is angry at your comments.</p></div>
 <div class="orv_notice"><p>[3] Hwarang (Korean: 화랑; Hanja: 花郞; lit. 'flowering youths') were an elite warrior group of male youth in Silla, an ancient kingdom of the Korean Peninsula that originated from the mid 6th century and lasted until the early 10th century.</p></div>
 <p class="orv_line">This person truly was his sponsor.</p>
 <p class="orv_line">Hwarang Knows No Retreat, Gwanchang. His stigma wasn't that great but his loyalty to the fallen kingdom was wonderful.</p>
@@ -297,9 +304,9 @@
 <p class="orv_line">Lee Sungkook's expression became strange.</p>
 <p class="orv_line">"Uh… Min Jiwon…ssi? Eh? Why do I know Min Jiwon? No, did I know her from the beginning…?"</p>
 <p class="orv_line">I quietly activated Character List.</p>
-<div class="orv_system"><p>[The exclusive skill, Character List is activated.]</p></div>
+<div class="orv_system"><p>The exclusive skill, Character List is activated.</p></div>
 <div class="orv_window">
-<h3 class="orv_window_title">[Character Summary]</h3>
+<h3 class="orv_window_title">Character Summary</h3>
 <p>Name: Lee Sungkook</p>
 <p>Age: 25 years old.</p>
 <p>Sponsor: Manager of the Old Ticker</p>
@@ -319,7 +326,7 @@
 <p class="orv_line">It was still a leap, but it was a possible hypothesis. If this was the case, it was understandable that Lee Sungkook and Jung Minseob's information started to be seen.</p>
 <p class="orv_line">If it was like this…</p>
 <p class="orv_line">Maybe one day I would also…?</p>
-<div class="orv_system"><p>[The character 'Min Jiwon' shows a weak liking towards you.]</p></div>
+<div class="orv_system"><p>The character 'Min Jiwon' shows a weak liking towards you.</p></div>
 <p class="orv_line">…All my thoughts collapsed at this absurd message. I reflexively looked back. Min Jiwon was still standing still and looking this way. I couldn't see her face but her gestures looked angry.</p>
 <p class="orv_line">Then this message… no, wait a minute. Why did I forget that episode?</p>
 <p class="orv_line">It suddenly came to mind. On the 11th regression, she had slapped Yoo Joonghyuk as soon as he met her. Then Min Jiwon supported him throughout that regression…</p>
@@ -332,7 +339,7 @@
 <p class="orv_line">–Pay attention to when they start to move. We will also move in time with them.</p>
 <p class="orv_line">I said to my party members while moving cautiously.</p>
 <p class="orv_line">In any case, I knew the kings' goals.</p>
-<div class="orv_quote"><p>「 The moment he reached the entrance of the National Palace Museum, his heart started pounding. Most of the artifacts sleeping here were garbage. Only one of them was real.<br>The Four Yin Demonic Beheading Sword.<br>The strongest SSSSS-grade item was hidden here in Gwanghwamun! 」</p></div>
+<div class="orv_quote"><p>The moment he reached the entrance of the National Palace Museum, his heart started pounding. Most of the artifacts sleeping here were garbage. Only one of them was real.<br>The Four Yin Demonic Beheading Sword.<br>The strongest SSSSS-grade item was hidden here in Gwanghwamun!</p></div>
 <p class="orv_line">I wrote it but my hands and feet curled up just reading the words.</p>
 <p class="orv_line">It was true that the Four Yin Demonic Beheading Sword was at the National Palace Museum.</p>
 <p class="orv_line">Of course, the rating of the item wasn't SSSSS. In the first place, there was no such rating.</p>
@@ -344,15 +351,15 @@
 <p class="orv_line">My plan was simple. Take the other artifacts while they were aiming for the sword.</p>
 <p class="orv_line">The problem was when would those guys move? There was no need to worry about it in advance.</p>
 <p class="orv_line">In this damn world, those guys always appeared when the scenario was stagnant.</p>
-<div class="orv_constellation"><p>[Huhu, this is really surprising. All the key people are gathered.]</p></div>
+<div class="orv_constellation"><p>Huhu, this is really surprising. All the key people are gathered.</p></div>
 <p class="orv_line">It was as I expected. There were sparks and an intermediate dokkaebi appeared out of thin air.</p>
-<div class="orv_constellation"><p>[Shouldn't good children be awarded a prize?]</p></div>
+<div class="orv_constellation"><p>Shouldn't good children be awarded a prize?</p></div>
 <p class="orv_line">There was the sound of something starting to rise from the centre of Gwanghwamun.</p>
 <p class="orv_line">It was a single throne covered with a golden light.</p>
 <p class="orv_line">There were gasps everywhere in Gwanghwamun. There wasn't an explanation yet but all the kings would've realized it at this moment.</p>
 <p class="orv_line">Only a single king could take that throne.</p>
-<div class="orv_system"><p>[The main scenario has been updated!]</p></div>
-<div class="orv_system"><p>[Main scenario # 4 – The King's Qualifications has begun.]</p></div>
+<div class="orv_system"><p>The main scenario has been updated!</p></div>
+<div class="orv_system"><p>Main scenario # 4 – The King's Qualifications has begun.</p></div>
 <br>
 <hr>
         </article>
@@ -360,18 +367,12 @@
             <a href="./ch_61"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_63">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="62" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="89" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="61" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="61" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

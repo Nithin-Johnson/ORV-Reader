@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 300: Ep. 57 - Glorious Return, I</title>
     <meta property="og:title" content="Ch 300: Ep. 57 - Glorious Return, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,30 +177,30 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00300.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 300: Ep. 57 - Glorious Return, I</h1></div>
-<div class="orv_system"><p>[The exclusive skill, 'Fourth Wall' is strongly activated!]</p></div>
+<div class="orv_system"><p>The exclusive skill, 'Fourth Wall' is strongly activated!</p></div>
 <p class="orv_line">The Fourth Wall moved the moment Secretive Plotter stared at me. The Fourth Wall growled like a beast protecting its cubs.</p>
-<div class="orv_quote"><p>「 Be care ful Kim Dok ja. 」</p></div>
+<div class="orv_quote"><p>Be care ful Kim Dok ja.</p></div>
 <p class="orv_line">The first time I came here, Secretive Plotter called the Fourth Wall the 'Last Wall'. There was no information about it in the original but that didn't mean I had no idea at all. It was because there were various types of walls in Ways of Survival, including Jang Hayoung's Unidentified Wall.</p>
 <p class="orv_line">"I came to receive the compensation, Secretive Plotter." I opened my mouth but Secretive Plotter didn't reply. Sparks were flying around Secretive Plotter. The darkness covering his expression looked angry as he asked me,</p>
 <div class="orv_outergod"><p>【Demon King of Salvation, why did you make that choice?】</p></div>
@@ -212,20 +219,20 @@
 <p class="orv_line">"This coat." I was a bit tense as I pulled out the white coat that Han Sooyoung gave me. Secretive Plotter's eyes leaked out light and narrowed. It seemed I couldn't deceive the outer god.</p>
 <p class="orv_line">Secretive Plotter had promised me one item. However, the coat's inner pockets contained more than one item.</p>
 <div class="orv_outergod"><p>【 …That's fine. Since one less flower is returning, the total sum of probability must be similar to the flower. 】</p></div>
-<div class="orv_system"><p>[The 'Infinite Dimension Space Coat' has been received as a reward item.]</p></div>
+<div class="orv_system"><p>The 'Infinite Dimension Space Coat' has been received as a reward item.</p></div>
 <p class="orv_line">Fortunately, Secretive Plotter overlooked Han Sooyoung's coat. Next was the story.</p>
 <div class="orv_outergod"><p>【 You will naturally be taking 'that' story? 】</p></div>
 <p class="orv_line">"That's right."</p>
 <p class="orv_line">In the first place, the only story I got in the 1863rd round was the one that Yoo Joonghyuk gave to me. Obtaining this story meant I needed to modify some of my planned routes but… it didn't matter. The important thing was to see the end of the story that I chose.</p>
-<div class="orv_system"><p>[You have acquired a new story.]</p></div>
-<div class="orv_system"><p>[This story will be applied normally after returning to the original world line.]</p></div>
+<div class="orv_system"><p>You have acquired a new story.</p></div>
+<div class="orv_system"><p>This story will be applied normally after returning to the original world line.</p></div>
 <p class="orv_line">Last was the 'skill'.</p>
 <div class="orv_outergod"><p>【 What will you do about the skill? You didn't acquire any new skills. 】</p></div>
 <p class="orv_line">"I wasn't able to receive a skill but… is it possible to receive this type of compensation?"</p>
 <p class="orv_line">I started explaining to Secretive Plotter. After a while, Secretive Plotter nodded.</p>
 <div class="orv_outergod"><p>【 It is possible. 】</p></div>
-<div class="orv_system"><p>[You have acquired the reward skill.]</p></div>
-<div class="orv_system"><p>[This skill will be applied normally after returning to the original world line.]</p></div>
+<div class="orv_system"><p>You have acquired the reward skill.</p></div>
+<div class="orv_system"><p>This skill will be applied normally after returning to the original world line.</p></div>
 <p class="orv_line">I obtained everything I needed to get. The unexpected happened when I was going to ask the Secretive Plotter to return me to my original world. There were strong sparks as someone tried to penetrate this space from the rear.</p>
 <p class="orv_line">I noticed the 'status' that could be felt beyond this space. It seemed that the bureau had noticed Secretive Plotter in this place. In other words, the person trying to break into this space was likely to be a great dokkaebi of the bureau.</p>
 <div class="orv_outergod"><p>【 You'll be going now, Demon King of Salvation. 】</p></div>
@@ -241,27 +248,27 @@
 <hr>
 <br>
 <p class="orv_line">Was it because it wasn't my first time crossing the world line? I was able to maintain my consciousness despite being swept through the portal.</p>
-<div class="orv_system"><p>[The Fourth Wall is strongly activated!]</p></div>
-<div class="orv_system"><p>[The Viceroy's Dimensional Door has set the time-space coordinates.]</p></div>
+<div class="orv_system"><p>The Fourth Wall is strongly activated!</p></div>
+<div class="orv_system"><p>The Viceroy's Dimensional Door has set the time-space coordinates.</p></div>
 <p class="orv_line">The scene of the flowing Star Stream. I thought of the things I needed in the memories that floated up like buoys.</p>
-<div class="orv_system"><p>[The Viceroy's Dimensional Door is closed.]</p></div>
+<div class="orv_system"><p>The Viceroy's Dimensional Door is closed.</p></div>
 <p class="orv_line">I woke up at the message and was lying on the ground. It was a spacious place dimly illuminated by lanterns hanging from the ceiling. There seemed to be voices in the distance.</p>
 <p class="orv_line">…Where was I? It didn't seem to be Earth. Why? Why did I suddenly come here?</p>
-<div class="orv_system"><p>[The Star Stream has detected your presence in the world!]</p></div>
-<div class="orv_system"><p>[The Star Stream has reconfirmed your modifier.]</p></div>
-<div class="orv_system"><p>[The Star Stream will assign you to the scope of your constellation.]</p></div>
-<div class="orv_system"><p>[The bureau is calculating your status.]</p></div>
+<div class="orv_system"><p>The Star Stream has detected your presence in the world!</p></div>
+<div class="orv_system"><p>The Star Stream has reconfirmed your modifier.</p></div>
+<div class="orv_system"><p>The Star Stream will assign you to the scope of your constellation.</p></div>
+<div class="orv_system"><p>The bureau is calculating your status.</p></div>
 <p class="orv_line">I thought I knew what was going on. I left the scenario of the original world through the Outer World Covenant. A price was necessary to return to the original scenario. I felt the muscles of my body jerking as the messages continued to rise.</p>
-<div class="orv_system"><p>[The bureau has completed your examination.]</p></div>
-<div class="orv_system"><p>[Returning you to the original scenario isn't suitable.]</p></div>
-<div class="orv_system"><p>[The bureau will review scenarios for your level.]</p></div>
-<div class="orv_system"><p>[The review has been completed.]</p></div>
+<div class="orv_system"><p>The bureau has completed your examination.</p></div>
+<div class="orv_system"><p>Returning you to the original scenario isn't suitable.</p></div>
+<div class="orv_system"><p>The bureau will review scenarios for your level.</p></div>
+<div class="orv_system"><p>The review has been completed.</p></div>
 <p class="orv_line">I sighed as I watched the messages that came up.</p>
 <p class="orv_line">…I expected this to happen. No, actually, I intended it. I left my original world and went to another world. The categories were different but all beings who came back to the original scenario like me were called by the same name.</p>
-<div class="orv_system"><p>[You have acquired a new story!]</p></div>
-<div class="orv_system"><p>[You have acquired a new attribute!]</p></div>
-<div class="orv_system"><p>[You have obtained the qualification of a 'returnee'.]</p></div>
-<div class="orv_system"><p>[A new scenario is being prepared for you.]</p></div>
+<div class="orv_system"><p>You have acquired a new story!</p></div>
+<div class="orv_system"><p>You have acquired a new attribute!</p></div>
+<div class="orv_system"><p>You have obtained the qualification of a 'returnee'.</p></div>
+<div class="orv_system"><p>A new scenario is being prepared for you.</p></div>
 <p class="orv_line">I had become a returnee. I slowly raised my body and saw several men and women talking around me. They were all returnees like me.</p>
 <p class="orv_line">"Hahaha, I can finally return to Earth! It has been 10 years!"</p>
 <p class="orv_line">"I have been waiting 20 years."</p>
@@ -273,7 +280,7 @@
 <p class="orv_line">"Earth."</p>
 <p class="orv_line">"No, that isn't the question. There is no one here who isn't from Earth… I'm asking about the planet you moved from."</p>
 <p class="orv_line">The man smiled wryly. At this moment, I thought I knew the identity of the man.</p>
-<div class="orv_quote"><p>「 A towering person who looks like he has a bag of tricks. Eyes that are suitable for night vision and only half the eyebrows are left, as if eaten by crows. 」</p></div>
+<div class="orv_quote"><p>A towering person who looks like he has a bag of tricks. Eyes that are suitable for night vision and only half the eyebrows are left, as if eaten by crows.</p></div>
 <p class="orv_line">I couldn't help smiling. It was already time for this person to appear…</p>
 <p class="orv_line">"The place I went to was also Earth. The Earth of a parallel dimension."</p>
 <p class="orv_line">"Hrmm, is that so? You are a very unusual person."</p>
@@ -299,15 +306,15 @@
 <p class="orv_line">"Ho, do you have a lover waiting?" I smiled at him. Flying Fox kept speaking. "I think I will live in a grand style once I go back. I have obtained a long-awaited strength. I don't need to be intimidated by bullies anymore! Now is the beginning of happiness!"</p>
 <p class="orv_line">"…The days won't be that happy. Earth would've changed a lot."</p>
 <p class="orv_line">"Uhuh, you are already talking weakly. I have been through all that suffering. What can happen when I get back to Earth?"</p>
-<div class="orv_constellation"><p>[All returnees, please pay attention.]</p></div>
+<div class="orv_constellation"><p>All returnees, please pay attention.</p></div>
 <p class="orv_line">The turmoil subsided and the intermediate dokkaebi in charge of the returnees opened his mouth as the representative.</p>
-<div class="orv_constellation"><p>[You will soon return to Earth. You will be assigned a 'returnee only scenario' and will perform that scenario in your hometown. It is a simple play and I would appreciate it if you enjoyed it.]</p></div>
+<div class="orv_constellation"><p>You will soon return to Earth. You will be assigned a 'returnee only scenario' and will perform that scenario in your hometown. It is a simple play and I would appreciate it if you enjoyed it.</p></div>
 <p class="orv_line">"A returnee scenario? Tell us properly!"</p>
-<div class="orv_constellation"><p>[Please check the scenario window for details. Ah, please note that this is a group scenario so there is a leader. Please remember that the one with the most prominent status will be automatically elected as leader.]</p></div>
+<div class="orv_constellation"><p>Please check the scenario window for details. Ah, please note that this is a group scenario so there is a leader. Please remember that the one with the most prominent status will be automatically elected as leader.</p></div>
 <p class="orv_line">"I will naturally be the leader!"</p>
 <p class="orv_line">"That friend from Murim looks pretty strong…"</p>
 <p class="orv_line">I wondered who would be the 'king' of this group.</p>
-<div class="orv_system"><p>[The return to Earth has begun!]</p></div>
+<div class="orv_system"><p>The return to Earth has begun!</p></div>
 <p class="orv_line">Together with the dazzling light, the 10 returnees started to move through the space at once. My vision briefly blackened and when I opened my eyes again, we were in the middle of a vast city.</p>
 <p class="orv_line">A damaged sidewalk covered with dust. The skyline where the reconstruction of buildings had begun. It was unmistakably Earth.</p>
 <p class="orv_line">"Where is this? Those characters…"</p>
@@ -316,20 +323,20 @@
 <p class="orv_line">The returnees were already out of control. Some hasty returnees grabbed the people passing by and asked,</p>
 <p class="orv_line">"Where is this? What year is it now?"</p>
 <p class="orv_line">I sighed,</p>
-<div class="orv_system"><p>[The 'returnee trigger' has been activated!]</p></div>
+<div class="orv_system"><p>The 'returnee trigger' has been activated!</p></div>
 <p class="orv_line">"T-They asked for the date! They are returnees!"</p>
 <p class="orv_line">"Aaaack! Returnees! Run away!"</p>
 <p class="orv_line">"Report to the alliance!"</p>
 <p class="orv_line">The whole street was rattled by the word 'returnee'. The people fled like the tide and the returnees made puzzled expressions.</p>
 <p class="orv_line">"What? What did I do wrong?"</p>
-<div class="orv_system"><p>[A new main scenario has arrived.]</p></div>
-<div class="orv_system"><p>[Main Scenario #45 ― 'Glorious Return' has started!]</p></div>
+<div class="orv_system"><p>A new main scenario has arrived.</p></div>
+<div class="orv_system"><p>Main Scenario #45 ― 'Glorious Return' has started!</p></div>
 <p class="orv_line">The reflections on the glass building could be seen. Sparks flew as my appearance changed. It was the terrible appearance of a dirty monster with tentacles.</p>
 <p class="orv_line">The real me wasn't like this but outwardly, I looked like a smaller outer god. I probably looked like this to everyone on Earth. To the people of Earth, all returnees were disasters.</p>
 <p class="orv_line">The incarnations of Earth stepped closer with cold eyes. I turned around to see the confused Flying Fox open his trembling lips. "B-Brother. What is this…?"</p>
 <p class="orv_line">"I told you nothing joyful would be waiting for us."</p>
-<div class="orv_system"><p>[The summoning of the 163rd returnees group has been completed!]</p></div>
-<div class="orv_constellation"><p>[You're the king of the 163rd returnees group.]</p></div>
+<div class="orv_system"><p>The summoning of the 163rd returnees group has been completed!</p></div>
+<div class="orv_constellation"><p>You're the king of the 163rd returnees group.</p></div>
 <br>
 <hr>
         </article>
@@ -337,18 +344,12 @@
             <a href="./ch_299"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_301">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="300" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="79" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="299" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="299" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

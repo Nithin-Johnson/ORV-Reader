@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 11: Ep. 2 – Protagonist, V</title>
     <meta property="og:title" content="Ch 11: Ep. 2 – Protagonist, V" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00011.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 11: Ep. 2 – Protagonist, V</h1></div>
 <p class="orv_line">It would be quite a ludicrous sight if anyone else saw it. A large adult man was being grabbed by the neck and hung like a monkey. I could see Lee Hyunsung looking this way from across the bridge. His expression was anxious but he couldn't actually see what was going on here. It was due to the safety ward. I could see over there but they couldn't see here.</p>
@@ -212,7 +219,7 @@
 <p class="orv_line">"Use honorifics."</p>
 <p class="orv_line">"What if I don't want to?"</p>
 <p class="orv_line">This time, I raised both hands to block the fist. The pain felt like my bones had broken but the shock was dissipated. Yoo Joonghyuk's eyes widened like he was a bit surprised.</p>
-<div class="orv_system"><p>[The character 'Yoo Joonghyuk' is on guard against you.]</p></div>
+<div class="orv_system"><p>The character 'Yoo Joonghyuk' is on guard against you.</p></div>
 <p class="orv_line">Then it didn't matter. I wasn't going to be a punching bag just because he was the main character.</p>
 <p class="orv_line">"I'm sorry but you are younger than me, pro gamer Yoo Joonghyuk-ssi. Therefore, you should be the one using honorifics."</p>
 <p class="orv_line">"…You know me?"</p>
@@ -228,28 +235,28 @@
 <p class="orv_line">"Will you spare me if I answer?"</p>
 <p class="orv_line">"I'll see."</p>
 <p class="orv_line">It was a lie. I could tell just by looking at his face. I was the only reader of Ways of Survival. Numerous possible repertoires were simulated in my head. What could I say to convince this damn regressor?</p>
-<div class="orv_system"><p>[Your understanding of the character 'Yoo Joonghyuk' is increasing.]</p></div>
-<div class="orv_system"><p>[Your understanding of this person is already very high.]</p></div>
+<div class="orv_system"><p>Your understanding of the character 'Yoo Joonghyuk' is increasing.</p></div>
+<div class="orv_system"><p>Your understanding of this person is already very high.</p></div>
 <p class="orv_line">…Huh?</p>
-<div class="orv_system"><p>[The conditions of use for the exclusive skill [Omniscient Reader's Viewpoint] stage 2 has been reached!]</p></div>
-<div class="orv_system"><p>[Do you want to activate the exclusive skill?]</p></div>
+<div class="orv_system"><p>The conditions of use for the exclusive skill [Omniscient Reader's Viewpoint] stage 2 has been reached!</p></div>
+<div class="orv_system"><p>Do you want to activate the exclusive skill?</p></div>
 <p class="orv_line">Then after a moment, I was able to read someone's thoughts like a waterfall in my head.</p>
-<div class="orv_quote"><p>「 Only Lee Hyunsung and Kim Namwoon should've survived in that carriage. 」</p></div>
-<div class="orv_quote"><p>「 Yet Kim Namwoon died and the others survived. 」</p></div>
-<div class="orv_quote"><p>「 How did you survive? 」</p></div>
-<div class="orv_quote"><p>「 Who the hell is this guy? 」</p></div>
-<div class="orv_quote"><p>「 Dig up information. Then if I find any disturbing elements… Kill. 」</p></div>
+<div class="orv_quote"><p>Only Lee Hyunsung and Kim Namwoon should've survived in that carriage.</p></div>
+<div class="orv_quote"><p>Yet Kim Namwoon died and the others survived.</p></div>
+<div class="orv_quote"><p>How did you survive?</p></div>
+<div class="orv_quote"><p>Who the hell is this guy?</p></div>
+<div class="orv_quote"><p>Dig up information. Then if I find any disturbing elements… Kill.</p></div>
 <p class="orv_line">A dense flicker of thoughts. It was obviously a crisis situation but I couldn't prevent the corners of my mouth from going up. The time remaining until the scenario ended was 5 minutes.</p>
 <p class="orv_line">I started telling the story. I told the story using as much concise, short, and accurate vocabulary as possible. It was from the first moment the 'dokkaebi' appeared in the subway to the end of the first scenario. Of course, I excluded the skills I got and any important issues.</p>
 <p class="orv_line">"…You cleared the scenario by killing insects?"</p>
 <p class="orv_line">"We were lucky."</p>
 <p class="orv_line">Yoo Joonghyuk was so surprised he seemed to have forgotten that his mouth was open.</p>
-<div class="orv_quote"><p>「 The future has completely changed. 」</p></div>
+<div class="orv_quote"><p>The future has completely changed.</p></div>
 <p class="orv_line">He was shocked. Originally, the people in carriage 3807 would kill each other in a battle royale, with only Lee Hyunsung and Kim Namwoon surviving.</p>
 <p class="orv_line">"You have keen eyes. How did you know there were insects in the carriage?"</p>
 <p class="orv_line">Killing Intent filled Yoo Joonghyuk's eyes as his thoughts brushed through my head.</p>
-<div class="orv_quote"><p>「 Is this guy also a regressor? 」</p></div>
-<div class="orv_quote"><p>「 If so, I have to kill him right now. 」</p></div>
+<div class="orv_quote"><p>Is this guy also a regressor?</p></div>
+<div class="orv_quote"><p>If so, I have to kill him right now.</p></div>
 <p class="orv_line">A person who commits a fault thinks that everyone speaks of it. I wasn't surprised that he misunderstood me. I quickly opened my mouth, "An explosion."</p>
 <p class="orv_line">"Explosion?"</p>
 <p class="orv_line">"I was able to find the insects due to an explosion from the carriage in front."</p>
@@ -258,73 +265,73 @@
 <p class="orv_line">"…It is a suspicious coincidence."</p>
 <p class="orv_line">"Coincidences are always suspicious. If you don't believe me, ask the people beyond the ward. The boy standing there dropped the net."</p>
 <p class="orv_line">Beyond the safety barrier on the way to Oksu Station, people were looking over at this side. The scenario wasn't over yet so they couldn't approach or talk to us. Yoo Joonghyuk looked over but showed no signs of moving. His eyes changed and memories that seemed to belong to Yoo Joonghyuk crossed my mind.</p>
-<div class="orv_quote"><p>「 I see. 」</p></div>
-<div class="orv_quote"><p>「 Explosion. 」</p></div>
-<div class="orv_quote"><p>「 This guy isn't a regressor. 」</p></div>
-<div class="orv_quote"><p>「 He isn't the one who changed the future. Rather, the future changed… 」</p></div>
-<div class="orv_quote"><p>「 Because of me. 」</p></div>
+<div class="orv_quote"><p>I see.</p></div>
+<div class="orv_quote"><p>Explosion.</p></div>
+<div class="orv_quote"><p>This guy isn't a regressor.</p></div>
+<div class="orv_quote"><p>He isn't the one who changed the future. Rather, the future changed…</p></div>
+<div class="orv_quote"><p>Because of me.</p></div>
 <p class="orv_line">I saw people dying painfully in a powerful explosion and Yoo Joonghyuk blankly watching it.</p>
-<div class="orv_quote"><p>「 It is because I started killing them, unlike the other turns. 」</p></div>
+<div class="orv_quote"><p>It is because I started killing them, unlike the other turns.</p></div>
 <p class="orv_line">Due to the impact of Omniscient Reader's Viewpoint, I could feel Yoo Joonghyuk's mental pain and suffering.</p>
 <p class="orv_line">"Are your questions over?" I asked.</p>
 <p class="orv_line">"…Yes."</p>
 <p class="orv_line">"Then can you let me go? In addition, let's move to Oksu together. There isn't much time remaining to clear the scenario."</p>
 <p class="orv_line">"It is difficult." However, a protagonist was a protagonist for a reason. "Everything you said makes perfect sense."</p>
 <p class="orv_line">I have never seen a protagonist as careful as Yoo Joonghyuk.</p>
-<div class="orv_quote"><p>「 A beginner can't be so calm. 」</p></div>
-<div class="orv_quote"><p>「 He is abnormally well-adjusted to this changed world. 」</p></div>
-<div class="orv_quote"><p>「 He probably killed Kim Namwoon. 」</p></div>
-<div class="orv_quote"><p>「 He has gone beyond being useful to being dangerous. 」</p></div>
-<p class="orv_line">Yoo Joonghyuk's right eye started shining with a gold colour. I quickly realized what he was doing. In fact, it would be weird if this guy didn't use 'that'. [Sage's Eye]. Yoo Joonghyuk's strongest detection skill. [Sage's Eye] was the SS-grade skill that showed the target's attributes window as well as hidden information.</p>
+<div class="orv_quote"><p>A beginner can't be so calm.</p></div>
+<div class="orv_quote"><p>He is abnormally well-adjusted to this changed world.</p></div>
+<div class="orv_quote"><p>He probably killed Kim Namwoon.</p></div>
+<div class="orv_quote"><p>He has gone beyond being useful to being dangerous.</p></div>
+<p class="orv_line">Yoo Joonghyuk's right eye started shining with a gold colour. I quickly realized what he was doing. In fact, it would be weird if this guy didn't use 'that'. <strong>[Sage's Eye]</strong>. Yoo Joonghyuk's strongest detection skill. <strong>[Sage's Eye]</strong> was the SS-grade skill that showed the target's attributes window as well as hidden information.</p>
 <p class="orv_line">As long as he used it, I couldn't avoid revealing my identity. On the other hand, I thought it was a good thing. I still didn't know my 'attribute' and 'skills'. If Yoo Joonghyuk discovered my information, I would also be able to know about myself. Then hopefully, I would be able to use the information I learned to escape this situation.</p>
-<div class="orv_system"><p>[The exclusive skill, [Fourth Wall] is activated!]</p></div>
-<div class="orv_system"><p>[[Fourth Wall] has detected the use of the detection skill [Sage's Eye]!]</p></div>
+<div class="orv_system"><p>The exclusive skill, [Fourth Wall] is activated!</p></div>
+<div class="orv_system"><p>[Fourth Wall] has detected the use of the detection skill [Sage's Eye]!</p></div>
 <p class="orv_line">Sparks flew in the air and Yoo Joonghyuk's body staggered.</p>
-<div class="orv_quote"><p>「 …Kuk, what? 」</p></div>
+<div class="orv_quote"><p>…Kuk, what?</p></div>
 <p class="orv_line">Yoo Joonghyuk covered his right eye and watched me with confusion. "You…what is your identity?"</p>
 <p class="orv_line">I'm sorry but I was wondering the same thing.</p>
-<div class="orv_system"><p>[The exclusive skill [Fourth Wall] has blocked [Sage's Eye]!]</p></div>
-<p class="orv_line">I didn't know that I had a skill that would defend against [Sage's Eye]. After [Bookmark], it was [Fourth Wall]. This complicated things. Yoo Joonghyuk wouldn't believe me now.</p>
-<div class="orv_quote"><p>「 I must kill him here. 」</p></div>
+<div class="orv_system"><p>The exclusive skill [Fourth Wall] has blocked [Sage's Eye]!</p></div>
+<p class="orv_line">I didn't know that I had a skill that would defend against <strong>[Sage's Eye]</strong>. After <strong>[Bookmark]</strong>, it was <strong>[Fourth Wall]</strong>. This complicated things. Yoo Joonghyuk wouldn't believe me now.</p>
+<div class="orv_quote"><p>I must kill him here.</p></div>
 <p class="orv_line">He was a person who didn't trust what he didn't know.</p>
 <p class="orv_line">"Yoo Joonghyuk." Then I also need to change plans. "You need a reliable companion."</p>
 <p class="orv_line">"…What do you mean?"</p>
 <p class="orv_line">"You can't break through the 46th scenario alone. Shouldn't you be well aware of it?"</p>
 <p class="orv_line">Yoo Joonghyuk's eyes narrowed. "How do you know this? Perhaps you―"</p>
 <p class="orv_line">"It doesn't matter how I know or who I am." I stared straight into Yoo Joonghyuk's eyes and said, "The important thing is that I can help you."</p>
-<div class="orv_quote"><p>「 He isn't a regressor. If he was a regressor, I wouldn't be unaware of him. 」</p></div>
-<div class="orv_quote"><p>「 Then who is this person? 」</p></div>
-<div class="orv_quote"><p>「 …Perhaps? 」</p></div>
+<div class="orv_quote"><p>He isn't a regressor. If he was a regressor, I wouldn't be unaware of him.</p></div>
+<div class="orv_quote"><p>Then who is this person?</p></div>
+<div class="orv_quote"><p>…Perhaps?</p></div>
 <p class="orv_line">If I couldn't hide my hand and if I didn't possess the best hand, then there was only one way out. It was to show a hand that would make the other person misunderstand.</p>
 <p class="orv_line">"Yoo Joonghyuk, I know the future that you don't know."</p>
-<div class="orv_system"><p>[The character 'Yoo Joonghyuk' has used the [Lie Detection] skill.]</p></div>
-<div class="orv_system"><p>[[Lie Detection] has confirmed that your words are the truth.]</p></div>
+<div class="orv_system"><p>The character 'Yoo Joonghyuk' has used the [Lie Detection] skill.</p></div>
+<div class="orv_system"><p>[Lie Detection] has confirmed that your words are the truth.</p></div>
 <p class="orv_line">Yoo Joonghyuk's eyes slowly widened. "…How?"</p>
 <p class="orv_line">"How else?"</p>
-<div class="orv_quote"><p>「 No way. There was a prophet other than Anna Croft? It is also in South Korea? 」</p></div>
+<div class="orv_quote"><p>No way. There was a prophet other than Anna Croft? It is also in South Korea?</p></div>
 <p class="orv_line">Prophet. In Ways of Survival, it was the only attribute that could see the future and had the passive of 'nullifying all detection skills'. In fact, only one person had the attribute of 'prophet' in the world of Ways of Survival.</p>
-<div class="orv_quote"><p>「 Only a prophet can defend against my [Sage's Eye]. 」</p></div>
+<div class="orv_quote"><p>Only a prophet can defend against my [Sage's Eye].</p></div>
 <p class="orv_line">I didn't answer and Yoo Joonghyuk bit his lips.</p>
 <p class="orv_line">"Can you perhaps use 'Future Sight'?"</p>
 <p class="orv_line">"It is something similar."</p>
 <p class="orv_line">"You knew I would come here."</p>
 <p class="orv_line">"Yes."</p>
-<div class="orv_quote"><p>「 I see. If this man is a prophet, all his actions are convincing. 」</p></div>
+<div class="orv_quote"><p>I see. If this man is a prophet, all his actions are convincing.</p></div>
 <p class="orv_line">The flow was changing. Yoo Joonghyuk's fluctuation was conveyed straight away. This was the only chance.</p>
 <p class="orv_line">"I know that Yoo Joonghyuk has special powers. You also know things about the future. Isn't that right?"</p>
 <p class="orv_line">"…"</p>
 <p class="orv_line">"But that knowledge is never perfect." The only weakness of a regressor was that the future changed when they used their information of the future. In other words, all those who regressed would eventually live in a 'world they don't know'. "Make me your companion. I can fill in the parts you are missing."</p>
 <p class="orv_line">There was no companion as good as a 'prophet' to the present Yoo Joonghyuk. In fact, my present self could play a role similar to a prophet. It was because I was the only reader of this story.</p>
-<div class="orv_system"><p>[There is one minute to the end of the scenario.]</p></div>
+<div class="orv_system"><p>There is one minute to the end of the scenario.</p></div>
 <p class="orv_line">Yoo Joonghyuk lowered his head and started to think.</p>
-<div class="orv_quote"><p>「 A prophet will certainly be helpful. 」</p></div>
-<div class="orv_system"><p>[There are 50 seconds left to complete the scenario.]</p></div>
-<div class="orv_quote"><p>「 Not just the 46th scenario, but later when fighting the 'Zarathustra'. But… can I really believe him? 」</p></div>
-<div class="orv_system"><p>[There are 40 seconds left to the end of the scenario.]</p></div>
-<div class="orv_quote"><p>「 Companion. 」</p></div>
+<div class="orv_quote"><p>A prophet will certainly be helpful.</p></div>
+<div class="orv_system"><p>There are 50 seconds left to complete the scenario.</p></div>
+<div class="orv_quote"><p>Not just the 46th scenario, but later when fighting the 'Zarathustra'. But… can I really believe him?</p></div>
+<div class="orv_system"><p>There are 40 seconds left to the end of the scenario.</p></div>
+<div class="orv_quote"><p>Companion.</p></div>
 <p class="orv_line">Finally, Yoo Joonghyuk raised his head as I stared at the clock with an irritated heart. "I have decided. I will make you my companion."</p>
-<div class="orv_system"><p>[Excessive immersion has severely worn out your mental strength.]</p></div>
-<div class="orv_system"><p>[Exclusive skill, Omniscient Reader's Viewpoint has been turned off.]</p></div>
+<div class="orv_system"><p>Excessive immersion has severely worn out your mental strength.</p></div>
+<div class="orv_system"><p>Exclusive skill, Omniscient Reader's Viewpoint has been turned off.</p></div>
 <p class="orv_line">I wasn't sure if it was due to fatigue or relief but the exclusive skill was released. Now Yoo Joonghyuk's face was as difficult as a philosophy book with no commentary written. Yoo Joonghyuk started to take me across the 'Even Bridge'. Of course, I was still held by the collar but…I thought things would be all right now. I persuaded this damn regressor and was in a good position. We had almost crossed the Even Bridge and were right in front of the safe area when Yoo Joonghyuk suddenly stopped.</p>
 <p class="orv_line">"I will ask you one last thing."</p>
 <p class="orv_line">"What?"</p>
@@ -334,7 +341,7 @@
 <p class="orv_line">His hand raised me up a little bit and a gentle wind passed by my feet. Underneath me was completely empty. The smell of blood mixed in with the smell of Han River as the ichthyosaurs jumped towards their prey with open mouths.</p>
 <p class="orv_line">"Will I let go of this hand or won't I?"</p>
 <p class="orv_line">For the first time, I started sweating. Let me think. Even without his thoughts, I knew this guy more than anyone else. I closed my eyes and thought about Yoo Joonghyuk.</p>
-<div class="orv_system"><p>[There are 20 seconds left to the end of the scenario.]</p></div>
+<div class="orv_system"><p>There are 20 seconds left to the end of the scenario.</p></div>
 <p class="orv_line">Then I came to a conclusion.</p>
 <p class="orv_line">"Yoo Joonghyuk."</p>
 <p class="orv_line">I was certain about what he would do. No matter how I thought about it, there was no other ending when it came to Yoo Joonghyuk. I talked as I watched a sea commander approaching in the water. "I will tell you two things first."</p>
@@ -348,7 +355,7 @@
 <p class="orv_line">Son of a bitch.</p>
 <p class="orv_line">"I believe you. You are definitely a prophet."</p>
 <p class="orv_line">Waiting for me at my crash point was the mouth of the giant sea commander. I closed my eyes from the shock of the impact along with the cold water of Han River. As I sucked in a breath, a warm and enormous darkness swallowed me up.</p>
-<div class="orv_system"><p>[You have failed to clear the scenario.]</p></div>
+<div class="orv_system"><p>You have failed to clear the scenario.</p></div>
 <p class="orv_line">…Damn, I have to use that method after all.</p>
 <br>
 <hr>
@@ -357,18 +364,12 @@
             <a href="./ch_10"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_12">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="11" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="31" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="10" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="10" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

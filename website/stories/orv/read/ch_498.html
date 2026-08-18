@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 498: Ep. 95 - Gaecheon/開天, II</title>
     <meta property="og:title" content="Ch 498: Ep. 95 - Gaecheon/開天, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,93 +177,93 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00498.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 498: Ep. 95 - Gaecheon/開天, II</h1></div>
 <p class="orv_line">Yoo Joonghyuk was running towards the bridge, while &lt;Asgard&gt;'s Constellations were chasing after him.</p>
-<p class="orv_line">The Bald General of Justice shouted out. [Do your best, descendants!]</p>
-<p class="orv_line">That prompted the One-eyed Maitreya to retort. [Your bald head is caked in sweat.]</p>
-<div class="orv_constellation"><p>[Worry about your own head first.]</p></div>
-<div class="orv_constellation"><p>[Aren't you going to help them?]</p></div>
-<div class="orv_constellation"><p>[I don't have an Incarnation, so how can I?]</p></div>
-<div class="orv_constellation"><p>[You can simply incarnate directly.]</p></div>
-<div class="orv_constellation"><p>[You must've lost your mind after being trapped here for too long. With the remaining Coins, it's impossible even to send a symbolic form down there.]</p></div>
+<p class="orv_line">The Bald General of Justice shouted out. <strong>[Do your best, descendants!]</strong></p>
+<p class="orv_line">That prompted the One-eyed Maitreya to retort. <strong>[Your bald head is caked in sweat.]</strong></p>
+<div class="orv_constellation"><p>Worry about your own head first.</p></div>
+<div class="orv_constellation"><p>Aren't you going to help them?</p></div>
+<div class="orv_constellation"><p>I don't have an Incarnation, so how can I?</p></div>
+<div class="orv_constellation"><p>You can simply incarnate directly.</p></div>
+<div class="orv_constellation"><p>You must've lost your mind after being trapped here for too long. With the remaining Coins, it's impossible even to send a symbolic form down there.</p></div>
 <p class="orv_line">The Bald General grumbled unhappily and while wiping his head, looked behind him. That's where the boring monotone-coloured training hall lied in wait.</p>
 <p class="orv_line">The 92nd floor scenario location, the 'Infinite Sanctum'.</p>
 <p class="orv_line">One could only escape from this place after clearing a total of ten separate trials. And several Historical-grade Constellations, including the 'Bald General of Justice', have been trapped in here for many decades.</p>
-<p class="orv_line">The One-eyed Maitreya complained bitterly. [That damn Cheok family fool. What a terrible hardship this is all because of that man.]</p>
+<p class="orv_line">The One-eyed Maitreya complained bitterly. <strong>[That damn Cheok family fool. What a terrible hardship this is all because of that man.]</strong></p>
 <p class="orv_line">The first one to sniff out this &lt;Infinite Sanctum&gt; was Goryeo's First Sword.</p>
 <p class="orv_line">⸢If you're a true martial art practitioner, then you simply have to go there. The challenges are very easy, so you could say that place is more like an undiscovered, hidden candy.⸥</p>
 <p class="orv_line">The next person to clear this scenario after Cheok Jungyeong, the Maritime War God, said this:</p>
 <p class="orv_line">⸢Indeed it is quite doable. You'll be accomplishing a great achievement by clearing it.⸥</p>
 <p class="orv_line">The Historical-grade Constellations that longed to reach the level of martial prowess attained by Cheok Jungyeong and Lee Sun-Shin all headed to the 'Infinite Sanctum' after hearing those words.</p>
 <p class="orv_line">And then, this was their sad state after several decades of failure.</p>
-<div class="orv_constellation"><p>[We've all momentarily forgotten that we are not the same as Cheok Jungyeong or Lee Sun-Shin.]</p></div>
+<div class="orv_constellation"><p>We've all momentarily forgotten that we are not the same as Cheok Jungyeong or Lee Sun-Shin.</p></div>
 <p class="orv_line">Regardless of where or what, talent would always pose an issue.</p>
 <p class="orv_line">The Bald General spat out one sigh after another.</p>
 <p class="orv_line">The collision noises of weapons repeatedly rang out from the centre of the training hall.</p>
-<div class="orv_constellation"><p>[Are those idiots still fighting?]</p></div>
+<div class="orv_constellation"><p>Are those idiots still fighting?</p></div>
 <p class="orv_line">The One-eyed Maitreya's lone eye shifted over to the location where two old men were still duking it out. One was a tiger-like man with massive, rippling muscles, while his opponent was a fox-like man who enjoyed slim yet firm muscles himself.</p>
 <p class="orv_line">Blinding shower of sparks exploded as two swords clashed in the air.</p>
-<div class="orv_constellation"><p>[Kim Yoo-Shin! I'll definitely defeat you today!]</p></div>
-<div class="orv_constellation"><p>[Gyebaek, you're still no match for me.]</p></div>
-<p class="orv_line">The ⸢Stage Transformation⸥ suddenly activated around them and the Hwangsanbeol's battlefield spread out. It was none other than the very same battlefield Kim Dokja had recreated in the past via [Ganpyeongui]</p>
+<div class="orv_constellation"><p>Kim Yoo-Shin! I'll definitely defeat you today!</p></div>
+<div class="orv_constellation"><p>Gyebaek, you're still no match for me.</p></div>
+<p class="orv_line">The ⸢Stage Transformation⸥ suddenly activated around them and the Hwangsanbeol's battlefield spread out. It was none other than the very same battlefield Kim Dokja had recreated in the past via <strong>[Ganpyeongui]</strong></p>
 <p class="orv_line">Kim Yoo-Shin's Fragrant Dragon Flower Unit attacked Gyebaek, and the latter also unleashed his grandiose Status and crisscrossed the battlefield like a phantom.</p>
 <p class="orv_line">It was indeed an amazing battle, but the other Historical-grade Constellations simply looked on with bored expression on their faces. The 'Slumbering Lady of Fine Brocade' shook her head helplessly, while 'Founder of Hannamgun' tutted disapprovingly.</p>
-<p class="orv_line">The One-eyed Maitreya sneered. [Even though they are showing off like that, they know the truth. They know that this isn't Hwangsanbeol.]</p>
+<p class="orv_line">The One-eyed Maitreya sneered. <strong>[Even though they are showing off like that, they know the truth. They know that this isn't Hwangsanbeol.]</strong></p>
 <p class="orv_line">There should have been a time when they fought earnestly. There was this deep-seated grudge, the resentment that couldn't be resolved even with one's death, after all.</p>
 <p class="orv_line">These two betted everything of themselves and fought in Hwangsanbeol. Such a thing definitely did happen.</p>
-<div class="orv_system"><p>[Story, 'Sun Setting on Hwangsanbeol', is continuing with its storytelling every now and then.]</p></div>
+<div class="orv_system"><p>Story, 'Sun Setting on Hwangsanbeol', is continuing with its storytelling every now and then.</p></div>
 <p class="orv_line">The fastest thing to get shaved away after becoming a Constellation was their own 'Story'. The more a Constellation depleted its story, the weaker its power would get. They would grow bored, disinterested, fall into depression, or lose themselves in tedium.</p>
 <p class="orv_line">Constellations would desperately seek out other Stories in order to escape from such a quagmire. In other words, they would search for a new tragedy to escape from this horrible eternal cycle, even if it was only for a brief moment.</p>
 <p class="orv_line">Claaaang!</p>
-<p class="orv_line">As the sounds of the weapons clashing got faster, 'Seo Ae Il Pil' spoke. [Still, aren't they fighting a bit more spiritedly than before?]</p>
-<div class="orv_constellation"><p>[It seems that the fire's been rekindled after the 'Demon King of Salvation' summoned them back then.]</p></div>
+<p class="orv_line">As the sounds of the weapons clashing got faster, 'Seo Ae Il Pil' spoke. <strong>[Still, aren't they fighting a bit more spiritedly than before?]</strong></p>
+<div class="orv_constellation"><p>It seems that the fire's been rekindled after the 'Demon King of Salvation' summoned them back then.</p></div>
 <p class="orv_line">What the 'Slumbering Lady of Fine Brocade' said caused the Constellations to simultaneously shift their eyes over to the scenario channel. There they were, Kim Dokja and Yoo Joonghyuk crossing the bridge.</p>
 <p class="orv_line">Han Sooyoung had arrived on the other side and was busy shouting out.</p>
 <p class="orv_line">– Kim Dokja!! Faster!</p>
 <p class="orv_line">The noisy clashings of weapons also ceased. Both Kim Yoo-Shin and Gyebaek stopped recreating Hwangsanbeol before anyone had noticed it and began holding their breaths. One by one, beings gathered around the display panel out of curiosity.</p>
 <p class="orv_line">Several of them saw the bridge Kim Dokja was crossing and pretended to know what it was.</p>
-<div class="orv_constellation"><p>[Hold on, isn't that the 'Even-numbered bridge'? How nostalgic.]</p></div>
-<div class="orv_constellation"><p>[What rubbish are you spewing now? You weren't even a subscriber back then.]</p></div>
-<div class="orv_constellation"><p>[Hmph…]</p></div>
+<div class="orv_constellation"><p>Hold on, isn't that the 'Even-numbered bridge'? How nostalgic.</p></div>
+<div class="orv_constellation"><p>What rubbish are you spewing now? You weren't even a subscriber back then.</p></div>
+<div class="orv_constellation"><p>Hmph…</p></div>
 <p class="orv_line">Odin was chasing after the fleeing Kim Dokja and Yoo Joonghyuk. The godly spear Gungnir, famed for never missing its target, was now taking aim at the former's back. Not only that, the storm was growing stronger, gradually slowing down the duo's fleeing speed.</p>
-<p class="orv_line">The One-eyed Maitreya shouted out. [What's this?! Odin, that guy is a Myth-grade Constellation, so what about saving his face…]</p>
-<div class="orv_constellation"><p>[Dokja-gun is also a Myth-grade Constellation.]</p></div>
-<div class="orv_constellation"><p>[Are all Myth-grades the same?? Our Kim Dokja is a still weak wet-behind-the-ears Myth-grade!]</p></div>
+<p class="orv_line">The One-eyed Maitreya shouted out. <strong>[What's this?! Odin, that guy is a Myth-grade Constellation, so what about saving his face…]</strong></p>
+<div class="orv_constellation"><p>Dokja-gun is also a Myth-grade Constellation.</p></div>
+<div class="orv_constellation"><p>Are all Myth-grades the same?? Our Kim Dokja is a still weak wet-behind-the-ears Myth-grade!</p></div>
 <p class="orv_line">As if to say their fight earlier was a lie, Kim Yoo-Shin and Gyebaek sat side by side before the screen and shouted at the same time.</p>
-<div class="orv_constellation"><p>[It seems that the descendant was negligent in his training.]</p></div>
-<div class="orv_constellation"><p>[He might summon me again through Ganpyeongui. I should prepare for…]</p></div>
-<div class="orv_constellation"><p>[You think he'll call you, Gyebaek?? Obviously, he'll summon me when in that sort of a situation.]</p></div>
-<p class="orv_line">When the hint of Hwangsanbeol being recreated showed itself again, the One-Eyed Maitreya quickly issued a stern warning. [Both of you, shut your traps and just focus on the screen.]</p>
-<div class="orv_constellation"><p>[Anyways, that man isn't going to throw Kim Dokja again, I hope?]</p></div>
+<div class="orv_constellation"><p>It seems that the descendant was negligent in his training.</p></div>
+<div class="orv_constellation"><p>He might summon me again through Ganpyeongui. I should prepare for…</p></div>
+<div class="orv_constellation"><p>You think he'll call you, Gyebaek?? Obviously, he'll summon me when in that sort of a situation.</p></div>
+<p class="orv_line">When the hint of Hwangsanbeol being recreated showed itself again, the One-Eyed Maitreya quickly issued a stern warning. <strong>[Both of you, shut your traps and just focus on the screen.]</strong></p>
+<div class="orv_constellation"><p>Anyways, that man isn't going to throw Kim Dokja again, I hope?</p></div>
 <p class="orv_line">Sparks were dancing around Yoo Joonghyuk's right arm as he ran on the bridge. Just as Constellations began worrying, he suddenly grabbed Kim Dokja by his collars with that arm.</p>
-<div class="orv_constellation"><p>[I knew it!! I bloody knew it…!!]</p></div>
+<div class="orv_constellation"><p>I knew it!! I bloody knew it…!!</p></div>
 <p class="orv_line">Yoo Joonghyuk then powerfully threw Kim Dokja forward, but also stepped onto the latter's back – and they began scything past the storm as if he was surfing the waves.</p>
 <p class="orv_line">Right next second, the Gungnir thrown by Odin caused a massive explosion along with the blinding wall of light.</p>
 <p class="orv_line">Kwa-aaaaaaah!!</p>
-<p class="orv_line">When the light rescinded, only the debris of the destroyed bridge, [Bifrost], remained there.</p>
-<div class="orv_constellation"><p>[…What happened? Did they make it?]</p></div>
+<p class="orv_line">When the light rescinded, only the debris of the destroyed bridge, <strong>[Bifrost]</strong>, remained there.</p>
+<div class="orv_constellation"><p>…What happened? Did they make it?</p></div>
 <p class="orv_line">The screen changed to display Kim Dokja's group safely entering the next cabin.</p>
-<div class="orv_constellation"><p>[…Oh, oh. They made it!]</p></div>
+<div class="orv_constellation"><p>…Oh, oh. They made it!</p></div>
 <p class="orv_line">As if this event also concerned them too, the Korean Peninsula's Constellations looked at each other and celebrated. Even Gyebaek and Kim Yoo-Shin awkwardly glanced at each other before lightly bumping fists. Unfortunately, their happiness couldn't last for long.</p>
 <p class="orv_line">– Chase after them.</p>
 <p class="orv_line">Because the &lt;Asgard&gt;'s Constellations began moving after the enraged Odin issued the order.</p>
@@ -264,35 +271,35 @@
 <p class="orv_line">Everyone here understood this fact. Even if this was Kim Dokja they were talking about, he still shouldn't be able to escape for long from the large Nebulas in such a disadvantageous stage.</p>
 <p class="orv_line">Not only that, the channel had been opened publicly again, so other Nebulas in the ark should start aiming at &lt;Kim Dokja's Company&gt; as well.</p>
 <p class="orv_line">As a heavy silence descended on the group, someone muttered out in resignation.</p>
-<div class="orv_constellation"><p>[I guess it'll be difficult this time…]</p></div>
-<div class="orv_constellation"><p>[Honestly, that friend should've died a long, long time ago.]</p></div>
+<div class="orv_constellation"><p>I guess it'll be difficult this time…</p></div>
+<div class="orv_constellation"><p>Honestly, that friend should've died a long, long time ago.</p></div>
 <p class="orv_line">That prompted several Constellations to nod their heads.</p>
-<p class="orv_line">Kim Dokja's life so far had been a series of miracles. Back when he fell below the Dongho bridge, back when he destroyed the [Absolute Throne], when he became the 'Demon King of Salvation', or even when he went to the 1863rd turn – he should've died many times over.</p>
+<p class="orv_line">Kim Dokja's life so far had been a series of miracles. Back when he fell below the Dongho bridge, back when he destroyed the <strong>[Absolute Throne]</strong>, when he became the 'Demon King of Salvation', or even when he went to the 1863rd turn – he should've died many times over.</p>
 <p class="orv_line">When he appeared as the 'Outer God King', every single Constellation thought that he'd definitely die for real this time.</p>
 <p class="orv_line">⸢The Incarnation who was stuck in a much lower scenario than them only a few years ago.⸥</p>
 <p class="orv_line">And now, Constellations were watching the back of Kim Dokja striding forward in the scenario way ahead of theirs. Some watched with envious eyes, while some, contempt at themselves. Everyone wanted to say something, but no one dared to open their mouth.</p>
-<p class="orv_line">The first one to speak was Gyebaek. [I once overheard the Shindansu's prophecy in the past. This world-line can supposedly become the final world-line.]</p>
+<p class="orv_line">The first one to speak was Gyebaek. <strong>[I once overheard the Shindansu's prophecy in the past. This world-line can supposedly become the final world-line.]</strong></p>
 <p class="orv_line">No one could predict how far &lt;Kim Dokja's Company&gt; could go.</p>
 <p class="orv_line">No one knew just where they would end up, or what kind of ■■ they would witness. Maybe, they might not even reach the end of this world like so many had predicted, and come to a dead stop.</p>
 <p class="orv_line">Gyebaek grasped his greatsword and slowly got up from the spot. His glare was now locked on the portal in the centre of the training hall. That was where the final trial of the 'Infinite Sanctum' was.</p>
-<p class="orv_line">Kim Yoo-Shin asked him. [Could you perhaps be planning to challenge it? You might really die this time.]</p>
-<div class="orv_constellation"><p>[If I die, then this place is my ■■.]</p></div>
-<p class="orv_line">Gyebaek's reply caused Kim Yoo-Shin to grin. [Our ■■ is Hwangsanbeol.]</p>
+<p class="orv_line">Kim Yoo-Shin asked him. <strong>[Could you perhaps be planning to challenge it? You might really die this time.]</strong></p>
+<div class="orv_constellation"><p>If I die, then this place is my ■■.</p></div>
+<p class="orv_line">Gyebaek's reply caused Kim Yoo-Shin to grin. <strong>[Our ■■ is Hwangsanbeol.]</strong></p>
 <p class="orv_line">While cracking his neck muscles, Kim Yoo-Shin also stood up from his spot.</p>
-<p class="orv_line">The third person to stand up was the Bald General of Justice. [I shall challenge it again as well.]</p>
+<p class="orv_line">The third person to stand up was the Bald General of Justice. <strong>[I shall challenge it again as well.]</strong></p>
 <p class="orv_line">His eyes containing his resolution seemed to shine brightly.</p>
 <p class="orv_line">That prompted several other Constellations to stand up as well – the 'Slumbering Lady of Fine Brocade', 'Founder of Hannamgun', 'Seo Ae Il Pil', and…</p>
-<div class="orv_constellation"><p>[I hope that you all haven't forgotten that time when we almost got slaughtered while attempting it as a party.]</p></div>
+<div class="orv_constellation"><p>I hope that you all haven't forgotten that time when we almost got slaughtered while attempting it as a party.</p></div>
 <p class="orv_line">The One-eyed Maitreya's words caused everyone's complexion to grow gloomy. They kept failing to break past the last gateway of this scenario until now.</p>
-<div class="orv_constellation"><p>[However, we can't go and aid them if we don't break through that trial.]</p></div>
+<div class="orv_constellation"><p>However, we can't go and aid them if we don't break through that trial.</p></div>
 <p class="orv_line">The thing was, the final pages of the 'Infinite Sanctum' couldn't be cleared with so few participants. It was just that the one-man-army Cheok Jungyeong and Lee Sun-Shin leading an armada were freaks of nature, that was all. If only there were handful more Constellations here…</p>
 <p class="orv_line">It was then, a bright light exploded in the corner of the sanctum.</p>
-<div class="orv_system"><p>[Someone is entering the 'Infinite Sanctum's' tenth floor!]</p></div>
-<p class="orv_line">The One-eyed Maitreya's complexion brightened as he shouted out. [Oh?! There are newbies incoming?]</p>
+<div class="orv_system"><p>Someone is entering the 'Infinite Sanctum's' tenth floor!</p></div>
+<p class="orv_line">The One-eyed Maitreya's complexion brightened as he shouted out. <strong>[Oh?! There are newbies incoming?]</strong></p>
 <p class="orv_line">Two beings revealed themselves from the receding light.</p>
 <p class="orv_line">A short while later, the One-eyed Maitreya's jaw dazedly slackened after realizing who these two were. One was a very big person, while the other was very small.</p>
 <p class="orv_line">The first one to speak was the smaller figure.</p>
-<div class="orv_constellation"><p>[It's just as Cheok Jungyeong has said. You all are still stuck here? What a bunch of pathetic fools. Kyrgios spat out as vicious fighting spirit oozed out from his body. My disciple might die because you lot have been meandering about.]</p></div>
+<div class="orv_constellation"><p>It's just as Cheok Jungyeong has said. You all are still stuck here? What a bunch of pathetic fools. Kyrgios spat out as vicious fighting spirit oozed out from his body. My disciple might die because you lot have been meandering about.</p></div>
 <br>
 <hr>
 <br>
@@ -301,17 +308,17 @@
 <p class="orv_line">He must've found stepping on my back rather unsanitary, because he began lightly dusting his combat boots.</p>
 <p class="orv_line">Han Sooyoung waiting for us quickly approached us. Judging from her expression, she must've been planning to give me another earful. Whether it was a fortunate thing or not, though, Anna Croft opened her mouth first, instead.</p>
 <p class="orv_line">"I had no idea you'd utilise the Stage Transformation in that manner. Honestly, I'm somewhat impressed, Demon King of Salvation."</p>
-<p class="orv_line">Han Sooyoung shifted her glare to Anna next. "Didn't you see all this through your [Precognition]?"</p>
+<p class="orv_line">Han Sooyoung shifted her glare to Anna next. "Didn't you see all this through your <strong>[Precognition]</strong>?"</p>
 <p class="orv_line">"I did see people crossing the bridge, but I had no idea that it'd be that kind of a bridge."</p>
 <p class="orv_line">"What a complete rip-off you are."</p>
 <p class="orv_line">I ignored these two's bickering and scanned our new surroundings. The corridors resembling a tree branch's vascular bundle stretched out in all directions.</p>
 <p class="orv_line">It seemed that this was the corridor of the 'Final Ark'. I couldn't see the 'Zarathustras' that entered here before us anywhere, though.</p>
 <p class="orv_line">Anna Croft closed her eyes and felt for something for a bit, before opening her mouth. "It seems that everyone has scattered in different passageways. Fortunately, no one has lost their lives yet."</p>
 <p class="orv_line">"Our companions seem to be safe too," said Yoo Joonghyuk, and I nodded my head.</p>
-<div class="orv_system"><p>[Influences of other myths will be weaker in the applicable location.]</p></div>
-<div class="orv_system"><p>[Nebula, &lt;Kim Dokja's Company&gt;'s connection is being established again!]</p></div>
+<div class="orv_system"><p>Influences of other myths will be weaker in the applicable location.</p></div>
+<div class="orv_system"><p>Nebula, &lt;Kim Dokja's Company&gt;'s connection is being established again!</p></div>
 <p class="orv_line">Now that we were outside the &lt;Asgard&gt;'s worldview, I could start detecting the Stories of my companions a little bit. I sensed that they had been scattered here and there.</p>
-<div class="orv_system"><p>[Story, 'Demon King of Salvation', is letting its existence known!]</p></div>
+<div class="orv_system"><p>Story, 'Demon King of Salvation', is letting its existence known!</p></div>
 <p class="orv_line">I strongly emitted my Story in order to gather my companions in one place. If it was them, they should be able to locate me without too much fuss.</p>
 <p class="orv_line">Boooom!!</p>
 <p class="orv_line">Meanwhile, a chain of explosions rocked out from the &lt;Asgard&gt;'s exit we closed shut behind us. Some people were trying to open the door and come out. It was obvious who they were.</p>
@@ -323,18 +330,12 @@
             <a href="./ch_497"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_499">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="498" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="858" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="497" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="497" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

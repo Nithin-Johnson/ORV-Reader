@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 80: Ep. 16 – The Fifth Scenario, IV</title>
     <meta property="og:title" content="Ch 80: Ep. 16 – The Fifth Scenario, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00080.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 80: Ep. 16 – The Fifth Scenario, IV</h1></div>
 <p class="orv_line">I gasped and asked, "What? Is it over?"</p>
@@ -238,49 +245,49 @@
 <p class="orv_line">"You can't? This is how I am feeling."</p>
 <p class="orv_line">"Pushov… no, Protector. I really appreciate it."</p>
 <p class="orv_line">…What?</p>
-<div class="orv_system"><p>[The 5th grade other world species 'Prince Lycaon of the Imyuntar' has received great enlightenment.]</p></div>
+<div class="orv_system"><p>The 5th grade other world species 'Prince Lycaon of the Imyuntar' has received great enlightenment.</p></div>
 <p class="orv_line">Lycaon suddenly turned and started practicing.</p>
-<div class="orv_system"><p>[You have a great impact on the evolution of Prince Lycaon of the Imyuntar.]</p></div>
-<div class="orv_system"><p>[Lycaon of the Imyuntar feels a great appreciation towards you.]</p></div>
-<div class="orv_system"><p>[Some constellations from the ruined world 'Chronos' thank you.]</p></div>
-<div class="orv_system"><p>[2,000 coins have been sponsored.]</p></div>
+<div class="orv_system"><p>You have a great impact on the evolution of Prince Lycaon of the Imyuntar.</p></div>
+<div class="orv_system"><p>Lycaon of the Imyuntar feels a great appreciation towards you.</p></div>
+<div class="orv_system"><p>Some constellations from the ruined world 'Chronos' thank you.</p></div>
+<div class="orv_system"><p>2,000 coins have been sponsored.</p></div>
 <p class="orv_line">I finally figured out what was going on. That damn wolf gained enlightenment by hearing what I said.</p>
 <p class="orv_line">Han Sooyoung was laughing so hard that she was holding her belly.</p>
 <p class="orv_line">I felt belated frustration. Maybe I knew Ways of Survival but I didn't know anything about myself.</p>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' admires your patience.]</p></div>
-<div class="orv_system"><p>[The constellation 'Secretive Plotter' is disappointed in your weakness.]</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' admires your patience.</p></div>
+<div class="orv_system"><p>The constellation 'Secretive Plotter' is disappointed in your weakness.</p></div>
 <p class="orv_line">Looking at the system messages appearing in the air, I thought about signing a contract with a sponsor. Of course, it was impossible due to the contract with Bihyung.</p>
-<div class="orv_constellation"><p>[So why did you break the throne? Fool.]</p></div>
+<div class="orv_constellation"><p>So why did you break the throne? Fool.</p></div>
 <p class="orv_line">I looked up and saw a transparent figure floating in the air. I opened the dokkaebi communication.</p>
 <p class="orv_line">'Is it okay to talk now? What about the intermediate dokkaebi?'</p>
-<div class="orv_constellation"><p>[He won't come for a while. He is being properly disciplined. He won't come before the fifth scenario opens. Ah, my channel also upgraded again. Hopefully I can reach the intermediate level next month. It is all thanks to you.]</p></div>
+<div class="orv_constellation"><p>He won't come for a while. He is being properly disciplined. He won't come before the fifth scenario opens. Ah, my channel also upgraded again. Hopefully I can reach the intermediate level next month. It is all thanks to you.</p></div>
 <p class="orv_line">'That's good'.</p>
-<div class="orv_constellation"><p>[Why don't you look happy? It is also good for you if I do well.]</p></div>
+<div class="orv_constellation"><p>Why don't you look happy? It is also good for you if I do well.</p></div>
 <p class="orv_line">'You will be busy when you reach intermediate level'.</p>
 <p class="orv_line">Bihyung laughed at my words.</p>
-<div class="orv_constellation"><p>[Brat, don't worry. I don't know about other incarnations but won't I look after you? These days there are many intermediate dokkaebi at the Bureau but… it is noisy because some bastards are twisting their probabilities extensively.]</p></div>
+<div class="orv_constellation"><p>Brat, don't worry. I don't know about other incarnations but won't I look after you? These days there are many intermediate dokkaebi at the Bureau but… it is noisy because some bastards are twisting their probabilities extensively.</p></div>
 <p class="orv_line">I didn't need him to tell me who it was.</p>
-<div class="orv_constellation"><p>[Oh, of course it isn't you.]</p></div>
+<div class="orv_constellation"><p>Oh, of course it isn't you.</p></div>
 <p class="orv_line">It was completely Yoo Joonghyuk.</p>
 <p class="orv_line">In fact, Yoo Joonghyuk's growth rate was impossible through any possibilities. He was growing at a rate that was close to a cheat.</p>
-<div class="orv_constellation"><p>[There is one abnormally rapidly growing guy and the Bureau can't touch him… I think his sponsor is probably a formidable guy.]</p></div>
+<div class="orv_constellation"><p>There is one abnormally rapidly growing guy and the Bureau can't touch him… I think his sponsor is probably a formidable guy.</p></div>
 <p class="orv_line">Perhaps Yoo Joonghyuk's 'possibilities' wouldn't be a problem in the future.</p>
 <p class="orv_line">In the end, the 'possibility' wasn't a problem if there was a constellation capable of that 'possibility'. And it was possible for Yoo Joonghyuk's sponsor.</p>
-<div class="orv_constellation"><p>[By the way, why don't you buy a growth package? I'll sell it for a cheap price if you buy it now. Aren't you suffering right now because you can't learn that skill? This package…]</p></div>
+<div class="orv_constellation"><p>By the way, why don't you buy a growth package? I'll sell it for a cheap price if you buy it now. Aren't you suffering right now because you can't learn that skill? This package…</p></div>
 <p class="orv_line">'I won't buy it. In any case, isn't the growth package only applicable to skills already learnt? Did you show up just to eat money?'</p>
 <p class="orv_line">The growth package had a penalty when abused. It was why even the powerful Yoo Joonghyuk didn't use the growth package.</p>
-<div class="orv_constellation"><p>[Sheesh, you knew…?]</p></div>
+<div class="orv_constellation"><p>Sheesh, you knew…?</p></div>
 <p class="orv_line">Bihyung muttered with a dissatisfied expression.</p>
 <p class="orv_line">'But it is time to buy something'.</p>
-<div class="orv_system"><p>[Coins Possessed: 62,372 C]</p></div>
+<div class="orv_system"><p>Coins Possessed: 62,372 C</p></div>
 <p class="orv_line">I still had a lot of coins despite raising my stats due to selling the fire dragon parts.</p>
 <p class="orv_line">If I had 40,000 more coins, I would've bought Sky Dragon Steps but I couldn't this time.</p>
 <p class="orv_line">Bihyung's face became rosy.</p>
-<div class="orv_constellation"><p>[Oh, really? What do you want to buy?]</p></div>
+<div class="orv_constellation"><p>Oh, really? What do you want to buy?</p></div>
 <p class="orv_line">'Aren't you going to receive new coin items soon?'</p>
-<div class="orv_constellation"><p>[…How do you know? Did you plant a mole?]</p></div>
+<div class="orv_constellation"><p>…How do you know? Did you plant a mole?</p></div>
 <p class="orv_line">'It is natural since a new scenario will open soon. At that time, tell me. I'll buy it'.</p>
-<div class="orv_constellation"><p>[Hoh, you will…]</p></div>
+<div class="orv_constellation"><p>Hoh, you will…</p></div>
 <p class="orv_line">I turned off the dokkaebi communication. I didn't want to talk to him when there was nothing to say. I looked back and Lycaon was still gaining enlightenment. Han Sooyoung approached me and raised her chin.</p>
 <p class="orv_line">"Hey, what are you going to do now?"</p>
 <p class="orv_line">"…I don't know. I'm still thinking."</p>
@@ -297,7 +304,7 @@
 <p class="orv_line">"Only people with the protection medallion can learn Way of the Wind."</p>
 <p class="orv_line">"Then give it to me."</p>
 <p class="orv_line">"It isn't transferable."</p>
-<div class="orv_system"><p>[The character Han Sooyoung has confirmed that the statement is true.]</p></div>
+<div class="orv_system"><p>The character Han Sooyoung has confirmed that the statement is true.</p></div>
 <p class="orv_line">This woman really…</p>
 <p class="orv_line">"You are the first person who is more suspicious than Yoo Joonghyuk."</p>
 <p class="orv_line">"You brought it up. This skill, Yoo Joonghyuk should've originally learnt it?"</p>
@@ -318,13 +325,13 @@
 <p class="orv_line">At this time, an uproar was heard in the distance.</p>
 <p class="orv_line">"There is someone injured. Please help! It is serious!"</p>
 <p class="orv_line">Someone had found a wounded person nearby.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is looking forward to your companionship.]</p></div>
-<div class="orv_system"><p>[Some constellations are expecting you to treat the wounded.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is looking forward to your companionship.</p></div>
+<div class="orv_system"><p>Some constellations are expecting you to treat the wounded.</p></div>
 <p class="orv_line">The messages of the constellations, including Uriel, arrived. What was going on?</p>
 <p class="orv_line">I took Han Sooyoung and headed there.</p>
 <p class="orv_line">After a while, I found the cause of the problem and glared at Bihyung floating in the air.</p>
 <p class="orv_line">Bihyung sniggered at me.</p>
-<div class="orv_constellation"><p>[I didn't know about this.]</p></div>
+<div class="orv_constellation"><p>I didn't know about this.</p></div>
 <p class="orv_line">The bleeding Yoo Joonghyuk was waiting for me there.</p>
 <br>
 <hr>
@@ -333,18 +340,12 @@
             <a href="./ch_79"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_81">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="80" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="237" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="79" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="79" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

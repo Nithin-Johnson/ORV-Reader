@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 61: Ep. 13 – War of Kings, II</title>
     <meta property="og:title" content="Ch 61: Ep. 13 – War of Kings, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,29 +177,29 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00061.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 61: Ep. 13 – War of Kings, II</h1></div>
 <p class="orv_line">My consciousness rose silently and my senses slowly returned to reality.</p>
-<div class="orv_system"><p>[Exclusive skill, Omniscient Reader's Viewpoint stage 3 has ended.]</p></div>
+<div class="orv_system"><p>Exclusive skill, Omniscient Reader's Viewpoint stage 3 has ended.</p></div>
 <p class="orv_line">The third stage was more tiring than I thought and I couldn't maintain it for long.</p>
 <p class="orv_line">In addition, I found out one more thing that I regretted.</p>
 <p class="orv_line">It was that using Omniscient Reader's Viewpoint stage 3 wouldn't always result in gaining a skill. It seemed to be a reward that could be obtained by entering the 1st person protagonist's point of view. Unfortunately, I didn't know the entry requirements.</p>
@@ -282,14 +289,14 @@
 <p class="orv_line">"Let's pray."</p>
 <p class="orv_line">This was different from Samyeongdang. I wouldn't always be able to get a good reward for destroying the idol.</p>
 <p class="orv_line">We collected water from the shrine and prayed quietly. Some time passed. Then a system message was heard.</p>
-<div class="orv_system"><p>[This shrine has been neglected for a long time.]</p></div>
-<div class="orv_system"><p>[A constellation who loves gaundaos is pleased.]</p></div>
-<div class="orv_system"><p>[A constellation who loves gundaos has revealed his modifier.]</p></div>
-<div class="orv_system"><p>[The constellation 'Lord of the Beautiful Beard, Marquis Zhuangmou' has blessed you.]</p></div>
+<div class="orv_system"><p>This shrine has been neglected for a long time.</p></div>
+<div class="orv_system"><p>A constellation who loves gaundaos is pleased.</p></div>
+<div class="orv_system"><p>A constellation who loves gundaos has revealed his modifier.</p></div>
+<div class="orv_system"><p>The constellation 'Lord of the Beautiful Beard, Marquis Zhuangmou' has blessed you.</p></div>
 <p class="orv_line">Lord of the Beautiful Beard, Marquis Zhuangmou. He was Chinese but he was a great person almost everyone in South Korea knew.</p>
 <p class="orv_line">It was because this constellation was Guan Yoo¹ from Romance of the Three Kingdoms.</p>
 <div class="orv_notice"><p>[1]Guan Yu, courtesy name Yunchang, was a Chinese military general serving under the warlord Liu Bei during the late Eastern Han dynasty of China.</p></div>
-<div class="orv_system"><p>[The constellation's blessing increases your strength and physique by 5 for the next 24 hours.]</p></div>
+<div class="orv_system"><p>The constellation's blessing increases your strength and physique by 5 for the next 24 hours.</p></div>
 <p class="orv_line">Lee Sungkook turned rosy like a flower.</p>
 <p class="orv_line">"Crazy… Representative-nim, isn't this a complete jackpot?"</p>
 <p class="orv_line">"It is a decent start."</p>
@@ -323,7 +330,7 @@
 <p class="orv_line">"You recognize me?"</p>
 <p class="orv_line">"I am a fan!"</p>
 <p class="orv_line">Lee Sungkook stepped forward in a spellbound manner. Fool. The Hypnotist was being bewitched first?</p>
-<div class="orv_system"><p>[The exclusive skill 'Destroy Evil Lv. 2' is activated.]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Destroy Evil Lv. 2' is activated.</p></div>
 <p class="orv_line">I used it the moment I met Lee Sungkook's eyes.</p>
 <p class="orv_line">"I-I-I'm sorry."</p>
 <p class="orv_line">The woman's eyes narrowed.</p>
@@ -331,10 +338,10 @@
 <p class="orv_line">…One of the Seven Kings of Seoul, the King of Beauty was a real person?</p>
 <p class="orv_line">I felt a bit strange. It was because the real name of the King of Beauty in Ways of Survival was 'Min Jiwon'.</p>
 <p class="orv_line">Was it just a coincidence? I should check it out.</p>
-<div class="orv_system"><p>[The exclusive skill, Character List is activated.]</p></div>
+<div class="orv_system"><p>The exclusive skill, Character List is activated.</p></div>
 <p class="orv_line">Fortunately, the skill was activated safely.</p>
 <div class="orv_window">
-<h3 class="orv_window_title">[Character Summary]</h3>
+<h3 class="orv_window_title">Character Summary</h3>
 <p>Name: Min Jiwon</p>
 <p>Age: 26 years old</p>
 <p>Sponsor: Slumbering Lady of Fine Brocade</p>
@@ -361,7 +368,7 @@
 <p class="orv_line">"It looks like you have a very high degree of synchronization with your sponsor. Please tell this to your sponsor. It is an honour to meet the last queen of Silla."</p>
 <p class="orv_line">Slumbering Lady of Fine Brocade. This was the title for the last queen of Silla, Queen Jinseong².</p>
 <div class="orv_notice"><p>[2] Jinseong, personal name Kim Man, was the fifty-first ruler of the Korean kingdom, Silla from 887 to 897.</p></div>
-<div class="orv_system"><p>[The sponsor behind 'Min Jiwon' is greatly shaken.]</p></div>
+<div class="orv_system"><p>The sponsor behind 'Min Jiwon' is greatly shaken.</p></div>
 <p class="orv_line">"Don't panic. Didn't you come to realize Silla's wish?"</p>
 <p class="orv_line">It sometimes happened like this. The coordination between sponsor and incarnation was overturned. The sponsor would force their unfulfilled wish onto their incarnation.</p>
 <p class="orv_line">It was a mistake often made by the senior constellations. There was a possibility of being destroyed by the probability storm.</p>
@@ -369,10 +376,10 @@
 <p class="orv_line">"You…"</p>
 <p class="orv_line">Now according to the development of Ways of Survival, the three areas of Seongdong-gu, Yongsan-gu and Yeongdeungpo-gu were fighting fiercely.</p>
 <p class="orv_line">Just like the old days on the Korean peninsula. Then a message popped up.</p>
-<div class="orv_system"><p>[A bounty scenario has occurred!]</p></div>
+<div class="orv_system"><p>A bounty scenario has occurred!</p></div>
 <p class="orv_line">Huh? Bounty?</p>
 <div class="orv_window">
-<h3 class="orv_window_title">[Bounty Scenario – Unification of the Three Kingdoms]</h3>
+<h3 class="orv_window_title">Bounty Scenario – Unification of the Three Kingdoms</h3>
 <p>Category: Bounty</p>
 <p>Difficulty: ???</p>
 <p>Clear Conditions: The great people of Silla want the incarnation of Silla, 'Min Jiwon' to become king of the three regions. Help incarnation 'Min Jiwon' and kill the kings who have the backgrounds of Later Baekje and Taebong. If this scenario succeeds, you will gain the favour of the constellation, Slumbering Lady of Fine Brocade.</p>
@@ -383,11 +390,11 @@
 <p class="orv_line">I stared at the scenario window blankly while Min Jiwon sent me a coquettish smile.</p>
 <p class="orv_line">"My sponsor wants to see your sincerity. Won't you accept? I won't speak much longer. Become my subordinate."</p>
 <p class="orv_line">She spoke in such a domineering tone despite only offering 2,000 coins. I couldn't help smiling. This sponsor was completely seeing me as a poor person.</p>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' dislikes the sponsor of 'Min Jiwon'.]</p></div>
-<div class="orv_system"><p>[The constellation 'Secretive Plotter' is laughing at the constellation.]</p></div>
-<div class="orv_system"><p>[2,000 coins have been sponsored.]</p></div>
-<div class="orv_system"><p>[5 volumes of Revelation – SSSSS-grade Infinite Regressor have been sold on the exchange.]</p></div>
-<div class="orv_system"><p>[You have obtained 5,000 coins as compensation.]</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' dislikes the sponsor of 'Min Jiwon'.</p></div>
+<div class="orv_system"><p>The constellation 'Secretive Plotter' is laughing at the constellation.</p></div>
+<div class="orv_system"><p>2,000 coins have been sponsored.</p></div>
+<div class="orv_system"><p>5 volumes of Revelation – SSSSS-grade Infinite Regressor have been sold on the exchange.</p></div>
+<div class="orv_system"><p>You have obtained 5,000 coins as compensation.</p></div>
 <p class="orv_line">I was curious about what this woman would look like if she heard the messages that I was hearing right now.</p>
 <p class="orv_line">What did she want me to do for 2,000 coins?</p>
 <br>
@@ -397,18 +404,12 @@
             <a href="./ch_60"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_62">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="61" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="88" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="60" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="60" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

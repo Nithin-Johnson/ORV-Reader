@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 327: Ep. 61 - Gigantomachia, VII</title>
     <meta property="og:title" content="Ch 327: Ep. 61 - Gigantomachia, VII" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00327.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 327: Ep. 61 - Gigantomachia, VII</h1></div>
 <p class="orv_line">"Lee Sookyung."</p>
@@ -238,51 +245,51 @@
 <br>
 <p class="orv_line">There was a bloody wind blowing in the theme park where the Breaking the Sky Sword Saint appeared. Since Achilles' head was blown off as a demonstration, several constellations rushed forward in succession but received the same fate.</p>
 <p class="orv_line">The Breaking the Sky Sword Saint's fists were covered in red.</p>
-<div class="orv_constellation"><p>[You want to recreate Gigantomachia with just this?]</p></div>
+<div class="orv_constellation"><p>You want to recreate Gigantomachia with just this?</p></div>
 <p class="orv_line">The scared participants hesitated when the Breaking the Sky Sword Saint's voice rang out.</p>
 <p class="orv_line">Han Sooyoung and the party members watched the Breaking the Sky Sword Saint from the fortress they were hiding behind. Lee Jihye spoke, "We don't need to help."</p>
 <p class="orv_line">"Can't we just hide here?" Lee Gilyoung added.</p>
 <p class="orv_line">Han Sooyoung murmured while chewing on candy. "This doesn't make sense. Can a giant be so strong in Gigantomachia?"</p>
 <p class="orv_line">It was an indisputable fact that the giants were strong. However, this was Gigantomachia, a scenario where the giants were defeated. In this scenario, the giants weren't able to use their strength due to the influence of Stage Transformation. Furthermore, against a hero like Achilles…</p>
-<div class="orv_constellation"><p>[…I underestimated this half-breed giant.]</p></div>
+<div class="orv_constellation"><p>…I underestimated this half-breed giant.</p></div>
 <p class="orv_line">The forgotten Achilles, whose head had been destroyed, was waking up.</p>
-<div class="orv_system"><p>[The constellation 'Troy's Sorrow' has invoked the Immortal Hero stigma!]</p></div>
+<div class="orv_system"><p>The constellation 'Troy's Sorrow' has invoked the Immortal Hero stigma!</p></div>
 <p class="orv_line">His crushed head was restored and the blood pouring from his body stopped.</p>
-<div class="orv_quote"><p>「 Achilles won't die until Achilles' heel is cut. 」</p></div>
+<div class="orv_quote"><p>Achilles won't die until Achilles' heel is cut.</p></div>
 <p class="orv_line">This was the strongest skill of the hero Achilles. The regenerated Achilles was larger than before. His height reached over three metres and the surrounding incarnations muttered. "…Giant?"</p>
 <p class="orv_line">Achilles' body became as big as a giant. The Breaking the Sky Sword Saint asked,</p>
-<div class="orv_constellation"><p>[Are you a giant half-breed?]</p></div>
-<div class="orv_constellation"><p>[…]</p></div>
-<div class="orv_constellation"><p>[How funny. A person who inherited the blood of the giants became a servant of Olympus?]</p></div>
-<div class="orv_constellation"><p>[I'm not a giant. I am Olympus' hero, Achilles!]</p></div>
+<div class="orv_constellation"><p>Are you a giant half-breed?</p></div>
+<div class="orv_constellation"><p>…</p></div>
+<div class="orv_constellation"><p>How funny. A person who inherited the blood of the giants became a servant of Olympus?</p></div>
+<div class="orv_constellation"><p>I'm not a giant. I am Olympus' hero, Achilles!</p></div>
 <p class="orv_line">Han Sooyoung watched the collision between the two giants and understood why Stage Transformation hadn't activated yet. Achilles was a hero of Olympus but he wasn't a source of Gigantomachia in the past. Moreover, he was a mixed-blood giant like the Breaking the Sky Sword Saint.</p>
 <p class="orv_line">A shockwave created by the clash between giants shook the theme park. Achilles touched the palm of his hand like he couldn't believe it.</p>
-<div class="orv_constellation"><p>[Why does a half-breed have this power? I've never heard of your name. What type of story do you have…?!]</p></div>
+<div class="orv_constellation"><p>Why does a half-breed have this power? I've never heard of your name. What type of story do you have…?!</p></div>
 <p class="orv_line">The Breaking the Sky Sword Saint stared at the sky without speaking.</p>
-<div class="orv_constellation"><p>[My distant blood is said to have been castrated by the sky.]</p></div>
+<div class="orv_constellation"><p>My distant blood is said to have been castrated by the sky.</p></div>
 <p class="orv_line">She was transcendent. Unlike other constellations, she only had a few stories because she pursued the highest strength. There was only one path she had ever walked.</p>
-<div class="orv_system"><p>[The story 'Path of Breaking the Sky' has started!]</p></div>
+<div class="orv_system"><p>The story 'Path of Breaking the Sky' has started!</p></div>
 <p class="orv_line">It was the power to break the sky, which gave her the name of Breaking the Sky Sword Saint. An indirect message was heard as stories flowed steadily from the Breaking the Sky Sword Saint.</p>
-<div class="orv_system"><p>[The power to break through the sky is favoured by the 'Breaking the Sky Sword Saint'.]</p></div>
-<div class="orv_system"><p>[The strength of Breaking the Sky is opened!]</p></div>
+<div class="orv_system"><p>The power to break through the sky is favoured by the 'Breaking the Sky Sword Saint'.</p></div>
+<div class="orv_system"><p>The strength of Breaking the Sky is opened!</p></div>
 <p class="orv_line">Achilles was astonished by the message.</p>
-<div class="orv_constellation"><p>[A giant who breaks the sky? Don't tell me…!]</p></div>
+<div class="orv_constellation"><p>A giant who breaks the sky? Don't tell me…!</p></div>
 <p class="orv_line">The Breaking the Sky Sword Saint opened her mouth.</p>
-<div class="orv_constellation"><p>[You will have the same fate.]</p></div>
+<div class="orv_constellation"><p>You will have the same fate.</p></div>
 <p class="orv_line">There was a terrible aura flowing from the Breaking the Sky Sword Saint's body. It happened the moment the faltering incarnations stepped back. A large horn sound was heard from somewhere.</p>
-<div class="orv_system"><p>[The nebula 'Olympus' is in full swing!]</p></div>
+<div class="orv_system"><p>The nebula 'Olympus' is in full swing!</p></div>
 <p class="orv_line">In the distance, a ship was coming from the sea. It was Argo.</p>
-<div class="orv_system"><p>[Giant Story 'Fellowship of Heroes' has started!]</p></div>
+<div class="orv_system"><p>Giant Story 'Fellowship of Heroes' has started!</p></div>
 <p class="orv_line">The incarnations discovered a giant ship moving across the water and screamed. It was because they knew who was riding the ship.</p>
 <p class="orv_line">"The heroes! The real heroes are coming!"</p>
 <p class="orv_line">"The constellations of Gigantomachia!"</p>
 <p class="orv_line">The real heroes who fought in Gigantomachia, unlike Achilles, were coming. There were also constellations flying in the sky.</p>
 <p class="orv_line">The narrative-grade constellations of Olympus. It was a power that was not comparable to Achilles.</p>
-<div class="orv_system"><p>[The Star Stream has announced the opening of the new stage.]</p></div>
+<div class="orv_system"><p>The Star Stream has announced the opening of the new stage.</p></div>
 <p class="orv_line">Finally, the Stage Transformation was going to begin. The momentum of the Breaking the Sky Sword Saint started to rise sharply. Achilles regained his courage and laughed at the Breaking the Sky Sword Saint.</p>
-<div class="orv_constellation"><p>[Hahaha! Young giant. You don't know the calamity you have brought! You…!]</p></div>
+<div class="orv_constellation"><p>Hahaha! Young giant. You don't know the calamity you have brought! You…!</p></div>
 <p class="orv_line">However, he couldn't finish his words. It was because someone popped out from another portal and destroyed his head. Achilles collapsed to the ground after his head was burst twice in a row. The man knocked down Achilles and didn't hesitate to cut his heel.</p>
-<div class="orv_system"><p>[The constellation 'Troy's Sorrow' has died in pain.]</p></div>
+<div class="orv_system"><p>The constellation 'Troy's Sorrow' has died in pain.</p></div>
 <p class="orv_line">Achilles' giant body dispersed. Han Sooyoung laughed as she saw the white coat blowing in the wind. "Shit, you should've come quicker."</p>
 <p class="orv_line">Kim Dokja had returned from the Underworld. Kim Dokja sighed lightly and looked at the party members. "Kim Dokja's Company. Are you ready?"</p>
 <p class="orv_line">Kung! Kung! Kung! Kung!</p>
@@ -295,18 +302,12 @@
             <a href="./ch_326"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_328">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="327" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="398" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="326" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="326" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

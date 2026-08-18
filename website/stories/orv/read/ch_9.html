@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 9: Ep. 2 – Protagonist, III</title>
     <meta property="og:title" content="Ch 9: Ep. 2 – Protagonist, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00009.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 9: Ep. 2 – Protagonist, III</h1></div>
 <p class="orv_line">I stared straight into Lee Hyunsung and Han Myungoh's eyes and said, "Do you want to die from that guy beyond the iron door or do you want to try your luck outside the train? Which one will you choose?"</p>
@@ -209,14 +216,14 @@
 <p class="orv_line">"How about other places?"</p>
 <p class="orv_line">"This seems to be the only place where we can escape."</p>
 <p class="orv_line">It was unknown for a child. But the gap was too narrow for men and women to escape. Han Myungoh and Lee Hyunsung tried to pull the doors open but they didn't move a bit.</p>
-<div class="orv_system"><p>[Coins Possessed: 4700 C]</p></div>
+<div class="orv_system"><p>Coins Possessed: 4700 C</p></div>
 <p class="orv_line">One of the uses of the coins was to raise overall stats. I had already used 2,700 coins to make my physique level 10. This problem could be resolved if I used the remaining coins to enhance my strength. But it wasn't wise to use the coins when the situation was unknown. In the end, there was only one way.</p>
 <p class="orv_line">"Lee Hyunsung-ssi. Use a skill."</p>
 <p class="orv_line">"Huh? "Skill…"</p>
-<p class="orv_line">I quietly activated [Character List].</p>
-<div class="orv_system"><p>[The exclusive skill, [Character List] is activated.]</p></div>
+<p class="orv_line">I quietly activated <strong>[Character List]</strong>.</p>
+<div class="orv_system"><p>The exclusive skill, [Character List] is activated.</p></div>
 <div class="orv_window">
-<h3 class="orv_window_title">[Character Summary]</h3>
+<h3 class="orv_window_title">Character Summary</h3>
 <p>Name: Lee Hyunsung</p>
 <p>Age: 28 years old.</p>
 <p>Sponsor: Master of Steel.</p>
@@ -235,26 +242,26 @@
 <p class="orv_line">Lee Hyunsung didn't say anything else as he took a deep breath of determination.</p>
 <div class="orv_image"><img src="../../../assets/images/009 - There was a sound like a huge spring turning and the door started to move.jpg" alt="lee hyusung breaking open the door" loading="lazy"></div>
 <div class="orv_notice"><p>* Official novel illustration (canonical)</p></div>
-<p class="orv_line">"Haaap!" Lee Hyunsung's biceps swelled as he grabbed the door. It was the appearance of [Great Mountain Push]. In fact, [Great Mountain Push] wasn't a skill but a 'stigma'. And a stigma was a power from the constellation. I used the word 'skill' in order to avoid suspicions.</p>
+<p class="orv_line">"Haaap!" Lee Hyunsung's biceps swelled as he grabbed the door. It was the appearance of <strong>[Great Mountain Push]</strong>. In fact, <strong>[Great Mountain Push]</strong> wasn't a skill but a 'stigma'. And a stigma was a power from the constellation. I used the word 'skill' in order to avoid suspicions.</p>
 <p class="orv_line">Dudududu.</p>
 <p class="orv_line">There was a sound like a huge spring turning and the door started to move.</p>
 <p class="orv_line">"What? This guy has real strength!"</p>
 <p class="orv_line">"That's it! It is really great!"</p>
-<div class="orv_system"><p>[The character 'Lee Hyunsung' has started to trust you.]</p></div>
-<div class="orv_system"><p>[Your understanding of the character 'Lee Hyunsung' has increased.]</p></div>
+<div class="orv_system"><p>The character 'Lee Hyunsung' has started to trust you.</p></div>
+<div class="orv_system"><p>Your understanding of the character 'Lee Hyunsung' has increased.</p></div>
 <p class="orv_line">Rather than doubts, my reliability had risen. Lee Hyunsung was a simpler person than I thought.</p>
 <p class="orv_line">"Come on, get off!"</p>
 <p class="orv_line">I felt relieved and handed Lee Gilyoung to Lee Hyunsung. "Lee Hyunsung-ssi. Carry the child on your back."</p>
 <p class="orv_line">"I understand."</p>
 <p class="orv_line">Now the iron door was almost broken. But if my prediction was right, the problem right now wasn't that iron door.</p>
-<div class="orv_constellation"><p>[…Ah, this is really. I knew this would happen. Didn't I see it earlier? I told you not to go anywhere, Damn! The scenario isn't ready yet-]</p></div>
+<div class="orv_constellation"><p>…Ah, this is really. I knew this would happen. Didn't I see it earlier? I told you not to go anywhere, Damn! The scenario isn't ready yet-</p></div>
 <p class="orv_line">The dokkaebi seemed to be angry as it floated over Dongho Bridge.</p>
 <p class="orv_line">"Wahh! I knew this would happen! I told you not to come out!" Han Myungoh wrapped a hand around his head, like he thought it would explode. But there was no need to worry.</p>
-<div class="orv_constellation"><p>[Sigh…it can't be helped. You are really lucky humans.]</p></div>
+<div class="orv_constellation"><p>Sigh…it can't be helped. You are really lucky humans.</p></div>
 <p class="orv_line">It was because the second scenario started the moment the train door was opened.</p>
-<div class="orv_system"><p>[The second scenario has arrived!]</p></div>
+<div class="orv_system"><p>The second scenario has arrived!</p></div>
 <div class="orv_window">
-<h3 class="orv_window_title">[Second Scenario – Escape]</h3>
+<h3 class="orv_window_title">Second Scenario – Escape</h3>
 <p>Category: Sub</p>
 <p>Difficulty: E</p>
 <p>Clear Conditions: Cross the broken bridge and enter Oksu Station.</p>
@@ -278,15 +285,15 @@
 <p class="orv_line">"The bridge is breaking!"</p>
 <p class="orv_line">"Run! If we run then we can cross it!"</p>
 <p class="orv_line">The remaining distance was around 200 metres. If my calculations were correct, we could cross before the bridge collapsed at our current speed.</p>
-<div class="orv_constellation"><p>[There is no fun if the game is too easy.]</p></div>
+<div class="orv_constellation"><p>There is no fun if the game is too easy.</p></div>
 <p class="orv_line">Of course, this was a story for when there were no variables.</p>
-<div class="orv_system"><p>[The scenario difficulty has been adjusted.]</p></div>
-<div class="orv_system"><p>[Scenario difficulty: E -> D]</p></div>
+<div class="orv_system"><p>The scenario difficulty has been adjusted.</p></div>
+<div class="orv_system"><p>Scenario difficulty: E -> D</p></div>
 <p class="orv_line">The sound of the dokkaebi's laughter was heard.</p>
-<div class="orv_constellation"><p>[Is there any fun if you just run away? Let's create a bit of atmosphere!]</p></div>
-<div class="orv_system"><p>[The evil thoughts of the dead have returned.]</p></div>
-<div class="orv_system"><p>[The surrounding earth is filled with black ether.]</p></div>
-<div class="orv_system"><p>[The demonic people have woken up!]</p></div>
+<div class="orv_constellation"><p>Is there any fun if you just run away? Let's create a bit of atmosphere!</p></div>
+<div class="orv_system"><p>The evil thoughts of the dead have returned.</p></div>
+<div class="orv_system"><p>The surrounding earth is filled with black ether.</p></div>
+<div class="orv_system"><p>The demonic people have woken up!</p></div>
 <p class="orv_line">There was the sound of something chasing us from behind. Yoo Sangah muttered to herself.</p>
 <p class="orv_line">"Z-Zombies?"</p>
 <p class="orv_line">Zombie-like bodies were coming in huge waves. Some of them were people from the same carriage as us.</p>
@@ -302,11 +309,11 @@
 <p class="orv_line">"…Dok…ssi…kay?"</p>
 <p class="orv_line">Yoo Sangah and Han Myungoh raised their bodies from a little further away. One of Han Myungoh's legs seemed injured and uncomfortable from the previous quake. Lee Hyunsung and Lee Gilyoung cried out from across the bridge but their voices seemed blocked by the safety zone.</p>
 <p class="orv_line">What should I do? I made plans on the basis of the bridge breaking. But I hadn't expected Han Myungoh and Yoo Sangah to be with me. At that moment, a voice was heard in the air.</p>
-<div class="orv_system"><p>[Someone has received the favour of a constellation.]</p></div>
-<div class="orv_system"><p>[The constellation's scenario 'Deus Ex Machina' has been activated.]</p></div>
+<div class="orv_system"><p>Someone has received the favour of a constellation.</p></div>
+<div class="orv_system"><p>The constellation's scenario 'Deus Ex Machina' has been activated.</p></div>
 <p class="orv_line">Along with the voice, a brilliant bridge made of light was created among the remnants of the broken Dongho Bridge. Then a message floated in front of me.</p>
 <div class="orv_window">
-<h3 class="orv_window_title">[Deus Ex Machina – Even Bridge]</h3>
+<h3 class="orv_window_title">Deus Ex Machina – Even Bridge</h3>
 <p>Description: A bridge of light made by a constellation. Only an 'even' number of people can cross the bridge. The bridge will disappear as soon as an 'odd' number of people tries to cross it.</p>
 </div>
 <p class="orv_line">"Dokja-ssi. This, in my head, suddenly―"</p>
@@ -314,8 +321,8 @@
 <p class="orv_line">"…It is Yoo Sangah-ssi's sponsor."</p>
 <p class="orv_line">I didn't know what constellation it was but somebody had chosen Yoo Sangah as their incarnation and wanted her to live. Deus Ex Machina was a rare phenomenon in Ways of Survival. In addition, Yoo Sangah was a person who should've already died.</p>
 <p class="orv_line">I had a moment of doubt. What type of constellation was behind Yoo Sangah?</p>
-<div class="orv_system"><p>[The information of this person can't be read in 'Character List'.]</p></div>
-<div class="orv_system"><p>[This person isn't registered in 'Character List'.]</p></div>
+<div class="orv_system"><p>The information of this person can't be read in 'Character List'.</p></div>
+<div class="orv_system"><p>This person isn't registered in 'Character List'.</p></div>
 <p class="orv_line">I was a bit surprised. I couldn't see her with my skill? Why? Did she have a special background? Or did she have a mental barrier? But if she had something like that from the beginning…no, wait a minute. Perhaps this was…</p>
 <p class="orv_line">"Dokja-ssi, what do we do now?" I heard Yoo Sangah's bewildered voice. I didn't have much time to think. The Han River was swirling. The ichthyosaur had eaten one bridge leg and was turning its huge body around on the other side of Han River. I bit my lips and once again read the explanation of the bridge.</p>
 <p class="orv_line">Only an 'even' number of people could cross the bridge. In the end, 'Deus Ex Machina' was a toy made by the damn constellations who loved tragedies. There was no way for everyone to survive. Han Myungoh's body was shaking as his eyes met mine. In the end, somebody must die.</p>
@@ -326,18 +333,12 @@
             <a href="./ch_8"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_10">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="9" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="29" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="8" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="8" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

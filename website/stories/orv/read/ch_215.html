@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 215: Ep. 41 - Real Revolutionary, I</title>
     <meta property="og:title" content="Ch 215: Ep. 41 - Real Revolutionary, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00215.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 215: Ep. 41 - Real Revolutionary, I</h1></div>
 <p class="orv_line">At this moment, I thought it was a bit of an overkill. I meant to say something similar but I didn't mean to provoke him so much. Maybe I was too accustomed to giving cider to individual constellations. It was laughable. I wasn't Yoo Joonghyuk and I didn't have anyone giving me coins now.</p>
@@ -197,40 +204,40 @@
 <p class="orv_line">–Ah, he already has a girlfriend.</p>
 <p class="orv_line">…I shouldn't.</p>
 <p class="orv_line">Instead, I looked up at the sky where the light was shining.</p>
-<div class="orv_system"><p>[The constellation 'Nouveau Richer Snake Boss' has jumped exceedingly high.]</p></div>
+<div class="orv_system"><p>The constellation 'Nouveau Richer Snake Boss' has jumped exceedingly high.</p></div>
 <p class="orv_line">This jerk must be pissed off but he couldn't go on a rampage. A low-ranking constellation like the Nouveau Richer Snake Boss didn't have the guts or enough probability to make trouble in the Demon Realm.</p>
-<div class="orv_system"><p>[The constellation 'Nouveau Richer Snake Boss' is furious that a mere incarnation has destroyed him!]</p></div>
+<div class="orv_system"><p>The constellation 'Nouveau Richer Snake Boss' is furious that a mere incarnation has destroyed him!</p></div>
 <p class="orv_line">…What incarnation? Who killed this guy in the original novel? It couldn't be Yoo Joonghyuk…</p>
-<div class="orv_system"><p>[The constellation 'Nouveau Richer Snake Boss' is indignant that a constellation he has never heard of is opposing his will!]</p></div>
-<div class="orv_system"><p>[The constellation 'Nouveau Richer Snake Boss' is looking around for the Demon King of Salvation.]</p></div>
+<div class="orv_system"><p>The constellation 'Nouveau Richer Snake Boss' is indignant that a constellation he has never heard of is opposing his will!</p></div>
+<div class="orv_system"><p>The constellation 'Nouveau Richer Snake Boss' is looking around for the Demon King of Salvation.</p></div>
 <p class="orv_line">This guy didn't know that I was the Demon King of Salvation. Well, it didn't matter. As long as he cared about the Demon King of Salvation, half of my purpose was achieved.</p>
-<div class="orv_quote"><p>「 Kim Dokja thought: I must gather constellations to this channel. This way, I can gain the upper hand in the 'Demon King Selection' which would follow after the Revolutionary Scenario. 」</p></div>
+<div class="orv_quote"><p>Kim Dokja thought: I must gather constellations to this channel. This way, I can gain the upper hand in the 'Demon King Selection' which would follow after the Revolutionary Scenario.</p></div>
 <p class="orv_line">For this to happen, I needed word to spread about this channel. Even so, it was dangerous to blindly recruit constellations. If too many powerful people entered from the beginning, Biyoo would find it hard to handle and it could be troublesome for me.</p>
 <p class="orv_line">At this moment, Nouveau Richer Snake Boss was becoming upset in the channel.</p>
-<div class="orv_system"><p>[The constellation 'Nouveau Richer Snake Boss' starts to question the nearby constellations about the Demon King of Salvation.]</p></div>
-<div class="orv_system"><p>[The constellation 'Nouveau Richer Snake Boss' is surprised to hear the rumours about the Demon King of Salvation.]</p></div>
+<div class="orv_system"><p>The constellation 'Nouveau Richer Snake Boss' starts to question the nearby constellations about the Demon King of Salvation.</p></div>
+<div class="orv_system"><p>The constellation 'Nouveau Richer Snake Boss' is surprised to hear the rumours about the Demon King of Salvation.</p></div>
 <p class="orv_line">He was a low-grade guy among the top people of this world.</p>
-<div class="orv_system"><p>[The constellation 'Nouveau Richer Snake Boss' claims to have seen the Demon King of Salvation.]</p></div>
-<div class="orv_system"><p>[The constellation 'Nouveau Richer Snake Boss' is appealing against the accusations of the constellations pouring towards him.]</p></div>
-<div class="orv_system"><p>[The constellation 'Nouveau Richer Snake Boss' claims to have really seen the Demon King of Salvation.]</p></div>
+<div class="orv_system"><p>The constellation 'Nouveau Richer Snake Boss' claims to have seen the Demon King of Salvation.</p></div>
+<div class="orv_system"><p>The constellation 'Nouveau Richer Snake Boss' is appealing against the accusations of the constellations pouring towards him.</p></div>
+<div class="orv_system"><p>The constellation 'Nouveau Richer Snake Boss' claims to have really seen the Demon King of Salvation.</p></div>
 <p class="orv_line">Therefore, the narrative-grade constellations didn't believe his words. In other words, the story only reached the arrogant lower-grade constellations. It meant the Nouveau Richer Snake Boss was a perfect fit for collecting such constellations.</p>
-<div class="orv_system"><p>[The constellation 'Nouveau Richer Snake Boss' is gathering his gang.]</p></div>
+<div class="orv_system"><p>The constellation 'Nouveau Richer Snake Boss' is gathering his gang.</p></div>
 <p class="orv_line">It was as I expected.</p>
-<div class="orv_system"><p>[New constellations have entered the #BI-90594 channel.]</p></div>
+<div class="orv_system"><p>New constellations have entered the #BI-90594 channel.</p></div>
 <p class="orv_line">If Secretive Plotter was in the same channel, he would've clearly sent me a message of admiration at my ploy. It felt a bit nostalgic.</p>
-<div class="orv_system"><p>[The newly-entered constellations are revealing their modifiers.]</p></div>
-<div class="orv_system"><p>[The constellation 'Nail-Eating Rat' is looking for the fingernails of fallen incarnations.]</p></div>
-<div class="orv_system"><p>[The constellation 'Dog Who Threw Himself into the Flames' is curious about the channel's incarnations.]</p></div>
+<div class="orv_system"><p>The newly-entered constellations are revealing their modifiers.</p></div>
+<div class="orv_system"><p>The constellation 'Nail-Eating Rat' is looking for the fingernails of fallen incarnations.</p></div>
+<div class="orv_system"><p>The constellation 'Dog Who Threw Himself into the Flames' is curious about the channel's incarnations.</p></div>
 <p class="orv_line">Since there was a series of animal modifiers, he really had called his friends. Nail-Eating Rat and Dog Who Threw Himself into the Flames… they were modifiers that I knew were unknown even without looking at Ways of Survival. These bad guys were also constellations.</p>
-<div class="orv_system"><p>[The constellation 'Nouveau Richer Snake Boss' is warning the Demon King of Salvation.]</p></div>
-<div class="orv_system"><p>[The constellation 'Nouveau Richer Snake Boss' declares that this channel has been taken over by the Twelve Zodiacs nebula.]</p></div>
+<div class="orv_system"><p>The constellation 'Nouveau Richer Snake Boss' is warning the Demon King of Salvation.</p></div>
+<div class="orv_system"><p>The constellation 'Nouveau Richer Snake Boss' declares that this channel has been taken over by the Twelve Zodiacs nebula.</p></div>
 <p class="orv_line">…What was this? I had seen the Twelve Zodiacs in passing in Ways of Survival. They were a nebula but they weren't very cohesive. In addition, the majority of members were low-grade constellations. There wouldn't be a problem even if they became hostile to me.</p>
-<div class="orv_quote"><p>「 Kim Dokja thought: First, the number of subscribers has increased. Next would be to sort them. 」</p></div>
+<div class="orv_quote"><p>Kim Dokja thought: First, the number of subscribers has increased. Next would be to sort them.</p></div>
 <p class="orv_line">The larger the channel, the more loaches that obscured the water. Now that I wasn't free to use my status, I needed a constellation to take charge of quality control. It needed to be a constellation with a strong power but was moderately decent. They should be capable of crushing other constellations… where could I find such a person?</p>
 <p class="orv_line">In fact, I already had the answer.</p>
 <p class="orv_line">"Jang Hayoung, what are you doing?"</p>
 <p class="orv_line">Jang Hayoung, who was typing something into the air, glanced at me with surprise.</p>
-<div class="orv_system"><p>[The 'Unidentified Wall' is surprised.]</p></div>
+<div class="orv_system"><p>The 'Unidentified Wall' is surprised.</p></div>
 <p class="orv_line">It seemed he was doing something similar. My eyes narrowed as I said, "You will die if you tell the other constellations about the Demon King of Salvation."</p>
 <p class="orv_line">"I just wanted to boast that I heard the message…"</p>
 <p class="orv_line">"Then you will be punished. The Demon King of Salvation is a very, very scary man."</p>
@@ -245,8 +252,8 @@
 <br>
 <hr>
 <br>
-<div class="orv_system"><p>[The constellation 'Nouveau Richer Snake Boss' is looking for a place to relieve his anger.]</p></div>
-<div class="orv_system"><p>[The constellation 'Nail-Eating Rat' is curious about you.]</p></div>
+<div class="orv_system"><p>The constellation 'Nouveau Richer Snake Boss' is looking for a place to relieve his anger.</p></div>
+<div class="orv_system"><p>The constellation 'Nail-Eating Rat' is curious about you.</p></div>
 <p class="orv_line">The indirect messages appeared in the air one after another. Duke Syswitz listened to the messages for a while before opening his mouth with a frown.</p>
 <p class="orv_line">"Gather all the nobles at Night."</p>
 <p class="orv_line">"Huh? But… U-Understood!"</p>
@@ -287,7 +294,7 @@
 <p class="orv_line">I hesitated for a moment. This choice was very important. If I made a bad choice, my hard-earned channel could become ruined in an instant. I thought for a moment before slowly opening my mouth. "I'd like to call somebody."</p>
 <p class="orv_line">"Huh? Who?"</p>
 <p class="orv_line">I hesitated to reply. I wasn't sure if my choice was correct or not.</p>
-<div class="orv_quote"><p>「 Kim Dokja thought: The one I will call now is beyond my control. 」</p></div>
+<div class="orv_quote"><p>Kim Dokja thought: The one I will call now is beyond my control.</p></div>
 <p class="orv_line">It was really hard to get here. A damn scenario was a scenario but the ones who really bothered me were the constellations. Those who wanted the bounty scenario were easy. When I thought about it, I came to the Demon Realm because of my fate.</p>
 <p class="orv_line">Even now, I couldn't sleep when thinking of that time. After all these efforts, I came to this distant stage and opened a new channel. Now should I call one of them to this place…?</p>
 <br>
@@ -297,18 +304,12 @@
             <a href="./ch_214"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_216">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="215" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="214" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="214" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="214" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

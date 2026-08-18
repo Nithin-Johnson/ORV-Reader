@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 68: Ep. 14 – Master of the Throne, IV</title>
     <meta property="og:title" content="Ch 68: Ep. 14 – Master of the Throne, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00068.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 68: Ep. 14 – Master of the Throne, IV</h1></div>
 <p class="orv_line">The one-eyed man approached us. This was my first meeting with one of Seoul's Seven Kings.</p>
@@ -205,7 +212,7 @@
 <p class="orv_line">"What happened?"</p>
 <p class="orv_line">"Do I need to say it? Here."</p>
 <p class="orv_line">The one-eyed man pointed to his staff. There was a blue jewel available from the Big Dipper embedded on it.</p>
-<div class="orv_system"><p>[Greedy Wolf Star.]</p></div>
+<div class="orv_system"><p>Greedy Wolf Star.</p></div>
 <p class="orv_line">The long-haired man admired it.</p>
 <p class="orv_line">"Ohh…!"</p>
 <p class="orv_line">Wasn't he quite good? Already gaining one star jewel…</p>
@@ -219,9 +226,9 @@
 <p class="orv_line">"I am Cha Sangkyung."</p>
 <p class="orv_line">"I am Kim Dokja."</p>
 <p class="orv_line">I shook his hand while activating a skill.</p>
-<div class="orv_system"><p>[The exclusive skill, Character List is activated.]</p></div>
+<div class="orv_system"><p>The exclusive skill, Character List is activated.</p></div>
 <div class="orv_window">
-<h3 class="orv_window_title">[Character Summary]</h3>
+<h3 class="orv_window_title">Character Summary</h3>
 <p>Name: Cha Sangkyung</p>
 <p>Age: 26 years old</p>
 <p>Sponsor: One-eyed Maitreya</p>
@@ -235,13 +242,13 @@
 <p class="orv_line">Cha Sangkyung said, "I have a burden of seeing things. Can I look at you once?"</p>
 <p class="orv_line">"Yes."</p>
 <p class="orv_line">Yes, he could try.</p>
-<div class="orv_system"><p>[The character 'Cha Sangkyung' has used Law of Interest Lv. 2!]</p></div>
+<div class="orv_system"><p>The character 'Cha Sangkyung' has used Law of Interest Lv. 2!</p></div>
 <p class="orv_line">The stigma 'Law of Interest' was quite interesting among the investigation techniques in Ways of Survival. It didn't reveal the attributes window of the opponent but it was a skill that roughly gave information about the personality of the opponent. In other words, he would see a 'Easily fooled Demonic Enemy' if the person was 'good', while he would see a 'Back-stabbing Demonic Enemy' if the person was 'bad'. For example…</p>
-<div class="orv_system"><p>[The character 'Cha Sangkyung' has discovered that you are a demonic enemy that shouldn't be touched.]</p></div>
+<div class="orv_system"><p>The character 'Cha Sangkyung' has discovered that you are a demonic enemy that shouldn't be touched.</p></div>
 <p class="orv_line">It was like this.</p>
 <p class="orv_line">"T-This?"</p>
 <p class="orv_line">"King, why are you acting like this?"</p>
-<div class="orv_system"><p>[The character 'Cha Sangkyung' is greatly disturbed.]</p></div>
+<div class="orv_system"><p>The character 'Cha Sangkyung' is greatly disturbed.</p></div>
 <p class="orv_line">Cha Sangkyung shouted with a pale face.</p>
 <p class="orv_line">"D-Demonic enemy!"</p>
 <p class="orv_line">"Huh? It can't be…"</p>
@@ -263,9 +270,9 @@
 <p class="orv_line">"Oh, I haven't introduced myself yet. I am Han Sooyoung. I am Cha Sangkyung's assistant."</p>
 <p class="orv_line">A man who supported the incarnation of Gung Ye. It was highly likely that he was attached to Gung Ye's side because of his sponsor.</p>
 <p class="orv_line">Who was it? Perhaps it was a king? I immediately used a skill.</p>
-<div class="orv_system"><p>[The exclusive skill, Character List is activated.]</p></div>
-<div class="orv_system"><p>[The information of this person can't be read in 'Character List'.]</p></div>
-<div class="orv_system"><p>[This person isn't registered in 'Character List'.]</p></div>
+<div class="orv_system"><p>The exclusive skill, Character List is activated.</p></div>
+<div class="orv_system"><p>The information of this person can't be read in 'Character List'.</p></div>
+<div class="orv_system"><p>This person isn't registered in 'Character List'.</p></div>
 <p class="orv_line">…What?</p>
 <p class="orv_line">"Um? What's wrong?"</p>
 <p class="orv_line">I looked at the shamelessly speaking Han Sooyoung and couldn't help laughing. I see… now I knew who this person was.</p>
@@ -297,8 +304,8 @@
 <p class="orv_line">The situation would be similar in other areas, not just the Seoul Dome.</p>
 <p class="orv_line">In Japan, there would be a competition between the three heroes including Oda Nobunaga. In the UK, there would be a competition between Richard the Lionheart or Henry VIII.</p>
 <p class="orv_line">The world's greatest constellations would be preparing for a war over the Absolute Throne, raising their synchronization with their incarnation to a breathtaking level.</p>
-<div class="orv_system"><p>[The constellation 'Maritime War God' is expecting the appearance of a new story class constellation.]</p></div>
-<div class="orv_system"><p>[The constellation 'Bald General of Justice' is watching the situation with sweaty hands.]</p></div>
+<div class="orv_system"><p>The constellation 'Maritime War God' is expecting the appearance of a new story class constellation.</p></div>
+<div class="orv_system"><p>The constellation 'Bald General of Justice' is watching the situation with sweaty hands.</p></div>
 <p class="orv_line">The other high-ranking constellations were also interested. It was natural. As I said before, the fourth scenario was an event for the greatest constellations of each country.</p>
 <p class="orv_line">"Is everyone gathered?"</p>
 <p class="orv_line">The kings soon gathered in the middle and gave a speech.</p>
@@ -354,18 +361,12 @@
             <a href="./ch_67"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_69">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="68" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="170" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="67" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="67" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

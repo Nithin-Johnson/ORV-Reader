@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 118: Ep. 23 - Abandoned World, III</title>
     <meta property="og:title" content="Ch 118: Ep. 23 - Abandoned World, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00118.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 118: Ep. 23 - Abandoned World, III</h1></div>
 <p class="orv_line">There was no room for disagreement. For him, the representatives selection wasn't a subject of discussion but a presentation.</p>
@@ -204,7 +211,7 @@
 <p class="orv_line">The faces of the kings became tense. Yoo Joonghyuk truly was great. Taking the reigns of power so easily…</p>
 <p class="orv_line">The kings quickly fell from the 'picking' position to 'being picked'. I grabbed a beef jerky from the table and waited for Yoo Joonghyuk's words.</p>
 <p class="orv_line">Min Jiwon stared blankly from next to me.</p>
-<div class="orv_quote"><p>「 How can you be so calm? 」</p></div>
+<div class="orv_quote"><p>How can you be so calm?</p></div>
 <p class="orv_line">I'm sorry but I was in a different situation from them. It was because I was someone Yoo Joonghyuk recognized as a 'companion'. He threatened me by saying that the oath was over but he did acknowledge me.</p>
 <p class="orv_line">Yoo Joonghyuk opened his mouth. "The first one will naturally be me."</p>
 <p class="orv_line">Well, it was obvious. How could he not be on a list created by himself? Behind Yoo Joonghyuk, the rest of his party members had appeared. Lee Jihye and Lee Seolhwa.</p>
@@ -215,9 +222,9 @@
 <p class="orv_line">…Still, it was a bit annoying.</p>
 <p class="orv_line">"The third is Lee Seolhwa." Lee Seolhwa nodded and came forward.</p>
 <p class="orv_line">Every time a person's name was called, the faces of the kings darkened. They all felt an ominous feeling. Yoo Joonghyuk's list was a fixed list.</p>
-<div class="orv_quote"><p>「 There are seven people remaining. We still have a chance. 」</p></div>
-<div class="orv_quote"><p>「 The Supreme King only has three party members. He will have to choose other people. 」</p></div>
-<div class="orv_quote"><p>「 We are the strongest among the remaining people… 」</p></div>
+<div class="orv_quote"><p>There are seven people remaining. We still have a chance.</p></div>
+<div class="orv_quote"><p>The Supreme King only has three party members. He will have to choose other people.</p></div>
+<div class="orv_quote"><p>We are the strongest among the remaining people…</p></div>
 <p class="orv_line">I could tell by their faces what they were thinking. Me? Of course, I wasn't worried. I would naturally be on the list. Maybe I would be next…</p>
 <p class="orv_line">"The fourth one is Lee Hyunsung."</p>
 <p class="orv_line">…What? Lee Hyunsung became pale as his name was called.</p>
@@ -234,7 +241,7 @@
 <p class="orv_line">…Then what about me? Why was he looking at me like that? I belatedly chased after him but Yoo Joonghyuk was already gone. How long did I stand there?</p>
 <p class="orv_line">Jung Heewon stood in the distance and asked me carefully. "Weren't the two of you friendly?"</p>
 <p class="orv_line">I thought so.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is laughing with delight.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is laughing with delight.</p></div>
 <p class="orv_line">Lee Jihye also added in a strange tone. "Ahjussi, didn't you meet with Master last night? I thought you would be the first on the list…"</p>
 <p class="orv_line">"What do you mean?"</p>
 <p class="orv_line">"Last night Master said he was going to see you?"</p>
@@ -245,9 +252,9 @@
 <p class="orv_line">"Angry?"</p>
 <p class="orv_line">"You know that look Master makes when he is angry. Like he is contemptuous of a person…"</p>
 <p class="orv_line">I pondered on the memories of that time. What was I doing right before I went to the Underworld? Ah, yes. A memory came to mind. At that time, I was drinking with Yoo Sangah. Dionysus poured alcohol and made the atmosphere strange, then… uh…um.</p>
-<div class="orv_system"><p>[The constellation 'God of Wine and Ecstasy' is making a playful expression.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is laughing with delight.]</p></div>
-<div class="orv_system"><p>[500 coins have been sponsored.]</p></div>
+<div class="orv_system"><p>The constellation 'God of Wine and Ecstasy' is making a playful expression.</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is laughing with delight.</p></div>
+<div class="orv_system"><p>500 coins have been sponsored.</p></div>
 <p class="orv_line">I felt a bit complicated as I explained what happened. The party members looked surprised. Jung Heewon stared at me with narrowed eyes.</p>
 <p class="orv_line">"…You kissed Yoo Sangah-ssi?"</p>
 <p class="orv_line">"No, that's not it… what did you hear?"</p>
@@ -260,22 +267,22 @@
 <p class="orv_line">"Even if Yoo Joonghyuk-ssi witnessed Dokja-ssi's kiss scene, I don't think there is a reason to feel angry…"</p>
 <p class="orv_line">"It wasn't a kiss." I grumbled and Lee Jihye exclaimed with a smile.</p>
 <p class="orv_line">"Ah! I think I know…"</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' says it is a companionship.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' says it is a companionship.</p></div>
 <p class="orv_line">Jung Heewon cocked her head. "…Companionship?"</p>
 <p class="orv_line">Lee Jihye dealt a big blow. "What is Unni's sponsor? They think it is just companionship?"</p>
 <p class="orv_line">"What do you mean?"</p>
 <p class="orv_line">"Companions, I think I understand." Lee Hyunsung unexpectedly interrupted. "Come to think of it, I would also feel offended if I saw Kim Dokja doing that."</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' has snorted at the unexpected remark.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' has snorted at the unexpected remark.</p></div>
 <p class="orv_line">"…Yes? Why would Hyunsung-ssi feel bad?" Lee Jihye looked like she was going to get a nosebleed.</p>
 <p class="orv_line">Lee Hyunsung's expression was serious. I was nervous about what bombshell words Lee Hyunsung would say. "We are risking our lives in every scenario. Yoo Joonghyuk-ssi trains his body every morning to prepare for the following scenarios. He trains severely every day to protect his companions."</p>
 <p class="orv_line">"…Huh?" Lee Jihye made a strange expression at the unexpected answer. Jung Heewon listened to Lee Hyunsung's words with a doubtful expression.</p>
 <p class="orv_line">"If a companion is blinded by sexual desire in such a situation then I would be in a bad mood. I would also feel betrayed. Yoo Joonghyuk might not be a soldier but he is a very austere person. Such a person would react sensitively when people aren't disciplined. It would feel like their priorites are wrong."</p>
 <p class="orv_line">"Um… it make sense." Jung Heewon agreed.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is disappointed with her incarnation.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' resents Lee Hyunsung's wrong companionship.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is disappointed with her incarnation.</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' resents Lee Hyunsung's wrong companionship.</p></div>
 <p class="orv_line">I heard Lee Hyunsung's words and thought it was true. A scene from Ways of Survival suddenly came to mind. I opened the text, searched Yoo Joonghyuk's third regression and was able to find evidence.</p>
-<div class="orv_quote"><p>「 Pathetic person. You sell yourself to women with one glance. 」</p></div>
-<div class="orv_quote"><p>「 Those with strong sexual desires are excluded from my list of companions. It is easy for them to make mistakes. 」</p></div>
+<div class="orv_quote"><p>Pathetic person. You sell yourself to women with one glance.</p></div>
+<div class="orv_quote"><p>Those with strong sexual desires are excluded from my list of companions. It is easy for them to make mistakes.</p></div>
 <p class="orv_line">It was really unfair if Yoo Joonghyuk had actually misunderstood me. It wasn't even a kiss. Damn, I couldn't tell him it was a misunderstanding now…</p>
 <p class="orv_line">"Kim Dokja-ssi? We want to pick the rest of the people." Min Jiwon suddenly approached me.</p>
 <p class="orv_line">I looked back and saw the other kings watching me.</p>
@@ -321,18 +328,12 @@
             <a href="./ch_117"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_119">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="118" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="355" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="117" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="117" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

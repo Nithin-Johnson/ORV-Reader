@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 426: Ep. 80 - Our greatest ally, IV</title>
     <meta property="og:title" content="Ch 426: Ep. 80 - Our greatest ally, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,37 +177,37 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00426.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 426: Ep. 80 - Our greatest ally, IV</h1></div>
 <p class="orv_line">Only I know the end of the Journey to the West?</p>
 <p class="orv_line">Where have I heard of that introduction before?</p>
 <p class="orv_line">I decided to enter and confirm the situation of this chamber first.</p>
-<div class="orv_system"><p>['Player 8' -nim has entered the 6731st Story chamber's waiting area.]</p></div>
+<div class="orv_system"><p>'Player 8' -nim has entered the 6731st Story chamber's waiting area.</p></div>
 <p class="orv_line">Thankfully, it seemed that their Story hadn't started yet. But then again, they shouldn't be able to start without the role for Sun Wukong filled up, so there was that, too.</p>
 <p class="orv_line">After I entered the chamber, the surroundings changed and a large round desk suddenly materialised.</p>
 <p class="orv_line">Square chat windows were floating above the desk's chairs, rather than actual people. They signified the participants playing the other roles.</p>
-<div class="orv_system"><p>[Player 1 has currently selected the role of 'Zhu Bajie'.]</p></div>
-<div class="orv_system"><p>[Player 2 has currently selected the role of 'Sha Wujing'.]</p></div>
-<div class="orv_system"><p>[Player 6 has currently selected the role of 'Tang Sanzang's White Horse'.]</p></div>
+<div class="orv_system"><p>Player 1 has currently selected the role of 'Zhu Bajie'.</p></div>
+<div class="orv_system"><p>Player 2 has currently selected the role of 'Sha Wujing'.</p></div>
+<div class="orv_system"><p>Player 6 has currently selected the role of 'Tang Sanzang's White Horse'.</p></div>
 <p class="orv_line">The faces of the players were all obscured by question marks. It seemed that this was done in order to protect the personal information of the actual players.</p>
 <p class="orv_line">Okay, but never mind that for now… There were so many players here, yet no one had selected the role of 'Sun Wukong' yet?</p>
 <p class="orv_line">– Player 8: Hello, everyone.</p>
@@ -216,7 +223,7 @@
 <p class="orv_line">Just as I was getting worried about if it'd be okay to have someone like this guy as the scenario's master, a message popped up with a suspiciously good timing as if its sender had read my mind.</p>
 <p class="orv_line">– Scenario Master: me know that genre inside out. No worries 'bout scenario 'qual'.</p>
 <p class="orv_line">Yup, it was just so hard to trust anyone with that type of grammar. Still, I decided to test a couple of things out anyway.</p>
-<p class="orv_line">– Player 8: I'd like ask you about the chamber's title. That [I've become the retired SSSSS-grade Sun Wukong].</p>
+<p class="orv_line">– Player 8: I'd like ask you about the chamber's title. That <strong>[I've become the retired SSSSS-grade Sun Wukong]</strong>.</p>
 <p class="orv_line">– Scenario Master: yup me responsible.</p>
 <p class="orv_line">– Player 8: Why are there five 'S' letters?</p>
 <p class="orv_line">– Scenario Master: need that many to attract aggro.</p>
@@ -235,7 +242,7 @@
 <p class="orv_line">…Would you look at this guy?</p>
 <p class="orv_line">At a glance, he might seem to be yapping on whatever came up into his mind, but well, what he said just now was not wrong.</p>
 <p class="orv_line">More often than not, the ones to take the top spot at times like this would be stories featuring the traditional heroes.</p>
-<p class="orv_line">For instance, Fei Hu's [The Real Journey to the West] featured Sun Wukong as its main protagonist.</p>
+<p class="orv_line">For instance, Fei Hu's <strong>[The Real Journey to the West]</strong> featured Sun Wukong as its main protagonist.</p>
 <p class="orv_line">– Player 8: Is that why you went with 'retired Sun Wukong'?</p>
 <p class="orv_line">– Scenario Master: yup yup</p>
 <p class="orv_line">– Player 8: What will the retired Sun Wukong be doing?</p>
@@ -245,23 +252,23 @@
 <p class="orv_line">I was in a dilemma.</p>
 <p class="orv_line">– Scenario Master: If you're not, hurry and leave. We don't have much time. No answer in next 5 sec, and I eject you.</p>
 <p class="orv_line">I was kind of curious about how would a retired Sun Wukong work as a protagonist, too…</p>
-<div class="orv_system"><p>[The 4th Story chamber list will close in five minutes!]</p></div>
+<div class="orv_system"><p>The 4th Story chamber list will close in five minutes!</p></div>
 <p class="orv_line">I'd be cutting it too fine if I were to search for another chamber now.</p>
 <p class="orv_line">Dammit, I don't have a choice here.</p>
 <p class="orv_line">Regardless of what kind of scenario it was, as long as I do my best, it'd be fine, right?</p>
 <p class="orv_line">– Player 8: I'm in.</p>
 <p class="orv_line">– Scenario Master: Hmm. Then my turn to ask questions.</p>
 <p class="orv_line">– Player 8: Regarding?</p>
-<div class="orv_system"><p>[Scenario Master wishes to confirm your details.]</p></div>
-<div class="orv_system"><p>[Please select the information you wish to reveal.]</p></div>
+<div class="orv_system"><p>Scenario Master wishes to confirm your details.</p></div>
+<div class="orv_system"><p>Please select the information you wish to reveal.</p></div>
 <p class="orv_line">He wants to view my information?</p>
 <p class="orv_line">– Player 8: Is it really necessary?</p>
 <p class="orv_line">– Scenario Master: Just wanna know your name.</p>
 <p class="orv_line">…My name, was it?</p>
 <p class="orv_line">I decided to reveal some of my info.</p>
-<div class="orv_system"><p>[Player 8-nim is a 'Constellation'.]</p></div>
-<div class="orv_system"><p>[Player 8-nim's Modifier is the 'Watcher of Light and Darkness'.]</p></div>
-<div class="orv_system"><p>[The applicable information is made available only to the 'Scenario Master'.]</p></div>
+<div class="orv_system"><p>Player 8-nim is a 'Constellation'.</p></div>
+<div class="orv_system"><p>Player 8-nim's Modifier is the 'Watcher of Light and Darkness'.</p></div>
+<div class="orv_system"><p>The applicable information is made available only to the 'Scenario Master'.</p></div>
 <p class="orv_line">The Scenario Master didn't respond for a while.</p>
 <p class="orv_line">Heh, he must've been shocked by what he saw.</p>
 <p class="orv_line">– Scenario Master: Ehng? You were a Constellation-nim? But, why here in a low-rent chamber?</p>
@@ -271,36 +278,36 @@
 <p class="orv_line">– Player 8: The real fun is in raising an unpopular Story from ground-up, wouldn't you agree?</p>
 <p class="orv_line">– Scenario Master: BTW, what's up with the dumpling?</p>
 <p class="orv_line">…Dumpling?</p>
-<div class="orv_system"><p>[You're currently accompanied by your pet 'Murim dumpling'.]</p></div>
+<div class="orv_system"><p>You're currently accompanied by your pet 'Murim dumpling'.</p></div>
 <p class="orv_line">Dammit, I forgot that this guy was here with me.</p>
 <p class="orv_line">– Scenario Master: But, we ain't got no roles for pets, tho?</p>
 <p class="orv_line">– Player 8: It's just a dumpling. It's not even strictly a pet per se.</p>
 <p class="orv_line">– Scenario Master: Hmm, it's a bit awkward, innit. Your opinions, pls?</p>
 <p class="orv_line">Surprisingly enough, the Scenario Master actually went and asked for the opinions of other players.</p>
-<div class="orv_system"><p>[Player 1-nim says that 'It's fine if it's a Murim dumpling'.]</p></div>
-<div class="orv_system"><p>[Player 4-nim says that 'Master should do whatever takes their fancy'.]</p></div>
-<div class="orv_system"><p>[Player 3-nim says that 'I want to play this game right now'.]</p></div>
+<div class="orv_system"><p>Player 1-nim says that 'It's fine if it's a Murim dumpling'.</p></div>
+<div class="orv_system"><p>Player 4-nim says that 'Master should do whatever takes their fancy'.</p></div>
+<div class="orv_system"><p>Player 3-nim says that 'I want to play this game right now'.</p></div>
 <p class="orv_line">Thankfully, other players didn't object.</p>
 <p class="orv_line">–Scenario Master: ok we doing it so might as well ask for Murim-type ppl</p>
 <p class="orv_line">– Player 8: Thank you.</p>
 <p class="orv_line">– Scenario Master: see ya</p>
 <p class="orv_line">A short while later, the countdown began.</p>
 <p class="orv_line">5, 4, 3, 2, 1…</p>
-<div class="orv_system"><p>[Story chamber, 'I've become the retired SSSSS-grade Sun Wukong' has begun its storytelling!]</p></div>
-<div class="orv_system"><p>[This Story chamber's plot will follow the one set out by the Scenario Master.]</p></div>
-<div class="orv_system"><p>[The main plotline of the Story Chamber can be interfered with by the judges or the audience.]</p></div>
-<div class="orv_system"><p>['The Journey to the West Remake' will commence!]</p></div>
+<div class="orv_system"><p>Story chamber, 'I've become the retired SSSSS-grade Sun Wukong' has begun its storytelling!</p></div>
+<div class="orv_system"><p>This Story chamber's plot will follow the one set out by the Scenario Master.</p></div>
+<div class="orv_system"><p>The main plotline of the Story Chamber can be interfered with by the judges or the audience.</p></div>
+<div class="orv_system"><p>'The Journey to the West Remake' will commence!</p></div>
 <p class="orv_line">Bright light dyed my vision ash-grey next.</p>
 <p class="orv_line">⸨I've become the retired SSSSS-grade Sun Wukong⸩</p>
 <p class="orv_line">Letters appeared in a stylish manner from the darkness.</p>
 <p class="orv_line">And so, I had become this story's main character, 'Sun Wukong', and would participate in this play from now on. Honestly speaking, my heart was palpitating just a bit.</p>
 <p class="orv_line">To think, I'd really become the protagonist of an actual story…</p>
 <p class="orv_line">⸢Kim Dok ja cou nting chi ckens alr eady.⸥</p>
-<p class="orv_line">Along with [The Fourth Wall]'s voice entering my head, messages floated up before my eyes.</p>
-<div class="orv_system"><p>[Prologue is starting.]</p></div>
-<div class="orv_system"><p>[Prologue will be told through a flashback sequence.]</p></div>
-<div class="orv_system"><p>[During the applicable section, players can only speak the assigned dialogue.]</p></div>
-<div class="orv_system"><p>[Scenario Master's narration is now commencing.]</p></div>
+<p class="orv_line">Along with <strong>[The Fourth Wall]</strong>'s voice entering my head, messages floated up before my eyes.</p>
+<div class="orv_system"><p>Prologue is starting.</p></div>
+<div class="orv_system"><p>Prologue will be told through a flashback sequence.</p></div>
+<div class="orv_system"><p>During the applicable section, players can only speak the assigned dialogue.</p></div>
+<div class="orv_system"><p>Scenario Master's narration is now commencing.</p></div>
 <p class="orv_line">Finally, a voice came from beyond the darkness next.</p>
 <p class="orv_line">(At the end of the lengthy travel alongside Sanzang's company, Sun Wukong had eventually arrived in the Western Regions and succeeded in obtaining the sacred Buddhist texts.)</p>
 <p class="orv_line">Oh, so it's begun.</p>
@@ -331,8 +338,8 @@
 <p class="orv_line">"What?"</p>
 <div class="orv_quote"><p>Exploit your companions to the fullest, and become an existence that does not save anyone. Indeed, you shall become a 'Demon King' that only lives for himself.</p></div>
 <p class="orv_line">Right then, blinding rays of light exploded out from the sacred texts.</p>
-<div class="orv_system"><p>[Flashback sequence has concluded.]</p></div>
-<div class="orv_system"><p>[The play will begin in earnest!]</p></div>
+<div class="orv_system"><p>Flashback sequence has concluded.</p></div>
+<div class="orv_system"><p>The play will begin in earnest!</p></div>
 <p class="orv_line">It seemed that the story up until here was all a part of the prologue. Which meant that the real episode would start from now. As if it was waiting for this moment, the words 'Episode 1' floated up to the view.</p>
 <p class="orv_line">And I grandly freaked out next.</p>
 <p class="orv_line">~Episode 1. The Demon King of Salvation~</p>
@@ -345,17 +352,17 @@
 <p class="orv_line">N-no, hang on a minute here.</p>
 <p class="orv_line">(The heaven's Great Jade Emperor and Buddha felt that they could no longer accept such actions from Sun Wukong anymore and imprisoned the Monkey King inside the stone crate under the Marble Mountain.)</p>
 <p class="orv_line">(And our story starts from there.)</p>
-<div class="orv_system"><p>[Judge, 'King of Stone Monkeys', likes this particular backstory.]</p></div>
-<div class="orv_system"><p>[Portion of judges have awarded points for the plot that mirrors the current trend.]</p></div>
-<div class="orv_system"><p>[2 points have been awarded.]</p></div>
+<div class="orv_system"><p>Judge, 'King of Stone Monkeys', likes this particular backstory.</p></div>
+<div class="orv_system"><p>Portion of judges have awarded points for the plot that mirrors the current trend.</p></div>
+<div class="orv_system"><p>2 points have been awarded.</p></div>
 <p class="orv_line">My attention was drawn to the 'mirroring the current trend' message. Ahh, so could this be the reason?</p>
-<div class="orv_system"><p>[First episode has begun.]</p></div>
-<div class="orv_system"><p>[Unrestricted speech section has begun.]</p></div>
-<div class="orv_system"><p>[Do your best to create an interesting and enjoyable Story by acting according to your role.]</p></div>
+<div class="orv_system"><p>First episode has begun.</p></div>
+<div class="orv_system"><p>Unrestricted speech section has begun.</p></div>
+<div class="orv_system"><p>Do your best to create an interesting and enjoyable Story by acting according to your role.</p></div>
 <p class="orv_line">I shuddered greatly and regained my wits. Chills crept up from various parts of my body, and my back hurt like crazy as well. I heard the noises of pitch-black soil fall around me. My current situation was that only my head was peeking out from beneath the mountain.</p>
-<div class="orv_system"><p>[Currently, you're sealed under the Five Elements Mountain.]</p></div>
+<div class="orv_system"><p>Currently, you're sealed under the Five Elements Mountain.</p></div>
 <p class="orv_line">Well, it seemed that I was currently being squashed flat by the Five Elements Mountain.</p>
-<div class="orv_system"><p>[Audiences are curious about what your reaction will be.]</p></div>
+<div class="orv_system"><p>Audiences are curious about what your reaction will be.</p></div>
 <p class="orv_line">(Scenario Master is urging you to say something fitting your role.)</p>
 <p class="orv_line">This was the very first scene after the MC had just finished regressing.</p>
 <p class="orv_line">Since I saw this situation appearing frequently in genre novels, I figured that I'd be rather familiar with what to say here, but after finding myself in those characters' shoes, I couldn't even imagine what to say anymore.</p>
@@ -364,11 +371,11 @@
 <p class="orv_line">Obviously, no normal, sane-minded person would be talking to himself like this.</p>
 <p class="orv_line">"…Five Elements Mountain?! Holy cow, did I really regress?"</p>
 <p class="orv_line">So, I couldn't help but get shocked at myself capable of muttering out such lines with ease.</p>
-<div class="orv_system"><p>[Audiences now understand your current situation.]</p></div>
+<div class="orv_system"><p>Audiences now understand your current situation.</p></div>
 <p class="orv_line">(Scenario Master is nodding their head in approval of your instincts for dialogue.)</p>
 <p class="orv_line">(Scenario Master has acknowledged you.)</p>
 <p class="orv_line">Goddammit. I wanted to hide in a hole so bad right now.</p>
-<div class="orv_system"><p>[Portion of the audience is waiting in anticipation for the next scene.]</p></div>
+<div class="orv_system"><p>Portion of the audience is waiting in anticipation for the next scene.</p></div>
 <p class="orv_line">I recalled the Journey to the West's plot points.</p>
 <p class="orv_line">According to the original, Sun Wukong was supposed to wait for 500 years below the Five Element Mountain. And so, five minutes passed by, then ten after that.</p>
 <p class="orv_line">…E-eiii, there's no way, right?</p>
@@ -379,7 +386,7 @@
 <p class="orv_line">(The memories of that day, when he first met Tang Sanzang.)</p>
 <p class="orv_line">(Sun Wukong was lost within the rose-tinted reminiscence.)</p>
 <p class="orv_line">Chills slowly crept down my back now.</p>
-<p class="orv_line">That faintest sense of deja vu I felt earlier was now gradually becoming reality. [The Fourth Wall], buzzing noisily, then asked me.</p>
+<p class="orv_line">That faintest sense of deja vu I felt earlier was now gradually becoming reality. <strong>[The Fourth Wall]</strong>, buzzing noisily, then asked me.</p>
 <p class="orv_line">⸢Y ou re ally d idn't kn ow?⸥</p>
 <p class="orv_line">I couldn't answer back.</p>
 <p class="orv_line">That suspicion I had when I saw those five 'S' letters; even though I believed it couldn't be possible, a part of my heart still hoped against hope.</p>
@@ -396,18 +403,12 @@
             <a href="./ch_425"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_427">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="426" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="480" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="425" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="425" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 228: Ep. 43 - Breaking the Sky Sword Saint, II</title>
     <meta property="og:title" content="Ch 228: Ep. 43 - Breaking the Sky Sword Saint, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,32 +177,32 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00228.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 228: Ep. 43 - Breaking the Sky Sword Saint, II</h1></div>
-<div class="orv_constellation"><p>[Who is… the industrial complex's… new master?]</p></div>
+<div class="orv_constellation"><p>Who is… the industrial complex's… new master?</p></div>
 <p class="orv_line">The colossal voice was heard and Yoo Joonghyuk and I simultaneously looked out the window. Judging by the noisy streets, the use of a true voice was quite tough. Yoo Joonghyuk muttered in a small voice, "A constellation of Papyrus."</p>
 <p class="orv_line">"If it is the Last Pharaoh, it is probably that woman?"</p>
 <p class="orv_line">A giant mummy with an old, golden crown. Everything was covered with bandages apart from the high nose. It was just like what I read in Ways of Survival. It was clear that the body belonged to Cleopatra, the last pharaoh of Egypt.</p>
-<div class="orv_constellation"><p>[Who… is… Yoo Joonghyuk?]</p></div>
+<div class="orv_constellation"><p>Who… is… Yoo Joonghyuk?</p></div>
 <p class="orv_line">Once again, the true voice rang out through the industrial complex. It was certainly great but neither of us were discouraged. Cleopatra was a historical-grade constellation at most. Yoo Joonghyuk and I were no longer nervous regarding great constellations.</p>
 <p class="orv_line">"Yoo Joonghyuk. Can you win?"</p>
 <p class="orv_line">It was an opponent I couldn't afford to go against while I currently had story packs hanging from my body. Yoo Joonghyuk shook his head. "It is impossible right now. It will soon be time."</p>
@@ -212,17 +219,17 @@
 <p class="orv_line">"Kim Dokja. You have already forgotten what they have done."</p>
 <p class="orv_line">"What?"</p>
 <p class="orv_line">Before Yoo Joonghyuk could answer, I heard Cleopatra's voice in the air.</p>
-<div class="orv_constellation"><p>[Tell the… new ruler of the industrial complex. He will surely die… if he participates in the Demon King Selection.]</p></div>
+<div class="orv_constellation"><p>Tell the… new ruler of the industrial complex. He will surely die… if he participates in the Demon King Selection.</p></div>
 <p class="orv_line">Cleopatra's body started to disappear with these words. Like a massive sand castle collapsing, the body returned to dust.</p>
-<div class="orv_constellation"><p>[Keep this in mind… Papyrus will never… warn you twice.]</p></div>
+<div class="orv_constellation"><p>Keep this in mind… Papyrus will never… warn you twice.</p></div>
 <p class="orv_line">Then why are you leaving so gently? It was strange. Usually, she would leave after killing hundreds of incarnations.</p>
 <p class="orv_line">Yoo Joonghyuk opened his mouth like I was pathetic. "Have you forgotten? They forced fate on you."</p>
 <p class="orv_line">"Ah."</p>
 <p class="orv_line">That reminded me, there was such a thing. Papyrus, Vedas and Olympus used a massive amount of probability to force my fate on me. It was the reason why Cleopatra easily disappeared. They now lacked probability.</p>
 <p class="orv_line">Yoo Joonghyuk spoke in his distinctive somber voice, "We've bought some time before the Demon King Selection."</p>
 <p class="orv_line">I nodded. At least for now, the constellations wouldn't attack this side. I checked the message logs.</p>
-<div class="orv_system"><p>[The 'Demon King Selection' is currently being prepared.]</p></div>
-<div class="orv_system"><p>[Remaining Preparation Time: 28 days, 17 hours and 12 minutes.]</p></div>
+<div class="orv_system"><p>The 'Demon King Selection' is currently being prepared.</p></div>
+<div class="orv_system"><p>Remaining Preparation Time: 28 days, 17 hours and 12 minutes.</p></div>
 <p class="orv_line">If my prediction was correct, the Demon King Selection would consume the 21st to 24th scenarios. It was a giant story so it was natural to eat the scenarios. I measured the time remaining and said,</p>
 <p class="orv_line">"The two of us alone isn't enough."</p>
 <p class="orv_line">"I know."</p>
@@ -237,7 +244,7 @@
 <hr>
 <br>
 <p class="orv_line">I worked out my plan and left the treatment room after sorting out my bandages. Aileen said I should rest for two more weeks but my physical condition wasn't that bad, perhaps because I was relaxed.</p>
-<div class="orv_system"><p>[The attribute 'Lamarck's Giraffe' has increased the recovery effect.]</p></div>
+<div class="orv_system"><p>The attribute 'Lamarck's Giraffe' has increased the recovery effect.</p></div>
 <p class="orv_line">…Ah, it was due to the effect of the attribute. The alarmed Aileen rushed over as I stepped outside and stretched. I interrupted her before she could open her mouth. "Don't worry. Rather, can you heal this?"</p>
 <p class="orv_line">Aileen received the Uriel doll and cocked her head. "…What is this?"</p>
 <p class="orv_line">"A constellation's symbolic body."</p>
@@ -264,7 +271,7 @@
 <p class="orv_line">"The order of the industrial complex must be out of control. If the situation isn't organized, that declaration would just create a security problem."</p>
 <p class="orv_line">"That's why the citizens are excited right now."</p>
 <p class="orv_line">A powerful dictator had the power to control people's desires. Since a dictator gave up his power, the piled up desires of the citizens would burst out at once.</p>
-<div class="orv_quote"><p>「 "Do you think the darkness of the industrial complex will disappear if I die?" 」</p></div>
+<div class="orv_quote"><p>"Do you think the darkness of the industrial complex will disappear if I die?"</p></div>
 <p class="orv_line">These were the words of Duke Syswitz in Ways of Survival. I once again thought he was right. The industrial complex wouldn't suddenly change just because the ruler changed. Rather, the oppressive dictatorship had vanished and the people's hidden desires would become even more exposed.</p>
 <p class="orv_line">"Hey, give me that fragment!"</p>
 <p class="orv_line">"I-I don't want to. I picked it up."</p>
@@ -283,7 +290,7 @@
 <p class="orv_line">A woman with a black cape covering her body was standing on the wall. I wasn't sure about her equipment because of the cape but her face was very clear. It was a face that seemed to be on a different dimension from the world around it. I watched the woman's waist-long hair flapping in the wind and moved slowly in great shock.</p>
 <p class="orv_line">…Was there such a figure in Ways of Survival? All of a sudden, the meaning of every praise word became clear.</p>
 <p class="orv_line">Deep sultry eyes were set beneath neat eyebrows. All the standards that determined beauty in the world were collapsed at the same time. It was a face that couldn't be described using the modifiers of a constellation. To my chagrin, there was only one way to express this face.</p>
-<div class="orv_quote"><p>「 There was no doubt it was a beauty that would slap¹ Yoo Joonghyuk on the cheeks three times. 」</p></div>
+<div class="orv_quote"><p>There was no doubt it was a beauty that would slap¹ Yoo Joonghyuk on the cheeks three times.</p></div>
 <div class="orv_notice"><p>[1] Within 'Ways of Survival' and ORV the phrase 'slap Yoo Joonghyuk on the cheeks x times' is used as a way to describe how beautiful/handsome/attractive a person is.</p></div>
 <p class="orv_line">There wasn't such an expression in Ways of Survival. In Ways of Survival, Jang Hayoung was at most described as 'two slaps on the cheeks'. I was stunned with shock while the person who would slap Yoo Joonghyuk twice whispered, "She came. That person is the punisher."</p>
 <p class="orv_line">The men were overwhelmed by the woman's beauty and belatedly woke up. Their lips moved and I knew what would emerge. Before their mouths could open, something moved. Then something fell. It was a little bit later that a man screamed. "U-Uwaaaack!"</p>
@@ -305,18 +312,12 @@
             <a href="./ch_227"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_229">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="228" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="278" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="227" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="227" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

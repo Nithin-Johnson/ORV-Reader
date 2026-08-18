@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 233: Ep. 44 - Swindler, I</title>
     <meta property="og:title" content="Ch 233: Ep. 44 - Swindler, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,31 +177,31 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00233.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 233: Ep. 44 - Swindler, I</h1></div>
 <p class="orv_line">Yoo Joonghyuk's master, the Breaking the Sky Sword Saint was very patient. It was the same 100 years ago and even 200 years ago. That's how she was able to make a group of sword techniques. As other martial artists sold their skills and left Murim, she stayed here alone and broke through transcendent heights.</p>
 <p class="orv_line">"So who the hell are you?"</p>
 <p class="orv_line">Her big finger poked Yoo Joonghyuk's cheek as he hung in the air. It was just a finger but it was the finger of a transcendent. Thus, there was no way it couldn't hurt. Nevertheless, Yoo Joonghyuk didn't react.</p>
-<div class="orv_quote"><p>「 "The teacher and disciple. The two of you are the same." 」</p></div>
+<div class="orv_quote"><p>"The teacher and disciple. The two of you are the same."</p></div>
 <p class="orv_line">They were the words spoken by one of the Murim's 10 Grand Masters, the Heavenly Demon. Perhaps the Heavenly Demon saw them accurately.</p>
 <p class="orv_line">"You aren't saying a word. You will be spanked if you don't talk."</p>
 <p class="orv_line">The Breaking the Sky Sword Saint raised the large smoking pipe. Yoo Joonghyuk's butt couldn't endure the pressure and he couldn't help letting out a pathetic sound.</p>
@@ -227,21 +234,21 @@
 <p class="orv_line">She had the Mirror Eyes that could read the emotions of others. The Breaking the Sky Sword Saint was staring at Yoo Joonghyuk with these eyes.</p>
 <p class="orv_line">"Who are you?"</p>
 <p class="orv_line">Yoo Joonghyuk harshly bit his lips like he was digging up his agony. He shouldn't say it. Never, he absolutely couldn't say it…</p>
-<div class="orv_system"><p>[The constellation 'Demon King of Salvation' is looking at you.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon King of Salvation' is looking at you.</p></div>
 <p class="orv_line">Yoo Joonghyuk looked up at the message.</p>
-<div class="orv_system"><p>[The constellation 'Demon King of Salvation' says it will be okay.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon King of Salvation' says it will be okay.</p></div>
 <p class="orv_line">…It would be okay?</p>
-<div class="orv_system"><p>[The constellation 'Demon King of Salvation' says this round will be different.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon King of Salvation' is telling you to trust your teacher.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon King of Salvation' says this round will be different.</p></div>
+<div class="orv_system"><p>The constellation 'Demon King of Salvation' is telling you to trust your teacher.</p></div>
 <p class="orv_line">This round would be different. He wouldn't have believed it if it was spoken by someone else. Then why? He wanted to believe what this person was saying.</p>
-<div class="orv_system"><p>[The constellation 'Demon King of Salvation'…]</p></div>
+<div class="orv_system"><p>The constellation 'Demon King of Salvation'…</p></div>
 <p class="orv_line">"This fly… shut up."</p>
 <p class="orv_line">The Breaking the Sky Sword Saint flicked her fingers at the air and all the sound in the area disappeared completely. All outside sound was cut off with magic power. It was possible for a transcendent at the Breaking the Sky Sword Saint's level. Kim Dokja's voice wouldn't be heard for a while as long as the dokkaebis didn't adjust the channel frequency. From now on, it would be left to Yoo Joonghyuk's own judgment.</p>
 <p class="orv_line">"…My name is Yoo Joonghyuk." Yoo Joonghyuk took a small breath before releasing it. "I was your disciple."</p>
 <p class="orv_line">"Hrmm… what does that mean? I have never seen you before. I naturally have no memories of taking you as a disciple."</p>
 <p class="orv_line">"It is literally what I said. I learnt the techniques from…"</p>
 <p class="orv_line">The moment Yoo Joonghyuk was about to speak, sparks flew around his body.</p>
-<div class="orv_system"><p>[The story 'Disciple of Breaking the Sky Sword Saint' is activated.]</p></div>
+<div class="orv_system"><p>The story 'Disciple of Breaking the Sky Sword Saint' is activated.</p></div>
 <p class="orv_line">Yoo Joonghyuk's lips twisted as the ending of his words were forcefully changed to a honorific.</p>
 <p class="orv_line">"…Teacher."</p>
 <p class="orv_line">Yoo Joonghyuk's expression distorted. He recalled the conversation he had with the Breaking the Sky Sword Saint in the last round.</p>
@@ -249,7 +256,7 @@
 <p class="orv_line">–I won't become your disciple next time.</p>
 <p class="orv_line">–This angry fellow. You should say sweet words… and why aren't you adding honorifics? Do you want to be caught in your next life?</p>
 <p class="orv_line">Perhaps this story remained because of his previous conversation with the Breaking the Sky Sword Saint.</p>
-<div class="orv_system"><p>[You have to use honorifics for the incarnation 'Breaking the Sky Sword Saint'.]</p></div>
+<div class="orv_system"><p>You have to use honorifics for the incarnation 'Breaking the Sky Sword Saint'.</p></div>
 <p class="orv_line">It was funny. He hadn't been formal with the Breaking the Sky Sword Saint at the time yet this story remained with him.</p>
 <p class="orv_line">–At that time, become my disciple again.</p>
 <p class="orv_line">His heart throbbed as old memories poured out like a waterfall and knocked on his heart. He couldn't hear the indirect messages but he felt Kim Dokja looking this way.</p>
@@ -292,7 +299,7 @@
 <p class="orv_line">"…"</p>
 <p class="orv_line">"Do you think he can do it?"</p>
 <p class="orv_line">As the first friend of her blunt disciple, the Breaking the Sky Sword Saint looked closely at Kim Dokja's face. Then the barrier shook and a loud voice was heard.</p>
-<div class="orv_constellation"><p>[ Breaking the Sky Sword Saint. Give up your techniques.]</p></div>
+<div class="orv_constellation"><p>Breaking the Sky Sword Saint. Give up your techniques.</p></div>
 <p class="orv_line">The surprised Yoo Joonghyuk rose from his seat.</p>
 <p class="orv_line">"…The dokkaebis." The Breaking the Sky Sword Saint spoke like she was tired of this. "The techniques buyers came again."</p>
 <p class="orv_line">"…It is faster than planned. How long has it been?"</p>
@@ -317,18 +324,12 @@
             <a href="./ch_232"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_234">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="233" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="283" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="232" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="232" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

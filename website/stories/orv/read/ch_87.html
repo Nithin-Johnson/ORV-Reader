@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 87: Ep. 17 – SSS-grade Talent, VI</title>
     <meta property="og:title" content="Ch 87: Ep. 17 – SSS-grade Talent, VI" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,29 +177,29 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00087.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 87: Ep. 17 – SSS-grade Talent, VI</h1></div>
 <p class="orv_line">Returnee. This was the first statement that mentioned them in Ways of Survival:</p>
-<div class="orv_quote"><p>「 Some people go back in time, others go to another dimension and some are born again. In the end, the way to adapt to destruction varies from person to person. 」</p></div>
+<div class="orv_quote"><p>Some people go back in time, others go to another dimension and some are born again. In the end, the way to adapt to destruction varies from person to person.</p></div>
 <p class="orv_line">The second 'method' of 'Three Ways to Survive in a Ruined World'. To survive, destroy other dimensions and return.</p>
 <p class="orv_line">"Answer me. Are you curious about my identity?"</p>
 <p class="orv_line">Returnee Myung Ilsang. This boy was a returnee from Earth who was summoned to be a warrior in the world of Chronos.</p>
@@ -204,13 +211,13 @@
 <p class="orv_line">"Where are you looking? Look at me. Is that your boyfriend?"</p>
 <p class="orv_line">"Remove your hand."</p>
 <p class="orv_line">Yoo Sangah shook off Myung Ilsang's hand. Her dagger moved in a threatening manner through the air. Myung Ilsang laughed.</p>
-<div class="orv_system"><p>[The second question has been resolved.]</p></div>
-<div class="orv_system"><p>[The second seal of the returnee 'Myung Ilsang' has been released.]</p></div>
+<div class="orv_system"><p>The second question has been resolved.</p></div>
+<div class="orv_system"><p>The second seal of the returnee 'Myung Ilsang' has been released.</p></div>
 <p class="orv_line">"Ah, that's right. I've had a baby-face for 100 years."</p>
 <p class="orv_line">The boy's cold eyes turned towards me. I didn't use Omniscient Reader's Viewpoint but it was clear even without the skill.</p>
 <p class="orv_line">"You were having fun in this peaceful world?"</p>
 <p class="orv_line">His right arm aimed at me. At the same time, purple particles condensed around his hand.</p>
-<div class="orv_system"><p>[The character 'Myung Ilsang' has triggered 'Small Black Fire Cannon'!]</p></div>
+<div class="orv_system"><p>The character 'Myung Ilsang' has triggered 'Small Black Fire Cannon'!</p></div>
 <p class="orv_line">Black Fire Cannon. This was the fire of death that destroyed the eastern part of Chronos and burned all the insect kings in the forest.</p>
 <p class="orv_line">The whole atmosphere was burning and I was surrounded by flames. Pain spread across my skin. I cursed inside my heart. Damn! It hurt. It really hurt. It hurt…</p>
 <p class="orv_line">…Less than I thought?</p>
@@ -219,9 +226,9 @@
 <p class="orv_line">I looked up and saw Yoo Sangah wielding her dagger. Unexpectedly, she had the advantage. Even the Disaster of Questions was perplexed by the overwhelming attacks.</p>
 <p class="orv_line">"…What? Why are you so strong? Is noona also a returnee? Or am I weak?"</p>
 <p class="orv_line">I didn't understand. The original Disaster of Questions with two seals released should be stronger than this.</p>
-<div class="orv_system"><p>[The exclusive skill, Character List is activated.]</p></div>
+<div class="orv_system"><p>The exclusive skill, Character List is activated.</p></div>
 <div class="orv_window">
-<h3 class="orv_window_title">[Character Summary]</h3>
+<h3 class="orv_window_title">Character Summary</h3>
 <p>Name: Myung Ilsang</p>
 <p>Age: 17 years old (127 years old)</p>
 <p>Sponsor: Mass Production Maker</p>
@@ -235,21 +242,21 @@
 <p class="orv_line">The dokkaebis were fair. Right now, he was weaker than the original disaster.</p>
 <p class="orv_line">"Han Sooyoung! Yoo Sangah-ssi!" I didn't know if Bihyung was using his strength but now we had a chance. "Attack with all your strength! We must kill him now!"</p>
 <p class="orv_line">If this was his current state, perhaps we could win without Way of the Wind. I poured my remaining coins into my stats.</p>
-<div class="orv_system"><p>[Physique Lv. 50 -> Physique Lv. 60]</p></div>
-<div class="orv_system"><p>[Agility Lv. 50 -> Agility Lv. 60]</p></div>
-<div class="orv_system"><p>[Magic Power Lv. 25 -> Magic Power Lv. 60]</p></div>
-<div class="orv_system"><p>[39,500 coins have been consumed.]</p></div>
-<div class="orv_system"><p>[All stats have reached the scenario limit.]</p></div>
+<div class="orv_system"><p>Physique Lv. 50 -> Physique Lv. 60</p></div>
+<div class="orv_system"><p>Agility Lv. 50 -> Agility Lv. 60</p></div>
+<div class="orv_system"><p>Magic Power Lv. 25 -> Magic Power Lv. 60</p></div>
+<div class="orv_system"><p>39,500 coins have been consumed.</p></div>
+<div class="orv_system"><p>All stats have reached the scenario limit.</p></div>
 <p class="orv_line">I ran aggressively while activation Unbroken Faith.</p>
 <p class="orv_line">"Remember! You should never answer his questions!"</p>
 <p class="orv_line">Myung Ilsang seemed interested when he saw my Blade of Faith. "What? An energy sword?"</p>
 <p class="orv_line">My attack missed by a hair's breath due to his high agility.</p>
 <p class="orv_line">Myung Ilsang kept chattering. "Ahjussi, are you a martial artist? How can you use the energy sword already? Isn't this crazy?"</p>
 <p class="orv_line">I ignored him and triggered a stigma.</p>
-<div class="orv_system"><p>[The stigma 'Song of the Sword' has been used.]</p></div>
-<div class="orv_system"><p>[Your sword is filled with the words left by the Duke of Loyalty and Warfare.]</p></div>
+<div class="orv_system"><p>The stigma 'Song of the Sword' has been used.</p></div>
+<div class="orv_system"><p>Your sword is filled with the words left by the Duke of Loyalty and Warfare.</p></div>
 <p class="orv_line">A random verse of Duke of Loyalty and Warfare's story appeared in front of me, followed by a message.</p>
-<div class="orv_quote"><p>「 The 28th day. Clear skies. I went to do official business. 」</p></div>
+<div class="orv_quote"><p>The 28th day. Clear skies. I went to do official business.</p></div>
 <p class="orv_line">Then nothing happened. Dammit, the Duke of Loyalty and Warfare didn't help me at this time.</p>
 <p class="orv_line">The Nanjung Ilgi didn't always contain content that fought against the enemy. In fact, most of the contents were ordinary.</p>
 <p class="orv_line">The sky was clear.</p>
@@ -275,10 +282,10 @@
 <p class="orv_line">Myung Ilsang's expression changed.</p>
 <p class="orv_line">"You guys are from the Hunters Association! Right? Isn't there normally this development? Aren't they always the first one to show up with a returnee comes back?"</p>
 <p class="orv_line">"This chuuni bastard… no, shit?"</p>
-<div class="orv_system"><p>[The third question has been resolved.]</p></div>
-<div class="orv_system"><p>[The fourth question has been resolved.]</p></div>
-<div class="orv_system"><p>[The fifth question has been resolved.]</p></div>
-<div class="orv_system"><p>[The third seal of the returnee 'Myung Ilsang' has been released.]</p></div>
+<div class="orv_system"><p>The third question has been resolved.</p></div>
+<div class="orv_system"><p>The fourth question has been resolved.</p></div>
+<div class="orv_system"><p>The fifth question has been resolved.</p></div>
+<div class="orv_system"><p>The third seal of the returnee 'Myung Ilsang' has been released.</p></div>
 <p class="orv_line">Myung Ilsang smiled and nodded.</p>
 <p class="orv_line">"You are from the Hunters Association."</p>
 <p class="orv_line">It was really crazy. His momentum became even stronger. The surrounding avatars were destroyed by a powerful wave of energy emitted from Myung Ilsang's body.</p>
@@ -290,9 +297,9 @@
 <p class="orv_line">The point of the questions asked by the Disaster of Questions wasn't to get an answer. No matter what the answer, he would use it to strengthen his abilities.</p>
 <p class="orv_line">Myung Ilsang kept speaking, "Then who should I kill first?"</p>
 <p class="orv_line">But his words didn't last. It was because Yoo Sangah appeared behind him while emitting a fierce killing intent.</p>
-<div class="orv_system"><p>[Hermes Walking Method.]</p></div>
-<div class="orv_system"><p>[Theseus' Resolution.]</p></div>
-<div class="orv_system"><p>[Arachne's Web.]</p></div>
+<div class="orv_system"><p>Hermes Walking Method.</p></div>
+<div class="orv_system"><p>Theseus' Resolution.</p></div>
+<div class="orv_system"><p>Arachne's Web.</p></div>
 <p class="orv_line">The system messages didn't pop up but I was able to recognize these skills. In a future scenario called Ragnarok, these skills were clearly described. They were the stigmas of the Olympus related constellations.</p>
 <p class="orv_line">The surprised Myung Ilsang unleashed a series of Small Black Fire Cannons to keep Yoo Sangah in check.</p>
 <p class="orv_line">However, Yoo Sangah rushed towards Myung Ilsang without caring about the black fire cannons.</p>
@@ -311,17 +318,17 @@
 <p class="orv_line">His movements were delayed for a moment and my Blade of Faith aimed at the gap, cutting his shoulder and belly.</p>
 <p class="orv_line">"Shit…!"</p>
 <p class="orv_line">Blood flowed out. Myung Ilsang pulled back and chanted something.</p>
-<div class="orv_system"><p>[The character 'Myung Ilsang' has used Blink Lv. 1.]</p></div>
+<div class="orv_system"><p>The character 'Myung Ilsang' has used Blink Lv. 1.</p></div>
 <p class="orv_line">Myung Ilsang's figure became blurry. My mind was in a hurry. He couldn't get away.</p>
 <p class="orv_line">I aimed the blade at his waist. But his body faded away just as the blade hit. The only thing left was scattered blood.</p>
-<div class="orv_system"><p>[The constellation 'Secretive Plotter' lets out a sad sigh.]</p></div>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is going crazy from all the sweet potatoes¹.]</p></div>
+<div class="orv_system"><p>The constellation 'Secretive Plotter' lets out a sad sigh.</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is going crazy from all the sweet potatoes¹.</p></div>
 <div class="orv_notice"><p>[1] Sweet potato is slang for when something is so frustrating that there is a stuffy sensation</p></div>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' is pointing a finger at your heart.]</p></div>
-<div class="orv_system"><p>[The excitement of some constellations has reached a critical level.]</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' is pointing a finger at your heart.</p></div>
+<div class="orv_system"><p>The excitement of some constellations has reached a critical level.</p></div>
 <p class="orv_line">Han Sooyoung shouted, "Shit, we missed him!"</p>
 <p class="orv_line">"It's okay. He is injured so we can catch him soon."</p>
-<div class="orv_system"><p>[Some constellations have calmed down.]</p></div>
+<div class="orv_system"><p>Some constellations have calmed down.</p></div>
 <p class="orv_line">"Yoo Sangah. You did really well… Yoo Sangah-ssi?"</p>
 <p class="orv_line">There was no answer from Yoo Sangah. I headed over because I sensed something strange, where she was standing there stunned. Han Sooyoung asked,</p>
 <p class="orv_line">"What's wrong with her?"</p>
@@ -339,13 +346,13 @@
 <p class="orv_line">Fortunately, the additional scenarios of the dokkaebis hadn't come down yet.</p>
 <p class="orv_line">If an additional scenario was released, many people would try to hunt that bastard and his seals would be released in a flash due to the many idiots answering his questions.</p>
 <p class="orv_line">…The moment I was feeling relieved.</p>
-<div class="orv_constellation"><p>[Hrmm. Everyone, aren't you great? Despite the penalty, this is still a disaster. Only three people putting pressure on him…]</p></div>
+<div class="orv_constellation"><p>Hrmm. Everyone, aren't you great? Despite the penalty, this is still a disaster. Only three people putting pressure on him…</p></div>
 <p class="orv_line">Han Sooyoung and I looked up at the air at the same time.</p>
-<div class="orv_constellation"><p>[By the way, aren't you being too greedy? As the old saying goes, you should share the beans.]</p></div>
+<div class="orv_constellation"><p>By the way, aren't you being too greedy? As the old saying goes, you should share the beans.</p></div>
 <p class="orv_line">"Shit."</p>
 <p class="orv_line">Han Sooyoung cursed while messages arrived like they had been waiting.</p>
-<div class="orv_system"><p>[A new sub scenario has arrived!]</p></div>
-<div class="orv_system"><p>[The sub-scenario – SSS-grade Hunt has begun!]</p></div>
+<div class="orv_system"><p>A new sub scenario has arrived!</p></div>
+<div class="orv_system"><p>The sub-scenario – SSS-grade Hunt has begun!</p></div>
 <p class="orv_line">I grasped the handle of Unbroken Faith. The situation was reaching the limit.</p>
 <br>
 <hr>
@@ -354,18 +361,12 @@
             <a href="./ch_86"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_88">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="87" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="126" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="86" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="86" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

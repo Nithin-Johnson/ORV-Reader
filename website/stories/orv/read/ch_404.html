@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 404: Ep. 77 - Final Dragon, I</title>
     <meta property="og:title" content="Ch 404: Ep. 77 - Final Dragon, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,131 +177,131 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00404.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 404: Ep. 77 - Final Dragon, I</h1></div>
 <p class="orv_line">Metatron scanned the desolate, ruined conference venue. Demon Kings and Archangels wielding their respective weapons up until a short while ago were all lying still on the floor.</p>
 <p class="orv_line">The Story of Good and Evil was scattering away.</p>
 <p class="orv_line">The effects of the Chaos Points that broke past the critical point were now invading into the grey sphere.</p>
 <p class="orv_line">One of the Angels still conscious reached out towards him.</p>
-<div class="orv_constellation"><p>[Scribe…]</p></div>
+<div class="orv_constellation"><p>Scribe…</p></div>
 <p class="orv_line">Along with 'Peo-geo-geok!', Michael's heel smashed that Angel's head into meat paste. He kicked the dead Angel away, before pulling out an Archangel the size of a small child hidden inside its robe.</p>
 <p class="orv_line">The unconscious Archangel dangled in Michael's hand as she was brought up in the air.</p>
-<div class="orv_constellation"><p>[Should I kill Raphael as well? It's a bit of a waste to let her go like this…]</p></div>
-<div class="orv_constellation"><p>[If that's what you want. It doesn't matter if you let her live. The Chaos Points have been filled to the maximum already, anyway.]</p></div>
-<div class="orv_constellation"><p>[Well, in that case, what about that Demon King?]</p></div>
+<div class="orv_constellation"><p>Should I kill Raphael as well? It's a bit of a waste to let her go like this…</p></div>
+<div class="orv_constellation"><p>If that's what you want. It doesn't matter if you let her live. The Chaos Points have been filled to the maximum already, anyway.</p></div>
+<div class="orv_constellation"><p>Well, in that case, what about that Demon King?</p></div>
 <p class="orv_line">Metatron shifted his gaze over to the corner of the sphere, where a heated battle was still taking place. Agares and his heavily-wounded body were there.</p>
 <p class="orv_line">Asmodeus and other 'Seekers of the End' were pouring out coordinated attacks on him, but Demon King Agares didn't show any signs of collapsing, even though Stories streamed down from all over his body, even though his two eyes burned in resentment like a dreadful phantom.</p>
 <p class="orv_line">While stuck inside the deadly battle, the Demon King continued to suck on his cigarette. Not just one, but several of them, in fact.</p>
-<div class="orv_system"><p>[Stigma, 'One Ciggie for Prodigious Strength Lv.???', is in activation.]</p></div>
-<div class="orv_system"><p>[Stigma, 'One Ciggie for Agility Lv.???', is in activation.]</p></div>
-<div class="orv_system"><p>[Stigma, 'One Ciggie for Magic Power Lv.???', is in activation.]</p></div>
-<p class="orv_line">That was Agares's Stigma, [Universal Cigarette], at work. Its speciality, developed after living as a smoker for a very long time. A unique Stigma for the Demon King that possessed the Story to overclock the Incarnation Body's abilities.</p>
+<div class="orv_system"><p>Stigma, 'One Ciggie for Prodigious Strength Lv.???', is in activation.</p></div>
+<div class="orv_system"><p>Stigma, 'One Ciggie for Agility Lv.???', is in activation.</p></div>
+<div class="orv_system"><p>Stigma, 'One Ciggie for Magic Power Lv.???', is in activation.</p></div>
+<p class="orv_line">That was Agares's Stigma, <strong>[Universal Cigarette]</strong>, at work. Its speciality, developed after living as a smoker for a very long time. A unique Stigma for the Demon King that possessed the Story to overclock the Incarnation Body's abilities.</p>
 <p class="orv_line">Even after receiving the combined attacks of five, six Demon Kings, Agares remained standing, prompting Asmodeus to say something in admiration. </p>
-<div class="orv_constellation"><p>[As expected, the renown of the 'Ruler of East Hell' wasn't for nothing, I see. However, how long will you be able to hold on like this?]</p></div>
+<div class="orv_constellation"><p>As expected, the renown of the 'Ruler of East Hell' wasn't for nothing, I see. However, how long will you be able to hold on like this?</p></div>
 <p class="orv_line">Agares didn't reply, simply choosing to pull out a new cigarette and light it up.</p>
 <p class="orv_line">Metatron and Michael crossed the now-dead battlefield and approached the Demon King.</p>
 <p class="orv_line">Agares spoke. </p>
-<div class="orv_constellation"><p>[Metatron, you better think again. You won't be able to protect the 'Good and Evil' in this fashion. What meaning is there in being remembered after everyone has perished??]</p></div>
-<div class="orv_constellation"><p>[As long as it's remembered, it shall revive again sometime in the future.]</p></div>
-<div class="orv_constellation"><p>[Revive? Like your accursed Corrupted Angel?]</p></div>
+<div class="orv_constellation"><p>Metatron, you better think again. You won't be able to protect the 'Good and Evil' in this fashion. What meaning is there in being remembered after everyone has perished??</p></div>
+<div class="orv_constellation"><p>As long as it's remembered, it shall revive again sometime in the future.</p></div>
+<div class="orv_constellation"><p>Revive? Like your accursed Corrupted Angel?</p></div>
 <p class="orv_line">Michael frowned deeply.</p>
-<div class="orv_system"><p>[Demon King, 'King of Corrupted Angels', is unleashing its Status!]</p></div>
+<div class="orv_system"><p>Demon King, 'King of Corrupted Angels', is unleashing its Status!</p></div>
 <p class="orv_line">Michael's Status crashed in like a surging storm, causing Agares to back away while losing more of his Stories. However, the Demon King's gaze was still firmly fixed on Metatron.</p>
-<div class="orv_constellation"><p>[What point is there in trying to carry on like that? That is not us. We reviving in that manner will no longer be 'Metatron' or 'Agares', but merely the 'Scribe of Heaven' and the 'Ruler of East Hell'!]</p></div>
-<div class="orv_constellation"><p>[That is precisely what we are, oh, 'Ruler of East Hell'.]</p></div>
+<div class="orv_constellation"><p>What point is there in trying to carry on like that? That is not us. We reviving in that manner will no longer be 'Metatron' or 'Agares', but merely the 'Scribe of Heaven' and the 'Ruler of East Hell'!</p></div>
+<div class="orv_constellation"><p>That is precisely what we are, oh, 'Ruler of East Hell'.</p></div>
 <p class="orv_line">A certain everlasting Story was now flowing behind Metatron's back – Stories that he had read, lived, and believed in.</p>
-<div class="orv_system"><p>[The Oldest Good is smiling widely.]</p></div>
+<div class="orv_system"><p>The Oldest Good is smiling widely.</p></div>
 <p class="orv_line">This was the 'Scribe of Heaven', the one who recorded the 'Good' of the world. An existence who judged what was 'Good', and would become its leading standard.</p>
 <p class="orv_line">While looking at his oldest rival, Agares too sensed the Story unhurriedly flowing next to him.</p>
-<div class="orv_system"><p>[The Oldest Evil is tilting its head.]</p></div>
+<div class="orv_system"><p>The Oldest Evil is tilting its head.</p></div>
 <p class="orv_line">That was the immeasurably lengthy history of 'Evil' he had pursued so far – a history of resisting the 'Good', eliminated by it, and being punished for it.</p>
 <p class="orv_line">At that moment, Agares sensed that the thousands of years of his life were now being summarised into a single comma.</p>
 <p class="orv_line">This 'flow' would not end here as long as the 'Ruler of East Hell' was alive, and the 'Scribe of Heaven' continued to exist. As long as they fought against each other, and repeated their wars over and over again.</p>
 <p class="orv_line">Even if Metatron and Agares were killed, someone else would become the 'Scribe of Heaven' and 'Ruler of East Hell'.</p>
-<div class="orv_constellation"><p>[If such a thing is 'Good and Evil', then…]</p></div>
+<div class="orv_constellation"><p>If such a thing is 'Good and Evil', then…</p></div>
 <p class="orv_line">Agares spat his phlegm on the floor and formed a bitter grin.</p>
-<div class="orv_constellation"><p>[…I shall give up on 'Evil'.]</p></div>
+<div class="orv_constellation"><p>…I shall give up on 'Evil'.</p></div>
 <p class="orv_line">A cigarette flew up from Agares's fingers. It spun in the air while emitting dense smoke.</p>
 <p class="orv_line">Asmodeus hurriedly shouted out. </p>
-<div class="orv_constellation"><p>[Stop him!]</p></div>
+<div class="orv_constellation"><p>Stop him!</p></div>
 <p class="orv_line">The swirling, spinning smoke enveloped Agares's entire body.</p>
-<div class="orv_system"><p>[Stigma, 'One Ciggie for Cowardice Lv.???', is activating!]</p></div>
+<div class="orv_system"><p>Stigma, 'One Ciggie for Cowardice Lv.???', is activating!</p></div>
 <p class="orv_line">Greyish, murky smoke exploded as the attacks rained down.</p>
 <p class="orv_line">The smoke dissipated, and the only thing remaining on the spot was a single cigarette. The 'Seekers of the End' had no choice but to withdraw their weapons in bitterness.</p>
 <p class="orv_line">Metatron looked at the discarded cigarette on the floor. Thick smoke swirled in the air from its tip.</p>
 <p class="orv_line">His enemy was gone, and only the 'Good' remained. Was this a sense of loneliness, or a type of freedom he felt? Metatron couldn't tell.</p>
 <p class="orv_line">Someone trampled on the dying bud and killed it off.</p>
-<div class="orv_system"><p>[The Oldest Evil is closely observing the new 'Evil'.]</p></div>
+<div class="orv_system"><p>The Oldest Evil is closely observing the new 'Evil'.</p></div>
 <p class="orv_line">He raised his head to find Asmodeus grinning primly towards him. </p>
-<div class="orv_constellation"><p>[What a miss that was. I was thinking of taking over Agares's 'Wall'.]</p></div>
+<div class="orv_constellation"><p>What a miss that was. I was thinking of taking over Agares's 'Wall'.</p></div>
 <p class="orv_line">Metatron looked at the Demon King and replied. </p>
-<div class="orv_constellation"><p>[You'll soon possess it.]</p></div>
+<div class="orv_constellation"><p>You'll soon possess it.</p></div>
 <p class="orv_line">Whatever the case might have been, the intended purpose had been accomplished now.</p>
-<div class="orv_system"><p>[Current Chaos Points: 100]</p></div>
+<div class="orv_system"><p>Current Chaos Points: 100</p></div>
 <p class="orv_line">The Chaos Points were now maxed out, and the Apocalypse Dragon had entered the revival sequence. And soon, the apocalypse would begin.</p>
-<div class="orv_system"><p>[Conference venue is disintegrating.]</p></div>
+<div class="orv_system"><p>Conference venue is disintegrating.</p></div>
 <p class="orv_line">The grey sphere wrapped around the conference venue crumbled away bit by bit, and the corpses of the Archangels fell to the ground below.</p>
 <p class="orv_line">Asmodeus asked a question, seemingly enjoying that spectacle in the meantime.</p>
-<div class="orv_constellation"><p>[By the way, will this really be alright?]</p></div>
+<div class="orv_constellation"><p>By the way, will this really be alright?</p></div>
 <p class="orv_line">Metatron remained silent. Time to argue whether it'd be alright or not had long passed by already. He watched the angels falling, and provided the most textbook-like reply he could think of.</p>
-<div class="orv_constellation"><p>[Everything is according to the will of 'Good'. In order to reach the most ideal ■■…]</p></div>
+<div class="orv_constellation"><p>Everything is according to the will of 'Good'. In order to reach the most ideal ■■…</p></div>
 <p class="orv_line">'■■'.</p>
 <p class="orv_line">The dearest wish of all Constellations, as well as where the story of a star would come to an end.</p>
 <p class="orv_line">Asmodeus spoke. </p>
-<div class="orv_constellation"><p>[■■… It seems that all Constellations that seek it end up becoming quite similar to each other. You really do resemble someone I know. Your dispositions are completely opposite of one another, though.]</p></div>
+<div class="orv_constellation"><p>■■… It seems that all Constellations that seek it end up becoming quite similar to each other. You really do resemble someone I know. Your dispositions are completely opposite of one another, though.</p></div>
 <p class="orv_line">Just before Metatron could ask who that was, he heard the Dragon's Howling tearing through the sky.</p>
 <p class="orv_line">Guwaaaaahh-!!</p>
 <p class="orv_line">Dragons, easily numbering well past several thousand, were freely roaming around the skies to wage a bloody war. Explosions rang out seemingly endlessly. Dragons and their torn wings were crashing back to the earth.</p>
 <p class="orv_line">This was not the spectacle Metatron expected to see.</p>
 <p class="orv_line">…The Apocalypse Dragon hasn't revived yet?</p>
-<div class="orv_constellation"><p>[What are you so surprised about? We aren't the only ones pursuing ■■, after all.]</p></div>
+<div class="orv_constellation"><p>What are you so surprised about? We aren't the only ones pursuing ■■, after all.</p></div>
 <p class="orv_line">Asmodeus stared back at a certain man looking up at them from the ground and grinned brightly.</p>
 <br>
 <hr>
 <br>
-<div class="orv_system"><p>[Constellation, 'Abyssal Black Flame Dragon', is roaring out!]</p></div>
+<div class="orv_system"><p>Constellation, 'Abyssal Black Flame Dragon', is roaring out!</p></div>
 <p class="orv_line">The Black Flame Dragon was indeed strong.</p>
 <p class="orv_line">It rose up like a meteor while ripping apart dozens of Dragons blanketing the sky, and announced its presence through the display of its mighty Status.</p>
 <p class="orv_line">As expected from one of the strongest Constellations in the 'Ways of Survival'.</p>
 <p class="orv_line">Han Sooyoung became excited as her sponsor went on a rampage and shouted out while waving her bandages around. "I'm proud of you for the first time ever, Black Flame Dragon!! Kill them all!!"</p>
 <p class="orv_line">"Be strong, Chimera Dragon!"</p>
 <p class="orv_line">Shin Yoosung tightly clasped her own hands and looked up at the sky with an ardent look on her face.</p>
-<div class="orv_system"><p>[Abyssal Black Flame Dragon's sense of presence is strengthening!]</p></div>
-<div class="orv_system"><p>[Chimera Dragon's sense of presence is strengthening!]</p></div>
+<div class="orv_system"><p>Abyssal Black Flame Dragon's sense of presence is strengthening!</p></div>
+<div class="orv_system"><p>Chimera Dragon's sense of presence is strengthening!</p></div>
 <p class="orv_line">Every time Black Flame Dragon and Chimera Dragon defeated their opponents, their statuses also rose up higher. Seeing their spirited battle, even my heart felt like it was pounding away powerfully, too.</p>
 <p class="orv_line">After studying the Dragons for a little while, I signalled Yoo Joonghyuk with my eyes.</p>
 <p class="orv_line">"Got it."</p>
 <p class="orv_line">He replied to my gaze and along with our other companions, made their move. His job now was to get in touch with the Nebulas near us before the Apocalypse Dragon made its move.</p>
 <p class="orv_line">And I too had something to do in the meantime as well. I observed each of the Dragons flying in the air and thought to myself.</p>
 <p class="orv_line">This wouldn't be the first time the Apocalypse Dragon had revived. It was quite likely that the previous 'Apocalypse Dragon' was also among the ranks of the Dragons overhead.</p>
-<div class="orv_system"><p>[Several Dragon Kings have sensed your presence.]</p></div>
+<div class="orv_system"><p>Several Dragon Kings have sensed your presence.</p></div>
 <p class="orv_line">"Damn it."</p>
 <p class="orv_line">Kuwaaaaaah!!</p>
-<p class="orv_line">I reflexively activated [Electrification] and defended against the Dragon Breath. A few Dragon Kings glared in my direction, but then, flew away again while tilting their heads. It was as if they had seen something rather strange.</p>
+<p class="orv_line">I reflexively activated <strong>[Electrification]</strong> and defended against the Dragon Breath. A few Dragon Kings glared in my direction, but then, flew away again while tilting their heads. It was as if they had seen something rather strange.</p>
 <p class="orv_line">…What was up with them? Not to mention, I wasn't even a Dragon.</p>
 <p class="orv_line">But then, I heard a certain message.</p>
-<div class="orv_system"><p>[You are eligible to enter the 'Dragon's Festival'.]</p></div>
+<div class="orv_system"><p>You are eligible to enter the 'Dragon's Festival'.</p></div>
 <p class="orv_line">…What?!</p>
-<div class="orv_system"><p>[Will you enter the 'Dragon's Festival'?]</p></div>
+<div class="orv_system"><p>Will you enter the 'Dragon's Festival'?</p></div>
 <p class="orv_line">My head temporarily blanked out after that message suddenly floated up to my view.</p>
 <p class="orv_line">No, hang on a minute. I might be a Constellation, but I was definitely not a Dragon, so how come such a message…</p>
 <p class="orv_line">"Why aren't you participating in the proceedings?"</p>
@@ -308,9 +315,9 @@
 <p class="orv_line">"I'm not sure what you mean, but I lack the qualification to do so."</p>
 <p class="orv_line">"Why not? Do you not possess the heart of a Dragon?"</p>
 <p class="orv_line">Only then did I finally realize it.</p>
-<div class="orv_system"><p>[Story fragment, 'A Young Gold Dragon's Broken Heart', is stirring!]</p></div>
+<div class="orv_system"><p>Story fragment, 'A Young Gold Dragon's Broken Heart', is stirring!</p></div>
 <p class="orv_line">Now that I thought about it, my heart actually used to belong to a Gold Dragon, a fragment of a Story I absorbed back in the 'Story Horizon' a long time ago.</p>
-<div class="orv_system"><p>[Story fragment, 'A Young Gold Dragon's Broken Heart', wants to participate in the Dragon's Festival.]</p></div>
+<div class="orv_system"><p>Story fragment, 'A Young Gold Dragon's Broken Heart', wants to participate in the Dragon's Festival.</p></div>
 <p class="orv_line">I was wondering why my heart was pounding away so madly since earlier… Was that the reason why?</p>
 <p class="orv_line">The Reincarnator asked me again. "If you're truly a Dragon, you should really be enraged by this situation."</p>
 <p class="orv_line">"…What kind of a situation is this, then?"</p>
@@ -341,10 +348,10 @@
 <p class="orv_line">I stared at the Black Flame Dragon and spoke up. "I'll change it."</p>
 <p class="orv_line">"You will? But, how?"</p>
 <p class="orv_line">"I'll make sure that Dragons don't suffer that miserable fate ever again."</p>
-<div class="orv_system"><p>[Constellation, 'Secretive Plotter', is looking at you.]</p></div>
+<div class="orv_system"><p>Constellation, 'Secretive Plotter', is looking at you.</p></div>
 <p class="orv_line">The gazes of the stars were gathering on us.</p>
-<div class="orv_system"><p>[A massive number of Constellations are looking at you.]</p></div>
-<div class="orv_system"><p>[Many Constellations are freaking out after seeing who is next to you!]</p></div>
+<div class="orv_system"><p>A massive number of Constellations are looking at you.</p></div>
+<div class="orv_system"><p>Many Constellations are freaking out after seeing who is next to you!</p></div>
 <p class="orv_line">The 'Reincarnator' looked at me with emotionless eyes. "Interesting."</p>
 <p class="orv_line">Its external appearance began changing next. It was 'polymorph', the magic often employed by Dragons out to have 'fun'.</p>
 <p class="orv_line">"Tens of thousands of years ago, there was a Dokkaebi that spoke to me of the exact same offer. It said that it'd create a world where Dragons could become the master of the scenario."</p>
@@ -354,11 +361,11 @@
 <p class="orv_line">– Kim, Dokja, what, the hell, is this…</p>
 <p class="orv_line">My hands and feet were shaking. I fell down on my butt, and tried hard to raise my head up.</p>
 <p class="orv_line">How could this even be called 'Status'??</p>
-<div class="orv_system"><p>[Constellation, 'Demon-like Judge of Fire', is urging you to run away!]</p></div>
-<div class="orv_system"><p>[Constellation, 'Queen of the Darkest Spring', is looking at you with an urgent expression!]</p></div>
-<div class="orv_system"><p>[Constellation, 'Father of the Rich Night', is…!]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon-like Judge of Fire', is urging you to run away!</p></div>
+<div class="orv_system"><p>Constellation, 'Queen of the Darkest Spring', is looking at you with an urgent expression!</p></div>
+<div class="orv_system"><p>Constellation, 'Father of the Rich Night', is…!</p></div>
 <p class="orv_line">The boundless Dragon Voice rushed into my ears next.</p>
-<div class="orv_constellation"><p>[The Dokkaebi that deceived me back then has become the ⸢Dokkaebi King⸥ now.]</p></div>
+<div class="orv_constellation"><p>The Dokkaebi that deceived me back then has become the ⸢Dokkaebi King⸥ now.</p></div>
 <p class="orv_line">The sun vanished and the whole world was now covered in something's shadow.</p>
 <p class="orv_line">The Dragon of the end times, the Final Dragon of the Book of Revelation, unfurled its wings of Calamity at last.</p>
 <br>
@@ -368,18 +375,12 @@
             <a href="./ch_403"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_405">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="404" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="467" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="403" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="403" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 226: Ep. 42 - Asmodeus, VI</title>
     <meta property="og:title" content="Ch 226: Ep. 42 - Asmodeus, VI" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,32 +177,32 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00226.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 226: Ep. 42 - Asmodeus, VI</h1></div>
 <p class="orv_line">My hands were trembling, but I took a deep breath and regained my composure. No, Yoo Joonghyuk couldn't have died. Above all, the message that caught my attention was proof of that.</p>
-<div class="orv_system"><p>[You are currently waiting for the next main scenario.]</p></div>
+<div class="orv_system"><p>You are currently waiting for the next main scenario.</p></div>
 <p class="orv_line">Based on common sense, Yoo Joonghyuk shouldn't be given the exile penalty. It was because Yoo Joonghyuk would've entered a new scenario like me.</p>
 <p class="orv_line">There might be variations for individual scenarios, but he became a duke as soon as I did. It meant that like me, Yoo Joonghyuk was a 'demon king candidate'.</p>
-<div class="orv_system"><p>[There is currently a delay in the compensation due to an error in the Star Stream system.]</p></div>
+<div class="orv_system"><p>There is currently a delay in the compensation due to an error in the Star Stream system.</p></div>
 <p class="orv_line">However, there was this one message. It was very rare to acquire a story or achievement through 'impersonation' in the Star Stream. This time, Yoo Joonghyuk and I impersonated each other and made achievements in each other's name.</p>
 <p class="orv_line">What if the main scenario of the Star Stream was twisted because of this? I entered the main scenario safely, but what if Yoo Joonghyuk didn't enter? Was that why the exile penalty had begun?</p>
 <p class="orv_line">"Are you okay?"</p>
@@ -211,44 +218,44 @@
 <p class="orv_line">"…I'm sorry." I stroked Biyoo's head. According to Ways of Survival, a dokkaebi must sleep for at least half a day when it was just born. I was sleeping so it wasn't strange for her to have fallen asleep too.</p>
 <p class="orv_line">It was a situation where Biyoo had exhausted her strength from overworking.</p>
 <p class="orv_line">I decided to use the second method.</p>
-<div class="orv_system"><p>[The exclusive skill, 'Omniscient Reader's Viewpoint' has been activated!]</p></div>
+<div class="orv_system"><p>The exclusive skill, 'Omniscient Reader's Viewpoint' has been activated!</p></div>
 <p class="orv_line">Then my temples started throbbing.</p>
-<div class="orv_system"><p>[The skill is cancelled due to accumulated damage.]</p></div>
+<div class="orv_system"><p>The skill is cancelled due to accumulated damage.</p></div>
 <p class="orv_line">…Damn, this didn't work either. It seemed that I had suffered a huge blow when my link with Yoo Joonghyuk was severed.</p>
 <p class="orv_line">In the end, I picked up the smartphone again. It was the first time I felt so helpless. I didn't know if Yoo Joonghyuk was dead or alive, and the only thing I could do was read the novel.</p>
 <p class="orv_line">No, don't think like this. Kim Dokja, please wake up. You've survived so far thanks to this novel.</p>
 <p class="orv_line">I bit my lips and opened Ways of Survival again. Everything came from this story. Thus, the answer would be in the story.</p>
-<div class="orv_system"><p>[The attribute effect has increased 'speed reading'!]</p></div>
+<div class="orv_system"><p>The attribute effect has increased 'speed reading'!</p></div>
 <p class="orv_line">I read the book with wide eyes, not missing a single word or sentence.</p>
-<div class="orv_quote"><p>「 'At that time, we shouldn't have pretended to support the Demon King Asmodeus'. 」</p></div>
+<div class="orv_quote"><p>'At that time, we shouldn't have pretended to support the Demon King Asmodeus'.</p></div>
 <p class="orv_line">It was hard to see it as Yoo Joonghyuk and I pretending to support Asmodeus this time. I might've deceived him but in the end, there was a nuance that he would still cooperate with us. I couldn't be sure that Yoo Joonghyuk was dead with this sentence alone.</p>
 <p class="orv_line">The 13th round.</p>
 <p class="orv_line">The 14th round.</p>
 <p class="orv_line">…</p>
 <p class="orv_line">Yoo Joonghyuk's regressions continued. It took longer than before, but his spirit was gradually worn down by the continuous regressions.</p>
-<div class="orv_quote"><p>「 'It is hard'. 」</p></div>
+<div class="orv_quote"><p>'It is hard'.</p></div>
 <p class="orv_line">The 18th round.</p>
-<div class="orv_quote"><p>「 'I want to quit now'. 」</p></div>
+<div class="orv_quote"><p>'I want to quit now'.</p></div>
 <p class="orv_line">The 21st round.</p>
-<div class="orv_quote"><p>「 'Dammit, dammit, dammit!' 」</p></div>
+<div class="orv_quote"><p>'Dammit, dammit, dammit!'</p></div>
 <p class="orv_line">…</p>
 <p class="orv_line">I read about Yoo Joonghyuk's despair and also felt my heart burning. As time went by, Yoo Joonghyuk returned to his original pessimistic form. A regressor who survived every regression using the principles of only thinking about himself.</p>
-<div class="orv_quote"><p>「 'I can't change anything'. 」</p></div>
+<div class="orv_quote"><p>'I can't change anything'.</p></div>
 <p class="orv_line">He went back, went back and went back again. In the second half of the novel, there was no big difference with the Ways of Survival that I had read before. Apart from the first half that I influenced, Yoo Joonghyuk made similar mistakes and regained similar tendencies.</p>
-<div class="orv_quote"><p>「 'Damn, a few more times…' 」</p></div>
+<div class="orv_quote"><p>'Damn, a few more times…'</p></div>
 <p class="orv_line">I had spent several months with Yoo Joonghyuk, but I was only able to have this much influence on the novel. I wanted to reach out to the frustrated Yoo Joonghyuk but Yoo Joonghyuk was in a place which I couldn't reach. The 25th, 26th, 27th rounds… Yoo Joonghyuk constantly repeated the regressions and I had to stop reading.</p>
 <p class="orv_line">It was painful to read. The original Ways of Survival was a story like this. How was I able to read all 3,149 chapters?</p>
 <p class="orv_line">Due to my irregular breathing, Biyoo attached to my chest was moving uncomfortably.</p>
 <p class="orv_line">I remembered the page number before scrolling down to the bottom. It might be burdensome to follow this story right now, but there was something I had to check first.</p>
 <p class="orv_line">Did Yoo Joonghyuk reach the proper ending in the first revision? Did the author write the epilogue?</p>
 <p class="orv_line">The screen hitched badly while I was scrolling due to the poor performance of the smartphone. How long was I scrolling down? I finally reached the spot where the original ending should be. However, I only found a huge void.</p>
-<div class="orv_quote"><p>「 Currently being edited. ㅠㅠ 」</p></div>
+<div class="orv_quote"><p>Currently being edited. ㅠㅠ</p></div>
 <p class="orv_line">There was a one line message. I was swept away by two different emotions.</p>
 <p class="orv_line">"…Haha."</p>
 <p class="orv_line">The emoticon that followed the word 'edited' angered me but some of the possibilities that came from the message made me excited. This story could still be changed. There was a way even if Yoo Joonghyuk was dead. Somehow I had to bring him back to this regression.</p>
 <p class="orv_line">I scrolled through with a determined feeling. Then, the sentences that were written in the section before the ending caught my attention.</p>
-<div class="orv_quote"><p>「 Before the end of the scenario, Yoo Joonghyuk recalled countless memories of his death. 」</p></div>
-<div class="orv_quote"><p>「 'In the third round, I almost died the first time I met Asmodeus'. 」</p></div>
+<div class="orv_quote"><p>Before the end of the scenario, Yoo Joonghyuk recalled countless memories of his death.</p></div>
+<div class="orv_quote"><p>'In the third round, I almost died the first time I met Asmodeus'.</p></div>
 <p class="orv_line">I had too many thoughts.</p>
 <p class="orv_line">…Eh? Wait. This was currently the third round…</p>
 <p class="orv_line">There was a knock on the door and I raised my head to see Mark. He saw that I was awake and waved. "R-Revolutionary! You woke up? That is fortunate."</p>
@@ -300,9 +307,9 @@
 <div class="orv_image"><img src="../../../assets/images/226 - As I listened, I felt somewhat sweet, sad and nostalgic.jpg" alt="" loading="lazy"></div>
 <div class="orv_notice"><p>* Unofficial fan illustration (non-canonical)</p></div>
 <p class="orv_line">I felt a strange loneliness at the end of the story. I see. Everyone was living well.</p>
-<div class="orv_system"><p>[The exclusive skill 'Fourth Wall' is shaking.]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Fourth Wall' is shaking.</p></div>
 <p class="orv_line">I realized that I was an 'outsider' of this story.</p>
-<div class="orv_quote"><p>「 The 25th regression Yoo Joonghyuk said, 'I can't change anything'. 」</p></div>
+<div class="orv_quote"><p>The 25th regression Yoo Joonghyuk said, 'I can't change anything'.</p></div>
 <p class="orv_line">Without me, people were still continuing the scenarios. Just like Yoo Joonghyuk repeated the regressions. The 4th, 5th, 6th rounds… it led to an endless story where I could be easily forgotten. Meanwhile, people would move towards the ending. It was natural. It might be natural, but I felt pained at the reminder.</p>
 <p class="orv_line">I bit my lips and tried to say something. I'm glad. The words didn't emerge from my mouth. Then I heard Yoo Joonghyuk's voice. "In addition, everyone is telling your story."</p>
 <p class="orv_line">I slowly raised my head at the words. Yoo Joonghyuk's face was still expressionless. "They say it a lot. Your story."</p>
@@ -315,18 +322,12 @@
             <a href="./ch_225"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_227">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="226" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="275" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="225" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="225" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

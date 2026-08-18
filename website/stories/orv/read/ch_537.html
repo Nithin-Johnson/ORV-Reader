@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 537: Epilogue 4 - The Omniscient Reader's Viewpoint, II</title>
     <meta property="og:title" content="Ch 537: Epilogue 4 - The Omniscient Reader's Viewpoint, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,66 +177,66 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00537.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 537: Epilogue 4 - The Omniscient Reader's Viewpoint, II</h1></div>
 <p class="orv_line">"Run! We only have to go a little bit further!"</p>
-<p class="orv_line">Han Sooyoung, along with her companions, broke through the waves of the Constellations. The Ark scattered debris as it was destroyed, and revealed the [Final Wall] in its full glory in the distance.</p>
+<p class="orv_line">Han Sooyoung, along with her companions, broke through the waves of the Constellations. The Ark scattered debris as it was destroyed, and revealed the <strong>[Final Wall]</strong> in its full glory in the distance.</p>
 <p class="orv_line">The grace of a Giant Story was enveloping the companions as if to protect them.</p>
-<div class="orv_system"><p>[Giant Story, 'One Who Rebels Against Fate', has begun its storytelling.]</p></div>
+<div class="orv_system"><p>Giant Story, 'One Who Rebels Against Fate', has begun its storytelling.</p></div>
 <p class="orv_line">It was a new Giant Story they got to earn during this regression turn. Without it, they would've died many times over.</p>
 <p class="orv_line">They could see the figures of Constellations marching towards them from the distance. Like enraged wild beasts, Myth-grade Constellations from &lt;Vedas&gt; and &lt;Papyrus&gt; were rushing in their direction.</p>
 <p class="orv_line">⸢Unlike their previous regression turn, they didn't have 'Outer Gods' supporting them this time.⸥</p>
 <p class="orv_line">Their combat force was in an overwhelmingly disadvantageous situation. The only reason why they weren't pushed back even then, was because the strongest ever group in existence made out of regressors was lending them support.</p>
 <p class="orv_line">The ones taking on the frontlines were the Chinese and Indian Incarnations.</p>
-<p class="orv_line">When China's Fei Hu gave his signal, Incarnations from his own force, [Ah Q] yanked out their weapons simultaneously. As if he couldn't possibly lose here, India's Ranvir Khan also joined the fray. The Incarnations from [Trimurti] following after him pulled out their own spears too, and caused the sand storm to violently rage on.</p>
-<p class="orv_line">Then, [Justice] led by Selena Kim and [Solzhenitsyn] led by Iris who tagged along with her took on both sides of the flanks.</p>
+<p class="orv_line">When China's Fei Hu gave his signal, Incarnations from his own force, <strong>[Ah Q]</strong> yanked out their weapons simultaneously. As if he couldn't possibly lose here, India's Ranvir Khan also joined the fray. The Incarnations from <strong>[Trimurti]</strong> following after him pulled out their own spears too, and caused the sand storm to violently rage on.</p>
+<p class="orv_line">Then, <strong>[Justice]</strong> led by Selena Kim and <strong>[Solzhenitsyn]</strong> led by Iris who tagged along with her took on both sides of the flanks.</p>
 <p class="orv_line">Even then, their battle situation remained disadvantageous.</p>
-<div class="orv_constellation"><p>[Go on ahead, I shall take care of this place.]</p></div>
-<div class="orv_constellation"><p>[If you fail to rescue my disciple, then consider your lives forfeit.]</p></div>
+<div class="orv_constellation"><p>Go on ahead, I shall take care of this place.</p></div>
+<div class="orv_constellation"><p>If you fail to rescue my disciple, then consider your lives forfeit.</p></div>
 <p class="orv_line">Kyrgios and the Breaking the Sky Saint, they too were part of the 100-strong regressors. Weapons of these two swept across the battlefield, and the Transcendents from Murim supported their rear and followed after the duo.</p>
 <p class="orv_line">Kwa-aaaaaah!</p>
 <p class="orv_line">Both Kyrgios and the Breaking the Sky Saint had grown even stronger than before through the regression; as if they were in competition against each other, their sword strikes raucously shook the entire battlefield. The screams of the Constellations being torn apart by the silver-hued storm reverberated throughout the land.</p>
-<p class="orv_line">The [Wall] needed to be opened while they were buying a little bit of time.</p>
+<p class="orv_line">The <strong>[Wall]</strong> needed to be opened while they were buying a little bit of time.</p>
 <p class="orv_line">⸢This wall had been opened once before.⸥</p>
 <p class="orv_line">Han Sooyoung looked up at the massive wall they had finally succeeded in reaching and spoke up. "Jang Hayoung."</p>
 <p class="orv_line">"Yes, ma'am."</p>
 <p class="orv_line">As if she was waiting for it, Jang Hayoung extended her hand.</p>
 <p class="orv_line">She was now the full-fledged 'King of Transcendents' after going through the scenarios one more time.</p>
-<div class="orv_system"><p>[The 'Wall of Impossible Communication' has discovered its intended position.]</p></div>
-<p class="orv_line">The [Final Wall] began vibrating as if it was reacting to their Giant Story.</p>
+<div class="orv_system"><p>The 'Wall of Impossible Communication' has discovered its intended position.</p></div>
+<p class="orv_line">The <strong>[Final Wall]</strong> began vibrating as if it was reacting to their Giant Story.</p>
 <p class="orv_line">"Yoo Sangah."</p>
 <p class="orv_line">Yoo Sangah nodded her head and stepped forward.</p>
-<div class="orv_system"><p>[The 'Wall that Decides Samsara' has discovered its intended position.]</p></div>
-<p class="orv_line">⸢[You are… I see… You have journeyed this lengthy cycle of time and eventually made your way back here, my arhat.]⸥</p>
+<div class="orv_system"><p>The 'Wall that Decides Samsara' has discovered its intended position.</p></div>
+<p class="orv_line">⸢<strong>[You are… I see… You have journeyed this lengthy cycle of time and eventually made your way back here, my arhat.]</strong>⸥</p>
 <p class="orv_line">The Story of Sakyamuni quietly entered their ears. Sakyamuni of this world-line easily accepted Yoo Sangah's existence. He had already repeated many, many cycles of samsara, allowing him to gain an understanding of this universe's rules.</p>
 <p class="orv_line">"Jung Heewon, Lee Gilyoung."</p>
-<p class="orv_line">The [Wall That Divides the Good and Evil] they received from 'Metatron' and 'Agares'.</p>
-<p class="orv_line">Jung Heewon reached out first and placed her hand on the [Final Wall].</p>
-<p class="orv_line">⸢[…Have you really come here, after witnessing what's beyond that wall?]⸥</p>
+<p class="orv_line">The <strong>[Wall That Divides the Good and Evil]</strong> they received from 'Metatron' and 'Agares'.</p>
+<p class="orv_line">Jung Heewon reached out first and placed her hand on the <strong>[Final Wall]</strong>.</p>
+<p class="orv_line">⸢<strong>[…Have you really come here, after witnessing what's beyond that wall?]</strong>⸥</p>
 <p class="orv_line">Metatron of this world-line was deeply astonished by the companions' existence. He accepted the eventual destruction of &lt;Eden&gt;, and admitted that that result couldn't be changed. However, he made a slightly different decision during this regression turn. The proof of that was the &lt;Eden&gt;'s Archangels currently aiding the Incarnations. However, it wasn't only him who made a bizarre choice.</p>
-<p class="orv_line">⸢[How amusing. You dare to ask me, a Demon King, to hand over the [Wall] to you.]⸥</p>
+<p class="orv_line">⸢[How amusing. You dare to ask me, a Demon King, to hand over the <strong>[Wall]</strong> to you.]⸥</p>
 <p class="orv_line">The Demon Kings and the angels who fought against each other with murderous intensity back in the Great War of Saints and Demons stood as their allies this time. It was a choice based on their desire to survive, but nevertheless, it proved to be a great help to &lt;Kim Dokja's Company&gt;.</p>
-<div class="orv_system"><p>[The 'Wall That Divides the Good and Evil' has discovered its intended position.]</p></div>
-<div class="orv_system"><p>[A great number of Constellations are unleashing their Status towards &lt;Kim Dokja's Company&gt;!]</p></div>
+<div class="orv_system"><p>The 'Wall That Divides the Good and Evil' has discovered its intended position.</p></div>
+<div class="orv_system"><p>A great number of Constellations are unleashing their Status towards &lt;Kim Dokja's Company&gt;!</p></div>
 <p class="orv_line">Of course, it wasn't as if every Constellation out there became their allies. The absolute majority of &lt;Star Stream&gt; still remained as their enemies, and those Constellations who chose to help were minuscule in number.</p>
 <p class="orv_line">Even then, the Companions got this far safely. Although deep scars remained in various parts of their bodies, not a single one was lost along the way.</p>
 <p class="orv_line">This was only because no one got greedy and the end goal was the same for everyone.</p>
@@ -242,8 +249,8 @@
 <p class="orv_line">"Why don't we ask that after meeting the other you?"</p>
 <p class="orv_line">That brought a sad little smile on Kim Dokja's lips. He looked at Han Sooyoung, then looked at the faces of the companions one by one.</p>
 <p class="orv_line">"If this is… the story you wanted…"</p>
-<p class="orv_line">His pale hand then touched the [Final Wall].</p>
-<p class="orv_line">The last fragment of the Final Wall was [The Fourth Wall]. And as he was Kim Dokja's Avatar, he too held a part of that key.</p>
+<p class="orv_line">His pale hand then touched the <strong>[Final Wall]</strong>.</p>
+<p class="orv_line">The last fragment of the Final Wall was <strong>[The Fourth Wall]</strong>. And as he was Kim Dokja's Avatar, he too held a part of that key.</p>
 <p class="orv_line">Tsu-chuchuchuchu…!</p>
 <p class="orv_line">As if this world wasn't acknowledging his existence, Kim Dokja's body began shaking unsteadily.</p>
 <p class="orv_line">And soon after that, a portion of the wall opened up along with loud splitting noises. Kim Dokja shaking around as if he was getting electrocuted blacked out instantly. Lee Hyunsung continued to carry him on the back.</p>
@@ -277,7 +284,7 @@
 <p class="orv_line">⸢It was the subway.⸥</p>
 <p class="orv_line">"Chimera Dragon!"</p>
 <p class="orv_line">The Chimera Dragon loudly howled out as it got summoned, and took flight after the companions got on its back. The creature scythed through the air and reached the rear of the subway in an instant. Only a little bit remained now. As long as they could bridge this gap, they…!</p>
-<div class="orv_constellation"><p>[Gyahhhhhhh!]</p></div>
+<div class="orv_constellation"><p>Gyahhhhhhh!</p></div>
 <p class="orv_line">Suddenly, the Chimera Dragon screamed and lost its balance. The stunned Shin Yoosung quickly took a look behind only to discover some 'things' were biting onto the Dragon's tail.</p>
 <div class="orv_outergod"><p>【Grrrrrr…!】</p></div>
 <p class="orv_line">Large wild dogs resembling pitch-black shadows began biting into the Dragon's tail and its wings. These creatures were appearing from a portal opening up in the air. The Chimera Dragon's torn-off flesh got scattered away within the white snowfield.</p>
@@ -293,32 +300,32 @@
 <p class="orv_line">The golden-coloured lightning crashed down and hounds were viciously cast away. Yoo Sangah was the first to figure out who was behind the attack.</p>
 <p class="orv_line">"Great Sage!"</p>
 <p class="orv_line">The golden rims were glowing gloriously. The master of the Ruyi Jingu Bang was grinning confidently.</p>
-<div class="orv_constellation"><p>[Leave this to me.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Prisoner of the Golden Headband', is unleashing his Status!]</p></div>
+<div class="orv_constellation"><p>Leave this to me.</p></div>
+<div class="orv_system"><p>Constellation, 'Prisoner of the Golden Headband', is unleashing his Status!</p></div>
 <p class="orv_line">It wasn't just the Great Sage alone.</p>
-<p class="orv_line">Some had followed the companions into the passageway of the [Final Wall] left wide open.</p>
-<div class="orv_constellation"><p>[This is my opportunity to show everyone what will happen if this great one uses both of his hands!]</p></div>
-<div class="orv_system"><p>[Constellation, 'Abyssal Black Flame Dragon', has removed all the seals on himself!]</p></div>
+<p class="orv_line">Some had followed the companions into the passageway of the <strong>[Final Wall]</strong> left wide open.</p>
+<div class="orv_constellation"><p>This is my opportunity to show everyone what will happen if this great one uses both of his hands!</p></div>
+<div class="orv_system"><p>Constellation, 'Abyssal Black Flame Dragon', has removed all the seals on himself!</p></div>
 <p class="orv_line">The noble flames of an Archangel were added to the mix and burned away at the hounds.</p>
-<div class="orv_constellation"><p>[I may not be as strong as the 999th turn's me, but… there's no problem buying you more time.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Demon-like Judge of Fire', is rousing up the flames of hell!]</p></div>
-<p class="orv_line">The flames of [Hellfire] brilliantly danced upwards as pure-white wings spread out. With a faint smile, Uriel spoke.</p>
-<div class="orv_constellation"><p>[I'll leave Kim Dokja in your hands, Heewon-ah.]</p></div>
+<div class="orv_constellation"><p>I may not be as strong as the 999th turn's me, but… there's no problem buying you more time.</p></div>
+<div class="orv_system"><p>Constellation, 'Demon-like Judge of Fire', is rousing up the flames of hell!</p></div>
+<p class="orv_line">The flames of <strong>[Hellfire]</strong> brilliantly danced upwards as pure-white wings spread out. With a faint smile, Uriel spoke.</p>
+<div class="orv_constellation"><p>I'll leave Kim Dokja in your hands, Heewon-ah.</p></div>
 <p class="orv_line">Using that fleeting opening the Constellations had created, the Chimera Dragon finally managed to bite onto the rear of the subway. However, the vehicle's hardy exterior didn't break even when the Dragon's fangs clamped down on it.</p>
 <p class="orv_line">"Master! With me!"</p>
 <p class="orv_line">Lee Jihye holding swords in both of her hands kicked off the Dragon's back and leapt up.</p>
-<p class="orv_line">Two swords were held in her grip – the [Twin Dragon Sword] of the Maritime War God, and the [Invincible Warrior's Sword] from Goryeo's First Sword.</p>
-<div class="orv_system"><p>[Constellation, 'Goryeo's First Swordsman', is bestowing his blessing!]</p></div>
-<div class="orv_system"><p>[Constellation, 'Maritime War God', is cheering on his Incarnation!]</p></div>
+<p class="orv_line">Two swords were held in her grip – the <strong>[Twin Dragon Sword]</strong> of the Maritime War God, and the <strong>[Invincible Warrior's Sword]</strong> from Goryeo's First Sword.</p>
+<div class="orv_system"><p>Constellation, 'Goryeo's First Swordsman', is bestowing his blessing!</p></div>
+<div class="orv_system"><p>Constellation, 'Maritime War God', is cheering on his Incarnation!</p></div>
 <p class="orv_line">The Fourth Law.</p>
 <p class="orv_line">Fourth Sword that Beheads the Emptiness.</p>
 <p class="orv_line">It was the skill Cheok Jungyeong used while fighting against the 'Indescribable Distance'. Although still incomplete, Lee Jihye could use this sword strike to some degree now. This miracle only came about due to the hellish training she went through in the 'Isle of Reincarnators' as well as her stunning innate talent.</p>
 <p class="orv_line">Kwa-kwakwakwakwa!</p>
-<p class="orv_line">The subway's exterior that withstood a Dragon's fangs began to bend bit by bit from her continuous sword strikes. Not missing that opening, Yoo Joonghyuk's [Black Heavenly Demon Sword] also made a move.</p>
+<p class="orv_line">The subway's exterior that withstood a Dragon's fangs began to bend bit by bit from her continuous sword strikes. Not missing that opening, Yoo Joonghyuk's <strong>[Black Heavenly Demon Sword]</strong> also made a move.</p>
 <p class="orv_line">The Breaking the Sky Swordsmanship.</p>
 <p class="orv_line">Secret Technique: Inner Mystery Transmission.</p>
 <p class="orv_line">Shooting Star Slash.</p>
-<p class="orv_line">The trajectory of destruction the [Black Heavenly Demon Sword] drew slammed into the rear of the subway.</p>
+<p class="orv_line">The trajectory of destruction the <strong>[Black Heavenly Demon Sword]</strong> drew slammed into the rear of the subway.</p>
 <p class="orv_line">Once the choking dust cleared out of their view, a small hole had appeared on the train's rear.</p>
 <p class="orv_line">"It's done! Everyone, get in!"</p>
 <p class="orv_line">The companions rapidly infiltrated the subway's interior. More correctly, with the exception of two people.</p>
@@ -337,20 +344,20 @@
 <p class="orv_line">She reflexively shouted out. "Kim Dokja is in the cabin number 3807! Everyone, get to the front!"</p>
 <p class="orv_line">This was a similar situation to back when they earned the Giant Story, 'Demon Realm's Spring'. It seemed that the rest of the companions also realized this.</p>
 <p class="orv_line">"This does resemble that time when we fought against Surya. I shall pry open the door in front of us!" Lee Hyunsung quickly rushed forward, and while expanding every muscle on his body, he let out a mighty shout. "Haaaaaaahp!"</p>
-<p class="orv_line">The [Great Mountain Push] that had exceeded the skill proficiency was activated, and the thick subway's door creaked loudly while being pushed open.</p>
-<div class="orv_system"><p>[Giant Story, 'Demon Realm's Spring', has begun its storytelling!]</p></div>
-<div class="orv_system"><p>['Stage Transformation' has been triggered!]</p></div>
+<p class="orv_line">The <strong>[Great Mountain Push]</strong> that had exceeded the skill proficiency was activated, and the thick subway's door creaked loudly while being pushed open.</p>
+<div class="orv_system"><p>Giant Story, 'Demon Realm's Spring', has begun its storytelling!</p></div>
+<div class="orv_system"><p>'Stage Transformation' has been triggered!</p></div>
 <p class="orv_line">This Giant Story could only be completed because everyone worked together. And the blessing of this Story was now aiding them.</p>
 <p class="orv_line">When Lee Hyunsung couldn't open a door, Yoo Sangah found the button to operate it, and when a door even she couldn't do anything about appeared, Lee Gilyoung summoned his insects and wore out the internal parts to make way.</p>
 <p class="orv_line">And so, they continued to open one, open two, and then, opened yet another door. As the number of doors they managed to open grew higher, the expressions of the companions were gradually getting heated up, too.</p>
 <p class="orv_line">⸢Kim Dokja was definitely beyond there.⸥</p>
-<p class="orv_line">Everyone in the group could feel it. The pitch-black door before them, it had to be the [Final Door].</p>
+<p class="orv_line">Everyone in the group could feel it. The pitch-black door before them, it had to be the <strong>[Final Door]</strong>.</p>
 <p class="orv_line">"…Urgh. It's impossible with my Stigma."</p>
 <p class="orv_line">Unfortunately, this door didn't want to open unlike before.</p>
 <p class="orv_line">"I can't find the button, either."</p>
 <p class="orv_line">"Even the bugs say they can't figure out its structure."</p>
 <p class="orv_line">"Should I use my skill to break it?"</p>
-<p class="orv_line">They resorted to Lee Jihye's sword strikes as well as Lee Hyunsung's [Great Mountain Destruction], but the door didn't budge an inch. The companions could only look at each other. How come only this door refused to open up?</p>
+<p class="orv_line">They resorted to Lee Jihye's sword strikes as well as Lee Hyunsung's <strong>[Great Mountain Destruction]</strong>, but the door didn't budge an inch. The companions could only look at each other. How come only this door refused to open up?</p>
 <p class="orv_line">It was then that Yoo Sangah opened her mouth. "Everyone, wait. I think this door is the same as the one Yoo Joonghyuk-ssi broke back in the past."</p>
 <p class="orv_line">"Yoo Joonghyuk did that?"</p>
 <p class="orv_line">"Yes. Back in the third regression turn, Joonghyuk-ssi broke this door and entered…"</p>
@@ -360,7 +367,7 @@
 <p class="orv_line">Han Sooyoung's mind began racing. What happened to Yoo Joonghyuk? Could it be that he got…?</p>
 <p class="orv_line">"Block the rear!"</p>
 <p class="orv_line">"Eonni! Hurry up!"</p>
-<p class="orv_line">There was no more time to think. Lee Hyunsung ran forward like a true tanker, and started enduring against the hounds' fangs by entering [Steel Transformation], while Lee Jihye and Jung Heewon unsheathed their swords to smack away the creatures.</p>
+<p class="orv_line">There was no more time to think. Lee Hyunsung ran forward like a true tanker, and started enduring against the hounds' fangs by entering <strong>[Steel Transformation]</strong>, while Lee Jihye and Jung Heewon unsheathed their swords to smack away the creatures.</p>
 <p class="orv_line">Jang Hayoung shouted out. "Han Sooyoung! Do something!"</p>
 <p class="orv_line">Han Sooyoung approached the black door. When she placed her hand on it, faint sparks began exploding. She slowly closed her eyes.</p>
 <p class="orv_line">All of the sentences were, in actual reality, written by her hands. Even if that was the 'other Han Sooyoung', that version was still undoubtedly Han Sooyoung. So, this hand should be able to open this door, too.</p>
@@ -375,7 +382,7 @@
 <p class="orv_line">"Keuk…!"</p>
 <p class="orv_line">Blood trickled out from her eyes and mouth. The blood flow reversed, causing her blood to pour out onto the subway's floor.</p>
 <p class="orv_line">As her vision was dyed in crimson, Han Sooyoung turned to look back at her companions. They were gradually spreading apart while fighting. And their running footsteps imprinted on the subway's corridor remained there like Stories.</p>
-<div class="orv_system"><p>[You don't have the 'Overwrite' authority!]</p></div>
+<div class="orv_system"><p>You don't have the 'Overwrite' authority!</p></div>
 <p class="orv_line">⸢An already-completed world was right before her eyes.⸥</p>
 <p class="orv_line">The voices of her companions calling out to her seemed so distant.</p>
 <p class="orv_line">⸢The world where the result devours the cause, and the cause devours the result. The world where all possibilities exist, and the individual possibility supports and maintains each other. A perfect, immortal epic where a story manufactures a story all on its own.⸥</p>
@@ -392,18 +399,12 @@
             <a href="./ch_536"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_538">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="537" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="750" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="536" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="536" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

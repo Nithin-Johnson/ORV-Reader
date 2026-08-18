@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 468: Ep. 89 - Great Apocalypse, II</title>
     <meta property="og:title" content="Ch 468: Ep. 89 - Great Apocalypse, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00468.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 468: Ep. 89 - Great Apocalypse, II</h1></div>
 <p class="orv_line">The unconscious Yoo Joonghyuk didn't want to wake up even after four hours passed by.</p>
@@ -198,22 +205,22 @@
 <p class="orv_line">Also, his damn cheeks were so hard that even the concerted slapping from both of us failed to puff them up. Our palms went numb from pain, instead.</p>
 <p class="orv_line">Han Sooyoung spoke in a genuinely impressed tone of voice. "You know, this is kind of fun?"</p>
 <p class="orv_line">"…This is no time to crack jokes like that."</p>
-<div class="orv_system"><p>[5 hours and 12 minutes remaining until the start of the Great Apocalypse Scenario.]</p></div>
+<div class="orv_system"><p>5 hours and 12 minutes remaining until the start of the Great Apocalypse Scenario.</p></div>
 <p class="orv_line">We really didn't have much time left. Soon, the 'Great Apocalypse' will commence, and the Outer Gods would start invading us due to the expanding Probability.</p>
 <p class="orv_line">But now, Yoo Joonghyuk was in this state.</p>
-<p class="orv_line">I couldn't even begin to guess what went wrong where. Was this related to my [Omniscient Reader's Viewpoint] somehow?</p>
-<div class="orv_system"><p>['Character List' has failed to activate.]</p></div>
-<div class="orv_system"><p>[Applicable individual is not a 'Character'.]</p></div>
-<p class="orv_line">I tried using [Character List] one more time, but the resulting message was the same.</p>
+<p class="orv_line">I couldn't even begin to guess what went wrong where. Was this related to my <strong>[Omniscient Reader's Viewpoint]</strong> somehow?</p>
+<div class="orv_system"><p>'Character List' has failed to activate.</p></div>
+<div class="orv_system"><p>Applicable individual is not a 'Character'.</p></div>
+<p class="orv_line">I tried using <strong>[Character List]</strong> one more time, but the resulting message was the same.</p>
 <p class="orv_line">There were a lot of 'Yoo Joonghyuks' in this universe, but that message only ever appeared with just one. That Yoo Joonghyuk of the 1863rd regression turn, disappearing towards his own story…</p>
 <p class="orv_line">When I got that far, I began thinking of something. But… could it really be?</p>
-<p class="orv_line">Lee Seolhwa watching on from the side asked a question. "Should we feed him the [Life and Death Pill]?"</p>
-<p class="orv_line">Not too long ago, she finally managed to perfect the ultimate recovery medicine, the [Life and Death Pill]. This elixir could apparently cure any and all fatal wounds when ingested.</p>
+<p class="orv_line">Lee Seolhwa watching on from the side asked a question. "Should we feed him the <strong>[Life and Death Pill]</strong>?"</p>
+<p class="orv_line">Not too long ago, she finally managed to perfect the ultimate recovery medicine, the <strong>[Life and Death Pill]</strong>. This elixir could apparently cure any and all fatal wounds when ingested.</p>
 <p class="orv_line">"Have you already reached the level of mass-producing it?"</p>
 <p class="orv_line">"No, not yet. I was only able to concoct a few. Didn't have enough ingredients…"</p>
-<p class="orv_line">I could only sigh. Since we didn't know what might happen, we couldn't afford to carelessly waste the [Life and Death Pill].</p>
-<div class="orv_system"><p>[Character 'Yoo Joonghyuk's' egos are colliding!]</p></div>
-<p class="orv_line">On top of that, we weren't sure if the problem of one's ego could be solved by the [Life and Death Pill], either. It was then, a slight vibration reverberated throughout the Industrial Complex.</p>
+<p class="orv_line">I could only sigh. Since we didn't know what might happen, we couldn't afford to carelessly waste the <strong>[Life and Death Pill]</strong>.</p>
+<div class="orv_system"><p>Character 'Yoo Joonghyuk's' egos are colliding!</p></div>
+<p class="orv_line">On top of that, we weren't sure if the problem of one's ego could be solved by the <strong>[Life and Death Pill]</strong>, either. It was then, a slight vibration reverberated throughout the Industrial Complex.</p>
 <p class="orv_line">"Dokja-ssi, we've detected movement."</p>
 <p class="orv_line">Lee Hyunsung opened the sick bay's door and hurriedly entered.</p>
 <p class="orv_line">Han Sooyoung and I looked at each other at the same time. I urgently switched the display panel on and the Pacific Ocean's situation soon filled it up.</p>
@@ -229,15 +236,15 @@
 <p class="orv_line">"Nebulas all desperately fought together. Most of the Constellations were ground down to fine dust trying to stop that."</p>
 <p class="orv_line">"Where are those oh-so-mighty Constellations, then?"</p>
 <p class="orv_line">"What do you mean, where?"</p>
-<div class="orv_system"><p>[Many Constellations are watching your judgement.]</p></div>
+<div class="orv_system"><p>Many Constellations are watching your judgement.</p></div>
 <p class="orv_line">Most likely, they were busy spectating on our apocalypse.</p>
-<div class="orv_system"><p>[Constellation, 'Demon-like Judge of Fire', is criticising other Constellations, asking them if the ideals of righteousness in &lt;Star Stream&gt; have all withered away.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Abyssal Black Flame Dragon', is crossing his arms and shaking his head.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Most Ancient Liberator', finds the Constellations of the large Nebulas quite pathetic.]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon-like Judge of Fire', is criticising other Constellations, asking them if the ideals of righteousness in &lt;Star Stream&gt; have all withered away.</p></div>
+<div class="orv_system"><p>Constellation, 'Abyssal Black Flame Dragon', is crossing his arms and shaking his head.</p></div>
+<div class="orv_system"><p>Constellation, 'Most Ancient Liberator', finds the Constellations of the large Nebulas quite pathetic.</p></div>
 <p class="orv_line">Even though Constellations from our side provoked them, they remained composed in their replies.</p>
-<div class="orv_system"><p>[A portion of Constellations argue that all of this was brought upon by &lt;Kim Dokja's Company&gt; themselves.]</p></div>
+<div class="orv_system"><p>A portion of Constellations argue that all of this was brought upon by &lt;Kim Dokja's Company&gt; themselves.</p></div>
 <p class="orv_line">Some of them even began arguing that it was our fault, too.</p>
-<div class="orv_system"><p>[A small number of Constellations argues that it's &lt;Kim Dokja's Company&gt; that stole away their shares first.]</p></div>
+<div class="orv_system"><p>A small number of Constellations argues that it's &lt;Kim Dokja's Company&gt; that stole away their shares first.</p></div>
 <p class="orv_line">Now normally, such an argument was utter drivel with no leg to stand on, but for some reason, my mind remained calm even after hearing them. Because I roughly knew why they were acting like this.</p>
 <p class="orv_line">Back when we went to visit &lt;Oz&gt;, the monkey told me this.</p>
 <p class="orv_line">– Many Stories that constitute Giant Stories have all entered the path of stagnation similar to &lt;Oz&gt;'s situation. A certain Story that has appeared in recent times have begun eating into the percentages of other Stories, you see… I'm talking about you people's Story.</p>
@@ -248,7 +255,7 @@
 <p class="orv_line">Only the ones permitted could reach the Final Scenario.</p>
 <p class="orv_line">Even if everyone on Earth was inducted into &lt;Kim Dokja's Company&gt;, the aftermath of the Probability's storm caused by the nonsensical scenario jump would ensure our complete destruction.</p>
 <p class="orv_line">"Goddammit."</p>
-<p class="orv_line">I could sense [Predictive Plagiarism] spinning its gears vigorously inside her head.</p>
+<p class="orv_line">I could sense <strong>[Predictive Plagiarism]</strong> spinning its gears vigorously inside her head.</p>
 <p class="orv_line">"You said that these Outer God Kings are beings from the 999th turn. How many are there, anyway?"</p>
 <p class="orv_line">"From what I know, there are four excluding the 'Secretive Plotter'."</p>
 <p class="orv_line">"…Are we going to fight all four of them at the same time??"</p>
@@ -315,7 +322,7 @@
 <p class="orv_line">"I know you called me here to scold me. But, I came here to tell you this, too. I'm not a little kid anymore, hyung. I'm also qualified, you know. Just like everyone else, I reached this far by beating back all the scenarios."</p>
 <p class="orv_line">I inwardly swallowed back my gasps.</p>
 <p class="orv_line">I knew this already. I did, but…</p>
-<div class="orv_constellation"><p>[The Fourth Wall's voice could be heard next, sounding thoroughly unimpressed by my thoughts.]</p></div>
+<div class="orv_constellation"><p>The Fourth Wall's voice could be heard next, sounding thoroughly unimpressed by my thoughts.</p></div>
 <p class="orv_line">⸢D on't tre at him l ike a kid you are mo re l ike a k id.⸥</p>
 <p class="orv_line">'Gilyoung-ie is still a kid'.</p>
 <p class="orv_line">⸢Y ou ca n't fig ht wi thout hi m an yway.⸥</p>
@@ -324,7 +331,7 @@
 <p class="orv_line">⸢D on't wo rry, my fr iend will he lp.⸥</p>
 <p class="orv_line">…Your friend?</p>
 <p class="orv_line">It was then, a transparent wall-like something wavered around Lee Gilyoung accompanied by 'Tsu-chuchut' noise.</p>
-<div class="orv_system"><p>['The Fourth Wall' is responding to its friend.]</p></div>
+<div class="orv_system"><p>'The Fourth Wall' is responding to its friend.</p></div>
 <p class="orv_line">I cautiously reached out towards the empty air.</p>
 <p class="orv_line">Something was there. This sensation of touching a wall – I was familiar with it. However, this 'wall' was still incomplete.</p>
 <p class="orv_line">I finally understood several things just then.</p>
@@ -349,15 +356,15 @@
 <p class="orv_line">Yoo Joonghyuk must've known this too and that's why he tried to take Lee Gilyoung away. What a fox-like sly bastard.</p>
 <p class="orv_line">I gently grasped the shoulders of worried Lee Gilyoung and spoke. "Your hyung is now a Myth-grade Constellation, you know."</p>
 <p class="orv_line">If it was a few days ago, I'd have avoided making this choice if at all possible. But the story was different now.</p>
-<p class="orv_line">I lightly sucked in my breath, and while looking up, spoke in my true voice. [I know you're watching, so come out.]</p>
+<p class="orv_line">I lightly sucked in my breath, and while looking up, spoke in my true voice. <strong>[I know you're watching, so come out.]</strong></p>
 <p class="orv_line">The moment the tone of my voice changed, a heavy reverberation spread out around us. Sparks completely inundated the reception room and Lee Gilyoung's expression changed. As his brows furrowed in pain, his eyes became white next. I realized what was happening here so I quickly broke past the Probability's storm and tightly grasped the boy's shoulder.</p>
-<div class="orv_constellation"><p>[I don't remember telling you to descend.]</p></div>
+<div class="orv_constellation"><p>I don't remember telling you to descend.</p></div>
 <p class="orv_line">Tsu-chuchuchut!</p>
 <p class="orv_line">The after-effects from the Probability's storm lessened significantly and all sorts of pain rushed into my arm. But, I ably endured it. If I didn't go with this much showmanship, then I'd not be able to negotiate properly with this guy.</p>
-<div class="orv_system"><p>[Your Status is suppressing the after-effects of a localised Probability's storm!]</p></div>
+<div class="orv_system"><p>Your Status is suppressing the after-effects of a localised Probability's storm!</p></div>
 <p class="orv_line">Lee Gilyoung's expression regained its calm rapidly.</p>
 <p class="orv_line">And right in the next instance, sounds akin to the beatings of insect wings came out from his mouth, currently looking as if empty darkness had taken over.</p>
-<div class="orv_constellation"><p>[I'm familiar with waiting, yet you have taken far too long.]</p></div>
+<div class="orv_constellation"><p>I'm familiar with waiting, yet you have taken far too long.</p></div>
 <p class="orv_line">This voice sounded as if millions of locusts were crashing in at the same time.</p>
 <br>
 <hr>
@@ -366,18 +373,12 @@
             <a href="./ch_467"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_469">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="468" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="522" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="467" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="467" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

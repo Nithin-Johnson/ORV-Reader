@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 326: Ep. 61 - Gigantomachia, VI</title>
     <meta property="og:title" content="Ch 326: Ep. 61 - Gigantomachia, VI" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,72 +177,72 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00326.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 326: Ep. 61 - Gigantomachia, VI</h1></div>
 <p class="orv_line">The ceiling of Tartarus was opening.</p>
-<div class="orv_system"><p>[Cracks have occurred in some areas of Tartarus!]</p></div>
-<div class="orv_system"><p>[Someone is trying to break out of jail!]</p></div>
+<div class="orv_system"><p>Cracks have occurred in some areas of Tartarus!</p></div>
+<div class="orv_system"><p>Someone is trying to break out of jail!</p></div>
 <p class="orv_line">Along with the warning message that appeared in the air, the whole of the Underworld was shaking.</p>
-<div class="orv_system"><p>[The judges of the Underworld have noticed the actions of the Demon King of Salvation!]</p></div>
+<div class="orv_system"><p>The judges of the Underworld have noticed the actions of the Demon King of Salvation!</p></div>
 <p class="orv_line">Persephone warned in a sharp voice.</p>
-<div class="orv_constellation"><p>[…It is only this time. Please keep this in mind, Demon King of Salvation.]</p></div>
+<div class="orv_constellation"><p>…It is only this time. Please keep this in mind, Demon King of Salvation.</p></div>
 <p class="orv_line">Earthquakes occurred and a faint portal started to be made on the wide-open ceiling of Tartarus. Persephone had opened an exit to the ground. Briareus watched the scene and asked,</p>
-<div class="orv_constellation"><p>[What did you say to make the queen of the Underworld help you?]</p></div>
+<div class="orv_constellation"><p>What did you say to make the queen of the Underworld help you?</p></div>
 <p class="orv_line">"It was just some threats."</p>
 <p class="orv_line">30 minutes ago, I sent the following message to Persephone.</p>
 <p class="orv_line">–If you refuse to cooperate, I will spread the footage of Tartarus all over the Star Stream.</p>
 <p class="orv_line">Tartarus had many secrets of the Underworld, whether it was the secret recruits they trained or the institutional facilities that were concealed. It wasn't good if the hostile forces to Olympus received a secret report on Tartarus.</p>
 <p class="orv_line">Then Briareus shook his head.</p>
-<div class="orv_constellation"><p>[Her Majesty was threatened by that?]</p></div>
+<div class="orv_constellation"><p>Her Majesty was threatened by that?</p></div>
 <p class="orv_line">"She is on our side. She just needed a pretext to release me. It is an excuse when things go wrong in the future."</p>
 <p class="orv_line">If this Gigantomachia failed and Olympus picked up on what happened in the Underworld, the Underworld would be in a difficult situation. Perhaps my current blackmail would be a bit of a defense for the Underworld.</p>
 <p class="orv_line">Of course, this was a story for when Gigantomachia failed but I didn't intend to let that happen.</p>
 <p class="orv_line">Briareus spoke,</p>
-<div class="orv_constellation"><p>[You don't seem to know the king and the queen well.]</p></div>
+<div class="orv_constellation"><p>You don't seem to know the king and the queen well.</p></div>
 <p class="orv_line">"Huh?"</p>
 <p class="orv_line">Briareas gave a knowing smile instead of answering.</p>
-<div class="orv_system"><p>[You have received the Giant's Oath.]</p></div>
-<div class="orv_system"><p>[You have acquired a new semi-myth story!]</p></div>
-<div class="orv_system"><p>[The story 'Giant's Liberator' has been acquired.]</p></div>
-<div class="orv_system"><p>[This story is attributed to 'A Single Story'.]</p></div>
+<div class="orv_system"><p>You have received the Giant's Oath.</p></div>
+<div class="orv_system"><p>You have acquired a new semi-myth story!</p></div>
+<div class="orv_system"><p>The story 'Giant's Liberator' has been acquired.</p></div>
+<div class="orv_system"><p>This story is attributed to 'A Single Story'.</p></div>
 <p class="orv_line">Giant's Liberator. This was the first story I should obtain from this Olympus war.</p>
-<div class="orv_constellation"><p>[Giant's Liberator. Soon the giants of this place will enter Gigantomachia. Is there anything you specifically want?]</p></div>
+<div class="orv_constellation"><p>Giant's Liberator. Soon the giants of this place will enter Gigantomachia. Is there anything you specifically want?</p></div>
 <p class="orv_line">"There is no such thing. Just do what you want."</p>
-<div class="orv_constellation"><p>[…I'm becoming curious. Why do you want to reach ■■? No other constellations have every built up achievement like you. Are you dreaming of a 'perfect story'?]</p></div>
+<div class="orv_constellation"><p>…I'm becoming curious. Why do you want to reach ■■? No other constellations have every built up achievement like you. Are you dreaming of a 'perfect story'?</p></div>
 <p class="orv_line">A perfect story. Some people called 'A Single Story' by such a name. A story that never existed before and was made up of stories that never existed.</p>
 <p class="orv_line">"I just want to see the end with my colleagues. Together without losing anyone."</p>
-<div class="orv_constellation"><p>[It will be the hardest story in the world. There has never been such a story.]</p></div>
+<div class="orv_constellation"><p>It will be the hardest story in the world. There has never been such a story.</p></div>
 <p class="orv_line">It was true. A myth without any sacrifices didn't exist in this world.</p>
-<div class="orv_constellation"><p>[The probability of the Star Stream always moves in a way that forces sacrifice. Fate won't easily let you go.]</p></div>
+<div class="orv_constellation"><p>The probability of the Star Stream always moves in a way that forces sacrifice. Fate won't easily let you go.</p></div>
 <p class="orv_line">"I won't know without trying. In addition, fate has already been overcome."</p>
 <p class="orv_line">I remembered the damn fate given to me by fucking Olympus. Even now, I gritted my teeth remembering it.</p>
 <p class="orv_line">However, Briareus' expression was grave.</p>
-<div class="orv_constellation"><p>[Have you overcome fate?]</p></div>
+<div class="orv_constellation"><p>Have you overcome fate?</p></div>
 <p class="orv_line">Something suddenly flashed through my mind. According to Ways of Survival, all titans were born with the power of prophecy.</p>
-<div class="orv_constellation"><p>[Liberator, 'fate' is a much broader concept than you think. The fate given to you by Olympus is only a speck of dust in the world. The real fate is inevitable. If you avoid it, probability must be distorted. That twisted probability must be resolved by someone. That is why there is no 'perfect' story.]</p></div>
+<div class="orv_constellation"><p>Liberator, 'fate' is a much broader concept than you think. The fate given to you by Olympus is only a speck of dust in the world. The real fate is inevitable. If you avoid it, probability must be distorted. That twisted probability must be resolved by someone. That is why there is no 'perfect' story.</p></div>
 <p class="orv_line">"I won't know if I don't try. I will do it if possible. My colleagues also aren't weak enough to succumb to fate."</p>
 <p class="orv_line">I jumped into the portal and declared, "Then let's meet in Gigantomachia."</p>
 <p class="orv_line">Briareus nodded.</p>
-<div class="orv_constellation"><p>[I wish you the blessing of the story.]</p></div>
+<div class="orv_constellation"><p>I wish you the blessing of the story.</p></div>
 <br>
 <hr>
 <br>
@@ -244,7 +251,7 @@
 <p class="orv_line">"Maybe we need the story's blessing." Jang Hayoung muttered as he watched the returnees approaching like cattle.</p>
 <p class="orv_line">"There is no need if you have good training."</p>
 <p class="orv_line">A sword scattering a silver-white light emerged from behind Kyrgios.</p>
-<div class="orv_system"><p>[Pure White Paradox.]</p></div>
+<div class="orv_system"><p>Pure White Paradox.</p></div>
 <p class="orv_line">It was a sword made by the masters of Peace Land, Kyrgios's home for decades. It was Kyrgios' weapon that travelled with him through numerous battlefields and had the same performance as a star relic. The fact that Kyrgios, who rarely used a weapon, pulled out the sword proved that the opponents weren't easy.</p>
 <p class="orv_line">Two figures were flying at the head of the returnees. There was a middle-aged man in a gorgeous red uniform and one in a black and white uniform engraved with the symbol of his school.</p>
 <p class="orv_line">"Strange. I heard the Breaking the Sky Sword Saint was here."</p>
@@ -283,18 +290,18 @@
 <p class="orv_line">In one hand, she was holding the broken Eight Beaded Bell and in the other, she was holding a bronze dagger. A few returnees staggered back from the aura that emerged from the Heavenly Symbols she was holding.</p>
 <p class="orv_line">"There is no need to be afraid. She can't use the power of her sponsor!"</p>
 <p class="orv_line">The returnees shouted and Lee Sookyung smiled bitterly. In the battle of Dark Castle, most of the Founder's Mother's status was destroyed. Even so, she had a way to fight.</p>
-<div class="orv_quote"><p>「 Establish the centre and become the wind. 」</p></div>
+<div class="orv_quote"><p>Establish the centre and become the wind.</p></div>
 <p class="orv_line">The bronze sword Lee Sookyung was holding gave off a bright light.</p>
-<div class="orv_system"><p>[The constellation 'King Heungmu the Great' is surprised by the actions of incarnation 'Lee Sookyung'.]</p></div>
-<div class="orv_system"><p>[The constellation 'One-eyed Maitreya' is warning that it is dangerous!]</p></div>
-<div class="orv_system"><p>[The constellation, 'Seo Ae Il Pil…]</p></div>
+<div class="orv_system"><p>The constellation 'King Heungmu the Great' is surprised by the actions of incarnation 'Lee Sookyung'.</p></div>
+<div class="orv_system"><p>The constellation 'One-eyed Maitreya' is warning that it is dangerous!</p></div>
+<div class="orv_system"><p>The constellation, 'Seo Ae Il Pil…</p></div>
 <p class="orv_line">All the constellations of the Korean Peninsula warned her at the same time. She knew. She was already familiar with what would happen if she did this.</p>
 <p class="orv_line">Lee Sookyung glanced around the industrial complex. The image of the sleeping Yoo Sangah blurred the window.</p>
 <p class="orv_line">She thought of the children going to Olympus for Yoo Sangah's sake. The upright soldier Lee Hyunsung, Jung Heewon who didn't tolerate injustice, the fierce but brave Lee Gilyoung, the calm and gifted Shin Yoosung. She also remembered Lee Seolhwa, who was warm-hearted and took good care of the party members and Han Sooyoung, who often grumbled but had a keen sense of humour.</p>
 <p class="orv_line">Then she was reminded of her child. The time for that child to live. The story she long dreamt about. The time she couldn't protect him.</p>
 <p class="orv_line">The light from the bronze sword was as bright as the sun. Lee Sookyung muttered very quietly. "Emperor of Heaven and the Wind God."</p>
 <p class="orv_line">There was a constellation associated with each of the star relics of the Korean Peninsula. The bronze sword Lee Sookyung was holding right now was one of the Heavenly Symbols.</p>
-<div class="orv_system"><p>[The constellation 'Wind God of Heaven' is looking down at Incarnation 'Lee Sookyung'.]</p></div>
+<div class="orv_system"><p>The constellation 'Wind God of Heaven' is looking down at Incarnation 'Lee Sookyung'.</p></div>
 <p class="orv_line">Wind God of Heaven. One of the three constellations who held the highest rank in Hongik. Now Lee Sookyung was making her last bet with her life as collateral. "Come, Pungbaek!"</p>
 <p class="orv_line">The sky opened and a blue aura roared around the dagger. The returnees blinked at the blinding light. Lee Sookyung looked at the sky and the sky looked down at Lee Sookyung.</p>
 <p class="orv_line">'Just for a moment. Please lend me your strength'.</p>
@@ -319,18 +326,12 @@
             <a href="./ch_325"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_327">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="326" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="397" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="325" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="325" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

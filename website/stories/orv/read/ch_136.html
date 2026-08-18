@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 136: Ep. 26 - Scenario Destroyer, VI</title>
     <meta property="og:title" content="Ch 136: Ep. 26 - Scenario Destroyer, VI" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,35 +177,35 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00136.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 136: Ep. 26 - Scenario Destroyer, VI</h1></div>
 <p class="orv_line">I doubted my ears for a moment. This bastard Yoo Joonghyuk… What did he say just now?</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' appears late and looks around.]</p></div>
-<div class="orv_system"><p>[The constellation 'Secretive Plotter' explains the situation while snickering.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is astonished.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is desperately praying for the line to be spoken again.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' appears late and looks around.</p></div>
+<div class="orv_system"><p>The constellation 'Secretive Plotter' explains the situation while snickering.</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is astonished.</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is desperately praying for the line to be spoken again.</p></div>
 <p class="orv_line">Nirvana asked again like he couldn't believe it. "Just now…"</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' likes this relationship triangle.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' has sponsored you 2,000 coins.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' likes this relationship triangle.</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' has sponsored you 2,000 coins.</p></div>
 <p class="orv_line">What damn relationship triangle? When I saw Nirvana's face grow pale, it hit me that things were going sideways. I was in the middle of putting together a good plan dammit.</p>
 <p class="orv_line">I said, "Hey, what bullshit is that? We aren't companions?"</p>
 <p class="orv_line">Yoo Joonghyuk replied with a blank expression. "I wasn't talking about you specifically…"</p>
@@ -213,11 +220,11 @@
 <p class="orv_line">"Why not? Listen, just close your eyes and get it over with…"</p>
 <p class="orv_line">Nirvana was spitting with rage at my whispering. "Don't whisper in front of me!"</p>
 <p class="orv_line">Then Yoo Joonghyuk spoke in a loud voice, "I'm not interested in men!"</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is howling while spitting up blood.]</p></div>
-<div class="orv_system"><p>[2,000 coins have been sponsored.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is howling while spitting up blood.</p></div>
+<div class="orv_system"><p>2,000 coins have been sponsored.</p></div>
 <p class="orv_line">Nirvana looked like he was also going to spit blood.</p>
 <p class="orv_line">"I am not a man!"</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is taken aback.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is taken aback.</p></div>
 <p class="orv_line">"Of course, I'm not a woman either!"</p>
 <p class="orv_line">It was an absolute disaster. I was annoyed seeing the wave of magic power that was growing stronger with Nirvana's passion.</p>
 <p class="orv_line">"What are you doing? Just say you like him! You can use him later…"</p>
@@ -226,7 +233,7 @@
 <p class="orv_line">"Please, wait!"</p>
 <p class="orv_line">In the end, I stepped forward and opened my mouth. A reincarnator was a card that could be useful in future situations. There was no need to fight against him here.</p>
 <p class="orv_line">"There seems to be a misunderstanding, so let's talk."</p>
-<div class="orv_system"><p>[The character 'Nirvana Moebius' has lost his sense of reason.]</p></div>
+<div class="orv_system"><p>The character 'Nirvana Moebius' has lost his sense of reason.</p></div>
 <p class="orv_line">"We have no intention of being hostile to the Salvation Church. He just isn't good at expressing himself…" I put on a show while deliberately bumping Yoo Joonghyuk's shoulder. "In fact, we were also considering whether we should join you as subordinates, Church Leader. Let's throw away the future and live for the present! How good would that be? Joonghyuk-ah, don't you also think so?"</p>
 <p class="orv_line">Of course, I didn't actually agree with the doctrines. In the world of the Star Stream, if you threw away the future and lived in the present, then you'd just die in the present. And even if I was a bit less happy, I wanted to live longer. That's why I was a slave to capitalism.</p>
 <p class="orv_line">"…Really? Answer, Yoo Joonghyuk!"</p>
@@ -234,9 +241,9 @@
 <p class="orv_line">"No, wait a minute!" I shouted but it was already too late.</p>
 <p class="orv_line">Nirvana gritted his teeth. "Indeed, so it's like this. Then you can go to hell together!"</p>
 <p class="orv_line">I used Bookmark the moment Nirvana moved.</p>
-<div class="orv_system"><p>[The Bookmark skill is currently updating.]</p></div>
-<div class="orv_system"><p>[Replacing old bookmarks with new bookmarks.]</p></div>
-<div class="orv_system"><p>[There are five minutes left until the bookmarks replacement is complete.]</p></div>
+<div class="orv_system"><p>The Bookmark skill is currently updating.</p></div>
+<div class="orv_system"><p>Replacing old bookmarks with new bookmarks.</p></div>
+<div class="orv_system"><p>There are five minutes left until the bookmarks replacement is complete.</p></div>
 <p class="orv_line">What? Now of all times? Meanwhile, Nirvana had accelerated to right before my nose. It was fast, as if he was using Way of the Wind.</p>
 <p class="orv_line">…Wait, this really was Way of the Wind? I belatedly recalled that he was an Imyuntar in a past life.</p>
 <p class="orv_line">Yoo Joonghyuk stepped in front of me. Nirvana's mandala and Yoo Joonghyuk's Splitting the Sky Sword collided, emitting a sound like a building was exploding.</p>
@@ -244,7 +251,7 @@
 <p class="orv_line">"Kim Dokja, stay back! This person…!"</p>
 <p class="orv_line">"Unfortunately, however." Nirvana's words were faster. Not just his words, his actions were faster too. "Your companion will die."</p>
 <p class="orv_line">Nirvana chanted a spell and Yoo Joonghyuk's body stiffened like a stone statue.</p>
-<div class="orv_system"><p>[The character 'Nirvana Moebius' has used the stigma Eternal Nightmare Lv. 8.]</p></div>
+<div class="orv_system"><p>The character 'Nirvana Moebius' has used the stigma Eternal Nightmare Lv. 8.</p></div>
 <p class="orv_line">I knew this skill. It was the most lethal technique against Yoo Joonghyuk. Sparks flew around the hardened body of Yoo Joonghyuk. Like a broken robot, Yoo Joonghyuk's neck froze as he turned back to me. Although he was looking at me, his eyes weren't truly seeing me.</p>
 <p class="orv_line">R…un… aw…ay.</p>
 <p class="orv_line">Yoo Joonghyuk was currently trapped in a prison of his most terrible trauma. A horrible prison where one memory was repeatedly played. It was a mental skill that was a level higher than the skill used by the boss of the Theatre Dungeon.</p>
@@ -269,7 +276,7 @@
 <p class="orv_line">The members recited threats and sprang towards the Hwarang. As I looked at the Salvation members, Nirvana was already reaching towards the King of Beauty's forehead. "Don't worry, King of Beauty. I like pretty existences."</p>
 <p class="orv_line">"U-Uhhhh…"</p>
 <p class="orv_line">"Thus, I won't kill you."</p>
-<div class="orv_system"><p>[The character 'Nirvana Moebius' has used Thought Infection Lv. 9.]</p></div>
+<div class="orv_system"><p>The character 'Nirvana Moebius' has used Thought Infection Lv. 9.</p></div>
 <p class="orv_line">A white aura stretched from Nirvana and started to wriggle around Min Jiwon. Like tentacles, the aura stems pierced her body.</p>
 <p class="orv_line">"Accept your present."</p>
 <p class="orv_line">"I don't want to! I don't want to…!"</p>
@@ -281,11 +288,11 @@
 <p class="orv_line">"Accept your desires. Admit that you have such sick thoughts while your companions are dying! That is what a human is. If you deny your desires then you are nothing."</p>
 <p class="orv_line">The king of Beauty's eyes gradually became cloudy. It was a skill that violently convinced a person of their own desires and forced their time into the 'present'.</p>
 <p class="orv_line">This was the process of joining the 'Salvation Church'. Dammit, Bookmark was still…</p>
-<div class="orv_system"><p>[The Bookmark update has been completed.]</p></div>
+<div class="orv_system"><p>The Bookmark update has been completed.</p></div>
 <p class="orv_line">That's it!</p>
-<div class="orv_system"><p>[The update has increased the efficiency of the bookmarks by 20%.]</p></div>
+<div class="orv_system"><p>The update has increased the efficiency of the bookmarks by 20%.</p></div>
 <p class="orv_line">I activated Bookmark.</p>
-<div class="orv_system"><p>[The exclusive skill 'Way of the Wind Lv. 9' has been activated!]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Way of the Wind Lv. 9' has been activated!</p></div>
 <p class="orv_line">I stepped on the wind and flew through the air. The increased bookmark efficiency raised the level of Way of the Wind.</p>
 <p class="orv_line">Okay, then there might be a chance of victory. I swung Blade of Faith towards the confused Nirvana. Nirvana managed to avoid my blade but it was a close call.</p>
 <p class="orv_line">I raised Min Jiwon. "Are you okay?"</p>
@@ -297,14 +304,14 @@
 <p class="orv_line">"I'm a bit famous?"</p>
 <p class="orv_line">"Impertinent fellow!"</p>
 <p class="orv_line">Nirvana once again collided with the Blade of Faith. Then a white aura was emitted from the mandala.</p>
-<div class="orv_system"><p>[The character 'Nirvana Moebius' has used Thought Infection Lv. 9.]</p></div>
+<div class="orv_system"><p>The character 'Nirvana Moebius' has used Thought Infection Lv. 9.</p></div>
 <p class="orv_line">It appeared like expected.</p>
 <p class="orv_line">"Now die! Accept your fate!"</p>
 <p class="orv_line">Nirvana's white aura shot towards me but I didn't avoid it.</p>
 <p class="orv_line">"Human beings aren't slaves of desire. They are animals fighting their desires."</p>
-<div class="orv_system"><p>[The exclusive skill, 'Fourth Wall' is activated.]</p></div>
+<div class="orv_system"><p>The exclusive skill, 'Fourth Wall' is activated.</p></div>
 <p class="orv_line">The white aura digging into me melted away in an instant. I'm sorry but your thoughts would never eat at me. It was because my 'present' wasn't here.</p>
-<div class="orv_system"><p>[The Fourth Wall has completely invalidated the effects of Thought Infection.]</p></div>
+<div class="orv_system"><p>The Fourth Wall has completely invalidated the effects of Thought Infection.</p></div>
 <p class="orv_line">I rushed to the astonished Nirvana.</p>
 <br>
 <hr>
@@ -313,18 +320,12 @@
             <a href="./ch_135"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_137">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="136" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="123" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="135" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="135" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

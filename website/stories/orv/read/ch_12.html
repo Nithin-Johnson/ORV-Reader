@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 12: Ep. 3 – Contract, I</title>
     <meta property="og:title" content="Ch 12: Ep. 3 – Contract, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00012.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 12: Ep. 3 – Contract, I</h1></div>
 <p class="orv_line">My body suddenly became heavy as I felt water entering my lungs. Then I was sucked in somewhere. I wasn't torn apart because I fell with perfect timing. However, I couldn't lose consciousness here. I had to stay awake. I needed to wait for a while. Somehow, I managed to curl up and hold my breath. 10 seconds, 20 seconds, 30 seconds… I was barely breathing when my hands hit a tangible wall in the darkness.</p>
@@ -201,68 +208,68 @@
 <p class="orv_line">…Well, this was when I looked at it from Yoo Joonghyuk's viewpoint.</p>
 <p class="orv_line">"A companion like you… Crazy psychopath."</p>
 <p class="orv_line">I barely doggy paddled to a floating styrofoam panel and raised my body onto it. Thanks to the warmth of the stomach, I wasn't cold. However, the problem was what was to happen from now on. I closed my eyes and played the message log I'd heard.</p>
-<div class="orv_system"><p>[You have failed to clear the scenario.]</p></div>
-<div class="orv_system"><p>[Paid settlement will begin.]</p></div>
-<div class="orv_system"><p>[100 coins have been reduced for the channel usage fee.]</p></div>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' has nodded at your exciting remarks.]</p></div>
-<div class="orv_system"><p>[100 coins have been sponsored.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' nods at your choice.]</p></div>
-<div class="orv_system"><p>[100 coins have been sponsored.]</p></div>
-<div class="orv_system"><p>[The constellation 'Secretive Plotter' is disappointed in your rash remarks.]</p></div>
+<div class="orv_system"><p>You have failed to clear the scenario.</p></div>
+<div class="orv_system"><p>Paid settlement will begin.</p></div>
+<div class="orv_system"><p>100 coins have been reduced for the channel usage fee.</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' has nodded at your exciting remarks.</p></div>
+<div class="orv_system"><p>100 coins have been sponsored.</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' nods at your choice.</p></div>
+<div class="orv_system"><p>100 coins have been sponsored.</p></div>
+<div class="orv_system"><p>The constellation 'Secretive Plotter' is disappointed in your rash remarks.</p></div>
 <p class="orv_line">There were quite a few messages. Additionally, a few exposed constellations sponsored me. Maybe it was due to the final conversation I had with Yoo Joonghyuk. I felt a little down as I read through the messages of the constellations one by one and collected the coins. If I had picked one of these constellations in the first Sponsor Selection, this might not have happened. However, I had no regret in my choice.</p>
 <p class="orv_line">After encountering Yoo Joonghyuk directly, I was certain. The Great Sage Heaven's Equal might be a sponsor of the highest quality but he wasn't enough. I needed more than just 'sponsorship' if I wanted to confront Yoo Joonghyuk. That was what I would gain from here.</p>
 <p class="orv_line">The walls of the stomach growled, and small waves rose inside. The sea commander seemed to be moving somewhere. I turned on my smartphone and calculated the time. According to Ways of Survival, the ichthyosaur started to secrete stomach acid around three hours after ingesting food. In other words, I didn't have much time left.</p>
-<div class="orv_constellation"><p>[Haha, it is sad that things turned out like this. It was very interesting. There was a sound effect before the dokkaebi's voice rang out.]</p></div>
+<div class="orv_constellation"><p>Haha, it is sad that things turned out like this. It was very interesting. There was a sound effect before the dokkaebi's voice rang out.</p></div>
 <p class="orv_line">"…Dokkaebi?"</p>
-<div class="orv_constellation"><p>[Yes, that's right. You don't seem panicked at all?]</p></div>
+<div class="orv_constellation"><p>Yes, that's right. You don't seem panicked at all?</p></div>
 <p class="orv_line">"I knew you would come."</p>
-<div class="orv_constellation"><p>[Hrmm. It sounds like you were waiting for me?]</p></div>
+<div class="orv_constellation"><p>Hrmm. It sounds like you were waiting for me?</p></div>
 <p class="orv_line">"Of course, I have been waiting."</p>
 <p class="orv_line">A light turned on, and the dokkaebi appeared. I couldn't tell for sure from his expression alone, but this guy was clearly interested. If I was pushed here, I wouldn't be able to eat my meal. So, I deliberately spoke calmly, "Are you going to take coins from me?"</p>
-<div class="orv_system"><p>[…Coins?]</p></div>
+<div class="orv_system"><p>…Coins?</p></div>
 <p class="orv_line">"You have to take coins in exchange for me failing the scenario."</p>
-<div class="orv_constellation"><p>[Hmm, not your life?]</p></div>
+<div class="orv_constellation"><p>Hmm, not your life?</p></div>
 <p class="orv_line">"If it was my life, you would have written 'death' in the failure results column, not three question marks. Doesn't this mean there is room to negotiate?"</p>
-<div class="orv_constellation"><p>[…Hahaha. How interesting.]</p></div>
+<div class="orv_constellation"><p>…Hahaha. How interesting.</p></div>
 <p class="orv_line">In fact, there was a loophole in my words. The scenario message was 'Failure: ???'. This literally meant that the penalty of failure was unknown. It was just my assumption that it was in exchange for coins. Nevertheless, there was a reason why I was so certain.</p>
 <p class="orv_line">"Am I wrong?"</p>
 <p class="orv_line">It was because I already knew about this scenario.</p>
 <p class="orv_line">The dokkaebi hesitated for a moment before nodding.</p>
-<div class="orv_constellation"><p>[You are right. It's amazing that you could determine this point with such a clue… As expected from someone who is attracting the constellations' attention.]</p></div>
+<div class="orv_constellation"><p>You are right. It's amazing that you could determine this point with such a clue… As expected from someone who is attracting the constellations' attention.</p></div>
 <p class="orv_line">The dokkaebi's tone was filled with sincere admiration.</p>
-<div class="orv_constellation"><p>[As you said, you can survive this sub-scenario if you pay coins, even if you fail.]</p></div>
+<div class="orv_constellation"><p>As you said, you can survive this sub-scenario if you pay coins, even if you fail.</p></div>
 <p class="orv_line">"How much?"</p>
-<div class="orv_constellation"><p>[Pay 5,100 coins. Then I will let you live.]</p></div>
+<div class="orv_constellation"><p>Pay 5,100 coins. Then I will let you live.</p></div>
 <p class="orv_line">I looked at how many coins I currently possessed.</p>
-<div class="orv_system"><p>[Coins Possessed: 5,100 C]</p></div>
+<div class="orv_system"><p>Coins Possessed: 5,100 C</p></div>
 <p class="orv_line">I couldn't help smiling. This brat was messing around right now.</p>
 <p class="orv_line">"That is too much."</p>
-<div class="orv_constellation"><p>[Haha, then won't you die? It is up to me to accept the coins or not. If you do something wrong, I can just end it here.]</p></div>
+<div class="orv_constellation"><p>Haha, then won't you die? It is up to me to accept the coins or not. If you do something wrong, I can just end it here.</p></div>
 <p class="orv_line">"Then kill me."</p>
-<div class="orv_constellation"><p>[…Huh?]</p></div>
+<div class="orv_constellation"><p>…Huh?</p></div>
 <p class="orv_line">"Kill me."</p>
-<div class="orv_constellation"><p>[······.]</p></div>
+<div class="orv_constellation"><p>······.</p></div>
 <p class="orv_line">"You can't kill me?"</p>
 <p class="orv_line">The dokkaebi didn't move. This was a natural reaction. After all, he was having a lot of fun with me right now. Furthermore, he wouldn't have come down here to see me if he had been planning to kill me. For this guy, I had to survive here or at least to die miserably.</p>
-<div class="orv_constellation"><p>[Haha. You are really making me angry. Look, now…]</p></div>
+<div class="orv_constellation"><p>Haha. You are really making me angry. Look, now…</p></div>
 <p class="orv_line">The dokkaebi's flat-shaped eyebrows wriggled furiously. It was time to stop the taunts and get to the main point.</p>
 <p class="orv_line">"Low-grade dokkaebi, Bihyung. How are the activities of a streamer?"</p>
 <p class="orv_line">If there was a crack in the face, it would look exactly like this. Dokkaebi Bihyung showed confusion for the first time.</p>
-<div class="orv_constellation"><p>[H-How do you know my name?]</p></div>
+<div class="orv_constellation"><p>H-How do you know my name?</p></div>
 <p class="orv_line">"You haven't been enjoying broadcasting lately, right? The constellations are too stingy."</p>
-<div class="orv_constellation"><p>[W-Who the hell are you? How does a human…]</p></div>
+<div class="orv_constellation"><p>W-Who the hell are you? How does a human…</p></div>
 <p class="orv_line">Bihyung's horns shook. It was a natural reaction. After all, an ordinary human couldn't know about the Star Stream system. However, I wasn't an ordinary human.</p>
-<div class="orv_system"><p>[A few constellations have doubts about your existence.]</p></div>
-<div class="orv_system"><p>[The constellation 'Secretive Plotter''s eyes are shining at your plan.]</p></div>
+<div class="orv_system"><p>A few constellations have doubts about your existence.</p></div>
+<div class="orv_system"><p>The constellation 'Secretive Plotter''s eyes are shining at your plan.</p></div>
 <p class="orv_line">From now on, it wasn't a story for the constellations. I mouthed to Bihyung, "How about we talk after you close the channel?"</p>
 <p class="orv_line">Bihyung was worried and closed the channel.</p>
-<div class="orv_system"><p>[#BI-7623 channel is closed.]</p></div>
+<div class="orv_system"><p>#BI-7623 channel is closed.</p></div>
 <p class="orv_line">Once the constellations left the channel, Bihyung showed his true colors.</p>
-<div class="orv_constellation"><p>[Feel free to speak. You… How can an ordinary human know about the Star Stream broadcasting?]</p></div>
+<div class="orv_constellation"><p>Feel free to speak. You… How can an ordinary human know about the Star Stream broadcasting?</p></div>
 <p class="orv_line">"That isn't important."</p>
-<div class="orv_constellation"><p>[Huh?]</p></div>
+<div class="orv_constellation"><p>Huh?</p></div>
 <p class="orv_line">"Bihyung, do you want to be 'king of the dokkaebis'?"</p>
-<div class="orv_constellation"><p>[What now―]</p></div>
+<div class="orv_constellation"><p>What now―</p></div>
 <p class="orv_line">"Don't you wish to be the best streamer in the network, surpassing Dokgak and Gildal?" Bihyung's complexion was changing. "Dokkaebi Bihyung, sign a contract with me. Then I will make you the king of the dokkaebis."</p>
 <br>
 <hr>
@@ -271,18 +278,12 @@
             <a href="./ch_11"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_13">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="12" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="33" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="11" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="11" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

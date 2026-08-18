@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 121: Ep. 24 - Things that Can Be Changed, I</title>
     <meta property="og:title" content="Ch 121: Ep. 24 - Things that Can Be Changed, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00121.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         <div class="orv_cover"><img src="../../../assets/images/Cover%20Part%201%20-%20121%20-%20Vol%206%20-%20Episodes%2024-28.jpg" alt=""></div>
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 121: Ep. 24 - Things that Can Be Changed, I</h1></div>
 <p class="orv_line">Soon afterwards, the plains became stained with blood from the battle. No, it couldn't be called a battle.</p>
@@ -208,19 +215,19 @@
 <p class="orv_line">The power that went beyond common sense evoked fear and awe. For the inhabitants of Peace Land, humans were both gods and disasters.</p>
 <p class="orv_line">I bent over and extended a finger to the small person. His hand reached out towards this finger. There were rough breathing sounds as the small person came into contact with the tip of my finger.</p>
 <p class="orv_line">A strange joy filled the face of the small person at the moment of his final breath. It was as if he touched a god and received salvation.</p>
-<div class="orv_system"><p>[Perform the duties of a disaster.]</p></div>
+<div class="orv_system"><p>Perform the duties of a disaster.</p></div>
 <p class="orv_line">Now we had to kill these small people. I felt Shin Yoosung emitting a boiling magic power next to me. I was afraid she would immediately rush to the Japanese people but her killing intent was directed in a very rational direction. "That… that guy made this scenario?"</p>
 <p class="orv_line">It was the intermediate dokkaebi. Unlike low-grade dokkaebis, a graceful looking dokkaebi was effortlessly floating in the air with his arms crossed. It wasn't Paul who was taken to the bureau. He would be melting in the heat of Hell right now.</p>
 <p class="orv_line">I remembered the text of Ways of Survival that I read beforehand.</p>
-<div class="orv_quote"><p>「 The intermediate dokkaebi of the Abandoned World scenario. His name is Ganul. 」</p></div>
+<div class="orv_quote"><p>The intermediate dokkaebi of the Abandoned World scenario. His name is Ganul.</p></div>
 <p class="orv_line">The intermediate dokkaebi Ganul said.</p>
-<div class="orv_constellation"><p>[As expected, the 3rd quota players of Japan Dome are hot from the beginning. I hope you will make a lot of coins on Peace Land.]</p></div>
+<div class="orv_constellation"><p>As expected, the 3rd quota players of Japan Dome are hot from the beginning. I hope you will make a lot of coins on Peace Land.</p></div>
 <p class="orv_line">It was the third quota…</p>
 <p class="orv_line">As expected, the scenario of Japan Dome was very hard.</p>
 <p class="orv_line">"Haha, this is the best! This is the reason why the first and second quota people ran so quickly."</p>
 <p class="orv_line">"Do you see the coins coming in right now? This scenario is like a money printer!"</p>
-<div class="orv_system"><p>[Many constellations are excited.]</p></div>
-<div class="orv_system"><p>[Some constellations want to see 10 small people being killed at the same time.]</p></div>
+<div class="orv_system"><p>Many constellations are excited.</p></div>
+<div class="orv_system"><p>Some constellations want to see 10 small people being killed at the same time.</p></div>
 <p class="orv_line">Anger soon filled the face of Shin Yoosung.</p>
 <p class="orv_line">"It is because of these bastards…!"</p>
 <p class="orv_line">However, there was no place for her rage to go. The constellations were on top of the Star Stream. They weren't someone whom a mere incarnation like Shin Yoosung could face. That's why all we could do was find a scapegoat to pour out this anger towards.</p>
@@ -245,48 +252,48 @@
 <p class="orv_line">"Go away! You worms!"</p>
 <p class="orv_line">The small people swung swords smaller than toothpicks at the Japanese people. The useless arrows filled the air and the cavalry maintained their formation without giving up, driving their lances towards the feet of the Japanese. There was still no damage but the small people didn't give up.</p>
 <p class="orv_line">Shin Yoosung watched the scene with her hands clasped tightly together. Then an indirect message was heard.</p>
-<div class="orv_system"><p>[A small planet's constellation is supporting the incarnation 'Gillemium'.]</p></div>
+<div class="orv_system"><p>A small planet's constellation is supporting the incarnation 'Gillemium'.</p></div>
 <p class="orv_line">The constellation of a small planet. A constellation that was born on a small planet and grew on the beliefs of the small humans.</p>
-<div class="orv_system"><p>[A small planet's constellation has sponsored 10 coins to the incarnation 'Gillemium'.]</p></div>
+<div class="orv_system"><p>A small planet's constellation has sponsored 10 coins to the incarnation 'Gillemium'.</p></div>
 <p class="orv_line">Perhaps the incarnation called 'Gillemium' was the name of the small person who hurt the Japanese for the first time.</p>
 <p class="orv_line">"Kal-Seiviahhhh!"</p>
 <p class="orv_line">All of the small people were excited, as if they could win if they attacked a bit more. At least, until the voice of the intermediate dokkaebi was heard.</p>
-<div class="orv_constellation"><p>[This situation is fun. Isn't it more exciting with resistance?]</p></div>
+<div class="orv_constellation"><p>This situation is fun. Isn't it more exciting with resistance?</p></div>
 <p class="orv_line">The dokkaebi Ganul laughed as if to ridicule the resistance of the small people. It was a strange laugh.</p>
-<div class="orv_constellation"><p>[The bigger the despair, the darker the story.]</p></div>
+<div class="orv_constellation"><p>The bigger the despair, the darker the story.</p></div>
 <p class="orv_line">A black aura emerged from the bodies of the Japanese incarnations. The small people realized that something was wrong and stopped attacking.</p>
-<div class="orv_constellation"><p>[Now part of the disaster penalty is lifted. If you choose the path of 'evil', you can get additional buffs.]</p></div>
+<div class="orv_constellation"><p>Now part of the disaster penalty is lifted. If you choose the path of 'evil', you can get additional buffs.</p></div>
 <p class="orv_line">The Japanese people looked down at their bodies and frowned. "Why do we need this?"</p>
 <p class="orv_line">"This game is already too easy… This will make the fun vanish."</p>
-<div class="orv_constellation"><p>[This is also easy. Think of it as a game to relieve stress.]</p></div>
+<div class="orv_constellation"><p>This is also easy. Think of it as a game to relieve stress.</p></div>
 <p class="orv_line">"Well, if you say so…"</p>
 <p class="orv_line">The Japanese people chuckled and didn't hesitate. A strong magic power filled the Japanese people. Based on their stigma, they seemed to have a samurai sponsor. I didn't think they were famous…</p>
-<div class="orv_system"><p>[Some of the probability constraints on the disaster have been lifted.]</p></div>
-<div class="orv_system"><p>[The synchronization with the disasters and sponsors will increase for a period of time.]</p></div>
-<div class="orv_system"><p>[The lacking probability will be paid by the Star Stream's bureau.]</p></div>
+<div class="orv_system"><p>Some of the probability constraints on the disaster have been lifted.</p></div>
+<div class="orv_system"><p>The synchronization with the disasters and sponsors will increase for a period of time.</p></div>
+<div class="orv_system"><p>The lacking probability will be paid by the Star Stream's bureau.</p></div>
 <p class="orv_line">The ground was crushed and blood splattered from over a hundred of the small people. It was a considerable destructive power. However, from the viewpoint of the small people…</p>
 <p class="orv_line">…No, it would be surprising for the small people. In front of these disasters, several small people urinated while others fell unconscious. The small people stared blankly at the disaster, as if they had forgotten how to scream.</p>
 <p class="orv_line">"Ah, ahh… Uwah…"</p>
 <p class="orv_line">The small people holding weapons knelt down. Even the commander who first hurt the Japanese people dropped his sword onto the ground. The eyes filled with courage were now completely broken.</p>
-<div class="orv_quote"><p>「 We can't win. 」</p></div>
-<div class="orv_quote"><p>「 What will our planet… 」</p></div>
+<div class="orv_quote"><p>We can't win.</p></div>
+<div class="orv_quote"><p>What will our planet…</p></div>
 <p class="orv_line">This form of despair was familiar, making it painful to see.</p>
-<div class="orv_system"><p>[The small planet's constellation has discovered you.]</p></div>
+<div class="orv_system"><p>The small planet's constellation has discovered you.</p></div>
 <p class="orv_line">Then a message was heard.</p>
-<div class="orv_system"><p>[The small planet's constellation is looking at you with pathetic eyes.]</p></div>
-<div class="orv_system"><p>[The small planet's constellation is expecting your compassion for a small planet.]</p></div>
-<div class="orv_system"><p>[The small planet's constellation is looking hopefully at you.]</p></div>
-<div class="orv_system"><p>[A small planet's constellation has sponsored you 10 coins.]</p></div>
+<div class="orv_system"><p>The small planet's constellation is looking at you with pathetic eyes.</p></div>
+<div class="orv_system"><p>The small planet's constellation is expecting your compassion for a small planet.</p></div>
+<div class="orv_system"><p>The small planet's constellation is looking hopefully at you.</p></div>
+<div class="orv_system"><p>A small planet's constellation has sponsored you 10 coins.</p></div>
 <p class="orv_line">I frowned and looked up at the sky.</p>
-<div class="orv_system"><p>[You have returned the sponsored 10 coins.]</p></div>
+<div class="orv_system"><p>You have returned the sponsored 10 coins.</p></div>
 <p class="orv_line">Then the messages continued.</p>
-<div class="orv_system"><p>[The small planet's constellation is embarrassed.]</p></div>
-<div class="orv_system"><p>[The small planet's constellation has turned red with shame.]</p></div>
+<div class="orv_system"><p>The small planet's constellation is embarrassed.</p></div>
+<div class="orv_system"><p>The small planet's constellation has turned red with shame.</p></div>
 <p class="orv_line">It was a misunderstanding. The constellation thought I wasn't moving because 10 coins was too small. However, this idea was wrong.</p>
 <p class="orv_line">I spoke in a small voice towards the air. 'If you are really thinking about your planet then don't do that'.</p>
-<div class="orv_system"><p>[The small planet's constellation is embarrassed.]</p></div>
+<div class="orv_system"><p>The small planet's constellation is embarrassed.</p></div>
 <p class="orv_line">'Don't make your planet a story to sell for money'.</p>
-<div class="orv_system"><p>[The small planet's constellation is silent.]</p></div>
+<div class="orv_system"><p>The small planet's constellation is silent.</p></div>
 <p class="orv_line">In the distance, the second Japanese attack was coming. It would surely wipe out the remaining small people.</p>
 <p class="orv_line">Shin Yoosung declared, "Ahjussi, I can't stand it anymore."</p>
 <p class="orv_line">The black aura around the Japanese incarnation's body was gradually becoming thinner. The probability buff was slowly being released.</p>
@@ -296,15 +303,15 @@
 <p class="orv_line">Shin Yoosung's eyes shook.</p>
 <p class="orv_line">"You might be tempted to give up. Do you still want to do it?"</p>
 <p class="orv_line">In fact, I was going to do this from the beginning. I just waited to increase the odds. No matter how pitiful the inhabitants of the planet, they were a different species after all. The most important thing for me right now was Shin Yoosung's life.</p>
-<div class="orv_system"><p>[The probability constraints of the disasters have been restored.]</p></div>
+<div class="orv_system"><p>The probability constraints of the disasters have been restored.</p></div>
 <p class="orv_line">The black auras around their two samurais returned to its original state. Shin Yoosung nodded.</p>
 <p class="orv_line">"I can do it."</p>
 <p class="orv_line">I gave her a signal and ran forward.</p>
-<div class="orv_system"><p>[The Star Stream has noticed your anomalous behavior.]</p></div>
-<div class="orv_system"><p>[Warning. Be careful to avoid being hostile to other disasters.]</p></div>
+<div class="orv_system"><p>The Star Stream has noticed your anomalous behavior.</p></div>
+<div class="orv_system"><p>Warning. Be careful to avoid being hostile to other disasters.</p></div>
 <p class="orv_line">Maybe Shin Yoosung would soon regret her decision. It would soon become clear what would happen to those who gave up 'convenience' in an easy scenario.</p>
 <p class="orv_line">However, sometimes a person had to give up convenience to defend their beliefs.</p>
-<div class="orv_system"><p>[Blade of Faith is activated!]</p></div>
+<div class="orv_system"><p>Blade of Faith is activated!</p></div>
 <p class="orv_line">Light exploded and a roar filled the plains.</p>
 <br>
 <hr>
@@ -313,18 +320,12 @@
             <a href="./ch_120"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_122">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="121" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="112" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="120" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="120" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

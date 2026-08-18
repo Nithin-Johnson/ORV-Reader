@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 95: Ep. 19 – Singularity, III</title>
     <meta property="og:title" content="Ch 95: Ep. 19 – Singularity, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00095.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 95: Ep. 19 – Singularity, III</h1></div>
 <p class="orv_line">It was already morning when I opened my eyes. Han Sooyoung saw me wake up and smiled. She was the last person keeping guard. "Did you have a nightmare?"</p>
@@ -283,14 +290,14 @@
 <p class="orv_line">"Ah! Thank you…"</p>
 <p class="orv_line">"It's nothing. Difficulties should be shared."</p>
 <p class="orv_line">Of course, I was essentially a different person from Yoo Sangah. All my good deeds were planned activities.</p>
-<div class="orv_system"><p>[A few people have a great liking towards you.]</p></div>
-<div class="orv_system"><p>[Your understanding of the character 'Shin Yoosung' has increased.]</p></div>
-<div class="orv_system"><p>[Your understanding of the character 'Ma Kangcheol' has increased.]</p></div>
-<div class="orv_system"><p>[New characters have been added to your bookmarks.]</p></div>
+<div class="orv_system"><p>A few people have a great liking towards you.</p></div>
+<div class="orv_system"><p>Your understanding of the character 'Shin Yoosung' has increased.</p></div>
+<div class="orv_system"><p>Your understanding of the character 'Ma Kangcheol' has increased.</p></div>
+<div class="orv_system"><p>New characters have been added to your bookmarks.</p></div>
 <p class="orv_line">Han Sooyoung said sarcastically, "You're a fake."</p>
 <p class="orv_line">"…Sometimes I do good things."</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is impressed with your good deed.]</p></div>
-<div class="orv_system"><p>[400 coins have been sponsored.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is impressed with your good deed.</p></div>
+<div class="orv_system"><p>400 coins have been sponsored.</p></div>
 <p class="orv_line">Han Sooyoung grumbled as she watched Yoo Sangah, "Damn, she is like a woman from a novel."</p>
 <p class="orv_line">I agreed with her words. Yoo Sangah was like the heroine of a novel even before the fall of the world. Now that reality had become a novel…</p>
 <p class="orv_line">From among the crowd, a child approached me. She was a young girl around the same age as Gilyoung.</p>
@@ -322,8 +329,8 @@
 <p class="orv_line">Han Sooyoung stopped as she was about to get up. The one who came was a young girl. It was the child who politely thanked me during the day. The little red-eyed child held something out.</p>
 <p class="orv_line">"T-This…"</p>
 <p class="orv_line">It was a blanket. She must've grabbed it from the area because she was afraid we were cold. Han Sooyoung made a surprised expression while Yoo Sangah looked blank. In the apocalypse, goodwill wasn't always repaid with malice.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is making a loving smile.]</p></div>
-<div class="orv_system"><p>[2,000 coins have been sponsored.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is making a loving smile.</p></div>
+<div class="orv_system"><p>2,000 coins have been sponsored.</p></div>
 <p class="orv_line">Yoo Sangah acted as the representative of the party. "Thank you, I'll use it well."</p>
 <p class="orv_line">"Yes…"</p>
 <p class="orv_line">"By the way, are you alone? It is dangerous to wander around at night."</p>
@@ -350,8 +357,8 @@
 <p class="orv_line">The child looked up at me with innocent eyes and I felt a sense of urgency.</p>
 <p class="orv_line">"…Five days later, she will destroy Seoul."</p>
 <p class="orv_line">Yoo Sangah's eyes shook. If Han Sooyoung hadn't found out, I might've let it pass by but now it couldn't be helped. This damn scenario never gave us the happy endings we wanted.</p>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' is smiling.]</p></div>
-<div class="orv_system"><p>[Many constellations are interested in the development of this scenario.]</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' is smiling.</p></div>
+<div class="orv_system"><p>Many constellations are interested in the development of this scenario.</p></div>
 <p class="orv_line">It had been a long time since the messages of the constellations seemed so hateful.</p>
 <p class="orv_line">"This child is the last disaster of the fifth scenario."</p>
 <br>
@@ -361,18 +368,12 @@
             <a href="./ch_94"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_96">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="95" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="247" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="94" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="94" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

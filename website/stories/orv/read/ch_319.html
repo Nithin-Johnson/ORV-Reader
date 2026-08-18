@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 319: Ep. 60 - Taste of Ruin, IV</title>
     <meta property="og:title" content="Ch 319: Ep. 60 - Taste of Ruin, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00319.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 319: Ep. 60 - Taste of Ruin, IV</h1></div>
 <p class="orv_line">I was able to come here thanks to the message sent by Han Sooyoung. I already knew that Han Sooyoung took the Old to New Toad. It would be odd if I was ignorant of her stealing an item.</p>
@@ -204,21 +211,21 @@
 <p class="orv_line">"That's right."</p>
 <p class="orv_line">"No… you shouldn't be able to acquire this level of item. It is an item that can only be obtained in the late scenarios."</p>
 <p class="orv_line">She was still denying reality. I glanced at the dokkaebi instead of answering. The dokkaebi spoke,</p>
-<div class="orv_constellation"><p>[The contributor is Constellation Demon King of Salvation, who belongs to Kim Dokja's Company. The confirmation result is correct.]</p></div>
+<div class="orv_constellation"><p>The contributor is Constellation Demon King of Salvation, who belongs to Kim Dokja's Company. The confirmation result is correct.</p></div>
 <p class="orv_line">Anna Croft became paler once the dokkaebi testified to the fact. 3 million coins. At the present time, there wasn't a single incarnation with such a large number of coins in the Star Stream. It was a lot of money and was also a burden for some narrative-grade constellations.</p>
 <p class="orv_line">In the distance, Han Sooyoung twitched.</p>
 <p class="orv_line">–Hey, you will give me a share of the 3 million coins, right? You wouldn't have received this money if it wasn't for me.</p>
 <p class="orv_line">Anna Croft's fist trembled. She glanced at Selena Kim before turning back to me. "I'm sorry but I can't give you the winning bid."</p>
 <p class="orv_line">Anna Croft's expression gradually returned to normal. "Rather than receiving the item, I will pay the penalty."</p>
 <p class="orv_line">The prophet made a choice. It was currently difficult for her to obtain three million coins. Moreover, her desire to buy the item disappeared after knowing the 3 million coins would enter my hands.</p>
-<div class="orv_system"><p>[Your understanding of the character 'Anna Croft' has increased!]</p></div>
+<div class="orv_system"><p>Your understanding of the character 'Anna Croft' has increased!</p></div>
 <p class="orv_line">I nodded and said, "Well, do as you please."</p>
 <p class="orv_line">Han Sooyoung glared at me.</p>
 <p class="orv_line">–Hey, are you crazy? It is 3 million coins!</p>
 <p class="orv_line">–This is good for us.</p>
 <p class="orv_line">As Anna Croft mentioned, the Old to New Toad was a very useful item, especially when I thought about the upcoming Gigantomachia. It was better to have an item than three million coins.</p>
 <p class="orv_line">The senior dokkaebi spoke,</p>
-<div class="orv_constellation"><p>[The penalty is 500,000 coins, which is the initial bid.]</p></div>
+<div class="orv_constellation"><p>The penalty is 500,000 coins, which is the initial bid.</p></div>
 <p class="orv_line">Besides, I received 500,000 coins without giving anything. I was grateful. Anna Croft thought of something for a moment before slowly pulling out the coins. However, she took out one million coins, not 500,000 coins. "Demon King of Salvation, do you want to make a bet with me?"</p>
 <p class="orv_line">"A bet? I don't want to."</p>
 <p class="orv_line">"…I heard that you like to bet. It is disappointing to hear you refuse so easily."</p>
@@ -229,33 +236,33 @@
 <p class="orv_line">I opened my mouth. "Why should I if I don't lose anything? I will get 500,000 coins even if I do nothing. Why should I agree to a strange gamble?"</p>
 <p class="orv_line">"You must be afraid to lose. Well, you will get a 'Losing Story' if you lose to me."</p>
 <p class="orv_line">…Look at this.</p>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is paying attention to your choice.]</p></div>
-<div class="orv_system"><p>[The constellation 'Secretive Plotter' is focused on your choice.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' wants you to refuse the bet.]</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is paying attention to your choice.</p></div>
+<div class="orv_system"><p>The constellation 'Secretive Plotter' is focused on your choice.</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' wants you to refuse the bet.</p></div>
 <p class="orv_line">Anna Croft's smile widened like she heard the indirect messages in the channel. "Demon King of Salvation. Your constellations are watching."</p>
-<div class="orv_system"><p>[Many constellations are curious about your choice.]</p></div>
-<div class="orv_system"><p>[Some constellations are condemning your cowardice.]</p></div>
+<div class="orv_system"><p>Many constellations are curious about your choice.</p></div>
+<div class="orv_system"><p>Some constellations are condemning your cowardice.</p></div>
 <p class="orv_line">She was a clever woman. In the period before Gigantomachia, the opinion of the constellations was important. I could make allies, reinforcements or enemies depending on my actions. However, this provocation…</p>
 <p class="orv_line">I grinned and opened my mouth. "I'm not afraid. I just don't like the betting conditions."</p>
 <p class="orv_line">Anna Croft's eyes widened.</p>
-<div class="orv_system"><p>[The constellation 'Dragon Lying Down' is interested in your words.]</p></div>
+<div class="orv_system"><p>The constellation 'Dragon Lying Down' is interested in your words.</p></div>
 <p class="orv_line">"Conditions. Do you want to add more to the bet?"</p>
 <p class="orv_line">"The coins are only that much. I would like to add one more condition."</p>
 <p class="orv_line">"One more condition…?"</p>
 <p class="orv_line">"If I win, release the Lord and Vassal Pledge hanging on Selena Kim."</p>
-<div class="orv_system"><p>[The constellation 'Friend of Justice and Harmony' is shocked by your words.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is nodding at your words.]</p></div>
+<div class="orv_system"><p>The constellation 'Friend of Justice and Harmony' is shocked by your words.</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is nodding at your words.</p></div>
 <p class="orv_line">Selena Kim's eyes shook. Perhaps Selena Kim had been bound during the Proof of the Stars before coming to the Context of the Constellations. There was no way Anna Croft would have someone beside her that she couldn't control.</p>
 <p class="orv_line">Anna Croft looked confused. "Demon King of Salvation! That…"</p>
 <p class="orv_line">"Can't you free Selena Kim if you borrow the probability of Asgard?"</p>
 <p class="orv_line">It would be a significant burden on Anna Croft to liberate the lord and vassal relationship formed during Proof of the Stars. The fact that she made the lord and vassal relationship in the first place was evidence that she didn't fully trust Selena Kim. Anna Croft struggled for a while before replying, "…Okay."</p>
 <p class="orv_line">Selena Kim stared at me with surprised eyes. Then Biyoo's voice was heard from the air.</p>
-<div class="orv_constellation"><p>[Baaat!]</p></div>
-<div class="orv_system"><p>[A number of constellations are requesting the 'bet' scenario.]</p></div>
-<div class="orv_system"><p>[The request of the constellations has been accepted.]</p></div>
-<div class="orv_system"><p>[A new sub scenario has arrived!]</p></div>
+<div class="orv_constellation"><p>Baaat!</p></div>
+<div class="orv_system"><p>A number of constellations are requesting the 'bet' scenario.</p></div>
+<div class="orv_system"><p>The request of the constellations has been accepted.</p></div>
+<div class="orv_system"><p>A new sub scenario has arrived!</p></div>
 <div class="orv_window">
-<h3 class="orv_window_title">[Sub Scenario ― Entertainment of Ruin]</h3>
+<h3 class="orv_window_title">Sub Scenario ― Entertainment of Ruin</h3>
 <p>Category: Sub</p>
 <p>Difficulty: ???</p>
 <p>Clear Conditions: Anna Croft and the Demon King of Salvation have made a bet. The subscribers and incarnations can make a bet on who will win.</p>
@@ -263,9 +270,9 @@
 <p>Compensation: Dividends will be distributed based on your percentage of the winning bet.</p>
 <p>Failure: ―</p>
 </div>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' has bet 50,000 coins!]</p></div>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' has bet 50,000 coins!]</p></div>
-<div class="orv_system"><p>[The constellation 'Bald General of Justice' has bet 1,000 coins!]</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' has bet 50,000 coins!</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' has bet 50,000 coins!</p></div>
+<div class="orv_system"><p>The constellation 'Bald General of Justice' has bet 1,000 coins!</p></div>
 <p class="orv_line">Interestingly, this scenario was a scenario where beings other than Anna Croft and myself could participate. The startled Han Sooyoung spoke through Midday Tryst.</p>
 <p class="orv_line">–Hey! What are you thinking?</p>
 <p class="orv_line">–Just bet some coins.</p>
@@ -274,33 +281,33 @@
 <p class="orv_line">"It's simple."</p>
 <p class="orv_line">Anna Croft threw the coin that read 'one million' into the air. The coin rose to over 30 metres in the sky and stayed there. "You just need to grab the coin with your hand."</p>
 <p class="orv_line">The constellations were shocked when they heard the contents of the bet.</p>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' is surprised.]</p></div>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' is asking for his coins to be returned!]</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' is surprised.</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' is asking for his coins to be returned!</p></div>
 <p class="orv_line">Han Sooyoung frowned.</p>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' is avoiding the gaze of Incarnation 'Han Sooyoung'.]</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' is avoiding the gaze of Incarnation 'Han Sooyoung'.</p></div>
 <p class="orv_line">The coin had a floating skill and hovered in place. At first glance, it was a simple and easy bet. I just had to jump using my skills and grab the coin. However, the simplicity of the bet meant there was a pitfall.</p>
 <p class="orv_line">Han Sooyoung told me,</p>
 <p class="orv_line">–Hey, Kim Dokja. It is a trap! Don't make the bet!</p>
 <p class="orv_line">I knew it already. This Anna Croft would never make a losing bet.</p>
 <p class="orv_line">"Do you agree with the bet contents?"</p>
 <p class="orv_line">"Okay."</p>
-<div class="orv_system"><p>[The formation of the bet has been completed!]</p></div>
+<div class="orv_system"><p>The formation of the bet has been completed!</p></div>
 <p class="orv_line">I looked at the coin spinning in the air. In a situation where many constellations were watching, she couldn't have done anything strange to that coin. This meant the coin itself wasn't the trap and the trap was elsewhere.</p>
-<div class="orv_system"><p>[The exclusive skill 'Bookmark' is activated!]</p></div>
-<div class="orv_system"><p>[The exclusive skill 'Way of the Wind Lv. 11 (+1) is activated!]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Bookmark' is activated!</p></div>
+<div class="orv_system"><p>The exclusive skill 'Way of the Wind Lv. 11 (+1) is activated!</p></div>
 <p class="orv_line">30 metres was quite high and it was almost impossible to grab that coin with my bare hands if I was an ordinary constellation. However, since the scenario started, I wasn't an ordinary person.</p>
 <p class="orv_line">I used Way of the Wind and jumped lightly, my body springing towards the sky. The remaining distance to the coin was 10 metres.</p>
 <p class="orv_line">At this moment, someone interrupted me.</p>
-<div class="orv_system"><p>[The probability of the nebula 'Olympus' is responding to you!]</p></div>
+<div class="orv_system"><p>The probability of the nebula 'Olympus' is responding to you!</p></div>
 <p class="orv_line">It wasn't one person. A powerful status came from all over the audience. The incarnation bodies of some constellations stood before me.</p>
-<div class="orv_constellation"><p>[Demon King of Salvation! Cancel your skill right away.]</p></div>
+<div class="orv_constellation"><p>Demon King of Salvation! Cancel your skill right away.</p></div>
 <p class="orv_line">I felt their status from the true voice. The ones standing in my way were from Olympus. There were three historical-grade constellations and one narrative-grade constellation.</p>
 <p class="orv_line">I spoke in a cold voice, "What are you doing?"</p>
-<div class="orv_constellation"><p>[It is forbidden to use combat skills here. Don't you know?]</p></div>
+<div class="orv_constellation"><p>It is forbidden to use combat skills here. Don't you know?</p></div>
 <p class="orv_line">A familiar doll popped out from among the constellations. It was a constellation with meteorites swirling overhead. I knew this person's modifier. It was because this boy was obviously a constellation of Olympus.</p>
 <p class="orv_line">'Wandering Terror'.</p>
 <p class="orv_line">Someone in the audience shouted,</p>
-<div class="orv_constellation"><p>[Wandering Terror, Phobos! It is Ares' son!]</p></div>
+<div class="orv_constellation"><p>Wandering Terror, Phobos! It is Ares' son!</p></div>
 <p class="orv_line">The son of one of the 12 main gods of Olympus, Atrocious War God. The god of terror created by war. This was Phobos who was called Wandering Terror.</p>
 <p class="orv_line">I looked down at Anna Croft. It seemed this guy was the backer that Anna Croft believed in.</p>
 <br>
@@ -310,18 +317,12 @@
             <a href="./ch_318"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_320">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="319" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="648" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="318" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="318" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

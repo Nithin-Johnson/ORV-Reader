@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 512: Ep. 99 - The Oldest Dream, I</title>
     <meta property="og:title" content="Ch 512: Ep. 99 - The Oldest Dream, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00512.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 512: Ep. 99 - The Oldest Dream, I</h1></div>
 <p class="orv_line">Within this faint light gently and warmly embracing his entire body, the Wenny King was curled up in a fetal position, dreaming of a certain dream.</p>
@@ -212,7 +219,7 @@
 <p class="orv_line">He was also a monstrous creature without a name.</p>
 <p class="orv_line">He was an expert from Murim, and also a knight from medieval times.</p>
 <p class="orv_line">And every time that happened, he was an Incarnation clearing the scenarios.</p>
-<p class="orv_line">The last thing he heard in front of the [Final Wall] was the voice coming from a shadow without a name.</p>
+<p class="orv_line">The last thing he heard in front of the <strong>[Final Wall]</strong> was the voice coming from a shadow without a name.</p>
 <p class="orv_line">– My friend. Even during our next life, accompany me.</p>
 <p class="orv_line">He gasped out loudly and opened his eyes, only to be greeted by the pitch-black darkness. The cold sweat soaking the nape of his neck sent deathly chills all over his body.</p>
 <p class="orv_line">'I'm the Wenny King'.</p>
@@ -227,58 +234,58 @@
 <p class="orv_line">⸢And those Dokkaebis took away the Wenny's song.⸥</p>
 <p class="orv_line">That was all he needed to remember.</p>
 <p class="orv_line">Remember that those damned Dokkaebis took away the Wenny's song; remember the fact that they expelled him from the &lt;Star Stream&gt;'s scenarios by stealing away his nativity Story.</p>
-<div class="orv_constellation"><p>[You look confused, my old friend.]</p></div>
+<div class="orv_constellation"><p>You look confused, my old friend.</p></div>
 <p class="orv_line">The Wenny King was startled by that true voice and hurriedly looked behind him. The face of the Dokkaebi King was floating within the pitch-black darkness.</p>
-<div class="orv_constellation"><p>[Dokkaebi King!]</p></div>
+<div class="orv_constellation"><p>Dokkaebi King!</p></div>
 <p class="orv_line">The former growled and unleashed his Status. However, things didn't go according to plan. Within this space where nothing existed, the Status he emitted only left behind faint sparks.</p>
 <p class="orv_line">The Dokkaebi King spoke with a disinterested expression.</p>
-<div class="orv_constellation"><p>[You aren't allowed to fight in here. Our powers aren't valid in this place.]</p></div>
-<div class="orv_constellation"><p>[…You somehow managed to survive. I thought that you died at the blade of that puppet.]</p></div>
-<div class="orv_constellation"><p>[It's not much different from having died already. And, will die again, too.]</p></div>
+<div class="orv_constellation"><p>You aren't allowed to fight in here. Our powers aren't valid in this place.</p></div>
+<div class="orv_constellation"><p>…You somehow managed to survive. I thought that you died at the blade of that puppet.</p></div>
+<div class="orv_constellation"><p>It's not much different from having died already. And, will die again, too.</p></div>
 <p class="orv_line">In the spot where the Dokkaebi King's gaze landed, they could see a circular exit of light swirling around. The soul forms of these two beings were slowly heading towards that exit.</p>
 <p class="orv_line">The Wenny King shouted out.</p>
-<div class="orv_constellation"><p>[No, hold on! My Story has just begun! I will be crossing over the 'Final Wall'! I shall encounter the lazy god that imagined everything of this world, and become the sole creature that knows the secret of this world!!]</p></div>
-<div class="orv_constellation"><p>[Are you that curious about this world's secret?]</p></div>
-<div class="orv_constellation"><p>[You speak of something obvious. There isn't a single creature not curious about the origin of their own birth.]</p></div>
-<div class="orv_constellation"><p>[And that's precisely the reason why creatures become unhappy.]</p></div>
+<div class="orv_constellation"><p>No, hold on! My Story has just begun! I will be crossing over the 'Final Wall'! I shall encounter the lazy god that imagined everything of this world, and become the sole creature that knows the secret of this world!!</p></div>
+<div class="orv_constellation"><p>Are you that curious about this world's secret?</p></div>
+<div class="orv_constellation"><p>You speak of something obvious. There isn't a single creature not curious about the origin of their own birth.</p></div>
+<div class="orv_constellation"><p>And that's precisely the reason why creatures become unhappy.</p></div>
 <p class="orv_line">The Dokkaebi King spoke in a self-deprecating manner.</p>
-<div class="orv_constellation"><p>[Why do you think creatures possess the wonderful ability called 'forgetfulness'?]</p></div>
+<div class="orv_constellation"><p>Why do you think creatures possess the wonderful ability called 'forgetfulness'?</p></div>
 <p class="orv_line">The Story debris was scattering away within the darkness. Stories that had lost their contexts became just lumps of texts and slowly broke away. They were now stories that no one could read anymore.</p>
 <p class="orv_line">The Dokkaebi King gently caressed them, before crushing that Story into powder.</p>
-<div class="orv_constellation"><p>[There are far too many unnecessary stories in this universe. A process is required in order to eliminate them and to optimise everything. That is what 'forgetfulness' is.]</p></div>
-<div class="orv_constellation"><p>[Rubbish! The universe is infinite. Just like how the end of the 'Final Wall' doesn't exist.]</p></div>
-<div class="orv_constellation"><p>[Even if there are plenty of blank margins left on the Wall, just how much of that do you think is permitted to the measly extras?]</p></div>
+<div class="orv_constellation"><p>There are far too many unnecessary stories in this universe. A process is required in order to eliminate them and to optimise everything. That is what 'forgetfulness' is.</p></div>
+<div class="orv_constellation"><p>Rubbish! The universe is infinite. Just like how the end of the 'Final Wall' doesn't exist.</p></div>
+<div class="orv_constellation"><p>Even if there are plenty of blank margins left on the Wall, just how much of that do you think is permitted to the measly extras?</p></div>
 <p class="orv_line">The Dokkaebi King looked down at his own body slowly crumbling away.</p>
-<div class="orv_constellation"><p>[Unfortunately, the protagonist the 'Final Wall' has chosen is neither you or me.]</p></div>
-<div class="orv_constellation"><p>[I don't know what rubbish you're trying to spew here, but…!]</p></div>
-<div class="orv_constellation"><p>[Even then, you shall soon meet the one you so dearly wished to meet.]</p></div>
+<div class="orv_constellation"><p>Unfortunately, the protagonist the 'Final Wall' has chosen is neither you or me.</p></div>
+<div class="orv_constellation"><p>I don't know what rubbish you're trying to spew here, but…!</p></div>
+<div class="orv_constellation"><p>Even then, you shall soon meet the one you so dearly wished to meet.</p></div>
 <p class="orv_line">It was then the Wenny King's shoulders flinched.</p>
 <p class="orv_line">The exit of light could be seen. It was such a rapturous, resplendent light. The exit was spinning vigorously and it somewhat resembled a full stop of a certain world.</p>
 <p class="orv_line">The Wenny King suddenly grew scared.</p>
-<div class="orv_constellation"><p>[You, have you seen what's beyond that?]</p></div>
+<div class="orv_constellation"><p>You, have you seen what's beyond that?</p></div>
 <p class="orv_line">The Dokkaebi King didn't reply immediately. He had this expression of boredom as if all sentences held no meaning after the full stop itself. Still, he did add a comment in the end.</p>
-<div class="orv_constellation"><p>[What meaning is there, anyway?]</p></div>
-<div class="orv_constellation"><p>[What?]</p></div>
-<div class="orv_constellation"><p>[I'm saying, what meaning is there to knowing that this world was just a portion of a vast dream?]</p></div>
+<div class="orv_constellation"><p>What meaning is there, anyway?</p></div>
+<div class="orv_constellation"><p>What?</p></div>
+<div class="orv_constellation"><p>I'm saying, what meaning is there to knowing that this world was just a portion of a vast dream?</p></div>
 <p class="orv_line">His words contained endless futility of it all.</p>
 <p class="orv_line">The Wenny King couldn't understand what was being said.</p>
 <p class="orv_line">The light was getting brighter, yet the expression on the Dokkaebi King was getting blurrier. Soon, the exit of light was literally right before his nose. The worried Wenny King asked.</p>
-<div class="orv_constellation"><p>[…Why did you continue on with &lt;Star Stream&gt; until now?]</p></div>
+<div class="orv_constellation"><p>…Why did you continue on with &lt;Star Stream&gt; until now?</p></div>
 <p class="orv_line">Maybe that question was unexpected? The Dokkaebi King's expression changed bizarrely. He quietly stared at the Wenny King, before making his reply.</p>
-<div class="orv_constellation"><p>[I wonder. I can't remember it anymore.]</p></div>
+<div class="orv_constellation"><p>I wonder. I can't remember it anymore.</p></div>
 <p class="orv_line">In that moment, several Stories overlapped on the Dokkaebi King's face.</p>
 <p class="orv_line">At once, he looked like a warrior subjugating the Demon King, an expert from the dangerous world of Murim battling the demonic sect, and a hatchling spreading its wings towards the wide-open sky. He was…</p>
-<div class="orv_constellation"><p>[…You-!]</p></div>
-<div class="orv_constellation"><p>[Kim Dokja has opened a door that should've never been opened. And so, this world will forever be mired in misfortune.]</p></div>
+<div class="orv_constellation"><p>…You-!</p></div>
+<div class="orv_constellation"><p>Kim Dokja has opened a door that should've never been opened. And so, this world will forever be mired in misfortune.</p></div>
 <p class="orv_line">At the end of those words, the world was blanketed by pure light. They had finally reached the exit. The Wenny King staggered unsteadily and set foot inside that light. He brushed past the rays of light and tread forward little by little.</p>
 <p class="orv_line">The answer was here.</p>
 <p class="orv_line">The 'Oldest Dream' that created this world was here.</p>
 <p class="orv_line">However, the Wenny King couldn't see anything.</p>
 <p class="orv_line">The noisy blaring of hooters could be heard coming from somewhere. A thick, choking smell that wetted his nose; it became harder and harder to breath. His body began burning up under the rays of light.</p>
 <p class="orv_line">As if, this blank margin wasn't permitted to him.</p>
-<div class="orv_constellation"><p>[I told you. This story is neither yours or mine.]</p></div>
+<div class="orv_constellation"><p>I told you. This story is neither yours or mine.</p></div>
 <p class="orv_line">Along with the Dokkaebi King's words, the Wenny King's body began melting down.</p>
-<div class="orv_constellation"><p>[We are simply tools of this world. That's all.]</p></div>
+<div class="orv_constellation"><p>We are simply tools of this world. That's all.</p></div>
 <p class="orv_line">Ah, aaaah…</p>
 <p class="orv_line">Even though his legs melted away, followed by his torso, the Wenny King never shifted his gaze away from the spectacle before his eyes.</p>
 <p class="orv_line">That was where the Oldest Dream was. The secret of everything in this world was there. That something he had been searching for forever was there.</p>
@@ -297,7 +304,7 @@
 <p class="orv_line">Sensations returned and my vision brightened. I saw the letters emitting bright white light before my eyes. They were of familiar contents.</p>
 <p class="orv_line">Just where is this…?</p>
 <p class="orv_line">"Dokja-ssi? You might get sucked into the book if you do that."</p>
-<p class="orv_line">Suddenly, the back of my neck grew cold. That was a familiar voice, and with words I had heard somewhere before. Horrifying imagination made a right old mess of my mind. I once thought that if I destroyed the [Final Wall], something like this might happen. However, to think that such a thing would really…</p>
+<p class="orv_line">Suddenly, the back of my neck grew cold. That was a familiar voice, and with words I had heard somewhere before. Horrifying imagination made a right old mess of my mind. I once thought that if I destroyed the <strong>[Final Wall]</strong>, something like this might happen. However, to think that such a thing would really…</p>
 <p class="orv_line">Then, accompanied by flapping noises, torn bits of paper danced around before my eyes. I took another closer look and discovered someone lightly shaking a book around.</p>
 <p class="orv_line">"…Sangah-ssi."</p>
 <p class="orv_line">Yoo Sangah was standing before my eyes.</p>
@@ -305,11 +312,11 @@
 <p class="orv_line">This was the location I was quite familiar with.</p>
 <p class="orv_line">Yoo Sangah grinned brightly.</p>
 <p class="orv_line">"This place feels so cosy to me now."</p>
-<p class="orv_line">We were inside [The Fourth Wall].</p>
+<p class="orv_line">We were inside <strong>[The Fourth Wall]</strong>.</p>
 <p class="orv_line">"…What happened?"</p>
 <p class="orv_line">"Even if you ask me… I also woke up just now. Should we go and look for my librarian seniors?"</p>
 <p class="orv_line">As Yoo Sangah shrugged her shoulders and began scanning the surroundings, I quickly organised what happened to us so far in my head.</p>
-<p class="orv_line">⸢We had gathered all the fragments of the [Final Wall] and eventually brought it down.⸥</p>
+<p class="orv_line">⸢We had gathered all the fragments of the <strong>[Final Wall]</strong> and eventually brought it down.⸥</p>
 <p class="orv_line">The memory of the 'square circle' spinning around was still vivid in my mind.</p>
 <p class="orv_line">…And then? What happened afterwards?</p>
 <p class="orv_line">What about the other companions?</p>
@@ -317,8 +324,8 @@
 <p class="orv_line">A voice I thought I could never hear again entered my ears. I shouted out in happiness.</p>
 <p class="orv_line">"The Fourth Wall!"</p>
 <p class="orv_line">⸢Si len ce in the lib rary.⸥</p>
-<p class="orv_line">This was definitely [The Fourth Wall] that I remembered, that sly playfulness included. Separate from how happy I was, though, my puzzlement only grew even bigger, instead.</p>
-<p class="orv_line">Why was I inside [The Fourth Wall] right now?</p>
+<p class="orv_line">This was definitely <strong>[The Fourth Wall]</strong> that I remembered, that sly playfulness included. Separate from how happy I was, though, my puzzlement only grew even bigger, instead.</p>
+<p class="orv_line">Why was I inside <strong>[The Fourth Wall]</strong> right now?</p>
 <p class="orv_line">"Dokja-ssi?"</p>
 <p class="orv_line">More voices could be heard coming from the darkness. They were from the &lt;Kim Dokja's Company&gt;'s companions.</p>
 <p class="orv_line">"Just where are we?"</p>
@@ -336,7 +343,7 @@
 <p class="orv_line">"Wowee, what's this! Sounds fun."</p>
 <p class="orv_line">Behind them, I spotted the unconscious Gong Pildu, Jang Hayoung and Anna Croft lying on the floor. And finally, Lee Seolhwa checking for their pulses. At the very least, all of my companions that participated in the 'Final Scenario' were gathered here.</p>
 <p class="orv_line">⸢N ot ev ery one.⸥</p>
-<p class="orv_line">I got this rather bad premonition after hearing [The Fourth Wall]'s voice.</p>
+<p class="orv_line">I got this rather bad premonition after hearing <strong>[The Fourth Wall]</strong>'s voice.</p>
 <p class="orv_line">I still couldn't see 'that guy' yet.</p>
 <p class="orv_line">…Could it be??</p>
 <p class="orv_line">⸢(Hahahaha! Yoo Joonghyuk! I can smell him somewhere nearby! Did he finally show up here in order to become one with me?!)⸥</p>
@@ -346,14 +353,14 @@
 <p class="orv_line">Sparks were still faintly dancing around him as if he hadn't yet separated from the 'Secretive Plotter'. Since he's here too, who was it that couldn't come?</p>
 <p class="orv_line">"…Constellations aren't here."</p>
 <p class="orv_line">"What happened to everyone back on Earth?"</p>
-<div class="orv_constellation"><p>[The Fourth Wall evacuating us here could only mean that some sort of a problem had occurred in the outside world.]</p></div>
-<p class="orv_line">My heart was now growing icy cold. I recalled the [The Fourth Wall], as well as the sentences above it, shattering into million pieces. What went wrong? Did the world perish because I tried to change the story?</p>
-<p class="orv_line">It was then, [The Fourth Wall] said something completely unexpected.</p>
+<div class="orv_constellation"><p>The Fourth Wall evacuating us here could only mean that some sort of a problem had occurred in the outside world.</p></div>
+<p class="orv_line">My heart was now growing icy cold. I recalled the <strong>[The Fourth Wall]</strong>, as well as the sentences above it, shattering into million pieces. What went wrong? Did the world perish because I tried to change the story?</p>
+<p class="orv_line">It was then, <strong>[The Fourth Wall]</strong> said something completely unexpected.</p>
 <p class="orv_line">⸢Ti me not mov ing be cau se not re ading not ima gin ing⸥</p>
 <p class="orv_line">Even before I could ask about the meaning of that, some creatures appeared first.</p>
 <p class="orv_line">⸢(Have you finally broken the wall, the apostle of eternity and epilogue?)⸥</p>
 <p class="orv_line">⸢(…Such a day has indeed arrived before us.)⸥</p>
-<p class="orv_line">They were the librarians 'Devourer of Dreams' and 'Simulation'. I stared at them first before addressing [The Fourth Wall].</p>
+<p class="orv_line">They were the librarians 'Devourer of Dreams' and 'Simulation'. I stared at them first before addressing <strong>[The Fourth Wall]</strong>.</p>
 <p class="orv_line">"Let me out of here. There's something I need to confirm."</p>
 <p class="orv_line">That prompted the librarians to reply, instead.</p>
 <p class="orv_line">⸢(Even if it's you, you still won't survive by going outside. &lt;Star Stream&gt; no longer exists. Everything in that place has now come to a dead stop.)⸥</p>
@@ -370,7 +377,7 @@
 <p class="orv_line">"I'm really curious about the epilogue you wanted to see, ahjussi."</p>
 <p class="orv_line">"There, there. Let's not agonise about this, shall we? Who knows, maybe a really nice Dokkaebi is waiting for us there or something. If not, we can smack him around for a bit and make him more agreeable, too."</p>
 <p class="orv_line">As if to agree with that, Biyoo added her own opinion.</p>
-<div class="orv_constellation"><p>[Baat!]</p></div>
+<div class="orv_constellation"><p>Baat!</p></div>
 <p class="orv_line">It was around then that Yoo Joonghyuk broke the silence he had been observing.</p>
 <p class="orv_line">"Before that, do you even have a way to meet him? The wall might be destroyed, but the time flow of the outside world has stopped. If time isn't moving, Stories cannot move forward. It will be the same for us."</p>
 <p class="orv_line">⸢(There are some places where time hasn't stopped.)⸥</p>
@@ -381,7 +388,7 @@
 <p class="orv_line">While saying that, Nirvana guided us somewhere. Somehow, I thought I knew where he was taking us. I recalled the cliff that spanned below the library.</p>
 <p class="orv_line">⸢This is the end of the library. The end of all stories.⸥</p>
 <p class="orv_line">The vast, bottomless pit. A valley laid out like the abyss itself.</p>
-<p class="orv_line">It was the location I discovered back when I entered [The Fourth Wall] for the first time.</p>
+<p class="orv_line">It was the location I discovered back when I entered <strong>[The Fourth Wall]</strong> for the first time.</p>
 <p class="orv_line">"…It's exactly that place."</p>
 <p class="orv_line">I almost fell to the bottom there when I first stumbled in here. Back then, Nirvana told me that if I fell in there, I'd die for sure. He said that was 'beyond the wall'.</p>
 <p class="orv_line">Nirvana asked me. ⸢(Kim Dokja. Do you really wish to go over there?)⸥</p>
@@ -390,7 +397,7 @@
 <p class="orv_line">⸢(Get on.)⸥</p>
 <p class="orv_line">We all climbed aboard this elevator.</p>
 <p class="orv_line">Then we were slowly lowered into the pit.</p>
-<div class="orv_system"><p>[Exclusive attribute, 'One Who Looked into the Abyss', is initialising.]</p></div>
+<div class="orv_system"><p>Exclusive attribute, 'One Who Looked into the Abyss', is initialising.</p></div>
 <p class="orv_line">Finally, the answers I've been searching for was right before my eyes. Stories still remaining within me were getting agitated as well.</p>
 <p class="orv_line">Just how long did we climb down like this? We were eventually greeted by the sounds of the pulley stopping.</p>
 <p class="orv_line">I stepped foot on the darkness, only to be greeted by mouldy smell. The floor was slick and damp, too; almost like the remnants of a structure that hadn't been used for a very long time.</p>
@@ -409,18 +416,12 @@
             <a href="./ch_511"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_513">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="512" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="560" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="511" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="511" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

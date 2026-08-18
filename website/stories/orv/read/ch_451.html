@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 451: Ep. 85 - The Final Wall, III</title>
     <meta property="og:title" content="Ch 451: Ep. 85 - The Final Wall, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00451.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 451: Ep. 85 - The Final Wall, III</h1></div>
 <p class="orv_line">What the 'Secretive Plotter' said felt as hollow as words coming from someone who had lost all meaning in his life.</p>
@@ -211,13 +218,13 @@
 <p class="orv_line">That did happen. The 'Secretive Plotter' showed up during my first Sponsor Selection as my third potential choice. He really did try to become my Sponsor.</p>
 <div class="orv_outergod"><p>【After that, I continued to observe this world-line. Sometimes, I was surprised. I was just as surprised by the fact that I was surprised. Because I hadn't been surprised by anything for a long time.】</p></div>
 <p class="orv_line">I knew that. During this world-line's story, he watched what we did and sent various indirect messages. If I dug through the indirect message logs, I should be able to read the ones he sent to me.</p>
-<div class="orv_system"><p>[Constellation, 'Secretive Plotter', is intrigued by your choice.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Secretive Plotter', is impressed by the level of your stupidity.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Secretive Plotter', is disappointed by your flippant declaration.]</p></div>
-<div class="orv_system"><p>[Eyes of the Constellation, 'Secretive Plotter', are sparkling after he heard your plan.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Secretive Plotter', is curious about your scheme.]</p></div>
+<div class="orv_system"><p>Constellation, 'Secretive Plotter', is intrigued by your choice.</p></div>
+<div class="orv_system"><p>Constellation, 'Secretive Plotter', is impressed by the level of your stupidity.</p></div>
+<div class="orv_system"><p>Constellation, 'Secretive Plotter', is disappointed by your flippant declaration.</p></div>
+<div class="orv_system"><p>Eyes of the Constellation, 'Secretive Plotter', are sparkling after he heard your plan.</p></div>
+<div class="orv_system"><p>Constellation, 'Secretive Plotter', is curious about your scheme.</p></div>
 <p class="orv_line">…</p>
-<p class="orv_line">Those messages made the first actual face-to-face with him rather awkward for me. I knew now that [666] and other Yoo Joonghyuks were responsible for those indirect messages, but still…</p>
+<p class="orv_line">Those messages made the first actual face-to-face with him rather awkward for me. I knew now that <strong>[666]</strong> and other Yoo Joonghyuks were responsible for those indirect messages, but still…</p>
 <div class="orv_outergod"><p>【I had to decide – whether to continue observing this distorted world, or to destroy it.】</p></div>
 <p class="orv_line">"…Was that why you sent me to the 1863rd turn?"</p>
 <p class="orv_line">The Plotter nodded his head. His choice led to the beginning of this 'world-line'.</p>
@@ -233,8 +240,8 @@
 <p class="orv_line">The 'Final Wall'.</p>
 <p class="orv_line">That was the 'Conclusion' the Secretive Plotter had encountered in his epilogue.</p>
 <div class="orv_outergod"><p>【The 'fragment' you possess is the last key that I've been searching for.】</p></div>
-<p class="orv_line">I got nervous and backed away. As I was in the shape of a [Murim dumpling], it was pretty hard to take backward steps, but whatever the case might have been, I simply had to create some distance between us.</p>
-<p class="orv_line">If the Plotter's goal was [The Fourth Wall] in my possession, then he…</p>
+<p class="orv_line">I got nervous and backed away. As I was in the shape of a <strong>[Murim dumpling]</strong>, it was pretty hard to take backward steps, but whatever the case might have been, I simply had to create some distance between us.</p>
+<p class="orv_line">If the Plotter's goal was <strong>[The Fourth Wall]</strong> in my possession, then he…</p>
 <p class="orv_line">He, who was busy clenching and unfurling his fists, came across as rather terrifying for some reason.</p>
 <p class="orv_line">Other kkoma Yoo Joonghyuks were also looking up at the Plotter with tense expressions.</p>
 <div class="orv_outergod"><p>【Far too many things had to be distorted to create this world-line. I can't decide whether leaving you alone is the right thing to do or not.】</p></div>
@@ -256,8 +263,8 @@
 <p class="orv_line">The 'Secretive Plotter' slowly stood up from the throne and walked past me. His empty eyes were now peering deeply at the wide view of the forest.</p>
 <p class="orv_line">The N'Gai's Forest was enveloped in the violent conflagration.</p>
 <p class="orv_line">His forest was burning up.</p>
-<div class="orv_constellation"><p>[AhAhAhAhAhAh]</p></div>
-<div class="orv_constellation"><p>[SavemeSavemeSavemeSavemeSavemeSaveme]</p></div>
+<div class="orv_constellation"><p>AhAhAhAhAhAh</p></div>
+<div class="orv_constellation"><p>SavemeSavemeSavemeSavemeSavemeSaveme</p></div>
 <p class="orv_line">All those trees, so tall that they might pierce the heavens above, were now burning away into ashes. 'Outer Gods' hidden within the forest screamed. The hall's temperature rapidly shot up from the incredible power of the flames. This couldn't have been a simple arson.</p>
 <p class="orv_line">Even I could sense it.</p>
 <p class="orv_line">Someone possessing incredible Status was attacking this place.</p>
@@ -267,8 +274,8 @@
 <p class="orv_line">&lt;Vedas&gt;? &lt;Olympus&gt;? Or… &lt;Asgard&gt;?</p>
 <p class="orv_line">I quickly went through the list of all the Constellations related to 'fire' in my head. But I couldn't come up with any Modifiers.</p>
 <p class="orv_line">This incredible flame that burned away the entirety of the expansive forest… Could it be that there was another existence possessing this much power back in the original story?</p>
-<div class="orv_constellation"><p>[MykingMykingMykingMykingMyking]</p></div>
-<div class="orv_constellation"><p>[EscapeEscapeEscapeEscapeEscape]</p></div>
+<div class="orv_constellation"><p>MykingMykingMykingMykingMyking</p></div>
+<div class="orv_constellation"><p>EscapeEscapeEscapeEscapeEscape</p></div>
 <p class="orv_line">Small 'Outer Gods' quickly gathered around the Plotter. Many Outer Gods had left him by now, but still, there were quite a lot that chose to remain. They were like the citizens crowding around to protect their king, having sensed the imminent fall of their kingdom.</p>
 <p class="orv_line">The 'Secretive Plotter' looking at his subjects spoke to me.</p>
 <div class="orv_outergod"><p>【'Demon King of Salvation'. I too made a mistake like you once before.】</p></div>
@@ -278,15 +285,15 @@
 <p class="orv_line">If that was the case, then I too knew what happened.</p>
 <p class="orv_line">Yoo Joonghyuk from the 41st turn made a deal with the 'Devil of the Horizon' and sent Shin Yoosung to the 3rd turn. As a consequence, she ended up becoming the 3rd turn's calamity.</p>
 <p class="orv_line">If the 'Secretive Plotter' was thinking about that particular 'calamity', then I wanted to tell him that there was nothing to worry about.</p>
-<p class="orv_line">Unfortunately, [41] next to me was shaking his head. "This isn't from my regression turn."</p>
+<p class="orv_line">Unfortunately, <strong>[41]</strong> next to me was shaking his head. "This isn't from my regression turn."</p>
 <p class="orv_line">"What? But then…"</p>
-<p class="orv_line">[41] didn't reply and simply stared at the Plotter.</p>
+<p class="orv_line"><strong>[41]</strong> didn't reply and simply stared at the Plotter.</p>
 <p class="orv_line">My head was in a mess. According to my knowledge, the only regression turn in 'Ways of Survival' where he interfered with the past that had already happened was the 41st.</p>
 <p class="orv_line">…But now, there was another turn besides that one?</p>
 <p class="orv_line">When was that? Did it happen outside the original story?</p>
 <p class="orv_line">A sun enveloped in pure flames was rising up high above the wide-open ceiling of the hall. However, this sun belonged to neither Surya nor Apollo. And in the centre of this exploding sun, ominous-looking sunspots were growing larger. No Constellations that I knew possessed a Sun that horrifying.</p>
 <p class="orv_line">That was the power belonging to an existence I didn't know of.</p>
-<div class="orv_system"><p>[999th turn's 'Yoo Joonghyuk' is sighing in lamentation at the Sun.]</p></div>
+<div class="orv_system"><p>999th turn's 'Yoo Joonghyuk' is sighing in lamentation at the Sun.</p></div>
 <p class="orv_line">…999th turn??</p>
 <p class="orv_line">Abruptly, I recalled something.</p>
 <p class="orv_line">⸢Yoo Joonghyuk from the 999th regression turn. I respect the life you led. Excluding me, you were the only one who managed to get near the 'Conclusion'.⸥</p>
@@ -320,7 +327,7 @@
 <p class="orv_line">Why didn't I know it? Maybe, I didn't want to know in the first place?</p>
 <p class="orv_line">That these flames could be this hot and this merciless?</p>
 <p class="orv_line">That the flames meant to burn demons could also burn other beings, too?</p>
-<p class="orv_line">The sword [Flames of Retribution], now completely covered in [Hellfire], was glowing brightly. The owner of the sword was smiling. And with an utterly terrifying expression that I had never witnessed before, she opened her mouth to speak.</p>
+<p class="orv_line">The sword <strong>[Flames of Retribution]</strong>, now completely covered in <strong>[Hellfire]</strong>, was glowing brightly. The owner of the sword was smiling. And with an utterly terrifying expression that I had never witnessed before, she opened her mouth to speak.</p>
 <div class="orv_outergod"><p>【I've been searching for you for a very long time, Yoo Joonghyuk from the 1863rd turn.】</p></div>
 <p class="orv_line">The eyes of the Archangel who judged everything now blazed in pitch-black flames.</p>
 <div class="orv_outergod"><p>【Oh, the Outer God who ruined my world.】</p></div>
@@ -332,18 +339,12 @@
             <a href="./ch_450"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_452">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="451" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="501" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="450" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="450" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

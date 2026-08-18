@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 199: Ep. 38 - Fake Revolutionary, I</title>
     <meta property="og:title" content="Ch 199: Ep. 38 - Fake Revolutionary, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,96 +177,96 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00199.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 199: Ep. 38 - Fake Revolutionary, I</h1></div>
-<div class="orv_system"><p>[Someone has made a 'Revolutionary Declaration'.]</p></div>
+<div class="orv_system"><p>Someone has made a 'Revolutionary Declaration'.</p></div>
 <p class="orv_line">Among the many scenarios in the Demon Realm, the status of the Revolutionary scenario was large. The only existence that could threaten the dukes sitting at the highest points of the industrial complex.</p>
 <p class="orv_line">A revolutionary. This existence was the hope and legend of the citizens. At the same time, it was also despair.</p>
 <p class="orv_line">That's why the moment I spoke, countless people around me held their breaths. Their faces wondered if they had heard correctly.</p>
 <p class="orv_line">"Why are you so startled? Weren't you looking for the revolutionary?"</p>
 <p class="orv_line">My shameless words caused the confusion on people's faces to become consternation. At the same time, there was a message that only I could hear.</p>
-<div class="orv_constellation"><p>[You aren't a 'revolutionary'.]</p></div>
+<div class="orv_constellation"><p>You aren't a 'revolutionary'.</p></div>
 <p class="orv_line">It was an obvious message. Right now, I was an exile who was outside the scenario. I couldn't be the 'revolutionary', who was the backbone of the main scenario of the Demon Realm, when I didn't even have a scenario in the first place. It was originally supposed to be like this.</p>
-<div class="orv_system"><p>[Your declaration has affected the main scenario of the Syswitz Industrial Complex.]</p></div>
+<div class="orv_system"><p>Your declaration has affected the main scenario of the Syswitz Industrial Complex.</p></div>
 <p class="orv_line">As you know, the most important thing in the Star Stream was the 'probability'.</p>
-<div class="orv_constellation"><p>[A re volu tion ary?]</p></div>
+<div class="orv_constellation"><p>A re volu tion ary?</p></div>
 <p class="orv_line">The thick chains covering the scythe were revealed. The executioner took one step forward and I couldn't help feeling nervous.</p>
 <p class="orv_line">Honestly, I currently had no way of killing the executioner. Nevertheless, I didn't back down. I had to do it here.</p>
 <p class="orv_line">"Yes, I am a revolutionary."</p>
-<div class="orv_constellation"><p>[Why did you re veal your self?]</p></div>
+<div class="orv_constellation"><p>Why did you re veal your self?</p></div>
 <p class="orv_line">"If I stay back, someone else will die."</p>
 <p class="orv_line">Jang Hayoung and the other citizens were staring at me with wide open mouths. I waited nervously as I watched the incoming executioner.</p>
 <p class="orv_line">…It was time for the effect to appear.</p>
-<div class="orv_system"><p>[Many citizens admire your courage.]</p></div>
+<div class="orv_system"><p>Many citizens admire your courage.</p></div>
 <p class="orv_line">That's it.</p>
-<div class="orv_system"><p>[Your noble courage affects the development of the scenario.]</p></div>
-<div class="orv_system"><p>[You have caused a big influence on the scenario.]</p></div>
-<div class="orv_system"><p>[The scenario will temporarily assign you a status.]</p></div>
-<div class="orv_system"><p>[You have become a 'self-proclaimed revolutionary.]</p></div>
-<div class="orv_constellation"><p>[If an existing revolutionary dies, you will be given the position.]</p></div>
+<div class="orv_system"><p>Your noble courage affects the development of the scenario.</p></div>
+<div class="orv_system"><p>You have caused a big influence on the scenario.</p></div>
+<div class="orv_system"><p>The scenario will temporarily assign you a status.</p></div>
+<div class="orv_system"><p>You have become a 'self-proclaimed revolutionary.</p></div>
+<div class="orv_constellation"><p>If an existing revolutionary dies, you will be given the position.</p></div>
 <p class="orv_line">This was a stepping stone for me to enter the scenario.</p>
-<div class="orv_system"><p>[The hidden scenario 'Self-Proclaimed Revolutionary' has been acquired!]</p></div>
+<div class="orv_system"><p>The hidden scenario 'Self-Proclaimed Revolutionary' has been acquired!</p></div>
 <p class="orv_line">It was the first time that a scenario acquisition message was so welcome. It might be a hidden scenario and not a main scenario, but it was sufficient for the moment.</p>
 <p class="orv_line">The hidden scenario of the 73rd Demon Realm. It was a secret I wouldn't have known if it wasn't for Yoo Joonghyuk's countless failures.</p>
 <p class="orv_line">"You! Wait! Are you really a revolutionary?"</p>
 <p class="orv_line">"Hey!"</p>
 <p class="orv_line">The people were unable to control their fear and cried out. However, the timing wasn't good. Finally, the executioner started to move. Black smoke emerged from the executioner's mouth and wound itself around my body.</p>
-<div class="orv_system"><p>[The Syswitz Executioner has placed a mark of death on you.]</p></div>
-<div class="orv_system"><p>[You have been identified as the scapegoat of the Night.]</p></div>
+<div class="orv_system"><p>The Syswitz Executioner has placed a mark of death on you.</p></div>
+<div class="orv_system"><p>You have been identified as the scapegoat of the Night.</p></div>
 <p class="orv_line">People saw the mark appear around me and shouted, "Get out of the way!"</p>
 <p class="orv_line">"Waaaaahhhhh!"</p>
 <p class="orv_line">The fragments of the broken table scattered in the air and the scythe of the executioner cut the space in front of it. I dodged the scythe by a hair's breadth. It would've been difficult to avoid if my body wasn't repaired but now the story was different.</p>
-<div class="orv_system"><p>[The exile penalty is slightly alleviated.]</p></div>
+<div class="orv_system"><p>The exile penalty is slightly alleviated.</p></div>
 <p class="orv_line">There was a warmth in every breath that I let out. There was a mild aura around my body and the chill was gone.</p>
 <p class="orv_line">I dodged a series of moves from the executioner. Indeed, the difference between having a scenario and not having a scenario was great. It might be a hidden scenario but the presence of a story changed the liveliness of my existence.</p>
-<div class="orv_constellation"><p>[Revo lution ary?]</p></div>
+<div class="orv_constellation"><p>Revo lution ary?</p></div>
 <p class="orv_line">The executioner was a bit surprised by my movements and his momentum changed.</p>
-<div class="orv_system"><p>[The space has temporarily been closed.]</p></div>
-<div class="orv_constellation"><p>[You can't escape from the pub.]</p></div>
+<div class="orv_system"><p>The space has temporarily been closed.</p></div>
+<div class="orv_constellation"><p>You can't escape from the pub.</p></div>
 <p class="orv_line">I smiled bitterly. This was why numerous powerful people couldn't resist the executioner. There was no way to escape from the executioner in the industrial complex.</p>
 <p class="orv_line">Was that all?</p>
 <p class="orv_line">"Dodge you idiot!" As Jang Hayoung shouted, energy was fired from the executioner's scythe.</p>
-<div class="orv_quote"><p>「 No citizen of the industrial complex can resist the Executioner. 」</p></div>
-<div class="orv_system"><p>[The execution will take place.]</p></div>
-<p class="orv_line">His special skill Execution ignored the defense of the opponent and death a fatal blow. No matter how strong the citizens, they could never endure one blow from the executioner's scythe.</p>
+<div class="orv_quote"><p>No citizen of the industrial complex can resist the Executioner.</p></div>
+<div class="orv_system"><p>The execution will take place.</p></div>
+<p class="orv_line">His special skill Execution ignored the defense of the opponent and dealt a fatal blow. No matter how strong the citizens, they could never endure one blow from the executioner's scythe.</p>
 <p class="orv_line">The executioner's scythe was just about to cut through my body. In my hand, Blade of Faith cried out violently.</p>
 <p class="orv_line">"I'm sorry but I'm not a citizen."</p>
 <p class="orv_line">Magic power emerged from the heart of the gold dragon and the Purest Sword Force wrapped around my fingertips.</p>
 <p class="orv_line">"I told you. I am a revolutionary."</p>
 <p class="orv_line">Well, I was still a 'self-proclaimed' one. The dazzling white-blue energy collided with the executioner's scythe and tremendous sparks occurred. In the midst of these gorgeous effects, a message was heard.</p>
-<div class="orv_constellation"><p>[You aren't a main scenario participant.]</p></div>
-<div class="orv_constellation"><p>[You aren't a citizen.]</p></div>
-<div class="orv_constellation"><p>[You are an exile.]</p></div>
-<div class="orv_system"><p>[You are affected by the 'Execution' effect of the scenario.]</p></div>
+<div class="orv_constellation"><p>You aren't a main scenario participant.</p></div>
+<div class="orv_constellation"><p>You aren't a citizen.</p></div>
+<div class="orv_constellation"><p>You are an exile.</p></div>
+<div class="orv_system"><p>You are affected by the 'Execution' effect of the scenario.</p></div>
 <p class="orv_line">As expected, I knew it.</p>
-<div class="orv_system"><p>[The effect of 'Execution' is neutralized.]</p></div>
+<div class="orv_system"><p>The effect of 'Execution' is neutralized.</p></div>
 <p class="orv_line">The moment I blocked the blow from the scythe, the surrounding incarnations shouted, "H-He blocked a blow from the executioner!"</p>
 <p class="orv_line">"Is he really a revolutionary?"</p>
 <p class="orv_line">Those who didn't know my identity were watching the situation with eyes full of distrust.</p>
-<div class="orv_system"><p>[Your scenario contribution has increased.]</p></div>
+<div class="orv_system"><p>Your scenario contribution has increased.</p></div>
 <p class="orv_line">The executioner misunderstood me and energy burst from his body.</p>
-<div class="orv_constellation"><p>[In so lent…!]</p></div>
+<div class="orv_constellation"><p>In so lent…!</p></div>
 <p class="orv_line">I talked as if to provoke him. "Don't play around. I know you are only strong at Night."</p>
-<div class="orv_constellation"><p>[What?]</p></div>
+<div class="orv_constellation"><p>What?</p></div>
 <p class="orv_line">"Once this Night is over, you will surely die." I spoke while twisting Unbroken Faith in my hand. "I will surely kill you."</p>
 <p class="orv_line">The scythe flooded towards me dozens of times. The executioner wasn't weak just because Execution didn't work. It would just take him a longer time to dispose of me.</p>
 <p class="orv_line">Thus, it was too early to say that the situation was better.</p>
@@ -267,27 +274,27 @@
 <p class="orv_line">Everyone other than me could escape this place because they didn't receive the effect of the 'mark'. Among those running out of the pub, I saw Jang Hayoung turning to look back at me.</p>
 <p class="orv_line">I quickly glanced at him before using Bookmark.</p>
 <p class="orv_line">"Selecting the fourth bookmark, 'Lycaon Isparang'."</p>
-<div class="orv_system"><p>[The exclusive skill 'Way of the Wind Lv. 10 (+1) is activated!]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Way of the Wind Lv. 10 (+1) is activated!</p></div>
 <p class="orv_line">It would be easier to win if I used the fifth bookmark, Kyrgios, but winning this fight wasn't my goal in the first place. No, I couldn't win.</p>
-<div class="orv_system"><p>[The target isn't affected by your attack.]</p></div>
-<div class="orv_constellation"><p>[No one can kill the Executioner until the Night is over.]</p></div>
+<div class="orv_system"><p>The target isn't affected by your attack.</p></div>
+<div class="orv_constellation"><p>No one can kill the Executioner until the Night is over.</p></div>
 <p class="orv_line">My blade slashed at his collar but this was the only message I received in return. His execution didn't affect me but my attacks couldn't hurt him while it was Night.</p>
 <p class="orv_line">I had to change the plan. The surrounding pub area was ruined and the power of the wind started to surge. The dozens of scythe shadows flying through the air became stuck as the wind blew.</p>
 <p class="orv_line">On the other hand, my movements became more active. The balance of speed was breaking. His movements were always slower than me and I was always one step faster than him.</p>
 <p class="orv_line">This was the essence of Way of the Wind that had reached its limit. It was a force that controlled all acceleration in the space.</p>
 <p class="orv_line">"You are slow like a slug?"</p>
-<div class="orv_constellation"><p>[Ku a a a ah.]</p></div>
+<div class="orv_constellation"><p>Ku a a a ah.</p></div>
 <p class="orv_line">The scythe of the angry executioner started to randomly move through the air. Normally I wouldn't be hit by such attacks.</p>
 <p class="orv_line">However, the goddess of luck from Olympus laughed at me and one scythe accidentally entered the range.</p>
 <p class="orv_line">"Ick!"</p>
 <p class="orv_line">The moment the unexpected blow was about to strike me in the side, my right arm suddenly twisted into a strange shape and I blocked it.</p>
-<div class="orv_system"><p>[The talent of the sword master that sits in your right arm is shining!]</p></div>
+<div class="orv_system"><p>The talent of the sword master that sits in your right arm is shining!</p></div>
 <p class="orv_line">I was surprised as well. I didn't think the fragments of the story worked in this way.</p>
-<div class="orv_system"><p>[The user of the incomplete story has made your body's status unstable.]</p></div>
-<div class="orv_system"><p>[Your stories might be at risk if you continue fighting excessively.]</p></div>
+<div class="orv_system"><p>The user of the incomplete story has made your body's status unstable.</p></div>
+<div class="orv_system"><p>Your stories might be at risk if you continue fighting excessively.</p></div>
 <p class="orv_line">I bit my lips. The coldness was once again coming back. I had acquired a hidden scenario but I couldn't use excessive force to deal with the executioner.</p>
 <p class="orv_line">I shouldn't continue fighting against it. I had to buy time while avoiding it as much as possible. At least until this damn Night was over.</p>
-<div class="orv_constellation"><p>[You will di e.]</p></div>
+<div class="orv_constellation"><p>You will di e.</p></div>
 <p class="orv_line">I didn't respond and kept using Way of the Wind. It would've been nice if Yoo Joonghyuk was here. If I had the help of a transcendent then I could easily endure this long Night.</p>
 <p class="orv_line">However, no one was here.</p>
 <p class="orv_line">Judge of Destruction Jung Heewon.</p>
@@ -298,10 +305,10 @@
 <p class="orv_line">Here, I was alone. I believed in the information I knew and the stories I had built up. Myself as well.</p>
 <p class="orv_line">There were screams from the nervous people as the executioner's movements started to become slightly dull. I started mocking him. "What, are you tired?"</p>
 <p class="orv_line">I knew an invincible person like this would never feel exhaustion. It was more annoyance than exhaustion. My words were actually to hide my condition.</p>
-<div class="orv_system"><p>[Bookmark's duration is about to expire.]</p></div>
+<div class="orv_system"><p>Bookmark's duration is about to expire.</p></div>
 <p class="orv_line">The time that I could use Way of the Wind was 30 minutes at most. In the first place, Bookmark wasn't a skill that could last a long time.</p>
 <p class="orv_line">By the way, the executioner was laughing. There was a creepy sound effect and dozens of executioners appeared. The most terrible thing about the Night was that there wasn't one executioner. All executioners in the Syswitz Industrial Complex gathered in this small pub and stared at me.</p>
-<div class="orv_constellation"><p>[Your mis take.]</p></div>
+<div class="orv_constellation"><p>Your mis take.</p></div>
 <p class="orv_line">He deliberately consumed time while collecting his colleagues. It was to definitely kill me during this Night.</p>
 <p class="orv_line">I watched the movements of the executioners surrounding me and modified my posture.</p>
 <p class="orv_line">This was unavoidable. It was impossible to run away from them even if I used Way of the Wind.</p>
@@ -309,22 +316,22 @@
 <p class="orv_line">However, 30 minutes was enough to achieve my goal. I watched the incoming scythes and opened my arms.</p>
 <p class="orv_line">Numerous scythes broke through the air towards my body. Some incarnations closed their eyes and sighed bitterly. This soon turned to cries of surprise.</p>
 <p class="orv_line">The scythes that should've surely pierced me and torn me apart. The scythes stopped in the air.</p>
-<div class="orv_constellation"><p>[Wh at?]</p></div>
+<div class="orv_constellation"><p>Wh at?</p></div>
 <p class="orv_line">The confused executioners looked at the weapons in the air with stupid eyes. I suddenly recalled a sentence from Ways of Survival.</p>
-<div class="orv_quote"><p>「 There are two ways to withstand Night in the industrial complex. 」</p></div>
-<div class="orv_quote"><p>「 One is to run away from the executioners until the end of the Night. 」</p></div>
-<div class="orv_quote"><p>「 And the other one… 」</p></div>
+<div class="orv_quote"><p>There are two ways to withstand Night in the industrial complex.</p></div>
+<div class="orv_quote"><p>One is to run away from the executioners until the end of the Night.</p></div>
+<div class="orv_quote"><p>And the other one…</p></div>
 <p class="orv_line">"Have you forgotten? There isn't only the revolutionary and executioner in this scenario."</p>
 <p class="orv_line">This was followed by a message in my ears.</p>
-<div class="orv_system"><p>[Someone is using their vitality to protect you.]</p></div>
-<div class="orv_quote"><p>「 The second way to survive the Night is with the help of the Guardian. 」</p></div>
+<div class="orv_system"><p>Someone is using their vitality to protect you.</p></div>
+<div class="orv_quote"><p>The second way to survive the Night is with the help of the Guardian.</p></div>
 <p class="orv_line">As expected. I thought this would lead to the hidden 'guardian' coming out. Aileen said that even the council members didn't know who the revolutionary was.</p>
 <p class="orv_line">This meant that other incarnations didn't know the identity of the revolutionary. In other words, they couldn't protect the revolutionary when they didn't know the revolutionary.</p>
 <p class="orv_line">Yet what if I declared myself the revolutionary?</p>
-<div class="orv_system"><p>[The guardian was successful and the mark of death has been released!]</p></div>
+<div class="orv_system"><p>The guardian was successful and the mark of death has been released!</p></div>
 <p class="orv_line">The executioner could only use the mark of death once in one night. The mark had been released so today's execution was over.</p>
 <p class="orv_line">The executioner spoke in a bloodthirsty voice.</p>
-<div class="orv_constellation"><p>[…Your luck is go od.]</p></div>
+<div class="orv_constellation"><p>…Your luck is go od.</p></div>
 <p class="orv_line">"You better be careful. Next time we meet, it will be daytime."</p>
 <p class="orv_line">The executioners gritted their teeth and scattered one by one. The dreary sound of the flutes disappeared and the darkness went out like a tide.</p>
 <p class="orv_line">Outside the pub, the incarnations were staring inside with passionate eyes. The arrogant Jang Hayoung was glancing this way with shocked eyes. I wondered if I should say something before eventually shrugging and waving my hand.</p>
@@ -334,7 +341,7 @@
 <p class="orv_line">I looked up at the sky and it was still dark. I sometimes saw a few stars but they were so dim I couldn't see them properly.</p>
 <p class="orv_line">Uriel, the Great Sage Heaven's Equal…</p>
 <p class="orv_line">It would've been nice if those guys were watching but unfortunately, there was no message. Still, I should be satisfied with today.</p>
-<div class="orv_system"><p>[No one died tonight.]</p></div>
+<div class="orv_system"><p>No one died tonight.</p></div>
 <br>
 <hr>
         </article>
@@ -342,18 +349,12 @@
             <a href="./ch_198"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_200">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="199" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="191" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="198" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="198" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 
