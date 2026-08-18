@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 358: Ep. 67 - Forgotten People of the Scenario, III</title>
     <meta property="og:title" content="Ch 358: Ep. 67 - Forgotten People of the Scenario, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00358.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 358: Ep. 67 - Forgotten People of the Scenario, III</h1></div>
 <p class="orv_line">Lee Hyunsung had a thought. This must be how his grandfather who fought in the Vietnam War felt.</p>
@@ -196,9 +203,9 @@
 <p class="orv_line">'Go to the nearby reed forest while crawling low'.</p>
 <p class="orv_line">Lee Hyunsung moved through the forest by alternating between low crawls and high crawls. He wanted to run to the fields straight away but there were a few groups of constellations moving.</p>
 <p class="orv_line">Lee Hyunsung saw someone moving and quickly hid himself at the base of a tree, holding his breath.</p>
-<div class="orv_constellation"><p>[The Demon King of Salvation definitely chose this island.]</p></div>
-<div class="orv_constellation"><p>[How are we going to distribute it if we hunt him?]</p></div>
-<div class="orv_constellation"><p>[The one who cuts off his head will get half.]</p></div>
+<div class="orv_constellation"><p>The Demon King of Salvation definitely chose this island.</p></div>
+<div class="orv_constellation"><p>How are we going to distribute it if we hunt him?</p></div>
+<div class="orv_constellation"><p>The one who cuts off his head will get half.</p></div>
 <p class="orv_line">There were the murmurs of the constellations. They were all targeting Kim Dokja. He wanted to run out and get their heads straight away.</p>
 <p class="orv_line">–Unconditionally run towards the centre of the island.</p>
 <p class="orv_line">Kim Dokja had told them. Only then could they survive this bloody survival game. This was the message of a man who knew the future of this world.</p>
@@ -236,12 +243,12 @@
 <p class="orv_line">"I've never fought an orc up to now."</p>
 <p class="orv_line">It was strange when thinking about it. Orcs were famous monsters that everyone knew about. Yet they made it to the 80th scenario without meeting any orcs.</p>
 <p class="orv_line">In the field, the constellations exclaimed,</p>
-<div class="orv_constellation"><p>[Ignoring us to this degree!]</p></div>
-<div class="orv_constellation"><p>[Releasing this crap?]</p></div>
+<div class="orv_constellation"><p>Ignoring us to this degree!</p></div>
+<div class="orv_constellation"><p>Releasing this crap?</p></div>
 <p class="orv_line">They also thought it was absurd. As if there was no need to use a weapon, a single constellation stretched out his fist towards the rushing orcs with an annoyed expression.</p>
 <p class="orv_line">They were usually monsters that would be killed in one blow. Yet at this moment, something strange happened. An orc swung its axe and the fist of the constellation was broken.</p>
 <p class="orv_line">The moment the bewildered constellation was about to shout something, another stone axe came flying from somewhere. The head of the constellation literally burst apart. The incarnation body of the constellation fell down stupidly. The orcs roared and laughed, turning the field into a terrible place of slaughter.</p>
-<div class="orv_constellation"><p>[Kuaaack!]</p></div>
+<div class="orv_constellation"><p>Kuaaack!</p></div>
 <p class="orv_line">The fearsome constellations who could break mountains and split apart the sea. These constellations were dying, their bodies torn apart by only two orcs.</p>
 <p class="orv_line">Jung Heewon and Lee Hyunsung fell down as well. It was reality without a sense of realism. It was that easy to die? A constellation? To an orc?</p>
 <p class="orv_line">"Run away!"</p>
@@ -254,8 +261,8 @@
 <p class="orv_line">I didn't know the absence of my stats would be this great. It was unavoidable with only one point in physique. To make matters worse, it felt like my shoulders were being forced closer together. This was the reality of the island.</p>
 <p class="orv_line">Reincarnation Island. It was the place where the oldest stories of the Star Stream were gathered. Here, all the buffs accumulated from outside data were released.</p>
 <p class="orv_line">In other words, it was a place where only the innate abilities of the body were available. This was why I could easily defeat the 65th ranked demon king. Many constellations neglected physical training. Then once they entered this island, they made a mistake of misinterpreting their combat power. It was the same for Andrealphus…</p>
-<div class="orv_system"><p>[You have killed one competitor to date.]</p></div>
-<div class="orv_system"><p>[You will receive additional rewards when entering the safe zone.]</p></div>
+<div class="orv_system"><p>You have killed one competitor to date.</p></div>
+<div class="orv_system"><p>You will receive additional rewards when entering the safe zone.</p></div>
 <p class="orv_line">I tried not to miss the occasional message as I moved through the shade created by the lush trees.</p>
 <p class="orv_line">In order to prevent dehydration, I plunged my face into a rare stream and drank the water. It was clear and cold enough that my soul felt purified.</p>
 <p class="orv_line">"The first generation water is so clean."</p>
@@ -264,34 +271,34 @@
 <p class="orv_line">The problem was that I now entered the 'old story'. A world without the power of the Attributes Window and no convenient functions.</p>
 <p class="orv_line">The danger here wasn't only the monsters. Since I couldn't receive the effects of the skills, my immune system would decrease and I had to be wary of the cold and diseases. In the original novel, some constellations died after being affected by infectious diseases.</p>
 <p class="orv_line">In fact, the following sentence had appeared in Ways of Survival:</p>
-<div class="orv_quote"><p>「 The constellations, who were accustomed to the Attributes Window and the convenience of the system, died powerlessly. They weren't able to raise a proper resistance to the world that couldn't be read with their sensibilities. 」</p></div>
+<div class="orv_quote"><p>The constellations, who were accustomed to the Attributes Window and the convenience of the system, died powerlessly. They weren't able to raise a proper resistance to the world that couldn't be read with their sensibilities.</p></div>
 <p class="orv_line">The constellations, who reigned in the Star Stream, died because they couldn't overcome diseases or orcs. Some constellations couldn't endure the disgrace and took their own lives.</p>
 <p class="orv_line">It was funny.</p>
-<div class="orv_system"><p>[The participants of Island 861 are wiped out.]</p></div>
-<div class="orv_system"><p>[The participants of Island 1896 are wiped out.]</p></div>
+<div class="orv_system"><p>The participants of Island 861 are wiped out.</p></div>
+<div class="orv_system"><p>The participants of Island 1896 are wiped out.</p></div>
 <p class="orv_line">…It had started. By now, the entire island would be engulfed in a terrible tragedy. The constellations died to lesser monsters that they had been ignoring in the meantime…</p>
-<div class="orv_system"><p>[Many constellations are greatly shocked by the difficulty of Reincarnation Island.]</p></div>
-<div class="orv_system"><p>[Many constellations are sending a protest message to the bureau!]</p></div>
+<div class="orv_system"><p>Many constellations are greatly shocked by the difficulty of Reincarnation Island.</p></div>
+<div class="orv_system"><p>Many constellations are sending a protest message to the bureau!</p></div>
 <p class="orv_line">It was useless to protest. The island was originally like this. Demon kings or archangels… anyone could die in this place if they were a bit careless.</p>
 <p class="orv_line">I reflexively held my breath as I heard a sound coming from a nearby bush. I only knew one monster on the island that made a cry like this. It was a small monster half my height with green skin.</p>
 <p class="orv_line">A goblin. I sighed with relief. It was worth an attempt if it was a goblin, not an orc.</p>
 <p class="orv_line">There was a deafening roar. I reflexively swung my sword in the direction of the cry. My body was dragged in the direction of the swing due to my poor strength. Fortunately, the first one who jumped out was hit by the blindly swung sword and rolled on the ground.</p>
 <p class="orv_line">The problem was after this.</p>
-<div class="orv_quote"><p>「 One law of the first generation. Goblins will never move alone. 」</p></div>
+<div class="orv_quote"><p>One law of the first generation. Goblins will never move alone.</p></div>
 <p class="orv_line">Two goblins jumped out after the injured goblin and rapidly narrowed the distance, swinging their clubs. The club swung by one of them caused a long scratch on the outside of my left thigh. Damn… in this place, the goblins were scarier than the demon kings.</p>
-<div class="orv_system"><p>[The exclusive skill 'Fourth Wall' is activated!]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Fourth Wall' is activated!</p></div>
 <p class="orv_line">If it hadn't been for the Fourth Wall, I might've died to the goblins like other constellations. Then an ominous voice was heard.</p>
-<div class="orv_system"><p>[The administrator of the island is concerned about the fairness of the skill you are using.]</p></div>
-<div class="orv_system"><p>[The administrator of the island declares this skill isn't available here.]</p></div>
-<div class="orv_system"><p>[The probability of the Star Stream agrees with the administrator's complaint.]</p></div>
-<div class="orv_system"><p>[The Fourth Wall is revealing discomfort.]</p></div>
-<div class="orv_quote"><p>「 Kim Dok ja, so rry. 」</p></div>
+<div class="orv_system"><p>The administrator of the island is concerned about the fairness of the skill you are using.</p></div>
+<div class="orv_system"><p>The administrator of the island declares this skill isn't available here.</p></div>
+<div class="orv_system"><p>The probability of the Star Stream agrees with the administrator's complaint.</p></div>
+<div class="orv_system"><p>The Fourth Wall is revealing discomfort.</p></div>
+<div class="orv_quote"><p>Kim Dok ja, so rry.</p></div>
 <p class="orv_line">'Huh?'</p>
-<div class="orv_quote"><p>「 I ha ve no streng th on this is land. 」</p></div>
+<div class="orv_quote"><p>I ha ve no streng th on this is land.</p></div>
 <p class="orv_line">I felt the barrier covering my spirit fading. It felt like a sensation sleeping inside me was activated. At this moment, I realized what was happening.</p>
-<div class="orv_system"><p>[The thickness of the Fourth Wall has become thinner.]</p></div>
-<div class="orv_system"><p>[Your mental strength, reinforced by the Fourth Wall, has returned to its original state.]</p></div>
-<div class="orv_system"><p>[The physical pain relieved by the Fourth Wall has returned to normal.]</p></div>
+<div class="orv_system"><p>The thickness of the Fourth Wall has become thinner.</p></div>
+<div class="orv_system"><p>Your mental strength, reinforced by the Fourth Wall, has returned to its original state.</p></div>
+<div class="orv_system"><p>The physical pain relieved by the Fourth Wall has returned to normal.</p></div>
 <p class="orv_line">Dammit.</p>
 <br>
 <hr>
@@ -300,18 +307,12 @@
             <a href="./ch_357"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_359">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="358" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="434" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="357" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="357" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 516: Ep. 99 - The Oldest Dream, V</title>
     <meta property="og:title" content="Ch 516: Ep. 99 - The Oldest Dream, V" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,28 +177,28 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00516.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         <div class="orv_cover"><img src="../../../assets/images/Cover%20516%20-%20Episodes%2099-Epilogue%201.jpg" alt=""></div>
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 516: Ep. 99 - The Oldest Dream, V</h1></div>
-<div class="orv_system"><p>['The Fourth Wall' is reactivating!]</p></div>
+<div class="orv_system"><p>'The Fourth Wall' is reactivating!</p></div>
 <p class="orv_line">The light in the world flickered on and off several times. I felt the sensation of my body being sucked into somewhere, and within this half-awake consciousness, the friction noise of the train's wheel meeting the railroad tracks filled up my head.</p>
 <p class="orv_line">I couldn't accept this.</p>
 <p class="orv_line">Even though I knew that this wasn't a matter requiring my acceptance, I still found it hard to swallow.</p>
@@ -217,17 +224,17 @@
 <p class="orv_line">⸢Be ca use he's b orn in th e tra gedy ca n he fin ish th e tra gedy too⸥</p>
 <p class="orv_line">⸢"This place is the epilogue of that story."⸥</p>
 <p class="orv_line">The ancient tale I've been reading concluded, just like that.</p>
-<div class="orv_system"><p>[You have reached the ■■ of all the scenarios.]</p></div>
-<div class="orv_system"><p>[You have now learned of the secret of the world.]</p></div>
+<div class="orv_system"><p>You have reached the ■■ of all the scenarios.</p></div>
+<div class="orv_system"><p>You have now learned of the secret of the world.</p></div>
 <p class="orv_line">The only remaining topic for us was on how to live the story's 'ever after'. The part of the story that the 'Ways of Survival' didn't tell me.</p>
-<div class="orv_system"><p>[The 'Oldest Dream' has ended.]</p></div>
+<div class="orv_system"><p>The 'Oldest Dream' has ended.</p></div>
 <p class="orv_line">Abruptly, a certain thought popped up in my head. Something that had been forgotten after being swept up in the situation.</p>
 <p class="orv_line">The Dokkaebi King told me this: that this world was a dream of the 'Oldest Dream'.</p>
 <p class="orv_line">⸢In that case, what happens to the characters of the dream after the dream has come to an end?⸥</p>
 <p class="orv_line">The characters from the 999th turn and the 'Secretive Plotter' had all escaped from the role of 'Characters' and were freed from the dream through their own will.</p>
 <p class="orv_line">If so, what would happen to other people, then?</p>
 <p class="orv_line">After the dream was over, the people from the dream would…</p>
-<div class="orv_system"><p>[Final scenario clear reward has arrived.]</p></div>
+<div class="orv_system"><p>Final scenario clear reward has arrived.</p></div>
 <br>
 <hr>
 <br>
@@ -246,7 +253,7 @@
 <p class="orv_line">⸢Everyone was alright.⸥</p>
 <p class="orv_line">Kim Dokja slowly looked around him. There was no other presence within the subway. It was likely that this train was the same one they rode in earlier.</p>
 <p class="orv_line">⸢Are we really safe now?⸥</p>
-<p class="orv_line">"I've treated your injuries. Once we return to [The Fourth Wall], we should entrust you to Seolhwa-ssi's care, but…"</p>
+<p class="orv_line">"I've treated your injuries. Once we return to <strong>[The Fourth Wall]</strong>, we should entrust you to Seolhwa-ssi's care, but…"</p>
 <p class="orv_line">Yoo Sangah feeling for Kim Dokja's pulse faintly smiled. His companions approached him one by one. However, even though their gazes were fixed on him, none of them managed to readily open their mouths.</p>
 <p class="orv_line">Unexpectedly, the first one to do so was Yoo Joonghyuk. Rather than approaching Kim Dokja like everyone else, he leaned against the subway's seat at an angle and glared outside the window.</p>
 <p class="orv_line">The universe's Story was coming undone on the outside. The once-tangled roll of thread was turning into dust and scattering away one strand at a time.</p>
@@ -284,23 +291,23 @@
 <p class="orv_line">"…By the way, what will happen to the world-line we've been living in?"</p>
 <p class="orv_line">When everyone gazed at her, she scratched her cheeks in embarrassment and continued on.</p>
 <p class="orv_line">"You know, that thing. If the Dokkaebi King is to be believed, this world is merely a dream of the 'Oldest Dream', but if that dream is over, then…"</p>
-<p class="orv_line">For sure, the time flow of the world they were living in froze after the [Final Wall] was destroyed. In that case, even if they returned to that world by riding on this train…</p>
-<div class="orv_constellation"><p>[It'll be fine. Our world is functioning normally.]</p></div>
+<p class="orv_line">For sure, the time flow of the world they were living in froze after the <strong>[Final Wall]</strong> was destroyed. In that case, even if they returned to that world by riding on this train…</p>
+<div class="orv_constellation"><p>It'll be fine. Our world is functioning normally.</p></div>
 <p class="orv_line">"Aha, I see. That's a relief… Ehng??"</p>
 <p class="orv_line">Lee Jihye stared at Kim Dokja, then at Lee Hyunsung, and even at Jung Heewon and Yoo Sangah. No matter who she looked at, though, they were all making the exact same expression as her.</p>
 <p class="orv_line">"Who replied just now??"</p>
 <p class="orv_line">And then, everyone looked up at the air at the same time. A ball of fine fur was floating up there.</p>
-<div class="orv_constellation"><p>[Baat?]</p></div>
+<div class="orv_constellation"><p>Baat?</p></div>
 <p class="orv_line">The eyes of the companions narrowed down to slits.</p>
-<div class="orv_constellation"><p>[Eh-baat.]</p></div>
+<div class="orv_constellation"><p>Eh-baat.</p></div>
 <p class="orv_line">Biyoo began sweating buckets in the air, but eventually, sighed out grandly and spoke up.</p>
-<div class="orv_constellation"><p>[You knew something was up already anyway, so why are you so surprised?]</p></div>
+<div class="orv_constellation"><p>You knew something was up already anyway, so why are you so surprised?</p></div>
 <br>
 <hr>
 <br>
 <p class="orv_line">The companions heard the explanation from Biyoo.</p>
 <p class="orv_line">The contents, when simplified, were like this.</p>
-<div class="orv_constellation"><p>[The world-line hasn't been annihilated yet. I don't know the reason, but… the stopped time of the world is beginning to get written again. Although the worldview shook around a lot after all the large Stories crumbled at the same time, it'll still take several thousands of years for the world to die naturally.]</p></div>
+<div class="orv_constellation"><p>The world-line hasn't been annihilated yet. I don't know the reason, but… the stopped time of the world is beginning to get written again. Although the worldview shook around a lot after all the large Stories crumbled at the same time, it'll still take several thousands of years for the world to die naturally.</p></div>
 <p class="orv_line">The sights of the world they used to live in could be seen faintly just beyond the subway's windows. The frozen time of the world was beginning to move once more.</p>
 <p class="orv_line">⸢Uriel was slowly opening her eyes within this devastation.⸥</p>
 <p class="orv_line">⸢The Black Flame Dragon was asleep, curled up into a ball. And…⸥</p>
@@ -308,13 +315,13 @@
 <p class="orv_line">The Constellations were alive, too.</p>
 <p class="orv_line">Even the Maritime War God, Goryeo's First Sword… Everyone was still alive. Even though they had lost their previous lustre, they were still drawing breaths in this world-line.</p>
 <p class="orv_line">Biyoo spoke up as she looked at those Constellations.</p>
-<div class="orv_constellation"><p>[&lt;Star Stream&gt; still remains. The channel system has crumbled down, and Constellations can no longer wield as much power as they used to, but still, it was such a huge Story that it'll take some time for it to completely crumble down.]</p></div>
+<div class="orv_constellation"><p>&lt;Star Stream&gt; still remains. The channel system has crumbled down, and Constellations can no longer wield as much power as they used to, but still, it was such a huge Story that it'll take some time for it to completely crumble down.</p></div>
 <p class="orv_line">A couple of my companions sighed in relief. A sigh that they themselves couldn't really understand.</p>
 <p class="orv_line">Lee Jihye asked again. "But, the dream is over, right? So how can this world continue to exist?"</p>
-<div class="orv_constellation"><p>[I already told you, I also don't know. Be smart enough to listen properly when someone tells you something the first time.]</p></div>
+<div class="orv_constellation"><p>I already told you, I also don't know. Be smart enough to listen properly when someone tells you something the first time.</p></div>
 <p class="orv_line">"…Well, it sure is a relief, but since when did you learn to speak like this? Besides all that, look how rude you are! Ahjussi! Listen to how Biyoo talks! This creepy kid, until now…!"</p>
 <p class="orv_line">Kim Dokja shifted his gaze over to Biyoo, prompting the latter to feign complete ignorance and open her mouth as if she didn't know anything.</p>
-<div class="orv_constellation"><p>[Ah-bah-aht?]</p></div>
+<div class="orv_constellation"><p>Ah-bah-aht?</p></div>
 <p class="orv_line">Everyone broke out into a helpless chuckle. Lee Jihye panted angrily and just before she could shout something, Kim Dokja reached out and wordlessly hugged Biyoo.</p>
 <p class="orv_line">This bundle of fur that used to be so tiny at the beginning of the scenarios was now so big that one couldn't wrap their arms around it.</p>
 <p class="orv_line">Yoo Joonghyuk watching that spectacle spoke up. "…Maybe, it's the last miracle."</p>
@@ -340,7 +347,7 @@
 <p class="orv_line">"Maybe, it really is a miracle…"</p>
 <p class="orv_line">…The sight of Seoul, the one they were intimately familiar with.</p>
 <p class="orv_line">And on the subway map where every name had been erased off, names of various stations began reappearing.</p>
-<div class="orv_system"><p>[Next stop is 'Hongjae' Station.]</p></div>
+<div class="orv_system"><p>Next stop is 'Hongjae' Station.</p></div>
 <p class="orv_line">Jang Hayoung's steps took her towards the exit. From beyond the wrecked terminal, the sight of her old suburb could be seen. The train's speed was gradually slowing down.</p>
 <p class="orv_line">Jung Heewon asked her. "You still want to go, even though there might be nothing left?"</p>
 <p class="orv_line">Jang Hayoung nodded her head. Jung Heewon could only reply with a wry grin. Like how it was with everyone, there were some things that had to be confirmed even if you knew the end results already.</p>
@@ -359,9 +366,9 @@
 <p class="orv_line">Yoo Sangah then asked everyone. "We are all going to get off at the same place, yes?"</p>
 <p class="orv_line">"Can't we switch trains somewhere? Looks like we'll have to hoof it from Jongro."</p>
 <p class="orv_line">Han Sooyoung grumbled and scanned the subway map.</p>
-<p class="orv_line">Their destination was Gwanghwamun, the location of the [Industrial Complex].</p>
+<p class="orv_line">Their destination was Gwanghwamun, the location of the <strong>[Industrial Complex]</strong>.</p>
 <p class="orv_line">"We gotta think up of what to tell the others. It's not like we can tell them everything, right?"</p>
-<div class="orv_system"><p>[Next stop is 'Jongro 3rd street' Station.]</p></div>
+<div class="orv_system"><p>Next stop is 'Jongro 3rd street' Station.</p></div>
 <p class="orv_line">Everything was resolved now, but in reality, it'd be not like that. They would be facing the reality of new daily life after their return, that's why.</p>
 <p class="orv_line">⸢The train's doors were opening up.⸥</p>
 <p class="orv_line">Yoo Sangah holding the children's hands lightly hopped off to the station's platform with a soft "Eusha!" She looked back and saw that both Lee Hyunsung and Jung Heewon had also lightly hopped past the safety line on the ground.</p>
@@ -370,10 +377,10 @@
 <p class="orv_line">"Kim Dokja."</p>
 <p class="orv_line">It was unknown who among Han Sooyoung and Yoo Joonghyuk called that name out first. The former asked with a questioning pair of eyes.</p>
 <p class="orv_line">"We are getting off together, right?"</p>
-<div class="orv_system"><p>[Someone has activated 'Lie Detection Lv… ']</p></div>
+<div class="orv_system"><p>Someone has activated 'Lie Detection Lv… '</p></div>
 <p class="orv_line">That prompted Kim Dokja to smirk softly.</p>
 <p class="orv_line">"Of course. We should."</p>
-<div class="orv_system"><p>['Lie Detection' has confirmed 'Kim Dokja's' words as truth.]</p></div>
+<div class="orv_system"><p>'Lie Detection' has confirmed 'Kim Dokja's' words as truth.</p></div>
 <p class="orv_line">"Let's go."</p>
 <p class="orv_line">Kim Dokja took a step forward and lightly slapped the backs of the other two. That caused the two to stagger forward, as well. The frowning Han Sooyoung muttered something in Kim Dokja's direction, while Yoo Joonghyuk grasped the hilt of his sword, his eyes glaring nonstop.</p>
 <p class="orv_line">Kim Dokja spoke to the latter. "…You do know that the scenarios are over, right? From now on, it'll be a criminal offence to carry around a sword…"</p>
@@ -395,16 +402,16 @@
 <p class="orv_line">That prompted 'The Fourth Wall' to ask me.</p>
 <p class="orv_line">⸢Will th is re ally be o kay?⸥</p>
 <p class="orv_line">Right in the next second, my transparent figure emerged from the empty space. Accompanied by a slight case of dizziness, my body fully materialised and revealed itself above the subway.</p>
-<div class="orv_system"><p>[The percentage of memories you currently retain is '51%'.]</p></div>
+<div class="orv_system"><p>The percentage of memories you currently retain is '51%'.</p></div>
 <p class="orv_line">I smiled wryly. "This was the only way."</p>
 <p class="orv_line">I looked up, and the messages clogging up the message log all floated up at once.</p>
-<div class="orv_system"><p>[You have cleared the 'Final Scenario'.]</p></div>
-<div class="orv_system"><p>[You are the only person who knows the secret of this world.]</p></div>
-<div class="orv_system"><p>[Currently, the 'Oldest Dream' is absent.]</p></div>
-<div class="orv_system"><p>[The world's time will not flow if the dream doesn't continue.]</p></div>
+<div class="orv_system"><p>You have cleared the 'Final Scenario'.</p></div>
+<div class="orv_system"><p>You are the only person who knows the secret of this world.</p></div>
+<div class="orv_system"><p>Currently, the 'Oldest Dream' is absent.</p></div>
+<div class="orv_system"><p>The world's time will not flow if the dream doesn't continue.</p></div>
 <p class="orv_line">These were the messages only visible to me.</p>
-<div class="orv_system"><p>[You have earned the qualification to take over the role of the 'Oldest Dream'.]</p></div>
-<div class="orv_system"><p>[Will you continue with the dream?]</p></div>
+<div class="orv_system"><p>You have earned the qualification to take over the role of the 'Oldest Dream'.</p></div>
+<div class="orv_system"><p>Will you continue with the dream?</p></div>
 <p class="orv_line">If this dream was to be stopped now, then the world would forever be frozen still.</p>
 <p class="orv_line">⸢It truly was a cruel thing; the world that barely managed to gain a chance at happiness stopping for all eternity.⸥</p>
 <p class="orv_line">Although it started off as a tragedy, this universe was already born. Even though that was the case, there were still some that searched for happiness in this universe, and they had finally reached the terminals they always wanted to get to.</p>
@@ -417,16 +424,16 @@
 <p class="orv_line">⸢"Indeed, I haven't earned any skills, but… Is it possible to receive this type of a reward, instead?"⸥</p>
 <p class="orv_line">⸢【It is possible.】⸥</p>
 <p class="orv_line">What I received back then was, technically speaking, not a 'skill' per se.</p>
-<div class="orv_system"><p>[Currently, 'Bookmark' skill is in activation.]</p></div>
-<div class="orv_system"><p>[Due to the blessing of the 'Oldest Dream', the applicable skill's activation period has been changed to infinite.]</p></div>
-<div class="orv_system"><p>[Currently, the sixth Bookmark is in activation.]</p></div>
-<div class="orv_system"><p>[The Character registered in the sixth Bookmark is 'Director of the False End'.]</p></div>
+<div class="orv_system"><p>Currently, 'Bookmark' skill is in activation.</p></div>
+<div class="orv_system"><p>Due to the blessing of the 'Oldest Dream', the applicable skill's activation period has been changed to infinite.</p></div>
+<div class="orv_system"><p>Currently, the sixth Bookmark is in activation.</p></div>
+<div class="orv_system"><p>The Character registered in the sixth Bookmark is 'Director of the False End'.</p></div>
 <p class="orv_line">The Director of the False End, the 1863rd turn's Han Sooyoung.</p>
-<div class="orv_system"><p>[Your degree of understanding on the applicable individual is very high!]</p></div>
-<div class="orv_system"><p>[Exclusive skill 'Avatar Lv.???' is currently in activation!]</p></div>
-<div class="orv_system"><p>[You have used up 49.00% of your memories to generate an avatar.]</p></div>
-<div class="orv_system"><p>[Due to the influence of the world-line, the connection to your avatar has been cut off.]</p></div>
-<div class="orv_system"><p>[The applicable avatar will possess its own free will and act accordingly.]</p></div>
+<div class="orv_system"><p>Your degree of understanding on the applicable individual is very high!</p></div>
+<div class="orv_system"><p>Exclusive skill 'Avatar Lv.???' is currently in activation!</p></div>
+<div class="orv_system"><p>You have used up 49.00% of your memories to generate an avatar.</p></div>
+<div class="orv_system"><p>Due to the influence of the world-line, the connection to your avatar has been cut off.</p></div>
+<div class="orv_system"><p>The applicable avatar will possess its own free will and act accordingly.</p></div>
 <p class="orv_line">"…This is the right way."</p>
 <p class="orv_line">I felt around the lost portion of my memories, now faint, and staggered unsteadily.</p>
 <p class="orv_line">My 'other me' would continue to live on, oblivious that he was an avatar. He'd live in a huge house with the other companions.</p>
@@ -446,11 +453,11 @@
 <p class="orv_line">⸢And everyone lived happily ever after.⸥</p>
 <p class="orv_line">I always hated that phrase.</p>
 <p class="orv_line">However, the current me dearly wished for that phrase to become true.</p>
-<div class="orv_constellation"><p>[Constellation, 'Demon King of Salvation' has reached his ■■.]</p></div>
-<div class="orv_system"><p>[You have become the 'Oldest Dream'.]</p></div>
+<div class="orv_constellation"><p>Constellation, 'Demon King of Salvation' has reached his ■■.</p></div>
+<div class="orv_system"><p>You have become the 'Oldest Dream'.</p></div>
 <p class="orv_line">The disappearing lights in the distance resembled the Constellations that still remembered me.</p>
 <p class="orv_line">And with that, my endless voyage got underway.</p>
-<div class="orv_system"><p>[Your ■■ is 'Eternity'.]</p></div>
+<div class="orv_system"><p>Your ■■ is 'Eternity'.</p></div>
 <br>
 <hr>
         </article>
@@ -458,18 +465,12 @@
             <a href="./ch_515"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_517">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="516" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="564" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="515" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="515" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

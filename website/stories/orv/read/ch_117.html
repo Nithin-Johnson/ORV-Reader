@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 117: Ep. 23 - Abandoned World, II</title>
     <meta property="og:title" content="Ch 117: Ep. 23 - Abandoned World, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,30 +177,30 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00117.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 117: Ep. 23 - Abandoned World, II</h1></div>
 <p class="orv_line">Along with the message, the contents of the scenario emerged in my head.</p>
 <div class="orv_window">
-<h3 class="orv_window_title">[Main Scenario #6 - ????]</h3>
+<h3 class="orv_window_title">Main Scenario #6 - ????</h3>
 <p>Category: Main</p>
 <p>Difficulty: ???</p>
 <p>Clear Conditions: ???</p>
@@ -214,18 +221,18 @@
 <p class="orv_line">I had been impressed with Jeon Ildo. He was the only king who gave up the throne of his own will.</p>
 <p class="orv_line">"During the struggle for the throne and this time as well. I was very impressed with Dokja-nim's performance. You don't know how much my sponsor talks about Dokja-nim. Half the time it is about Dokja-nim."</p>
 <p class="orv_line">He gave a good-looking smile. That reminded me, who was his sponsor? I immediately used a skill.</p>
-<div class="orv_system"><p>[The exclusive skill, Character List is activated.]</p></div>
+<div class="orv_system"><p>The exclusive skill, Character List is activated.</p></div>
 <p class="orv_line">It was a summary list that only contained the attribute and sponsor.</p>
-<div class="orv_system"><p>[The settings of the summary list have been changed.]</p></div>
+<div class="orv_system"><p>The settings of the summary list have been changed.</p></div>
 <div class="orv_window">
-<h3 class="orv_window_title">[Character Summary]</h3>
+<h3 class="orv_window_title">Character Summary</h3>
 <p>Name: Jeon Ildo</p>
 <p>Exclusive Attributes: Clumsy Intellectual (General), the Neutral King (Hero)</p>
 <p>Sponsor: Expert at Playing Both Sides</p>
 </div>
 <p class="orv_line">…Now that I saw it, I had a question. Of course it would be this constellation. Expert at Playing Both Sides seemed to be an old-fashioned person with complicated internal relations but it was actually the modifier of a 'king'.</p>
-<div class="orv_system"><p>[A constellation who advocates neutral diplomacy has revealed his modifier.]</p></div>
-<div class="orv_system"><p>[The constellation 'Expert at Playing Both Sides' shows good intentions towards you.]</p></div>
+<div class="orv_system"><p>A constellation who advocates neutral diplomacy has revealed his modifier.</p></div>
+<div class="orv_system"><p>The constellation 'Expert at Playing Both Sides' shows good intentions towards you.</p></div>
 <p class="orv_line">It was the modifier for Gwanghaegun, a king of Joseon famous for his neutral diplomacy.</p>
 <p class="orv_line">Jeon Ildo had the title of Neutral King for a reason.</p>
 <p class="orv_line">I said to him, "Tell me more. Why did you say that only some people can carry out the scenario?"</p>
@@ -264,7 +271,7 @@
 <p class="orv_line">Jung Heewon and Lee Hyunsung understood the situation and nodded. I left Yoo Sangah with Lee Hyunsung.</p>
 <p class="orv_line">"Dokja-ssi. Scream if anything happens. Understood?" Jung Heewon told me.</p>
 <p class="orv_line">I smiled at her and opened the door of the tent.</p>
-<div class="orv_system"><p>[Sound Wave Blocking is activated in the area.]</p></div>
+<div class="orv_system"><p>Sound Wave Blocking is activated in the area.</p></div>
 <p class="orv_line">They even had Sound Wave Blocking? There seemed to be a pretty good assortment of people. I walked in and saw a round table in the wide space. There were a few biscuits and beef jerky on the table.</p>
 <p class="orv_line">The chairs that people were sitting in were different. Some were plastic chairs, some were wooden chairs and there was even a sofa. Still, no matter where they sat, it was definitely a throne.</p>
 <p class="orv_line">The surviving kings were here.</p>
@@ -285,15 +292,15 @@
 <p class="orv_line">"What king? Do you really think this is the Joseon Dynasty? We are living in the era of a democracy. Please wake up!"</p>
 <p class="orv_line">I quietly activated Character List.</p>
 <div class="orv_window">
-<h3 class="orv_window_title">[Character Summary]</h3>
+<h3 class="orv_window_title">Character Summary</h3>
 <p>Name: Yoo Hyunho</p>
 <p>Exclusive Attributes: Corrupt Politician (Rare)</p>
 <p>Sponsor: Master of Manipulating State Affairs</p>
 <p>Exclusive Skills: Bribery Lv. 5, Military Command Lv. 4, Corrupt Power Lv. 6, Control of the Masses Lv. 7…</p>
 </div>
 <p class="orv_line">I suddenly remembered. A politician who survived the first scenario. There had clearly been such a person in several regressions. Usually Yeoido was erased during the monster flood so he was lucky this time.</p>
-<div class="orv_system"><p>[The constellation 'Maritime War God' is angry with the corrupt officials of Joseon.]</p></div>
-<div class="orv_system"><p>[The constellation 'Bald General of Justice' hates the incarnation Yoo Hyunho.]</p></div>
+<div class="orv_system"><p>The constellation 'Maritime War God' is angry with the corrupt officials of Joseon.</p></div>
+<div class="orv_system"><p>The constellation 'Bald General of Justice' hates the incarnation Yoo Hyunho.</p></div>
 <p class="orv_line">These messages probably had something to do with Yoo Hyunho's sponsor. A master of manipulating state affairs who lived during the Joseon period…</p>
 <p class="orv_line">I would've been able to ask Yoo Sangah if she was here.</p>
 <p class="orv_line">"This person called Lee Sookyung is attending for a similar reason. I don't know if you've heard but she is called the King of Wanderers."</p>
@@ -317,8 +324,8 @@
 <p class="orv_line">Limited?</p>
 <p class="orv_line">"The kings received a message from the dokkaebis but you must not have received it yet."</p>
 <p class="orv_line">At this moment, a system message flashed in my head.</p>
-<div class="orv_system"><p>[Seoul Dome's initial quota is 10 people.]</p></div>
-<div class="orv_system"><p>[The size of the subsequent quotas will be decided depending on the incarnations in the scenario.]</p></div>
+<div class="orv_system"><p>Seoul Dome's initial quota is 10 people.</p></div>
+<div class="orv_system"><p>The size of the subsequent quotas will be decided depending on the incarnations in the scenario.</p></div>
 <p class="orv_line">Oh, this was why they were fighting. Unlike the other incarnations, the kings knew how important it was to get a strong start early in the scenario. If they could put their own forces into the initial quota then they thought the initiative of future scenarios would come to their group. In the end, this place was going to become a battelfield over kings' positions.</p>
 <p class="orv_line">"My group will go. I heard there are a lot of Japanese people in the scenario area. I think it is right for me to take the lead as a descendant of Silla."</p>
 <p class="orv_line">"No, I will go. Baekje had many wars with Japan since ancient times."</p>
@@ -343,18 +350,12 @@
             <a href="./ch_116"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_118">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="117" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="354" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="116" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="116" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

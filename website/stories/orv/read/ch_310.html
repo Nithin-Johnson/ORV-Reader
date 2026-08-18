@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 310: Ep. 59 - Kim Dokja's Company, I</title>
     <meta property="og:title" content="Ch 310: Ep. 59 - Kim Dokja's Company, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00310.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 310: Ep. 59 - Kim Dokja's Company, I</h1></div>
 <p class="orv_line">"Yoo Joonghyuk, you are crazy!"</p>
@@ -202,58 +209,58 @@
 <p class="orv_line">"It is over if you touch it!"</p>
 <p class="orv_line">"Not really. Most people acquire a star and move onto the next scenario."</p>
 <p class="orv_line">Yoo Joonghyuk slowly gazed at me. I couldn't feel any agitation from his expression. This wasn't the first time he did the 46th scenario.</p>
-<div class="orv_quote"><p>「 In the 46th scenario, only those who are part of the same nebula or have been recognized as 'colleagues' would participate together. 」</p></div>
+<div class="orv_quote"><p>In the 46th scenario, only those who are part of the same nebula or have been recognized as 'colleagues' would participate together.</p></div>
 <p class="orv_line">In the previous round, Yoo Joonghyuk calculated everything and jumped to the 46th scenario. He didn't want to be restricted so he didn't join a big nebula. Instead, he picked companions and challenged the scenario. He also used the information given to him by the 41st regression Shin Yoosung.</p>
 <p class="orv_line">However, there was one existence that Yoo Joonghyuk didn't expect. A person who adapted to the new future changed by Yoo Joonghyuk and appeared as Yoo Joonghyuk's companion.</p>
-<div class="orv_quote"><p>「 "I believe in you, Yoo Joonghyuk." 」</p></div>
+<div class="orv_quote"><p>"I believe in you, Yoo Joonghyuk."</p></div>
 <p class="orv_line">Prophet Anna Croft. In the past round, she was Yoo Joonghyuk's companion.</p>
 <p class="orv_line">I blocked his hand and called out, "Yoo Joonghyuk."</p>
 <p class="orv_line">I thought it would be fine. I thought it would be different from the previous lives that he lived. We came to this place by saving each other's lives several times and I thought there must be some type of trust between us.</p>
 <p class="orv_line">"I'm not Anna Croft. I won't betray you."</p>
-<div class="orv_quote"><p>「 "I believed you wouldn't betray me." 」</p></div>
+<div class="orv_quote"><p>"I believed you wouldn't betray me."</p></div>
 <p class="orv_line">Yoo Joonghyuk failed the 46th scenario thanks to Anna Croft. He lost his party members and everything he had. Yoo Joonghyuk survived but he didn't survive. After losing everything to Anna Croft in the 46th scenario and having his existence given to her, he lived like a slave until he died.</p>
 <p class="orv_line">Yoo Joonghyuk stared at me.</p>
 <p class="orv_line">"Kim Dokja, you said you are a prophet." The expression on Yoo Joonghyuk's face was cold. "I don't like you. It was like this from the beginning."</p>
 <p class="orv_line">Fwoosh!</p>
 <p class="orv_line">The transcendent waves of energy burst from Yoo Joonghyuk's body.</p>
-<p class="orv_line">In retaliation to the unhesitant strikes of the [Black Heavenly Demon Sword], I also raised the power of [Electrification] to the limit.</p>
+<p class="orv_line">In retaliation to the unhesitant strikes of the <strong>[Black Heavenly Demon Sword]</strong>, I also raised the power of <strong>[Electrification]</strong> to the limit.</p>
 <p class="orv_line">Crack!</p>
 <p class="orv_line">My body flung like a worm as I felt shockwaves from my palm.</p>
 <p class="orv_line">Now even I'm really angry.</p>
 <p class="orv_line">"You shitty bastard-!"</p>
 <p class="orv_line">Boom!</p>
-<div class="orv_system"><p>[The status of the demon king has opened!]</p></div>
+<div class="orv_system"><p>The status of the demon king has opened!</p></div>
 <p class="orv_line">It was Demon King Transformation combined with Electrification. I focused all my power and responded to Yoo Joonghyuk. It was the opening of the second round that we didn't finish the other day.</p>
 <p class="orv_line">The star was rolling around from the collision and I shouted. "You reached all this way and you're just going to give up? Do you covet my skills and stories that much?"</p>
 <p class="orv_line">Yoo Joonghyuk didn't answer. I bit my lips as I swung my sword. Unbroken Faith and the Black Heavenly Demon Sword collided and created an ear-splitting sound.</p>
 <p class="orv_line">…Yes, it wasn't that I didn't understand. Yoo Joonghyuk was betrayed by the prophet in the last round. Thus, the strength he desired most must be the power of prophecy itself. In addition, he still misunderstood me as a prophet.</p>
-<div class="orv_quote"><p>「 Kim Dok ja is a fo ol. 」</p></div>
+<div class="orv_quote"><p>Kim Dok ja is a fo ol.</p></div>
 <p class="orv_line">What?</p>
-<div class="orv_system"><p>[The exclusive skill 'Fourth Wall' is activated!]</p></div>
-<div class="orv_system"><p>[The 'Fourth Wall' is shaking and smiling.]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Fourth Wall' is activated!</p></div>
+<div class="orv_system"><p>The 'Fourth Wall' is shaking and smiling.</p></div>
 <p class="orv_line">My head instantly turned cold like cold water was poured on me. Was Yoo Joonghyuk really trying to kill me because I was a prophet? Was he doing this to gain my skills and stories?</p>
 <p class="orv_line">…Had he postponed everything only for this moment?</p>
-<div class="orv_system"><p>[There are unread messages left in Midday Tryst.]</p></div>
+<div class="orv_system"><p>There are unread messages left in Midday Tryst.</p></div>
 <p class="orv_line">An item with the traces of the past three years. I blocked Yoo Joonghyuk's sword while opening Midday Tryst.</p>
-<div class="orv_system"><p>[There are ??? unread messages.]</p></div>
-<div class="orv_system"><p>[The messages can't be read because they are corrupted.]</p></div>
+<div class="orv_system"><p>There are ??? unread messages.</p></div>
+<div class="orv_system"><p>The messages can't be read because they are corrupted.</p></div>
 <p class="orv_line">Damn…</p>
-<div class="orv_quote"><p>「 Shoul d I he lp? 」</p></div>
+<div class="orv_quote"><p>Shoul d I he lp?</p></div>
 <p class="orv_line">At these words, the messages in my mind started to be sorted.</p>
-<div class="orv_system"><p>[The corrupted messages will be recovered in an incomplete manner with the power of Fourth Wall.]</p></div>
+<div class="orv_system"><p>The corrupted messages will be recovered in an incomplete manner with the power of Fourth Wall.</p></div>
 <p class="orv_line">The messages left by Yoo Joonghyuk started to play in an incomplete manner through the Fourth Wall's mouth.</p>
-<div class="orv_quote"><p>「 Lee Gil young and Shin Yoo sung, annoy ing kids. 」</p></div>
-<div class="orv_quote"><p>「 Lee Hyun sung is a stu pid sol dier. 」</p></div>
+<div class="orv_quote"><p>Lee Gil young and Shin Yoo sung, annoy ing kids.</p></div>
+<div class="orv_quote"><p>Lee Hyun sung is a stu pid sol dier.</p></div>
 <p class="orv_line">They were funny messages. Did this brat use a chat window as a notepad?</p>
-<div class="orv_quote"><p>「 It is bad be tween Jung Hee won and Han Soo young. 」</p></div>
-<div class="orv_quote"><p>「 Lee Ji hye's head is not go od. 」</p></div>
-<div class="orv_quote"><p>「 Yoo Sang ah does not ha ve to do this. 」</p></div>
+<div class="orv_quote"><p>It is bad be tween Jung Hee won and Han Soo young.</p></div>
+<div class="orv_quote"><p>Lee Ji hye's head is not go od.</p></div>
+<div class="orv_quote"><p>Yoo Sang ah does not ha ve to do this.</p></div>
 <p class="orv_line">He only wrote bad things about the party members. However, I knew Yoo Joonghyuk. Yoo Joonghyuk was a person who didn't mention anyone he was uninterested in.</p>
-<div class="orv_quote"><p>「 Kim Dok ja. 」</p></div>
+<div class="orv_quote"><p>Kim Dok ja.</p></div>
 <p class="orv_line">I instantly became dizzy, like I had been hit on the head with a hammer. "Yoo Joonghyuk, you now…"</p>
 <p class="orv_line">In the first place, this scenario could only be activated when recognized as a 'companion'. If he hadn't trusted me and recognized me as a colleague, he couldn't enter this scenario.</p>
-<div class="orv_system"><p>[Your understanding of the character 'Yoo Joonghyuk' is increasing explosively.]</p></div>
-<div class="orv_system"><p>[The exclusive skill, 'Omniscient Reader's Viewpoint' has been activated!]</p></div>
+<div class="orv_system"><p>Your understanding of the character 'Yoo Joonghyuk' is increasing explosively.</p></div>
+<div class="orv_system"><p>The exclusive skill, 'Omniscient Reader's Viewpoint' has been activated!</p></div>
 <p class="orv_line">I stared at Yoo Joonghyuk in a daze. Yoo Joonghyuk didn't want my skills or stories. Finally, he opened his mouth. "My indulgence is up to here."</p>
 <p class="orv_line">The Black Heavenly Demon Sword pointed at my neck. "You have been acting freely in the last three years. You can't do that again."</p>
 <p class="orv_line">"It was necessary. It was unavoidable to go to the ■■!"</p>
@@ -261,8 +268,8 @@
 <p class="orv_line">"So you want the right over my life and death?"</p>
 <p class="orv_line">A calm anger flared in Yoo Joonghyuk's eyes. "At least this way, you won't be willing to sacrifice yourself again and the others… they won't do anything unnecessary."</p>
 <p class="orv_line">The Fourth Wall continued to read sentences from Midday Tryst.</p>
-<div class="orv_quote"><p>「 Lee Ji hye ta kes her life light ly. 」</p></div>
-<div class="orv_quote"><p>「 Lee Hyun sung deliber ately jump ed in to the mon sters. 」</p></div>
+<div class="orv_quote"><p>Lee Ji hye ta kes her life light ly.</p></div>
+<div class="orv_quote"><p>Lee Hyun sung deliber ately jump ed in to the mon sters.</p></div>
 <p class="orv_line">I realized the 'unnecessary' things the party members had been doing. I declared, "I will never do such a thing again."</p>
 <p class="orv_line">"…"</p>
 <p class="orv_line">"Who wants to die? I don't want to either."</p>
@@ -274,63 +281,63 @@
 <p class="orv_line">"It doesn't matter."</p>
 <p class="orv_line">"What?"</p>
 <p class="orv_line">Yoo Joonghyuk looked at me. His thoughts were heard through Omniscient Reader's Viewpoint.</p>
-<div class="orv_quote"><p>「 …It would've been better if I was like you. 」</p></div>
+<div class="orv_quote"><p>…It would've been better if I was like you.</p></div>
 <p class="orv_line">The Yoo Joonghyuk I knew would've never done this. My feet hardened as Yoo Joonghyuk moved towards the star. Everything around us slowed as if someone had pulled the anode of time.</p>
 <p class="orv_line">–By the way, is the Yoo Joonghyuk of your world okay?</p>
 <p class="orv_line">The voice of the 1863rd Han Sooyoung was heard.</p>
 <p class="orv_line">–This Yoo Joonghyuk is a worn-out person but is the 3rd round Yoo Joonghyuk still right in the head? He will surely be broken if someone like you shows up.</p>
 <p class="orv_line">The expression on Yoo Joonghyuk's face as he reached towards the star wasn't that of the main character. This was no longer the proud and confident Yoo Joonghyuk that I remembered. Rather, Yoo Joonghyuk was frightened by something.</p>
-<div class="orv_quote"><p>「 This world needs Kim Dokja. 」</p></div>
-<div class="orv_quote"><p>「 And the other party members… 」</p></div>
-<div class="orv_quote"><p>「 I'm not the one who can clear the scenarios to the end. 」</p></div>
+<div class="orv_quote"><p>This world needs Kim Dokja.</p></div>
+<div class="orv_quote"><p>And the other party members…</p></div>
+<div class="orv_quote"><p>I'm not the one who can clear the scenarios to the end.</p></div>
 <p class="orv_line">The Fourth Wall said.</p>
-<div class="orv_quote"><p>「 You want ed this to o. 」</p></div>
+<div class="orv_quote"><p>You want ed this to o.</p></div>
 <p class="orv_line">My ears were buzzing as the things I had done so far passed through my head. The history where I obtained the things that Yoo Joonghyuk should've got and took the places where Yoo Joonghyuk's should've climbed flowed like a panorama.</p>
-<div class="orv_quote"><p>「 "I am Yoo Joonghyuk." 」</p></div>
+<div class="orv_quote"><p>"I am Yoo Joonghyuk."</p></div>
 <p class="orv_line">The words that were uttered as a joke were returned to me. The history that I took away without thinking made the present Yoo Joonghyuk.</p>
-<div class="orv_quote"><p>「 You want ed to be the ma in charac ter. 」</p></div>
+<div class="orv_quote"><p>You want ed to be the ma in charac ter.</p></div>
 <p class="orv_line">No.</p>
 <p class="orv_line">The Fourth Wall said.</p>
-<div class="orv_quote"><p>「 You are Yoo Joonghyuk. 」</p></div>
+<div class="orv_quote"><p>You are Yoo Joonghyuk.</p></div>
 <p class="orv_line">I wasn't Yoo Joonghyuk.</p>
-<div class="orv_quote"><p>「 Kim Dokja is Yoo Joonghyuk. 」</p></div>
+<div class="orv_quote"><p>Kim Dokja is Yoo Joonghyuk.</p></div>
 <p class="orv_line">I didn't want to be the main character.</p>
-<div class="orv_quote"><p>「 Th en why ha ve you be en do ing the scena rios so far? 」</p></div>
+<div class="orv_quote"><p>Th en why ha ve you be en do ing the scena rios so far?</p></div>
 <p class="orv_line">Why have I been doing the scenarios? I could see Yoo Joonghyuk reaching towards the star. I muttered inwardly. I couldn't explain in words why I was clearing the scenarios.</p>
-<div class="orv_system"><p>[The 'Fourth Wall' is causing an unknown reaction.]</p></div>
+<div class="orv_system"><p>The 'Fourth Wall' is causing an unknown reaction.</p></div>
 <p class="orv_line">I heard a sound in my head. It was the sound of something solid cracking. I listened to the sound as I ran towards Yoo Joonghyuk. As if he had been waiting, Yoo Joonghyuk turned towards me.</p>
 <p class="orv_line">The transcendent power that had matured. Over the past three years, Yoo Joonghyuk had become stronger.</p>
-<div class="orv_system"><p>[The character 'Yoo Joonghyuk' is telling the giant story 'Demon Realm's Spring'.]</p></div>
+<div class="orv_system"><p>The character 'Yoo Joonghyuk' is telling the giant story 'Demon Realm's Spring'.</p></div>
 <p class="orv_line">"You aren't my opponent."</p>
 <p class="orv_line">"Maybe that is true." During my trip to the 1863rd round, Yoo Joonghyuk became strong enough that perhaps I couldn't win against him. I didn't understand how such a strong person could be lacking confidence. "However, I know a person who can beat you."</p>
 <p class="orv_line">Yoo Joonghyuk was afraid. The information he received from the 41st regression Shin Yoosung would soon run out. He would be starting a story he didn't know.</p>
-<div class="orv_system"><p>[You have received the story reward given for the Outer World Covenant.]</p></div>
+<div class="orv_system"><p>You have received the story reward given for the Outer World Covenant.</p></div>
 <p class="orv_line">Thus, I had to let him know.</p>
 <p class="orv_line">You aren't only this much. The place you can reach isn't only the 41st round.</p>
-<div class="orv_system"><p>[You have earned the 'myth'-grade story!]</p></div>
-<div class="orv_system"><p>[The story has been handed down to you by someone.]</p></div>
+<div class="orv_system"><p>You have earned the 'myth'-grade story!</p></div>
+<div class="orv_system"><p>The story has been handed down to you by someone.</p></div>
 <p class="orv_line">There was a dazzling light as the messages exploded in my head.</p>
-<div class="orv_system"><p>[The myth-grade story 'A Single Story' is responding to your level!]</p></div>
-<div class="orv_system"><p>[The myth-grade story is sufficient to replace the giant story!]</p></div>
-<div class="orv_system"><p>[The 'succession' portion of your first myth-grade story has been completed!]</p></div>
-<div class="orv_system"><p>[Part of the story is lost during the transmission and the 'succession' couldn't be completed.]</p></div>
-<div class="orv_system"><p>[Acquire other myth rated stories or giant stories.]</p></div>
+<div class="orv_system"><p>The myth-grade story 'A Single Story' is responding to your level!</p></div>
+<div class="orv_system"><p>The myth-grade story is sufficient to replace the giant story!</p></div>
+<div class="orv_system"><p>The 'succession' portion of your first myth-grade story has been completed!</p></div>
+<div class="orv_system"><p>Part of the story is lost during the transmission and the 'succession' couldn't be completed.</p></div>
+<div class="orv_system"><p>Acquire other myth rated stories or giant stories.</p></div>
 <p class="orv_line">…Obtaining this story wasn't part of my original plan. I didn't know I would get this story in the 1863rd round. In any case, the situation was like this so it wouldn't be bad to use the story.</p>
-<div class="orv_system"><p>[The size of the story has gone beyond your capacity to tell it.]</p></div>
-<div class="orv_system"><p>[At your Reading Comprehension level, you can only interpret part of the story.]</p></div>
+<div class="orv_system"><p>The size of the story has gone beyond your capacity to tell it.</p></div>
+<div class="orv_system"><p>At your Reading Comprehension level, you can only interpret part of the story.</p></div>
 <p class="orv_line">I got a nosebleed and my body trembled like it was electrocuted. Dark shadows flocked around me and Yoo Joonghyuk. The scenery of the room changed and I could smell sulfur. Hot hellfire and blood covered the floor.</p>
 <p class="orv_line">I could hear Yoo Joonghyuk's confused voice. I didn't respond to him and just gazed at the countless shadows around me.</p>
-<div class="orv_system"><p>[Measuring the number of rounds possible with your Reading Comprehension level.]</p></div>
+<div class="orv_system"><p>Measuring the number of rounds possible with your Reading Comprehension level.</p></div>
 <p class="orv_line">Numbers quickly passed before my eyes.</p>
-<div class="orv_system"><p>[The maximum number of times you can read 'Yoo Joonghyuk' is up to the '41st round'.]</p></div>
-<div class="orv_system"><p>[Do you want to select the 41st round?]</p></div>
+<div class="orv_system"><p>The maximum number of times you can read 'Yoo Joonghyuk' is up to the '41st round'.</p></div>
+<div class="orv_system"><p>Do you want to select the 41st round?</p></div>
 <p class="orv_line">I slowly nodded and Yoo Joonghyuk's emotions filled my head. Terrible despair and helplessness. Emotions that were worn out from the scenarios. A crazy depression attacked me and the sound of derisive laughter could be heard. I endured all of it.</p>
-<div class="orv_system"><p>[The talent of 'Yoo Joonghyuk' in that round is attracted to you.]</p></div>
+<div class="orv_system"><p>The talent of 'Yoo Joonghyuk' in that round is attracted to you.</p></div>
 <p class="orv_line">In the midst of this distant feeling of loneliness, a shadow was watching me. The 41st round Yoo Joonghyuk. The cruel man who sent Shin Yoosung to his past.</p>
 <p class="orv_line">He spoke to me,</p>
-<div class="orv_quote"><p>「 My specialty is the spear. 」</p></div>
+<div class="orv_quote"><p>My specialty is the spear.</p></div>
 <p class="orv_line">A spear that existed in the dark shadow appeared in front of my eyes. I didn't hesitate to grab the spear.</p>
-<div class="orv_system"><p>[The story 'Hell of Eternity' has begun.]</p></div>
+<div class="orv_system"><p>The story 'Hell of Eternity' has begun.</p></div>
 <br>
 <hr>
         </article>
@@ -338,18 +345,12 @@
             <a href="./ch_309"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_311">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="310" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="383" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="309" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="309" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

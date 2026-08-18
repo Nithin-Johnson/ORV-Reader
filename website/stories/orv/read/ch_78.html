@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 78: Ep. 16 – The Fifth Scenario, II</title>
     <meta property="og:title" content="Ch 78: Ep. 16 – The Fifth Scenario, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00078.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 78: Ep. 16 – The Fifth Scenario, II</h1></div>
 <p class="orv_line">Looking closely, the woman seemed quite old.</p>
@@ -200,7 +207,7 @@
 <p class="orv_line">"Yes. So tell your leader not to talk nonsense. Just tell her, even if you're not sure what I mean."</p>
 <p class="orv_line">I looked to the side and saw Han Sooyoung watching me with an absurd expression. I winked at her. If I knew Han Sooyoung, she would understand what to do from now on. The woman opened her mouth.</p>
 <p class="orv_line">"I already know that you are Kim Dokja. Stop the unnecessary lies."</p>
-<div class="orv_system"><p>[The character Han Sooyoung has confirmed that the statement is true.]</p></div>
+<div class="orv_system"><p>The character Han Sooyoung has confirmed that the statement is true.</p></div>
 <p class="orv_line">Han Sooyoung nodded towards me. This woman came because she knew for certain who I was.</p>
 <p class="orv_line">"The king said that she will entrust this meteorite to you."</p>
 <p class="orv_line">It was unexpected. She knew me and now she was giving me the meteorite…</p>
@@ -216,14 +223,14 @@
 <p class="orv_line">Despite the shouts, the woman kept walking away without turning back. Han Sooyoung looked at me and asked, "What is this… do you know that woman?"</p>
 <p class="orv_line">"How can that be?"</p>
 <p class="orv_line">I quietly activated Character List.</p>
-<div class="orv_system"><p>[This person isn't registered in 'Character List'.]</p></div>
-<div class="orv_system"><p>[You can check the information of the person by updating Character List. Do you want to update it?]</p></div>
+<div class="orv_system"><p>This person isn't registered in 'Character List'.</p></div>
+<div class="orv_system"><p>You can check the information of the person by updating Character List. Do you want to update it?</p></div>
 <p class="orv_line">It seemed that the update cycle was back. I nodded.</p>
-<div class="orv_system"><p>[The update has been completed.]</p></div>
-<div class="orv_constellation"><p>[Some people will be added to the dictionary.]</p></div>
+<div class="orv_system"><p>The update has been completed.</p></div>
+<div class="orv_constellation"><p>Some people will be added to the dictionary.</p></div>
 <p class="orv_line">Then a window popped up.</p>
 <div class="orv_window">
-<h3 class="orv_window_title">[Character Summary]</h3>
+<h3 class="orv_window_title">Character Summary</h3>
 <p>Name: Cho Youngran</p>
 <p>Age: 37 years old.</p>
 <p>Sponsor: First Sorceror of Joseon</p>
@@ -236,13 +243,13 @@
 <p>* A growth package is currently applied.</p>
 </div>
 <p class="orv_line">Look at this, the First Sorceror of Joseon?</p>
-<div class="orv_system"><p>[The constellation 'First Sorceror of Joseon' is looking at you with wary eyes.]</p></div>
+<div class="orv_system"><p>The constellation 'First Sorceror of Joseon' is looking at you with wary eyes.</p></div>
 <p class="orv_line">I didn't think there would already be a woman with Jeon Woochi¹ as a sponsor.</p>
 <div class="orv_notice"><p>[1]Jeon Woo-chi was a Taoist scholar during the Joseon dynasty of Korea. He is known by many as the most prominent "sorcerer" in Korean history, and a representative trickster from old Korean literature.</p></div>
 <p class="orv_line">In addition, she had the fairly good attribute of Officer of Justice, although it was less than the 'judge'.</p>
 <p class="orv_line">If the subordinate was this good, what was the king like? I immediately looked at the tall woman.</p>
-<div class="orv_system"><p>[The information of this person can't be read in 'Character List'.]</p></div>
-<div class="orv_system"><p>[This person isn't registered in 'Character List'.]</p></div>
+<div class="orv_system"><p>The information of this person can't be read in 'Character List'.</p></div>
+<div class="orv_system"><p>This person isn't registered in 'Character List'.</p></div>
 <p class="orv_line">The moment I met the gaze of the woman in the mask, a stinging pain flashed through my head.</p>
 <p class="orv_line">I reflexively looked away from the woman. My heart beat quickly.</p>
 <p class="orv_line">The Fourth Wall instinctively shook.</p>
@@ -269,15 +276,15 @@
 <p class="orv_line">It was truly the same as I read in the novel.</p>
 <p class="orv_line">The exhilarating magic power that I could feel just by touching the meteorite, the faint light flowing out from the opaque interior, and the white streaks all over the surface—this yellow meteorite definitely contained one of the powers that could counter the disaster.</p>
 <p class="orv_line">Then a system message was heard.</p>
-<div class="orv_system"><p>[The 'moon stone' wants to provide you with a high level strength.]</p></div>
+<div class="orv_system"><p>The 'moon stone' wants to provide you with a high level strength.</p></div>
 <p class="orv_line">I refused the meteorite's offer and the power returned to the meteorite.</p>
 <p class="orv_line">The moon stone basically had the power of the night and the outside species would receive this power. Perhaps the cannibals who received the power of the night were able to evolve into the outside species, the werewolves.</p>
-<div class="orv_system"><p>[The 'moon stone' gives off a feeling of familiarity.]</p></div>
+<div class="orv_system"><p>The 'moon stone' gives off a feeling of familiarity.</p></div>
 <p class="orv_line">However, the real use of this meteorite wasn't simply to evolve the outside species. Even a few hundred werewolves couldn't prevent the future disasters.</p>
 <p class="orv_line">Of course, a few thousand would help but then another disaster would come from the large number of outside species and the power of the demon kings.</p>
 <p class="orv_line">"I feel like a volunteer… Hey, did you find something?"</p>
 <p class="orv_line">As I was examining the meteorite, Han Sooyoung was taking care of the survivors lying nearby. It was a little unexpected but she was probably targeting coins.</p>
-<div class="orv_system"><p>[Constellations of the Absolute Good system are touched by Han Sooyoung's good works.]</p></div>
+<div class="orv_system"><p>Constellations of the Absolute Good system are touched by Han Sooyoung's good works.</p></div>
 <p class="orv_line">In a place filled with the demon king's household, the dominations would be bigger than usual.</p>
 <p class="orv_line">Indeed, a human's double-sidedness was profound.</p>
 <p class="orv_line">Among the constellations of the Absolute Good system, there might be the Abyssal Black Flame Dragon. The second Sponsor Selection was coming up so Han Sooyoung would be looking at him. I looked around and said,</p>
@@ -321,7 +328,7 @@
 <p class="orv_line">"Isn't your magic power level higher?" At this moment, the number of avatars decreased dramatically. I noticed something. "Tell me honestly. What level is your magic power?"</p>
 <p class="orv_line">"Why should I tell you?"</p>
 <p class="orv_line">"It is information needed to clear the scenario."</p>
-<div class="orv_system"><p>[The provisions of the Temporary Contract will take effect.]</p></div>
+<div class="orv_system"><p>The provisions of the Temporary Contract will take effect.</p></div>
 <p class="orv_line">Han Sooyoung's expression distorted.</p>
 <p class="orv_line">"…Level 55."</p>
 <p class="orv_line">I was honestly surprised. I thought it would be over level 40 because she could control dozens of avatars, but level 55… this was almost approaching the scenario limit.</p>
@@ -354,18 +361,12 @@
             <a href="./ch_77"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_79">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="78" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="108" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="77" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="77" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 224: Ep. 42 - Asmodeus, IV</title>
     <meta property="og:title" content="Ch 224: Ep. 42 - Asmodeus, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00224.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 224: Ep. 42 - Asmodeus, IV</h1></div>
 <p class="orv_line">"What the hell is this guy thinking…?"</p>
@@ -208,48 +215,48 @@
 <br>
 <p class="orv_line">Fortunately, the third stage of Omniscient Reader's Viewpoint was connected properly. Aileen had done her work properly. By the way…</p>
 <p class="orv_line">Asmodeus' energy was blazing in front of me. I was in a state of tension, unlike my previous declaration. The opponent was 'Asmodeus'. I felt a bit of regret for using words that were too impressive at the beginning but now it was too late for regret. Asmodeus finally opened his mouth.</p>
-<div class="orv_constellation"><p>[Demon King of Salvation?]</p></div>
+<div class="orv_constellation"><p>Demon King of Salvation?</p></div>
 <p class="orv_line">I nodded with Yoo Joonghyuk's head. I felt Yoo Joonghyuk's soul struggling in one corner of the ego but I forced him to fall asleep. Yoo Joonghyuk couldn't pop out at this time.</p>
-<div class="orv_constellation"><p>[I am the Demon King of Salvation.]</p></div>
+<div class="orv_constellation"><p>I am the Demon King of Salvation.</p></div>
 <p class="orv_line">The use of my true voice consumed an excessive amount of probability but I pretended to be calm. I deliberately used my true voice in order to not be pushed back by his momentum. The bonus was that maintaining my true voice made me look strong. Asmodeus glanced at me with surprise and asked again.</p>
-<div class="orv_constellation"><p>[…He is really your incarnation?]</p></div>
-<div class="orv_constellation"><p>[That's right.]</p></div>
+<div class="orv_constellation"><p>…He is really your incarnation?</p></div>
+<div class="orv_constellation"><p>That's right.</p></div>
 <p class="orv_line">The unconscious Yoo Joonghyuk would be furious if he knew this but I didn't think and said it anyway. There was no better answer in the current situation. At least, that's what I thought.</p>
-<div class="orv_constellation"><p>[I didn't hear that you have such an incarnation.]</p></div>
-<div class="orv_constellation"><p>[Your information network seems to be slower than I thought. This person is my incarnation.]</p></div>
+<div class="orv_constellation"><p>I didn't hear that you have such an incarnation.</p></div>
+<div class="orv_constellation"><p>Your information network seems to be slower than I thought. This person is my incarnation.</p></div>
 <p class="orv_line">Asmodeus had definitely come here to 'talk' with me. The credibility of his words couldn't be determined but this was the only way for Yoo Joonghyuk to survive. If he really came to 'talk', he wouldn't do anything unnecessary like touching my incarnation.</p>
-<div class="orv_constellation"><p>[Hrmm…]</p></div>
+<div class="orv_constellation"><p>Hrmm…</p></div>
 <p class="orv_line">Asmodeus didn't seem to accept my words as his energy gradually became strong. I desperately recalled the information about Asmodeus that I knew.</p>
-<div class="orv_quote"><p>「 An indulgent madman. 」</p></div>
-<div class="orv_quote"><p>「 A member of the gourmet association. 」</p></div>
-<div class="orv_quote"><p>「 He has a slight acquaintance with the Underworld of Olympus. 」</p></div>
-<div class="orv_quote"><p>「 The owner of crooked libido. 」</p></div>
+<div class="orv_quote"><p>An indulgent madman.</p></div>
+<div class="orv_quote"><p>A member of the gourmet association.</p></div>
+<div class="orv_quote"><p>He has a slight acquaintance with the Underworld of Olympus.</p></div>
+<div class="orv_quote"><p>The owner of crooked libido.</p></div>
 <p class="orv_line">There were a few things that could be of some help but there was nothing I could use right now. Either way, it would be best to solve this confrontation as smoothly as possible. I raised my senses as much as possible and searched the vicinity for anything that could help me. The only thing that stood out was the small stuffed doll attached to my shoulders.</p>
 <p class="orv_line">…What is this? That jerk Yoo Joonghyuk actually collected such things? Then the doll suddenly looked at me.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is so moved she has a nosebleed.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is so moved she has a nosebleed.</p></div>
 <p class="orv_line">…Wait. Surely this doll…</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is rubbing her cheek against you.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is rubbing her cheek against you.</p></div>
 <p class="orv_line">The doll softly touched Yoo Joonghyuk's cheek and I felt it through Yoo Joonghyuk's body. I was panicked. Why was Uriel here?</p>
 <p class="orv_line">Asmodeus opened his mouth.</p>
-<div class="orv_constellation"><p>[I guess the rumours are true if you're not shrinking back before my 'status'. You became narrative-grade in the tenth scenario… I can't believe it is true.]</p></div>
-<div class="orv_constellation"><p>[I don't know. It might be more than rumours.]</p></div>
+<div class="orv_constellation"><p>I guess the rumours are true if you're not shrinking back before my 'status'. You became narrative-grade in the tenth scenario… I can't believe it is true.</p></div>
+<div class="orv_constellation"><p>I don't know. It might be more than rumours.</p></div>
 <p class="orv_line">I pulled the Uriel doll and quickly hid her in my arms. The atmosphere was strange but it would be difficult if Uriel did something. Asmodeus licked his lips.</p>
-<div class="orv_constellation"><p>[Huhu, the story about your tongue seems true. It is to my taste. By the way… how are you alive? I heard from the constellations that you died.]</p></div>
-<div class="orv_constellation"><p>[I have good luck.]</p></div>
-<div class="orv_constellation"><p>[…You also like having secrets.]</p></div>
-<div class="orv_constellation"><p>[I hate people who keep trying to pry secrets from me.]</p></div>
-<div class="orv_constellation"><p>[Is this person your new incarnation? I heard that children are your taste.]</p></div>
-<div class="orv_constellation"><p>[What bullshit is that?]</p></div>
-<div class="orv_constellation"><p>[Then my hard work preparing this wasn't worthwhile.]</p></div>
+<div class="orv_constellation"><p>Huhu, the story about your tongue seems true. It is to my taste. By the way… how are you alive? I heard from the constellations that you died.</p></div>
+<div class="orv_constellation"><p>I have good luck.</p></div>
+<div class="orv_constellation"><p>…You also like having secrets.</p></div>
+<div class="orv_constellation"><p>I hate people who keep trying to pry secrets from me.</p></div>
+<div class="orv_constellation"><p>Is this person your new incarnation? I heard that children are your taste.</p></div>
+<div class="orv_constellation"><p>What bullshit is that?</p></div>
+<div class="orv_constellation"><p>Then my hard work preparing this wasn't worthwhile.</p></div>
 <p class="orv_line">Asmodeus smiled at me in a charming manner while looking down at his child's incarnation body. He had the appearance of a pretty child. If Han Myungoh was right, this child must be Han Myungoh's daughter. Fortunately, she didn't resemble Han Myungoh at all.</p>
-<div class="orv_constellation"><p>[There seems to be some misunderstanding… many false rumours have spread.]</p></div>
+<div class="orv_constellation"><p>There seems to be some misunderstanding… many false rumours have spread.</p></div>
 <p class="orv_line">The rumours spread about me taking Shin Yoosung as my incarnation. He understood what I was saying and Asmodeus smiled at Yoo Joonghyuk's face.</p>
-<div class="orv_constellation"><p>[Indeed, I can bend my taste if it is this beautiful body.]</p></div>
+<div class="orv_constellation"><p>Indeed, I can bend my taste if it is this beautiful body.</p></div>
 <p class="orv_line">At this point, it was clear that a normal conversation was impossible. I spoke roughly. "Stop talking with your true voice. There won't be any incarnations left around me."</p>
-<div class="orv_constellation"><p>[Why?]</p></div>
+<div class="orv_constellation"><p>Why?</p></div>
 <p class="orv_line">"This is now my industrial complex. I want you to stop killing my citizens."</p>
 <p class="orv_line">Officially, Gilobat died because of 'Kim Dokja' and this became my industrial complex.</p>
-<div class="orv_system"><p>[You are the new owner of the industrial complex.]</p></div>
+<div class="orv_system"><p>You are the new owner of the industrial complex.</p></div>
 <p class="orv_line">In fact, these messages were actually rising. Of course, I actually needed a good excuse to stop using my true voice. Asmodeus spoke with a small smile, "Hrmm, yes. I'm sorry."</p>
 <p class="orv_line">Asmodeus did it half-heartedly but he was polite when he had a purpose. At least, until his purpose was met.</p>
 <p class="orv_line">"Then why did you come for me?"</p>
@@ -259,8 +266,8 @@
 <p class="orv_line">He was probably talking about Anna Croft. I didn't know how much of my story had spread and twisted. Whatever the rumours, it was clear that now was the time to lay the foundation on this side.</p>
 <p class="orv_line">"Maybe it is because of the 'Demon King Selection'."</p>
 <p class="orv_line">Asmodeus grinned at the answer. It wasn't hard to guess. It was because shortly after the industrial complex had fallen, the following message was heard.</p>
-<div class="orv_system"><p>[You are currently a 'Demon King Candidate' of the 73rd Demon Realm.]</p></div>
-<div class="orv_system"><p>[A new scenario is currently pending.]</p></div>
+<div class="orv_system"><p>You are currently a 'Demon King Candidate' of the 73rd Demon Realm.</p></div>
+<div class="orv_system"><p>A new scenario is currently pending.</p></div>
 <p class="orv_line">"Are you aiming for a new throne?"</p>
 <p class="orv_line">"Huh? I already have the 32nd Demon Realm. It is pointless to gain one with a lower rank."</p>
 <p class="orv_line">"Then what?"</p>
@@ -275,9 +282,9 @@
 <p class="orv_line">"Do you think Duke Melledon and Bercan have the same thoughts as you?"</p>
 <p class="orv_line">It was known that nebulae were already attached to them. They were also nebulae hostile towards me. Asmodeus laughed. "You need my help. You will die if you refuse.</p>
 <p class="orv_line">It was unknown who would kill me but he seemed certain I would die. Fucking bastard. Did he come all this way only to grab my ankle?</p>
-<div class="orv_system"><p>[A small number of constellations are watching your choice.]</p></div>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is watching your choice.]</p></div>
-<div class="orv_system"><p>[The constellation who likes to change sex is watching your choice.]</p></div>
+<div class="orv_system"><p>A small number of constellations are watching your choice.</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is watching your choice.</p></div>
+<div class="orv_system"><p>The constellation who likes to change sex is watching your choice.</p></div>
 <p class="orv_line">I moved to this location and asked Biyoo to expand the channel. Thus, the constellations were watching my choice. Most constellations felt reluctant towards demon kings. My future story would be determined depending on the choice I made here.</p>
 <p class="orv_line">I took a calm breath and asked, "Is your purpose the giant story?"</p>
 <p class="orv_line">Something stirred in Asmodeus' eyes at my words.</p>
@@ -291,7 +298,7 @@
 <p class="orv_line">Asmodeus was already a demon king and belonged to a higher level scenario, so he couldn't participate in the selection. However, he could help me in exchange for a 'stake' in the story.</p>
 <p class="orv_line">Originally I would've refused the proposal. The giant story that could be accumulated through the Demon King Selection would become the key foundation for my future fight against the nebulae. If I gave a share in it to the wrong person, it was likely I wouldn't be able to obtain anything.</p>
 <p class="orv_line">However, Yoo Joonghyuk of the 12th regression had mumbled.</p>
-<div class="orv_quote"><p>「 'At that time, we shouldn't have pretended to support the Demon King Asmodeus'. 」</p></div>
+<div class="orv_quote"><p>'At that time, we shouldn't have pretended to support the Demon King Asmodeus'.</p></div>
 <p class="orv_line">I wanted to grab the collar of the 12th regression Yoo Joonghyuk and ask what he meant, but the person now was only in the third regression.</p>
 <p class="orv_line">In the end, I had to make a choice. Should I grab the hand of the demon king or not?</p>
 <p class="orv_line">I slowly opened my mouth.</p>
@@ -302,18 +309,12 @@
             <a href="./ch_223"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_225">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="224" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="62" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="223" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="223" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

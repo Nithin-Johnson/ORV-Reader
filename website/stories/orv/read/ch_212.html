@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 212: Ep. 40 - Hatching, III</title>
     <meta property="og:title" content="Ch 212: Ep. 40 - Hatching, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,37 +177,37 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00212.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 212: Ep. 40 - Hatching, III</h1></div>
 <p class="orv_line">The flow of time and space was becoming abnormal. Jang Hayoung's lips moved very slowly while the voices were badly fragmented and didn't sound normal. It was like the whole world was in slow motion.</p>
-<div class="orv_quote"><p>「 Kim Dokja realized. This is the time of the dokkaebis. 」</p></div>
+<div class="orv_quote"><p>Kim Dokja realized. This is the time of the dokkaebis.</p></div>
 <p class="orv_line">In order to manage and judge a large number of channels at the same time, the dokkaebis' cognition rate was significantly faster than other creatures.</p>
 <p class="orv_line">I looked up at the air. A sphere of white light floated over a baby dokkaebi with fluffy fur. It was a sphere I had seen before. It was the soul of Shin Yoosung.</p>
 <p class="orv_line">'It has been a while, Yoosung'.</p>
 <p class="orv_line">A translucent light appeared inside the sphere and the silhouette of a person could be seen. The existence who wanted to save the world and who used to have faith in Yoo Joonghyuk. The Shin Yoosung of the 41st regression was right in front of me.</p>
-<div class="orv_system"><p>[You have earned an incredible achievement!]</p></div>
-<div class="orv_system"><p>[You are the first human to hatch a dokkaebi egg.]</p></div>
-<div class="orv_system"><p>[You have acquired a new story!]</p></div>
-<div class="orv_system"><p>[The story 'Father of a Dokkaebi' has been acquired.]</p></div>
+<div class="orv_system"><p>You have earned an incredible achievement!</p></div>
+<div class="orv_system"><p>You are the first human to hatch a dokkaebi egg.</p></div>
+<div class="orv_system"><p>You have acquired a new story!</p></div>
+<div class="orv_system"><p>The story 'Father of a Dokkaebi' has been acquired.</p></div>
 <p class="orv_line">Shin Yoosung read my expression and spoke.</p>
 <p class="orv_line">–Don't apologize. I chose this.</p>
 <p class="orv_line">'Still, I'm sorry'.</p>
@@ -231,12 +238,12 @@
 <p class="orv_line">Thus, I could only reply to her in one way.</p>
 <p class="orv_line">'Thank you'.</p>
 <p class="orv_line">I bit my lips to try and conceal my heart. A bright string of light rose and the flow of time gradually returned to its original state.</p>
-<div class="orv_system"><p>[The first channel of the 73rd Demon Realm has opened.]</p></div>
-<div class="orv_system"><p>[Channel name: #BI-90594]</p></div>
+<div class="orv_system"><p>The first channel of the 73rd Demon Realm has opened.</p></div>
+<div class="orv_system"><p>Channel name: #BI-90594</p></div>
 <p class="orv_line">The fragmented sounds returned and I could hear Jang Hayoung's voice. "What will you name the child?"</p>
 <p class="orv_line">…This was what he said. I had been very worried because of the name.</p>
 <p class="orv_line">The baby dokkaebi was looking at me. I stared into her eyes and spoke quietly.</p>
-<div class="orv_system"><p>[Channel Manager: Biyoo.]</p></div>
+<div class="orv_system"><p>Channel Manager: Biyoo.</p></div>
 <p class="orv_line">Did she know it was her name? The baby dokkaebi reached out to me. I grabbed the small and fluffy hand and it felt like the baby dokkaebi smiled at me.</p>
 <br>
 <hr>
@@ -252,7 +259,7 @@
 <p class="orv_line">"Something cute."</p>
 <p class="orv_line">Shin Yoosung, Lee Gilyoung and Lee Jihye were on the way to the place they promised to meet after getting rid of the monsters that appeared as disasters in the 12th scenario. The place where they promised to meet the other party members was Seongnam City. Since they decided to meet again here, the other party members would soon gather.</p>
 <p class="orv_line">As Lee Jihye and Lee Gilyoung bickered, Shin Yoosung opened her Attributes Window.</p>
-<div class="orv_system"><p>[The link to your sponsor has been disconnected.]</p></div>
+<div class="orv_system"><p>The link to your sponsor has been disconnected.</p></div>
 <p class="orv_line">This was the message that appeared that kept appearing in Shin Yoosung's Attributes Window shortly after leaving Seoul Dome. Lee Gilyoung didn't like Shin Yoosung's somber face and spoke again, "Hey, look at this coin."</p>
 <p class="orv_line">"…What is it?"</p>
 <p class="orv_line">"If I throw the coins and it is heads, Dokja hyung is alive."</p>
@@ -270,9 +277,9 @@
 <p class="orv_line">Heads, tails, heads, tails. Then…</p>
 <p class="orv_line">"Heads! Look, what did I say?"</p>
 <p class="orv_line">Lee Gilyoung's confident voice was heard as the coin stopped on the heads which contained a portrait of Admiral Yi Sunsin. Even Lee Jihye felt slightly better after seeing the result. However, Lee Jihye knew this result wasn't due to 'chance'.</p>
-<div class="orv_system"><p>[The constellation 'Maritime War God' has consumed some probability.]</p></div>
+<div class="orv_system"><p>The constellation 'Maritime War God' has consumed some probability.</p></div>
 <p class="orv_line">Lee Jihye smiled bitterly. Her sponsor had been losing power recently and it was because he wasted his probability on this. Nevertheless, she couldn't say anything.</p>
-<div class="orv_system"><p>[The constellation 'Maritime War God' is looking at the children with sad eyes.]</p></div>
+<div class="orv_system"><p>The constellation 'Maritime War God' is looking at the children with sad eyes.</p></div>
 <p class="orv_line">People needed hope and perhaps the constellations were the same. Suddenly, Lee Jihye wanted to be mischievous. She picked up the coin that had fallen and opened her mouth. "Since ahjussi is alive, let's try something else."</p>
 <p class="orv_line">"Huh? What is it?"</p>
 <p class="orv_line">Lee Gilyoung spoke half-heartedly like he was displeased with her intervention. Lee Jihye ignored him and kept speaking.</p>
@@ -304,22 +311,22 @@
 <p class="orv_line">What did this mean? What did Jung Heewon's inability to use her stigma have to do with Kim Dokja surviving? Jung Heewon immediately replied to their question. "My sponsor has suddenly disappeared."</p>
 <p class="orv_line">"Your sponsor?"</p>
 <p class="orv_line">Jung Heewon nodded and looked at her Attributes Window.</p>
-<div class="orv_system"><p>[The link to your sponsor has been disconnected.]</p></div>
+<div class="orv_system"><p>The link to your sponsor has been disconnected.</p></div>
 <p class="orv_line">It was the first time she had seen this. Thanks to this, she was unable to borrow the power of her sponsor for the moment. However, that wasn't the only message.</p>
 <p class="orv_line">–I found Kim Dokja.</p>
 <br>
 <hr>
 <br>
 <p class="orv_line">At this time, a person arrived in the 73rd Demon Realm.</p>
-<div class="orv_system"><p>[You have arrived in the 16th personal scenario area!]</p></div>
-<div class="orv_system"><p>[This scenario has a time limit!]</p></div>
-<div class="orv_system"><p>[Be sure to return to the main scenario within the given time!]</p></div>
+<div class="orv_system"><p>You have arrived in the 16th personal scenario area!</p></div>
+<div class="orv_system"><p>This scenario has a time limit!</p></div>
+<div class="orv_system"><p>Be sure to return to the main scenario within the given time!</p></div>
 <p class="orv_line">The moment he stepped through the portal, a bleak horizon of stories and mountains of garbage story fragments unfolded. Yoo Joonghyuk frowned at the sight and asked, "…Is this really the right place?"</p>
 <div class="orv_image"><img src="../../../assets/images/212 - Yoo Joonghyuk frowned at the sight and asked.jpg" alt="" loading="lazy"></div>
 <div class="orv_notice"><p>* Unofficial fan illustration (non-canonical)</p></div>
 <p class="orv_line">Then a small angel doll sitting on his shoulder nodded.</p>
 <p class="orv_line">"Do you have to answer through this toy?"</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' says it can't be helped because there are no channels here.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' says it can't be helped because there are no channels here.</p></div>
 <br>
 <hr>
         </article>
@@ -327,18 +334,12 @@
             <a href="./ch_211"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_213">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="212" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="211" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="211" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="211" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

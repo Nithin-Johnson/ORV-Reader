@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 469: Ep. 89 - Great Apocalypse, III</title>
     <meta property="og:title" content="Ch 469: Ep. 89 - Great Apocalypse, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,81 +177,81 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00469.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 469: Ep. 89 - Great Apocalypse, III</h1></div>
 <p class="orv_line">It had become dark outside the windows. I wondered if the sun had set already, but when I took a closer look, I realized that insects were sticking to the glasses. Locusts were glaring at me while scurrying around, their antennae swaying threateningly about.</p>
-<p class="orv_line">I glanced at the plague of locusts and spoke up. [Compared to how long you had to endure, your waiting this time wouldn't have been all that much. So stop exaggerating.]</p>
-<div class="orv_constellation"><p>[You… what do you know… about waiting?]</p></div>
+<p class="orv_line">I glanced at the plague of locusts and spoke up. <strong>[Compared to how long you had to endure, your waiting this time wouldn't have been all that much. So stop exaggerating.]</strong></p>
+<div class="orv_constellation"><p>You… what do you know… about waiting?</p></div>
 <p class="orv_line">The creature's words kept being cut off. Its true voice sounded like an echo spreading out from beneath the emptiness that I couldn't even fathom. The surrounding air was bubbling with pitch-black Status. I adjusted my own aura and continued to speak.</p>
-<div class="orv_constellation"><p>[I know that you are the 'forgotten evil', at least.]</p></div>
+<div class="orv_constellation"><p>I know that you are the 'forgotten evil', at least.</p></div>
 <p class="orv_line">It was here that the brows above Lee Gilyoung's white eyes quivered just a little. It felt as if bitterly cold air suddenly was blanketing us. I endured it and spoke again.</p>
-<div class="orv_constellation"><p>[The 'evil' that all the other stars have forgotten after too much time has passed by. The 'evil' that was even ostracised by other 'evil', and was sealed away within the Demon Realm's deepest underground.]</p></div>
+<div class="orv_constellation"><p>The 'evil' that all the other stars have forgotten after too much time has passed by. The 'evil' that was even ostracised by other 'evil', and was sealed away within the Demon Realm's deepest underground.</p></div>
 <p class="orv_line">Quite often, it was told that the deepest part of Hell was the dwelling of the 'Apocalypse Dragon'. The reason why the 'Great War of Saints and Demons' was so famous was because of the &lt;Harmagedon&gt; burning in the flames of this terrifying dragon.</p>
 <p class="orv_line">The truth was, though, the Apocalypse Dragon wasn't the only calamity found in the early days of the 'Great War of Saints and Demons'.</p>
 <p class="orv_line">The calamity of the stars that swept across the worlds with yellow-coloured storm clouds of insects – amongst all the names that had disappeared, there definitely existed a calamity with this title.</p>
-<div class="orv_constellation"><p>[Oh, the King of Locusts, the 'Ruler of the Deepest Pit'.]</p></div>
+<div class="orv_constellation"><p>Oh, the King of Locusts, the 'Ruler of the Deepest Pit'.</p></div>
 <p class="orv_line">My words prompted a vicious storm to whip about in the air as a new message revealed itself.</p>
-<div class="orv_system"><p>[Character 'Lee Gilyoung's' Sponsor has revealed its Modifier.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Ruler of the Deepest Pit', is now looking at you.]</p></div>
+<div class="orv_system"><p>Character 'Lee Gilyoung's' Sponsor has revealed its Modifier.</p></div>
+<div class="orv_system"><p>Constellation, 'Ruler of the Deepest Pit', is now looking at you.</p></div>
 <p class="orv_line">The Ruler of the Deepest Pit, Abaddon.</p>
 <p class="orv_line">Just like the other 'main characters' of the Great War of Saints and Demons, it too was an existence on the level of Myth-grade.</p>
 <p class="orv_line">However, the masters of the 'Wall Dividing Good and Evil' didn't acknowledge it as 'evil' for the sake of their own battles, and to make matters worse, didn't even let it enter the ranks of the '72 Demon Kings' of the Demon Realm.</p>
 <p class="orv_line">And so, this being was more like an 'Outer God' now. Even though it was the 'Great Evil' that dyed the galaxy with locust plague once upon a time, this being had to spend tens of thousands of years locked away within the prison of forgotten memories.</p>
 <p class="orv_line">This being was even betrayed by its own kins, the demons, while believing in the empty promise of others waking it up during the age of calamities.</p>
 <p class="orv_line">⸢That was, until one human used 'grasshoppers' as the method to clear the scenario one day.⸥</p>
-<div class="orv_system"><p>[Story, 'Grasshopper Catcher' has begun its storytelling!]</p></div>
+<div class="orv_system"><p>Story, 'Grasshopper Catcher' has begun its storytelling!</p></div>
 <p class="orv_line">Lee Gilyoung's Story that sprouted from our scenario had managed to awaken the ancient demon from its slumber.</p>
-<div class="orv_constellation"><p>[State your reason… for summoning me, oh the arrogant… Constellation.]</p></div>
+<div class="orv_constellation"><p>State your reason… for summoning me, oh the arrogant… Constellation.</p></div>
 <p class="orv_line">I could easily sense this demon's hidden pain from its voice filled with boundless hatred. It was ignored by its enemy, the 'Good', while it was betrayed by its supposed ally, the 'Evil'.</p>
-<div class="orv_constellation"><p>[What do you think? I called you here to make you stop exploiting a little kid after you forced him into signing a contract with you.]</p></div>
-<div class="orv_constellation"><p>[…]</p></div>
-<div class="orv_constellation"><p>[If you want to sign a contract with someone, then do it with me, instead. Wouldn't that be fairer?]</p></div>
-<div class="orv_constellation"><p>[I only… forgive… your insolence… because… you… wrecked the… Great War of Saints and Demons…]</p></div>
+<div class="orv_constellation"><p>What do you think? I called you here to make you stop exploiting a little kid after you forced him into signing a contract with you.</p></div>
+<div class="orv_constellation"><p>…</p></div>
+<div class="orv_constellation"><p>If you want to sign a contract with someone, then do it with me, instead. Wouldn't that be fairer?</p></div>
+<div class="orv_constellation"><p>I only… forgive… your insolence… because… you… wrecked the… Great War of Saints and Demons…</p></div>
 <p class="orv_line">Lee Gilyoung's lips twisted ever so slightly to form a grin. This guy, it possessed the qualification of Great Evil, yet it decided not to participate in the 'Great War of Saints and Demons' right till its conclusion. Hell, it even acted as if it didn't exist in the first place.</p>
 <p class="orv_line">I kind of understood why, though. That particular Giant Story was no longer a festival meant for this creature.</p>
-<div class="orv_constellation"><p>[The Apocalypse Dragon and Eden… the Demon Realm… Watching them being destroyed was… gratifying.]</p></div>
-<div class="orv_constellation"><p>[Is that so? But, is it over with only that?]</p></div>
-<div class="orv_constellation"><p>[Over…?]</p></div>
-<div class="orv_constellation"><p>[Abaddon. You're still 'Evil'.]</p></div>
-<p class="orv_line">My words caused Lee Gilyoung's brows to quiver. [The Great War… of Saints and Demons… is already… over…]</p>
-<div class="orv_constellation"><p>[Yeah, it has ended. But, it'll start again in the future. And the scenario where you're the calamity might get created during then. Where everyone remembers your Modifier, where everyone trembles from fear in front of your name.]</p></div>
-<div class="orv_constellation"><p>[Why… are you… saying such things?]</p></div>
+<div class="orv_constellation"><p>The Apocalypse Dragon and Eden… the Demon Realm… Watching them being destroyed was… gratifying.</p></div>
+<div class="orv_constellation"><p>Is that so? But, is it over with only that?</p></div>
+<div class="orv_constellation"><p>Over…?</p></div>
+<div class="orv_constellation"><p>Abaddon. You're still 'Evil'.</p></div>
+<p class="orv_line">My words caused Lee Gilyoung's brows to quiver. <strong>[The Great War… of Saints and Demons… is already… over…]</strong></p>
+<div class="orv_constellation"><p>Yeah, it has ended. But, it'll start again in the future. And the scenario where you're the calamity might get created during then. Where everyone remembers your Modifier, where everyone trembles from fear in front of your name.</p></div>
+<div class="orv_constellation"><p>Why… are you… saying such things?</p></div>
 <p class="orv_line">Abaddon smiled as if it heard rather sweet-sounding remarks.</p>
-<p class="orv_line">I went straight to the topic. [Let me not beat around the bush. You've saved up enough of your strength. Now, lend us your aid.]</p>
-<div class="orv_constellation"><p>[And… why… should I?]</p></div>
-<div class="orv_constellation"><p>[Because even you would be annihilated if you don't. You already know very well that other Constellations will never give you the time of day after we're all gone.]</p></div>
-<div class="orv_constellation"><p>[…I am… the ancient… Evil…]</p></div>
-<div class="orv_constellation"><p>[Constellations on the side of 'Absolute Evil' will never acknowledge you as the Oldest Evil. No one will stand on your side. And I guess you must've forgotten it, but there is that monster, 'Baal', waiting in the 'Final Scenario', too.]</p></div>
-<div class="orv_constellation"><p>[Ba-al…!]</p></div>
+<p class="orv_line">I went straight to the topic. <strong>[Let me not beat around the bush. You've saved up enough of your strength. Now, lend us your aid.]</strong></p>
+<div class="orv_constellation"><p>And… why… should I?</p></div>
+<div class="orv_constellation"><p>Because even you would be annihilated if you don't. You already know very well that other Constellations will never give you the time of day after we're all gone.</p></div>
+<div class="orv_constellation"><p>…I am… the ancient… Evil…</p></div>
+<div class="orv_constellation"><p>Constellations on the side of 'Absolute Evil' will never acknowledge you as the Oldest Evil. No one will stand on your side. And I guess you must've forgotten it, but there is that monster, 'Baal', waiting in the 'Final Scenario', too.</p></div>
+<div class="orv_constellation"><p>Ba-al…!</p></div>
 <p class="orv_line">Abaddon's voice trembled as if it was having a seizure.</p>
 <p class="orv_line">Baal – the Demon King ranked number one in the pecking order. The sole existence from the Demon Realm that had entered the 'Final Scenario's' area, and also the Demon King who had imprisoned Abaddon in the deepest pit, as well.</p>
-<div class="orv_constellation"><p>[You help us and stop the 'Great Apocalypse', then we shall grant you an opportunity to take your revenge on that guy.]</p></div>
+<div class="orv_constellation"><p>You help us and stop the 'Great Apocalypse', then we shall grant you an opportunity to take your revenge on that guy.</p></div>
 <p class="orv_line">The surrounding air was trembling viciously.</p>
-<p class="orv_line">I continued to withstand the Status tumbling within the air current and spoke up. [Oh, the Ruler of the Deepest Pit. Become the Oldest Evil in the world we wish to create.]</p>
+<p class="orv_line">I continued to withstand the Status tumbling within the air current and spoke up. <strong>[Oh, the Ruler of the Deepest Pit. Become the Oldest Evil in the world we wish to create.]</strong></p>
 <p class="orv_line">When choosing to get in bed with the devil, you need to offer up a bait of this scale, at the least. I definitely needed Abaddon's powers in order to stop this calamity.</p>
 <br>
 <hr>
 <br>
-<div class="orv_system"><p>[One hour and 5 minutes remaining until the start of the Great Apocalypse.]</p></div>
+<div class="orv_system"><p>One hour and 5 minutes remaining until the start of the Great Apocalypse.</p></div>
 <p class="orv_line">Finally, all the preparations were complete.</p>
 <p class="orv_line">I looked at my companions waiting on the side of the plaza and asked them. "Has Yoo Joonghyuk woken up yet?"</p>
 <p class="orv_line">"…No, not yet."</p>
@@ -261,16 +268,16 @@
 <p class="orv_line">Of course, that wasn't the end.</p>
 <p class="orv_line">"Uriel, Abyssal Black Flame Dragon, the Great Sage…"</p>
 <p class="orv_line">Sparks began dancing wildly in the air as soon as I said that.</p>
-<div class="orv_system"><p>[Constellation, 'Demon-like Judge of Fire', is nodding her head.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Abyssal Black Flame Dragon', grumbles that it doesn't wish to be ordered around.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Most Ancient Liberator', is guessing your intentions.]</p></div>
-<p class="orv_line">Since our opponent was going to be Uriel from the 999th turn, we definitely had to send out our own Uriel. If luck was on our side, we might be able to see the [Disconnected Film Theory]'s effects once more. The Black Flame Dragon would no doubt be a great help here, and there was no need to even mention the Great Sage now that he had become a Myth-grade Constellation himself.</p>
+<div class="orv_system"><p>Constellation, 'Demon-like Judge of Fire', is nodding her head.</p></div>
+<div class="orv_system"><p>Constellation, 'Abyssal Black Flame Dragon', grumbles that it doesn't wish to be ordered around.</p></div>
+<div class="orv_system"><p>Constellation, 'Most Ancient Liberator', is guessing your intentions.</p></div>
+<p class="orv_line">Since our opponent was going to be Uriel from the 999th turn, we definitely had to send out our own Uriel. If luck was on our side, we might be able to see the <strong>[Disconnected Film Theory]</strong>'s effects once more. The Black Flame Dragon would no doubt be a great help here, and there was no need to even mention the Great Sage now that he had become a Myth-grade Constellation himself.</p>
 <p class="orv_line">"I'd like Breaking the Sky Sword Saint, Kyrgios, Jang Hayoung, and… the rest of the Transcendents to be their back-up, please."</p>
 <p class="orv_line">"Leave it to us!"</p>
 <p class="orv_line">The clearly-excited Jang Hayoung shouted out after she finally got a proper mission of her own. However, her enthusiasm should take a turn for the worse once she gets there.</p>
 <p class="orv_line">Both the Breaking the Sky Sword Saint and Kyrgios nodded their heads, so I continued on. "Finally… Hades, Persephone, I'd like you two to accompany the first team, please."</p>
-<div class="orv_system"><p>[Constellation, 'Father of the Rich Night' is silently nodding his head.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Queen of the Darkest Spring' is looking at you worriedly.]</p></div>
+<div class="orv_system"><p>Constellation, 'Father of the Rich Night' is silently nodding his head.</p></div>
+<div class="orv_system"><p>Constellation, 'Queen of the Darkest Spring' is looking at you worriedly.</p></div>
 <p class="orv_line">The expressions of my companions quietly listening until then finally began changing somewhat.</p>
 <p class="orv_line">The first one to open her lips was Jung Heewon. "Hang on a minute. Is there a need to focus all the combat personnel on the first team? Basically, everyone is in the first team, isn't it? Who will be in the second team?"</p>
 <p class="orv_line">"Lee Jihye, Lee Hyunsung-ssi, and I will form the second team."</p>
@@ -278,7 +285,7 @@
 <p class="orv_line">I didn't reply to her, prompting her eyes to narrow to a slit.</p>
 <p class="orv_line">"Yet another nice-sounding suicidal plan…"</p>
 <p class="orv_line">I spied Yoo Sangah next to her smiling gently just then. R-right, if it's her, then she might side with me on this one.</p>
-<div class="orv_constellation"><p>[Someone is reciting the Constrictive Sutra…]</p></div>
+<div class="orv_constellation"><p>Someone is reciting the Constrictive Sutra…</p></div>
 <p class="orv_line">Her gentle lips began reciting something truly terrifying. I then spotted Han Sooyoung in the distance with her hand massaging her temples while shaking her head.</p>
 <p class="orv_line">'I told you, it's not going to work'.</p>
 <p class="orv_line">I urgently shouted out. "H-hang on! It's not a suicidal plan. It really is a proper plan. That's why I'm bringing along both Jihye and Hyunsung-ssi."</p>
@@ -289,11 +296,11 @@
 <p class="orv_line">"Sounds like something weird is mixed up in there, though…"</p>
 <p class="orv_line">My companions seemed to have fallen into the trap of uncertainty after I repeated the Myth-grade several more times. Indeed, the best brainwashing method was to repeat yourself.</p>
 <p class="orv_line">It was then a thunderclap exploded in the sky.</p>
-<div class="orv_system"><p>[Constellation, 'Most Ancient Liberator', is glaring at you.]</p></div>
+<div class="orv_system"><p>Constellation, 'Most Ancient Liberator', is glaring at you.</p></div>
 <p class="orv_line">The Great Sage spent his own Probability to materialise his Incarnation body and made his grand entrance along with the flashy lightning show. His majestic platinum-hued hair danced above the Somersault Cloud.</p>
-<div class="orv_constellation"><p>[Maknae, have you lost your mind?]</p></div>
+<div class="orv_constellation"><p>Maknae, have you lost your mind?</p></div>
 <p class="orv_line">"I-it's fine to send an indirect message, you know… You need to conserve your Probability…"</p>
-<div class="orv_constellation"><p>[Not all Myth-grades are equal 'myths'. You're just a hatchling who has stepped into this domain only recently.]</p></div>
+<div class="orv_constellation"><p>Not all Myth-grades are equal 'myths'. You're just a hatchling who has stepped into this domain only recently.</p></div>
 <p class="orv_line">This was my first time seeing the Great Sage come out this forcefully, and that flustered me somewhat. I deliberated on my options, before sighing out grandly and told everyone the truth.</p>
 <p class="orv_line">"…I too don't believe the combined strengths of the second team will be enough to kill a King."</p>
 <p class="orv_line">"Then, what were you planning to do?!"</p>
@@ -308,13 +315,13 @@
 <p class="orv_line">30 minutes later, Lee Jihye, Lee Hyunsung, and myself disembarked to the Pacific Ocean. Right up until our departure, my companions were trying to change my mind, but I simply shook my head at them.</p>
 <p class="orv_line">The 'Master of the Sunken Island' managed to destroy the American continent simply by rising up. If we waited for that guy to get closer to the Korean Peninsula, then every single nearby island would be destroyed even before the battle got underway.</p>
 <p class="orv_line">Going out to face our enemy head-on was the right call even when considering the accompanying risk.</p>
-<div class="orv_system"><p>[Constellation, 'Maritime War God', is reading the water route with a deeply meaningful stare.]</p></div>
+<div class="orv_system"><p>Constellation, 'Maritime War God', is reading the water route with a deeply meaningful stare.</p></div>
 <p class="orv_line">Both Lee Jihye and Lee Hyunsung looked quite tense. Especially the latter, as he was returning to scenarios after a period of absence. His expression was far more solemn than before.</p>
-<div class="orv_system"><p>[Constellation, 'Bald General of Justice', is busy polishing his head.]</p></div>
-<div class="orv_system"><p>[Constellation, 'King Heungmu', is saddened by the fate of the Korean Peninsula.]</p></div>
-<p class="orv_line">The [Turtle Dragon] scythed past the ocean waves to go past the islands of Ulleundo and Dokdo.</p>
+<div class="orv_system"><p>Constellation, 'Bald General of Justice', is busy polishing his head.</p></div>
+<div class="orv_system"><p>Constellation, 'King Heungmu', is saddened by the fate of the Korean Peninsula.</p></div>
+<p class="orv_line">The <strong>[Turtle Dragon]</strong> scythed past the ocean waves to go past the islands of Ulleundo and Dokdo.</p>
 <p class="orv_line">Perhaps the sights of the latter left an impression on him, because Lee Hyunsung suddenly placed his hand on his chest and shouted out. "…We shall protect our motherland!"</p>
-<div class="orv_system"><p>[Constellation, 'Last Hero of Hwangsanbeol' is nodding his head.]</p></div>
+<div class="orv_system"><p>Constellation, 'Last Hero of Hwangsanbeol' is nodding his head.</p></div>
 <p class="orv_line">I found it a bit hard to watch such a serious declaration, so I promptly went for a tackle. "…Hyunsung-Ssi, you said you quit being a soldier, didn't you?"</p>
 <p class="orv_line">"It's not just soldiers that protect our nation, you know."</p>
 <p class="orv_line">He muttered his reply and looked down at his dog tags with sorrowful eyes. Before we parted ways from the rest of the companions, Jung Heewon fidgeted around with those tags for a long time before letting him go.</p>
@@ -324,7 +331,7 @@
 <p class="orv_line">"…We'll be fine. If anyone's dying today, it'll be Hyunsung-ssi only."</p>
 <p class="orv_line">"By the way, will just us two, me and Hyunsung ahjussi, really be alright?"</p>
 <p class="orv_line">"Huh."</p>
-<p class="orv_line">I spread out a sheet on the ship's deck while explaining myself. This sheet was a DIY item I bought just now from the [Dokkaebi Bundle]. My new goal was to complete this thing before we encounter our new enemy.</p>
+<p class="orv_line">I spread out a sheet on the ship's deck while explaining myself. This sheet was a DIY item I bought just now from the <strong>[Dokkaebi Bundle]</strong>. My new goal was to complete this thing before we encounter our new enemy.</p>
 <p class="orv_line">"I don't get it, though? Sure, I get why with Hyunsung ahjussi, but me? Is it because we're on the sea?"</p>
 <p class="orv_line">"Something like that."</p>
 <p class="orv_line">"But, my Sponsor is a Historical… No, a Narrative-grade. But, you clearly said that even a Myth-grade can't stop the guy about to show up, didn't you?"</p>
@@ -335,7 +342,7 @@
 <p class="orv_line">Lee Jihye blinked her eyes as if she didn't really get it, but eventually, a smirk formed on her lips. "What are you on about? I'm not even a Constellation, you know."</p>
 <p class="orv_line">Well, true, you aren't one now.</p>
 <p class="orv_line">Lee Jihye had no idea of her own potential. She had no clue just how far she reached back in the original story.</p>
-<div class="orv_system"><p>[Constellation, 'Maritime War God', nods his head after hearing your words.]</p></div>
+<div class="orv_system"><p>Constellation, 'Maritime War God', nods his head after hearing your words.</p></div>
 <p class="orv_line">Perhaps the General was already well aware of it.</p>
 <p class="orv_line">Lee Hyunsung finished shooting the solo performance of Romeo and Juliet, and approached us. "By the way, Dokja-ssi? What have you been making until now?"</p>
 <p class="orv_line">"Ah, this?"</p>
@@ -352,21 +359,21 @@
 <p class="orv_line">"The moment you see them, we must surrender. Then we try to talk to them. Understand? Fighting won't buy us any time whatsoever. As soon as they show up…"</p>
 <p class="orv_line">"Ahjussi! Something's coming!"</p>
 <p class="orv_line">Almost at the same time with Lee Jihye's cry, we all spotted a ginormous wall approaching us from the horizon. It was a wall of waves reaching hundreds of metres high. That wall was steadily encroaching upon us.</p>
-<div class="orv_system"><p>[You have entered the 'Great Apocalypse Scenario' area prematurely!]</p></div>
-<div class="orv_system"><p>[You're recommended to exit the scenario area immediately!]</p></div>
-<div class="orv_system"><p>[If you fail to exit, the 'Great Apocalypse Scenario' will begin!]</p></div>
+<div class="orv_system"><p>You have entered the 'Great Apocalypse Scenario' area prematurely!</p></div>
+<div class="orv_system"><p>You're recommended to exit the scenario area immediately!</p></div>
+<div class="orv_system"><p>If you fail to exit, the 'Great Apocalypse Scenario' will begin!</p></div>
 <p class="orv_line">Of course, I wasn't planning to leave.</p>
-<div class="orv_system"><p>[Hidden Scenario – 'Great Apocalypse' has begun!]</p></div>
-<div class="orv_system"><p>[The invasion of 'Outer Gods' has commenced!]</p></div>
-<div class="orv_constellation"><p>[Please survive this calamity!]</p></div>
+<div class="orv_system"><p>Hidden Scenario – 'Great Apocalypse' has begun!</p></div>
+<div class="orv_system"><p>The invasion of 'Outer Gods' has commenced!</p></div>
+<div class="orv_constellation"><p>Please survive this calamity!</p></div>
 <p class="orv_line">The moment the scenario explanation ended, the gigantic waves of Status crashed into us. This Status was so great that all the hair on my body was standing up real high, even though I was supposed to be a 'Myth-grade Constellation' now.</p>
 <p class="orv_line">⸢The calamity that not even stars can't survive. This is the 'Great Apocalypse'.⸥</p>
 <p class="orv_line">The march of the 'Outer Gods', for the annihilation of a world.</p>
-<div class="orv_system"><p>[Story, 'Demon King of Salvation', has begun its storytelling.]</p></div>
+<div class="orv_system"><p>Story, 'Demon King of Salvation', has begun its storytelling.</p></div>
 <p class="orv_line">I unleashed the appropriate Story to protect my companions and looked up at the wall of waves. The howl of the 'Outer God' resounded out from somewhere.</p>
 <p class="orv_line">The 'Outer Gods' were piled up like layers in between the waves.</p>
 <p class="orv_line">And a lone battleship rode on top of this wall as if to reign over it. The vessel was an intimately familiar shape. The dragon-shaped figurehead spat out a violent lick of flames.</p>
-<p class="orv_line">The [Turtle Dragon].</p>
+<p class="orv_line">The <strong>[Turtle Dragon]</strong>.</p>
 <p class="orv_line">That was definitely the Turtle Dragon. If one wanted to point out the obvious difference between that one and our own Turtle Dragon, then the enemy's was at least twenty times larger.</p>
 <p class="orv_line">"A-ahjussi…"</p>
 <p class="orv_line">The frightened Lee Jihye was now staring at me, her expression asking me if I knew this already.</p>
@@ -381,18 +388,12 @@
             <a href="./ch_468"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_470">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="469" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="855" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="468" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="468" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

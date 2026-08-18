@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 475: Ep. 90 - One Person, IV</title>
     <meta property="og:title" content="Ch 475: Ep. 90 - One Person, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,28 +177,28 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00475.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 475: Ep. 90 - One Person, IV</h1></div>
-<p class="orv_line">The coat dancing against the strong winds, that indescribable Status leaking out nonstop from the [Black Heavenly Demon Sword].</p>
+<p class="orv_line">The coat dancing against the strong winds, that indescribable Status leaking out nonstop from the <strong>[Black Heavenly Demon Sword]</strong>.</p>
 <p class="orv_line">Han Sooyoung definitely knew that guy. But even then, why was this? At least in this very moment, he seemed like a completely different existence to her.</p>
 <p class="orv_line">"…Are you really Yoo Joonghyuk?"</p>
 <p class="orv_line">He glanced in her direction, before spinning around towards the Pacific Ocean with a loud boom. She panicked and cried out.</p>
@@ -204,29 +211,29 @@
 <p class="orv_line">Yoo Sangah came closer and supported her. The moment she leaned against her shoulders, Han Sooyoung ended up vomiting all the blood flowing backwards inside her.</p>
 <p class="orv_line">"Bleeergh-!"</p>
 <p class="orv_line">Her head felt hot as if every blood vessel in it was burning up. Sparks went wild as if to scorch her frontal lobe. She endured the pain and shouted out. "Great Sage! Hades! Uriel! You must hurry and chase after Yoo Joonghyuk! The rest of us will take care of this place, so please hurry! You mustn't let that guy fight alone!"</p>
-<div class="orv_system"><p>[&lt;Star Stream&gt; has noticed your Story.]</p></div>
-<div class="orv_system"><p>[You have used a power that went against the Probability!]</p></div>
+<div class="orv_system"><p>&lt;Star Stream&gt; has noticed your Story.</p></div>
+<div class="orv_system"><p>You have used a power that went against the Probability!</p></div>
 <p class="orv_line">"Keok…"</p>
 <p class="orv_line">Her vision dizzily spun around; her internals hurt as if they had completely overturned.</p>
-<div class="orv_system"><p>[Your Incarnation Body is being swept up in the storm of aftermaths!]</p></div>
+<div class="orv_system"><p>Your Incarnation Body is being swept up in the storm of aftermaths!</p></div>
 <p class="orv_line">Han Sooyoung detected a powerful force about to explode within her body and hurriedly shouted out. "Yoo Sangah! Get away!"</p>
 <p class="orv_line">However, Yoo Sangah held Han Sooyoung's shoulders even tighter and shook her head. The power of Sakyamuni she had inherited was being transmitted through the hand touching the latter's shoulder. The time and space twisted, slowing down the growth of the aftermaths' storm. "Fight it. You can do it. I also fought it off and survived in the past, too."</p>
 <p class="orv_line">"Goddammit."</p>
 <p class="orv_line">Muscles all over her body were moaning out. Faint terror seeped inside her amongst all the horrifying pain. She had been habitually muttering out about being careful around the Probability, yet here she was, making a critical mistake like this. She mistakenly thought that, since a fool like Kim Dokja managed to survive until now, she'd somehow make it through this one, too.</p>
 <p class="orv_line">Tsu-chuchuchut!</p>
 <p class="orv_line">…Was she going to die? So meaninglessly like this?</p>
-<div class="orv_system"><p>[Story, 'Predictive Plagiarism', has begun its storytelling!]</p></div>
+<div class="orv_system"><p>Story, 'Predictive Plagiarism', has begun its storytelling!</p></div>
 <p class="orv_line">It was around here that the signs of the aftermath's storm gradually softened.</p>
 <p class="orv_line">Han Sooyoung witnessed letters covering up her Incarnation Body. Those were words she wrote in the past – words she secretly wrote in the note pad so that neither Kim Dokja nor Yoo Joonghyuk could find out later. And now, those words were leaking out from the flapping pages of the note pad to wrap around her body.</p>
 <p class="orv_line">However, there were some sentences she hadn't written before mixed in among them.</p>
 <p class="orv_line">⸢You're indeed me, so your writing skill isn't too shabby, I guess.⸥</p>
 <p class="orv_line">The voice sounded half-mocking and half-satisfied.</p>
-<div class="orv_system"><p>[Story, 'Predictive Plagiarism', is bearing the aftermath's storm in your stead.]</p></div>
+<div class="orv_system"><p>Story, 'Predictive Plagiarism', is bearing the aftermath's storm in your stead.</p></div>
 <p class="orv_line">Tsu-chut, chuchuchut…</p>
 <p class="orv_line">As the storm of Probability's aftermaths weakened, the letters began scattering away gradually faster and faster.</p>
 <p class="orv_line">Han Sooyoung wanted to ask. About these sentences, about what they actually were. Unfortunately, she didn't have enough energy left to even ask a question anymore.</p>
 <p class="orv_line">⸢…This is probably as far as I can go. Send the word out to Kim Dokja.⸥</p>
-<div class="orv_system"><p>[The vestige of another world-line permeating within your Story has begun dissipating.]</p></div>
+<div class="orv_system"><p>The vestige of another world-line permeating within your Story has begun dissipating.</p></div>
 <p class="orv_line">As her consciousness faded out, her Story continued to speak to her.</p>
 <p class="orv_line">⸢What waits for him in the 'Conclusion' he wishes for is…⸥</p>
 <br>
@@ -234,12 +241,12 @@
 <br>
 <p class="orv_line">While supporting Lee Jihye, I stared at the two 'Outer God Kings'.</p>
 <p class="orv_line">They had lived in the same regression turn, and they also saw the same end of the world, yet they became two different beings.</p>
-<div class="orv_system"><p>[Giant Story, 'Wanderer of the Eternal Horizon', has begun its storytelling.]</p></div>
-<div class="orv_system"><p>[Giant Story, 'Heart Sealing the Sorrow', has begun its storytelling!]</p></div>
+<div class="orv_system"><p>Giant Story, 'Wanderer of the Eternal Horizon', has begun its storytelling.</p></div>
+<div class="orv_system"><p>Giant Story, 'Heart Sealing the Sorrow', has begun its storytelling!</p></div>
 <p class="orv_line">I could see the cross-section of the Story laid bare within the sparks dancing in the air. The story they compiled together line by every line with their blood – this was the story from the regression turn that I loved the most. The one that I had read many times over.</p>
 <p class="orv_line">⸢"Captain Yoo Joonghyuk. It's a relief that you are a regressor."⸥</p>
 <p class="orv_line">The 'King of the Silver Heart' glanced in my direction.</p>
-<p class="orv_line">The 999th turn's Lee Hyunsung – the sorrow contained within his Story was being transmitted to me through my [Reading Comprehension].</p>
+<p class="orv_line">The 999th turn's Lee Hyunsung – the sorrow contained within his Story was being transmitted to me through my <strong>[Reading Comprehension]</strong>.</p>
 <p class="orv_line">⸢"It'll be okay for me to stop being sad, yes? You're going to die, anyway. Even if you die, we'll be able to meet again in the next turn. And you'll continue your story in that place… And, you'll get to restart this journey once more, won't you?"⸥</p>
 <p class="orv_line">The Story of Steel was crying.</p>
 <p class="orv_line">⸢"I'm sorry, Lee Hyunsung."⸥</p>
@@ -287,7 +294,7 @@
 <p class="orv_line">Something was approaching this location from afar while tearing through the horizon.</p>
 <p class="orv_line">The 'Master of the Sunken Island' spoke again. 【That's why we don't have a choice but to end it all and start again.】</p>
 <p class="orv_line">The tsunami waves that lost its vigour began rising up once more.</p>
-<p class="orv_line">The 999th turn's Lee Hyunsung hurriedly started the [Steel Transformation] and protected us with his metal. However, the force behind the waves was stronger and faster than the metal's growth speed.</p>
+<p class="orv_line">The 999th turn's Lee Hyunsung hurriedly started the <strong>[Steel Transformation]</strong> and protected us with his metal. However, the force behind the waves was stronger and faster than the metal's growth speed.</p>
 <div class="orv_outergod"><p>【You can't stop me. I told you this before that I'm not the only one here.】</p></div>
 <p class="orv_line">Kwa-kwakwakwakwa!</p>
 <p class="orv_line">The crimson sunset cast from behind us was burning up the heavens. That was the power of the 'Living Flame', the 999th turn's Uriel.</p>
@@ -297,9 +304,9 @@
 <p class="orv_line">I looked into her eyes and reassured her. "Don't worry. Things you're worried about will not happen."</p>
 <p class="orv_line">I was also saying to that myself.</p>
 <p class="orv_line">"Our story, it's not as weak as you fear."</p>
-<div class="orv_system"><p>[Constellation, 'Demon King of Salvation', is revealing his Status.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Watcher of Light and Darkness', is revealing his Status.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Prisoner of the Constrictive Headband', is revealing his Status.]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon King of Salvation', is revealing his Status.</p></div>
+<div class="orv_system"><p>Constellation, 'Watcher of Light and Darkness', is revealing his Status.</p></div>
+<div class="orv_system"><p>Constellation, 'Prisoner of the Constrictive Headband', is revealing his Status.</p></div>
 <p class="orv_line">The 'Demon King of Salvation', the 'Watcher of Light and Darkness', plus the third Modifier I earned by putting on the constrictive headband – all of my Stories were emitting light at the same time.</p>
 <p class="orv_line">I walked over to Lee Hyunsung standing before us. "Thank you for helping us out. However, it's alright not to push yourself."</p>
 <div class="orv_outergod"><p>【It's dangerous. You must hide behind m…】</p></div>
@@ -321,18 +328,12 @@
             <a href="./ch_474"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_476">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="475" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="11" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="474" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="474" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

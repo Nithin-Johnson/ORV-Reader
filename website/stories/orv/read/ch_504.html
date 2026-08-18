@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 504: Ep. 97 - The star that can't be seen, I</title>
     <meta property="og:title" content="Ch 504: Ep. 97 - The star that can't be seen, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00504.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 504: Ep. 97 - The star that can't be seen, I</h1></div>
 <p class="orv_line">The smartphone inside my coat vibrated and emitted 'Woong, woong' noise.</p>
@@ -210,14 +217,14 @@
 <p class="orv_line">I staggered but still managed to find my balance. The last person I spotted was Yoo Joonghyuk. His Black Heavenly Demon Sword was currently stabbing through the corpses of Great Dokkaebis. Stories from dead Constellations dripped steadily from the edge of his blade.</p>
 <p class="orv_line">He was staring at me with his usual expressionless face of his.</p>
 <p class="orv_line">⸢Is this the conclusion you desired?⸥</p>
-<div class="orv_system"><p>['The Fourth Wall' is violently shaking!]</p></div>
-<div class="orv_system"><p>['The Fourth Wall' is activating even more strongly!]</p></div>
+<div class="orv_system"><p>'The Fourth Wall' is violently shaking!</p></div>
+<div class="orv_system"><p>'The Fourth Wall' is activating even more strongly!</p></div>
 <p class="orv_line">My mouth opened slowly, only to be shut again.</p>
-<div class="orv_system"><p>[Completion of the Final Scenario is imminent.]</p></div>
+<div class="orv_system"><p>Completion of the Final Scenario is imminent.</p></div>
 <p class="orv_line">The ark's core I had been searching for all this time rolled around on the ground. It was a piece of mineral emitting a brilliant yellowish hue, The powers of countless 'Giant Stories' drifting around in this world-line were condensed to create this hardened essence.</p>
-<p class="orv_line">The [ark's core].</p>
+<p class="orv_line">The <strong>[ark's core]</strong>.</p>
 <p class="orv_line">It was the source of energy for the great Story weapon, 'Final Ark'. Destroying it would bring an end to this 99th scenario and conclude our battle.</p>
-<div class="orv_system"><p>[The completion of &lt;Star Stream&gt;'s final Story is around the corner!]</p></div>
+<div class="orv_system"><p>The completion of &lt;Star Stream&gt;'s final Story is around the corner!</p></div>
 <p class="orv_line">Tsu-chuchu…!</p>
 <p class="orv_line">Suddenly, my steps came to a stop. Vines sprouted out from the ground and wrapped around my ankles. 'Zarathustras' appeared from seemingly out of nowhere and used restriction skills on me.</p>
 <p class="orv_line">Selena Kim was avoiding my gaze as if she was apologetic about this. Soon afterwards, I could hear the prophet's voice.</p>
@@ -236,15 +243,15 @@
 <p class="orv_line">"Give me that core."</p>
 <p class="orv_line">"…I see. There is still a 'Myth-grade Constellation' remaining, isn't there?"</p>
 <p class="orv_line">Her eyes glowed in red.</p>
-<p class="orv_line">The [Eye of Great Demon]; her power to read this world's past and future began tying me down. She had completely awakened the power of that eye, and currently, she enjoyed Status rivalling a decent Narrative-grade Constellation.</p>
+<p class="orv_line">The <strong>[Eye of Great Demon]</strong>; her power to read this world's past and future began tying me down. She had completely awakened the power of that eye, and currently, she enjoyed Status rivalling a decent Narrative-grade Constellation.</p>
 <p class="orv_line">⸢The opponent of all the stars.⸥</p>
 <p class="orv_line">This was the same as the original, too. Anna Croft hated all the Constellations in this world. And that was why she swore to use the power of stars to destroy the stars themselves. In order to complete her night, she'd not spare me, either.</p>
 <p class="orv_line">⸢If this story was really the same as the original, that is.⸥</p>
 <p class="orv_line">The tip of her blade pointing at me seemed to be hesitant over something.</p>
 <p class="orv_line">"…It's not too late, Kim Dokja."</p>
 <p class="orv_line">The event that had never happened before in the original.</p>
-<p class="orv_line">I sensed Yoo Joonghyuk, standing not too far while holding the [Black Heavenly Demon Sword]'s grip, being faintly surprised. Anna Croft lightly sucked in her breath and began telling her story.</p>
-<p class="orv_line">"I… do not know the conclusion you dream of. My [Precognition] can't read that far ahead. However, I can make an educated guess. The fact that my [Precognition] can't see your conclusion means that it's related to that [Final Wall]. However, please consider this carefully, Kim Dokja. Consider whether that is the best course of action for us all, for the rest of humanity or not."</p>
+<p class="orv_line">I sensed Yoo Joonghyuk, standing not too far while holding the <strong>[Black Heavenly Demon Sword]</strong>'s grip, being faintly surprised. Anna Croft lightly sucked in her breath and began telling her story.</p>
+<p class="orv_line">"I… do not know the conclusion you dream of. My <strong>[Precognition]</strong> can't read that far ahead. However, I can make an educated guess. The fact that my <strong>[Precognition]</strong> can't see your conclusion means that it's related to that <strong>[Final Wall]</strong>. However, please consider this carefully, Kim Dokja. Consider whether that is the best course of action for us all, for the rest of humanity or not."</p>
 <p class="orv_line">This would be her first time speaking so many words at once.</p>
 <p class="orv_line">I silently listened to her.</p>
 <p class="orv_line">"Isn't this enough already? You have experienced enough tragedies by now. You've lost so much, and your most precious things have been ridiculed upon. Even then, are you still curious about this world's 'One Single Story'? Just for something like that, are you going to forsake the survival of the human race?"</p>
@@ -257,17 +264,17 @@
 <p class="orv_line">Those words caused the eyes of several Zarathustras to grow wider. That was understandable, however. The offer she made just now was basically the same as going against her own beliefs.</p>
 <p class="orv_line">What Anna Croft said was tantamount to asking me to become the lone star that would shine in the night of the brand new world.</p>
 <p class="orv_line">Although I was thankful for the offer…</p>
-<div class="orv_constellation"><p>[I'm a Constellation.]</p></div>
+<div class="orv_constellation"><p>I'm a Constellation.</p></div>
 <p class="orv_line">…I could never accept it.</p>
 <p class="orv_line">Tsu-chuchuchu…</p>
 <p class="orv_line">I lightly aroused my Status and the vines restricting me all fell away. And as if to mock her goodwill, all of my Stories began telling their stories.</p>
-<div class="orv_system"><p>[Giant Story, 'Demon Realm's Spring', has begun its storytelling!]</p></div>
+<div class="orv_system"><p>Giant Story, 'Demon Realm's Spring', has begun its storytelling!</p></div>
 <p class="orv_line">The horn of the Demon King grew up on my head, and…</p>
-<div class="orv_system"><p>[Giant Story, 'Torch that Swallowed the Myth', is howling out!]</p></div>
+<div class="orv_system"><p>Giant Story, 'Torch that Swallowed the Myth', is howling out!</p></div>
 <p class="orv_line">The Unbroken Faith that slew gods viciously cried out, and…</p>
-<div class="orv_system"><p>[Giant Story, 'Season of Light and Darkness', is looking at the world of humans.]</p></div>
+<div class="orv_system"><p>Giant Story, 'Season of Light and Darkness', is looking at the world of humans.</p></div>
 <p class="orv_line">Wings I received by betraying the Archangel spread out next. Then…</p>
-<div class="orv_system"><p>[Giant Story, 'Liberator of the Forgotten Ones', is mocking &lt;Star Stream&gt;.]</p></div>
+<div class="orv_system"><p>Giant Story, 'Liberator of the Forgotten Ones', is mocking &lt;Star Stream&gt;.</p></div>
 <p class="orv_line">The ominous and evil aura of Chaos enveloped my entire body.</p>
 <p class="orv_line">Anna Croft's eyes were trembling uncontrollably. They shifted around urgently as if to find any remaining trace of humanity from my appearance.</p>
 <p class="orv_line">However, there was this thing that we both knew. How could you call an existence a regular human when you had to search so hard to find his humanity?</p>
@@ -281,49 +288,49 @@
 <p class="orv_line">"Let's end it here."</p>
 <p class="orv_line">A dozen or so Zarathustras all dashed towards Yoo Joonghyuk in an instant. And right next second, Anna Croft approached me like a streak of light, her dagger stabbing towards my neck.</p>
 <p class="orv_line">I calmly watched the tip of that blade, before opening my mouth.</p>
-<div class="orv_constellation"><p>[Enough with your pranks, Loki.]</p></div>
+<div class="orv_constellation"><p>Enough with your pranks, Loki.</p></div>
 <p class="orv_line">Along with those words, Anna Croft's movement froze up.</p>
 <p class="orv_line">I lightly raised my finger and brushed her dagger aside.</p>
 <p class="orv_line">Looking clearly astonished, she muttered out in sheer confusion next.</p>
 <p class="orv_line">"W-what is the meaning of…??"</p>
-<div class="orv_system"><p>[Constellation that likes changing gender is cackling away.]</p></div>
+<div class="orv_system"><p>Constellation that likes changing gender is cackling away.</p></div>
 <p class="orv_line">"Loki, you! This is not what you promi…!"</p>
 <p class="orv_line">A massive amount of Status bore down on Anna Croft and the Zarathustras. The so-called Constellation that liked changing gender, the final star of &lt;Asgard&gt;, 'Loki' was now standing there.</p>
 <p class="orv_line">Not one among the Zarathustras could resist his power. Because it was precisely him who freed them from the &lt;Asgard&gt;'s control.</p>
 <p class="orv_line">"But, I'm doing this for humani…!"</p>
 <p class="orv_line">Those were Anna Croft's last words before she passed out. The core fell out from her hand and rolled on the ground towards my feet. I bent down and picked it up.</p>
-<div class="orv_constellation"><p>[It's really been entertaining, Demon King of Salvation.]</p></div>
+<div class="orv_constellation"><p>It's really been entertaining, Demon King of Salvation.</p></div>
 <p class="orv_line">I straightened my back to discover a man standing before me – a man with green hair and a mischievous smile.</p>
-<div class="orv_system"><p>[Constellation, 'One Who Changes His Existence', is looking at you.]</p></div>
+<div class="orv_system"><p>Constellation, 'One Who Changes His Existence', is looking at you.</p></div>
 <p class="orv_line">The One Who Changes His Existence. One of the highest-ranked Constellations in &lt;Asgard&gt;, Loki.</p>
 <p class="orv_line">Also, a Constellation who helped us many times during our journey up to this point, someone with an agenda that we couldn't figure out before.</p>
 <p class="orv_line">He had safely escaped from the Apocalypse Dragon's calamity and chased after us.</p>
 <p class="orv_line">"Thanks for your help."</p>
-<div class="orv_constellation"><p>[The conclusion to this world is literally right before us, so I can't afford to let that go to waste because of a measly little human… Besides all that. There isn't anyone left for you to frighten here, so why don't you undo that scary appearance of yours?]</p></div>
+<div class="orv_constellation"><p>The conclusion to this world is literally right before us, so I can't afford to let that go to waste because of a measly little human… Besides all that. There isn't anyone left for you to frighten here, so why don't you undo that scary appearance of yours?</p></div>
 <p class="orv_line">I dismissed my horn and the wings, then spoke up.</p>
 <p class="orv_line">"Why don't you reveal your true self as well?"</p>
-<div class="orv_constellation"><p>[What do you mean?]</p></div>
+<div class="orv_constellation"><p>What do you mean?</p></div>
 <p class="orv_line">"I thought we both tacitly agreed to drop the pretence?"</p>
 <p class="orv_line">My words caused Yoo Joonghyuk observing the situation to address me.</p>
 <p class="orv_line">– Kim Dokja.</p>
 <p class="orv_line">– Your suspicions are correct.</p>
 <p class="orv_line">I glared at Loki.</p>
 <p class="orv_line">The Constellation, 'One Who Changes His Existence'. If my thoughts were correct, then this guy was no 'Constellation'.</p>
-<div class="orv_system"><p>[Constellation, 'One Who Changes His Existence', is revealing his true identity!]</p></div>
-<div class="orv_system"><p>[Cons■tellation, ■ his ■ ??iden■ty??'…]</p></div>
+<div class="orv_system"><p>Constellation, 'One Who Changes His Existence', is revealing his true identity!</p></div>
+<div class="orv_system"><p>Cons■tellation, ■ his ■ ??iden■ty??'…</p></div>
 <p class="orv_line">Blinding light blanketed Loki, then his silhouette began changing next. His height shrunk down a little, and creases on his face rapidly increased in number. And eventually, two large growths ballooned out with his cheeks as the middle.</p>
 <p class="orv_line">⸢The existence capable of exploiting the &lt;Star Stream&gt;'s bug at will. The irreconcilable enemy of every Dokkaebi in the world, and the founder of the 'Seekers of Apocalypse'.⸥</p>
 <p class="orv_line">I had encountered this being once before.</p>
 <p class="orv_line">Back in the Journey to the West's Tongtian river, he opposed the Great Dokkabies trying to obstruct me in my stead.</p>
 <p class="orv_line">His lips distorted slightly to form an insidious grin.</p>
-<div class="orv_constellation"><p>[That's right. You people aren't the only ones dreaming of &lt;Star Stream&gt;'s end.]</p></div>
+<div class="orv_constellation"><p>That's right. You people aren't the only ones dreaming of &lt;Star Stream&gt;'s end.</p></div>
 <p class="orv_line">"…The Wenny King."</p>
-<p class="orv_line">Having discovered the creature's true identity, Yoo Joonghyuk unhesitantly unsheathed the [Black Heavenly Demon Sword].</p>
-<div class="orv_constellation"><p>[Why don't you put that thing away. I have no thoughts of fighting you.]</p></div>
+<p class="orv_line">Having discovered the creature's true identity, Yoo Joonghyuk unhesitantly unsheathed the <strong>[Black Heavenly Demon Sword]</strong>.</p>
+<div class="orv_constellation"><p>Why don't you put that thing away. I have no thoughts of fighting you.</p></div>
 <p class="orv_line">The Wenny King playfully waved his hands about and continued on.</p>
-<div class="orv_constellation"><p>[What I wish to see is only one thing. The unknown 'something' found beyond this Final Wall that you've been searching for. That's all. And also…]</p></div>
+<div class="orv_constellation"><p>What I wish to see is only one thing. The unknown 'something' found beyond this Final Wall that you've been searching for. That's all. And also…</p></div>
 <p class="orv_line">Go-ooooooh!</p>
-<div class="orv_constellation"><p>[I don't think now isn't the time for you folks to worry about me.]</p></div>
+<div class="orv_constellation"><p>I don't think now isn't the time for you folks to worry about me.</p></div>
 <p class="orv_line">The moment I looked back, someone angrily grabbed hold of my collars. Lee Jihye's face was pressing right up to mine. Stories of rage and resentment leaking out from her entire Incarnation Body was pounding down hard on my body.</p>
 <p class="orv_line">"…Ahjussi. What the hell is this? Huh? Was this a part of your plan, too?"</p>
 <p class="orv_line">The spirit of the ocean that used to permeate her could no longer be felt. That gentle scent of saltiness wafting in when I first met her back in the subway could no longer be picked up.</p>
@@ -352,7 +359,7 @@
 <p class="orv_line">⸢Kim Dokja hated the Constellations. He had never forgotten that emotion, not even for a second.⸥</p>
 <p class="orv_line">"…Right. I…"</p>
 <p class="orv_line">⸢However, this world's scenario managed to change such a Kim Dokja.⸥</p>
-<p class="orv_line">I looked at the [Final Wall]. The wall where all the 'Stories' were recorded on.</p>
+<p class="orv_line">I looked at the <strong>[Final Wall]</strong>. The wall where all the 'Stories' were recorded on.</p>
 <p class="orv_line">The wall that existed solely to record the 'One Single Story' that all the Dokkaebis longed for.</p>
 <p class="orv_line">"But, it might be too late now."</p>
 <p class="orv_line">All this tragedy existed to be recorded on that wall.</p>
@@ -364,14 +371,14 @@
 <p class="orv_line">⸢However, what if such a thing was possible…?⸥</p>
 <p class="orv_line">⸢What if a 'wall' that could bring the 'squared circle' to reality existed in this world?⸥</p>
 <p class="orv_line">I squeezed the core gripped in my hand tightly.</p>
-<div class="orv_system"><p>[Main Scenario #99 – 'Enemy of the Story' has been cleared!]</p></div>
-<div class="orv_system"><p>[Calculation for the completion reward has begun.]</p></div>
-<div class="orv_system"><p>[Currently, no Great Dokkaebis exist to take the role of calculating the reward.]</p></div>
-<div class="orv_system"><p>[Reward calculation is being delayed.]</p></div>
+<div class="orv_system"><p>Main Scenario #99 – 'Enemy of the Story' has been cleared!</p></div>
+<div class="orv_system"><p>Calculation for the completion reward has begun.</p></div>
+<div class="orv_system"><p>Currently, no Great Dokkaebis exist to take the role of calculating the reward.</p></div>
+<div class="orv_system"><p>Reward calculation is being delayed.</p></div>
 <p class="orv_line">…</p>
 <p class="orv_line">…</p>
 <p class="orv_line">…</p>
-<div class="orv_system"><p>[You have earned the qualification to meet the 'King of Stories'.]</p></div>
+<div class="orv_system"><p>You have earned the qualification to meet the 'King of Stories'.</p></div>
 <p class="orv_line">The blinding wall opened its jaw for us.</p>
 <br>
 <hr>
@@ -380,18 +387,12 @@
             <a href="./ch_503"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_505">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="504" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="554" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="503" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="503" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

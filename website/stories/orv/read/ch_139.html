@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 139: Ep. 27 - Unreadable, III</title>
     <meta property="og:title" content="Ch 139: Ep. 27 - Unreadable, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00139.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 139: Ep. 27 - Unreadable, III</h1></div>
 <p class="orv_line">The new layer of skin was made of steel. Lee Hyunsung's body was being reshaped, as if he was another species.</p>
@@ -198,14 +205,14 @@
 <p class="orv_line">The problem was that stage one wasn't fully activated yet.</p>
 <p class="orv_line">–This is the real stigma that Lee Hyunsung-ssi needs to learn.</p>
 <p class="orv_line">Lee Hyunsung realized the situation and quickly retreated.</p>
-<div class="orv_system"><p>[The Steel Transformation isn't yet complete.]</p></div>
-<div class="orv_system"><p>[The stigma can only be used by those who have achieved a story.]</p></div>
+<div class="orv_system"><p>The Steel Transformation isn't yet complete.</p></div>
+<div class="orv_system"><p>The stigma can only be used by those who have achieved a story.</p></div>
 <p class="orv_line">All sponsors gave a stigma to their incarnations. There were stigmas in the form of gifts and some that could only be used under difficult conditions.</p>
 <p class="orv_line">Steel Transformation of the Master of Steel was one of the difficult stigmas.</p>
-<div class="orv_system"><p>[The story 'Proof of Steel' has begun!]</p></div>
+<div class="orv_system"><p>The story 'Proof of Steel' has begun!</p></div>
 <p class="orv_line">It was because this stigma required the indirect 'proof' of what the constellation had experienced.</p>
 <div class="orv_window">
-<h3 class="orv_window_title">[Proof of Steel]</h3>
+<h3 class="orv_window_title">Proof of Steel</h3>
 <p>1. 「 True steel is born in tens of thousands of quenches. 」</p>
 </div>
 <p class="orv_line">It was an unkind sentence thrown into the scenario. Lee Hyunsung seemed confused. "What does this mean?"</p>
@@ -213,9 +220,9 @@
 <p class="orv_line">"Don't tell me…"</p>
 <p class="orv_line">–It seems right. Please keep your mind straight.</p>
 <p class="orv_line">In a sense, it might be fortunate that Jung Heewon was Lee Hyunsung's opponent. Lee Hyunsung turned pale.</p>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is interested in the story of this world.]</p></div>
-<div class="orv_system"><p>[The constellation 'Defense Master' wonders how his strength compares.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' has both hands clasped together in a nervous manner.]</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is interested in the story of this world.</p></div>
+<div class="orv_system"><p>The constellation 'Defense Master' wonders how his strength compares.</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' has both hands clasped together in a nervous manner.</p></div>
 <p class="orv_line">The blazing hellfire turned blue along with the messages of the constellations. Maybe Jung Heewon's Hell Flames Ignition had increased a level because the flames became deeper and fiercer.</p>
 <p class="orv_line">The asphalt mixed with impurities melted from the pure white flames and the high heat turned them into a deadly weapon.</p>
 <p class="orv_line">The silver armour instantly started to melt and the scattered foreign materials penetrated the armour like bullets, damaging Lee Hyunsung's insides. New steel grew from the melted areas but it wasn't without damage.</p>
@@ -223,26 +230,26 @@
 <p class="orv_line">Blood emerged from Lee Hyunsung's mouth.</p>
 <p class="orv_line">He would've been able to resist Hell Flames Ignition if his Steel Transformation was perfect, but it wasn't yet. In any case, Hell Flames Ignition was the highest level stigma belonging to the fire property. It was amazing that he didn't just collapse.</p>
 <p class="orv_line">Lee Hyunsung took one step back and screamed. I was pained to see this scene but it wasn't yet time. Lee Hyunsung's steel was burning red. A bit more, a bit more…</p>
-<div class="orv_system"><p>[The temperature has exceeded the standard value!]</p></div>
+<div class="orv_system"><p>The temperature has exceeded the standard value!</p></div>
 <p class="orv_line">That's it.</p>
-<div class="orv_system"><p>[The quenching has begun.]</p></div>
+<div class="orv_system"><p>The quenching has begun.</p></div>
 <p class="orv_line">The base of steel was quenching. The heart of this story was to burn in a high temperature above the standard until the body became made of perfect steel.</p>
 <p class="orv_line">–Hold on! You can do it!</p>
 <p class="orv_line">Fortunately, Lee Hyunsung wasn't 'evil'.</p>
 <p class="orv_line">Hell Flames Ignition was a stigma with the 'fire' and 'divine' properties. If Lee Hyunsung was 'evil' then he would've already been turned into a pile of ashes from Hell Flames Ignition.</p>
 <p class="orv_line">As Lee Hyunsung was enduring, I quickly looked at the information of Jung Heewon.</p>
-<div class="orv_system"><p>[The character 'Jung Heewon' is currently suffering from 'Thought Infection.]</p></div>
-<div class="orv_system"><p>[The character 'Jung Heewon' is in a lost state.]</p></div>
-<div class="orv_system"><p>[The trauma of the character 'Jung Heewon' is completely open.]</p></div>
+<div class="orv_system"><p>The character 'Jung Heewon' is currently suffering from 'Thought Infection.</p></div>
+<div class="orv_system"><p>The character 'Jung Heewon' is in a lost state.</p></div>
+<div class="orv_system"><p>The trauma of the character 'Jung Heewon' is completely open.</p></div>
 <p class="orv_line">…</p>
 <p class="orv_line">…That bastard, he completely made a mess of a human's mind.</p>
-<div class="orv_quote"><p>「 I can't forgive them… 」</p></div>
+<div class="orv_quote"><p>I can't forgive them…</p></div>
 <p class="orv_line">Nirvana's Thought Infection pulled all the dark parts of a person's mind to the surface in order to settle their time in the present.</p>
-<div class="orv_quote"><p>「 I should kill them. 」</p></div>
+<div class="orv_quote"><p>I should kill them.</p></div>
 <p class="orv_line">Humans who faced the reality of a cliff where the future had disappeared usually lose hope. This was especially true when the reality was terrible.</p>
 <p class="orv_line">In the process, someone would feel despair and collapse while someone else would turn into a beast and release relentless desires.</p>
 <p class="orv_line">Some resisted angrily and lose their sense of reason. Once this resignation was repeated, they would find a 'savior' to comfort themselves. They would martyr themselves for this saviour, sacrificing their humble lives before the great 'present'.</p>
-<div class="orv_quote"><p>「 Kil all the men. 」</p></div>
+<div class="orv_quote"><p>Kil all the men.</p></div>
 <p class="orv_line">I seemed to know what her trauma was. Jung Heewon's initial attribute of 'crouching' was based on a strong psychological shock. Looking back on the first moment I found her, it wasn't unusual for her to have a strong hostility towards 'men'.</p>
 <p class="orv_line">"This… is this Heewon-ssi's heart?" Lee Hyunsung asked from amidst the blazing flames.</p>
 <p class="orv_line">–Can you hear her?</p>
@@ -278,15 +285,15 @@
 <p class="orv_line">Lee Hyunsung and I clearly saw the world from the same eyes but we didn't see the same thing. Lee Hyunsung's heart bursting with emotions was proof of this.</p>
 <p class="orv_line">It was a strange feeling. Originally, it wasn't supposed to be like this. The story changed thanks to me.</p>
 <p class="orv_line">"Uhhh… kuoooh!" Lee Hyunsung's knees collapsed when there were ten steps left.</p>
-<div class="orv_system"><p>[The character 'Lee Hyunsung' has reached the limits of his mental state.]</p></div>
+<div class="orv_system"><p>The character 'Lee Hyunsung' has reached the limits of his mental state.</p></div>
 <p class="orv_line">I was awakened by my shaking vision. Even if the story changed, this was still Ways of Survival.</p>
-<div class="orv_system"><p>[The constellation 'Master of Steel' is looking at his incarnation with sad eyes.]</p></div>
+<div class="orv_system"><p>The constellation 'Master of Steel' is looking at his incarnation with sad eyes.</p></div>
 <p class="orv_line">All characters struggled in utter despair. This was Ways of Survival.</p>
 <p class="orv_line">–Hyunsung-ssi.</p>
 <p class="orv_line">Still, I was sometimes curious when reading Ways of Survival. Had the author of Ways of Survival regretted the 'ending' that he created?</p>
 <p class="orv_line">–Leave it to me for a moment.</p>
-<div class="orv_system"><p>[The exclusive skill, 'Fourth Wall' is shaking!]</p></div>
-<div class="orv_system"><p>[The '1st person supporting role viewpoint' is extremely active.]</p></div>
+<div class="orv_system"><p>The exclusive skill, 'Fourth Wall' is shaking!</p></div>
+<div class="orv_system"><p>The '1st person supporting role viewpoint' is extremely active.</p></div>
 <p class="orv_line">Lee Hyunsung's consciousness was shaken and my consciousness entered. Control of his body was transferred and the senses of the entire body were strongly activated.</p>
 <p class="orv_line">Lee Hyunsung was suffering from this pain. It was enough to make him crazy. The whole body burned in the flames and the melted bone joints and tendons made it feel like my limbs were cut off.</p>
 <p class="orv_line">I used Lee Hyunsung's voice and shouted at Jung Heewon. "Jung Heewon-ssi! You will die if this continues!"</p>
@@ -296,19 +303,19 @@
 <p class="orv_line">I heard a voice as my knees bent from the pain. 'Dokja-ssi. I'll do it'.</p>
 <p class="orv_line">It was Lee Hyunsung's voice.</p>
 <p class="orv_line">'I must do it'.</p>
-<div class="orv_system"><p>[The will of steel has responded!]</p></div>
+<div class="orv_system"><p>The will of steel has responded!</p></div>
 <p class="orv_line">I nodded. After all, I was a 'reader'. I must not forget my duty. My consciousness left and Lee Hyunsung regained his body again. Lee Hyunsung's body was regaining a perfect steel shape.</p>
 <p class="orv_line">"Heewon-ssi."</p>
 <p class="orv_line">The blazing hellfire made her face blue. This fire would eventually gnaw at her. Her tears dried as soon as they fell down.</p>
 <p class="orv_line">Lee Hyunsung acted unexpectedly towards her. "Excuse me for a moment."</p>
 <p class="orv_line">Lee Hyunsung took the last step and embraced Jung Heewon.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is embarrassed by the unexpected love between companions.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is embarrassed by the unexpected love between companions.</p></div>
 <p class="orv_line">Jung Heewon's small body entered Lee Hyunsung's wide arms. It was so wide that he could touch his fingertips together without touching her. Rather than avoiding it, Jung Heewon made her flames stronger. It was like the flames were all she could do with her emotions.</p>
 <p class="orv_line">There was a rattling sound and walls of steel started to be created around Lee Hyunsung's arms. It was a wall that would free one person from the world. In order to remove flames, the oxygen must be shut off.</p>
 <p class="orv_line">Lee Hyunsung knew this and sacrificed himself to become the wall for her. He would bear her wrath on behalf of the world.</p>
 <p class="orv_line">All I could do was watch the two of them. I hoped that Lee Hyunsung could reach the heart of Jung Heewon who couldn't speak.</p>
 <p class="orv_line">How much time passed?</p>
-<div class="orv_system"><p>[The story 'Proof of Steel' has been completed.]</p></div>
+<div class="orv_system"><p>The story 'Proof of Steel' has been completed.</p></div>
 <p class="orv_line">Finally, Jung Heewon's flames died down.</p>
 <br>
 <hr>
@@ -321,7 +328,7 @@
 <p class="orv_line">Lee Hyunsung shook his head at the soft touch to the steel.</p>
 <p class="orv_line">"…No."</p>
 <p class="orv_line">It was a very small gesture but it was enough. His heart had clearly been delivered.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' hates this companionship.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' hates this companionship.</p></div>
 <p class="orv_line">"By the way Hyunsung-ssi, who else was here?"</p>
 <p class="orv_line">"Huh? That…"</p>
 <p class="orv_line">Jung Heewon looked grumpy at Lee Hyunsung's confusion. "It's okay. It isn't important. Rather, release this quickly. There is no time."</p>
@@ -334,18 +341,12 @@
             <a href="./ch_138"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_140">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="139" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="516" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="138" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="138" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

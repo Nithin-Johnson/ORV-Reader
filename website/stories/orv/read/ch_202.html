@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 202: Ep. 38 - Fake Revolutionary, IV</title>
     <meta property="og:title" content="Ch 202: Ep. 38 - Fake Revolutionary, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,47 +177,47 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00202.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 202: Ep. 38 - Fake Revolutionary, IV</h1></div>
 <p class="orv_line">"Avoid it!" The executioner's scythe moved along with Aileen's call.</p>
-<div class="orv_quote"><p>「 At this moment, his thoughts accelerated and the world looked like slow motion. 」</p></div>
-<div class="orv_quote"><p>「 Kim Dokja thought: What the hell is this? 」</p></div>
+<div class="orv_quote"><p>At this moment, his thoughts accelerated and the world looked like slow motion.</p></div>
+<div class="orv_quote"><p>Kim Dokja thought: What the hell is this?</p></div>
 <p class="orv_line">I gritted my teeth and rushed towards Jang Hayoung.</p>
 <p class="orv_line">There might be a difference between the 111th regression and the current regression but there was no such development in the original second Night. The executioners didn't receive any orders from the duke and should've wasted their second Night after being unable to kill me.</p>
-<div class="orv_constellation"><p>[Kill every one.]</p></div>
+<div class="orv_constellation"><p>Kill every one.</p></div>
 <p class="orv_line">Now the actions of the executioners were like those who had been playing this game for a long time. It was clear that someone had given them orders.</p>
 <p class="orv_line">I pushed Jang Hayoung away while releasing Blade of Faith and receiving the executioner's scythe.</p>
-<div class="orv_system"><p>[The combat shock has made your story configuration incomplete.]</p></div>
+<div class="orv_system"><p>The combat shock has made your story configuration incomplete.</p></div>
 <p class="orv_line">The situation wasn't very good. I couldn't fight now.</p>
-<div class="orv_system"><p>[The story fragment 'Face of A Casanova Who Died from Sexual Relations' has been slightly damaged.]</p></div>
+<div class="orv_system"><p>The story fragment 'Face of A Casanova Who Died from Sexual Relations' has been slightly damaged.</p></div>
 <p class="orv_line">Damn, my face! Fortunately, the executioner had no intention of fighting with me and immediately switched targets. I barely managed to sigh but quickly realized that this wasn't a good thing.</p>
-<div class="orv_constellation"><p>[Ke ep the re vo lu tio nary a live.]</p></div>
+<div class="orv_constellation"><p>Ke ep the re vo lu tio nary a live.</p></div>
 <p class="orv_line">"Aaaaack!"</p>
 <p class="orv_line">Citizens shrieked as they were cut by the executioners' scythes. No one was dead yet but half a dozen people were already bleeding.</p>
 <p class="orv_line">"R-Revolutionary!"</p>
 <p class="orv_line">I bit my lips.</p>
-<div class="orv_quote"><p>「 Kim Dokja thought: Was there a schemer he didn't know about? Or was the duke already acting? The stories of Ways of Survival flowed quickly through Kim Dokja's head. 」</p></div>
+<div class="orv_quote"><p>Kim Dokja thought: Was there a schemer he didn't know about? Or was the duke already acting? The stories of Ways of Survival flowed quickly through Kim Dokja's head.</p></div>
 <p class="orv_line">"Everyone gather this way! I can't protect you if you scatter!"</p>
-<div class="orv_quote"><p>「 Kim Dokja judged. The duke hadn't moved. It wouldn't have ended like this if the duke moved. 」</p></div>
+<div class="orv_quote"><p>Kim Dokja judged. The duke hadn't moved. It wouldn't have ended like this if the duke moved.</p></div>
 <p class="orv_line">The Fourth Wall was right. The industrial complex would already be ruined if the duke had moved.</p>
 <p class="orv_line">"Kuaaack!"</p>
 <p class="orv_line">The damage to the people didn't reduce. The injuries from the executioners' scythes continued all over the place. There were more than ten wounded in an instant.</p>
@@ -224,12 +231,12 @@
 <p class="orv_line">In the end, the ranks collapsed and the citizens started to scatter.</p>
 <p class="orv_line">"No! Don't go!"</p>
 <p class="orv_line">Aileen urgently shouted but the frightened citizens couldn't hear anything. The injured citizens groaned and seemed to be cursing towards empty air.</p>
-<div class="orv_quote"><p>「 Kim Dokja was quietly furious. 」</p></div>
+<div class="orv_quote"><p>Kim Dokja was quietly furious.</p></div>
 <p class="orv_line">I didn't know who did this but…</p>
 <p class="orv_line">"S-Save me…"</p>
 <p class="orv_line">A wounded civilian crawled towards me. There were many people without good details. Some of them would die by the end of this Night if they were unlucky. The same went for those who fled.</p>
 <p class="orv_line">This Night would be remembered as more terrible than any other Night in the industrial complex.</p>
-<div class="orv_quote"><p>「 If the damage gets bigger then it will go according to their intentions. 」</p></div>
+<div class="orv_quote"><p>If the damage gets bigger then it will go according to their intentions.</p></div>
 <p class="orv_line">The citizens would no longer be willing to help the revolution. They would once again follow the orders of the duke and Aileen's Civil Council would be isolated. I couldn't allow this to happen.</p>
 <p class="orv_line">Thus, I had to play a different hand. The moment I took a short breath to call out to Aileen.</p>
 <p class="orv_line">"This way! Kill me!" Someone hiding behind a building started shouting. It was Mark. "Over here! I am the guardian!"</p>
@@ -237,13 +244,13 @@
 <p class="orv_line">It was a hasty judgment. It was a valid but bad judgment.</p>
 <p class="orv_line">"I am the guardian! Kill me!"</p>
 <p class="orv_line">As Aileen and Jang Hayoung glanced at me, I was already running towards Mark. At almost the same time, the executioners were also running.</p>
-<div class="orv_constellation"><p>[Guar di an.]</p></div>
+<div class="orv_constellation"><p>Guar di an.</p></div>
 <p class="orv_line">Mark's provocation worked well. The scattered executioners gathered in an instant.</p>
-<div class="orv_constellation"><p>[Kill the guar di an.]</p></div>
+<div class="orv_constellation"><p>Kill the guar di an.</p></div>
 <p class="orv_line">I used Bookmark and Way of the Wind to quickly rush towards Mark. Mark's pale face was nearing.</p>
-<div class="orv_system"><p>[The exclusive skill 'Character List' is activated!]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Character List' is activated!</p></div>
 <div class="orv_window">
-<h3 class="orv_window_title">[Character Summary]</h3>
+<h3 class="orv_window_title">Character Summary</h3>
 <p>Character: Mark Javier</p>
 <p>Exclusive Attributes: Dimensional Mover (Hero), Retired S-Grade Mercenary (Rare), First Class Chef (Rare)</p>
 <p>Sponsor: None</p>
@@ -256,33 +263,33 @@
 <p class="orv_line">The Dimensional Mover from the Gainz Planet, Mark Javier. He retired as a mercenary and become a chef after coming to the Demon Realm. Every character in the scenario had their own reasons.</p>
 <p class="orv_line">Mark smiled at me as the scythes flew towards him. "I hope you succeed, Revolutionary."</p>
 <p class="orv_line">I didn't know much about his life. He was a supporting role among countless people who died in Ways of Survival.</p>
-<div class="orv_system"><p>[The Syswitz Executioner has placed a mark of death on 'Mark Javier'.]</p></div>
-<div class="orv_system"><p>['Mark Javier' have been identified as the scapegoat of the Night.]</p></div>
+<div class="orv_system"><p>The Syswitz Executioner has placed a mark of death on 'Mark Javier'.</p></div>
+<div class="orv_system"><p>'Mark Javier' have been identified as the scapegoat of the Night.</p></div>
 <p class="orv_line">Ways of Survival had a huge 3,149 chapters. Some people probably thought this story was too long. They thought it was a long and boring story.</p>
-<div class="orv_quote"><p>「 But for Kim Dokja, 3,149 chapters was short. 」</p></div>
+<div class="orv_quote"><p>But for Kim Dokja, 3,149 chapters was short.</p></div>
 <p class="orv_line">I always thought this. I wished that Ways of Survival was longer. I had read so many chapters but I was still curious about Ways of Survival.</p>
 <p class="orv_line">"Don't worry. You won't die."</p>
 <p class="orv_line">Thus, I would read a part I hadn't read from now on.</p>
 <p class="orv_line">"Vicky! If I die…!" Mark shouted with a bit of embarrassment.</p>
 <p class="orv_line">"Why are you so anxious to die? No one will die. At least, not in my story."</p>
 <p class="orv_line">I blocked the scythes of the executioners and used a skill.</p>
-<div class="orv_system"><p>[The exclusive skill 'Bookmark' is activated!]</p></div>
-<div class="orv_system"><p>[The proficiency of Bookmark has increased and a new slot has been enabled.]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Bookmark' is activated!</p></div>
+<div class="orv_system"><p>The proficiency of Bookmark has increased and a new slot has been enabled.</p></div>
 <p class="orv_line">"I will place Knight of Revolution Mark Javier in the sixth slot."</p>
-<div class="orv_system"><p>[The character 'Mark Javier' has been registered in the sixth slot.]</p></div>
-<div class="orv_system"><p>[The number six bookmark is activated.]</p></div>
-<div class="orv_system"><p>[(Private skill Lv. 1)is enabled.]</p></div>
+<div class="orv_system"><p>The character 'Mark Javier' has been registered in the sixth slot.</p></div>
+<div class="orv_system"><p>The number six bookmark is activated.</p></div>
+<div class="orv_system"><p>(Private skill Lv. 1)is enabled.</p></div>
 <p class="orv_line">The scythe of an executioner headed to the neck of Mark, who had closed his eyes.</p>
-<div class="orv_system"><p>[You have temporarily acquired the position of 'Guardian'!]</p></div>
+<div class="orv_system"><p>You have temporarily acquired the position of 'Guardian'!</p></div>
 <p class="orv_line">However, my side was a bit faster.</p>
-<div class="orv_system"><p>[Someone has used their vitality to protect 'Mark Javier'.]</p></div>
+<div class="orv_system"><p>Someone has used their vitality to protect 'Mark Javier'.</p></div>
 <p class="orv_line">The executioner's scythe stopped one inch from Mark's neck. The scythe stopped like it was caught in a net. Mark knew the meaning of this and his eyes widened.</p>
-<div class="orv_system"><p>[The guardian was successful and the mark of death has been released!]</p></div>
+<div class="orv_system"><p>The guardian was successful and the mark of death has been released!</p></div>
 <p class="orv_line">Of course, Mark wasn't the only one to feel amazed.</p>
-<div class="orv_constellation"><p>[Is th ere ano ther guar di an?]</p></div>
+<div class="orv_constellation"><p>Is th ere ano ther guar di an?</p></div>
 <p class="orv_line">It was a voice filled with disbelief. The executioners scattered into the darkness one by one. The executioners couldn't kill anyone, unlike their purpose. I wasn't satisfied but it was still okay.</p>
 <p class="orv_line">I sighed lightly and looked around where the survivors were staring at me. In particular, Jang Hayoung and Aileen were staring with shock. Judging from their expressions, it would be a long night.</p>
-<div class="orv_constellation"><p>[No one died tonight.]</p></div>
+<div class="orv_constellation"><p>No one died tonight.</p></div>
 <br>
 <hr>
 <br>
@@ -297,13 +304,13 @@
 <p class="orv_line">"Let's say I tell you the information. If you are kidnapped and reveal my information to the duke, how do you think this revolution will end?"</p>
 <p class="orv_line">In fact, this was an excuse that Yoo Joonghyuk frequently used when he found explaining was annoying. Now I was Yoo Joonghyuk so I didn't mind saying it.</p>
 <p class="orv_line">"I am just Yoo Joonghyuk. Remember that."</p>
-<div class="orv_quote"><p>「 Kim Dokja thought: He feels like he is actually becoming Yoo Joonghyuk. 」</p></div>
+<div class="orv_quote"><p>Kim Dokja thought: He feels like he is actually becoming Yoo Joonghyuk.</p></div>
 <p class="orv_line">Shut up.</p>
-<div class="orv_quote"><p>「 I miss Kim Dok ja who speaks with hono rifics. 」</p></div>
+<div class="orv_quote"><p>I miss Kim Dok ja who speaks with hono rifics.</p></div>
 <p class="orv_line">As I was playing with the Fourth Wall, the two men watched me with tired eyes and shook their heads.</p>
 <p class="orv_line">"…You are a really difficult person."</p>
 <p class="orv_line">A message was probably entering Yoo Joonghyuk's ears on Earth by now. Perhaps it was this message?</p>
-<div class="orv_system"><p>[Your story is being created in the 73rd Demon Realm.]</p></div>
+<div class="orv_system"><p>Your story is being created in the 73rd Demon Realm.</p></div>
 <p class="orv_line">If he was smart, he would notice what was going on. However, it didn't matter. The atmosphere calmed down and I brought up the main subject.</p>
 <p class="orv_line">"Let's talk about work. There is something that broke my expectations. There is a guy attacking using the rules of the game."</p>
 <p class="orv_line">"…I heard that Duke Syswitz isn't a schemer. Do you think the duke has moved directly?"</p>
@@ -332,18 +339,12 @@
             <a href="./ch_201"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_203">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="202" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="19" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="201" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="201" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

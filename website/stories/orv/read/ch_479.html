@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 479: Ep. 91 - One Single Story, III</title>
     <meta property="og:title" content="Ch 479: Ep. 91 - One Single Story, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,48 +177,48 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00479.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 479: Ep. 91 - One Single Story, III</h1></div>
-<div class="orv_system"><p>[Story, 'Master of Steel', has begun its storytelling!]</p></div>
+<div class="orv_system"><p>Story, 'Master of Steel', has begun its storytelling!</p></div>
 <p class="orv_line">The walls of steel created by 999th turn's Lee Hyunsung blanketed the surroundings and expanded rapidly. This power was strong enough to even defend the entire planet when deployed within &lt;Oz&gt;.</p>
 <p class="orv_line">Kwa-kwakwakwakwa!</p>
 <p class="orv_line">The expanding steel intertwined with the ⸢Stage Transformation⸥ and began creating the partitions of the subway.</p>
 <p class="orv_line">This stage was utterly familiar to me. Even now, just by closing my eyes I'd be able to vividly recall this cabin from the first scenario.</p>
-<div class="orv_system"><p>[A Myth-grade Constellation's 'Stage' has been generated!]</p></div>
+<div class="orv_system"><p>A Myth-grade Constellation's 'Stage' has been generated!</p></div>
 <p class="orv_line">Tsu-chuchuchut!</p>
 <p class="orv_line">Now originally, ⸢Stage Transformation⸥ was quite similar to augmented reality. In other words, the surrounding topography wouldn't change simply because it had been transformed into a stage.</p>
 <p class="orv_line">However, the case this time was slightly different.</p>
-<div class="orv_system"><p>[&lt;Star Stream&gt; is paying close attention to your 'Stage'.]</p></div>
-<div class="orv_system"><p>[The absolute majority of Constellations are watching the 'Stage'.]</p></div>
-<div class="orv_system"><p>[Great Dokkaebis are jealous of your 'Stage'.]</p></div>
-<div class="orv_system"><p>[Due to the large number of gazes, the stage grade of the 'Stage Transformation' is increasing!]</p></div>
+<div class="orv_system"><p>&lt;Star Stream&gt; is paying close attention to your 'Stage'.</p></div>
+<div class="orv_system"><p>The absolute majority of Constellations are watching the 'Stage'.</p></div>
+<div class="orv_system"><p>Great Dokkaebis are jealous of your 'Stage'.</p></div>
+<div class="orv_system"><p>Due to the large number of gazes, the stage grade of the 'Stage Transformation' is increasing!</p></div>
 <p class="orv_line">&lt;Star Stream&gt;'s Probability was directly linked to the number of gazes watching on. A scenario that a large number of beings watched was able to generate a powerful Story, and a stage watched by many could generate sizeable impact in return.</p>
 <p class="orv_line">The anticipation carried within those countless gazes could shift the Probability, in other words.</p>
 <p class="orv_line">⸢On that day, the Delusion Demon and the Demon King of Salvation met for the first time in that place.⸥</p>
 <p class="orv_line">And the shifting Probability could sometimes turn 'fake' into 'reality'.</p>
-<div class="orv_system"><p>[Due to the effects of the 'Disconnected Film Theory', the materialisation of the 'Stage Transformation' is incomplete!]</p></div>
-<div class="orv_system"><p>[Within the applicable stage, the Characters 'Kim Namwoon' and the 'Monarch of the Great Abyss' will be treated as the same individual.]</p></div>
-<div class="orv_system"><p>[The 'Monarch of the Great Abyss's' stage compatibility is 87.351%!]</p></div>
-<div class="orv_system"><p>[The possibility of a sudden end exists.]</p></div>
+<div class="orv_system"><p>Due to the effects of the 'Disconnected Film Theory', the materialisation of the 'Stage Transformation' is incomplete!</p></div>
+<div class="orv_system"><p>Within the applicable stage, the Characters 'Kim Namwoon' and the 'Monarch of the Great Abyss' will be treated as the same individual.</p></div>
+<div class="orv_system"><p>The 'Monarch of the Great Abyss's' stage compatibility is 87.351%!</p></div>
+<div class="orv_system"><p>The possibility of a sudden end exists.</p></div>
 <p class="orv_line">The fake becoming real on stage could only occur for a brief period of time. While everyone was focusing here, before the mysteriousness of this stage came undone – I had to finish everything.</p>
 <div class="orv_outergod"><p>【You…!!】</p></div>
 <p class="orv_line">I unhesitantly approached Kim Namwoon. I didn't sense myself growing any stronger from the effects of the Stage Transformation. However, I was filled with confidence, instead. The kind that a wolf might feel when hunting down a rabbit.</p>
@@ -219,24 +226,24 @@
 <p class="orv_line">The enraged 999th turn's Kim Namwoon pounced on me. Since he was under the influence of the ⸢Stage Transformation⸥, his mobility had become quite sluggish, as if he was that Kim Namwoon from the first scenario whose average stat points didn't even reach 10.</p>
 <p class="orv_line">The problem was, my own body was no different from back then during the first scenario, too.</p>
 <p class="orv_line">Swiiish!</p>
-<p class="orv_line">I lowered my head and dodged the dagger. I was reading the direction of his attacks through the [Omniscient Reader's Viewpoint] so evading him wasn't that difficult.</p>
-<div class="orv_system"><p>[The rules of the 'first scenario' will apply to the applicable 'Stage'!]</p></div>
-<div class="orv_system"><p>[Incarnation Bodies within the 'Stage' will grow stronger by killing another life.]</p></div>
+<p class="orv_line">I lowered my head and dodged the dagger. I was reading the direction of his attacks through the <strong>[Omniscient Reader's Viewpoint]</strong> so evading him wasn't that difficult.</p>
+<div class="orv_system"><p>The rules of the 'first scenario' will apply to the applicable 'Stage'!</p></div>
+<div class="orv_system"><p>Incarnation Bodies within the 'Stage' will grow stronger by killing another life.</p></div>
 <p class="orv_line">Memories continued to resurface.</p>
 <p class="orv_line">Right. We fought like this back in the first scenario. Just for the sake of 100 Coins as our survival fee, people had to die.</p>
 <p class="orv_line">Just for those 100 Coins, people killed each other.</p>
 <p class="orv_line">We managed to survive such a world.</p>
-<div class="orv_system"><p>[Many Constellations are recalling their 'first scenarios'.]</p></div>
+<div class="orv_system"><p>Many Constellations are recalling their 'first scenarios'.</p></div>
 <p class="orv_line">The 999th turn's Kim Namwoon pressed down on his temples as if he was suffering from migraine, then began cackling at me. 【Haha… So, this is how you want to play it? Quite interesting.】</p>
 <p class="orv_line">"But, you don't look like you're enjoying yourself at all?"</p>
 <p class="orv_line">His glare was filled with the prickly killing intent.</p>
-<div class="orv_system"><p>[The 'Monarch of the Great Abyss's' stage compatibility has decreased slightly!]</p></div>
+<div class="orv_system"><p>The 'Monarch of the Great Abyss's' stage compatibility has decreased slightly!</p></div>
 <p class="orv_line">Even if the effects of the ⸢Stage Transformation⸥ was absolute, this particular stage was recreated through a simple trick. The longer I took, the weaker the connection between the 999th turn's Kim Namwoon to his 3rd turn counterpart would become.</p>
-<div class="orv_constellation"><p>[What the hell, grasshopper man! What's going on here? What's happening?!]</p></div>
+<div class="orv_constellation"><p>What the hell, grasshopper man! What's going on here? What's happening?!</p></div>
 <p class="orv_line">The 3rd turn's Kim Namwoon raised himself up in the corner. He had been altered into a small toy robot due to the effects of the ⸢Stage Transformation⸥. He awkwardly clung onto my leg.</p>
 <p class="orv_line">The 999th turn's Kim Namwoon saw this scene and muttered out. 【How disappointing. To think that I'd get killed by a bastard like him and end up as a trashcan robot.】</p>
-<div class="orv_constellation"><p>[What the hell are you talking about? You wanna die, buddy?? Hey, grasshopper man! Kill that son of a bitch!]</p></div>
-<div class="orv_system"><p>[If there is no killing taking place in the next five minutes, all Incarnation Bodies within the cabin will be exterminated!]</p></div>
+<div class="orv_constellation"><p>What the hell are you talking about? You wanna die, buddy?? Hey, grasshopper man! Kill that son of a bitch!</p></div>
+<div class="orv_system"><p>If there is no killing taking place in the next five minutes, all Incarnation Bodies within the cabin will be exterminated!</p></div>
 <p class="orv_line">This would be my first time seeing the ⸢Stage Transformation⸥ imposing such a strict restriction.</p>
 <p class="orv_line">Wasn't this almost at the level of an actual main scenario?</p>
 <div class="orv_outergod"><p>【Die!】</p></div>
@@ -244,15 +251,15 @@
 <p class="orv_line">Kim Namwoon's attacks scratched the subway's steel doors and floors. The power behind each of his thudding attacks was gradually getting stronger.</p>
 <p class="orv_line">The aura of Chaos was faintly swirling around him. The effects of the ⸢Stage Transformation⸥ on him was already declining. The odds of victory would tilt towards his favour if this continued on.</p>
 <p class="orv_line">However, the 999th turn's Kim Namwoon seemed to be getting more and more anxious, instead.</p>
-<div class="orv_system"><p>[Character, 'Monarch of the Great Abyss', is getting agitated.]</p></div>
-<div class="orv_system"><p>[Character, 'Monarch of the Great Abyss', is urgently surveying his surroundings.]</p></div>
+<div class="orv_system"><p>Character, 'Monarch of the Great Abyss', is getting agitated.</p></div>
+<div class="orv_system"><p>Character, 'Monarch of the Great Abyss', is urgently surveying his surroundings.</p></div>
 <p class="orv_line">Why was this? Why did his complexion look so poor? I took a closer look to find his cheeks and neck soaked in cold sweat.</p>
-<div class="orv_system"><p>[Character, 'Monarch of the Great Abyss', detests this space.]</p></div>
+<div class="orv_system"><p>Character, 'Monarch of the Great Abyss', detests this space.</p></div>
 <div class="orv_outergod"><p>【You rat-like bastard…!!】</p></div>
-<div class="orv_system"><p>[A portion of Constellations are suspicious of the 'Outer God King's' Status.]</p></div>
-<div class="orv_system"><p>[A small number of Constellations are scorning the small fry-like utterance.]</p></div>
+<div class="orv_system"><p>A portion of Constellations are suspicious of the 'Outer God King's' Status.</p></div>
+<div class="orv_system"><p>A small number of Constellations are scorning the small fry-like utterance.</p></div>
 <p class="orv_line">The movements of the 999th turn's Kim Namwoon were getting simpler perhaps due to his increasing anxiety.</p>
-<div class="orv_system"><p>[If there is no killing taking place in the next three minutes, all Incarnation Bodies within the cabin will be exterminated!]</p></div>
+<div class="orv_system"><p>If there is no killing taking place in the next three minutes, all Incarnation Bodies within the cabin will be exterminated!</p></div>
 <p class="orv_line">Three minutes remained.</p>
 <p class="orv_line">"Dokja-ssi? What's going on here…?"</p>
 <p class="orv_line">And that was when I heard a certain voice. Kim Namwoon and I both turned our heads in the direction of where that voice came from.</p>
@@ -269,7 +276,7 @@
 <p class="orv_line">Slice-!</p>
 <p class="orv_line">Sliced strands of hair danced in the air. Yoo Sangah and her hardened expression were using agile movements to evade Kim Namwoon's attacks. As a matter of fact, she was far more agile than I was.</p>
 <div class="orv_outergod"><p>【Not bad!】</p></div>
-<div class="orv_system"><p>[Character, 'Monarch of the Great Abyss', has received the effects of 'Blackening'!]</p></div>
+<div class="orv_system"><p>Character, 'Monarch of the Great Abyss', has received the effects of 'Blackening'!</p></div>
 <p class="orv_line">However, his movements should grow faster and faster with passing time.</p>
 <p class="orv_line">⸢On that day, the Delusion Demon came to understand his new world.⸥</p>
 <p class="orv_line">The effects of the Stage Transformation was getting stronger.</p>
@@ -281,14 +288,14 @@
 <p class="orv_line">⸢If that boy didn't catch any insects that day…⸥</p>
 <p class="orv_line">Lee Gilyoung was also here, with a babyish face of a young boy. He looked exactly like how I remembered during the first scenario.</p>
 <p class="orv_line">The boy in despair after losing his parent was extending his palm out with a determined expression.</p>
-<div class="orv_system"><p>[Constellation, 'Ruler of the Deepest Pit', is laughing ominously.]</p></div>
+<div class="orv_system"><p>Constellation, 'Ruler of the Deepest Pit', is laughing ominously.</p></div>
 <p class="orv_line">Several bright-yellow grasshoppers rested on the boy's palm.</p>
 <p class="orv_line">"Thanks."</p>
 <p class="orv_line">I grabbed the grasshoppers and started running. The insects were then crushed along with crunching noises.</p>
-<div class="orv_constellation"><p>[You killed a lifeform.]</p></div>
-<div class="orv_system"><p>[Your Incarnation Body has been strengthened due to the effects of the Stage Transformation!]</p></div>
-<div class="orv_constellation"><p>[You killed a lifeform.]</p></div>
-<div class="orv_system"><p>[Your Incarnation Body has been strengthened due to the effects of the Stage Transformation!]</p></div>
+<div class="orv_constellation"><p>You killed a lifeform.</p></div>
+<div class="orv_system"><p>Your Incarnation Body has been strengthened due to the effects of the Stage Transformation!</p></div>
+<div class="orv_constellation"><p>You killed a lifeform.</p></div>
+<div class="orv_system"><p>Your Incarnation Body has been strengthened due to the effects of the Stage Transformation!</p></div>
 <p class="orv_line">…</p>
 <p class="orv_line">My physical strength increased explosively as I ran inside the cabin.</p>
 <p class="orv_line">The back of Kim Namwoon's head, currently cackling away like a madman, was now right before my nose.</p>
@@ -300,7 +307,7 @@
 <p class="orv_line">Because there was no need to.</p>
 <p class="orv_line">⸢The knife continued to leave behind scratches. Although blood did trickle down, the blade failed to gouge out the flesh beneath the skin.⸥</p>
 <p class="orv_line">The final scenes of the first scenario flitted past my view as if it was overlapping with reality.</p>
-<p class="orv_line">Kim Namwoon's attacks continued to get faster, but he failed to break past Lee Hyunsung's strengthened [Steel Transformation].</p>
+<p class="orv_line">Kim Namwoon's attacks continued to get faster, but he failed to break past Lee Hyunsung's strengthened <strong>[Steel Transformation]</strong>.</p>
 <div class="orv_outergod"><p>【This, just what the hell is this…】</p></div>
 <p class="orv_line">The 999th turn's Kim Namwoon spat out expletives and wielded his dagger. However, no matter how many times he swung it, there was no use.</p>
 <p class="orv_line">Because the end of this 'Stage' was already set in stone.</p>
@@ -312,9 +319,9 @@
 <p class="orv_line">The surrounding space began distorting; the pool of blood was now spreading on the once-empty floor of the cabin. It was not the blood we had shed.</p>
 <div class="orv_outergod"><p>【There's, there's just no way…!】</p></div>
 <p class="orv_line">The shivering 999th turn's Kim Namwoon plopped down on the spot.</p>
-<div class="orv_system"><p>[Giant Story, 'Delusional Design', is losing control!]</p></div>
+<div class="orv_system"><p>Giant Story, 'Delusional Design', is losing control!</p></div>
 <p class="orv_line">Right here in this place was where his Story, 'Delusional Design' had germinated.</p>
-<p class="orv_line">Kim Namwoon relied on [Abnormal Adaptability] to forge a new world he had to live in – but what about the version of him who had witnessed the end of that 'world'? What kind of meaning did that world hold for him?</p>
+<p class="orv_line">Kim Namwoon relied on <strong>[Abnormal Adaptability]</strong> to forge a new world he had to live in – but what about the version of him who had witnessed the end of that 'world'? What kind of meaning did that world hold for him?</p>
 <div class="orv_outergod"><p>【C-crap like t-this, won't…!】</p></div>
 <p class="orv_line">Corpses on the floor were glaring at us, their eyes wide open.</p>
 <p class="orv_line">Those that I failed to protect – those with their heads missing or their hearts pierced through. Those dying while vomiting blood were now looking at us.</p>
@@ -326,7 +333,7 @@
 <p class="orv_line">⸢"…I've been thinking about this sometimes. Maybe I should've been the one to die that day. Captain, you also think that way, don't you?"⸥</p>
 <p class="orv_line">The psychopath, Kim Namwoon, the Demon of Delusion.</p>
 <p class="orv_line">Even after I finished reading the entirety of the original novel, my opinion on that guy hadn't changed.</p>
-<div class="orv_system"><p>[Exclusive skill, 'Reading Comprehension', is activating!]</p></div>
+<div class="orv_system"><p>Exclusive skill, 'Reading Comprehension', is activating!</p></div>
 <p class="orv_line">However, that couldn't have been Kim Namwoon's everything. The 'Ways of Survival' I read was no doubt nothing more than just the tip of an iceberg called this world.</p>
 <p class="orv_line">And so, the 'Kim Namwoon' I didn't know must have existed somewhere, too.</p>
 <p class="orv_line">Kim Namwoon, who ended up seeing a world's end for someone's sake.</p>
@@ -349,22 +356,22 @@
 <p class="orv_line">⸢A new world requires a new story.⸥</p>
 <p class="orv_line">That was the price for completing the 'One Single Story'.</p>
 <p class="orv_line">We lived for the purpose of completing this petty 'gi-seung-jeon-gyeol'.</p>
-<div class="orv_system"><p>[Your 'hidden scenario' is on the verge of completion!]</p></div>
-<div class="orv_system"><p>[All of your Stories are desiring your 'Conclusion'!]</p></div>
-<div class="orv_system"><p>[Every Constellation in &lt;Star Stream&gt; can sense that your 'Conclusion' is drawing near!]</p></div>
+<div class="orv_system"><p>Your 'hidden scenario' is on the verge of completion!</p></div>
+<div class="orv_system"><p>All of your Stories are desiring your 'Conclusion'!</p></div>
+<div class="orv_system"><p>Every Constellation in &lt;Star Stream&gt; can sense that your 'Conclusion' is drawing near!</p></div>
 <p class="orv_line">And now, I had to see the end of this damn story.</p>
 <div class="orv_outergod"><p>【Ah, aaah, aaaah…!】</p></div>
 <p class="orv_line">The focus in Kim Namwoon's eyes blurred and he brought the tip of the broken blade closer to his neck.</p>
-<div class="orv_system"><p>[15 seconds remaining until the application of the 'Stage Transformation's' rules.]</p></div>
-<div class="orv_system"><p>[Once the time limit has been reached, all Incarnations who didn't obey the rules will be killed instantly.]</p></div>
+<div class="orv_system"><p>15 seconds remaining until the application of the 'Stage Transformation's' rules.</p></div>
+<div class="orv_system"><p>Once the time limit has been reached, all Incarnations who didn't obey the rules will be killed instantly.</p></div>
 <p class="orv_line">Yoo Sangah and Lee Gilyoung were looking at this side. Even the 3rd turn's Kim Namwoon, currently in the figure of a toy robot, was looking at me also.</p>
 <p class="orv_line">If the time limit elapsed in this fashion, then the 999th turn's Kim Namwoon would die for sure on this stage. The stage itself might be fake, but his Story infused to this place was all real.</p>
 <p class="orv_line">He'd die in this place. Just like those he had killed. Or, like how it was for him in the 3rd turn.</p>
 <p class="orv_line">He'd die a miserable death while accepting his 'life'.</p>
 <p class="orv_line">The problem, however, was with the 3rd turn's Kim Namwoon. He'd also perish due to the fact that he was connected to his 999th turn counterpart through the 'Disconnected Film Theory'.</p>
 <p class="orv_line">I couldn't let that happen.</p>
-<div class="orv_system"><p>[The 'Stage Transformation' has been cancelled!]</p></div>
-<p class="orv_line">The surrounding landscape changed and the stage disappeared. The memories connected through the [Disconnected Film Theory] were fading away. The subway scattered away, and all the actors involved also returned to their previous positions.</p>
+<div class="orv_system"><p>The 'Stage Transformation' has been cancelled!</p></div>
+<p class="orv_line">The surrounding landscape changed and the stage disappeared. The memories connected through the <strong>[Disconnected Film Theory]</strong> were fading away. The subway scattered away, and all the actors involved also returned to their previous positions.</p>
 <p class="orv_line">However, the 999th turn's Kim Namwoon remained on his knees.</p>
 <div class="orv_image"><img src="../../../assets/images/479 - However, the 999th turn's Kim Namwoon remained on his knees.jpg" alt="" loading="lazy"></div>
 <div class="orv_notice"><p>* Official novel illustration (canonical)</p></div>
@@ -372,7 +379,7 @@
 <p class="orv_line">His ruined and frayed Story was scattering away. I quietly stared at him and his lowered head, before lightly kicking away the dagger he was still holding.</p>
 <p class="orv_line">"Kim Namwoon, you can't be saved."</p>
 <p class="orv_line">Then, I pulled out the Unbroken Faith. The gleaming white swordlight seemed to screech out from the blade. I deliberately raised the sword up high so that everyone could see me. And then…</p>
-<div class="orv_system"><p>[Every Constellation of &lt;Star Stream&gt; is waiting expectantly of the 'Outer God King's' death!]</p></div>
+<div class="orv_system"><p>Every Constellation of &lt;Star Stream&gt; is waiting expectantly of the 'Outer God King's' death!</p></div>
 <div class="orv_outergod"><p>【No!!】</p></div>
 <p class="orv_line">Along with a horrifying, desperate cry coming from somewhere, my Unbroken Faith cut something down.</p>
 <br>
@@ -382,18 +389,12 @@
             <a href="./ch_478"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_480">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="479" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="529" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="478" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="478" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

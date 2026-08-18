@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 44: Ep. 10 – Future War, II</title>
     <meta property="og:title" content="Ch 44: Ep. 10 – Future War, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,34 +177,34 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00044.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 44: Ep. 10 – Future War, II</h1></div>
 <p class="orv_line">As soon as my hand wrapped around the flag, I felt a strong energy rising in my body. Originally, this was something the third turn Yoo Joonghyuk should have but… it didn't matter.</p>
 <p class="orv_line">Wasn't he already strong?</p>
-<div class="orv_system"><p>['Kim Dokja' has occupied the white flag.]</p></div>
-<div class="orv_system"><p>[If the white flag doesn't change owners in the next five minutes, Chungmuro will be under his control.]</p></div>
-<div class="orv_system"><p>[If the flag is snatched in the next five minutes, the timer will reset.]</p></div>
+<div class="orv_system"><p>'Kim Dokja' has occupied the white flag.</p></div>
+<div class="orv_system"><p>If the white flag doesn't change owners in the next five minutes, Chungmuro will be under his control.</p></div>
+<div class="orv_system"><p>If the flag is snatched in the next five minutes, the timer will reset.</p></div>
 <p class="orv_line">A timer appeared in the air.</p>
-<div class="orv_system"><p>[5:00]</p></div>
+<div class="orv_system"><p>5:00</p></div>
 <p class="orv_line">Gong Pildu pointed at me with a pale face.</p>
 <p class="orv_line">"Take away the flag! You only have to snatch it in five minutes!"</p>
 <p class="orv_line">The alliance member belatedly regained their minds and started rushing towards me. Oho, it was like this?</p>
@@ -208,7 +215,7 @@
 <p class="orv_line">"T-This?"</p>
 <p class="orv_line">"I picked it out for you. Throw away what you previously used.</p>
 <p class="orv_line">A big smile appeared on Lee Hyunsung's face.</p>
-<div class="orv_system"><p>[The character 'Lee Hyunsung' has used the exclusive skill 'Wide-Area Defense!]</p></div>
+<div class="orv_system"><p>The character 'Lee Hyunsung' has used the exclusive skill 'Wide-Area Defense!</p></div>
 <p class="orv_line">A translucent shield centred on Heracles' Shield surrounded our party. Indeed, this was the secondary skill attached to an A-grade item.</p>
 <p class="orv_line">"Wah, what is this?"</p>
 <p class="orv_line">People groaned as they ran into the air shield. They tried to break the protective shields with their old weapons but it couldn't be broken with E-grade or F-grade items. In the end, the alliance members had only one place to turn to.</p>
@@ -219,17 +226,17 @@
 <p class="orv_line">"Pildu, did I tell you to get up yet?"</p>
 <p class="orv_line">"Heok?"</p>
 <p class="orv_line">Gong Pildu's head once again slammed into the ground as he fell flat.</p>
-<div class="orv_system"><p>[Under the terms of the contract, 'Command Rights' is activated!]</p></div>
+<div class="orv_system"><p>Under the terms of the contract, 'Command Rights' is activated!</p></div>
 <p class="orv_line">"Keep your head on the ground until I tell you to get up."</p>
 <p class="orv_line">The perplexed alliance members shouted at Gong Pildu.</p>
 <p class="orv_line">"P-Pildu-ssi?"</p>
 <p class="orv_line">"P-Pull me up! Quickly!"</p>
 <p class="orv_line">The terrified alliance members tried to raise Gong Pildu up but it wasn't easy because Gong Pildu was very heavy.</p>
 <p class="orv_line">"And… it is annoying so turn off the turrets."</p>
-<div class="orv_system"><p>[The character 'Gong Pildu' has released 'Armed Zone Lv. 6!]</p></div>
+<div class="orv_system"><p>The character 'Gong Pildu' has released 'Armed Zone Lv. 6!</p></div>
 <p class="orv_line">"T-This bastard…!"</p>
 <p class="orv_line">"Shut your mouth as well. Stay silent for 30 minutes."</p>
-<div class="orv_system"><p>[Under the terms of the contract, 'Command Rights' is activated!]</p></div>
+<div class="orv_system"><p>Under the terms of the contract, 'Command Rights' is activated!</p></div>
 <p class="orv_line">"Mmph mprh mmph!"</p>
 <p class="orv_line">The alliance members became completely panic stricken once Gong Pildu became powerless with just a few words. Of course, the same was true for Lee Hyunsung, Yoo Sangah and Jung Heewon.</p>
 <p class="orv_line">I said with a smile, "Now everyone seems to have figured out the situation and I'd like to talk to you…"</p>
@@ -255,7 +262,7 @@
 <p class="orv_line">There was no need to wait for one minute. People had already made up their minds. Some of the alliance members walked over to me with determined expressions and bowed their heads. They were relatively young.</p>
 <p class="orv_line">"Thank you in advance. I was wrong in the past. Thank you for your generous forgiveness."</p>
 <p class="orv_line">"It is a pleasure. You don't have to ask for forgiveness from me."</p>
-<div class="orv_system"><p>[Some members within the group fell a sense of trust towards you.]</p></div>
+<div class="orv_system"><p>Some members within the group fell a sense of trust towards you.</p></div>
 <p class="orv_line">However, several others decided to leave Chungmuro. They tried to raise the fallen Gong Pildu.</p>
 <p class="orv_line">I watched them and said, "Ah, leave Gong Pildu. That guy is mine."</p>
 <p class="orv_line">"What?"</p>
@@ -266,25 +273,25 @@
 <p class="orv_line">But there were no more defectors.</p>
 <p class="orv_line">The five men cursed a few times before heading for the tunnel towards Myeongdong. They wanted to gain land elsewhere and become new 'landlords'. Unfortunately, their plan would fail. In the fourth scenario, the people 'wandering' were good prey to predators.</p>
 <p class="orv_line">Once five minutes passed, the system messages popped up.</p>
-<div class="orv_system"><p>[The sub scenario has ended.]</p></div>
-<div class="orv_system"><p>[You have earned 1,000 coins as compensation.]</p></div>
-<div class="orv_system"><p>[The white flag will show its true effects to the Chungmuro representative.]</p></div>
-<div class="orv_system"><p>[Current Group: 24 people.]</p></div>
-<div class="orv_system"><p>[Your reputation is still too weak to gain the title of king.]</p></div>
+<div class="orv_system"><p>The sub scenario has ended.</p></div>
+<div class="orv_system"><p>You have earned 1,000 coins as compensation.</p></div>
+<div class="orv_system"><p>The white flag will show its true effects to the Chungmuro representative.</p></div>
+<div class="orv_system"><p>Current Group: 24 people.</p></div>
+<div class="orv_system"><p>Your reputation is still too weak to gain the title of king.</p></div>
 <p class="orv_line">The title of king…</p>
 <p class="orv_line">Indeed, it was hard to get the title of king with just a white flag. In order to walk the proper king's road, I had to change the colour of the flag. Of course, the white colour had its own 'authority'.</p>
-<div class="orv_system"><p>[You have gained control of the Chungmuro Group through the effect of the white flag.]</p></div>
-<div class="orv_system"><p>[You can punish a group member who goes against you.]</p></div>
-<div class="orv_system"><p>[There are currently five people who have left.]</p></div>
+<div class="orv_system"><p>You have gained control of the Chungmuro Group through the effect of the white flag.</p></div>
+<div class="orv_system"><p>You can punish a group member who goes against you.</p></div>
+<div class="orv_system"><p>There are currently five people who have left.</p></div>
 <p class="orv_line">I could give a 'punishment' to the five distant men but I left it alone. Terror was effective in controlling people but such tyranny wasn't suitable for me.</p>
 <p class="orv_line">"Well, thank you."</p>
 <p class="orv_line">I said while looking everyone in the eyes.</p>
 <p class="orv_line">Lee Hyunsung was looking at me with respect while Yoo Sangah and Jung Heewon nodded. The rest of them were looking at me with similar expressions. They were still rabble but it wasn't a bad start.</p>
 <p class="orv_line">Shortly afterwards, Bihyung appeared in the air.</p>
-<div class="orv_constellation"><p>[Ohu, you have voted for a representative. Then let's start the game!]</p></div>
-<div class="orv_system"><p>[The fourth main scenario is activated!]</p></div>
+<div class="orv_constellation"><p>Ohu, you have voted for a representative. Then let's start the game!</p></div>
+<div class="orv_system"><p>The fourth main scenario is activated!</p></div>
 <div class="orv_window">
-<h3 class="orv_window_title">[Main Scenario #4 – Struggle for the Flag]</h3>
+<h3 class="orv_window_title">Main Scenario #4 – Struggle for the Flag</h3>
 <p>Category: Main</p>
 <p>Difficulty: C</p>
 <p>Clear Conditions: (Hidden due to content length)</p>
@@ -295,7 +302,7 @@
 <p class="orv_line">I press the clear conditions.</p>
 <p class="orv_line">Numerous messages appeared in front of me.</p>
 <div class="orv_window">
-<h3 class="orv_window_title">[Clear Conditions]</h3>
+<h3 class="orv_window_title">Clear Conditions</h3>
 <p>1. Every station has a 'flag' and 'flagpole' that can be occupied.</p>
 <p>* The flag can only be carried by the 'representative' of the station.</p>
 <p>2. You need to protect the flag from other station groups. If a flag is taken away by another group, the losing group will be taken over by the group that occupied the flag.</p>
@@ -323,8 +330,8 @@
 <p class="orv_line">"Line 6. If we go to the tunnel, we can use the transit route…"</p>
 <p class="orv_line">"Then we should split the group. How about a few people guarding this place while others go to scout?"</p>
 <p class="orv_line">I didn't have to say anything as they actively exchanged opinions. It was somewhat heartwarming.</p>
-<div class="orv_system"><p>[The activation of the scenario will turn off Chungmuro Station's safety borders.]</p></div>
-<div class="orv_system"><p>[You can now freely move to other stations.]</p></div>
+<div class="orv_system"><p>The activation of the scenario will turn off Chungmuro Station's safety borders.</p></div>
+<div class="orv_system"><p>You can now freely move to other stations.</p></div>
 <p class="orv_line">As people were exchanging their opinions, I approached Gong Pildu.</p>
 <p class="orv_line">"Gong Pildu, you can speak now."</p>
 <p class="orv_line">The command was turned off but Gong Pildu couldn't easily open his mouth.</p>
@@ -350,18 +357,12 @@
             <a href="./ch_43"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_45">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="44" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="96" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="43" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="43" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

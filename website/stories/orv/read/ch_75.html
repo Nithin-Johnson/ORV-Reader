@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 75: Ep. 15 – A Kingless World, V</title>
     <meta property="og:title" content="Ch 75: Ep. 15 – A Kingless World, V" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00075.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 75: Ep. 15 – A Kingless World, V</h1></div>
 <p class="orv_line">The frightened people looked at Han Sooyoung at the same time.</p>
@@ -206,7 +213,7 @@
 <p class="orv_line">I stared at Han Sooyoung and opened my mouth. "But for you to say this…"</p>
 <p class="orv_line">"Do you understand. Everyone should act correctly!" Han Sooyoung said quickly before turning and running away. Her stamina was low so she couldn't run far. "Pant, pant! Why are you chasing me?"</p>
 <p class="orv_line">"You even plagiarized the words of the novel?"</p>
-<div class="orv_quote"><p>「 "If you can't become strong enough so that no one can touch you, make trusted colleagues." 」</p></div>
+<div class="orv_quote"><p>"If you can't become strong enough so that no one can touch you, make trusted colleagues."</p></div>
 <p class="orv_line">This was the advice that Yoo Joonghyuk gave to survivors in Ways of Survival. Han Sooyoung shouted, "How is it plagiarism? These lines are from my novel!"</p>
 <p class="orv_line">"Then why are you running away?"</p>
 <p class="orv_line">"…No reason! Why are you chasing me?"</p>
@@ -228,13 +235,13 @@
 <p class="orv_line">I took her smartphone away from her. The upset Han Sooyoung clung to my shoulders and reached out an arm.</p>
 <p class="orv_line">"What? Give it to me!"</p>
 <p class="orv_line">The text version was on her desktop. She was relaxed.</p>
-<div class="orv_system"><p>[SSSSS-grade Infinite Regressor]</p></div>
+<div class="orv_system"><p>SSSSS-grade Infinite Regressor</p></div>
 <p class="orv_line">Let's see…</p>
 <p class="orv_line">I nervously clicked on the app file. I wondered if her text version would be invisible to everyone else like mine.</p>
 <p class="orv_line">However, that wasn't the case. A page in the middle of the book appeared, like I had been reading the novel.</p>
-<div class="orv_quote"><p>「 …Yoo Joonhyun quietly opened his status window. He wanted to check the Sage's Eye that he just received. 」</p></div>
+<div class="orv_quote"><p>…Yoo Joonhyun quietly opened his status window. He wanted to check the Sage's Eye that he just received.</p></div>
 <div class="orv_window">
-<h3 class="orv_window_title">[Character Summary]</h3>
+<h3 class="orv_window_title">Character Summary</h3>
 <p>Name: Yoo Joonhyun</p>
 <p>Age: 27 years old.</p>
 <p>Star Contract: ???</p>
@@ -243,7 +250,7 @@
 <p>Stigma: Regression Lv. 3</p>
 <p>Overall Stats: Physique Lv. 24, Strength Lv. 24, Agility Lv. 25, Magic Power Lv. 23.</p>
 </div>
-<div class="orv_quote"><p>「 Yoo Joonhyun laughed as he confirmed his status window.<br>"Huhu, I finally got Sage's Eye. I am lucky this regression." 」</p></div>
+<div class="orv_quote"><p>Yoo Joonhyun laughed as he confirmed his status window.<br>"Huhu, I finally got Sage's Eye. I am lucky this regression."</p></div>
 <p class="orv_line">I read up to there and looked at the frozen Han Sooyoung.</p>
 <p class="orv_line">"Don't you have a conscience?"</p>
 <p class="orv_line">"…What?"</p>
@@ -272,13 +279,13 @@
 <p class="orv_line">They might be saying something like, "This edition is ruined anyway so sell a lot of coin products…"</p>
 <p class="orv_line">The next moment, the 'Exchange' window and 'Dokkaebi Bag' window opened at the same time.</p>
 <p class="orv_line">This brat, he didn't have time to send a message?</p>
-<div class="orv_system"><p>[Many constellations are dissatisfied with the sudden advertisements.]</p></div>
+<div class="orv_system"><p>Many constellations are dissatisfied with the sudden advertisements.</p></div>
 <p class="orv_line">Furthermore, he didn't forget to play the advertisements. I opened up the sales history on the Exchange first.</p>
-<div class="orv_system"><p>[The item 'Fire Dragon's Scales' has been sold for 8,000 coins.]</p></div>
-<div class="orv_system"><p>[The item 'Fire Dragon's Bones' has been sold for 5,000 coins.]</p></div>
+<div class="orv_system"><p>The item 'Fire Dragon's Scales' has been sold for 8,000 coins.</p></div>
+<div class="orv_system"><p>The item 'Fire Dragon's Bones' has been sold for 5,000 coins.</p></div>
 <p class="orv_line">Unexpectedly, there was someone who bought these expensive items.</p>
 <p class="orv_line">The items that weren't meant for sale were also sold.</p>
-<div class="orv_system"><p>[The item 'Fire Dragon's Bones' has been sold for 22,222 coins.]</p></div>
+<div class="orv_system"><p>The item 'Fire Dragon's Bones' has been sold for 22,222 coins.</p></div>
 <p class="orv_line">…The items that I had stored on the Exchange were sold. Someone must be desperate for the fire dragon's bones. If I knew this, I would've set the price as 99,999.</p>
 <p class="orv_line">The incarnations that possessed such power at present were Anna Croft, Ranveer Khan of India and China's Feihu… in any case, that person was ignorant.</p>
 <p class="orv_line">I opened the Dokkaebi Bag and bought some items that I needed. Then Han Sooyoung spoke to me in a timely manner.</p>
@@ -288,9 +295,9 @@
 <p class="orv_line">"Hrmm…"</p>
 <p class="orv_line">I pulled out an item I just bought.</p>
 <p class="orv_line">"Now, swear here."</p>
-<div class="orv_system"><p>[The item Temporary Pledge has been used.]</p></div>
+<div class="orv_system"><p>The item Temporary Pledge has been used.</p></div>
 <div class="orv_window">
-<h3 class="orv_window_title">[Temporary Pledge]</h3>
+<h3 class="orv_window_title">Temporary Pledge</h3>
 <p>1. Kim Dokja (Gap) will sign a contract with Han Sooyoung (Eul) until the sub scenario currently in progress is over.</p>
 <p>2. Kim Dokja (Gap) and Han Sooyoung (Eul) will not harm each other until the sub scenario currently in progress is over.</p>
 <p>3. During the contract period, Kim Dokja (Gap) and Han Sooyoung (Eul) will sleep alternately to prepare for the 'sleeping penalty'.</p>
@@ -311,11 +318,11 @@
 <p class="orv_line">"What is it?"</p>
 <p class="orv_line">"We will share information with each other. How about it? I have a lot to ask you. You should answer honestly. I have Lie Detection."</p>
 <p class="orv_line">She already got something that I couldn't obtain?</p>
-<div class="orv_system"><p>[The character 'Han Sooyoung' has used 'Lie Detection Lv. 1'.]</p></div>
+<div class="orv_system"><p>The character 'Han Sooyoung' has used 'Lie Detection Lv. 1'.</p></div>
 <p class="orv_line">…It was real.</p>
 <p class="orv_line">Han Sooyoung got to the point. "What is your attribute?"</p>
 <p class="orv_line">"I don't know."</p>
-<div class="orv_system"><p>[The character Han Sooyoung has confirmed that your words are true.]</p></div>
+<div class="orv_system"><p>The character Han Sooyoung has confirmed that your words are true.</p></div>
 <p class="orv_line">Han Sooyoung made a stupid expression and raised a hand to her temple.</p>
 <p class="orv_line">"…Is this broken?"</p>
 <p class="orv_line">"No, it is normal. Then ask me the next question quickly. I will only answer three. For your reference, you have already used one."</p>
@@ -325,14 +332,14 @@
 <p class="orv_line">I figured that this question would emerge.</p>
 <p class="orv_line">"My plan was ruined because of you. If it wasn't for you… do you know how hard I prepared those apostles only for them to be eliminated? If I was sitting on the throne, I would've been prepared for the next scenario by now…"</p>
 <p class="orv_line">"If you sat on the throne, Seoul would've perished."</p>
-<div class="orv_system"><p>[The character Han Sooyoung has confirmed that your words are true.]</p></div>
+<div class="orv_system"><p>The character Han Sooyoung has confirmed that your words are true.</p></div>
 <p class="orv_line">Han Sooyoung frowned. "Why does the skill keep breaking?"</p>
 <p class="orv_line">"It isn't broken. We would've been ruined if anyone, not just you or me, sat on the throne."</p>
-<div class="orv_system"><p>[The character Han Sooyoung has confirmed that your words are true.]</p></div>
+<div class="orv_system"><p>The character Han Sooyoung has confirmed that your words are true.</p></div>
 <p class="orv_line">Han Sooyoung's eyes widened.</p>
 <p class="orv_line">"How do you know? Where did you get off? Why do you know this when I don't?"</p>
 <p class="orv_line">"I'm not someone who got off."</p>
-<div class="orv_system"><p>[The character Han Sooyoung has confirmed that your words are true.]</p></div>
+<div class="orv_system"><p>The character Han Sooyoung has confirmed that your words are true.</p></div>
 <p class="orv_line">Han Sooyoung was extremely shocked and managed to squeeze out a question after a moment.</p>
 <p class="orv_line">"You…how far did you read in Ways of Survival?"</p>
 <p class="orv_line">"Your three questions are over."</p>
@@ -341,8 +348,8 @@
 <p class="orv_line">Then something that sounded like horse hooves were hard in the distance.</p>
 <p class="orv_line">I told the muttering Han Sooyoung to be silent and we quickly fled to the rear of a nearby building. Something was approaching.</p>
 <p class="orv_line">It was in the form of a human…? I used Character List on the people rushing towards me in the cloud of dust.</p>
-<div class="orv_system"><p>[The information of this person can't be read in 'Character List'.]</p></div>
-<div class="orv_system"><p>[This person isn't registered in 'Character List'.]</p></div>
+<div class="orv_system"><p>The information of this person can't be read in 'Character List'.</p></div>
+<div class="orv_system"><p>This person isn't registered in 'Character List'.</p></div>
 <p class="orv_line">Looking closely, I could see that all the people running had fur sprouting from their whole body.</p>
 <p class="orv_line">Their faces were human but their bodies were monster-like and twice as big as a human. They seemed like bipedal wolves.</p>
 <p class="orv_line">Looking closely, one monster in the lead was holding a man by the neck. It was the biggest of the monsters.</p>
@@ -370,7 +377,7 @@
 <p class="orv_line">"Who is that guy?"</p>
 <p class="orv_line">"He is Song Minwoo."</p>
 <p class="orv_line">Song Minwoo? It definitely wasn't the name of a character. Yet I had heard the name somewhere…</p>
-<div class="orv_system"><p>[The 6th grade outside species 'Werewolf Song Minwoo' is searching the surroundings.]</p></div>
+<div class="orv_system"><p>The 6th grade outside species 'Werewolf Song Minwoo' is searching the surroundings.</p></div>
 <p class="orv_line">I could see the face of the person in the distance. Ah…perhaps.</p>
 <p class="orv_line">A recent memory came to mind. It was the dream I had a few hours ago. I remembered my days in high school and the gangsters who bullied me. Many years had passed but his facial expression seemed to fit. No matter how much time passed, I couldn't forget that name on the name badge.</p>
 <p class="orv_line">Song Minwoo… it must be him. But that bastard was someone 'who got off?' That gangster read a novel?</p>
@@ -388,18 +395,12 @@
             <a href="./ch_74"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_76">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="75" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="106" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="74" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="74" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

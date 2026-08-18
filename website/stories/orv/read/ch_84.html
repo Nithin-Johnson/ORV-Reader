@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 84: Ep. 17 – SSS-grade Talent, III</title>
     <meta property="og:title" content="Ch 84: Ep. 17 – SSS-grade Talent, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00084.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 84: Ep. 17 – SSS-grade Talent, III</h1></div>
 <p class="orv_line">There were three ways to wake up a disaster meteorite.</p>
@@ -206,16 +213,16 @@
 <p class="orv_line">Lee Seolhwa looked at me quietly. "What if I don't want to?"</p>
 <p class="orv_line">"You'll die here."</p>
 <p class="orv_line">Poisoner Lee Seolhwa had an expression of ridicule on her face. Her hands moved and the humans praying towards the disaster turned towards me at the same time.</p>
-<div class="orv_system"><p>[The eighth grade outside species 'Lower Human Nam Minhyuk' has showed hostility towards you.]</p></div>
-<div class="orv_system"><p>[The eighth grade outside species 'Lower Human Jung Minji' has showed hostility towards you.]</p></div>
-<div class="orv_system"><p>[The eighth grade outside species 'Lower Human Kin Gapil' has showed hostility towards you.]</p></div>
+<div class="orv_system"><p>The eighth grade outside species 'Lower Human Nam Minhyuk' has showed hostility towards you.</p></div>
+<div class="orv_system"><p>The eighth grade outside species 'Lower Human Jung Minji' has showed hostility towards you.</p></div>
+<div class="orv_system"><p>The eighth grade outside species 'Lower Human Kin Gapil' has showed hostility towards you.</p></div>
 <p class="orv_line">Antennae grew on their heads and their hands turned sharp like rakes. These wanderers seemed to become transformed humans rather than wolves. There was a worrisome point.</p>
 <p class="orv_line">"…It is strange. Isn't transforming humans the power of the disaster meteorite?"</p>
 <p class="orv_line">I murmured at the same time that Lee Seolhwa shouted, "Die!"</p>
 <p class="orv_line">The loyalists leaped into their air, their wings spreading out. I aimed the hilt towards them.</p>
-<div class="orv_system"><p>[Blade of Faith is activated!]</p></div>
-<div class="orv_system"><p>[The special option of Unbroken Faith is activated.]</p></div>
-<div class="orv_system"><p>[The ether property is converted to 'fire'.]</p></div>
+<div class="orv_system"><p>Blade of Faith is activated!</p></div>
+<div class="orv_system"><p>The special option of Unbroken Faith is activated.</p></div>
+<div class="orv_system"><p>The ether property is converted to 'fire'.</p></div>
 <p class="orv_line">White flames split apart the air. All species with insect properties were weak to 'fire'. The ether flames of Unbroken Faith spread to the skin of the lower humans.</p>
 <p class="orv_line">One to two, two to three.</p>
 <p class="orv_line">"Kieeeek!"</p>
@@ -231,9 +238,9 @@
 <p class="orv_line">Lee Seolhwa looked towards the disaster meteorite nervously. There was a change in the atmosphere.</p>
 <p class="orv_line">It felt like she was aiming at the 'disaster' rather than power from the disaster meteorite.</p>
 <p class="orv_line">It was strange. Even a person who didn't read the original novel would expect Seoul to be destroyed when a disaster hatched. Then why did she want to wake up the disaster?</p>
-<div class="orv_system"><p>[The exclusive skill, Character List is activated.]</p></div>
+<div class="orv_system"><p>The exclusive skill, Character List is activated.</p></div>
 <div class="orv_window">
-<h3 class="orv_window_title">[Character Summary]</h3>
+<h3 class="orv_window_title">Character Summary</h3>
 <p>Name: Lee Seolhwa</p>
 <p>Age: 26 years old</p>
 <p>Sponsor: Guam Divine Doctor</p>
@@ -247,9 +254,9 @@
 <p>* Some of parasite Antinus' stats will be transferred to the character.</p>
 </div>
 <p class="orv_line">…Damn. I didn't think her condition would be like this.</p>
-<div class="orv_system"><p>[Due to the effect of your exclusive attribute, your memories of some scenes became stronger.]</p></div>
+<div class="orv_system"><p>Due to the effect of your exclusive attribute, your memories of some scenes became stronger.</p></div>
 <p class="orv_line">In my head, pages flipped and the sentences of some pages flowed over my retinas.</p>
-<div class="orv_quote"><p>「 There are five dominant species in the world of Chronos. The Velkia in the east, the Parasites in the west, the Imyuntar in the south and the Mistilen in the north. Finally, the Inba in the centre. 」</p></div>
+<div class="orv_quote"><p>There are five dominant species in the world of Chronos. The Velkia in the east, the Parasites in the west, the Imyuntar in the south and the Mistilen in the north. Finally, the Inba in the centre.</p></div>
 <p class="orv_line">I avoided the poisonous attack and kicked her back, causing her to lose her balance. Lee Seolhwa rolled around the ground and groaned. I watched Lee Seolhwa and opened my mouth.</p>
 <p class="orv_line">"The fifth scenario is a scenario where the 'Disasters of Chronos' was made into a motif."</p>
 <p class="orv_line">Lee Seolhwa's eyes shook as she heard 'Disasters of Chronos'.</p>
@@ -264,7 +271,7 @@
 <p class="orv_line">The disasters were hatching faster than the original. There were no 'humans' who would do such a thing.</p>
 <p class="orv_line">"Parasite Queen Antinus. Why is a guide trying to wake up the disaster?"</p>
 <p class="orv_line">Only a 'fallen guide' would dream of such a thing.</p>
-<div class="orv_system"><p>[The 5th grade Parasite Antinus is looking at you.]</p></div>
+<div class="orv_system"><p>The 5th grade Parasite Antinus is looking at you.</p></div>
 <p class="orv_line">Parasites were a parasitic species that lived through other species. Now Lee Seolhwa was being manipulated by one of the guides.</p>
 <p class="orv_line">I looked at the dead bodies of the lower humans.</p>
 <p class="orv_line">Just like with Lycaon's meteorite, it wasn't the power of the disaster but the power of Chronos' guide that promoted the human transformation.</p>
@@ -307,10 +314,10 @@
 <p class="orv_line">Horror was in her eyes. Thousand Poisons Resistance was the terror of all beings who used poison. However, I didn't have Thousand Poisons Resistance or Immunity to Ten Thousand Poisons.</p>
 <p class="orv_line">"Antinus, you don't know the sponsor behind your host?" I put my hand in my pocket. "That's why you don't know. You don't know but I'm sure its inside that body. Right?"</p>
 <p class="orv_line">After a while, a book appeared in my hands.</p>
-<div class="orv_system"><p>[A constellation worried about the degradation of Oriental medicine has revealed his own modifier.]</p></div>
-<div class="orv_system"><p>[The constellation 'Guam Divine Doctor' looks at you with amazement.]</p></div>
+<div class="orv_system"><p>A constellation worried about the degradation of Oriental medicine has revealed his own modifier.</p></div>
+<div class="orv_system"><p>The constellation 'Guam Divine Doctor' looks at you with amazement.</p></div>
 <p class="orv_line">"Kiiit…?"</p>
-<div class="orv_system"><p>[Dongui Bogam- Unfinished Book]</p></div>
+<div class="orv_system"><p>Dongui Bogam- Unfinished Book</p></div>
 <p class="orv_line">It was one of the greatest Oriental medicine records of the East. The Dongui Bogam was an item that appeared in the five person dungeon during the King's Qualifications.</p>
 <p class="orv_line">"I had a hard time collecting this."</p>
 <p class="orv_line">During the King's Qualifications scenario, all the kings were frantically trying to get the Four Yin Demonic Beheading Sword.</p>
@@ -323,12 +330,12 @@
 <p class="orv_line">Table of Contents – 2nd part.</p>
 <p class="orv_line">It was a star relic that could be completed after 25 parts were collected.</p>
 <p class="orv_line">Unfortunately, I only collected eight pieces but that alone was enough to see an effect. Even if I only collected eight parts, the Dongui Bogam had the effect of the S-grade Immunity to Poison Bead.</p>
-<div class="orv_system"><p>[The effect of the Dongui Bogam – Incomplete has been activated.]</p></div>
-<div class="orv_system"><p>[Your body has temporarily gained the Poison Resistance ability.]</p></div>
+<div class="orv_system"><p>The effect of the Dongui Bogam – Incomplete has been activated.</p></div>
+<div class="orv_system"><p>Your body has temporarily gained the Poison Resistance ability.</p></div>
 <p class="orv_line">The baffled Lee Seolhwa shouted.</p>
 <p class="orv_line">"How? The Thousand Spirits Poison…!"</p>
 <p class="orv_line">"I know. Thousand Spirits Poison is a poison that can't be counteracted with ordinary poison resistance. But it is possible for the Dongui Bogam. Why do you think that is?'</p>
-<div class="orv_system"><p>[The constellation 'Guam Divine Doctor' is smiling faintly.]</p></div>
+<div class="orv_system"><p>The constellation 'Guam Divine Doctor' is smiling faintly.</p></div>
 <p class="orv_line">One constellation faintly glowed as if in response.</p>
 <p class="orv_line">"It is because the constellation who made the Thousand Spirits Poison is the author of Dongui Bogam."</p>
 <br>
@@ -338,18 +345,12 @@
             <a href="./ch_83"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_85">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="84" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="280" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="83" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="83" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

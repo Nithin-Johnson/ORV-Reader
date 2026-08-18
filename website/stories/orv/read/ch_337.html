@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 337: Ep. 63 - End of the Myth, IV</title>
     <meta property="og:title" content="Ch 337: Ep. 63 - End of the Myth, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00337.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 337: Ep. 63 - End of the Myth, IV</h1></div>
 <p class="orv_line">"Why should I help you?"</p>
@@ -205,7 +212,7 @@
 <p class="orv_line">"There's nothing to say." There was the clear sound of the sword being pulled out. "She is a woman I need to kill anyway."</p>
 <p class="orv_line">A transcendent status filled the cave and the other side obviously became tense. I could use Yoo Joonghyuk to take away items. The problem was that the opponent was Anna Croft.</p>
 <p class="orv_line">I raised my hand to restrain Yoo Joonghyuk and Yoo Joonghyuk stared at me with a dreadful expression.</p>
-<div class="orv_system"><p>[The character Yoo Joonghyuk is using Three Restraints Lv. 10.]</p></div>
+<div class="orv_system"><p>The character Yoo Joonghyuk is using Three Restraints Lv. 10.</p></div>
 <p class="orv_line">Restraining oneself three times to avoid killing a person… I couldn't believe I was seeing Yoo Joonghyuk use this skill in front of my eyes. It was difficult for me to tell how much of a grudge Yoo Joonghyuk had against Anna Croft, even after reading Ways of Survival.</p>
 <p class="orv_line">I was struggling to make a decision when someone spoke. "Anna, give him the gloves. Now is the time for us to yield."</p>
 <p class="orv_line">Anna Croft's expression hardened at Selena Kim's words. Selena Kim turned her head and sent a sound transmission to me.</p>
@@ -222,8 +229,8 @@
 <p class="orv_line">"700,000 coins. I can't compromise any further."</p>
 <p class="orv_line">"I'll give it to you for 800,000 coins."</p>
 <p class="orv_line">Indeed, she was a formidable woman. 800,000 coins wasn't a small number but the deal had to be made. The King Lycomedes' Leather Gloves was an indispensable item for this whale hunting.</p>
-<div class="orv_system"><p>[King Lycomedes' Leather Gloves has been acquired.]</p></div>
-<div class="orv_system"><p>[You have paid 800,000 coins to Incarnation Anna Croft.]</p></div>
+<div class="orv_system"><p>King Lycomedes' Leather Gloves has been acquired.</p></div>
+<div class="orv_system"><p>You have paid 800,000 coins to Incarnation Anna Croft.</p></div>
 <p class="orv_line">The deal was over and I smiled. "There is no harm to each other."</p>
 <p class="orv_line">"No harm to each other? Have you already forgotten that you took one million coins from me? There are still 200,000 coins…"</p>
 <p class="orv_line">"Come to South Korea once. You can enjoy a meal worth 200,000 won."</p>
@@ -240,26 +247,26 @@
 <p class="orv_line">–Do whatever you like.</p>
 <p class="orv_line">Of course, at that time, I didn't intend to stop it. However, at least until then, Anna Croft was a person we needed.</p>
 <p class="orv_line">Dionysus raised his hand.</p>
-<div class="orv_constellation"><p>[What do I do?]</p></div>
+<div class="orv_constellation"><p>What do I do?</p></div>
 <p class="orv_line">"Don't do anything."</p>
-<div class="orv_constellation"><p>[What?]</p></div>
+<div class="orv_constellation"><p>What?</p></div>
 <p class="orv_line">I left Dionysus and glanced at the giant soldier.</p>
 <p class="orv_line">Pluto was raising his body in the seawater. I asked him while nodding towards Yoo Joonghyuk, "Can you pick up two people?"</p>
-<div class="orv_constellation"><p>[You're not satisfied with one and want me to do two?]</p></div>
+<div class="orv_constellation"><p>You're not satisfied with one and want me to do two?</p></div>
 <p class="orv_line">"Can you do it?"</p>
-<div class="orv_constellation"><p>[…Will you care if I say I can't?]</p></div>
+<div class="orv_constellation"><p>…Will you care if I say I can't?</p></div>
 <br>
 <hr>
 <br>
 <p class="orv_line">As the two myth-grade constellations clashed, the true voices of the constellations came from the sky. They stopped fighting and voiced their opinions on the current situation instead of pointing their weapons at each other.</p>
-<div class="orv_constellation"><p>[I didn't think Hades would show up here…]</p></div>
-<div class="orv_constellation"><p>[How can we stop them? Athena, haven't you won a fight against Uncle Poseidon before?]</p></div>
-<div class="orv_constellation"><p>[Isn't that another story? I just planted an olive tree… how can I win against a myth-grade?]</p></div>
-<div class="orv_constellation"><p>[I don't know if the Lightning Throne or Mother Earth appears…]</p></div>
+<div class="orv_constellation"><p>I didn't think Hades would show up here…</p></div>
+<div class="orv_constellation"><p>How can we stop them? Athena, haven't you won a fight against Uncle Poseidon before?</p></div>
+<div class="orv_constellation"><p>Isn't that another story? I just planted an olive tree… how can I win against a myth-grade?</p></div>
+<div class="orv_constellation"><p>I don't know if the Lightning Throne or Mother Earth appears…</p></div>
 <p class="orv_line">The expressions of the 12 Gods were dark. The Lightning Throne neglected the work of the nebula after entering the top-level scenario while Mother Earth hated Olympus and was unlikely to interfere in this incident.</p>
-<div class="orv_constellation"><p>[Hermes, what about using the giant stories of Olympus?]</p></div>
-<div class="orv_constellation"><p>[They are the chief narrators of our giant story. Do you think it will work?]</p></div>
-<div class="orv_constellation"><p>[…That's true.]</p></div>
+<div class="orv_constellation"><p>Hermes, what about using the giant stories of Olympus?</p></div>
+<div class="orv_constellation"><p>They are the chief narrators of our giant story. Do you think it will work?</p></div>
+<div class="orv_constellation"><p>…That's true.</p></div>
 <p class="orv_line">There were comments here and there but a solution didn't come out.</p>
 <p class="orv_line">Lee Seolhwa observed the conversation between constellations and whispered in Lee Hyunsung's ears. "…I thought narrative-grade constellations would be great but they're more ordinary than I thought."</p>
 <p class="orv_line">"Yes."</p>
@@ -268,37 +275,37 @@
 <p class="orv_line">Shin Yoosung muttered in a small voice. "It was really hard to beat that sun ahjussi last time…"</p>
 <p class="orv_line">Surya had two eyes closed and was watching the scene through the Third Eye on his forehead. Even Surya, the strongest sun god, remained silent without interrupting. He was also unable to confront the myth-grade constellations.</p>
 <p class="orv_line">Shockwaves spread. The clashes between Poseidon and Hades became more frequent and cracks spread in the sky. The space itself was collapsing from the collision. In addition, the more serious thing…</p>
-<div class="orv_constellation"><p>[Uncle Hades will lose.]</p></div>
-<div class="orv_constellation"><p>[It can't be helped. This stage is the 'sea'.]</p></div>
+<div class="orv_constellation"><p>Uncle Hades will lose.</p></div>
+<div class="orv_constellation"><p>It can't be helped. This stage is the 'sea'.</p></div>
 <p class="orv_line">Complicated expressions appeared on the faces of the 12 Gods. Poseidon or Hades. No matter who won, Olympus would fall into the crucible of confusion.</p>
 <p class="orv_line">At this moment, Surya opened his mouth.</p>
-<div class="orv_constellation"><p>[Something is coming.]</p></div>
+<div class="orv_constellation"><p>Something is coming.</p></div>
 <p class="orv_line">Someone had penetrated the expanse and was quickly approaching this way. It was a giant soldier made of the skin of a black dragon.</p>
 <p class="orv_line">Lee Gilyoung shouted, "Dokja hyung!"</p>
 <p class="orv_line">There was a loud exhaust sound and the giant soldier stopped. Kim Dokja emerged from inside Pluto. "Everyone. I'll explain it briefly."</p>
 <p class="orv_line">Kim Dokja slowly looked at the constellations and incarnations. "I'm going to make a sacred torch. For that, I need your help."</p>
 <p class="orv_line">Suddenly, the 12 Gods glanced at each other. A true voice burst out.</p>
-<div class="orv_constellation"><p>[A sacred torch relay!]</p></div>
-<div class="orv_constellation"><p>[Indeed, why didn't I think of that?]</p></div>
+<div class="orv_constellation"><p>A sacred torch relay!</p></div>
+<div class="orv_constellation"><p>Indeed, why didn't I think of that?</p></div>
 <p class="orv_line">The voices spoke until Kim Dokja once again opened his mouth. "The 12 Gods, please don't do anything."</p>
-<div class="orv_constellation"><p>[What? What do you mean?]</p></div>
+<div class="orv_constellation"><p>What? What do you mean?</p></div>
 <p class="orv_line">"You belong to Olympus and have no way to resist Poseidon's giant story. If you participate in the torch relay, it can be counterproductive."</p>
 <p class="orv_line">Kim Dokja's words were true and some constellations nodded. However, it wasn't everyone.</p>
-<div class="orv_constellation"><p>[If we don't help, how can we turn on the sacred fire?]</p></div>
+<div class="orv_constellation"><p>If we don't help, how can we turn on the sacred fire?</p></div>
 <p class="orv_line">In the first place, the sacred torch was a light that came from the sun. In order to start the sacred light, the help of the sun was needed.</p>
 <p class="orv_line">Then Surya quietly stood up. Kim Dokja gazed at him. "Surya, sit down too."</p>
 <p class="orv_line">Surya sat down again.</p>
-<div class="orv_constellation"><p>[How will you make a sacred torch without the sun?]</p></div>
+<div class="orv_constellation"><p>How will you make a sacred torch without the sun?</p></div>
 <p class="orv_line">"The sacred fire is about sanctification. It isn't turned on only by the sun."</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is shrugging.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is shrugging.</p></div>
 <p class="orv_line">Looking back, Jung Heewon's body was held tightly by Lee Hyunsung who had triggered Steel Transformation. Lee Hyunsung's cheeks were red, although it was unknown if this was due to embarrassment or the flames of Hell Flames Ignition.</p>
 <p class="orv_line">"Too hoooooooot!"</p>
 <p class="orv_line">"I'm sorry. Please endure it a bit more."</p>
 <p class="orv_line">Surya nodded at the sight.</p>
-<div class="orv_constellation"><p>[The flames of Eden are enough to replace the sun's heat. However, the flames made from that sanctification will find it hard to pierce through Poseidon's waves.]</p></div>
+<div class="orv_constellation"><p>The flames of Eden are enough to replace the sun's heat. However, the flames made from that sanctification will find it hard to pierce through Poseidon's waves.</p></div>
 <p class="orv_line">"I know. Thus, it is time for you to step up."</p>
 <p class="orv_line">Surya rose from where he was sitting.</p>
-<div class="orv_constellation"><p>[Interesting.]</p></div>
+<div class="orv_constellation"><p>Interesting.</p></div>
 <br>
 <hr>
 <br>
@@ -320,22 +327,22 @@
 <p class="orv_line">"No one will die."</p>
 <p class="orv_line">Finally, the Steel Sword was preheated by the sacred flames and the 'torch' was held in Pluto's hand.</p>
 <p class="orv_line">I opened my mouth while boarding Pluto.</p>
-<div class="orv_constellation"><p>[Please gather together.]</p></div>
+<div class="orv_constellation"><p>Please gather together.</p></div>
 <p class="orv_line">One by one, the scattered party members gathered. People born in different places and had different perspectives were gathered here. Thus, they became a constellation of people.</p>
-<div class="orv_system"><p>[Giant Story 'Demon Realm's Spring' has begun!]</p></div>
+<div class="orv_system"><p>Giant Story 'Demon Realm's Spring' has begun!</p></div>
 <p class="orv_line">All the narrators of Kim Dokja's Company started their story.</p>
-<div class="orv_quote"><p>「 It is a story originating from a reader. 」</p></div>
-<div class="orv_quote"><p>「 The strongest and loneliest man in the world held his sword. 」</p></div>
-<div class="orv_quote"><p>「 The steel sword bore the inferno of hell and soared towards the high expanse. 」</p></div>
+<div class="orv_quote"><p>It is a story originating from a reader.</p></div>
+<div class="orv_quote"><p>The strongest and loneliest man in the world held his sword.</p></div>
+<div class="orv_quote"><p>The steel sword bore the inferno of hell and soared towards the high expanse.</p></div>
 <p class="orv_line">The history that we accumulated was gathering in the flames of the sacred torch. Our story was a giant story from outside Olympus. Thus, it was impossible for Poseidon to not be hurt by this force.</p>
 <p class="orv_line">From a distance, Poseidon noticed the message and looked this way.</p>
 <p class="orv_line">He laughed and covered the air with waves, like a barrier. He was confident that the barrier made with the power of a myth-grade constellation couldn't be pierced.</p>
 <p class="orv_line">It was possible to know just by facing him. Kim Dokja's Company couldn't pierce that barrier with our current power. We needed more power and a faster speed. A momentum strong enough to break through that wall.</p>
 <p class="orv_line">Finally, there was an assistant to provide that momentum to us.</p>
-<div class="orv_system"><p>[Giant Story 'Demon Realm's Spring' has expanded.]</p></div>
+<div class="orv_system"><p>Giant Story 'Demon Realm's Spring' has expanded.</p></div>
 <p class="orv_line">The sound of a train horn was heard from somewhere.</p>
-<div class="orv_system"><p>[Stage Transformation has occurred!]</p></div>
-<div class="orv_quote"><p>「 Thus, the bright sun illuminated their way. 」</p></div>
+<div class="orv_system"><p>Stage Transformation has occurred!</p></div>
+<div class="orv_quote"><p>Thus, the bright sun illuminated their way.</p></div>
 <p class="orv_line">The train that was once our enemy was now rushing through the sky to pick us up. The sun train emitted a dazzling golden aura and the party members looked up with ecstatic eyes.</p>
 <p class="orv_line">It was possible. If it was like this, it was clearly possible.</p>
 <p class="orv_line">"Let's go, Kim Dokja's Company."</p>
@@ -346,18 +353,12 @@
             <a href="./ch_336"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_338">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="337" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="408" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="336" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="336" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

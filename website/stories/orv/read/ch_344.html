@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 344: Ep. 64 - A Road That Isn't a Road, V</title>
     <meta property="og:title" content="Ch 344: Ep. 64 - A Road That Isn't a Road, V" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,56 +177,56 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00344.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 344: Ep. 64 - A Road That Isn't a Road, V</h1></div>
 <p class="orv_line">Feeding Yoo Sangah's soul to the Fourth Wall. This method was conceived based on the past incident where my mother was eaten by the Fourth Wall. At that time, my mother had been eaten by the wall when her soul body was damaged and part of her soul was restored when she was spat out again. In addition, there was the 'library' inside the Fourth Wall so it was worth trying.</p>
-<div class="orv_quote"><p>「 Don't wa nt to. 」</p></div>
+<div class="orv_quote"><p>Don't wa nt to.</p></div>
 <p class="orv_line">The Fourth Wall read my intentions but didn't listen to me. The Fourth Wall watched the scattered Yoo Sangah and reacted furiously.</p>
-<div class="orv_quote"><p>「 I won't ea t th at. 」</p></div>
+<div class="orv_quote"><p>I won't ea t th at.</p></div>
 <p class="orv_line">"Eat." The shock caused my body to shake. However, I didn't back down. "If you won't eat then I'll turn off the skill."</p>
 <p class="orv_line">This was my last threat. In any case, the Fourth Wall was a skill and I could turn it off whenever I wanted. Based on previous incidents, the Fourth Wall really hated it. Then this time…</p>
-<div class="orv_quote"><p>「 Do it if you c an. 」</p></div>
+<div class="orv_quote"><p>Do it if you c an.</p></div>
 <p class="orv_line">It sounded certain I couldn't do so.</p>
-<div class="orv_quote"><p>「 If y ou tu rn me off, the wo man can't sur vive. 」</p></div>
+<div class="orv_quote"><p>If y ou tu rn me off, the wo man can't sur vive.</p></div>
 <p class="orv_line">I bit my lips.</p>
-<div class="orv_quote"><p>「 In addi tion, turn ing me off will let the con stella tions see your in for mation. 」</p></div>
-<div class="orv_system"><p>[Many constellations are paying attention to you!]</p></div>
-<div class="orv_system"><p>[Some constellations are doubting the existence of the 'wall' you have.]</p></div>
+<div class="orv_quote"><p>In addi tion, turn ing me off will let the con stella tions see your in for mation.</p></div>
+<div class="orv_system"><p>Many constellations are paying attention to you!</p></div>
+<div class="orv_system"><p>Some constellations are doubting the existence of the 'wall' you have.</p></div>
 <p class="orv_line">The Fourth Wall was well aware that I was reluctant to disclose my information. In fact, I had no useful mental barriers apart from the Fourth Wall. If a high-grade constellation stared at me the moment the wall disappeared, I might be as helpless as a naked baby.</p>
 <p class="orv_line">I stared at the wall for a moment. "Then I will break it."</p>
-<div class="orv_quote"><p>「 What? 」</p></div>
+<div class="orv_quote"><p>What?</p></div>
 <p class="orv_line">"I will break some parts of the wall and force you to eat her."</p>
 <p class="orv_line">Originally, the Fourth Wall wasn't reality. However, now I was able to hit the wall. I clenched my fists and dealt a blow to the wall in front of me. The whole room shook from the devastating impact. There was a short scream and the sound of people rushing outside.</p>
 <p class="orv_line">I swung my fist again. The wall still had no scratches.</p>
-<div class="orv_quote"><p>「 It is use less. 」</p></div>
+<div class="orv_quote"><p>It is use less.</p></div>
 <p class="orv_line">"…"</p>
-<div class="orv_quote"><p>「 It is too mu ch of a vio lation to sa ve Yoo Sang ah. 」</p></div>
+<div class="orv_quote"><p>It is too mu ch of a vio lation to sa ve Yoo Sang ah.</p></div>
 <p class="orv_line">I thought about it. As I said earlier, the Fourth Wall wasn't reality. It was a skill I implemented. Then…</p>
 <p class="orv_line">I focused my gaze towards one part of the wall. Sparks flooded the room and Lee Jihye, who opened the door, was thrown out.</p>
-<div class="orv_quote"><p>「 N o! 」</p></div>
+<div class="orv_quote"><p>N o!</p></div>
 <p class="orv_line">There was a small crack on a corner of the Fourth Wall. It was as I expected. Until now, I had been thinking of the skill as something that could be turned on or off. Perhaps the 'skill' might have the appropriate intermediate state. In other words…</p>
 <p class="orv_line">What if I could turn off a 'part' of the skill? The wall rapidly cracked and a small gap formed in an instant. There was an abyss that seemed able to swallow anything.</p>
 <p class="orv_line">Soon, the gap started to suck in the surrounding story fragments like a black hole. The stories of Yoo Sangah were quickly sucked into the wall.</p>
-<div class="orv_quote"><p>「 St op…! 」</p></div>
+<div class="orv_quote"><p>St op…!</p></div>
 <p class="orv_line">Huge sparks hit my body and I let out a terrible groan. A probability storm was blowing through the wall. I heard the voices of the party members and my vision turned white.</p>
 <p class="orv_line">In the darkness, Yoo Sangah came to her senses. She opened her eyes to only darkness. In this scene that didn't allow even a point of light, Yoo Sangah suddenly realized something.</p>
 <p class="orv_line">She… wasn't dead? The last scene she saw flashed through her head. There was a probability storm and Kim Dokja's shout as he tried to save her. Then there was a memory of being sucked into somewhere…</p>
@@ -228,88 +235,88 @@
 <p class="orv_line">Perhaps only her soul was left?</p>
 <p class="orv_line">Yoo Sangah tried to calmly accept the situation. In Haruki novels, it was common for people to become ideas. This could be enough. The dead becoming a soul…</p>
 <p class="orv_line">…Scary. It was scary to be alone in the darkness. There were no sensations in this state. She didn't know if she existed or not. Yoo Sangah tried not to fall into the trap of thinking as she recalled the old proposition of philosophy.</p>
-<div class="orv_quote"><p>「 I think. Therefore I am. 」</p></div>
+<div class="orv_quote"><p>I think. Therefore I am.</p></div>
 <p class="orv_line">This was René Descartes' maxim. It was such a famous saying that she was somehow ashamed to quote it. Yet for Yoo Sangah, this was her only line of salvation. At least, she knew she existed while she thought this. Then soon afterwards, Yoo Sangah had a frightening thought. Then was there anyone who didn't think? If she stopped thinking in this darkness…</p>
 <p class="orv_line">Therefore, Yoo Sangah kept thinking desperately. In order not to disappear, she remembered the things that she desperately wanted to avoid.</p>
-<div class="orv_quote"><p>「 "Sangah." 」</p></div>
+<div class="orv_quote"><p>"Sangah."</p></div>
 <p class="orv_line">A voice floated in her mind, followed by a face. It was a familiar face. Her family members before the 'scenario' came. Her father, a judge, and her older brothers who were doctors. Her mother who was born in a wealthy family.</p>
-<div class="orv_quote"><p>「 "Don't do anything conspicuous." 」</p></div>
-<div class="orv_quote"><p>「 "People who aren't you will see what you have." 」</p></div>
-<div class="orv_quote"><p>「 "What four languages? You just have to be a cute little girl." 」</p></div>
+<div class="orv_quote"><p>"Don't do anything conspicuous."</p></div>
+<div class="orv_quote"><p>"People who aren't you will see what you have."</p></div>
+<div class="orv_quote"><p>"What four languages? You just have to be a cute little girl."</p></div>
 <p class="orv_line">Yoo Sangah watched the flowing words and smiled bitterly. To be exact, she lost them before that.</p>
-<div class="orv_quote"><p>「 "…You are going to join a game company? You aren't marrying the president of the game company?" 」</p></div>
+<div class="orv_quote"><p>"…You are going to join a game company? You aren't marrying the president of the game company?"</p></div>
 <p class="orv_line">Maybe she was living a 'scenario' even before the scenario started. No one called it for a scenario but for her, it was a scenario. If a dokkaebi had named the scenario, perhaps it would be 'Declaration of Independence'.</p>
-<div class="orv_quote"><p>「 "I am a new employee." 」</p></div>
+<div class="orv_quote"><p>"I am a new employee."</p></div>
 <p class="orv_line">After entering the game company and becoming independent at home, her life changed a bit. She also met an interesting person.</p>
-<div class="orv_quote"><p>「 "Yoo Sangah-ssi. Do you have a mobile phone charger?" 」</p></div>
+<div class="orv_quote"><p>"Yoo Sangah-ssi. Do you have a mobile phone charger?"</p></div>
 <p class="orv_line">The man with a thin face who borrowed her charger.</p>
-<div class="orv_quote"><p>「 "I have an important appointment at 7 o'clock and my battery is running out." 」</p></div>
+<div class="orv_quote"><p>"I have an important appointment at 7 o'clock and my battery is running out."</p></div>
 <p class="orv_line">A person who did the interview with her and who was uncooperative about everything in the company.</p>
-<div class="orv_quote"><p>「 "I will attend the ceremony but I must leave at 7 o'clock." 」</p></div>
+<div class="orv_quote"><p>"I will attend the ceremony but I must leave at 7 o'clock."</p></div>
 <p class="orv_line">He was always the person to leave the company first once the work day ended.</p>
-<div class="orv_quote"><p>「 "I won't participate in the picnic. I hate climbing mountains the most." 」</p></div>
+<div class="orv_quote"><p>"I won't participate in the picnic. I hate climbing mountains the most."</p></div>
 <p class="orv_line">The man who seemed like a ghost and didn't exist in other people's eyes as he stared at his smartphone.</p>
-<div class="orv_quote"><p>「 "…Yoo Joonghyuk, that jerk died again." 」</p></div>
+<div class="orv_quote"><p>"…Yoo Joonghyuk, that jerk died again."</p></div>
 <p class="orv_line">Thus, she might've done something strange as well. She put things into the food of the boss who took projects from his subordinates or mixed pepper in the drinks of the manager who made them run coffee errands.</p>
-<div class="orv_quote"><p>「 "Uwek! What is this? Why does the coffee taste like this?" 」</p></div>
+<div class="orv_quote"><p>"Uwek! What is this? Why does the coffee taste like this?"</p></div>
 <p class="orv_line">It was the birth of Mino Soft's historic event, which was later called the 'Break Room Incident'.</p>
 <p class="orv_line">She poured pepper into the finely ground beans and felt a sense of liberation. The company was turned upside down. It was a criminal who couldn't even be caught by the surveillance staff.</p>
-<div class="orv_quote"><p>「 Yoo Sangah, I still remember. 」</p></div>
+<div class="orv_quote"><p>Yoo Sangah, I still remember.</p></div>
 <p class="orv_line">A company where everyone had left work. A smartphone light appeared quietly from behind a cabinet in the break room.</p>
-<div class="orv_quote"><p>「 Kim Dokja was clearly there. 」</p></div>
+<div class="orv_quote"><p>Kim Dokja was clearly there.</p></div>
 <p class="orv_line">No matter whether she put in pepper or salt, the light just stayed there and tolerated her actions. It was as if the things that happened beyond the cabinet didn't involve him.</p>
-<div class="orv_quote"><p>「 Maybe I should've talked to him at that time. 」</p></div>
+<div class="orv_quote"><p>Maybe I should've talked to him at that time.</p></div>
 <p class="orv_line">Why did he remain silent behind that cabinet? Why didn't he report what she did and why did he say, "There is no one." Why did he turn the CCTV away from the direction of the break room? Why… was he always looking at the phone with a variety of expressions?</p>
 <p class="orv_line">Her surroundings brightened and her senses started to gradually return.</p>
-<div class="orv_system"><p>[A powerful presence doesn't allow your 'story' to fall apart.]</p></div>
-<div class="orv_constellation"><p>[Someone who likes to be tidy doesn't deserve your story.]</p></div>
+<div class="orv_system"><p>A powerful presence doesn't allow your 'story' to fall apart.</p></div>
+<div class="orv_constellation"><p>Someone who likes to be tidy doesn't deserve your story.</p></div>
 <p class="orv_line">A voice was heard from somewhere.</p>
-<div class="orv_quote"><p>「 (Look, this is 'push and pull'.) 」</p></div>
-<div class="orv_quote"><p>「 (No. I think that after watching every movie that exists on Earth…) 」</p></div>
-<div class="orv_quote"><p>「 (Isn't it a desire to become one?) 」</p></div>
+<div class="orv_quote"><p>(Look, this is 'push and pull'.)</p></div>
+<div class="orv_quote"><p>(No. I think that after watching every movie that exists on Earth…)</p></div>
+<div class="orv_quote"><p>(Isn't it a desire to become one?)</p></div>
 <p class="orv_line">Yoo Sangah slowly opened her eyes and found three beings surrounding her. There was a squid-like creature wearing glasses. An elderly man with grey hair and a bent back. Finally, a beautiful person who exuded a strange atmosphere where the gender was unknown.</p>
 <p class="orv_line">The moment she saw the last existence, Yoo Sangah shot up with surprise.</p>
-<div class="orv_quote"><p>「 (You…? ) 」</p></div>
-<div class="orv_quote"><p>「 (You woke up, new librarian,) 」</p></div>
+<div class="orv_quote"><p>(You…? )</p></div>
+<div class="orv_quote"><p>(You woke up, new librarian,)</p></div>
 <p class="orv_line">The neutral beauty, Nirvana smiled. Yoo Sangah didn't know what was going on. Why was this person here?</p>
 <p class="orv_line">Nirvana looked at her and spoke.</p>
-<div class="orv_quote"><p>「 (It is a long explanation. You'll find out soon. You are lucky. You are the first one to enter this library since I've been living here.) 」</p></div>
+<div class="orv_quote"><p>(It is a long explanation. You'll find out soon. You are lucky. You are the first one to enter this library since I've been living here.)</p></div>
 <p class="orv_line">A combination of letters was overflowing behind the three beings.</p>
-<div class="orv_constellation"><p>[Welcome, new librarian Yoo Sangah.]</p></div>
+<div class="orv_constellation"><p>Welcome, new librarian Yoo Sangah.</p></div>
 <p class="orv_line">Yoo Sangah looked around. Dim light from candles illuminated the darkness everywhere.</p>
 <p class="orv_line">Library… There was an incredible number of bookshelves filled with books that didn't seem to end. It had been a long time since she saw a library of this size.</p>
 <p class="orv_line">Kim Dokja's words popped into her mind. If she could live again, was she willing to read books that weren't from those authors?</p>
 <p class="orv_line">…Was this what he meant? She didn't know what this place was. She didn't know why Kim Dokja sent her here or what he wanted. Still, she had a hunch. If she read these books now, she might be able to solve many of her questions.</p>
-<div class="orv_quote"><p>「 (Will you read it?) 」</p></div>
-<div class="orv_quote"><p>「 (Yes?) 」</p></div>
-<div class="orv_quote"><p>「 (If you read it, you might be sorry. It might be a truth you can't handle.) 」</p></div>
+<div class="orv_quote"><p>(Will you read it?)</p></div>
+<div class="orv_quote"><p>(Yes?)</p></div>
+<div class="orv_quote"><p>(If you read it, you might be sorry. It might be a truth you can't handle.)</p></div>
 <p class="orv_line">Yoo Sangah's hand stopped as she approached the book. It wasn't because of Nirvana's words. It was because a man she knew well showed up in the darkness.</p>
 <p class="orv_line">"She won't be a librarian."</p>
 <p class="orv_line">Kim Dokja was there.</p>
 <br>
 <hr>
 <br>
-<div class="orv_quote"><p>「 (…Dokja-ssi?) 」</p></div>
+<div class="orv_quote"><p>(…Dokja-ssi?)</p></div>
 <p class="orv_line">I felt deep relief the moment I saw Yoo Sangah staring at me blankly. It was a success. Somehow, I succeeded in preserving Yoo Sangah's soul. Her soul body was still damaged but the power flowing faintly through the library was restoring her soul.</p>
 <p class="orv_line">I bowed to Yoo Sangah. "I'm sorry to have brought you to such a shabby place. Please endure it a bit. I'll take you out soon."</p>
-<div class="orv_quote"><p>「 (What shabby place? Foolish man who doesn't know the spirituality of truth.) 」</p></div>
+<div class="orv_quote"><p>(What shabby place? Foolish man who doesn't know the spirituality of truth.)</p></div>
 <p class="orv_line">"It's been a while, Nirvana."</p>
-<div class="orv_quote"><p>「 (How did you come here. The 'wall' shouldn't have allowed it.) 」</p></div>
+<div class="orv_quote"><p>(How did you come here. The 'wall' shouldn't have allowed it.)</p></div>
 <p class="orv_line">"I found a trick."</p>
 <p class="orv_line">Nirvana's expression was unusual.</p>
-<div class="orv_quote"><p>「 (I don't know what you're thinking but this is a really bad decision. There is a reason you have the wall.) 」</p></div>
+<div class="orv_quote"><p>(I don't know what you're thinking but this is a really bad decision. There is a reason you have the wall.)</p></div>
 <p class="orv_line">"I guess so."</p>
 <p class="orv_line">It wasn't talking to me right now but the Fourth Wall must be very angry because of what I did. A sharp air current reached my skin and I could feel its emotions. However, now wasn't the time to worry about it.</p>
-<div class="orv_quote"><p>「 (If the wall wants, it can turn one or two librarians into the dust of the story.) 」</p></div>
+<div class="orv_quote"><p>(If the wall wants, it can turn one or two librarians into the dust of the story.)</p></div>
 <p class="orv_line">"I told you. She won't be a librarian."</p>
-<div class="orv_quote"><p>「 (What nonsense are you saying? If you sent her here then naturally…) 」</p></div>
+<div class="orv_quote"><p>(What nonsense are you saying? If you sent her here then naturally…)</p></div>
 <p class="orv_line">"I'll bring her out again."</p>
 <p class="orv_line">Nirvana frowned like he heard something ridiculous.</p>
-<div class="orv_quote"><p>「 (Do you think the wall will allow that? Even if it is possible, that woman's body is already dead. There is no place to return when the body is dead.) 」</p></div>
+<div class="orv_quote"><p>(Do you think the wall will allow that? Even if it is possible, that woman's body is already dead. There is no place to return when the body is dead.)</p></div>
 <p class="orv_line">I silently stared at Nirvana. Then Nirvana's expression became strange.</p>
-<div class="orv_quote"><p>「 (Perhaps, you…) 」</p></div>
+<div class="orv_quote"><p>(Perhaps, you…)</p></div>
 <p class="orv_line">He was now part of the Fourth Wall and might've read my thoughts. His lips trembled as Nirvana shouted,</p>
-<div class="orv_quote"><p>「 (No! Even if the wall allows it, I won't do it.) 」</p></div>
+<div class="orv_quote"><p>(No! Even if the wall allows it, I won't do it.)</p></div>
 <p class="orv_line">"Nirvana."</p>
 <p class="orv_line">Nirvana would know. There were many types of 'attributes' in the world but there were only two 'perfect immortality' attributes. One was Yoo Joonghyuk's regressor and the other was…</p>
 <p class="orv_line">"Where is your sponsor, Mandala's Guardian now?"</p>
@@ -321,18 +328,12 @@
             <a href="./ch_343"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_345">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="344" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="412" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="343" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="343" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

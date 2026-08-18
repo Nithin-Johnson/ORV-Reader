@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 443: Ep. 83 - Dokja's Incarnation, V</title>
     <meta property="og:title" content="Ch 443: Ep. 83 - Dokja's Incarnation, V" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00443.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 443: Ep. 83 - Dokja's Incarnation, V</h1></div>
 <p class="orv_line">Anyone would've read about Sun Wukong's story at least once in their lives. In my case, the first thing I'd recall after hearing his name would be his description as written in 'Ways of Survival'.</p>
@@ -196,7 +203,7 @@
 <p class="orv_line">⸢Body Outside Body spell that allows him to fight against a Nebula all by himself.⸥</p>
 <p class="orv_line">⸢Thunderclouds capable of bringing down stars of the world.⸥</p>
 <p class="orv_line">One of the strongest Constellations in 'Ways of Survival', that was the Great Sage Heaven's Equal, Sun Wukong.</p>
-<div class="orv_system"><p>[Giant Story, 'Journey to the West', is continuing on with its storytelling!]</p></div>
+<div class="orv_system"><p>Giant Story, 'Journey to the West', is continuing on with its storytelling!</p></div>
 <p class="orv_line">And right now, I had become that very Sun Wukong.</p>
 <p class="orv_line">Kugugugugu!</p>
 <p class="orv_line">Every time the Great Sage's fist pointed at a spot in the sky, the stars of &lt;Emperor&gt; fell in droves. I ended up holding my breath after witnessing that overwhelming power from a first-person perspective.</p>
@@ -207,7 +214,7 @@
 <p class="orv_line">'Are you shocked by your hyung-nims' power level?'</p>
 <p class="orv_line">'…To be honest, I'm really impressed'.</p>
 <p class="orv_line">Kwa-kwakwakwakwa!</p>
-<div class="orv_constellation"><p>[Kuwaaahk!]</p></div>
+<div class="orv_constellation"><p>Kuwaaahk!</p></div>
 <p class="orv_line">A giant that got sent flying away just now was a Narrative-grade Constellation.</p>
 <p class="orv_line">Come on now, how could blowing away a Narrative-grade with a single lightning bolt even make sense?</p>
 <p class="orv_line">Meihouwang spoke as if to mock our opponents. 'Hng, was that the Giant God? That measly little Narrative-grade made a mistake by trying to fight us'.</p>
@@ -222,23 +229,23 @@
 <p class="orv_line">Only after the Stories of these 'Sun Wukongs' gather in one place would his true power be unleashed.</p>
 <p class="orv_line">Bimawen muttered out. 'That Great Sage dude, he's really having fun, isn't he? Well, I guess it's been a long time since he got to cut loose like this'.</p>
 <p class="orv_line">Indeed, the Great Sage's true voice sounded as if he was really enjoying himself. </p>
-<div class="orv_constellation"><p>[The heavenly worlds have become a lot weaker, haven't you! Is this all you've got?]</p></div>
+<div class="orv_constellation"><p>The heavenly worlds have become a lot weaker, haven't you! Is this all you've got?</p></div>
 <p class="orv_line">Narrative-grade Constellations couldn't even endure ten-or-so exchanges of blows and all came crashing down into the Tongtian River's waters.</p>
-<div class="orv_constellation"><p>[Attack him!!]</p></div>
+<div class="orv_constellation"><p>Attack him!!</p></div>
 <p class="orv_line">Despite that, &lt;Emperor&gt;'s forces still remained powerful. After all, it was the Nebula that boasted the highest number of stars in the &lt;Star Stream&gt;.</p>
 <p class="orv_line">The thing was, though, the Great Sage's Story was only getting started, too.</p>
-<div class="orv_constellation"><p>[OhOhOhOhOhOhOh!]</p></div>
+<div class="orv_constellation"><p>OhOhOhOhOhOhOh!</p></div>
 <p class="orv_line">Outer Gods roared out all at the same time, and a lightning bolt landed on Sun Wukong's Ruyi Bang. Ripples of golden light exploded then, and he powerfully threw his weapon into the sky.</p>
 <p class="orv_line">Kwa-aaaaah!</p>
 <p class="orv_line">Ruyi Bang's torpedo-like attack burned the heavens and flew forward with ferocious momentum. Incredible gusts of gale winds whipped around.</p>
 <p class="orv_line">Finally, the dispersing spray of water died down. One of the Constellations, soaked to the bone like a mouse that fell inside a well, muttered out in disbelief.</p>
-<div class="orv_constellation"><p>[W-what is the meaning of…?!]</p></div>
+<div class="orv_constellation"><p>W-what is the meaning of…?!</p></div>
 <p class="orv_line">A portion of the skies was now empty.</p>
 <p class="orv_line">That single attack managed to annihilate thousands of divine immortals rushing in.</p>
-<div class="orv_constellation"><p>[T-this, is this the real Great Sage Heaven's Equal…]</p></div>
+<div class="orv_constellation"><p>T-this, is this the real Great Sage Heaven's Equal…</p></div>
 <p class="orv_line">Even then, even when facing this overwhelming spectacle, &lt;Emperor&gt;'s spirit didn't diminish one bit.</p>
-<div class="orv_constellation"><p>[There's no need to fear! His Story is bound to hit its limit soon!]</p></div>
-<div class="orv_constellation"><p>[Do not let up and attack! He's all alone in the end!]</p></div>
+<div class="orv_constellation"><p>There's no need to fear! His Story is bound to hit its limit soon!</p></div>
+<div class="orv_constellation"><p>Do not let up and attack! He's all alone in the end!</p></div>
 <p class="orv_line">The number of divine immortals swelled back up again and refilled the empty void in an instant.</p>
 <p class="orv_line">This was how &lt;Emperor&gt; fought.</p>
 <p class="orv_line">I got goosebumps. No matter how strong our side was, that side had no end to their supply. At this rate, the one to lose would be…</p>
@@ -256,9 +263,9 @@
 <p class="orv_line">'Well, it's a lot better than you fool who had to clean horse shit out of a stable'.</p>
 <p class="orv_line">Was it because of the two Sun Wukongs' bickering? The construction of the Great Sage's Story became unstable for a moment there, and he ended up getting struck abruptly by an enemy attack.</p>
 <p class="orv_line">As the main body began shaking, the Great Sage finally exploded in irritation. </p>
-<div class="orv_constellation"><p>[Shut the hell up! I can't concentrate!]</p></div>
+<div class="orv_constellation"><p>Shut the hell up! I can't concentrate!</p></div>
 <p class="orv_line">Of course, he didn't forget to add one more thing triumphantly, as well. </p>
-<div class="orv_constellation"><p>[I'm the most famous one, so obviously I'm the first!]</p></div>
+<div class="orv_constellation"><p>I'm the most famous one, so obviously I'm the first!</p></div>
 <p class="orv_line">Meihouwang and Bimawen exploded in a fit of dissatisfaction at the same time.</p>
 <p class="orv_line">For the first time since the battle commenced, the Great Sage had to be on the defensive against the incoming vast wave of the stars.</p>
 <p class="orv_line">If he got pushed back here, then he'd not be able to win this war. Maybe both Meihouwang and Bimawen understood that point as well, as they stopped bickering and concentrated, as well.</p>
@@ -266,23 +273,23 @@
 <p class="orv_line">It was at that moment that a corner of the battlefield collapsed and a huge battleship made its entrance.</p>
 <p class="orv_line">"Ahjussi! I'm here-!!"</p>
 <p class="orv_line">It was Lee Jihye, advancing forward while destroying &lt;Emperor&gt;'s vessels. The members of &lt;Kim Dokja's Company&gt; had made their move in order to support Sun Wukong fighting alone. That wasn't all, though.</p>
-<div class="orv_system"><p>[Constellation, 'Golden-bodied Arhat', is incarnating into the scenario!]</p></div>
+<div class="orv_system"><p>Constellation, 'Golden-bodied Arhat', is incarnating into the scenario!</p></div>
 <p class="orv_line">The Great Sage's real companions began entering the scenario one by one. The Golden-bodied Arhat, Sha Wujing, appeared in the sky in his Incarnation Body and smiled contently as he looked at Lee Jihye down below.</p>
-<div class="orv_constellation"><p>[So, you are the one who played me?]</p></div>
+<div class="orv_constellation"><p>So, you are the one who played me?</p></div>
 <p class="orv_line">"…Who the heck is that monster??"</p>
-<div class="orv_system"><p>[Constellation, 'Cleanser of Altars', is incarnating into the scenario!]</p></div>
+<div class="orv_system"><p>Constellation, 'Cleanser of Altars', is incarnating into the scenario!</p></div>
 <p class="orv_line">The next one to appear was the owner of the Nine-tooth Spike Rake. Zhu Bajie kitted out in a piece of loincloth so flimsy and small that it might not as well be there flapping below his jiggling belly fat, shouted out loudly.</p>
-<div class="orv_constellation"><p>[Where are you, the Supreme King Pigsy, Yoo Joonghyuk? Hahaha! I was thoroughly impressed by you, the one who played me!]</p></div>
+<div class="orv_constellation"><p>Where are you, the Supreme King Pigsy, Yoo Joonghyuk? Hahaha! I was thoroughly impressed by you, the one who played me!</p></div>
 <p class="orv_line">It seemed that the 'Cleanser of Altars' was fixated on Yoo Joonghyuk at this point.</p>
 <p class="orv_line">The Great Sage looked at both Zhu Bajie and Sha Wujing, and nodded his head.</p>
-<div class="orv_constellation"><p>[You came, fellow disciples. A bit late, weren't you.]</p></div>
-<div class="orv_constellation"><p>[I didn't really come to help you out, senior brother. No, I was just curious about the actor playing me, so don't be mistaken.]</p></div>
+<div class="orv_constellation"><p>You came, fellow disciples. A bit late, weren't you.</p></div>
+<div class="orv_constellation"><p>I didn't really come to help you out, senior brother. No, I was just curious about the actor playing me, so don't be mistaken.</p></div>
 <p class="orv_line">Zhu Bajie muttered out some excuses that sounded oddly coy for some reason, and along with Sha Wujing who looked somewhat shocked and hurt, stood next to Sun Wukong.</p>
 <p class="orv_line">When the Demon-Slaying Staff and the Nine-tooth Spike Rake unleashed their Statuses right next to the Ruyi Bang, it finally dawned on me that all of the 'three musketeers' from the 'Journey to the West' had gathered in one place.</p>
-<div class="orv_system"><p>[Giant Story, 'Journey to the West', is regaining its original Status!]</p></div>
+<div class="orv_system"><p>Giant Story, 'Journey to the West', is regaining its original Status!</p></div>
 <p class="orv_line">Soon, the nervous Constellations of &lt;Emperor&gt; loudly yelled out.</p>
-<div class="orv_constellation"><p>[Judges! Are you saying that you'll be siding with the Great Sage?]</p></div>
-<div class="orv_constellation"><p>[It's not just them.]</p></div>
+<div class="orv_constellation"><p>Judges! Are you saying that you'll be siding with the Great Sage?</p></div>
+<div class="orv_constellation"><p>It's not just them.</p></div>
 <p class="orv_line">Six more humanoids were standing tall behind the three Journey to the West's main characters. One of them resembled a monkey, while others resembled a shark, a lion, and even a roc.</p>
 <p class="orv_line">I immediately recognised who they were.</p>
 <p class="orv_line">The Great Sage Who Covers the Seas, Saurian Demon King.</p>
@@ -293,10 +300,10 @@
 <p class="orv_line">The last person wasn't a Yogoe, but Jung Heewon.</p>
 <p class="orv_line">"…This just got rather interesting."</p>
 <p class="orv_line">Thanks to the blessing from the 'Great Sage who Pacifies Heaven' Bull Demon King, the Status of the actress playing that role, Jung Heewon, was rising up at a break-neck pace.</p>
-<div class="orv_constellation"><p>[We will fight alongside you, Great Sage Heaven's Equal.]</p></div>
+<div class="orv_constellation"><p>We will fight alongside you, Great Sage Heaven's Equal.</p></div>
 <p class="orv_line">The Seven Great Sages that waged the 'Great War against the Heavenly Worlds' alongside Sun Wukong had finally gathered in one place once more.</p>
 <p class="orv_line">These Yogoes didn't get much page-time during the original ⸢Journey to the West⸥ and as a result, their presence had always remained behind the veil of obscurity. They appeared today to undo the knot of resentment in their hearts.</p>
-<div class="orv_constellation"><p>[I always felt wronged because my nickname also happens to be 'Meihouwang'. Today, I shall resolve my deep-seated grudge!]</p></div>
+<div class="orv_constellation"><p>I always felt wronged because my nickname also happens to be 'Meihouwang'. Today, I shall resolve my deep-seated grudge!</p></div>
 <p class="orv_line">After the Seven Great Sages jumped into the fray, the flow of the battlefield changed greatly in an instant.</p>
 <p class="orv_line">Those Outer Gods hesitantly studying the Plotter's moods until then joined the battle as well.</p>
 <p class="orv_line">Meihouwang (Handsome Monkey King) watching the battle unfold muttered to himself. 'Where did that Supreme King Pigsy disappear to, anyway?'</p>
@@ -304,7 +311,7 @@
 <p class="orv_line">He should've been battling the 28 Mansions Constellations just now, so…</p>
 <p class="orv_line">Suddenly, I had this ominous foreboding.</p>
 <p class="orv_line">I looked up at the Wenny King and the Great Dokkaebis watching the climax of this scenario from high up in the sky.</p>
-<div class="orv_constellation"><p>[Advance! Do not retreat and continue fighting! The victory shall be &lt;Emperor&gt;'s in the end!]</p></div>
+<div class="orv_constellation"><p>Advance! Do not retreat and continue fighting! The victory shall be &lt;Emperor&gt;'s in the end!</p></div>
 <p class="orv_line">&lt;Emperor&gt;'s Constellations roared out energetically and continued to push forward.</p>
 <p class="orv_line">The ones taking the lead up front were the Heavenly Palace's Four Heavenly Kings.</p>
 <p class="orv_line">Dhrtarastra of the East.</p>
@@ -314,13 +321,13 @@
 <p class="orv_line">Not only that, there were the Pagoda-bearing Heavenly King Li Jing as well as Prince Nezha. It seemed that they were getting desperate as well.</p>
 <p class="orv_line">And then, even the Queen Mother of the West, and the owner of the Jingangzhuo, Daode Tianzun, too… Constellations that you might recognise by their names alone had descended to this place and unleashed their Stories.</p>
 <p class="orv_line">There was little doubt that the 'Great War against the Heavenly Worlds' was being recreated right now.</p>
-<div class="orv_system"><p>[Nebula, &lt;Emperor&gt;, is releasing its Giant Stories!]</p></div>
+<div class="orv_system"><p>Nebula, &lt;Emperor&gt;, is releasing its Giant Stories!</p></div>
 <p class="orv_line">This was the might of a 'Great Nebula'.</p>
 <p class="orv_line">Even then, the Great Sage didn't back off.</p>
-<div class="orv_system"><p>[Many in the audience can't close their slack jaws while watching this abrupt spectacle.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Abyssal Black Flame Dragon', declares that if the 'Prisoner of the Golden Headband' loses today, they will no longer be considered rivals.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Demon-like Judge of Fire', is cheering on the 'Prisoner of the Golden Headband'!]</p></div>
-<div class="orv_system"><p>[Constellation, 'Goryeo's First Sword', is expressing his respect towards the 'Prisoner of the Golden Headband's' martial prowess.]</p></div>
+<div class="orv_system"><p>Many in the audience can't close their slack jaws while watching this abrupt spectacle.</p></div>
+<div class="orv_system"><p>Constellation, 'Abyssal Black Flame Dragon', declares that if the 'Prisoner of the Golden Headband' loses today, they will no longer be considered rivals.</p></div>
+<div class="orv_system"><p>Constellation, 'Demon-like Judge of Fire', is cheering on the 'Prisoner of the Golden Headband'!</p></div>
+<div class="orv_system"><p>Constellation, 'Goryeo's First Sword', is expressing his respect towards the 'Prisoner of the Golden Headband's' martial prowess.</p></div>
 <p class="orv_line">The first one to kneel was Dhrtarastra, followed by Virudhaka. Everywhere the Ruyi Bang flew past, the Heavenly Worlds army crumbled.</p>
 <p class="orv_line">The divine level of martial arts, the might of the greatest Constellation, Sun Wukong was in full display.</p>
 <p class="orv_line">But then, a Buddhist chant coming from somewhere caused the Great Sage to come to a stop for the first time.</p>
@@ -330,44 +337,44 @@
 <p class="orv_line">'Goddammit…!'</p>
 <p class="orv_line">'…It's that baldy monk'.</p>
 <p class="orv_line">The constrictive headband was tightening around the Great Sage's head. He massaged his temples with one hand while issuing a warning. </p>
-<div class="orv_constellation"><p>[Guanyin. Do not interfere!]</p></div>
+<div class="orv_constellation"><p>Guanyin. Do not interfere!</p></div>
 <p class="orv_line">Those words prompted a Buddhist lotus pedestal to appear among the clouds. Guanyin was sitting in the middle of the pedestal in the lotus sitting position.</p>
-<div class="orv_constellation"><p>[Wukong, have you forgotten about what happened in the past?]</p></div>
-<div class="orv_constellation"><p>[What are you talking about!?]</p></div>
-<div class="orv_constellation"><p>[Please stop this. This is not the righteous path.]</p></div>
-<div class="orv_constellation"><p>[What if I don't want to?]</p></div>
-<div class="orv_constellation"><p>[Have you not received my aid until this moment? Can you not concede in consideration of that, at least?]</p></div>
-<div class="orv_constellation"><p>[…Your aid?]</p></div>
+<div class="orv_constellation"><p>Wukong, have you forgotten about what happened in the past?</p></div>
+<div class="orv_constellation"><p>What are you talking about!?</p></div>
+<div class="orv_constellation"><p>Please stop this. This is not the righteous path.</p></div>
+<div class="orv_constellation"><p>What if I don't want to?</p></div>
+<div class="orv_constellation"><p>Have you not received my aid until this moment? Can you not concede in consideration of that, at least?</p></div>
+<div class="orv_constellation"><p>…Your aid?</p></div>
 <p class="orv_line">The Great Sage's brows shot up higher. </p>
-<div class="orv_constellation"><p>[All thanks to your oh-so-wonderful aid, I got to enjoy untold hardship.]</p></div>
+<div class="orv_constellation"><p>All thanks to your oh-so-wonderful aid, I got to enjoy untold hardship.</p></div>
 <p class="orv_line">As if he was venting out all of his built-up resentment, the Great Sage began shouting out loudly. </p>
-<div class="orv_constellation"><p>[All those trials and tribulations we had to go through came to be because of your voyeuristic tendencies…!]</p></div>
+<div class="orv_constellation"><p>All those trials and tribulations we had to go through came to be because of your voyeuristic tendencies…!</p></div>
 <p class="orv_line">The Great Sage's memories related to Guanyin, the one who perceived the sounds of the world, began telling their tale.</p>
 <p class="orv_line">⸢"The law stipulates that one has to fulfil all nine by nine, eighty-one tribulations in order to return to their 'self'. However, they have only experienced the eightieth calamity, and thus lacks one. Five Gates, I now task you to go after them and create the final calamity!"⸥</p>
 <p class="orv_line">The 'Journey to the West' final calamity – the one behind it was none other than Guanyin.</p>
-<div class="orv_constellation"><p>[The ones responsible for the world's calamity by raising up the army of demons and inciting the Yogoes, were you and &lt;Emperor&gt;!!]</p></div>
-<div class="orv_constellation"><p>[…They were all necessary tribulations. You must cool your ire now.]</p></div>
+<div class="orv_constellation"><p>The ones responsible for the world's calamity by raising up the army of demons and inciting the Yogoes, were you and &lt;Emperor&gt;!!</p></div>
+<div class="orv_constellation"><p>…They were all necessary tribulations. You must cool your ire now.</p></div>
 <p class="orv_line">As the Great Sage grew even more agitated, Guanyin began reciting the Constrictive Sutra once more.</p>
-<div class="orv_constellation"><p>[You think you can stop me with such a pathetic sutra?]</p></div>
+<div class="orv_constellation"><p>You think you can stop me with such a pathetic sutra?</p></div>
 <p class="orv_line">Pah-chuchuchut!!</p>
 <p class="orv_line">The Status emitted by the Great Sage Heaven's Equal disrupted the Constrictive Sutra's effect.</p>
 <p class="orv_line">Guanyin was taken greatly aback by this development and while retreating along with her lotus pedestal, she raised her voice.</p>
-<div class="orv_constellation"><p>[…Your powers have grown too strong. I alone can't handle him.]</p></div>
+<div class="orv_constellation"><p>…Your powers have grown too strong. I alone can't handle him.</p></div>
 <p class="orv_line">The Pagoda-bearing Heavenly King bit his lower lip.</p>
-<div class="orv_constellation"><p>[We'd be able to win if we drag out the fight, but…]</p></div>
+<div class="orv_constellation"><p>We'd be able to win if we drag out the fight, but…</p></div>
 <p class="orv_line">Less than 30 minutes remained until the conclusion of the scenario. They knew that, even if they emerged victorious through a protracted battle, there would be no meaning if they were defeated in the scenario.</p>
-<div class="orv_constellation"><p>[Sakyamuni! Where is Sakyamuni?!]</p></div>
+<div class="orv_constellation"><p>Sakyamuni! Where is Sakyamuni?!</p></div>
 <p class="orv_line">In the end, &lt;Emperor&gt; had to make the obvious choice as their final move.</p>
-<div class="orv_constellation"><p>[We only need the ⸢Five Pillars⸥! As long as we have that Story, defeating that damn monkey bastard will not pose any problems!]</p></div>
+<div class="orv_constellation"><p>We only need the ⸢Five Pillars⸥! As long as we have that Story, defeating that damn monkey bastard will not pose any problems!</p></div>
 <p class="orv_line">The ⸢Five Pillars⸥ referred to the Buddha's five fingers.</p>
 <p class="orv_line">Even if it was the heaven-defying Sun Wukong, as long as there existed the Story of him being subdued by the Buddha's palm, he'd not be able to escape from the ⸢Stage Transformation⸥'s influence.</p>
 <p class="orv_line">And one of the split bodies of the Buddha, Sakyamuni, existed in this world.</p>
 <p class="orv_line">Prince Nezha whispered to the Pagoda-bearing Heavenly King next to him.</p>
-<div class="orv_constellation"><p>[Have you forgotten? Sakyamuni's whereabouts are unknown since the 'Great War of Saints and Demons'. Most likely… I fear that he had perished during the process of sealing away the Isle of Reincarnators.]</p></div>
-<div class="orv_constellation"><p>[Sakyamuni has died? Doesn't that mean, there is no method to suppress him…?!]</p></div>
-<div class="orv_constellation"><p>[Please, do not worry. We do have his successor with us.]</p></div>
+<div class="orv_constellation"><p>Have you forgotten? Sakyamuni's whereabouts are unknown since the 'Great War of Saints and Demons'. Most likely… I fear that he had perished during the process of sealing away the Isle of Reincarnators.</p></div>
+<div class="orv_constellation"><p>Sakyamuni has died? Doesn't that mean, there is no method to suppress him…?!</p></div>
+<div class="orv_constellation"><p>Please, do not worry. We do have his successor with us.</p></div>
 <p class="orv_line">At the end of those words, the army of &lt;Emperor&gt; split open.</p>
-<div class="orv_constellation"><p>[Come, 'Sakyamuni's Successor'!]</p></div>
+<div class="orv_constellation"><p>Come, 'Sakyamuni's Successor'!</p></div>
 <p class="orv_line">The highest-ranked Constellations of &lt;Emperor&gt; were walking out from the space created by the army. Each and every one of them were powerful beings that rivalled the likes of &lt;Olympus&gt;'s 12 Gods.</p>
 <p class="orv_line">But when I saw the person wearing the airy Buddhist robe walking in the middle of them, I quietly grew agitated.</p>
 <p class="orv_line">⸢Yoo Sangah was there.⸥</p>
@@ -383,7 +390,7 @@
 <p class="orv_line">Tang Sanzang (三藏法師).</p>
 <p class="orv_line">The one whose mastery of the Constrictive Sutra had surpassed everyone else's in the whole world, and also the only one capable of coercing Sun Wukong with just one sentence.</p>
 <p class="orv_line">&lt;Emperor&gt;'s Constellations loudly shouted out.</p>
-<div class="orv_constellation"><p>[Hurry and suppress that bastard, oh 'Sakyamuni's Successor'!]</p></div>
+<div class="orv_constellation"><p>Hurry and suppress that bastard, oh 'Sakyamuni's Successor'!</p></div>
 <p class="orv_line">Even as he saw Yoo Sangah walk towards him, the Great Sage Heaven's Equal showed no sign of budging – as if he had fallen deeply into the reminiscence of the ancient past.</p>
 <p class="orv_line">'Great Sage! Get a move on! What are you doing?!'</p>
 <p class="orv_line">'We're going to get done in at this rate!'</p>
@@ -391,21 +398,21 @@
 <p class="orv_line">Was the 'Yoo Sangah' before my eyes the 'Yoo Sangah' that I used to know? What if she lost her memories, like how the reincarnated Shin Yoosung lost hers?</p>
 <p class="orv_line">What if she became a completely different person to whom I used to know?</p>
 <p class="orv_line">Yoo Sangah's hand gently reached out and touched Sun Wukong's headband.</p>
-<div class="orv_constellation"><p>[You seem to be in great pain. It must've been difficult for you.]</p></div>
+<div class="orv_constellation"><p>You seem to be in great pain. It must've been difficult for you.</p></div>
 <p class="orv_line">But the moment I heard her clear voice, I realized something.</p>
 <p class="orv_line">This person… was definitely someone that I knew.</p>
 <p class="orv_line">She was neither 'Tang Sanzang' nor 'Sakyamuni's Successor'. No, she was the one companion that I could trust the most – Yoo Sangah.</p>
-<div class="orv_constellation"><p>[I believe that this item will look better on someone else now.]</p></div>
+<div class="orv_constellation"><p>I believe that this item will look better on someone else now.</p></div>
 <p class="orv_line">Her hand slowly moved and took Sun Wukong's Constrictive Headband off.</p>
 <p class="orv_line">The headband that had been tightening around the Great Sage's head fell to the ground with absolutely no resistance whatsoever.</p>
 <p class="orv_line">Meihouwang, Bimawen, and even the Great Sage – all of them stared at her in pure disbelief.</p>
 <p class="orv_line">&lt;Emperor&gt;'s Constellations freaked out grandly and tried to rush in, but by then, it was all too late.</p>
 <p class="orv_line">As the roars from the Constellations rained down, the prisoner of the oldest prison was finally being freed.</p>
-<div class="orv_system"><p>[Awakening condition for the Constellation, 'Prisoner of the Golden Headband' has been satisfied.]</p></div>
-<div class="orv_system"><p>[Douzhanshengfo's Story is being unsealed.]</p></div>
-<div class="orv_system"><p>[Modifier for the Constellation, 'Prisoner of the Golden Headband', is evolving!]</p></div>
+<div class="orv_system"><p>Awakening condition for the Constellation, 'Prisoner of the Golden Headband' has been satisfied.</p></div>
+<div class="orv_system"><p>Douzhanshengfo's Story is being unsealed.</p></div>
+<div class="orv_system"><p>Modifier for the Constellation, 'Prisoner of the Golden Headband', is evolving!</p></div>
 <p class="orv_line">As the glorious rays of light exploded forth, the 'Prisoner of the Golden Headband' slowly opened his eyes.</p>
-<div class="orv_system"><p>[Constellation, 'The Most Ancient Liberator', has been freed from his seal.]</p></div>
+<div class="orv_system"><p>Constellation, 'The Most Ancient Liberator', has been freed from his seal.</p></div>
 <br>
 <hr>
         </article>
@@ -413,18 +420,12 @@
             <a href="./ch_442"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_444">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="443" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="492" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="442" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="442" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

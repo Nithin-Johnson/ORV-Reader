@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 168: Ep. 32 - Kim Dokja's Love, VII</title>
     <meta property="og:title" content="Ch 168: Ep. 32 - Kim Dokja's Love, VII" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,32 +177,32 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00168.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 168: Ep. 32 - Kim Dokja's Love, VII</h1></div>
 <p class="orv_line">The constellation who doesn't yet have a name. Shin Yoosung was well aware of who it was referring to.</p>
 <p class="orv_line">'Ahjussi'.</p>
 <p class="orv_line">It was only a gaze but in fact, many people died because there wasn't a 'gaze' at an important moment.</p>
 <p class="orv_line">In that sense, Shin Yoosung was lucky.</p>
-<div class="orv_system"><p>[The constellation who doesn't yet have a name is nodding.]</p></div>
+<div class="orv_system"><p>The constellation who doesn't yet have a name is nodding.</p></div>
 <p class="orv_line">Shin Yoosung received the attention of only one person in the world and stepped forward.</p>
 <p class="orv_line">She could do it. Her legs were numb and her lips couldn't move, but she was convinced.</p>
 <p class="orv_line">One step, another step.</p>
@@ -208,21 +215,21 @@
 <p class="orv_line">That didn't mean she would give up. There would be a miracle. Just like Kim Dokja saved the 41st regression Shin Yoosung. Even those who couldn't be healed could be saved.</p>
 <p class="orv_line">Shin Yoosung saw the roots of the Perpetual Motion that pushed down on the monster. Perhaps this monster had been tied up in this place for a lifetime.</p>
 <p class="orv_line">Shin Yoosung pulled out a golden fruit.</p>
-<div class="orv_system"><p>[Ancient Beast's Fruit.]</p></div>
+<div class="orv_system"><p>Ancient Beast's Fruit.</p></div>
 <p class="orv_line">It was the SSS-grade item that emerged from the random box Kim Dokja had given to her one day. It was a consumable item that could be used to tame an historical-grade monster that couldn't be tamed.</p>
 <p class="orv_line">She slowly bowed to the monster and said, "Let's go together."</p>
 <br>
 <hr>
 <br>
 <p class="orv_line">It felt like Paradise was experiencing an earthquake and Reinheit shouted in a baffled manner.</p>
-<div class="orv_constellation"><p>[Keuk, kuheok, w-what is this…!]</p></div>
+<div class="orv_constellation"><p>Keuk, kuheok, w-what is this…!</p></div>
 <p class="orv_line">The Perpetual Motion suddenly collapsed. Little by little, the plant's branches and leaves were wilting. The supplied energy was drifting to a distant place.</p>
 <p class="orv_line">By the time Reinheit realized something was wrong, the branches in the air were already breaking.</p>
-<div class="orv_constellation"><p>[Kuheeeeok! H-How? How can…!]</p></div>
+<div class="orv_constellation"><p>Kuheeeeok! H-How? How can…!</p></div>
 <p class="orv_line">Reinheit started vomiting. Sap poured out like it was blood.</p>
 <p class="orv_line">Something was eating at the base of the Perpetual Motion. As the eerie teeth penetrated the sharp roots, Reinheit screamed like his body was being torn apart. The being tied to the roots of Paradise for a long time was now destroying the roots.</p>
 <p class="orv_line">The Perpetual Motion lost power and started to collapse.</p>
-<div class="orv_constellation"><p>[N-No. No…!]</p></div>
+<div class="orv_constellation"><p>N-No. No…!</p></div>
 <p class="orv_line">Something huge exploded from under the ground. It didn't have a rating because it had never been revealed to the world.</p>
 <p class="orv_line">It had a huge dragon's body, a demon's wings and the eyes of an insect. It was the ultimate monster that evolved from the interbreeding of demon species, insect kings and other monster species.</p>
 <p class="orv_line">Everything in Paradise saw this miracle and Yoo Joonghyuk was one of them. "…Chimera dragon."</p>
@@ -251,21 +258,21 @@
 <p class="orv_line">The next floor. This was the location of the last scenario of Dark Castle.</p>
 <p class="orv_line">"You… won't find what you are looking for. This castle, it is just the constellations' playground. So be careful. The next floor…"</p>
 <p class="orv_line">At this moment, Reinheit's body exploded. Yoo Joonghyuk stared silently into the air where the dokkaebis were smiling.</p>
-<div class="orv_constellation"><p>[Nah uh, that is prohibited.]</p></div>
-<div class="orv_constellation"><p>[Right, right. This isn't fun.]</p></div>
+<div class="orv_constellation"><p>Nah uh, that is prohibited.</p></div>
+<div class="orv_constellation"><p>Right, right. This isn't fun.</p></div>
 <p class="orv_line">Then the messages of the constellations came like they had been waiting.</p>
-<div class="orv_system"><p>[Many constellations admire the performance of the incarnation 'Yoo Joonghyuk'.]</p></div>
-<div class="orv_system"><p>[Constellations of the absolute good system agree with the judgment of 'Yoo Joonghyuk'.]</p></div>
-<div class="orv_system"><p>[Some constellations express regret over the collapse of Paradise.]</p></div>
+<div class="orv_system"><p>Many constellations admire the performance of the incarnation 'Yoo Joonghyuk'.</p></div>
+<div class="orv_system"><p>Constellations of the absolute good system agree with the judgment of 'Yoo Joonghyuk'.</p></div>
+<div class="orv_system"><p>Some constellations express regret over the collapse of Paradise.</p></div>
 <p class="orv_line">…</p>
-<div class="orv_system"><p>[Many constellations have sponsored 150,000 coins!]</p></div>
+<div class="orv_system"><p>Many constellations have sponsored 150,000 coins!</p></div>
 <p class="orv_line">Yoo Joonghyuk's expression didn't change. The eyes of joy or sorrow weren't revealed.</p>
-<div class="orv_system"><p>[You have defeated the Demon Marquis Reinheit!]</p></div>
-<div class="orv_system"><p>[150,000 coins have been acquired.]</p></div>
-<div class="orv_system"><p>[The legendary-grade story 'Paradise of Despair' has been acquired.]</p></div>
-<div class="orv_system"><p>[Your Dark Castle ranking has been adjusted!]</p></div>
-<div class="orv_system"><p>[A new main scenario has appeared.]</p></div>
-<div class="orv_system"><p>[Main Scenario #10 ― '73rd Demon King' is temporarily opened.]</p></div>
+<div class="orv_system"><p>You have defeated the Demon Marquis Reinheit!</p></div>
+<div class="orv_system"><p>150,000 coins have been acquired.</p></div>
+<div class="orv_system"><p>The legendary-grade story 'Paradise of Despair' has been acquired.</p></div>
+<div class="orv_system"><p>Your Dark Castle ranking has been adjusted!</p></div>
+<div class="orv_system"><p>A new main scenario has appeared.</p></div>
+<div class="orv_system"><p>Main Scenario #10 ― '73rd Demon King' is temporarily opened.</p></div>
 <p class="orv_line">Everything was so perfectly solved that he couldn't do better. It didn't follow his plan but he raised his Dark Castle ranking, collected coins and got a clue about the next scenario.</p>
 <p class="orv_line">Nevertheless… Yoo Joonghyuk didn't know what these complicated emotions were. He looked down at his hands and started brooding.</p>
 <p class="orv_line">"Our saviour!"</p>
@@ -288,12 +295,12 @@
 <br>
 <p class="orv_line">"My name is Kim Dokja."</p>
 <p class="orv_line">As I was observing using 'third person's viewpoint', I heard Yoo Joonghyuk's words and felt a chill.</p>
-<div class="orv_system"><p>[A new achievement has been added to your fifth story.]</p></div>
-<div class="orv_system"><p>[The inhabitants of Paradise will remember the 'Liberator of Paradise Kim Dokja'.]</p></div>
-<div class="orv_system"><p>[The 'Lone Messiah' story has become even richer.]</p></div>
+<div class="orv_system"><p>A new achievement has been added to your fifth story.</p></div>
+<div class="orv_system"><p>The inhabitants of Paradise will remember the 'Liberator of Paradise Kim Dokja'.</p></div>
+<div class="orv_system"><p>The 'Lone Messiah' story has become even richer.</p></div>
 <p class="orv_line">This situation didn't make sense. I panicked when I saw that the people of Paradise would remember the name 'Kim Dokja'.</p>
 <p class="orv_line">No, why was my name listed all of a sudden?</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is shedding tears at this true companionship.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is shedding tears at this true companionship.</p></div>
 <p class="orv_line">Uriel, who had been quiet for a while, started jumping with excitement. I would've scolded her previously but after the banquet, harsh words couldn't emerge.</p>
 <p class="orv_line">However, that Yoo Joonghyuk bastard… he was really mysterious. That egoist couldn't hand his achievements to other people. Did he want to make friends with me now?</p>
 <p class="orv_line">It wasn't possible.</p>
@@ -305,7 +312,7 @@
 <p class="orv_line">I wasn't too surprised. Yoo Sangah must've stolen the prophecy from the Moerae. Perhaps like Dionysus, she was struggling to save me.</p>
 <p class="orv_line">"Ahjussi will die?"</p>
 <p class="orv_line">"By the person he loves most?"</p>
-<div class="orv_quote"><p>「 Incarnation Kim Dokja will be killed by the person he loves most. 」</p></div>
+<div class="orv_quote"><p>Incarnation Kim Dokja will be killed by the person he loves most.</p></div>
 <p class="orv_line">The party members had extremely confused expressions. Jung Heewon looked puzzled, Shin Yoosung was concerned and Lee Hyunsung was struggling with something. Lee Jihye was the first one to open her mouth. "Ahjussi will just revive again after dying. Isn't it fine?"</p>
 <p class="orv_line">Yoo Sangah replied to Lee Jihye's question. "It is a good thing but I don't know how many times he can resurrect…"</p>
 <p class="orv_line">"It is a prophecy of Olympus and it isn't that easy to avoid."</p>
@@ -318,18 +325,12 @@
             <a href="./ch_167"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_169">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="168" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="151" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="167" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="167" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

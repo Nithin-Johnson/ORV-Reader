@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 409: Ep. 78 - Twist/轉, I</title>
     <meta property="og:title" content="Ch 409: Ep. 78 - Twist/轉, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,30 +177,30 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00409.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         <div class="orv_cover"><img src="../../../assets/images/Cover%20409.jpg" alt=""></div>
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 409: Ep. 78 - Twist/轉, I</h1></div>
 <p class="orv_line">Every muscle on my body ached as if I had been thoroughly beaten up.</p>
 <p class="orv_line">I had blacked out for a second but regained my consciousness somehow. I vomited out Stories and opened my eyes within the pitch-black empty space. I couldn't see a single thing nearby, but I already knew where I was.</p>
-<div class="orv_system"><p>['Indescribable Distance' is glancing at you.]</p></div>
+<div class="orv_system"><p>'Indescribable Distance' is glancing at you.</p></div>
 <p class="orv_line">The 'Indescribable Distance', also known as the Nameless Mist.</p>
 <p class="orv_line">I ran into this guy's clone back in the 73rd Demon Realm.</p>
 <p class="orv_line">With nothing but the strength of a clone, this guy destroyed my Demon Realm, and went on to break Narrative-grade Constellations and Transcendents alike.</p>
@@ -217,28 +224,28 @@
 <p class="orv_line">Tsu-chuchuchuchut!</p>
 <p class="orv_line">More lumps of Story poured out of my mouth.</p>
 <p class="orv_line">This wasn't because the 'Indescribable Distance' attacked me; no, it was the distorted Probability's fault. The distortions of the world, saved up for the purpose of summoning an Outer God, was trying to eliminate me from the scenario itself.</p>
-<div class="orv_system"><p>[Story, 'Demon King of Salvation', is continuing with its storytelling.]</p></div>
+<div class="orv_system"><p>Story, 'Demon King of Salvation', is continuing with its storytelling.</p></div>
 <p class="orv_line">I managed to endure only because of my Stories. They continued to whisper into my ears – they said that you're the 'Demon King of Salvation'. You must save people.</p>
 <p class="orv_line">Just like how they did to Metatron and Agares, Stories were whispering to me.</p>
-<div class="orv_system"><p>[Story, 'King of a Kingless World', is continuing with its storytelling.]</p></div>
-<div class="orv_system"><p>[Giant Story, 'Demon Realm's Spring', is continuing with its storytelling.]</p></div>
-<div class="orv_system"><p>[Giant Story, 'Torch that Swallowed the Myth', is continuing with its storytelling.]</p></div>
+<div class="orv_system"><p>Story, 'King of a Kingless World', is continuing with its storytelling.</p></div>
+<div class="orv_system"><p>Giant Story, 'Demon Realm's Spring', is continuing with its storytelling.</p></div>
+<div class="orv_system"><p>Giant Story, 'Torch that Swallowed the Myth', is continuing with its storytelling.</p></div>
 <p class="orv_line">Even though I was inside the quaking fog of darkness, I still could sense what was happening outside.</p>
-<div class="orv_system"><p>['Final Dragon of the Book of Apocalypse' is baring its animosity towards the 'Indescribable Distance'!]</p></div>
-<div class="orv_system"><p>['Indescribable Distance' is making its move.]</p></div>
+<div class="orv_system"><p>'Final Dragon of the Book of Apocalypse' is baring its animosity towards the 'Indescribable Distance'!</p></div>
+<div class="orv_system"><p>'Indescribable Distance' is making its move.</p></div>
 <p class="orv_line">Thankfully, everything was unfolding according to the plan. The Outer God showing up to devour me had discovered an even tastier prey and it was now far too focused on preying on the 'Final Dragon of the Book of Revelation'.</p>
 <p class="orv_line">The fight between Calamities had begun. The Final Dragon versus the Nameless Mist.</p>
 <p class="orv_line">These two's mutual destruction was the hope of all the other existences.</p>
 <p class="orv_line">The most important thing was to buy enough time. Enough time for the Constellations to reorganise themselves, for those damn stars to reform the nebulas befitting their lofty titles.</p>
-<div class="orv_system"><p>[Damage to your Incarnation Body is critical!]</p></div>
-<div class="orv_system"><p>[Indescribable Distance's Status is eating into your 'Context of Modifier'.]</p></div>
-<div class="orv_system"><p>[Unity between Stories is weakening.]</p></div>
-<div class="orv_system"><p>[&lt;Star Stream&gt; is stunned by your extraordinary achievement.]</p></div>
-<div class="orv_system"><p>[Your own Giant Story is waking up.]</p></div>
+<div class="orv_system"><p>Damage to your Incarnation Body is critical!</p></div>
+<div class="orv_system"><p>Indescribable Distance's Status is eating into your 'Context of Modifier'.</p></div>
+<div class="orv_system"><p>Unity between Stories is weakening.</p></div>
+<div class="orv_system"><p>&lt;Star Stream&gt; is stunned by your extraordinary achievement.</p></div>
+<div class="orv_system"><p>Your own Giant Story is waking up.</p></div>
 <p class="orv_line">I heard something faintly resembling a song from afar.</p>
 <p class="orv_line">It was a melody I heard a long time ago. I wasn't sure whether that was my mother's, from my companions, or from someone else.</p>
 <p class="orv_line">Except that, as I listened to that faint song…</p>
-<div class="orv_system"><p>[Story, 'Life and Death Companions', is continuing with its storytelling.]</p></div>
+<div class="orv_system"><p>Story, 'Life and Death Companions', is continuing with its storytelling.</p></div>
 <p class="orv_line">…I realized that I didn't want to die.</p>
 <br>
 <hr>
@@ -247,7 +254,7 @@
 <p class="orv_line">One world was colliding with another. Kim Dokja, completely exposed to the Apocalypse Dragon's shockwave, was swallowed up by the jet-black fog of darkness.</p>
 <p class="orv_line">And now, it was no longer him dealing with the shockwave, but that horrifying Outer God, instead.</p>
 <p class="orv_line">The two powers born from Chaos collided, and everything near their vicinity was sucked into nothingness.</p>
-<div class="orv_system"><p>[Constellation, 'Mandala's Guardian', is gasping out.]</p></div>
+<div class="orv_system"><p>Constellation, 'Mandala's Guardian', is gasping out.</p></div>
 <p class="orv_line">Thankfully, the collision location was much further away than it looked, so the companions still on the ground were spared.</p>
 <p class="orv_line">Complexions of most Constellations were incredibly poor after having witnessed both the Apocalypse Dragon and an Outer God.</p>
 <p class="orv_line">As if all those days where they roamed the heavens like kings were nothing but illusions, calamities that not even Narrative-grade Constellations could handle were engaging in bitter warfare.</p>
@@ -267,14 +274,14 @@
 <p class="orv_line">Without giving anyone a chance to stop them, the three stepped forward at the same time, and they glanced at each other. Then, someone else did stop them from the front.</p>
 <p class="orv_line">It was Anna Croft.</p>
 <p class="orv_line">"All of you, please stop! You mustn't break away from the battlefield!"</p>
-<div class="orv_system"><p>[Nebula, &lt;Asgard&gt;, is currently commanding the battlefield.]</p></div>
+<div class="orv_system"><p>Nebula, &lt;Asgard&gt;, is currently commanding the battlefield.</p></div>
 <p class="orv_line">Anna Croft's voice, along with &lt;Asgard&gt;'s Giant Story, managed to tie all three of them to their spots.</p>
 <p class="orv_line">Yoo Joonghyuk's expression crumpled in an unsightly manner. "Get out of my sight."</p>
 <p class="orv_line">"This isn't what the 'Demon King of Salvation' wanted!"</p>
 <p class="orv_line">"What the 'Demon King of Salvation' wanted?"</p>
 <p class="orv_line">Han Sooyoung's left arm was lit in black flames as if there was no more need to listen here.</p>
 <p class="orv_line">Anna Croft quickly spoke. "I've begun seeing bits of the future."</p>
-<p class="orv_line">The Stories were now flowing within her [Eye of the Great Demon].</p>
+<p class="orv_line">The Stories were now flowing within her <strong>[Eye of the Great Demon]</strong>.</p>
 <p class="orv_line">"It might be that this is because he has really done it." Anna Croft sounded genuinely impressed. She looked at the fierce battle of the two Calamities taking place in the distant sky and spoke. "To save this world, he really…"</p>
 <p class="orv_line">"God damn it! Who cares about saving the world and shit?! We want to…!"</p>
 <p class="orv_line">"His sacrifice is truly noble. Do you not understand what that means?"</p>
@@ -294,11 +301,11 @@
 <p class="orv_line">Anna Croft continued on with a cautious tone of voice. "Please, have faith in me, the prophet. We need to save up our strength, and then, aim for the moment when the two Calamities fight each other and destroy themselves. Only then will our survival be guaranteed."</p>
 <p class="orv_line">"Prophet? You think you're the only one who can tell the future?"</p>
 <p class="orv_line">That was when Anna Croft realized something.</p>
-<p class="orv_line">Han Sooyoung's surrounding vicinity was overflowing with the Story of [Predictive Plagiarism]. The Regressor Yoo Joonghyuk was studying and observing the situation without rest through his [Sage's Eye] in the meantime.</p>
+<p class="orv_line">Han Sooyoung's surrounding vicinity was overflowing with the Story of <strong>[Predictive Plagiarism]</strong>. The Regressor Yoo Joonghyuk was studying and observing the situation without rest through his <strong>[Sage's Eye]</strong> in the meantime.</p>
 <p class="orv_line">It wasn't only the prophet who could predict the future. These two also possessed insight far superior to others when it came to reading future events.</p>
 <p class="orv_line">Even then, they still chose to save Kim Dokja.</p>
 <p class="orv_line">Jung Heewon unsheathed her sword and spoke. "I don't know anything about the future. However, I do know this. You said that you want to save this world? It's the same for me, too."</p>
-<p class="orv_line">Her determination manifested in the whitish flames billowing on the [Sword of Judgement].</p>
+<p class="orv_line">Her determination manifested in the whitish flames billowing on the <strong>[Sword of Judgement]</strong>.</p>
 <p class="orv_line">"That man is the world I wish to save."</p>
 <p class="orv_line">At the end of those words, all three of them dashed into the air. Not the Probability of the Giant Story, and not even the pressure from a Nebula could stop them from leaving.</p>
 <p class="orv_line">Anna Croft urgently reached out, but by then, they were already soaring towards the distant heavens.</p>
@@ -307,15 +314,15 @@
 <p class="orv_line">"What the hell?! Son of a…!"</p>
 <p class="orv_line">Kugugugugu!!</p>
 <p class="orv_line">The equilibrium of the heavens was collapsing under the continued battle of the two Calamities. The new problem had to do with the crumbling balance of the broken scale invading into this world.</p>
-<div class="orv_constellation"><p>[Isn't that…?]</p></div>
+<div class="orv_constellation"><p>Isn't that…?</p></div>
 <p class="orv_line">One of the Constellations muttered out. Something hidden within the fog of darkness blanketing the skies wiggled, and began separating itself.</p>
 <p class="orv_line">Not content with pressuring the Apocalypse Dragon, the 'Indescribable Distance', AKA the Nameless Mist, had begun creating a clone from itself.</p>
 <p class="orv_line">"Ah, ahh, aaaah…"</p>
 <p class="orv_line">A sickly-yellow eye of terror revealed itself among the fog of darkness. Shin Yoosung's shoulders began trembling non-stop as if a nightmare of the past managed to creep back into her consciousness.</p>
 <p class="orv_line">She had seen that eye before. Incarnations who saw that eye would fail to hold onto their minds and eventually, transform into creatures of the Outer World.</p>
-<p class="orv_line">On that day, all existences of the [Industrial Complex] were rendered completely powerless in front of that Calamity.</p>
+<p class="orv_line">On that day, all existences of the <strong>[Industrial Complex]</strong> were rendered completely powerless in front of that Calamity.</p>
 <p class="orv_line">However, there was someone here who remembered that day's events quite differently from her.</p>
-<div class="orv_constellation"><p>[It's slightly smaller than that day, I see.]</p></div>
+<div class="orv_constellation"><p>It's slightly smaller than that day, I see.</p></div>
 <p class="orv_line">It was Cheok Jungyeong.</p>
 <br>
 <hr>
@@ -324,18 +331,12 @@
             <a href="./ch_408"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_410">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="409" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="814" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="408" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="408" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

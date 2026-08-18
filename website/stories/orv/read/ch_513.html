@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 513: Ep. 99 - The Oldest Dream, II</title>
     <meta property="og:title" content="Ch 513: Ep. 99 - The Oldest Dream, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00513.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 513: Ep. 99 - The Oldest Dream, II</h1></div>
 <p class="orv_line">The subway train slowed down before coming to a stop before us, and then, opened its doors.</p>
@@ -217,7 +224,7 @@
 <p class="orv_line">"How come?"</p>
 <p class="orv_line">Nirvana and the other librarians didn't answer. They exchanged somewhat saddened gazes with each other, before finally making their reply.</p>
 <p class="orv_line">⸢(You witnessing the end will be enough for…)⸥</p>
-<div class="orv_constellation"><p>[The doors are closing.]</p></div>
+<div class="orv_constellation"><p>The doors are closing.</p></div>
 <p class="orv_line">The rest of their words couldn't be heard; the doors shut close, and accompanied by the noises of a giant cartwheel turning, the subway began chugging forward. Its speed was neither quick nor slow. And outside the windows, we saw the view of the pitch-black darkness lazily shifting past us.</p>
 <p class="orv_line">I gazed into that darkness for a long time. Just where was this train taking us?</p>
 <p class="orv_line">"It's the line number three."</p>
@@ -268,13 +275,13 @@
 <p class="orv_line">"Why do you think that?"</p>
 <p class="orv_line">"I'm not sure, but I have a hunch."</p>
 <p class="orv_line">To me, the being at the end of this line didn't seem like it'd be 'tls123'. I recalled what the Dokkaebi King said back then.</p>
-<p class="orv_line">⸢[Rather than an author, you could say that the 'Oldest Dream' is much closer to being a reader. It's not an existence that writes stories for someone else. It's lazy and can be quite greedy.]⸥</p>
+<p class="orv_line">⸢<strong>[Rather than an author, you could say that the 'Oldest Dream' is much closer to being a reader. It's not an existence that writes stories for someone else. It's lazy and can be quite greedy.]</strong>⸥</p>
 <p class="orv_line">I even began questioning whether an 'author' was necessary in our current hypothesis. Did this world really begin because of tls123?</p>
 <p class="orv_line">Maybe tls123 simply alerted me to the already-existing world, instead?</p>
 <p class="orv_line">Just like how the 'Secretive Plotter' or the other individuals from the 999th turn existed even though they weren't recorded in the pages…</p>
 <p class="orv_line">"Now that I think about, I'm curious. Dokja-ssi, how did you stumble across that novel in the first place?"</p>
 <p class="orv_line">"Ahh, I was also curious about that."</p>
-<p class="orv_line">Yoo Joonghyuk disinterestedly polishing the [Black Heavenly Demon Sword] shifted his gaze towards me when that topic was brought up. Jang Hayoung asked as her eyes sparkled.</p>
+<p class="orv_line">Yoo Joonghyuk disinterestedly polishing the <strong>[Black Heavenly Demon Sword]</strong> shifted his gaze towards me when that topic was brought up. Jang Hayoung asked as her eyes sparkled.</p>
 <p class="orv_line">"Was it like some kind of a fateful attraction?"</p>
 <p class="orv_line">"I also know something about such a feeling! The first time I held a grenade back when I was a private, I…!"</p>
 <p class="orv_line">"I just came across it while browsing the net, actually."</p>
@@ -355,21 +362,21 @@
 <p class="orv_line">All of my senses were telling me the truth; they said that that child was the culprit behind all these scenarios.</p>
 <p class="orv_line">⸢Y ou we re al rea dy ex pec ting this di dn't you Kim Dok ja.⸥</p>
 <p class="orv_line">The Oldest Dream. The world's most omniscient yet powerless god.</p>
-<div class="orv_system"><p>['The Fourth Wall's' influence is getting weaker.]</p></div>
+<div class="orv_system"><p>'The Fourth Wall's' influence is getting weaker.</p></div>
 <p class="orv_line">⸢Kim Dok…⸥</p>
-<div class="orv_system"><p>['The Fourth Wall's' influence is getting extremely weak.]</p></div>
+<div class="orv_system"><p>'The Fourth Wall's' influence is getting extremely weak.</p></div>
 <p class="orv_line">I thought I heard something fall to the floor, and I saw Jung Heewon's sword rolling around on the ground.</p>
 <p class="orv_line">"Ah, ah…"</p>
 <p class="orv_line">She was now looking at me. She was looking at the child, then back at me. Her eyes were filling up with despair.</p>
 <p class="orv_line">As if she couldn't believe this. As if she'd prefer that this whole thing turned out to be a lie.</p>
-<div class="orv_system"><p>[The promise with the 'Secretive Plotter' is activating.]</p></div>
+<div class="orv_system"><p>The promise with the 'Secretive Plotter' is activating.</p></div>
 <p class="orv_line">I opened my mouth only to close it several times. Maybe, this might be my punishment. It might very well be the time to pay the price for the salvation I received.</p>
-<div class="orv_system"><p>[You have promised to destroy &lt;Star Stream&gt;.]</p></div>
-<div class="orv_system"><p>[&lt;Star Stream&gt; will not be destroyed unless the 'Oldest Dream' is ended.]</p></div>
+<div class="orv_system"><p>You have promised to destroy &lt;Star Stream&gt;.</p></div>
+<div class="orv_system"><p>&lt;Star Stream&gt; will not be destroyed unless the 'Oldest Dream' is ended.</p></div>
 <p class="orv_line">I now stared at the child.</p>
 <p class="orv_line">At the child with the exact same face as mine.</p>
 <p class="orv_line">And the boy slowly raised his head to look back at me.</p>
-<div class="orv_constellation"><p>[Please end the 'Oldest Dream'.]</p></div>
+<div class="orv_constellation"><p>Please end the 'Oldest Dream'.</p></div>
 <div class="orv_image"><img src="../../../assets/images/513 - And the boy slowly raised his head to look back at me.jpg" alt="" loading="lazy"></div>
 <div class="orv_notice"><p>* Official novel illustration (canonical)</p></div>
 <br>
@@ -379,18 +386,12 @@
             <a href="./ch_512"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_514">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="513" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="561" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="512" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="512" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

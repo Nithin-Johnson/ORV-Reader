@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 235: Ep. 44 - Swindler, III</title>
     <meta property="og:title" content="Ch 235: Ep. 44 - Swindler, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00235.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 235: Ep. 44 - Swindler, III</h1></div>
 <p class="orv_line">From the next day onwards, Yoo Joonghyuk was absorbed in training with the Breaking the Sky Sword Saint.</p>
@@ -197,7 +204,7 @@
 <p class="orv_line">In any case, it wouldn't be bad to leave it to Kim Dokja. Yoo Joonghyuk would've had to pass through 40 scenarios in order to meet an ancient giant god if he followed his original plan.</p>
 <p class="orv_line">'That guy, I didn't think he would have such a relationship with the Underworld'.</p>
 <p class="orv_line">Kim Dokja really had unknown corners. How the hell did he succeed in charming all those constellations…</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is laughing.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is laughing.</p></div>
 <p class="orv_line">Just look at this archangel. The Demon-like Judge of Fire wasn't such a constellation during the second round. She was a strict and lofty archangel full of justice. Yoo Joonghyuk couldn't understand why such an existence was so ruined this time.</p>
 <p class="orv_line">"Are you really thinking about participating in the competition?"</p>
 <p class="orv_line">Yoo Joonghyuk nodded silently at the Breaking the Sky Sword Saint's question.</p>
@@ -206,8 +213,8 @@
 <p class="orv_line">"It isn't at a level to deal with the 10 Grand Masters."</p>
 <p class="orv_line">Yoo Joonghyuk was well aware of the 10 Grand Masters of Murim. One of them was the Ice Flower Goddess whose techniques were sold by the previous merchant who welcomed visitors. There was also a grand master from the Namgung Family, a distant relative of the Breaking the Sky Sword Saint. They would appear when the martial arts competition opened.</p>
 <p class="orv_line">In addition, the martial arts competition was a commodity so he had to consider the incarnations of famous constellations participating.</p>
-<div class="orv_system"><p>[Some constellations are looking forward to the martial arts competition.]</p></div>
-<div class="orv_system"><p>[Some constellations are tired of the martial arts competition.]</p></div>
+<div class="orv_system"><p>Some constellations are looking forward to the martial arts competition.</p></div>
+<div class="orv_system"><p>Some constellations are tired of the martial arts competition.</p></div>
 <p class="orv_line">Fortunately, the stronger constellations were tired of these scenarios. As a scenario that repeated every year in Murim, there weren't many constellations paying much attention to the martial arts competition.</p>
 <p class="orv_line">The Breaking the Sky Sword Saint read Yoo Joonghyuk's heart and opened her mouth. "You have to open transcendence stage two."</p>
 <p class="orv_line">"I've opened it before so it won't be difficult."</p>
@@ -242,7 +249,7 @@
 <p class="orv_line">Yoo Joonghyuk also knew it. That's why it was very difficult to learn the skills of the Breaking the Sky Sword Saint in the past. However, this time was different.</p>
 <p class="orv_line">"The problem of gender can be resolved to some extent."</p>
 <p class="orv_line">"What does that mean?"</p>
-<div class="orv_system"><p>[The constellation who likes to change sex is snorting.]</p></div>
+<div class="orv_system"><p>The constellation who likes to change sex is snorting.</p></div>
 <p class="orv_line">Yoo Joonghyuk frowned at the indirect message. Complex emotions and enormous anger rose every time he thought about it but he had to take advantage of everything he could.</p>
 <p class="orv_line">"It is time to wrap this up."</p>
 <p class="orv_line">After a while, the astonished Breaking the Sky Sword Saint's mouth dropped open. Yoo Joonghyuk took out his sword with a blank expression.</p>
@@ -252,8 +259,8 @@
 <br>
 <hr>
 <br>
-<div class="orv_system"><p>[In the Kim Dokja Industrial Complex, there are people who doubt your achievements.]</p></div>
-<div class="orv_system"><p>[The story about the 'Swindler Kim Dokja' is spreading in the Kim Dokja Industrial Complex.]</p></div>
+<div class="orv_system"><p>In the Kim Dokja Industrial Complex, there are people who doubt your achievements.</p></div>
+<div class="orv_system"><p>The story about the 'Swindler Kim Dokja' is spreading in the Kim Dokja Industrial Complex.</p></div>
 <p class="orv_line">I woke up from my nap due to a message in the air. Based on the message, it seemed that a bad rumour was circulating in the industrial complex while I was away. It was natural since the industrial complex had changed rulers but the new ruler never showed his face.</p>
 <p class="orv_line">By the way, Swindler Kim Dokja… Why did it feel like people who didn't know my face knew me better?</p>
 <p class="orv_line">"Kim Dokja. What are you doing?"</p>
@@ -270,15 +277,15 @@
 <p class="orv_line">What an idiot. He was a man, right? It was like this in the original novel. I was about to speak when Yoo Joonghyuk wondered, "Rather, what is happening with the constellations?"</p>
 <p class="orv_line">"…I'm thinking."</p>
 <p class="orv_line">It had already been a week since I received Persephone's message.</p>
-<div class="orv_system"><p>[The constellation 'Queen of the Darkest Spring' is inviting you to the Gourmet Association.]</p></div>
-<div class="orv_system"><p>[In one week, the Gourmet Association Festival will be held at Oro Castle.]</p></div>
-<div class="orv_system"><p>[Please decide if you will depart by tonight.]</p></div>
+<div class="orv_system"><p>The constellation 'Queen of the Darkest Spring' is inviting you to the Gourmet Association.</p></div>
+<div class="orv_system"><p>In one week, the Gourmet Association Festival will be held at Oro Castle.</p></div>
+<div class="orv_system"><p>Please decide if you will depart by tonight.</p></div>
 <p class="orv_line">An invitation to the Gourmet Association. I expected it to happen someday but it was earlier than expected.</p>
 <p class="orv_line">The Gourmet Association. It was a gathering of constellations who loved gourmet food. At first glance, it was like the 'constellation banquet' but reality was completely different.</p>
 <p class="orv_line">If the constellation banquet was official, the Gourmet Association Festival was unofficial and the intensity of the events that happened was also different.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is worried about you.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is worried about you.</p></div>
 <p class="orv_line">Above all, there was no Uriel in the Gourmet Association.</p>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is wondering about your choice.]</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is wondering about your choice.</p></div>
 <p class="orv_line">There was no the Great Sage Heaven's Equal, no Secretive Plotter. Was there… the Abyssal Black Flame Dragon? I couldn't remember it well.</p>
 <p class="orv_line">In any case, the atmosphere of the place wasn't as favourable to me as the 'constellations banquet'. There was nothing more dangerous in the Star Stream then going to a gathering of unstable constellations.</p>
 <p class="orv_line">Yoo Joonghyuk read my expression and asked, "Are you frightened?"</p>
@@ -295,18 +302,12 @@
             <a href="./ch_234"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_236">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="235" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="289" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="234" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="234" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 340: Ep. 64 - A Road That Isn't a Road, I</title>
     <meta property="og:title" content="Ch 340: Ep. 64 - A Road That Isn't a Road, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,37 +177,37 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00340.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 340: Ep. 64 - A Road That Isn't a Road, I</h1></div>
 <p class="orv_line">Immediately after the collapse of Olympus in Gigantomachia, the restrictions on the giants disappeared. They were freed from the old story and would be reborn as participants in new scenarios.</p>
-<div class="orv_constellation"><p>[There is no desire to repeat the old battle. Do you agree?]</p></div>
-<div class="orv_constellation"><p>[I agree.]</p></div>
+<div class="orv_constellation"><p>There is no desire to repeat the old battle. Do you agree?</p></div>
+<div class="orv_constellation"><p>I agree.</p></div>
 <p class="orv_line">Briareus, leader of the giants and Dionysus, interim representative of the 12 Gods, reached a dramatic agreement just before the end of the 60th scenario.</p>
-<div class="orv_system"><p>[The Star Stream has acknowledged this 'myth collapse'.]</p></div>
-<div class="orv_system"><p>[A new story is blooming in the 60th scenario.]</p></div>
+<div class="orv_system"><p>The Star Stream has acknowledged this 'myth collapse'.</p></div>
+<div class="orv_system"><p>A new story is blooming in the 60th scenario.</p></div>
 <p class="orv_line">In fact, they could've fought more if they wanted to fight. However, the power of Olympus had been drastically weakened through Gigantomachia. Many heroes and giants died, Poseidon's whereabouts were unclear and the silent Underworld King announced his successor.</p>
 <p class="orv_line">In such a situation, the existence of the nebula would be jeopardized if the 12 gods and giants were to keep confronting each other.</p>
 <p class="orv_line">The downfall of the giant nebula, Olympus. At the centre of this ridiculous story, there was a small nebula.</p>
-<div class="orv_system"><p>[A number of constellations are shouting the name 'Kim Dokja's Company!']</p></div>
+<div class="orv_system"><p>A number of constellations are shouting the name 'Kim Dokja's Company!'</p></div>
 <p class="orv_line">The story, which began with the struggle of a small constellation, was finally coming to the end with a giant story. Despite this, the members of the nebula didn't appreciate the giant story and were calling someone's name.</p>
 <p class="orv_line">"Dokja-ssi! Dokja-ssi!"</p>
 <p class="orv_line">"Hyung! Don't mess around! Where are you hiding?"</p>
@@ -219,7 +226,7 @@
 <p class="orv_line">Jung Heewon sighed with relief and smiled. "…Still, he didn't have to quickly go back on his own."</p>
 <p class="orv_line">"We'll go back too!"</p>
 <p class="orv_line">Then a system message emerged.</p>
-<div class="orv_system"><p>[The region will be restricted for one hour to stabilize the scenario.]</p></div>
+<div class="orv_system"><p>The region will be restricted for one hour to stabilize the scenario.</p></div>
 <p class="orv_line">Lee Seolhwa's eyes widened with surprise. "How did Dokja-ssi get out of here?"</p>
 <p class="orv_line">"He probably used a special method."</p>
 <p class="orv_line">"A special method?"</p>
@@ -235,75 +242,75 @@
 <p class="orv_line">Nevertheless, there was one who made a unique suggestion.</p>
 <p class="orv_line">–I can't help in Gigantomachia but if you fail, I can pave the way for you to get away. Just, it can only be you.</p>
 <p class="orv_line">The one who made the suggestion was now sitting in the driver's seat and holding the steering wheel.</p>
-<div class="orv_constellation"><p>[…I didn't know you would take advantage of my proposal in this way.]</p></div>
+<div class="orv_constellation"><p>…I didn't know you would take advantage of my proposal in this way.</p></div>
 <p class="orv_line">The owner of the Special Ferrarigini who could use the portals of the scenario because of his probability and who had free access to the dimension.</p>
 <p class="orv_line">The Mass Production Maker laughed.</p>
-<div class="orv_constellation"><p>[Originally, you were a type who rarely asked for help from someone else.]</p></div>
+<div class="orv_constellation"><p>Originally, you were a type who rarely asked for help from someone else.</p></div>
 <p class="orv_line">"My thoughts are a bit different after coming back from another world." I smiled and added, "In addition, I accidentally left the X-grade Ferrarigini behind. I haven't finished the installment plan yet so I'm still crying whenever I think about it."</p>
-<div class="orv_constellation"><p>[Haha, the car you bought from me?]</p></div>
+<div class="orv_constellation"><p>Haha, the car you bought from me?</p></div>
 <p class="orv_line">"Thus, in the future, I have decided to ride in other people's cars without driving my own."</p>
-<div class="orv_constellation"><p>[It is a disappointing decision from a seller's position. This time a new model came out and I was going to give you a free one.]</p></div>
+<div class="orv_constellation"><p>It is a disappointing decision from a seller's position. This time a new model came out and I was going to give you a free one.</p></div>
 <p class="orv_line">"…For free?"</p>
-<div class="orv_constellation"><p>[I'm lying.]</p></div>
+<div class="orv_constellation"><p>I'm lying.</p></div>
 <p class="orv_line">…I knew it. There was no way this constellation would see any losses. The Mass Production Maker seemed to think of something as he held a cigarette in his mouth. The scattered smoke was sucked into the vents installed before it could reach me in the passenger's seat.</p>
-<div class="orv_constellation"><p>[I want to make a contract with your nebula.]</p></div>
+<div class="orv_constellation"><p>I want to make a contract with your nebula.</p></div>
 <p class="orv_line">"Contract?"</p>
-<div class="orv_constellation"><p>[Do you know what you've done this time?]</p></div>
+<div class="orv_constellation"><p>Do you know what you've done this time?</p></div>
 <p class="orv_line">I knew. I couldn't not know.</p>
-<div class="orv_system"><p>[Giant Story 'Torch That Swallowed the Myth' is flowing through your veins!]</p></div>
+<div class="orv_system"><p>Giant Story 'Torch That Swallowed the Myth' is flowing through your veins!</p></div>
 <p class="orv_line">It was because even now, the result of what I had done was flowing through the veins in my body.</p>
 <p class="orv_line">Torch That Swallowed the Myth.</p>
 <p class="orv_line">This story wasn't the 'One Who Erases God's Fingerprints' or 'Person Who Closes the Door of a Myth' that I had originally intended to obtain. Still, its essence was similar. The story of fighting against a great nebula and overthrowing myths. This story would be a counter for the numerous nebulae I would fight in the future.</p>
-<div class="orv_system"><p>[Many constellations have come to know of Kim Dokja's Company.]</p></div>
+<div class="orv_system"><p>Many constellations have come to know of Kim Dokja's Company.</p></div>
 <p class="orv_line">"Yes."</p>
-<div class="orv_constellation"><p>[Some of them even claim that you should put your nebula in one of the 12 Great Nebulae.]</p></div>
+<div class="orv_constellation"><p>Some of them even claim that you should put your nebula in one of the 12 Great Nebulae.</p></div>
 <p class="orv_line">…The 12 Great Nebulae. I didn't realize I was already in a position to hear this story. The 12 Great Nebulae dominating the Star Stream considered of three strong, four medium and five weak ones. Olympus, who was located between the three strong and four medium ones, was greatly upset this time and someone had to fill that space.</p>
 <p class="orv_line">"There are many hasty stars."</p>
-<div class="orv_constellation"><p>[They're always like this.]</p></div>
+<div class="orv_constellation"><p>They're always like this.</p></div>
 <p class="orv_line">"Then the Mass Production Maker wants to take advantage of this opportunity to sign a contract with my nebula."</p>
-<div class="orv_constellation"><p>[That's right.]</p></div>
+<div class="orv_constellation"><p>That's right.</p></div>
 <p class="orv_line">There was no hesitation in the Mass Production Maker's answer.</p>
-<div class="orv_constellation"><p>[I'd like to leave this new product's advertisement to your nebula.]</p></div>
+<div class="orv_constellation"><p>I'd like to leave this new product's advertisement to your nebula.</p></div>
 <p class="orv_line">"That's good. I will ask the members of my nebula."</p>
-<div class="orv_system"><p>[Great. The incarnation I want to appear personally is…]</p></div>
+<div class="orv_system"><p>Great. The incarnation I want to appear personally is…</p></div>
 <p class="orv_line">I listened to the Mass Production Maker while staring out the window of the scenes passing by the Ferrarigini. The seasons of the myriad of stories flowed through the landscape. The seasons of numerous stories flowed in the passing landscape.</p>
 <p class="orv_line">That's right. Suddenly…</p>
 <p class="orv_line">"It is fast." As I spoke, I subconsciously grabbed the bottle of star fluid in my pocket. I had come this far faster than any of the original rounds. Yet this speed was only a relative speed. I didn't know if this was fast enough.</p>
 <p class="orv_line">The Mass Production Maker laughed and said,</p>
-<div class="orv_constellation"><p>[This new product is a bit faster. You will know if you drive it yourself but the driving sensation is very…]</p></div>
+<div class="orv_constellation"><p>This new product is a bit faster. You will know if you drive it yourself but the driving sensation is very…</p></div>
 <p class="orv_line">"The time is too slow compared to the driving speed. Are you doing this intentionally to talk about the contract?"</p>
-<div class="orv_constellation"><p>[Hum, what are you talking about? I am going the fastest way. Look, it is already the last intersection.]</p></div>
+<div class="orv_constellation"><p>Hum, what are you talking about? I am going the fastest way. Look, it is already the last intersection.</p></div>
 <p class="orv_line">As the Mass Production Maker said, there were three portals emitting a white light on the other side of the dimension. I didn't ask but the Mass Production Maker explained.</p>
-<div class="orv_constellation"><p>[One is the road to Earth and the other is the road to the Context of the Constellations.]</p></div>
+<div class="orv_constellation"><p>One is the road to Earth and the other is the road to the Context of the Constellations.</p></div>
 <p class="orv_line">"What is the last one?"</p>
-<div class="orv_constellation"><p>[A road that looks like a 'road'.]</p></div>
+<div class="orv_constellation"><p>A road that looks like a 'road'.</p></div>
 <p class="orv_line">The Mass Production Maker smiled significantly. It was much darker than other portals and gave off a shady vibe.</p>
-<div class="orv_constellation"><p>[Do you know what is at the end?]</p></div>
+<div class="orv_constellation"><p>Do you know what is at the end?</p></div>
 <p class="orv_line">Of course, I didn't know. I might've read Ways of Survival but there wasn't a description of all the portals in the dimension. In other words, this portal was a road that didn't exist in Ways of Survival.</p>
 <p class="orv_line">"What is it?"</p>
-<div class="orv_constellation"><p>[It's nothing. It is just a blocked road.]</p></div>
+<div class="orv_constellation"><p>It's nothing. It is just a blocked road.</p></div>
 <p class="orv_line">The answer came back like it was obvious. Before I could say anything, the Mass Production Maker continued,</p>
-<div class="orv_constellation"><p>[The end of some roads. The road that looks different from other roads, it is a road that no one walked or a road that isn't even a road.]</p></div>
+<div class="orv_constellation"><p>The end of some roads. The road that looks different from other roads, it is a road that no one walked or a road that isn't even a road.</p></div>
 <p class="orv_line">The Ferrarigini sped past the dark portal. The sparkling navigation system was showing the route to Earth. On the screen, the portal we had just gone past was marked as 'no road'.</p>
-<div class="orv_constellation"><p>[Such roads are usually cut off in obscure places. The people who chose to walk along the path believe it is the end.]</p></div>
+<div class="orv_constellation"><p>Such roads are usually cut off in obscure places. The people who chose to walk along the path believe it is the end.</p></div>
 <p class="orv_line">"What is your meaning?"</p>
-<div class="orv_constellation"><p>[Please choose your path well.]</p></div>
+<div class="orv_constellation"><p>Please choose your path well.</p></div>
 <p class="orv_line">The Mass Production Maker put out the cigarette and gave his distinctly gentle smile.</p>
-<div class="orv_constellation"><p>[Sometimes the thing that looks like a road isn't a road.]</p></div>
+<div class="orv_constellation"><p>Sometimes the thing that looks like a road isn't a road.</p></div>
 <p class="orv_line">The next moment, the landscape of the dimension changed. I saw the appearance of the blue planet and landed on the ground.</p>
 <p class="orv_line">The Mass Production Maker told me,</p>
-<div class="orv_constellation"><p>[We've arrived. Fortunately, this time it is good.]</p></div>
+<div class="orv_constellation"><p>We've arrived. Fortunately, this time it is good.</p></div>
 <br>
 <hr>
 <br>
 <p class="orv_line">The moment I arrived in Seoul, I naturally headed to the Factory. It was to the hospital ward where patients were admitted. The moment I stepped into the ward, I heard a voice that was close to a true voice.</p>
-<div class="orv_constellation"><p>[You came.]</p></div>
+<div class="orv_constellation"><p>You came.</p></div>
 <p class="orv_line">It sounded like a true voice but it wasn't a true voice. It was a voice where the dignity of a transcendent could be heard. A blue-white magic power filled the air. As expected, every teacher wanted to look good in front of their student.</p>
 <p class="orv_line">"This poor disciple is greeting you."</p>
-<div class="orv_constellation"><p>[There is no time. Leave the greetings for later. Go.]</p></div>
+<div class="orv_constellation"><p>There is no time. Leave the greetings for later. Go.</p></div>
 <p class="orv_line">Perhaps it was the aftermath of the returnees war but Kyrgios had bandages wrapped around his body.</p>
 <p class="orv_line">"The Heavenly Demon and Blood Demon…"</p>
-<div class="orv_constellation"><p>[I killed them. Don't talk to me and go quickly.]</p></div>
+<div class="orv_constellation"><p>I killed them. Don't talk to me and go quickly.</p></div>
 <p class="orv_line">I was amazed by the calm declaration. He survived the Heavenly Demon and Blood Demon who killed the Breaking the Sky Sword Saint in a past life. I didn't realize my teacher in this round was so strong.</p>
 <p class="orv_line">Aileen found me in the distance and came running. She was the only Story Expert in the Factory. If she wasn't here, two of the party members would've already died.</p>
 <p class="orv_line">I waved the star fluids and shouted, "I brought the star fluid!"</p>
@@ -322,7 +329,7 @@
 <p class="orv_line">"…Medical staff!"</p>
 <p class="orv_line">The staff rushed at her signal towards the two hospital rooms. Someone brushed past me and the wound in my side caused by Poseidon throbbed. My vision blurred for a moment.</p>
 <p class="orv_line">…I might need to receive treatment. No, it would be strange to be fine after being hit by a myth-grade constellation. I worked hard to hide the pain from the wound. My consciousness was unstable. The doors to the hospital rooms seemed like the entrance to the portal that the Mass Production Maker had shown me.</p>
-<div class="orv_constellation"><p>[Are you okay?]</p></div>
+<div class="orv_constellation"><p>Are you okay?</p></div>
 <p class="orv_line">Kyrgios flew through the air and asked me. I replied that I was fine. To be exact, it felt like I answered but I lost consciousness for a while.</p>
 <p class="orv_line">Once I woke up, I was lying on a chair in the ward. Aileen was standing in front of me. I endured the pain and stood up.</p>
 <p class="orv_line">"…What happened to the two people?" I immediately asked despite my blurred consciousness.</p>
@@ -342,18 +349,12 @@
             <a href="./ch_339"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_341">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="340" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="410" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="339" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="339" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 144: Ep. 28 - The Ultimate Sacrifice, IV</title>
     <meta property="og:title" content="Ch 144: Ep. 28 - The Ultimate Sacrifice, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,34 +177,34 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00144.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 144: Ep. 28 - The Ultimate Sacrifice, IV</h1></div>
-<div class="orv_constellation"><p>[Geez, this could end quicker than I thought?]</p></div>
+<div class="orv_constellation"><p>Geez, this could end quicker than I thought?</p></div>
 <p class="orv_line">The dokkaebi giggled as he saw the bloody battle between Yoo Joonghyuk and Nirvana.</p>
-<div class="orv_constellation"><p>[If not one half, I thought at least a third of the incarnations would die…]</p></div>
-<div class="orv_constellation"><p>[This story isn't interesting.]</p></div>
+<div class="orv_constellation"><p>If not one half, I thought at least a third of the incarnations would die…</p></div>
+<div class="orv_constellation"><p>This story isn't interesting.</p></div>
 <p class="orv_line">In the air, three intermediate dokkaebis were looking down at the stadium. The incarnations outside the stadium froze at the appearance of the dokkaebis. Every time they appeared, something ridiculous happened.</p>
-<div class="orv_constellation"><p>[Is it worth giving a hint now?]</p></div>
-<div class="orv_constellation"><p>[It isn't a big deal. Let's release them a bit faster.]</p></div>
+<div class="orv_constellation"><p>Is it worth giving a hint now?</p></div>
+<div class="orv_constellation"><p>It isn't a big deal. Let's release them a bit faster.</p></div>
 <p class="orv_line">The moment the dokkaebis spoke, the rankings of the incarnations started to appear on a board in the air.</p>
 <div class="orv_window">
 <p>The eighth strongest incarnation in Seoul Dome is 'Moonlight Girl Yoo Sangah'.</p>
@@ -247,19 +254,19 @@
 <p class="orv_line">Then her face became a strange mixture of a smile and a frown.</p>
 <p class="orv_line">Han Sooyoung giggled. "…It is really strange."</p>
 <p class="orv_line">At this moment, a huge shock wave occurred in the dome. The battle between Yoo Joonghyuk and Nirvana was coming to an end.</p>
-<div class="orv_constellation"><p>[Haha, there are three people left to look forward to. I wonder who they are? Just wait! The rankings will soon be made public!]</p></div>
-<div class="orv_system"><p>[The constellation 'Secretive Plotter' is shutting off his heart.]</p></div>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is sweating and has lost hair.]</p></div>
-<div class="orv_system"><p>[The constellation 'Bald General of Justice' wipes his head.]</p></div>
+<div class="orv_constellation"><p>Haha, there are three people left to look forward to. I wonder who they are? Just wait! The rankings will soon be made public!</p></div>
+<div class="orv_system"><p>The constellation 'Secretive Plotter' is shutting off his heart.</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is sweating and has lost hair.</p></div>
+<div class="orv_system"><p>The constellation 'Bald General of Justice' wipes his head.</p></div>
 <p class="orv_line">Yoo Joonghyuk listened to the incoming messages and raised his sword again.</p>
 <p class="orv_line">There was a gruesome sound as the Thousand Hands of Avalokiteśvara were pierced and a mechanical sound came from deep muscles.</p>
 <p class="orv_line">Yoo Joonghyuk felt his presence slowly collapsing. It was the side effect of Giant Body Transformation. It was the cost of bearing the power that he couldn't afford.</p>
 <p class="orv_line">The colossus had clearly warned him when he was given this power.</p>
-<div class="orv_quote"><p>「 Never use this skill until all your stats have reached three digits. 」</p></div>
+<div class="orv_quote"><p>Never use this skill until all your stats have reached three digits.</p></div>
 <p class="orv_line">However, the colossus expected him to receive this skill through Transmission. He knew Yoo Joonghyuk wouldn't listen to his warning.</p>
 <p class="orv_line">Yoo Joonghyuk had to walk the sura path, the impossible path, and he had to use every means he had to pass. The frustrating thing was that the end of the road was still invisible.</p>
 <p class="orv_line">Yoo Joonghyuk squeezed out all the magic power in his body and aimed his sword. There was a huge blast of blue magic power towards Nirvana.</p>
-<div class="orv_quote"><p>「 Splitting the Sky is an explosion. <br>Don't hide yourself. Expand, blossom, flood. Don't allow the heavens to be above you. 」</p></div>
+<div class="orv_quote"><p>Splitting the Sky is an explosion. <br>Don't hide yourself. Expand, blossom, flood. Don't allow the heavens to be above you.</p></div>
 <p class="orv_line">It was the words of the Breaking the Sky Sword Saint, who taught him Breaking the Sky Swordsmanship.</p>
 <p class="orv_line">In the middle and second half of the second regression, the Breaking the Sky Sword Saint fought against the alliance of returnees and died alone. At that time, Yoo Joonghyuk saw a thick sky that he couldn't break. There was definitely such a sky in the world.</p>
 <p class="orv_line">"Yoo Joonghyuk―!"</p>
@@ -271,15 +278,15 @@
 <p class="orv_line">This strike was sufficient. Nirvana might have a number of hidden cards but he couldn't reverse a blow like this.</p>
 <p class="orv_line">'He became aware of Kim Dokja so he would've inherited a close range skill'.</p>
 <p class="orv_line">Yoo Joonghyuk pulled up his remaining magic power and prepared the final blow. The moment he emerged from the pit to deal the final blow. A beep suddenly rang in his head.</p>
-<div class="orv_system"><p>[The exclusive skill 'Advanced Mental Barrier Lv. 3' has reached its limit.]</p></div>
-<div class="orv_system"><p>[The exclusive skill 'Thought Vaccine Lv. 1' has eroded it.]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Advanced Mental Barrier Lv. 3' has reached its limit.</p></div>
+<div class="orv_system"><p>The exclusive skill 'Thought Vaccine Lv. 1' has eroded it.</p></div>
 <p class="orv_line">…What? It wasn't possible. Thought Vaccine was a counter-skill to Nirvana's Thought Infection and Eternal Prison. Why was it used on him?</p>
 <p class="orv_line">'Don't tell me'.</p>
 <p class="orv_line">He gained sudden enlightenment. The present Nirvana was still weaker than the Nirvana of his past life. What if Nirvana didn't inherit a close combat skill?</p>
 <p class="orv_line">Despite the variable called Kim Dokja, Nirvana's only goal was Yoo Joonghyuk from the beginning.</p>
 <p class="orv_line">'Shit, it is 108 Worries'.</p>
-<div class="orv_system"><p>[The exclusive skill 'Advanced Mental Barrier Lv. 3' has been destroyed.]</p></div>
-<div class="orv_system"><p>[108 evil spirits have started to gnaw at your mind.]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Advanced Mental Barrier Lv. 3' has been destroyed.</p></div>
+<div class="orv_system"><p>108 evil spirits have started to gnaw at your mind.</p></div>
 <p class="orv_line">At this moment, Yoo Joonghyuk's eyes turned black and his five senses started to run wild. He should've noticed something strange when his thoughts became unusually heavy. Nirvana laughed from inside the pit.</p>
 <p class="orv_line">"Yoo Joonghyuk! Only I can understand you!"</p>
 <p class="orv_line">It was obvious that Nirvana had been enduring only for this moment. 108 giant beads shone behind Nirvana.</p>
@@ -302,16 +309,16 @@
 <br>
 <p class="orv_line">I slowly opened my eyes and felt like I was overflowing with power.</p>
 <p class="orv_line">The height of my field of view had changed and the feeling of the combat muscles made me feel good. An adequate amount of adrenaline was secreted. I was full of confidence that I could do anything.</p>
-<div class="orv_system"><p>[The 1st person protagonist's point of view has been activated!]</p></div>
+<div class="orv_system"><p>The 1st person protagonist's point of view has been activated!</p></div>
 <p class="orv_line">Crazy… this was the 'real' 1st person protagonist's point of view. This was how Yoo Joonghyuk usually felt. I could never be strong like this.</p>
 <p class="orv_line">"…How did you get your mind back from 108 Worries?"</p>
 <p class="orv_line">I could see Nirvana's figure in the distance. I glanced outside the stadium.</p>
 <p class="orv_line">The fact that I was attached to Yoo Joonghyuk meant that Han Sooyoung had done her job properly. If it was as scheduled, there were five minutes remaining until my breathing completely stopped.</p>
 <p class="orv_line">Nirvana's eyes were fierce as he aimed a skill at me again.</p>
-<div class="orv_system"><p>[The character 'Nirvana Moebius' has used 108 Worries Lv. 2!]</p></div>
+<div class="orv_system"><p>The character 'Nirvana Moebius' has used 108 Worries Lv. 2!</p></div>
 <p class="orv_line">108 Worries. It was originally a skill to raise a person's enlightenment level by frightening their own spirit but when used on others, it would invoke terrible delirium. In particular, the effect was worse than Thought Infection or Eternal Prison for regressors like Yoo Joonghyuk.</p>
 <p class="orv_line">Of course, this would only happen if I was Yoo Joonghyuk.</p>
-<div class="orv_system"><p>[The Fourth Wall has completely neutralized the effect of 108 Worries!]</p></div>
+<div class="orv_system"><p>The Fourth Wall has completely neutralized the effect of 108 Worries!</p></div>
 <p class="orv_line">I'm sorry but I wasn't the normal 'Yoo Joonghyuk' now.</p>
 <p class="orv_line">"This feeling is… who are you?"</p>
 <p class="orv_line">As expected, the reincarnator noticed quickly. I rushed over and punched him in the mouth.</p>
@@ -352,18 +359,12 @@
             <a href="./ch_143"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_145">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="144" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="129" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="143" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="143" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

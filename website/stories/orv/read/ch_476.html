@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 476: Ep. 90 - One Person, V</title>
     <meta property="og:title" content="Ch 476: Ep. 90 - One Person, V" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,46 +177,46 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00476.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 476: Ep. 90 - One Person, V</h1></div>
 <p class="orv_line">I sensed the power of a vast Story oozing out from Yoo Joonghyuk's entire frame.</p>
-<div class="orv_system"><p>[&lt;Star Stream&gt; can't take its eyes away from the Incarnation, 'Yoo Joonghyuk'!]</p></div>
+<div class="orv_system"><p>&lt;Star Stream&gt; can't take its eyes away from the Incarnation, 'Yoo Joonghyuk'!</p></div>
 <p class="orv_line">The will of the entire world was now paying attention to him.</p>
-<div class="orv_system"><p>[Absolute majority of Constellations watching the scenario have raised their wariness due to the existence of Incarnation, 'Yoo Joonghyuk'.]</p></div>
-<div class="orv_system"><p>[Constellations of the 'Final Scenario' are stunned by the Story of Incarnation, 'Yoo Joonghyuk'.]</p></div>
-<div class="orv_system"><p>[Portion of the Bureau's Great Dokkaebis are demanding a ⸢Probability Suitability Evaluation⸥!]</p></div>
-<div class="orv_system"><p>[The 'King of Stories' has rejected the demand.]</p></div>
-<div class="orv_system"><p>[The ⸢Probability Suitability Evaluation⸥ is restricted within the applicable scenario.]</p></div>
+<div class="orv_system"><p>Absolute majority of Constellations watching the scenario have raised their wariness due to the existence of Incarnation, 'Yoo Joonghyuk'.</p></div>
+<div class="orv_system"><p>Constellations of the 'Final Scenario' are stunned by the Story of Incarnation, 'Yoo Joonghyuk'.</p></div>
+<div class="orv_system"><p>Portion of the Bureau's Great Dokkaebis are demanding a ⸢Probability Suitability Evaluation⸥!</p></div>
+<div class="orv_system"><p>The 'King of Stories' has rejected the demand.</p></div>
+<div class="orv_system"><p>The ⸢Probability Suitability Evaluation⸥ is restricted within the applicable scenario.</p></div>
 <p class="orv_line">Every single Yoo Joonghyuk's Story that I knew felt 'complete' now. This feeling couldn't simply be described as him merely becoming stronger. This 'Yoo Joonghyuk' before my eyes was a different existence to the one I became familiar with.</p>
 <p class="orv_line">I got a little tense as I asked him. "Our companions?"</p>
 <p class="orv_line">"Safe."</p>
 <p class="orv_line">"You being here means the 'Secretive Plotter' has decided to do me that favour, right?"</p>
 <p class="orv_line">My final alternative plan in case even the plan B failed was to awake the sleeping Yoo Joonghyuk.</p>
-<div class="orv_system"><p>[Incarnation 'Yoo Joonghyuk' currently has abnormally activated the 'Disconnected Film Theory'.]</p></div>
+<div class="orv_system"><p>Incarnation 'Yoo Joonghyuk' currently has abnormally activated the 'Disconnected Film Theory'.</p></div>
 <p class="orv_line">Tsu-chut…</p>
-<div class="orv_system"><p>[Film's connection is incomplete!]</p></div>
-<div class="orv_system"><p>[The entire film may cease to exist if this connection is forcibly maintained.]</p></div>
+<div class="orv_system"><p>Film's connection is incomplete!</p></div>
+<div class="orv_system"><p>The entire film may cease to exist if this connection is forcibly maintained.</p></div>
 <p class="orv_line">The last-ditch method that I didn't want to resort to if at all possible, yet simply had to when left with no other options – the greatest ace up our sleeve we currently possessed.</p>
-<div class="orv_system"><p>['Yoo Joonghyuks' of all the regression turns are now looking at you.]</p></div>
+<div class="orv_system"><p>'Yoo Joonghyuks' of all the regression turns are now looking at you.</p></div>
 <p class="orv_line">And I felt distant, numerous gazes coming from within him. Suddenly, I had this ominous foreboding. What if this Yoo Joonghyuk wasn't the 'Yoo Joonghyuk' that I knew of…?</p>
 <p class="orv_line">"Excuse me, but which regression turn Yoo Joonghyuk are you?"</p>
 <p class="orv_line">He then stared at me. I could see the thick scar on his cheek, a wound the 3rd turn Yoo Joonghyuk didn't possess. I was about to ask something else, but then, several sentences flowed out from his body as if to shut my mouth.</p>
@@ -226,27 +233,27 @@
 <p class="orv_line">And then, another Lee Jihye shouted out at that girl. "Master! Hurry! Take care of her! She's trying to destroy our world-line!"</p>
 <p class="orv_line">She yelled out with so much anger.</p>
 <p class="orv_line">I was thinking of adding something there. However, such thoughts scattered away the moment I saw Yoo Joonghyuk's side profile. He didn't bother to assume the attacking stance and simple stared at the two 'Outer Gods' present here.</p>
-<div class="orv_system"><p>[Character, 'Master of the Sunken Island', is looking at the character, 'Yoo Joonghyuk'.]</p></div>
-<div class="orv_system"><p>[Character, 'King of the Silver Heart', is looking at the character, 'Yoo Joonghyuk'.]</p></div>
+<div class="orv_system"><p>Character, 'Master of the Sunken Island', is looking at the character, 'Yoo Joonghyuk'.</p></div>
+<div class="orv_system"><p>Character, 'King of the Silver Heart', is looking at the character, 'Yoo Joonghyuk'.</p></div>
 <p class="orv_line">And the two people from the 999th turn was staring back at him in return.</p>
 <p class="orv_line">Lee Hyunsung looked quite agitated at the moment. 【This story… But, it can't… Could it be, really…?】</p>
 <p class="orv_line">Just like how I was searching for the 'Yoo Joonghyuk' I knew from this particular Yoo Joonghyuk, they were now looking for the 'Yoo Joonghyuk' they recognised.</p>
-<div class="orv_system"><p>[3rd turn's 'Yoo Joonghyuk' is remaining silent.]</p></div>
-<div class="orv_system"><p>[41st turn's 'Yoo Joonghyuk' is remaining silent.]</p></div>
-<div class="orv_system"><p>[362nd turn's 'Yoo Joonghyuk' is remaining silent.]</p></div>
-<div class="orv_system"><p>[666th turn's 'Yoo Joonghyuk' is remaining silent.]</p></div>
+<div class="orv_system"><p>3rd turn's 'Yoo Joonghyuk' is remaining silent.</p></div>
+<div class="orv_system"><p>41st turn's 'Yoo Joonghyuk' is remaining silent.</p></div>
+<div class="orv_system"><p>362nd turn's 'Yoo Joonghyuk' is remaining silent.</p></div>
+<div class="orv_system"><p>666th turn's 'Yoo Joonghyuk' is remaining silent.</p></div>
 <p class="orv_line">There was no point in becoming one anymore as Yoo Joonghyuks were being torn apart within those gazes. They were searching for the 'Yoo Joonghyuk' they recognised and were shoving away other 'Yoo Joonghyuks' in the process. They eliminated those they couldn't understand and tried so hard to find that one 'Yoo Joonghyuk' they recognised.</p>
 <p class="orv_line">And so, how long passed by like that?</p>
-<div class="orv_system"><p>[999th turn's 'Yoo Joonghyuk' is slowly opening his eyes.]</p></div>
+<div class="orv_system"><p>999th turn's 'Yoo Joonghyuk' is slowly opening his eyes.</p></div>
 <p class="orv_line">And one of them finally discovered something among the patchwork of 'Yoo Joonghyuks'.</p>
 <div class="orv_outergod"><p>【Capt…!]】</p></div>
 <p class="orv_line">Just before the 'Master of the Sunken Island' could take a large stride forward, the air before her split apart with a single ray of light. Accompanied by choking heat, a blinding beam of light crashed down like a lightning bolt.</p>
-<p class="orv_line">Yoo Joonghyuk lightly swung his [Black Heavenly Demon Sword] to deflect that beam of light.</p>
+<p class="orv_line">Yoo Joonghyuk lightly swung his <strong>[Black Heavenly Demon Sword]</strong> to deflect that beam of light.</p>
 <div class="orv_outergod"><p>【That man is not the 'Yoo Joonghyuk' that you remember.】</p></div>
 <p class="orv_line">There was no need to ask who it could be.</p>
 <div class="orv_outergod"><p>【He's simply the 'Outer God' who stole the 'Yoo Joonghyuk' we know of!】</p></div>
 <p class="orv_line">The 'Living Flame', 999th turn's Uriel, cried out.</p>
-<p class="orv_line">She lived only for the purpose of killing the 'Secretive Plotter'. And she came this far to finally have her vengeance. The conflagration became even more vicious on her [Flames of Retribution].</p>
+<p class="orv_line">She lived only for the purpose of killing the 'Secretive Plotter'. And she came this far to finally have her vengeance. The conflagration became even more vicious on her <strong>[Flames of Retribution]</strong>.</p>
 <p class="orv_line">The one to try and stop her was the 'Master of the Sunken Island'.</p>
 <div class="orv_outergod"><p>【H-hold on. Stop, Uriel. That 'Captain' is…!】</p></div>
 <div class="orv_outergod"><p>【Don't be fooled. The 'Secretive Plotter' is permeating within him. Meaning, he's the sworn enemy we've been searching for after all this time!】</p></div>
@@ -255,10 +262,10 @@
 <p class="orv_line">Finally, even the last 'King' arrived in the location.</p>
 <p class="orv_line">He took a look around the battlefield, then spoke with his eyes almost bulging out of his face. 【T-there are two Jihyes here?!】</p>
 <p class="orv_line">…It was the 'Monarch of the Great Abyss', the 999th turn's Kim Namwoon.</p>
-<div class="orv_system"><p>[All 'Outer God Kings' have gathered in one place!]</p></div>
-<div class="orv_system"><p>[Every Constellation in &lt;Star Stream&gt; is paying close attention to this battlefield!]</p></div>
-<div class="orv_system"><p>[Every Nebula in &lt;Star Stream&gt; is fearful of the advent of the fallen beings.]</p></div>
-<div class="orv_system"><p>[A large number of Constellations are revealing their animosity!]</p></div>
+<div class="orv_system"><p>All 'Outer God Kings' have gathered in one place!</p></div>
+<div class="orv_system"><p>Every Constellation in &lt;Star Stream&gt; is paying close attention to this battlefield!</p></div>
+<div class="orv_system"><p>Every Nebula in &lt;Star Stream&gt; is fearful of the advent of the fallen beings.</p></div>
+<div class="orv_system"><p>A large number of Constellations are revealing their animosity!</p></div>
 <p class="orv_line">They simply ignored whatever the stars were saying and quietly studied each other.</p>
 <p class="orv_line">⸢The 'Living Flame' that rises up from the east.⸥</p>
 <p class="orv_line">⸢The 'Master of the Sunken Island', the calamity of the world in the west.⸥</p>
@@ -273,22 +280,22 @@
 <p class="orv_line">Those words contained emotions that I couldn't even fathom. However, someone present here still managed to do just that.</p>
 <div class="orv_outergod"><p>【Captain. I knew it. It is you, right? But how…】</p></div>
 <div class="orv_outergod"><p>【You dare to use yet another underhanded method…!!】</p></div>
-<p class="orv_line">The [Flames of Retribution] scythed past the air and flew in. The [Black Heavenly Demon Sword] containing the power of the Transcendent rose up to deflect the flames.</p>
+<p class="orv_line">The <strong>[Flames of Retribution]</strong> scythed past the air and flew in. The <strong>[Black Heavenly Demon Sword]</strong> containing the power of the Transcendent rose up to deflect the flames.</p>
 <p class="orv_line">As the friction noises loudly tangled up with waves of magical energy, Yoo Joonghyuk raised his voice. 【Been a while, Uriel. My old companion-in-arms.】</p>
 <div class="orv_outergod"><p>【Shut up! You are not Yoo Joonghyuk! You are…!! The 999th turn's Uriel shouted out as if she had been made fun of just now. Conflagration of destruction spread out everywhere and ignited the oxygen in the air. Within this hell of choking, hard-to-breathe dry heat, she continued to speak. The Yoo Joonghyuk I knew died in that place.】</p></div>
 <p class="orv_line">Her Stories growled like a wounded wolf. Her expression could only be made by someone who lost something far too precious to her. And while carrying such an expression, she pointed her sword at us.</p>
 <div class="orv_outergod"><p>【And it was you bastard who killed him.】</p></div>
 <p class="orv_line">Her Story was crying out now.</p>
-<p class="orv_line">⸢[I'll kill him. I'll definitely kill him. Without a doubt, I shall make sure to kill him.]⸥</p>
+<p class="orv_line">⸢<strong>[I'll kill him. I'll definitely kill him. Without a doubt, I shall make sure to kill him.]</strong>⸥</p>
 <p class="orv_line">The 999th turn's Uriel held onto Yoo Joonghyuk's Incarnation Body wasting away due to the 'Other World Pledge' and cried in sorrow.</p>
-<p class="orv_line">⸢[Regardless of what needs to be done, even if that means crossing world-lines, I will definitely avenge you. Even if I end up leaving the side of Good to become Evil!!]⸥</p>
+<p class="orv_line">⸢<strong>[Regardless of what needs to be done, even if that means crossing world-lines, I will definitely avenge you. Even if I end up leaving the side of Good to become Evil!!]</strong>⸥</p>
 <p class="orv_line">And so, the 'Demon-like Judge of Fire' became the 'Living Flame'. She was an Archangel who chose to become an 'Outer God' for the sake of her vengeance. That was her reason for being here.</p>
 <div class="orv_outergod"><p>【'Yoo Joonghyuk' doesn't die. Only the regression waits.】</p></div>
 <div class="orv_outergod"><p>【Shut up! Such words won't…!】</p></div>
 <p class="orv_line">Yoo Joonghyuk deflected some more flames tinged with boundless rage and continued on. 【He awoke again, and lived through the 1000th turn. He then died, only to move onto the 1001st. And so, he continued to live on and on. And on.】</p>
 <p class="orv_line">I too know of that life. A life that no one remembered, a life that he couldn't share with anyone else. Yoo Joonghyuk continued to live such a life all alone.</p>
 <div class="orv_outergod"><p>【And eventually, he became me.】</p></div>
-<p class="orv_line">Uriel pounced, looking as if she had heard something she shouldn't have. She swung her [Flames of Retribution] in desperation, cutting his side, then slicing into his stomach. And in a blink, her blade circled around and took aim at his neck. He didn't try to stop her, as if this was the just punishment he'd been waiting for. And then…</p>
+<p class="orv_line">Uriel pounced, looking as if she had heard something she shouldn't have. She swung her <strong>[Flames of Retribution]</strong> in desperation, cutting his side, then slicing into his stomach. And in a blink, her blade circled around and took aim at his neck. He didn't try to stop her, as if this was the just punishment he'd been waiting for. And then…</p>
 <p class="orv_line">Like magic, Uriel's blade came to a halt.</p>
 <div class="orv_outergod"><p>【You, you, you… are…】</p></div>
 <p class="orv_line">Uriel probably knew this, too – that her vengeance could never be fulfilled. Because the one who stole away her most precious companion-in-arms happened to be the very same companion, that's why.</p>
@@ -303,7 +310,7 @@
 <p class="orv_line">She staggered across the ocean's surface and approached this side. Yoo Joonghyuk didn't avoid her pale hand.</p>
 <div class="orv_outergod"><p>【Captain. You're inside somewhere, right? You've become something else now, but you as you are definitely inside, right? You're still alive, right??】</p></div>
 <p class="orv_line">Rather than tears, Chaos flooded out from Lee Jihye's eyes like fine powder seemingly made out from the pitch-black darkness. He looked at her and nodded his head.</p>
-<div class="orv_system"><p>[999th turn's 'Yoo Joonghyuk' is looking at his old companion-in-arms.]</p></div>
+<div class="orv_system"><p>999th turn's 'Yoo Joonghyuk' is looking at his old companion-in-arms.</p></div>
 <p class="orv_line">The 999th turn's Lee Jihye grasped onto his sleeve and slowly crumbled.</p>
 <p class="orv_line">I could only look at his back. His back, where I couldn't read his expressions at all.</p>
 <p class="orv_line">⸢It was the trickery of the world-line that caused Yoo Joonghyuk to become many.⸥</p>
@@ -348,9 +355,9 @@
 <p class="orv_line">Lee Jihye cried out, sounding more like a shriek. 【Not true! That can't be true!!】</p>
 <p class="orv_line">"He shall not regress anymore."</p>
 <p class="orv_line">I saw some things sparkle in the distant sky – they were stars.</p>
-<div class="orv_system"><p>[Constellation, 'Demon-like Judge of Fire', is scanning the vicinity with an anxious face!]</p></div>
-<div class="orv_system"><p>[Constellation, 'Most Ancient Liberator', is asking about his maknae's well-being!]</p></div>
-<div class="orv_system"><p>[Constellation, 'Abyssal Black Flame Dragon', declares that he will use both of his hands this time!]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon-like Judge of Fire', is scanning the vicinity with an anxious face!</p></div>
+<div class="orv_system"><p>Constellation, 'Most Ancient Liberator', is asking about his maknae's well-being!</p></div>
+<div class="orv_system"><p>Constellation, 'Abyssal Black Flame Dragon', declares that he will use both of his hands this time!</p></div>
 <p class="orv_line">Stars that watched our stories from a very long time ago were approaching this side. And beyond them, our companions were also rushing towards us.</p>
 <p class="orv_line">Han Sooyoung, Yoo Sangah, Jung Heewon… The people from &lt;Kim Dokja's Company&gt; who had lived with us in this world. Within the darkness brought on by the fading sunset, they looked like one giant constellation.</p>
 <p class="orv_line">Yoo Joonghyuk, now as one person, took in that sight and raised his voice.</p>
@@ -362,18 +369,12 @@
             <a href="./ch_475"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_477">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="476" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="527" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="475" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="475" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

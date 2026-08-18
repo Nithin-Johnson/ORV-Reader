@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 239: Ep. 45 - Gourmet Association, III</title>
     <meta property="og:title" content="Ch 239: Ep. 45 - Gourmet Association, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,104 +177,104 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00239.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 239: Ep. 45 - Gourmet Association, III</h1></div>
 <p class="orv_line">The expression of the old man changed at my words.</p>
-<div class="orv_constellation"><p>[…Demon King of Salvation…?]</p></div>
+<div class="orv_constellation"><p>…Demon King of Salvation…?</p></div>
 <p class="orv_line">It was difficult to read the exact emotions due to the old man's intricately folded wrinkles. The old man was first surprised, then angry and finally looked admiring. To be exact, every emotion was contained in one expression.</p>
-<div class="orv_constellation"><p>[That's right. You are… huhu, I see.]</p></div>
+<div class="orv_constellation"><p>That's right. You are… huhu, I see.</p></div>
 <p class="orv_line">The old man seemed to know me. I didn't expect anyone in the Gourmet Association other than Persephone to know about me… yet he had a surprising awareness?</p>
 <p class="orv_line">"Can I ask for your modifier?"</p>
 <p class="orv_line">The old man gave an unknown smile instead of answering my question.</p>
-<div class="orv_constellation"><p>[Do you like the coat I made?]</p></div>
+<div class="orv_constellation"><p>Do you like the coat I made?</p></div>
 <p class="orv_line">"…Huh?"</p>
-<div class="orv_constellation"><p>[The coat you are wearing.]</p></div>
+<div class="orv_constellation"><p>The coat you are wearing.</p></div>
 <p class="orv_line">I reflexively looked down at my white coat.</p>
-<div class="orv_system"><p>[Infinite Dimension Space Coat]</p></div>
+<div class="orv_system"><p>Infinite Dimension Space Coat</p></div>
 <p class="orv_line">It was a coat I was awarded with after defeating Myung Ilsang. The name of the constellation who made this coat was…</p>
 <p class="orv_line">"…Mass Production Maker?"</p>
 <p class="orv_line">The old man laughed at my surprised tone.</p>
-<div class="orv_constellation"><p>[I am called that.]</p></div>
+<div class="orv_constellation"><p>I am called that.</p></div>
 <p class="orv_line">He pointed his thumb at himself and I was slightly discouraged. The Mass Production Maker. He was mentioned in the list of constellations who had the greatest influence on the Star Stream scenario.</p>
 <p class="orv_line">It was difficult to describe his combat ability as being of the highest level but he was an existence with a close connection with many nebulae and the bureau. To make matters worse, I killed Myung Ilsang who was the incarnation of the Mass Production Maker in the fifth scenario.</p>
-<div class="orv_constellation"><p>[Huhu, you don't have to look like that. I won't eat you.]</p></div>
+<div class="orv_constellation"><p>Huhu, you don't have to look like that. I won't eat you.</p></div>
 <p class="orv_line">The Mass Production Maker seemed to have noticed what I was trying to say.</p>
-<div class="orv_constellation"><p>[I know what you're thinking. Don't be alarmed. It is common in the Star Stream. He wasn't the type of person I was interested in anyway.]</p></div>
+<div class="orv_constellation"><p>I know what you're thinking. Don't be alarmed. It is common in the Star Stream. He wasn't the type of person I was interested in anyway.</p></div>
 <p class="orv_line">"…"</p>
-<div class="orv_constellation"><p>[He had no guts, had a weak will and always searched for the easy way.]</p></div>
+<div class="orv_constellation"><p>He had no guts, had a weak will and always searched for the easy way.</p></div>
 <p class="orv_line">I felt a complex amount of emotions. There was relief that the Mass Production Maker didn't care much about it and disillusioned that even a constellation like the Mass Production Maker thought of incarnations as tools…</p>
 <p class="orv_line">I pretended to be calm. "Thank you."</p>
-<div class="orv_constellation"><p>[Don't thank me for that. No matter how lousy, he was still my incarnation… by the way, I saw the story you made.]</p></div>
+<div class="orv_constellation"><p>Don't thank me for that. No matter how lousy, he was still my incarnation… by the way, I saw the story you made.</p></div>
 <p class="orv_line">"My story?"</p>
-<div class="orv_constellation"><p>[Yes, you are great at leading the scenario in unexpected directions and creating a mess. Thanks to you, I haven't been bored for a while. I gave you five stars.]</p></div>
+<div class="orv_constellation"><p>Yes, you are great at leading the scenario in unexpected directions and creating a mess. Thanks to you, I haven't been bored for a while. I gave you five stars.</p></div>
 <p class="orv_line">I didn't know if it was praise or mockery but I thanked him.</p>
-<div class="orv_constellation"><p>[This is your first time here. Who introduced you?]</p></div>
+<div class="orv_constellation"><p>This is your first time here. Who introduced you?</p></div>
 <p class="orv_line">"The queen of the Underworld."</p>
 <p class="orv_line">The eyes of the Mass Production Maker shone.</p>
-<div class="orv_constellation"><p>[That old hag… huhu, doing this thing through all means. Bringing a new entrant like you at a time like this…]</p></div>
+<div class="orv_constellation"><p>That old hag… huhu, doing this thing through all means. Bringing a new entrant like you at a time like this…</p></div>
 <p class="orv_line">I seemed to know what he meant but I deliberately trembled. "What is happening in the Gourmet Association?"</p>
-<div class="orv_constellation"><p>[They are always doing things. Rather, did that old hag abandon her new entrant to see what you could do? Tsk tsk… in any case, she is an Olympian. Come on. I'll give you a brief introduction.]</p></div>
+<div class="orv_constellation"><p>They are always doing things. Rather, did that old hag abandon her new entrant to see what you could do? Tsk tsk… in any case, she is an Olympian. Come on. I'll give you a brief introduction.</p></div>
 <p class="orv_line">Unexpectedly, things were going well. I followed behind the Mass Production Maker and looked around. I shouldn't forget my purpose for coming here just because there were many spectacular attractions. I came to recruit constellations to help in the Demon King Selection.</p>
 <p class="orv_line">Let's see. The first thing was to talk to the constellations…</p>
-<div class="orv_constellation"><p>[You know who that drunkard over there is, right? He is Thor. The vigorous and stern woman over there is Vakarine…]</p></div>
+<div class="orv_constellation"><p>You know who that drunkard over there is, right? He is Thor. The vigorous and stern woman over there is Vakarine…</p></div>
 <p class="orv_line">I felt a thrill every time the Mass Production Maker called out the name of a constellation. The real names of the constellations had the power to attract their attention. The problem was they might like it or be angry. I sometimes called out the names of constellations like Persephone but not like this…</p>
-<div class="orv_constellation"><p>[They don't like me very much so I can't introduce you to them. They get scared just by me approaching.]</p></div>
+<div class="orv_constellation"><p>They don't like me very much so I can't introduce you to them. They get scared just by me approaching.</p></div>
 <p class="orv_line">In fact, Thursday's Thunder and Morning Star Goddess seemed to be avoiding the Mass Production Maker. I roughly knew the cause.</p>
-<div class="orv_constellation"><p>[Tsk tsk, they don't know what good stories are…]</p></div>
+<div class="orv_constellation"><p>Tsk tsk, they don't know what good stories are…</p></div>
 <p class="orv_line">In any case, I felt that the reaction of the constellations was noticeably different just by moving with the Mass Production Maker. It was also easy to enter the centre of the banquet hall, which was difficult to get into before. However, now everyone would run away before I could even speak…</p>
 <p class="orv_line">Ah, I remembered that Asmodeus was a member of the Gourmet Association… where is he?</p>
-<div class="orv_constellation"><p>[It looks like the main event is going to begin.]</p></div>
+<div class="orv_constellation"><p>It looks like the main event is going to begin.</p></div>
 <p class="orv_line">The Mass Production Maker smiled alone and grabbed my sleeve. I sat at a nearby table and the guide immediately gave me food.</p>
-<div class="orv_system"><p>[Eyes of the Ninth Circle Great Sage Merbatos.]</p></div>
+<div class="orv_system"><p>Eyes of the Ninth Circle Great Sage Merbatos.</p></div>
 <p class="orv_line">I took a quick look at the food before putting down my fork. Several of the surrounding constellations laughed at me. They seemed to be despising that fact that I barely touched the food and couldn't eat it. The Mass Production Maker just ignored the gazes and chewed on the eyeballs.</p>
-<div class="orv_constellation"><p>[This has a good taste. Look, that friend is today's host.]</p></div>
+<div class="orv_constellation"><p>This has a good taste. Look, that friend is today's host.</p></div>
 <p class="orv_line">A light lit up the stage and the host appeared. The face was familiar. It was the constellation who pushed past me earlier. It was a young lady dressed in a gorgeous gothic lace dress with a cute face.</p>
-<div class="orv_constellation"><p>[Gourmet Association members, hello~ I am today's host, Euphrosyne!]</p></div>
+<div class="orv_constellation"><p>Gourmet Association members, hello~ I am today's host, Euphrosyne!</p></div>
 <p class="orv_line">I heard the name and knew who she was. The goddess of joy and celebration, Euphrosyne. She was a constellation belonging to the Olympus constellation.</p>
 <p class="orv_line">Along with the applause, some constellations lost their dignity and screamed.</p>
-<div class="orv_constellation"><p>[Ohhh, Euph-ssi! Over here!]</p></div>
+<div class="orv_constellation"><p>Ohhh, Euph-ssi! Over here!</p></div>
 <p class="orv_line">To be precise, it was the Mass Production Maker next to me.</p>
 <p class="orv_line">Suddenly, a memory from Ways of Survival came to mind. In the original novel, there was a time when Euphrosyne emerged as the host of the Gourmet Association Festival. At the time, Yoo Joonghyuk…</p>
-<div class="orv_constellation"><p>[Thank you for attending while you're so busy! Thank you for the owner of Oro Castle, Immeasurable Austerity for lending us this place!]</p></div>
+<div class="orv_constellation"><p>Thank you for attending while you're so busy! Thank you for the owner of Oro Castle, Immeasurable Austerity for lending us this place!</p></div>
 <p class="orv_line">Maybe he killed her.</p>
-<div class="orv_constellation"><p>[There are two main events today. Before that, I would like to introduce a special guest. Maybe our dear constellations have heard of her! Today's guest is from a planet that is emerging as a hot spot recently!]</p></div>
+<div class="orv_constellation"><p>There are two main events today. Before that, I would like to introduce a special guest. Maybe our dear constellations have heard of her! Today's guest is from a planet that is emerging as a hot spot recently!</p></div>
 <p class="orv_line">I had an ominous feeling as firecrackers burst in one corner of the stage.</p>
-<div class="orv_constellation"><p>[Please clap for Anna Croft, a prophet from Earth!]</p></div>
+<div class="orv_constellation"><p>Please clap for Anna Croft, a prophet from Earth!</p></div>
 <p class="orv_line">The noisy constellations fell silent simultaneously. I saw Anna Croft climbing the stairs to the main stage.</p>
 <p class="orv_line">…I see. I seemed to know why Anna Croft came to the Gourmet Association at this time. She truly was a woman I couldn't like.</p>
 <p class="orv_line">Anna Croft looked at the audience with her uniquely calm gaze and greeted her with a bright smile.</p>
 <p class="orv_line">"It is nice to meet you, constellations of the Gourmet Association. I am Anna Croft, an incarnation of the nebula Asgard."</p>
 <p class="orv_line">She looked dignified but the constellations were already frowning from the moment she opened her mouth.</p>
-<div class="orv_constellation"><p>[The Gourmet Association has really fallen. I can't believe the food is talking on the stage.]</p></div>
-<div class="orv_constellation"><p>[The Star Stream is degenerating these days.]</p></div>
+<div class="orv_constellation"><p>The Gourmet Association has really fallen. I can't believe the food is talking on the stage.</p></div>
+<div class="orv_constellation"><p>The Star Stream is degenerating these days.</p></div>
 <p class="orv_line">This was the Gourmet Association. It was a banquet of carefully selected 'stories' for the gourmet constellations. It was a natural story but the 'fresh incarnations' were the main ingredients of the story.</p>
 <p class="orv_line">Anna Croft came to this place knowing it. "I might be lacking but I am the host of the first event."</p>
 <div class="orv_image"><img src="../../../assets/images/239 - Anna Croft came to this place knowing it.jpg" alt="" loading="lazy"></div>
 <div class="orv_notice"><p>* Official novel illustration (canonical)</p></div>
 <p class="orv_line">That's why this woman was scary.</p>
-<div class="orv_constellation"><p>[I don't know what food you have prepared.]</p></div>
-<div class="orv_constellation"><p>[Take it out now!]</p></div>
+<div class="orv_constellation"><p>I don't know what food you have prepared.</p></div>
+<div class="orv_constellation"><p>Take it out now!</p></div>
 <p class="orv_line">The atmosphere heated up and it was Euphrosyne who tried to quickly intervene.</p>
-<div class="orv_constellation"><p>[Now, everyone. Don't be too excited… isn't it okay to listen to the words of the prey? Shouldn't you have some patience with your food?]</p></div>
+<div class="orv_constellation"><p>Now, everyone. Don't be too excited… isn't it okay to listen to the words of the prey? Shouldn't you have some patience with your food?</p></div>
 <p class="orv_line">Euphrosyne smiled in a cheerful manner and the agitated constellations paused for a moment. The clever Anna Croft didn't miss this gap.</p>
 <p class="orv_line">"In recent years, the Star Stream is flooded with obvious stories."</p>
 <p class="orv_line">The provocative beginning caused the constellations to focus on her. Anna Croft continued speaking. "The returnees, reincarnators, sword masters, 9th circle magicians… even the same prophets. It all starts from being stronger than others…"</p>
@@ -278,13 +285,13 @@
 <p class="orv_line">As if possessed, the constellations waited for Anna Croft's next words.</p>
 <p class="orv_line">"In those days, the constellations loved stories. It was because the stories were worthy. The dokkaebis gave a theme and the constellations explored the form and aesthetics of it. At that time, the stories definitely reached the realm of 'art'."</p>
 <p class="orv_line">…Art. She was a truly scary woman. I could say this from the position of an incarnation. The constellations looked nostalgic at Anna Croft's words. Persephone could be seen among them. All of them were constellations who survived those days.</p>
-<div class="orv_constellation"><p>[Interesting. Then you have a story that can satisfy our appetite?]</p></div>
+<div class="orv_constellation"><p>Interesting. Then you have a story that can satisfy our appetite?</p></div>
 <p class="orv_line">The person speaking was a demon king leaning against a corner of the hall. Anna Croft wasn't panicked by the provocation and smiled.</p>
 <p class="orv_line">"That's right. I am going to give you back the lost 'first generation' stories."</p>
 <p class="orv_line">The constellation's expressions changed. Everyone doubted their ears.</p>
 <p class="orv_line">"You don't like sword masters or 9th circle magicians. You like stories with a theme of blood, sweat, tears and effort. I came here today to present you with such a story."</p>
 <p class="orv_line">The constellations reacted in different ways to Anna Croft's words. Some shouted about how an incarnation was making a fool of them while others were interested in what she was saying. There were also constellations who responded skeptically, just like the Mass Production Maker by my side.</p>
-<div class="orv_constellation"><p>[…She is telling a stupid story. The current Gourmet Association won't find such stories interesting. Isn't that right?]</p></div>
+<div class="orv_constellation"><p>…She is telling a stupid story. The current Gourmet Association won't find such stories interesting. Isn't that right?</p></div>
 <p class="orv_line">"I agree."</p>
 <p class="orv_line">There were certainly some great stories among the first generation but times had changed. The constellations who already experienced stimulating stories wouldn't be touched by stories that mimicked the first generation.</p>
 <p class="orv_line">Still…Anna Croft couldn't be unaware of this. She was the most competent incarnation in all of Ways of Survival.</p>
@@ -297,18 +304,12 @@
             <a href="./ch_238"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_240">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="239" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="308" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="238" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="238" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

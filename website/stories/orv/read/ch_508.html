@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 508: Ep. 98 - Have you protected all that you were supposed to protect, I</title>
     <meta property="og:title" content="Ch 508: Ep. 98 - Have you protected all that you were supposed to protect, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,70 +177,70 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00508.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 508: Ep. 98 - Have you protected all that you were supposed to protect, I</h1></div>
 <p class="orv_line">⸢A man named Yoo Joonghyuk was there.⸥</p>
 <p class="orv_line">From the 0th turn all the way to 1863rd.</p>
-<p class="orv_line">The history compiled by Yoo Joonghyuk overlapped with the ends of his coat and whipped about wildly. As if to speak up for his Story, his words floated up on the [Final Wall].</p>
+<p class="orv_line">The history compiled by Yoo Joonghyuk overlapped with the ends of his coat and whipped about wildly. As if to speak up for his Story, his words floated up on the <strong>[Final Wall]</strong>.</p>
 <p class="orv_line">⸢"I will never forget. Not even one thing."⸥</p>
-<div class="orv_system"><p>[Story, 'Life and Death Companions's' special effect is currently in activation!]</p></div>
+<div class="orv_system"><p>Story, 'Life and Death Companions's' special effect is currently in activation!</p></div>
 <p class="orv_line">The Stories of the 3rd turn's Yoo Joonghyuk and the Secretive Plotter's were resonating together.</p>
-<p class="orv_line">Terrifyingly-resplendent powers of Chaos extended out from the tip of the [Black Heavenly Demon Sword] buried deeply in the wall. The entire wall seemed to grow restless from the disorderly aura of Chaos.</p>
+<p class="orv_line">Terrifyingly-resplendent powers of Chaos extended out from the tip of the <strong>[Black Heavenly Demon Sword]</strong> buried deeply in the wall. The entire wall seemed to grow restless from the disorderly aura of Chaos.</p>
 <p class="orv_line">That was obvious, though; his story should be occupying the most important part of this wall, after all.</p>
 <p class="orv_line">The protagonist of the ⸢Three Ways to Survive a Destroyed World⸥, Yoo Joonghyuk. This whole world couldn't even have gotten started without him in the first place.</p>
 <p class="orv_line">The Dokkaebi King spoke up as if to ridicule him.</p>
-<div class="orv_constellation"><p>[Oh, the puppet of the Oldest Dream. Your film is truly lengthy and extensive.]</p></div>
+<div class="orv_constellation"><p>Oh, the puppet of the Oldest Dream. Your film is truly lengthy and extensive.</p></div>
 <p class="orv_line">He sounded as if he already had predicted this appearance.</p>
-<div class="orv_constellation"><p>[No one could have accompanied you in your boring and unwieldy story. Even if it was the 'Oldest Dream'.]</p></div>
+<div class="orv_constellation"><p>No one could have accompanied you in your boring and unwieldy story. Even if it was the 'Oldest Dream'.</p></div>
 <p class="orv_line">Tsu-chuchuchut!</p>
-<p class="orv_line">Yoo Joonghyuk slowly blinked, and the [Sage's Eye] was unleashed along with a radiant golden light. His eye glowed brightly as if it had absorbed every starlight existing in this world.</p>
+<p class="orv_line">Yoo Joonghyuk slowly blinked, and the <strong>[Sage's Eye]</strong> was unleashed along with a radiant golden light. His eye glowed brightly as if it had absorbed every starlight existing in this world.</p>
 <p class="orv_line">The owner of that eye spoke up.</p>
 <div class="orv_outergod"><p>【Have I come too early this time as well?】</p></div>
-<p class="orv_line">The moment I heard the Secretive Plotter, I recalled a certain memory I saw through the [Disconnected Film Theory]. A memory from the 1863rd turn when he encountered the 'Dokkaebi King'.</p>
-<p class="orv_line">⸢[Oh, dear unfortunate puppet. You have arrived too early. You can't complete this universe.]⸥</p>
+<p class="orv_line">The moment I heard the Secretive Plotter, I recalled a certain memory I saw through the <strong>[Disconnected Film Theory]</strong>. A memory from the 1863rd turn when he encountered the 'Dokkaebi King'.</p>
+<p class="orv_line">⸢<strong>[Oh, dear unfortunate puppet. You have arrived too early. You can't complete this universe.]</strong>⸥</p>
 <p class="orv_line">The 'Dokkaebi King' tilted his head as that memory was transmitted to him in real-time and muttered out.</p>
-<div class="orv_constellation"><p>[Is that what happened? I see, the me of the different world-line told you such a thing.]</p></div>
+<div class="orv_constellation"><p>Is that what happened? I see, the me of the different world-line told you such a thing.</p></div>
 <div class="orv_outergod"><p>【Your manner of speech is different from the one I met.】</p></div>
-<div class="orv_constellation"><p>[Just like how your regression turns aren't the same, I too am different.]</p></div>
-<p class="orv_line">The 'Dokkaebi King' shrugged his shoulders as if he found something rather amusing. Then, he yanked out Yoo Joonghyuk's [Black Heavenly Demon Sword] and threw it back. The latter caught the flying sword with his bare hand.</p>
-<p class="orv_line">Only the sword scar remained on the [Final Wall] like a cursor. Soon, though, the scar was gradually forced close, and sentences appeared on the wall's surface.</p>
+<div class="orv_constellation"><p>Just like how your regression turns aren't the same, I too am different.</p></div>
+<p class="orv_line">The 'Dokkaebi King' shrugged his shoulders as if he found something rather amusing. Then, he yanked out Yoo Joonghyuk's <strong>[Black Heavenly Demon Sword]</strong> and threw it back. The latter caught the flying sword with his bare hand.</p>
+<p class="orv_line">Only the sword scar remained on the <strong>[Final Wall]</strong> like a cursor. Soon, though, the scar was gradually forced close, and sentences appeared on the wall's surface.</p>
 <p class="orv_line">⸢However, all these world-lines existed for the sake of treading the same path.⸥</p>
 <p class="orv_line">The 'Dokkaebi King' addressed Yoo Joonghyuk while sounding immensely proud of this story.</p>
-<div class="orv_constellation"><p>[The completion of the great, noble world is at hand. You shall be able to fulfil your long-cherished wish now.]</p></div>
+<div class="orv_constellation"><p>The completion of the great, noble world is at hand. You shall be able to fulfil your long-cherished wish now.</p></div>
 <p class="orv_line">I knew very well what Yoo Joonghyuk's wish was.</p>
-<div class="orv_system"><p>[Giant Story, 'Pilgrim of the Lonely Apocalypse', has begun its storytelling!]</p></div>
+<div class="orv_system"><p>Giant Story, 'Pilgrim of the Lonely Apocalypse', has begun its storytelling!</p></div>
 <p class="orv_line">And that was to be freed from the chains of this horrifying curse. The 1863rd turn's Yoo Joonghyuk only lived on for that very purpose.</p>
 <p class="orv_line">⸢However, his aim wasn't only that.⸥</p>
 <p class="orv_line">The 'Secretive Plotter' turned his head to look at me. The meaning behind that stare was rather obvious – he was telling me not to forget the deal I made with him.</p>
 <p class="orv_line">⸢"I shall kill the culprit of all these worlds."⸥</p>
-<p class="orv_line">The 'Dokkaebi King' read that sentence floating above the [Final Wall] and muttered out.</p>
-<div class="orv_constellation"><p>[Kill, is it… How amusing. Do you still believe such a thing is possible?]</p></div>
+<p class="orv_line">The 'Dokkaebi King' read that sentence floating above the <strong>[Final Wall]</strong> and muttered out.</p>
+<div class="orv_constellation"><p>Kill, is it… How amusing. Do you still believe such a thing is possible?</p></div>
 <div class="orv_outergod"><p>【Of course, it is. And to make it possible…】</p></div>
 <p class="orv_line">A pair of swords were now held in his hands.</p>
-<p class="orv_line">The pitch-black blade of the [Black Heavenly Demon Sword] was now joined by the chillingly-pale blade of [Splitting the Sky Sword].</p>
+<p class="orv_line">The pitch-black blade of the <strong>[Black Heavenly Demon Sword]</strong> was now joined by the chillingly-pale blade of <strong>[Splitting the Sky Sword]</strong>.</p>
 <div class="orv_outergod"><p>【…You, bastard, need to disappear first.】</p></div>
 <p class="orv_line">Along with a loud 'Ka-boom!', sparks began pounding the entire Wall as if to break it down. An explosion of light occurred right afterwards, revealing two figures locked in combat mid-air.</p>
 <p class="orv_line">I saw the sturdy barrier-like wall of the Story surrounding the 'Dokkaebi King'. He was an existence that used the oldest stories in this world as weapons.</p>
-<div class="orv_system"><p>[Giant Story, 'First Messiah', has begun its storytelling!]</p></div>
+<div class="orv_system"><p>Giant Story, 'First Messiah', has begun its storytelling!</p></div>
 <p class="orv_line">The Story in possession of the master of Nebula &lt;Eden&gt; was now streaming out from his fingertips.</p>
 <p class="orv_line">Sentences tightly coagulating scattered sacred light around. The light from a great Constellation was now raining down on all the creations on the ground. There was no doubt that anything touched by that Status would melt away without a trace.</p>
 <p class="orv_line">"Dokja-ssi!!"</p>
@@ -243,60 +250,60 @@
 <p class="orv_line">Instead of a reply, I simply pointed to the front.</p>
 <p class="orv_line">Even as the pulsing migraine continued to assault me, I didn't stop looking at the view unfolding before my eyes.</p>
 <p class="orv_line">Other stars were right. I too, might be nothing more than a mere Constellation. Maybe, I endured over a dozen-plus years to witness this spectacle.</p>
-<div class="orv_system"><p>[Exclusive attribute, 'Terror of the Stars', is activating!]</p></div>
+<div class="orv_system"><p>Exclusive attribute, 'Terror of the Stars', is activating!</p></div>
 <p class="orv_line">The brilliant radiance of the Dokkaebi King was splitting apart. A man wearing a black coat was using two swords to defend against the light of messiah capable of ending all evil in this world.</p>
 <p class="orv_line">Tsu-zuzuzuzu…!</p>
 <p class="orv_line">The Stories on the Wall melted down as the light touched them.</p>
-<p class="orv_line">The 'Secretive Plotter', no, Yoo Joonghyuk, was walking forward step by step while scything past that light. Sweat drops formed and dripped down from the end of his chin, and the edges of [Black Heavenly Demon Sword] and [Splitting the Sky Sword] grew increasingly dull from the light, yet he didn't back away, not even once.</p>
+<p class="orv_line">The 'Secretive Plotter', no, Yoo Joonghyuk, was walking forward step by step while scything past that light. Sweat drops formed and dripped down from the end of his chin, and the edges of <strong>[Black Heavenly Demon Sword]</strong> and <strong>[Splitting the Sky Sword]</strong> grew increasingly dull from the light, yet he didn't back away, not even once.</p>
 <p class="orv_line">This caused the Dokkaebi King's expression to shift gradually.</p>
-<div class="orv_constellation"><p>[As expected. How about this, then?]</p></div>
-<div class="orv_system"><p>[Giant Story, 'First Evil', has begun its storytelling!]</p></div>
+<div class="orv_constellation"><p>As expected. How about this, then?</p></div>
+<div class="orv_system"><p>Giant Story, 'First Evil', has begun its storytelling!</p></div>
 <p class="orv_line">The First Evil. That was the Story of 'Baal', the great Demon King who had ascended to heaven. It was the absolute power that no Good in this world could ever dare to oppose.</p>
 <p class="orv_line">Now carrying the entirety of the Demon Realm on its back, the Dokkaebi King dropped a pitch-black bolt of lightning on Yoo Joonghyuk. It was the thunderclap from the corrupted heaven that no Archangel could withstand.</p>
 <p class="orv_line">Lee Seolhwa cried out in the distance. "Joonghyuk-ssi!!"</p>
 <p class="orv_line">Yoo Joonghyuk didn't avoid the incoming lightning bolt. No, he instead raised his sword up like a lightning rod and faced the attack head-on. That wasn't the end, however.</p>
-<div class="orv_system"><p>[The ⸢Stage Transformation⸥ is activating!]</p></div>
+<div class="orv_system"><p>The ⸢Stage Transformation⸥ is activating!</p></div>
 <p class="orv_line">Through the Stage Transformation, souls of Demon Kings were being revived. There were some that died by our hands, while some were killed off by the Apocalypse Dragon. All Demon Kings had been summoned to the battlefield once more by the 'First Evil', and they were now howling towards Yoo Joonghyuk and me.</p>
 <p class="orv_line">Gu-waaaaaah!!</p>
 <p class="orv_line">The weapons thrown by the Demon Kings were enveloped in the malevolent magical energy, creating a purple-coloured storm of lightning. It was so powerful that not even a Myth-grade Constellation would be able to withstand it.</p>
 <p class="orv_line">As the lightning flooded in, Yoo Joonghyuk's pale face was illuminated like an evil apparition. He remained utterly calm even as the ominous storm of Status raged on.</p>
 <p class="orv_line">Just like someone who had been waiting for this very moment for a long time.</p>
 <div class="orv_outergod"><p>【They are all bastards that I've killed before.】</p></div>
-<div class="orv_system"><p>[Exclusive attribute, 'Demon King Slayer', is activating!]</p></div>
+<div class="orv_system"><p>Exclusive attribute, 'Demon King Slayer', is activating!</p></div>
 <p class="orv_line">Yoo Joonghyuk leapt into the air and marched forward while deflecting the incoming weapons. Everywhere his swords drew arcs, Stories of evil crumbled down.</p>
 <p class="orv_line">Like a monster born only to destroy, he swung his swords again and again. Every single one of his sword strikes contained the resentment of the worlds he had lived in.</p>
 <p class="orv_line">Tsu-chuchuchuchut!</p>
 <p class="orv_line">A huge rift was opening up in the corrupted skies of the Demon Realm.</p>
 <p class="orv_line">The martial prowess powerful enough to dissolve the ⸢Stage Transformation⸥ all by himself; the monster created by &lt;Star Stream&gt; was now working towards destroying &lt;Star Stream&gt; itself.</p>
 <p class="orv_line">Guwaaaaahk!</p>
-<p class="orv_line">The blade of [Black Heavenly Demon Sword] cut off the head of the revived 'Black-mane lion' Marbas, while the [Splitting the Sky Sword]'s trajectory pierced past the heart of the 'Merciless hunter going against heaven's will', Barbatos.</p>
+<p class="orv_line">The blade of <strong>[Black Heavenly Demon Sword]</strong> cut off the head of the revived 'Black-mane lion' Marbas, while the <strong>[Splitting the Sky Sword]</strong>'s trajectory pierced past the heart of the 'Merciless hunter going against heaven's will', Barbatos.</p>
 <p class="orv_line">No Demon King could announce themselves as a king in front of this man.</p>
 <p class="orv_line">The Dokkaebi King growled and shouted out as if he too had finally acknowledged the threat.</p>
-<div class="orv_constellation"><p>[You arrogant puppet…! You are not the protagonist of this world-line!]</p></div>
+<div class="orv_constellation"><p>You arrogant puppet…! You are not the protagonist of this world-line!</p></div>
 <p class="orv_line">At the same time, the surrounding terrain began changing again.</p>
-<div class="orv_system"><p>[Giant Story, 'Star Stream Game System', has begun its storytelling!]</p></div>
-<div class="orv_system"><p>[The ⸢Stage Transformation⸥ is activating!]</p></div>
+<div class="orv_system"><p>Giant Story, 'Star Stream Game System', has begun its storytelling!</p></div>
+<div class="orv_system"><p>The ⸢Stage Transformation⸥ is activating!</p></div>
 <p class="orv_line">The Wall's appearance was changing as if pixels were breaking apart.</p>
-<p class="orv_line">Yoo Joonghyuk's figure seemingly grew smaller and smaller. The path he needed to tread became a maze, as if he was now trapped within the 'maze of Daedalus'. Even a monster with a large mouth chasing after him could be seen, too. [Automated turrets] suddenly popping from here and there began firing at him, while the ground his feet landed on morphed into a deep quagmire.</p>
+<p class="orv_line">Yoo Joonghyuk's figure seemingly grew smaller and smaller. The path he needed to tread became a maze, as if he was now trapped within the 'maze of Daedalus'. Even a monster with a large mouth chasing after him could be seen, too. <strong>[Automated turrets]</strong> suddenly popping from here and there began firing at him, while the ground his feet landed on morphed into a deep quagmire.</p>
 <p class="orv_line">It was as if he had entered a video game.</p>
 <p class="orv_line">⸢Yoo Joonghyuk was laughing.⸥</p>
-<div class="orv_system"><p>[Exclusive attribute, 'Ruler of Games', is activating!]</p></div>
+<div class="orv_system"><p>Exclusive attribute, 'Ruler of Games', is activating!</p></div>
 <p class="orv_line">He overcame the exceedingly-simple traps and flung himself forward like an arrow. He tore the approaching monster's head off, then proceeded to utterly destroy the maze's walls.</p>
 <p class="orv_line">As if he already knew the method of clearing this world, he didn't even permit a single attack to land on him.</p>
-<div class="orv_system"><p>[Applicable 'stage' cannot deal with the target's Status!]</p></div>
+<div class="orv_system"><p>Applicable 'stage' cannot deal with the target's Status!</p></div>
 <p class="orv_line">The maze collapsed, and Yoo Joonghyuk was already standing right before the Dokkaebi King. The latter's eyes were now dyed in the colours of fluster.</p>
 <div class="orv_outergod"><p>【Is that all?】</p></div>
 <p class="orv_line">It was only obvious why the 'Secretive Plotter' would win against the 'Dokkaebi King', however.</p>
 <p class="orv_line">His whole life existed solely to fight and win against &lt;Star Stream&gt;. He must've killed the Dokkaebi King in a similar manner during the portion of the original I didn't get to read.</p>
 <p class="orv_line">The latter was hastily retreating, his eyes now shifting towards me.</p>
 <p class="orv_line">⸢What is Yoo Joonghyuk's weakness?⸥</p>
-<p class="orv_line">The moment I read that sentence floating above the [Final Wall], the back of my neck grew icy-cold.</p>
+<p class="orv_line">The moment I read that sentence floating above the <strong>[Final Wall]</strong>, the back of my neck grew icy-cold.</p>
 <p class="orv_line">The sights of a different world-line were projected onto the Dokkaebi King's irises. Memories not from this world, but another world-line was currently entering him.</p>
 <p class="orv_line">He stopped looking at me as if he had found the right answer, and with a chilling smile, shifted his gaze back to Yoo Joonghyuk.</p>
-<div class="orv_constellation"><p>[Oh, dear puppet. Is your mind as sharp as your sword, I wonder?]</p></div>
-<div class="orv_system"><p>[The 'King of Stories' is forcibly reproducing your Story!]</p></div>
-<div class="orv_system"><p>[The ⸢Stage Transformation⸥ is activating temporarily!]</p></div>
-<div class="orv_system"><p>[The similarity of the surrounding terrain is greatly enhancing the level of stage's reproduction!]</p></div>
+<div class="orv_constellation"><p>Oh, dear puppet. Is your mind as sharp as your sword, I wonder?</p></div>
+<div class="orv_system"><p>The 'King of Stories' is forcibly reproducing your Story!</p></div>
+<div class="orv_system"><p>The ⸢Stage Transformation⸥ is activating temporarily!</p></div>
+<div class="orv_system"><p>The similarity of the surrounding terrain is greatly enhancing the level of stage's reproduction!</p></div>
 <p class="orv_line">Corpses of Demon Kings were strewn about everywhere. Yoo Joonghyuk and his devastated expression standing on top of dead Constellations and Demon Kings, was now slowly taking in the surroundings.</p>
 <p class="orv_line">⸢The final world he used to live in was now unfolding in this place.⸥</p>
 <p class="orv_line">There was no way he didn't recognise this 'world'. It was none other the 'Secretive Plotter' himself who had sent me to that place, after all.</p>
@@ -304,15 +311,15 @@
 <p class="orv_line">The Dokkaebi King approached Yoo Joonghyuk like an encroaching shadow as the latter dazedly looked up at the sky. No, he was no longer the 'Dokkaebi King'. With every step he took, his face and his silhouette changed.</p>
 <p class="orv_line">⸢The pale cheeks; two eyes gleaming like stars, were now looking at him.⸥</p>
 <p class="orv_line">The white coat perfectly matching mine was dancing in the wind.</p>
-<div class="orv_constellation"><p>[Do you remember it? Back in the 33rd regression turn. What Lee Jihye said after clearing the 40th scenario?]</p></div>
+<div class="orv_constellation"><p>Do you remember it? Back in the 33rd regression turn. What Lee Jihye said after clearing the 40th scenario?</p></div>
 <p class="orv_line">A voice exactly the same as mine was now speaking up.</p>
 <p class="orv_line">Sparks danced in the air as Yoo Joonghyuk's body froze up stiffly.</p>
 <p class="orv_line">The Dokkaebi King easily reached out and grabbed hold of Yoo Joonghyuk's collars before continuing on.</p>
-<div class="orv_constellation"><p>[Now, remember. You weren't always unhappy, right? In all the regression turns, there were always moments of happiness, even if they didn't last long.]</p></div>
-<p class="orv_line">Both the [Splitting the Sky Sword] and the [Black Heavenly Demon Sword] trembled powerfully. And in the midst of the tremor, they drooped powerlessly.</p>
+<div class="orv_constellation"><p>Now, remember. You weren't always unhappy, right? In all the regression turns, there were always moments of happiness, even if they didn't last long.</p></div>
+<p class="orv_line">Both the <strong>[Splitting the Sky Sword]</strong> and the <strong>[Black Heavenly Demon Sword]</strong> trembled powerfully. And in the midst of the tremor, they drooped powerlessly.</p>
 <p class="orv_line">⸢The regression depression.⸥</p>
 <p class="orv_line">That was the only weakness of Yoo Joonghyuk, who had repeatedly regressed for a very long time.</p>
-<div class="orv_constellation"><p>[In the 173rd turn. You managed to protect Earth for a pretty long time. You got to see Lee Jihye receive her high school diploma, and you even got to see Lee Seolhwa smile with another's child in her arms.]</p></div>
+<div class="orv_constellation"><p>In the 173rd turn. You managed to protect Earth for a pretty long time. You got to see Lee Jihye receive her high school diploma, and you even got to see Lee Seolhwa smile with another's child in her arms.</p></div>
 <p class="orv_line">The light in Yoo Joonghyuk's eyes was wavering.</p>
 <p class="orv_line">⸢It wasn't despair that could defeat Yoo Joonghyuk.⸥</p>
 <p class="orv_line">⸢Small feather-like memories settled down inside his head one by one.⸥</p>
@@ -321,7 +328,7 @@
 <p class="orv_line">⸢A man drowning in water would sink even deeper under the surface from the weight of a mere feather.⸥</p>
 <p class="orv_line">I couldn't afford to idly watch on anymore. I shouted at Yoo Joonghyuk, telling him to wake up, and not to fall for such an illusion.</p>
 <p class="orv_line">However, my voice couldn't reach them as if a non-conductive barrier was set up between us. And the 'Dokkaebi King' was smiling away, perhaps to mock this entire story.</p>
-<div class="orv_constellation"><p>[Yoo Joonghyuk, have you protected all that you wanted to protect?]</p></div>
+<div class="orv_constellation"><p>Yoo Joonghyuk, have you protected all that you wanted to protect?</p></div>
 <p class="orv_line">Slowly, Yoo Joonghyuk's knees sank down.</p>
 <p class="orv_line">I roused the Status of Stories. I needed to undo that ⸢Stage Transformation⸥ right now, But, how should I…</p>
 <p class="orv_line">Grab.</p>
@@ -334,7 +341,7 @@
 <p class="orv_line">His gaze being lowered had come to a stop. Blinding sparks were completely enveloping him.</p>
 <p class="orv_line">Tsu-chuchuchuchu…</p>
 <p class="orv_line">Something was waking up his fading consciousness.</p>
-<div class="orv_system"><p>[Giant Story, 'Ones that Remember the Apocalypse', has begun its storytelling!]</p></div>
+<div class="orv_system"><p>Giant Story, 'Ones that Remember the Apocalypse', has begun its storytelling!</p></div>
 <p class="orv_line">That was a Story I wasn't aware of.</p>
 <p class="orv_line">As the sparks lessened gradually, several silhouettes revealed themselves. Now that I took a closer look, Yoo Joonghyuk wasn't alone. No, four others were standing beside him.</p>
 <p class="orv_line">A tall man, a young man with blonde hair, a girl with a ponytail, and finally…</p>
@@ -350,18 +357,12 @@
             <a href="./ch_507"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_509">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="508" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="558" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="507" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="507" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

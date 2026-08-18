@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 240: Ep. 45 - Gourmet Association, IV</title>
     <meta property="og:title" content="Ch 240: Ep. 45 - Gourmet Association, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,51 +177,51 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00240.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 240: Ep. 45 - Gourmet Association, IV</h1></div>
 <p class="orv_line">I looked back and saw a woman with a familiar face. "Selena Kim?"</p>
 <p class="orv_line">"Please, please save Iris!" The hand holding my shoulder was trembling. The kind and calm Selena Kim was making this expression? "If this continues, Iris will die…!"</p>
 <p class="orv_line">At this moment, scenes of Ways of Survival crossed my mind.</p>
-<div class="orv_quote"><p>「 "Anna, why did you do this… it didn't have to be this way!" 」</p></div>
-<div class="orv_quote"><p>「 "It is a necessary thing." 」</p></div>
-<div class="orv_quote"><p>「 "No, it isn't. This… the incarnations don't know anything! How can you do this?" 」</p></div>
-<div class="orv_quote"><p>「 "This is also to save humanity. Don't forget Selena. We were thrown into a herd of predators that can eat us at any time." 」</p></div>
+<div class="orv_quote"><p>"Anna, why did you do this… it didn't have to be this way!"</p></div>
+<div class="orv_quote"><p>"It is a necessary thing."</p></div>
+<div class="orv_quote"><p>"No, it isn't. This… the incarnations don't know anything! How can you do this?"</p></div>
+<div class="orv_quote"><p>"This is also to save humanity. Don't forget Selena. We were thrown into a herd of predators that can eat us at any time."</p></div>
 <p class="orv_line">It didn't happen in this round. However, the original version had already been revised. In other words, it wasn't unusual for the work of another round to occur in this round. Moreover, the story of the third regression was deleted in the first revision.</p>
 <p class="orv_line">"Selena Kim. Please tell me precisely. What happened?"</p>
 <p class="orv_line">Before Selena Kim could speak, the voices of the angry constellations around me were heard.</p>
-<div class="orv_constellation"><p>[How dare an incarnation…!]</p></div>
+<div class="orv_constellation"><p>How dare an incarnation…!</p></div>
 <p class="orv_line">Fearsome gazes were pouring towards me and Selena Kim. Selena Kim stiffened like a stone statue and turned pale. The Mass Production Maker raised his status in order to protect me and sparks of probability appeared around Selena Kim.</p>
 <p class="orv_line">This 'central hall' was only for constellations. For a moment, I had forgotten this was the Gourmet Association.</p>
 <p class="orv_line">Selena Kim shut her mouth like a frightened goldfish and was dragged away by a guide. Selena Kim was unable to rebel and stared at the stage with resentful eyes.</p>
 <p class="orv_line">I didn't know if the story that Selena Kim was about to tell me was the same as Ways of Survival. Only one thing was certain. The reason why Selena Kim came to me was involved with why Anna Croft was on the stage.</p>
 <p class="orv_line">As I looked at the stage with troubled eyes, Anna Croft continued to talk with blank eyes. "The story I'm going to tell you is the Bracelet Expedition."</p>
 <p class="orv_line">The constellations made a fuss.</p>
-<div class="orv_constellation"><p>[…The Bracelet Expedition?]</p></div>
+<div class="orv_constellation"><p>…The Bracelet Expedition?</p></div>
 <p class="orv_line">"That's right."</p>
-<div class="orv_constellation"><p>[Are you going to parody the first generation story, Evil Blight Bracelet?]</p></div>
+<div class="orv_constellation"><p>Are you going to parody the first generation story, Evil Blight Bracelet?</p></div>
 <p class="orv_line">Evil Blight Bracelet. It was mentioned in the original Ways of Survival and was a story that was more of a classic than the Dragon Eating the Hammer or Children of the Dawn Star. It was older than the first generation and was closer to the zero generation.</p>
 <p class="orv_line">The Bracelet Expedition was a typical expedition story where a group of 15 people went to burn a bracelet that was the source of a disaster.</p>
 <p class="orv_line">The Mass Production Maker heard her words and muttered</p>
-<div class="orv_constellation"><p>[Huh… she wants to reproduce that boring story?]</p></div>
+<div class="orv_constellation"><p>Huh… she wants to reproduce that boring story?</p></div>
 <p class="orv_line">However, Anna Croft continued speaking without being concerned about the reaction of the constellations. "I will introduce the Bracelet Expedition that will lead this story."</p>
 <p class="orv_line">Anna Croft clapped and a large panel appeared behind her. It was a huge panel that covered the entire wall on one side of the hall. The panel showed a vast forest where 15 incarnations were gathered.</p>
 <p class="orv_line">–…Where the hell is this place?</p>
@@ -222,8 +229,8 @@
 <p class="orv_line">–Everyone, wake up. If we play well, we can get the highest rank sponsors.</p>
 <p class="orv_line">I seemed to know what they were talking about. Looking closer, the frightened Iris was among them. That's right. This was why Selena Kim…</p>
 <p class="orv_line">A system message soon emerged like it had already been approved by the dokkaebis.</p>
-<div class="orv_system"><p>[The sub scenario ― Bracelet Expedition has begun.]</p></div>
-<div class="orv_system"><p>[This scenario can acquire new stories depending on the success or failure.]</p></div>
+<div class="orv_system"><p>The sub scenario ― Bracelet Expedition has begun.</p></div>
+<div class="orv_system"><p>This scenario can acquire new stories depending on the success or failure.</p></div>
 <div class="orv_window">
 <p>* A total of 15 incarnations will participate in the scenario.</p>
 <p>* All incarnations must arrive at the volcano in the centre of the hunting ground through cooperation.</p>
@@ -236,14 +243,14 @@
 <p>* There are a large number of evil spirits in the hunting ground. The scenario will fail if the expedition is destroyed by the evil spirits.</p>
 <p>* If the Absolute Bracelet isn't destroyed in the time limit, the scenario will fail.</p>
 </div>
-<div class="orv_constellation"><p>[Hoh… you have prepared this scenario. Interesting.]</p></div>
+<div class="orv_constellation"><p>Hoh… you have prepared this scenario. Interesting.</p></div>
 <p class="orv_line">Some of the constellations responded favourably. I considered it a poorly designed scenario but there was a flavour in it that the constellations could find. It was the replay of an old story. Anna Croft's aim was to ignite the memories of the constellations of the Gourmet Association.</p>
 <p class="orv_line">However, it was barely enough to satisfy the constellations of the Gourmet Association.</p>
-<div class="orv_constellation"><p>[…Still, something is lacking. What do you want us to do? Don't tell me it is just to watch this boring game.]</p></div>
+<div class="orv_constellation"><p>…Still, something is lacking. What do you want us to do? Don't tell me it is just to watch this boring game.</p></div>
 <p class="orv_line">"As you can see from the panel, there are incarnations waiting for your choice."</p>
-<div class="orv_constellation"><p>[Are we supposed to be their 'sponsors?']</p></div>
+<div class="orv_constellation"><p>Are we supposed to be their 'sponsors?'</p></div>
 <p class="orv_line">"Of course, you can make that choice but it won't be much fun."</p>
-<div class="orv_constellation"><p>[That means…?]</p></div>
+<div class="orv_constellation"><p>That means…?</p></div>
 <p class="orv_line">"The constellations can directly participate in this scenario and taste the freshest incarnations."</p>
 <p class="orv_line">Along with Anna Croft, additional scenario messages were printed.</p>
 <div class="orv_window">
@@ -252,32 +259,32 @@
 </div>
 <p class="orv_line">I was appalled the moment I heard the scenario message. Anna Croft was aiming at this from the beginning. It was a scenario that brought out the scent of the first generation while solving the desires of the constellations.</p>
 <p class="orv_line">The constellations became heated up. There was a sense of excitement different from the previous bustle. Even the Mass Production Maker showed an interested expression. One of the constellations asked.</p>
-<div class="orv_constellation"><p>[What do you get from this scenario?]</p></div>
+<div class="orv_constellation"><p>What do you get from this scenario?</p></div>
 <p class="orv_line">"Nothing. I just hope that all of you will enjoy it."</p>
 <p class="orv_line">The shameless smile shook me. There was no way she didn't want anything. She was just trying to raise her position by saying this.</p>
-<div class="orv_system"><p>[Constellations of the Gourmet Association are showing favourability towards incarnation 'Anna Croft'.]</p></div>
+<div class="orv_system"><p>Constellations of the Gourmet Association are showing favourability towards incarnation 'Anna Croft'.</p></div>
 <p class="orv_line">Anna Croft's plot surpassed the cruelty of the constellations. She didn't care about what she sacrificed for her own purposes. She had stabbed Yoo Joonghyuk in the back more than 10 times.</p>
 <p class="orv_line">"Then I'll start the scenario in one minute. Constellations who want to apply, please sign in the selection window."</p>
 <p class="orv_line">At Anna Croft's words, a selection window appeared in front of my eyes.</p>
-<div class="orv_system"><p>[Would you like to participate in this scenario?]</p></div>
-<div class="orv_system"><p>[Current number of applicants: 2/15]</p></div>
+<div class="orv_system"><p>Would you like to participate in this scenario?</p></div>
+<div class="orv_system"><p>Current number of applicants: 2/15</p></div>
 <p class="orv_line">At the place where a story was being made, there was an opportunity to devour the subjects of the story. The number of applicants was rapidly rising.</p>
-<div class="orv_system"><p>[Current number of applicants: 5/15]</p></div>
+<div class="orv_system"><p>Current number of applicants: 5/15</p></div>
 <p class="orv_line">I was once again reminded of why I came here. I had to make allies for the Demon King Selection. In order to do this, it was better to participate in the scenario. I would be able to become closer to them by sharing stories with other constellations.</p>
-<div class="orv_constellation"><p>[Hahaha, I will eat the artwork.]</p></div>
-<div class="orv_constellation"><p>[It isn't expected?]</p></div>
+<div class="orv_constellation"><p>Hahaha, I will eat the artwork.</p></div>
+<div class="orv_constellation"><p>It isn't expected?</p></div>
 <p class="orv_line">It might be time to admit it. I had become the 'constellation' I hated.</p>
-<div class="orv_system"><p>[Current number of applicants: 9/15]</p></div>
+<div class="orv_system"><p>Current number of applicants: 9/15</p></div>
 <p class="orv_line">Then I heard a 'baat' sound in my ears and a small panel popped up. It was Biyoo's screen that only I could see.</p>
 <p class="orv_line">–I will start the 857th competition!</p>
 <p class="orv_line">It showed Yoo Joonghyuk attending the martial arts competition. Perhaps he had become much stronger in the meantime because Yoo Joonghyuk was continuously beating his opponents with the least movements possible. I stared at his calm movements and thought as usual:</p>
 <p class="orv_line">What would Yoo Joonghyuk do? At this moment, I seemed to meet Yoo Joonghyuk's eyes. Of course, Yoo Joonghyuk wouldn't know that I was watching. Even so, Yoo Joonghyuk seemed to talk to me.</p>
-<div class="orv_quote"><p>「 "No matter how many times I return, my choice is the same." 」</p></div>
+<div class="orv_quote"><p>"No matter how many times I return, my choice is the same."</p></div>
 <p class="orv_line">No, maybe he already told me. In fact, I saw him make the same choice many times.</p>
-<div class="orv_quote"><p>「 "I will kill all of you, not leaving a single one." 」</p></div>
+<div class="orv_quote"><p>"I will kill all of you, not leaving a single one."</p></div>
 <p class="orv_line">So far, I had always made a different choice from Yoo Joonghyuk. I wasn't Yoo Joonghyuk. Amidst the strong backlash, I always walked on a different path.</p>
 <p class="orv_line">Persephone was watching me from afar. She was waiting for something interesting to happen. The constellation who lived for a long time knew where the really interesting stories would start. Thus, she understood what I was going to do from now on.</p>
-<div class="orv_system"><p>[Current number of applicants: 14/15]</p></div>
+<div class="orv_system"><p>Current number of applicants: 14/15</p></div>
 <p class="orv_line">I raised my hand towards the selection window.</p>
 <br>
 <hr>
@@ -291,11 +298,11 @@
 <p class="orv_line">"Aaaack!"</p>
 <p class="orv_line">"Help me! Please!"</p>
 <p class="orv_line">The upper body of an incarnation was completely separated.</p>
-<div class="orv_constellation"><p>[It is very fresh meat.]</p></div>
+<div class="orv_constellation"><p>It is very fresh meat.</p></div>
 <p class="orv_line">The incarnations were torn apart by big teeth. The evil spirits wiped the stories flowing from their lips and chuckled.</p>
-<div class="orv_constellation"><p>[I'm disappointed. Is this the story you wanted me to eat?]</p></div>
-<div class="orv_constellation"><p>[Hasty friend. Please wait. The scenario has just begun.]</p></div>
-<div class="orv_constellation"><p>[How am I supposed to wait? This is a parody story…]</p></div>
+<div class="orv_constellation"><p>I'm disappointed. Is this the story you wanted me to eat?</p></div>
+<div class="orv_constellation"><p>Hasty friend. Please wait. The scenario has just begun.</p></div>
+<div class="orv_constellation"><p>How am I supposed to wait? This is a parody story…</p></div>
 <p class="orv_line">"A-Ahh… ahhh…"</p>
 <p class="orv_line">Her frightened companions urinated before the colossal 'status'. It was the first time she thought that the word 'revolution' was so empty.</p>
 <p class="orv_line">She couldn't resist. No one could stand up to such things.</p>
@@ -305,9 +312,9 @@
 <p class="orv_line">Run away? Damn, where could she escape to? In this small stage, where could she flee? A vast array of trees surrounded her. No matter where she ran, she couldn't leave this stage.</p>
 <p class="orv_line">Iris cursed something that wasn't 'capital' for the first time. She cursed the constellations. She cursed the Star Stream. She cursed this story.</p>
 <p class="orv_line">Nevertheless, she still begged. Please, someone, change this story. Even a very small salvation was okay, please. Please.</p>
-<div class="orv_system"><p>[The constellation 'Demon King of Salvation' is looking at you.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon King of Salvation' is looking at you.</p></div>
 <p class="orv_line">To her surprise, salvation faced her.</p>
-<div class="orv_system"><p>[The constellation 'Demon King of Salvation' wants to establish a 'Sponsor Contract' with you.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon King of Salvation' wants to establish a 'Sponsor Contract' with you.</p></div>
 <br>
 <hr>
         </article>
@@ -315,18 +322,12 @@
             <a href="./ch_239"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_241">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="240" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="224" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="239" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="239" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

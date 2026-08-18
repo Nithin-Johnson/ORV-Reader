@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 536: Epilogue 4 - The Omniscient Reader's Viewpoint, I</title>
     <meta property="og:title" content="Ch 536: Epilogue 4 - The Omniscient Reader's Viewpoint, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00536.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 536: Epilogue 4 - The Omniscient Reader's Viewpoint, I</h1></div>
 <p class="orv_line">I remembered the first time I read that novel.</p>
@@ -205,7 +212,7 @@
 <p class="orv_line">⸢Why, for someone like me?⸥</p>
 <p class="orv_line">I remained collapsed for a while. I thought I cried, too. However, no matter how I thrashed and screamed and sobbed, the already-written sentences couldn't be changed. Han Sooyoung had to spend 13 years of life just for me, and helped me live by crafting sentences literally carved out of her. And then, she was extinguished.</p>
 <p class="orv_line">⸢Kim Dok ja⸥</p>
-<p class="orv_line">[The Fourth Wall] was calling out to me. I quietly listened to the next words.</p>
+<p class="orv_line"><strong>[The Fourth Wall]</strong> was calling out to me. I quietly listened to the next words.</p>
 <p class="orv_line">⸢Y o u sho uld r e a d⸥</p>
 <p class="orv_line">I gingerly stood back up. My reflection on the windows was a complete mess. It'd be hard to call my body an adult's anymore. My height had decreased a lot, and my face had gotten younger, too. The coat I wore no longer fit me. I stared at that face for a long time, before taking the coat off for good.</p>
 <p class="orv_line">"…How many years has it been?"</p>
@@ -217,7 +224,7 @@
 <p class="orv_line">⸢Ar ound 21763 y e a r s⸥</p>
 <p class="orv_line">"It's not as long as I thought. I'm still way younger than the 'Secretive Plotter', right?"</p>
 <p class="orv_line">⸢St ill a li ttle r un t⸥</p>
-<p class="orv_line">I heard [The Fourth Wall] cackle away. If it wasn't for this guy's presence here, I'd have gone insane a long time ago.</p>
+<p class="orv_line">I heard <strong>[The Fourth Wall]</strong> cackle away. If it wasn't for this guy's presence here, I'd have gone insane a long time ago.</p>
 <p class="orv_line">Along with the 'Pah-sususu' noise, the tip of my pinky decreased a little.</p>
 <p class="orv_line">Since when did this start from, I wondered. I didn't do anything, yet my body continued to grow smaller. Well, if I were to be more specific, it wasn't really 'I didn't do anything', though.</p>
 <p class="orv_line">"…Will I keep getting smaller?" I stared at the crumbs of Stories drifting away outside the windows and asked. "Where are those Stories going off to, anyway?"</p>
@@ -228,7 +235,7 @@
 <p class="orv_line">⸢Tho se Stories wi ll be reb orn as ano ther Kim Dok ja⸥</p>
 <p class="orv_line">"As another Kim Dokja?"</p>
 <p class="orv_line">⸢Me ta phor ica lly spea king its li ke th at⸥</p>
-<p class="orv_line">I thought I could understand what [The Fourth Wall] was saying.</p>
+<p class="orv_line">I thought I could understand what <strong>[The Fourth Wall]</strong> was saying.</p>
 <p class="orv_line">Stories were streaming beyond the galaxies to head towards another world-line.</p>
 <p class="orv_line">Those Stories were, in essence, 'me'.</p>
 <p class="orv_line">Just like the 49% version of me living along with my companions somewhere in the 1864th regression turn, my fragments could very well be reborn as 'Kim Dokja' in a world-line somewhere out there.</p>
@@ -267,7 +274,7 @@
 <p class="orv_line">⸢Y o u wo nt re mem ber any th ing af ter all⸥</p>
 <p class="orv_line">To someone who even lost the traces of his loss, no such thing as 'loss' existed.</p>
 <p class="orv_line">While picking up the smartphone rolling around on the floor, I spoke up. "…Will I have enough time to read it one more time, I wonder?"</p>
-<p class="orv_line">I opened the file for the 'Ways of Survival', and scrolled up past the [Author's words] that I had to read with great difficulty.</p>
+<p class="orv_line">I opened the file for the 'Ways of Survival', and scrolled up past the <strong>[Author's words]</strong> that I had to read with great difficulty.</p>
 <p class="orv_line">⸢Three Ways to Survive in a Ruined World.⸥</p>
 <p class="orv_line">I started reading this novel from the very beginning.</p>
 <p class="orv_line">I read Yoo Joonghyuk's 3rd turn. Some stories, I already knew. While some others felt brand new to me.</p>
@@ -287,7 +294,7 @@
 <p class="orv_line">⸢…⸥</p>
 <p class="orv_line">By the time I reached the epilogue, my vision suddenly grew fuzzy.</p>
 <p class="orv_line">I even wondered if I became blind after reading a novel for far too long.</p>
-<div class="orv_system"><p>[A new update has been completed.]</p></div>
+<div class="orv_system"><p>A new update has been completed.</p></div>
 <p class="orv_line">But then, my vision was slowly restored. What I saw weren't proper sentences, however. Sentences and paragraphs had become individual fragments.</p>
 <p class="orv_line">Words that were no longer in the form of a completed novel. Even then, I could still read them somehow.</p>
 <p class="orv_line">⸢A world had been destroyed, and a brand new one was being born.⸥</p>
@@ -308,14 +315,14 @@
 <p class="orv_line">⸢"Everyone, fight to your hearts' content. I won't let anyone die."⸥</p>
 <p class="orv_line">⸢"You stinking bastards!! Again, you didn't even come to fetch me…!!"⸥</p>
 <p class="orv_line">⸢"The one I like isn't you, but the 'Demon King of Salvation'…⸥</p>
-<p class="orv_line">⸢[Baat!]⸥</p>
+<p class="orv_line">⸢<strong>[Baat!]</strong>⸥</p>
 <p class="orv_line">And, I lived my life together with them.</p>
 <p class="orv_line">⸢"The next scenario is…"⸥</p>
 <p class="orv_line">We experienced trials, and had to face off against life-threatening situations many times.</p>
 <p class="orv_line">We met Constellations.</p>
 <p class="orv_line">We broke past seemingly-impossible scenarios several times.</p>
 <p class="orv_line">And eventually, reached the end of the hellish scenarios.</p>
-<p class="orv_line">⸢[Your ■■ is 'Eternity'.]⸥</p>
+<p class="orv_line">⸢<strong>[Your ■■ is 'Eternity'.]</strong>⸥</p>
 <p class="orv_line">The companions returned to their everyday lives.</p>
 <p class="orv_line">⸢Some people were rebuilding the destroyed PC Bangs. They were putting up the torn posters of the computer games once more. In the world where the apocalypse had been overcome, people would search for other forms of entertainment once more. Yoo Joonghyuk observed this spectacle, and quietly clenched his right hand that hadn't held a mouse in a long, long while.⸥</p>
 <p class="orv_line">⸢Shin Yoosung and Lee Gilyoung were enrolled into a temporary school. Not an elementary, not a secondary, nor was it a high school – no, it was as the word implied, a 'temporary' school. Shin Yoosung was surprised to learn that such a place could exist in this world.⸥</p>
@@ -337,7 +344,7 @@
 <p class="orv_line">Tsu-chuchuchuchu…</p>
 <p class="orv_line">The story was continuing on. The story that should've ended didn't end.</p>
 <p class="orv_line">More correctly, they chose to 'not end it'.</p>
-<p class="orv_line">⸢[Stigma, 'Group Regression Lv.1' is activating!]⸥</p>
+<p class="orv_line">⸢<strong>[Stigma, 'Group Regression Lv.1' is activating!]</strong>⸥</p>
 <p class="orv_line">I read that sentence half in despair.</p>
 <p class="orv_line">This shouldn't have happened. This sentence, it should never have been written.</p>
 <p class="orv_line">But the sentence uncaringly led to the next one.</p>
@@ -359,9 +366,9 @@
 <p class="orv_line">"Will you just shut up and hand over the flag, Gong Pildu?"⸥</p>
 <p class="orv_line">These people who lost their minds were clearing the scenario with insane methods.</p>
 <p class="orv_line">Dangerous moments came in their direction many times, but the companions never yielded once.</p>
-<p class="orv_line">⸢[Incarnation, 'Lee Jihye', is activating Stigma, 'Transmission Lv.1'!]⸥</p>
+<p class="orv_line">⸢<strong>[Incarnation, 'Lee Jihye', is activating Stigma, 'Transmission Lv.1'!]</strong>⸥</p>
 <p class="orv_line">⸢"You stinking sooty bastard! This is why only you got stronger, by using crap like this!"⸥</p>
-<p class="orv_line">The [Transmission]. The regressor-specific skill that allowed one to strongly 'ruminate' over the memories from the previous life and let one regain their past skills.</p>
+<p class="orv_line">The <strong>[Transmission]</strong>. The regressor-specific skill that allowed one to strongly 'ruminate' over the memories from the previous life and let one regain their past skills.</p>
 <p class="orv_line">⸢"Uriel! Great Sage! Abyssal Black Flame Dragon!"⸥</p>
 <p class="orv_line">And with the aid from the Constellations added in, the companions got to clear the scenario at a considerable pace. It truly was an amazing marching speed.</p>
 <p class="orv_line">⸢"We can clear this with Avatars. No one has to die."⸥</p>
@@ -414,18 +421,12 @@
             <a href="./ch_535"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_537">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="536" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="887" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="535" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="535" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

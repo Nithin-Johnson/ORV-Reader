@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 28: Ep. 7 – Landlord, I</title>
     <meta property="og:title" content="Ch 28: Ep. 7 – Landlord, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,33 +177,33 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00028.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 28: Ep. 7 – Landlord, I</h1></div>
 <p class="orv_line">We followed Lee Jihye and entered Chungmuro. Yoo Sangah saw the shattered screen door of the platform and said, "…It is a chaotic atmosphere."</p>
 <p class="orv_line">As we climbed up from the tracks of railway line 3, we saw some people sitting down.</p>
-<div class="orv_system"><p>[You have entered Chungmuro.]</p></div>
-<div class="orv_system"><p>[The third scenario is currently in progress.]</p></div>
-<div class="orv_system"><p>[#GIR-8761 channel is active.]</p></div>
-<div class="orv_system"><p>[#BIR-3642 channel is active.]</p></div>
+<div class="orv_system"><p>You have entered Chungmuro.</p></div>
+<div class="orv_system"><p>The third scenario is currently in progress.</p></div>
+<div class="orv_system"><p>#GIR-8761 channel is active.</p></div>
+<div class="orv_system"><p>#BIR-3642 channel is active.</p></div>
 <p class="orv_line">From Chungmuro onward, the size of the scenario grew and the dokkaebi channels increased. That naive Bihyung would have a hard time from now on. Some middle-aged people saw us and waved their hands. "Oh, little samurai. You brought new people?"</p>
 <p class="orv_line">"Yes." 'A samurai'. I guess Lee Jihye could be called that if the sponsor behind her wasn't known. Sooner or later, they would be punished. Lee Jihye frowned at the middle-aged people. "Are you drunk again?"</p>
 <p class="orv_line">"Hahaha! What is there to do other than drink when the world has become like this?"</p>
@@ -271,7 +278,7 @@
 <p class="orv_line">"Eh, too bad. Be careful." The middle-aged man waved his hands without hesitation.</p>
 <p class="orv_line">Yoo Sangah watched the middle-aged man moving away and asked, "That… By the way… what exactly is the 'room'? I don't think it is the same as the room that I know."</p>
 <p class="orv_line">"It is easy." The boy pointed to a square tile. The tiles were also present on the platform of line 3. They were green tiles that were 1 pyeong in size. Looking at the details, I saw something written in the air above the tile.</p>
-<div class="orv_system"><p>[Green Zone 0/1]</p></div>
+<div class="orv_system"><p>Green Zone 0/1</p></div>
 <p class="orv_line">"The scenario name is 'green zone,' and these tiles are called rooms."</p>
 <p class="orv_line">Near the tile, two men were fighting each other over the tile. It was Lee Hyunsung who asked this time, "What is that? Why are those people fighting over it?"</p>
 <p class="orv_line">The boy looked a bit reluctant to answer, as if talking to us would be a threat to his survival. "You will know once you arrive at the second underground floor."</p>
@@ -283,7 +290,7 @@
 <p class="orv_line">I knew it. Of course, Yoo Joonghyuk would say something like this. Perhaps Yoo Joonghyuk never told them to follow him. Fascinated by the overwhelming force he displayed, they went on to have hopeful dreams. How pitiful.</p>
 <p class="orv_line">Not long after, we arrived at the second underground floor. There was tension on the boy's face. "We have to be careful from here onward."</p>
 <p class="orv_line">There were many more rooms on B2 than the lower levels, and there were no groups of people fighting. Instead, there were people guarding the green zones with scary eyes.</p>
-<div class="orv_system"><p>[Green Zone 7/7]</p></div>
+<div class="orv_system"><p>Green Zone 7/7</p></div>
 <p class="orv_line">We passed by the people and headed toward the bathrooms.</p>
 <p class="orv_line">"Uh… Why stop here?"</p>
 <p class="orv_line">Our pace came to a stop as we approached the last passage to the bathroom. Like a bottleneck, dozens of people were gathered in the passage.</p>
@@ -292,7 +299,7 @@
 <p class="orv_line">"Now now, back off. Back off." On the opposite side, people who seemed to be from the Landlord Association were gathered there. I could feel it instinctively. One of the 10 Evils was here. I tried to find the '10 Evils' member through the novel's description, but it wasn't easy since all of them seemed to fit. Did their impressions become similar after becoming landlords?</p>
 <p class="orv_line">I was shaking my head when someone grabbed my leg. It was Lee Gilyoung. I sensed some danger and was about to grab his shoulder when someone pushed Lee Gilyoung.</p>
 <p class="orv_line">"Ah." Lee Gilyoung lost his balance and fell down.</p>
-<div class="orv_system"><p>[The character 'Lee Gilyoung' has invaded private property!]</p></div>
+<div class="orv_system"><p>The character 'Lee Gilyoung' has invaded private property!</p></div>
 <p class="orv_line">Suddenly, the atmosphere became cold, and some of the 'Landlord Association' members in the front looked at Lee Gilyoung.</p>
 <p class="orv_line">"What is with this child?"</p>
 <p class="orv_line">At almost the same time, the crowd of people screamed and withdrew.</p>
@@ -306,10 +313,10 @@
 <p class="orv_line">Other people's land…</p>
 <p class="orv_line">Oh, it must be true. The man stroked Lee Gilyoung's head with an unknown look.</p>
 <p class="orv_line">"Since you don't know, I will teach you from now on."</p>
-<div class="orv_system"><p>[The character 'Gong Pildu' has activated [Armed Zone] Lv. 3!]</p></div>
+<div class="orv_system"><p>The character 'Gong Pildu' has activated [Armed Zone] Lv. 3!</p></div>
 <p class="orv_line">There was a whirring sound, and mini turrets resembling gatling guns rose from the ground.</p>
-<div class="orv_system"><p>[The character 'Gong Pildu' demands 500 coins for invading his private land.]</p></div>
-<div class="orv_system"><p>[If you don't follow the recommendations, all nearby turrets will fire immediately.]</p></div>
+<div class="orv_system"><p>The character 'Gong Pildu' demands 500 coins for invading his private land.</p></div>
+<div class="orv_system"><p>If you don't follow the recommendations, all nearby turrets will fire immediately.</p></div>
 <p class="orv_line">The man said, "Give me money."</p>
 <p class="orv_line">The loaded turrets were all aiming at the same point. The confused Lee Gilyoung stood up and moved to my side. The man saw me and laughed. "Ah, so you are his guardian. Then shouldn't the guardian pay 500 coins instead?"</p>
 <p class="orv_line">I smiled at the hand that the man brazenly stretched out.</p>
@@ -321,18 +328,12 @@
             <a href="./ch_27"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_29">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="28" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="50" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="27" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="27" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

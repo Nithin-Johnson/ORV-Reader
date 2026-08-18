@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 174: Ep. 33 - Reading Again, V</title>
     <meta property="og:title" content="Ch 174: Ep. 33 - Reading Again, V" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00174.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 174: Ep. 33 - Reading Again, V</h1></div>
 <p class="orv_line">At this time, Bihyung was at the Seoul Administrative Branch of the bureau.</p>
@@ -280,8 +287,8 @@
 <p class="orv_line">"I know."</p>
 <p class="orv_line">Perhaps it was due to the former black flame dragon incident but the atmosphere with Han Sooyoung had become a bit subtle.</p>
 <p class="orv_line">Han Sooyoung's constant trying to start an argument was probably because she was aware of this awkwardness.</p>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' is smiling with satisfaction.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' hates this atmosphere.]</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' is smiling with satisfaction.</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' hates this atmosphere.</p></div>
 <p class="orv_line">It took much longer than I thought to digest the power of Cheok Jungyeong. Four hours had already passed. I was sweating just controlling the power of his story.</p>
 <p class="orv_line">My mother had probably met Yoo Joonghyuk by now.</p>
 <p class="orv_line">Han Sooyoung was sitting on the floor eating mugwort. Then she said, "By the way, I don't think your mother is a bad person."</p>
@@ -301,16 +308,16 @@
 <p class="orv_line">I looked down at my right hand after hearing Han Sooyoung's words. The power of the story borrowed from Cheok Jungyeong was finally stabilizing. I nodded.</p>
 <p class="orv_line">"Be prepared. We are escaping."</p>
 <p class="orv_line">I controlled my strength and pulled out Unbroken Faith. The moment I borrowed Cheok Jungyeong's story, the trajectory of his life passed through my head like a panorama.</p>
-<div class="orv_quote"><p>「 Cutting 1,000 people with one sword. 」</p></div>
-<div class="orv_quote"><p>「 Cutting a great mountain with one sword. 」</p></div>
-<div class="orv_quote"><p>「 Separating the sea with three swords. 」</p></div>
+<div class="orv_quote"><p>Cutting 1,000 people with one sword.</p></div>
+<div class="orv_quote"><p>Cutting a great mountain with one sword.</p></div>
+<div class="orv_quote"><p>Separating the sea with three swords.</p></div>
 <p class="orv_line">It was Cheok Jungyeong's Three Sword Style. It was the name given to a person who never swung a sword more than three times towards a target.</p>
-<div class="orv_system"><p>[The status you can't afford has fallen onto your right arm.]</p></div>
+<div class="orv_system"><p>The status you can't afford has fallen onto your right arm.</p></div>
 <p class="orv_line">100 Days Seal started to instantly crack. It was the splendor of Cheok Jungyeong.</p>
 <p class="orv_line">The imperfect seal made with just the Eight Beaded Bell could never restrain Cheok Jungyeong's power.</p>
 <p class="orv_line">A real 100 Days Seal would only take effect after gathering all three heavenly treasures.</p>
-<div class="orv_system"><p>[The explosive flow of the story has distorted the space of the Mechanical Gateway Array Method.]</p></div>
-<div class="orv_system"><p>[The explosive flow of the story has broken the 100 Days Seal.]</p></div>
+<div class="orv_system"><p>The explosive flow of the story has distorted the space of the Mechanical Gateway Array Method.</p></div>
+<div class="orv_system"><p>The explosive flow of the story has broken the 100 Days Seal.</p></div>
 <p class="orv_line">I poured the Purest Sword Force into the air.</p>
 <p class="orv_line">One Sword, One Sword Cuts Thousands.</p>
 <p class="orv_line">Like a meteor shower, the sword cut through the air and the space split apart. The Mechanical Gateway Array Method and the seal. Everything was pointless before this overwhelming destruction.</p>
@@ -319,10 +326,10 @@
 <p class="orv_line">This was the power of the stars.</p>
 <p class="orv_line">The illusionary space collapsed and reality started emerging. It was a completely crazy sword technique.</p>
 <p class="orv_line">I felt just as greedy as when I got Kyrgios' Electrification. How good would it be if I could make this mine? Unfortunately, Bookmark only applied to 'characters'.</p>
-<div class="orv_system"><p>[Due to your status increase, the Bookmark skill will be updated.]</p></div>
-<div class="orv_system"><p>[A new feature has been enabled.]</p></div>
+<div class="orv_system"><p>Due to your status increase, the Bookmark skill will be updated.</p></div>
+<div class="orv_system"><p>A new feature has been enabled.</p></div>
 <p class="orv_line">…Eh?</p>
-<div class="orv_system"><p>[Your understanding of the constellation 'Goryeo's First Sword' has increased by a very slight amount.]</p></div>
+<div class="orv_system"><p>Your understanding of the constellation 'Goryeo's First Sword' has increased by a very slight amount.</p></div>
 <br>
 <hr>
         </article>
@@ -330,18 +337,12 @@
             <a href="./ch_173"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_175">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="174" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="157" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="173" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="173" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

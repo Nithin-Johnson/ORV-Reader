@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 246: Ep. 46 - New Story, III</title>
     <meta property="og:title" content="Ch 246: Ep. 46 - New Story, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,68 +177,68 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00246.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 246: Ep. 46 - New Story, III</h1></div>
-<div class="orv_system"><p>[Coins Possessed: 5,490,875 C]</p></div>
+<div class="orv_system"><p>Coins Possessed: 5,490,875 C</p></div>
 <p class="orv_line">The endlessly climbing coins finally stopped at the peak. I doubted my eyes several times as I stared at this unbelievable number.</p>
-<div class="orv_constellation"><p>[…Young man, how much did you earn?]</p></div>
+<div class="orv_constellation"><p>…Young man, how much did you earn?</p></div>
 <p class="orv_line">I looked around and saw the Mass Production Maker's blank expression. The old man must've made a great profit since he bet 150,000 coins earlier. The dividend must be at least five times…</p>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' envies you.]</p></div>
-<div class="orv_system"><p>[The constellation 'Loan Shark Aiming for the Heart' is craving your coins!]</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' envies you.</p></div>
+<div class="orv_system"><p>The constellation 'Loan Shark Aiming for the Heart' is craving your coins!</p></div>
 <p class="orv_line">Even the always stern looking Persephone was smiling. For reference, the queen of the Underworld bet 300,000 coins.</p>
 <p class="orv_line">…The Underworld must've gained a lot?</p>
-<div class="orv_constellation"><p>[Nonsense! This is ridiculous!]</p></div>
+<div class="orv_constellation"><p>Nonsense! This is ridiculous!</p></div>
 <p class="orv_line">Most of the constellations were filled with great despair apart from the three of us. I just needed to see their expressions to know how much coins they had lost. The constellations who bet a small amount to relieve their boredom looked sad but those who bet over 100,000 coins…</p>
-<div class="orv_constellation"><p>[Uwaaah!]</p></div>
+<div class="orv_constellation"><p>Uwaaah!</p></div>
 <p class="orv_line">They were filled with anger. There were some constellations on the verge of bankruptcy. For example, that guy.</p>
-<div class="orv_system"><p>[The constellation 'Brash Swamp Predator' is revealing enormous hostility towards you.]</p></div>
-<div class="orv_constellation"><p>[Grab that guy!]</p></div>
+<div class="orv_system"><p>The constellation 'Brash Swamp Predator' is revealing enormous hostility towards you.</p></div>
+<div class="orv_constellation"><p>Grab that guy!</p></div>
 <p class="orv_line">The constellations who lost their coins, including the Brash Swamp Predator, were approaching me. He lost his reason along with the coins and was prepared to throw himself into Han River.</p>
 <p class="orv_line">The constellations who noticed withdrew from my side. However, there was one constellation who didn't back down. It was the queen of the Underworld, Persephone.</p>
-<div class="orv_constellation"><p>[Everybody back off. How long are you going to act so ugly?]</p></div>
+<div class="orv_constellation"><p>Everybody back off. How long are you going to act so ugly?</p></div>
 <p class="orv_line">Her 'status' was reminiscent of the cold night air and the approaching constellations faltered. However, some constellations were so agitated that they couldn't be cooled by the night breeze.</p>
-<div class="orv_constellation"><p>[Queen of the Underworld! Did you win some coins just now?]</p></div>
-<div class="orv_constellation"><p>[Get out of here! It has nothing to do with you!]</p></div>
+<div class="orv_constellation"><p>Queen of the Underworld! Did you win some coins just now?</p></div>
+<div class="orv_constellation"><p>Get out of here! It has nothing to do with you!</p></div>
 <p class="orv_line">The atmosphere became heated and some of the watching high-ranking constellations intervened.</p>
-<div class="orv_constellation"><p>[Maintain your courtesy.]</p></div>
+<div class="orv_constellation"><p>Maintain your courtesy.</p></div>
 <p class="orv_line">It was the Morning Star Goddess who was familiar with Persephone. Nevertheless, the Brash Swamp Predator had already lost his senses and didn't hesitate.</p>
-<div class="orv_constellation"><p>[…Courtesy? Fuck courtesy…!]</p></div>
+<div class="orv_constellation"><p>…Courtesy? Fuck courtesy…!</p></div>
 <p class="orv_line">As soon as the Brash Swamp Predator released his status, the other constellations also raised their status. Powerful sparks filled the air as a notice of the imminent conflict.</p>
-<div class="orv_system"><p>[The wish ticket used by the constellation 'Demon King of Salvation' is in effect.]</p></div>
+<div class="orv_system"><p>The wish ticket used by the constellation 'Demon King of Salvation' is in effect.</p></div>
 <p class="orv_line">Suddenly, intense sparks filled the hall and the movements of the agitated constellations stopped. A portal opened on the white ceiling while everyone hesitated. Beyond the portal was a sinister aura. It wasn't an outer god but it was clearly something immense.</p>
 <p class="orv_line">Who was this? This was obviously above the highest ranked constellations…</p>
 <p class="orv_line">The atmosphere tore apart and a strange creature appeared through the portal. The mysterious aura around his body was unmatched but he was neither a god or constellation. The man was dressed in a magician's costume with an old-fashioned cane.</p>
-<div class="orv_constellation"><p>[…A dokkaebi?]</p></div>
+<div class="orv_constellation"><p>…A dokkaebi?</p></div>
 <p class="orv_line">It was a dokkaebi.</p>
-<div class="orv_constellation"><p>[It has been a while, constellations.]</p></div>
+<div class="orv_constellation"><p>It has been a while, constellations.</p></div>
 <p class="orv_line">The hall fell silent with a single sentence, like cold water had been poured on it. It was an overbearing silence. The enraged constellations who had just been screaming were holding their breaths.</p>
-<div class="orv_system"><p>[The rules of the Star Stream binds all constellations of the Gourmet Association.]</p></div>
+<div class="orv_system"><p>The rules of the Star Stream binds all constellations of the Gourmet Association.</p></div>
 <p class="orv_line">All the constellations present were constricted by the probability. It was absolutely impossible for an ordinary dokkaebi, even if they had the channel operating rights.</p>
-<div class="orv_constellation"><p>[U-Uhhh…]</p></div>
+<div class="orv_constellation"><p>U-Uhhh…</p></div>
 <p class="orv_line">The Brash Swamp Predator, who didn't falter despite the threats from high ranking constellations, was taking a step back with a white face. I had seen a description of this dokkaebi in the original novel.</p>
-<div class="orv_quote"><p>「 Most incarnations think there are only four ranks of dokkaebis. The lesser-grade, intermediate grade, semi-advanced and senior dokkaebis. However, there are dokkaebis above them. 」</p></div>
-<div class="orv_quote"><p>「 The dokkaebis of the Star Stream, those with up to twelve coloured horns are the 'first seat'. 」</p></div>
+<div class="orv_quote"><p>Most incarnations think there are only four ranks of dokkaebis. The lesser-grade, intermediate grade, semi-advanced and senior dokkaebis. However, there are dokkaebis above them.</p></div>
+<div class="orv_quote"><p>The dokkaebis of the Star Stream, those with up to twelve coloured horns are the 'first seat'.</p></div>
 <p class="orv_line">This dokkaebi had seven red horns coming from his head. The Star Stream called them 'great dokkaebis'.</p>
-<div class="orv_constellation"><p>[Sorry but the party will end here.]</p></div>
+<div class="orv_constellation"><p>Sorry but the party will end here.</p></div>
 <br>
 <hr>
 <br>
@@ -240,30 +247,30 @@
 <p class="orv_line">…Why? The reason was right in front of me. A single hand gesture trapped all of the Gourmet Association in a net of probability.</p>
 <p class="orv_line">I had never seen such dense sparks before. This was the power of the 'story'. Perhaps it was a story borrowed from the most powerful beings in the world. Whether it was narrative-grade or historical-grade, they clearly couldn't escape from the storm of sparks without being destroyed.</p>
 <p class="orv_line">The high-grade constellations such as Thursday's Thunder or Morning Star Goddess didn't complain and only showed unpleasant expressions. It was Persephone who opened her mouth first.</p>
-<div class="orv_constellation"><p>[Great Dokkaebi Halong. It's been a while.]</p></div>
+<div class="orv_constellation"><p>Great Dokkaebi Halong. It's been a while.</p></div>
 <p class="orv_line">The great dokkaebi slowly looked around.</p>
-<div class="orv_constellation"><p>[It has been a while, Queen of the Underworld.]</p></div>
-<div class="orv_constellation"><p>[Is the Story King well?]</p></div>
-<div class="orv_constellation"><p>[The king is safe.]</p></div>
+<div class="orv_constellation"><p>It has been a while, Queen of the Underworld.</p></div>
+<div class="orv_constellation"><p>Is the Story King well?</p></div>
+<div class="orv_constellation"><p>The king is safe.</p></div>
 <p class="orv_line">Due to the opponent, Persephone's expression was in a state of tension that I had never seen before.</p>
-<div class="orv_constellation"><p>[Why did you come here? In addition, leading dokkaebis of the executive branch…]</p></div>
+<div class="orv_constellation"><p>Why did you come here? In addition, leading dokkaebis of the executive branch…</p></div>
 <p class="orv_line">The dokkaebis of the executive department whom I had once seen were standing in a line behind the great dokkaebis. The fearsome pressure they emitted was no less than the Gourmet Association constellations. It was natural.</p>
 <p class="orv_line">The dokkaebis of the executive branch were once constellations. Instead of replying immediately to Persephone's words, the great dokkaebi swept over the constellations.</p>
-<div class="orv_constellation"><p>[We are here to pick up the constellations who borrowed coins.]</p></div>
-<div class="orv_constellation"><p>[…Coins?]</p></div>
+<div class="orv_constellation"><p>We are here to pick up the constellations who borrowed coins.</p></div>
+<div class="orv_constellation"><p>…Coins?</p></div>
 <p class="orv_line">Several constellations groaned and started to run away. The Mass Production Maker muttered with understanding.</p>
-<div class="orv_constellation"><p>[They are really foolish…]</p></div>
+<div class="orv_constellation"><p>They are really foolish…</p></div>
 <p class="orv_line">It seemed that some constellations had borrowed coins from the dokkaebis to make their bets. Funnily enough, one of them was the Brash Swamp Predator.</p>
-<div class="orv_constellation"><p>[Uhh… move, move out of the way!]</p></div>
+<div class="orv_constellation"><p>Uhh… move, move out of the way!</p></div>
 <p class="orv_line">He rushed to a sparkling wall and tried to rip apart the net of probability.</p>
-<div class="orv_constellation"><p>[Kuaaaack!]</p></div>
+<div class="orv_constellation"><p>Kuaaaack!</p></div>
 <p class="orv_line">The great dokkaebi's net was powerful. The moment he reached the net of sparks, the Brash Swamp Predator screamed. The dokkaebis of the executive branch bound his incarnation body.</p>
-<div class="orv_constellation"><p>[R-Release me!]</p></div>
+<div class="orv_constellation"><p>R-Release me!</p></div>
 <p class="orv_line">I stared at the rows of constellations and thought about why the dokkaebis appeared here. I didn't know the exact reason but I wondered if it was because the probability was influenced by my wish. In this world, the dokkaebis were the most sensitive to probability.</p>
 <p class="orv_line">In a flash, the dokkaebis arrested all the people who owed debts and started to transport them across the portal. It was a swift move like there was nothing to see.</p>
 <p class="orv_line">The great dokkaebi didn't say goodbye. He stared as if warning the constellations before turning to leave.</p>
 <p class="orv_line">The moment before the portal was about to close, the great dokkaebi glanced at me. Beyond his cool eyes, someone was talking to me.</p>
-<div class="orv_quote"><p>「 Don't be too loud, kiddo. The 'king' is watching you. 」</p></div>
+<div class="orv_quote"><p>Don't be too loud, kiddo. The 'king' is watching you.</p></div>
 <br>
 <hr>
 <br>
@@ -275,7 +282,7 @@
 <p class="orv_line">At this time, there was an engine sound and something appeared around the corner of the castle. It was a luxury sports car with a streamlined body. It was a car reminiscent of the SSS-class Ferrarigini.</p>
 <p class="orv_line">Wait, the person who made that car…</p>
 <p class="orv_line">The sports car stopped in front of me with a loud sound. The window rolled down and an elderly man wearing sunglasses appeared.</p>
-<div class="orv_constellation"><p>[Get on, young man.]</p></div>
+<div class="orv_constellation"><p>Get on, young man.</p></div>
 <p class="orv_line">It was the Mass Production Maker.</p>
 <br>
 <hr>
@@ -285,10 +292,10 @@
 <p class="orv_line">The body was made from solid protective material that adhered not just to the outside but the inside as well. I drank ice tea from the refrigerator in the limousine and looked around the vehicle.</p>
 <p class="orv_line">The Mass Production Maker was in the driver's seat while Persephone was in the passenger's seat. Persephone had been communicating with someone since earlier. Perhaps it was related to the great dokkaebi who appeared.</p>
 <p class="orv_line">"Mass Production Maker, thank you for your consideration. Still, I have a question."</p>
-<div class="orv_constellation"><p>[Hmm, what is it?]</p></div>
+<div class="orv_constellation"><p>Hmm, what is it?</p></div>
 <p class="orv_line">"…Why is this woman with you?"</p>
 <p class="orv_line">I glared at Anna Croft who was sitting next to me. The Mass Production Maker smiled sweetly.</p>
-<div class="orv_constellation"><p>[Huhu, I promised to give her a ride. Don't fight too much.]</p></div>
+<div class="orv_constellation"><p>Huhu, I promised to give her a ride. Don't fight too much.</p></div>
 <p class="orv_line">It was a very unpleasant situation but I couldn't complain. I sighed and examined my companions. There were three Asgardians along with myself in the back seat.</p>
 <p class="orv_line">There was the exhausted Iris and stunned Selena Kim. Anna Croft looked at their condition before suddenly speaking to me. "…Iris would've lived even if you didn't help."</p>
 <p class="orv_line">"I know. Perhaps Thursday's Thunder would've saved her. Isn't that right?"</p>
@@ -297,27 +304,27 @@
 <p class="orv_line">"It was Iris' chance to get a good sponsor and you ruined everything. The future I saw wasn't like this…"</p>
 <p class="orv_line">"She wouldn't have wanted to get a sponsor in that way."</p>
 <p class="orv_line">"You don't know who the constellation was."</p>
-<div class="orv_constellation"><p>[Tsk tsk. I told you to get along but I guess it isn't possible.]</p></div>
+<div class="orv_constellation"><p>Tsk tsk. I told you to get along but I guess it isn't possible.</p></div>
 <p class="orv_line">The form of the limousine changed and my seat showed strange movements. My vision blurred and I was sitting in the passenger's seat where Persephone had been. The Mass Production Maker had changed my position with Persephone.</p>
 <p class="orv_line">Maybe he didn't want to hear fighting or perhaps there was a sound barrier between the front and back seats.</p>
 <p class="orv_line">The Mass Production Maker told me,</p>
-<div class="orv_constellation"><p>[You're on bad terms with incarnations as well as constellations. Don't make too many enemies.]</p></div>
+<div class="orv_constellation"><p>You're on bad terms with incarnations as well as constellations. Don't make too many enemies.</p></div>
 <p class="orv_line">"I don't want to make enemies either."</p>
 <p class="orv_line">In fact, I came here to seek 'colleagues' rather than enemies. As a result, it turned out like this…</p>
 <p class="orv_line">The Mass Production Maker took out an electronic cigarette and spoke,</p>
-<div class="orv_constellation"><p>[I felt anger in your story. There is a strong rage against this world and the constellations.]</p></div>
+<div class="orv_constellation"><p>I felt anger in your story. There is a strong rage against this world and the constellations.</p></div>
 <p class="orv_line">I tried to say something but fell silent.</p>
-<div class="orv_constellation"><p>[I know that you saw many things that shouldn't be seen today.]</p></div>
+<div class="orv_constellation"><p>I know that you saw many things that shouldn't be seen today.</p></div>
 <p class="orv_line">"Not at all'.</p>
 <p class="orv_line">The Mass Production Maker laughed. I somehow felt awkward and took out my smartphone. The darkness was like a screen in the front of the car. The Mass Production Maker gazed silently at the darkness and there was a slight sadness.</p>
-<div class="orv_constellation"><p>[Still, don't hate them so much.]</p></div>
+<div class="orv_constellation"><p>Still, don't hate them so much.</p></div>
 <p class="orv_line">It took some time for me to understand his words.</p>
-<div class="orv_constellation"><p>[They just couldn't stand the loneliness. Whether it is a garbage or a noble constellation… they all acted like that because they like the story.]</p></div>
+<div class="orv_constellation"><p>They just couldn't stand the loneliness. Whether it is a garbage or a noble constellation… they all acted like that because they like the story.</p></div>
 <p class="orv_line">I was confused because I didn't know the Mass Production Maker would say such words. A strange feeling of betrayal filled my chest. "This doesn't mean they can trample on the lives of incarnations."</p>
 <p class="orv_line">If they liked the story, they could do their own scenarios. Instead of ruining the scenario of others, they could move on to the next scenario. Turning to another scenario and selling their minds was just avoiding reality.</p>
 <p class="orv_line">I tried to say this. At that moment, the smartphone turned on and Ways of Survival came into view. The last sentence I had been reading was on the screen.</p>
 <p class="orv_line">I stared blankly at the sentences and the Mass Production Maker asked,</p>
-<div class="orv_constellation"><p>[You are always looking at that. Are you going to write something on an empty notebook?]</p></div>
+<div class="orv_constellation"><p>You are always looking at that. Are you going to write something on an empty notebook?</p></div>
 <p class="orv_line">I couldn't find a way to answer the question, but I soon smiled weakly and replied, "…I just feel steady when I look at this."</p>
 <p class="orv_line">In the distance, the darkness of the Dark Dimension could be seen. A light emerged from an empty window.</p>
 <p class="orv_line">Finally, it was time to go back.</p>
@@ -328,18 +335,12 @@
             <a href="./ch_245"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_247">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="246" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="315" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="245" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="245" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

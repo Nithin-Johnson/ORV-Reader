@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 456: Ep. 86 - The square circle, III</title>
     <meta property="og:title" content="Ch 456: Ep. 86 - The square circle, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00456.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 456: Ep. 86 - The square circle, III</h1></div>
 <p class="orv_line">"My concerns?"</p>
@@ -205,7 +212,7 @@
 <p class="orv_line">"I know that others had been entering dangerous scenarios. Even if that was the case, remaining in Seoul wasn't all plain sailing, you know." Lee Seolhwa lowered her gaze and began searching for something within the bushes once more. "It should be around here somewhere…"</p>
 <p class="orv_line">⸢Lee Seolhwa has never taken a day off.⸥</p>
 <p class="orv_line">Her Story began speaking up for her, instead.</p>
-<p class="orv_line">⸢After the group departed from the [Industrial Complex], she operated its sickbay and looked after the patients. Every day, the injured suffering from similar types of wounds would rush in. She watched them die, and while looking at their passing, she thought about her companions.⸥</p>
+<p class="orv_line">⸢After the group departed from the <strong>[Industrial Complex]</strong>, she operated its sickbay and looked after the patients. Every day, the injured suffering from similar types of wounds would rush in. She watched them die, and while looking at their passing, she thought about her companions.⸥</p>
 <p class="orv_line">"I won't be much help in the latter half of the scenarios. I'm well aware of my own potential, and my Constellation is also only a Historical-grade as well. But, I still do my best every day."</p>
 <p class="orv_line">For sure, the intensity of Status floating about her vicinity felt quite different from before. It wasn't as if her combat abilities had improved, but well, how should I put this? It was like her pool of knowledge in the skills had gotten even more profound.</p>
 <p class="orv_line">"Whoever it is in the &lt;Kim Dokja's Company&gt;, I can save that person as long as he or she still breathes. I can ensure that no one will die."</p>
@@ -218,7 +225,7 @@
 <p class="orv_line">Just before I could carry on, Lee Seolhwa's expression brightened and she shouted out. "Ack! Found it!"</p>
 <p class="orv_line">Her hand was holding a small flower. That must be the herb she was searching for. I immediately recognised what that was.</p>
 <p class="orv_line">⸢White Ghostly Flame Flower. The final ingredient for the 'Life and Death' pill.⸥</p>
-<p class="orv_line">At a casual glance, it looked like an ordinary wildflower. Eating this herb alone had no effect whatsoever. However, the miraculous elixir that was the [Life and Death Pill] could never be concocted without this herb.</p>
+<p class="orv_line">At a casual glance, it looked like an ordinary wildflower. Eating this herb alone had no effect whatsoever. However, the miraculous elixir that was the <strong>[Life and Death Pill]</strong> could never be concocted without this herb.</p>
 <p class="orv_line">She began smiling like a little kid. This sense of life that couldn't be felt from the pages of the 'Ways of Survival' was emanating vividly right before my eyes.</p>
 <p class="orv_line">⸢This is Lee Seolhwa.⸥</p>
 <p class="orv_line">That's why I gave up on recalling the words from the novel altogether. And then, I said some lame things instead. "You're the best doctor that I know of."</p>
@@ -227,7 +234,7 @@
 <p class="orv_line">"I did mean it, though…"</p>
 <p class="orv_line">"Please wait for me. I will turn those empty words into reality soon."</p>
 <p class="orv_line">I watched her leave in search of another herb, and came to a realization. What she was curious about earlier wasn't the 'Ways of Survival'. Unlike me, she didn't need such a novel in the first place.</p>
-<div class="orv_system"><p>[You have currently resolved 0 complaints.]</p></div>
+<div class="orv_system"><p>You have currently resolved 0 complaints.</p></div>
 <p class="orv_line">I hadn't made any headway into the scenario, but I didn't feel so bad.</p>
 <p class="orv_line">"It's not that easy, right?"</p>
 <p class="orv_line">I looked behind and found Yoo Sangah once more.</p>
@@ -238,7 +245,7 @@
 <p class="orv_line">I nodded my head. "Who do you think I should speak to next?"</p>
 <p class="orv_line">"It'd been better if you did it yourself, but I'll help you again this one last time."</p>
 <p class="orv_line">She used her hand to shield her eyes and scanned our companions. It was then, a message entered my ear.</p>
-<div class="orv_system"><p>[Currently, &lt;Kim Dokja's Company&gt;'s contracted workers are feeling dissatisfied.]</p></div>
+<div class="orv_system"><p>Currently, &lt;Kim Dokja's Company&gt;'s contracted workers are feeling dissatisfied.</p></div>
 <p class="orv_line">…Contracted workers? Did our Nebula have people like that?</p>
 <p class="orv_line">Yoo Sangah then pointed to a spot. "Why don't you head over there this time?"</p>
 <p class="orv_line">The moment I looked there, I realized who the 'contracted workers' were.</p>
@@ -263,14 +270,14 @@
 <p class="orv_line">I breathed a sigh of relief inwardly and continued on. "There's only one reason why I told you this information. I'd like to formally hire you into the &lt;Kim Dokja's Company&gt;."</p>
 <p class="orv_line">My words caused the three to exchange glances with each other.</p>
 <p class="orv_line">The first one to speak was Gong Pildu. "On whose authority?"</p>
-<div class="orv_system"><p>[Incarnation 'Gong Pildu', has joined &lt;Kim Dokja's Company&gt;.]</p></div>
+<div class="orv_system"><p>Incarnation 'Gong Pildu', has joined &lt;Kim Dokja's Company&gt;.</p></div>
 <p class="orv_line">…Could it be that the term "being coy" was invented for this ahjussi?</p>
 <p class="orv_line">Next up was Han Myungoh. "Are you going to retain my previous position as a department head?"</p>
 <p class="orv_line">"Well, we don't have any ranks like that, but if you want, I can create one for you."</p>
 <p class="orv_line">"Please make sure that you pay your wages on time. As for paternity leave and overtime…"</p>
-<div class="orv_system"><p>[Incarnation 'Han Myungoh', has joined &lt;Kim Dokja's Company&gt;.]</p></div>
+<div class="orv_system"><p>Incarnation 'Han Myungoh', has joined &lt;Kim Dokja's Company&gt;.</p></div>
 <p class="orv_line">Finally, I shifted my gaze over to Jang Hayoung.</p>
-<div class="orv_system"><p>[Incarnation 'Jang Hayoung', has joined &lt;Kim Dokja's Company&gt;.]</p></div>
+<div class="orv_system"><p>Incarnation 'Jang Hayoung', has joined &lt;Kim Dokja's Company&gt;.</p></div>
 <p class="orv_line">"…Okay, so, Flame Dragon-ah, something happened just now, and it's…"</p>
 <p class="orv_line">She was using her 'Wall' to send out messages of her employment to pretty much everywhere.</p>
 <p class="orv_line">Congratulatory messages from her friends in the &lt;Star Stream&gt; continued to flood in. While looking at her being genuinely happy, I grew a lot more complicated in my head.</p>
@@ -283,14 +290,14 @@
 <p class="orv_line">I felt uncomfortable while watching her pale cheeks tremble like that. As expected of someone possessing looks that easily slapped Yoo Joonghyuk's cheeks at least two times in a row.</p>
 <p class="orv_line">She blinked her large, clear eyes and energetically nodded her head. "I'll really work hard!"</p>
 <p class="orv_line">She clenched her fists tightly and began typing away once more.</p>
-<div class="orv_system"><p>[Congratulations! You have resolved the complaint of the contracted worker!]</p></div>
-<div class="orv_system"><p>[You have currently resolved 1 complaint.]</p></div>
+<div class="orv_system"><p>Congratulations! You have resolved the complaint of the contracted worker!</p></div>
+<div class="orv_system"><p>You have currently resolved 1 complaint.</p></div>
 <p class="orv_line">I finally succeeded with one.</p>
 <p class="orv_line">So, being the head representative was this tough, huh.</p>
-<div class="orv_system"><p>[Constellation, 'Abyssal Black Flame Dragon', is asking you if the rumour is true.]</p></div>
+<div class="orv_system"><p>Constellation, 'Abyssal Black Flame Dragon', is asking you if the rumour is true.</p></div>
 <p class="orv_line">What rumour??</p>
-<div class="orv_system"><p>[Constellation, 'Abyssal Black Flame Dragon', is asking you if you really confessed to Jang Hayoung.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Most Ancient Liberator', is asking the maknae Sun Wukong…]</p></div>
+<div class="orv_system"><p>Constellation, 'Abyssal Black Flame Dragon', is asking you if you really confessed to Jang Hayoung.</p></div>
+<div class="orv_system"><p>Constellation, 'Most Ancient Liberator', is asking the maknae Sun Wukong…</p></div>
 <p class="orv_line">…Just what kind of a rumour was spreading around here?</p>
 <p class="orv_line">I had no idea what she was so busily typing away there, but regardless, I could see Jang Hayoung diligently tapping on the imaginary keyboard in the air.</p>
 <p class="orv_line">"Hey, you. Come and eat supper!"</p>
@@ -331,34 +338,34 @@
 <p class="orv_line">"If it's possible, somewhere close to the kids' school…"</p>
 <p class="orv_line">I had no idea that something I just threw out there would cause such a ripple.</p>
 <p class="orv_line">And so, the group chatted about the potential house I'd buy throughout the supper. Stuff about how the interior should look like, or how many rooms it needed to have…</p>
-<p class="orv_line">Washing the dishes was left to me and Jung Heewon, the two losers from the rock-paper-scissors. I could have won by using [Omniscient Reader's Viewpoint], but of course I wouldn't do that during this trip.</p>
-<div class="orv_system"><p>[You have acquired a new Story!]</p></div>
-<div class="orv_system"><p>[You have acquired the Story, 'the One who Yanked Out the Conscience's Fur'.]</p></div>
+<p class="orv_line">Washing the dishes was left to me and Jung Heewon, the two losers from the rock-paper-scissors. I could have won by using <strong>[Omniscient Reader's Viewpoint]</strong>, but of course I wouldn't do that during this trip.</p>
+<div class="orv_system"><p>You have acquired a new Story!</p></div>
+<div class="orv_system"><p>You have acquired the Story, 'the One who Yanked Out the Conscience's Fur'.</p></div>
 <p class="orv_line">…Also, it was nice to get a new Story, too.</p>
 <p class="orv_line">As I was cleaning the dishes, I spotted something falling in the distant skies above. It was a shooting star. Falling stars that left behind lengthy trails.</p>
 <p class="orv_line">Most likely, those were planets that were falling for real.</p>
 <p class="orv_line">The &lt;Star Stream&gt; was marching towards its own oblivion.</p>
-<p class="orv_line">Jung Heewon looking up at the sky next to me spoke up. "It's like back then in the [Cinema Dungeon]."</p>
+<p class="orv_line">Jung Heewon looking up at the sky next to me spoke up. "It's like back then in the <strong>[Cinema Dungeon]</strong>."</p>
 <p class="orv_line">I nodded my head. For sure, it was kind of similar to that day. We were also together like this on the rooftop of the dungeon. We were looking at the falling stars and making our wishes.</p>
 <p class="orv_line">"Dokja-ssi, you asked me to become your sword back then."</p>
 <p class="orv_line">Indeed, I asked her to become my companion in that place. And after that, she had become the greatest ally anyone could ask for. Without her, I wouldn't have been able to arrive at this moment in time.</p>
 <p class="orv_line">"…But, someone else became the literal sword instead of me."</p>
-<p class="orv_line">Those words made me shift my gaze over to the [Steelsword] laying quietly on the ground. Even as everyone was taking their much-deserved break, the sole person to miss out on the festivities was right there. Lee Hyunsung with his heart not beating – he seemed to regain his consciousness sporadically, but he remained as a sword and didn't want to move.</p>
+<p class="orv_line">Those words made me shift my gaze over to the <strong>[Steelsword]</strong> laying quietly on the ground. Even as everyone was taking their much-deserved break, the sole person to miss out on the festivities was right there. Lee Hyunsung with his heart not beating – he seemed to regain his consciousness sporadically, but he remained as a sword and didn't want to move.</p>
 <p class="orv_line">"Please do not worry. Before we head off to the next scenario, I'll definitely wake up Hyunsung-ssi."</p>
 <p class="orv_line">"You know of a way?"</p>
 <p class="orv_line">I nodded my head.</p>
 <p class="orv_line">Lee Hyunsung's issue wasn't the only one we need to deal with, though.</p>
 <p class="orv_line">We now required much greater power. Because our goal didn't simply stop at clearing the scenarios, that's why.</p>
 <p class="orv_line">To fight the &lt;Bureau&gt; as well as the entirety of the &lt;Star Stream&gt;, I needed to start gathering Constellations that would stand with us.</p>
-<div class="orv_system"><p>[Constellation, 'Master of Steel', is looking at you.]</p></div>
+<div class="orv_system"><p>Constellation, 'Master of Steel', is looking at you.</p></div>
 <p class="orv_line">And Lee Hyunsung's Constellation backer would be the first to join us.</p>
 <p class="orv_line">Jung Heewon spoke up as if my confident expression left an impression on her. "By the way, Dokja-ssi?"</p>
 <p class="orv_line">"Yes?"</p>
 <p class="orv_line">"Will it be fine for you to stand around here trying to look cool? I mean, aren't you in the middle of a scenario? You really aren't a being-kidnapped-and-dying enthusiast, are you?"</p>
 <p class="orv_line">"Uhm…"</p>
 <p class="orv_line">Along with her words, the scenario window popped up before my eyes.</p>
-<div class="orv_constellation"><p>[The day is coming to a close.]</p></div>
-<div class="orv_system"><p>[You have currently resolved 1 complaint.]</p></div>
+<div class="orv_constellation"><p>The day is coming to a close.</p></div>
+<div class="orv_system"><p>You have currently resolved 1 complaint.</p></div>
 <p class="orv_line">I reconfirmed the failure penalty of the sub scenario once more.</p>
 <div class="orv_window">
 <p>Failure: Death (?)</p>
@@ -372,18 +379,12 @@
             <a href="./ch_455"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_457">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="456" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="505" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="455" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="455" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

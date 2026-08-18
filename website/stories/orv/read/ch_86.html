@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 86: Ep. 17 – SSS-grade Talent, V</title>
     <meta property="og:title" content="Ch 86: Ep. 17 – SSS-grade Talent, V" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00086.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 86: Ep. 17 – SSS-grade Talent, V</h1></div>
 <p class="orv_line">Prince Lycaon of the Imyuntar paid respect to me before immediately turning to look at Antinus.</p>
@@ -228,11 +235,11 @@
 <p class="orv_line">It was only one attack but it could mean the difference between defeat and victory. But at this moment, Antinus' movements slowed down. It was like a repulsion force was pushing at her tail.</p>
 <p class="orv_line">Kihit?</p>
 <p class="orv_line">On the other hand, Lycaon's movements were slightly faster. His attacks suddenly accelerated. Antinus' tail struck empty air.</p>
-<div class="orv_system"><p>[The 5th grade species Parasite Antinus has activated Accelerating Wings Lv. 8.]</p></div>
+<div class="orv_system"><p>The 5th grade species Parasite Antinus has activated Accelerating Wings Lv. 8.</p></div>
 <p class="orv_line">Antinus' wings spread open and vibrated before she disappeared.</p>
 <p class="orv_line">The S-grade movement skill, Accelerating Wings.</p>
 <p class="orv_line">Her wings flapped thousands of times per second and she instantly appeared in front of Lycaon, as if she had teleported. Antinus' arms turned to scythes and flew towards Lycaon's back.</p>
-<div class="orv_system"><p>[The 5th grade species Parasite Antinus has activated Praying Mantis Breakthrough Lv. 8.]</p></div>
+<div class="orv_system"><p>The 5th grade species Parasite Antinus has activated Praying Mantis Breakthrough Lv. 8.</p></div>
 <p class="orv_line">The accelerated scythes struck the atmosphere wall, causing a terrible burst of noise. It was so fast that it seemed like even Lycaon couldn't avoid it.</p>
 <p class="orv_line">Even so, Lycaon evaded. At the decisive moment, Antinus' attack slowed down while Lycaon's movements accelerated. It was the difference between life and death. Antinus' compound eyes blinked with surprise.</p>
 <p class="orv_line">Yoo Sangah asked with surprise, "What type of technique is that. Instant Acceleration?"</p>
@@ -252,7 +259,7 @@
 <p class="orv_line">Antinus attempted a landing with half her wings.</p>
 <p class="orv_line">–Kim Dokja! Kill her! Quickly!</p>
 <p class="orv_line">I was already running towards Antinus when I heard Yoo Joonghyuk's voice.</p>
-<div class="orv_system"><p>[Blade of Faith is activated!]</p></div>
+<div class="orv_system"><p>Blade of Faith is activated!</p></div>
 <p class="orv_line">It was possible to be caught up in her probability storm but that wasn't important right now.</p>
 <p class="orv_line">"My world, my race, my children!" She was heading in the direction of the disaster meteorite. "The cost of destroying my world, I will absolutely make you pay it!"</p>
 <p class="orv_line">She shot all her magic power towards the disaster meteorite.</p>
@@ -263,8 +270,8 @@
 <p class="orv_line">Light burst from the disaster meteorite and a huge explosion struck me. One of the fragments of the exploded meteorite struck my head. The world shook. Lycaon flew away from the explosion.</p>
 <p class="orv_line">The 'guide' couldn't withstand the force of this disaster. It was impossible to rewrite the history of 'defeat'.</p>
 <p class="orv_line">The balance of the world was collapsing.</p>
-<div class="orv_system"><p>[You have failed to clear the scenario.]</p></div>
-<div class="orv_system"><p>[The 'Disaster of Questions' has come to your world.]</p></div>
+<div class="orv_system"><p>You have failed to clear the scenario.</p></div>
+<div class="orv_system"><p>The 'Disaster of Questions' has come to your world.</p></div>
 <p class="orv_line">My vision darkened and I was buried under a pile of shattered building fragments. I barely came to my senses when Yoo Joonghyuk's voice rang in my ears.</p>
 <p class="orv_line">–Kim Dokja! Wake up! Hurry!</p>
 <p class="orv_line">–…Recover your spirit.</p>
@@ -288,8 +295,8 @@
 <p class="orv_line">"This is… perhaps?"</p>
 <p class="orv_line">The boy stretched and looked around like he couldn't believe it. I listened to his murmurs and thought that I had to kill him right now.</p>
 <p class="orv_line">However, my body couldn't move.</p>
-<div class="orv_system"><p>[An early hatching has weakened the Disaster of Questions.]</p></div>
-<div class="orv_system"><p>[Due to the early hatching penalty, you won't be able to attack the Disaster of Questions for three minutes.]</p></div>
+<div class="orv_system"><p>An early hatching has weakened the Disaster of Questions.</p></div>
+<div class="orv_system"><p>Due to the early hatching penalty, you won't be able to attack the Disaster of Questions for three minutes.</p></div>
 <p class="orv_line">Dammit…</p>
 <p class="orv_line">We were the ones being penalized? That dokkaebi scum, what was he doing?</p>
 <p class="orv_line">The boy walked around the area and arrived in front of a woman nearby. It was a woman who was part of the Poisoner's group.</p>
@@ -303,8 +310,8 @@
 <p class="orv_line">The boy's strange tone seemed to bewitch the woman.</p>
 <p class="orv_line">"T-This is Seoul and… the current year…"</p>
 <p class="orv_line">A system message was heard the moment the woman answered.</p>
-<div class="orv_system"><p>[The first question has been resolved.]</p></div>
-<div class="orv_system"><p>[The first seal of the returnee 'Myung Ilsang' has been released.]</p></div>
+<div class="orv_system"><p>The first question has been resolved.</p></div>
+<div class="orv_system"><p>The first seal of the returnee 'Myung Ilsang' has been released.</p></div>
 <p class="orv_line">"Ha, haha… Hahaha!"</p>
 <p class="orv_line">"W-What is that…?"</p>
 <p class="orv_line">The boy laughed wildly at the confused woman and asked, "Do you know how much I suffered? Do you know?"</p>
@@ -321,8 +328,8 @@
 <p class="orv_line">"P-Please, spare me…"</p>
 <p class="orv_line">There was a sound and the woman's head flew away. The boy chuckled and looked around.</p>
 <p class="orv_line">"Now, there is this development. What, an S-grade incarnation? Those scum are squeezing this kid. It is also a heavy duty alliance. No wait, before that…"</p>
-<div class="orv_system"><p>[The early hatching penalty has ended.]</p></div>
-<div class="orv_system"><p>[The power that controlled your movements has disappeared.]</p></div>
+<div class="orv_system"><p>The early hatching penalty has ended.</p></div>
+<div class="orv_system"><p>The power that controlled your movements has disappeared.</p></div>
 <p class="orv_line">Shit. It was too late. I was about to yell when the boy disappeared and moved to a remote location. Unfortunately, it was a place where another woman was standing.</p>
 <p class="orv_line">"Haha! Noona is pretty! Yes?"</p>
 <p class="orv_line">I cursed.</p>
@@ -340,18 +347,12 @@
             <a href="./ch_85"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_87">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="86" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="294" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="85" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="85" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

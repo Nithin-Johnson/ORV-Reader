@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 548: Epilogue 5 - The Eternity and Epilogue, III</title>
     <meta property="og:title" content="Ch 548: Epilogue 5 - The Eternity and Epilogue, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00548.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 548: Epilogue 5 - The Eternity and Epilogue, III</h1></div>
 <p class="orv_line">⸢4th day of drifting.⸥</p>
@@ -197,11 +204,11 @@
 <p class="orv_line">He realized that the ark had completely lost all its functions. The navigation system was unresponsive, and he couldn't see a single thing nearby. As a matter of fact, he couldn't even see a single planet nearby.</p>
 <p class="orv_line">⸢11th day of drifting.⸥</p>
 <p class="orv_line">With several of the safety systems installed within the ark destroyed, abnormality began manifesting in Yoo Joonghyuk's body.</p>
-<div class="orv_system"><p>[System's homeostasis is currently broken!]</p></div>
-<div class="orv_system"><p>[Power of chaos is eroding your entire body.]</p></div>
-<div class="orv_system"><p>[Your Story is crumbling away little by little.]</p></div>
+<div class="orv_system"><p>System's homeostasis is currently broken!</p></div>
+<div class="orv_system"><p>Power of chaos is eroding your entire body.</p></div>
+<div class="orv_system"><p>Your Story is crumbling away little by little.</p></div>
 <p class="orv_line">Some kind of a problem must've occurred somewhere, because all the abilities realized through the system had become completely paralysed. Yoo Joonghyuk remained calm as he inspected the Stories currently with him. Thankfully, his Stories were all safe.</p>
-<div class="orv_system"><p>[Story, 'Hell of Eternity', is enveloping you.]</p></div>
+<div class="orv_system"><p>Story, 'Hell of Eternity', is enveloping you.</p></div>
 <p class="orv_line">The flames of hell protected him from the bitter coldness.</p>
 <p class="orv_line">⸢21st day of drifting.⸥</p>
 <p class="orv_line">The spacesuit Anna Croft made him wear really did come in handy. If it weren't for the built-in protective functionality of the suit, the rate of his body crumbling away would've been so much faster.</p>
@@ -258,7 +265,7 @@
 <p class="orv_line">⸢279th day of drifting.⸥</p>
 <p class="orv_line">He finally understood Kim Dokja just a little.</p>
 <p class="orv_line">⸢316th day of drifting.⸥</p>
-<div class="orv_system"><p>[Your Stories have absorbed your emotions.]</p></div>
+<div class="orv_system"><p>Your Stories have absorbed your emotions.</p></div>
 <p class="orv_line">Every time he read Han Sooyoung's novel, the consumed Stories would regain their vitality for fleeting moments. Although it couldn't match the speed of consumption, he wouldn't have been able to hold on until now if he didn't read the story.</p>
 <p class="orv_line">However, he couldn't simply hold on forever.</p>
 <p class="orv_line">Kim Dokja within the novel was saying this.</p>
@@ -290,9 +297,9 @@
 <p class="orv_line">He understood how a regressor finished with his regressions should carry on living.</p>
 <p class="orv_line">He understood the true conclusion he was supposed to reach.</p>
 <p class="orv_line">From the very beginning, such a thing could never be determined by his own will alone.</p>
-<div class="orv_system"><p>[The Ark's cockpit is opening.]</p></div>
+<div class="orv_system"><p>The Ark's cockpit is opening.</p></div>
 <p class="orv_line">The moment he opened the cockpit, the hounds began rushing in his direction.</p>
-<p class="orv_line">Yoo Joonghyuk gripped the [Black Heavenly Demon Sword] in reverse and cut the head off of a hound. The waves from the other world splitting apart, brushed past while clawing at him.</p>
+<p class="orv_line">Yoo Joonghyuk gripped the <strong>[Black Heavenly Demon Sword]</strong> in reverse and cut the head off of a hound. The waves from the other world splitting apart, brushed past while clawing at him.</p>
 <div class="orv_outergod"><p>【WhatWhatWhatWhatWhat】</p></div>
 <div class="orv_outergod"><p>【YouareYouareYouareYouareYouare】</p></div>
 <p class="orv_line">He watched the 'Nameless Ones' flood past him and recalled the story he had been reading not too long ago.</p>
@@ -329,8 +336,8 @@
 <p class="orv_line">The vicious, violent fragments of the sword fell like a meteor shower and penetrated the hounds. However, some hounds managed to evade the sword strike and continued to run towards him.</p>
 <div class="orv_outergod"><p>【Krrrrrng!!】</p></div>
 <p class="orv_line">Right next second, something collided with his head and the helmet protecting his face broke into pieces.</p>
-<div class="orv_system"><p>[Warning! Your Story is scattering away. Return to the ark immediately!]</p></div>
-<div class="orv_system"><p>[Your Story is…]</p></div>
+<div class="orv_system"><p>Warning! Your Story is scattering away. Return to the ark immediately!</p></div>
+<div class="orv_system"><p>Your Story is…</p></div>
 <p class="orv_line">Adrift droplets of blood were freezing up. Hounds were tearing into his entire body. And the story Han Sooyoung had written were breaking apart among the torn, ripped Story fragments scattering away.</p>
 <p class="orv_line">'…Mia-yah'.</p>
 <p class="orv_line">Stories kept scattering away like stardust. Yoo Joonghyuk watched that spectacle and quietly thought about the lonely space no one would ever imagine. The 'Nameless Ones' were witnessing his final moments with their empty eyes.</p>
@@ -357,18 +364,12 @@
             <a href="./ch_547"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_549">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="548" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="594" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="547" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="547" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

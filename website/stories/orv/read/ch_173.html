@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 173: Ep. 33 - Reading Again, IV</title>
     <meta property="og:title" content="Ch 173: Ep. 33 - Reading Again, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,36 +177,36 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00173.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 173: Ep. 33 - Reading Again, IV</h1></div>
 <p class="orv_line">Sparks wrapped around my body as I felt the signs of a probability storm. This was a big burden for a single constellation not of the narrative-grade to bear.</p>
 <p class="orv_line">I thought the records of how Cheok Jungyeong faced an army alone were exaggerated. However, rather than an exaggeration, the stories had been reduced.</p>
 <p class="orv_line">In fact, Cheok Jungyeong had become much stronger than what was written in Earth's records after becoming a constellation. In other words, there were sword masters who would become nervous just hearing about this constellation.</p>
 <p class="orv_line">Still, I had to endure it. If I couldn't withstand the spirit of Cheok Jungyeong, I couldn't break the 100 Days Seal.</p>
-<div class="orv_system"><p>[Your 'status' is currently sealed.]</p></div>
-<div class="orv_system"><p>[Your main skills are currently sealed.]</p></div>
-<div class="orv_system"><p>[Time remaining: 100 days]</p></div>
+<div class="orv_system"><p>Your 'status' is currently sealed.</p></div>
+<div class="orv_system"><p>Your main skills are currently sealed.</p></div>
+<div class="orv_system"><p>Time remaining: 100 days</p></div>
 <p class="orv_line">The 100 Days Seal, which could be carried out by the three highest beings of the constellation 'Hongik', was the highest-grade seal that sealed up the target's abilities.</p>
-<div class="orv_constellation"><p>[Eat garlic and mugwort and endure for 100 days.]</p></div>
+<div class="orv_constellation"><p>Eat garlic and mugwort and endure for 100 days.</p></div>
 <p class="orv_line">Of course, this seal wasn't necessarily a bad thing. If I could eat garlic and mugwort for 100 days, I could receive Hwanin's blessing and wake up the potential of my body.</p>
 <p class="orv_line">However, now I didn't have enough time. Han Sooyoung watched the garlic and mugwort pouring from the sky and asked, "Hey, isn't it almost done?"</p>
 <p class="orv_line">"The power is so strong that it is hard to control. Just wait."</p>
@@ -211,13 +218,13 @@
 <p class="orv_line">It seemed like many complaints had piled up and I couldn't help nagging. How many minutes had passed?</p>
 <p class="orv_line">Han Sooyoung slowly got fed up and shouted, "Ah, I apologize! Yes, I used you as a shield. What do you want me to do?"</p>
 <p class="orv_line">I wanted to say she was brazen-faced but then a presence suddenly intervened.</p>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' interrupts with a cough.]</p></div>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' says that Han Sooyoung never used you as a shield.]</p></div>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' says your death is your responsibility.]</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' interrupts with a cough.</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' says that Han Sooyoung never used you as a shield.</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' says your death is your responsibility.</p></div>
 <p class="orv_line">Han Sooyoung shouted, "Hey, you shut up and stay still! Saying unnecessary…!"</p>
 <p class="orv_line">"What does he mean?"</p>
 <p class="orv_line">"It is nonsense. Don't worry about it."</p>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' claims that Han Sooyoung didn't protect your heart to protect your black fire dragon.]</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' claims that Han Sooyoung didn't protect your heart to protect your black fire dragon.</p></div>
 <p class="orv_line">…My black fire dragon?</p>
 <p class="orv_line">"That's why I…" Han Sooyoung hesitated before starting to talk. "I mean, Jeon Woochi's attack… flew to that place."</p>
 <p class="orv_line">"…Hah."</p>
@@ -226,7 +233,7 @@
 <p class="orv_line">"…Well, there is such a story."</p>
 <p class="orv_line">It was an absurd story. Han Sooyoung didn't wait to see how I accepted it and added swiftly.</p>
 <p class="orv_line">"I-I didn't have any strange thoughts. Don't be mistaken. The Black Flame Dragon bastard was shouting that I should protect the whale…"</p>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' is looking at his constellation with embarrassment and agitation.]</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' is looking at his constellation with embarrassment and agitation.</p></div>
 <p class="orv_line">I sighed lightly and said, "…I don't care about that. Just protect my heart well next time."</p>
 <p class="orv_line">Han Sooyoung made a surprised look at my words and nodded. An awkward atmosphere briefly flowed.</p>
 <p class="orv_line">Han Sooyoung seriously considered something and opened her mouth. "By the way Kim Dokja, I have a question…"</p>
@@ -260,17 +267,17 @@
 <p class="orv_line">Reality was different from a novel. A wounded person might be saved but a wounded person. wouldn't heal that easily.</p>
 <p class="orv_line">"I don't know if that child really needs the truth. Maybe it was what I needed. I didn't want to stay as a bad mother…"</p>
 <p class="orv_line">She became crooked herself to protect Kim Dokja. She became like this as a result of her own love.</p>
-<div class="orv_quote"><p>「 Incarnation Kim Dokja will be killed by the person he loves most. 」</p></div>
+<div class="orv_quote"><p>Incarnation Kim Dokja will be killed by the person he loves most.</p></div>
 <p class="orv_line">Lee Sookyung recalled the moment when she first heard of her child's fate from Yoo Sangah. The fate of Olympus would surely be realized.</p>
 <p class="orv_line">"…The child will understand you one day."</p>
 <p class="orv_line">In order to find out how to save her son, Lee Sookyung gave three days and three nights to the Founder's Mother.</p>
 <p class="orv_line">Three SSS-grade items were offered as a tribute to Hongik and she also gave 20 years of her life. In return, she was able to steal a line of fate that Olympus had hidden.</p>
-<div class="orv_quote"><p>「 If he doesn't go to the next scenario, Incarnation Kim Dokja can live. 」</p></div>
+<div class="orv_quote"><p>If he doesn't go to the next scenario, Incarnation Kim Dokja can live.</p></div>
 <p class="orv_line">Lee Sookyung smiled. "Have all the troops gathered?"</p>
 <p class="orv_line">"Yes. They are all assembled."</p>
 <p class="orv_line">On the edge of the plains, the group of wanderers she led were gathered. They were all here because they believed in her. Lee Sookyung opened the main scenario window.</p>
 <div class="orv_window">
-<h3 class="orv_window_title">[Main Scenario #9 - 73rd Demon King]</h3>
+<h3 class="orv_window_title">Main Scenario #9 - 73rd Demon King</h3>
 <p>Category: Main</p>
 <p>Difficulty level: SS</p>
 <p>Clear Conditions: You are eligible to participate in the last scenario of Dark Castle. Gather four rankers to go up to the third floor of Dark Castle and enter the final scenario.</p>
@@ -335,7 +342,7 @@
 <p class="orv_line">Lee Sookyung stared into Yoo Joonghyuk's blazing eyes and recalled her son's voice. Despite his many complaints, her son always looked somewhat excited.</p>
 <p class="orv_line">–But the story won't continue without him. Ways of Survival is such a novel.</p>
 <p class="orv_line">At this moment, enlightenment filled Lee Sookyung's head.</p>
-<div class="orv_quote"><p>「 Incarnation Kim Dokja will be killed by the person he loves most. 」</p></div>
+<div class="orv_quote"><p>Incarnation Kim Dokja will be killed by the person he loves most.</p></div>
 <p class="orv_line">Lee Sookyung realized the true meaning of this fate. She knew who would kill her beloved son. Maybe it was an insight Lee Sookyung was able to reach because she was used to these types of metaphors and symbolism.</p>
 <p class="orv_line">"I see." Lee Sookyung realized everything and laughed.</p>
 <p class="orv_line">This wasn't her original plan. Still, the prophecy meant that the plan had to be modified here.</p>
@@ -349,18 +356,12 @@
             <a href="./ch_172"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_174">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="173" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="156" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="172" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="172" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 381: Ep. 72 - Three Methods, V</title>
     <meta property="og:title" content="Ch 381: Ep. 72 - Three Methods, V" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00381.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 381: Ep. 72 - Three Methods, V</h1></div>
 <p class="orv_line">"Those two, they are engaged."</p>
@@ -210,34 +217,34 @@
 <p class="orv_line">"…Han Sooyoung?"</p>
 <p class="orv_line">Tsu-chuchuchuchut!</p>
 <p class="orv_line">Strange sparks suddenly danced around her figure. I instantly figured out what happened; Yuri di Aristel's ego was pushing aside Han Sooyoung's.</p>
-<div class="orv_quote"><p>「 I'll never let you go. 」</p></div>
+<div class="orv_quote"><p>I'll never let you go.</p></div>
 <p class="orv_line">Yuri was crying out, tears streaming out of her eyes.</p>
-<div class="orv_quote"><p>「 Sooner or later, you'll regret leaving this place! 」</p></div>
-<div class="orv_quote"><p>「 All the Stories you possess will wither away like ruins with no one visiting them, and no one will remember them anymore. 」</p></div>
-<div class="orv_quote"><p>「 And in the end, they won't even be able to stay frozen in this island and vanish from this world! 」</p></div>
+<div class="orv_quote"><p>Sooner or later, you'll regret leaving this place!</p></div>
+<div class="orv_quote"><p>All the Stories you possess will wither away like ruins with no one visiting them, and no one will remember them anymore.</p></div>
+<div class="orv_quote"><p>And in the end, they won't even be able to stay frozen in this island and vanish from this world!</p></div>
 <p class="orv_line">I looked back at her and made my reply. "That could happen."</p>
-<div class="orv_quote"><p>「 What was that? 」</p></div>
+<div class="orv_quote"><p>What was that?</p></div>
 <p class="orv_line">Yuri sounded dumbfounded. I quietly observed her for a moment.</p>
 <p class="orv_line">Yuri di Aristel – this scenario's original heroine.</p>
 <p class="orv_line">If the scenario unfolded as it should have, then by this time, she'd probably have become the king's lover after experiencing a regular life of growing up as someone's daughter.</p>
-<div class="orv_quote"><p>「 If you remain in this world, you'll all be safe. 」</p></div>
+<div class="orv_quote"><p>If you remain in this world, you'll all be safe.</p></div>
 <p class="orv_line">I could sympathise with her, who had no choice but to say something like that, but at the same time, I could not claim to sympathise with her point of view. Because we weren't living in the same Story.</p>
 <p class="orv_line">In a way, you were simply reading the stories, no matter how many you had read so far. Perhaps that was why, all I could do for now was not to arrogantly convince her, but to simply imagine.</p>
 <p class="orv_line">…What if Han Sooyoung was me, what would she have said right about now?</p>
-<div class="orv_quote"><p>「 I'll ask the 'King of Reincarnators' for a favour. Let us remain in this place together. And entrust yourselves to the Samsara's wall. When you do… 」</p></div>
+<div class="orv_quote"><p>I'll ask the 'King of Reincarnators' for a favour. Let us remain in this place together. And entrust yourselves to the Samsara's wall. When you do…</p></div>
 <p class="orv_line">"Then, we'd live on while carrying out the exact same scenario every single time."</p>
-<div class="orv_quote"><p>「 What? 」</p></div>
+<div class="orv_quote"><p>What?</p></div>
 <p class="orv_line">I slowly blinked my eyes and asked her. "Yuri di Aristel. How did it feel when you became the queen for the first time ever?"</p>
 <p class="orv_line">Her irises quaked intensely just then.</p>
-<div class="orv_quote"><p>「 I… 」</p></div>
+<div class="orv_quote"><p>I…</p></div>
 <p class="orv_line">The 'Isle of Reincarnators' was basically a museum of ancient Stories that had disappeared in the back alleys of the changing era.</p>
 <p class="orv_line">The foundation of this world was one of the 3rd generation's medieval-themed fantasy settings. Yuri di Aristel would've lived the same life over and over again while repeating the actions and speeches as set out by the Giant Story.</p>
 <p class="orv_line">Han Sooyoung knew this, and she probably wanted to show her host the possibility of new stories.</p>
 <p class="orv_line">…Tell her that we were not slaves ruled by the Stories.</p>
-<div class="orv_quote"><p>「 I, only…!! 」</p></div>
+<div class="orv_quote"><p>I, only…!!</p></div>
 <p class="orv_line">Most likely, Yuri had realized it by now. Because Han Sooyoung was an excellent writer, after all.</p>
 <p class="orv_line">"You like Han Sooyoung, yes?"</p>
-<div class="orv_quote"><p>「 … 」</p></div>
+<div class="orv_quote"><p>…</p></div>
 <p class="orv_line">"If you do, please believe in her. She will definitely not abandon you."</p>
 <p class="orv_line">Yuri di Aristel looked at me for a little while before forming a complicated expression; her presence vanished afterwards. A round of lightly-dancing sparks later, Han Sooyoung's white irises reverted back to their normal state.</p>
 <p class="orv_line">She staggered a little bit as if she was struck by a dizzy spell. She then looked at me as if impressed by my actions and spoke. "…Kim Dokja. Not too shabby, eh?"</p>
@@ -262,7 +269,7 @@
 <p class="orv_line">"Oh, dear Princes! Tell us the truth!"</p>
 <p class="orv_line">The moment I saw their faces, a realization dawned on me; none of these people were here on their own volition.</p>
 <p class="orv_line">It was this world's Story that had summoned them here.</p>
-<div class="orv_system"><p>[Giant Story, 'Kaizenix Archipelago', has bared its animosity.]</p></div>
+<div class="orv_system"><p>Giant Story, 'Kaizenix Archipelago', has bared its animosity.</p></div>
 <p class="orv_line">Yoo Joonghyuk and I looked at Han Sooyoung simultaneously. She nodded her head and took a step forward.</p>
 <p class="orv_line">"I am the new ruler of the Kaizenix Archipelago."</p>
 <p class="orv_line">The crowd immediately began protesting.</p>
@@ -283,18 +290,18 @@
 <p class="orv_line">"Our worldview simply wants…"</p>
 <p class="orv_line">I addressed them with these words. "Your worldview? What could that possibly be?"</p>
 <p class="orv_line">The crowd shut their mouths. Without saying anything else, I shifted my gaze above to the message floating in the air.</p>
-<div class="orv_system"><p>[Genre of the applicable scenario is 'Kim Dokja's Company'.]</p></div>
+<div class="orv_system"><p>Genre of the applicable scenario is 'Kim Dokja's Company'.</p></div>
 <p class="orv_line">There was no such genre called 'Kim Dokja's Company' in the world. However, there being none didn't mean a story couldn't be told, either.</p>
 <p class="orv_line">"&lt;Kim Dokja's Company&gt; isn't like any other genre," Yoo Joonghyuk spoke up again. "&lt;Kim Dokja's Company&gt; is simply &lt;Kim Dokja's Company&gt;."</p>
 <p class="orv_line">Han Sooyoung raised Unbroken Faith up high, before stabbing it deeply into the floor.</p>
 <p class="orv_line">"Just like how &lt;Kaizenix Archipelago&gt; is simply the &lt;Kaizenix Archipelago&gt;."</p>
-<div class="orv_system"><p>[Special effect of the Star Relic, 'Unbroken Faith', has activated!]</p></div>
+<div class="orv_system"><p>Special effect of the Star Relic, 'Unbroken Faith', has activated!</p></div>
 <p class="orv_line">This sword utilised Ether of three differing attributes.</p>
-<div class="orv_system"><p>[Ether attribute is transforming into 'Fire'.]</p></div>
+<div class="orv_system"><p>Ether attribute is transforming into 'Fire'.</p></div>
 <p class="orv_line">Pure-white petals of flame rose up from the blade held tight in Han Sooyoung's hand. I placed my own on the hilt of the sword.</p>
-<div class="orv_system"><p>[Ether attribute 'Darkness' has activated in tandem.]</p></div>
+<div class="orv_system"><p>Ether attribute 'Darkness' has activated in tandem.</p></div>
 <p class="orv_line">And Yoo Joonghyuk's hand was placed on top of ours.</p>
-<div class="orv_system"><p>[Ether attribute 'Divinity' has activated in tandem.]</p></div>
+<div class="orv_system"><p>Ether attribute 'Divinity' has activated in tandem.</p></div>
 <p class="orv_line">The three attributes of Unbroken Faith, fire, darkness, and light, began burning up at the same time. The Archipelago's citizens had never witnessed such a miracle before, and they stared at us in wonder.</p>
 <p class="orv_line">Han Sooyoung addressed them. "The king? If you want to become one, come here and give it a shot. That is, if you're confident of grasping this sword."</p>
 <p class="orv_line">No one tried to come closer. Everyone gathered here knew the truth already – that the moment their hands touched that brilliant light, their bodies would crumble away like fine dust. Even though the overwhelmed crowd trembled in fear, some still managed to ask us questions.</p>
@@ -303,39 +310,39 @@
 <p class="orv_line">This was an unprecedented development. And they had grown fearful of this world's end.</p>
 <p class="orv_line">The one who replied to them was Yoo Joonghyuk. "We didn't come here to occupy the measly little 'Kaizenix Archipelago'."</p>
 <p class="orv_line">"But, we came here to liberate you all," I quickly followed that up, and several people began muttering among themselves.</p>
-<div class="orv_quote"><p>「 You already know what they mean, don't you? 」</p></div>
+<div class="orv_quote"><p>You already know what they mean, don't you?</p></div>
 <p class="orv_line">Neither Han Sooyoung, Yoo Joonghyuk, nor I said those words.</p>
-<div class="orv_quote"><p>「 We also can't repeat the exact same scenario over and over again. 」</p></div>
+<div class="orv_quote"><p>We also can't repeat the exact same scenario over and over again.</p></div>
 <p class="orv_line">No, it was Yuri di Aristel who had raised her voice, instead. She had finally realized what the conclusion to this scenario we've been wishing for was.</p>
-<div class="orv_quote"><p>「 I… plan to journey with these people. 」</p></div>
+<div class="orv_quote"><p>I… plan to journey with these people.</p></div>
 <p class="orv_line">At Yuri's words, the crowd formed utterly stunned expressions. However, it wasn't just her who had made up their minds. I felt my heart beat powerfully all of a sudden, and someone began speaking through my lips next.</p>
-<div class="orv_quote"><p>「 If she's willing to do so, then I shall do the same. 」</p></div>
+<div class="orv_quote"><p>If she's willing to do so, then I shall do the same.</p></div>
 <p class="orv_line">These words belonged to my host, Fourth Prince Ricardo. Soon afterwards, another voice came out from Yoo Joonghyuk, as well.</p>
-<div class="orv_quote"><p>「 I can't let my feeble brother go all by himself. 」</p></div>
+<div class="orv_quote"><p>I can't let my feeble brother go all by himself.</p></div>
 <p class="orv_line">That was from the First Prince Schweichen. After him, two more voices came from Lee Hyunsung and Jung Heewon's position.</p>
-<div class="orv_quote"><p>「 My sword will accompany you wherever you go, your highness. 」</p></div>
-<div class="orv_quote"><p>「 I'll protect you, your majesty. 」</p></div>
+<div class="orv_quote"><p>My sword will accompany you wherever you go, your highness.</p></div>
+<div class="orv_quote"><p>I'll protect you, your majesty.</p></div>
 <p class="orv_line">Both Bilston Framer and Erich Striker, too; it wasn't just Yuri who had been watching our tales until now.</p>
 <p class="orv_line">Indeed, the original protagonists of this world also had been watching us.</p>
-<div class="orv_system"><p>[Giant Story, 'Torch that Swallowed the Myth', is roaring out loudly!]</p></div>
-<div class="orv_system"><p>[Giant Story, 'Demon Realm's Spring', is looking at this world.]</p></div>
+<div class="orv_system"><p>Giant Story, 'Torch that Swallowed the Myth', is roaring out loudly!</p></div>
+<div class="orv_system"><p>Giant Story, 'Demon Realm's Spring', is looking at this world.</p></div>
 <p class="orv_line">"We will participate in the 'Great War of Saints and Demons'."</p>
 <p class="orv_line">Everyone gathered here was looking at &lt;Kim Dokja's Company&gt;. As the company's head representative, I addressed them once more. "And we will liberate every person on this island from 'reincarnation'."</p>
 <p class="orv_line">One by one, the crowd began kneeling down. These people, having been playthings of the Giant Story's scenario for such a long time, were looking at us now.</p>
 <p class="orv_line">"Let's all go together."</p>
 <p class="orv_line">The world was rocked by an intense vibration as soon as those words came to an end. That was the sound of a world crumbling down. And…</p>
-<div class="orv_system"><p>[Giant Story, 'Kaizenix Archipelago', is crying out!]</p></div>
+<div class="orv_system"><p>Giant Story, 'Kaizenix Archipelago', is crying out!</p></div>
 <p class="orv_line">…It was also the sound of a Giant Story collapsing on itself.</p>
-<div class="orv_system"><p>[Giant Story, 'Kaizenix Archipelago', is activating its authority to control every citizen in the archipelago!]</p></div>
+<div class="orv_system"><p>Giant Story, 'Kaizenix Archipelago', is activating its authority to control every citizen in the archipelago!</p></div>
 <p class="orv_line">The giant story exhausted its own existence to continue its life. Unfortunately, what made a Giant Story a story was…</p>
-<div class="orv_system"><p>[Every Reincarnator in the Archipelago 'Kaizenix' is resisting against the Giant Story's control.]</p></div>
+<div class="orv_system"><p>Every Reincarnator in the Archipelago 'Kaizenix' is resisting against the Giant Story's control.</p></div>
 <p class="orv_line">…None other than the people in it.</p>
-<div class="orv_system"><p>[Worldview has accepted your reply.]</p></div>
-<div class="orv_system"><p>[You have satisfied the scenario clear condition.]</p></div>
-<div class="orv_system"><p>[Sub-Scenario: 'Genre Selection' has concluded.]</p></div>
-<div class="orv_system"><p>[Scenario clear reward is being calculated.]</p></div>
-<div class="orv_system"><p>[The space-time of the applicable scenario's location is synchronising with that of the 'Great War of Saints and Demons'.]</p></div>
-<div class="orv_system"><p>[Portal to the 'Great War of Saints and Demons' has been generated.]</p></div>
+<div class="orv_system"><p>Worldview has accepted your reply.</p></div>
+<div class="orv_system"><p>You have satisfied the scenario clear condition.</p></div>
+<div class="orv_system"><p>Sub-Scenario: 'Genre Selection' has concluded.</p></div>
+<div class="orv_system"><p>Scenario clear reward is being calculated.</p></div>
+<div class="orv_system"><p>The space-time of the applicable scenario's location is synchronising with that of the 'Great War of Saints and Demons'.</p></div>
+<div class="orv_system"><p>Portal to the 'Great War of Saints and Demons' has been generated.</p></div>
 <p class="orv_line">An enormous portal emitting blinding rays of light was generated in mid-air. It was the doorway leading up to the Great War.</p>
 <p class="orv_line">"I'll go first."</p>
 <p class="orv_line">Yoo Joonghyuk was the first to walk inside. Other Reincarnators, finished making up their minds, followed after him and entered the portal's innards.</p>
@@ -381,17 +388,17 @@
 <p class="orv_line">We shared such light-hearted banter while shifting our gazes back to the portal. That's where Lee Hyunsung and Jung Heewon walking together could be seen. I sensed this awkwardness in the air between them and it was nice to see that.</p>
 <p class="orv_line">"Well, those two might need three thousand chapters, and then some."</p>
 <p class="orv_line">It was then, nice-sounding messages resounded out from the sky.</p>
-<div class="orv_system"><p>[Restriction on indirect messaging has been lifted.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Prisoner of the Golden Headband', is cheering out in happiness!]</p></div>
-<div class="orv_system"><p>[Constellation, 'Abyssal Black Flame Dragon', is enjoying the warm atmosphere!]</p></div>
-<div class="orv_system"><p>[Constellation, 'Demon-like Judge of Flame', is freaking out!]</p></div>
+<div class="orv_system"><p>Restriction on indirect messaging has been lifted.</p></div>
+<div class="orv_system"><p>Constellation, 'Prisoner of the Golden Headband', is cheering out in happiness!</p></div>
+<div class="orv_system"><p>Constellation, 'Abyssal Black Flame Dragon', is enjoying the warm atmosphere!</p></div>
+<div class="orv_system"><p>Constellation, 'Demon-like Judge of Flame', is freaking out!</p></div>
 <p class="orv_line">It seemed that, with the conclusion of the scenario, the channel had been reopened again.</p>
-<div class="orv_system"><p>[Constellation, 'Demon-like Judge of Flame', is shielding her Incarnation.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Demon-like Judge of Flame', is being vigilant of Constellation, 'Master of Steel'.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Master of Steel', is feeling wronged.]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon-like Judge of Flame', is shielding her Incarnation.</p></div>
+<div class="orv_system"><p>Constellation, 'Demon-like Judge of Flame', is being vigilant of Constellation, 'Master of Steel'.</p></div>
+<div class="orv_system"><p>Constellation, 'Master of Steel', is feeling wronged.</p></div>
 <p class="orv_line">Han Sooyoung smirked and muttered to herself. "Romance, is it…"</p>
 <p class="orv_line">She and I stepped across the portal together. I could see the Constellations waiting for our arrival in the distance.</p>
-<div class="orv_constellation"><p>[You've come, &lt;Kim Dokja's Company&gt;.]</p></div>
+<div class="orv_constellation"><p>You've come, &lt;Kim Dokja's Company&gt;.</p></div>
 <p class="orv_line">Finally, we reached the opening stages of the 'Great War of Saints and Demons'.</p>
 <br>
 <hr>
@@ -400,18 +407,12 @@
             <a href="./ch_380"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_382">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="381" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="733" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="380" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="380" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

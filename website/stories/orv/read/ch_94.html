@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 94: Ep. 19 – Singularity, II</title>
     <meta property="og:title" content="Ch 94: Ep. 19 – Singularity, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,41 +177,41 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00094.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 94: Ep. 19 – Singularity, II</h1></div>
 <p class="orv_line">In the world of Ways of Survival, the constellation were divided into two types. One type were the free constellations that didn't belong anywhere. The second type were constellations belonging to a particular nebula.</p>
-<div class="orv_constellation"><p>[A trivial human dares to threaten the great stars?]</p></div>
+<div class="orv_constellation"><p>A trivial human dares to threaten the great stars?</p></div>
 <p class="orv_line">I swallowed my saliva in front of that furious momentum. There were several famous nebulae based on the myths of Earth.</p>
 <p class="orv_line">There was Asgard from Nordic mythology and Eden from the apocalypse type mythology. Then there was the equally famous Olympus in front of me.</p>
 <p class="orv_line">I told them, "…Pick a form. I'm not a devotee."</p>
 <p class="orv_line">Yoo Sangah's expression changed. The constellations that suddenly descended looked a bit embarrassed but I kept talking.</p>
 <p class="orv_line">"The probabilities in the beginning scenarios will never allow access to the gods of Olympus. Isn't that right?"</p>
-<div class="orv_constellation"><p>[You…!]</p></div>
+<div class="orv_constellation"><p>You…!</p></div>
 <p class="orv_line">If the probabilities didn't exist as a balance, the Seoul area would've already been destroyed by the Olympus 12 descending. The ripple effects of the storm would be huge. Many of the gods of Olympus might look down on it but they weren't stupid. I saw the threads of magic power wrapped around Yoo Sangah's body.</p>
 <p class="orv_line">"It seems that you are currently the only one who can come out, Abandoned Lover of the Labyrinth."</p>
 <p class="orv_line">Just like Korea had great constellations, Olympus also had great constellations. In fact, the majority of Olympus were great constellations.</p>
 <p class="orv_line">The Abandoned Lover of the Labyrinth. This was the modifier for Ariadne, the lover of Theseus.</p>
 <p class="orv_line">"You represent the lowest possible cost so Olympus must be quite stingy to send you."</p>
-<div class="orv_constellation"><p>[Shut up! You dare!]</p></div>
+<div class="orv_constellation"><p>Shut up! You dare!</p></div>
 <p class="orv_line">The magic threads fluttering around her caused the ground to shake. The ground was split apart by the momentum.</p>
 <p class="orv_line">Indeed, Ariadne couldn't be ignored. No matter how weak the power of her story, she was still stronger than non-constellations. But I knew that she couldn't attack me.</p>
 <p class="orv_line">Sparks flew in the air. The shackles of probability had moved. It wasn't a full descent but a large amount of probabilities was consumed when she deprived the will of the incarnation and partially descended.</p>
@@ -214,21 +221,21 @@
 <p class="orv_line">"I don't think you have much time. Shall I get straight to the point?"</p>
 <p class="orv_line">This was the reality of the constellations. They were the strongest of the Star Stream but they couldn't throw off the heavy shackles of 'probability'.</p>
 <p class="orv_line">"The gods of other worlds seem to have noticed you."</p>
-<div class="orv_constellation"><p>[…How can a human know this?]</p></div>
+<div class="orv_constellation"><p>…How can a human know this?</p></div>
 <p class="orv_line">"Is that important right now? Didn't you come to me for a reason? I don't think the constellations can endure the probability storm that will soon occur."</p>
 <p class="orv_line">Thunder struck around the Great Hole. As expected, it was too early for the great constellations to descend.</p>
 <p class="orv_line">I continued speaking, "I will ask three questions. If you answer my questions, I will answer your questions."</p>
-<div class="orv_constellation"><p>[You want to do the three questions exchange?]</p></div>
+<div class="orv_constellation"><p>You want to do the three questions exchange?</p></div>
 <p class="orv_line">"Yes."</p>
 <p class="orv_line">The three questions exchange. This was originally the trading style of the constellations to minimize the consumption of probability.</p>
 <p class="orv_line">Ariadne glared at me with disapproval.</p>
-<div class="orv_constellation"><p>[A human using the constellation's method of trading…]</p></div>
+<div class="orv_constellation"><p>A human using the constellation's method of trading…</p></div>
 <p class="orv_line">"Are you going to agree or not?"</p>
-<div class="orv_constellation"><p>[…Wait.]</p></div>
+<div class="orv_constellation"><p>…Wait.</p></div>
 <p class="orv_line">Yoo Sangah's eyes closed. Perhaps Ariadne was now communicating with the other Olympus constellations through their network.</p>
-<div class="orv_system"><p>[A constellation who doesn't like the fun to be spoiled is interested in your proposal.]</p></div>
+<div class="orv_system"><p>A constellation who doesn't like the fun to be spoiled is interested in your proposal.</p></div>
 <p class="orv_line">In any case, the Olympus spectators had appeared. Ariadne finished the communication and opened her eyes.</p>
-<div class="orv_constellation"><p>[I will allow the questions.]</p></div>
+<div class="orv_constellation"><p>I will allow the questions.</p></div>
 <p class="orv_line">Then a message was heard.</p>
 <p class="orv_line">–The Divine Three Questions and Answers has begun.</p>
 <p class="orv_line">–Both sides will exchange three questions and answers.</p>
@@ -236,104 +243,104 @@
 <p class="orv_line">–Both sides can refuse to answer one question.</p>
 <p class="orv_line">–The conversation won't end until the questions and answers are fully exchanged.</p>
 <p class="orv_line">"I will ask first."</p>
-<div class="orv_constellation"><p>[Okay.]</p></div>
+<div class="orv_constellation"><p>Okay.</p></div>
 <p class="orv_line">–The first question ticket has been used.</p>
 <p class="orv_line">"One, why are you in Yoo Sangah's body?"</p>
-<div class="orv_constellation"><p>[…]</p></div>
+<div class="orv_constellation"><p>…</p></div>
 <p class="orv_line">"Your home is on the other side of the continent and aren't you busy working on your scenarios? Why this place?"</p>
-<div class="orv_constellation"><p>[It is to monitor the singularities of this world.]</p></div>
+<div class="orv_constellation"><p>It is to monitor the singularities of this world.</p></div>
 <p class="orv_line">–The first answer has been received.</p>
 <p class="orv_line">"Singularity?"</p>
-<div class="orv_constellation"><p>[Is that your second question?]</p></div>
+<div class="orv_constellation"><p>Is that your second question?</p></div>
 <p class="orv_line">Dammit, she was quite smart. The 'question ticket' disappeared even when the person answered the question vaguely.</p>
 <p class="orv_line">"No. Now you ask."</p>
 <p class="orv_line">–The constellation 'Abandoned Lover of the Labyrinth' has used the first question ticket.</p>
-<div class="orv_constellation"><p>[What is your identity?]</p></div>
+<div class="orv_constellation"><p>What is your identity?</p></div>
 <p class="orv_line">"Me? I am one of the singularities you are watching."</p>
 <p class="orv_line">–The constellation 'Abandoned Lover of the Labyrinth' has received the first answer.</p>
 <p class="orv_line">The embarrassed Ariadne muttered,</p>
-<div class="orv_constellation"><p>[…How do you know this?]</p></div>
+<div class="orv_constellation"><p>…How do you know this?</p></div>
 <p class="orv_line">"I just guessed I was a singularity."</p>
 <p class="orv_line">I was just talking but it ended up being right. Ariadne's eyes narrowed.</p>
-<div class="orv_constellation"><p>[You…]</p></div>
+<div class="orv_constellation"><p>You…</p></div>
 <p class="orv_line">"Don't be angry. Don't you guys do it often?"</p>
-<div class="orv_system"><p>[A constellation who doesn't like the fun to be spoiled is pleased with your wit.]</p></div>
+<div class="orv_system"><p>A constellation who doesn't like the fun to be spoiled is pleased with your wit.</p></div>
 <p class="orv_line">Ariadne's atmosphere became filled with killing intent. However, the 'Three Questions Exchange' should be done in this way. Those who answered the other person's questions straight away would only see a loss. The questions ticket should be used in a useful way while wasting the opponent's question ticket. This was the intense fight of the Three Questions Exchange.</p>
 <p class="orv_line">I continued speaking.</p>
 <p class="orv_line">–The second question ticket has been used.</p>
 <p class="orv_line">"Then this is my second question. What the hell is a singularity?"</p>
-<div class="orv_constellation"><p>[It means beings like you.]</p></div>
+<div class="orv_constellation"><p>It means beings like you.</p></div>
 <p class="orv_line">Urgh, she was using her head. However, this time I couldn't accept this much.</p>
 <p class="orv_line">"Answer it properly. Or do you want to keep spinning in circles?"</p>
-<div class="orv_constellation"><p>[…In principle, they are the ones who appear in a 'divine message'.]</p></div>
+<div class="orv_constellation"><p>…In principle, they are the ones who appear in a 'divine message'.</p></div>
 <p class="orv_line">"Can you tell me more? I still can't get the hang of it."</p>
 <p class="orv_line">Ariadne thought for a moment before speaking.</p>
-<div class="orv_constellation"><p>[We originally didn't mean to monitor you. It is just a coincidence that we found you.]</p></div>
+<div class="orv_constellation"><p>We originally didn't mean to monitor you. It is just a coincidence that we found you.</p></div>
 <p class="orv_line">…A coincidence?</p>
-<div class="orv_constellation"><p>[We were trying to monitor someone else. He carries the wheel of a giant destiny on his back and destroys the probability. A singularity is such a person.]</p></div>
+<div class="orv_constellation"><p>We were trying to monitor someone else. He carries the wheel of a giant destiny on his back and destroys the probability. A singularity is such a person.</p></div>
 <p class="orv_line">As soon as I heard this, I understood what a 'singularity' was.</p>
 <p class="orv_line">–The second answer has been received.</p>
 <p class="orv_line">Those from Olympus had already found Yoo Joonghyuk in this regression. An Olympus level nebula would be able to search through the mass-produced filters and trace the information back.</p>
 <p class="orv_line">First of all, they had the excellent information tracker in Hermes. In addition, the great constellations would already become aware of the deviation in the world's probabilities due to Yoo Joonghyuk…</p>
 <p class="orv_line">However, there was something strange. The information about the 'regressor' wasn't information that the current Ariadne could reach.</p>
-<div class="orv_constellation"><p>[It is my turn for an answer.]</p></div>
+<div class="orv_constellation"><p>It is my turn for an answer.</p></div>
 <p class="orv_line">–The constellation 'Abandoned Lover of the Labyrinth' has used the second question ticket.</p>
-<div class="orv_constellation"><p>[Who will you select in the next Sponsor Selection?]</p></div>
+<div class="orv_constellation"><p>Who will you select in the next Sponsor Selection?</p></div>
 <p class="orv_line">It was an unexpected question. I didn't expect Olympus to be aiming for me.</p>
-<div class="orv_system"><p>[A constellation who doesn't like the fun to be spoiled is listening to you.]</p></div>
-<div class="orv_system"><p>[Some constellations that love the Korean peninsula are nervous.]</p></div>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is chanting his own modifier.]</p></div>
+<div class="orv_system"><p>A constellation who doesn't like the fun to be spoiled is listening to you.</p></div>
+<div class="orv_system"><p>Some constellations that love the Korean peninsula are nervous.</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is chanting his own modifier.</p></div>
 <p class="orv_line">It was difficult but I had no choice.</p>
 <p class="orv_line">"I won't answer. Is it any fun if I tell you who I will pick?"</p>
 <p class="orv_line">–You have used a 'refusal ticket'.</p>
 <p class="orv_line">–You can't exercise the right to refuse to answer a question from now on.</p>
 <p class="orv_line">It seemed she had expected this as Ariadne immediately followed with a question.</p>
 <p class="orv_line">–The constellation 'Abandoned Lover of the Labyrinth' has used the third question ticket.</p>
-<div class="orv_constellation"><p>[Then I will ask the last question. How did you notice that we were watching?]</p></div>
+<div class="orv_constellation"><p>Then I will ask the last question. How did you notice that we were watching?</p></div>
 <p class="orv_line">Shit, this was her purpose from the beginning. It was probably the result of Ariadne thinking hard. Simply asking for my 'identity' didn't give an answer so she created a specific question. I thought for a moment before opening my mouth.</p>
 <p class="orv_line">"I read a book well."</p>
-<div class="orv_constellation"><p>[What?]</p></div>
+<div class="orv_constellation"><p>What?</p></div>
 <p class="orv_line">"I found out after reading books."</p>
 <p class="orv_line">My answer wasn't convincing but I couldn't reveal the story of Ways of Survival here. It would all be filtered anyway, making it impossible for her to understand. In addition, I didn't want to explain.</p>
 <p class="orv_line">"Originally, us Koreans know the myths."</p>
-<div class="orv_constellation"><p>[…What does that mean?]</p></div>
+<div class="orv_constellation"><p>…What does that mean?</p></div>
 <p class="orv_line">"You are quite famous in my country. You are so popular that children's cartoons are produced. Don't you know that you are quite famous in my country? Is there anyone who doesn't know about Olympus?"</p>
 <p class="orv_line">Ariadne's confusion was conveyed through her shaky eyes.</p>
-<div class="orv_constellation"><p>[It is impossible. A small country…]</p></div>
+<div class="orv_constellation"><p>It is impossible. A small country…</p></div>
 <p class="orv_line">"The Cretan labyrinth."</p>
-<div class="orv_constellation"><p>[…!]</p></div>
+<div class="orv_constellation"><p>…!</p></div>
 <p class="orv_line">"A half monster."</p>
 <p class="orv_line">Her eyes became bigger.</p>
 <p class="orv_line">"The lover who forgot you. Naxos Island. The love affair afterwards… shall I continue?"</p>
-<div class="orv_constellation"><p>[S-Stop! I understand so stop!]</p></div>
+<div class="orv_constellation"><p>S-Stop! I understand so stop!</p></div>
 <p class="orv_line">–The constellation 'Abandoned Lover of the Labyrinth' has received the third answer.</p>
 <p class="orv_line">Ariadne made a completely wounded expression and closed her mouth.</p>
-<div class="orv_constellation"><p>[How can humans in a trivial country…]</p></div>
+<div class="orv_constellation"><p>How can humans in a trivial country…</p></div>
 <p class="orv_line">I inwardly sighed. I somehow succeeded in overcoming this. Ariadne was a constellation with a low probability cost. It was fortunate that she came out as the representative of Olympus.</p>
 <p class="orv_line">The movements of the Great Hole was becoming increasingly restless.</p>
 <p class="orv_line">I opened my mouth, "Then this is the last question. What is the content of the 'divine message' you received this time?"</p>
 <p class="orv_line">Ariadne worried about it for a long time while her eyes looked like she was measuring an invisible scale.</p>
-<div class="orv_constellation"><p>[I can't tell you.]</p></div>
+<div class="orv_constellation"><p>I can't tell you.</p></div>
 <p class="orv_line">–The constellation 'Abandoned Lover of the Labyrinth' has used the refusal ticket.</p>
 <p class="orv_line">–All questions and answers have been fully exchanged.</p>
 <p class="orv_line">–The three questions and three answers have ended.</p>
 <p class="orv_line">I expected it but I felt sorry. In fact, the last question was the most important.</p>
-<div class="orv_system"><p>[A constellation who doesn't like the fun to be spoiled has a taste of regret.]</p></div>
+<div class="orv_system"><p>A constellation who doesn't like the fun to be spoiled has a taste of regret.</p></div>
 <p class="orv_line">Ariadne looked at the lightning bolts falling from the sky and frowned.</p>
-<div class="orv_constellation"><p>[My husband was curious about your story and I gave him a bit of entertainment, but it ends here.]</p></div>
+<div class="orv_constellation"><p>My husband was curious about your story and I gave him a bit of entertainment, but it ends here.</p></div>
 <p class="orv_line">Her voice started to accelerate like she realized she had no time.</p>
-<div class="orv_constellation"><p>[I only came here for one reason. Olympus will give you a stern warning. Don't hinder our work. We are working to prevent the destruction of the world. This woman will grow into a breakwater of the great destruction.]</p></div>
+<div class="orv_constellation"><p>I only came here for one reason. Olympus will give you a stern warning. Don't hinder our work. We are working to prevent the destruction of the world. This woman will grow into a breakwater of the great destruction.</p></div>
 <p class="orv_line">"Why this woman?"</p>
-<div class="orv_constellation"><p>[Looking for the reason is pointless. Even the three sisters who spin the thread of fate don't know why.]</p></div>
+<div class="orv_constellation"><p>Looking for the reason is pointless. Even the three sisters who spin the thread of fate don't know why.</p></div>
 <p class="orv_line">Damn. Olympus used the excuse of the Fates.</p>
-<div class="orv_constellation"><p>[Incarnation caught in the scenario. The direction of fate is turning. The stories of the stars are gathering in one place and the fate of the constellations will begin.]</p></div>
+<div class="orv_constellation"><p>Incarnation caught in the scenario. The direction of fate is turning. The stories of the stars are gathering in one place and the fate of the constellations will begin.</p></div>
 <p class="orv_line">"What are you talking about? Are you referring to Gigantomachia?"</p>
-<div class="orv_constellation"><p>[…You even know this information. You are really amazing. But even if you know this information, you shouldn't arrogantly think that you understand everything.]</p></div>
+<div class="orv_constellation"><p>…You even know this information. You are really amazing. But even if you know this information, you shouldn't arrogantly think that you understand everything.</p></div>
 <p class="orv_line">The sparks around Yoo Sangah's body were reaching the limit. It was the sign of a probability storm.</p>
-<div class="orv_constellation"><p>[You, a puppet of the moment, will never understand. Remember. Once the time comes, if you aren't standing on the right side―]</p></div>
+<div class="orv_constellation"><p>You, a puppet of the moment, will never understand. Remember. Once the time comes, if you aren't standing on the right side―</p></div>
 <p class="orv_line">At that moment, a lightning bolt struck Yoo Sangah's body and I felt Ariadne's power draining out of her. The sound of tearing through space and time resonated and Yoo Sangah's body collapsed like a broken doll.</p>
 <p class="orv_line">I hurriedly grabbed Yoo Sangah's body. Then I felt someone's gaze from the sky. I shouldn't raise my head right now. Nobody told me this but I instinctively knew. If I looked above me…</p>
-<div class="orv_system"><p>[The exclusive skill 'Fourth Wall' has offset your mental shock.]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Fourth Wall' has offset your mental shock.</p></div>
 <p class="orv_line">I looked up with confusion. There was something in the distant Great Hole. It was a presence that destroyed Ariadne's power. It seemed to be a tongue or a tentacle but in the end, it didn't resemble anything. It was a fear that was beyond language and it was unable to be comprehended.</p>
 <p class="orv_line">A god from another world.</p>
 <p class="orv_line">Time seemed to slow and sweat soaked my forehead and back. It was a flow of time filled with breathless pain. I barely blinked and the Great Hole returned to normal. I trembled with fear. This thing was what I had to fight.</p>
@@ -343,8 +350,8 @@
 <p class="orv_line">I carefully laid down the collapsed Yoo Sangah. It felt like her flesh would break if I touched it. Yoo Sangah's face was pale and she had a tight clenched fist, as if she didn't want to support her sponsor.</p>
 <p class="orv_line">Humans were weak. However, there was one thing overlooked by the stars who were only afraid of a great probability. It was that all the myths on Earth started from the weak humans they ignored.</p>
 <p class="orv_line">I gently touched my fist to Yoo Sangah's fist.</p>
-<div class="orv_system"><p>[In the depths of your soul, the power of the 'story' is wriggling.]</p></div>
-<div class="orv_system"><p>[Your first stigma is ready to germinate.]</p></div>
+<div class="orv_system"><p>In the depths of your soul, the power of the 'story' is wriggling.</p></div>
+<div class="orv_system"><p>Your first stigma is ready to germinate.</p></div>
 <p class="orv_line">I would build a 'story' that didn't fall to any myths.</p>
 <br>
 <hr>
@@ -370,18 +377,12 @@
             <a href="./ch_93"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_95">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="94" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="246" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="93" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="93" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

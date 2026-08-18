@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 27: Ep. 6 – Judgment Time, IV</title>
     <meta property="og:title" content="Ch 27: Ep. 6 – Judgment Time, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,62 +177,62 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00027.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 27: Ep. 6 – Judgment Time, IV</h1></div>
 <p class="orv_line">A few minutes later, I once again entered Dongguk University Station and ate a ground rat. It was in order to heal the skin contaminated by the poisonous fog. It took a little time but the contamination could be recovered by eating the meat of an underground species.</p>
-<div class="orv_constellation"><p>[…Hey! Are you crazy? What did you do just now?]</p></div>
+<div class="orv_constellation"><p>…Hey! Are you crazy? What did you do just now?</p></div>
 <p class="orv_line">I was eating when I heard Bihyung's voice furiously berating me.</p>
 <p class="orv_line">'Shut up'.</p>
-<div class="orv_constellation"><p>[No, this isn't an issue you can dismiss. You destroyed a constellation's idol! Do you want to see my channel fail? Once the 'Bald General of Justice' begins to talk…]</p></div>
+<div class="orv_constellation"><p>No, this isn't an issue you can dismiss. You destroyed a constellation's idol! Do you want to see my channel fail? Once the 'Bald General of Justice' begins to talk…</p></div>
 <p class="orv_line">The idol of a constellation. Every world had their own constellations, South Korea as well. By the way, Bihyung said it was the 'Bald General of Justice'. He was a great person in South Korea but…</p>
 <p class="orv_line">Actually, I wasn't the type of person to say that.</p>
-<div class="orv_system"><p>[A constellation wearing a straw mat is furious at your atrocious actions.]</p></div>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is laughing.]</p></div>
+<div class="orv_system"><p>A constellation wearing a straw mat is furious at your atrocious actions.</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is laughing.</p></div>
 <p class="orv_line">There was a difference in the degree of all idols, but they had the power of a constellation sealed in them. If I released the seal of the idol in the right way, I could gain a certain amount of power, such as an item or a skill that the constellation used in their lifetime. However, 'unlocking the seal' took a long time and I wasn't sure if I could get the skill I wanted.</p>
 <p class="orv_line">I looked at Ways of Survival on my smartphone.</p>
-<div class="orv_quote"><p>「 "But if it is sealed in the bronze statue of Samyeongdang, how did you get the skill?" 」</p></div>
+<div class="orv_quote"><p>"But if it is sealed in the bronze statue of Samyeongdang, how did you get the skill?"</p></div>
 <p class="orv_line">"There is a saying that if you meet Buddha, kill Buddha."</p>
 <p class="orv_line">"What? Don't tell me…"</p>
 <p class="orv_line">"Haha, I was just trying it out… but it is true. All the statues aren't just for worship."</p>
-<div class="orv_constellation"><p>["Hey! This jerk, you should watch your mouth. You might be cursed by the constellation."]</p></div>
+<div class="orv_constellation"><p>"Hey! This jerk, you should watch your mouth. You might be cursed by the constellation."</p></div>
 <p class="orv_line">At the last gateway to enter Chungmuro, the 'skill' of Samyeongdang was essential and the most surefire way to get the skill was to destroy the idol. Of course, I could buy something similar from the Dokkaebi Bag but… the more coins I saved, the better.</p>
 <p class="orv_line">"Then did you resolve the 'man's secret' well?"</p>
 <p class="orv_line">I quickly turned off my smartphone screen. My companions, including Jung Heewon, had gathered.</p>
 <p class="orv_line">"Yes. And I have something for you."</p>
 <p class="orv_line">I pulled out the items I gained from the idol. As luck would have it, the Samyeongdang idol contained items and skills.</p>
-<div class="orv_system"><p>[Samyeongdang's Beads]</p></div>
-<div class="orv_system"><p>[Samyeongdang's Straw Mat]</p></div>
+<div class="orv_system"><p>Samyeongdang's Beads</p></div>
+<div class="orv_system"><p>Samyeongdang's Straw Mat</p></div>
 <p class="orv_line">Rags and old beads. There were questions in the eyes of everyone present. I knew what they were thinking. However, I also knew this: In this world, 'old' was more likely to be 'good'.</p>
 <p class="orv_line">"They seem like good items because they are souvenirs of a great person."</p>
 <p class="orv_line">"Great person?"</p>
 <p class="orv_line">"Do you know Samyeongdang?"</p>
-<div class="orv_system"><p>[A constellation wearing a straw mat has paused at your actions.]</p></div>
+<div class="orv_system"><p>A constellation wearing a straw mat has paused at your actions.</p></div>
 <p class="orv_line">Jung Heewon asked with a blank expression, "…Who is that?"</p>
-<div class="orv_system"><p>[A constellation wearing a straw mat wishes to appear before character 'Jung Heewon'.]</p></div>
+<div class="orv_system"><p>A constellation wearing a straw mat wishes to appear before character 'Jung Heewon'.</p></div>
 <p class="orv_line">"Ah! I know!" Fortunately, someone knew. Needless to say, it was Yoo Sangah. "I remember seeing it when I was studying Korean history! Isn't he a monk from the Joseon Dynasty?"</p>
 <p class="orv_line">"Yes, that's right."</p>
 <p class="orv_line">"When the Korean military was struggling to defend against the Japanese invasion…he fought in the Nowongpyeong battle and Wukwandong battle!"</p>
 <p class="orv_line">As expected from Yoo Sangah. I also studied Korean history but I didn't know this.</p>
-<div class="orv_system"><p>[A constellation wearing a straw mat is touched by character 'Yoo Sangah'.]</p></div>
+<div class="orv_system"><p>A constellation wearing a straw mat is touched by character 'Yoo Sangah'.</p></div>
 <p class="orv_line">I nodded and said, "Anyway, these items have his strength."</p>
 <p class="orv_line">"…Really?"</p>
 <p class="orv_line">"Wow, it is real!"</p>
@@ -237,14 +244,14 @@
 <p class="orv_line">"Ah…"</p>
 <p class="orv_line">Their 'ah' were filled with many meanings. I ignored them and kept talking. It wasn't like I was asking for them to listen.</p>
 <p class="orv_line">"He might've left his belongings to save the country, just like during the Japanese invasion of South Korea. Anyway, now South Korea is a country undergoing turmoil."</p>
-<div class="orv_system"><p>[A constellation wearing a straw mat is moved by your words.]</p></div>
+<div class="orv_system"><p>A constellation wearing a straw mat is moved by your words.</p></div>
 <p class="orv_line">In times of turmoil, scammers always gained power.</p>
 <p class="orv_line">"…In this strange world, it isn't weird if something like this happens. Maybe Samyeongdang is one of the 'constellations'. Isn't that right?"</p>
 <p class="orv_line">Surprisingly, Yoo Sangah was the first to be convinced. Maybe she didn't want me to be embarrassed. The funny thing was that once Yoo Sangah agreed, Lee Hyunsung was immediately convinced.</p>
 <p class="orv_line">"Indeed, Samyeongdang…"</p>
 <p class="orv_line">Lee Hyunsung grew up with patriotism for a long time and looked like he was reminiscing on the principle of military service. Lee Gilyoung also seemed convinced. It was only Jung Heewon who was staring at me like it was nonsense.</p>
-<div class="orv_system"><p>[A constellation wearing a straw mat likes your revealing words.]</p></div>
-<div class="orv_system"><p>[The constellation 'Bald General of Justice' forgives your sins.]</p></div>
+<div class="orv_system"><p>A constellation wearing a straw mat likes your revealing words.</p></div>
+<div class="orv_system"><p>The constellation 'Bald General of Justice' forgives your sins.</p></div>
 <p class="orv_line">Bihyung looked at the sky with an 'Is this okay?' expression before looking dumbfounded. The power of a constellation was directly linked to their fame. Thus, the constellations loved it when their stories were spread this way. Where was a constellation that hated being praised?</p>
 <p class="orv_line">"I will give Samyeongdang's Beads to Yoo Sangah since you know him well."</p>
 <p class="orv_line">"Really? Can I accept it?"</p>
@@ -259,14 +266,14 @@
 <p class="orv_line">"It's okay. No matter how urgent, I don't want to wear such a thing."</p>
 <p class="orv_line">"…Just try it. You won't regret it."</p>
 <p class="orv_line">Jung Heewon hesitated for a moment before throwing on the straw mat. She was trying to be fashionable but she just looked like a beggar.</p>
-<div class="orv_system"><p>[A constellation who likes companionship condemns your actions.]</p></div>
-<div class="orv_system"><p>[A constellation who praises friendship likes your actions.]</p></div>
+<div class="orv_system"><p>A constellation who likes companionship condemns your actions.</p></div>
+<div class="orv_system"><p>A constellation who praises friendship likes your actions.</p></div>
 <p class="orv_line">It would be different if the star relic 'Samyeongdang's Bamboo Stick and Straw Sandals' came out, but the other two items weren't necessary for me right now. Jung Heewon saw her reflection on the screen door of the subway and made a slightly complicated expression.</p>
 <p class="orv_line">"It is hard to explain but…I suddenly feel like I can harness the power of justice."</p>
 <p class="orv_line">Samyeongdang's Straw Mat was an item that enhances the justice and willpower of the wearer. I didn't need it but it was a pretty good item for Jung Heewon.</p>
 <p class="orv_line">"You said Samyeongdang? I feel sorry for some reason. I should study harder."</p>
-<div class="orv_system"><p>[The constellation 'Bald General of Justice' is happy at this situation.]</p></div>
-<div class="orv_system"><p>[100 coins have been sponsored.]</p></div>
+<div class="orv_system"><p>The constellation 'Bald General of Justice' is happy at this situation.</p></div>
+<div class="orv_system"><p>100 coins have been sponsored.</p></div>
 <p class="orv_line">I jokingly said, "Then let's put our hands together and pray."</p>
 <br>
 <hr>
@@ -277,11 +284,11 @@
 <p class="orv_line">"…Dokja-ssi?"</p>
 <p class="orv_line">"Be prepared. We will be at Chungmuro soon."</p>
 <p class="orv_line">I looked at the dark tunnel. It had been 20 minutes since Lee Gilyoung used Diverse Communication, allowing us to safely move forward. Considering the fact that Dongguk University to Chungmuro was 1 km in a straight line, it was time for 'that' to appear.</p>
-<div class="orv_system"><p>[A new sub-scenario has arrived!]</p></div>
+<div class="orv_system"><p>A new sub-scenario has arrived!</p></div>
 <p class="orv_line">Indeed, as soon as I thought about it.</p>
 <p class="orv_line">"Everybody step back."</p>
 <div class="orv_window">
-<h3 class="orv_window_title">[Sub Scenario – Phantom Prison]</h3>
+<h3 class="orv_window_title">Sub Scenario – Phantom Prison</h3>
 <p>Category: Sub</p>
 <p>Difficulty: D~F</p>
 <p>Clear Conditions: Escape from Phantom Prison within the time limit.</p>
@@ -289,27 +296,27 @@
 <p>Compensation: 300 coins</p>
 <p>Failure: ???</p>
 </div>
-<div class="orv_system"><p>[Sub-scenario – Phantom Prison has begun!]</p></div>
+<div class="orv_system"><p>Sub-scenario – Phantom Prison has begun!</p></div>
 <p class="orv_line">Perhaps Yoo Joonghyuk had suffered quite a bit in this scenario. This scenario was one of the most painful traps for a regressor. Yoo Sangah asked, "Phantom Prison? What is this?"</p>
 <p class="orv_line">She would know without asking.</p>
 <p class="orv_line">"It is coming. Everyone, please keep your mind straight."</p>
 <p class="orv_line">Before my words were over, a haze overcame me. The fog that instantly occupied the tunnel blocked my field of view. The party members in the immediate vicinity couldn't be seen. When I looked around, I could only see a distorted scenery, as if I was on drugs.</p>
 <p class="orv_line">"Uwah…I feel bad!" Jung Heewon screamed. Maybe Jung Heewon was seeing something different from what I saw now.</p>
-<div class="orv_quote"><p>「 Dokja. 」</p></div>
+<div class="orv_quote"><p>Dokja.</p></div>
 <p class="orv_line">The voice I didn't want to hear. That forgotten voice was heard in a drug-like landscape. If I was this way, my other party members would be worse.</p>
 <p class="orv_line">"…Something feels strange. Dokja-ssi! Are you there?"</p>
 <p class="orv_line">"Dokja-ssi! Dokja-ssi!"</p>
 <p class="orv_line">In this distorted vision, the voices of my party members were gradually fading.</p>
-<p class="orv_line">[Phantom Prison.]</p>
+<p class="orv_line"><strong>[Phantom Prison.]</strong></p>
 <p class="orv_line">A space that led to madness by touching a person's trauma.</p>
-<div class="orv_quote"><p>「 Dokja, you didn't see anything. Understood? 」</p></div>
+<div class="orv_quote"><p>Dokja, you didn't see anything. Understood?</p></div>
 <p class="orv_line">The landscape disappeared and the face of a person popped up. I smiled bitterly as I stared into the air. I wanted to deny reality.</p>
-<div class="orv_system"><p>[The exclusive skill, [Fourth Wall] is activated!]</p></div>
-<div class="orv_system"><p>[Due to the skill effect, immunity to Phantom Prison has occurred.]</p></div>
+<div class="orv_system"><p>The exclusive skill, [Fourth Wall] is activated!</p></div>
+<div class="orv_system"><p>Due to the skill effect, immunity to Phantom Prison has occurred.</p></div>
 <p class="orv_line">The moment my mind relaxed, the uncomfortable feeling diminished.</p>
-<div class="orv_system"><p>[The constellation 'Secretive Plotter' admires your spirit.]</p></div>
-<div class="orv_system"><p>[100 coins have been sponsored.]</p></div>
-<div class="orv_system"><p>[The curious constellations are sorry that they can't peek at your memories.]</p></div>
+<div class="orv_system"><p>The constellation 'Secretive Plotter' admires your spirit.</p></div>
+<div class="orv_system"><p>100 coins have been sponsored.</p></div>
+<div class="orv_system"><p>The curious constellations are sorry that they can't peek at your memories.</p></div>
 <p class="orv_line">As the power of Phantom Prison weakened, I felt a sense of alarm.</p>
 <p class="orv_line">"Everyone, calm down and take deep breaths."</p>
 <p class="orv_line">Those trapped in Phantom Prison would lose their minds and unleash their madness around them. Thus, the most dangerous thing in Phantom Prison was the companions around you. Yoo Joonghyuk's solo behaviour might be because he was worried about this prison.</p>
@@ -319,23 +326,23 @@
 <p class="orv_line">…I was too late. I heard the screams of people filled with madness, but it wasn't everyone.</p>
 <p class="orv_line">"…Dokja-ssi?" At this moment, Yoo Sangah's appearance was revealed in Phantom Prison. Samyeongdang's Beads around her wrist was glowing brightly. Fortunately, it worked. I approached Yoo Sangah and said, "Cover the surroundings. From now on, I will destroy this space."</p>
 <p class="orv_line">Yoo Sangah nodded with a nervous expression.</p>
-<div class="orv_system"><p>[The exclusive skill [Destroy Evil] Lv. 1 is activated.]</p></div>
-<p class="orv_line">Destroy Evil. It was one level higher than the [Repel Evil] skill that could be bought with coins. It was a skill that I obtained after breaking the bronze statue of Samyeongdang.</p>
-<div class="orv_system"><p>[The exclusive skill [Destroy Evil] Lv. 1 has turned off 'Phantom Prison'.]</p></div>
-<p class="orv_line">Indeed, it was a skill used by Samyeongdang. If I had bought [Repel Evil], it would've taken a minute to release it. As the fog retreated and Phantom Prison disappeared, my companions started to appear one by one.</p>
+<div class="orv_system"><p>The exclusive skill [Destroy Evil] Lv. 1 is activated.</p></div>
+<p class="orv_line">Destroy Evil. It was one level higher than the <strong>[Repel Evil]</strong> skill that could be bought with coins. It was a skill that I obtained after breaking the bronze statue of Samyeongdang.</p>
+<div class="orv_system"><p>The exclusive skill [Destroy Evil] Lv. 1 has turned off 'Phantom Prison'.</p></div>
+<p class="orv_line">Indeed, it was a skill used by Samyeongdang. If I had bought <strong>[Repel Evil]</strong>, it would've taken a minute to release it. As the fog retreated and Phantom Prison disappeared, my companions started to appear one by one.</p>
 <p class="orv_line">"O-Our resolve! We are the South Korean army, loyal to the nation and the people!"</p>
 <p class="orv_line">"Uh…Uh…Mother."</p>
 <p class="orv_line">The trauma could be seen with one glance. Lee Hyunsung was bowing with his head on the ground, while Lee Gilyoung had his head on his knees and was shaking. Yoo Sangah came forward first. "Lee Hyunsung-ssi? Gilyoung! Please wake up!"</p>
 <p class="orv_line">At this moment, a blade flew from the rear. Fortunately, the blade wasn't fast and it wasn't difficult to avoid.</p>
 <p class="orv_line">"…I will kill all of you."</p>
-<p class="orv_line">Jung Heewon was waving her sword through the air like a madman. My heart ached as I watched Jung Heewon's eyes became gradually redder. This was dangerous. It was a sign of [Demon Slaying]. I stunned Jung Heewon by strongly hitting her in the back of the neck. Luckily, Jung Heewon was unharmed. I thought it wouldn't be like this with Samyeongdang's Straw Mat but Jung Heewon's mental state was more fragile than I expected.</p>
+<p class="orv_line">Jung Heewon was waving her sword through the air like a madman. My heart ached as I watched Jung Heewon's eyes became gradually redder. This was dangerous. It was a sign of <strong>[Demon Slaying]</strong>. I stunned Jung Heewon by strongly hitting her in the back of the neck. Luckily, Jung Heewon was unharmed. I thought it wouldn't be like this with Samyeongdang's Straw Mat but Jung Heewon's mental state was more fragile than I expected.</p>
 <p class="orv_line">"Yoo Sangah, please look after Jung Heewon-ssi."</p>
 <p class="orv_line">"…Yes, yes!"</p>
 <p class="orv_line">"It isn't over yet."</p>
-<div class="orv_system"><p>[You have met the conditions to clear the sub-scenario!]</p></div>
-<div class="orv_system"><p>[You have earned 300 coins.]</p></div>
-<p class="orv_line">Monsters appeared as soon as the clear message showed up. They were a mass of liquid, reminiscent of ectoplasm. The 8th grade specter. It was the specters who made Phantom Prison. I used [Purest Sword Force] to invoke Blade of Faith. Fortunately, the battle itself wasn't difficult. In the first place, the specters weren't difficult if Phantom Prison was destroyed. The creepy and weird specters were destroyed.</p>
-<div class="orv_system"><p>[Specter's Stone.]</p></div>
+<div class="orv_system"><p>You have met the conditions to clear the sub-scenario!</p></div>
+<div class="orv_system"><p>You have earned 300 coins.</p></div>
+<p class="orv_line">Monsters appeared as soon as the clear message showed up. They were a mass of liquid, reminiscent of ectoplasm. The 8th grade specter. It was the specters who made Phantom Prison. I used <strong>[Purest Sword Force]</strong> to invoke Blade of Faith. Fortunately, the battle itself wasn't difficult. In the first place, the specters weren't difficult if Phantom Prison was destroyed. The creepy and weird specters were destroyed.</p>
+<div class="orv_system"><p>Specter's Stone.</p></div>
 <p class="orv_line">I put the fallen stones into my pocket. This needed to be picked up. Thanks to Yoo Sangah, the others were recovering quickly.</p>
 <p class="orv_line">"A-Are you okay?"</p>
 <p class="orv_line">The one who recovered the fastest was Lee Hyunsung. Lee Hyunsung heard the story and bowed his head with surprise. "…Thank you. I almost got into big trouble. I also want to thank Dokja-ssi."</p>
@@ -347,9 +354,9 @@
 <p class="orv_line">"Ah, this girl…!" Yoo Sangah had keen eyes and recognized her first. I also knew her. It was because she was one of the main characters of Ways of Survival. The only survivor of Daepong Girls High School, Lee Jihye. She was one of the reasons why Yoo Joonghyuk went straight to Chungmuro in the shortest time.</p>
 <p class="orv_line">"…Did you guys beat the specters?" Lee Jihye discovered the stone in my hand and was surprised. "How did you…only Master could catch them?"</p>
 <p class="orv_line">I immediately used a skill.</p>
-<div class="orv_system"><p>[The exclusive skill, [Character List] is activated.]</p></div>
+<div class="orv_system"><p>The exclusive skill, [Character List] is activated.</p></div>
 <div class="orv_window">
-<h3 class="orv_window_title">[Character Summary]</h3>
+<h3 class="orv_window_title">Character Summary</h3>
 <p>Name: Lee Jihye</p>
 <p>Age: 17 years old</p>
 <p>Sponsor: Maritime War God</p>
@@ -363,11 +370,11 @@
 <p class="orv_line">There was nothing unusual. Maritime War God. As scheduled, it was the sponsor behind Lee Jihye. She was a must in future maritime wars.</p>
 <div class="orv_image"><img src="../../../assets/images/027 - As scheduled, it was the sponsor behind Lee Jihye. She was a must in future maritime wars.jpg" alt="" loading="lazy"></div>
 <div class="orv_notice"><p>* Unofficial fan illustration (non-canonical)</p></div>
-<div class="orv_system"><p>[The constellation 'Bald General of Justice' is touched at meeting an old companion.]</p></div>
-<div class="orv_system"><p>[Lee Jihye's sponsor welcomes the 'Bald General of Justice'.]</p></div>
+<div class="orv_system"><p>The constellation 'Bald General of Justice' is touched at meeting an old companion.</p></div>
+<div class="orv_system"><p>Lee Jihye's sponsor welcomes the 'Bald General of Justice'.</p></div>
 <p class="orv_line">I felt a faint breeze in the subway tunnel where no trains were running. Looking at Lee Jihye's hair fluttering in the wind, I realized again.</p>
-<div class="orv_system"><p>[Main Scenario #2 – Meeting has ended.]</p></div>
-<div class="orv_system"><p>[The compensation will be settled.]</p></div>
+<div class="orv_system"><p>Main Scenario #2 – Meeting has ended.</p></div>
+<div class="orv_system"><p>The compensation will be settled.</p></div>
 <p class="orv_line">Yes, we finally arrived. This was Chungmuro.</p>
 <br>
 <hr>
@@ -376,18 +383,12 @@
             <a href="./ch_26"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_28">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="27" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="49" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="26" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="26" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

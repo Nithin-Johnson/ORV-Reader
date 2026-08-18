@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 487: Ep. 93 - Omniscient Author's Viewpoint, I</title>
     <meta property="og:title" content="Ch 487: Ep. 93 - Omniscient Author's Viewpoint, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00487.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         <div class="orv_cover"><img src="../../../assets/images/Cover%20Part%205%20-%20487%20-%20Vol%201%20-%20Episodes%2093-99.jpg" alt=""></div>
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 487: Ep. 93 - Omniscient Author's Viewpoint, I</h1></div>
 <p class="orv_line">"I'm a writer."</p>
@@ -276,27 +283,27 @@
 <p class="orv_line">Kim Dokja was shouting out. However, Han Sooyoung couldn't tell whether he was screaming, proclaiming, or even crying in sorrow. Now that he had been transformed into an Outer God, even his voice had been completely excluded from the scenarios. Didn't matter what he said, the contents were deemed unimportant now.</p>
 <p class="orv_line">Gyah-aaaaah!</p>
 <p class="orv_line">However, there were more Outer Gods following him now. Vestiges cast away by the innumerable world-lines were now gathering near Kim Dokja's side. And then, there were Myth-grade Constellations waiting for him above the skies of the scenario.</p>
-<div class="orv_constellation"><p>[So, it has finally begun.]</p></div>
+<div class="orv_constellation"><p>So, it has finally begun.</p></div>
 <p class="orv_line">The king of &lt;Olympus&gt; and the ruler of the 12 gods, the 'Lightning Throne', Zeus was there.</p>
-<div class="orv_system"><p>[This world-line's 'Final Scenario' has begun!]</p></div>
-<div class="orv_system"><p>[Every existence has acquired the scenario entry qualification for the Final Scenario!]</p></div>
-<div class="orv_constellation"><p>[Please kill the 'Enemy of the Story', Kim Dokja.]</p></div>
+<div class="orv_system"><p>This world-line's 'Final Scenario' has begun!</p></div>
+<div class="orv_system"><p>Every existence has acquired the scenario entry qualification for the Final Scenario!</p></div>
+<div class="orv_constellation"><p>Please kill the 'Enemy of the Story', Kim Dokja.</p></div>
 <p class="orv_line">The scenario messages popped up soon afterwards. Everyone present understood the current situation. Zeus was the first to open his mouth.</p>
-<div class="orv_constellation"><p>[Sweep them away.]</p></div>
+<div class="orv_constellation"><p>Sweep them away.</p></div>
 <p class="orv_line">Along with heaven-collapsing noises, arcs of lightning belonging to Zeus rained down. With a 'pow!' noise of something exploding, blood splat onto Han Sooyoung's cheek. The Nameless Ones were dying as black blood spurted out from them.</p>
-<div class="orv_constellation"><p>[Sparemesparemesparemesparemespareme…]</p></div>
+<div class="orv_constellation"><p>Sparemesparemesparemesparemespareme…</p></div>
 <p class="orv_line">Even the frightening 'Outer Gods' came across as mere water balloons in front of the combined Status emitted by the Myth-grade Constellations. The 'Outer Gods' vomited out discarded Stories as they exploded en masse.</p>
 <p class="orv_line">Blindingly brilliant shower of lightning rained down. And in the centre of the devastated landscape, Kim Dokja was enduring against Zeus's electrical attacks.</p>
 <p class="orv_line">Why did he make that kind of a choice?</p>
-<div class="orv_constellation"><p>[Tear his wings off! Surround him from all sides!]</p></div>
+<div class="orv_constellation"><p>Tear his wings off! Surround him from all sides!</p></div>
 <p class="orv_line">Along with the roars from the Constellations, a massive army rushed in. Incarnations and Constellations that had broken past the hellish scenarios to get this far, were flooding in, all of them united as one under the single goal of eliminating 'Kim Dokja'.</p>
 <p class="orv_line">The one to come to his aid was the Great Sage, now one soul and body with him.</p>
-<div class="orv_system"><p>[Constellation, 'Most Ancient Liberator', is unveiling his Status!]</p></div>
+<div class="orv_system"><p>Constellation, 'Most Ancient Liberator', is unveiling his Status!</p></div>
 <p class="orv_line">Another electrical arc haughtily flowed in the air. The Great Sage's own lightning pushed away Zeus', and tore through the sky as if it was paper.</p>
 <p class="orv_line">For a moment there, the Constellations' spirit seemed to wane, but a voice of encouragement resounded out next.</p>
-<div class="orv_constellation"><p>[It's the Great Sage Heaven's Equal!]</p></div>
-<div class="orv_constellation"><p>[Do not back away! Kill him, and the scenario will end!]</p></div>
-<div class="orv_system"><p>[This is the Final Scenario of this world-line!]</p></div>
+<div class="orv_constellation"><p>It's the Great Sage Heaven's Equal!</p></div>
+<div class="orv_constellation"><p>Do not back away! Kill him, and the scenario will end!</p></div>
+<div class="orv_system"><p>This is the Final Scenario of this world-line!</p></div>
 <p class="orv_line">This expectation that they would finally be freed from everything. Among them were faces of Constellations and Incarnations she had seen in passing before.</p>
 <p class="orv_line">"No need to feel guilty here! He chose this for himself!"</p>
 <p class="orv_line">&lt;Olympus&gt;, &lt;Vedas&gt;, &lt;Papyrus&gt;, &lt;Guardian Tree&gt;, &lt;Twelve Earthly Branches&gt;, &lt;Emperor&gt;…</p>
@@ -354,20 +361,20 @@
 <p class="orv_line">From the tip of her toes, this incredible chill crept up all over her body. Maybe, just maybe, Kim Dokja over there right now was the answer to that exact question.</p>
 <p class="orv_line">Tsu-chuchuchut!</p>
 <p class="orv_line">Perhaps, he was thinking about that one method to change the conclusion of this stubborn world of scenarios.</p>
-<div class="orv_system"><p>[Great Dokkaebis are panicking from the deluge of the Probability!]</p></div>
-<div class="orv_system"><p>[&lt;Star Stream&gt; is paying attention at the course of the shaking Probability!]</p></div>
+<div class="orv_system"><p>Great Dokkaebis are panicking from the deluge of the Probability!</p></div>
+<div class="orv_system"><p>&lt;Star Stream&gt; is paying attention at the course of the shaking Probability!</p></div>
 <p class="orv_line">'Scenario' wasn't perfect.</p>
-<div class="orv_system"><p>['Final Scenario' is going through a rapid change!]</p></div>
+<div class="orv_system"><p>'Final Scenario' is going through a rapid change!</p></div>
 <p class="orv_line">It was definitely the author who created the story. However, it was the characters that lived within that very story. And the one that determined their fate was…</p>
-<div class="orv_system"><p>[Korean Peninsula's Constellations are cheering on the 'Demon King of Salvation!]</p></div>
-<div class="orv_system"><p>[&lt;Eden&gt;'s Constellations are cheering on the 'Demon King of Salvation!]</p></div>
-<div class="orv_system"><p>[&lt;Underworld&gt;'s Constellations are cheering on the 'Demon King of Salvation!]</p></div>
-<div class="orv_system"><p>[Constellations of planets with unknown names are cheering on the 'Demon King of Salvation'!]</p></div>
-<div class="orv_system"><p>[Countless Constellations are donating Coins!]</p></div>
-<div class="orv_system"><p>[The absolute majority of the Constellations are watching the 'Demon King of Salvation's' last battle!]</p></div>
+<div class="orv_system"><p>Korean Peninsula's Constellations are cheering on the 'Demon King of Salvation!</p></div>
+<div class="orv_system"><p>&lt;Eden&gt;'s Constellations are cheering on the 'Demon King of Salvation!</p></div>
+<div class="orv_system"><p>&lt;Underworld&gt;'s Constellations are cheering on the 'Demon King of Salvation!</p></div>
+<div class="orv_system"><p>Constellations of planets with unknown names are cheering on the 'Demon King of Salvation'!</p></div>
+<div class="orv_system"><p>Countless Constellations are donating Coins!</p></div>
+<div class="orv_system"><p>The absolute majority of the Constellations are watching the 'Demon King of Salvation's' last battle!</p></div>
 <p class="orv_line">…The ones watching that story.</p>
 <p class="orv_line">Tsu-chuchuchuchut!</p>
-<div class="orv_system"><p>[Many Constellations don't wish for the 'Demon King of Salvation's' death!]</p></div>
+<div class="orv_system"><p>Many Constellations don't wish for the 'Demon King of Salvation's' death!</p></div>
 <p class="orv_line">The only beings that could change the 'scenarios'.</p>
 <p class="orv_line">Kim Dokja hadn't become the 'Enemy of the Story' to die. And he certainly didn't choose sacrifice in order to betray his companions, either.</p>
 <p class="orv_line">⸢The 'Ways of Survival' was Yoo Joonghyuk's story. In that case, whose story was this world?⸥</p>
@@ -383,7 +390,7 @@
 <p class="orv_line">'That guy alone can't do it'.</p>
 <p class="orv_line">Han Sooyoung looked behind her. She needed to let her companions know what exactly Kim Dokja wanted to achieve here.</p>
 <p class="orv_line">Unfortunately, there was something that Han Sooyoung, absorbed in her own attempt at understanding, failed to realize.</p>
-<div class="orv_system"><p>[Story, 'Predictive Plagiarism', is predicting the character's mentality.]</p></div>
+<div class="orv_system"><p>Story, 'Predictive Plagiarism', is predicting the character's mentality.</p></div>
 <p class="orv_line">And that was the fact that not everyone here was an author. Meaning, not everyone could see this situation in an objective manner like her.</p>
 <p class="orv_line">Even before Han Sooyoung could open her mouth, someone among the companions dashed forward first.</p>
 <p class="orv_line">The clear-cut animosity was permeating within the unsheathed blade. Han Sooyoung realized the direction this sword light was aimed at and cried out in pure shock. "Wait!! Hold on!! That guy, he's trying to-!!"</p>
@@ -397,18 +404,12 @@
             <a href="./ch_486"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_488">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="487" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="535" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="486" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="486" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

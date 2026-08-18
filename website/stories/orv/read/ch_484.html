@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 484: Ep. 92 - Final Scenario, III</title>
     <meta property="og:title" content="Ch 484: Ep. 92 - Final Scenario, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00484.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 484: Ep. 92 - Final Scenario, III</h1></div>
 <p class="orv_line">Yoo Joonghyuk's massive announcement caused the crowd to go silent.</p>
@@ -199,7 +206,7 @@
 <div class="orv_image"><img src="../../../assets/images/484 - Supreme King Yoo Joonghyuk, declares his desperate resistance.jpg" alt="" loading="lazy"></div>
 <div class="orv_notice"><p>* Unofficial fan illustration (non-canonical)</p></div>
 <p class="orv_line">⸢&lt;Kim Dokja's Company&gt;'s joint top representative Yoo Joonghyuk, "won't give up on the scenario till the end."⸥</p>
-<p class="orv_line">Incarnations who heard about him being a regressor seemed to be even more excited than ever before. Some shouted out loudly, and the [Industrial Complex] was immediately filled up with the roars of cheering.</p>
+<p class="orv_line">Incarnations who heard about him being a regressor seemed to be even more excited than ever before. Some shouted out loudly, and the <strong>[Industrial Complex]</strong> was immediately filled up with the roars of cheering.</p>
 <p class="orv_line">"Supreme King Yoo Joonghyuk!"</p>
 <p class="orv_line">"Yoo Joonghyuk!! Yoo Joonghyuk!"</p>
 <p class="orv_line">Everyone was now chanting his name.</p>
@@ -219,7 +226,7 @@
 <p class="orv_line">"That's as a writer, not as Han Sooyoung, you know."</p>
 <p class="orv_line">While lightly tapping on the ground with her heel, she lowered her gaze and frowned a little. When she didn't show up, the chanting naturally shifted over to Shin Yoosung's name.</p>
 <p class="orv_line">The companions waving their hands on the venue as seen beyond the curtains came across as famous movie stars in my eyes.</p>
-<div class="orv_system"><p>[Korean Peninsula's Constellations are proud of &lt;Kim Dokja's Company&gt;!]</p></div>
+<div class="orv_system"><p>Korean Peninsula's Constellations are proud of &lt;Kim Dokja's Company&gt;!</p></div>
 <p class="orv_line">While watching them carry on, I spoke up as if to voice my thoughts. "Han Sooyoung?"</p>
 <p class="orv_line">"What is it?"</p>
 <p class="orv_line">"If this world was a novel, which volume do you think we are in right now?"</p>
@@ -287,7 +294,7 @@
 <hr>
 <br>
 <p class="orv_line">Throughout the night, I had been thinking about the Final Scenario.</p>
-<p class="orv_line">I read the excerpts taken from the 'Ways of Survival' that I found essential, and also spoke to Han Sooyoung through [Midday Tryst] as well. It was to use her [Predictive Plagiarism] to predict what might happen to us in the future. When I thought that alone wasn't going to be enough, I exchanged opinions with the 'Secretive Plotter' through Yoo Joonghyuk.</p>
+<p class="orv_line">I read the excerpts taken from the 'Ways of Survival' that I found essential, and also spoke to Han Sooyoung through <strong>[Midday Tryst]</strong> as well. It was to use her <strong>[Predictive Plagiarism]</strong> to predict what might happen to us in the future. When I thought that alone wasn't going to be enough, I exchanged opinions with the 'Secretive Plotter' through Yoo Joonghyuk.</p>
 <p class="orv_line">Unfortunately, it was as if the Plotter was trying to be as obtuse as possible when it came to the matter of Conclusion.</p>
 <div class="orv_outergod"><p>【The path you're about to walk on hasn't been trodden by anyone. Taking cues from other world-lines could become poison for the current you, instead.】</p></div>
 <p class="orv_line">Since I understood what he was saying here, I decided not to query him any further.</p>
@@ -295,21 +302,21 @@
 <p class="orv_line">"She has withdrawn from the Peninsula along with 'Zarathustras' yesterday."</p>
 <p class="orv_line">It'd been nice to get the help from her 'Precognition', but unfortunately, I seemed to have lost that chance.</p>
 <p class="orv_line">Swiiiish!</p>
-<p class="orv_line">The blade of the [Black Heavenly Demon Sword] scythed past the air. About a dozen or so steps away, Yoo Joonghyuk was currently focused on his training. He seemed to be swinging in the exact same pose as before, yet he treated every and each movement with care as if they contained profound meanings. Maybe it was possible for him to repeat all those lives because he was capable of doing something like that.</p>
+<p class="orv_line">The blade of the <strong>[Black Heavenly Demon Sword]</strong> scythed past the air. About a dozen or so steps away, Yoo Joonghyuk was currently focused on his training. He seemed to be swinging in the exact same pose as before, yet he treated every and each movement with care as if they contained profound meanings. Maybe it was possible for him to repeat all those lives because he was capable of doing something like that.</p>
 <p class="orv_line">"Goddammit. What kind of a crappy development is this…"</p>
 <p class="orv_line">Han Sooyoung was also racking her brain trying to guess how the Final Scenario might unfold. However, even she seemed to be stuck, going nowhere fast.</p>
-<p class="orv_line">Even if her [Predictive Plagiarism] was powerful, it wasn't truly omniscient. If that was the case, the 1863rd turn's Han Sooyoung wouldn't have run into so much trouble.</p>
+<p class="orv_line">Even if her <strong>[Predictive Plagiarism]</strong> was powerful, it wasn't truly omniscient. If that was the case, the 1863rd turn's Han Sooyoung wouldn't have run into so much trouble.</p>
 <p class="orv_line">I studied her for a little while before switching on my smartphone. Files appeared on the screen – from the original version of the 'Ways of Survival', to its final revised version.</p>
 <p class="orv_line">– Three Ways to Survive a Ruined World (final revision).txt</p>
 <p class="orv_line">I quietly stared at that file for a long time, before turning the phone off. I didn't want to break the resolution I had been sticking to until now.</p>
 <p class="orv_line">⸢Kim Dok ja.⸥</p>
-<p class="orv_line">I raised my head as [the Fourth Wall] called out to me.</p>
+<p class="orv_line">I raised my head as <strong>[the Fourth Wall]</strong> called out to me.</p>
 <p class="orv_line">'What's up?'</p>
 <p class="orv_line">⸢Ha ving a ha rd ti me?⸥</p>
 <p class="orv_line">I smirked a little at that unexpected line of text.</p>
 <p class="orv_line">I had forgotten about this guy. The one who had stayed the longest with me so far was probably this 'wall', wasn't it?</p>
 <p class="orv_line">'It's fine. I have you'.</p>
-<p class="orv_line">It was all thanks to [The Fourth Wall] that I managed to come this far.</p>
+<p class="orv_line">It was all thanks to <strong>[The Fourth Wall]</strong> that I managed to come this far.</p>
 <p class="orv_line">If this guy didn't alleviate my mental shock during the first scenario, and if it didn't mitigate the physical pain I suffered during the countless life-threatening situations, then I'd have ended up as the wandering ghost of the scenarios a long time ago.</p>
 <p class="orv_line">Tsu-chut, chuchuchut.</p>
 <p class="orv_line">Sparks danced in the air reminiscent of a small child's figure excitedly quivering about. For a very brief moment there, I thought I saw a triumphant face of a little kid above the dancing sparks.</p>
@@ -321,20 +328,20 @@
 <p class="orv_line">⸢Wh at is it?⸥</p>
 <p class="orv_line">It was a question I should've asked a long time ago. However, since I couldn't get any straight answers to begin with, I ended up coming up with all sorts of theories by myself concerning this very question.</p>
 <p class="orv_line">'Just why is the 'Final Wall' exactly?'</p>
-<div class="orv_constellation"><p>[The Fourth Wall remained silent for a bit. I began thinking that it might try to change the topic or filtering might get thrown in my face here. Just how long passed by like that?]</p></div>
+<div class="orv_constellation"><p>The Fourth Wall remained silent for a bit. I began thinking that it might try to change the topic or filtering might get thrown in my face here. Just how long passed by like that?</p></div>
 <p class="orv_line">⸢It's a wa ll wh ere every st ory is writt en on.⸥</p>
 <p class="orv_line">…Was it because the 'Final Scenario' was literally around the corner?</p>
-<p class="orv_line">Although the answer remained just as puzzling, it seemed that [The Fourth Wall] didn't want to hide the information anymore. So, I asked again.</p>
+<p class="orv_line">Although the answer remained just as puzzling, it seemed that <strong>[The Fourth Wall]</strong> didn't want to hide the information anymore. So, I asked again.</p>
 <p class="orv_line">'Let me change the question. What are you exactly? And why do the fragments of the Wall exist?'</p>
 <p class="orv_line">⸢Gu ard ing the pre cious themes, th at is the Wall's du ty.⸥</p>
 <p class="orv_line">Suddenly, I thought of something. The 'Wall of Impossible Communication' Jang Hayoung possessed – when I thought about it, it wasn't just her, was it?</p>
 <p class="orv_line">The important individuals from the 'Ways of Survival' all possessed similar walls. Sakyamuni possessed the 'Wall of Samsara', while Agares and Metatron possessed the 'Wall that Divides Good and Evil'.</p>
 <p class="orv_line">⸢Be cau se, the re is more th an one theme.⸥</p>
 <p class="orv_line">⸢A st ory is a col lec tion of nar rati ves.⸥</p>
-<div class="orv_system"><p>[The Fourth Wall was a fragment of the 'Final Wall'. And the 'fragment' meant that it could potentially be slotted back in its original position.]</p></div>
+<div class="orv_system"><p>The Fourth Wall was a fragment of the 'Final Wall'. And the 'fragment' meant that it could potentially be slotted back in its original position.</p></div>
 <p class="orv_line">In that moment I felt clarity wash over me. If it was as I suspected – if this 'Wall' was the existence protecting the 'Story', then…</p>
 <p class="orv_line">Tsu-chuchuchu…</p>
-<div class="orv_constellation"><p>[The Fourth Wall's figure seemed to waver before my eyes in the air. Then, a library filled with countless bookshelves seemed to glimmer beyond it. I reached out into the air, causing the texts from the books to scatter away.]</p></div>
+<div class="orv_constellation"><p>The Fourth Wall's figure seemed to waver before my eyes in the air. Then, a library filled with countless bookshelves seemed to glimmer beyond it. I reached out into the air, causing the texts from the books to scatter away.</p></div>
 <p class="orv_line">What replaced them, though, was an incredibly ancient and worn-down wall. This thing that reminded me of a prehistoric cave wall, was the 'First Wall'.</p>
 <p class="orv_line">I extended my hand towards this wall that protected me from the cold, the pain, and from various trauma.</p>
 <p class="orv_line">From ancient times, walls were created to protect something.</p>
@@ -349,18 +356,12 @@
             <a href="./ch_483"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_485">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="484" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="532" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="483" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="483" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

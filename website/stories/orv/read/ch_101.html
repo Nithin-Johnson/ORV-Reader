@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 101: Ep. 20 – Disaster of Floods, IV</title>
     <meta property="og:title" content="Ch 101: Ep. 20 – Disaster of Floods, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00101.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 101: Ep. 20 – Disaster of Floods, IV</h1></div>
 <p class="orv_line">The ichthyosaur queen cut through the water. The grandeur of her streamlined body filled Han River. The confused incarnations immediately moved away from Han River.</p>
@@ -202,16 +209,16 @@
 <p class="orv_line">Then my struggle with the queen began. As if she was playing with me, the queen swam through the water regardless of my breathing.</p>
 <p class="orv_line">"Ahah!" I gasped for air, looking like a wet mouse. "This…!"</p>
 <p class="orv_line">The surrounding ichthyosaurs poured towards me like they were amused.</p>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is laughing at you.]</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is laughing at you.</p></div>
 <p class="orv_line">My control was a mess but the queen was moving in the direction I wanted. It was southwest of Yongsan-gu. It was Nodeulseom, one of the few islands in Han River. If I remembered correctly, this island was the place with the most potential for the Disaster of Floods to hatch.</p>
-<div class="orv_quote"><p>「 The fifth disaster hatched on an artificial island in Han River. 」</p></div>
+<div class="orv_quote"><p>The fifth disaster hatched on an artificial island in Han River.</p></div>
 <p class="orv_line">Ways of Survival was a novel where the year wasn't specified.</p>
 <p class="orv_line">Therefore, I didn't know exactly what year Ways of Survival was based on. I thought it was close to the year I lived in but it had been serialized for 10 years and the technology development wasn't right. There was little mention of modern devices in Ways of Survival and sometimes there were no fixed geographical names used.</p>
 <p class="orv_line">This situation was an example.</p>
 <p class="orv_line">'An artificial island in Han River… where the hell is it?</p>
 <p class="orv_line">Nonetheless, I was able to determine that it was Nodeulseom due to the description and the size of the meteorite.</p>
 <p class="orv_line">My thoughts were interrupted by the queen's sudden stop. I rolled down and was thrown on Nodeulseom. Queen Mirabad glanced at me before disappearing into Han River. She was a heartless jerk.</p>
-<div class="orv_system"><p>[The exclusive skill 'Bookmark' has been turned off.]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Bookmark' has been turned off.</p></div>
 <p class="orv_line">"Uweeeek."</p>
 <p class="orv_line">The world turned around as I coughed out the river water. I raised my head and the landscape of Nodeulseom spread out in front of me.</p>
 <p class="orv_line">I had never been to Nodeulseom before but something felt strange. The trees on Nodeulseom looked like they were before the world was ruined.</p>
@@ -271,9 +278,9 @@
 <p class="orv_line">The lieutenant asked, "Is there anyone who needs guidance?"</p>
 <p class="orv_line">"Crazy! A monster!"</p>
 <p class="orv_line">The lieutenant facing the incarnations had tired eyes, like a mountain had piled up on his shoulders. It was a face that looked terribly weary.</p>
-<div class="orv_quote"><p>「 It is hard… . 」</p></div>
-<div class="orv_quote"><p>「 I think I will die… 」</p></div>
-<div class="orv_quote"><p>「 Dokja-ssi, where are you? 」</p></div>
+<div class="orv_quote"><p>It is hard… .</p></div>
+<div class="orv_quote"><p>I think I will die…</p></div>
+<div class="orv_quote"><p>Dokja-ssi, where are you?</p></div>
 <p class="orv_line">"Lee Hyunsung-ssi."</p>
 <p class="orv_line">At that moment, Lee Hyunsung looked at me. His expression was like he found an oasis in the middle of a desert.</p>
 <p class="orv_line">"Dokja… Dokja-ssi?" Lee Hyunsung came towards me. I instinctively took a step back. "D-Dokja-ssi! It's me! Lee Hyunsung!"</p>
@@ -281,7 +288,7 @@
 <p class="orv_line">"There he is! Catch him!"</p>
 <p class="orv_line">Lee Hyunsung's expression distorted. "I… told you it is a danger zone!"</p>
 <p class="orv_line">He turned around and slammed his fist into the ground.</p>
-<div class="orv_system"><p>[The character 'Lee Hyunsung' has used the stigma 'Great Mountain Smash Lv. 5'.]</p></div>
+<div class="orv_system"><p>The character 'Lee Hyunsung' has used the stigma 'Great Mountain Smash Lv. 5'.</p></div>
 <p class="orv_line">The entire island of Nodeulseom shook as the edges exploded. I was captivated by the second scene of incarnations flying. That Yoo Joonghyuk bastard, how did he raise a person?</p>
 <p class="orv_line">I asked the delighted looking Lee Hyunsung, "Where is Yoo Joonghyuk?"</p>
 <p class="orv_line">Lee Hyunsung's expression became slightly sad. "Oh, he is in the middle of the island. That…"</p>
@@ -304,7 +311,7 @@
 <p class="orv_line">Who didn't know this? Yoo Joonghyuk declared with an arrogant expression, "That's why this disaster is safe."</p>
 <p class="orv_line">…Safe? Several thoughts passed through my head.</p>
 <p class="orv_line">…Joonghyuk. Yes. Sometimes he was too naive.</p>
-<div class="orv_system"><p>[The Disaster of Floods has hatched.]</p></div>
+<div class="orv_system"><p>The Disaster of Floods has hatched.</p></div>
 <p class="orv_line">I had forgotten for a while because I received his help several times. This guy in front of me was someone who barely took a step towards the end after dying over one hundred times.</p>
 <br>
 <hr>
@@ -313,18 +320,12 @@
             <a href="./ch_100"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_102">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="101" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="298" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="100" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="100" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

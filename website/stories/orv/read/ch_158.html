@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 158: Ep. 31 - Tomb of the Scenario, II</title>
     <meta property="og:title" content="Ch 158: Ep. 31 - Tomb of the Scenario, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00158.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 158: Ep. 31 - Tomb of the Scenario, II</h1></div>
 <p class="orv_line">He hadn't met Yoo Sangah in a week and she seemed more haggard than before. However, her eyes were more dazzling than usual.</p>
@@ -222,7 +229,7 @@
 <p class="orv_line">So far, the prophecies of Olympus had never been wrong. Even Zeus, the lord of Olympus, couldn't escape from his fate. It was because the moment a prophecy was made, the whole probability of Olympus was used to realize this fate.</p>
 <p class="orv_line">"Please stop Kim Dokja-ssi. Otherwise…" Yoo Sangah couldn't finish her words. The sparks around her body blocked her mouth.</p>
 <p class="orv_line">However, Yoo Joonghyuk could clearly read the strings behind her.</p>
-<div class="orv_quote"><p>「 Incarnation Kim Dokja will be killed by the person he loves most. 」</p></div>
+<div class="orv_quote"><p>Incarnation Kim Dokja will be killed by the person he loves most.</p></div>
 <br>
 <hr>
 <br>
@@ -234,23 +241,23 @@
 <p class="orv_line">Unlike the first floor where a new scenario was in progress, the second floor had a scenario that had been going on for a very long time.</p>
 <p class="orv_line">I could see the appearance of some incarnations in the distance. They were Seoul incarnations who newly entered this floor with us.</p>
 <p class="orv_line">The incarnations didn't react when they saw us. Looking closely, they were receiving guidance from a dokkaebi.</p>
-<div class="orv_constellation"><p>[…Congratulations to all the new incarnations who came to the second floor. The Abyss Plains is an opportunity for you to do anything.]</p></div>
+<div class="orv_constellation"><p>…Congratulations to all the new incarnations who came to the second floor. The Abyss Plains is an opportunity for you to do anything.</p></div>
 <p class="orv_line">It was a dokkaebi with a peculiar tone of voice whom I had never seen before. He had a visibly old appearance. He was a dokkaebi who seemed to have worked for the bureau for a very long time.</p>
 <p class="orv_line">It was natural if he was in charge of the scenario for the Abyss Plains. Demoted dokkaebis were assigned to this scenario.</p>
 <p class="orv_line">I turned on my smartphone and found information on the second floor of Dark Castle in Ways of Survival.</p>
-<div class="orv_quote"><p>「 The Abyss Plains. The dokkaebis call it the tomb of the scenario. 」</p></div>
+<div class="orv_quote"><p>The Abyss Plains. The dokkaebis call it the tomb of the scenario.</p></div>
 <p class="orv_line">…The tomb of the scenario. The words caused me to feel refreshed. I had already come this far.</p>
 <p class="orv_line">Han Sooyoung listened to the dokkaebi and opened her mouth. "Another jerk. What opportunity? He will just adjust the difficulty once he becomes angry."</p>
 <p class="orv_line">It wasn't just her. The other incarnations had become familiar with the dokkaebis and they looked at this one with distrust. This was the ninth scenario and there was no way they would make a fuss about an opportunity.</p>
 <p class="orv_line">The dokkaebi laughed as if he knew what they were thinking.</p>
-<div class="orv_constellation"><p>[Don't worry. There will be no interference from the dokkaebis in this scenario. Regardless of whether the story is interesting or boring, we won't touch it.]</p></div>
+<div class="orv_constellation"><p>Don't worry. There will be no interference from the dokkaebis in this scenario. Regardless of whether the story is interesting or boring, we won't touch it.</p></div>
 <p class="orv_line">The incarnations murmured. to each other So far, the dokkaebis had never said anything like this. They always wanted a more stimulating story. Why were they suddenly not interfering?</p>
 <p class="orv_line">"What the hell are you planning?"</p>
 <p class="orv_line">"What does this mean?"</p>
-<div class="orv_constellation"><p>[I know that you're all tired from the scenario. Still, I am telling you the truth.]</p></div>
-<div class="orv_system"><p>[The updated main scenario has arrived!]</p></div>
+<div class="orv_constellation"><p>I know that you're all tired from the scenario. Still, I am telling you the truth.</p></div>
+<div class="orv_system"><p>The updated main scenario has arrived!</p></div>
 <div class="orv_window">
-<h3 class="orv_window_title">[Main Scenario #9 ― ???]</h3>
+<h3 class="orv_window_title">Main Scenario #9 ― ???</h3>
 <p>Category: Main</p>
 <p>Difficulty: ???</p>
 <p>Clear Conditions: ???</p>
@@ -262,12 +269,12 @@
 <p class="orv_line">"What? Nothing is revealed?"</p>
 <p class="orv_line">"Are you trying to fuck us with a shitty scenario again?"</p>
 <p class="orv_line">The dokkaebi laughed at the incarnation's violent reactions.</p>
-<div class="orv_constellation"><p>[So far, what have you been running for? For your family and friends? To become stronger? Or to reign over others? Each one of you have your own answer. In my opinion, it is all a lie. You came here because you 'followed' the scenario.]</p></div>
+<div class="orv_constellation"><p>So far, what have you been running for? For your family and friends? To become stronger? Or to reign over others? Each one of you have your own answer. In my opinion, it is all a lie. You came here because you 'followed' the scenario.</p></div>
 <p class="orv_line">The eyes of the incarnations were shaken as their recent life was dismissed.</p>
 <p class="orv_line">The dokkaebi continued speaking.</p>
-<div class="orv_constellation"><p>[However, future scenarios will be hard to overcome with such a mind. Passive beings can't survive in the Star Stream. Thus, this scenario won't ask for anything.]</p></div>
+<div class="orv_constellation"><p>However, future scenarios will be hard to overcome with such a mind. Passive beings can't survive in the Star Stream. Thus, this scenario won't ask for anything.</p></div>
 <p class="orv_line">A scenario that didn't require anything. The bodies of the incarnations trembled.</p>
-<div class="orv_constellation"><p>[There is no time limit or failure conditions. There is nothing to fail. You have to find the clear conditions yourself. Only beings who want to tell a story themselves will be able to move forward. Huhu, I wonder how many people will make such a choice? I pray that you won't fall asleep in this 'tomb'.]</p></div>
+<div class="orv_constellation"><p>There is no time limit or failure conditions. There is nothing to fail. You have to find the clear conditions yourself. Only beings who want to tell a story themselves will be able to move forward. Huhu, I wonder how many people will make such a choice? I pray that you won't fall asleep in this 'tomb'.</p></div>
 <p class="orv_line">The dokkaebi disappeared with these words. The incarnations lost their sense of purpose and started making a fuss. It was a bizarre sight.</p>
 <p class="orv_line">This was more peaceful than any scenario so far but the incarnations seemed somewhat uneasy. It was like people were happier when there was an impossible goal.</p>
 <p class="orv_line">Lee Hyunsung asked, "Dokja-ssi? What is this?"</p>
@@ -324,12 +331,12 @@
 <p class="orv_line">…A safe place? The discomfort inside me increased.</p>
 <p class="orv_line">The incarnations were bewitched by Jung Heewon's overwhelming force and followed her. We also followed her. We spent approximately one hour crossing the plains. Then a high wall hidden in a forest was revealed.</p>
 <p class="orv_line">It was a solid wall that no demon species could surpass. The incarnations were captivated by the sight when a voice came from somewhere.</p>
-<div class="orv_constellation"><p>[Welcome. Was it difficult to come here? Thank you for the trouble. Now you are safe.]</p></div>
+<div class="orv_constellation"><p>Welcome. Was it difficult to come here? Thank you for the trouble. Now you are safe.</p></div>
 <p class="orv_line">The incarnations murmured. Jung Heewon was staring at me with a complicated gaze.</p>
 <p class="orv_line">At this moment, I realized what happened. Dammit. I see. This place was 'that guy's fortress'.</p>
 <p class="orv_line">A man appeared on top of the parapet. He gave off a powerful atmosphere that made it clear he was the owner of this place.</p>
 <p class="orv_line">The demon, who embraced the most peaceful despair in the world, laughed as he looked down at us.</p>
-<div class="orv_constellation"><p>[You no longer have to complete the scenarios.]</p></div>
+<div class="orv_constellation"><p>You no longer have to complete the scenarios.</p></div>
 <br>
 <hr>
         </article>
@@ -337,18 +344,12 @@
             <a href="./ch_157"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_159">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="158" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="143" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="157" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="157" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

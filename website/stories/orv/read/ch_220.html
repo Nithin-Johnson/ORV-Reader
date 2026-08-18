@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 220: Ep. 41 - Real Revolutionary, VI</title>
     <meta property="og:title" content="Ch 220: Ep. 41 - Real Revolutionary, VI" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,72 +177,72 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00220.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 220: Ep. 41 - Real Revolutionary, VI</h1></div>
 <p class="orv_line">The body of the giant soldier appeared with a loud roar. In the original novel, it was the weapon of the Underworld King but in the second half, Yoo Joonghyuk started using it in earnest. The ultimate weapon that struck the giant in the myths was summoned in front of me by the probability I shared with the Great Sage Heaven's Equal.</p>
 <p class="orv_line">Blood flowed as I looked up at Pluto with a messy and shaky vision.</p>
-<div class="orv_system"><p>[Your incarnation body has reached its limit!]</p></div>
-<div class="orv_system"><p>[Your incarnation body has reached its limit!]</p></div>
+<div class="orv_system"><p>Your incarnation body has reached its limit!</p></div>
+<div class="orv_system"><p>Your incarnation body has reached its limit!</p></div>
 <p class="orv_line">Shut up. I had to maintain consciousness. At least, until I gave a command to him.</p>
-<div class="orv_constellation"><p>[What? Where is this?]</p></div>
+<div class="orv_constellation"><p>What? Where is this?</p></div>
 <p class="orv_line">Then I heard a voice. It was obviously a voice I had once heard before. This guy used his 'soul' as the last ingredient. I called the guy's name. "Kim Namwoon."</p>
 <p class="orv_line">Then Pluto's thick body looked this way.</p>
-<div class="orv_constellation"><p>[…Subway grasshopper?]</p></div>
+<div class="orv_constellation"><p>…Subway grasshopper?</p></div>
 <p class="orv_line">"…That's right."</p>
 <p class="orv_line">Kim Namwoon laughed as if he realized everything.</p>
-<div class="orv_constellation"><p>[Hahaha! What, did you really use those starting words?]</p></div>
+<div class="orv_constellation"><p>Hahaha! What, did you really use those starting words?</p></div>
 <p class="orv_line">The starting words to summon the giant soldier were given to me by Kim Namwoon.</p>
 <p class="orv_line">–Understood? I will use these starting words so remember them well. If you call it properly, I might be able to help you once.</p>
 <p class="orv_line">I didn't know if he would really use those words as the starting word. However, his personality didn't change just because he died.</p>
 <p class="orv_line">"You entered it directly."</p>
-<div class="orv_constellation"><p>[Hahaha, of course! I like this feeling!]</p></div>
+<div class="orv_constellation"><p>Hahaha, of course! I like this feeling!</p></div>
 <p class="orv_line">Originally, all souls planted in the giant soldier were overseen by the main system. Now Kim Namwoon planted his own soul in the software of the giant soldier.</p>
-<div class="orv_constellation"><p>[Okay, it is a special service. Take a look ahjussi. I'll give you a good show.]</p></div>
+<div class="orv_constellation"><p>Okay, it is a special service. Take a look ahjussi. I'll give you a good show.</p></div>
 <p class="orv_line">"I'm sorry but I don't have the strength to do so…"</p>
-<div class="orv_constellation"><p>[What? Why is that?]</p></div>
+<div class="orv_constellation"><p>What? Why is that?</p></div>
 <p class="orv_line">I lifted my finger without any strength and pointed somewhere. Pluto's gaze followed my finger and its mouth moved curiously. I opened my mouth, "Finish it."</p>
 <p class="orv_line">The probability allowed me to summon the giant soldier for less than a minute. There was probably only 30 seconds left.</p>
 <p class="orv_line">The fear-stricken Duke was moving the Factory this way.</p>
-<div class="orv_constellation"><p>[T-This is impossible! Why, why is the real giant soldier…!]</p></div>
+<div class="orv_constellation"><p>T-This is impossible! Why, why is the real giant soldier…!</p></div>
 <p class="orv_line">The fiercely rotating grinder struck Pluto's outer shell.</p>
-<div class="orv_constellation"><p>[What is this crappy toy?]</p></div>
+<div class="orv_constellation"><p>What is this crappy toy?</p></div>
 <p class="orv_line">The grinder that the duke was proud of was torn down with a simple swing of its hand.</p>
 <p class="orv_line">It was a light hand gesture like tearing a piece of paper.</p>
-<div class="orv_constellation"><p>[Did you call me to destroy something like this? It is really too much.]</p></div>
+<div class="orv_constellation"><p>Did you call me to destroy something like this? It is really too much.</p></div>
 <p class="orv_line">…There were 25 seconds until the summoning was cancelled.</p>
-<div class="orv_constellation"><p>[How annoying.]</p></div>
+<div class="orv_constellation"><p>How annoying.</p></div>
 <p class="orv_line">Pluto was moving steadily despite the complaints.</p>
 <p class="orv_line">20 seconds. It smashed the arms of the Factory with an outstretched fist.</p>
 <p class="orv_line">15 seconds. The hand sword completely paralyzed the operations of the Factory.</p>
 <p class="orv_line">10 seconds. A simple kick smashed the main power unit of the Factory.</p>
 <p class="orv_line">The fearsome Factory that ate a tremendous amount of stories sank down. It was impossible to know if the duke inside the Factory was dead or alive. Pluto's body turned towards me.</p>
-<div class="orv_constellation"><p>[Is it over now? Haha, then what now?]</p></div>
+<div class="orv_constellation"><p>Is it over now? Haha, then what now?</p></div>
 <p class="orv_line">"…"</p>
-<div class="orv_constellation"><p>[Ahjussi. Now you are stuck with me…]</p></div>
+<div class="orv_constellation"><p>Ahjussi. Now you are stuck with me…</p></div>
 <p class="orv_line">Then a tremendous probability storm swept over Pluto. Kim Namwoon's voice was buried by a roaring sound that seemed to rip apart time and space. The body of Giant Soldier Pluto started to disappear into powder like it was vaporized. The probability was exhausted and it was forced to return.</p>
 <p class="orv_line">…One second.</p>
-<div class="orv_constellation"><p>[Damn. Underworld, I…]</p></div>
+<div class="orv_constellation"><p>Damn. Underworld, I…</p></div>
 <p class="orv_line">That damn jerk. I'm not going back there, you idiot.</p>
-<div class="orv_system"><p>[The summoning of 'Giant Soldier Pluto' has been released.]</p></div>
+<div class="orv_system"><p>The summoning of 'Giant Soldier Pluto' has been released.</p></div>
 <p class="orv_line">The giant soldier disappeared but people still couldn't react. The majority of citizens were stunned from shock and those who managed to open their eyes were already crazy. It was natural. The incarnations here had witnessed the greatest god of death in this world.</p>
 <p class="orv_line">I turned my head and looked at the wreckage of the Factory. The outer shell that wasn't damaged by my Electrification was now a mess, like it had been hit by a fierce beast. There were no movements from the Factory since its joints were broken and the power part was destroyed. It had been destroyed by the giant soldier in less than 30 seconds.</p>
 <p class="orv_line">I slowly climbed up the Factory and found the person sitting in the cockpit. The lid of the cockpit was cracked open and the demon sitting there was bloody.</p>
@@ -247,15 +254,15 @@
 <p class="orv_line">"…The duke?"</p>
 <p class="orv_line">"He is dead."</p>
 <p class="orv_line">Then the system messages came up.</p>
-<div class="orv_system"><p>[Demon Duke Syswitz has been defeated.]</p></div>
-<div class="orv_system"><p>[200,000 coins have been acquired.]</p></div>
+<div class="orv_system"><p>Demon Duke Syswitz has been defeated.</p></div>
+<div class="orv_system"><p>200,000 coins have been acquired.</p></div>
 <p class="orv_line">I weakly laughed. However, it wasn't yet time to relax.</p>
-<div class="orv_system"><p>[You have defeated the 'ruler' of the industrial complex.]</p></div>
-<div class="orv_system"><p>[You aren't a 'revolutionary'.]</p></div>
-<div class="orv_system"><p>[The normal scenario route wasn't followed and the 'ruler' inheritance has been cancelled.]</p></div>
-<div class="orv_system"><p>[The inheritance is automatically transferred to the most prestigious person in the current scenario.]</p></div>
-<div class="orv_system"><p>[The current 'hidden scenario' is in progress.]</p></div>
-<div class="orv_system"><p>[Kill the 'real revolutionary' to enter the main scenario.]</p></div>
+<div class="orv_system"><p>You have defeated the 'ruler' of the industrial complex.</p></div>
+<div class="orv_system"><p>You aren't a 'revolutionary'.</p></div>
+<div class="orv_system"><p>The normal scenario route wasn't followed and the 'ruler' inheritance has been cancelled.</p></div>
+<div class="orv_system"><p>The inheritance is automatically transferred to the most prestigious person in the current scenario.</p></div>
+<div class="orv_system"><p>The current 'hidden scenario' is in progress.</p></div>
+<div class="orv_system"><p>Kill the 'real revolutionary' to enter the main scenario.</p></div>
 <p class="orv_line">…It was as expected. Killing the duke didn't allow me to enter the scenario. I sold the name of Yoo Joonghyuk so maybe Yoo Joonghyuk was given the inheritance rights to the industrial complex.</p>
 <p class="orv_line">"…What is my status?"</p>
 <p class="orv_line">Aileen bit her lips as she repaired my story. "It's okay. I'll fix it."</p>
@@ -277,39 +284,39 @@
 <p class="orv_line">"Still, you came out and fought hard."</p>
 <p class="orv_line">Aileen watched me for a moment before turning her head. I could tell what expression she was making without looking.</p>
 <p class="orv_line">"Don't cry. I'm not going to die." I laughed without strength.</p>
-<div class="orv_quote"><p>「 Kim Dokja thought: If I kill the revolutionary here, the stories I've accumulated will be meaningless. 」</p></div>
+<div class="orv_quote"><p>Kim Dokja thought: If I kill the revolutionary here, the stories I've accumulated will be meaningless.</p></div>
 <p class="orv_line">There would be a method even if I didn't become the 'revolutionary'. It had always been this way so far. "Aileen. Didn't I ask you something before? The thing I asked you to make…"</p>
 <p class="orv_line">Aileen pulled something out. It was a rectangular communication device equipped with a panel. It was the smartphone I asked her to produce.</p>
 <p class="orv_line">"Turn it on please…"</p>
 <p class="orv_line">The panel turned on and a message automatically appeared.</p>
-<div class="orv_system"><p>[You have acquired a new device. Synchronization has started.]</p></div>
+<div class="orv_system"><p>You have acquired a new device. Synchronization has started.</p></div>
 <p class="orv_line">The synchronization finished and as expected, a file was created on the desktop. My eyes were still blurred and I couldn't see properly, but it was obviously the text of Ways of Survival.</p>
-<div class="orv_quote"><p>「 Kim Dokja thought: I am a 'reader'. All the answers are here. 」</p></div>
+<div class="orv_quote"><p>Kim Dokja thought: I am a 'reader'. All the answers are here.</p></div>
 <p class="orv_line">I somehow opened my eyes and looked at the text. However, my vision was blurred and I couldn't see. I had to find a way to break through this situation by reading Ways of Survival but funnily enough, I couldn't read it.</p>
-<div class="orv_quote"><p>「 Kim Dokja thought for the first time. 」</p></div>
+<div class="orv_quote"><p>Kim Dokja thought for the first time.</p></div>
 <p class="orv_line">…Dammit.</p>
-<div class="orv_quote"><p>「 This is the end. 」</p></div>
+<div class="orv_quote"><p>This is the end.</p></div>
 <p class="orv_line">At last, even Aileen's face was blurred.</p>
-<div class="orv_system"><p>[The hidden scenario 'Self-Proclaimed Revolutionary' has been cleared.]</p></div>
+<div class="orv_system"><p>The hidden scenario 'Self-Proclaimed Revolutionary' has been cleared.</p></div>
 <p class="orv_line">It was an auditory hallucination.</p>
-<div class="orv_system"><p>[You have become a revolutionary.]</p></div>
+<div class="orv_system"><p>You have become a revolutionary.</p></div>
 <p class="orv_line">I definitely thought it was a hallucination.</p>
-<div class="orv_system"><p>[Congratulations. You have officially entered the main scenario.]</p></div>
-<div class="orv_system"><p>[The exile penalty has ended.]</p></div>
-<div class="orv_system"><p>[Your incarnation body has automatically started to recover.]</p></div>
-<div class="orv_system"><p>[Your collapsing stories are recovering.]</p></div>
+<div class="orv_system"><p>Congratulations. You have officially entered the main scenario.</p></div>
+<div class="orv_system"><p>The exile penalty has ended.</p></div>
+<div class="orv_system"><p>Your incarnation body has automatically started to recover.</p></div>
+<div class="orv_system"><p>Your collapsing stories are recovering.</p></div>
 <p class="orv_line">It was impossible. My five senses were returning and my faded vision started to reappear. I looked around with wide eyes. Aileen was safe. Jang Hayoung and Mark were the same. None of them were dead. Then why…?</p>
 <p class="orv_line">This wasn't the end.</p>
-<div class="orv_system"><p>[The name 'Kim Dokja' is being widely spread in the 73rd Demon Realm.]</p></div>
-<div class="orv_system"><p>[All the demons in the Gilobat Complex are afraid of your name.]</p></div>
-<div class="orv_system"><p>[The citizens of the Gilobat Industrial Complex have joined your revolution.]</p></div>
+<div class="orv_system"><p>The name 'Kim Dokja' is being widely spread in the 73rd Demon Realm.</p></div>
+<div class="orv_system"><p>All the demons in the Gilobat Complex are afraid of your name.</p></div>
+<div class="orv_system"><p>The citizens of the Gilobat Industrial Complex have joined your revolution.</p></div>
 <p class="orv_line">I thought I heard wrongly for a moment.</p>
 <p class="orv_line">…The Gilobat Industrial Complex? This… it wasn't the Syswitz Industrial Complex?</p>
-<div class="orv_system"><p>[A group of people who consider 'Kim Dokja' a hero have appeared in the Gilobat Industrial Complex.]</p></div>
+<div class="orv_system"><p>A group of people who consider 'Kim Dokja' a hero have appeared in the Gilobat Industrial Complex.</p></div>
 <p class="orv_line">The Gilobat Industrial Complex was quite a distance from the Syswitz Industrial Complex. There was no way my name would resonate there. I listened to the explosive messages and thought about some faint possibilities. Even so, the possibilities were too dim.</p>
-<div class="orv_system"><p>[Someone has killed the 'ruler' of the Gilobat Industrial Complex!]</p></div>
-<div class="orv_system"><p>[You are currently the most prestigious person in the Gilobat Industrial Complex.]</p></div>
-<div class="orv_system"><p>[Due to the scenario possibility, you have become the owner of the Gilobat Industrial Complex.]</p></div>
+<div class="orv_system"><p>Someone has killed the 'ruler' of the Gilobat Industrial Complex!</p></div>
+<div class="orv_system"><p>You are currently the most prestigious person in the Gilobat Industrial Complex.</p></div>
+<div class="orv_system"><p>Due to the scenario possibility, you have become the owner of the Gilobat Industrial Complex.</p></div>
 <p class="orv_line">This was impossible. It was something that couldn't happen.</p>
 <p class="orv_line">"Haha…"</p>
 <p class="orv_line">There was a flustered laugh as relief spread from deep inside my heart. I wonder why. I glanced at Aileen's wrist watch at this moment.</p>
@@ -319,7 +326,7 @@
 <p class="orv_line">"Huh? What are you saying?"</p>
 <p class="orv_line">I smiled and said, "The real Yoo Joonghyuk came."</p>
 <p class="orv_line">I couldn't see or hear it but I could feel it. That person was definitely in this world. The guy who slaughtered a strong demon with the Splitting the Sky Sword had arrived from beyond the horizon. I was lost in these wild feelings and forgot about my smartphone.</p>
-<div class="orv_quote"><p>「 Perhaps Kim Dokja should've checked the smartphone first. 」</p></div>
+<div class="orv_quote"><p>Perhaps Kim Dokja should've checked the smartphone first.</p></div>
 <p class="orv_line">I heard the Fourth Wall's words and reflexively picked up the fallen phone. As usual, the title of the text file appeared on the screen. Then I realized something and a corner of my heart was frightened. Something had been altered. To be exact, there were strange words attached to the title of the txt file.</p>
 <p class="orv_line">–Three Ways to Survive in a Ruined World (1st Revision).txt</p>
 <br>
@@ -329,18 +336,12 @@
             <a href="./ch_219"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_221">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="220" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="251" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="219" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="219" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 472: Ep. 90 - One Person, I</title>
     <meta property="og:title" content="Ch 472: Ep. 90 - One Person, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,29 +177,29 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00472.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 472: Ep. 90 - One Person, I</h1></div>
 <p class="orv_line">The forged steel expanded and protected both me and Lee Jihye.</p>
-<div class="orv_system"><p>[Constellation, 'Master of Steel' is revealing his Status.]</p></div>
+<div class="orv_system"><p>Constellation, 'Master of Steel' is revealing his Status.</p></div>
 <p class="orv_line">Lee Hyunsung's Sponsor was the original 'Master of Steel'. However, he was killed off during the &lt;Oz&gt; incident the last time. Before that, though, he managed to successfully hand his Modifier over to someone else.</p>
 <div class="orv_outergod"><p>【King of the Silver Heart.】</p></div>
 <p class="orv_line">The King of the Silver Heart, that was the new 'Master of Steel'. He was yet another existence who witnessed the 999th turn's Conclusion, alongside the 'Master of the Sunken Island'.</p>
@@ -210,9 +217,12 @@
 <p class="orv_line">The 'King of the Silver Heart' stared at me next. I couldn't decipher the emotions contained within his gaze.</p>
 <div class="orv_outergod"><p>【This is my rule, Jihye-yah. To prevent the re-enactment of the 999th turn's tragedy.】</p></div>
 <div class="orv_outergod"><p>【What rubbish are you talking about? Is 'rules' something you can easily change on a whim like flipping your hand around??】</p></div>
-<div class="orv_outergod"><p>【I've heard several stories from my Sponsor who used to live this world-line. In some ways… this world-line could very well be the one we've been searching for. The 'King of the Silver Heart' was glowing coldly as he spoke. The world-line where the 'end' of everything could be witnessed.】</p></div>
-<p class="orv_line">Those words caused the 999th turn's Lee Jihye to hesitate. 【Such a world-line can't exist. Besides, this world-line is about to end, anyway. Even if you interfere, even if I stop…】</p>
-<p class="orv_line">It seemed that the 'King of the Silver Heart' chose not to become the calamity of the 'Great Apocalypse'. I expected something like that, though. If he really was thinking of harming us, then he'd have done so back in the &lt;Oz&gt;.</p>
+<div class="orv_outergod"><p>【I've heard several stories from my Sponsor who used to live this world-line. In some ways… this world-line could very well be the one we've been searching for.】</p></div>
+<p class="orv_line">The 'King of the Silver Heart' was glowing coldly as he spoke. </p>
+<div class="orv_outergod"><p>【The world-line where the 'end' of everything could be witnessed.】</p></div>
+<p class="orv_line">Those words caused the 999th turn's Lee Jihye to hesitate. </p>
+<div class="orv_outergod"><p>【Such a world-line can't exist. Besides, this world-line is about to end, anyway. Even if you interfere, even if I stop…】</p></div>
+<p class="orv_line">It seemed that the 'King of the Silver Heart' chose not to become the calamity of the 'Great Apocalypse'. I expected something like that, though. If he really was thinking of harming us, then he'd have done so back in &lt;Oz&gt;.</p>
 <p class="orv_line">And since I knew that, I decided to bring our Lee Hyunsung here. As a final hidden card prepared for that one off-chance.</p>
 <div class="orv_outergod"><p>【These people aren't that weak. Uriel alone won't make it.】</p></div>
 <p class="orv_line">The 'King of the Silver Heart' ended his words there. The 'Master of the Sunken Island' then replied, her empty, wandering eyes staring at the distant horizon. But then, life returned to her eyes right next moment, with an expression of someone who saw something quite unpleasant.</p>
@@ -239,12 +249,14 @@
 <p class="orv_line">The flame extinguishment – that was the mission the first team was tasked with. Han Sooyoung recalled the last words Kim Dokja said to her before he disembarked.</p>
 <p class="orv_line">– Don't kill her. She's also 'Uriel'.</p>
 <p class="orv_line">…That damn Kim Dokja. He wanted them to subdue such a thing without killing it??</p>
-<p class="orv_line">The silence continued and the 'Living Flame' narrowed her eyes. 【If you aren't going to answer…】</p>
+<p class="orv_line">The silence continued and the 'Living Flame' narrowed her eyes. </p>
+<div class="orv_outergod"><p>【If you aren't going to answer…】</p></div>
 <p class="orv_line">"Yoo Sangah!"</p>
 <p class="orv_line">The signal was given and Yoo Sangah extended her arms out. As her Buddhist robe wavered gently, a gigantic Mandala spun around behind her and it shot towards the sun. The strongest debuff skill &lt;Kim Dokja's Company&gt; currently possessed was activated.</p>
-<div class="orv_system"><p>[Story, 'Hour of Mandala', is activating!]</p></div>
+<div class="orv_system"><p>Story, 'Hour of Mandala', is activating!</p></div>
 <p class="orv_line">It was really negligible, but the movement of the sun had become just a little slower.</p>
-<p class="orv_line">The 999th turn's Uriel muttered out. 【…Interfering with time and space? Is Sakyamuni in this place? I haven't sensed his aura, though?】</p>
+<p class="orv_line">The 999th turn's Uriel muttered out. </p>
+<div class="orv_outergod"><p>【…Interfering with time and space? Is Sakyamuni in this place? I haven't sensed his aura, though?】</p></div>
 <p class="orv_line">Ku-dudududu!</p>
 <p class="orv_line">She clenched her fist and the space-time of the surrounding world shook powerfully as if it'd shatter at any moment.</p>
 <p class="orv_line">Blood leaked out of Yoo Sangah's lips. "This is the best I can do!"</p>
@@ -256,59 +268,63 @@
 <p class="orv_line">"Why don't you try to block this, too!"</p>
 <p class="orv_line">That voice came from right beside her, and the 999th turn's Uriel reflexively swung her sword.</p>
 <p class="orv_line">Claaaaaaaang!!</p>
-<div class="orv_constellation"><p>[Flames of Retribution and Judge's Sword collided.]</p></div>
+<p class="orv_line">Flames of Retribution and Judge's Sword collided.</p>
 <p class="orv_line">Just one collision and Jung Heewon had to retreat while vomiting out blood.</p>
-<div class="orv_system"><p>[Incarnation 'Jung Heewon' is currently activating 'Hour of Judgement'!]</p></div>
+<div class="orv_system"><p>Incarnation 'Jung Heewon' is currently activating 'Hour of Judgement'!</p></div>
 <div class="orv_outergod"><p>【The Hour of Judgement? How are you using that technique against me?】</p></div>
 <p class="orv_line">"Who knows?"</p>
-<p class="orv_line">The [Hellfire] covered Jung Heewon's sword, and the wings of Archangel spread out from behind her back. The 999th turn's Uriel confirmed them and her expression hardened as she unleashed her Status.</p>
+<p class="orv_line">The <strong>[Hellfire]</strong> covered Jung Heewon's sword, and the wings of Archangel spread out from behind her back. The 999th turn's Uriel confirmed them and her expression hardened as she unleashed her Status.</p>
 <div class="orv_outergod"><p>【…So, you are my Incarnation.】</p></div>
 <p class="orv_line">As if to oppose that statement, the power of the Constellation emanated from Jung Heewon's body as well.</p>
-<div class="orv_constellation"><p>[Heewon-ie is my Incarnation, not yours!]</p></div>
+<div class="orv_constellation"><p>Heewon-ie is my Incarnation, not yours!</p></div>
 <p class="orv_line">Two Uriels unleashed their Statuses at each other and began colliding.</p>
 <p class="orv_line">The first exchange, then the second; as the collision increased in frequency, Jung Heewon's expression quickly grew more and more agitated.</p>
 <p class="orv_line">"What kind of power is…!"</p>
 <div class="orv_outergod"><p>【I won't get fooled by those ridiculous memories again like the last time.】</p></div>
-<p class="orv_line">Jung Heewon was forced to go on the defensive in an instant, leading Uriel to urgently shout out. [■ck! Are you just going to watch and do nothing?!]</p>
-<p class="orv_line">Almost at the same time, jet-black flames sneak-attacked the 999th turn's Uriel on her back. The 'Living Flame' frowned heavily and spoke up. 【The Black Flame Dragon.】</p>
-<p class="orv_line">The Black Flame Dragon shouted out triumphantly, the bandages unwrapped from both of his arms now. [Kekeke. How did that feel, you stinking Angel!]</p>
+<p class="orv_line">Jung Heewon was forced to go on the defensive in an instant, leading Uriel to urgently shout out. </p>
+<div class="orv_constellation"><p>■ck! Are you just going to watch and do nothing?!</p></div>
+<p class="orv_line">Almost at the same time, jet-black flames sneak-attacked the 999th turn's Uriel on her back. The 'Living Flame' frowned heavily and spoke up.</p>
+<div class="orv_outergod"><p>【The Black Flame Dragon.】</p></div>
+<p class="orv_line">The Black Flame Dragon shouted out triumphantly, the bandages unwrapped from both of his arms now.</p>
+<div class="orv_constellation"><p>Kekeke. How did that feel, you stinking Angel!</p></div>
 <p class="orv_line">The Absolute Good and the Absolute Evil. Two Narrative-grade Constellations who used to be sworn enemies once upon a time were fighting together in order to stop this calamity.</p>
-<p class="orv_line">The [Hellfire] and [Black Flame] bore down on the army of the sun. And as she was bathed in the storm of blinding light rays, Han Sooyoung quietly shuddered.</p>
+<p class="orv_line">The <strong>[Hellfire]</strong> and <strong>[Black Flame]</strong> bore down on the army of the sun. And as she was bathed in the storm of blinding light rays, Han Sooyoung quietly shuddered.</p>
 <p class="orv_line">'…So strong'.</p>
 <p class="orv_line">With just one hand, the 'Living Flame' was fighting against those two powerful Constellations. This opponent couldn't be pushed back even when the two of them combined their strengths.</p>
 <div class="orv_outergod"><p>【Me of this turn only amounts to this much? Where is &lt;Eden&gt;? Why are you fighting alongside these people?】</p></div>
-<div class="orv_constellation"><p>[■ck, Eden has been destroyed already!!]</p></div>
+<div class="orv_constellation"><p>■ck, Eden has been destroyed already!!</p></div>
 <div class="orv_outergod"><p>【…&lt;Eden&gt; is no more? And you wish to confront me without the blessing of the Nebula?】</p></div>
 <p class="orv_line">The Living Flame then turned her head away as if to indicate that she had no more reason to fight these two. The sun's rays seemed to grow even stronger, then some things began crawling out from the intense heat. They were 'Outer Gods' that followed her. An army numbering several thousand was waiting for her command.</p>
 <div class="orv_outergod"><p>【Go. Find the 'Secretive Plotter'.】</p></div>
 <p class="orv_line">Their march began. Countless 'Nameless Ones' possessing burning wings began descending to the world below. At this rate, the whole of the Korean Peninsula might get swept aside in an instant.</p>
-<div class="orv_system"><p>[Incarnation 'Shin Yoosung' is activating 'Superlative Diverse Communication Lv.???'!]</p></div>
+<div class="orv_system"><p>Incarnation 'Shin Yoosung' is activating 'Superlative Diverse Communication Lv.???'!</p></div>
 <p class="orv_line">Shin Yoosung made her move.</p>
 <p class="orv_line">Countless aquatic creatures burst out of the ocean's surface and leapt up to bite the ankles of the 'Nameless Ones' before dragging them down.</p>
 <p class="orv_line">Then, the Master of the Armed Fortress, Gong Pildu joined her as well. Automated turrets installed atop the defensive walls began spitting out licks of flames, and the Nameless Ones turning into Swiss cheese all screamed in pain.</p>
-<p class="orv_line">The 999th turn's Uriel spoke up. 【You even accepted such an evil man as your companion? How pathetic.】</p>
-<p class="orv_line">The 'Nameless Ones' continued to march towards unfazed towards Gong Pildu's fortress. And just as one of the outer walls was about to be destroyed by the constant attacks of the Outer Gods, Han Sooyoung cried out.</p>
+<p class="orv_line">The 999th turn's Uriel spoke up. </p>
+<div class="orv_outergod"><p>【You even accepted such an evil man as your companion? How pathetic.】</p></div>
+<p class="orv_line">The 'Nameless Ones' continued to march unfazed towards Gong Pildu's fortress. And just as one of the outer walls was about to be destroyed by the constant attacks of the Outer Gods, Han Sooyoung cried out.</p>
 <p class="orv_line">"Lee Gilyoung!"</p>
 <p class="orv_line">As if he was waiting for that, Lee Gilyoung immediately appeared above the wall. Jet-black Status was tightly wrapped around the boy as he roared out to the sky. When he did, yellowish clouds rushed in from somewhere and covered up the heavens above. It was only for a moment, but this new army was vast enough to hide that white-hot star.</p>
-<div class="orv_system"><p>[Constellation, 'Ruler of the Deepest Pit', is baring its white fangs.]</p></div>
+<div class="orv_system"><p>Constellation, 'Ruler of the Deepest Pit', is baring its white fangs.</p></div>
 <div class="orv_outergod"><p>【…Demon God Abaddon? Why is a bastard like you here??】</p></div>
 <p class="orv_line">Surprised by an unexpected enemy's entrance, the 999th turn's Uriel growled menacingly.</p>
 <p class="orv_line">With Shin Yoosung and Gong Pildu, and now also Lee Gilyoung added to the mix, the battle had finally become evenly-matched. Abaddon's yellow locust swarm threw themselves at the 'Nameless Ones' and blocked them.</p>
-<div class="orv_constellation"><p>[Gah-aaaaaah!!]</p></div>
-<p class="orv_line">The Nameless Ones writhed in pain. The 999th Uriel furrowed her brows. While easily defending against the Archangel Uriel and the Black Flame Dragon's combined assault with only one hand, she began concentrating magical energy on the other. She was planning to break through the encirclement with her own [Hellfire].</p>
+<div class="orv_constellation"><p>Gah-aaaaaah!!</p></div>
+<p class="orv_line">The Nameless Ones writhed in pain. The 999th Uriel furrowed her brows. While easily defending against the Archangel Uriel and the Black Flame Dragon's combined assault with only one hand, she began concentrating magical energy on the other. She was planning to break through the encirclement with her own <strong>[Hellfire]</strong>.</p>
 <p class="orv_line">However, there was someone here capable of reading her thoughts first.</p>
 <p class="orv_line">"Now! Attack!"</p>
 <p class="orv_line">Han Sooyoung's signal prompted a lengthy scythe to leap out from the surface of the deep ocean.</p>
 <p class="orv_line">Accompanied by the slicing noise, a huge wound was inflicted on the former Archangel's wing. White feathers scattered alongside the Story of the other world.</p>
 <div class="orv_outergod"><p>【King of the &lt;Underworld&gt;…!】</p></div>
 <p class="orv_line">For the first time ever, the expression of the 999th turn's Uriel had completely stiffened.</p>
-<div class="orv_system"><p>[Nebula, &lt;Underworld&gt;, is releasing the stored-up Story!]</p></div>
+<div class="orv_system"><p>Nebula, &lt;Underworld&gt;, is releasing the stored-up Story!</p></div>
 <p class="orv_line">Hades and the portion of &lt;Underworld&gt;'s elite forces crossed over using a portal. Which included the three Judges as well as Persephone.</p>
 <p class="orv_line">The 'Nameless Ones' guarding the sun were brought down, and the &lt;Underworld&gt;'s Status began pressuring the 999th turn's Uriel. However, she steadfastly withstood it.</p>
 <p class="orv_line">The Incarnations of Sakyamuni and the Archangel Uriel, as well as the Abyssal Black Flame Dragon. And on top of that, the Myth-grade Constellation Hades, too. Even though one of her wings was torn from a sneak attack, and she was currently subjected under the combat force of a fairly-strong Nebula as well, she was not being pushed back at all.</p>
 <p class="orv_line">No, it seemed that she was actually searching for an opportunity to overturn this situation, instead.</p>
 <p class="orv_line">"What are you waiting for?! Hurry up and join them!"</p>
-<div class="orv_system"><p>[Constellation, 'Most Ancient Liberator', lazily makes his move as if he finds this whole affair bothersome.]</p></div>
+<div class="orv_system"><p>Constellation, 'Most Ancient Liberator', lazily makes his move as if he finds this whole affair bothersome.</p></div>
 <p class="orv_line">Ku-gugugugu!</p>
 <p class="orv_line">Gloomy clouds rolled in just above the yellow-coloured clouds. Lightning emitting an ominous bluish glow suddenly crashed down to the ocean below without holding back.</p>
 <p class="orv_line">The heavens breathlessly flickered; a figure of an aloof Constellation was revealed in between the lightning flares brushing by – a Myth-grade Constellation blessed with dancing platinum hair and a rather uniquely-arrogant grin stood there.</p>
@@ -321,18 +337,12 @@
             <a href="./ch_471"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_473">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="472" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="525" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="471" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="471" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

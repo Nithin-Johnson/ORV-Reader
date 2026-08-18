@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 192: Ep. 36 - Story Horizon, IV</title>
     <meta property="og:title" content="Ch 192: Ep. 36 - Story Horizon, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00192.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 192: Ep. 36 - Story Horizon, IV</h1></div>
 <p class="orv_line">It was a legendary story but at the same time, there was no special function. Nevertheless, the existence of the story itself was enough to attract the attention of the wenny man.</p>
@@ -237,9 +244,9 @@
 <p class="orv_line">"Hmm…"</p>
 <p class="orv_line">"Imagine if you put this in your lump and boast about it to your friends."</p>
 <p class="orv_line">The wenny man agonized over it for a long time. He thought and thought about it.</p>
-<div class="orv_system"><p>[Your existence is at stake.]</p></div>
-<div class="orv_system"><p>[Acquire a new incarnation body or return to the scenario.]</p></div>
-<div class="orv_system"><p>[Your existence will soon collapse.]</p></div>
+<div class="orv_system"><p>Your existence is at stake.</p></div>
+<div class="orv_system"><p>Acquire a new incarnation body or return to the scenario.</p></div>
+<div class="orv_system"><p>Your existence will soon collapse.</p></div>
 <p class="orv_line">Finally, the wenny man opened his mouth. "There is one place that you can go."</p>
 <p class="orv_line">"Where?"</p>
 <p class="orv_line">At this moment, an eerie light appeared around the wenny man's mouth.</p>
@@ -261,7 +268,7 @@
 <p class="orv_line">I pretended to think for a moment before slowly nodding. Now I had no other option.</p>
 <p class="orv_line">"Okay, I will accept that deal."</p>
 <p class="orv_line">I had decided so there was no need to waste any more time. I immediately pulled out the story and gave it to him.</p>
-<div class="orv_system"><p>[You have paid the story 'One Who Showed Contempt for a Streamer'.]</p></div>
+<div class="orv_system"><p>You have paid the story 'One Who Showed Contempt for a Streamer'.</p></div>
 <p class="orv_line">The wenny man nodded. "The price has been received."</p>
 <p class="orv_line">The wenny man swallowed the story that he had received from me. Then his lump shone blue. He smiled with satisfaction and took a deep breath.</p>
 <p class="orv_line">It was as if he was sucking all the air around him. I looked closer and realized he wasn't just swallowing air.</p>
@@ -269,22 +276,22 @@
 <p class="orv_line">The space that came pouring out created a long, elliptical passage. Beyond this passage, the landscape of a different world was shining.</p>
 <p class="orv_line">"Quickly enter. It has a very short duration, unlike a portal."</p>
 <p class="orv_line">I jumped into the passage without hesitation.</p>
-<div class="orv_system"><p>[You have been transferred to a new time and space.]</p></div>
+<div class="orv_system"><p>You have been transferred to a new time and space.</p></div>
 <p class="orv_line">It felt like he was jumping through the universe. Stars passed like countless meteor showers.</p>
 <p class="orv_line">I was flying through the night sky of the Star Stream. Numerous scenario areas that had become fragments of the story flew around me.</p>
-<div class="orv_system"><p>[The Star Stream has noticed your presence.]</p></div>
+<div class="orv_system"><p>The Star Stream has noticed your presence.</p></div>
 <p class="orv_line">For a moment, there was a gaze on me.</p>
-<div class="orv_system"><p>[The Star Stream has accepted your presence.]</p></div>
+<div class="orv_system"><p>The Star Stream has accepted your presence.</p></div>
 <p class="orv_line">Then the gaze disappeared. A small current seized my body but that was all. Perhaps the necessary probability was paid by the wenny man. After a short space journey, I felt the gravity of a powerful story pulling at me.</p>
-<div class="orv_system"><p>[You have reached an area adjacent to the scenario!]</p></div>
+<div class="orv_system"><p>You have reached an area adjacent to the scenario!</p></div>
 <p class="orv_line">I rolled across a dust covered ground with a groan. The impact affected my body as the areas touching the ground started to crack little by little.</p>
-<div class="orv_system"><p>[Your existence is collapsing.]</p></div>
-<div class="orv_system"><p>[Your stories are damaged.]</p></div>
-<div class="orv_system"><p>[You need a new incarnation body!]</p></div>
+<div class="orv_system"><p>Your existence is collapsing.</p></div>
+<div class="orv_system"><p>Your stories are damaged.</p></div>
+<div class="orv_system"><p>You need a new incarnation body!</p></div>
 <p class="orv_line">Damn. I hurriedly got up from the ground but the hell had already begun.</p>
 <p class="orv_line">"Kuheook…"</p>
 <p class="orv_line">Letters started to flow from the cracks in my body. The most dangerous area was my heart.</p>
-<div class="orv_system"><p>[Your birth story is leaking out.]</p></div>
+<div class="orv_system"><p>Your birth story is leaking out.</p></div>
 <p class="orv_line">If I didn't seal the wounds and save my body, all my stories would collapse and I would die.</p>
 <p class="orv_line">I hurriedly looked around.</p>
 <p class="orv_line">That guy said he would send me to a place where I could save my body. There must be something here that could make up the incarnation body.</p>
@@ -299,38 +306,38 @@
 <p class="orv_line">The wenny man wasn't planning a fair deal with me from the beginning. If I was to die, he would come here and retrieve my stories.</p>
 <p class="orv_line">–I hope you can find something good from the horizon.</p>
 <p class="orv_line">I hesitantly sat down. Letters kept falling from my heart. If this continued, I would die in less than 5 minutes.</p>
-<div class="orv_quote"><p>「 After a moment, Kim Dokja's expression started to change. 」</p></div>
+<div class="orv_quote"><p>After a moment, Kim Dokja's expression started to change.</p></div>
 <p class="orv_line">I slowly looked around. It was for certain. I couldn't feel the eyes of the wenny man at all.</p>
-<div class="orv_quote"><p>「 The confused eyes became calm and the mouth, that was open like a fool, slowly closed. Soon, Kim Dokja restored his clothes and muttered. 」</p></div>
+<div class="orv_quote"><p>The confused eyes became calm and the mouth, that was open like a fool, slowly closed. Soon, Kim Dokja restored his clothes and muttered.</p></div>
 <p class="orv_line">"It's hard."</p>
-<div class="orv_quote"><p>「 Kim Dok ja's act ing is wro ng. 」</p></div>
+<div class="orv_quote"><p>Kim Dok ja's act ing is wro ng.</p></div>
 <p class="orv_line">"…Did you notice?"</p>
 <p class="orv_line">I slowly looked down. It was pretty annoying but I had to act to avoid the wenny man's doubts.</p>
-<div class="orv_quote"><p>「 His purpose was to come here in the first place. If he wants to get what he wants while hiding as much as possible, he has to act this much. 」</p></div>
+<div class="orv_quote"><p>His purpose was to come here in the first place. If he wants to get what he wants while hiding as much as possible, he has to act this much.</p></div>
 <p class="orv_line">I listened to the Fourth Wall as I searched the surrounding area.</p>
 <p class="orv_line">"…I think I came to the right place."</p>
 <p class="orv_line">As the Fourth Wall said, I planned to come here from the beginning. It was why I put on a death show in front of the constellations.</p>
 <p class="orv_line">I climbed the garbage pile and started to look around.</p>
 <p class="orv_line">"Kuek, it hurts…"</p>
 <p class="orv_line">However, it wasn't easy to maintain my sanity due to the piercing pain in my heart.</p>
-<div class="orv_system"><p>[Your birth story is collapsing.]</p></div>
+<div class="orv_system"><p>Your birth story is collapsing.</p></div>
 <p class="orv_line">Everything else was clearly acting but this pain wasn't false. I desperately held onto my consciousness while thinking of sentences from Ways of Survival.</p>
-<div class="orv_quote"><p>「 It was Yoo Joonghyuk's 111th regression. Yoo Joonghyuk was expelled from the scenario and reached a place where he could build up his power. 」</p></div>
-<div class="orv_quote"><p>「 The 73rd Demon Realm, the horizon of the scenario. 」</p></div>
-<div class="orv_quote"><p>「 At the dumpster, Yoo Joonghyuk got his new 'body'. 」</p></div>
+<div class="orv_quote"><p>It was Yoo Joonghyuk's 111th regression. Yoo Joonghyuk was expelled from the scenario and reached a place where he could build up his power.</p></div>
+<div class="orv_quote"><p>The 73rd Demon Realm, the horizon of the scenario.</p></div>
+<div class="orv_quote"><p>At the dumpster, Yoo Joonghyuk got his new 'body'.</p></div>
 <p class="orv_line">Nevertheless, no matter how hard I looked, I couldn't find a story that could be the materials for a new body.</p>
 <p class="orv_line">In the first place, the horizon of the scenario was a place where broken stories converged. There was no way I could find a usable body in this place. At least, through a normal method.</p>
 <p class="orv_line">"Activate an attribute effect."</p>
-<div class="orv_system"><p>[The effect of the Lamarck's Giraffe attribute has been activated.]</p></div>
+<div class="orv_system"><p>The effect of the Lamarck's Giraffe attribute has been activated.</p></div>
 <p class="orv_line">Lamarck's Giraffe was an evolutionary attribute that I purchased for 300,000 coins. It was an attribute left behind in Bihyung's item box. Finally, the time had come for the consumption of coins to be worth it.</p>
-<div class="orv_system"><p>[The privilege 'Evolution Factor Search' has begun!]</p></div>
-<div class="orv_system"><p>[Searching for story fragments that you can absorb!]</p></div>
+<div class="orv_system"><p>The privilege 'Evolution Factor Search' has begun!</p></div>
+<div class="orv_system"><p>Searching for story fragments that you can absorb!</p></div>
 <p class="orv_line">I slowly closed and opened my eyes as different things started to become noticeable around the garbage dump.</p>
-<div class="orv_system"><p>[Story fragments have been detected!]</p></div>
+<div class="orv_system"><p>Story fragments have been detected!</p></div>
 <p class="orv_line">The fragments were shining with a white light. At least for me, this place wasn't a 'dumpster'.</p>
-<div class="orv_quote"><p>「 The right arm of the poor sword master who was stabbed in the back by a colleague. 」</p></div>
-<div class="orv_quote"><p>「 The terribly damaged frontal lobe of a grand wizard. 」</p></div>
-<div class="orv_quote"><p>「 The heart of a young gold dragon who was torn to death by an outer god. 」</p></div>
+<div class="orv_quote"><p>The right arm of the poor sword master who was stabbed in the back by a colleague.</p></div>
+<div class="orv_quote"><p>The terribly damaged frontal lobe of a grand wizard.</p></div>
+<div class="orv_quote"><p>The heart of a young gold dragon who was torn to death by an outer god.</p></div>
 <p class="orv_line">According to the setting of Ways of Survival, the privilege of Lamarck's Giraffe was to construct the body by absorbing broken stories.</p>
 <p class="orv_line">"…Then I am starting."</p>
 <p class="orv_line">I slowly reached out towards a red heart fragment.</p>
@@ -341,18 +348,12 @@
             <a href="./ch_191"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_193">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="192" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="183" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="191" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="191" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

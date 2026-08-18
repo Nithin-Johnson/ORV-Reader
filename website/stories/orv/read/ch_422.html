@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 422: Ep. 79 - The Secretive Plotter, VII</title>
     <meta property="og:title" content="Ch 422: Ep. 79 - The Secretive Plotter, VII" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,44 +177,44 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00422.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 422: Ep. 79 - The Secretive Plotter, VII</h1></div>
 <p class="orv_line">"Just what the hell happened back there?"</p>
 <p class="orv_line">Bihyung hung his head low after hearing Han Sooyoung's words.</p>
 <p class="orv_line">"You were busy talking a big game, but then, we got refused entry at the door… Oii, Dokkaebi, will you say something already?"</p>
-<div class="orv_constellation"><p>[Well, that is… Fuu…]</p></div>
+<div class="orv_constellation"><p>Well, that is… Fuu…</p></div>
 <p class="orv_line">In the end, the &lt;Kim Dokja's Company&gt; couldn't go to the 'Final Scenario' and had to return to Earth. The reason? Their 'qualification is insufficient'.</p>
-<div class="orv_constellation"><p>[It seems that the Great Dokkaebis were behind this.]</p></div>
+<div class="orv_constellation"><p>It seems that the Great Dokkaebis were behind this.</p></div>
 <p class="orv_line">"You think everything'll be fine after saying that? How're you gonna make up for wasting our time?"</p>
-<div class="orv_constellation"><p>[…I'll compensate you with suitable rewards so please, stop grilling me.]</p></div>
+<div class="orv_constellation"><p>…I'll compensate you with suitable rewards so please, stop grilling me.</p></div>
 <p class="orv_line">While the grumbling Bihyung was rummaging through his pockets, Han Sooyoung sighed deeply and took a look at her companions.</p>
 <p class="orv_line">They had somehow returned to Earth after going through all sorts of crazy ups and downs. Predictably, none of them were themselves at the moment.</p>
 <p class="orv_line">"He might have died for real this time… I'm sorry, hyung… I… I wasn't qualified… Because I didn't do the contract…"</p>
-<p class="orv_line">Lee Gilyoung had been muttering some indescribable things to himself while crouching over there, while Shin Yoosung had her eyes closed and both of her index fingers were pressed to her temples as if she was meditating or some such. Meanwhile, Lee Jihye and Jung Heewon had taken Lee Hyunsung to Aileen at the [Industrial Complex] and had vacated the premises for the time being.</p>
+<p class="orv_line">Lee Gilyoung had been muttering some indescribable things to himself while crouching over there, while Shin Yoosung had her eyes closed and both of her index fingers were pressed to her temples as if she was meditating or some such. Meanwhile, Lee Jihye and Jung Heewon had taken Lee Hyunsung to Aileen at the <strong>[Industrial Complex]</strong> and had vacated the premises for the time being.</p>
 <p class="orv_line">"…This place hasn't changed at all. That ahjumma didn't even bother to clean the house, did she?"</p>
 <p class="orv_line">Han Sooyoung muttered to herself as she patted away the dust on the aged couch.</p>
 <p class="orv_line">Once upon a time, she, Yoo Sangah, and Lee Sookyung stayed together in this very house. A place where they lived together for three years during Kim Dokja's absence…</p>
 <p class="orv_line">Her brief reminiscence was cut short by the doorbell.</p>
-<p class="orv_line">She utilised the [Black Flame] to remotely open the door and smirked to herself. "…I guess the ⸢Devil showing up when you talk about her⸥ could be a Story as well."</p>
+<p class="orv_line">She utilised the <strong>[Black Flame]</strong> to remotely open the door and smirked to herself. "…I guess the ⸢Devil showing up when you talk about her⸥ could be a Story as well."</p>
 <p class="orv_line">"It's been a while, Sooyoung-ah," said Lee Sookyung as she scanned the messy state of the house. She eventually shook her head. "You're still the same as before. You should at least ventilate the place."</p>
 <p class="orv_line">"I'll have you know, I've returned only just now. And it's already been so many yea…"</p>
 <p class="orv_line">Han Sooyoung flinched when she got that far. She might have spent dozens of years in the 'Isle of Reincarnators', but that was time spent within the island itself. She couldn't really tell exactly how long it had been on the outside.</p>
@@ -237,105 +244,105 @@
 <p class="orv_line">"You won't regress even if your rewind that, you know? Did you even forget how to go back now?"</p>
 <p class="orv_line">He didn't even pretend to hear her. His eyes burned scarily as if he wanted to engrave the appearance of the 'Secretive Plotter' in them. The Status of the Regressor who refused to accept his defeat oozed out from him and made the air in the living room rather stuffy and hot.</p>
 <p class="orv_line">Han Sooyoung spat out an even greater groan. "Dammit. Just who the heck distributed that footage…"</p>
-<div class="orv_constellation"><p>[Hum, hum.]</p></div>
+<div class="orv_constellation"><p>Hum, hum.</p></div>
 <p class="orv_line">She turned her head yet again to find Bihyung this time, coughing to clear his throat.</p>
 <p class="orv_line">"…You haven't left yet?"</p>
-<div class="orv_constellation"><p>[Here's your reward.]</p></div>
+<div class="orv_constellation"><p>Here's your reward.</p></div>
 <p class="orv_line">Now that she thought about it, she had forgotten all about the reward payout. She extended her hand out, and the Dokkaebi's small hand placed 500 Coins on her palm.</p>
 <p class="orv_line">"Are you messing with me??"</p>
-<div class="orv_constellation"><p>[Well, the thing is, the financial state of the Bureau's Seoul branch is a bit strained lately, you see… And what with all these many things that require our attention, it's like…]</p></div>
+<div class="orv_constellation"><p>Well, the thing is, the financial state of the Bureau's Seoul branch is a bit strained lately, you see… And what with all these many things that require our attention, it's like…</p></div>
 <p class="orv_line">Bihyung whistled while glancing at the other side of the sky.</p>
-<p class="orv_line">The Seoul's sky that should've been clear was now dyed in the ominous colours of crimson and yellow. There were Probability's sparks lashing down like lightning bolts, as well as the pitch-black [Great Hole] swirling around viciously.</p>
+<p class="orv_line">The Seoul's sky that should've been clear was now dyed in the ominous colours of crimson and yellow. There were Probability's sparks lashing down like lightning bolts, as well as the pitch-black <strong>[Great Hole]</strong> swirling around viciously.</p>
 <p class="orv_line">Han Sooyoung frowned deeply and asked. "Did something happen to Seoul?"</p>
 <p class="orv_line">"The skies have been like that for a while now."</p>
 <p class="orv_line">This city was no longer the location for the main scenario. But, if the apocalyptic phenomena were still persisting like that, it…</p>
-<div class="orv_constellation"><p>[It's because of the Apocalypse Dragon.]</p></div>
+<div class="orv_constellation"><p>It's because of the Apocalypse Dragon.</p></div>
 <p class="orv_line">Bihyung looked at the sky with a bitter expression, pulled out a lengthy smoking pipe from his inner pocket and mouthed it.</p>
 <p class="orv_line">Perhaps she found that sight unacceptable, Han Sooyoung snatched the pipe away and yelled at the Dokkaebi. "What are you talking about?! Why does the Apocalypse Dragon's effect reach this far?"</p>
-<div class="orv_constellation"><p>[You don't know? I thought Kim Dokja would have told you already.]</p></div>
+<div class="orv_constellation"><p>You don't know? I thought Kim Dokja would have told you already.</p></div>
 <p class="orv_line">"That idiot never tells us the most important information."</p>
-<p class="orv_line">Bihyung pulled out a second smoking pipe looking rather unperturbed and spoke while lighting it up. [The revival of the Apocalypse Dragon is the first button of the great annihilation for all of us. You can think of it as the world-line now rushing towards its end with that thing wide awake… This was why I told you that we need to hurry to the 'Final Scenario'.]</p>
+<p class="orv_line">Bihyung pulled out a second smoking pipe looking rather unperturbed and spoke while lighting it up. <strong>[The revival of the Apocalypse Dragon is the first button of the great annihilation for all of us. You can think of it as the world-line now rushing towards its end with that thing wide awake… This was why I told you that we need to hurry to the 'Final Scenario'.]</strong></p>
 <p class="orv_line">"…What will happen if we don't get to the Final Scenario?"</p>
-<div class="orv_constellation"><p>[As the word implies, it's the apocalypse. You, me, this world.]</p></div>
+<div class="orv_constellation"><p>As the word implies, it's the apocalypse. You, me, this world.</p></div>
 <p class="orv_line">That composed declaration prompted the dumbfounded Han Sooyoung to sharply shoot back. "What the heck, what is even… What's the point of this 'Final Scenario' when the whole world is about to be destroyed? Why did you people even create such a scenario in the first place?!"</p>
-<div class="orv_constellation"><p>[The great annihilation is not a scenario planned out by the Dokkaebis. It's simply meant to be. And because the annihilation is real, the 'Final Scenario' has gained its purpose at last.]</p></div>
+<div class="orv_constellation"><p>The great annihilation is not a scenario planned out by the Dokkaebis. It's simply meant to be. And because the annihilation is real, the 'Final Scenario' has gained its purpose at last.</p></div>
 <p class="orv_line">Bihyung looked up at the distant skies with an expression of remorse. He saw the movements of a group of stars, hurriedly trying to get to some place. Stars of the heavens were getting further away like shooting stars.</p>
 <br>
 <hr>
 <br>
-<div class="orv_outergod"><p>[Oh-oooooooh!]</p></div>
-<div class="orv_outergod"><p>[Ah-aaaaaah!]</p></div>
+<div class="orv_outergod"><p>Oh-oooooooh!</p></div>
+<div class="orv_outergod"><p>Ah-aaaaaah!</p></div>
 <p class="orv_line">The 'Outer Gods' unleashed their jet-black Statuses, dyeing the entirety of the N'Gai's Forest in pure darkness.</p>
-<p class="orv_line">The kkoma Yoo Joonghyuks managed to extract me from the vines and quickly stood all around me. The kkoma number [999] spoke up first. "Protect Kim Dokja."</p>
+<p class="orv_line">The kkoma Yoo Joonghyuks managed to extract me from the vines and quickly stood all around me. The kkoma number <strong>[999]</strong> spoke up first. "Protect Kim Dokja."</p>
 <p class="orv_line">"I told all of you this before, didn't I? I knew he would cause a problem."</p>
 <p class="orv_line">"Indeed, we should've killed him the first time we saw him."</p>
-<p class="orv_line">Even though they spat out some seriously scary words, all of the mini Yoo Joonghyuks continued to hold their [Heaven Shaking Swords] firmly and didn't lower their guards. They sliced and cut the approaching tentacles and advanced forward little by little.</p>
-<p class="orv_line">Maybe because it was directly after witnessing something truly shocking, my entire body seemed to be wrapped in this cold air. The kkoma number [999] took off his black coat and placed it over my shoulders.</p>
+<p class="orv_line">Even though they spat out some seriously scary words, all of the mini Yoo Joonghyuks continued to hold their <strong>[Heaven Shaking Swords]</strong> firmly and didn't lower their guards. They sliced and cut the approaching tentacles and advanced forward little by little.</p>
+<p class="orv_line">Maybe because it was directly after witnessing something truly shocking, my entire body seemed to be wrapped in this cold air. The kkoma number <strong>[999]</strong> took off his black coat and placed it over my shoulders.</p>
 <p class="orv_line">"I only remember telling you to read a book, so why did you have to provoke them?"</p>
-<p class="orv_line">I wasn't sure what I could say back to him here. [999]'s eyes trembled.</p>
+<p class="orv_line">I wasn't sure what I could say back to him here. <strong>[999]</strong>'s eyes trembled.</p>
 <p class="orv_line">"…You fool."</p>
-<div class="orv_outergod"><p>[Oh-ooooooh!]</p></div>
+<div class="orv_outergod"><p>Oh-ooooooh!</p></div>
 <p class="orv_line">The howling Outer Gods' true voice reverberated heavily in the sky. Insects within the forest vomited out their bodily fluids and died, while some of the Gods even began fighting among themselves, too.</p>
 <p class="orv_line">999 spoke in a grave tone of voice. "These beings have not been understood for a very long time. And you just had to get involved."</p>
 <p class="orv_line">'Outer Gods' were flooding into where we were.</p>
-<div class="orv_outergod"><p>[GivetomeGivetomeGivetomeGivetome]</p></div>
-<div class="orv_outergod"><p>[KimdokjaKimdokjaKimdokjaKimdokja]</p></div>
+<div class="orv_outergod"><p>GivetomeGivetomeGivetomeGivetome</p></div>
+<div class="orv_outergod"><p>KimdokjaKimdokjaKimdokjaKimdokja</p></div>
 <p class="orv_line">What was even more concerning, though, was the fact that not all Outer Gods carried the same sentiments as their peers. A few of the higher-ranked ones, after sensing my presence, began to exude unfiltered animosity in my way.</p>
-<div class="orv_outergod"><p>[Stin ki ng Cons tel ation has lo oked down on us.]</p></div>
-<div class="orv_outergod"><p>[Ki ll him get r id of h im.]</p></div>
-<div class="orv_outergod"><p>[No fo rgiving e ven if y ou are Plo tter's gue st.]</p></div>
+<div class="orv_outergod"><p>Stin ki ng Cons tel ation has lo oked down on us.</p></div>
+<div class="orv_outergod"><p>Ki ll him get r id of h im.</p></div>
+<div class="orv_outergod"><p>No fo rgiving e ven if y ou are Plo tter's gue st.</p></div>
 <p class="orv_line">"Step aside, members of the Shantak!"</p>
 <p class="orv_line">"We will cut you down if you come closer."</p>
 <p class="orv_line">The kkoma Yoo Joonghyuks all unleashed their Statuses and resisted, but the 'Outer Gods' didn't back down at all. They approached closer one step at a time, and while emitting dizzying Statuses themselves, cried out in a loud roar.</p>
-<div class="orv_outergod"><p>[Oh, Pl otter! We can no lo nger wa it!]</p></div>
-<div class="orv_outergod"><p>[F or ho w long do we n eed to wa it? The wo rld-l ine's end is ap pro aching!]</p></div>
+<div class="orv_outergod"><p>Oh, Pl otter! We can no lo nger wa it!</p></div>
+<div class="orv_outergod"><p>F or ho w long do we n eed to wa it? The wo rld-l ine's end is ap pro aching!</p></div>
 <p class="orv_line">I knew very well what they were talking about.</p>
 <p class="orv_line">The world-line's end.</p>
 <p class="orv_line">Even these guys, as expected, were fully conscious of the 'Final Scenario'.</p>
-<div class="orv_outergod"><p>[Th is wo rld mu st unde rstand us]</p></div>
+<div class="orv_outergod"><p>Th is wo rld mu st unde rstand us</p></div>
 <p class="orv_line">"Step aside!!"</p>
 <p class="orv_line">The tentacles closing in grew even more ferocious. Eventually, their Statuses became simply too much for the kkoma Yoo Joonghyuks to deal with, but then…</p>
 <p class="orv_line">The forest parted ways, and 'he' made his entrance.</p>
 <p class="orv_line">He walked forward while crossing the tentacles that none of us could block. Each of his steps contained the solitude of indescribable eternity as well as the entirety of the 1863rd lives he had experienced.</p>
 <p class="orv_line">Once upon a time, his name was Yoo Joonghyuk, but now, he was the 'Secretive Plotter'. A man who knew of every world-line's sorrow.</p>
 <p class="orv_line">Outer Gods knelt down in front of that absolute, overwhelming nobleness.</p>
-<div class="orv_outergod"><p>[Oh, the gr eat Pl otter.]</p></div>
+<div class="orv_outergod"><p>Oh, the gr eat Pl otter.</p></div>
 <p class="orv_line">However, not all of them did. There were some 'Gods' who didn't want to bend their opinions even when subjected to the intense pain of their existences turning into nothingness.</p>
-<div class="orv_outergod"><p>[Oh, the gr eat Pl otter, we can no lo nger wa it.]</p></div>
+<div class="orv_outergod"><p>Oh, the gr eat Pl otter, we can no lo nger wa it.</p></div>
 <p class="orv_line">The ones no one could ever understand were wailing in sorrow. They raged on, and they mourned. Even then, their rage and sorrow were not understood. They didn't belong to this this world-line, and they couldn't be understood through the existing 'Stories'.</p>
 <p class="orv_line">One needed to work really hard to understand their rage, their sorrow and their grief.</p>
-<div class="orv_outergod"><p>[We wan t to be un ders tood.]</p></div>
-<div class="orv_outergod"><p>[We w ant to bec ome sto ries.]</p></div>
+<div class="orv_outergod"><p>We wan t to be un ders tood.</p></div>
+<div class="orv_outergod"><p>We w ant to bec ome sto ries.</p></div>
 <p class="orv_line">Stories that needed one to work hard to understand could never be Stories. Stories that needed one to throw oneself deeply in first couldn't be consumed.</p>
-<p class="orv_line">The 'Secretive Plotter' opened his lips. <@>[You will not be understood.]</p>
+<p class="orv_line">The 'Secretive Plotter' opened his lips. <@><strong>[You will not be understood.]</strong></p>
 <p class="orv_line">He looked at each and every one of them with subtle gazes, studied them, and gifted them with the cruel reality.</p>
-<div class="orv_constellation"><p>[That is because this &lt;Star Stream&gt; has labelled all of you 'Terrors'. Because this world has described you all as 'Chaos' that destroys the order, as calamities that could never be understood. That is why.]</p></div>
+<div class="orv_constellation"><p>That is because this &lt;Star Stream&gt; has labelled all of you 'Terrors'. Because this world has described you all as 'Chaos' that destroys the order, as calamities that could never be understood. That is why.</p></div>
 <p class="orv_line">It was then I finally understood why the 'Secretive Plotter' has chosen to side with these creatures.</p>
 <p class="orv_line">⸢Why would a person who knows the end of everything repeat the same story over again?⸥</p>
 <p class="orv_line">When I thought about it, the answer was a rather simple one.</p>
 <p class="orv_line">⸢That's because he didn't like the end he witnessed.⸥</p>
 <p class="orv_line">In the original story, Yoo Joonghyuk and Constellations defeated the 'Outer Gods' together. That's how he got to the end of the scenarios, and destroyed the &lt;Star Stream&gt;.</p>
-<div class="orv_constellation"><p>[You will never shine in the sky like the Constellations, nor can you become the main actors of this world. As long as the &lt;Star Stream&gt; exists, you will all remain forever as 'Outer Gods'.]</p></div>
+<div class="orv_constellation"><p>You will never shine in the sky like the Constellations, nor can you become the main actors of this world. As long as the &lt;Star Stream&gt; exists, you will all remain forever as 'Outer Gods'.</p></div>
 <p class="orv_line">However, he didn't find what he wanted. And now, after becoming the 'Secretive Plotter', Yoo Joonghyuk was stepping up to the battlefield once more.</p>
-<div class="orv_constellation"><p>[Soon, the war of annihilation will commence. The end of everything will soon begin, where stars will fall, worlds will collapse, and all Stories will be extinguished.]</p></div>
-<p class="orv_line">I spotted the eyes of the 'Secretive Plotter' looking at me from afar. The [Sage's Eye] spun around within his pitch-black iris.</p>
-<div class="orv_outergod"><p>[Oh, the great Plotter…!]</p></div>
-<div class="orv_outergod"><p>[Oh, ooooooh!]</p></div>
+<div class="orv_constellation"><p>Soon, the war of annihilation will commence. The end of everything will soon begin, where stars will fall, worlds will collapse, and all Stories will be extinguished.</p></div>
+<p class="orv_line">I spotted the eyes of the 'Secretive Plotter' looking at me from afar. The <strong>[Sage's Eye]</strong> spun around within his pitch-black iris.</p>
+<div class="orv_outergod"><p>Oh, the great Plotter…!</p></div>
+<div class="orv_outergod"><p>Oh, ooooooh!</p></div>
 <p class="orv_line">According to the plot of the original story, these creatures would meet with defeat.</p>
 <p class="orv_line">⸢For the sake of the conclusion Kim Dokja wishes for, these beings simply had to be defeated.⸥</p>
 <p class="orv_line">&lt;Star Stream&gt; would be destroyed, while the stars of the heavens and the solitary gods would die with no one to remember them. The defeated would die extremely sorrowful deaths, while the victors would not get to bask in their victory.</p>
 <p class="orv_line">I began walking towards the 'Secretive Plotter'.</p>
 <p class="orv_line">"…Kim Dokja?"</p>
-<p class="orv_line">I heard [999] call out to me, but I didn't look back. I undid the [Miniaturisation], and my eye level changed rapidly. The black coat [999] placed on my shoulders wavered along with every step I took.</p>
-<div class="orv_system"><p>[&lt;Star Stream&gt;'s Probability is now shifting!]</p></div>
-<div class="orv_system"><p>[Stream of the great main scenario is now dwelling in you.]</p></div>
-<p class="orv_line">Past the canopy of the vine-covered forest, the sea of stars of the &lt;Star Stream&gt; could be seen. On one side of the sky, stars were emitting bright light, while on the other side, ominous-looking galaxies alongside the [Great Hole] were quietly flowing about.</p>
+<p class="orv_line">I heard <strong>[999]</strong> call out to me, but I didn't look back. I undid the <strong>[Miniaturisation]</strong>, and my eye level changed rapidly. The black coat <strong>[999]</strong> placed on my shoulders wavered along with every step I took.</p>
+<div class="orv_system"><p>&lt;Star Stream&gt;'s Probability is now shifting!</p></div>
+<div class="orv_system"><p>Stream of the great main scenario is now dwelling in you.</p></div>
+<p class="orv_line">Past the canopy of the vine-covered forest, the sea of stars of the &lt;Star Stream&gt; could be seen. On one side of the sky, stars were emitting bright light, while on the other side, ominous-looking galaxies alongside the <strong>[Great Hole]</strong> were quietly flowing about.</p>
 <p class="orv_line">Half of it, light, while the other half, darkness.</p>
 <p class="orv_line">Soon, the final war would begin. And most likely, I would have to stand on one of the sides to witness the end of the world.</p>
-<div class="orv_system"><p>[Your second Modifier has been decided.]</p></div>
+<div class="orv_system"><p>Your second Modifier has been decided.</p></div>
 <p class="orv_line">A small star flickered on the far side of the sky. I stared at it for the longest time, before slowly reverting my gaze back to the ground. The 'Outer Gods' were now looking at me.</p>
 <p class="orv_line">I returned their gazes and finally chose the side I'd stand.</p>
-<div class="orv_system"><p>[Your second Modifier is the 'Watcher of Light and Darkness'.]</p></div>
+<div class="orv_system"><p>Your second Modifier is the 'Watcher of Light and Darkness'.</p></div>
 <br>
 <hr>
         </article>
@@ -343,18 +350,12 @@
             <a href="./ch_421"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_423">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="422" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="477" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="421" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="421" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

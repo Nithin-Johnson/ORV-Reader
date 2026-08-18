@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 449: Ep. 85 - The Final Wall, I</title>
     <meta property="og:title" content="Ch 449: Ep. 85 - The Final Wall, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,44 +177,44 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00449.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 449: Ep. 85 - The Final Wall, I</h1></div>
-<div class="orv_system"><p>[95th Main Scenario has concluded!]</p></div>
+<div class="orv_system"><p>95th Main Scenario has concluded!</p></div>
 <p class="orv_line">After the scenario ended, the Great Sage and the 'Outer Gods' gathered in the centre of the Tongtian River to celebrate.</p>
-<div class="orv_system"><p>[Those with the identity of 'extras' in the Giant Story ⸢Journey to the West⸥ has now been freed.]</p></div>
+<div class="orv_system"><p>Those with the identity of 'extras' in the Giant Story ⸢Journey to the West⸥ has now been freed.</p></div>
 <p class="orv_line">Outer Gods that became the scenario's slaves under the &lt;Bureau&gt;'s and &lt;Emperor&gt;'s combined suppression were now being freed.</p>
-<div class="orv_constellation"><p>[OhOhOhOhOhOh]</p></div>
-<div class="orv_system"><p>[MonkeykingMonkeykingMonkeyking]</p></div>
+<div class="orv_constellation"><p>OhOhOhOhOhOh</p></div>
+<div class="orv_system"><p>MonkeykingMonkeykingMonkeyking</p></div>
 <p class="orv_line">Some of them even happened to be the ones that followed the 'Secretive Plotter' and joined the scenario belatedly. And as his Status grew weaker, they naturally began gravitating towards the Great Sage Heaven's Equal after he emerged as a new Outer God.</p>
-<div class="orv_system"><p>[Reward distribution will now commence!]</p></div>
+<div class="orv_system"><p>Reward distribution will now commence!</p></div>
 <p class="orv_line">Incarnations saw the 95th scenario's reward items descending from the sky and their lips stretched wide in huge grins. Unfortunately for them, though, their joy was short-lived. Their gazes soon drifted over to a certain group of Incarnations receiving that huge cache of rewards over yonder.</p>
 <p class="orv_line">"Wow, that…"</p>
 <p class="orv_line">"I should've joined that Story chamber…"</p>
 <p class="orv_line">It was &lt;Kim Dokja's Company&gt;'s group. Each one of them received one million Coins as individual rewards, while some of them even acquired &lt;Emperor&gt;'s Star Relics, as well.</p>
 <p class="orv_line">Since the rewards were being distributed according to the rules, none here could complain about this procedure, either.</p>
-<div class="orv_system"><p>[Nebula, &lt;Emperor&gt;, is protesting the scenario's fairness to the Bureau!]</p></div>
+<div class="orv_system"><p>Nebula, &lt;Emperor&gt;, is protesting the scenario's fairness to the Bureau!</p></div>
 <p class="orv_line">No, there was someone who could – it was none other than the host themselves, &lt;Emperor&gt;.</p>
 <p class="orv_line">Of course, they would feel wronged by the fact that the rewards of the large-scale scenario they organised for themselves had ended up in the hands of a small Nebula.</p>
-<div class="orv_system"><p>[&lt;Star Stream&gt; is ignoring the &lt;Emperor&gt;'s complaint.]</p></div>
+<div class="orv_system"><p>&lt;Star Stream&gt; is ignoring the &lt;Emperor&gt;'s complaint.</p></div>
 <p class="orv_line">A portion of &lt;Emperor&gt;'s Constellations couldn't hold back their rage and were about to unleash their Statuses, but then, someone unexpected stopped them.</p>
 <p class="orv_line">"Please, that's enough, everyone. We have lost." It was the greatest Incarnation of &lt;Emperor&gt;, Fei Hu. "What would our Myth-grade Constellations think if they witnessed our current actions?"</p>
 <p class="orv_line">&lt;Emperor&gt;'s Myth-grade Constellations didn't participate in this 'Journey to the West' scenario. They were simply watching the proceedings from the Final Scenario.</p>
@@ -223,7 +230,7 @@
 <p class="orv_line">But he began speaking in a warm voice. "Incarnation Jung Heewon. Our battle this time left a deep impression on me."</p>
 <p class="orv_line">"…Oh, okay."</p>
 <p class="orv_line">"If an opportunity arises in the future, I'd love to invite you over to China and treat you to a hearty meal."</p>
-<p class="orv_line">One could spot slightly flushed cheeks in between Fei Hu's sideboards. Lee Jihye definitely caught that, and through [Voice Projection], spoke up in pure admiration.</p>
+<p class="orv_line">One could spot slightly flushed cheeks in between Fei Hu's sideboards. Lee Jihye definitely caught that, and through <strong>[Voice Projection]</strong>, spoke up in pure admiration.</p>
 <p class="orv_line">– …Wow. Even though the world went down the crapper, a guy like him still managed to survive.</p>
 <p class="orv_line">Jung Heewon dazedly stared back at him. Meanwhile, he couldn't dare to meet her gaze and began fidgeting slightly.</p>
 <p class="orv_line">Lee Jihye lightly elbowed Jung Heewon in the side.</p>
@@ -235,7 +242,7 @@
 <p class="orv_line">Fei Hu's eyes burned passionately as he began his long-winded speech, prompting Jung Heewon to feel a bit repulsed for a moment there. She glanced to her side and discovered Lee Jihye, who used to be cheering on with her sparkling eyes, now shaking her head in helplessness. If this whole thing was nothing more than their misunderstanding, fine, but if not, then something rather bothersome might happen in the future.</p>
 <p class="orv_line">Tsu-chuchuchut…</p>
 <p class="orv_line">Her Sponsor was unable to watch this anymore and the sounds of her making a move could be heard next.</p>
-<div class="orv_system"><p>[Constellation, 'Demon-like Judge of Fire', is…]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon-like Judge of Fire', is…</p></div>
 <p class="orv_line">'It's fine, Uriel. Please be still'.</p>
 <p class="orv_line">If Uriel unnecessarily stepped up here, then the dying embers of the war might light up again. If it was left up to her, though, she might just fight him one-on-one now and nip the bud right away, but the gazes of the Constellations nearby were fixed on them, so…</p>
 <p class="orv_line">"I'm sorry, I'm already…"</p>
@@ -258,7 +265,7 @@
 <p class="orv_line">He looked as if he understood everything now.</p>
 <p class="orv_line">"I see, Incarnation Jung Heewon. So, that's how it was…"</p>
 <p class="orv_line">His gaze shifted from Jung Heewon, Han Sooyoung and to Lee Jihye, before eventually landing on Kim Dokja's face next. He sneakily bit his lip. Like a tragic extra feeling envious of the chosen protagonist, he slowly lowered his head and turned around to leave.</p>
-<p class="orv_line">Lee Jihye watching that sent a [Voice Projection] to Jung Heewon again.</p>
+<p class="orv_line">Lee Jihye watching that sent a <strong>[Voice Projection]</strong> to Jung Heewon again.</p>
 <p class="orv_line">– It's alright now, eonni. He's gone. Looks like he's fallen into some kind of a weird misunderstanding, though.</p>
 <p class="orv_line">However, Jung Heewon didn't stop.</p>
 <p class="orv_line">"My liege! Wake up! My liege! If you don't wake up, I'll kill you!"</p>
@@ -308,14 +315,14 @@
 <hr>
 <br>
 <p class="orv_line">The view of the dimensional portal was moving past me at a rapid pace.</p>
-<p class="orv_line">Everything happened in the blink. The moment I deactivated [Omniscient Readers Viewpoint], something grabbed my soul, and by the time I regained my wits, I was already jumping through this portal alongside the 'Secretive Plotter'.</p>
+<p class="orv_line">Everything happened in the blink. The moment I deactivated <strong>[Omniscient Readers Viewpoint]</strong>, something grabbed my soul, and by the time I regained my wits, I was already jumping through this portal alongside the 'Secretive Plotter'.</p>
 <p class="orv_line">Now normally, something like this would've been impossible. But it was a special case this time.</p>
-<div class="orv_system"><p>[You failed to uphold the 'Existence Pledge'.]</p></div>
-<div class="orv_system"><p>[Your soul will be temporarily tied to the Existence Pledge's contract.]</p></div>
-<div class="orv_system"><p>[Your contractor will possess the rights to your soul for the next 24 hours.]</p></div>
+<div class="orv_system"><p>You failed to uphold the 'Existence Pledge'.</p></div>
+<div class="orv_system"><p>Your soul will be temporarily tied to the Existence Pledge's contract.</p></div>
+<div class="orv_system"><p>Your contractor will possess the rights to your soul for the next 24 hours.</p></div>
 <p class="orv_line">I looked at the messages rising up in the air and chuckled hollowly.</p>
-<p class="orv_line">– I had no idea the [Existence Pledge] could be used this way.</p>
-<p class="orv_line">The [Existence Pledge] – do not contact &lt;Kim Dokja's Company&gt; during the scenario's duration or reveal my identity.</p>
+<p class="orv_line">– I had no idea the <strong>[Existence Pledge]</strong> could be used this way.</p>
+<p class="orv_line">The <strong>[Existence Pledge]</strong> – do not contact &lt;Kim Dokja's Company&gt; during the scenario's duration or reveal my identity.</p>
 <p class="orv_line">That was the only thing I failed to uphold during the scenario.</p>
 <p class="orv_line">Since the scenario's contents changed mid-way, I figured there was some room for differences in opinions, but it seemed the &lt;Star Stream&gt; had judged that I went against the pledge in the end.</p>
 <p class="orv_line">– Are you going to kill me?</p>
@@ -328,7 +335,7 @@
 <p class="orv_line">Along with those words, my soul got sucked into something.</p>
 <p class="orv_line">I blinked, and my eyes moved. However, I had neither arms nor legs. I wondered what on earth was going on here and looked around, only to discover my reflection in the mirror on a nearby wall.</p>
 <p class="orv_line">…I was now a small Murim dumpling.</p>
-<p class="orv_line">Somehow, I got the feeling that it was the same figure that [999] was using before.</p>
+<p class="orv_line">Somehow, I got the feeling that it was the same figure that <strong>[999]</strong> was using before.</p>
 <p class="orv_line">"How does it feel like to end up as a dumpling?!"</p>
 <p class="orv_line">Not sure when they popped out, but well, a lynch mob of the kkoma Yoo Joonghyuks rushed at me and began kicking me around. Thankfully, it didn't hurt all that much due to them being all kkomas.</p>
 <p class="orv_line">I hunkered down to stop the dumpling skin from tearing and shouted out.</p>
@@ -342,7 +349,7 @@
 <p class="orv_line">Even if Yoo Joonghyuk regained the memories of 1864 regression turns and combined his powers with mine, it was still impossible to surpass the Plotter through purely the Status of our Story.</p>
 <p class="orv_line">Not only was he the total sum of the histories spanning from 0th turn all the way up to 1863, but he also endured an uncountable period of time afterwards, on top of that.</p>
 <p class="orv_line">Even then, the 'Secretive Plotter' chose to lose rather than to kill us.</p>
-<p class="orv_line">"Because you are a necessity, you fool." [41] listening to me yap on replied. "You possess the last fragment of the 'Final Wall', that's why."</p>
+<p class="orv_line">"Because you are a necessity, you fool." <strong>[41]</strong> listening to me yap on replied. "You possess the last fragment of the 'Final Wall', that's why."</p>
 <br>
 <hr>
         </article>
@@ -350,18 +357,12 @@
             <a href="./ch_448"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_450">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="449" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="500" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="448" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="448" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

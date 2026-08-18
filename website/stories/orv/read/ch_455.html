@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 455: Ep. 86 - The square circle, II</title>
     <meta property="og:title" content="Ch 455: Ep. 86 - The square circle, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00455.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         <div class="orv_cover"><img src="../../../assets/images/Cover%20455.jpg" alt=""></div>
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 455: Ep. 86 - The square circle, II</h1></div>
 <p class="orv_line">I began thinking about how this event came to be.</p>
@@ -220,8 +227,8 @@
 <p class="orv_line">"What are you talking about? Don't you know what era we're in right now?"</p>
 <p class="orv_line">"What era are we in, then?"</p>
 <p class="orv_line">I wasn't sure what to say when she retorted back like that. What did she mean by 'what' era we were in?</p>
-<div class="orv_system"><p>[Currently, the Nebula &lt;Kim Dokja's Company&gt; possesses the qualification to enter the Final Scenario.]</p></div>
-<div class="orv_system"><p>[Remaining time to enter the scenario is: 28 days, 12 hours, 15 minutes and 7 seconds.]</p></div>
+<div class="orv_system"><p>Currently, the Nebula &lt;Kim Dokja's Company&gt; possesses the qualification to enter the Final Scenario.</p></div>
+<div class="orv_system"><p>Remaining time to enter the scenario is: 28 days, 12 hours, 15 minutes and 7 seconds.</p></div>
 <p class="orv_line">I calmly replied to ensure that I wouldn't get sucked into her pace. "We don't have the time for this. The Final Scenario is literally just around the corner."</p>
 <p class="orv_line">"And that's why we need to take a breather now. If not, when can we be able to, like this?" said Han Sooyoung, while sighing out grandly. "Look around you. Don't spend your day buried in your smartphone, alright? You still wanna work even after coming to a place like this?"</p>
 <p class="orv_line">After hearing her, I began scanning the surrounding terrain for the first time.</p>
@@ -233,7 +240,7 @@
 <p class="orv_line">"What?"</p>
 <p class="orv_line">"I'm saying, why don't you do the scenario that you love so much?"</p>
 <p class="orv_line">After hearing her, my gaze abruptly shifted up to the air to discover an actual scenario window floating up there.</p>
-<div class="orv_system"><p>[Sub Scenario – 'Workers' Off-day' has been generated!]</p></div>
+<div class="orv_system"><p>Sub Scenario – 'Workers' Off-day' has been generated!</p></div>
 <p class="orv_line">I had never even heard of such a scenario before so I quickly accessed the scenario window.</p>
 <div class="orv_window">
 <p>&lt;Sub Scenario – Workers' Off-day&gt;</p>
@@ -267,10 +274,10 @@
 <p class="orv_line">I quickly located him.</p>
 <p class="orv_line">I was about to raise my hand and call out to him, but then, stopped after realizing something was off there, too.</p>
 <p class="orv_line">Chi-eeeik.</p>
-<p class="orv_line">He was actually cooking over there. Standing before a large grill, his hands were moving around in a showy fashion to grill some meat. Vegetables were sizzling and shuddering inside the frying pan. The [Breaking the Sky Swordsmanship] capable of destroying the heavens was now used to chop vegetables and meat.</p>
+<p class="orv_line">He was actually cooking over there. Standing before a large grill, his hands were moving around in a showy fashion to grill some meat. Vegetables were sizzling and shuddering inside the frying pan. The <strong>[Breaking the Sky Swordsmanship]</strong> capable of destroying the heavens was now used to chop vegetables and meat.</p>
 <p class="orv_line">I even forgot to call out to him and stared at that spectacle in a pure daze.</p>
 <p class="orv_line">…Just what in freaking hell was going on here?</p>
-<p class="orv_line">In the next second, his eyes shifted over in my direction. He then silently conveyed his words with that trademark scary glare of his. I didn't need to resort to the [Omniscient Reader's Viewpoint] to tell what those eyes were saying – it was most definitely…</p>
+<p class="orv_line">In the next second, his eyes shifted over in my direction. He then silently conveyed his words with that trademark scary glare of his. I didn't need to resort to the <strong>[Omniscient Reader's Viewpoint]</strong> to tell what those eyes were saying – it was most definitely…</p>
 <p class="orv_line">⸢You can look all day long, but you aren't getting any of this food.⸥</p>
 <p class="orv_line">…That's what those eyes probably meant to say.</p>
 <p class="orv_line">His sides were occupied by both Yoo Mia and Lee Jihye, their eyes filled with deep interest and anticipation.</p>
@@ -279,7 +286,7 @@
 <p class="orv_line">"It's really tasty."</p>
 <p class="orv_line">Lee Jihye blankly standing around opened her mouth, too. He studied her for a moment or two, before placing more meat inside Yoo Mia's mouth, instead. That carried on for four, maybe five more times, and eventually, Lee Jihye shut her mouth.</p>
 <p class="orv_line">"Master, you're too heartless."</p>
-<p class="orv_line">Unable to endure it any longer, she personally moved her chopsticks. However, his frying pan shifted according to the eye-catching trajectory of the [Red Phoenix Shunpo] to avoid her hands. She grew tearful first before getting rather stubborn about it.</p>
+<p class="orv_line">Unable to endure it any longer, she personally moved her chopsticks. However, his frying pan shifted according to the eye-catching trajectory of the <strong>[Red Phoenix Shunpo]</strong> to avoid her hands. She grew tearful first before getting rather stubborn about it.</p>
 <p class="orv_line">"Oh, so you wanna have a go, is that it??"</p>
 <p class="orv_line">I seriously couldn't tell whether I was inside the world of the 'Ways of Survival', or the ⸢Ice-cold Handsome Regressor Yoo Joonghyuk Shouldn't be Doing This⸥ world.</p>
 <p class="orv_line">He continued evading Lee Jihye's chopsticks and fed his little sister Yoo Mia without twitching his eyebrows once, remaining utterly expressionless. However, there was something I could glean from that.</p>
@@ -288,7 +295,7 @@
 <p class="orv_line">I wasn't the only head representative of &lt;Kim Dokja's Company&gt;. In more ways that one, Yoo Joonghyuk was a far more obstinate person than I was, and also, boasted far greater experience in running a group such as this one.</p>
 <p class="orv_line">Yet, such a person had willingly participated in this camping trip.</p>
 <p class="orv_line">⸢Y ou re ally ca n't t ell, Kim Dok ja?⸥</p>
-<p class="orv_line">Accompanying [The Fourth Wall]'s voice, several paragraphs unfolded themselves before my eyes.</p>
+<p class="orv_line">Accompanying <strong>[The Fourth Wall]</strong>'s voice, several paragraphs unfolded themselves before my eyes.</p>
 <p class="orv_line">⸢Author-nim, how about going to a beach during this regression turn?⸥</p>
 <p class="orv_line">That was a comment I posted a long time ago.</p>
 <p class="orv_line">Even though I remembered so much about the 'Ways of Survival', I had forgotten all about the comments I posted. Now that I thought about it, there was one event that Yoo Joonghyuk never missed during his countless repeated regressions.</p>
@@ -310,13 +317,13 @@
 <p class="orv_line">"I've hidden it somewhere in the valley, so the first one to find it is the winner! Ah, right. You're forbidden from using your skills. Got that? Besides that, there are other prizes too, so…"</p>
 <p class="orv_line">"That Star Relic is mine!"</p>
 <p class="orv_line">Han Myungoh quickly discarded his fishing rod and jumped inside the stream, but a little while later, Jung Heewon grabbed hold of his head and threw him out of the water. In no time at all, Lee Jihye and the kids returning from their hunting trip all jumped into the valley's water, too.</p>
-<p class="orv_line">"Yo, hold up, Jihye noona!! That's [Ghost Fleet]! You think I won't notice it just because they are tiny now??"</p>
+<p class="orv_line">"Yo, hold up, Jihye noona!! That's <strong>[Ghost Fleet]</strong>! You think I won't notice it just because they are tiny now??"</p>
 <p class="orv_line">"Lee Gilyoung! Are you seriously taming water bugs? You cheater!?"</p>
 <p class="orv_line">"Both of you, disqualified!"</p>
 <p class="orv_line">How long had it been since all of my companions were smiling together like this? Maybe, this could be our first time. They were able to smile even though the scenarios hadn't ended yet. They were able to chat away in happiness like that, and share their stories.</p>
 <p class="orv_line">⸢And while looking at that spectacle, Kim Dokja suddenly felt lonely for some reason.⸥</p>
 <p class="orv_line">Could it be that I had failed to understand a single thing about the 'Ways of Survival' – no, wait, regarding my companions, instead? Maybe, because I was drunk in the fantasy of witnessing the Conclusion, I actually ended up missing all the countless words that had to be read in order to reach the true Conclusion?</p>
-<div class="orv_system"><p>[You have currently resolved 0 complaints.]</p></div>
+<div class="orv_system"><p>You have currently resolved 0 complaints.</p></div>
 <p class="orv_line">A scenario that previously felt like nothing important suddenly felt as imposing and difficult as a 'Giant Story' now.</p>
 <p class="orv_line">I plopped down below a parasol and dazedly looked on. Someone lightly tapped me on the shoulder.</p>
 <p class="orv_line">"How goes it with your scenario?"</p>
@@ -347,18 +354,12 @@
             <a href="./ch_454"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_456">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="455" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="852" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="454" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="454" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 322: Ep. 61 - Gigantomachia, II</title>
     <meta property="og:title" content="Ch 322: Ep. 61 - Gigantomachia, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,134 +177,134 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00322.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 322: Ep. 61 - Gigantomachia, II</h1></div>
-<div class="orv_constellation"><p>[…Pick me up? Why?]</p></div>
+<div class="orv_constellation"><p>…Pick me up? Why?</p></div>
 <p class="orv_line">"I need you."</p>
 <p class="orv_line">Kim Namwoon stared at me like I was speaking nonsense. Speaking of which, I felt strange. I also didn't expect that I would say this.</p>
 <p class="orv_line">I recalled Kim Namwoon of the 1863rd round. A man with white hair who liked Lee Jihye and had a good relationship with his colleagues. The guy who was immature, didn't care for his surroundings and was deeply self-absorbed.</p>
-<div class="orv_quote"><p>「 Kim Namwoon is an evil person. There is no changing this fact. 」</p></div>
+<div class="orv_quote"><p>Kim Namwoon is an evil person. There is no changing this fact.</p></div>
 <p class="orv_line">I saw Kim Namwoon's possibilities but my prejudice against him hadn't completely reversed. I decided to use Kim Namwoon because of a conversation with the 1863rd round Han Sooyoung.</p>
 <p class="orv_line">–You won't be able to reach the 95th scenario with that mindset.</p>
 <p class="orv_line">Han Sooyoung, Yoo Joonghyuk and I were different. However, if we agreed on one thing, it was that every story pursued a moment of efficiency.</p>
-<div class="orv_system"><p>[The constellation 'Secretive Plotter' is interested in your choice.]</p></div>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' is interested in Incarnation 'Kim Namwoon'.]</p></div>
+<div class="orv_system"><p>The constellation 'Secretive Plotter' is interested in your choice.</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' is interested in Incarnation 'Kim Namwoon'.</p></div>
 <p class="orv_line">I didn't see Uriel's message so she must be busy teaching Jung Heewon. If she knew I was here then Jung Heewon would be furious again. I was glad she was left in Eden.</p>
 <p class="orv_line">Kim Namwoon opened his mouth.</p>
-<div class="orv_constellation"><p>[I don't want to. Why should I help you?]</p></div>
+<div class="orv_constellation"><p>I don't want to. Why should I help you?</p></div>
 <p class="orv_line">I thought he would say this. "You don't have to if you don't want. Let's go, Yoo Joonghyuk."</p>
 <p class="orv_line">I approached the cerberus with Yoo Joonghyuk.</p>
-<div class="orv_constellation"><p>[What? Where are you going?]</p></div>
+<div class="orv_constellation"><p>What? Where are you going?</p></div>
 <p class="orv_line">"Downstairs."</p>
-<div class="orv_constellation"><p>[Ahaha, are you joking? Now Yellowy is staring at you!]</p></div>
+<div class="orv_constellation"><p>Ahaha, are you joking? Now Yellowy is staring at you!</p></div>
 <p class="orv_line">As if to prove it, the half-dozing cerberus raised its head and bared its teeth at us. At this time, Yoo Joonghyuk used the Breaking the Sky Swordsmanship. Previously, it would be hard to deal with the cerberus on the first underground floor but now it was different.</p>
 <p class="orv_line">"…You aren't gentle at all."</p>
 <p class="orv_line">"There is no time to waste here."</p>
 <p class="orv_line">The cerberus was hit by the blow and collapsed on the ground with its tongue lolling out. The prisoners were surprised by the violence and alarms rang out everywhere. Normally the judges would run over but there was a tacit agreement with Hades. We would be safe for the time being.</p>
 <p class="orv_line">We walked past the collapsed cerberus and down towards the second underground floor.</p>
-<div class="orv_constellation"><p>[Crazy… crazy guy!]</p></div>
+<div class="orv_constellation"><p>Crazy… crazy guy!</p></div>
 <p class="orv_line">Kim Namwoon's baffled voice was heard.</p>
 <p class="orv_line">Yoo Joonghyuk glanced at me.</p>
 <p class="orv_line">–…Are you just leaving? The giant soldier is useful.</p>
 <p class="orv_line">–Just watch.</p>
 <p class="orv_line">We started down the circular staircase towards the second underground floor. The end of the circular staircase wasn't in sight. According to legend, the depths of Tartarus was so great that a dropped anvil fell for a long time.</p>
-<div class="orv_constellation"><p>[Wait, I'll come along!]</p></div>
+<div class="orv_constellation"><p>Wait, I'll come along!</p></div>
 <p class="orv_line">Kim Namwoon hurriedly followed after us. The body of the giant soldier was reduced to around two metres. Pluto was a giant soldier that could scale to fit the user's convenience.</p>
 <p class="orv_line">I teasingly asked him, "Why are you following us when you said you didn't want to help?"</p>
-<div class="orv_constellation"><p>[That… I'm a bit bored.]</p></div>
+<div class="orv_constellation"><p>That… I'm a bit bored.</p></div>
 <p class="orv_line">The smiling mouth couldn't hide his feelings.</p>
-<div class="orv_constellation"><p>[By the way, what are you going to do? Where are you going? Huh?]</p></div>
+<div class="orv_constellation"><p>By the way, what are you going to do? Where are you going? Huh?</p></div>
 <p class="orv_line">"I'm going to meet the giants."</p>
-<div class="orv_constellation"><p>[What?]</p></div>
+<div class="orv_constellation"><p>What?</p></div>
 <p class="orv_line">Kim Namwoon made a blank expression for a moment before shouting,</p>
-<div class="orv_constellation"><p>[Kuhat… uhahaha! Hey, subway grasshopper! I saw it at the time but you are really crazy. Don't you know what the giants are?]</p></div>
+<div class="orv_constellation"><p>Kuhat… uhahaha! Hey, subway grasshopper! I saw it at the time but you are really crazy. Don't you know what the giants are?</p></div>
 <p class="orv_line">Of course, I knew.</p>
-<div class="orv_constellation"><p>[Once you meet those ■■, a hole will be punched through your ■■ in a moment…]</p></div>
-<div class="orv_system"><p>[The prisoner filtering is activated!]</p></div>
-<div class="orv_system"><p>[The contents have been filtered to ensure the correct language usage in Tartarus.]</p></div>
-<div class="orv_system"><p>[Prisoner 'Kim Namwoon' has received one penalty point.]</p></div>
-<div class="orv_constellation"><p>[This sh■!]</p></div>
-<div class="orv_system"><p>[Prisoner 'Kim Namwoon' has received two penalty points.]</p></div>
+<div class="orv_constellation"><p>Once you meet those ■■, a hole will be punched through your ■■ in a moment…</p></div>
+<div class="orv_system"><p>The prisoner filtering is activated!</p></div>
+<div class="orv_system"><p>The contents have been filtered to ensure the correct language usage in Tartarus.</p></div>
+<div class="orv_system"><p>Prisoner 'Kim Namwoon' has received one penalty point.</p></div>
+<div class="orv_constellation"><p>This sh■!</p></div>
+<div class="orv_system"><p>Prisoner 'Kim Namwoon' has received two penalty points.</p></div>
 <p class="orv_line">Even if I didn't hear Kim Namwoon's curses, I knew what the giants were.</p>
 <p class="orv_line">The giants. A race that dominated in the early days of Olympus. There was a dizzying roar and I involuntarily stopped. Down in the distance, the giants had already noticed our existence and were reacting. It was only some of the 'status' but it was enough to cause goosebumps.</p>
-<div class="orv_constellation"><p>[Crazy. This is crazy…]</p></div>
+<div class="orv_constellation"><p>Crazy. This is crazy…</p></div>
 <p class="orv_line">I ignored Kim Namwoon's words and called out to Biyoo. Then Biyoo popped out from my chest.</p>
-<div class="orv_constellation"><p>[Baat?]</p></div>
+<div class="orv_constellation"><p>Baat?</p></div>
 <p class="orv_line">"Is the channel well controlled?"</p>
-<div class="orv_constellation"><p>[Baaat!]</p></div>
+<div class="orv_constellation"><p>Baaat!</p></div>
 <p class="orv_line">"Since all broadcasts of the Underworld are off the record, only let the constellations who have vowed not to reveal the information into the channel."</p>
 <p class="orv_line">Biyoo nodded and started to manipulate the channel. Some of the constellations complained but now was the right time to do this. The less exposure there was from now on, the better it would be.</p>
 <p class="orv_line">Not long after, some constellations sent messages.</p>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is grumbling and accepts the agreement.]</p></div>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' isn't satisfied but agrees to make a pledge.]</p></div>
-<div class="orv_system"><p>[The constellation 'Secretive Plotter' says he already made a vow.]</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is grumbling and accepts the agreement.</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' isn't satisfied but agrees to make a pledge.</p></div>
+<div class="orv_system"><p>The constellation 'Secretive Plotter' says he already made a vow.</p></div>
 <p class="orv_line">I watched the pouring messages and Kim Namwoon expressed his admiration.</p>
-<div class="orv_constellation"><p>[Wow, this channel…]</p></div>
+<div class="orv_constellation"><p>Wow, this channel…</p></div>
 <p class="orv_line">Kim Namwoon died before even choosing his sponsor so he might be surprised by the indirect messages of the constellations. All the way down the stairs, Kim Namwoon continued to talk loudly.</p>
-<div class="orv_constellation"><p>[By the way, the Underworld King sent you all the way down here? That ahjussi is really stern.]</p></div>
+<div class="orv_constellation"><p>By the way, the Underworld King sent you all the way down here? That ahjussi is really stern.</p></div>
 <p class="orv_line">"…Shut up. Open your mouth one more time and I'll cut it off."</p>
-<div class="orv_constellation"><p>[What? Do you want to fight? You want to play?]</p></div>
+<div class="orv_constellation"><p>What? Do you want to fight? You want to play?</p></div>
 <p class="orv_line">Yoo Joonghyuk's gaze towards Kim Namwoon was complicated. Yoo Joonghyuk already knew Kim Namwoon. In the last round, Kim Namwoon was also Yoo Joonghyuk's companion.</p>
 <p class="orv_line">"Yoo Joonghyuk. Don't waste power here. Don't you know?"</p>
 <p class="orv_line">Kim Namwoon smacked his lips when he saw Yoo Joonghyuk raising his sword. He looked like a child as he breathed with excitement. A child who hadn't received attention for a long time and was alone.</p>
 <p class="orv_line">In response to my question about why she used Kim Namwoon, Han Sooyoung of the 1863rd round replied:</p>
 <p class="orv_line">–No one is born a bad person from the beginning. It is all set up by the writer. The writer gave the narrative to be a bad person. I didn't like this.</p>
 <p class="orv_line">I also agreed with Han Sooyoung's words to some extent. However, Kim Namwoon of this world pressed the wrong button first. He instigated the worst crime by inciting the people on the subway.</p>
-<div class="orv_constellation"><p>[My heart is pounding. It is the first time I've felt like this since my father and mother abandoned me.]</p></div>
+<div class="orv_constellation"><p>My heart is pounding. It is the first time I've felt like this since my father and mother abandoned me.</p></div>
 <p class="orv_line">"What do you feel?"</p>
-<div class="orv_constellation"><p>[It feels like a new adventure is waiting for me.]</p></div>
+<div class="orv_constellation"><p>It feels like a new adventure is waiting for me.</p></div>
 <p class="orv_line">Obviously, Kim Namwoon was created. Should I blame the writer of Ways of Survival? Or should I blame myself for not stopping Kim Namwoon properly at the time?</p>
 <p class="orv_line">I opened my smartphone and a new message was floating.</p>
-<div class="orv_system"><p>[The 'fourth revision' update is currently in progress.]</p></div>
+<div class="orv_system"><p>The 'fourth revision' update is currently in progress.</p></div>
 <p class="orv_line">…I knew it would update soon. There were many things going on that it would be strange if this was quiet. As I headed downstairs, I opened Ways of Survival and read the necessary parts. It was best to read Ways of Survival when my mind became uneasy.</p>
-<div class="orv_quote"><p>「 Kim Dokja thought: The third round I am living no longer resembles any of the original rounds. 」</p></div>
+<div class="orv_quote"><p>Kim Dokja thought: The third round I am living no longer resembles any of the original rounds.</p></div>
 <p class="orv_line">Still, I might be able to find a similar part. There were many scenes about the Underworld in the original Ways of Survival.</p>
 <p class="orv_line">The 47th round, the 211th round, the 397th round… there were many. However, the Underworld had never appeared at 'this point' in those rounds.</p>
-<div class="orv_quote"><p>「 We have to gather all the information available. 」</p></div>
-<div class="orv_quote"><p>「 We can't win Gigantomachia if we don't persuade the giants. 」</p></div>
+<div class="orv_quote"><p>We have to gather all the information available.</p></div>
+<div class="orv_quote"><p>We can't win Gigantomachia if we don't persuade the giants.</p></div>
 <p class="orv_line">There were remnants of Olympus throughout the pages of Ways of Survival. The sea was parted with a single gesture. Trampling on transcendents and constellations. The 12 gods of Olympus brutally destroying planets. Once I left here, I would have to face them head on.</p>
 <p class="orv_line">Many pieces of information passed through my head regarding things that could be used and things that couldn't be used.</p>
 <p class="orv_line">"Kim Dokja."</p>
 <p class="orv_line">"What is it?"</p>
 <p class="orv_line">Yoo Joonghyuk gazed at me quietly before speaking in a low voice. "It's nothing."</p>
 <p class="orv_line">What was with this bastard? Suddenly speaking out of the blue. I immediately used Omniscient Reader's Viewpoint and was exposed to Yoo Joonghyuk's thoughts.</p>
-<div class="orv_quote"><p>「 You don't seem confident. 」</p></div>
+<div class="orv_quote"><p>You don't seem confident.</p></div>
 <p class="orv_line">I felt like I had been stabbed. Maybe I showed my feelings on my face more than I thought. I deliberately opened my mouth and spoke in a loud voice.</p>
 <p class="orv_line">"There are two things I need to get in the Underworld. One is the giant god's armour and the other is the giant god's oath."</p>
 <p class="orv_line">"…Neither will be easy."</p>
 <p class="orv_line">"I guess so."</p>
 <p class="orv_line">"The harder it is, the better the rewards."</p>
 <p class="orv_line">I smiled while listening to Yoo Joonghyuk's words. Not long after, the entrance to the second floor of the Underworld appeared. As expected, the cerberus was guarding it. It was bigger than the one on the first floor. The moment Yoo Joonghyuk pulled out his sword, Kim Namwoon cried out.</p>
-<div class="orv_constellation"><p>[Wait! Don't hit Yellowy!]</p></div>
+<div class="orv_constellation"><p>Wait! Don't hit Yellowy!</p></div>
 <p class="orv_line">"Get out of the way. There is no time."</p>
 <p class="orv_line">Kim Namwoon stroked the cerberus and spoke.</p>
-<div class="orv_constellation"><p>[I know the location of the track elevator that the judges use.]</p></div>
+<div class="orv_constellation"><p>I know the location of the track elevator that the judges use.</p></div>
 <p class="orv_line">The track elevator. There were clearly such things in Tartarus. A hidden transport mechanism that only the judges could use. However, the exact location of the elevator wasn't explained in Ways of Survival.</p>
 <p class="orv_line">I asked doubtfully, "How do you know that?"</p>
-<div class="orv_constellation"><p>[I've been sneaking downstairs with it.]</p></div>
+<div class="orv_constellation"><p>I've been sneaking downstairs with it.</p></div>
 <p class="orv_line">"How many floors?"</p>
-<div class="orv_constellation"><p>[The 77th floor.]</p></div>
+<div class="orv_constellation"><p>The 77th floor.</p></div>
 <p class="orv_line">I was startled. The 77th floor gained the gateway to the lowest floor.</p>
-<div class="orv_constellation"><p>[Follow me. It's this way.]</p></div>
+<div class="orv_constellation"><p>Follow me. It's this way.</p></div>
 <p class="orv_line">Kim Namwoon walked forward confidently and Yoo Joonghyuk and I glanced at each other.</p>
 <p class="orv_line">Surprisingly, this guy was helpful.</p>
 <p class="orv_line">…As expected, I should've kept him alive? No, this time he was helpful after dying so I did a good job of killing him.</p>
@@ -309,16 +316,16 @@
 <p class="orv_line">"Hey! What are you staring at? Lower your eyes!"</p>
 <p class="orv_line">Among the laughing prisoners, transcendents could be seen. They had committed crimes in Olympus' legal zone like me or were held captive due to the 12 gods. Some of them would become food at the Gourmet Association's dining table.</p>
 <p class="orv_line">Then the elevator stopped and we got off at the 77th underground floor. The 77th floor was a prisoner-free floor. A space reminiscent of a large, hollow cavity and its width couldn't be measured. The centre of the space contained a generously sized door.</p>
-<div class="orv_constellation"><p>[There is no Yellowy on the 78th floor. They are useless.]</p></div>
+<div class="orv_constellation"><p>There is no Yellowy on the 78th floor. They are useless.</p></div>
 <p class="orv_line">A cerberus couldn't stop a giant. It might be possible for a campe.</p>
 <p class="orv_line">Kim Namwoon hesitated before stating.</p>
-<div class="orv_constellation"><p>[…I've never been there before. I put my hand into it previously but this was what happened.]</p></div>
+<div class="orv_constellation"><p>…I've never been there before. I put my hand into it previously but this was what happened.</p></div>
 <p class="orv_line">I looked at the scar left on the shoulder of the giant soldier. It was almost healed now but the damage seemed enough to tear off the arm.</p>
 <p class="orv_line">It wasn't perfect but Pluto was a terrible weapon capable of exerting power equivalent to a narrative-grade constellation when there wasn't a passenger on board. Yet this weapon received such damage.</p>
 <p class="orv_line">I approached the door. The door was over 30 metres in height and there was a pattern similar to a human face.</p>
 <p class="orv_line">Yoo Joonghyuk said, "There must be an offering to enter."</p>
 <p class="orv_line">Kim Namwoon was surprised by Yoo Joonghyuk's words.</p>
-<div class="orv_constellation"><p>[How do you know that?]</p></div>
+<div class="orv_constellation"><p>How do you know that?</p></div>
 <p class="orv_line">I ignored Kim Namwoon and replied, "I know. I'm ready."</p>
 <p class="orv_line">"If your offering is too powerful, you will call the ancient giants."</p>
 <p class="orv_line">"I'll have to meet them eventually."</p>
@@ -326,15 +333,15 @@
 <p class="orv_line">There were different types of giants in Tartarus. One type was the rulers of Olympus who caused Titanomachy, the ancient giants called the titans. The other type was the gigantes who caused Gigantomachia. If I had to divide them by levels, it was the difference between a myth-grade constellation and a narrative-grade constellation. The ones I dared to call were the gigantes.</p>
 <p class="orv_line">"Don't worry. A titan-grade giant won't emerge unless there is a high-grade item among the star relics…"</p>
 <p class="orv_line">At this moment, an earthquake occurred.</p>
-<div class="orv_system"><p>[The configuration of Tartarus is becoming unstable!]</p></div>
+<div class="orv_system"><p>The configuration of Tartarus is becoming unstable!</p></div>
 <p class="orv_line">The moment I realized something was wrong, the door suddenly opened and a huge hand grabbed Yoo Joonghyuk.</p>
 <p class="orv_line">"Yoo Joonghyuk!"</p>
 <p class="orv_line">I reached out for Yoo Joonghyuk as two more hands emerged from inside the door. I hurriedly dodged using Electrification but Kim Namwoon wasn't lucky.</p>
-<div class="orv_constellation"><p>[Uwaaaack! Save me!]</p></div>
+<div class="orv_constellation"><p>Uwaaaack! Save me!</p></div>
 <p class="orv_line">The next moment, more than 10 hands covered me. My body became a mess in the closed space created by the hands and by the time I came to my senses, I was hanging upside down in the air. My shaky vision could see the huge hand that grabbed me.</p>
-<div class="orv_system"><p>[The exclusive skill 'Fourth Wall' is strongly activated!]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Fourth Wall' is strongly activated!</p></div>
 <p class="orv_line">Sparks bounced and the 'status' was so full that it filled the surroundings. I felt like my existence could burst apart at any moment. A huge, blunt finger was tapping my ass.</p>
-<div class="orv_constellation"><p>[There is a cute fly.]</p></div>
+<div class="orv_constellation"><p>There is a cute fly.</p></div>
 <p class="orv_line">A huge eye resembling the Breaking the Sky Sword Saint stared at me.</p>
 <br>
 <hr>
@@ -343,18 +350,12 @@
             <a href="./ch_321"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_323">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="322" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="394" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="321" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="321" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

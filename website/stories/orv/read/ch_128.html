@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 128: Ep. 25 - Those Who Face a God, II</title>
     <meta property="og:title" content="Ch 128: Ep. 25 - Those Who Face a God, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,95 +177,95 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00128.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 128: Ep. 25 - Those Who Face a God, II</h1></div>
 <p class="orv_line">The strongest existences in the Star Stream were often called 'constellations'. They observed the stories of every world from above.</p>
 <p class="orv_line">However, as I said earlier, the constellations aren't the only ones who could go against constellations. There were those who refused the path of a constellation and became demon kings or dragons that ruled at the peak of all monsters from birth.</p>
 <p class="orv_line">Then what about humans? Could humans who didn't walk the path of a human reach the level where they could oppose the constellation?</p>
 <p class="orv_line">The answer was currently right in front of me.</p>
-<div class="orv_constellation"><p>[Interesting. You gave up your existence for another planet?]</p></div>
+<div class="orv_constellation"><p>Interesting. You gave up your existence for another planet?</p></div>
 <p class="orv_line">Kyrgios could see my identity with one look. He glanced at the confused Asuka Ren besides me.</p>
-<div class="orv_constellation"><p>[I'll let it pass just once because of your courage. Take that woman away.]</p></div>
+<div class="orv_constellation"><p>I'll let it pass just once because of your courage. Take that woman away.</p></div>
 <p class="orv_line">A returnee. Born with special talents, they transcended the category of a human thanks to the blessing of the Star Stream.</p>
 <p class="orv_line">Among the returnees, Kyrgios Rodgraim was a special existence. He was very powerful among the returnees and earned enough money not to be dragged into the stories made by the dokkaebis. He was a returnee who never acted in Ways of Survival.</p>
 <p class="orv_line">"I have something to say to you."</p>
-<div class="orv_constellation"><p>[…Say?]</p></div>
+<div class="orv_constellation"><p>…Say?</p></div>
 <p class="orv_line">The skills that exceeded the level of transcendence manifested and revealed their presence to me. It was the presence of a constellation that could destroy mortals just by existing.</p>
-<div class="orv_constellation"><p>[Do you think you are in a position to talk to me?]</p></div>
+<div class="orv_constellation"><p>Do you think you are in a position to talk to me?</p></div>
 <p class="orv_line">I was surprised that there was so much moisture inside me. My back was soaked with sweat.</p>
-<div class="orv_constellation"><p>[Your dare oppose Baekchung?]</p></div>
+<div class="orv_constellation"><p>Your dare oppose Baekchung?</p></div>
 <p class="orv_line">He was strong. I got goosebumps at the thought of how a small person could be so strong.</p>
-<div class="orv_system"><p>[The exclusive skill, 'Fourth Wall' is activated!]</p></div>
+<div class="orv_system"><p>The exclusive skill, 'Fourth Wall' is activated!</p></div>
 <p class="orv_line">However, I had a 'wall'. No matter how terrifying the presence beyond the wall, it wouldn't harm me as long as I didn't cross it.</p>
-<div class="orv_system"><p>[The character 'Kyrgios Rodgraim' is curious towards you.]</p></div>
+<div class="orv_system"><p>The character 'Kyrgios Rodgraim' is curious towards you.</p></div>
 <p class="orv_line">Kyrgios noticed something strange.</p>
-<div class="orv_constellation"><p>[…You endured it? How? Do you have the protection of a higher being?]</p></div>
+<div class="orv_constellation"><p>…You endured it? How? Do you have the protection of a higher being?</p></div>
 <p class="orv_line">I opened my mouth before he became interested in the wrong thing. "Kyrgios. This world needs your help."</p>
 <p class="orv_line">Kyrgios' expression changed.</p>
-<div class="orv_constellation"><p>[This is why you came looking for me?]</p></div>
+<div class="orv_constellation"><p>This is why you came looking for me?</p></div>
 <p class="orv_line">"That's right."</p>
-<div class="orv_constellation"><p>[The small person…]</p></div>
+<div class="orv_constellation"><p>The small person…</p></div>
 <p class="orv_line">Then the 'small person' replied.</p>
-<div class="orv_system"><p>[A small planet's constellation is looking tearfully at Kyrgios Rodgraim.]</p></div>
-<div class="orv_system"><p>[A small planet's constellation has sponsored 10 coins to Kyrgios Rodgraim.]</p></div>
+<div class="orv_system"><p>A small planet's constellation is looking tearfully at Kyrgios Rodgraim.</p></div>
+<div class="orv_system"><p>A small planet's constellation has sponsored 10 coins to Kyrgios Rodgraim.</p></div>
 <p class="orv_line">Kyrgios frowned.</p>
-<div class="orv_constellation"><p>[I don't need it.]</p></div>
-<div class="orv_system"><p>[The small planet's small constellation has received a large shock.]</p></div>
+<div class="orv_constellation"><p>I don't need it.</p></div>
+<div class="orv_system"><p>The small planet's small constellation has received a large shock.</p></div>
 <p class="orv_line">A few raindrops fell from the sky like baby pee.</p>
-<div class="orv_constellation"><p>[…Every world has a time of destruction and every story comes to an end. For this planet, that time is now.]</p></div>
+<div class="orv_constellation"><p>…Every world has a time of destruction and every story comes to an end. For this planet, that time is now.</p></div>
 <p class="orv_line">There were no emotions in Kyrgios' eyes as he stared into the distance. However, I knew. Even if you became insensitive to everything in the world, there was no one who could escape from the bounds of their own story.</p>
 <p class="orv_line">"Then why did you come back here? You left Peace Land a long time ago."</p>
-<div class="orv_constellation"><p>[…Something called me.]</p></div>
+<div class="orv_constellation"><p>…Something called me.</p></div>
 <p class="orv_line">My eyes glanced towards Asuka Ren, who was staring at Kyrgios. I knew what Kyrgios had probably felt.</p>
 <p class="orv_line">"Don't deceive yourself. Didn't you come back here to defend your home?"</p>
-<div class="orv_constellation"><p>[There are no good memories here. This place…]</p></div>
+<div class="orv_constellation"><p>There are no good memories here. This place…</p></div>
 <p class="orv_line">"Is this the place where you were born 'weak'?" Kyrgios shook for the first time. "It is because of your mother gave you a cursed body?"</p>
-<div class="orv_constellation"><p>[…You know me quite well, incarnation of the scenario. Then I'll say this. Get lost. I won't tell you a third time…]</p></div>
+<div class="orv_constellation"><p>…You know me quite well, incarnation of the scenario. Then I'll say this. Get lost. I won't tell you a third time…</p></div>
 <p class="orv_line">"Are you scared?"</p>
-<div class="orv_constellation"><p>[What?]</p></div>
+<div class="orv_constellation"><p>What?</p></div>
 <p class="orv_line">"I asked if you are scared. This is your world and these constellations are destroying it. Are you scared of that snake?"</p>
 <p class="orv_line">At this moment, a fearsome pressure that almost made my eyes pop out pushed down on my body.</p>
-<div class="orv_constellation"><p>[If you want to die then I will kill you.]</p></div>
+<div class="orv_constellation"><p>If you want to die then I will kill you.</p></div>
 <p class="orv_line">I gasped for air but didn't stop speaking. "Don't deceive yourself about why you came here."</p>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is displeased with the behaviour of Kyrgios Rodgraim.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is criticizing Kyrgios Rodgraim's justice.]</p></div>
-<div class="orv_system"><p>[The constellation 'Scribe of Heaven' is severely criticizing Kyrgios Rodgraim's interference in the scenario.]</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is displeased with the behaviour of Kyrgios Rodgraim.</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is criticizing Kyrgios Rodgraim's justice.</p></div>
+<div class="orv_system"><p>The constellation 'Scribe of Heaven' is severely criticizing Kyrgios Rodgraim's interference in the scenario.</p></div>
 <p class="orv_line">The indirect messages emerged one after another and Kyrgios's aura subsided.</p>
-<div class="orv_constellation"><p>[Weird people are chasing after you. The monkey king and archangel? It is strange. They have a strong pride…]</p></div>
+<div class="orv_constellation"><p>Weird people are chasing after you. The monkey king and archangel? It is strange. They have a strong pride…</p></div>
 <p class="orv_line">I spat out blood and started talking again. "Focus on my story. Did you come here to see the end of this planet?"</p>
-<div class="orv_constellation"><p>[I can't help this planet.]</p></div>
+<div class="orv_constellation"><p>I can't help this planet.</p></div>
 <p class="orv_line">Blue sparks appeared around his body. It was the probability storm. It was caused by killing the two Wind Shadow Squadron members.</p>
 <p class="orv_line">He wasn't a being summoned by the scenario and was limited by the probability, even if it wasn't as much as the constellations.</p>
 <p class="orv_line">Kyrgios firmly grabbed a spark and said.</p>
-<div class="orv_constellation"><p>[If I act then I will only hasten the destruction of this planet.]</p></div>
+<div class="orv_constellation"><p>If I act then I will only hasten the destruction of this planet.</p></div>
 <p class="orv_line">I understood what he meant. Probability was like a scale for the constellations. If one side changed the flow of the story without a valid probability then the law of Star Stream would forcefully correct the balance.</p>
-<div class="orv_constellation"><p>[If I interfere with the scenario, other constellations watching the scenario will also be able to move. All I can do… is watch the end of my home.]</p></div>
+<div class="orv_constellation"><p>If I interfere with the scenario, other constellations watching the scenario will also be able to move. All I can do… is watch the end of my home.</p></div>
 <p class="orv_line">I remembered. This was the real 'image' of Kyrgios Rodgraim that I knew. He left his home, overcame countless trials and returned, only to be unable to save his home despite his strength.</p>
 <p class="orv_line">This was the Paradox Baekchung, Kyrgios Rodgraim.</p>
 <p class="orv_line">"There is no need to take action with your own hands."</p>
 <p class="orv_line">However, if I was to back down here then I wouldn't have come see Kyrgios in the first place.</p>
 <p class="orv_line">"Don't you need a disciple to learn the top secret technique of your white energy?" The calm Kyrgios was greatly shocked by my words. "Please accept me as your disciple. I will be your agent on Peace Land."</p>
 <p class="orv_line">However, the shock only lasted a moment.</p>
-<div class="orv_constellation"><p>[…I don't accept outsiders as a disciple. In addition, your strength is lacking to be qualified.]</p></div>
+<div class="orv_constellation"><p>…I don't accept outsiders as a disciple. In addition, your strength is lacking to be qualified.</p></div>
 <p class="orv_line">My pride was a bit hurt. If Yoo Joonghyuk was here then would Kyrgios hesitate to accept him as a disciple?</p>
 <p class="orv_line">"I'm not qualified despite this?"</p>
 <p class="orv_line">I picked up a branch in the vicinity. My magic power was absorbed by Purest Sword Force and a wave of mana flashed at the tip of the branch. It was lacking in power but it was still enough to show my achievement.</p>
@@ -275,7 +282,7 @@
 <br>
 <hr>
 <br>
-<div class="orv_quote"><p>「 …Kyrgios Rodgraim was a 'Murim World Returnee'. 」</p></div>
+<div class="orv_quote"><p>…Kyrgios Rodgraim was a 'Murim World Returnee'.</p></div>
 <p class="orv_line">Despite the inherent limitations of the small people, he mastered several martial arts and succeeded in transcending his race without the help of the system.</p>
 <p class="orv_line">There are many legends about him who advanced to the First Murim and reigned as the leader. He killed all the enemies taller than himself, cut off the penis of a drunk man making fun of his height and has an association with the famous constellation the 'snake'… 」</p>
 <p class="orv_line">"Your smartphone has become smaller as well?"</p>
@@ -323,7 +330,7 @@
 <p class="orv_line">I quietly closed my eyes and whispered something. The next moment, a violent white lightning bounced around me. It was the secret technique of Kyrgios, Electrification.</p>
 <p class="orv_line">"Eh? What is this? You clearly couldn't…"</p>
 <p class="orv_line">"I told you. I stole it."</p>
-<div class="orv_system"><p>['Kyrgios Rodgraim' has been added to the fifth bookmark.]</p></div>
+<div class="orv_system"><p>'Kyrgios Rodgraim' has been added to the fifth bookmark.</p></div>
 <p class="orv_line">This was my purpose from the beginning. I placed the strongest returnee Kyrgios into my Bookmark skill and tried to raise my understanding of him as much as possible.</p>
 <p class="orv_line">In the first place, Kyrgios wasn't willing to teach me properly. Strong people like Kyrgios weren't simple enough to give up their secret techniques because of flattery.</p>
 <p class="orv_line">His purpose was to keep me here until the end of the scenario and then torture me after the scenario ended to find out everything I knew.</p>
@@ -342,18 +349,12 @@
             <a href="./ch_127"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_129">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="128" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="376" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="127" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="127" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

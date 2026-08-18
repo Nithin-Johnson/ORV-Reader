@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 156: Ep. 30 - Dark Castle, VI</title>
     <meta property="og:title" content="Ch 156: Ep. 30 - Dark Castle, VI" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00156.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 156: Ep. 30 - Dark Castle, VI</h1></div>
 <p class="orv_line">"Yoo Joonghyuk?"</p>
@@ -205,28 +212,28 @@
 <p class="orv_line">Tentacio also stared at me. "You said that you're not Yoo Joonghyuk."</p>
 <p class="orv_line">"The strongest in Seoul isn't Yoo Joonghyuk. It is me."</p>
 <p class="orv_line">What the hell was going on? Why was he looking for the strongest in Seoul?</p>
-<div class="orv_system"><p>[The constellation 'Slumbering Lady of Fine Brocade' is sorry towards you.]</p></div>
-<div class="orv_system"><p>[The constellation 'Slumbering Lady of Fine Brocade' is asking you to defeat this demon.]</p></div>
+<div class="orv_system"><p>The constellation 'Slumbering Lady of Fine Brocade' is sorry towards you.</p></div>
+<div class="orv_system"><p>The constellation 'Slumbering Lady of Fine Brocade' is asking you to defeat this demon.</p></div>
 <p class="orv_line">…Slumbering Lady of Fine Brocade? I wondered reflexively. Suddenly, I got a sense of what was going on.</p>
-<div class="orv_system"><p>[You are staring at the constellations of Silla.]</p></div>
-<div class="orv_system"><p>[Constellations of Silla are embarrassed.]</p></div>
+<div class="orv_system"><p>You are staring at the constellations of Silla.</p></div>
+<div class="orv_system"><p>Constellations of Silla are embarrassed.</p></div>
 <p class="orv_line">Yes, this was right. These bastards… they sold me to save their descendants?</p>
-<div class="orv_system"><p>[The constellation 'Slumbering Lady of Fine Brocade' shows what happened.]</p></div>
+<div class="orv_system"><p>The constellation 'Slumbering Lady of Fine Brocade' shows what happened.</p></div>
 <p class="orv_line">The memory of Slumbering Lady of Fine Brocade appeared in my head. The injured Min Jiwon stuttered as she opened her mouth.</p>
 <p class="orv_line">–Seoul's strongest… is Yoo Joonghyuk.</p>
-<div class="orv_system"><p>[The constellation 'Slumbering Lady of Fine Brocade' is giving you a pathetic look.]</p></div>
+<div class="orv_system"><p>The constellation 'Slumbering Lady of Fine Brocade' is giving you a pathetic look.</p></div>
 <p class="orv_line">The act of showing one's memories required paying some probability and a significant amount of coins. The fact that she showed me her memory without hesitation meant the situation was urgent.</p>
 <p class="orv_line">Damn, then send him to Yoo Joonghyuk. Why send him to me? Was I easy? I sighed lightly and spoke towards the air. "Then what will you do for me if I help?"</p>
-<div class="orv_system"><p>[The constellation 'Slumbering Lady of Fine Brocade' says she will pay coins.]</p></div>
+<div class="orv_system"><p>The constellation 'Slumbering Lady of Fine Brocade' says she will pay coins.</p></div>
 <p class="orv_line">"How much? Will you give me 2,000 coins again?"</p>
-<div class="orv_system"><p>[The constellation 'Slumbering Lady of Fine Brocade' is embarrassed.]</p></div>
+<div class="orv_system"><p>The constellation 'Slumbering Lady of Fine Brocade' is embarrassed.</p></div>
 <p class="orv_line">"Give me something else. Something helpful."</p>
-<div class="orv_system"><p>[Constellations of Silla have their pride damaged and are angry at 'Slumbering Lady of Fine Brocade'.]</p></div>
-<div class="orv_system"><p>[The constellation 'Slumbering Lady of Fine Brocade' says she will pay a story.]</p></div>
+<div class="orv_system"><p>Constellations of Silla have their pride damaged and are angry at 'Slumbering Lady of Fine Brocade'.</p></div>
+<div class="orv_system"><p>The constellation 'Slumbering Lady of Fine Brocade' says she will pay a story.</p></div>
 <p class="orv_line">A story?</p>
-<div class="orv_system"><p>[A new bounty scenario has arrived!]</p></div>
+<div class="orv_system"><p>A new bounty scenario has arrived!</p></div>
 <div class="orv_window">
-<h3 class="orv_window_title">[Bounty Scenario - Fight Against the Demon]</h3>
+<h3 class="orv_window_title">Bounty Scenario - Fight Against the Demon</h3>
 <p>Category: Sub</p>
 <p>Difficulty level: A+</p>
 <p>Clear Conditions: Defeat the demon earl 'Tentacio'.</p>
@@ -255,7 +262,7 @@
 <p class="orv_line">I didn't think the Seoul rankings announced by the dokkaebi were wrong. Apart from me, Han Sooyoung was the only one who knew the exact level of the demon earl.</p>
 <p class="orv_line">I replied. "He is a 3rd grade demon."</p>
 <p class="orv_line">Demon species above the 3rd grade had their own story.</p>
-<div class="orv_system"><p>[The 3rd grade demon 'Tentacio' is telling the story of Bug Slaughter.]</p></div>
+<div class="orv_system"><p>The 3rd grade demon 'Tentacio' is telling the story of Bug Slaughter.</p></div>
 <p class="orv_line">Bug Slaughter. It was a pretty useful narrative. It wasn't in the form of a stigma yet but its power exceeded the stigmas of incarnations since this was his own story.</p>
 <p class="orv_line">As Tentacio's story started to be released, all the incarnations, including Lee Hyunsung and Han Sooyoung, stood in place like hardened bugs. Lee Jihye and Lee Gilyoung who was still unconscious, twisted in pain while Kim Yongpal had already collapsed while foaming at the mouth.</p>
 <p class="orv_line">This was the real power of the 'story'. It was to swallow other beings into the 'story'. The frozen incarnations were waiting for their master's command.</p>
@@ -275,32 +282,32 @@
 <p class="orv_line">"What?"</p>
 <p class="orv_line">This was the difference in 'status'.</p>
 <p class="orv_line">"Still, Bug Slaughter is a fairly usable story. At least, when the enemy is weaker than you."</p>
-<div class="orv_system"><p>[You aren't interested in the 'Bug Slaughter' story.]</p></div>
-<div class="orv_system"><p>[The effect of 'Bug Slaughter' is negated by you.]</p></div>
+<div class="orv_system"><p>You aren't interested in the 'Bug Slaughter' story.</p></div>
+<div class="orv_system"><p>The effect of 'Bug Slaughter' is negated by you.</p></div>
 <p class="orv_line">Tentacio's eyes widened. "at least a marquis-grade… perhaps a demon king? No, that isn't likely… are you a returnee?" The peak of the demon species, the 72 demon kings were equivalent to narrative-grade constellations. "But a returnee can't be on the first floor of Dark Castle…"</p>
 <p class="orv_line">"That's right. Both are wrong."</p>
 <p class="orv_line">An existence with their 'status' revealed was constrained by probability.</p>
-<div class="orv_system"><p>[You are looking at the demon earl 'Tentacio'.]</p></div>
+<div class="orv_system"><p>You are looking at the demon earl 'Tentacio'.</p></div>
 <p class="orv_line">Tentacio turned pale. I didn't delay and rushed towards Tentacio while using Purest Sword Force.</p>
-<div class="orv_system"><p>[Blade of Faith has been activated!]</p></div>
-<div class="orv_system"><p>[The special option of Unbroken Faith is activated.]</p></div>
-<div class="orv_system"><p>[The ether attribute is converted to 'divine'.]</p></div>
+<div class="orv_system"><p>Blade of Faith has been activated!</p></div>
+<div class="orv_system"><p>The special option of Unbroken Faith is activated.</p></div>
+<div class="orv_system"><p>The ether attribute is converted to 'divine'.</p></div>
 <p class="orv_line">The new texture of Unbroken Faith was unfamiliar to me.</p>
 <p class="orv_line">"Kuaack!" The demon screamed painfully as the ends of his horns were cut off. The second strike flew towards Tentacio before he could move.</p>
 <p class="orv_line">It wasn't just that the earl's story wasn't effective on me. My movements themselves were different from ordinary incarnations. The demon gritted his teeth.</p>
 <p class="orv_line">"A constellation? No way… this is impossible!"</p>
 <p class="orv_line">I wondered if I should borrow Messiah's Path again but I didn't need to use the 'quotation' against Bug Slaughter. There was a limit to the number of 'quotations' and I also needed to check my abilities without a story.</p>
 <p class="orv_line">First, I needed to adjust my stats. Let's see.</p>
-<div class="orv_system"><p>[Physique Lv. 62 -> Physique Lv. 90]</p></div>
-<div class="orv_system"><p>[Strength Lv. 60 -> Strength Lv. 90]</p></div>
-<div class="orv_system"><p>[Agility Lv. 60 -> Agility Lv. 90]</p></div>
-<div class="orv_system"><p>[Magic Power Lv. 62 -> Magic Power Lv. 90]</p></div>
-<div class="orv_system"><p>[All stats have increased significantly.]</p></div>
-<div class="orv_system"><p>[A total of 116,400 coins have been consumed.]</p></div>
+<div class="orv_system"><p>Physique Lv. 62 -> Physique Lv. 90</p></div>
+<div class="orv_system"><p>Strength Lv. 60 -> Strength Lv. 90</p></div>
+<div class="orv_system"><p>Agility Lv. 60 -> Agility Lv. 90</p></div>
+<div class="orv_system"><p>Magic Power Lv. 62 -> Magic Power Lv. 90</p></div>
+<div class="orv_system"><p>All stats have increased significantly.</p></div>
+<div class="orv_system"><p>A total of 116,400 coins have been consumed.</p></div>
 <p class="orv_line">It was huge spending but it was worth it.</p>
-<div class="orv_system"><p>[Your body is moving towards the limits of a human.]</p></div>
-<div class="orv_system"><p>[A formidable energy has filled your body!]</p></div>
-<div class="orv_system"><p>[All stats have reached the scenario limit!]</p></div>
+<div class="orv_system"><p>Your body is moving towards the limits of a human.</p></div>
+<div class="orv_system"><p>A formidable energy has filled your body!</p></div>
+<div class="orv_system"><p>All stats have reached the scenario limit!</p></div>
 <p class="orv_line">My heart beat faster as if I had received a caffeine transfusion. The adrenaline level in my body increased sharply and my body became as light as a feather.</p>
 <p class="orv_line">My stats had an average level of 90. There was probably no one among the incarnations who had my stats. This was the only thing I could do as a constellation.</p>
 <p class="orv_line">"Then let's go."</p>
@@ -308,16 +315,16 @@
 <p class="orv_line">"Kuaaaaaaah!"</p>
 <p class="orv_line">Tentacio let out a terrible scream. As the battle continued, one or two injuries appeared on my body. As expected, I couldn't fight him without any skills.</p>
 <p class="orv_line">Then this would work.</p>
-<div class="orv_system"><p>[The special skill 'Miniaturization Lv. 3' is activated!]</p></div>
-<div class="orv_system"><p>[The effect of Miniaturization has decreased the size of your body.]</p></div>
+<div class="orv_system"><p>The special skill 'Miniaturization Lv. 3' is activated!</p></div>
+<div class="orv_system"><p>The effect of Miniaturization has decreased the size of your body.</p></div>
 <p class="orv_line">"What?"</p>
-<div class="orv_system"><p>[The exclusive skill 'Bookmark' is activated!]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Bookmark' is activated!</p></div>
 <p class="orv_line">"I will choose the fifth bookmark, Kyrgios Rodgraim."</p>
-<div class="orv_system"><p>[It is confirmed that your body composition is similar to the corresponding character.]</p></div>
-<div class="orv_system"><p>[The status of the character is higher than you.]</p></div>
-<div class="orv_system"><p>[The level of the skill is being forcibly adjusted.]</p></div>
+<div class="orv_system"><p>It is confirmed that your body composition is similar to the corresponding character.</p></div>
+<div class="orv_system"><p>The status of the character is higher than you.</p></div>
+<div class="orv_system"><p>The level of the skill is being forcibly adjusted.</p></div>
 <p class="orv_line">Normally the messages would end here. However, one more line popped up.</p>
-<div class="orv_system"><p>[Your status has risen and synchronization with the person will increase.]</p></div>
+<div class="orv_system"><p>Your status has risen and synchronization with the person will increase.</p></div>
 <br>
 <hr>
         </article>
@@ -325,18 +332,12 @@
             <a href="./ch_155"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_157">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="156" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="141" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="155" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="155" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

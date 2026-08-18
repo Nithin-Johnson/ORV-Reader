@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 268: Ep. 50 - Dokja's Story, V</title>
     <meta property="og:title" content="Ch 268: Ep. 50 - Dokja's Story, V" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,37 +177,37 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00268.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 268: Ep. 50 - Dokja's Story, V</h1></div>
-<div class="orv_constellation"><p>[Arrogant transcendent, what bullshit…!]</p></div>
+<div class="orv_constellation"><p>Arrogant transcendent, what bullshit…!</p></div>
 <p class="orv_line">At the beginning of the showdown, Yoo Joonghyuk moved.</p>
 <p class="orv_line">The scorn of the constellations and the overwhelming disadvantage in power weren't important to the present Yoo Joonghyuk. From the moment he entered the third round, he had been focused on only killing the enemies in front of him.</p>
 <p class="orv_line">An aura spread from Yoo Joonghyuk and some of the historical-grade constellations in front murmured to themselves. However, most of the constellations still looked down on Yoo Joonghyuk.</p>
 <p class="orv_line">No matter how transcendent, he was just a human. The constellations had no reason to lose in a situation where they had an overwhelming advantage in numbers.</p>
 <p class="orv_line">This became the last thought of the General of Vanara.</p>
-<div class="orv_system"><p>[The exclusive skill 'Giant Body Transformation Lv. 6 is activated!]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Giant Body Transformation Lv. 6 is activated!</p></div>
 <p class="orv_line">Giant Body Transformation was used and Yoo Joonghyuk narrowed the distance to the constellations in an instant. Yoo Joonghyuk shot forward like a meteor.</p>
 <p class="orv_line">By the time the General of Vanara realized the sword and hurriedly raised his huge double-edged sword, his head was already cut by the Black Heavenly Demon Sword and flying through the air.</p>
-<div class="orv_constellation"><p>[You dare…!]</p></div>
+<div class="orv_constellation"><p>You dare…!</p></div>
 <p class="orv_line">The General of Vanara's eyes widened and he spoke in his true voice, even with his cut neck.</p>
 <p class="orv_line">Yoo Joonghyuk cut the flying head in half using the Black Heavenly Demon Sword.</p>
 <p class="orv_line">It was a ridiculous end.</p>
@@ -209,13 +216,13 @@
 <p class="orv_line">The death of the General of Vanara was a great shock to the constellations. The constellations didn't disappear with the death of their incarnation bodies.</p>
 <p class="orv_line">However, there was no one who wanted to lose their incarnation body in vain. A fatal death permanently damaged the constellations. All the constellations became stiff.</p>
 <p class="orv_line">Yoo Joonghyuk utilized this short gap to attempt a second attack. The Black Heavenly Demon Sword left a dark trajectory as it moved and cut off the wings of a giant bird. The Thunder Eating Bird let out a loud cry. Then the constellations started to move.</p>
-<div class="orv_constellation"><p>[You!]</p></div>
+<div class="orv_constellation"><p>You!</p></div>
 <p class="orv_line">The Founder of Humanity's Primitive Spear aimed at Yoo Joonghyuk. It was a blow that would've turned any normal incarnation to powder.</p>
 <p class="orv_line">However, Yoo Joonghyuk received this blow. The impact ruptured his right forearm muscle and the force pushed at his entire body. Blood poured from his mouth but Yoo Joonghyuk didn't lose focus.</p>
-<div class="orv_system"><p>[Excessive concentration has expanded the category of the attributes!]</p></div>
-<div class="orv_system"><p>[The exclusive attribute 'Ruler of Amusement' is activated!]</p></div>
+<div class="orv_system"><p>Excessive concentration has expanded the category of the attributes!</p></div>
+<div class="orv_system"><p>The exclusive attribute 'Ruler of Amusement' is activated!</p></div>
 <p class="orv_line">His concentration awakened the power of the character. All the incoming constellations became data and flowed into Yoo Joonghyuk's mind. At this moment, the world was a game to Yoo Joonghyuk. Yoo Joonghyuk avoided the attacks of the constellations with restrained movements and fought back using magic power.</p>
-<div class="orv_constellation"><p>[Kuaaack!]</p></div>
+<div class="orv_constellation"><p>Kuaaack!</p></div>
 <p class="orv_line">The Founder of Humanity screamed as his fingers were cut by the Black Heavenly Demon Sword.</p>
 <p class="orv_line">Yoo Joonghyuk's Black Heavenly Demon Sword let out a deafening roar as it dug into the gap.</p>
 <p class="orv_line">Breaking the Sky Swordsmanship.</p>
@@ -223,93 +230,93 @@
 <p class="orv_line">Breaking the Sky Meteor.</p>
 <p class="orv_line">The sword rose from the ground to the heavens, stabbing the sky like a thunderbolt. The branches of the sword energy hide in the dark clouds and created thunder. The thunder poured from the night sky and struck the constellations like meteorites.</p>
 <p class="orv_line">Dozens of thunderbolts fell from the sky and the incarnation bodies of the constellations were pierced. It was a blow containing the power of transcendence stage three.</p>
-<div class="orv_constellation"><p>[Kuaaah!]</p></div>
+<div class="orv_constellation"><p>Kuaaah!</p></div>
 <p class="orv_line">Yoo Joonghyuk watched the constellations struggling with the pain and felt himself dying. The experiences of the third round went through his mind.</p>
 <p class="orv_line">It was a short round. Even so, many things happened.</p>
-<div class="orv_system"><p>[The story 'One who Inherited the Name of the King' is crying out.]</p></div>
+<div class="orv_system"><p>The story 'One who Inherited the Name of the King' is crying out.</p></div>
 <p class="orv_line">As if responding to his feelings, the stories started speaking. It was as if every story had its own will. Most of them weren't stories he had accumulated alone.</p>
-<div class="orv_system"><p>[The story 'Person who Opposes the Miracle' has begun.]</p></div>
+<div class="orv_system"><p>The story 'Person who Opposes the Miracle' has begun.</p></div>
 <p class="orv_line">A story about returnees.</p>
-<div class="orv_system"><p>[The story 'Paradise of Despair' has begun.]</p></div>
+<div class="orv_system"><p>The story 'Paradise of Despair' has begun.</p></div>
 <p class="orv_line">A story earned by preserving the abandoned paradise.</p>
-<div class="orv_system"><p>[The story 'One who Fought Against an Outer God' has begun.]</p></div>
+<div class="orv_system"><p>The story 'One who Fought Against an Outer God' has begun.</p></div>
 <p class="orv_line">The story where he confronted the outer god.</p>
-<div class="orv_system"><p>[The story 'Ruler of the Industrial Complex' has begun.]</p></div>
+<div class="orv_system"><p>The story 'Ruler of the Industrial Complex' has begun.</p></div>
 <p class="orv_line">It was a story that he would've normally never achieved. It was a story that was unrelated to the current situation but it was a story related to someone else. It was a story that could never be achieved alone.</p>
 <p class="orv_line">The stories started talking at the same time. It was as if they didn't want to finish the story here. Along with the bitter pain, blood poured from Yoo Joonghyuk's chest. He didn't even know how he obtained these wounds.</p>
 <p class="orv_line">There were a few fallen incarnation bodies on the ground. The Supreme God of Light Surya saw it and spoke.</p>
-<div class="orv_constellation"><p>[Amazing. You already can't be called a human anymore, child.]</p></div>
+<div class="orv_constellation"><p>Amazing. You already can't be called a human anymore, child.</p></div>
 <p class="orv_line">Yoo Joonghyuk's stories emitted a bright light like he was rebelling against the true voice.</p>
-<div class="orv_system"><p>[The story 'One Who Hunted the King of Disasters' is roaring.]</p></div>
+<div class="orv_system"><p>The story 'One Who Hunted the King of Disasters' is roaring.</p></div>
 <p class="orv_line">Yoo Joonghyuk was a transcendent. The stories were the unique parts making up the constellations. Just having stories didn't mean a person could be equal to the stars in the night sky. Even so, the current light pouring from Yoo Joonghyuk's body was brighter than any constellation in the place.</p>
 <p class="orv_line">Yoo Joonghyuk looked at the stories flowing from his body. Some were known and some were unfamiliar. There was a story that couldn't be obtained again.</p>
-<div class="orv_system"><p>[The story 'Life and Death Companions' wants to continue.]</p></div>
+<div class="orv_system"><p>The story 'Life and Death Companions' wants to continue.</p></div>
 <p class="orv_line">He couldn't help glancing at Yoo Sangah and the other party members. He also saw Kim Dokja on Lee Hyunsung's back.</p>
 <p class="orv_line">Yoo Joonghyuk gripped the Black Heavenly Demon Sword that was slipping from his hands.</p>
 <p class="orv_line">…He couldn't die. He couldn't die in a place like this. He used the last of his strength to point the trembling sword at Surya. Surya laughed as if the sight was interesting.</p>
-<div class="orv_constellation"><p>[However, it is only a human story.]</p></div>
+<div class="orv_constellation"><p>However, it is only a human story.</p></div>
 <p class="orv_line">Surya released a bright light as he used the stories he accumulated over thousands of years. It was a status that couldn't be resisted. Yoo Joonghyuk's short history was shaking in front of those formidable years.</p>
-<div class="orv_constellation"><p>[Foolish humans who don't know that a god's power is so high.]</p></div>
+<div class="orv_constellation"><p>Foolish humans who don't know that a god's power is so high.</p></div>
 <p class="orv_line">The sunlight that melted everything poured towards Yoo Joonghyuk.</p>
 <br>
 <hr>
 <br>
 <p class="orv_line">The scene of the industrial complex being destroyed by the constellations. Incarnations died without being able to rebel. Some people who felt desperate at the sudden disaster appeared up close on the screen. The most horrifying thing was that a man who was covered in injuries and lost one arm was still fighting.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is furious!]</p></div>
-<div class="orv_system"><p>[The constellation 'Queen of the Darkest Spring' is sorry for the incarnation 'Yoo Joonghyuk'.]</p></div>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is pointing a finger to the cowardly constellations!]</p></div>
-<div class="orv_system"><p>[Many constellations are complaining about the constellations on the battlefield!]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is furious!</p></div>
+<div class="orv_system"><p>The constellation 'Queen of the Darkest Spring' is sorry for the incarnation 'Yoo Joonghyuk'.</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is pointing a finger to the cowardly constellations!</p></div>
+<div class="orv_system"><p>Many constellations are complaining about the constellations on the battlefield!</p></div>
 <p class="orv_line">There were countless indirect messages from the constellations and the dokkaebi of the bureau were listening to them. Among them was Bihyung, the dokkaebi in charge of the Demon King Selection.</p>
-<div class="orv_constellation"><p>[What the hell do you mean by this?]</p></div>
+<div class="orv_constellation"><p>What the hell do you mean by this?</p></div>
 <p class="orv_line">He was rarely angry or agitated but now he had the same mind as the constellations in his channel.</p>
-<div class="orv_constellation"><p>[The second game is the victory of the Yoo Joonghyuk - Kim Dokja Industrial Complex! There was a time difference but there is nothing to worry about. Then why not announce the winner?!]</p></div>
+<div class="orv_constellation"><p>The second game is the victory of the Yoo Joonghyuk - Kim Dokja Industrial Complex! There was a time difference but there is nothing to worry about. Then why not announce the winner?!</p></div>
 <p class="orv_line">Shortly after the second game, Bihyung contacted the bureau's approval team directly. However, the only answer he got in return was 'it is being prepared'.</p>
 <p class="orv_line">In the end, the last connection Bihyung had was Baram, the next great dokkaebi candidate. There was a crackling sound and Baram's face appeared on the screen.</p>
-<div class="orv_constellation"><p>[This is the decision of the bureau.]</p></div>
+<div class="orv_constellation"><p>This is the decision of the bureau.</p></div>
 <p class="orv_line">The decision of the bureau. They were magic words.</p>
 <p class="orv_line">'This is the bureau's decision'.</p>
 <p class="orv_line">'This is the bureau's decision'.</p>
-<div class="orv_constellation"><p>[Baram. This is the main scenario.]</p></div>
+<div class="orv_constellation"><p>Baram. This is the main scenario.</p></div>
 <p class="orv_line">There were some things that even the bureau couldn't touch.</p>
-<div class="orv_constellation"><p>[Since when did the bureau interfere with the development of the main scenario? It is also a scenario where a giant story is involved… Baram, don't you know what will happen if you do this?]</p></div>
+<div class="orv_constellation"><p>Since when did the bureau interfere with the development of the main scenario? It is also a scenario where a giant story is involved… Baram, don't you know what will happen if you do this?</p></div>
 <p class="orv_line">Baram didn't answer.</p>
-<div class="orv_constellation"><p>[Please tell me. Who the hell did this? Is it one of your superiors?]</p></div>
+<div class="orv_constellation"><p>Please tell me. Who the hell did this? Is it one of your superiors?</p></div>
 <p class="orv_line">Bihyung glanced at Dokgak on the screen. It was clear that Dokgak was associated with this situation. However, this wasn't something that could be done by one or two senior dokkaebis. The silent Baram opened his mouth.</p>
-<div class="orv_constellation"><p>[…Are you doubting the 'great dokkaebis' right now?]</p></div>
-<div class="orv_constellation"><p>[Is there any other streamer who can do this beside them?]</p></div>
-<div class="orv_constellation"><p>[Bihyung, please wake up. Why would they do this?]</p></div>
-<div class="orv_constellation"><p>[I don't know. Perhaps some bribes were received.]</p></div>
+<div class="orv_constellation"><p>…Are you doubting the 'great dokkaebis' right now?</p></div>
+<div class="orv_constellation"><p>Is there any other streamer who can do this beside them?</p></div>
+<div class="orv_constellation"><p>Bihyung, please wake up. Why would they do this?</p></div>
+<div class="orv_constellation"><p>I don't know. Perhaps some bribes were received.</p></div>
 <p class="orv_line">Baram frowned.</p>
-<div class="orv_constellation"><p>[The great dokkaebis aren't bound by such private understandings.]</p></div>
-<div class="orv_constellation"><p>[Then why is this happening? Baram, you must know something!]</p></div>
-<div class="orv_constellation"><p>[Bihyung.]</p></div>
+<div class="orv_constellation"><p>The great dokkaebis aren't bound by such private understandings.</p></div>
+<div class="orv_constellation"><p>Then why is this happening? Baram, you must know something!</p></div>
+<div class="orv_constellation"><p>Bihyung.</p></div>
 <p class="orv_line">Bihyung instantly flinched. Baram's voice was furious. Bihyung thought there would be a strict scolding but unexpectedly, Baram just relaxed. It was as if he understood Bihyung. Baram on the screen was also watching the scenes of the Demon King Selection. Baram's lips slowly opened.</p>
-<div class="orv_constellation"><p>[Yes, maybe one of the great dokkaebis created this 'delay', as you said.]</p></div>
-<div class="orv_constellation"><p>[Then…]</p></div>
-<div class="orv_constellation"><p>[However, even a great dokkaebi can only do it up to there. It is impossible for a great dokkaebi to endure the storm that will be created from intervening in a scenario of this magnitude.]</p></div>
-<div class="orv_constellation"><p>[…So who did it?]</p></div>
+<div class="orv_constellation"><p>Yes, maybe one of the great dokkaebis created this 'delay', as you said.</p></div>
+<div class="orv_constellation"><p>Then…</p></div>
+<div class="orv_constellation"><p>However, even a great dokkaebi can only do it up to there. It is impossible for a great dokkaebi to endure the storm that will be created from intervening in a scenario of this magnitude.</p></div>
+<div class="orv_constellation"><p>…So who did it?</p></div>
 <p class="orv_line">At this moment, there was a loud noise and the ceiling of the bureau shook. It sounded like a huge dragon passing by. It was the sound of 'probability' moving.</p>
 <p class="orv_line">Bihyung's expression hardened.</p>
-<div class="orv_constellation"><p>[Don't tell me… something so ridiculous…]</p></div>
-<div class="orv_constellation"><p>[Do you understand now?]</p></div>
+<div class="orv_constellation"><p>Don't tell me… something so ridiculous…</p></div>
+<div class="orv_constellation"><p>Do you understand now?</p></div>
 <p class="orv_line">The existence that could move this probability. There was only one such existence in the Star Stream. He didn't even know if it should be called an 'existence'.</p>
 <p class="orv_line">Baram drove in the wedge.</p>
-<div class="orv_constellation"><p>[The will of the Star Stream wanted this.]</p></div>
-<div class="orv_constellation"><p>[This is ridiculous!]</p></div>
-<div class="orv_constellation"><p>[There is no other way to explain it.]</p></div>
+<div class="orv_constellation"><p>The will of the Star Stream wanted this.</p></div>
+<div class="orv_constellation"><p>This is ridiculous!</p></div>
+<div class="orv_constellation"><p>There is no other way to explain it.</p></div>
 <p class="orv_line">Bihyung's words were taken away and he stared blankly at the screen. Kim Dokja's party was shown on the screen.</p>
 <p class="orv_line">Originally, they should be excited about winning. Now they looked terrible as they lay on the ground.</p>
 <p class="orv_line">It was a confrontation with constellations supported by the nebula. It was a ridiculous fight from the beginning but the party fought well. They played a game against powerful constellations and finally won the competition that gave them a giant story. Now they were going to be losers just because there wasn't a 'winner announcement'.</p>
 <p class="orv_line">It was just because the Star Stream wanted this. Resentment mixed with anger filled Bihyung's eyes.</p>
-<div class="orv_constellation"><p>[Then… why does a streamer exist?]</p></div>
+<div class="orv_constellation"><p>Then… why does a streamer exist?</p></div>
 <p class="orv_line">It was the first time Bihyung felt helplessness since becoming a dokkaebi. His fingertips trembled as the parts of the scenario he touched fell.</p>
-<div class="orv_constellation"><p>[If we can't stop this nonsensical development… what are the streamers of this world worth?]</p></div>
-<div class="orv_constellation"><p>[Bihyung.]</p></div>
+<div class="orv_constellation"><p>If we can't stop this nonsensical development… what are the streamers of this world worth?</p></div>
+<div class="orv_constellation"><p>Bihyung.</p></div>
 <p class="orv_line">Baram saw Bihyung's sad eyes and slowly spoke.</p>
-<div class="orv_constellation"><p>[Steamers are also part of the story.]</p></div>
+<div class="orv_constellation"><p>Steamers are also part of the story.</p></div>
 <p class="orv_line">The desperate Bihyung stared at the screen. Yoo Joonghyuk was gradually melting in the dazzling sunlight. Now the story was leaving the streamer's hand.</p>
 <p class="orv_line">Thus, there was only one thing to believe in.</p>
-<div class="orv_system"><p>[Many constellations are looking at one constellation.]</p></div>
+<div class="orv_system"><p>Many constellations are looking at one constellation.</p></div>
 <p class="orv_line">The man on Lee Hyunsung's back was shaking. On the screen, the man was slowly opening his eyes.</p>
 <br>
 <hr>
@@ -318,18 +325,12 @@
             <a href="./ch_267"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_269">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="268" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="340" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="267" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="267" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 29: Ep. 7 – Landlord, II</title>
     <meta property="og:title" content="Ch 29: Ep. 7 – Landlord, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,29 +177,29 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00029.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 29: Ep. 7 – Landlord, II</h1></div>
 <p class="orv_line">The 10 Evils—the list and rankings were often changed according to Yoo Joonghyuk's regression cycle, but they were the 10 people in charge of being the main villains in this world of Ways of Survival. Chungmuro's armed fortress master, Gong Pildu, was one of the 10 Evils. Thus, a person wouldn't be aware of Gong Pildu unless they had read to the end of Ways of Survival (like me).</p>
-<div class="orv_system"><p>[Green Zone 56/70]</p></div>
+<div class="orv_system"><p>Green Zone 56/70</p></div>
 <p class="orv_line">Indeed, the size of his room was different. It couldn't be measured easily. This whole green zone was Gong Pildu's area.</p>
 <p class="orv_line">'Let's do the standard procedure'.</p>
 <p class="orv_line">I hid Lee Gilyoung behind me and opened my mouth, "Why should we pay you coins? Chungmuro Station is a public place."</p>
@@ -207,19 +214,19 @@
 <p class="orv_line">"Haha, you are a funny guy. Hey, you're playing with me now…"</p>
 <p class="orv_line">"Gong Pildu-ssi. Where are you? Take the fine."</p>
 <p class="orv_line">I ignored them and kept walking.</p>
-<div class="orv_system"><p>[You have invaded private property!]</p></div>
+<div class="orv_system"><p>You have invaded private property!</p></div>
 <p class="orv_line">The turrets aimed straight at me but I didn't stop. Honestly, there was no guarantee that I would be safe if the turrets started shooting. Nonetheless, there was a need to show off my combat power here. That way Gong Pildu wouldn't underestimate me.</p>
 <p class="orv_line">"That's how far you'll get. I will shoot if you come closer." Finally, Gong Pildu moved. There was a bench covered with various supplies. A middle-aged man was sitting on top of it and reading a magazine was staring at me. Indeed, this was how he was described in the novel. His belly was half revealed, and I could see the hair on it. This was Gong Pildu, the representative of the Landlord Alliance.</p>
 <p class="orv_line">"This is a face I've never seen before but you are great."</p>
 <p class="orv_line">"Isn't it unfair that I need to pay to see you?"</p>
-<div class="orv_system"><p>[The character 'Gong Pildu' is interested in you.]</p></div>
+<div class="orv_system"><p>The character 'Gong Pildu' is interested in you.</p></div>
 <p class="orv_line">In any case, I seemed to be the type that was popular with the bad guys. It was the same with Kim Namwoon.</p>
 <p class="orv_line">"You are fairly good at talking. But it isn't good to be too cocky."</p>
 <p class="orv_line">Tadak. I heard magic bullets being loaded in the turrets. 'Damn bastard'.</p>
 <p class="orv_line">Gong Pildu smiled like an ordinary neighborhood ahjussi, but I knew… Gong Pildu could never be an ordinary neighborhood ahjussi.</p>
-<div class="orv_system"><p>[The exclusive skill, [Character List] is activated.]</p></div>
+<div class="orv_system"><p>The exclusive skill, [Character List] is activated.</p></div>
 <div class="orv_window">
-<h3 class="orv_window_title">[Character Summary]</h3>
+<h3 class="orv_window_title">Character Summary</h3>
 <p>Name: Gong Pildu</p>
 <p>Age: 48 years old</p>
 <p>Sponsor: Defense Master</p>
@@ -255,7 +262,7 @@
 <p class="orv_line">"How can I believe that?"</p>
 <p class="orv_line">"Don't believe me. Don't you have nothing to lose?" I threw out the bait.</p>
 <p class="orv_line">Perhaps Gong Pildu would have to accept my suggestion. It was because right now, Yoo Joonghyuk was the only person who could threaten the power balance in Chungmuro.</p>
-<div class="orv_system"><p>[The character 'Gong Pildu' has activated [Profit Calculation] Lv. 2!]</p></div>
+<div class="orv_system"><p>The character 'Gong Pildu' has activated [Profit Calculation] Lv. 2!</p></div>
 <p class="orv_line">"Why won't I receive any loss?"</p>
 <p class="orv_line">"…?"</p>
 <p class="orv_line">"There is no guarantee that you aren't a scammer. I can't ignore my years of experience. In my experience, people like you run away to avoid paying the rent at the end of the month."</p>
@@ -279,21 +286,21 @@
 <p class="orv_line">"My best companion is coming."</p>
 <p class="orv_line">It was Yoo Joonghyuk. I didn't expect that damn regressor to be happy.</p>
 <p class="orv_line">"Master, it's that person. He pretended to be Master's companion," Lee Jihye cried out shrilly as she pointed at me. The main character, the lone hero of a drama, was walking by her side. He looked at me with impressively fierce eyes.</p>
-<div class="orv_system"><p>[The character 'Yoo Joonghyuk' is greatly disturbed.]</p></div>
-<div class="orv_system"><p>[Exclusive skill, [Omniscient Reader's Viewpoint] stage 2 has been activated!]</p></div>
+<div class="orv_system"><p>The character 'Yoo Joonghyuk' is greatly disturbed.</p></div>
+<div class="orv_system"><p>Exclusive skill, [Omniscient Reader's Viewpoint] stage 2 has been activated!</p></div>
 <p class="orv_line">There was a brief moment of dizziness, and I started to hear his thoughts.</p>
-<div class="orv_quote"><p>「 How… Already? 」</p></div>
+<div class="orv_quote"><p>How… Already?</p></div>
 <p class="orv_line">I waved to him and said casually, "Hi Joonghyuk."</p>
-<div class="orv_quote"><p>「 ······. 」</p></div>
+<div class="orv_quote"><p>······.</p></div>
 <p class="orv_line">"Have you been well? Your face looks good?"</p>
-<div class="orv_quote"><p>「 ······. 」</p></div>
+<div class="orv_quote"><p>······.</p></div>
 <p class="orv_line">Lee Jihye and Gong Pildu looked at us like they couldn't believe it. They never expected that I would be a companion of Yoo Joonghyuk. There was a tight tension in the air.</p>
 <p class="orv_line">"These people don't believe I am your companion. Can you tell them?"</p>
 <p class="orv_line">Nevertheless, I knew Yoo Joonghyuk. This bastard killed easily but he kept his promises.</p>
-<div class="orv_system"><p>[A few constellations are paying attention to character Yoo Joonghyuk's answer.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is observing Yoo Joonghyuk's loyalty.]</p></div>
+<div class="orv_system"><p>A few constellations are paying attention to character Yoo Joonghyuk's answer.</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is observing Yoo Joonghyuk's loyalty.</p></div>
 <p class="orv_line">Moreover, the constellations were paying a lot of attention.</p>
-<div class="orv_quote"><p>「 ······. 」</p></div>
+<div class="orv_quote"><p>······.</p></div>
 <p class="orv_line">Yoo Joonghyuk watched me and slowly opened his mouth. However, my words were faster. "Ah, right. It would be better if you let me use the bathroom!"</p>
 <p class="orv_line">Finally, Yoo Joonghyuk pulled out a blade.</p>
 <br>
@@ -306,12 +313,12 @@
 <p class="orv_line">"I thought it would be good."</p>
 <p class="orv_line">This rotten companion…</p>
 <p class="orv_line">I became angrier when I saw that cheeky face. It made me want to run over and strike him in the jaw, but I couldn't do it.</p>
-<div class="orv_system"><p>[The exclusive skill, [Character List] is activated.]</p></div>
-<div class="orv_system"><p>[There is too much information about this person. [Character List] is converted to [Character Summary].]</p></div>
+<div class="orv_system"><p>The exclusive skill, [Character List] is activated.</p></div>
+<div class="orv_system"><p>There is too much information about this person. [Character List] is converted to [Character Summary].</p></div>
 <p class="orv_line">Full version.</p>
-<div class="orv_system"><p>[Converting the character information of 'Yoo Joonghyuk' into the 'full version'.]</p></div>
+<div class="orv_system"><p>Converting the character information of 'Yoo Joonghyuk' into the 'full version'.</p></div>
 <div class="orv_window">
-<h3 class="orv_window_title">[Character Summary]</h3>
+<h3 class="orv_window_title">Character Summary</h3>
 <p>Name: Yoo Joonghyuk.</p>
 <p>Age: 28 years old.</p>
 <p>Sponsor: ???</p>
@@ -328,25 +335,25 @@
 <p class="orv_line">Yoo Joonghyuk's growth rate was steeper than it had been in the original three regressions. The fact that his growth was so fast meant he was taking great risks… What the hell was this person, who had only returned three times, doing? Something was making me uneasy. I would have to dig it out sooner or later…</p>
 <p class="orv_line">"I asked if you had anything to say."</p>
 <p class="orv_line">"No, I was just looking."</p>
-<div class="orv_quote"><p>「 …He is more tenacious than I thought. 」</p></div>
+<div class="orv_quote"><p>…He is more tenacious than I thought.</p></div>
 <p class="orv_line">What tenacity? He had a serious chuuni disease.</p>
-<div class="orv_quote"><p>「 However, being cheeky isn't good. Should I just kill him now? 」</p></div>
+<div class="orv_quote"><p>However, being cheeky isn't good. Should I just kill him now?</p></div>
 <p class="orv_line">"I'm joking." I laughed hurriedly. Yoo Joonghyuk turned his head like he wasn't interested.</p>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is disappointed in you.]</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is disappointed in you.</p></div>
 <p class="orv_line">Anyway, I didn't want to alienate Yoo Joonghyuk right now. In order to clear the multiple scenarios, Yoo Joonghyuk was a necessary person. Even if we weren't real companions, it was worth using him thoroughly.</p>
 <p class="orv_line">…Why did it sound like I was making excuses?</p>
 <p class="orv_line">"It looks like you've obtained companions." Yoo Joonghyuk looked at the people behind me with emotionless eyes.</p>
-<div class="orv_system"><p>[The character 'Yoo Joonghyuk' is a bit disappointed in you.]</p></div>
+<div class="orv_system"><p>The character 'Yoo Joonghyuk' is a bit disappointed in you.</p></div>
 <p class="orv_line">'…What? Why?'</p>
 <p class="orv_line">The answer was very clear.</p>
-<div class="orv_system"><p>[The character 'Yoo Joonghyuk' has used [Sage's Eye] Lv. 8!]</p></div>
-<div class="orv_quote"><p>「 He picked up Lee Hyunsung but was only able to raise him to this level. 」</p></div>
+<div class="orv_system"><p>The character 'Yoo Joonghyuk' has used [Sage's Eye] Lv. 8!</p></div>
+<div class="orv_quote"><p>He picked up Lee Hyunsung but was only able to raise him to this level.</p></div>
 <p class="orv_line">I was at a loss for a moment because it was true. Certainly, Lee Hyunsung's growth would be better if he had moved with Yoo Joonghyuk.</p>
 <p class="orv_line">'Still… this bastard'.</p>
 <p class="orv_line">I was just an ordinary reader who had luckily gotten to know the future.</p>
-<div class="orv_quote"><p>「 It is below expectations. 」</p></div>
+<div class="orv_quote"><p>It is below expectations.</p></div>
 <p class="orv_line">It seemed worse because I was hearing his words in my mind. At that moment, Yoo Joonghyuk's eyes stopped as he was looking around. For the first time, confusion could be seen in his eyes.</p>
-<div class="orv_quote"><p>「 …What is that? 」</p></div>
+<div class="orv_quote"><p>…What is that?</p></div>
 <br>
 <hr>
         </article>
@@ -354,18 +361,12 @@
             <a href="./ch_28"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_30">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="29" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="64" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="28" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="28" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

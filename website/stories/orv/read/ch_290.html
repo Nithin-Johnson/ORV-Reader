@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 290: Ep. 54 - Demon King Slayer, VI</title>
     <meta property="og:title" content="Ch 290: Ep. 54 - Demon King Slayer, VI" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,34 +177,34 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00290.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 290: Ep. 54 - Demon King Slayer, VI</h1></div>
 <p class="orv_line">"Hey, Lee Jihye." A man waved towards us while speaking in a typical gangster tone. The white coat hanging from his shoulder was unmistakably the Infinite Dimension Space Coat. Thus, it was the same coat as mine.</p>
-<div class="orv_system"><p>[The constellation 'Lily Blooming in Aquarius' is frowning.]</p></div>
-<div class="orv_system"><p>[The constellation 'Commander of the Red Cosmos' is showing displeasure.]</p></div>
+<div class="orv_system"><p>The constellation 'Lily Blooming in Aquarius' is frowning.</p></div>
+<div class="orv_system"><p>The constellation 'Commander of the Red Cosmos' is showing displeasure.</p></div>
 <p class="orv_line">The flowers were shaking in my coat's inner pocket.</p>
 <p class="orv_line">…This guy was the leader? The surging shock made me momentarily dizzy. I reflexively looked back at Yoo Joonghyuk but I couldn't share my shock with Yoo Joonghyuk who had become a fool.</p>
 <p class="orv_line">I looked back at the man again. He had a bandage wrapped around one hand and he was half-leaning against a door as he laughed while pushing back white hair.</p>
-<div class="orv_quote"><p>「 Kim Dok ja is an i diot. 」</p></div>
+<div class="orv_quote"><p>Kim Dok ja is an i diot.</p></div>
 <p class="orv_line">…No matter how I thought about it, he couldn't be the leader. In the first place, this 'coat' was something that could be easily obtained by the 95th scenario.</p>
 <p class="orv_line">Lee Jihye frowned. "Kim Namwoon."</p>
 <p class="orv_line">"Yes."</p>
@@ -210,11 +217,11 @@
 <p class="orv_line">…Come to think of it, their relationship was exactly the same as it was in the original novel. There were many new things that emerged in my mind. Lee Jihye, Lee Hyunsung and Kim Namwoon…</p>
 <p class="orv_line">Curiosity and an unknown fear coiled deep in my heart. What happened in this round? As I was distracted for a moment, Kim Namwoon looked at me.</p>
 <p class="orv_line">"Who are you? That coat looks like mine?"</p>
-<div class="orv_system"><p>[The character 'Kim Namwoon' is showing vigilance towards you!]</p></div>
+<div class="orv_system"><p>The character 'Kim Namwoon' is showing vigilance towards you!</p></div>
 <p class="orv_line">I remembered the first time I met him. Kim Namwoon's head was blown up on the subway. If Kim Namwoon was still alive… would it have felt like this?</p>
 <p class="orv_line">"Hey soldier, who is this person? Fuck! It is Yoo Joonghyuk!"</p>
 <p class="orv_line">Kim Namwoon discovered Yoo Joonghyuk behind me and quickly stepped back.</p>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' is baring his teeth.]</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' is baring his teeth.</p></div>
 <p class="orv_line">Delusional Demon Kim Namwoon. In this turn, the Abyssal Black Flame Dragon had picked his original incarnation.</p>
 <p class="orv_line">Yoo Joonghyuk raised his head at the hostility directed towards him and Kim Namwoon flinched. "You are still cool… did you come to fight, Yoo Joonghyuk?"</p>
 <p class="orv_line">Kim Namwoon's hands were trembling and I couldn't tell if he was excited or afraid. Maybe it was both. It was Lee Hyunsung who blocked the atmosphere from becoming worse. "Namwoon, these people didn't come to fight."</p>
@@ -234,7 +241,7 @@
 <p class="orv_line">I wore a white coat and was mistaken to be a doctor. I looked at the patient's details and answered, "Perhaps he was hit by an unnamed thing. It seems that the tentacles contaminated the wound."</p>
 <p class="orv_line">"Indeed… um?"</p>
 <p class="orv_line">Lee Seolhwa slowly blinked at me.</p>
-<div class="orv_system"><p>[The character 'Lee Seolhwa' has received a strange feeling from you.]</p></div>
+<div class="orv_system"><p>The character 'Lee Seolhwa' has received a strange feeling from you.</p></div>
 <p class="orv_line">"Who are you?"</p>
 <p class="orv_line">Who should I say? No, she wouldn't know no matter what I said.</p>
 <p class="orv_line">"Hey ahjussi, what are you doing? Come along quickly! Bring Yoo Joonghyuk with you!"</p>
@@ -243,7 +250,7 @@
 <p class="orv_line">Patients were constantly pouring into the emergency room on the first floor. They were incarnations injured by confronting outer gods or constellations.</p>
 <p class="orv_line">It wasn't strange. Such tragedies had become commonplace in the 95th scenario. I remembered the 95th scenario of the 1863rd round.</p>
 <p class="orv_line">I turned my attention outside the building and saw the ruined scenery of Seoul. There were nebulae emitting smoke and sleeping outer gods. Above them were dark crystals covering the sky.</p>
-<div class="orv_system"><p>[Apocalypse Dragon Sealing Ball]</p></div>
+<div class="orv_system"><p>Apocalypse Dragon Sealing Ball</p></div>
 <p class="orv_line">This seal was the core and goal of the 95th scenario. Gather five scattered keys and release the Apocalypse Dragon. Once the Apocalypse Dragon was released, destruction would come to the planet and those who completed the scenario would automatically go to the next scenario.</p>
 <p class="orv_line">However, this 1863rd round was different from the 1863rd round I knew.</p>
 <p class="orv_line">–A first-grade monster has appeared on the river side!</p>
@@ -277,7 +284,7 @@
 <p class="orv_line">It was true. I asked, "Is that all?"</p>
 <p class="orv_line">"Do you need another reason?"</p>
 <p class="orv_line">That's right. Maybe this reason alone was sufficient. However…</p>
-<div class="orv_quote"><p>「 Kim Dokja thought, 'You don't know why Yoo Joonghyuk did those things'. 」</p></div>
+<div class="orv_quote"><p>Kim Dokja thought, 'You don't know why Yoo Joonghyuk did those things'.</p></div>
 <p class="orv_line">I took a deep breath. This wasn't Lee Jihye's fault. No one had done anything wrong. Rather, everyone was doing so well that perhaps it made me angry.</p>
 <p class="orv_line">"Who is the Master you are talking about?"</p>
 <p class="orv_line">"Go to the top floor of the building. Take the elevator over there."</p>
@@ -302,7 +309,7 @@
 <p class="orv_line">Dding.</p>
 <p class="orv_line">I shook my head the moment the elevator made a sound. According to the revised version of Ways of Survival, I didn't exist in Yoo Joonghyuk's other rounds. After a few more rounds, there was no 'me'. If there was, the revision itself would be different.</p>
 <p class="orv_line">Thus, the existence likely wasn't me. The one thing that bothered me was Secretive Plotter.</p>
-<div class="orv_constellation"><p>[ Actually, there was another person beside you who made a covenant. ]</p></div>
+<div class="orv_constellation"><p>Actually, there was another person beside you who made a covenant.</p></div>
 <p class="orv_line">The door opened. Then a room reminiscent of a hotel suite appeared. It was a dim room where the fire was extinguished. There was a soft carpeted floor. I saw a figure sitting on the chair.</p>
 <p class="orv_line">"Hmm… you are the one Lee Hyunsung mentioned."</p>
 <p class="orv_line">Along with the voice, a silver light lit up the room. The first thing I saw in my dim vision was the sword on the table. The sword boasted a pure white luster. I knew this sword well. It was because it was my Unbroken Faith. As I looked at the sword, the person sitting on the chair spoke.</p>
@@ -310,9 +317,9 @@
 <p class="orv_line">"I know. I'm using it too."</p>
 <p class="orv_line">"Really?"</p>
 <p class="orv_line">The person sitting on the chair was covered in a black half mask. I stared at the eyes visible beyond the half mask. It had changed by the winds of the scenario but there was no doubt.</p>
-<div class="orv_system"><p>[The exclusive skill 'Character List' is activated!]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Character List' is activated!</p></div>
 <p class="orv_line">Originally, it was a skill that shouldn't work. I used it a few times and I knew it well. Then why did I try it again?</p>
-<div class="orv_system"><p>[There is too much information about this person. Character List is converted to Character Summary.]</p></div>
+<div class="orv_system"><p>There is too much information about this person. Character List is converted to Character Summary.</p></div>
 <p class="orv_line">Maybe it was because I hoped it wouldn't work. I looked at the information in front of me and felt somewhat heavy. Maybe she didn't know.</p>
 <p class="orv_line">What terrible loneliness did I feel right now?</p>
 <p class="orv_line">"Okay, where did you come from? I've never heard the name Kim Dokja."</p>
@@ -328,18 +335,12 @@
             <a href="./ch_289"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_291">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="290" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="285" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="289" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="289" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

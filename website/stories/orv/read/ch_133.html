@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 133: Ep. 26 - Scenario Destroyer, III</title>
     <meta property="og:title" content="Ch 133: Ep. 26 - Scenario Destroyer, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,56 +177,56 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00133.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 133: Ep. 26 - Scenario Destroyer, III</h1></div>
 <p class="orv_line">The negotiations with Bihyung finished and the judge urged me.</p>
-<div class="orv_constellation"><p>[If it is over then go back.]</p></div>
+<div class="orv_constellation"><p>If it is over then go back.</p></div>
 <p class="orv_line">The judge was absentmindedly staring at my liquor bottle again. It seemed that he hadn't drank enough…</p>
 <p class="orv_line">Wait. Didn't he say that Hades and Persephone weren't present right now?</p>
 <p class="orv_line">"Hey, Judge-nim. One more thing."</p>
-<div class="orv_constellation"><p>[I don't know what it is this time but…]</p></div>
+<div class="orv_constellation"><p>I don't know what it is this time but…</p></div>
 <p class="orv_line">"I'll give you the bottle." The judge's eyes flashed at my words. "Please take me to Tartarus again."</p>
 <br>
 <hr>
 <br>
 <p class="orv_line">There was no time so I went down to Tartarus and then came back up again. It was only a short time but the judge was already drunk.</p>
-<div class="orv_constellation"><p>[Then are you done?]</p></div>
+<div class="orv_constellation"><p>Then are you done?</p></div>
 <p class="orv_line">"Yes."</p>
 <p class="orv_line">Hades and Persephone being away was a divine move for me. I only gave a bit of information but if I knew Kim Namwoon, that alone would make a big difference. I was looking forward to the Gigantomachia that would arrive one day.</p>
-<div class="orv_constellation"><p>[There is a message that the queen left.]</p></div>
+<div class="orv_constellation"><p>There is a message that the queen left.</p></div>
 <p class="orv_line">"The queen?"</p>
-<div class="orv_constellation"><p>[Yes. I will directly recite it.]</p></div>
+<div class="orv_constellation"><p>Yes. I will directly recite it.</p></div>
 <p class="orv_line">The judge repeated Persephone's words in a profound voice.</p>
-<div class="orv_system"><p>[Incarnation Kim Dokja, you have completed the task in a very interesting way.]</p></div>
+<div class="orv_system"><p>Incarnation Kim Dokja, you have completed the task in a very interesting way.</p></div>
 <p class="orv_line">"…"</p>
-<div class="orv_system"><p>[Many nebulae in the Star Stream are now watching you. Many of them are hostile towards you.]</p></div>
+<div class="orv_system"><p>Many nebulae in the Star Stream are now watching you. Many of them are hostile towards you.</p></div>
 <p class="orv_line">In fact, this scenario had caught too much attention from the constellations.</p>
-<div class="orv_constellation"><p>[You should be prepared.]</p></div>
+<div class="orv_constellation"><p>You should be prepared.</p></div>
 <p class="orv_line">I became a bit nervous after listening to the story. Was this related to Hades and Persephone's departure? The amount of messages from the other large constellations had noticeably decreased a while ago.</p>
 <p class="orv_line">Uriel in particular. And Uriel was part of the 'Eden' nebula…</p>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' feels sorry.]</p></div>
-<div class="orv_system"><p>[The constellation 'Secretive Plotter' is comforting 'Prisoner of the Golden Headband'.]</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' feels sorry.</p></div>
+<div class="orv_system"><p>The constellation 'Secretive Plotter' is comforting 'Prisoner of the Golden Headband'.</p></div>
 <p class="orv_line">These guys were still here.</p>
-<div class="orv_constellation"><p>[Then go well.]</p></div>
+<div class="orv_constellation"><p>Then go well.</p></div>
 <p class="orv_line">I nodded. There was no point worrying about it now. The important thing was to build up my stories. Some nebulae might despise me like Persephone said but it wasn't everyone.</p>
 <p class="orv_line">There was a distant whirlwind and my field of view gradually changed. Once I opened my eyes again, I had returned.</p>
 <p class="orv_line">"Dokja-ssi."</p>
@@ -239,7 +246,7 @@
 <br>
 <hr>
 <br>
-<div class="orv_system"><p>[You have protected the peace of Peace Land.]</p></div>
+<div class="orv_system"><p>You have protected the peace of Peace Land.</p></div>
 <p class="orv_line">A huge string was shining in the air. There was still a festive atmosphere but the expressions of my party members were different. Lee Jihye wondered in a confused voice, "What the hell is this?"</p>
 <p class="orv_line">It was a situation where the scenario wasn't completely closed so it wasn't unusual for additional personnel to be dispatched. Yet the extra personnel was injured from the beginning.</p>
 <p class="orv_line">"Was there a case like this in Japan?"</p>
@@ -258,13 +265,13 @@
 <p class="orv_line">"We won't know for certain unless we go back." When did he appear? Yoo Joonghyuk spoke from beside me.</p>
 <p class="orv_line">I nodded at his words. "You are correct. Let's go back and check it."</p>
 <p class="orv_line">Then the scenario message was heard.</p>
-<div class="orv_system"><p>[Additional compensation for the major contributors has arrived.]</p></div>
-<div class="orv_system"><p>[Major contributors: Kim Dokja, Yoo Joonghyuk]</p></div>
+<div class="orv_system"><p>Additional compensation for the major contributors has arrived.</p></div>
+<div class="orv_system"><p>Major contributors: Kim Dokja, Yoo Joonghyuk</p></div>
 <p class="orv_line">Finally, the main scenario rewards had arrived.</p>
-<div class="orv_system"><p>[Do you want to check the compensation history?]</p></div>
+<div class="orv_system"><p>Do you want to check the compensation history?</p></div>
 <p class="orv_line">I nodded.</p>
 <div class="orv_window">
-<h3 class="orv_window_title">[Rewards List]</h3>
+<h3 class="orv_window_title">Rewards List</h3>
 <p>1. Moon Wave Folded Fan (SSS-grade)</p>
 <p>2. Blue Dragon Sword (SSS-grade)</p>
 <p>3. Magic King's Bracelet (SS-grade)</p>
@@ -286,7 +293,7 @@
 <p class="orv_line">"Why?"</p>
 <p class="orv_line">"Why would you choose such a thing? It is too stressful to be small… I would rather you choose the Blue Dragon Sword and give it to me!"</p>
 <p class="orv_line">Lee Hyunsung also looked surprised. The kids didn't care and were playing with each other. On the other hand, the small people looked strangely touched. They probably thought I chose this skill to remember them.</p>
-<div class="orv_constellation"><p>[Now that the compensation has ended, it is time to go back. I'm sure you've become attached to each other but please say goodbye.]</p></div>
+<div class="orv_constellation"><p>Now that the compensation has ended, it is time to go back. I'm sure you've become attached to each other but please say goodbye.</p></div>
 <p class="orv_line">The dokkaebi made an announcement and then a huge portal appeared in the air. Gillemium and the small people gathered around us.</p>
 <p class="orv_line">"Go carefully!"</p>
 <p class="orv_line">"Thank you. I'll definitely remember you."</p>
@@ -298,8 +305,8 @@
 <p class="orv_line">Dokja</p>
 <p class="orv_line">Ohh it is Dokja.</p>
 <p class="orv_line">Shit, what were these lyrics?</p>
-<div class="orv_system"><p>[The beings of Peace Land are linked to your legend.]</p></div>
-<div class="orv_system"><p>[This achievement can be viewed after becoming a constellation.]</p></div>
+<div class="orv_system"><p>The beings of Peace Land are linked to your legend.</p></div>
+<div class="orv_system"><p>This achievement can be viewed after becoming a constellation.</p></div>
 <p class="orv_line">On top of a bell tower, I could see Kyrgios looking at me. I thought he would run this way and make all sorts of threats after the scenario was over, but he just watched quietly.</p>
 <p class="orv_line">Asuka told me, "I think he appreciates you."</p>
 <p class="orv_line">"Huh?"</p>
@@ -307,7 +314,7 @@
 <p class="orv_line">Asuka Ren smiled at me. Her qualifications as a creator might be lost but the author was still one of the readers.</p>
 <p class="orv_line">"Let's survive and meet again, people of South Korea."</p>
 <p class="orv_line">Asuka Ren bowed and disappeared into the portal. Then we also entered. My vision swirled and once I came to my senses, my feet were touching the ground. I wasn't too dizzy since I had experienced it once before.</p>
-<div class="orv_system"><p>[The main scenario has ended.]</p></div>
+<div class="orv_system"><p>The main scenario has ended.</p></div>
 <p class="orv_line">The view of Seoul entered my eyes. I looked around and Yoo Joonghyuk was the only one who arrived at the same place as me. We might've entered the same portal but the exits were different. Still, why was I with this person…</p>
 <p class="orv_line">"Kim Dokja, move." The moment Yoo Joonghyuk spoke, the ground where we were standing exploded. The magic bullets that flew over turned this area into a mess.</p>
 <p class="orv_line">"The Supreme King!"</p>
@@ -325,7 +332,7 @@
 <p class="orv_line">"What are you going to do?"</p>
 <p class="orv_line">"I will let you know that one part is wrong."</p>
 <p class="orv_line">"What?"</p>
-<div class="orv_system"><p>[Blade of Faith is activated!]</p></div>
+<div class="orv_system"><p>Blade of Faith is activated!</p></div>
 <p class="orv_line">Blade of Faith was pulled out and instantly cut the leader and his men who were surrounding me.</p>
 <br>
 <hr>
@@ -334,18 +341,12 @@
             <a href="./ch_132"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_134">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="133" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="120" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="132" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="132" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

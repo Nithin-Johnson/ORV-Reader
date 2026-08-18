@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 60: Ep. 13 – War of Kings, I</title>
     <meta property="og:title" content="Ch 60: Ep. 13 – War of Kings, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00060.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 60: Ep. 13 – War of Kings, I</h1></div>
 <p class="orv_line">My plan was clear.</p>
@@ -243,9 +250,9 @@
 <p class="orv_line">But not long after, it was updated and I was able to look at their information in Character List.</p>
 <p class="orv_line">Then were they now 'real people' or were they 'characters?' If everyone became a character over time…</p>
 <p class="orv_line">I looked at Yoo Sangah and Lee Gilyoung for a moment.</p>
-<div class="orv_system"><p>[The exclusive skill, Character List is activated.]</p></div>
-<div class="orv_system"><p>[This person isn't registered in 'Character List'.]</p></div>
-<div class="orv_system"><p>[Currently collecting information about the corresponding figure.]</p></div>
+<div class="orv_system"><p>The exclusive skill, Character List is activated.</p></div>
+<div class="orv_system"><p>This person isn't registered in 'Character List'.</p></div>
+<div class="orv_system"><p>Currently collecting information about the corresponding figure.</p></div>
 <p class="orv_line">Fortunately, I still couldn't see the information for both of them.</p>
 <p class="orv_line">Yoo Sangah suddenly looked back at me and smiled. Lee Gilyoung also looked at me.</p>
 <p class="orv_line">"What is it hyung?"</p>
@@ -267,8 +274,8 @@
 <p class="orv_line">"Kang Ilhun-ssi, are you ready?"</p>
 <p class="orv_line">Kang Ilhun, the deputy of Dongdaemun. It was worth intentionally saving this guy.</p>
 <p class="orv_line">Kang Ilhun nervously opened his mouth. "Leave it to me. I am confident that I can catch them. I just need to spread rumours?"</p>
-<div class="orv_system"><p>[The character 'Kang Ilhun' will follow your will.]</p></div>
-<div class="orv_system"><p>[Your understanding of this person has increased.]</p></div>
+<div class="orv_system"><p>The character 'Kang Ilhun' will follow your will.</p></div>
+<div class="orv_system"><p>Your understanding of this person has increased.</p></div>
 <p class="orv_line">Kang Ilhun. It was finally time to use the attribute of Rumours Expert. The time remaining until the scenario ended was 44 hours.</p>
 <p class="orv_line">The next day, the game would begin.</p>
 <br>
@@ -276,7 +283,7 @@
 <br>
 <p class="orv_line">–Donghoon, thank you.</p>
 <p class="orv_line">–I am just paying you back so don't worry.</p>
-<div class="orv_system"><p>[The character 'Han Donghoon' trusts you a little bit.]</p></div>
+<div class="orv_system"><p>The character 'Han Donghoon' trusts you a little bit.</p></div>
 <p class="orv_line">Since last time, 'Hermit King of Shadows' Han Donghoon had moderately opened up his heart to me. The fact that I saved him from the prophets seemed to have played a bigger role than expected.</p>
 <p class="orv_line">–I feel a strange sense of familiarity with you.</p>
 <p class="orv_line">–Familiarity?</p>
@@ -318,18 +325,18 @@
 <p class="orv_line">–I was able to put it on the exchange. But is it okay?</p>
 <p class="orv_line">–Yes, it's fine. Well done.</p>
 <p class="orv_line">Then system messages entered my ears one after another.</p>
-<div class="orv_system"><p>[The items on the exchange have been sold.]</p></div>
-<div class="orv_system"><p>[The items on the exchange have been sold.]</p></div>
+<div class="orv_system"><p>The items on the exchange have been sold.</p></div>
+<div class="orv_system"><p>The items on the exchange have been sold.</p></div>
 <p class="orv_line">At that moment, a trembling voice was heard from the air.</p>
-<div class="orv_constellation"><p>[…Are you a scammer?]</p></div>
+<div class="orv_constellation"><p>…Are you a scammer?</p></div>
 <p class="orv_line">'What is the reaction among the constellations?'</p>
-<div class="orv_constellation"><p>[They are really excited. The filtering limit has started to unravel… there are those who gave it as gifts to their incarnations. But if you do this, you will receive attention again. Will you be okay? And if you release all the information you know, won't it go against you?]</p></div>
+<div class="orv_constellation"><p>They are really excited. The filtering limit has started to unravel… there are those who gave it as gifts to their incarnations. But if you do this, you will receive attention again. Will you be okay? And if you release all the information you know, won't it go against you?</p></div>
 <p class="orv_line">'It isn't disadvantageous'.</p>
 <p class="orv_line">I still had information remaining. The information I released wasn't information I needed. Rather, it was information that would be damaging to someone.</p>
 <p class="orv_line">'Give me the coins'.</p>
-<div class="orv_constellation"><p>[Here.]</p></div>
-<div class="orv_system"><p>[16 volumes of SSSSS-grade Infinite Regressors have been sold on the exchange.]</p></div>
-<div class="orv_system"><p>[You have earned 16,000 coins.]</p></div>
+<div class="orv_constellation"><p>Here.</p></div>
+<div class="orv_system"><p>16 volumes of SSSSS-grade Infinite Regressors have been sold on the exchange.</p></div>
+<div class="orv_system"><p>You have earned 16,000 coins.</p></div>
 <p class="orv_line">Of course, I didn't release the information for free.</p>
 <p class="orv_line">Anyone who needed the information would have a sponsor, so it was better to sell it on the 'exchange' than to release it for free on the Internet.</p>
 <p class="orv_line">If I released the Book of Revelations for free, it would be more suspicious. But what if I sold it?</p>
@@ -340,7 +347,7 @@
 <p class="orv_line">"I also need to sleep."</p>
 <p class="orv_line">I lay down. Yoo Sangah covered me with a thin blanket. Jung Heewon still found it absurd.</p>
 <p class="orv_line">Then I fell asleep. After a while, a system message was heard in my blurred consciousness.</p>
-<div class="orv_system"><p>[Exclusive skill, Omniscient Reader's Viewpoint stage 3 has been activated!]</p></div>
+<div class="orv_system"><p>Exclusive skill, Omniscient Reader's Viewpoint stage 3 has been activated!</p></div>
 <p class="orv_line">So far, I figured out that Omniscient Reader's Viewpoint was divided into three stages.</p>
 <p class="orv_line">Stage 1 allowed me to read the simple actions or emotions of characters.</p>
 <p class="orv_line">Stage 2 allowed me to see deep inside the character.</p>
@@ -364,12 +371,12 @@
 <p class="orv_line">"Let's go to Gwanghwamun. Before the others get there first." 」</p>
 <p class="orv_line">Good. The Tyrant King was finally moving. Now the problem was on the other side.</p>
 <p class="orv_line">I thought about Jung Minseob.</p>
-<div class="orv_quote"><p>「 'Representative-nim! I have arrived'. 」</p></div>
+<div class="orv_quote"><p>'Representative-nim! I have arrived'.</p></div>
 <p class="orv_line">The timing was good.</p>
 <p class="orv_line">Jung Minseob was at Sejong University and heading to Gwanghwamun in advance. He then looked at the surrounding scenery.</p>
-<div class="orv_quote"><p>「 I am certain since he is wearing the same hood like a chunni. It is him'. 」</p></div>
+<div class="orv_quote"><p>I am certain since he is wearing the same hood like a chunni. It is him'.</p></div>
 <p class="orv_line">People were in the lower part of the building. As I thought, the plagiarist was the fastest. Gwanghwamun contained one of the hidden pieces most useful for the third regression. The plagiarist wouldn't be able to run away from this place.</p>
-<div class="orv_quote"><p>「 The problem is that more people are coming. Yeongdeungpo, Yongsan, Seongdong-gu, the kings on those sides are moving… isn't this becoming too big?' 」</p></div>
+<div class="orv_quote"><p>The problem is that more people are coming. Yeongdeungpo, Yongsan, Seongdong-gu, the kings on those sides are moving… isn't this becoming too big?'</p></div>
 <p class="orv_line">No, it was what I was hoping for. The people who were hiding started to emerge one by one. It was better since I didn't need to visit each one individually.</p>
 <p class="orv_line">Finally, the fourth scenario was ending. The real War of Kings would begin.</p>
 <br>
@@ -379,18 +386,12 @@
             <a href="./ch_59"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_61">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="60" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="86" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="59" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="59" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

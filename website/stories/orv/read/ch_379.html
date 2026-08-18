@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 379: Ep. 72 - Three Methods, III</title>
     <meta property="og:title" content="Ch 379: Ep. 72 - Three Methods, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00379.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 379: Ep. 72 - Three Methods, III</h1></div>
 <p class="orv_line">I stared at the queen wearing Han Sooyoung's face.</p>
@@ -197,12 +204,12 @@
 <p class="orv_line">"I'm sure you're curious as to how I know your name."</p>
 <p class="orv_line">She was the character from this worldview, and she was merely an existence that acted according to the rules set out by the 'Giant Story'. So, it was impossible for a person like that to recognise me not as 'Ricardo', but as 'Kim Dokja'.</p>
 <p class="orv_line">On top of that, she spoke of things that didn't align with the worldview, yet the sparks of Probability weren't suppressing her at all.</p>
-<div class="orv_system"><p>[Worldview is considering the possibility of expanding the genre types.]</p></div>
-<div class="orv_system"><p>[Giant Story, 'Kaizenix Archipelago', is condoning the current situation.]</p></div>
-<div class="orv_system"><p>[Probability restrictions imposed on some words has been relaxed.]</p></div>
-<div class="orv_system"><p>[Meta words related to the worldview have been acknowledged!]</p></div>
+<div class="orv_system"><p>Worldview is considering the possibility of expanding the genre types.</p></div>
+<div class="orv_system"><p>Giant Story, 'Kaizenix Archipelago', is condoning the current situation.</p></div>
+<div class="orv_system"><p>Probability restrictions imposed on some words has been relaxed.</p></div>
+<div class="orv_system"><p>Meta words related to the worldview have been acknowledged!</p></div>
 <p class="orv_line">I wordlessly stared at the queen before activating my skill.</p>
-<div class="orv_system"><p>[Unique Skill, 'Character List', has activated!]</p></div>
+<div class="orv_system"><p>Unique Skill, 'Character List', has activated!</p></div>
 <div class="orv_window">
 <p>&lt;Character Summary&gt;</p>
 <p>Name: ???</p>
@@ -217,14 +224,14 @@
 <p class="orv_line">"What do you mean by that?"</p>
 <p class="orv_line">The queen slowly blinked her eyes and continued on with her story. "Do you know the tale of a certain woman who tried to endure decades upon decades of time with nothing but her ultimately empty hope?"</p>
 <p class="orv_line">"I do know of a man with a similar story."</p>
-<p class="orv_line">It was Yoo Joonghyuk who replied in my stead, as he unsheathed his [Black Heavenly Demon Sword].</p>
+<p class="orv_line">It was Yoo Joonghyuk who replied in my stead, as he unsheathed his <strong>[Black Heavenly Demon Sword]</strong>.</p>
 <p class="orv_line">The smile remained on the queen's lips as she spoke. "Oh, my pitiful former lover, it seems that you've come to your own execution ground."</p>
 <p class="orv_line">"Our engagement has been annulled already. Call me that one more time, and I shall slice your head off."</p>
 <p class="orv_line">Almost at the same time, the figures of both people disappeared from view. And then, these two incredible existences collided against each other, as the ear-shattering sounds of explosions rang out. The ceiling of the training grounds blew away; the sword winds and magical energy clashed to create a rising pillar of destructive winds kissing the heavens above.</p>
 <p class="orv_line">At a casual glance, they seemed to be evenly matched, but if one were to look deeper into the flow of the battle itself, then that was definitely not the case.</p>
 <p class="orv_line">After they exchanged dozens of moves in the blink of an eye, Yoo Joonghyuk was left with a slight injury on his left arm. On the other hand, there was not one scratch on the queen.</p>
 <p class="orv_line">Yoo Joonghyuk was being pushed back. That inconceivably strong dude wasn't quite powerful enough to contend with the queen of this worldview.</p>
-<p class="orv_line">On top of that, Han Sooyoung's speciality, [Black Flame]'s aura was rising up from the queen's left arm, as well.</p>
+<p class="orv_line">On top of that, Han Sooyoung's speciality, <strong>[Black Flame]</strong>'s aura was rising up from the queen's left arm, as well.</p>
 <p class="orv_line">"Dokja-ssi! You must get out of there!"</p>
 <p class="orv_line">Lee Hyunsung protected me from the royal guards trying to rush in.</p>
 <p class="orv_line">"…Dokja-ssi??"</p>
@@ -232,28 +239,28 @@
 <p class="orv_line">The seconds ticked by and the previously-even balance of the battle rapidly tilted away from Yoo Joonghyuk's favour. Because his opponent today just so happened to be none other than the 'Triple Master'.</p>
 <p class="orv_line">"Han Sooyoung! You need to wake up!"</p>
 <p class="orv_line">I brought forth the power of the 'Giant Story' without hesitation.</p>
-<div class="orv_system"><p>[Giant Story, 'Demon Realm's Spring', has begun its storytelling.]</p></div>
+<div class="orv_system"><p>Giant Story, 'Demon Realm's Spring', has begun its storytelling.</p></div>
 <p class="orv_line">The Story I shot into the air above with all my power created a gap in the fighting in an instant. I didn't miss that opening and jumped into the battlefield.</p>
 <p class="orv_line">The queen grinned and opened her arms wide.</p>
 <p class="orv_line">"Oh, the 'Demon King of Salvation'. The woman you're searching for has died a long time ago."</p>
 <p class="orv_line">"Stop making me laugh. Han Sooyoung would never speak in that manner."</p>
 <p class="orv_line">"Are you aware of what the lifetime of 50 years means to a person?"</p>
 <p class="orv_line">No, I had no idea. I hadn't lived that long yet, after all.</p>
-<div class="orv_system"><p>[Giant Story, 'Kaizenix Archipelago', has begun its storytelling.]</p></div>
+<div class="orv_system"><p>Giant Story, 'Kaizenix Archipelago', has begun its storytelling.</p></div>
 <p class="orv_line">The entire world seemed to wiggle around, and the figure of Han Sooyoung living in this land floated up on the empty air.</p>
 <p class="orv_line">This was her Story. Her history, as she lived in this world.</p>
 <p class="orv_line">More specifically, the history as experienced by her host, 'Yuri di Aristel'.</p>
-<div class="orv_quote"><p>「 The beautiful esteemed daughter of an Earl. 」</p></div>
-<div class="orv_quote"><p>「 A girl brought up for the sake of becoming a new queen. 」</p></div>
-<div class="orv_quote"><p>「 "Once you turn 18, you shall enter the royal castle." 」</p></div>
+<div class="orv_quote"><p>The beautiful esteemed daughter of an Earl.</p></div>
+<div class="orv_quote"><p>A girl brought up for the sake of becoming a new queen.</p></div>
+<div class="orv_quote"><p>"Once you turn 18, you shall enter the royal castle."</p></div>
 <p class="orv_line">The Han Sooyoung I know could be seen among the chaotically-rising lines of texts.</p>
-<div class="orv_quote"><p>「 "Fine. In that case, should I become a Swordmaster before I turn 18?" 」</p></div>
+<div class="orv_quote"><p>"Fine. In that case, should I become a Swordmaster before I turn 18?"</p></div>
 <p class="orv_line">She began fighting against the world itself. She was living in this world with a clear, focused expression on her face.</p>
 <p class="orv_line">She was experiencing this world with an expression I couldn't recognise.</p>
-<div class="orv_quote"><p>「 "Why is a young girl swinging around a sword?" 」</p></div>
-<div class="orv_quote"><p>「 "Magic is nothing but an illusion." 」</p></div>
+<div class="orv_quote"><p>"Why is a young girl swinging around a sword?"</p></div>
+<div class="orv_quote"><p>"Magic is nothing but an illusion."</p></div>
 <p class="orv_line">Certain clichés would try to hinder a person with the pretext of being clichés. And the Han Sooyoung I know hated clichés more than anyone out there.</p>
-<div class="orv_quote"><p>「 "Screw it, you think I'll marry just because you say so?! Bring someone stronger than me, then I'll marry that person, then!" 」</p></div>
+<div class="orv_quote"><p>"Screw it, you think I'll marry just because you say so?! Bring someone stronger than me, then I'll marry that person, then!"</p></div>
 <p class="orv_line">Countless men stepped forward to take possession of the Earl's beautiful daughter. Among them were famed knights of the archipelago as well as renowned magicians.</p>
 <p class="orv_line">Han Sooyoung became stronger and stronger in order to defeat all the potential suitors with her own hands.</p>
 <p class="orv_line">At the end of the harsh training soaked in her blood and sweat, she became the Swordmaster, and eventually rose up as the Ninth Circle Archmage, and finally, the master of fear who controlled the powers of an evil dragon.</p>
@@ -276,7 +283,7 @@
 <p class="orv_line">Did she still exist in the story that I know?</p>
 <p class="orv_line">"The Han Sooyoung you knew no longer exists. The past 50 years had moulded her into a brand new existence. And that is precisely me."</p>
 <p class="orv_line">The Giant Story rushing out from behind the queen's back emitted incredibly dense fighting intent in our direction.</p>
-<div class="orv_system"><p>[Giant Story, 'Kaizenix Archipelago', is excluding your existences.]</p></div>
+<div class="orv_system"><p>Giant Story, 'Kaizenix Archipelago', is excluding your existences.</p></div>
 <p class="orv_line">In front of the time spanning 50 years, the memories of the short time Han Sooyoung and I shared together gradually looked pathetic and insignificant.</p>
 <p class="orv_line">To make sure that the memories wouldn't grow any more insignificant, I forced out a smile and had to open my mouth. "As I thought, you are not Han Sooyoung. She's not as serious as you, you know."</p>
 <p class="orv_line">There was a faint trace of agitation in the queen's expression.</p>
@@ -293,8 +300,8 @@
 <p class="orv_line">"However, you tried to execute me earlier, didn't you?"</p>
 <p class="orv_line">"That was your assigned test. And you were scheduled to be rescued by the First Prince, anyway," the queen laughed as if she was Han Sooyoung. "And now, the end of this scenario is upon us."</p>
 <p class="orv_line">Sparks danced in the air and the new scenario message could be heard now.</p>
-<div class="orv_system"><p>[The deciding moment for the Genre Selection has arrived!]</p></div>
-<div class="orv_system"><p>[You must select this worldview's genre!]</p></div>
+<div class="orv_system"><p>The deciding moment for the Genre Selection has arrived!</p></div>
+<div class="orv_system"><p>You must select this worldview's genre!</p></div>
 <p class="orv_line">The queen stared at the air and spoke. "The end of this world has always remained the same."</p>
 <p class="orv_line">A sense of desolation refined through a lengthy period of time brushed past her expression.</p>
 <p class="orv_line">The Isle of Reincarnators was a series of islands where the dead Stories were put on display like stuffed animals. It was a grave of Stories that managed to continue existing by supplying suitable stages to other scenarios.</p>
@@ -309,8 +316,8 @@
 <p class="orv_line">"Also correct, but with the exception of one person."</p>
 <p class="orv_line">One person, she said.</p>
 <p class="orv_line">The deep-seated shadow of avarice danced within the eyes of the queen. "Han Sooyoung must remain in this world. You see, I really like her. And you shall become the tragic lovers saying goodbye inside a scenario."</p>
-<div class="orv_system"><p>[Genre of the applicable scenario is tilting towards 'Romance'.]</p></div>
-<div class="orv_system"><p>[Scenario clear condition will be fulfilled as soon as the genre has been confirmed.]</p></div>
+<div class="orv_system"><p>Genre of the applicable scenario is tilting towards 'Romance'.</p></div>
+<div class="orv_system"><p>Scenario clear condition will be fulfilled as soon as the genre has been confirmed.</p></div>
 <p class="orv_line">This world was negotiating with us for a deal, telling us to abandon Han Sooyoung.</p>
 <p class="orv_line">"Living in this world, and not in her original world, suits her better."</p>
 <p class="orv_line">That might be true as well.</p>
@@ -325,30 +332,30 @@
 <p class="orv_line">"You see, I haven't heard the conclusion of this story from her yet."</p>
 <p class="orv_line">I slowly got up from my spot while summoning up every ounce of strength I possessed, in order to resist this world's Story.</p>
 <p class="orv_line">Tsu-chuchuchuchut!</p>
-<div class="orv_system"><p>[Giant Story, 'Torch That Swallowed the Myth', is roaring out!]</p></div>
-<div class="orv_system"><p>[Giant Story, 'Demon Realm's Spring', is nodding its head.]</p></div>
+<div class="orv_system"><p>Giant Story, 'Torch That Swallowed the Myth', is roaring out!</p></div>
+<div class="orv_system"><p>Giant Story, 'Demon Realm's Spring', is nodding its head.</p></div>
 <p class="orv_line">The queen's expression changed and she glared at me. "You're ruining a scenario on the verge of completion."</p>
 <p class="orv_line">"Nope, this is the way it's supposed to go."</p>
 <p class="orv_line">"…What was that?"</p>
 <p class="orv_line">"I've been curious about this since the beginning. Out of all the potential scenarios out there, why were we thrown into this 'Kaizenix Archipelago' in the first place? However, when I thought about it, the reason was actually quite simple."</p>
 <p class="orv_line">I pulled out a certain sword from my inner pocket and spoke. "That's because I am the legitimate heir to the throne in this scenario."</p>
 <p class="orv_line">The Unbroken Faith glowed brightly and emitted blinding rays of pure light.</p>
-<div class="orv_system"><p>[Worldview is reacting to the Star Relic 'Unbroken Faith'!]</p></div>
-<div class="orv_system"><p>[Applicable Star Relic belongs to this particular worldview.]</p></div>
-<div class="orv_system"><p>[Natural abilities of the Star Relic are increasing tremendously!]</p></div>
+<div class="orv_system"><p>Worldview is reacting to the Star Relic 'Unbroken Faith'!</p></div>
+<div class="orv_system"><p>Applicable Star Relic belongs to this particular worldview.</p></div>
+<div class="orv_system"><p>Natural abilities of the Star Relic are increasing tremendously!</p></div>
 <p class="orv_line">The First Ancestor of the Kaizenix Archipelago was the legendary Storm King, Ulysses Kaizenix – and this was his sword.</p>
 <p class="orv_line">"T-that sword is…?!"</p>
 <p class="orv_line">"That's the sword of the Storm King!"</p>
 <p class="orv_line">The royal guards recognised the sword and they all collapsed down to the ground. The queen fell into a state of panic and began pouring out her powerful physical aura and magical energy in my direction.</p>
 <p class="orv_line">Unfortunately for her, though, not even the power of a Swordmaster nor that of an Archmage could do much in front of the Unbroken Faith.</p>
-<div class="orv_system"><p>[Star Relic, 'Unbroken Faith', is crying out!]</p></div>
+<div class="orv_system"><p>Star Relic, 'Unbroken Faith', is crying out!</p></div>
 <p class="orv_line">This was the true power of the 'Star Relic'; it would exhibit a near-omnipotent level of power when inside the Story where it was created.</p>
 <p class="orv_line">My hand gripping the sword began trembling non-stop. Sure, the Star Relic itself might be powerful, but 'Ricardo Von Kaizenix' simply didn't possess enough strength to hold the weapon for too long. That was why I needed to end this as quickly as possible.</p>
 <p class="orv_line">I smacked away the queen's magical energy waves and got closer to her, a step at the time. By the time I reached her, she had fallen on her butt.</p>
 <p class="orv_line">She was carrying an expression of resignation ever since she saw the sword.</p>
-<div class="orv_system"><p>[You have chosen the route of 'Dynastic Revolution'.]</p></div>
-<div class="orv_constellation"><p>[You must kill the queen.]</p></div>
-<div class="orv_system"><p>[Genre of the applicable scenario is tilting towards 'Fantasy'…]</p></div>
+<div class="orv_system"><p>You have chosen the route of 'Dynastic Revolution'.</p></div>
+<div class="orv_constellation"><p>You must kill the queen.</p></div>
+<div class="orv_system"><p>Genre of the applicable scenario is tilting towards 'Fantasy'…</p></div>
 <p class="orv_line">Han Sooyoung's book said that there were three ways to complete this scenario. Unfortunately, she left out the most crucial 'third method' in her book.</p>
 <p class="orv_line">If I kill the queen now, then Han Sooyoung would die, as well. But, if I marry her, then she would be left behind. In that case, how should I conclude this tale, then?</p>
 <p class="orv_line">What would be the end of the scenario that Han Sooyoung wanted?</p>
@@ -362,8 +369,8 @@
 <p class="orv_line">I looked at the queen's scar-filled hands. Han Sooyoung became a Swordmaster and an Archmage through those hands.</p>
 <p class="orv_line">The Han Sooyoung that I knew wasn't someone who'd set a simple goal of 'survival' in this world. Because she was an author who knew how to look at the bigger picture.</p>
 <p class="orv_line">I smiled and raised my voice. "You see, I'm really fed up with being a king."</p>
-<div class="orv_system"><p>[You have chosen a course that has never been thought of before.]</p></div>
-<div class="orv_system"><p>[Worldview is flustered by your selection.]</p></div>
+<div class="orv_system"><p>You have chosen a course that has never been thought of before.</p></div>
+<div class="orv_system"><p>Worldview is flustered by your selection.</p></div>
 <p class="orv_line">I held the queen's hand and slowly helped her up. And rather than kissing her hand, I placed Unbroken Faith in there, instead.</p>
 <p class="orv_line">"What are you trying to do? This…"</p>
 <p class="orv_line">"Don't be mistaken. I'm not trying to give you the ruler's position."</p>
@@ -372,15 +379,15 @@
 <p class="orv_line">As the queen's eyes grew wider, I finished what I wanted to say.</p>
 <p class="orv_line">"It'll be Han Sooyoung from &lt;Kim Dokja's Company&gt;."</p>
 <p class="orv_line">In the following moment, there was an explosion of scenario messages before my eyes.</p>
-<div class="orv_system"><p>[Error has occurred during the scenario's selection process!]</p></div>
-<div class="orv_system"><p>[Potential genre option, 'Fantasy', is falling apart!]</p></div>
-<div class="orv_system"><p>[Potential genre option, 'Fusion fantasy', is falling apart!]</p></div>
-<div class="orv_system"><p>[Potential genre option, 'Romance', is falling apart!]</p></div>
-<div class="orv_system"><p>[Hidden option, 'Genre: Kim Dokja's Company', is activating!]</p></div>
+<div class="orv_system"><p>Error has occurred during the scenario's selection process!</p></div>
+<div class="orv_system"><p>Potential genre option, 'Fantasy', is falling apart!</p></div>
+<div class="orv_system"><p>Potential genre option, 'Fusion fantasy', is falling apart!</p></div>
+<div class="orv_system"><p>Potential genre option, 'Romance', is falling apart!</p></div>
+<div class="orv_system"><p>Hidden option, 'Genre: Kim Dokja's Company', is activating!</p></div>
 <p class="orv_line">…</p>
 <p class="orv_line">…</p>
 <p class="orv_line">And then, someone spoke to me.</p>
-<div class="orv_quote"><p>「 You've managed to figure it out, haven't you, Kim Dokja. 」</p></div>
+<div class="orv_quote"><p>You've managed to figure it out, haven't you, Kim Dokja.</p></div>
 <br>
 <hr>
         </article>
@@ -388,18 +395,12 @@
             <a href="./ch_378"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_380">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="379" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="729" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="378" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="378" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

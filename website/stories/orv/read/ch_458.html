@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 458: Ep. 86 - The square circle, V</title>
     <meta property="og:title" content="Ch 458: Ep. 86 - The square circle, V" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,28 +177,28 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00458.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 458: Ep. 86 - The square circle, V</h1></div>
-<p class="orv_line">Yoo Joonghyuk was prepared to swing his [Black Heavenly Demon Sword] if the 'Secretive Plotter' tried to do something foolish, but rather unexpectedly, the latter easily answered back. He didn't even use his true voice, either.</p>
+<p class="orv_line">Yoo Joonghyuk was prepared to swing his <strong>[Black Heavenly Demon Sword]</strong> if the 'Secretive Plotter' tried to do something foolish, but rather unexpectedly, the latter easily answered back. He didn't even use his true voice, either.</p>
 <p class="orv_line">"You're right. I am trapped in here."</p>
 <p class="orv_line">His real, pure voice was heard for the first time.</p>
 <p class="orv_line">That prompted Yoo Mia to reply with a bright smile. "Ask my oppa to free you. He's super strong, you see?"</p>
@@ -224,7 +231,7 @@
 <p class="orv_line">That too was immediate.</p>
 <p class="orv_line">"What does that even…"</p>
 <p class="orv_line">Just as Yoo Joonghyuk opened his lips, he understood what those answers meant. So, he shut his mouth right away.</p>
-<p class="orv_line">Seemingly-crying sparks ever so faintly danced around. Under the pretext of the [Disconnected Film Theory], the memories of these two beings trembled and their Stories shifted.</p>
+<p class="orv_line">Seemingly-crying sparks ever so faintly danced around. Under the pretext of the <strong>[Disconnected Film Theory]</strong>, the memories of these two beings trembled and their Stories shifted.</p>
 <p class="orv_line">⸢In one world-line, Yoo Mia survived for a long time. Even after he died.⸥</p>
 <p class="orv_line">The world of a man who lived 1864 lifetimes – just what kind of a world would that be?</p>
 <p class="orv_line">⸢However, in another world-line, she died.⸥</p>
@@ -235,7 +242,7 @@
 <div class="orv_outergod"><p>【You're pitying me.】</p></div>
 <p class="orv_line">"Who would do that to a…"</p>
 <div class="orv_outergod"><p>【Do you believe that my life was a misery?】</p></div>
-<p class="orv_line">Yoo Joonghyuk couldn't tell if that was a form of sympathy directed at himself. The blade of the [Black Heavenly Demon Sword] he held tightly was faintly trembling.</p>
+<p class="orv_line">Yoo Joonghyuk couldn't tell if that was a form of sympathy directed at himself. The blade of the <strong>[Black Heavenly Demon Sword]</strong> he held tightly was faintly trembling.</p>
 <p class="orv_line">Why was he hesitating now? He had come this far already, so what was left to hesitate? Just because he heard a bit of this bastard's past history…</p>
 <p class="orv_line">The 'Secretive Plotter' opened his lips. 【Did you know? There was this young boy in the front-most subway car that always died during every regression turn.】</p>
 <p class="orv_line">That question came out of nowhere. Yoo Joonghyuk naturally recalled the events of the subway train. The very first scenario, the very first encounter with Hell that he had to experience every single time.</p>
@@ -251,7 +258,7 @@
 <div class="orv_outergod"><p>【The &lt;Star Stream&gt; tries to make the lives of everyone into 'Gi-Seung-Jeon-Gyeol'. However, a life was never supposed to be that. No, it's an unreasonable thing that can end at any time, whether it's 'Gi(beginning)', 'Seung(development)', or even during 'Jeon(climax)'. And that's why, even if my life comes to an end here, it shouldn't come as a surprise.】</p></div>
 <p class="orv_line">Did the boy from the subway make the same expression as this man? Yoo Joonghyuk couldn't tell.</p>
 <p class="orv_line">The 'Secretive Plotter' stared back at him with a pair of quiet, still eyes.</p>
-<p class="orv_line">Yoo Joonghyuk stared back into those eyes for the longest time, before averting his gaze away while lowering the [Black Heavenly Demon Sword].</p>
+<p class="orv_line">Yoo Joonghyuk stared back into those eyes for the longest time, before averting his gaze away while lowering the <strong>[Black Heavenly Demon Sword]</strong>.</p>
 <p class="orv_line">"…You'll end up seeing that boy's death for the 1864th time if you regress again."</p>
 <p class="orv_line">In the end, he returned his sword back to its scabbard. This could be the wrong decision. Even then, Yoo Joonghyuk had made up his mind.</p>
 <p class="orv_line">Maybe he too didn't expect such a choice, because the 'Secretive Plotter' remained speechless for a long while.</p>
@@ -274,19 +281,19 @@
 <p class="orv_line">"…Well, I guess nothing serious has happened here."</p>
 <p class="orv_line">Han Sooyoung muttered in relief.</p>
 <p class="orv_line">Indeed, we couldn't see any traces of Yoo Joonghyuk causing an accident, and the 'Secretive Plotter' was still stuck in a deep slumber.</p>
-<p class="orv_line">I put the Plotter back inside the [X-grade Ferrarghini]. There were a few things that didn't sit well with me, but now wasn't the time to grill the one responsible.</p>
+<p class="orv_line">I put the Plotter back inside the <strong>[X-grade Ferrarghini]</strong>. There were a few things that didn't sit well with me, but now wasn't the time to grill the one responsible.</p>
 <p class="orv_line">"Okay, everyone, please gather around! Let's start the campfire!"</p>
 <p class="orv_line">The flames rose up thickly and brightened the darkness of the campsite. Time was approaching closer to midnight. Only then did I remember something important.</p>
 <p class="orv_line">"H-hang on! My scenario hasn't…!"</p>
 <p class="orv_line">Dammit, I forgot all about it because of Yoo Joonghyuk.</p>
 <p class="orv_line">I could hear Biyoo humming "Baat, baat" just above my head.</p>
-<div class="orv_system"><p>[Scenario time limit has elapsed!]</p></div>
+<div class="orv_system"><p>Scenario time limit has elapsed!</p></div>
 <p class="orv_line">Would I really get killed like this?</p>
-<div class="orv_system"><p>[Sub Scenario – 'Workers' Off-day' has ended!]</p></div>
-<div class="orv_system"><p>[You need to resolve a total of 5 complaints.]</p></div>
-<div class="orv_system"><p>[You have currently resolved 1 complaint.]</p></div>
-<div class="orv_system"><p>[You have resolved all of your employees' complaints.]</p></div>
-<div class="orv_system"><p>[New Story related to the &lt;Kim Dokja's Company&gt; is being generated.]</p></div>
+<div class="orv_system"><p>Sub Scenario – 'Workers' Off-day' has ended!</p></div>
+<div class="orv_system"><p>You need to resolve a total of 5 complaints.</p></div>
+<div class="orv_system"><p>You have currently resolved 1 complaint.</p></div>
+<div class="orv_system"><p>You have resolved all of your employees' complaints.</p></div>
+<div class="orv_system"><p>New Story related to the &lt;Kim Dokja's Company&gt; is being generated.</p></div>
 <p class="orv_line">…Uh?</p>
 <p class="orv_line">"Seriously, man. It's like you forgot your wits somewhere or some such…" muttered Han Sooyoung, as she stared at the side of my face.</p>
 <p class="orv_line">Companions were giggling to themselves while looking at me.</p>
@@ -307,12 +314,12 @@
 <p class="orv_line">"Not really. We aren't little kids anyway."</p>
 <p class="orv_line">"Wait a minute. Didn't you say you never had any friends and didn't even go to 'membership trainings' either? I guess you've never received one before, then."</p>
 <p class="orv_line">If the total reserve of my mental energy declined during this trip, then it was all Han Sooyoung's fault.</p>
-<p class="orv_line">A few members of &lt;Kim Dokja's Company&gt; blessed with strong drive had already purchased pens and large papers from the [Dokkaebi Bundle]. Seriously, though, these greedy Dokkaebis even charged Coins for something like that…?</p>
+<p class="orv_line">A few members of &lt;Kim Dokja's Company&gt; blessed with strong drive had already purchased pens and large papers from the <strong>[Dokkaebi Bundle]</strong>. Seriously, though, these greedy Dokkaebis even charged Coins for something like that…?</p>
 <p class="orv_line">Yoo Joonghyuk sitting across me on the other side of the campfire seemed to be angry as well.</p>
 <p class="orv_line">"I won't participate in something like this."</p>
 <p class="orv_line">…Although, his reason for anger seemed to be different from mine.</p>
 <p class="orv_line">Nevertheless, seeing my companions gathered around closely and scribbling on their papers gave me this fresh perspective on things. It's like this was a writing get-together for the poor, friend-less Kim Dokja.</p>
-<p class="orv_line">While everyone was writing their names on the papers and passing it along, Lee Gilyoung suddenly raised his hand up. "Hyung, I bought this off the [Dokkaebi Bundle], so can I fire it?"</p>
+<p class="orv_line">While everyone was writing their names on the papers and passing it along, Lee Gilyoung suddenly raised his hand up. "Hyung, I bought this off the <strong>[Dokkaebi Bundle]</strong>, so can I fire it?"</p>
 <p class="orv_line">Shin Yoosung discovered the toy in the boy's hand and her expression brightened up instantly. "Uh? Isn't that the same thing people were firing around the Han River?"</p>
 <p class="orv_line">"Yeah, I remembered that so I bought it."</p>
 <p class="orv_line">"Let me try it, too!"</p>
@@ -325,7 +332,7 @@
 <p class="orv_line">The square-shaped wings of the helicopter spun around quickly and formed a circle.</p>
 <p class="orv_line">I thought it looked like a portal. A portal, that led to the world we used to live in. We might not be able to go back anymore, but still, I felt the nostalgia of that world from it.</p>
 <p class="orv_line">It was around then that a system message resounded out.</p>
-<div class="orv_system"><p>[Incarnation, 'Lee Gilyoung', has used the item 'Parachute Helicopter (Extra-large optical screen)'!]</p></div>
+<div class="orv_system"><p>Incarnation, 'Lee Gilyoung', has used the item 'Parachute Helicopter (Extra-large optical screen)'!</p></div>
 <p class="orv_line">The spinning wings of the helicopter grew larger and larger, and eventually, changed shape to that of a huge screen.</p>
 <p class="orv_line">Lee Jihye frowned deeply. "What the heck. It was a hologram panel? We now have to watch a scenario even in this place?"</p>
 <p class="orv_line">"Lee Gilyoung, did you even read the user's manual before…"</p>
@@ -336,8 +343,8 @@
 <p class="orv_line">The 'optical screen' was now displaying the American continent. And right before our eyes, that large continent was disappearing in its entirety.</p>
 <p class="orv_line">Because of a gigantic island rising up from the deepest part of the Earth.</p>
 <p class="orv_line">Along with the entrance of that island, the American continent was being erased from the map itself.</p>
-<div class="orv_system"><p>[The applicable world-line has reached its critical point!]</p></div>
-<div class="orv_system"><p>[Elevation of the forgotten islands has begun!]</p></div>
+<div class="orv_system"><p>The applicable world-line has reached its critical point!</p></div>
+<div class="orv_system"><p>Elevation of the forgotten islands has begun!</p></div>
 <p class="orv_line">Yoo Joonghyuk, his expression hardened, quietly muttered out.</p>
 <p class="orv_line">"The end has begun."</p>
 <br>
@@ -347,18 +354,12 @@
             <a href="./ch_457"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_459">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="458" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="507" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="457" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="457" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

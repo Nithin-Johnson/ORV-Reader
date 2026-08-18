@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 93: Ep. 19 – Singularity, I</title>
     <meta property="og:title" content="Ch 93: Ep. 19 – Singularity, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,29 +177,29 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00093.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 93: Ep. 19 – Singularity, I</h1></div>
 <p class="orv_line">Since it was the first time I came to a dokkaebi's official post, I looked at some of the documents on the table while Bihyung managed the constellations.</p>
-<div class="orv_system"><p>[Singularity Trend Report]</p></div>
+<div class="orv_system"><p>Singularity Trend Report</p></div>
 <p class="orv_line">…Singularity? The moment I curiously turned a few pages, the documents disappeared into dust. It seemed to be a database system, not real documents.</p>
 <p class="orv_line">Bihyung looked this way.</p>
 <p class="orv_line">–…What are you doing?</p>
@@ -216,24 +223,24 @@
 <p class="orv_line">–Yes, so give me my item. Dokgak is gone so shouldn't you hand me the item now?</p>
 <p class="orv_line">–Ah, that's right.</p>
 <p class="orv_line">Bihyung belatedly manipulated the system. Then after a while, a white coat descended from the air. The clean design carefully paid attention to fashion as well as combat function. I took the coat and checked the pocket first.</p>
-<div class="orv_system"><p>[The special 'space' feature of the Infinite Dimension Space Coat is activated.]</p></div>
+<div class="orv_system"><p>The special 'space' feature of the Infinite Dimension Space Coat is activated.</p></div>
 <p class="orv_line">The advantage of this coat was that I could store various items in it without the Inventory skill. It was a good item for me since there were many troublesome items to carry such as the Ganpyeongui, Dongui Bogam and Magic Power Stove.</p>
 <p class="orv_line">"…By the way, it is white unlike the catalogue photo."</p>
-<div class="orv_system"><p>[The other colour is out of stock.]</p></div>
+<div class="orv_system"><p>The other colour is out of stock.</p></div>
 <p class="orv_line">Out of stock. How many of these items were there?</p>
-<div class="orv_constellation"><p>[Don't you know? This is a mass production item.]</p></div>
+<div class="orv_constellation"><p>Don't you know? This is a mass production item.</p></div>
 <p class="orv_line">I checked the options of the items.</p>
 <div class="orv_window">
-<h3 class="orv_window_title">[Item Information]</h3>
+<h3 class="orv_window_title">Item Information</h3>
 <p>Name: Infinite Dimension Space Coat ver1.1 (made by Mass Production Maker)</p>
 <p>Rating: SSS</p>
 <p>Description: A customized coat for returnees. Despite being a mass produced product, it was mysteriously given an SSS rating. In consideration of the returnees who can't activate the attributes window, the additional 'Subspace' function can be activated from the inner pocket of the coat. Of course, the space isn't wide so use it cautiously.</p>
 </div>
 <p class="orv_line">I looked at it again. Only the subspace could be used but it had an SSS rating? When considering that the ancient dragon Ignitus's heart had an SS-grade…</p>
-<div class="orv_constellation"><p>[…Honestly, it is just due to the influence of the maker. He is a powerful constellation.]</p></div>
+<div class="orv_constellation"><p>…Honestly, it is just due to the influence of the maker. He is a powerful constellation.</p></div>
 <p class="orv_line">It made sense. The Mass Production Maker was a famous constellation among returnees… Even if the rating was a bit off, this was one of the best items to get early on.</p>
 <p class="orv_line">In any case, I received it.</p>
-<div class="orv_constellation"><p>[Then let's go back.]</p></div>
+<div class="orv_constellation"><p>Then let's go back.</p></div>
 <p class="orv_line">Bihyung flicked his fingers and the surroundings started to change. I blinked once and returned to ground. Han Sooyoung freaked out and retreated when I suddenly appeared in thin air.</p>
 <p class="orv_line">"Hey! Where the hell did you go?"</p>
 <p class="orv_line">"I had to do something for a moment."</p>
@@ -241,10 +248,10 @@
 <p class="orv_line">"New clothes? Damn, I'm envious." She gazed with envious eyes at the coat I was staring at and then at Yoo Joonghyuk, who was still unconscious. She looked between Yoo Joonghyuk's black coat and my white coat before opening her mouth.</p>
 <p class="orv_line">"By the way, are you a couple?"</p>
 <p class="orv_line">"…It is just a coincidence. It is a common design."</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is delighted for an unknown reason.]</p></div>
-<div class="orv_system"><p>[A constellation who likes to change gender has shining eyes.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is delighted for an unknown reason.</p></div>
+<div class="orv_system"><p>A constellation who likes to change gender has shining eyes.</p></div>
 <p class="orv_line">…Come to think of it, there were many unique constellations. Who was the constellation who liked to change gender? Did this constellation appear in Ways of Survival? I thought I should look through the novel soon.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is controlling the constellation who likes to change gender.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is controlling the constellation who likes to change gender.</p></div>
 <p class="orv_line">Speaking of which, I decided to look at Yoo Joonghyuk. Fortunately, his recovery seemed to be going smoothly. His breathing was stable and his wounds were healing.</p>
 <p class="orv_line">"Let's go quickly. Before this jerk wakes up."</p>
 <p class="orv_line">Yoo Joonghyuk had fainted with two clenched fists. It wasn't hard to imagine what would happen if this guy woke up first.</p>
@@ -264,7 +271,7 @@
 <p class="orv_line">I had a limited time and information, even if I was a complete reader. Therefore, the best trainer for Lee Hyunsung right now wasn't me, but Yoo Joonghyuk.</p>
 <p class="orv_line">"I'm hungry. Shall we eat that?"</p>
 <p class="orv_line">I pointed to a plant growing around a high-rise building.</p>
-<div class="orv_system"><p>[The 7th grade plant species 'Yanaspleta' is looking at you.]</p></div>
+<div class="orv_system"><p>The 7th grade plant species 'Yanaspleta' is looking at you.</p></div>
 <p class="orv_line">Han Sooyoung looked at the huge sunflower's eyes and cried out with fright, "…Can we eat that?"</p>
 <p class="orv_line">"We have to eat it because there is nothing else. According to Ways of Survival, it is quite delicious. It is also a child and easy to hunt."</p>
 <p class="orv_line">"Uh…"</p>
@@ -289,9 +296,9 @@
 <p class="orv_line">"…This isn't a joke. You can really cook."</p>
 <p class="orv_line">"Maybe only in this ruined world."</p>
 <p class="orv_line">I laughed because she looked like a five year old child stuffing her face with good food.</p>
-<div class="orv_system"><p>[Some constellations who love cooking are curious about your cooking.]</p></div>
-<div class="orv_system"><p>[Some constellations who like fast progress and violence are complaining.]</p></div>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' says to keep watching.]</p></div>
+<div class="orv_system"><p>Some constellations who love cooking are curious about your cooking.</p></div>
+<div class="orv_system"><p>Some constellations who like fast progress and violence are complaining.</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' says to keep watching.</p></div>
 <p class="orv_line">There was one week left until the start of the fifth scenario. The Burning Hell disaster and Disaster of Questions had been overcome, making the development smooth.</p>
 <p class="orv_line">Yoo Joonghyuk would take care of the disaster in the west with Lee Hyunsung once he woke up while the Wanderer King would handle the north. The only thing to be aware of now was the 'central disaster'.</p>
 <p class="orv_line">I picked up the yanaspleta juice and looked at the still unconscious Yoo Sangah. "Yoo Sangah-ssi."</p>
@@ -333,10 +340,10 @@
 <p class="orv_line">The white blade of Unbroken Faith shone in the darkness.</p>
 <p class="orv_line">"I won't hesitate to do anything to reach my purpose." I pushed the white blade towards Yoo Sangah's throat. "You better open your mouth quickly. Unless you want your precious incarnation to die."</p>
 <p class="orv_line">From now on, it was a game of chicken. I waited while gradually pushing the blade towards her throat. The blade was 1cm away from her throat and blood started flowing. All of a sudden, Yoo Sangah's eyes shone.</p>
-<div class="orv_system"><p>[The exclusive skill 'Fourth Wall' has offset your mental shock.]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Fourth Wall' has offset your mental shock.</p></div>
 <p class="orv_line">There was a gust of wind and I was thrown away from Yoo Sangah's body.</p>
 <p class="orv_line">There was a menacing presence that made my heart dull. A faint glow appeared around Yoo Sangah's body. I looked into Yoo Sangah's blurry eyes. Revolving in the pupils, the shadow of a distant nebula was seen. Then a voice like thunder burst inside my head.</p>
-<div class="orv_constellation"><p>[Insignificant human.]</p></div>
+<div class="orv_constellation"><p>Insignificant human.</p></div>
 <p class="orv_line">I wiped the blood flowing from my mouth and grinned. They finally appeared. The damn constellations of Olympus.</p>
 <br>
 <hr>
@@ -345,18 +352,12 @@
             <a href="./ch_92"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_94">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="93" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="245" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="92" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="92" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 5: Ep. 1 – Starting the Paid Service, IV</title>
     <meta property="og:title" content="Ch 5: Ep. 1 – Starting the Paid Service, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,48 +177,48 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00005.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 5: Ep. 1 – Starting the Paid Service, IV</h1></div>
 <p class="orv_line">Laughter emerged. I had to clear my eyes and look again to see if it was a lie. The file extension was TXT. Then this meant that this person… The gift he sent me was a copy of his novel?</p>
-<div class="orv_system"><p>[You have obtained an exclusive attribute.]</p></div>
-<div class="orv_system"><p>[The exclusive skill slot has been activated.]</p></div>
+<div class="orv_system"><p>You have obtained an exclusive attribute.</p></div>
+<div class="orv_system"><p>The exclusive skill slot has been activated.</p></div>
 <p class="orv_line">I heard a message in my ear after running the file. It wasn't surprising if the world had changed into 'Ways of Survival'. All survivors of Ways of Survival had exclusive attribute and skills. I quietly said 'Attribute Window' in my mind. After all, I needed to know the attribute that I received.</p>
-<div class="orv_system"><p>[You can't activate the Attribute Window.]</p></div>
+<div class="orv_system"><p>You can't activate the Attribute Window.</p></div>
 <p class="orv_line">What? I once again tried to call out 'Attribute Window', but the result was the same. It was absurd. To think there was something like this? If I couldn't use the Attributes Window, then I couldn't know what attributes or skills I had. Knowing oneself and one's enemy allowed one to be invincible. However, this was a situation where I didn't even know myself, let alone the enemy.</p>
 <p class="orv_line">After staring into space for a while, I gave up and decided to read the text the author had given me.</p>
-<div class="orv_system"><p>[Your reading speed has increased due to the effect of your exclusive attribute.]</p></div>
+<div class="orv_system"><p>Your reading speed has increased due to the effect of your exclusive attribute.</p></div>
 <p class="orv_line">I didn't know what the attribute was, but it took me less than a minute to read the first act of Ways of Survival thanks to the attribute effect. Then I found it. The place where my finger had stopped was at the beginning part of the work, where the main character was doing some 'action' in the train scene.</p>
-<div class="orv_quote"><p>「 He saw people gathered at the back door of the 3707 carriage. The wheel of the lighter he held tightly in his hand was cold. In this life, he absolutely couldn't make a mistake. He would use any means for his purpose.<br>The expression of fear on the people's faces…<br>He didn't feel any guilt. Everything was fleeting. He looked at the people with merciless eyes. After a while, his fingertips moved, and fire rose. Then it all started. 」</p></div>
+<div class="orv_quote"><p>He saw people gathered at the back door of the 3707 carriage. The wheel of the lighter he held tightly in his hand was cold. In this life, he absolutely couldn't make a mistake. He would use any means for his purpose.<br>The expression of fear on the people's faces…<br>He didn't feel any guilt. Everything was fleeting. He looked at the people with merciless eyes. After a while, his fingertips moved, and fire rose. Then it all started.</p></div>
 <p class="orv_line">A chill went down my spine, and I had to read the passage again and again. The reason for my discomfort was soon revealed.</p>
 <p class="orv_line">"…3707."</p>
-<p class="orv_line">I reflexively checked the number of the carriage I was riding—[3807]. The carriage I was in right now was behind the carriage that the protagonist was riding. My hands shook slightly.</p>
+<p class="orv_line">I reflexively checked the number of the carriage I was riding—<strong>[3807]</strong>. The carriage I was in right now was behind the carriage that the protagonist was riding. My hands shook slightly.</p>
 <p class="orv_line">…Wait a minute. How many people originally survived this carriage?</p>
-<div class="orv_quote"><p>「 He looked through the blurred window at the 3807 carriage. It was already too late. It was inevitable. Anyway, only two people survived in that carriage. 」</p></div>
+<div class="orv_quote"><p>He looked through the blurred window at the 3807 carriage. It was already too late. It was inevitable. Anyway, only two people survived in that carriage.</p></div>
 <p class="orv_line">Only two survived. It meant that everyone had died except for two people. And I already knew who those two people were. I raised my head and looked blankly at Yoo Sangah. Maybe this woman would die.</p>
 <p class="orv_line">…Me as well.</p>
 <p class="orv_line">"Dokja-ssi, shouldn't we stop this?" Something was starting in the place where Yoo Sangah pointed. There was the sound of groaning.</p>
 <p class="orv_line">A young man was crouching down in front of the elderly woman. "Shit. I'm in a bad mood, and this old lady keeps whining and groaning! Won't you shut up?"</p>
 <p class="orv_line">The young man was a male student who had been leaning against the entrance. He was thin and had dyed white hair. His name was written on the badge attached to his uniform—Kim Namwoon. It was a name that I knew.</p>
-<div class="orv_quote"><p>「 Only Lee Hyunsung and Kim Namwoon survived in that carriage. It doesn't matter. They are the only two I need anyway. 」</p></div>
+<div class="orv_quote"><p>Only Lee Hyunsung and Kim Namwoon survived in that carriage. It doesn't matter. They are the only two I need anyway.</p></div>
 <p class="orv_line">"Didn't I tell you to shut up?" The agitated Kim Namwoon grabbed the grandmother's collar. The grandmother's powerless legs staggered, and Kim Namwoon's palm moved through the air.</p>
 <p class="orv_line">Slap. Slap.</p>
 <p class="orv_line">In normal times, somebody would run to stop this, but now nobody was moving. It wasn't long before the slaps changed to punches.</p>
@@ -223,9 +230,9 @@
 <p class="orv_line">"What bullshit is this brat saying?"</p>
 <p class="orv_line">Kim Namwoon only laughed at the cursing Han Myungoh. He pointed to the ceiling of the subway carriage with his finger. "Can't you see that?"</p>
 <p class="orv_line">On the ceiling, a holographic screen was playing.</p>
-<div class="orv_constellation"><p>[S-Spare me!]</p></div>
-<div class="orv_constellation"><p>[Aaaack!]</p></div>
-<div class="orv_constellation"><p>[Die! Die!]</p></div>
+<div class="orv_constellation"><p>S-Spare me!</p></div>
+<div class="orv_constellation"><p>Aaaack!</p></div>
+<div class="orv_constellation"><p>Die! Die!</p></div>
 <p class="orv_line">It wasn't just the train carriages or Daepong High School. This was a live video of people dying all over the country. Kim Namwoon continued speaking, "You still don't understand? The army isn't coming to rescue us, and somebody must die."</p>
 <p class="orv_line">"W-What are you saying…?"</p>
 <p class="orv_line">"We have to choose a person to die." Han Myungoh wasn't able to answer. The hairs of his exposed wrist were standing up. "Of course, I know what you are thinking. You have to kill your fellow countrymen to live. It is something only sons of bitches will do. But you know, it is a situation beyond our control. Beyond our control. We will die if we don't kill. Who will blame us? Are you going to die in the end because of your morals?"</p>
@@ -236,9 +243,9 @@
 <p class="orv_line">Kim Namwoon was the young man who adapted to the world of Ways of Survival the fastest. He turned around and resumed punching the grandmother. This time, nobody stopped him—not Han Myungoh, the other men… or even Lee Hyunsung. The soldier's fists were trembling as he stared into the air with a lost expression. Maybe he had also made a decision.</p>
 <p class="orv_line">"Sigh… It is hard to kill. Are you going to just watch? Do you want to fall behind?"</p>
 <p class="orv_line">People trembled at Kim Namwoon's words. Their facial expressions were as easy to read as the sentences in a cheap novel.</p>
-<div class="orv_quote"><p>「 If there is no killing in five minutes, everyone in this carriage will die. 」</p></div>
+<div class="orv_quote"><p>If there is no killing in five minutes, everyone in this carriage will die.</p></div>
 <p class="orv_line">The emotions in the eyes of the people were changing.</p>
-<div class="orv_quote"><p>「 If the grandmother doesn't die, we will die in five minutes… 」</p></div>
+<div class="orv_quote"><p>If the grandmother doesn't die, we will die in five minutes…</p></div>
 <p class="orv_line">They now held the most primitive emotion that a living creature could have.</p>
 <p class="orv_line">"Yes… This bastard is right. If we don't do this, everyone will die." The first man rushed toward Kim Namwoon. He kicked at the old lady who had collapsed and was curled up.</p>
 <p class="orv_line">"Have you forgotten? Someone must die! So we can live!"</p>
@@ -277,7 +284,7 @@
 <p class="orv_line">The people became greatly agitated, and Kim Namwoon's expression distorted.</p>
 <p class="orv_line">"Have you forgotten? The scenario clear condition wasn't to 'kill a person'."</p>
 <p class="orv_line">Most of them were still puzzled, but a few people noticed something.</p>
-<div class="orv_system"><p>[Kill one or more living things.]</p></div>
+<div class="orv_system"><p>Kill one or more living things.</p></div>
 <p class="orv_line">That's right. From the beginning, the word 'person' had never been specified in the contents of the scenario. Kill one or more living things…</p>
 <p class="orv_line">In other words, any life was possible. A quick-witted person shouted at the collection net in my hand, "Insect! Insects!"</p>
 <p class="orv_line">The locusts and grasshoppers were jumping around in the collection net. Looking at them, the eyes of the people shone. I nodded. "That's right, the insects."</p>
@@ -287,8 +294,8 @@
 <p class="orv_line">I stepped back slowly as I looked at the approaching people. Right now, I was facing the explosive madness that tried to kill the grandmother yet a smile emerged on my face. Why? Even in this breathtaking tension, why was my heart beating with joy?</p>
 <p class="orv_line">"Would you like it?" I waved the net like a trainer provoking an animal. Several impatient people leaped toward me.</p>
 <p class="orv_line">"Then keep it!" I smashed the grasshopper in my hand.</p>
-<div class="orv_system"><p>[You have achieved the 'First Kill' achievement!]</p></div>
-<div class="orv_system"><p>[100 coins have been earned as additional compensation.]</p></div>
+<div class="orv_system"><p>You have achieved the 'First Kill' achievement!</p></div>
+<div class="orv_system"><p>100 coins have been earned as additional compensation.</p></div>
 <p class="orv_line">At the same time, I threw the net in my other hand as hard as possible toward the opposite side of the area where the grandmother and the crowd were gathered.</p>
 <p class="orv_line">"This is crazy!"</p>
 <p class="orv_line">The insects were released and jumped as hard as they could for freedom.</p>
@@ -299,18 +306,12 @@
             <a href="./ch_4"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_6">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="5" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="17" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="4" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="4" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

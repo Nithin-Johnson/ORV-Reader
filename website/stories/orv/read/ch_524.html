@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 524: Epilogue 1 - The World of Zero, VIII</title>
     <meta property="og:title" content="Ch 524: Epilogue 1 - The World of Zero, VIII" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,28 +177,28 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00524.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 524: Epilogue 1 - The World of Zero, VIII</h1></div>
-<p class="orv_line">Yoo Joonghyuk's [Splitting the Sky Sword] scythed through the air; it cut down the Constellations blocking his path, and sliced apart the Incarnations acting as their underlings.</p>
+<p class="orv_line">Yoo Joonghyuk's <strong>[Splitting the Sky Sword]</strong> scythed through the air; it cut down the Constellations blocking his path, and sliced apart the Incarnations acting as their underlings.</p>
 <p class="orv_line">Yoo Joonghyuk truly fought hard.</p>
 <p class="orv_line">He was followed by the companions that broke past the scenarios together with him – Lee Jihye, Lee Hyunsung, Jung Heewon, Shin Yoosung, Kim Namwoon, Lee Seolhwa, Gong Pildu…</p>
 <p class="orv_line">– System operation.</p>
@@ -200,26 +207,26 @@
 <p class="orv_line">The King of Transcendents Jang Hayoung was also here, as well.</p>
 <p class="orv_line">– We'll take care of this, Supreme King.</p>
 <p class="orv_line">Not only them, but also Incarnations from other nations, such as Fei Hu and Ranvir Khan – and even his sworn enemy, Anna Croft helped him.</p>
-<div class="orv_system"><p>[Constellation, 'Prisoner of the Golden Headband', is cheering on Incarnation Yoo Joonghyuk!]</p></div>
-<div class="orv_system"><p>[Constellation, 'Demon-Like Judge of Fire', is…]</p></div>
-<div class="orv_system"><p>[Constellation, 'Abyssal Black Flame Dragon',…]</p></div>
+<div class="orv_system"><p>Constellation, 'Prisoner of the Golden Headband', is cheering on Incarnation Yoo Joonghyuk!</p></div>
+<div class="orv_system"><p>Constellation, 'Demon-Like Judge of Fire', is…</p></div>
+<div class="orv_system"><p>Constellation, 'Abyssal Black Flame Dragon',…</p></div>
 <p class="orv_line">No other regression turn should be as complete as this one.</p>
 <p class="orv_line">"Pacheonmaeng, we're moving out."</p>
 <p class="orv_line">The Pacheonmaeng (破天盟). That was the name of the coalition Yoo Joonghyuk had created.</p>
 <p class="orv_line">The conclusion I completed, as well as the blueprint laid out by the 1863rd turn's Han Sooyoung; Stories, the concentration of essence from all the regression turns found within the 'Ways of Survival', had begun telling their stories.</p>
-<div class="orv_system"><p>[Story, 'King of a Kingless World', is talking a big game!]</p></div>
-<div class="orv_system"><p>[Giant Story, 'Demon Realm's Spring', has begun its storytelling!]</p></div>
-<div class="orv_system"><p>[Giant Story, 'Season of Light and Darkness', has begun its storytelling!]</p></div>
+<div class="orv_system"><p>Story, 'King of a Kingless World', is talking a big game!</p></div>
+<div class="orv_system"><p>Giant Story, 'Demon Realm's Spring', has begun its storytelling!</p></div>
+<div class="orv_system"><p>Giant Story, 'Season of Light and Darkness', has begun its storytelling!</p></div>
 <p class="orv_line">It was as if every story happening up to now existed solely for this moment.</p>
-<div class="orv_constellation"><p>[But, how…? You shouldn't be able to come here yet…!]</p></div>
+<div class="orv_constellation"><p>But, how…? You shouldn't be able to come here yet…!</p></div>
 <p class="orv_line">Eventually, they could see the astonished expression of the Dokkaebi King beyond the wreckage of the Final Ark. Yoo Joonghyuk and the members of Pacheonmang unhesitantly dashed towards him.</p>
-<div class="orv_constellation"><p>[Oh, you foolish Incarnations! Killing me has no meaning whatsoever. If &lt;Star Stream&gt; is destroyed, then you'll all disappear, too. A world-line with its events concluded will be abandoned. No one wants to look at such a world-line!]</p></div>
+<div class="orv_constellation"><p>Oh, you foolish Incarnations! Killing me has no meaning whatsoever. If &lt;Star Stream&gt; is destroyed, then you'll all disappear, too. A world-line with its events concluded will be abandoned. No one wants to look at such a world-line!</p></div>
 <p class="orv_line">The Dokkaebi King resisted desperately. As if to prove that his words were right, he utilised every single Story he possessed to fight back. However, it was not enough; he vomited out Stories and knelt down. Even as he fell, he continued to grin.</p>
-<div class="orv_constellation"><p>[It's all over. Soon, this world-line's destruction will commence. It's simply not feasible that the great one would wish for a story like this…]</p></div>
+<div class="orv_constellation"><p>It's all over. Soon, this world-line's destruction will commence. It's simply not feasible that the great one would wish for a story like this…</p></div>
 <p class="orv_line">However, contrary to his expectation, the destruction did not commence. The &lt;Star Stream&gt; was fine. The brows of Dokkaebi King shot up high.</p>
-<div class="orv_system"><p>[&lt;Star Stream&gt;'s Final Scenario has been concluded.]</p></div>
-<div class="orv_constellation"><p>[…Could it be…??]</p></div>
-<p class="orv_line">During his final moments, Dokkaebi King looked behind him as if to comprehend a certain someone's gaze surely looking at him from beyond the expansive [Final Wall].</p>
+<div class="orv_system"><p>&lt;Star Stream&gt;'s Final Scenario has been concluded.</p></div>
+<div class="orv_constellation"><p>…Could it be…??</p></div>
+<p class="orv_line">During his final moments, Dokkaebi King looked behind him as if to comprehend a certain someone's gaze surely looking at him from beyond the expansive <strong>[Final Wall]</strong>.</p>
 <p class="orv_line">And right next moment, a line of text floated up over said wall.</p>
 <p class="orv_line">⸢The legend of &lt;Star Stream&gt;, Supreme King Yoo Joonghyuk.⸥</p>
 <p class="orv_line">The title card rose up on the screen. And along with a 'Beep-!', it was turned off. The now-darkened panel reflected the view of a classroom and that of children sitting closely together.</p>
@@ -236,7 +243,7 @@
 <p class="orv_line">⸢It had already been five years after the scenario of the 0th world ended.⸥</p>
 <p class="orv_line">After the scenarios ended, Yoo Joonghyuk and his companions began rebuilding the world.</p>
 <p class="orv_line">Han Donghoon got in touch with the government and created a new governing structure, while Lee Hyunsung and Jung Heewon went around suppressing the acts of terror from the criminal organisations.</p>
-<p class="orv_line">Lee Jihye defended the country's borders and helped out with reaching agreements with Incarnations from other nations, while Lee Seolhwa and Shin Yoosung rescued orphaned children who lost their parents to the scenarios. The institution called [Star Counting Night] had been created for that purpose.</p>
+<p class="orv_line">Lee Jihye defended the country's borders and helped out with reaching agreements with Incarnations from other nations, while Lee Seolhwa and Shin Yoosung rescued orphaned children who lost their parents to the scenarios. The institution called <strong>[Star Counting Night]</strong> had been created for that purpose.</p>
 <p class="orv_line">While leaving the institute, Yoo Joonghyuk noticed the young children looking up at him. They were orphans created by the Constellations, but these kids would grow up while counting the disappeared stars.</p>
 <p class="orv_line">"By the way, ahjussi?"</p>
 <p class="orv_line">One of the children grasped the ends of Yoo Joonghyuk's clothing. He looked back and the child, having swallowed the brave pill, was now pointing at the older man's head.</p>
@@ -252,7 +259,7 @@
 <p class="orv_line">⸢Time continued to tick by; ten years, fifteen…⸥</p>
 <p class="orv_line">Just like pages flipping past faster and faster in order to reach the conclusion, the time flow of the 0th turn continued to march forward relentlessly. Yoo Joonghyuk grew older, just as he should.</p>
 <p class="orv_line">More specifically, only he grew old – all because of an attribute he picked up while clearing the scenarios.</p>
-<p class="orv_line">The legendary attribute, [Life Lived to Its Fullest].</p>
+<p class="orv_line">The legendary attribute, <strong>[Life Lived to Its Fullest]</strong>.</p>
 <p class="orv_line">During his one thousand-plus regression turn, Yoo Joonghyuk never once used this skill. It was an attribute that a regressor like him had no use for.</p>
 <p class="orv_line">⸢An attribute that, at the cost of living a fixed lifespan, fully unleashes the user's latent talents.⸥</p>
 <p class="orv_line">However, the current him was from the 0th turn. He had no experience earned through regressions to fall back on, nor did have much of a talent to speak of, either. And that was why he had to choose this attribute. Because only through this particular attribute could he be able to clear the remaining scenarios.</p>
@@ -269,10 +276,10 @@
 <p class="orv_line">"Captain, will you really seclude yourself in a backwater place like this??" Shin Yoosung asked.</p>
 <p class="orv_line">"I don't enjoy noisy things."</p>
 <p class="orv_line">"But, what about Seolhwa eonni??"</p>
-<p class="orv_line">Yoo Joonghyuk wordlessly polished his [Splitting the Sky Sword].</p>
+<p class="orv_line">Yoo Joonghyuk wordlessly polished his <strong>[Splitting the Sky Sword]</strong>.</p>
 <p class="orv_line">In a world with nothing left to cut down, arduously devoting himself to the ways of the sword that had lost its purpose – that was Yoo Joonghyuk's chosen method of utilising his remaining life.</p>
 <p class="orv_line">"Stuff like training in the ways of the sword can be done back in the Compl…"</p>
-<p class="orv_line">Shin Yoosung couldn't finish her sentence, however. The clear surface of the [Splitting the Sky Sword]'s blade reflected Yoo Joonghyuk's face. No one would think of him as a man in his 60s. Despite that…</p>
+<p class="orv_line">Shin Yoosung couldn't finish her sentence, however. The clear surface of the <strong>[Splitting the Sky Sword]</strong>'s blade reflected Yoo Joonghyuk's face. No one would think of him as a man in his 60s. Despite that…</p>
 <p class="orv_line">Yoo Joonghyuk would definitely die later. And Lee Seolhwa, left all alone, would have to carry on living a long, long life without him by her side.</p>
 <p class="orv_line">Shin Yoosung's lips bobbed up and down several times, and just as she finally managed to open them fully, Kim Namwoon butted in first.</p>
 <p class="orv_line">"Supreme King, you're now all decrepit and stuff! I guess I can finally win against you this year, right?"</p>
@@ -287,24 +294,24 @@
 <p class="orv_line">Yoo Joonghyuk's grey hair danced in the air as he watched his companions leave.</p>
 <p class="orv_line">His back remained straight and tall even in his advanced age. His skin still retained its elasticity, and muscles on his arms were still strong.</p>
 <p class="orv_line">Even then, his eyes no longer gleamed brightly like in the past.</p>
-<p class="orv_line">⸢Kim Dok ja y ou 've be en here for too l ong⸥ [The Fourth Wall] addressed me. ⸢Wh en sta ying ins ide one dr eam for too l ong, it g e t s har der⸥</p>
+<p class="orv_line">⸢Kim Dok ja y ou 've be en here for too l ong⸥ <strong>[The Fourth Wall]</strong> addressed me. ⸢Wh en sta ying ins ide one dr eam for too l ong, it g e t s har der⸥</p>
 <p class="orv_line">I understood what it was saying.</p>
 <p class="orv_line">I was the 'Oldest Dream', and I had a duty to pay attention to all the worlds equally. However, I couldn't easily let go of this 0th turn. It felt to me that, if this story were to end here, then all the tragedies would begin anew, somehow.</p>
 <p class="orv_line">In that case, if I continue to hold onto this story for as long as I can…</p>
 <p class="orv_line">"Demon King of Salvation," Yoo Joonghyuk raised his head to look at me. "Are you still curious about my story?"</p>
 <p class="orv_line">I hesitated a little before replying.</p>
-<div class="orv_system"><p>[Constellation, 'Demon King of Salvation', replies he still is.]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon King of Salvation', replies he still is.</p></div>
 <p class="orv_line">"This world is no longer mired in scenarios. There are no stimulations, nor any irregularities. Yet, why do you still wish to watch this story?"</p>
-<div class="orv_system"><p>[Constellation, 'Demon King of Salvation', replies that this is the story he wanted to see in the first place.]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon King of Salvation', replies that this is the story he wanted to see in the first place.</p></div>
 <p class="orv_line">"You're truly a strange creature."</p>
 <p class="orv_line">Stories began rising up from behind Yoo Joonghyuk.</p>
-<div class="orv_system"><p>[Story, 'King of a Kingless World', is looking at the 'Demon King of Salvation.]</p></div>
-<div class="orv_system"><p>[Story, 'Demon Realm's Spring', is looking at the 'Demon King of Salvation.]</p></div>
-<div class="orv_system"><p>[Story, 'Season of Light and Darkness', is looking at the 'Demon King of Salvation.]</p></div>
+<div class="orv_system"><p>Story, 'King of a Kingless World', is looking at the 'Demon King of Salvation.</p></div>
+<div class="orv_system"><p>Story, 'Demon Realm's Spring', is looking at the 'Demon King of Salvation.</p></div>
+<div class="orv_system"><p>Story, 'Season of Light and Darkness', is looking at the 'Demon King of Salvation.</p></div>
 <p class="orv_line">Stories were telling their stories while looking at me. The very same Stories that I earned once upon a time. Memories they had built up were now unfolding behind Yoo Joonghyuk's back.</p>
 <p class="orv_line">The world that I designed, the one that Yoo Joonghyuk brought to reality. The 0th turn's story, completed in this manner.</p>
 <p class="orv_line">"Sometimes, this peace feels like an illusion… And every now and then, I get the feeling that my life has been completed by someone else."</p>
-<div class="orv_system"><p>[Constellation, 'Demon King of Salvation', is…]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon King of Salvation', is…</p></div>
 <p class="orv_line">"I didn't mean to say I'm unhappy."</p>
 <p class="orv_line">Yoo Joonghyuk smiled faintly.</p>
 <p class="orv_line">I dazedly stared at him for a moment there, having finally learned that he was capable of such a smile.</p>
@@ -323,18 +330,12 @@
             <a href="./ch_523"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_525">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="524" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="746" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="523" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="523" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

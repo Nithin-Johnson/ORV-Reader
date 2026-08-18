@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 551: Epilogue 5 - The Eternity and Epilogue (Complete)</title>
     <meta property="og:title" content="Ch 551: Epilogue 5 - The Eternity and Epilogue (Complete)" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00551.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 551: Epilogue 5 - The Eternity and Epilogue (Complete)</h1></div>
 <p class="orv_line">…Can't upload the file to the cloud?</p>
@@ -196,7 +203,7 @@
 <p class="orv_line">However, it showed no signs of activating. It was as if the system's blessings had disappeared. And for sure, her body started to feel different from a little while ago. Her body that felt like it could fly to anywhere was now getting gradually heavier and heavier.</p>
 <p class="orv_line">…Could it be? No, hang on a second.</p>
 <p class="orv_line">She figured that a day like this would come eventually, but it happened far quicker than she bargained for.</p>
-<div class="orv_system"><p>[The 'Bureau's Story' in your possession has stopped its storytelling.]</p></div>
+<div class="orv_system"><p>The 'Bureau's Story' in your possession has stopped its storytelling.</p></div>
 <p class="orv_line">Han Sooyoung hadn't even written the novel's final episode yet, either.</p>
 <p class="orv_line">Besides, if the Cloud System was no more, even if she did finish writing the manuscript, transmitting it would still be impossible.</p>
 <p class="orv_line">"Goddammit…"</p>
@@ -229,18 +236,18 @@
 <br>
 <p class="orv_line">"…The manuscript stopped updating."</p>
 <p class="orv_line">The manuscript was updated roughly once a day without fail. But for the last month or so, the updates had completely stopped coming. At first, he thought this was an error arising from him travelling between the world-lines far too frequently, but when he took a closer look, even the log-in history itself was gone.</p>
-<div class="orv_constellation"><p>[Captain, I think something has gone wrong somewhere.]</p></div>
+<div class="orv_constellation"><p>Captain, I think something has gone wrong somewhere.</p></div>
 <p class="orv_line">He had two theories. One, Han Sooyoung found herself in a situation where she couldn't write the manuscript anymore, or two, Earth's system had finally ground to a halt.</p>
 <p class="orv_line">Whatever the case might be, this was not a good situation.</p>
-<div class="orv_system"><p>[Files are being automatically transmitted to the connected world-lines.]</p></div>
+<div class="orv_system"><p>Files are being automatically transmitted to the connected world-lines.</p></div>
 <p class="orv_line">The manuscript's latest chapter had been transmitted to other world-lines already. In the world where the serialisation started first, the notice for postponement had been issued already – what happened was that the author panicked when he suddenly couldn't think of the story and hastily announced the postponement.</p>
 <p class="orv_line">The situation was not good. At this rate, authors losing their composure might start cooking up their own take on the part Han Sooyoung had failed to write and upload.</p>
-<div class="orv_constellation"><p>[…Captain, there isn't much time.]</p></div>
+<div class="orv_constellation"><p>…Captain, there isn't much time.</p></div>
 <p class="orv_line">Yoo Joonghyuk looked down at both of his hands. He then slowly clenched his fists before unfurling them.</p>
 <p class="orv_line">It wasn't as if there were no other options available. If Han Sooyoung was not in a situation to finish the manuscript, then… The person who could, had to complete it.</p>
-<div class="orv_system"><p>[Attribute's effect has been activated!]</p></div>
-<div class="orv_system"><p>[You can now edit the manuscript in the Cloud System.]</p></div>
-<div class="orv_system"><p>[A lot of Probability is required for the editing of the manuscript.]</p></div>
+<div class="orv_system"><p>Attribute's effect has been activated!</p></div>
+<div class="orv_system"><p>You can now edit the manuscript in the Cloud System.</p></div>
+<div class="orv_system"><p>A lot of Probability is required for the editing of the manuscript.</p></div>
 <p class="orv_line">Yoo Joonghyuk slowly closed his eyes, before opening them again.</p>
 <div class="orv_image"><img src="../../../assets/images/551 - Yoo Joonghyuk slowly closed his eyes, before opening them again.jpg" alt="" loading="lazy"></div>
 <div class="orv_notice"><p>* Unofficial fan illustration (non-canonical)</p></div>
@@ -368,19 +375,19 @@
 <p class="orv_line">The sounds of 'Tsu-chuchuchut' could be heard coming from somewhere.</p>
 <p class="orv_line">⸢…⸥</p>
 <p class="orv_line">A noise wavered within their ears like a faint, distant song. The moment Yoo Sangah turned the music off, Biyoo's appearance as she sat in the front passenger seat suddenly changed.</p>
-<div class="orv_constellation"><p>[…Bah-aht??]</p></div>
+<div class="orv_constellation"><p>…Bah-aht??</p></div>
 <p class="orv_line">Biyoo had morphed back into the figure of a large furball. But that couldn't be possible. Before climbing into the car, she clearly said that the dissolution of the system had paralysed her ability to shapeshift.</p>
 <p class="orv_line">"Uh??"</p>
 <p class="orv_line">The voices coming from the empty air grew clearer and clearer. This was definitely sounds of Stories busy telling their stories.</p>
 <p class="orv_line">"…What's going on? The system should still be broken, though?"</p>
 <p class="orv_line">Han Sooyoung stared at Yoo Joonghyuk, but he was looking back at her with the exact same eyes as hers.</p>
-<div class="orv_system"><p>[Story, 'King of a Kingless World', has begun its storytelling once more.]</p></div>
+<div class="orv_system"><p>Story, 'King of a Kingless World', has begun its storytelling once more.</p></div>
 <p class="orv_line">Groups of blinding letters were streaming past in the skies outside the vehicle's windows. They were from a Story the companions knew intimately.</p>
 <p class="orv_line">"Yoo Sangah!!"</p>
 <p class="orv_line">Yoo Sangah hurriedly stepped on the accelerator. Meanwhile, Han Sooyoung answered her phone loudly ringing inside her pocket. The call was from Aileen.</p>
 <p class="orv_line">– Sooyoung-ssi!! Right now, it…!</p>
 <p class="orv_line">Her voice couldn't be heard properly because of all the noises coming from the surroundings.</p>
-<div class="orv_system"><p>[Story, 'Predictive Plagiarism', has begun its storytelling once more.]</p></div>
+<div class="orv_system"><p>Story, 'Predictive Plagiarism', has begun its storytelling once more.</p></div>
 <p class="orv_line">Stories that had vanished without a trace along with the system's dissolution were now streaming towards somewhere while following after one another. Every single one of them were stories that had come to an end a long time ago.</p>
 <p class="orv_line">⸢Is the story really over when the author stops writing it?⸥</p>
 <p class="orv_line">Han Sooyoung looked up at the letters floating around in the skies.</p>
@@ -392,15 +399,15 @@
 <p class="orv_line">But then, what if there was one existence in this entire world that could fill the last void of one percent? One existence, who used to possess the letters subconsciously scattered to the distant universe?</p>
 <p class="orv_line">"Sooyoung-ssi! Over there!"</p>
 <p class="orv_line">They could see Lee Seolhwa's hospital in the distance. Stories leisurely streaming there guided them. Stories were gathering towards the hospital ward they were all intimately familiar with.</p>
-<div class="orv_system"><p>[Giant Story, 'Demon Realm's Spring', has begun its storytelling once more.]</p></div>
+<div class="orv_system"><p>Giant Story, 'Demon Realm's Spring', has begun its storytelling once more.</p></div>
 <p class="orv_line">Han Sooyoung thought to herself.</p>
 <p class="orv_line">If an author didn't write it, then a story's conclusion couldn't be created.</p>
-<div class="orv_system"><p>[Giant Story, 'Torch that Swallowed the Myth', has begun its storytelling once more.]</p></div>
+<div class="orv_system"><p>Giant Story, 'Torch that Swallowed the Myth', has begun its storytelling once more.</p></div>
 <p class="orv_line">Even if that was true, however, did that mean those reading the story couldn't imagine the conclusion on their own way? Han Sooyoung powerfully bit her lip. This story was created by her own hands. But another story she didn't know of was continuing on from the end of her story.</p>
 <p class="orv_line">⸢What will happen if the moment of someone's imagination overtaking the author's sentences, comes?⸥</p>
 <p class="orv_line">As skills and Stigma hadn't returned in full yet, Han Sooyoung ran out of breath rather quickly. Yoo Joonghyuk supported her and kept running. Shin Yoosung rushing up the stairs tripped and fell. Other companions reached out and helped her up.</p>
-<div class="orv_system"><p>[Giant Story, 'Season of Light and Darkness', has begun its storytelling once more.]</p></div>
-<div class="orv_system"><p>[Giant Story, 'Liberator of the Forgotten Ones', has begun its storytelling once more.]</p></div>
+<div class="orv_system"><p>Giant Story, 'Season of Light and Darkness', has begun its storytelling once more.</p></div>
+<div class="orv_system"><p>Giant Story, 'Liberator of the Forgotten Ones', has begun its storytelling once more.</p></div>
 <p class="orv_line">The Giant Stories they had acquired together were returning to them one by one. Even the unnamed last Story of &lt;Kim Dokja's Company&gt; began singing about the emotion that no one dared to name.</p>
 <p class="orv_line">This desire, a wish, of those who went their separate ways a long time ago to become one once more.</p>
 <p class="orv_line">To grieve for someone else, to celebrate, to get angry, and to despair. And eventually, wishing to become that someone else.</p>
@@ -433,18 +440,12 @@
             <a href="./ch_550"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./../">Home<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="551" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="110" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="550" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="550" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 4: Ep. 1 – Starting the Paid Service, III</title>
     <meta property="og:title" content="Ch 4: Ep. 1 – Starting the Paid Service, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00004.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 4: Ep. 1 – Starting the Paid Service, III</h1></div>
 <p class="orv_line">People reacted differently after the dokkaebi disappeared. Some people tried to get out of the train while others called the police. Yoo Sangah belonged to the latter group. "Police, the police aren't answering! What, what should I…"</p>
@@ -200,12 +207,12 @@
 <p class="orv_line">"U-Understood. What should I do?"</p>
 <p class="orv_line">"Stay still."</p>
 <p class="orv_line">Finally, I slowly controlled my breathing. I too needed time to properly accept all of this.</p>
-<div class="orv_constellation"><p>[Three Ways to Survive in a Ruined World]</p></div>
+<div class="orv_constellation"><p>Three Ways to Survive in a Ruined World</p></div>
 <p class="orv_line">The descriptions that existed only in the novel were now unfolding right before my eyes.</p>
-<div class="orv_quote"><p>「 The dokkaebi stretched out its antenna. 」</p></div>
-<div class="orv_quote"><p>「 The bodies scattered like trash in the carriage. 」</p></div>
-<div class="orv_quote"><p>「 The bloodied office worker shaking. 」</p></div>
-<div class="orv_quote"><p>「 An old lady groaning in her seat. 」</p></div>
+<div class="orv_quote"><p>The dokkaebi stretched out its antenna.</p></div>
+<div class="orv_quote"><p>The bodies scattered like trash in the carriage.</p></div>
+<div class="orv_quote"><p>The bloodied office worker shaking.</p></div>
+<div class="orv_quote"><p>An old lady groaning in her seat.</p></div>
 <p class="orv_line">I watched every scene intently. It was like Neo in the Matrix, who suspected reality. Observing, questioning, and then eventually being convinced… I had to admit it. I didn't know the reason why, but there were no doubts about it. 'Ways of Survival' had become a reality.</p>
 <p class="orv_line">Let me think… How should I survive in this new world?</p>
 <p class="orv_line">"Come on, everybody! Everybody calm down. Start breathing calmly." Someone stepped forward exactly five minutes after the dokkaebi disappeared. He was a sturdy man with short cut hair, one head taller than the average height.</p>
@@ -220,7 +227,7 @@
 <p class="orv_line">People gathered in front of the soldier's smartphone. I was able to read the contents without difficulty because I was near it.</p>
 <p class="orv_line">–A level 1 national disaster situation has occurred. All troops gather quickly.</p>
 <p class="orv_line">I could hear gulps all around me. It was a national disaster situation. I wasn't surprised because I had already expected this. In fact, I was surprised because of something else. Army lieutenant Lee Hyunsung… That 'Lee Hyunsung' was this man. I knew who he was. It was the first time actually seeing his face, but his name was clear in my head. He was one of the main supporting actors of Ways of Survival.</p>
-<div class="orv_quote"><p>「 Steel Sword Lee Hyunsung. 」</p></div>
+<div class="orv_quote"><p>Steel Sword Lee Hyunsung.</p></div>
 <p class="orv_line">A character from the novel had appeared. Now I really had to acknowledge the situation.</p>
 <p class="orv_line">"Soldier-nim! What is happening?"</p>
 <p class="orv_line">"I have been trying to contact my unit, but…"</p>
@@ -245,15 +252,15 @@
 <p class="orv_line">People dropped their phones as gunshots were heard from all over. It originated from their smartphones. Chiiiik, there was a loud sound, and blood filled the screen. After a moment, people held their breaths as they realized what had happened.</p>
 <p class="orv_line">"P-Prime Minister…"</p>
 <p class="orv_line">The prime minister had died. His head had exploded in real-time. There were several more sounds like gunfire before the screen became silent. The next thing that appeared on the screen was a dokkaebi.</p>
-<div class="orv_constellation"><p>[Everyone, I've told you already. This isn't a game like 'terrorism'.]</p></div>
+<div class="orv_constellation"><p>Everyone, I've told you already. This isn't a game like 'terrorism'.</p></div>
 <p class="orv_line">People were at a loss for words as their mouths gaped open like dumb goldfish.</p>
-<div class="orv_constellation"><p>[Do you still not understand? This won't do. Do you still feel like this is a game?]</p></div>
+<div class="orv_constellation"><p>Do you still not understand? This won't do. Do you still feel like this is a game?</p></div>
 <p class="orv_line">It felt so ominous because his tone was so relaxed. Subconsciously, I made a fist using all my strength.</p>
-<div class="orv_constellation"><p>[Haha, according to the data, the people of this country are very good at games. So, why don't I try raising the difficulty?]</p></div>
+<div class="orv_constellation"><p>Haha, according to the data, the people of this country are very good at games. So, why don't I try raising the difficulty?</p></div>
 <p class="orv_line">Beeep. A huge timer appeared in the air. At the same time, it started decreasing rapidly.</p>
-<div class="orv_system"><p>[The remaining time has been decreased by 10 minutes.]</p></div>
-<div class="orv_system"><p>[There are 10 minutes remaining.]</p></div>
-<div class="orv_system"><p>[If the first killing doesn't occur within the next five minutes, all lives in the carriage will be wiped out.]</p></div>
+<div class="orv_system"><p>The remaining time has been decreased by 10 minutes.</p></div>
+<div class="orv_system"><p>There are 10 minutes remaining.</p></div>
+<div class="orv_system"><p>If the first killing doesn't occur within the next five minutes, all lives in the carriage will be wiped out.</p></div>
 <p class="orv_line">"W-What is this? Is it a joke?"</p>
 <p class="orv_line">"Didn't you hear the message just now? Hey, didn't you hear it?"</p>
 <p class="orv_line">"Soldier-nim! What do we do now? Why isn't the police coming?"</p>
@@ -263,29 +270,29 @@
 <p class="orv_line">A scene from the 3907 train car could be seen through the aisle window. The complexion of the killer in that carriage was white.</p>
 <p class="orv_line">"We have to keep them out! Don't let anyone in!"</p>
 <p class="orv_line">People held tightly to the iron door, but it wasn't necessary. The enemy wasn't there in the first place.</p>
-<div class="orv_system"><p>[All types of access to the carriage will be restricted until the scenario is complete.]</p></div>
+<div class="orv_system"><p>All types of access to the carriage will be restricted until the scenario is complete.</p></div>
 <p class="orv_line">Along with this message, people were thrown back from the iron door like they had hit a transparent barrier.</p>
 <p class="orv_line">"W-What is this?"</p>
 <p class="orv_line">Once again, the voice of the dokkaebi rang out,</p>
-<div class="orv_constellation"><p>[Haha, there are some places that are quite fun while other places haven't started yet. Okay, this is a special service. I will show you what will happen if nothing occurs in the next five minutes.]</p></div>
+<div class="orv_constellation"><p>Haha, there are some places that are quite fun while other places haven't started yet. Okay, this is a special service. I will show you what will happen if nothing occurs in the next five minutes.</p></div>
 <p class="orv_line">A giant screen appeared in the subway. The place that appeared on the screen was a classroom. Girls in their navy blue school uniform were shaking. A boy bit his fingernails and muttered, "…Is that the school uniform of Daepong?"</p>
 <p class="orv_line">Beep beep beep beep― An ominous beeping sound was heard. Then the high school girls started to scream.</p>
-<div class="orv_system"><p>[The given time has run out.]</p></div>
-<div class="orv_system"><p>[Paid settlement will begin.]</p></div>
+<div class="orv_system"><p>The given time has run out.</p></div>
+<div class="orv_system"><p>Paid settlement will begin.</p></div>
 <p class="orv_line">Once the announcement ended, the heads of the high school girls sitting in the front row exploded. One by one, one by one again… More and more heads exploded. The high school girls screamed and ran toward the classroom doors or windows.</p>
 <p class="orv_line">"Ahh, uh, how―"</p>
 <p class="orv_line">Cleaning tools broke and nails were torn out, but the doors didn't open. No one could get out. The heads of the high school girls continued to burst. Then a high school girl strangled her friend, who died with a groan. After a while, the only thing that remained on the screen was the last schoolgirl looking around.</p>
-<div class="orv_system"><p>[#Bay23515 channel. Daepong Girls' High School, Year 2 Class B survivor: Lee Jihye.]</p></div>
+<div class="orv_system"><p>#Bay23515 channel. Daepong Girls' High School, Year 2 Class B survivor: Lee Jihye.</p></div>
 <p class="orv_line">The figure of the girl on the screen disappeared. Then the dokkaebi said,</p>
-<div class="orv_constellation"><p>[How is it? Interesting?]</p></div>
+<div class="orv_constellation"><p>How is it? Interesting?</p></div>
 <p class="orv_line">The dokkaebi spoke with a smile, but people weren't looking at the screen anymore. The people who made eye contact were gradually moving away from each other.</p>
 <p class="orv_line">"Shit! What is this?"</p>
 <p class="orv_line">Even Yoo Sangah released her hold on me. However, she didn't move away from me. Both my hands were freed, and I turned on my smartphone. Why was 'that guy' still not showing up? There was a mixture of information that I knew from the novel and information that I didn't know. The only way to break through this situation was to read Ways of Survival again.</p>
 <p class="orv_line">However, where else could I find the novel? The novel wasn't popular enough to be shared illegally… No, wait a minute.</p>
-<div class="orv_system"><p>[1 attachment.]</p></div>
+<div class="orv_system"><p>1 attachment.</p></div>
 <p class="orv_line">I was stunned for a moment as I saw the notification on my smartphone. Perhaps… No?</p>
 <p class="orv_line">I was confused the moment I opened the mail attachment. The name of the attachment sent by the author was:</p>
-<div class="orv_system"><p>[Three Ways to Survive in a Ruined World.TXT]</p></div>
+<div class="orv_system"><p>Three Ways to Survive in a Ruined World.TXT</p></div>
 <br>
 <hr>
         </article>
@@ -293,18 +300,12 @@
             <a href="./ch_3"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_5">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="4" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="16" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="3" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="3" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

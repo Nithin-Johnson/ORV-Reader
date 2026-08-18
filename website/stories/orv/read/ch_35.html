@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 35: Ep. 8 – Emergency Defense, III</title>
     <meta property="og:title" content="Ch 35: Ep. 8 – Emergency Defense, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00035.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 35: Ep. 8 – Emergency Defense, III</h1></div>
 <p class="orv_line">I couldn't kill Gong Pildu because he was useful in future scenarios, but I needed Gong Pildu to leave his land.</p>
@@ -200,20 +207,20 @@
 <p class="orv_line">The people who fell down to the third underground floor groaned with pain.</p>
 <p class="orv_line">The operation was a success.</p>
 <p class="orv_line">The green zones disappeared and the landlords lost their 'rooms'. Gong Pildu's face was covered with dust and looking this way. As he was about to open his mouth, Bihyung's voice entered their ears.</p>
-<div class="orv_constellation"><p>[What are you doing now? Waaah!]</p></div>
+<div class="orv_constellation"><p>What are you doing now? Waaah!</p></div>
 <p class="orv_line">'Be quiet'.</p>
-<div class="orv_constellation"><p>[Crazy bastard! The dokkaebis of Chungmuro are freaking out because of you!]</p></div>
+<div class="orv_constellation"><p>Crazy bastard! The dokkaebis of Chungmuro are freaking out because of you!</p></div>
 <p class="orv_line">I had a headache from the messages of the constellations that rang in my head.</p>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' likes your recklessness.]</p></div>
-<div class="orv_system"><p>[The constellation 'Bald General of Justice' likes your revolution.]</p></div>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' likes the destruction and chaos.]</p></div>
-<div class="orv_system"><p>[300 coins have been sponsored.]</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' likes your recklessness.</p></div>
+<div class="orv_system"><p>The constellation 'Bald General of Justice' likes your revolution.</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' likes the destruction and chaos.</p></div>
+<div class="orv_system"><p>300 coins have been sponsored.</p></div>
 <p class="orv_line">"Y-You bastard!"</p>
 <p class="orv_line">"Kill them!"</p>
 <p class="orv_line">The alliance members shouted at us. I started running down to the platform with Lee Hyunsung.</p>
-<div class="orv_system"><p>[The exclusive skill, Character List is activated.]</p></div>
+<div class="orv_system"><p>The exclusive skill, Character List is activated.</p></div>
 <div class="orv_window">
-<h3 class="orv_window_title">[Character Summary]</h3>
+<h3 class="orv_window_title">Character Summary</h3>
 <p>Name: Lee Hyunsung</p>
 <p>Exclusive Attributes: Person who has Regained Justice (Rare)</p>
 <p>Stigma: Great Mountain Smash Lv. 1, Great Mountain Push Lv. 2.</p>
@@ -230,17 +237,17 @@
 <p class="orv_line">"I didn't realize the rooms could be broken like this. We banged hard on the ground together and it smashed…"</p>
 <p class="orv_line">Jung Heewon followed.</p>
 <p class="orv_line">Yoo Sangah, Jung Heewon and Lee Gilyoung took out the small green zones. Most of the green zones fit three or fewer people, apart from Gong Pildu's green zone. There were some of an ambiguous scale but there was a separate person handling those.</p>
-<div class="orv_constellation"><p>[Hey! Can't you hear me? What are you going to do now?]</p></div>
+<div class="orv_constellation"><p>Hey! Can't you hear me? What are you going to do now?</p></div>
 <p class="orv_line">On the other hand, Bihyung was still shouting across the 'dokkaebi communication'.</p>
 <p class="orv_line">'What are you worried about?'</p>
-<div class="orv_constellation"><p>[Have you forgotten? I'm not the only one with a channel in Chungmuro. Do you really not know what will happen if you do this?]</p></div>
+<div class="orv_constellation"><p>Have you forgotten? I'm not the only one with a channel in Chungmuro. Do you really not know what will happen if you do this?</p></div>
 <p class="orv_line">Of course I knew. Maybe the constellations in the channel with Gong Pildu would be in a frenzy right now.</p>
 <p class="orv_line">'What channel is Gong Pildu in?'</p>
-<div class="orv_system"><p>[…Biryu's channel. BIR-3642.]</p></div>
+<div class="orv_system"><p>…Biryu's channel. BIR-3642.</p></div>
 <p class="orv_line">'Biryu is the one who came while you were busy for a bit?'</p>
-<div class="orv_constellation"><p>[That's right. That asshole.]</p></div>
+<div class="orv_constellation"><p>That's right. That asshole.</p></div>
 <p class="orv_line">'How is his subscription configured?'</p>
-<div class="orv_system"><p>[It is the flagship channel for the 'finding amusement' group.]</p></div>
+<div class="orv_system"><p>It is the flagship channel for the 'finding amusement' group.</p></div>
 <p class="orv_line">The dokkaebis whose main purpose was to find amusement. That's why their broadcasts were radical. Great. Then the response within the channel would be much hotter than expected. Everyone would've eaten the sweet potatoes properly.</p>
 <p class="orv_line">I headed down the stairs of the transfer corridor to line 4 and saw a welcome face. The blade was moving through the air.</p>
 <p class="orv_line">"You broke them?"</p>
@@ -253,11 +260,11 @@
 <p class="orv_line">Jung Heewon scowled as she watched Lee Jihye retreating.</p>
 <p class="orv_line">"What is with her?"</p>
 <p class="orv_line">Come to think of it, Jung Heewon didn't know about Lee Jihye. But there was no time to tell her.</p>
-<div class="orv_constellation"><p>[Haha… you are fucked now.]</p></div>
+<div class="orv_constellation"><p>Haha… you are fucked now.</p></div>
 <p class="orv_line">A message was heard along with Bihyung's words.</p>
-<div class="orv_system"><p>[A bounty scenario has occurred!]</p></div>
+<div class="orv_system"><p>A bounty scenario has occurred!</p></div>
 <div class="orv_window">
-<h3 class="orv_window_title">[Bounty Scenario – Assassination Commission]</h3>
+<h3 class="orv_window_title">Bounty Scenario – Assassination Commission</h3>
 <p>Category: Sub</p>
 <p>Difficulty: C</p>
 <p>Clear Conditions: The constellations of Channel #BIR-3642 have requested to kill a certain person. Please kill 'Kim Dokja' of Chungmuro Station.</p>
@@ -280,11 +287,11 @@
 <p class="orv_line">"We don't have to fight them."</p>
 <p class="orv_line">It was a few turns. I had read about such a scene. I didn't have time to check which regression it was but Yoo Joonghyuk had destroyed the green zones as soon as he arrived at Chungmuro.</p>
 <p class="orv_line">Even then, it was like the current situation.</p>
-<div class="orv_system"><p>[All green zones in this region have been destroyed and the main scenario has collapsed.]</p></div>
-<div class="orv_system"><p>[The difficulty is automatically adjusted according to the remaining schedule of the scenario.]</p></div>
-<div class="orv_system"><p>[The scenario content is updated!]</p></div>
+<div class="orv_system"><p>All green zones in this region have been destroyed and the main scenario has collapsed.</p></div>
+<div class="orv_system"><p>The difficulty is automatically adjusted according to the remaining schedule of the scenario.</p></div>
+<div class="orv_system"><p>The scenario content is updated!</p></div>
 <div class="orv_window">
-<h3 class="orv_window_title">[Main Scenario #3 – Emergency Defense]</h3>
+<h3 class="orv_window_title">Main Scenario #3 – Emergency Defense</h3>
 <p>Category: Main</p>
 <p>Difficulty: B-</p>
 <p>Clear Conditions: All the green zones in the region are destroyed and the monsters that were going to be created in the remaining days have suddenly run wild. Survive against the flood of monsters for the remaining time.</p>
@@ -294,7 +301,7 @@
 </div>
 <p class="orv_line">Originally, there were three days remaining in the scenario.</p>
 <p class="orv_line">Now the monsters supposed to be created during the remaining time of the green zone scenario would emerge all at once. In other words, it was simple.</p>
-<div class="orv_system"><p>[The emergency defense has begun!]</p></div>
+<div class="orv_system"><p>The emergency defense has begun!</p></div>
 <p class="orv_line">The defense game had started.</p>
 <p class="orv_line">"W-What?"</p>
 <p class="orv_line">The people approaching me started screaming. The cries of monsters were heard from outside the screen door. The feast of monsters moved like an angry wave.</p>
@@ -328,22 +335,22 @@
 <p class="orv_line">"I know."</p>
 <p class="orv_line">I looked at the lower floor that was becoming pandemonium. If I left it like this, they would all be killed. Whether it was from the monsters or using each other's bodies as a stepping stone to come upstairs.</p>
 <p class="orv_line">This wasn't what I wanted.</p>
-<div class="orv_system"><p>[The exclusive skill 'Bookmark' can now be activated.]</p></div>
-<div class="orv_system"><p>['Character Bookmarks' is activated.]</p></div>
-<div class="orv_system"><p>[Available Bookmark Slots: 3]</p></div>
-<div class="orv_system"><p>[Bringing up the list of available bookmarks.]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Bookmark' can now be activated.</p></div>
+<div class="orv_system"><p>'Character Bookmarks' is activated.</p></div>
+<div class="orv_system"><p>Available Bookmark Slots: 3</p></div>
+<div class="orv_system"><p>Bringing up the list of available bookmarks.</p></div>
 <div class="orv_window">
-<h3 class="orv_window_title">[People Listed in the Bookmark Slots]</h3>
+<h3 class="orv_window_title">People Listed in the Bookmark Slots</h3>
 <p>The Delusion Demon Kim Namwoon (Understanding 35).</p>
 <p>Steel Sword Lee Hyunsung (Understanding 65).</p>
 <p>Demagogue Cheon Inho (Understanding 20).</p>
 </div>
 <p class="orv_line">I activated the third bookmark.</p>
-<div class="orv_system"><p>[The number three bookmark has been activated.]</p></div>
-<div class="orv_system"><p>[The level of the Bookmark skill is low, shortening the activation time.]</p></div>
-<div class="orv_system"><p>[Activation Time: 5 minutes.]</p></div>
-<div class="orv_system"><p>[Your understanding of the character is low, so only a part of the character's skill is activated.]</p></div>
-<div class="orv_system"><p>[Incite Lv.2 has been activated.]</p></div>
+<div class="orv_system"><p>The number three bookmark has been activated.</p></div>
+<div class="orv_system"><p>The level of the Bookmark skill is low, shortening the activation time.</p></div>
+<div class="orv_system"><p>Activation Time: 5 minutes.</p></div>
+<div class="orv_system"><p>Your understanding of the character is low, so only a part of the character's skill is activated.</p></div>
+<div class="orv_system"><p>Incite Lv.2 has been activated.</p></div>
 <p class="orv_line">Suddenly, it felt like my tongue was coming alive on its own. This was how Cheon Inho felt. I looked downstairs. In the middle of the mess, I could see a middle-aged man.</p>
 <p class="orv_line">"Hey Gong Pildu. How long are you going to stand there?"</p>
 <p class="orv_line">Gong Pildu glared at me.</p>
@@ -357,8 +364,8 @@
 <p class="orv_line">My words were half true. If Chungmuro had united before I arrived here, there would be far less victims. After all, the biggest pitfall of this scenario was the green zone.</p>
 <p class="orv_line">"If Gong Pildu fights with the people, you can survive."</p>
 <p class="orv_line">Those who fight together would survive, those who ran away would die.</p>
-<div class="orv_system"><p>[The sponsor behind Lee Jihye agrees with your wisdom.]</p></div>
-<div class="orv_system"><p>[The constellation 'Maritime War God' nods his head.]</p></div>
+<div class="orv_system"><p>The sponsor behind Lee Jihye agrees with your wisdom.</p></div>
+<div class="orv_system"><p>The constellation 'Maritime War God' nods his head.</p></div>
 <p class="orv_line">"Now there are no rooms for you to run away to. Forget about whether you are a landlord or tenant and fight. Or you will all die."</p>
 <p class="orv_line">The more urgent the situation was, the more the effect of Incite would increase.</p>
 <p class="orv_line">"Damn, this fucking guy…!"</p>
@@ -379,14 +386,14 @@
 <p class="orv_line">The tenants hung from the threat and were pulled upstairs.</p>
 <p class="orv_line">The rescued tenants were shaking as they wrapped up their injured area. In the meantime, some of the people with weapons carefully looked at me. I smiled at them and said.</p>
 <p class="orv_line">"Oh, do you want the bounty?"</p>
-<div class="orv_system"><p>[The time limit for the bounty scenario has expired.]</p></div>
-<div class="orv_system"><p>[The bounty hanging on Kim Dokja has been destroyed.]</p></div>
+<div class="orv_system"><p>The time limit for the bounty scenario has expired.</p></div>
+<div class="orv_system"><p>The bounty hanging on Kim Dokja has been destroyed.</p></div>
 <p class="orv_line">"Sorry, it is too late."</p>
 <p class="orv_line">"I-I'm sorry."</p>
 <p class="orv_line">The tenants seemed ashamed as they put away their weapons. I heard Gong Pildu's voice roaring from the bottom.</p>
 <p class="orv_line">"Out of the way!"</p>
-<div class="orv_system"><p>[The character 'Gong Pildu' has used Private Land Lv. 3!]</p></div>
-<div class="orv_system"><p>[The character 'Gong Pildu' has activated 'Armed Zone Lv. 4!]</p></div>
+<div class="orv_system"><p>The character 'Gong Pildu' has used Private Land Lv. 3!</p></div>
+<div class="orv_system"><p>The character 'Gong Pildu' has activated 'Armed Zone Lv. 4!</p></div>
 <p class="orv_line">There was a mechanical sound as five turrets rose from the ground. The red magic bullets condensed in a short time and started firing.</p>
 <p class="orv_line">Dududududu!</p>
 <p class="orv_line">Kwang! Kwaang! Kwaang!</p>
@@ -427,18 +434,12 @@
             <a href="./ch_34"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_36">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="35" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="92" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="34" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="34" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

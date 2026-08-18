@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 420: Ep. 79 - The Secretive Plotter, V</title>
     <meta property="og:title" content="Ch 420: Ep. 79 - The Secretive Plotter, V" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00420.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 420: Ep. 79 - The Secretive Plotter, V</h1></div>
 <p class="orv_line">"…Final Scenario?"</p>
@@ -196,30 +203,30 @@
 <p class="orv_line">The 'Final Scenario' was already starting?</p>
 <p class="orv_line">The Apocalypse Dragon scenario was supposed to be 89th. So, did this mean that the 90th scenario was the last?</p>
 <p class="orv_line">It wasn't just her who was confused by this, though. Every Constellation still riding on the Ark exchanged glances and began murmuring among themselves.</p>
-<div class="orv_constellation"><p>[…What does that even mean?]</p></div>
-<div class="orv_constellation"><p>[Wait, did the 99th scenario start already?]</p></div>
+<div class="orv_constellation"><p>…What does that even mean?</p></div>
+<div class="orv_constellation"><p>Wait, did the 99th scenario start already?</p></div>
 <p class="orv_line">Some of them even began lodging complaints to Dokkaebi Bihyung, too.</p>
-<div class="orv_constellation"><p>[What kind of an underhanded scheme is this? It's not the time for the Final Scenario to start…]</p></div>
-<div class="orv_constellation"><p>[Are you planning to take &lt;Kim Dokja's Company&gt; away separately?]</p></div>
+<div class="orv_constellation"><p>What kind of an underhanded scheme is this? It's not the time for the Final Scenario to start…</p></div>
+<div class="orv_constellation"><p>Are you planning to take &lt;Kim Dokja's Company&gt; away separately?</p></div>
 <p class="orv_line">Bihyung studied the reactions of these Constellations before shaking his head. </p>
-<div class="orv_constellation"><p>[The invitations to the Final Scenario are being issued since from a while ago. More correctly, ever since all of you decided to wake the 'Apocalypse Dragon', that is.]</p></div>
+<div class="orv_constellation"><p>The invitations to the Final Scenario are being issued since from a while ago. More correctly, ever since all of you decided to wake the 'Apocalypse Dragon', that is.</p></div>
 <p class="orv_line">His declaration caused the Constellations to become noisy among themselves. A few of them seemed to have realized something, and while looking around the vicinity in worried eyes, began shouting out loudly.</p>
-<div class="orv_constellation"><p>[I-in that case, send us to the Final Scenario, too!]</p></div>
-<div class="orv_constellation"><p>[T-that's right! We also possess the qualifications!]</p></div>
+<div class="orv_constellation"><p>I-in that case, send us to the Final Scenario, too!</p></div>
+<div class="orv_constellation"><p>T-that's right! We also possess the qualifications!</p></div>
 <p class="orv_line">Bihyung spoke as if to pacify them. </p>
-<div class="orv_constellation"><p>[I'm sorry, but I'm not in charge of you, everyone. But, if you possess the requisite qualifications, then the assigned Dokkaebis will arrive soon to guide you, so please rest easy.]</p></div>
+<div class="orv_constellation"><p>I'm sorry, but I'm not in charge of you, everyone. But, if you possess the requisite qualifications, then the assigned Dokkaebis will arrive soon to guide you, so please rest easy.</p></div>
 <p class="orv_line">However, his tone of voice was definitely not a friendly one.</p>
-<div class="orv_constellation"><p>[That is, as long as you are qualified, of course.]</p></div>
+<div class="orv_constellation"><p>That is, as long as you are qualified, of course.</p></div>
 <p class="orv_line">Complexions of the Constellations paled visibly. And soon afterwards, the Ark made another announcement.</p>
 <p class="orv_line">– Next stop is the 8612th planetary system.</p>
 <p class="orv_line">The 8612th planetary system. Where the planet Earth was, the home to &lt;Kim Dokja's Company&gt;.</p>
 <p class="orv_line">Bihyung shifted his gaze over the members of &lt;Kim Dokja's Company&gt; as if he could no longer delay the matter.</p>
-<div class="orv_constellation"><p>[Well, now. Everyone from &lt;Kim Dokja's Company&gt;, please gather around.]</p></div>
+<div class="orv_constellation"><p>Well, now. Everyone from &lt;Kim Dokja's Company&gt;, please gather around.</p></div>
 <p class="orv_line">That prompted Han Sooyoung to step forward. "No, hang on a minute. We finished the last scenario only a few days ago, you know?"</p>
 <p class="orv_line">"Please let us head over to Earth first. We haven't completed our preparation for the next scenario yet."</p>
 <p class="orv_line">Jung Heewon also pitched in. One by one, the companions gathered around – Shin Yoosung, Lee Gilyoung, and Lee Jihye, too… They all carried confused, unsettled expressions.</p>
 <p class="orv_line">Bihyung sighed softly under his breath. </p>
-<div class="orv_constellation"><p>[As I thought, it's really inconvenient without Kim Dokja around, isn't it. If only he was here, he'd have understood it already.]</p></div>
+<div class="orv_constellation"><p>As I thought, it's really inconvenient without Kim Dokja around, isn't it. If only he was here, he'd have understood it already.</p></div>
 <p class="orv_line">"Just what's the reason for hurrying us up like this? If you can't give us a proper explana…"</p>
 <p class="orv_line">Bihyung's lips quietly moved.</p>
 <p class="orv_line">– There aren't that many entry tickets remaining. You gotta go there as soon as possible to secure yours.</p>
@@ -238,9 +245,9 @@
 <p class="orv_line">Shin Yoosung, Lee Gilyoung, and even Lee Jihye all quickly made up their minds. Jung Heewon seemed to be worried about Lee Hyunsung until the end, but eventually nodded her head after listening to Yoo Joonghyuk's words.</p>
 <p class="orv_line">"We might be able to find a way to revive the 'Emperor of Steelsword' sooner by going to the Final Scenario's location."</p>
 <p class="orv_line">"…In that case, I don't have a reason to hesitate anymore."</p>
-<div class="orv_constellation"><p>[Well, let's get going, then.]</p></div>
+<div class="orv_constellation"><p>Well, let's get going, then.</p></div>
 <p class="orv_line">Along with Bihyung's voice, &lt;Kim Dokja's Company&gt;'s surroundings were dyed in bright light in an instant.</p>
-<div class="orv_system"><p>[Scenario transmission is starting!]</p></div>
+<div class="orv_system"><p>Scenario transmission is starting!</p></div>
 <p class="orv_line">Perhaps due to the higher-ranking Dokkaebi's authority being invoked, the time it took to move through the portal was short and comfortable.</p>
 <p class="orv_line">In the blink of an eye, the group found themselves transported to the middle of pitch-black outer space. More specifically, on top of a semi-transparent disk that allowed them to look down on the universe itself.</p>
 <p class="orv_line">"Where…"</p>
@@ -257,17 +264,17 @@
 <p class="orv_line">In that case, how did he know of this information already?</p>
 <p class="orv_line">Tsu-chuchut…</p>
 <p class="orv_line">Sparks faintly danced just above his coat. Lee Jihye sensed that something was wrong and as she reached out to him, rays of bright light exploded from the Gate's vicinity. Another batch of Constellations, as well as Dokkaebis, warped into this place.</p>
-<div class="orv_constellation"><p>[Constellation-nims, please, it's this way.]</p></div>
+<div class="orv_constellation"><p>Constellation-nims, please, it's this way.</p></div>
 <p class="orv_line">Constellations and Incarnations brushed past their group in perfect order under the guidance of Great Dokkaebis. And among them walking past &lt;Kim Dokja's Company&gt;, was 'Heoche', the very same Dokkaebi who showed up to offer them a choice earlier.</p>
-<div class="orv_constellation"><p>[Didn't I say it before? That you'll all regret your decision.]</p></div>
+<div class="orv_constellation"><p>Didn't I say it before? That you'll all regret your decision.</p></div>
 <p class="orv_line">Han Sooyoung and Yoo Joonghyuk glanced at each other after hearing that Great Dokkaebi's passing voice.</p>
 <p class="orv_line">Something was off about this whole thing.</p>
 <p class="orv_line">Quite unlike this Great Dokkaebi's group that went past the Gate rather easily, &lt;Kim Dokja's Company&gt; wasn't even able to approach its vicinity at all.</p>
 <p class="orv_line">Bihyung was standing by the entrance, and the group could hear him arguing with the gatekeepers there.</p>
-<div class="orv_constellation"><p>[What is the meaning of this? We've already gone through all the procedures. These Incarnations possess the right qualifications to enter the Final Scenario. So, please step aside.]</p></div>
+<div class="orv_constellation"><p>What is the meaning of this? We've already gone through all the procedures. These Incarnations possess the right qualifications to enter the Final Scenario. So, please step aside.</p></div>
 <p class="orv_line">As the Gate emitting pure light swallowed up the Great Dokkaebi's group, it stopped first and whispered something to the captain of the gatekeepers.</p>
 <p class="orv_line">Unable to wait any longer, Bihyung stepped forward, only for this captain to open its lips. </p>
-<div class="orv_constellation"><p>[Higher-ranking Dokkaebi Bihyung, you and &lt;Kim Dokja's Company&gt; can't enter the Final Scenario.]</p></div>
+<div class="orv_constellation"><p>Higher-ranking Dokkaebi Bihyung, you and &lt;Kim Dokja's Company&gt; can't enter the Final Scenario.</p></div>
 <br>
 <hr>
 <br>
@@ -288,17 +295,17 @@
 <p class="orv_line">⸢"It's all because of you."⸥</p>
 <p class="orv_line">Suddenly, my view spun around. I spat out a pained groan and opened my eyes.</p>
 <p class="orv_line">"Your complexion isn't so good. Are you alright?"</p>
-<p class="orv_line">I was wondering why my chest felt heavy, but as it turned out, the kkoma Yoo Joonghyuk number [999] was standing on it. He used his mini [Splitting the Sky Sword] to pick up a cup resting on the nearby table and handed it over to me.</p>
+<p class="orv_line">I was wondering why my chest felt heavy, but as it turned out, the kkoma Yoo Joonghyuk number <strong>[999]</strong> was standing on it. He used his mini <strong>[Splitting the Sky Sword]</strong> to pick up a cup resting on the nearby table and handed it over to me.</p>
 <p class="orv_line">"Drink."</p>
 <p class="orv_line">"…Thanks."</p>
 <p class="orv_line">My mind gradually woke up after drinking some cold water.</p>
-<div class="orv_system"><p>[Current Incarnation Body recovery rate: 36%]</p></div>
+<div class="orv_system"><p>Current Incarnation Body recovery rate: 36%</p></div>
 <p class="orv_line">Although negligent, my Incarnation Body was slowly recovering. Of course, it wasn't enough to make me feel satisfied.</p>
 <p class="orv_line">– &lt;Kim Dokja's Company&gt;. It's now time to leave for the Final Scenario.</p>
-<p class="orv_line">The sight I saw in [666]'s smartphone last night didn't want to leave my head. My companions were already facing the offer of the Final Scenario. I no longer had time to waste here.</p>
+<p class="orv_line">The sight I saw in <strong>[666]</strong>'s smartphone last night didn't want to leave my head. My companions were already facing the offer of the Final Scenario. I no longer had time to waste here.</p>
 <p class="orv_line">"You can leave whenever you want. As long as you can figure out the answer yourself, that is."</p>
 <p class="orv_line">"It's that thing again?"</p>
-<p class="orv_line">I grumbled unhappily and sat up, but then, the kkoma Yoo Joonghyuk number [999] threw an unexpected question in my way. "Name the type of food you hate."</p>
+<p class="orv_line">I grumbled unhappily and sat up, but then, the kkoma Yoo Joonghyuk number <strong>[999]</strong> threw an unexpected question in my way. "Name the type of food you hate."</p>
 <p class="orv_line">"Why, all of a sudden?"</p>
 <p class="orv_line">"Shut up and answer the question."</p>
 <p class="orv_line">I was momentarily overwhelmed by the little guy's force. "…It's tomato."</p>
@@ -306,7 +313,7 @@
 <p class="orv_line">Why was he writing that down, anyway?</p>
 <p class="orv_line">"What about your favourite food?"</p>
 <p class="orv_line">"…Murim dumplings with chicken broth."</p>
-<p class="orv_line">My answer prompted a change of expressions in [999]'s face. "Looks like your tongue knows its stuff."</p>
+<p class="orv_line">My answer prompted a change of expressions in <strong>[999]</strong>'s face. "Looks like your tongue knows its stuff."</p>
 <p class="orv_line">Well, sure, my three-inch tongue helped me live this far, that's true.</p>
 <p class="orv_line">"81st turn is in charge of cooking. His swordsmanship might be lacking, but he's quite talented when it comes to making food. Look forward to it."</p>
 <p class="orv_line">Now that I thought about it, 81st turn Yoo Joonghyuk learned quite a lot of cooking skills for some reason, didn't he? It seemed that he was in charge of meals in this place, then.</p>
@@ -316,16 +323,16 @@
 <p class="orv_line">"Why did Yoo Joonghyuk become an 'Outer God'?"</p>
 <p class="orv_line">The kkoma Yoo Joonghyuk's expression hardened ever so slightly. I continued with my questioning. "Not only that, he even acts as a Constellation with a moniker of 'Secretive Plotter', too… The 'Yoo Joonghyuk' that I know of would've never done something like this. He's…"</p>
 <p class="orv_line">One of the things I realized after coming here was that almost all the kkoma Yoo Joonghyuks didn't really like me. Quite often, they would try to pick a fight with me for no reason, and rarely did they provide a proper answer whenever I asked them about something.</p>
-<p class="orv_line">However, this [999] was different. There was that story about the wolf, too. It was as if he wanted to tell me something here.</p>
+<p class="orv_line">However, this <strong>[999]</strong> was different. There was that story about the wolf, too. It was as if he wanted to tell me something here.</p>
 <p class="orv_line">Thankfully, my gut feeling wasn't wrong.</p>
 <p class="orv_line">"Just what is the 'Yoo Joonghyuk' you think you know?"</p>
 <p class="orv_line">His voice contained faint traces of scorn. I didn't know what to say.</p>
 <p class="orv_line">"Do you still believe that you can understand someone through just a few lines of text in a couple of chapters?"</p>
 <p class="orv_line">I couldn't reply.</p>
 <p class="orv_line">I wasn't sure why. It could be because I thought that I had no right to answer him, or maybe I couldn't find the correct words to say.</p>
-<p class="orv_line">[999] quietly studied the indecisive me, before shooting me a criticising glare. He then pulled some things out from a drawer attached to the table to throw them at me. "I heard that you like to read. Maybe, reading that might help you. That book is written for the purpose of understanding the fear of the unknown by foolish humans like you."</p>
-<p class="orv_line">What [999] threw at me were several books. I picked one of them up to take a look.</p>
-<div class="orv_system"><p>[A Brief Overview of Outer Gods – regarding the 'Secretive Plotter' and the 'Oldest Dream']</p></div>
+<p class="orv_line"><strong>[999]</strong> quietly studied the indecisive me, before shooting me a criticising glare. He then pulled some things out from a drawer attached to the table to throw them at me. "I heard that you like to read. Maybe, reading that might help you. That book is written for the purpose of understanding the fear of the unknown by foolish humans like you."</p>
+<p class="orv_line">What <strong>[999]</strong> threw at me were several books. I picked one of them up to take a look.</p>
+<div class="orv_system"><p>A Brief Overview of Outer Gods – regarding the 'Secretive Plotter' and the 'Oldest Dream'</p></div>
 <br>
 <hr>
         </article>
@@ -333,18 +340,12 @@
             <a href="./ch_419"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_421">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="420" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="476" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="419" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="419" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

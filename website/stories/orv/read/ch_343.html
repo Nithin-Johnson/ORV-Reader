@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 343: Ep. 64 - A Road That Isn't a Road, IV</title>
     <meta property="og:title" content="Ch 343: Ep. 64 - A Road That Isn't a Road, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00343.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 343: Ep. 64 - A Road That Isn't a Road, IV</h1></div>
 <p class="orv_line">Sparks sprang around the broken soul and my mother's vitality was slowly coming back. The busy wanderers attached my mother's story fragments together as if they wouldn't tolerate a single error.</p>
@@ -198,10 +205,10 @@
 <p class="orv_line">"…Ah, I missed this time."</p>
 <p class="orv_line">"I don't know what I would've done if Sookyung-ssi wasn't there. Right?"</p>
 <p class="orv_line">The voices of the wanderers murmured. Perhaps the entire life we lived became memories for one or two people.</p>
-<div class="orv_system"><p>[The constellation 'Scribe of Heaven' is showing pure admiration towards the landscape of the accumulated story.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is greatly pleased!]</p></div>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is pulling his hair with an unknown expression.]</p></div>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' is grumbling while looking at his incarnation.]</p></div>
+<div class="orv_system"><p>The constellation 'Scribe of Heaven' is showing pure admiration towards the landscape of the accumulated story.</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is greatly pleased!</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is pulling his hair with an unknown expression.</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' is grumbling while looking at his incarnation.</p></div>
 <p class="orv_line">Perhaps the channel inspection ended as the constellations gathered in Biyoo's channel to watch the scene. My mother was finished in front of everyone's eyes.</p>
 <p class="orv_line">My mother, Lee Sookyung. The King of Wanderers, Lee Sookyung. Lee Sookyung, a former prisoner. Lee Sookyung the essay writer. These 'Lee Sookyung' gathered to make the whole 'Lee Sookyung'.</p>
 <p class="orv_line">I stood still and Han Sooyoung poked me in the side. "Get out of the way, you're disturbing us."</p>
@@ -289,35 +296,35 @@
 <p class="orv_line">"You are the successor of the Underworld. Can't you ask them for help?"</p>
 <p class="orv_line">"I've already asked them."</p>
 <p class="orv_line">In the meantime, several indirect messages were heard in the air. They were the messages of constellations who wanted to take advantage of the situation.</p>
-<div class="orv_system"><p>[The constellation 'Emperor Who Dreamt of Immortality' is making a proposal.]</p></div>
-<div class="orv_system"><p>[The constellation 'Emperor Who Dreamt of Immortality' says he will provide you with the 'Divine Grass of Immortality' right now if you sign a contract with him.]</p></div>
+<div class="orv_system"><p>The constellation 'Emperor Who Dreamt of Immortality' is making a proposal.</p></div>
+<div class="orv_system"><p>The constellation 'Emperor Who Dreamt of Immortality' says he will provide you with the 'Divine Grass of Immortality' right now if you sign a contract with him.</p></div>
 <p class="orv_line">The Emperor Who Dreamt of Immortality… it was that 'king' of China. The Divine Grass of Immortality' was definitely an item that could be compared to the star fluids and Star Relic Fruit. However, the current Yoo Sangah couldn't recover even if I used it.</p>
-<div class="orv_quote"><p>「 Don't do it. 」</p></div>
+<div class="orv_quote"><p>Don't do it.</p></div>
 <p class="orv_line">Everyone stared at one place.</p>
-<div class="orv_quote"><p>「 If you borrow their hands, they will surely ask for a ridiculous price. 」</p></div>
+<div class="orv_quote"><p>If you borrow their hands, they will surely ask for a ridiculous price.</p></div>
 <p class="orv_line">Yoo Sangah was talking. Her incarnation body had closed eyes but everyone could hear her. The soul had more than half of herself scattered and only her thema remained, yet she watched everyone here.</p>
-<div class="orv_quote"><p>「 Everyone. 」</p></div>
+<div class="orv_quote"><p>Everyone.</p></div>
 <p class="orv_line">Yoo Sangah spoke to the party members.</p>
-<div class="orv_quote"><p>「 I'm fine. So… 」</p></div>
+<div class="orv_quote"><p>I'm fine. So…</p></div>
 <p class="orv_line">I didn't know how many times they heard the words 'I'm fine' today. Everyone in this place knew what she meant by saying 'I'm fine'. To us, it meant the time of hell had emerged.</p>
-<div class="orv_quote"><p>「 Gilyoung, noona is fine. Don't cry. Yoosung too. 」</p></div>
+<div class="orv_quote"><p>Gilyoung, noona is fine. Don't cry. Yoosung too.</p></div>
 <p class="orv_line">Yoo Sangah kept talking to the group. I held my throbbing chest and leaned against the wall. Jung Heewon sat down on a chair.</p>
-<div class="orv_quote"><p>「 Heewon-ssi. I really like Heewon-ssi. Do you know? 」</p></div>
-<div class="orv_quote"><p>「 In addition, Jihye… 」</p></div>
+<div class="orv_quote"><p>Heewon-ssi. I really like Heewon-ssi. Do you know?</p></div>
+<div class="orv_quote"><p>In addition, Jihye…</p></div>
 <p class="orv_line">Tears were falling. Lee Jihye was weeping bitterly as she grasped the bedspread. Her red eyes were gazing eagerly at me. From the side, I could hear the sound of teeth grinding together.</p>
 <p class="orv_line">"Kim Dokja, I will sign an Outer World Contract." Han Sooyoung grabbed my arm and declared. "Then there might be a way. No, I will definitely make the contract. I―"</p>
-<div class="orv_quote"><p>「 Han Sooyoung-ssi. 」</p></div>
+<div class="orv_quote"><p>Han Sooyoung-ssi.</p></div>
 <p class="orv_line">Han Sooyoung's chin trembled.</p>
-<div class="orv_quote"><p>「 You don't have to do that. 」</p></div>
+<div class="orv_quote"><p>You don't have to do that.</p></div>
 <p class="orv_line">Han Sooyoung dropped my arm. She left through the door like she didn't want to keep listening. Yoo Sangah continued speaking. She was a person pouring out all her remaining words.</p>
-<div class="orv_quote"><p>「 Hyunsung-ssi and Joonghyuk-ssi… I have something to tell you… but I don't have much strength left. 」</p></div>
-<div class="orv_quote"><p>「 Yes, I want to say, I will leave the others… 」</p></div>
+<div class="orv_quote"><p>Hyunsung-ssi and Joonghyuk-ssi… I have something to tell you… but I don't have much strength left.</p></div>
+<div class="orv_quote"><p>Yes, I want to say, I will leave the others…</p></div>
 <p class="orv_line">Then Yoo Sangah glanced at me. I leaned against the wall while my wounds throbbed.</p>
 <p class="orv_line">The world shook. Nevertheless, I had to hold on.</p>
 <p class="orv_line">"Everybody."</p>
 <p class="orv_line">The moment I spoke, pain filled my head.</p>
-<div class="orv_system"><p>[The Fourth Wall is warning you.]</p></div>
-<div class="orv_quote"><p>「 N o. 」</p></div>
+<div class="orv_system"><p>The Fourth Wall is warning you.</p></div>
+<div class="orv_quote"><p>N o.</p></div>
 <p class="orv_line">I ignored it and carried on. "Everyone, please go out for a while."</p>
 <p class="orv_line">They all seemed to have lost their souls despite Yoo Sangah being the one who was dying. The first one to regain their senses was Jung Heewon. She exchanged glances with me for a moment before raising Lee Jihye. With her encouragement, the members left the room one by one. Finally, Shin Yoosung and Lee Gilyoung left and I was the only one in the room with Yoo Sangah.</p>
 <p class="orv_line">I took a deep breath before opening my mouth. "Yoo Sangah-ssi. Do you remember the words that you said on the subway?"</p>
@@ -326,12 +333,12 @@
 <p class="orv_line">I recited the names of the authors Yoo Sangah said she liked. I sensed Yoo Sangah's expression changing slightly. Maybe it was a distant memory that was disappearing.</p>
 <p class="orv_line">"If you can survive… are you willing to read books that aren't from those writers?"</p>
 <p class="orv_line">A fleeting light returned to Yoo Sangah's soul.</p>
-<div class="orv_quote"><p>「 …What book? 」</p></div>
+<div class="orv_quote"><p>…What book?</p></div>
 <p class="orv_line">"For example, Lord of the Rings."</p>
 <p class="orv_line">Yoo Sangah's soul body laughed. She recalled the old memory and smile faintly.</p>
-<div class="orv_quote"><p>「 …Okay. As long as I can read it. If it is possible… 」</p></div>
+<div class="orv_quote"><p>…Okay. As long as I can read it. If it is possible…</p></div>
 <p class="orv_line">These precious words, I remembered every syllable.</p>
-<div class="orv_quote"><p>「 If I can live again, I will read the entire story. 」</p></div>
+<div class="orv_quote"><p>If I can live again, I will read the entire story.</p></div>
 <p class="orv_line">I nodded. I didn't know if this method would work. In the original novel, this had never been attempted. Still, this was the only method I could do. There were huge sparks as the 'wall' appeared in the air.</p>
 <p class="orv_line">I looked beyond the dead-end and stared at the Fourth Wall. Anyone facing this wall at the end of the road would become desperate.</p>
 <p class="orv_line">"Fourth Wall."</p>
@@ -344,18 +351,12 @@
             <a href="./ch_342"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_344">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="343" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="650" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="342" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="342" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

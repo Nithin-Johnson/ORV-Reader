@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 313: Ep. 59 - Kim Dokja's Company, IV</title>
     <meta property="og:title" content="Ch 313: Ep. 59 - Kim Dokja's Company, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,66 +177,66 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00313.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 313: Ep. 59 - Kim Dokja's Company, IV</h1></div>
 <p class="orv_line">…Father? If I wasn't mistaken, the giant shadow's word was definitely directed this way. The party members were staring at me with eyes full of disbelief. I looked back at the shadow with bewilderment.</p>
-<div class="orv_constellation"><p>[Baat?]</p></div>
+<div class="orv_constellation"><p>Baat?</p></div>
 <p class="orv_line">The faint light coming from the entrance of the interstellar city revealed the shadow.</p>
-<div class="orv_constellation"><p>[No, not that! Try again. 'Father'.]</p></div>
-<div class="orv_constellation"><p>[Baaaat?]</p></div>
-<div class="orv_constellation"><p>[No, it is Father. You really…]</p></div>
+<div class="orv_constellation"><p>No, not that! Try again. 'Father'.</p></div>
+<div class="orv_constellation"><p>Baaaat?</p></div>
+<div class="orv_constellation"><p>No, it is Father. You really…</p></div>
 <p class="orv_line">The giant shadow wasn't a single creature. To be precise, there was a creature the size of a soccer ball on the huge shadow.</p>
 <p class="orv_line">"What are you doing?" My words caused Bihyung to look this way.</p>
-<div class="orv_constellation"><p>[…Uh. You're already here?]</p></div>
+<div class="orv_constellation"><p>…Uh. You're already here?</p></div>
 <p class="orv_line">The giant shadow was Bihyung, who had inflated his body like a giant. The stronger the dokkaebi, the larger the body became. The fact that Bihyung was this big showed he had reached a significant level in the bureau. Wait… the reason for Bihyung's presence and the soccer ball…</p>
 <p class="orv_line">"Biyoo!"</p>
 <p class="orv_line">The cotton candy Biyoo flew through the air.</p>
-<div class="orv_constellation"><p>[Baaat!]</p></div>
+<div class="orv_constellation"><p>Baaat!</p></div>
 <p class="orv_line">Biyoo came into my arms and rubbed against my cheeks. Something was forming in her small eyes. I couldn't believe the child the size of a baseball had become a soccer ball. Biyoo had grown up since the past.</p>
 <p class="orv_line">"Did you wait long?"</p>
 <p class="orv_line">A small hand popped out from the cotton candy and slapped me in the cheek. I left her alone in front of the dimensional gate and deserved this much punishment. I silently endured the ticklish touch. Tears fell as Biyoo once again dug tighter into my chest. The children ran to me and touched the fluffy Biyoo.</p>
-<div class="orv_constellation"><p>[Hum hum.]</p></div>
+<div class="orv_constellation"><p>Hum hum.</p></div>
 <p class="orv_line">I turned my head to see Bihyung waiting for me. I opened the dokkaebi communication and spoke to Bihyung.</p>
 <p class="orv_line">–What were you doing here?</p>
 <p class="orv_line">–I have been waiting. A dokkaebi to take you to the 47th scenario zone was needed.</p>
 <p class="orv_line">–What is with your body size?</p>
 <p class="orv_line">Bihyung ignored me and spoke to the party members.</p>
-<div class="orv_constellation"><p>[Everyone of Kim Dokja's Company. Do you know who I am? I am Bihyung, branch manager of the Korean Peninsula branch.]</p></div>
+<div class="orv_constellation"><p>Everyone of Kim Dokja's Company. Do you know who I am? I am Bihyung, branch manager of the Korean Peninsula branch.</p></div>
 <p class="orv_line">Bihyung banged on his chest like he was showing off his thick muscles. He made a production out of this.</p>
-<div class="orv_constellation"><p>[It seems like yesterday when the Korean Peninsula scenario first began… now you've already come to the 47th scenario area.]</p></div>
+<div class="orv_constellation"><p>It seems like yesterday when the Korean Peninsula scenario first began… now you've already come to the 47th scenario area.</p></div>
 <p class="orv_line">Bihyung's face was full of emotions.</p>
-<div class="orv_constellation"><p>[As you might know, the scenarios after the 47th scenario don't have to be carried out in order. After entering the interstellar city, you can selectively perform scenarios 48 to 65.]</p></div>
+<div class="orv_constellation"><p>As you might know, the scenarios after the 47th scenario don't have to be carried out in order. After entering the interstellar city, you can selectively perform scenarios 48 to 65.</p></div>
 <p class="orv_line">Shin Yoosung raised her hand. "We can choose the scenario?"</p>
-<div class="orv_constellation"><p>[It is the so-called autonomous selection system. Hahaha!]</p></div>
+<div class="orv_constellation"><p>It is the so-called autonomous selection system. Hahaha!</p></div>
 <p class="orv_line">Nobody laughed. Bihyung shrugged.</p>
-<div class="orv_constellation"><p>[Hum hum, anyway. It is up to you which of the scenarios up to number 65 will be done first. You can do the 65th scenario at once or go through the scenarios to build up your 'status'. In any case, you need a certain level of status to enter the scenario area after number 65.]</p></div>
+<div class="orv_constellation"><p>Hum hum, anyway. It is up to you which of the scenarios up to number 65 will be done first. You can do the 65th scenario at once or go through the scenarios to build up your 'status'. In any case, you need a certain level of status to enter the scenario area after number 65.</p></div>
 <p class="orv_line">Lee Hyunsung asked, "Then what will happen after the 66th scenario?"</p>
-<div class="orv_constellation"><p>[There will be a new explanation at that time. You can't go there now so don't worry.]</p></div>
+<div class="orv_constellation"><p>There will be a new explanation at that time. You can't go there now so don't worry.</p></div>
 <p class="orv_line">It was a cold tone but Bihyung's expression to the party members wasn't cold.</p>
-<div class="orv_constellation"><p>[Well, it took four years to get here… I don't know how much time it will take in the future. Ah, not all of you went through the same four years.]</p></div>
+<div class="orv_constellation"><p>Well, it took four years to get here… I don't know how much time it will take in the future. Ah, not all of you went through the same four years.</p></div>
 <p class="orv_line">Bihyung grinned at me as he spoke.</p>
-<div class="orv_constellation"><p>[Let's go to the interstellar city. It will take around 10 minutes to complete the transmission. Please prepare yourself. An amazing world is waiting for you.]</p></div>
+<div class="orv_constellation"><p>Let's go to the interstellar city. It will take around 10 minutes to complete the transmission. Please prepare yourself. An amazing world is waiting for you.</p></div>
 <p class="orv_line">The moment Bihyung's words were over, Biyoo shouted.</p>
-<div class="orv_constellation"><p>[Baaat!]</p></div>
+<div class="orv_constellation"><p>Baaat!</p></div>
 <p class="orv_line">A gorgeous beam of light wrapped around our party members. We started to fly towards the interstellar city. For safety reasons, the movement speed was slower than expected. I didn't know when Biyoo would emerge from my arms. Jung Heewon watched this scene and opened her mouth.</p>
 <p class="orv_line">"Dokja-ssi. I have something to ask."</p>
 <p class="orv_line">Jung Heewon's expression towards me was strange. The other party members glanced at me like they knew what she was going to say.</p>
@@ -268,18 +275,18 @@
 <p class="orv_line">It was a group photo of the 1863rd round people smiling brightly. Lee Seolhwa, Kim Namwoon, Lee Jihye, Han Donghoon, Lee Hyunsung… and the emotionless man in the centre.</p>
 <p class="orv_line">Lee Jihye told me, "This is Master in that world? His face is injured? Isn't he cooler than the one here?"</p>
 <p class="orv_line">Everyone in the photo was smiling apart from the 1863rd Yoo Joonghyuk. Yoo Joonghyuk was already looking over.</p>
-<div class="orv_system"><p>[The 'Fourth Wall' is shimmering faintly.]</p></div>
+<div class="orv_system"><p>The 'Fourth Wall' is shimmering faintly.</p></div>
 <p class="orv_line">No one here knew the life that Yoo Joonghyuk of that world had lived.</p>
-<div class="orv_system"><p>[The constellation 'Secretive Plotter' is looking at you.]</p></div>
+<div class="orv_system"><p>The constellation 'Secretive Plotter' is looking at you.</p></div>
 <p class="orv_line">…No, there was one person. I looked up at the place where Secretive Plotter would be watching among the stars of the Star Stream.</p>
 <p class="orv_line">I still didn't know why Secretive Plotter made such an Outer World Covenant. I didn't know why he reacted like that to my choice. I guessed a few things but everything was just a hypothesis.</p>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is looking at you.]</p></div>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' is looking at you.]</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is looking at you.</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' is looking at you.</p></div>
 <p class="orv_line">The interstellar city 'Context of the Constellations' was a transit station that led to the worlds of other constellations. I felt that my physical distance from the constellations was gradually getting closer.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is welcoming you.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is welcoming you.</p></div>
 <p class="orv_line">The punishment seemed to finally be released and Uriel also sent an indirect message. In the midst of a brilliant light, our bodies entered the city.</p>
-<div class="orv_system"><p>[You have entered the interstellar city 'Context of the Constellations'.]</p></div>
-<div class="orv_system"><p>[A new main scenario is waiting.]</p></div>
+<div class="orv_system"><p>You have entered the interstellar city 'Context of the Constellations'.</p></div>
+<div class="orv_system"><p>A new main scenario is waiting.</p></div>
 <p class="orv_line">The place we landed was a huge city square. Some incarnations glanced this way but none of them paid attention to us. This city's scale was different from where we had stayed so far. It was natural.</p>
 <p class="orv_line">I spoke to the people, "Everyone knows why we came here?"</p>
 <p class="orv_line">From now on, the enemies we were dealing with were thousands of years old. Jung Heewon nodded and wondered, "We came to fight with Olympus right?"</p>
@@ -300,7 +307,7 @@
 <p class="orv_line">"Mount Olympus."</p>
 <p class="orv_line">Olympus, a huge nebula with all types of legends and adventures. It was Mount Olympus where the 12 main gods of Olympus resided. Finally, the time had come to check their home.</p>
 <p class="orv_line">The portal swirled at my feet and faint mythological scenes came to mind. The next moment, an unexpected message came back.</p>
-<div class="orv_system"><p>[Olympus is currently refusing all visitors.]</p></div>
+<div class="orv_system"><p>Olympus is currently refusing all visitors.</p></div>
 <br>
 <hr>
         </article>
@@ -308,18 +315,12 @@
             <a href="./ch_312"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_314">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="313" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="386" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="312" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="312" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

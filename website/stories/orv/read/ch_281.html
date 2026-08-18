@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 281: Ep. 53 - Demon King of Salvation, III</title>
     <meta property="og:title" content="Ch 281: Ep. 53 - Demon King of Salvation, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,30 +177,30 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00281.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 281: Ep. 53 - Demon King of Salvation, III</h1></div>
 <p class="orv_line">Jung Heewon muttered, "…Dokja-ssi?"</p>
 <p class="orv_line">Beyond the glare of Kim Dokja's light, the huge eye was looking down at the world. The moment she faced this eye, Jung Heewon's entire body trembled. The ground was distorted and shook like a tsunami was approaching.</p>
-<div class="orv_system"><p>[The 73rd Demon Realm is crying out with pain!]</p></div>
+<div class="orv_system"><p>The 73rd Demon Realm is crying out with pain!</p></div>
 <p class="orv_line">Lava burst from the broken crust and the overflowing heat once again disappeared into the empty stomach. The whole world was becoming narrower around the industrial complex. Then it was obvious what would've happened to the other industrial complexes.</p>
 <p class="orv_line">The transcendent magic power amplified by the story moved. It was unreasonable to directly oppose that 'eye' but the seismic waves could be slowed.</p>
 <p class="orv_line">"Quickly, you stupid disciple!"</p>
@@ -206,16 +213,16 @@
 <p class="orv_line">Lee Hyunsung used Steel Transformation and asked, "Dokja-ssi! What should we do?"</p>
 <p class="orv_line">Everyone was watching Kim Dokja. They didn't know what but Kim Dokja would have something in mind.</p>
 <p class="orv_line">Kim Dokja slowly blinked and looked at the party members. Over the past few days, Kim Dokja gave many things to the party members. Lee Hyunsung gained a new shield and Jung Heewon got a new skill. Lee Jihye's magic power was strengthened and Shin Yoosung and Lee Gilyoung learnt a large number of control skills. The party members believed it.</p>
-<div class="orv_system"><p>[Giant Story 'Demon Realm's Spring' is moving for the owner of the story.]</p></div>
+<div class="orv_system"><p>Giant Story 'Demon Realm's Spring' is moving for the owner of the story.</p></div>
 <p class="orv_line">If they had this giant story that they built together and the plan prepared by Kim Dokja, they would be able to knock down even the strongest enemy. They even destroyed Surya's train. Even if this enemy came…</p>
 <p class="orv_line">"Ah…jussi…?"</p>
 <p class="orv_line">The earliest one to sense something unusual was Shin Yoosung. There were rough sparks as Shin Yoosung's knees sank downwards. Her body couldn't move, like there was a chain tied around her.</p>
-<div class="orv_quote"><p>「 This is the story of Dokja. 」</p></div>
+<div class="orv_quote"><p>This is the story of Dokja.</p></div>
 <p class="orv_line">The giant story that flowed from Kim Dokja's body became powerful shackles around the party members. Lee Hyunsung was slowly sinking to the ground. His face was blank as he asked, "Dokja-ssi? What is this…?"</p>
 <p class="orv_line">Kim Dokja's expression was still unreadable. He was there but he didn't seem together with them. The party members thought they were all in this together so why?</p>
 <p class="orv_line">Why did Kim Dokja seem to be there alone? There was no 'story' that existed alone. Kim Dokja's 'King of a Kingless World' was linked to Yoo Joonghyuk's 'One Who Succeeded the Name of the King' while Jung Heewon's 'Exclusion of Future Evil' was linked to Kim Dokja's One Who Showed Contempt for a Streamer.</p>
 <p class="orv_line">Not to mention the giant story that was a share in a larger story. The giant story 'Demon Realm's Spring' was of everyone who participated in the terrible battlefield. Nevertheless, at this moment, the Demon Realm's Spring was only for Kim Dokja.</p>
-<div class="orv_system"><p>[The chief narrator of the giant story 'Demon Realm's Spring' has started his story.]</p></div>
+<div class="orv_system"><p>The chief narrator of the giant story 'Demon Realm's Spring' has started his story.</p></div>
 <p class="orv_line">All the stakes in the giant story given to the party members were being controlled. The party members resisted using their stake in the giant story. Jung Heewon, Yoo Sangah, Lee Hyunsung, Lee Gilyoung, Shin Yoosung…</p>
 <p class="orv_line">Even with all the shares they had, they couldn't defeat the gigantic will of a single person. It might've been different if Yoo Joonghyuk was awake but Yoo Joonghyuk wasn't here now.</p>
 <p class="orv_line">Jung Heewon sat on the ground and cried out painfully, "Wait! What is this? What the hell is this?"</p>
@@ -236,23 +243,23 @@
 <p class="orv_line">"Aaaaaaack! I don't like this! Dokja hyung!"</p>
 <p class="orv_line">She grew stronger because she didn't want to be in debt to him like last time. She performed the hellish personal scenarios and frantically defeated monsters. Jung Heewon shouted as she coughed up blood. "It is you who said we couldn't do this alone! You were the one who gathered us! You told me all of this!"</p>
 <p class="orv_line">An unfamiliar true voice flowed from the lips of the smiling Kim Dokja.</p>
-<div class="orv_constellation"><p>[I know.]</p></div>
+<div class="orv_constellation"><p>I know.</p></div>
 <p class="orv_line">"What do you know? The person who knows, how…?"</p>
-<div class="orv_constellation"><p>[Still, not now.]</p></div>
+<div class="orv_constellation"><p>Still, not now.</p></div>
 <p class="orv_line">Lee Hyunsung screamed, "I don't want this! I don't need this type of help. I'll die here! I'll die here with Dokja-ssi!"</p>
 <p class="orv_line">Dying here. Kim Dokja, who was staring at the sky, lowered his gaze towards the party members.</p>
-<div class="orv_system"><p>[The constellation 'Demon King of Salvation' is looking at the party.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon King of Salvation' is looking at the party.</p></div>
 <p class="orv_line">The party members heard the message. They looked at Kim Dokja's fluttering hair. They saw his long eyelashes, his eyes, his white cheeks and sadly distorted lips. Suddenly, they realized that Kim Dokja could exist in this world with such an expression.</p>
-<div class="orv_constellation"><p>[Please live.]</p></div>
+<div class="orv_constellation"><p>Please live.</p></div>
 <p class="orv_line">They listened helplessly like the true voice was a command.</p>
-<div class="orv_system"><p>[The demon king 'Demon King of Salvation' is looking out.]</p></div>
+<div class="orv_system"><p>The demon king 'Demon King of Salvation' is looking out.</p></div>
 <p class="orv_line">Kim Dokja's expression was changing. The sleeping power of the demon king was awakening.</p>
-<div class="orv_system"><p>[The story 'Demon King of Salvation' has begun.]</p></div>
+<div class="orv_system"><p>The story 'Demon King of Salvation' has begun.</p></div>
 <p class="orv_line">The stories of the 73rd Demon Realm started to gather around him. The white coat was stained black from the demonic energy and two horns rose from Kim Dokja's head. It was the power of the 'Demon King Transformation' that only a demon king could use.</p>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is looking at his friend.]</p></div>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' is paying homage to his adversary.]</p></div>
-<div class="orv_system"><p>[The constellation 'Goryeo's First Sword' is making a furious yell.]</p></div>
-<div class="orv_system"><p>[The constellation 'Supreme God of Light' is watching the end of the 73rd Demon Realm.]</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is looking at his friend.</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' is paying homage to his adversary.</p></div>
+<div class="orv_system"><p>The constellation 'Goryeo's First Sword' is making a furious yell.</p></div>
+<div class="orv_system"><p>The constellation 'Supreme God of Light' is watching the end of the 73rd Demon Realm.</p></div>
 <p class="orv_line">Dark feathers stretched from Kim Dokja's shoulders and reached towards the night sky. The second hand of the clock tower moved slowly and Kim Dokja soared. As if leaving this time, the Demon King of Salvation became a light and flew towards the sky.</p>
 <p class="orv_line">The moment Kim Dokja penetrated the expanse, thunder struck. A few thunderbolts poured down and the fog coming from the horizon stopped.</p>
 <p class="orv_line">It was as if time had stopped. The party members looked up at the night sky where Kim Dokja disappeared and couldn't breathe properly. Time continued passing on the incomplete clock tower. One minute, two minutes, three minutes…</p>
@@ -265,7 +272,7 @@
 <p class="orv_line">Han Myungoh sat down and Gong Pildu guarded the destroyed castle.</p>
 <p class="orv_line">Everyone was leaking white sparks. Then everyone in the Yoo Joonghyuk - Kim Dokja Industrial Complex were sent somewhere else.</p>
 <p class="orv_line">A threatening cry was heard from the fog like it was furious.</p>
-<div class="orv_constellation"><p>[■■■■… ■■■■■■!]</p></div>
+<div class="orv_constellation"><p>■■■■… ■■■■■■!</p></div>
 <p class="orv_line">Soon, the darkness swallowed up everything.</p>
 <br>
 <hr>
@@ -284,25 +291,25 @@
 <p class="orv_line">Why… were they in Seoul? It was the entire industrial complex.</p>
 <p class="orv_line">Yoo Joonghyuk looked at the party members with bewildered eyes. He didn't see a familiar face. "…Kim Dokja?"</p>
 <p class="orv_line">The moment he muttered this, a message was heard.</p>
-<div class="orv_system"><p>[The story 'Life and Death Companions' is silent.]</p></div>
+<div class="orv_system"><p>The story 'Life and Death Companions' is silent.</p></div>
 <p class="orv_line">Yoo Joonghyuk heard the message with a blank expression and stared at the window again.</p>
 <p class="orv_line">…Not there. He couldn't be seen anywhere.</p>
 <p class="orv_line">Yoo Joonghyuk looked up at the sky. The sky was bright enough that the light of the stars wasn't needed. He counted the light of the constellation beyond them. He counted and counted again. He didn't know. There were so many stars that he couldn't find the person.</p>
 <p class="orv_line">Yoo Joonghyuk opened his mouth and spoke in a trembling voice.</p>
-<div class="orv_system"><p>[The item Midday Tryst has been used.]</p></div>
+<div class="orv_system"><p>The item Midday Tryst has been used.</p></div>
 <p class="orv_line">The message window that hadn't been used for a while was opened and a message was sent.</p>
-<div class="orv_system"><p>[The message has been returned.]</p></div>
+<div class="orv_system"><p>The message has been returned.</p></div>
 <p class="orv_line">It must be an error. He sent the message repeatedly, several times over and over. He sent it, sent it and sent it again. As the messages kept being returned, Yoo Joonghyuk's gaze slowly lowered. Then finally.</p>
-<div class="orv_system"><p>[You have exhausted the quota for today's messages.]</p></div>
+<div class="orv_system"><p>You have exhausted the quota for today's messages.</p></div>
 <p class="orv_line">There was a ticking pocket watch in the foreground while messages filled Yoo Joonghyuk's vision.</p>
-<div class="orv_system"><p>[The constellation 'Demon King of Salvation' doesn't exist in the Star Stream.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon King of Salvation' doesn't exist in the Star Stream.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon King of Salvation' doesn't exist in the Star Stream.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon King of Salvation' doesn't exist in the Star Stream.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon King of Salvation' doesn't exist in the Star Stream.</p></div>
+<div class="orv_system"><p>The constellation 'Demon King of Salvation' doesn't exist in the Star Stream.</p></div>
+<div class="orv_system"><p>The constellation 'Demon King of Salvation' doesn't exist in the Star Stream.</p></div>
+<div class="orv_system"><p>The constellation 'Demon King of Salvation' doesn't exist in the Star Stream.</p></div>
 <p class="orv_line">.</p>
 <p class="orv_line">.</p>
 <p class="orv_line">.</p>
-<div class="orv_system"><p>[The constellation 'Demon King of Salvation' doesn't exist in the Star Stream.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon King of Salvation' doesn't exist in the Star Stream.</p></div>
 <br>
 <hr>
         </article>
@@ -310,18 +317,12 @@
             <a href="./ch_280"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_282">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="281" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="360" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="280" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="280" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 114: Ep. 22 - Three Promises, VI</title>
     <meta property="og:title" content="Ch 114: Ep. 22 - Three Promises, VI" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,31 +177,31 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00114.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 114: Ep. 22 - Three Promises, VI</h1></div>
 <p class="orv_line">Kim Namwoon's last look remained with me but I hadn't come to rescue him in the first place. Besides, why should I save him when he liked Hell?</p>
 <p class="orv_line">The legless judge climbed the stairs quietly, like a ghost. Some of the symbolic bodies along the way looked at me with interested eyes. Were they constellations who dwelled in Hades' palace? I didn't know. It wasn't all constellations here.</p>
 <p class="orv_line">The judge seemed aware that I was drifting off and spoke without looking back.</p>
-<div class="orv_constellation"><p>[You will lose your way if you don't follow along well.]</p></div>
+<div class="orv_constellation"><p>You will lose your way if you don't follow along well.</p></div>
 <p class="orv_line">It was a scratchy voice that made me feel uncomfortable. Still, it was the correct advice.</p>
 <p class="orv_line">I looked at the judge before shifting my gaze to the ceiling and opening my mouth slightly. 'Hey, can you hear me?'</p>
 <p class="orv_line">It was a small whisper that the judge couldn't hear.</p>
@@ -222,113 +229,113 @@
 <p class="orv_line">'…What else?'</p>
 <p class="orv_line">–I'm sorry but would you like to receive the backed up indirect messages? It was the first time I was in this situation…</p>
 <p class="orv_line">I reluctantly nodded. I never expected a day would come when I missed Bihyung. Then messages exploded in my head.</p>
-<div class="orv_system"><p>[The constellation 'God of Wine and Ecstasy' rejoices in your plight.]</p></div>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is excited about your adventure.]</p></div>
-<div class="orv_system"><p>[The constellation 'Secretive Plotter' is wondering how you will escape.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' prays that you can return safely to your companions.]</p></div>
+<div class="orv_system"><p>The constellation 'God of Wine and Ecstasy' rejoices in your plight.</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is excited about your adventure.</p></div>
+<div class="orv_system"><p>The constellation 'Secretive Plotter' is wondering how you will escape.</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' prays that you can return safely to your companions.</p></div>
 <p class="orv_line">…</p>
 <p class="orv_line">As expected, the constellations were enamored with watching me. On the other hand, some were admiring the scenery.</p>
-<div class="orv_system"><p>[The constellation 'One-eyed Maitreya' admires the Underworld.]</p></div>
-<div class="orv_system"><p>[The constellation 'Bald General of Justice' is greatly shocked by the appearance of the Underworld.]</p></div>
-<div class="orv_system"><p>[The constellation 'Bald General of Justice' begins to doubt his religion.]</p></div>
+<div class="orv_system"><p>The constellation 'One-eyed Maitreya' admires the Underworld.</p></div>
+<div class="orv_system"><p>The constellation 'Bald General of Justice' is greatly shocked by the appearance of the Underworld.</p></div>
+<div class="orv_system"><p>The constellation 'Bald General of Justice' begins to doubt his religion.</p></div>
 <p class="orv_line">…</p>
 <p class="orv_line">This was a spectacle for some constellations. Not all constellations could come to Hades' castle.</p>
-<div class="orv_system"><p>[12,000 coins have been sponsored.]</p></div>
+<div class="orv_system"><p>12,000 coins have been sponsored.</p></div>
 <p class="orv_line">I got 12,000 coins just from showing Hades' palace. It was a huge profit. This was like illegally filming private land.</p>
 <p class="orv_line">Some time passed. The silently walking judge finally opened his mouth.</p>
-<div class="orv_constellation"><p>[We've arrived.]</p></div>
+<div class="orv_constellation"><p>We've arrived.</p></div>
 <p class="orv_line">The door opened and a huge banquet hall appeared. The interior wasn't visible because it was dark. The judge disappeared and the door closed.</p>
 <p class="orv_line">A small light appeared in the middle of the dark hall. An oval antique table was waiting for me. There was a splendid statue that could be seen as a statue of the king. The table contained many dishes that stimulated the salivary glands.</p>
 <p class="orv_line">There was a woman looking at me at the end of the table.</p>
-<div class="orv_constellation"><p>[How interesting. A living soul has come to this castle. Furthermore, you also brought unpleasant observers… Today is a really special day.]</p></div>
+<div class="orv_constellation"><p>How interesting. A living soul has come to this castle. Furthermore, you also brought unpleasant observers… Today is a really special day.</p></div>
 <p class="orv_line">I immediately recognized who she was. In Hades' palace, there was only one existence who could occupy the seat of the hostess. I bowed and opened my mouth.</p>
 <p class="orv_line">"It is an honour, Queen of the Darkest Spring."</p>
 <p class="orv_line">Queen of the Darkest Spring. She was Persephone, Hades' wife and the famous queen of the Underworld.</p>
-<div class="orv_constellation"><p>[You know my modifier. You are a polite incarnation.]</p></div>
+<div class="orv_constellation"><p>You know my modifier. You are a polite incarnation.</p></div>
 <p class="orv_line">"You're overpraising me."</p>
-<div class="orv_constellation"><p>[The even more interesting thing is that your soul didn't shake when you heard my true voice.]</p></div>
+<div class="orv_constellation"><p>The even more interesting thing is that your soul didn't shake when you heard my true voice.</p></div>
 <p class="orv_line">Come to think of it, I didn't feel much when I heard the true voice of the constellations.</p>
 <p class="orv_line">Persephone was a constellation that was at least narrative-grade. Due to the difference between us, my soul should've been damaged or destroyed the moment I heard her true words.</p>
 <p class="orv_line">Moreover, I previously heard the words of Kim Yooshin, a historical-grade constellation…</p>
-<div class="orv_system"><p>[The exclusive skill, 'Fourth Wall' is strongly activated.]</p></div>
+<div class="orv_system"><p>The exclusive skill, 'Fourth Wall' is strongly activated.</p></div>
 <p class="orv_line">It was the first time that 'strongly' was attached to the skill message. Perhaps my unconscious mind saw this situation as 'unrealistic' due to the person I was meeting.</p>
-<div class="orv_constellation"><p>[Sit down, Incarnation Kim Dokja.]</p></div>
+<div class="orv_constellation"><p>Sit down, Incarnation Kim Dokja.</p></div>
 <p class="orv_line">I thanked her for the hospitality and sat across from her. Honestly, it was an unexpected favour. The aroma of sweet delicacies tickled my nose.</p>
 <p class="orv_line">I looked around but only Persephone was sitting at the table. "The king…?"</p>
-<div class="orv_constellation"><p>[The king is uncomfortable with your sudden visit. That's why I thought it would be better for me to talk to you.]</p></div>
+<div class="orv_constellation"><p>The king is uncomfortable with your sudden visit. That's why I thought it would be better for me to talk to you.</p></div>
 <p class="orv_line">It ended up like this. I had expected it. There hadn't been a single incarnation who had met the three heads of Olympus. Besides, I didn't play the lyre well like Orpheus.</p>
 <p class="orv_line">"Do you mind if I ask you a question?"</p>
-<div class="orv_constellation"><p>[You can ask.]</p></div>
+<div class="orv_constellation"><p>You can ask.</p></div>
 <p class="orv_line">"Is this your true body?"</p>
-<div class="orv_constellation"><p>[Of course it is a symbolic body. My true body isn't something that a human like you can withstand.]</p></div>
+<div class="orv_constellation"><p>Of course it is a symbolic body. My true body isn't something that a human like you can withstand.</p></div>
 <p class="orv_line">I quietly gazed at Persephone's symbolic body. She looked like an old woman.</p>
 <p class="orv_line">…It was a terrible hobby. Honestly, I had to think like this. Persephone smiled softly.</p>
-<div class="orv_constellation"><p>[You don't like older women like this?]</p></div>
+<div class="orv_constellation"><p>You don't like older women like this?</p></div>
 <p class="orv_line">"That isn't the problem."</p>
 <p class="orv_line">It didn't matter if she looked like a grandmother or grandfather. The problem was that she looked exactly like the 'grandmother' on the subway in the first scenario.</p>
-<div class="orv_constellation"><p>[If you feel uncomfortable then I can change to someone else.]</p></div>
+<div class="orv_constellation"><p>If you feel uncomfortable then I can change to someone else.</p></div>
 <p class="orv_line">Persephone's appearance slowly changed into Yoo Sangah's image. It wasn't the usual Yoo Sangah. This Yoo Sangah wore a black Chinese dress and a garter belt, with seductive eye makeup…</p>
 <p class="orv_line">I turned red just staring at her face. Dammit, did she peep at my dreams?</p>
 <p class="orv_line">"Just be the grandmother."</p>
 <p class="orv_line">Of course, Persephone didn't listen to me.</p>
-<div class="orv_constellation"><p>[There isn't much time so get to the point.]</p></div>
+<div class="orv_constellation"><p>There isn't much time so get to the point.</p></div>
 <p class="orv_line">"You don't know?"</p>
-<div class="orv_constellation"><p>[I heard a bit from my child but it has more meaning to hear it directly from you.]</p></div>
+<div class="orv_constellation"><p>I heard a bit from my child but it has more meaning to hear it directly from you.</p></div>
 <p class="orv_line">Her child must mean Dionysus. I nodded and took a deep breath before explaining. "I'm looking for a woman's soul. I don't know if you've heard but I'm ready to make a trade."</p>
-<div class="orv_constellation"><p>[Soul… it is an outdated idea.]</p></div>
+<div class="orv_constellation"><p>Soul… it is an outdated idea.</p></div>
 <p class="orv_line">Her eyelids lowered as she seemed to think of something. Before long, Persephone's long fingers moved and she started to slice the steak on her plate.</p>
 <p class="orv_line">I patiently waited. It proceeded slowly. The fork firmly held the meat as the knife moved slowly back and forth, slicing the meat with care. The red juices flowed out as a clean section was cut. The fork carefully moved the meat that it had pierced.</p>
 <p class="orv_line">Persephone made a face like she was worrying about whether to eat it or not. She seemed to have forgotten about me.</p>
 <p class="orv_line">I was about to open my mouth when she opened her mouth first. Of course, it was to eat the steak.</p>
-<div class="orv_constellation"><p>[There is no such thing as a 'soul' in this world.]</p></div>
+<div class="orv_constellation"><p>There is no such thing as a 'soul' in this world.</p></div>
 <p class="orv_line">Souls didn't exist. It was a matter that all modern physicists would agree on but the problem was the person saying it was a god. It was a god of Olympus, who had long defended the logic of the souls.</p>
 <p class="orv_line">I said sarcastically, "Plato and Aristotle would rise from the grave."</p>
-<div class="orv_constellation"><p>[They are constellations right now so they wouldn't be in their graves.]</p></div>
+<div class="orv_constellation"><p>They are constellations right now so they wouldn't be in their graves.</p></div>
 <p class="orv_line">"I didn't come here to play around."</p>
-<div class="orv_constellation"><p>[I'm not playing around. Incarnation Kim Dokja. The soul doesn't exist. It is just an illusion created by humans who want the continuity of themselves.]</p></div>
+<div class="orv_constellation"><p>I'm not playing around. Incarnation Kim Dokja. The soul doesn't exist. It is just an illusion created by humans who want the continuity of themselves.</p></div>
 <p class="orv_line">"Then what about the people in the Underworld? Aren't they souls?"</p>
 <p class="orv_line">She pointed to the steak she just cut.</p>
 <div class="orv_image"><img src="../../../assets/images/114 - She pointed to the steak she just cut.jpg" alt="" loading="lazy"></div>
 <div class="orv_notice"><p>* Official novel illustration (canonical)</p></div>
-<div class="orv_constellation"><p>[They are like this.]</p></div>
+<div class="orv_constellation"><p>They are like this.</p></div>
 <p class="orv_line">The steak slowly entered Persephone's mouth. She took her time chewing the meat, like she was relishing it. Her red lips glistened enchantingly.</p>
-<div class="orv_constellation"><p>[Well, it is very special. Why don't you try it once?]</p></div>
+<div class="orv_constellation"><p>Well, it is very special. Why don't you try it once?</p></div>
 <p class="orv_line">The same steak that she ate appeared in front of me. I looked down at it and said after a moment. "I don't want to."</p>
-<div class="orv_constellation"><p>[Are you going to be rude?]</p></div>
+<div class="orv_constellation"><p>Are you going to be rude?</p></div>
 <p class="orv_line">"Yes. I'm really sorry but I have to be rude."</p>
 <p class="orv_line">It would surely be tasty if I ate it. There were at least 12 pages in Ways of Survival describing the taste. However, at the end of a long description, the following sentence was written:</p>
-<div class="orv_quote"><p>「 It wasn't until the end of the regression that Yoo Joonghyuk regretted eating the food. 」</p></div>
+<div class="orv_quote"><p>It wasn't until the end of the regression that Yoo Joonghyuk regretted eating the food.</p></div>
 <p class="orv_line">Those who ate the food of the Underworld couldn't return to Earth. Persephone seemed to read my mind and laughed.</p>
-<div class="orv_constellation"><p>[The people of the Underworld aren't as terrible as you think. Most of the known theories are false. You can go out of the Underworld at any time as long as you have the permission of the king. It is a similar concept to a 'career soldier' in your world.]</p></div>
+<div class="orv_constellation"><p>The people of the Underworld aren't as terrible as you think. Most of the known theories are false. You can go out of the Underworld at any time as long as you have the permission of the king. It is a similar concept to a 'career soldier' in your world.</p></div>
 <p class="orv_line">"The military life was the most terrible memory in my life."</p>
-<div class="orv_constellation"><p>[Is that so? Don't the males in your country say that they should stay in the army? That's why I thought it wasn't a big deal. I guess it was a misunderstanding.]</p></div>
+<div class="orv_constellation"><p>Is that so? Don't the males in your country say that they should stay in the army? That's why I thought it wasn't a big deal. I guess it was a misunderstanding.</p></div>
 <p class="orv_line">I didn't know why the goddess of another country knew so much about Korean mean. Persephone continued speaking.</p>
-<div class="orv_constellation"><p>[Incarnation Kim Dokja. You will be treated better than you imagined.]</p></div>
+<div class="orv_constellation"><p>Incarnation Kim Dokja. You will be treated better than you imagined.</p></div>
 <p class="orv_line">"The person who advised me to be a professional sergeant told me something similar."</p>
-<div class="orv_constellation"><p>[Did he recommend a steak like me? For example, the steak currently in front of you. Do you know what will happen if you eat it?]</p></div>
+<div class="orv_constellation"><p>Did he recommend a steak like me? For example, the steak currently in front of you. Do you know what will happen if you eat it?</p></div>
 <p class="orv_line">"I can taste the juices of a cow."</p>
-<div class="orv_constellation"><p>[You can become a 'sword master' right now.]</p></div>
+<div class="orv_constellation"><p>You can become a 'sword master' right now.</p></div>
 <p class="orv_line">I thought I heard wrong for a moment. Sword master. It was a higher realm that only returnees who left this world could reach after hard work.</p>
-<div class="orv_constellation"><p>[The pasta next to it. You can become a 'great magician' if you eat it.]</p></div>
+<div class="orv_constellation"><p>The pasta next to it. You can become a 'great magician' if you eat it.</p></div>
 <p class="orv_line">…This pasta?</p>
-<div class="orv_constellation"><p>[The soup? It can make you an SSS-grade hunter.]</p></div>
+<div class="orv_constellation"><p>The soup? It can make you an SSS-grade hunter.</p></div>
 <p class="orv_line">This… it was a wonderland instead of a hell?</p>
 <p class="orv_line">I couldn't help gulping. I could get power to overcome the current Yoo Joonghyuk if I just ate this meat.</p>
-<div class="orv_constellation"><p>[You still won't eat?]</p></div>
+<div class="orv_constellation"><p>You still won't eat?</p></div>
 <p class="orv_line">I slowly moved my fork and picked up a piece of the steak. The moment my fork pierced the meat, strange scenes flashed in front of my eyes. It was the memory of a man training alone with a sword.</p>
-<div class="orv_quote"><p>「 I can't be weak. I have to learn the sword. 」</p></div>
-<div class="orv_quote"><p>「 I will strive to become stronger. 」</p></div>
-<div class="orv_quote"><p>「 I-I finally did it! I did it! 」</p></div>
+<div class="orv_quote"><p>I can't be weak. I have to learn the sword.</p></div>
+<div class="orv_quote"><p>I will strive to become stronger.</p></div>
+<div class="orv_quote"><p>I-I finally did it! I did it!</p></div>
 <p class="orv_line">There were only a few scenes. I was surprised and put down the fork. This wasn't a dead cow that I was poking.</p>
 <p class="orv_line">"This is…?"</p>
 <p class="orv_line">Persephone nodded.</p>
-<div class="orv_constellation"><p>[Yes. This small piece of meat. It is the soul that humans believe in.]</p></div>
+<div class="orv_constellation"><p>Yes. This small piece of meat. It is the soul that humans believe in.</p></div>
 <p class="orv_line">She once again ate the meat. I belatedly understood why Persephone said I could become a sword master if I ate this. I stated, "…It contains the memories of the sword master."</p>
-<div class="orv_constellation"><p>[Memories? No. To be more precise…]</p></div>
+<div class="orv_constellation"><p>Memories? No. To be more precise…</p></div>
 <p class="orv_line">She paused for a moment to pick her words.</p>
-<div class="orv_constellation"><p>[It is a story.]</p></div>
+<div class="orv_constellation"><p>It is a story.</p></div>
 <p class="orv_line">The sight of her licking her lips gave me goose bumps.</p>
-<div class="orv_constellation"><p>[It is the story that is the favourite food of all constellations.]</p></div>
+<div class="orv_constellation"><p>It is the story that is the favourite food of all constellations.</p></div>
 <br>
 <hr>
         </article>
@@ -336,18 +343,12 @@
             <a href="./ch_113"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_115">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="114" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="324" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="113" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="113" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

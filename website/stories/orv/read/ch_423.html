@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 423: Ep. 80 - Our greatest ally, I</title>
     <meta property="og:title" content="Ch 423: Ep. 80 - Our greatest ally, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00423.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 423: Ep. 80 - Our greatest ally, I</h1></div>
 <div class="orv_outergod"><p>【Kill him.】</p></div>
@@ -211,7 +218,7 @@
 <p class="orv_line">Lee Jihye was crying. I belatedly reached out, but her crying face had disappeared by then. Her face slowly vanished, crumbling into debris and only the short, aimless voice fragments lingered on.</p>
 <p class="orv_line">'The Nameless Ones'.</p>
 <p class="orv_line">"…I know."</p>
-<p class="orv_line">I suppressed the pain and spoke up. And then, yet another tentacle flew in towards me. The kkoma Yoo Joonghyuk number [999] shouted out. As the bloody noise of my flesh being pierced resounded out, another voice entered my head.</p>
+<p class="orv_line">I suppressed the pain and spoke up. And then, yet another tentacle flew in towards me. The kkoma Yoo Joonghyuk number <strong>[999]</strong> shouted out. As the bloody noise of my flesh being pierced resounded out, another voice entered my head.</p>
 <p class="orv_line">⸢"Yoo Joonghyuk-ssi, which number Lee Hyunsung am I?"⸥</p>
 <p class="orv_line">The Incarnation of steel, sturdier than anyone in this world. Just like before, Lee Hyunsung's figure scattered like bubbles as I reached out. My hand wandered the empty air, and his voice came to me from beyond the void.</p>
 <p class="orv_line">⸢"Truly, is there an end to these scenarios?"⸥</p>
@@ -240,12 +247,12 @@
 <p class="orv_line">⸢"I can still burn them some more."⸥</p>
 <p class="orv_line">…Uriel.</p>
 <p class="orv_line">I nodded my head and replied. "I know."</p>
-<div class="orv_system"><p>['Outer Gods' are now looking at you.]</p></div>
+<div class="orv_system"><p>'Outer Gods' are now looking at you.</p></div>
 <p class="orv_line">I knew. But I couldn't understand.</p>
 <p class="orv_line">Because I wasn't them.</p>
 <p class="orv_line">And that was why all I could say to them were these words.</p>
 <p class="orv_line">"This story isn't over yet."</p>
-<div class="orv_system"><p>['Outer Gods' are paying attention to your words.]</p></div>
+<div class="orv_system"><p>'Outer Gods' are paying attention to your words.</p></div>
 <p class="orv_line">"There are still some things left to be told, right?"</p>
 <p class="orv_line">I looked up at the 'Outer Gods'.</p>
 <p class="orv_line">These beings, portrayed always as either cephalopods or tentacled monsters. Creatures cursed with the most disgusting appearances by the world-line, because they were not needed by it.</p>
@@ -261,24 +268,24 @@
 <div class="orv_outergod"><p>【Do kkae bis sa id the sa me th ing.】</p></div>
 <p class="orv_line">It was the 'Bureau' that learned of their existences first and had used them – the storytellers who, under the pretext of incorporating them into the scenarios, exploited their powers and Probability, and turned them into the 'Evil' of this world.</p>
 <p class="orv_line">I spoke up with my true voice.</p>
-<div class="orv_constellation"><p>[I'm not a Dokkaebi.]</p></div>
+<div class="orv_constellation"><p>I'm not a Dokkaebi.</p></div>
 <div class="orv_outergod"><p>【Y ou are a Con stell ation.】</p></div>
-<div class="orv_constellation"><p>[I'm not affiliated with the Bureau, nor am I a collaborator of Dokkaebis.]</p></div>
+<div class="orv_constellation"><p>I'm not affiliated with the Bureau, nor am I a collaborator of Dokkaebis.</p></div>
 <div class="orv_outergod"><p>【All Con stell ations are the sa me.】</p></div>
 <p class="orv_line">Those words stabbed and dug into my chest like a dagger.</p>
 <p class="orv_line">They were right. I was also just another Constellation who craved after Stories and leered on at their stories. However, because I was a Constellation, I got to know about something important, as well.</p>
-<div class="orv_constellation"><p>[You will all definitely be destroyed when the 'final war' commences. Doesn't matter how you fight, you will still end up losing.]</p></div>
+<div class="orv_constellation"><p>You will all definitely be destroyed when the 'final war' commences. Doesn't matter how you fight, you will still end up losing.</p></div>
 <div class="orv_outergod"><p>【How in sol ent, y ou ca n't tell th at wi thout fi ght ing fi rst…!】</p></div>
-<div class="orv_constellation"><p>[No need. I already know. I've already seen all the world-lines where you fight. I do not wish to see you die like that this time around.]</p></div>
+<div class="orv_constellation"><p>No need. I already know. I've already seen all the world-lines where you fight. I do not wish to see you die like that this time around.</p></div>
 <p class="orv_line">The branches of the 'Outer Gods' trembled from my words.</p>
 <div class="orv_outergod"><p>【What do y ou me an】</p></div>
-<div class="orv_constellation"><p>[You say that you wish to be understood. In that case, I'll make you into a Story.]</p></div>
+<div class="orv_constellation"><p>You say that you wish to be understood. In that case, I'll make you into a Story.</p></div>
 <p class="orv_line">Right at that moment, the surrounding space-time distorted. Tentacles were trembling ever so imperceptibly.</p>
 <p class="orv_line">I sensed that vibration and continued on. </p>
-<div class="orv_constellation"><p>[I'll ensure that you can stand on equal terms with the stars in the sky. What I'm saying is that, I'll create a Story where no one will misunderstand you or despise you.]</p></div>
+<div class="orv_constellation"><p>I'll ensure that you can stand on equal terms with the stars in the sky. What I'm saying is that, I'll create a Story where no one will misunderstand you or despise you.</p></div>
 <p class="orv_line">The unrest slowly spread out. A large current of air swept across the 'N'Gai's Forest' as if it was the sign of an incoming storm.</p>
 <p class="orv_line">I didn't miss this opening and spoke again. </p>
-<div class="orv_constellation"><p>[There is no reason for the 'final war' to start. There is no need for you to remain as &lt;Star Stream&gt;'s evil…]</p></div>
+<div class="orv_constellation"><p>There is no reason for the 'final war' to start. There is no need for you to remain as &lt;Star Stream&gt;'s evil…</p></div>
 <div class="orv_outergod"><p>【Sh ut up】</p></div>
 <div class="orv_outergod"><p>【The lik es of y ou da res to!】</p></div>
 <p class="orv_line">In the end, I did vomit out some blood. Upper-grade ostracised gods capable of destroying my body and killing my consciousness completely were descending down on me.</p>
@@ -291,20 +298,20 @@
 <p class="orv_line">Just one true voice, and the dozens of branches were torn off. Even though they emitted painful screams, the smaller 'Outer Gods' protected me. And then, the kkoma Yoo Joonghyuks stepped in front of me as well.</p>
 <p class="orv_line">The 'Secretive Plotter' didn't try to stop them or dissuade them. He simply watched on as if he was not allowed to interfere with the decision making process this time.</p>
 <p class="orv_line">Just as the Statuses of the historical-grade Gods reached the critical point…</p>
-<div class="orv_constellation"><p>[You speak of some amusing things.]</p></div>
+<div class="orv_constellation"><p>You speak of some amusing things.</p></div>
 <p class="orv_line">Someone suddenly spoke up. A creature was walking out from a portal spinning around ominously.</p>
-<div class="orv_constellation"><p>[Oh, pitiful illegitimate children of the world-line, he speaks of the truth.]</p></div>
+<div class="orv_constellation"><p>Oh, pitiful illegitimate children of the world-line, he speaks of the truth.</p></div>
 <div class="orv_outergod"><p>【And y ou, a re?】</p></div>
-<div class="orv_constellation"><p>[You shall become a Story once more and be a part of the story within the stream of stars. That is, as long as that unfortunate Constellation is willing to sacrifice himself for your sakes.]</p></div>
+<div class="orv_constellation"><p>You shall become a Story once more and be a part of the story within the stream of stars. That is, as long as that unfortunate Constellation is willing to sacrifice himself for your sakes.</p></div>
 <p class="orv_line">It was an old man with a very small stature, yet the shadow he cast was unimaginably large.</p>
 <p class="orv_line">There were two lumps shaking about on the cheeks of the giant shadow.</p>
 <div class="orv_outergod"><p>【De vil of ho ri zon…】</p></div>
 <p class="orv_line">I too knew of the race that old man belonged to. Indeed, I had a deal with one of them when I went to the Demon Realm for the first time.</p>
 <p class="orv_line">However, this creature right before my eyes was on another dimension compared to the 'Wenny' I met back then.</p>
 <p class="orv_line">There were countless Wennys in this world, but there could only be one with two lumps among them.</p>
-<div class="orv_constellation"><p>[Oh, the master of the ancient library.]</p></div>
+<div class="orv_constellation"><p>Oh, the master of the ancient library.</p></div>
 <p class="orv_line">I raised my head to find the Wenny King staring at me with eyes filled with malicious interest.</p>
-<div class="orv_constellation"><p>[Are you truly planning to become the &lt;Star Stream&gt;'s enemy for the sake of these discarded waste?]</p></div>
+<div class="orv_constellation"><p>Are you truly planning to become the &lt;Star Stream&gt;'s enemy for the sake of these discarded waste?</p></div>
 <br>
 <hr>
 <br>
@@ -313,14 +320,14 @@
 <div class="orv_outergod"><p>【GoodbyeGoodbyeGoodbye】</p></div>
 <p class="orv_line">Most of them possessed similar outer appearances, but even then, I could just about tell them apart.</p>
 <p class="orv_line">That guy over to the left side was the kind-hearted one possessing a tiny little bit of Shin Yoosung's memories from the 12th turn. The one on the far right, meanwhile, was blessed with a fair amount of 44th Kim Namwoon's… Hang on, didn't that guy stab me in the thigh earlier?</p>
-<p class="orv_line">"There is no need to go this far," said the kkoma Yoo Joonghyuk number [999] riding on my shoulder. "The deal with the Wenny King is as absolute as they come. If you do this, then you will definitely…"</p>
+<p class="orv_line">"There is no need to go this far," said the kkoma Yoo Joonghyuk number <strong>[999]</strong> riding on my shoulder. "The deal with the Wenny King is as absolute as they come. If you do this, then you will definitely…"</p>
 <p class="orv_line">"I won't die, so don't worry. By the way, are you planning to come with me?"</p>
-<p class="orv_line">[999] formed an unhappy expression after hearing my question. "As per our agreement, I'm tasked with monitoring you. It'd become troublesome for us if you get in touch with the members of&lt;Kim Dokja's Company&gt; and come up with an underhanded scheme."</p>
+<p class="orv_line"><strong>[999]</strong> formed an unhappy expression after hearing my question. "As per our agreement, I'm tasked with monitoring you. It'd become troublesome for us if you get in touch with the members of&lt;Kim Dokja's Company&gt; and come up with an underhanded scheme."</p>
 <p class="orv_line">"But, I even did the existence pledge, saying that I won't contact them… Seriously, you Yoo Joonghyuks can be too much sometimes."</p>
 <p class="orv_line">The first agreement I made with the Wenny King, as well as the Outer Gods, was that I'd not contact the &lt;Kim Dokja's Company&gt; nor reveal my identity to them.</p>
 <p class="orv_line">And the second agreement was…</p>
-<div class="orv_system"><p>[Your actions have triggered a new scenario to be created in the &lt;Star Stream&gt;!]</p></div>
-<div class="orv_system"><p>[Hidden scenario has been generated!]</p></div>
+<div class="orv_system"><p>Your actions have triggered a new scenario to be created in the &lt;Star Stream&gt;!</p></div>
+<div class="orv_system"><p>Hidden scenario has been generated!</p></div>
 <p class="orv_line">I chuckled hollowly as I read the scenario messages.</p>
 <p class="orv_line">Even things like this became a scenario… As expected of the &lt;Star Stream&gt;, then. But then again, this world wanted to create a story out of its own destruction, so it shouldn't that surprising, really.</p>
 <div class="orv_window">
@@ -338,9 +345,9 @@
 <p class="orv_line">This was the second condition of the agreement I made with the 'Wenny King'.</p>
 <p class="orv_line">⸢However, succeeding in this scenario will ensure that Outer Gods wouldn't be destroyed.⸥</p>
 <p class="orv_line">I looked at the exit of the N'Gai's Forest and did a light stretching exercise.</p>
-<p class="orv_line">[999] asked me, perhaps finding me rather untrustworthy. "Where are you planning to go now? There shouldn't be any scenario with a 'Giant Story' remaining by now."</p>
+<p class="orv_line"><strong>[999]</strong> asked me, perhaps finding me rather untrustworthy. "Where are you planning to go now? There shouldn't be any scenario with a 'Giant Story' remaining by now."</p>
 <p class="orv_line">He was right. Most of the Giant Stories existing in &lt;Star Stream&gt; had come to their conclusions by now. However, if my memory served me correctly, then one powerful 'Giant Story' should still remain.</p>
-<p class="orv_line">I pretended to ask [999] in passing. "By the way, do you also know about the stories from the 1863rd turn?"</p>
+<p class="orv_line">I pretended to ask <strong>[999]</strong> in passing. "By the way, do you also know about the stories from the 1863rd turn?"</p>
 <p class="orv_line">"I've heard about it from the Great Plotter."</p>
 <p class="orv_line">"If you guys enter the 'final war' like this, then you'll definitely lose. And even if you somehow miraculously win, not many of you will end up surviving."</p>
 <p class="orv_line">"Are you trying to curse us?"</p>
@@ -349,12 +356,12 @@
 <p class="orv_line">"The best way to avoid war is to inform the other side that they would lose a lot by starting one in the first place."</p>
 <p class="orv_line">"What are you implying?"</p>
 <p class="orv_line">"Do you know which Constellation slaughtered the most number of Outer Gods in the 'final war'?"</p>
-<p class="orv_line">[999] carefully combed through his memories after hearing my question and made his reply. Although, his expression indicated that his pride had been wounded just a little bit.</p>
+<p class="orv_line"><strong>[999]</strong> carefully combed through his memories after hearing my question and made his reply. Although, his expression indicated that his pride had been wounded just a little bit.</p>
 <p class="orv_line">"No, I do not."</p>
 <p class="orv_line">"The Status he possesses is so strong that normally, he has to divide himself into several pieces. Well, if I'm to describe him, he'd be pretty similar to the 'Secretive Plotter'."</p>
 <p class="orv_line">"…Similar to the Great Plotter?"</p>
 <p class="orv_line">"That's right. If only that guy didn't stand on the side of the &lt;Star Stream&gt;, if only he didn't perform the suicidal attack on the tens of thousands of ostracised gods… the course of the 1863rd turn would've changed by a lot."</p>
-<p class="orv_line">My words caused [999]'s eyes to tremble for the first time. It seemed that he had finally realized the identity of the Constellation I was talking about.</p>
+<p class="orv_line">My words caused <strong>[999]</strong>'s eyes to tremble for the first time. It seemed that he had finally realized the identity of the Constellation I was talking about.</p>
 <p class="orv_line">"…Could it be?"</p>
 <p class="orv_line">The Constellation who sacrificed himself to take out countless other gods during the 'Ways of Survival's final war.</p>
 <p class="orv_line">There was only one being capable of doing that. I grinned and spoke. "You're right. We're going to go where he is and make him our ally."</p>
@@ -365,18 +372,12 @@
             <a href="./ch_422"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_424">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="423" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="478" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="422" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="422" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

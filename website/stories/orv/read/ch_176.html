@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 176: Ep. 33 - Reading Again, VII</title>
     <meta property="og:title" content="Ch 176: Ep. 33 - Reading Again, VII" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00176.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 176: Ep. 33 - Reading Again, VII</h1></div>
 <p class="orv_line">I nodded and opened my mouth. "Still, don't kill her."</p>
@@ -198,11 +205,11 @@
 <p class="orv_line">She was alone and this place had Yoo Joonghyuk.</p>
 <p class="orv_line">Yoo Joonghyuk had become transcendent and was on a completely different dimension compared to Peace Land. No matter how great the story, it was impossible with just a shadow.</p>
 <p class="orv_line">It wouldn't be easy to overcome a transcendent unless one part of the body descended, but my mother didn't have enough probability remaining.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is gulping.]</p></div>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is paying attention to your choice.]</p></div>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' is observing your atrocious acts.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is gulping.</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is paying attention to your choice.</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' is observing your atrocious acts.</p></div>
 <p class="orv_line">I left my party members and headed towards my mother. "Stop trying."</p>
-<div class="orv_system"><p>[The 'Fourth Wall' is shaking faintly.]</p></div>
+<div class="orv_system"><p>The 'Fourth Wall' is shaking faintly.</p></div>
 <p class="orv_line">"Why are you stopping me?"</p>
 <p class="orv_line">My mother's face didn't look good, despite it being barely visible through the shadow of the constellation. Only her eyes and mouth were barely revealed. It was a distance that could be crossed, but I could never reach her. It was the same in prison and even now. This had become our distance.</p>
 <p class="orv_line">She told me, "If I talk… you won't listen…"</p>
@@ -221,15 +228,15 @@
 <p class="orv_line">There were so many hints from the constellations that it would be odd if I didn't know. Nevertheless, I wanted to hear the story directly from my mother's mouth.</p>
 <p class="orv_line">It might completely change my life but I had to listen, even if the wall shook again. It was because it was my story. Some stories couldn't be understood if I missed a page.</p>
 <p class="orv_line">Soon, my mother's lips opened. However, in this damn scenario, it wasn't a story just involving mother and son.</p>
-<div class="orv_system"><p>[The nebula 'Vedas' is looking at your fate.]</p></div>
-<div class="orv_system"><p>[The nebula 'Olympus' is looking at your fate.]</p></div>
-<div class="orv_system"><p>[The nebula 'Papyrus' is looking at your fate.]</p></div>
+<div class="orv_system"><p>The nebula 'Vedas' is looking at your fate.</p></div>
+<div class="orv_system"><p>The nebula 'Olympus' is looking at your fate.</p></div>
+<div class="orv_system"><p>The nebula 'Papyrus' is looking at your fate.</p></div>
 <p class="orv_line">A new drama wasn't allowed for us.</p>
 <p class="orv_line">The nebulae's messages popped up and intense sparks filled the air. My mother grabbed her head with both hands and started to scream.</p>
 <p class="orv_line">I yelled and ran towards her. The moment my outstretched hand was about to reach my mother, the shadow of Founder's Mother caught me.</p>
-<div class="orv_system"><p>[Constellation Kim Dokja. You… can't pass here.]</p></div>
+<div class="orv_system"><p>Constellation Kim Dokja. You… can't pass here.</p></div>
 <p class="orv_line">There was a crack on the Eight Beaded Bell and black, muddy waves overflowed. There was a fierce sound like the sky was being ripped apart, and a vortex appeared in the sky. A portal was opening at the centre of the vortex.</p>
-<div class="orv_system"><p>[The Great Hole.]</p></div>
+<div class="orv_system"><p>The Great Hole.</p></div>
 <p class="orv_line">The excessive probability had summoned a being who would destroy everything.</p>
 <p class="orv_line">"Everyone, don't look at it! Close your eyes!"</p>
 <p class="orv_line">I shouted the moment I discovered the tentacles coming from the Hall. I didn't know about Yoo Joonghyuk, who was a transcendent, but ordinary incarnations would collapse just from seeing such an existence.</p>
@@ -242,7 +249,7 @@
 <p class="orv_line">"Yoo Joonghyuk! If we don't stop it now―"</p>
 <p class="orv_line">"It is too late. It isn't a level I can stop."</p>
 <p class="orv_line">My body was trembling just looking at the sky. I could see it with the status of a constellation.</p>
-<div class="orv_system"><p>[The Fourth Wall is strongly activated!]</p></div>
+<div class="orv_system"><p>The Fourth Wall is strongly activated!</p></div>
 <p class="orv_line">My trembling subsided a bit by Fourth Wall but the fear didn't change. The existence beyond that Great Hole was something that couldn't be beaten even if the present Yoo Joonghyuk and I combined strength.</p>
 <p class="orv_line">In the midst of this helplessness, I realized something. Now it wasn't a fight for incarnations.</p>
 <p class="orv_line">"Kuaaaaah!"</p>
@@ -253,26 +260,26 @@
 <p class="orv_line">However, the constellations showed no response to the true body of the god passing through.</p>
 <p class="orv_line">Yoo Joonghyuk spoke through gritted teeth. "…I don't know how they can be ignorant."</p>
 <p class="orv_line">It was a confusing situation for me as well. This was the descent of an outer god. Why wasn't anyone coming to help us?</p>
-<div class="orv_system"><p>[Some constellations are astonished by the coming of the outer god!]</p></div>
-<div class="orv_system"><p>[Many constellations are complaining about the tyranny of some nebulae.]</p></div>
+<div class="orv_system"><p>Some constellations are astonished by the coming of the outer god!</p></div>
+<div class="orv_system"><p>Many constellations are complaining about the tyranny of some nebulae.</p></div>
 <p class="orv_line">…What?</p>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is showing hostility to the nebula Papyrus.]</p></div>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' is baring his fangs to the nebula 'Vedas'.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' resents the atrocious acts of the nebula Olympus!]</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is showing hostility to the nebula Papyrus.</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' is baring his fangs to the nebula 'Vedas'.</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' resents the atrocious acts of the nebula Olympus!</p></div>
 <p class="orv_line">Now I realized. I see. This damn situation.</p>
-<div class="orv_system"><p>[All constellation on the Korean Peninsula are wondering which nebula you will choose.]</p></div>
+<div class="orv_system"><p>All constellation on the Korean Peninsula are wondering which nebula you will choose.</p></div>
 <p class="orv_line">This was all happening because of me. The messages popped up in turn.</p>
-<div class="orv_system"><p>[A number of nebulae want you to inherit their stories.]</p></div>
-<div class="orv_system"><p>[If you inherit a story, your existence will be forcibly bound to the nebula.]</p></div>
+<div class="orv_system"><p>A number of nebulae want you to inherit their stories.</p></div>
+<div class="orv_system"><p>If you inherit a story, your existence will be forcibly bound to the nebula.</p></div>
 <p class="orv_line">.</p>
 <p class="orv_line">.</p>
-<div class="orv_system"><p>[The nebula Olympus wants you to inherit Carnival of Lightning.]</p></div>
-<div class="orv_system"><p>[The nebula Olympus wants you to inherit Thunder Guide.]</p></div>
-<div class="orv_system"><p>[The nebula Papyrus wants you to inherit 'Master of the Typhoon Wolf'.]</p></div>
+<div class="orv_system"><p>The nebula Olympus wants you to inherit Carnival of Lightning.</p></div>
+<div class="orv_system"><p>The nebula Olympus wants you to inherit Thunder Guide.</p></div>
+<div class="orv_system"><p>The nebula Papyrus wants you to inherit 'Master of the Typhoon Wolf'.</p></div>
 <p class="orv_line">.</p>
 <p class="orv_line">.</p>
-<div class="orv_system"><p>[The nebulae are offering you a final choice.]</p></div>
-<div class="orv_system"><p>[All the constellations on the Korean Peninsula are watching your choice.]</p></div>
+<div class="orv_system"><p>The nebulae are offering you a final choice.</p></div>
+<div class="orv_system"><p>All the constellations on the Korean Peninsula are watching your choice.</p></div>
 <p class="orv_line">I laughed. This was why I didn't like the constellations.</p>
 <p class="orv_line">Carnival of Lightning.</p>
 <p class="orv_line">Thunder Guide.</p>
@@ -296,35 +303,35 @@
 <p class="orv_line">I stared at the outer god. If he finished his descent, the second floor of Dark Castle would be completely erased.</p>
 <p class="orv_line">It was a different situation from Peace Land. There was no place to go if a crisis happened here. However…</p>
 <p class="orv_line">Inside me was a constellation who was as weary of the word 'fate' as I was.</p>
-<div class="orv_constellation"><p>[A few hundred years have passed and things haven't changed. Damn son of a bitch.]</p></div>
+<div class="orv_constellation"><p>A few hundred years have passed and things haven't changed. Damn son of a bitch.</p></div>
 <p class="orv_line">Cheok Jungyeong's presence inside me started to be released. I didn't know if it was possible for Cheok Jungyeong to cope with the god from another world. Still, I had no choice but to believe in him.</p>
 <p class="orv_line">Cheok Jungyeong shouted towards Founder's Mother, who was half eaten by the god from another world.</p>
-<div class="orv_constellation"><p>[Founder's Mother! Why did you make a deal with the outer god?]</p></div>
+<div class="orv_constellation"><p>Founder's Mother! Why did you make a deal with the outer god?</p></div>
 <p class="orv_line">It was a deep and resonant voice filled with anger.</p>
-<div class="orv_constellation"><p>[Since when did Hongik become so cheap?]</p></div>
+<div class="orv_constellation"><p>Since when did Hongik become so cheap?</p></div>
 <p class="orv_line">Surprisingly, the Founder's Mother replied.</p>
-<div class="orv_constellation"><p>[I didn't make a deal… with the outer god.]</p></div>
-<div class="orv_constellation"><p>[Then what is this situation?]</p></div>
-<div class="orv_constellation"><p>[I'm sorry. There was no… other way. To protect the… scenarios of the Korean peninsula. This incarnation… should be here. That man shouldn't return to the Korean Peninsula. Otherwise, the other nebulae…]</p></div>
-<div class="orv_constellation"><p>[Did you make a deal with the nebulae? Cheok Jungyeong exclaimed. Are you still so obsessed with that little land that you are now betraying your descendants?]</p></div>
-<div class="orv_constellation"><p>[You don't know. You…]</p></div>
-<div class="orv_constellation"><p>[What the hell is this? Where is the creation god? Why is he invisible when something like this is happening?]</p></div>
-<div class="orv_constellation"><p>[The creation god…]</p></div>
+<div class="orv_constellation"><p>I didn't make a deal… with the outer god.</p></div>
+<div class="orv_constellation"><p>Then what is this situation?</p></div>
+<div class="orv_constellation"><p>I'm sorry. There was no… other way. To protect the… scenarios of the Korean peninsula. This incarnation… should be here. That man shouldn't return to the Korean Peninsula. Otherwise, the other nebulae…</p></div>
+<div class="orv_constellation"><p>Did you make a deal with the nebulae? Cheok Jungyeong exclaimed. Are you still so obsessed with that little land that you are now betraying your descendants?</p></div>
+<div class="orv_constellation"><p>You don't know. You…</p></div>
+<div class="orv_constellation"><p>What the hell is this? Where is the creation god? Why is he invisible when something like this is happening?</p></div>
+<div class="orv_constellation"><p>The creation god…</p></div>
 <p class="orv_line">However, the words of Founder's Mother didn't finish. The next moment, I felt Cheok Jungyeong looking towards the sky.</p>
-<div class="orv_constellation"><p>[Don't tell me…?]</p></div>
+<div class="orv_constellation"><p>Don't tell me…?</p></div>
 <p class="orv_line">The night sky sent an indirect message before answering.</p>
-<div class="orv_system"><p>[The nebulae declares that anyone who helps Goryeo's First Sword will be regarded as their enemy in the future.]</p></div>
+<div class="orv_system"><p>The nebulae declares that anyone who helps Goryeo's First Sword will be regarded as their enemy in the future.</p></div>
 <p class="orv_line">Then like magic, the indirect messages in the night sky became calm.</p>
 <p class="orv_line">I heard the voices of the Great Sage Heaven's Equal and Uriel, but they seemed unable to intervene due to their own interests or special reasons.</p>
 <p class="orv_line">Cheok Jungyeong gazed at the night sky through my eyes. I could feel the explosive emotions mixed in the silence. Cheok Jungyeong's rage and sadness. His grief… And… his decision.</p>
-<div class="orv_constellation"><p>[You can feel proud.]</p></div>
+<div class="orv_constellation"><p>You can feel proud.</p></div>
 <p class="orv_line">Cheok Jungyeong spoke to me.</p>
-<div class="orv_constellation"><p>[Those who are at the highest point in this damn world are afraid of you.]</p></div>
+<div class="orv_constellation"><p>Those who are at the highest point in this damn world are afraid of you.</p></div>
 <p class="orv_line">"…What is pride worth when I am going to die?"</p>
-<div class="orv_constellation"><p>[You won't die.]</p></div>
+<div class="orv_constellation"><p>You won't die.</p></div>
 <p class="orv_line">They were just words, but they were words spoken by a constellation.</p>
 <p class="orv_line">As if putting a buoy against fate, all the stories built by Cheok Jungyeong were rooted in my existence.</p>
-<div class="orv_constellation"><p>[I won't let you die.]</p></div>
+<div class="orv_constellation"><p>I won't let you die.</p></div>
 <br>
 <hr>
         </article>
@@ -332,18 +339,12 @@
             <a href="./ch_175"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_177">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="176" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="159" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="175" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="175" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

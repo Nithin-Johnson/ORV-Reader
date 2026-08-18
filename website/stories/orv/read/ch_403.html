@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 403: Ep. 76 - Book of Revelation, V</title>
     <meta property="og:title" content="Ch 403: Ep. 76 - Book of Revelation, V" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,30 +177,30 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00403.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 403: Ep. 76 - Book of Revelation, V</h1></div>
 <p class="orv_line">The Final Scenario.</p>
 <p class="orv_line">Acting as if they already knew what I wanted, the two Dokkaebis wearing the contrasting black and white formal suits pressed me for an answer.</p>
-<div class="orv_constellation"><p>[You must decide now. Die in this place, or head off to the Final Scenario with us.]</p></div>
+<div class="orv_constellation"><p>You must decide now. Die in this place, or head off to the Final Scenario with us.</p></div>
 <p class="orv_line">The Great Dokkaebis, Heoju and Heoche.</p>
 <p class="orv_line">I knew a few things about these two Great Dokkaebi siblings. Well, they did appear frequently in the latter half of the 'Ways of Survival', after all.</p>
 <p class="orv_line">Besides that, though. To think, they would mention 'Final Scenario' with their own lips… It seemed that the Dokkaebis were finally getting ready for the end of this world as well.</p>
@@ -213,46 +220,46 @@
 <p class="orv_line">As if he knew it, he turned his head away.</p>
 <p class="orv_line">He looked as if he was rueful about something. If I had accepted the offer, then he might have lopped my head off right this instant or something.</p>
 <p class="orv_line">Meanwhile, Great Dokkaebis were still waiting for me.</p>
-<div class="orv_constellation"><p>[Your decision?]</p></div>
+<div class="orv_constellation"><p>Your decision?</p></div>
 <p class="orv_line">"Well, I'm sure you've already guessed it… No thanks."</p>
-<div class="orv_constellation"><p>[And your reason is?]</p></div>
+<div class="orv_constellation"><p>And your reason is?</p></div>
 <p class="orv_line">"Because it's suspicious."</p>
-<div class="orv_constellation"><p>[Suspicious?]</p></div>
+<div class="orv_constellation"><p>Suspicious?</p></div>
 <p class="orv_line">"From the get-go, the offer itself is strange. Give up on the 'Great War of Saints and Demons', and you'll take me to the Final Scenario… Can't you really see what's missing from that? You're a storyteller, yet your degree of understanding towards my Story is strikingly low."</p>
 <p class="orv_line">Great Dokkaebi Heoche looked at me in dumbfoundedness, before eyeing Great Dokkaebi Heoju.</p>
 <p class="orv_line">The latter nodded his head and spoke.</p>
-<div class="orv_constellation"><p>[If you accept the offer, then we shall lend our aid to ensure the survival of every &lt;Kim Dokja's Company&gt; member present in this place.]</p></div>
+<div class="orv_constellation"><p>If you accept the offer, then we shall lend our aid to ensure the survival of every &lt;Kim Dokja's Company&gt; member present in this place.</p></div>
 <p class="orv_line">Both Yoo Joonghyuk and Han Sooyoung looked at me simultaneously at that unexpected declaration.</p>
 <p class="orv_line">A path that would save everyone from &lt;Kim Dokja's Company&gt; present here, plus taking us right to the Final Scenario?</p>
 <p class="orv_line">"Even if it's the Bureau, wouldn't doing something like that as you please tilt the balance of Probability?"</p>
-<div class="orv_constellation"><p>[That is something for us to worry about.]</p></div>
+<div class="orv_constellation"><p>That is something for us to worry about.</p></div>
 <p class="orv_line">This could be a once-in-a-lifetime chance, an opportunity to save everyone and reach the Final Scenario. An offer so tempting that one wouldn't even dare to think about rejecting it.</p>
 <p class="orv_line">Even then, my head was colder than it was ever before.</p>
 <p class="orv_line">"It sounds like you're in a really tight situation right now. Surely, me giving up on the 'Great War of Saints and Demons' can't be everything there is to your offer?"</p>
-<div class="orv_constellation"><p>[…!!]</p></div>
+<div class="orv_constellation"><p>…!!</p></div>
 <p class="orv_line">"I'll have to sign the 'Stream Contract' with you guys in exchange. Am I correct?"</p>
 <p class="orv_line">The Stream Contract. A type of contract that I had with Bihyung once upon a time.</p>
 <p class="orv_line">The two Great Dokkaebis formed surprised expressions. I decided to land another blow. "In order to become the 'Final Storyteller', you are trying to take my Story and use it, aren't you?"</p>
-<div class="orv_constellation"><p>[…How do you know things like this?]</p></div>
+<div class="orv_constellation"><p>…How do you know things like this?</p></div>
 <p class="orv_line">"I'm not interested in your offer."</p>
-<div class="orv_constellation"><p>[Then your group will die here.]</p></div>
+<div class="orv_constellation"><p>Then your group will die here.</p></div>
 <p class="orv_line">"We don't know that. Didn't you say it earlier? It's 'almost' a guarantee. In that case, there's a very low chance of us not dying."</p>
-<div class="orv_constellation"><p>[Have you not seen the Calamity from the other world-line?]</p></div>
+<div class="orv_constellation"><p>Have you not seen the Calamity from the other world-line?</p></div>
 <p class="orv_line">This time, it was my turn to be surprised. It seemed that Great Dokkaebis were now more or less aware of the events of the 1863rd regression turn.</p>
-<div class="orv_constellation"><p>[The Apocalypse Dragon isn't some simple Calamity that a single Constellation or Nebula can stop.]</p></div>
+<div class="orv_constellation"><p>The Apocalypse Dragon isn't some simple Calamity that a single Constellation or Nebula can stop.</p></div>
 <p class="orv_line">I knew that. I knew how horrifying the Status of that Dragon was. Well, I did directly sense it back in the future world-line, didn't I?</p>
 <p class="orv_line">Even then, I still smiled. "I thought creating an entertaining scenario was the duty of the Dokkaebi? You should just get ready to start the broadcast, instead."</p>
 <p class="orv_line">As if she was reacting to my words, Biyoo popped up in the air with a well-timed 'ta-da!'</p>
-<div class="orv_constellation"><p>[Baat!]</p></div>
-<div class="orv_system"><p>[Many Constellations are astonished by your choice.]</p></div>
-<div class="orv_system"><p>[A small number of Constellations believe that you're insane.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Abyssal Black Flame Dragon', is cackling away.]</p></div>
-<div class="orv_system"><p>[Sponsorship community's big whale has sponsored 300,000 Coins for your ambitious spirit.]</p></div>
+<div class="orv_constellation"><p>Baat!</p></div>
+<div class="orv_system"><p>Many Constellations are astonished by your choice.</p></div>
+<div class="orv_system"><p>A small number of Constellations believe that you're insane.</p></div>
+<div class="orv_system"><p>Constellation, 'Abyssal Black Flame Dragon', is cackling away.</p></div>
+<div class="orv_system"><p>Sponsorship community's big whale has sponsored 300,000 Coins for your ambitious spirit.</p></div>
 <p class="orv_line">As expected, thanks to the enormity of the situation, the incoming sponsorship amount proved to be rather sizeable, too.</p>
 <p class="orv_line">The Great Dokkaebi glared at me with unreadable eyes for a little bit, before slowly vanishing from the view.</p>
-<div class="orv_constellation"><p>[You shall regret this decision.]</p></div>
+<div class="orv_constellation"><p>You shall regret this decision.</p></div>
 <p class="orv_line">Their figures scattered like smoke. And with that, the certain method to save every one of my companions had vanished alongside them, as well.</p>
-<div class="orv_constellation"><p>[…Your decisiveness always surprises me.]</p></div>
+<div class="orv_constellation"><p>…Your decisiveness always surprises me.</p></div>
 <p class="orv_line">Even Surya seemed to be impressed by my decision this time.</p>
 <p class="orv_line">I looked at the unconscious Gabriel within my arms.</p>
 <p class="orv_line">Han Sooyoung, looking at her, asked me a question. "Kim Dokja."</p>
@@ -276,8 +283,8 @@
 <div class="orv_notice"><p>* Promotional  illustration (semi-canonical)</p></div>
 <p class="orv_line">I realized something just then. I managed to get this far because these two lived on their own terms – respected my decisions in their own ways.</p>
 <p class="orv_line">I began thinking; with these two around, maybe not all hope was lost, after all.</p>
-<div class="orv_system"><p>[Members from the same camp have clashed!]</p></div>
-<div class="orv_system"><p>[Current Chaos Points: 96]</p></div>
+<div class="orv_system"><p>Members from the same camp have clashed!</p></div>
+<div class="orv_system"><p>Current Chaos Points: 96</p></div>
 <p class="orv_line">Sparks were still flying around in the sky. The battle taking place inside that grey sphere should be winding down by now. The Good and Evil, planning to survive by driving this world to destruction, would soon reveal themselves from there.</p>
 <p class="orv_line">Han Sooyoung asked. "Are we going to stop that?"</p>
 <p class="orv_line">Yoo Joonghyuk shook his head. "It's impossible to breach that sphere from the outside."</p>
@@ -292,15 +299,15 @@
 <p class="orv_line">Yoo Joonghyuk spoke in a resolute tone of voice. "We have no other choice but to fight it head-on."</p>
 <p class="orv_line">"Fuck… I knew you'd say something like that."</p>
 <p class="orv_line">Han Sooyoung sounded resigned in her reply.</p>
-<div class="orv_system"><p>[Members from the same camp have clashed!]</p></div>
-<div class="orv_system"><p>[Current Chaos Points: 98]</p></div>
+<div class="orv_system"><p>Members from the same camp have clashed!</p></div>
+<div class="orv_system"><p>Current Chaos Points: 98</p></div>
 <p class="orv_line">Only two more points remained in the Chaos Points.</p>
 <p class="orv_line">I saw my companions rush over here from the distance.</p>
 <p class="orv_line">"Ahjussi!"</p>
 <p class="orv_line">"Dokja hyung!"</p>
 <p class="orv_line">I saw Shin Yoosung and Lee Gilyoung, and Lee Jihye leading the battleship as well as Jung Heewon. Uriel was accompanying them, her expression complicated.</p>
 <p class="orv_line">She saw Gabriel in my arms and was taken greatly by surprise.</p>
-<div class="orv_constellation"><p>[…Gabriel!!]</p></div>
+<div class="orv_constellation"><p>…Gabriel!!</p></div>
 <p class="orv_line">I handed the wounded Archangel over to her. I quickly looked at my companions first as there wasn't a lot of time for a detailed explanation.</p>
 <p class="orv_line">"Ahjussi, is the Apocalypse Dragon really going to wake up?"</p>
 <p class="orv_line">I nodded my head.</p>
@@ -309,14 +316,14 @@
 <p class="orv_line">Along with Lee Jihye's reply, the companions quickly finished with the preparations.</p>
 <p class="orv_line">Everyone… Han Sooyoung, Yoo Joonghyuk, Shin Yoosung, Lee Gilyoung, Jung Heewon, and Lee Jihye, all carried a hardened, determined expression.</p>
 <p class="orv_line">Finally, I shifted my gaze over to the face of the still-unconscious Lee Hyunsung.</p>
-<div class="orv_system"><p>[Members from the same camp have clashed!]</p></div>
-<div class="orv_system"><p>[Current Chaos Points: 99]</p></div>
+<div class="orv_system"><p>Members from the same camp have clashed!</p></div>
+<div class="orv_system"><p>Current Chaos Points: 99</p></div>
 <p class="orv_line">And then, the Apocalypse Dragon's imminent revival drew near.</p>
-<div class="orv_system"><p>[Many Constellations are in a state of terror!]</p></div>
-<div class="orv_system"><p>[Constellations of &lt;Star Stream&gt; have fallen into a chaotic state.]</p></div>
-<div class="orv_system"><p>[Nebula, &lt;Olympus&gt;, is getting ready for the Calamity!]</p></div>
-<div class="orv_system"><p>[Nebula, &lt;Vedas&gt;, is getting ready for the Calamity!]</p></div>
-<div class="orv_system"><p>[Nebula, &lt;Hongik&gt;, is…]</p></div>
+<div class="orv_system"><p>Many Constellations are in a state of terror!</p></div>
+<div class="orv_system"><p>Constellations of &lt;Star Stream&gt; have fallen into a chaotic state.</p></div>
+<div class="orv_system"><p>Nebula, &lt;Olympus&gt;, is getting ready for the Calamity!</p></div>
+<div class="orv_system"><p>Nebula, &lt;Vedas&gt;, is getting ready for the Calamity!</p></div>
+<div class="orv_system"><p>Nebula, &lt;Hongik&gt;, is…</p></div>
 <p class="orv_line">Ku-gugugugu!</p>
 <p class="orv_line">Something from deep within the island writhed, causing the heaven and earth to shake violently. It felt as if everything was now enveloped within a gigantic flap of a wing; the surrounding view felt like it was precariously hanging on as if it was an ill-fitting block. Smaller Stories had already started breaking down bit by bit.</p>
 <p class="orv_line">As if it wanted to deprive the names of all 'calamities' that had existed so far, an enormous Story began waking up.</p>
@@ -332,22 +339,22 @@
 <p class="orv_line">"Hang on. Doesn't that mean…"</p>
 <p class="orv_line">"At this point in time, it's not been decided on 'who shall become the Apocalypse Dragon'."</p>
 <p class="orv_line">Han Sooyoung's jaw fell ever so slightly.</p>
-<div class="orv_system"><p>[Current Chaos Points: 100]</p></div>
-<div class="orv_system"><p>[Chaos Points have reached the limit!]</p></div>
+<div class="orv_system"><p>Current Chaos Points: 100</p></div>
+<div class="orv_system"><p>Chaos Points have reached the limit!</p></div>
 <p class="orv_line">Along with the chilling sensation travelling down my back, the whole world began to dye in the jet-black colour.</p>
 <p class="orv_line">The threatening aura breaking out from beneath the surface began encroaching into the entire island.</p>
-<div class="orv_system"><p>[From the hottest Hell, the 'Demonic Dragon Palace' is opening its doors!]</p></div>
+<div class="orv_system"><p>From the hottest Hell, the 'Demonic Dragon Palace' is opening its doors!</p></div>
 <p class="orv_line">Blinding rays of light exploded out and the surrounding space shattered away. Giant shadows began appearing from there.</p>
 <p class="orv_line">After excluding the Outer God-level beings, there were still other monsters in this world that managed to get near the powers of Constellations or Transcendents.</p>
 <p class="orv_line">The peak of all types of monsters in the world…</p>
 <p class="orv_line">Guh-ohohoooooh!!</p>
 <p class="orv_line">A Dragon's Roar, capable of freezing up the listener's body, resounded out. Shadows of the ruined cities seemed to fleet by, as the ancient Dragon Kings that had been forgotten under the lengthy period of time began waking up.</p>
-<div class="orv_constellation"><p>[Kuwaaaahk!!]</p></div>
+<div class="orv_constellation"><p>Kuwaaaahk!!</p></div>
 <p class="orv_line">Constellations struck by the Dragons' Breaths screamed as they turned to ash. Hundreds of draconic shadows blanketed the sky; the Constellations of the &lt;Star Stream&gt; freaked out as they were subjected to the ripples from the vast Statuses.</p>
 <p class="orv_line">Every single one of them was a Dragon King, equal to the power of a Constellation.</p>
 <p class="orv_line">All these countless Dragons had shown up here, hoping to be selected as the lone Apocalypse Dragon tasked with destroying this world.</p>
-<div class="orv_system"><p>[Giant Story, 'Final Dragon of the Book of Revelation', has begun its storytelling.]</p></div>
-<div class="orv_system"><p>[Giant Story, 'Final Dragon of the Book of Revelation', has begun selecting the Dragon of Calamity.]</p></div>
+<div class="orv_system"><p>Giant Story, 'Final Dragon of the Book of Revelation', has begun its storytelling.</p></div>
+<div class="orv_system"><p>Giant Story, 'Final Dragon of the Book of Revelation', has begun selecting the Dragon of Calamity.</p></div>
 <p class="orv_line">I looked up at that overwhelming spectacle and spoke. "We have a Dragon among us, don't we?"</p>
 <p class="orv_line">Shin Yoosung looked at me after hearing me speak. There was a Dragon with thick metal armour covering its entire figure sitting next to her.</p>
 <p class="orv_line">1st-grade Dragon King, Chimera Dragon.</p>
@@ -365,7 +372,7 @@
 <p class="orv_line">A Status that other ancient Dragons couldn't even hope to match; eyes gleaming like the reddest of rubies; every time its wings, seemingly carved out from the darkness itself, flapped, entrancing black flames blanketed the sky.</p>
 <p class="orv_line">I looked up at that lifeform possessing the beautiful, streamlined shape and spoke. "Let's all pray that your sponsor emerges victorious."</p>
 <p class="orv_line">It was the existence closest to being the Apocalypse Dragon at this point in time.</p>
-<div class="orv_system"><p>[Constellation, 'Abyssal Black Flame Dragon', has incarnated into the scenario!]</p></div>
+<div class="orv_system"><p>Constellation, 'Abyssal Black Flame Dragon', has incarnated into the scenario!</p></div>
 <br>
 <hr>
         </article>
@@ -373,18 +380,12 @@
             <a href="./ch_402"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_404">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="403" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="466" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="402" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="402" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

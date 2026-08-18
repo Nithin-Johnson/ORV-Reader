@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 448: Ep. 84 - 1864, IV</title>
     <meta property="og:title" content="Ch 448: Ep. 84 - 1864, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00448.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 448: Ep. 84 - 1864, IV</h1></div>
 <p class="orv_line">Why did the 'Secretive Plotter' watch our Story until now?</p>
@@ -196,7 +203,7 @@
 <p class="orv_line">He was the king of Outer Gods, and he had seen his 'Conclusion'. Meaning, if he wanted to eliminate me he'd have done so even if it cost a huge amount of Probability.</p>
 <p class="orv_line">⸢However, he didn't do that.⸥</p>
 <p class="orv_line">The 'Secretive Plotter' was now looking at Yoo Joonghyuk and me.</p>
-<p class="orv_line">His consciousness was far too deep and extensive that I'd not be able to understand even if I used the [Omniscient Reader's Viewpoint] on him. That might've been the case, but at least in this moment, I thought that I could understand him.</p>
+<p class="orv_line">His consciousness was far too deep and extensive that I'd not be able to understand even if I used the <strong>[Omniscient Reader's Viewpoint]</strong> on him. That might've been the case, but at least in this moment, I thought that I could understand him.</p>
 <p class="orv_line">– If I plagiarised the 'Ways of Survival' for my novel, then what were you plagiarised from?</p>
 <p class="orv_line">Han Sooyoung of the 1863rd turn asked me that question.</p>
 <p class="orv_line">Even though I knew the answer, I didn't give her one. Because I didn't want to admit it.</p>
@@ -205,22 +212,22 @@
 <p class="orv_line">I thought that was unfair. I thought that the world copied from the original with its main character excluded was wrong.</p>
 <p class="orv_line">⸢Certain copies can surpass the original.⸥</p>
 <p class="orv_line">Despite that, I couldn't take my eyes off the world that Han Sooyoung had created. Even when I thought it was wrong. Because her story contained the elements that I was also aiming for.</p>
-<div class="orv_system"><p>[Constellation, 'Secretive Plotter', is looking at you.]</p></div>
+<div class="orv_system"><p>Constellation, 'Secretive Plotter', is looking at you.</p></div>
 <p class="orv_line">Did copyright exist for one's life, too?</p>
 <p class="orv_line">But, was it okay to describe one's life as a 'work of an author'?</p>
 <div class="orv_outergod"><p>【Demon King of Salvation.】</p></div>
 <p class="orv_line">The one who offered up his life for the sake of another world-line's success was now looking straight at me. The only man in this world who possessed the 'right' to witness the 'Conclusion'.</p>
-<p class="orv_line">Even then, he couldn't see the end he wanted to see. Such a man grabbed Yoo Joonghyuk's [Black Heavenly Demon Sword] with his bare hand and spoke up. 【Is a story with no proper 'Ending' a failed story?】</p>
+<p class="orv_line">Even then, he couldn't see the end he wanted to see. Such a man grabbed Yoo Joonghyuk's <strong>[Black Heavenly Demon Sword]</strong> with his bare hand and spoke up. 【Is a story with no proper 'Ending' a failed story?】</p>
 <p class="orv_line">Stories flowed out from the fingers cut by the blade. Stories that I was intimately familiar with.</p>
 <p class="orv_line">The story that I read for over ten years.</p>
 <div class="orv_outergod"><p>【Do you truly, honestly believe that a 'proper conclusion' exists in this world?】</p></div>
-<p class="orv_line">Yoo Joonghyuk hurriedly swung the [Black Heavenly Demon Sword], causing the Plotter's figure to distance himself.</p>
+<p class="orv_line">Yoo Joonghyuk hurriedly swung the <strong>[Black Heavenly Demon Sword]</strong>, causing the Plotter's figure to distance himself.</p>
 <p class="orv_line">'Stay sharp, Kim Dokja. He's going to come at us seriously now'.</p>
-<div class="orv_system"><p>[Attribute, 'Demon King Slayer', is activating!]</p></div>
-<div class="orv_system"><p>[Attribute, 'Terror of Stars', is activating!]</p></div>
+<div class="orv_system"><p>Attribute, 'Demon King Slayer', is activating!</p></div>
+<div class="orv_system"><p>Attribute, 'Terror of Stars', is activating!</p></div>
 <p class="orv_line">The sword made to cut down Demon Kings and Constellation began crying out.</p>
-<div class="orv_system"><p>[Story, 'Hell of Eternity', is howling out!]</p></div>
-<div class="orv_system"><p>[Giant Story, 'Pilgrim of the Lonely Apocalypse', is continuing with its storytelling!]</p></div>
+<div class="orv_system"><p>Story, 'Hell of Eternity', is howling out!</p></div>
+<div class="orv_system"><p>Giant Story, 'Pilgrim of the Lonely Apocalypse', is continuing with its storytelling!</p></div>
 <p class="orv_line">A person who completed a 'Giant Story' through nothing but his own life was right before us.</p>
 <p class="orv_line">Kka-gagagagack!!</p>
 <p class="orv_line">We couldn't handle the approaching Story and were forced back. Like soaked cotton, the whole body felt heavy. The Tongtian's waters overturned and the bottom of the river got exposed.</p>
@@ -228,17 +235,17 @@
 <p class="orv_line">Breaking the Sky Swordsmanship.</p>
 <p class="orv_line">Destruction Technique.</p>
 <p class="orv_line">Breaking the Sky Meteor Strike.</p>
-<p class="orv_line">The thunderbolt stabbing into the sky shot out from the tip of the [Black Heavenly Demon Sword]. The Statuses of a Demon King and a Constellation, as well as a Transcendent, were added on top of the multiple sword lights that hacked the sky like a falling meteor shower.</p>
-<p class="orv_line">And the other side shifted his [Splitting the Sky Sword] as well.</p>
+<p class="orv_line">The thunderbolt stabbing into the sky shot out from the tip of the <strong>[Black Heavenly Demon Sword]</strong>. The Statuses of a Demon King and a Constellation, as well as a Transcendent, were added on top of the multiple sword lights that hacked the sky like a falling meteor shower.</p>
+<p class="orv_line">And the other side shifted his <strong>[Splitting the Sky Sword]</strong> as well.</p>
 <p class="orv_line">Kwa-kwakwakwa!!</p>
 <p class="orv_line">He also possessed the same techniques we possessed. Two identical meteor showers collided in the air and a massive explosion rang out.</p>
 <p class="orv_line">When the technique was the same, what decided the outcome was the proficiency as well as the Status of the Story.</p>
-<div class="orv_system"><p>[Giant Story, 'Pilgrim of the Lonely Apocalypse', is remembering the story.]</p></div>
+<div class="orv_system"><p>Giant Story, 'Pilgrim of the Lonely Apocalypse', is remembering the story.</p></div>
 <p class="orv_line">Unfortunately, we couldn't claim an advantage in either of those aspects.</p>
 <p class="orv_line">'Kim Dokja!'</p>
 <p class="orv_line">That didn't mean we'd back off here, though.</p>
 <p class="orv_line">I desperately unleashed other Stories while still operating the ⸢Hell of Eternity⸥.</p>
-<div class="orv_system"><p>[Story, 'One who Murdered the Outer God', has begun its storytelling!]</p></div>
+<div class="orv_system"><p>Story, 'One who Murdered the Outer God', has begun its storytelling!</p></div>
 <p class="orv_line">The reason why our opponent held the upper hand was due to the two attributes – 'Demon King Slayer' and 'Terror of Stars'. In that case, we needed to unshackle the Story that allowed us to fight against the 'Outer God'.</p>
 <p class="orv_line">Ku-gugugugu!!</p>
 <p class="orv_line">One Status collided with another. Blood trickled down Yoo Joonghyuk's nose. However, he didn't back away.</p>
@@ -246,21 +253,21 @@
 <div class="orv_outergod"><p>【It's useless.】</p></div>
 <p class="orv_line">The Plotter's Status moved. The Giant Story's aura that previously existed in vague ripples was rapidly changing. The ⸢Pilgrim of the Lonely Apocalypse⸥ morphed into a giant, and its huge palm began crushing down on us.</p>
 <p class="orv_line">Yoo Joonghyuk roared out in opposition. "We too have Giant Stories!"</p>
-<div class="orv_system"><p>[Giant Story, 'Demon Realm's Spring', is continuing with its storytelling!]</p></div>
-<div class="orv_system"><p>[Giant Story, 'Torch that Swallowed the Myth', is continuing with its storytelling!]</p></div>
+<div class="orv_system"><p>Giant Story, 'Demon Realm's Spring', is continuing with its storytelling!</p></div>
+<div class="orv_system"><p>Giant Story, 'Torch that Swallowed the Myth', is continuing with its storytelling!</p></div>
 <p class="orv_line">The world of the Giant Stories streamed past before our eyes.</p>
 <p class="orv_line">The ⸢Demon Realm's Spring⸥ that battled against Surya during the Demon King Selection.</p>
 <p class="orv_line">The ⸢Torch that Swallowed the Myth⸥ we earned while experiencing the 'Gigantomachia'.</p>
 <p class="orv_line">Two Giant Stories, one taking on the figure of a lion while the other, a dragon, began biting and tearing into the giant's palm, and resisted it.</p>
-<div class="orv_system"><p>[41st turn's 'Yoo Joonghyuk' is watching you.]</p></div>
-<div class="orv_system"><p>[666th turn's 'Yoo Joonghyuk' is watching you.]</p></div>
-<div class="orv_system"><p>[999th turn's 'Yoo Joonghyuk' is watching you.]</p></div>
+<div class="orv_system"><p>41st turn's 'Yoo Joonghyuk' is watching you.</p></div>
+<div class="orv_system"><p>666th turn's 'Yoo Joonghyuk' is watching you.</p></div>
+<div class="orv_system"><p>999th turn's 'Yoo Joonghyuk' is watching you.</p></div>
 <p class="orv_line">Countless Yoo Joonghyuks within the 'Secretive Plotter' were observing this battle.</p>
-<p class="orv_line">I recalled the [666] and [999] in my mind. They should be in there somewhere. Along with the Plotter himself, they had been watching me from the beginning of this world-line.</p>
+<p class="orv_line">I recalled the <strong>[666]</strong> and <strong>[999]</strong> in my mind. They should be in there somewhere. Along with the Plotter himself, they had been watching me from the beginning of this world-line.</p>
 <p class="orv_line">They were watching the heated battle between two Yoo Joonghyuks and were growing agitated.</p>
-<div class="orv_system"><p>[The ⸢Stage Transformation⸥ is activating!]</p></div>
+<div class="orv_system"><p>The ⸢Stage Transformation⸥ is activating!</p></div>
 <p class="orv_line">The sky split open, then light and darkness began creating a new 'world'.</p>
-<div class="orv_system"><p>[Giant Story, 'Season of Light and Darkness', has begun its storytelling.]</p></div>
+<div class="orv_system"><p>Giant Story, 'Season of Light and Darkness', has begun its storytelling.</p></div>
 <p class="orv_line">The ⸢Season of Light and Darkness⸥ was our 'Giant Story'. But at the same time, it was the Plotter's Story, as well.</p>
 <p class="orv_line">And even in this Giant Story, Yoo Joonghyuk still lost to the Plotter.</p>
 <div class="orv_outergod"><p>【You cannot win.】</p></div>
@@ -273,36 +280,36 @@
 <p class="orv_line">The colour of his coat was the opposite.</p>
 <p class="orv_line">⸢Light and darkness were colliding. And one single watcher was observing the whole story.⸥</p>
 <p class="orv_line">Incredible Status gathered on Yoo Joonghyuk's right arm. It was clear which technique he was planning to use.</p>
-<p class="orv_line">The greatest technique the current him could call upon: the [Shooting Star Slash].</p>
+<p class="orv_line">The greatest technique the current him could call upon: the <strong>[Shooting Star Slash]</strong>.</p>
 <p class="orv_line">Back during the Apocalypse Dragon battle, Yoo Joonghyuk failed to defeat the 'Secretive Plotter' with this technique.</p>
-<div class="orv_system"><p>[Incarnation, 'Jung Heewon', has temporarily transferred her share of the Giant Story.]</p></div>
+<div class="orv_system"><p>Incarnation, 'Jung Heewon', has temporarily transferred her share of the Giant Story.</p></div>
 <p class="orv_line">Everyone from &lt;Kim Dokja's Company&gt; in the not-too-distant battlefield was adding their strength to us. Everyone who held shares in the Giant Story was now participating in this battle.</p>
-<div class="orv_system"><p>[Incarnation, 'Han Sooyoung', has temporarily transferred her share of the Giant Story.]</p></div>
-<div class="orv_system"><p>[Incarnation, 'Shin Yoosung', has temporarily transferred her share of the Giant Story.]</p></div>
-<div class="orv_system"><p>[Incarnation, 'Lee Gilyoung', has temporarily transferred his share of the Giant Story.]</p></div>
-<p class="orv_line">Every Story of &lt;Kim Dokja's Company&gt; gathered on Yoo Joonghyuk's [Black Heavenly Demon Sword]. After seeing his Story balloon up like that, the 'Secretive Plotter' began pouring out his own Status as well.</p>
+<div class="orv_system"><p>Incarnation, 'Han Sooyoung', has temporarily transferred her share of the Giant Story.</p></div>
+<div class="orv_system"><p>Incarnation, 'Shin Yoosung', has temporarily transferred her share of the Giant Story.</p></div>
+<div class="orv_system"><p>Incarnation, 'Lee Gilyoung', has temporarily transferred his share of the Giant Story.</p></div>
+<p class="orv_line">Every Story of &lt;Kim Dokja's Company&gt; gathered on Yoo Joonghyuk's <strong>[Black Heavenly Demon Sword]</strong>. After seeing his Story balloon up like that, the 'Secretive Plotter' began pouring out his own Status as well.</p>
 <p class="orv_line">They might be two identical Yoo Joonghyuks, but the Stories they created were completely different.</p>
 <p class="orv_line">⸢Who is Yoo Joonghyuk?⸥</p>
 <p class="orv_line">The Stories they possessed acted like that question's answer.</p>
-<div class="orv_system"><p>[Giant Story, 'Pilgrim of the Lonely Apocalypse', is continuing with its storytelling.]</p></div>
+<div class="orv_system"><p>Giant Story, 'Pilgrim of the Lonely Apocalypse', is continuing with its storytelling.</p></div>
 <p class="orv_line">The Story of the 'Secretive Plotter' was Yoo Joonghyuk from the 1st regression turn, 2nd, then 100th, and even the 1000th. A Story built up solely by one person's existence piling up on top of one another.</p>
 <p class="orv_line">⸢All tragedies had become dull, and only one being's existence grew bloated.⸥</p>
-<p class="orv_line">The sword light from the swung [Black Heavenly Demon Sword] opposed that very Story.</p>
-<div class="orv_system"><p>[Story, 'Life and Death Companions', is continuing with its storytelling.]</p></div>
+<p class="orv_line">The sword light from the swung <strong>[Black Heavenly Demon Sword]</strong> opposed that very Story.</p>
+<div class="orv_system"><p>Story, 'Life and Death Companions', is continuing with its storytelling.</p></div>
 <p class="orv_line">That was Yoo Joonghyuk's reply.</p>
-<div class="orv_system"><p>[Story, 'Child of the Past and Future', has begun its storytelling.]</p></div>
+<div class="orv_system"><p>Story, 'Child of the Past and Future', has begun its storytelling.</p></div>
 <p class="orv_line">Yoo Joonghyuk was Shin Yoosung.</p>
-<div class="orv_system"><p>[Story, 'Judge of Destruction', has begun its storytelling.]</p></div>
+<div class="orv_system"><p>Story, 'Judge of Destruction', has begun its storytelling.</p></div>
 <p class="orv_line">He was Jung Heewon, and…</p>
-<div class="orv_system"><p>[Story, 'False Saviour', is continuing with its storytelling.]</p></div>
+<div class="orv_system"><p>Story, 'False Saviour', is continuing with its storytelling.</p></div>
 <p class="orv_line">He was also Han Sooyoung. And then…</p>
-<div class="orv_system"><p>[Story, 'Demon King of Salvation', is continuing with its storytelling!]</p></div>
+<div class="orv_system"><p>Story, 'Demon King of Salvation', is continuing with its storytelling!</p></div>
 <p class="orv_line">And, he was me.</p>
 <p class="orv_line">Kwa-aaaaah!!</p>
-<p class="orv_line">The [Shooting Star Slash] collided with the Plotter's Giant Story. This fight was quite literally at a deadlock, and a moment's carelessness could very well decide the victor. Every Story we possessed powerfully slammed forward. And then…</p>
-<div class="orv_system"><p>[666th turn's 'Yoo Joonghyuk' is…]</p></div>
+<p class="orv_line">The <strong>[Shooting Star Slash]</strong> collided with the Plotter's Giant Story. This fight was quite literally at a deadlock, and a moment's carelessness could very well decide the victor. Every Story we possessed powerfully slammed forward. And then…</p>
+<div class="orv_system"><p>666th turn's 'Yoo Joonghyuk' is…</p></div>
 <p class="orv_line">A very small change occurred in the midst of this battle.</p>
-<div class="orv_system"><p>[362nd turn's 'Yoo Joonghyuk' is…]</p></div>
+<div class="orv_system"><p>362nd turn's 'Yoo Joonghyuk' is…</p></div>
 <p class="orv_line">A deafening boom went off, and the exploding spray of the river water formed a curtain of grey fog. The river water then rushed down on us and swept Yoo Joonghyuk's body away. His consciousness was fading.</p>
 <p class="orv_line">I subbed for him and dragged the Incarnation Body towards some nearby floating debris to climb on top of it.</p>
 <p class="orv_line">When I took a closer look, though, it wasn't some normal piece of debris, but a small island created out of the corpses of the 'Outer Gods', instead.</p>
@@ -312,34 +319,34 @@
 <div class="orv_outergod"><p>【You simply got lucky, and I didn't.】</p></div>
 <p class="orv_line">Tsu-chut, chuchuchut!</p>
 <p class="orv_line">His black coat was in a tattered mess. Sparks were dancing all over his body.</p>
-<div class="orv_system"><p>[1562nd turn's 'Yoo Joonghyuk' is…]</p></div>
-<div class="orv_system"><p>[1321st turn's 'Yoo Joonghyuk' is…]</p></div>
+<div class="orv_system"><p>1562nd turn's 'Yoo Joonghyuk' is…</p></div>
+<div class="orv_system"><p>1321st turn's 'Yoo Joonghyuk' is…</p></div>
 <p class="orv_line">'Yoo Joonghyuks' inside him were now rebelling against him. They were refusing to heed the Plotter's will.</p>
-<div class="orv_system"><p>[999th turn's 'Yoo Joonghyuk' wishes to see the end of the 1864th turn.]</p></div>
+<div class="orv_system"><p>999th turn's 'Yoo Joonghyuk' wishes to see the end of the 1864th turn.</p></div>
 <p class="orv_line">His Status was decreasing little by little. And his body was also gradually shrinking, as well. His bulging muscles were getting smaller, and his height decreased, too.</p>
 <p class="orv_line">Soon, the 'Secretive Plotter' that lost his Status had morphed into the figure of a boy.</p>
 <p class="orv_line">I staggered back to my – Yoo Joonghyuk's – feet.</p>
 <p class="orv_line">"You…"</p>
 <p class="orv_line">I wanted to say something, but no voice wanted to come out.</p>
-<div class="orv_system"><p>[The absolute majority of the audience are shivering at your battle!]</p></div>
-<div class="orv_system"><p>[A portion of the audience is…]</p></div>
+<div class="orv_system"><p>The absolute majority of the audience are shivering at your battle!</p></div>
+<div class="orv_system"><p>A portion of the audience is…</p></div>
 <p class="orv_line">We won.</p>
 <p class="orv_line">Countless indirect messages flooded in, but not one of them entered my head.</p>
-<p class="orv_line">The 'Secretive Plotter' was sitting on his butt all alone on top of this island. The [Splitting the Sky Sword] stabbed into the floor was the only thing supporting him.</p>
-<p class="orv_line">While gripping the [Black Heavenly Demon Sword] tightly, I cautiously approached him.</p>
+<p class="orv_line">The 'Secretive Plotter' was sitting on his butt all alone on top of this island. The <strong>[Splitting the Sky Sword]</strong> stabbed into the floor was the only thing supporting him.</p>
+<p class="orv_line">While gripping the <strong>[Black Heavenly Demon Sword]</strong> tightly, I cautiously approached him.</p>
 <p class="orv_line">Even though he was the same Yoo Joonghyuk, why did he have to live such a different life? Why did this guy have to overcome all these tragedies by himself?</p>
-<div class="orv_system"><p>[Giant Story, 'Pilgrim of the Lonely Apocalypse', is faltering in its storytelling.]</p></div>
+<div class="orv_system"><p>Giant Story, 'Pilgrim of the Lonely Apocalypse', is faltering in its storytelling.</p></div>
 <p class="orv_line">Was it because he didn't have any companions?</p>
 <p class="orv_line">Companions…</p>
-<div class="orv_system"><p>[41st turn's 'Yoo Joonghyuk' is staying vigilant of you.]</p></div>
+<div class="orv_system"><p>41st turn's 'Yoo Joonghyuk' is staying vigilant of you.</p></div>
 <p class="orv_line">…No, he had.</p>
 <p class="orv_line">He definitely had companions.</p>
 <p class="orv_line">'Kkoma Yoo Joonghyuks' emerging out of his body were standing right there.</p>
-<div class="orv_constellation"><p>[Youcan'tYoucan'tYoucan'tYoucan'tYoucan't]</p></div>
+<div class="orv_constellation"><p>Youcan'tYoucan'tYoucan'tYoucan'tYoucan't</p></div>
 <p class="orv_line">Kkoma Yoo Joonghyuks were now surrounding him protectively. And then, the 'Outer Gods' were surroundings those kkoma Yoo Joonghyuks.</p>
-<div class="orv_constellation"><p>[TheresonlyoneTheresonlyoneTheresonlyone]</p></div>
+<div class="orv_constellation"><p>TheresonlyoneTheresonlyoneTheresonlyone</p></div>
 <p class="orv_line">The history that the 'Secretive Plotter' had lived through – every part of the 'Ways of Survival' he lived through was now protecting him.</p>
-<div class="orv_constellation"><p>[DontkillhimDontkillhimDontkillhimDontkillhim]</p></div>
+<div class="orv_constellation"><p>DontkillhimDontkillhimDontkillhimDontkillhim</p></div>
 <p class="orv_line">They were stories that got discarded because they failed to reach the 'Conclusion'.</p>
 <p class="orv_line">I moved Yoo Joonghyuk's body again and lowered my posture towards them. When I reached out, one of the small Outer Gods bit the extended finger. Crimson blood formed on the tip of the bitten finger.</p>
 <p class="orv_line">It was a lie that this world-line was a brand new story.</p>
@@ -348,14 +355,14 @@
 <p class="orv_line">He must've regained his consciousness, because Yoo Joonghyuk began talking to me.</p>
 <p class="orv_line">I didn't reply immediately, and made my way past the Outer Gods to approach the 'Secretive Plotter'.</p>
 <p class="orv_line">Now in the form of a boy, he was looking up at me while being surrounded by the Outer Gods.</p>
-<p class="orv_line">Yoo Joonghyuk saw me holding the [Black Heavenly Demon Sword] tightly and spoke. 'You'll regret this'.</p>
+<p class="orv_line">Yoo Joonghyuk saw me holding the <strong>[Black Heavenly Demon Sword]</strong> tightly and spoke. 'You'll regret this'.</p>
 <p class="orv_line">⸢No, I won't.⸥</p>
 <p class="orv_line">I raised the sword only to slowly sheathe it back in its scabbard.</p>
 <p class="orv_line">⸢Besides, you weren't going to kill him, anyway.⸥</p>
 <p class="orv_line">Yoo Joonghyuk's retort came back a little later than usual. '…Even if we kill him, he'll simply regress again, anyway'.</p>
 <p class="orv_line">Even if he was saying that, it was pretty clear what he was thinking of right now. We had enough of this tragedy already.</p>
-<div class="orv_system"><p>[Many Constellations are watching you.]</p></div>
-<div class="orv_system"><p>[Many Constellations can't understand your decision.]</p></div>
+<div class="orv_system"><p>Many Constellations are watching you.</p></div>
+<div class="orv_system"><p>Many Constellations can't understand your decision.</p></div>
 <p class="orv_line">I didn't make this decision for the sake of earning a Story. And I knew that this wouldn't even offer a tiny speck of solace to a life that lasted for 1864 lives.</p>
 <p class="orv_line">But, even then…</p>
 <p class="orv_line">"Secretive Plotter."</p>
@@ -388,21 +395,21 @@
 <p class="orv_line">The rain falling on the battlefield had stopped, and the storm clouds that the Great Sage Heaven's Equal had summoned were receding away.</p>
 <p class="orv_line">The 'Great War Against the Heavenly Worlds' was drawing to a close.</p>
 <p class="orv_line">&lt;Emperor&gt;'s fallen Constellations were looking up at the Great Sage and the Yogoes. The sense of defeat thickly drawn on their faces told me who today's winner was.</p>
-<div class="orv_system"><p>[Currently, the Story chamber ⸢I've become the retired SSSSS-grade Sun Wukong⸥ is in possession of the 'sacred texts'.]</p></div>
-<div class="orv_system"><p>[Scenario will automatically conclude if the sacred texts are guarded for one hour.]</p></div>
-<div class="orv_system"><p>[Ten seconds currently remaining until the conclusion of the scenario.]</p></div>
+<div class="orv_system"><p>Currently, the Story chamber ⸢I've become the retired SSSSS-grade Sun Wukong⸥ is in possession of the 'sacred texts'.</p></div>
+<div class="orv_system"><p>Scenario will automatically conclude if the sacred texts are guarded for one hour.</p></div>
+<div class="orv_system"><p>Ten seconds currently remaining until the conclusion of the scenario.</p></div>
 <p class="orv_line">Finally, the lengthy scenario was coming to a close.</p>
 <p class="orv_line">I looked up at the blindingly bright skies of the &lt;Star Stream&gt;. The 'Great Dokkaebis' who'd control the Final Scenario were there, glaring at me.</p>
-<div class="orv_system"><p>[Scenario has concluded.!]</p></div>
-<div class="orv_system"><p>[Story chamber ⸢I've become the retired SSSSS-grade Sun Wukong⸥ has won the scenario!]</p></div>
+<div class="orv_system"><p>Scenario has concluded.!</p></div>
+<div class="orv_system"><p>Story chamber ⸢I've become the retired SSSSS-grade Sun Wukong⸥ has won the scenario!</p></div>
 <p class="orv_line">Bright messages announcing an incredible amount of reward payout and words of congratulations sent by the Constellations rained down and blanketed the sky above.</p>
 <p class="orv_line">I spotted Shin Yoosung, with Biyoo riding on top of her head, hurriedly running towards me while waving around the 'sacred texts'.</p>
 <p class="orv_line">The title of the texts was the following:</p>
 <p class="orv_line">⸢I've Become the Retired SSSSS-Grade Sun Wukong⸥</p>
 <p class="orv_line">"Ahjussi!"</p>
-<div class="orv_system"><p>[Shares for 'Outer God' in the applicable scenario is enormous!]</p></div>
-<div class="orv_system"><p>[&lt;Star Stream&gt; is acknowledging the existence of 'Outer God'.]</p></div>
-<div class="orv_system"><p>['Outer Gods' can now officially participate in the scenarios!]</p></div>
+<div class="orv_system"><p>Shares for 'Outer God' in the applicable scenario is enormous!</p></div>
+<div class="orv_system"><p>&lt;Star Stream&gt; is acknowledging the existence of 'Outer God'.</p></div>
+<div class="orv_system"><p>'Outer Gods' can now officially participate in the scenarios!</p></div>
 <p class="orv_line">(As the blinding rays of light accompanied them, the Yogoes all rose up to the air.)</p>
 <p class="orv_line">(Yogoes gathering around Sun Wukong as their centre all howled towards the heavens like a single colony.)</p>
 <p class="orv_line">I heard their cries.</p>
@@ -412,12 +419,12 @@
 <p class="orv_line">I looked to my side to discover the 'Secretive Plotter' witnessing the same spectacle as me.</p>
 <p class="orv_line">(The 'Journey to the West' will end here.)</p>
 <p class="orv_line">One scenario came to an end, yet the story continued on. However, even that story would have an end.</p>
-<div class="orv_system"><p>[You have acquired a new 'Great story'!]</p></div>
-<div class="orv_system"><p>[You have partially completed the fourth condition of the 'Hidden Scenario – A Single Story'!]</p></div>
+<div class="orv_system"><p>You have acquired a new 'Great story'!</p></div>
+<div class="orv_system"><p>You have partially completed the fourth condition of the 'Hidden Scenario – A Single Story'!</p></div>
 <p class="orv_line">And so, ever so quietly…</p>
-<div class="orv_system"><p>[Your Giant Story has completed the first half of the 'Conclusion'!]</p></div>
+<div class="orv_system"><p>Your Giant Story has completed the first half of the 'Conclusion'!</p></div>
 <p class="orv_line">The message foretelling the end of this world could be heard.</p>
-<div class="orv_system"><p>[Your Nebula has acquired the qualification to enter the 'Final Scenario'.]</p></div>
+<div class="orv_system"><p>Your Nebula has acquired the qualification to enter the 'Final Scenario'.</p></div>
 <br>
 <hr>
         </article>
@@ -425,18 +432,12 @@
             <a href="./ch_447"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_449">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="448" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="499" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="447" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="447" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 157: Ep. 31 - Tomb of the Scenario, I</title>
     <meta property="og:title" content="Ch 157: Ep. 31 - Tomb of the Scenario, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,29 +177,29 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00157.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 157: Ep. 31 - Tomb of the Scenario, I</h1></div>
 <p class="orv_line">The white storm energy caused my heart to pound and my body changed into an engine.</p>
-<div class="orv_system"><p>[The exclusive skill 'Electrification' Lv. 11 (+1) has been activated.]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Electrification' Lv. 11 (+1) has been activated.</p></div>
 <p class="orv_line">Due to the increase in my status, the skill level reached 11.</p>
 <p class="orv_line">In essence, all skill levels were restricted to level 10. After that, people had to learn better skills or use 'transcendence' like the returnees. Yet this skill was level 11.</p>
 <p class="orv_line">Now my Electrification had exceeded the limits of the system. It wasn't as hard to use Electrification as usual.</p>
@@ -205,26 +212,26 @@
 <p class="orv_line">What the hell was he saying now?</p>
 <p class="orv_line">"You will regret… giving me… your name."</p>
 <p class="orv_line">"What?"</p>
-<div class="orv_system"><p>[Demon Earl Tentacio has used 'Death Scream.]</p></div>
-<div class="orv_system"><p>[Demon Earl Tentacio has spread the name 'Yoo Joonghyuk' through Dark Castle.]</p></div>
-<div class="orv_system"><p>[The Dark Castle rankers will remember the name 'Yoo Joonghyuk'.]</p></div>
+<div class="orv_system"><p>Demon Earl Tentacio has used 'Death Scream.</p></div>
+<div class="orv_system"><p>Demon Earl Tentacio has spread the name 'Yoo Joonghyuk' through Dark Castle.</p></div>
+<div class="orv_system"><p>The Dark Castle rankers will remember the name 'Yoo Joonghyuk'.</p></div>
 <p class="orv_line">…I hadn't expected this.</p>
-<div class="orv_system"><p>[The Dark Castle rankers are baring their teeth towards the incarnation 'Yoo Joonghyuk'.]</p></div>
+<div class="orv_system"><p>The Dark Castle rankers are baring their teeth towards the incarnation 'Yoo Joonghyuk'.</p></div>
 <p class="orv_line">I felt a bit sorry. I really hadn't intended for this to happen. However, Yoo Joonghyuk should also suffer a bit.</p>
-<div class="orv_system"><p>[You have hunted 'Demon Earl Tentacio'!]</p></div>
-<div class="orv_system"><p>[A 3rd grade demon has been killed for the fifth time and 30,000 coins have been acquired.]</p></div>
+<div class="orv_system"><p>You have hunted 'Demon Earl Tentacio'!</p></div>
+<div class="orv_system"><p>A 3rd grade demon has been killed for the fifth time and 30,000 coins have been acquired.</p></div>
 <p class="orv_line">Transparent strings started to appear around Tentacio's corpse. From the Dark Castle scenario onwards, we could kill those who had stories and take them away. I stretched out my hand and grabbed the string.</p>
-<div class="orv_system"><p>[The historical-grade story 'Bug Slaughter' has been acquired.]</p></div>
-<div class="orv_system"><p>[Bug Slaughter.]</p></div>
+<div class="orv_system"><p>The historical-grade story 'Bug Slaughter' has been acquired.</p></div>
+<div class="orv_system"><p>Bug Slaughter.</p></div>
 <p class="orv_line">This story would be enough to hatch the 41st regression Shin Yoosung.</p>
 <p class="orv_line">…By the way, could I feed her the story of a demon? Would her mentality get worse if I fed it to her?</p>
-<div class="orv_system"><p>[You have completed the bounty scenario!]</p></div>
-<div class="orv_system"><p>[The constellation 'Slumbering Lady of Fine Brocade' feels deep appreciation towards you.]</p></div>
-<div class="orv_system"><p>[You are now able to receive the protection of the Silla constellations.]</p></div>
+<div class="orv_system"><p>You have completed the bounty scenario!</p></div>
+<div class="orv_system"><p>The constellation 'Slumbering Lady of Fine Brocade' feels deep appreciation towards you.</p></div>
+<div class="orv_system"><p>You are now able to receive the protection of the Silla constellations.</p></div>
 <p class="orv_line">The protection of the Silla constellations. They might seem insignificant but they were also 'constellations'. If I built up a relationship with them, there would surely be a day when they could help me, just like the Absolute Throne situation.</p>
-<div class="orv_system"><p>[The historical-grade story 'Silla Allied Forces' has been received.]</p></div>
+<div class="orv_system"><p>The historical-grade story 'Silla Allied Forces' has been received.</p></div>
 <p class="orv_line">…Silla Allied Forces?</p>
-<div class="orv_system"><p>[The constellation 'Slumbering Lady of Fine Brocade' is laughing heartily.]</p></div>
+<div class="orv_system"><p>The constellation 'Slumbering Lady of Fine Brocade' is laughing heartily.</p></div>
 <p class="orv_line">Well, she said she would give me a historical-grade story, not that it would be a good one. It didn't matter since I could feed it to Shin Yoosung.</p>
 <p class="orv_line">My party members recovered their spirits and approached me.</p>
 <p class="orv_line">"Shit, Kim Dokja is crazy…"</p>
@@ -232,11 +239,11 @@
 <p class="orv_line">I grinned at them. Lee Hyunsung looked down at his shoulders that had been bitten by Tentacio. "…Are there many enemies like him on the second floor?"</p>
 <p class="orv_line">"There are some but it is uncommon. This guy's ranking is probably…"</p>
 <p class="orv_line">A message finally popped up in the air.</p>
-<div class="orv_system"><p>[50,000 coins have been acquired as a main scenario reward!]</p></div>
-<div class="orv_system"><p>[The main scenario content has been updated!]</p></div>
-<div class="orv_system"><p>[You have won a place in Dark Castle.]</p></div>
-<div class="orv_system"><p>[You have hunted the 10th place demon on the Dark Castle Rankings, Tentacio.]</p></div>
-<div class="orv_system"><p>[Ranking will be in proportion to the hunting contribution.]</p></div>
+<div class="orv_system"><p>50,000 coins have been acquired as a main scenario reward!</p></div>
+<div class="orv_system"><p>The main scenario content has been updated!</p></div>
+<div class="orv_system"><p>You have won a place in Dark Castle.</p></div>
+<div class="orv_system"><p>You have hunted the 10th place demon on the Dark Castle Rankings, Tentacio.</p></div>
+<div class="orv_system"><p>Ranking will be in proportion to the hunting contribution.</p></div>
 <p class="orv_line">"…10th place. There are at least nine existences stronger than this guy. There are more similar guys."</p>
 <p class="orv_line">"Ah…" Lee Hyunsung's expression was complicated. He was relieved that the demon earl was in the top 10 but at the same time, he was discouraged. "Dokja-ssi is strong enough to fight these guys."</p>
 <p class="orv_line">"Hyunsung-ssi can do it if you follow your story. I also can't guarantee that I can hunt demons higher ranked than him."</p>
@@ -246,9 +253,9 @@
 <p class="orv_line">"I haven't succeeded them yet because the contents of the story are crazy. Why didn't you warn me when I said I would choose him? Were you fucking with me?"</p>
 <p class="orv_line">'The Abyssal Black Flame Dragon's story was…'</p>
 <p class="orv_line">I couldn't remember well but considering the fact that the original contractor was Delusional Demon Kim Namwoon, Han Sooyoung's reaction was understandable. It would be a shameful story that would annihilate the soul just by inheriting it.</p>
-<div class="orv_system"><p>[The Dark Castle Rankings in proportion to the hunting contribution will be announced!]</p></div>
+<div class="orv_system"><p>The Dark Castle Rankings in proportion to the hunting contribution will be announced!</p></div>
 <p class="orv_line">Finally, the rankings were determined. A ranking number was sent to the status window in front of all of us.</p>
-<div class="orv_system"><p>[The incarnation Kim Dokja's ranking in Dark Castle is 11th place.]</p></div>
+<div class="orv_system"><p>The incarnation Kim Dokja's ranking in Dark Castle is 11th place.</p></div>
 <p class="orv_line">11th place. It wasn't bad. The rest of my party members had terrible expressions, as if they were receiving their CSAT scores.</p>
 <p class="orv_line">Han Sooyoung quickly ran to my side and glanced at my ranking window.</p>
 <p class="orv_line">"Hey, you are quite high…" Han Sooyoung's expression hardened when she saw the number '11'.</p>
@@ -256,7 +263,7 @@
 <p class="orv_line">"Do you think you can win?"</p>
 <p class="orv_line">"I don't know. In any case, I am better than that ahjussi."</p>
 <p class="orv_line">Han Sooyoung pointed out the passed out Kim Yongpal.</p>
-<div class="orv_system"><p>[The incarnation Kim Yongpal's ranking in Dark Castle is number 101,123.]</p></div>
+<div class="orv_system"><p>The incarnation Kim Yongpal's ranking in Dark Castle is number 101,123.</p></div>
 <p class="orv_line">The 102,123th ranked Kim Yongpal slept without a care in the world.</p>
 <p class="orv_line">Lee Jihye and Lee Gilyoung, who had been unconscious since the beginning, received the ranks of 98,761 and 87,541 respectively. This was strange. Why was this ahjussi's rank lower than people who had been unconscious from the beginning.</p>
 <p class="orv_line">"What about Lee Hyunsung-ssi?"</p>
@@ -270,15 +277,15 @@
 <p class="orv_line">Still, Shin Yoosung seemed to sincerely accept my advice. "…Can I become strong enough ahjussi?"</p>
 <p class="orv_line">"Of course. You're stronger than me."</p>
 <p class="orv_line">I spoke sincerely. In fact, Shin Yoosung had more potential than anyone else here.</p>
-<div class="orv_system"><p>[Your stigma is about to blossom.]</p></div>
-<div class="orv_system"><p>[Screening the story of your stigma.]</p></div>
+<div class="orv_system"><p>Your stigma is about to blossom.</p></div>
+<div class="orv_system"><p>Screening the story of your stigma.</p></div>
 <p class="orv_line">Shin Yoosung would grow explosively once she received a stigma. No, even without a stigma, Shin Yoosung was essential for the second floor of Dark Castle. It was a stage where the children could be active.</p>
 <p class="orv_line">"However, I don't know why this ranking was suddenly given. If it merely for a competition… perhaps the person who reaches the top will receive a medal."</p>
 <p class="orv_line">It was Lee Hyunsung who spoke. His words weren't wrong. I'm sure this was the purpose. There was an even more fundamental reason for the Dark Castle Rankings.</p>
 <p class="orv_line">The moment I opened my mouth.</p>
-<div class="orv_system"><p>[The demon king 'Asmodeus' is interested in your presence.]</p></div>
-<div class="orv_system"><p>[The demon king 'Astaroth' is watching you.]</p></div>
-<div class="orv_system"><p>[The demon king 'Orobas' is hungry for your story.]</p></div>
+<div class="orv_system"><p>The demon king 'Asmodeus' is interested in your presence.</p></div>
+<div class="orv_system"><p>The demon king 'Astaroth' is watching you.</p></div>
+<div class="orv_system"><p>The demon king 'Orobas' is hungry for your story.</p></div>
 <p class="orv_line">It wasn't just me. The other party members also received the message. The messages were much more disturbing than those sent by the constellations. The messages alone caused everyone to shake.</p>
 <p class="orv_line">In particular, Han Sooyoung was completely frightened since she previously received the curse of the demon king.</p>
 <p class="orv_line">A demon king. Among them, a few had a 'status' that could compare to the constellation. At the end of this scenario, we would fight a demon king.</p>
@@ -294,10 +301,10 @@
 <p class="orv_line">'One of the 10 Evils is on the second floor. It is better not to bump into him'.</p>
 <p class="orv_line">'If I keep collecting stories like this, perhaps in four days…'</p>
 <p class="orv_line">Then a message appeared in the air.</p>
-<div class="orv_system"><p>[Someone has spread your name with 'Death Scream'.]</p></div>
-<div class="orv_system"><p>[The Dark Castle rankers will remember your name.]</p></div>
-<div class="orv_system"><p>[The Dark Castle rankers are watching for you.]</p></div>
-<div class="orv_system"><p>[The Dark Castle rankers will aim for your story.]</p></div>
+<div class="orv_system"><p>Someone has spread your name with 'Death Scream'.</p></div>
+<div class="orv_system"><p>The Dark Castle rankers will remember your name.</p></div>
+<div class="orv_system"><p>The Dark Castle rankers are watching for you.</p></div>
+<div class="orv_system"><p>The Dark Castle rankers will aim for your story.</p></div>
 <p class="orv_line">Yoo Joonghyuk frowned at the message.</p>
 <p class="orv_line">'My name was suddenly spoken?'</p>
 <p class="orv_line">It was strange.</p>
@@ -330,18 +337,12 @@
             <a href="./ch_156"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_158">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="157" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="142" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="156" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="156" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

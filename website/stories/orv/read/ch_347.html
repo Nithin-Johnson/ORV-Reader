@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 347: Ep. 65 - Good and Evil, III</title>
     <meta property="og:title" content="Ch 347: Ep. 65 - Good and Evil, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00347.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 347: Ep. 65 - Good and Evil, III</h1></div>
 <p class="orv_line">The man with the imposing atmosphere was the one who confronted me last time. He was the one who ran away from me during the last 'confinement'.</p>
@@ -198,32 +205,32 @@
 <p class="orv_line">Jung Heewon's expression hardened and filled with killing intent. While clearing Dark Castle, it was only in name but she was the one who cleared the 10th scenario by killing the 'demon king'. There was no way she couldn't know.</p>
 <p class="orv_line">"You… were eaten by a demon king."</p>
 <p class="orv_line">It was the aura of a demon king. The laughing Cho Jinchul already wasn't Cho Jinchul. He was a man swallowed up by demonic energy.</p>
-<div class="orv_system"><p>[The demon king 'Monarch of the Snake Hell' has revealed his existence.]</p></div>
+<div class="orv_system"><p>The demon king 'Monarch of the Snake Hell' has revealed his existence.</p></div>
 <p class="orv_line">Monarch of the Snake Hell. One of the Demon Realm's 72 demon kings. He was the master of the 72nd Demon Realm, Andromalius. In addition, the other two incarnation bodies were emitting similar energy.</p>
-<div class="orv_system"><p>[The demon king 'Thinker of Lies and Secrets' has revealed his existence.]</p></div>
-<div class="orv_system"><p>[The demon king 'Performer of Musical Instruments' has revealed his existence.]</p></div>
+<div class="orv_system"><p>The demon king 'Thinker of Lies and Secrets' has revealed his existence.</p></div>
+<div class="orv_system"><p>The demon king 'Performer of Musical Instruments' has revealed his existence.</p></div>
 <p class="orv_line">Three demon kings appeared through their own power. Even so, Jung Heewon remained calm after knowing her opponents were demon kings.</p>
 <p class="orv_line">"Is it a one-on-one fight?"</p>
-<div class="orv_constellation"><p>[Of course, it will be one-on-one. Fearless incarnation.]</p></div>
+<div class="orv_constellation"><p>Of course, it will be one-on-one. Fearless incarnation.</p></div>
 <p class="orv_line">Her hair raised from the true voice but Jung Heewon laughed. "Yes, I wanted to try it one day. How great a demon king is."</p>
 <p class="orv_line">There was deep anger contained in her voice. It might be Uriel's influence or it might be the accumulated anger towards me. In any case, Jung Heewon looked like she was doing well.</p>
-<div class="orv_system"><p>[The fight has begun!]</p></div>
+<div class="orv_system"><p>The fight has begun!</p></div>
 <p class="orv_line">In fact, it was a confidence I could understand. The opponents might be demon kings but Jung Heewon didn't need to back down. In addition, there was the state of being possessed through proxy. If she stepped back here, the archangel's pride would be damaged.</p>
 <p class="orv_line">A red light filled Jung Heewon's eyes as the Sword of Judgment moved through the air. The trajectory of the sword moved through the air like a net. There wasn't a chance to avoid it and Cho Jinchul's arm flew through the air.</p>
-<div class="orv_constellation"><p>[You dare…!]</p></div>
+<div class="orv_constellation"><p>You dare…!</p></div>
 <p class="orv_line">The surprised Andromalius let out a roar but Jung Heewon's sword showed no hesitation or fear. Andromalius was baffled by the arrogant style. It was a swordsmanship that didn't look at anything and only focused on killing. The incarnations who only went through ordinary scenarios couldn't afford to go against her.</p>
 <p class="orv_line">Blood poured out once again as there was a deep cut on Cho Jinchul's right thigh. The gap in skill was overwhelming. The crowd's mouths dropped open and the party members felt admiration. This was the real power of the Judge of Evil, Jung Heewon.</p>
-<div class="orv_system"><p>[The character 'Jung Heewon' is preparing to activate Judgment Time!]</p></div>
+<div class="orv_system"><p>The character 'Jung Heewon' is preparing to activate Judgment Time!</p></div>
 <p class="orv_line">For the finish, Jung Heewon gathered her strength. It was the combination of Judgment Time and Hell Flames Ignition. Jung Heewon was trying to press this 'Representative Exhibition' with overwhelming force.</p>
 <p class="orv_line">However, at the same time, Andromalius increased his synchronization rate with Cho Jinchul and started the descent in earnest. Cho Jinchul's cut off arm soared up with demonic energy and the injury restored with magic power. This was the power of the 72nd demon king.</p>
-<div class="orv_constellation"><p>[Your tricks end here.]</p></div>
+<div class="orv_constellation"><p>Your tricks end here.</p></div>
 <p class="orv_line">A fist struck Jung Heewon's blade like a lightning bolt. The Sword of Judgment shook and Jung Heewon immediately took a few steps back. Cho Jinchul pursued Jung Heewon and continued to attack.</p>
 <p class="orv_line">Andromalius prepared for damage to his probability and incarnation body as he increased the synchronization rate.</p>
 <p class="orv_line">A threatening power emerged from Cho Jinchul's body. No matter how strong Jung Heewon was, she couldn't fight against a demon king by herself without Uriel. In the end, Jung Heewon was thrown through the air from the power struggle.</p>
 <p class="orv_line">"Keuk, dammit…!"</p>
 <p class="orv_line">I couldn't understand the situation. To be exact, it was strange that Andromalius made such a choice.</p>
 <p class="orv_line">Not all demon kings were in the same class. By doing this, the scales of probability would move and Archangel Uriel would be able to intervene. Once she came, the demon kings would turn into ash in the blink of an eye. Nevertheless, the fact that they were earnestly dealing with Jung Heewon showed they had something they believed in.</p>
-<div class="orv_system"><p>[The activation of Judgment Time has been forcibly cancelled.]</p></div>
+<div class="orv_system"><p>The activation of Judgment Time has been forcibly cancelled.</p></div>
 <p class="orv_line">The thing they believed in was quickly revealed.</p>
 <p class="orv_line">"…Uriel?"</p>
 <p class="orv_line">Uriel didn't respond and Judgment Time and Hell Flames Ignition weren't activated properly. Putting aside Hell Flames Ignition, it was strange that Judgment Time wasn't activated. Something was wrong with Uriel and the other constellations of the absolute good system.</p>
@@ -242,64 +249,64 @@
 <p class="orv_line">"…Dokja-ssi?"</p>
 <p class="orv_line">"You don't have to fight here. I'm not stopping you because you are weak."</p>
 <p class="orv_line">I went forward with Jung Heewon behind me.</p>
-<div class="orv_system"><p>[The constellation 'Demon King of Salvation' is opening his 'status'.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon King of Salvation' is opening his 'status'.</p></div>
 <p class="orv_line">The three demon kings were watching me. I used my true voice.</p>
-<div class="orv_constellation"><p>[All demon kings. Did you choose the wrong playground? I'm sure you have something to say to me so say it and get out of here.]</p></div>
+<div class="orv_constellation"><p>All demon kings. Did you choose the wrong playground? I'm sure you have something to say to me so say it and get out of here.</p></div>
 <p class="orv_line">Andromalius' face distorted at my true voice.</p>
-<div class="orv_constellation"><p>[Cheeky guy.]</p></div>
-<div class="orv_constellation"><p>[Do you know why we came?]</p></div>
+<div class="orv_constellation"><p>Cheeky guy.</p></div>
+<div class="orv_constellation"><p>Do you know why we came?</p></div>
 <p class="orv_line">I nodded. The reason the demon kings came here was obvious. Since Earth's incarnations had exceeded the 60th scenario, it was time for the event to be held. Perhaps these guys had come to invite me.</p>
 <p class="orv_line">The fact that Jung Heewon couldn't use Uriel's power was related to this. The demon kings giggled as if everything so far was just amusement.</p>
-<div class="orv_constellation"><p>[Be honoured that your elders have personally visited you.]</p></div>
-<div class="orv_constellation"><p>[Come with us. We have to prepare right now. We'll be leaving straight away.]</p></div>
+<div class="orv_constellation"><p>Be honoured that your elders have personally visited you.</p></div>
+<div class="orv_constellation"><p>Come with us. We have to prepare right now. We'll be leaving straight away.</p></div>
 <p class="orv_line">I smiled and nodded.</p>
-<div class="orv_constellation"><p>[You came here to pick me up and I should go. By the way…]</p></div>
+<div class="orv_constellation"><p>You came here to pick me up and I should go. By the way…</p></div>
 <p class="orv_line">I looked back at Jung Heewon, who was wiping her bloody nose, and the party members supporting her. They hadn't sufficiently rested from the aftermath of Gigantomachia.</p>
-<div class="orv_constellation"><p>[I think it will be hard to just send you away.]</p></div>
-<div class="orv_constellation"><p>[What bullshit is that?]</p></div>
-<div class="orv_constellation"><p>[If you are a demon king, you should be worthy. Isn't that right?]</p></div>
-<div class="orv_system"><p>[The nebula 'Kim Dokja's Company' is requesting a representative change.]</p></div>
-<div class="orv_system"><p>[The demon king 'Demon King of Salvation' has become the new representative.]</p></div>
+<div class="orv_constellation"><p>I think it will be hard to just send you away.</p></div>
+<div class="orv_constellation"><p>What bullshit is that?</p></div>
+<div class="orv_constellation"><p>If you are a demon king, you should be worthy. Isn't that right?</p></div>
+<div class="orv_system"><p>The nebula 'Kim Dokja's Company' is requesting a representative change.</p></div>
+<div class="orv_system"><p>The demon king 'Demon King of Salvation' has become the new representative.</p></div>
 <p class="orv_line">The demon kings realized my intentions and were astonished.</p>
-<div class="orv_constellation"><p>[You want to fight us now? You… do you know what happens when a demon king and demon king fight?]</p></div>
-<div class="orv_constellation"><p>[I know very well.]</p></div>
+<div class="orv_constellation"><p>You want to fight us now? You… do you know what happens when a demon king and demon king fight?</p></div>
+<div class="orv_constellation"><p>I know very well.</p></div>
 <p class="orv_line">I looked at each of the demon kings and answered.</p>
-<div class="orv_system"><p>[The demon king 'Demon King of Salvation' has applied for a demon king promotion.]</p></div>
+<div class="orv_system"><p>The demon king 'Demon King of Salvation' has applied for a demon king promotion.</p></div>
 <p class="orv_line">A demon king promotion. It was a fierce duel between demon kings who competed for rankings and honour.</p>
-<div class="orv_constellation"><p>[A promotion! Are you crazy?]</p></div>
+<div class="orv_constellation"><p>A promotion! Are you crazy?</p></div>
 <p class="orv_line">It might be true. Whether it was demon king or constellation, I was tired of being dragged around by these bastards.</p>
-<div class="orv_constellation"><p>[Do you agree or not? They're watching.]</p></div>
-<div class="orv_system"><p>[The demon king 'Immeasurable Austerity' is interested in the battle between the low-grade ones.]</p></div>
-<div class="orv_system"><p>[The demon king 'Duke of Everywhere' says this is a premature fight.]</p></div>
-<div class="orv_system"><p>[The demon king 'Monarch of Stars and Logic' is pointing out the spelling of the 'Duke of Everywhere'.]</p></div>
-<div class="orv_system"><p>[The demon king 'Devil of Lust and Wrath' is making an interested expression.]</p></div>
+<div class="orv_constellation"><p>Do you agree or not? They're watching.</p></div>
+<div class="orv_system"><p>The demon king 'Immeasurable Austerity' is interested in the battle between the low-grade ones.</p></div>
+<div class="orv_system"><p>The demon king 'Duke of Everywhere' says this is a premature fight.</p></div>
+<div class="orv_system"><p>The demon king 'Monarch of Stars and Logic' is pointing out the spelling of the 'Duke of Everywhere'.</p></div>
+<div class="orv_system"><p>The demon king 'Devil of Lust and Wrath' is making an interested expression.</p></div>
 <p class="orv_line">Countless demon kings were watching the confrontation. I was the 73rd demon king, the lowest of the demon kings. It would be embarrassing if they refused my challenge.</p>
 <p class="orv_line">The three demon kings would be formidable but I wasn't afraid at all. Rather, I was composed as I watched them.</p>
-<div class="orv_quote"><p>「 Maybe Yoo Joonghyuk also felt like this. 」</p></div>
+<div class="orv_quote"><p>Maybe Yoo Joonghyuk also felt like this.</p></div>
 <p class="orv_line">Andromalius made a humiliated expression as he opened his mouth.</p>
-<div class="orv_constellation"><p>[…I accept the challenge.]</p></div>
+<div class="orv_constellation"><p>…I accept the challenge.</p></div>
 <p class="orv_line">However, I shook my head.</p>
-<div class="orv_constellation"><p>[You are out. I'm not applying for you.]</p></div>
-<div class="orv_constellation"><p>[What?]</p></div>
-<div class="orv_constellation"><p>[Andromalius, you are the 72nd ranked.]</p></div>
+<div class="orv_constellation"><p>You are out. I'm not applying for you.</p></div>
+<div class="orv_constellation"><p>What?</p></div>
+<div class="orv_constellation"><p>Andromalius, you are the 72nd ranked.</p></div>
 <p class="orv_line">I pointed to another demon king behind him.</p>
-<div class="orv_constellation"><p>[I am applying for the 67th demon king, Performer of Musical Instruments Amdusias.]</p></div>
+<div class="orv_constellation"><p>I am applying for the 67th demon king, Performer of Musical Instruments Amdusias.</p></div>
 <p class="orv_line">If I was going to fight then it was better to kill the guy with the higher ranking. Andromalius' face turned red at my words and he rushed over. The fist that contained the formidable stories of the 72nd Demon Realm flew towards me.</p>
-<div class="orv_system"><p>[Giant Story 'Snake That Crouches for 1,000 years' has begun!]</p></div>
+<div class="orv_system"><p>Giant Story 'Snake That Crouches for 1,000 years' has begun!</p></div>
 <p class="orv_line">Clearly, their low ranking didn't mean they had bad stories when they had lived for a long time.</p>
 <p class="orv_line">Nevertheless, they didn't know. I have lived a much shorter history than them but it was also much fiercer.</p>
-<div class="orv_system"><p>[Giant Story 'Demon Realm's Spring' has started the story.]</p></div>
-<div class="orv_system"><p>[Giant Story 'Torch That Swallowed the Myth' is revealing its crouching teeth.]</p></div>
+<div class="orv_system"><p>Giant Story 'Demon Realm's Spring' has started the story.</p></div>
+<div class="orv_system"><p>Giant Story 'Torch That Swallowed the Myth' is revealing its crouching teeth.</p></div>
 <p class="orv_line">The next moment, blue-white lightning filled the area. It was Electrification through Bookmark. The blue-white magic power was astounding. A faint smile was seen on Kyrgios' face.</p>
-<div class="orv_system"><p>[There isn't a big gap between the character and your level.]</p></div>
-<div class="orv_system"><p>[Your understanding of the character has greatly enhanced your skills!]</p></div>
-<div class="orv_system"><p>[The exclusive skill 'Electrification Lv. 23 (+13)' is activated.]</p></div>
+<div class="orv_system"><p>There isn't a big gap between the character and your level.</p></div>
+<div class="orv_system"><p>Your understanding of the character has greatly enhanced your skills!</p></div>
+<div class="orv_system"><p>The exclusive skill 'Electrification Lv. 23 (+13)' is activated.</p></div>
 <p class="orv_line">It was a real hassle to use Electrification without Miniaturization.</p>
-<div class="orv_system"><p>[Your current body configuration is different from that of the character.]</p></div>
-<div class="orv_system"><p>[Your status has overcome the penalty of the physical conditions.]</p></div>
+<div class="orv_system"><p>Your current body configuration is different from that of the character.</p></div>
+<div class="orv_system"><p>Your status has overcome the penalty of the physical conditions.</p></div>
 <p class="orv_line">Andromalius' fist stopped in front of my nose. He stared at me with astonishment before his eyes shifted to his stomach. Half of his body was gone.</p>
 <p class="orv_line">I pulled my sword out of his body and declared.</p>
-<div class="orv_constellation"><p>[First, the 72nd place.]</p></div>
+<div class="orv_constellation"><p>First, the 72nd place.</p></div>
 <br>
 <hr>
         </article>
@@ -307,18 +314,12 @@
             <a href="./ch_346"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_348">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="347" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="424" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="346" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="346" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 97: Ep. 19 – Singularity, V</title>
     <meta property="og:title" content="Ch 97: Ep. 19 – Singularity, V" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,38 +177,38 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00097.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         <div class="orv_cover"><img src="../../../assets/images/Cover%20Part%201%20-%20097%20-%20Vol%205%20-%20Episodes%2019-23.jpg" alt=""></div>
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 97: Ep. 19 – Singularity, V</h1></div>
 <p class="orv_line">I wanted to sleep for a while but it was early dawn when I opened my eyes.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' encourages you to take care of your incarnation.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' encourages you to take care of your incarnation.</p></div>
 <p class="orv_line">I unknowingly woke up from Uriel's message. Damn, the constellations had been making a fuss since I made the 'sponsor declaration' yesterday.</p>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is chuckling at your choice.]</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is chuckling at your choice.</p></div>
 <p class="orv_line">Truthfully, there was no way I could be a sponsor when my narrative wasn't properly built. A sponsor who couldn't give their incarnation a stigma was just a hindrance, although I had a lot more money than a decent sponsor.</p>
-<div class="orv_system"><p>[Many constellations are curious about your choice.]</p></div>
-<div class="orv_system"><p>[Some constellations think that your actions are ridiculous.]</p></div>
+<div class="orv_system"><p>Many constellations are curious about your choice.</p></div>
+<div class="orv_system"><p>Some constellations think that your actions are ridiculous.</p></div>
 <p class="orv_line">The reaction of the constellations to my incarnation was split into two. Those who liked me were the 'incarnation seekers' while those who disliked me were the 'amusement seekers'.</p>
 <p class="orv_line">Of course, there was one constellation who was unclear.</p>
-<div class="orv_system"><p>[The constellation 'Secretive Plotter' is watching your strategy with interest.]</p></div>
-<div class="orv_system"><p>[1,000 coins have been sponsored.]</p></div>
+<div class="orv_system"><p>The constellation 'Secretive Plotter' is watching your strategy with interest.</p></div>
+<div class="orv_system"><p>1,000 coins have been sponsored.</p></div>
 <p class="orv_line">I thought he was ordinary when I first saw the modifier but I recently changed my mind. The average size of his sponsorship was too large. This constellation was at least 'narrative' grade. However, no matter how much I searched through Ways of Survival, I couldn't see the name Secretive Plotter at all.</p>
 <p class="orv_line">This meant he wasn't a constellation of this world or he wasn't properly handled in Ways of Survival. Who was it?</p>
 <p class="orv_line">Wooong. Since last night, Shin Yoosung had been practicing her skills in one corner of the abandoned building. Shin Yoosung used the magic power recovery potions that I gave her and kept using a skill on the nearby young groll.</p>
@@ -210,18 +217,18 @@
 <p class="orv_line">"Not yet."</p>
 <p class="orv_line">"Don't you know the penalty for not sleeping? Go to sleep."</p>
 <p class="orv_line">"Just a bit more."</p>
-<div class="orv_system"><p>[The character 'Shin Yoosung' has used 'Diverse Communication Lv. 8'.]</p></div>
-<div class="orv_system"><p>[The character 'Shin Yoosung' has used 'Taming Lv. 7']</p></div>
+<div class="orv_system"><p>The character 'Shin Yoosung' has used 'Diverse Communication Lv. 8'.</p></div>
+<div class="orv_system"><p>The character 'Shin Yoosung' has used 'Taming Lv. 7'</p></div>
 <p class="orv_line">Shin Yoosung's concentration soon disappeared.</p>
-<div class="orv_system"><p>[Taming has failed!]</p></div>
-<div class="orv_system"><p>[The monster has started to run wild!]</p></div>
+<div class="orv_system"><p>Taming has failed!</p></div>
+<div class="orv_system"><p>The monster has started to run wild!</p></div>
 <p class="orv_line">The groll broke away from the control and rushed towards Shin Yoosung. Before I could move, the drooling Han Sooyoung sleeping nearby acted. The groll stopped breathing as it slammed into a wall of the abandoned building. Han Sooyoung fell asleep again.</p>
 <p class="orv_line">I spoke to Shin Yoosung, who was controlling her breathing with a dejected face. "Do you understand now?"</p>
 <p class="orv_line">"Yes." Shin Yoosung made a gloomy expression.</p>
-<div class="orv_system"><p>[The exclusive skill, Character List is activated.]</p></div>
+<div class="orv_system"><p>The exclusive skill, Character List is activated.</p></div>
 <p class="orv_line">The abridged version.</p>
 <div class="orv_window">
-<h3 class="orv_window_title">[Character Summary]</h3>
+<h3 class="orv_window_title">Character Summary</h3>
 <p>Name: Shin Yoosung</p>
 <p>Exclusive Attributes: Beast Tamer (Rare), Reflexive Killer (General)</p>
 <p>Exclusive Skills: Taming Lv. 7, Diverse Communication Lv. 8, Agile Feet Lv. 8, Hybridization Lv. 6.</p>
@@ -254,9 +261,9 @@
 <p class="orv_line">"Strong?"</p>
 <p class="orv_line">Shin Yoosung hesitated for a moment before laughing. "It's nothing. I will try hard."</p>
 <p class="orv_line">Then Shin Yoosung turned around and used the skill again. I suddenly remembered something. I recalled the type of person Shin Yoosung was like in the original novel.</p>
-<div class="orv_quote"><p>「 "Joonghyuk oppa is handsome." 」</p></div>
-<div class="orv_quote"><p>「 "Joonghyuk oppa is the best." 」</p></div>
-<div class="orv_quote"><p>「 "I like Joonghyuk oppa the most." 」</p></div>
+<div class="orv_quote"><p>"Joonghyuk oppa is handsome."</p></div>
+<div class="orv_quote"><p>"Joonghyuk oppa is the best."</p></div>
+<div class="orv_quote"><p>"I like Joonghyuk oppa the most."</p></div>
 <p class="orv_line">…This girl, she was a fan of Yoo Joonghyuk in Ways of Survival. Of course, she wasn't a heroine candidate. Due to her age, she was in the younger sister position. I remember her having a big fight with Yoo Mia…</p>
 <div class="orv_image"><img src="../../../assets/images/097 - Of course, she wasn't a heroine candidate.jpg" alt="" loading="lazy"></div>
 <div class="orv_notice"><p>* Unofficial fan illustration (non-canonical)</p></div>
@@ -271,7 +278,7 @@
 <p class="orv_line">Han Sooyoung looked at me like bugs had entered her ears. "Why the hell are you asking me this?"</p>
 <p class="orv_line">"I'm just purely curious."</p>
 <p class="orv_line">I had never been interested in what I looked like since I graduated from high school. Then I thought about the reactions of the prophets when I pretended to be Yoo Joonghyuk and it seemed that I was ugly. I didn't think I was ugly when I took occasional selfies in the bathroom.</p>
-<div class="orv_system"><p>[A windy constellation is looking at you like you are pathetic.]</p></div>
+<div class="orv_system"><p>A windy constellation is looking at you like you are pathetic.</p></div>
 <p class="orv_line">She replied, "Accept your fate."</p>
 <p class="orv_line">"No, I really am just curious…"</p>
 <p class="orv_line">"All I can do now is cheer you up."</p>
@@ -301,7 +308,7 @@
 <p class="orv_line">It was natural to be uncomfortable. They were enemies by nature. Han Sooyoung's ideas were the opposite of Yoo Sangah's ideals. No matter what happened in the future, the two of them would be more antagonistic than friendly.</p>
 <p class="orv_line">The tired Shin Yoosung had fallen asleep and only embers remained of the fire. Han Sooyoung spoke first. "You sleep too."</p>
 <p class="orv_line">I lay on the floor but sleep didn't come easily. There were four days left until the start of the fifth scenario. Shin Yoosung hadn't made any new progress today but a message came from the Gangseo area this afternoon.</p>
-<div class="orv_system"><p>[Someone has dealt with the Disaster of Ice that came from the west.]</p></div>
+<div class="orv_system"><p>Someone has dealt with the Disaster of Ice that came from the west.</p></div>
 <p class="orv_line">This was the message. I didn't have to ask who killed the disaster. Yoo Joonghyuk had prevented the disaster that would've caused Seoul to become an Ice Age. Perhaps he had met up with Lee Hyunsung.</p>
 <p class="orv_line">Han Sooyoung was watching the embers when she suddenly opened her mouth. "Hey, I have a question."</p>
 <p class="orv_line">"You are ugly."</p>
@@ -326,18 +333,18 @@
 <p class="orv_line">"Eh?"</p>
 <p class="orv_line">"Anyway, something like that is possible. Right?"</p>
 <p class="orv_line">"What type of god do you think I am? I wouldn't be suffering like this if I had that skill."</p>
-<div class="orv_system"><p>[The character 'Han Sooyoung' has used 'Lie Detection Lv. 3'.]</p></div>
-<div class="orv_system"><p>[The character Han Sooyoung has confirmed that the statement is false.]</p></div>
+<div class="orv_system"><p>The character 'Han Sooyoung' has used 'Lie Detection Lv. 3'.</p></div>
+<div class="orv_system"><p>The character Han Sooyoung has confirmed that the statement is false.</p></div>
 <p class="orv_line">Han Sooyoung laughed. "Is it possible for me?"</p>
 <p class="orv_line">I didn't answer.</p>
 <p class="orv_line">"Well, you don't have to tell me. In any case, if possible please read my mind right now."</p>
 <p class="orv_line">"I can't read it."</p>
 <p class="orv_line">"In fact, I didn't plagiarize."</p>
 <p class="orv_line">I looked at Han Sooyoung suspiciously and she used Lie Detection on herself.</p>
-<div class="orv_system"><p>[The character Han Sooyoung has confirmed that the statement is true.]</p></div>
+<div class="orv_system"><p>The character Han Sooyoung has confirmed that the statement is true.</p></div>
 <p class="orv_line">…What?</p>
 <p class="orv_line">"It is just a coincidence that the story I wrote was similar to Ways of Survival. I just wrote according to the dreams I had."</p>
-<div class="orv_system"><p>[The character Han Sooyoung has confirmed that the statement is true.]</p></div>
+<div class="orv_system"><p>The character Han Sooyoung has confirmed that the statement is true.</p></div>
 <p class="orv_line">…This girl was using her subconscious as a shield.</p>
 <p class="orv_line">"In any case, you saw it. It was a dream to you."</p>
 <p class="orv_line">"Maybe that is true. Then…" Han Sooyoung hesitated before saying, "Sometimes I think about it."</p>
@@ -361,18 +368,12 @@
             <a href="./ch_96"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_98">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="97" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="249" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="96" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="96" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

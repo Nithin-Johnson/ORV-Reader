@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 279: Ep. 53 - Demon King of Salvation, I</title>
     <meta property="og:title" content="Ch 279: Ep. 53 - Demon King of Salvation, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,66 +177,66 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00279.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 279: Ep. 53 - Demon King of Salvation, I</h1></div>
-<p class="orv_line">A door with an image of two baby angels blushing. Gabriel's lips twitched as she saw the [Uriel ☆] written on the nameplate.</p>
-<div class="orv_constellation"><p>[Hey.]</p></div>
+<p class="orv_line">A door with an image of two baby angels blushing. Gabriel's lips twitched as she saw the <strong>[Uriel ☆]</strong> written on the nameplate.</p>
+<div class="orv_constellation"><p>Hey.</p></div>
 <p class="orv_line">There was no answer when she knocked on the door. Thus, she did it again.</p>
-<div class="orv_constellation"><p>[Hey Uriel!]</p></div>
+<div class="orv_constellation"><p>Hey Uriel!</p></div>
 <p class="orv_line">She knocked harder on the door and there was a groan from beside it.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' says to get lost.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' says to get lost.</p></div>
 <p class="orv_line">Gabriel frowned at the indirect message.</p>
-<div class="orv_constellation"><p>[Do you think I'm happy to come here? I'm here because of my mission.]</p></div>
+<div class="orv_constellation"><p>Do you think I'm happy to come here? I'm here because of my mission.</p></div>
 <p class="orv_line">Gabriel sounded like it was annoying just to speak. It had been two days since she received the unreasonable assignment from Metatron. She was planning to play around but Metatron got in front of her.</p>
 <p class="orv_line">–Gabriel, please take over Uriel's mission. In addition, Jophiel will watch Gabriel to ensure she isn't being lazy.</p>
 <p class="orv_line">–Leave it to me.</p>
 <p class="orv_line">She was placed in a team with the upright Jophiel. Gabriel would rather be in a team with Uriel.</p>
-<div class="orv_constellation"><p>[Didn't you record your observations of the Demon King of Salvation? I came here to grab it. Open the door!]</p></div>
+<div class="orv_constellation"><p>Didn't you record your observations of the Demon King of Salvation? I came here to grab it. Open the door!</p></div>
 <p class="orv_line">There was a rustling sound from beyond the door.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is asking why you are her successor.]</p></div>
-<div class="orv_constellation"><p>[Yes you ■.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is asking why you are her successor.</p></div>
+<div class="orv_constellation"><p>Yes you ■.</p></div>
 <p class="orv_line">Once again, an indirect message rang like a thunderbolt.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' says '■■■■'.]</p></div>
-<div class="orv_constellation"><p>[Do you want to come out and say it yourself?]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is asking if you are her only successor.]</p></div>
-<div class="orv_constellation"><p>[Me and Jophiel.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' says '■■■■'.</p></div>
+<div class="orv_constellation"><p>Do you want to come out and say it yourself?</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is asking if you are her only successor.</p></div>
+<div class="orv_constellation"><p>Me and Jophiel.</p></div>
 <p class="orv_line">A deep sigh was heard beyond the door. After a while, there was a gap in the door and long fingertips emerged. Looking closer, the white fingertips were holding onto something. Gabriel realized its identity and clicked her tongue.</p>
-<div class="orv_constellation"><p>[…USB? Who uses a USB these days? Are you a human?]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is warning you not to speak nonsense and take it.]</p></div>
+<div class="orv_constellation"><p>…USB? Who uses a USB these days? Are you a human?</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is warning you not to speak nonsense and take it.</p></div>
 <p class="orv_line">Gabriel received the USB and Uriel added.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' says it is a secret from the Red Cosmos.]</p></div>
-<div class="orv_constellation"><p>[Jophiel? Why?]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' says it is a secret from the Red Cosmos.</p></div>
+<div class="orv_constellation"><p>Jophiel? Why?</p></div>
 <p class="orv_line">Uriel didn't respond and shut the door. Then intermittent sniffling was heard in the distance. Gabriel was about to say something only to end up pouting. They usually didn't get along but she became worried when she saw 'Demon Hunter Uriel' like this.</p>
-<div class="orv_constellation"><p>[Hey, don't tremble. The detainment will be released soon. It's only three years…]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is shouting at you to get lost!]</p></div>
-<div class="orv_constellation"><p>[Crazy ■. I was only trying to comfort ■.]</p></div>
+<div class="orv_constellation"><p>Hey, don't tremble. The detainment will be released soon. It's only three years…</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is shouting at you to get lost!</p></div>
+<div class="orv_constellation"><p>Crazy ■. I was only trying to comfort ■.</p></div>
 <p class="orv_line">After a while, Gabriel opened the USB in her room. Then…</p>
-<div class="orv_constellation"><p>[What the hell did you do on this mission?]</p></div>
+<div class="orv_constellation"><p>What the hell did you do on this mission?</p></div>
 <p class="orv_line">Despite her mutters, Gabriel couldn't take her eyes off the footage on the screen.</p>
 <br>
 <hr>
 <br>
-<div class="orv_system"><p>[The constellation 'Lily Blooming in Aquarius' is curious about you.]</p></div>
-<div class="orv_system"><p>[The constellation 'Lily Blooming in Aquarius' likes looking at you.]</p></div>
+<div class="orv_system"><p>The constellation 'Lily Blooming in Aquarius' is curious about you.</p></div>
+<div class="orv_system"><p>The constellation 'Lily Blooming in Aquarius' likes looking at you.</p></div>
 <p class="orv_line">Jung Heewon frowned as she heard the voice in the air. Uriel disappeared and this time a strange constellation clung to her. This wasn't her only concern. Jung Heewon looked at Kim Dokja who was wandering in the distance.</p>
 <p class="orv_line">"…Why isn't he saying anything?"</p>
 <p class="orv_line">"What do you mean?"</p>
@@ -245,7 +252,7 @@
 <p class="orv_line">"Yoo Joonghyuk-ssi has already joined?"</p>
 <p class="orv_line">"Dokja ahjussi said so. This is Yoo Joonghyuk and my nebula!"</p>
 <p class="orv_line">Of course, he never said anything like that but Jung Heewon reflexively looked up at the sky. However, she didn't hear the indirect message she was waiting for. She felt strangely uncomfortable.</p>
-<div class="orv_system"><p>[The constellation 'Lily Blooming in Aquarius' dislikes the humour of incarnation 'Lee Jihye'.]</p></div>
+<div class="orv_system"><p>The constellation 'Lily Blooming in Aquarius' dislikes the humour of incarnation 'Lee Jihye'.</p></div>
 <p class="orv_line">Jung Heewon shook her head and looked at Kim Dokja who was busy in the square. He was so busy she hadn't seen his face for a few days and she didn't know what he was working so hard on.</p>
 <p class="orv_line">Then Yoo Sangah's appearance caught Jung Heewon's eyes. Jung Heewon waved at Yoo Sangah who was sitting on a bench and staring blankly into empty air.</p>
 <p class="orv_line">"Sangah-ssi! Are you going to join Dokja-ssi's nebula?"</p>
@@ -265,8 +272,8 @@
 <p class="orv_line">"…There is still no word."</p>
 <p class="orv_line">Jung Heewon nodded at Lee Jihye's words. "He will speak when the time comes. It is because he is a secretly introverted person."</p>
 <p class="orv_line">Well, she also wanted to know what was going on. A long-awaited peace had come to the party but Kim Dokja was still thinking about something. Thus, they could only wait while doing nothing.</p>
-<div class="orv_system"><p>[The constellation 'Lily Blooming in Aquarius' is looking at you approvingly.]</p></div>
-<div class="orv_system"><p>[The constellation 'Commander of the Red Cosmos' is wary of the Demon King of Salvation.]</p></div>
+<div class="orv_system"><p>The constellation 'Lily Blooming in Aquarius' is looking at you approvingly.</p></div>
+<div class="orv_system"><p>The constellation 'Commander of the Red Cosmos' is wary of the Demon King of Salvation.</p></div>
 <p class="orv_line">…There were strange angels so Jung Heewon wouldn't be bored for a while. Jung Heewon reluctantly put down her worries.</p>
 <p class="orv_line">Then… the work suddenly began.</p>
 <br>
@@ -279,18 +286,18 @@
 <p class="orv_line">She couldn't count how many times 'misfortune' emerged.</p>
 <p class="orv_line">"What the hell is going on?"</p>
 <p class="orv_line">The last time 'great misfortune' appeared, Kim Dokja had to face a Lokapala of Vedas. However, now there were so many 'misfortunes'… it wasn't a great misfortune but it should be an extensive misfortune. The water in the bowl trembled and faint sparks appeared.</p>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' is raising his head.]</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' is raising his head.</p></div>
 <p class="orv_line">"Black dragon?"</p>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' is looking at the 73rd Demon Realm.]</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' is looking at the 73rd Demon Realm.</p></div>
 <p class="orv_line">"Do you know something?"</p>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' is letting out a threatening cry.]</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' is letting out a threatening cry.</p></div>
 <p class="orv_line">Her arm wrapped with a bandage was tingling and sparks appeared around the body that was in sync with the black dragon.</p>
 <p class="orv_line">"Hey dude!"</p>
 <p class="orv_line">The feelings of the black flame dragon were transmitted. The black dragon had never acted like this whenever he encountered an opponent.</p>
-<div class="orv_system"><p>[The constellation 'Expert at Playing Both Sides' has pale lips.]</p></div>
-<div class="orv_system"><p>[The constellation 'Guam Divine Doctor' is dripping saliva.]</p></div>
-<div class="orv_system"><p>[The constellation 'Great King Heoncheon Hongdo Gyungmun Wimu' is quietly putting down his sword.]</p></div>
-<div class="orv_system"><p>[The constellation 'First Spiritualist of Joseon' is clearing his traces.]</p></div>
+<div class="orv_system"><p>The constellation 'Expert at Playing Both Sides' has pale lips.</p></div>
+<div class="orv_system"><p>The constellation 'Guam Divine Doctor' is dripping saliva.</p></div>
+<div class="orv_system"><p>The constellation 'Great King Heoncheon Hongdo Gyungmun Wimu' is quietly putting down his sword.</p></div>
+<div class="orv_system"><p>The constellation 'First Spiritualist of Joseon' is clearing his traces.</p></div>
 <p class="orv_line">The constellations of the Korean Peninsula were turning off their lights. It was as if they were hiding from a predator. Her bandaged arm kept tingling.</p>
 <p class="orv_line">Han Sooyoung scattered Lee Sookyung's divination and unraveled the bandage to reveal the tattoo of the black dragon that was shining. Sparks burst and Han Sooyoung's right arm wrote letters in the air.</p>
 <p class="orv_line">–A disaster of the stars is coming.</p>
@@ -320,18 +327,12 @@
             <a href="./ch_278"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_280">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="279" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="358" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="278" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="278" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 191: Ep. 36 - Story Horizon, III</title>
     <meta property="og:title" content="Ch 191: Ep. 36 - Story Horizon, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,31 +177,31 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00191.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 191: Ep. 36 - Story Horizon, III</h1></div>
 <p class="orv_line">This sentence appeared in Ways of Survival.</p>
-<div class="orv_quote"><p>「 The great demons who live in the 'horizon of the story'. They aren't demon kings or demon species, they are great demons. They are those who hate the dokkaebis as much as they seek and crave stories. 」</p></div>
+<div class="orv_quote"><p>The great demons who live in the 'horizon of the story'. They aren't demon kings or demon species, they are great demons. They are those who hate the dokkaebis as much as they seek and crave stories.</p></div>
 <p class="orv_line">Yes, this sentence.</p>
-<div class="orv_quote"><p>「 If you are expelled from the scenario, there is only one thing to look forward to. It is to hope for mercy from the Great Demon of the Horizon. 」</p></div>
+<div class="orv_quote"><p>If you are expelled from the scenario, there is only one thing to look forward to. It is to hope for mercy from the Great Demon of the Horizon.</p></div>
 <p class="orv_line">The Fourth Wall made it clear for me and I had nothing to say. I looked at the Great Demon of the Horizon.</p>
 <p class="orv_line">He gave off a very old impression. At first glance, I feel like a vagrant but it wasn't hard to recognize them. It was because every Great Demon of the Horizon had a big lump on their cheek. Due to that, some people called them the 'wenny¹ man'.</p>
 <p class="orv_line">Light sparks appeared in the air and the wenny man stepped back.</p>
@@ -283,7 +290,7 @@
 <p class="orv_line">"I'll show you."</p>
 <p class="orv_line">I opened the list of my stories.</p>
 <div class="orv_window">
-<h3 class="orv_window_title">[List of Stories]</h3>
+<h3 class="orv_window_title">List of Stories</h3>
 <p>King of a Kingless World.</p>
 <p>Person who Opposes the Miracle.</p>
 <p>One Who Showed Contempt for a Streamer.</p>
@@ -324,11 +331,11 @@
 <p class="orv_line">Damn, he wasn't an idiot like Bihyung. Bihyung was the one who changed the compensation rate from 10% to 0%.</p>
 <p class="orv_line">I continued to hesitate and the wenny man smiled vaguely. "I don't know how you are still holding onto your existence but do you have enough time left?"</p>
 <p class="orv_line">I could feel that my body temperature had dropped more than before. The interval between the Fourth Wall's words was gradually increasing.</p>
-<div class="orv_system"><p>[Your body is collapsing.]</p></div>
+<div class="orv_system"><p>Your body is collapsing.</p></div>
 <p class="orv_line">I hadn't gained as much as I could from the wenny man and my existence was in a fairly precarious situation. This collapse would accelerate unless I returned to a scenario right away or at least received a new body.</p>
-<div class="orv_quote"><p>「 The stupid Kim Dokja thought: Damn, what story should I give him? 」</p></div>
+<div class="orv_quote"><p>The stupid Kim Dokja thought: Damn, what story should I give him?</p></div>
 <p class="orv_line">…I was feeling frustrated so don't bother me at this time.</p>
-<div class="orv_quote"><p>「 At that moment, a story caught Kim Dokja's eyes. 」</p></div>
+<div class="orv_quote"><p>At that moment, a story caught Kim Dokja's eyes.</p></div>
 <p class="orv_line">What caught my eyes… eh? I momentarily hesitated. Come to think of it, there was this story.</p>
 <p class="orv_line">"Then how about this?"</p>
 <br>
@@ -338,18 +345,12 @@
             <a href="./ch_190"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_192">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="191" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="182" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="190" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="190" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

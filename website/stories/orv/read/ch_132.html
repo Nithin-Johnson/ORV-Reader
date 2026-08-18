@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 132: Ep. 26 - Scenario Destroyer, II</title>
     <meta property="og:title" content="Ch 132: Ep. 26 - Scenario Destroyer, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00132.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 132: Ep. 26 - Scenario Destroyer, II</h1></div>
 <p class="orv_line">tls123. This was the ID for the author of Ways of Survival.</p>
@@ -203,9 +210,9 @@
 <p class="orv_line">"The words you just said…"</p>
 <p class="orv_line">"What do you mean? What did I…"</p>
 <p class="orv_line">Asuka Ren's face showed that she didn't know anything. I felt a terrible sense of foreboding. I quietly activated Character List.</p>
-<div class="orv_system"><p>[The exclusive skill, Character List is activated.]</p></div>
+<div class="orv_system"><p>The exclusive skill, Character List is activated.</p></div>
 <div class="orv_window">
-<h3 class="orv_window_title">[Character Summary]</h3>
+<h3 class="orv_window_title">Character Summary</h3>
 <p>Name: Asuka Ren</p>
 <p>Age: 31 years old</p>
 <p>Sponsor: Master of the Niten Ichu-ryu.</p>
@@ -225,17 +232,17 @@
 <p class="orv_line">Asuka Ren looked at me and asked, "Sorry, what were we talking about?"</p>
 <p class="orv_line">"We were talking about Ren-ssi's work."</p>
 <p class="orv_line">"My work?" Asuka Ren made a face like she couldn't remember anything. She couldn't remember any of the settings of Peace Land that she created.</p>
-<div class="orv_quote"><p>「 At this moment, she knew that the world had completely left her hands. 」</p></div>
+<div class="orv_quote"><p>At this moment, she knew that the world had completely left her hands.</p></div>
 <p class="orv_line">I had a throbbing headache. Was there such a sentence in Ways of Survival? I didn't know.</p>
 <p class="orv_line">However, one thing was for certain.</p>
 <p class="orv_line">The melody of the viola playing in the lonely night. The cries of the small people. The sad and rich atmosphere elevated by the emotions. This was the moment the world called Peace Land was completed.</p>
 <p class="orv_line">Now there was nothing to add to this story. Finally, one story had become completely independent from its author.</p>
 <p class="orv_line">I suddenly thought I understood why an attribute disappeared from Asuka Ren. The moment the world was finished, the author had to descend from the position of creator.</p>
 <p class="orv_line">I suddenly wondered. Where did the finished story go?</p>
-<div class="orv_system"><p>[You have come to know the planet Peace Land.]</p></div>
-<div class="orv_system"><p>[All beings belonging to Peace Land are faintly aware of your gaze.]</p></div>
-<div class="orv_system"><p>[The small planet's constellation rejoices in your presence.]</p></div>
-<div class="orv_system"><p>[The beings of Peace Land have started to write legends about you.]</p></div>
+<div class="orv_system"><p>You have come to know the planet Peace Land.</p></div>
+<div class="orv_system"><p>All beings belonging to Peace Land are faintly aware of your gaze.</p></div>
+<div class="orv_system"><p>The small planet's constellation rejoices in your presence.</p></div>
+<div class="orv_system"><p>The beings of Peace Land have started to write legends about you.</p></div>
 <p class="orv_line">The funny thing was that I hadn't asked for it.</p>
 <p class="orv_line">…I see. The destination of the story that left its creator was decided from the beginning.</p>
 <p class="orv_line">After that, I asked Asuka Ren a few more things while using Lie Detection. However, she really didn't remember anything.</p>
@@ -244,16 +251,16 @@
 <p class="orv_line">Sadly, the information about the author of Ways of Survival that I barely managed to touch stopped here. It was still unclear what type of person the author of Ways of Survival was and what they wanted.</p>
 <p class="orv_line">Still, at least one thing seemed vaguely clear. Perhaps like me, the author of Ways of Survival wasn't satisfied with the existing ending. That's why they gave me the book before the end of the world. If so, I would meet those expectations.</p>
 <p class="orv_line">I stepped away from Asuka Ren who was enjoying the scenery and pulled out a small ampoule.</p>
-<div class="orv_system"><p>[Ancient Serpent's Sacred Blood]</p></div>
+<div class="orv_system"><p>Ancient Serpent's Sacred Blood</p></div>
 <p class="orv_line">It was an item obtained with the constellation parts. I sent a signal and the distant Lee Hyunsung nodded and approached. Lee Hyunsung wasn't drinking. I was sorry but I had some work for him to do today.</p>
 <p class="orv_line">"I need your help now."</p>
 <p class="orv_line">"Leave it to me."</p>
 <p class="orv_line">Lee Hyunsung was entrusted to be my guard. It was because I was going to collapse for a bit. I sprinkled the Ancient Serpent's Sacred Blood into the cup and the golden alcohol turned into a dark red.</p>
-<div class="orv_system"><p>[You have drank alcohol made from the Ancient Serpent's Sacred Blood.]</p></div>
-<div class="orv_system"><p>[The greedy snake will test your mental power.]</p></div>
+<div class="orv_system"><p>You have drank alcohol made from the Ancient Serpent's Sacred Blood.</p></div>
+<div class="orv_system"><p>The greedy snake will test your mental power.</p></div>
 <p class="orv_line">This was a hidden piece that Yoo Joonghyuk didn't know about in the third regression. It was a ceremony that could only be done when the alcohol made from Orochi's parts was mixed with the sacred blood. I wouldn't have given up an excellent trait like King of No Killing if it hadn't been for this.</p>
-<div class="orv_system"><p>[The snake has confirmed your eligibility for Dragon Slayer.]</p></div>
-<div class="orv_system"><p>[The new attribute 'Eight Lives' is being prepared.]</p></div>
+<div class="orv_system"><p>The snake has confirmed your eligibility for Dragon Slayer.</p></div>
+<div class="orv_system"><p>The new attribute 'Eight Lives' is being prepared.</p></div>
 <p class="orv_line">…Good. Now that it was being prepared, I would have a new attribute when I woke up.</p>
 <p class="orv_line">One thing was finished and the other…</p>
 <p class="orv_line">I poured the remaining alcohol into my mouth. I became dizzy and felt drunk. However, I couldn't fall asleep right away. I sat on the ground and wrote a message.</p>
@@ -265,64 +272,64 @@
 <p class="orv_line">It happened when I wrote Hades' modifier. An eerie aura swept over my body.</p>
 <p class="orv_line">I was filled with the urge to vomit and when I opened my eyes again, I realized that I had already come to the Underworld. This disturbing and unpleasant air could only be felt in the Underworld.</p>
 <p class="orv_line">Looking around, it was fortunate that I hadn't fallen into Tartarus. Someone was standing in front of me.</p>
-<div class="orv_constellation"><p>[You shouldn't enter the Underworld right now.]</p></div>
+<div class="orv_constellation"><p>You shouldn't enter the Underworld right now.</p></div>
 <p class="orv_line">It wasn't Hades or Persephone. I could tell the moment I saw the outfit resembling the envoy.</p>
 <p class="orv_line">"Judge-nim."</p>
 <p class="orv_line">It wasn't the judge who guided me last time. I replied to him, "I came to report that I've completed the queen's task."</p>
-<div class="orv_constellation"><p>[I know. Once again, you can't enter the palace.]</p></div>
+<div class="orv_constellation"><p>I know. Once again, you can't enter the palace.</p></div>
 <p class="orv_line">"…Why?"</p>
-<div class="orv_constellation"><p>[I can't tell you that.]</p></div>
+<div class="orv_constellation"><p>I can't tell you that.</p></div>
 <p class="orv_line">The judge waved his hand like it was troublesome.</p>
-<div class="orv_constellation"><p>[Go back. I summoned you using the power of the father but it is impossible for you to enter.]</p></div>
+<div class="orv_constellation"><p>Go back. I summoned you using the power of the father but it is impossible for you to enter.</p></div>
 <p class="orv_line">"I have an appointment with the queen. I must enter."</p>
-<div class="orv_constellation"><p>[You can't right now. Go back.]</p></div>
+<div class="orv_constellation"><p>You can't right now. Go back.</p></div>
 <p class="orv_line">What type of crap was this? Despite his strength, the judge was miniscule compared to Persephone. Still, looking at this stubbornness…</p>
 <p class="orv_line">"…Perhaps they are both away?"</p>
 <p class="orv_line">The judge hesitated before nodding.</p>
-<div class="orv_constellation"><p>[That's right.]</p></div>
+<div class="orv_constellation"><p>That's right.</p></div>
 <p class="orv_line">"What's going on…"</p>
 <p class="orv_line">Hades and Persephone were absent at the same time. I didn't know what it was but there was a high probability that something big had happened. If it was an emergency meeting for the 12 gods of Olympus… but was there anything worth making that summons at this point?</p>
 <p class="orv_line">"Did they leave something for me? Something I can pick up if I arrive…"</p>
-<div class="orv_constellation"><p>[Why should I tell you if there was such a thing?]</p></div>
+<div class="orv_constellation"><p>Why should I tell you if there was such a thing?</p></div>
 <p class="orv_line">I knew that the judges had different personalities but I didn't expect to be caught by such a tough one. Based on the way he talked, there must be something. There was no way that the meticulous Persephone would've just left…</p>
 <p class="orv_line">It couldn't be helped.</p>
 <p class="orv_line">"I'll let you take a sip of this if you help me."</p>
 <p class="orv_line">I took out the Yamata no Orochi alcohol that I had placed into a bottle in my coat. I opened the lid and the smell of sweet fermented liquor spread.</p>
-<div class="orv_constellation"><p>[T-That is…?]</p></div>
+<div class="orv_constellation"><p>T-That is…?</p></div>
 <p class="orv_line">The judge was shocked. For a person who had lived a long time, alcohol was like drugs. It was the only means to forget the tragedy of the long years. This wasn't alcohol but alcohol made from the parts of a constellation.</p>
-<div class="orv_constellation"><p>[H-Hrmm. Hrmm…]</p></div>
+<div class="orv_constellation"><p>H-Hrmm. Hrmm…</p></div>
 <p class="orv_line">"If you don't like it then I can go."</p>
-<div class="orv_constellation"><p>[W-Wait a minute! I understand. I'll give you the thing that the queen left.]</p></div>
+<div class="orv_constellation"><p>W-Wait a minute! I understand. I'll give you the thing that the queen left.</p></div>
 <p class="orv_line">He ate the bait. This was completely different from the harsh judge I saw last time.</p>
-<div class="orv_constellation"><p>[Hah… good…]</p></div>
+<div class="orv_constellation"><p>Hah… good…</p></div>
 <p class="orv_line">The judge grinned with satisfaction after taking a sip and pulled out a yellow bead.</p>
-<div class="orv_constellation"><p>[Here, take it and go.]</p></div>
+<div class="orv_constellation"><p>Here, take it and go.</p></div>
 <p class="orv_line">It was a bright yellow bead. I realized it was the soul of Shin Yoosung that I had been eagerly looking for. I rubbed the bead several times and it shone with a faint light as it floated in the air. I placed my hand on the bead and thought, 'I'm sorry, am I late?'</p>
 <p class="orv_line">The bead only screamed, like she had lost most of her language.</p>
-<div class="orv_constellation"><p>[Ah…ah.]</p></div>
+<div class="orv_constellation"><p>Ah…ah.</p></div>
 <p class="orv_line">A woman who lost her words and her memories. Despite dedicating her life to the scenario, the only story left to her was a horrible history of pain. This was what a normal person would say.</p>
 <p class="orv_line">'You've gone through enough so rest and take it easy'.</p>
 <p class="orv_line">However, Shin Yoosung couldn't rest. She still had work to do in this world.</p>
-<div class="orv_constellation"><p>[Ah…jussi…?]</p></div>
+<div class="orv_constellation"><p>Ah…jussi…?</p></div>
 <p class="orv_line">The soul trembled after a long time.</p>
-<div class="orv_constellation"><p>[Really, really…]</p></div>
+<div class="orv_constellation"><p>Really, really…</p></div>
 <p class="orv_line">'Yes'.</p>
-<div class="orv_constellation"><p>[Why…?]</p></div>
+<div class="orv_constellation"><p>Why…?</p></div>
 <p class="orv_line">'You still have work left to do in this world'.</p>
 <p class="orv_line">I didn't come here because I sympathized with her. I did it because I needed Shin Yoosung's help. There was something that only she could do with the story she built up for a long time. Shin Yoosung responded with slight fear.</p>
-<div class="orv_constellation"><p>[I… what should I do?]</p></div>
+<div class="orv_constellation"><p>I… what should I do?</p></div>
 <p class="orv_line">I touched her soul and showed her some of my thoughts. Shin Yoosung was silent for a while before she burst out laughing.</p>
-<div class="orv_constellation"><p>[Haha, ha… a cruel person, ahjussi… in a way, you are more cruel than the Captain…]</p></div>
+<div class="orv_constellation"><p>Haha, ha… a cruel person, ahjussi… in a way, you are more cruel than the Captain…</p></div>
 <p class="orv_line">'I'm sorry'.</p>
-<div class="orv_constellation"><p>[But… okay. I accept. No… I want to do it. This is what I want. This time, I want to see the 'ending' of this world.]</p></div>
+<div class="orv_constellation"><p>But… okay. I accept. No… I want to do it. This is what I want. This time, I want to see the 'ending' of this world.</p></div>
 <p class="orv_line">'Your memories might disappear. Can you endure it?'</p>
 <p class="orv_line">Shin Yoosung nodded.</p>
-<div class="orv_constellation"><p>[I'm not afraid. Ahjussi… I'll believe in what you told me.]</p></div>
+<div class="orv_constellation"><p>I'm not afraid. Ahjussi… I'll believe in what you told me.</p></div>
 <p class="orv_line">Finally, Shin Yoosung's soul disappeared back into the bead. She probably wouldn't come out for a while. The moment we would meet again was after she gained a physical body.</p>
 <p class="orv_line">The judge watched us and opened his mouth.</p>
-<div class="orv_constellation"><p>[As you might know, the body isn't resurrected just by taking the soul out of the world. Moreover, it is impossible for the soul to settle into a new body after a long time.]</p></div>
+<div class="orv_constellation"><p>As you might know, the body isn't resurrected just by taking the soul out of the world. Moreover, it is impossible for the soul to settle into a new body after a long time.</p></div>
 <p class="orv_line">The judge chuckled.</p>
-<div class="orv_constellation"><p>[There might be a way with reincarnation but this soul has committed so many sins that it won't be born again as a human. If you want her to be born again as a human then you have to throw away all the stories of the soul. In that case, she won't be the person you knew.]</p></div>
+<div class="orv_constellation"><p>There might be a way with reincarnation but this soul has committed so many sins that it won't be born again as a human. If you want her to be born again as a human then you have to throw away all the stories of the soul. In that case, she won't be the person you knew.</p></div>
 <p class="orv_line">"I know."</p>
 <p class="orv_line">As Persephone said, the soul was a story. Even now, Shin Yoosung's soul was becoming 'not Shin Yoosung'. However, that wasn't the only path for Shin Yoosung.</p>
 <p class="orv_line">I immediately called to someone. 'Bihyung'.</p>
@@ -349,18 +356,12 @@
             <a href="./ch_131"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_133">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="132" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="119" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="131" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="131" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 418: Ep. 79 - The Secretive Plotter, III</title>
     <meta property="og:title" content="Ch 418: Ep. 79 - The Secretive Plotter, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00418.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 418: Ep. 79 - The Secretive Plotter, III</h1></div>
 <p class="orv_line">Han Sooyoung's demanding tone prompted Yoo Joonghyuk to start with his story. However, his tale sounded incoherent and he repeated himself over and over again. Ten minutes passed by like that – she eventually stopped listening quietly and spoke up.</p>
@@ -204,7 +211,7 @@
 <p class="orv_line">"He used the Story that the me from the 1863rd regression turn possessed."</p>
 <p class="orv_line">"…You mean, that Immortal whatever chuuni-sounding Story?"</p>
 <p class="orv_line">Han Sooyoung went "Thought as much," and nodded her head. Her irises expanded ever so slightly as her Story kicked into gear once more.</p>
-<div class="orv_system"><p>[Story, 'Predictive Plagiarism', has begun its storytelling!]</p></div>
+<div class="orv_system"><p>Story, 'Predictive Plagiarism', has begun its storytelling!</p></div>
 <p class="orv_line">The only one left out of the loop, Jung Heewon, tried to say something, her voice sounding confused. "What are you two talking about? Are you saying that the 'Secretive Plotter' looks like Joonghyuk-ssi?"</p>
 <p class="orv_line">Han Sooyoung glanced at her for a bit, before replying with a long sigh. "Simply put, there are two Yoo Joonghyuks in this world-line."</p>
 <p class="orv_line">"…Is that even possible?"</p>
@@ -273,12 +280,12 @@
 <p class="orv_line">– 'Secretive Plotter'. Are you someone who knows the epilogue of that novel?</p>
 <p class="orv_line">That was the reason why I decided to ask this question. I was sure of guessing the Plotter's true identity correctly as long as he provided me with the 'right' answer.</p>
 <p class="orv_line">Eventually, the Secretive Plotter opened his lips.</p>
-<div class="orv_constellation"><p>[I am refusing to answer that question.]</p></div>
+<div class="orv_constellation"><p>I am refusing to answer that question.</p></div>
 <p class="orv_line">"What? No, hang on…"</p>
 <div class="orv_system"><p>Constellation, 'Secretive Plotter', has used the 'right to refuse' on the third question.</p></div>
 <p class="orv_line">God damn it, I forgot about that. Both sides could exercise the 'right to refuse' once during this 'Three Divine Questions and Answers'.</p>
 <p class="orv_line">The Plotter was looking down at me with a pair of eyes that couldn't be read. For a brief moment there, I witnessed the Probability's sparks envelop his coat.</p>
-<div class="orv_constellation"><p>[I feel tired. Enough. Now, go back.]</p></div>
+<div class="orv_constellation"><p>I feel tired. Enough. Now, go back.</p></div>
 <p class="orv_line">"Hang on! The Q&amp;A isn't ove…"</p>
 <p class="orv_line">Before I could finish, I was overcome with the sensation of space folding around me, and soon, found myself standing outside the hall.</p>
 <p class="orv_line">The sense of dejection rushed in as I stared at the firmly-shut door to the hall.</p>
@@ -287,7 +294,7 @@
 <p class="orv_line">Normally, the 'Three Divine Questions and Answers' wasn't a ceremony that one side could wilfully delay like this. However, this 'Secretive Plotter' managed to do exactly that. I couldn't even estimate how powerful a Status he must've possessed in order to make something this unbelievable happen.</p>
 <p class="orv_line">I pounded on the hall's door and shouted out. "Open the door! This is not what we agreed upon! I need to get back to my companions!"</p>
 <p class="orv_line">In that instant, a powerful Status rocked the door and my Incarnation Body was flung away. I staggered back up to my feet and got ready to unleash my own Status.</p>
-<p class="orv_line">Unexpectedly, it was the kkoma Yoo Joonghyuk number [999] who dissuaded me from doing that. "It'll be better if you don't."</p>
+<p class="orv_line">Unexpectedly, it was the kkoma Yoo Joonghyuk number <strong>[999]</strong> who dissuaded me from doing that. "It'll be better if you don't."</p>
 <p class="orv_line">I sensed the ominous flow of air beyond the doorway and urgently withdrew my Status. Indeed, this kkoma Yoo Joonghyuk was right. My Incarnation Body was still gravely injured, and the other party was a being so strong that the current me couldn't even guess his actual power level.</p>
 <p class="orv_line">"You'll have another chance, Kim Dokja."</p>
 <p class="orv_line">"…And when will that be?"</p>
@@ -298,9 +305,9 @@
 <p class="orv_line">Go-ooooh…</p>
 <p class="orv_line">…Yup, not making a rash decision would be for the best, after all.</p>
 <p class="orv_line">Also, it wasn't as if I walked away with nothing from the current situation, anyway.</p>
-<div class="orv_system"><p>['The Fourth Wall' is faintly vibrating.]</p></div>
+<div class="orv_system"><p>'The Fourth Wall' is faintly vibrating.</p></div>
 <p class="orv_line">⸢(There are quite a few faces I haven't seen in awhile. Looks like a group of Shantaks.)⸥</p>
-<p class="orv_line">I was startled by the sudden voice coming from my inside. It was coming through the [The Fourth Wall]'s messaging system.</p>
+<p class="orv_line">I was startled by the sudden voice coming from my inside. It was coming through the <strong>[The Fourth Wall]</strong>'s messaging system.</p>
 <p class="orv_line">Judging from the way it spoke…</p>
 <p class="orv_line">'…The Devourer of Dreams?'</p>
 <p class="orv_line">⸢(It is indeed I.)⸥</p>
@@ -324,12 +331,12 @@
 <p class="orv_line">The true identity of the 'Secretive Plotter' and the origins of the 'Outer Gods'. Could there be some kind of a connection between the two?</p>
 <p class="orv_line">Before I could throw out a question regarding that theory, someone engaged me for a chat first.</p>
 <p class="orv_line">"I heard that you like reading novels."</p>
-<p class="orv_line">It was the kkoma Yoo Joonghyuk number [999].</p>
+<p class="orv_line">It was the kkoma Yoo Joonghyuk number <strong>[999]</strong>.</p>
 <p class="orv_line">I nodded my head. "Sure, I do. What about it?"</p>
 <p class="orv_line">"If you want, I can tell you a short story."</p>
 <p class="orv_line">"A story?"</p>
-<p class="orv_line">It was then the kkoma Yoo Joonghyuks number [666], [777], and [888] all looked at [999] with baffled expressions. It seemed that this wasn't a part of the plan.</p>
-<p class="orv_line">Not even waiting for my reply, the kkoma Yoo Joonghyuk number [999] began telling his story. "There was a wolf that continued to fight a lonely battle for a very long time. He had a goal he was chasing after, and there was a question he wanted to ask. For the answer to that question, he continued to fight."</p>
+<p class="orv_line">It was then the kkoma Yoo Joonghyuks number <strong>[666]</strong>, <strong>[777]</strong>, and <strong>[888]</strong> all looked at <strong>[999]</strong> with baffled expressions. It seemed that this wasn't a part of the plan.</p>
+<p class="orv_line">Not even waiting for my reply, the kkoma Yoo Joonghyuk number <strong>[999]</strong> began telling his story. "There was a wolf that continued to fight a lonely battle for a very long time. He had a goal he was chasing after, and there was a question he wanted to ask. For the answer to that question, he continued to fight."</p>
 <p class="orv_line">"Is it an allegory?"</p>
 <p class="orv_line">"The wolf kept fighting. Hundreds of years, thousands, and maybe even for tens of thousands of years."</p>
 <p class="orv_line">I wanted to say that a wolf couldn't possibly live for that long, but regardless, the story continued on.</p>
@@ -353,18 +360,12 @@
             <a href="./ch_417"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_419">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="418" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="818" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="417" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="417" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

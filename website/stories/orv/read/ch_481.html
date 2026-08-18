@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 481: Ep. 91 - One Single Story, V</title>
     <meta property="og:title" content="Ch 481: Ep. 91 - One Single Story, V" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,38 +177,38 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00481.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 481: Ep. 91 - One Single Story, V</h1></div>
 <p class="orv_line">Those were Uriel's last words to us. She didn't say anything else afterwards. And while not saying anything, the 'Outer God Kings' exchanged glances with each other.</p>
 <p class="orv_line">I didn't miss that opening and spoke up. "We don't have any intentions to fight against you, just like how you don't truly wish to destroy this world. You are just as familiar with tragedies as I am. There is no need to create more sorrow in this world-line."</p>
-<div class="orv_system"><p>[The scenario has entered a temporary state of lull!]</p></div>
-<div class="orv_system"><p>[&lt;Star Stream&gt; is surprised by the unexpected development of this scenario!]</p></div>
+<div class="orv_system"><p>The scenario has entered a temporary state of lull!</p></div>
+<div class="orv_system"><p>&lt;Star Stream&gt; is surprised by the unexpected development of this scenario!</p></div>
 <p class="orv_line">I grew tense while observing their response. The 'Outer Gods' still didn't say anything. I couldn't even tell whether they heard my words or not.</p>
 <p class="orv_line">⸢So far, things had unfolded according to Kim Dokja's plan.⸥</p>
 <p class="orv_line">Using the 999th turn's memories, and arousing their memories of 'Yoo Joonghyuk'.</p>
 <p class="orv_line">⸢From the beginning, it was impossible to win this fight with a frontal assault.⸥</p>
 <p class="orv_line">If they got serious and activated the calamity's Probability with everything they had, then this scenario would've ended just as it started. Back in the original novel, there were a few planets that responded naively to their 'Great Apocalypse' and ended up getting destroyed, instead.</p>
-<div class="orv_system"><p>[A large number of Constellations that dislike you are dissatisfied with the current situation!]</p></div>
-<div class="orv_system"><p>[A portion of Constellations are opposing against the scenario's illogical development!]</p></div>
+<div class="orv_system"><p>A large number of Constellations that dislike you are dissatisfied with the current situation!</p></div>
+<div class="orv_system"><p>A portion of Constellations are opposing against the scenario's illogical development!</p></div>
 <p class="orv_line">The Constellations were probably anticipating a spectacle of their hated &lt;Kim Dokja's Company&gt; meeting a tragic end alongside Earth.</p>
 <p class="orv_line">Unfortunately, the 'Outer God Kings' didn't do that.</p>
 <p class="orv_line">At least, not for now, anyway.</p>
@@ -219,13 +226,13 @@
 <p class="orv_line">I could just about understand where she was coming from now. And that's why I replied like this.</p>
 <p class="orv_line">– I thought that I can only believe in these people who were like teachers to me – these individuals that I had read about.</p>
 <p class="orv_line">I trusted the 'Ways of Survival'. Not the author responsible, no, but the characters that appeared within its pages.</p>
-<div class="orv_system"><p>[The 'Living Flame' is looking at you.]</p></div>
+<div class="orv_system"><p>The 'Living Flame' is looking at you.</p></div>
 <p class="orv_line">Uriel, more righteous than anyone else out there.</p>
-<div class="orv_system"><p>[The 'King of the Silver Heart' is looking at you.]</p></div>
+<div class="orv_system"><p>The 'King of the Silver Heart' is looking at you.</p></div>
 <p class="orv_line">The kind and honest Lee Hyunsung.</p>
-<div class="orv_system"><p>[The 'Master of the Sunken Island' is looking at you.]</p></div>
+<div class="orv_system"><p>The 'Master of the Sunken Island' is looking at you.</p></div>
 <p class="orv_line">Lee Jihye possessing a lot of affection.</p>
-<div class="orv_system"><p>[Constellation, 'Secretive Plotter', is looking at you.]</p></div>
+<div class="orv_system"><p>Constellation, 'Secretive Plotter', is looking at you.</p></div>
 <p class="orv_line">Yoo Joonghyuk, who never knelt down in defeat no matter how unfair things became.</p>
 <p class="orv_line">I believed in them. I believed in their histories that helped the young me grow.</p>
 <p class="orv_line">I believed that their worth would never be tarnished no matter how much time had passed by.</p>
@@ -246,25 +253,25 @@
 <p class="orv_line">They weren't agitated simply because this world just so happened to be their home planet.</p>
 <div class="orv_outergod"><p>【Are you aware of the events that took place in our world-line?】</p></div>
 <p class="orv_line">I hesitated on what to say. This wasn't something that I could explain away easily. Instead of my lacking communication skills, though, my Stories began speaking up in my stead.</p>
-<div class="orv_system"><p>[Story, 'Demon King of Salvation', has begun its storytelling.]</p></div>
+<div class="orv_system"><p>Story, 'Demon King of Salvation', has begun its storytelling.</p></div>
 <p class="orv_line">A portion of the Stories I possessed travelled towards the beings from the 999th turn via the tip of my hand.</p>
-<div class="orv_system"><p>[Story, 'One Who Opposes the Miracle', has begun its storytelling.]</p></div>
-<div class="orv_system"><p>[Story, 'One Who Hunted the King of Disasters', has begun its storytelling.]</p></div>
+<div class="orv_system"><p>Story, 'One Who Opposes the Miracle', has begun its storytelling.</p></div>
+<div class="orv_system"><p>Story, 'One Who Hunted the King of Disasters', has begun its storytelling.</p></div>
 <p class="orv_line">I observed them reading my Stories. Diverse, colourful expressions filled their faces. It was quite clear what overlapped with my Story while they were reading it.</p>
 <p class="orv_line">…Did I also make such an expression while reading the 'Ways of Survival' for the first time?</p>
 <p class="orv_line">That was something I'd never find out.</p>
 <div class="orv_outergod"><p>【…But, how could such a thing…】</p></div>
 <p class="orv_line">It was around then that an unexpected event occurred; the Status of the 999th turn's Uriel, reading my Story silently until then, travelled over the Story itself and invaded into the sea of my consciousness.</p>
 <p class="orv_line">As if, she wanted to find out the origin of my existence.</p>
-<div class="orv_system"><p>[Exclusive skill, 'The Fourth Wall', is activating!]</p></div>
+<div class="orv_system"><p>Exclusive skill, 'The Fourth Wall', is activating!</p></div>
 <p class="orv_line">Tsu-chuchuchut!</p>
 <p class="orv_line">Just as I expected, the 'Wall' made a move as the blinding sparks danced in the air.</p>
-<div class="orv_system"><p>['The Fourth Wall' is glaring at the 'Living Flame'!]</p></div>
+<div class="orv_system"><p>'The Fourth Wall' is glaring at the 'Living Flame'!</p></div>
 <p class="orv_line">The Living Flame's left hand was deflected away as if being rejected, a faint trace of burn marks visible on her skin. She looked at me in pure shock, then the faint hints of understanding began permeating in the lights of her eyes.</p>
 <div class="orv_outergod"><p>【I see. So, that's how it was. You are… Her voice sounded even more surprised compared to when she was reading my memories. The last fragment of the 'Final Wall', is it… Is that why the 'Secretive Plotter' was so obsessed over you?】</p></div>
 <p class="orv_line">"Please make your decision. There isn't much time left until the scenario's end."</p>
-<div class="orv_system"><p>[The 'Great Apocalypse Scenario' has entered a temporary state of lull!]</p></div>
-<div class="orv_system"><p>[If the current situation persists, the distortion of the world will accelerate.]</p></div>
+<div class="orv_system"><p>The 'Great Apocalypse Scenario' has entered a temporary state of lull!</p></div>
+<div class="orv_system"><p>If the current situation persists, the distortion of the world will accelerate.</p></div>
 <p class="orv_line">Since they had descended as 'calamities', this scenario now had to have a conclusion without exception. The best method for everyone involved was for them to give up on being the 'calamities'.</p>
 <p class="orv_line">The 'Living Flame' opened her lips again. 【I acknowledge the potential you possess. Although vexing, I can even agree to forestall my vengeance. However…】</p>
 <p class="orv_line">Countless emotions brushed past her expression just then.</p>
@@ -275,24 +282,24 @@
 <p class="orv_line">A gob-smacking heat storm began condensing with the 999th turn's Uriel as its centre. Salty air circulated around my nose as the seawater evaporated into the rushing winds.</p>
 <p class="orv_line">I reflexively cried out at this outrageous transformation of Status.</p>
 <p class="orv_line">"Yoo Joonghyuk!!"</p>
-<p class="orv_line">At the same time, he stepped up before me and cut down the rushing hot air with his [Black Heavenly Demon Sword]. However, the heat still managed to cook the backs of his hands.</p>
-<p class="orv_line">His breathing became irregular. The [Disconnected Film Theory]'s effect had almost run its course.</p>
+<p class="orv_line">At the same time, he stepped up before me and cut down the rushing hot air with his <strong>[Black Heavenly Demon Sword]</strong>. However, the heat still managed to cook the backs of his hands.</p>
+<p class="orv_line">His breathing became irregular. The <strong>[Disconnected Film Theory]</strong>'s effect had almost run its course.</p>
 <p class="orv_line">Ku-gugugugu!</p>
 <p class="orv_line">The 999th turn's Giant Stories were activating simultaneously. For some reason, even the 999th turn's Lee Hyunsung didn't try to stop Uriel.</p>
 <p class="orv_line">I urgently shouted out. "But why…! There's no need to do this! We-!!"</p>
 <p class="orv_line">The 999th turn's Uriel wordlessly strode over to us. Companions grew tense and began unleashing their own Statuses.</p>
-<div class="orv_system"><p>[Giant Story, 'Demon Realm's Spring', is continuing on with its storytelling!]</p></div>
-<div class="orv_system"><p>[Giant Story, 'Torch that Swallowed the Myth', is continuing on with its storytelling!]</p></div>
-<p class="orv_line">The 'Living Flame' simply took a glance at our Stories and continued to approach us. After every 'Outer God' handed over their Status to her, she raised her [Flames of Retribution] up high.</p>
+<div class="orv_system"><p>Giant Story, 'Demon Realm's Spring', is continuing on with its storytelling!</p></div>
+<div class="orv_system"><p>Giant Story, 'Torch that Swallowed the Myth', is continuing on with its storytelling!</p></div>
+<p class="orv_line">The 'Living Flame' simply took a glance at our Stories and continued to approach us. After every 'Outer God' handed over their Status to her, she raised her <strong>[Flames of Retribution]</strong> up high.</p>
 <p class="orv_line">I bit down hard on my lip.</p>
-<div class="orv_system"><p>[The absolute majority of the Constellations are scared of the 'Outer God's' power.]</p></div>
-<div class="orv_system"><p>[Many Dokkaebis are repulsed by the Story of the 'Outer God'.]</p></div>
+<div class="orv_system"><p>The absolute majority of the Constellations are scared of the 'Outer God's' power.</p></div>
+<div class="orv_system"><p>Many Dokkaebis are repulsed by the Story of the 'Outer God'.</p></div>
 <p class="orv_line">Everything within &lt;Star Stream&gt; would soon become stories.</p>
 <p class="orv_line">However, why was a story both the Constellations and Dokkaebis didn't want to see deemed necessary?</p>
 <p class="orv_line">Just what was the reason for a story to exist in this world when it was only good for plunging everyone into endless sorrow?</p>
 <div class="orv_outergod"><p>【Do you always seek to create a Story to tell someone else?】</p></div>
 <p class="orv_line">The 999th turn's Uriel was talking to us.</p>
-<p class="orv_line">The [Flames of Retribution] refined to the stunning degree was now talking about the time outside of the scenarios.</p>
+<p class="orv_line">The <strong>[Flames of Retribution]</strong> refined to the stunning degree was now talking about the time outside of the scenarios.</p>
 <div class="orv_outergod"><p>【Who does it exist for, this Story you have compiled so far?】</p></div>
 <p class="orv_line">While listening to her true voice, I realized what her intentions were.</p>
 <p class="orv_line">A story nobody supported. Even then, she wished to see the end of this particular scenario.</p>
@@ -302,41 +309,41 @@
 <p class="orv_line">Stars in the skies were looking at us. Stars that had been watching this story for a very long time. I imagined those countless starlights, and then, end of all the worlds waiting beyond that.</p>
 <p class="orv_line">I imagined the end of this story, the one I'd been building up to for a long time.</p>
 <p class="orv_line">"Kim Dokja!"</p>
-<p class="orv_line">The waves of heat completely filled up my view. The [Hellfire] of the 999th turn's Uriel, intermingling with the odour of burning sulphur, created the tsunami wave of lava. It was the moving wall of enormous Status capable of immediately melting everything that it touched.</p>
+<p class="orv_line">The waves of heat completely filled up my view. The <strong>[Hellfire]</strong> of the 999th turn's Uriel, intermingling with the odour of burning sulphur, created the tsunami wave of lava. It was the moving wall of enormous Status capable of immediately melting everything that it touched.</p>
 <p class="orv_line">The victory would be decided with one attack.</p>
 <p class="orv_line">Block that, and we'd emerge as the victors.</p>
 <p class="orv_line">"Focus your Giant Stories, everyone!"</p>
 <p class="orv_line">Petty tricks were rendered useless in the face of a calamity. My companions helped me with the mobilisation of the Giant Stories, rather than focusing on their own specialities.</p>
 <p class="orv_line">Shin Yoosung, Lee Gilyoung, and even Yoo Sangah, too – everyone raised their hands up in the air and added their share of the Giant Stories.</p>
-<div class="orv_system"><p>[Giant Story, 'Season of Light and Darkness', has begun its storytelling!]</p></div>
+<div class="orv_system"><p>Giant Story, 'Season of Light and Darkness', has begun its storytelling!</p></div>
 <p class="orv_line">Accompanying the noises of the heavens splitting apart, the roars of the Apocalypse Dragon could be heard. Right next second, yet another loud howl exploded out from Han Sooyoung's direction.</p>
 <p class="orv_line">Ku-ooooooh!</p>
 <p class="orv_line">The former candidate for the Apocalypse Dragon, the 'Abyssal Black Flame Dragon' was firing its Breath.</p>
-<p class="orv_line">Jung Heewon dashed forward while riding on the vicious storm of the [Black Flame].</p>
-<div class="orv_system"><p>[Constellation, 'Lily Blooming in Aquarius', is unleashing her Status!]</p></div>
-<div class="orv_system"><p>[Constellation, 'Demon-like Judge of Fire', is unleashing her Status!]</p></div>
-<p class="orv_line">Two Archangels were working together with Jung Heewon. Her [Judge's Sword] raised up high was now cutting down the tsunami wave.</p>
+<p class="orv_line">Jung Heewon dashed forward while riding on the vicious storm of the <strong>[Black Flame]</strong>.</p>
+<div class="orv_system"><p>Constellation, 'Lily Blooming in Aquarius', is unleashing her Status!</p></div>
+<div class="orv_system"><p>Constellation, 'Demon-like Judge of Fire', is unleashing her Status!</p></div>
+<p class="orv_line">Two Archangels were working together with Jung Heewon. Her <strong>[Judge's Sword]</strong> raised up high was now cutting down the tsunami wave.</p>
 <p class="orv_line">Kwa-aaaaaah!</p>
 <p class="orv_line">Was it because of the two Archangels' combined attack? For a moment there, the tsunami wave's movement grew sluggish.</p>
 <p class="orv_line">Yoo Joonghyuk didn't miss that opening.</p>
-<div class="orv_system"><p>[Story, 'Hell of Eternity', is continuing with its storytelling!]</p></div>
-<p class="orv_line">Traces of numerous regression turns branched out from his [Black Heavenly Demon Sword]. His Status spread out and began destroying the rushing wave.</p>
+<div class="orv_system"><p>Story, 'Hell of Eternity', is continuing with its storytelling!</p></div>
+<p class="orv_line">Traces of numerous regression turns branched out from his <strong>[Black Heavenly Demon Sword]</strong>. His Status spread out and began destroying the rushing wave.</p>
 <p class="orv_line">– It's not enough.</p>
-<p class="orv_line">Unfortunately, his desperate resistance couldn't last for long; the sparks dancing all over his body were getting fiercer and fiercer. The [Disconnected Film Theory]'s effect had finally run out, in other words.</p>
+<p class="orv_line">Unfortunately, his desperate resistance couldn't last for long; the sparks dancing all over his body were getting fiercer and fiercer. The <strong>[Disconnected Film Theory]</strong>'s effect had finally run out, in other words.</p>
 <p class="orv_line">The moment his Status began declining sharply, he let rip one powerful attack at the centre of the wave.</p>
 <p class="orv_line">Breaking the Sky Swordsmanship(破天劍道).</p>
 <p class="orv_line">Inner Mysteries(奧義).</p>
 <p class="orv_line">Split the Dark Ocean(暗海斬).</p>
 <p class="orv_line">A minute opening was created by the attack from his Inner Mysteries. I didn't miss that.</p>
-<div class="orv_constellation"><p>[Maknae-yah, preparations are complete.]</p></div>
+<div class="orv_constellation"><p>Maknae-yah, preparations are complete.</p></div>
 <p class="orv_line">Also, the voice I had been waiting for entered my ears just then, too.</p>
 <p class="orv_line">Surrounding clouds gathered around me as if to envelop me – somersault clouds, filled to the brim with cracking thunderbolts, completely encircled me. My body was buzzing as if every lightning found in the heavens had been hoovered up here.</p>
-<div class="orv_constellation"><p>[We can use this only once.]</p></div>
+<div class="orv_constellation"><p>We can use this only once.</p></div>
 <p class="orv_line">I kicked off the clouds and dashed into the gap within the lava.</p>
 <p class="orv_line">My wings generated through the 'Demon King Transformation' were lit on fire and it felt like my eyeballs were being cooked by this horrifying heat. However, I didn't stop.</p>
 <p class="orv_line">I had a duty to protect this path my companions opened up for me.</p>
 <p class="orv_line">⸢The one single story that can stand as the testament to our lives.⸥</p>
-<p class="orv_line">My feet moved faster and faster until they became streaks of light. I used the powers of [Electrification] to hold together my Incarnation Body threatening to explode at any second.</p>
+<p class="orv_line">My feet moved faster and faster until they became streaks of light. I used the powers of <strong>[Electrification]</strong> to hold together my Incarnation Body threatening to explode at any second.</p>
 <p class="orv_line">Faster and stronger, as if I had become a single streak of lightning.</p>
 <p class="orv_line">Ku-rururururu!</p>
 <p class="orv_line">The lightning charged fully in both of my hands boiled vigorously. This lightning, capable of smashing apart countless stars found in &lt;Star Stream&gt;, the one that half-destroyed &lt;Emperor&gt;'s Heavenly Palace…</p>
@@ -348,13 +355,13 @@
 <p class="orv_line">Kwa-kwakwakwak!</p>
 <p class="orv_line">The tsunami wave of lava exploded grandly and evaporated right there and then. The streaks of electricity branching out created a path above the splitting wave.</p>
 <p class="orv_line">It was the path of the Story we had been walking on. And I ran on it.</p>
-<div class="orv_system"><p>[Giant Story, 'Demon Realm's Spring', is arranging your 'Conclusion'.]</p></div>
+<div class="orv_system"><p>Giant Story, 'Demon Realm's Spring', is arranging your 'Conclusion'.</p></div>
 <p class="orv_line">The Demon Realm's 'Beginning/Gi(起)'.</p>
-<div class="orv_system"><p>[Giant Story, 'Torch that Swallowed the Myth', is proudly guiding you.]</p></div>
+<div class="orv_system"><p>Giant Story, 'Torch that Swallowed the Myth', is proudly guiding you.</p></div>
 <p class="orv_line">Olympus's 'Development/Seung(承)'.</p>
-<div class="orv_system"><p>[Giant Story, 'Season of Light and Darkness', is right by your side.]</p></div>
+<div class="orv_system"><p>Giant Story, 'Season of Light and Darkness', is right by your side.</p></div>
 <p class="orv_line">The Great War of Saints and Demons' 'Climax/Jeon(轉)'. And then…</p>
-<div class="orv_system"><p>[Giant Story, 'Liberator of the Forgotten Ones', is dreaming of the Final Story.]</p></div>
+<div class="orv_system"><p>Giant Story, 'Liberator of the Forgotten Ones', is dreaming of the Final Story.</p></div>
 <p class="orv_line">…The last dot that hadn't been filled yet.</p>
 <p class="orv_line">Kwa-aaaaaah!!</p>
 <p class="orv_line">All the Stories we experienced together merged into one and emitted blinding rays of light. The explosion of light so bright that it seared my eyes, blanketed everything.</p>
@@ -371,18 +378,18 @@
 <p class="orv_line">Beyond the falling grey ashes, something blurry could be seen.</p>
 <p class="orv_line">Fear began clouding the expressions of the 'Outer Gods'.</p>
 <p class="orv_line">I instantly realized what they were staring at. At the place where they arrived once before during the 999th turn. At the 'Final Wall' that could never be overcome if one insisted on living within this world of 'Stories'.</p>
-<div class="orv_system"><p>[Calamities of the 'Great Apocalypse Scenario' are giving up on the positions of calamity.]</p></div>
-<div class="orv_system"><p>[The 'Great Apocalypse' is entering the termination sequence!]</p></div>
-<div class="orv_system"><p>[Your last 'Giant Story' is blossoming!]</p></div>
-<div class="orv_system"><p>[Absolute majority of the Constellations are witnessing the moment of your last Story's awakening!]</p></div>
+<div class="orv_system"><p>Calamities of the 'Great Apocalypse Scenario' are giving up on the positions of calamity.</p></div>
+<div class="orv_system"><p>The 'Great Apocalypse' is entering the termination sequence!</p></div>
+<div class="orv_system"><p>Your last 'Giant Story' is blossoming!</p></div>
+<div class="orv_system"><p>Absolute majority of the Constellations are witnessing the moment of your last Story's awakening!</p></div>
 <p class="orv_line">I could now hear that 'Wall' calling out to me.</p>
-<div class="orv_system"><p>[Hidden Scenario – 'One Single Story', has reached the 'Conclusion'!]</p></div>
-<div class="orv_system"><p>[&lt;Star Stream&gt; is carefully considering the name of your last Story.]</p></div>
-<div class="orv_constellation"><p>[You accomplished a feat that every star in &lt;Star Stream&gt; will revere you for.]</p></div>
-<div class="orv_system"><p>[You have arrived at an epic that only an extremely few stars have ever reached!]</p></div>
+<div class="orv_system"><p>Hidden Scenario – 'One Single Story', has reached the 'Conclusion'!</p></div>
+<div class="orv_system"><p>&lt;Star Stream&gt; is carefully considering the name of your last Story.</p></div>
+<div class="orv_constellation"><p>You accomplished a feat that every star in &lt;Star Stream&gt; will revere you for.</p></div>
+<div class="orv_system"><p>You have arrived at an epic that only an extremely few stars have ever reached!</p></div>
 <p class="orv_line">And finally, the message I had been waiting for the longest time could be heard next.</p>
-<div class="orv_system"><p>[You and your Nebula have earned the qualification to witness the '■■ of everything'.]</p></div>
-<div class="orv_system"><p>[The 'King of Stories' is summoning you.]</p></div>
+<div class="orv_system"><p>You and your Nebula have earned the qualification to witness the '■■ of everything'.</p></div>
+<div class="orv_system"><p>The 'King of Stories' is summoning you.</p></div>
 <br>
 <hr>
         </article>
@@ -390,18 +397,12 @@
             <a href="./ch_480"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_482">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="481" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="865" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="480" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="480" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

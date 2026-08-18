@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 111: Ep. 22 – Three Promises, III</title>
     <meta property="og:title" content="Ch 111: Ep. 22 – Three Promises, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00111.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 111: Ep. 22 – Three Promises, III</h1></div>
 <p class="orv_line">I could see Olympus's answer from Yoo Sangah's expression. She became red and then paled. Based on Yoo Sangah's eyes, I thought I was too hasty in bringing up the story.</p>
@@ -212,15 +219,15 @@
 <p class="orv_line">I looked at the people around me and opened my mouth. "Shall we organize things?"</p>
 <p class="orv_line">Then my party members approached me one by one, as if they had been waiting. Shin Yoosung and Lee Gilyoung were with Lee Hyunsung, while Lee Jihye stood in a distant place with a slightly sulky expression.</p>
 <p class="orv_line">I heard the voice of a low-grade dokkaebi.</p>
-<div class="orv_constellation"><p>[I am the dokkaebi 'Youngki', who will temporarily take charge of the compensation settlement.]</p></div>
+<div class="orv_constellation"><p>I am the dokkaebi 'Youngki', who will temporarily take charge of the compensation settlement.</p></div>
 <p class="orv_line">He was a newbie dokkaebi and spoke in a slightly stiff voice.</p>
-<div class="orv_constellation"><p>[I will now settle the additional compensation for the fifth scenario.]</p></div>
+<div class="orv_constellation"><p>I will now settle the additional compensation for the fifth scenario.</p></div>
 <p class="orv_line">Perhaps all the higher level dokkaebis had disappeared.</p>
-<div class="orv_system"><p>[You have received the 'Ellain Forest's Vital Energy'.]</p></div>
+<div class="orv_system"><p>You have received the 'Ellain Forest's Vital Energy'.</p></div>
 <p class="orv_line">People caught the small fruit that fell from the air.</p>
-<div class="orv_constellation"><p>[This is the most popular recovery item in the Star Stream. Even if you are seriously injured, you can recover quickly by eating this and sleeping.]</p></div>
+<div class="orv_constellation"><p>This is the most popular recovery item in the Star Stream. Even if you are seriously injured, you can recover quickly by eating this and sleeping.</p></div>
 <p class="orv_line">It was the first time I had seen such a polite dokkaebi and it was hard to believe. Then dokkaebi talked to me and some other people.</p>
-<div class="orv_constellation"><p>[Additional compensation for the key contributors will be given this evening. Thank you for all your hard work. I hope you cheer up in the following scenarios.]</p></div>
+<div class="orv_constellation"><p>Additional compensation for the key contributors will be given this evening. Thank you for all your hard work. I hope you cheer up in the following scenarios.</p></div>
 <p class="orv_line">The voice disappeared and I watched all the people holding the fruit. Characters I didn't know would be dead and some people would be dying right now. Still, we survived. The party members weren't sure if they should feel grateful or sad. Once this happened, someone was bound to act as the representative.</p>
 <p class="orv_line">I stared at them and slowly opened my mouth. "Everyone, you have suffered."</p>
 <p class="orv_line">The moment when nothing was decided only remained for a moment. Sadness was sadness and happiness was happiness. If we made decisions then at least these moments would remain meaningful.</p>
@@ -239,14 +246,14 @@
 <hr>
 <br>
 <p class="orv_line">In the evening, the additional compensation for the main contributors began. There were three main contributors who received additional compensation. They were me, Jung Heewon and Yoo Joonghyuk.</p>
-<div class="orv_system"><p>[The additional compensation for the fifth scenario is a B-grade skill.]</p></div>
+<div class="orv_system"><p>The additional compensation for the fifth scenario is a B-grade skill.</p></div>
 <p class="orv_line">Someone else might say that a B-grade skill as a reward wasn't right, but it was actually balanced. A low alphabet letter didn't mean the skill was useless.</p>
 <p class="orv_line">In addition, the scenario compensation was in the form of a 'free choice'. In other words, I could choose the B-grade skill I wanted. There was a skill that was difficult to acquire among the B-grade skills and I had to get it.</p>
-<div class="orv_system"><p>[Do you want to see the list of B-grade skills?]</p></div>
+<div class="orv_system"><p>Do you want to see the list of B-grade skills?</p></div>
 <p class="orv_line">It was a list with tens of thousands of skills. I was able to avoid a difficult choice because there was a skill I thought of from the beginning.</p>
-<div class="orv_system"><p>[Do you want to receive the B-grade skill Lie Detection as compensation?]</p></div>
+<div class="orv_system"><p>Do you want to receive the B-grade skill Lie Detection as compensation?</p></div>
 <p class="orv_line">I nodded and there was a faint glow as additional messages appeared.</p>
-<div class="orv_system"><p>[The exclusive skill 'Lie Detection' has been added to the skills list.]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Lie Detection' has been added to the skills list.</p></div>
 <p class="orv_line">I finally obtained it. It had been really frustrating not having Lie Detection…</p>
 <p class="orv_line">I looked back and saw that Jung Heewon was having a hard time picking something.</p>
 <p class="orv_line">I asked Lee Jihye who was next to me. "Hey, do you know where Yoo Joonghyuk is?"</p>
@@ -256,7 +263,7 @@
 <p class="orv_line">"…"</p>
 <p class="orv_line">"Really. I watched the whole time. It is completely different from the two of you. I'm certain."</p>
 <p class="orv_line">I had a headache. Speaking of which, it was certain that they were lovers in the second regressions but I couldn't remember in the third regression. Yoo Joonghyuk had a long road to walk. So where the hell did he go? Was it to pick up his younger sister?</p>
-<div class="orv_system"><p>[The sixth scenario will start in three days.]</p></div>
+<div class="orv_system"><p>The sixth scenario will start in three days.</p></div>
 <p class="orv_line">A system message was heard. I think I knew what Yoo Joonghyuk wanted to do. The sixth scenario was when we finally encountered incarnations from other domes.</p>
 <p class="orv_line">He was a restless guy so he probably went to get some hidden skills and items that he couldn't get in the last regression.</p>
 <p class="orv_line">There were still some hidden scenarios in Seoul Dome. It was a bit upsetting that they would be taken away by Yoo Joonghyuk but it was better than he eating up skills.</p>
@@ -285,10 +292,10 @@
 <p class="orv_line">Then Jung Heewon scratched her head and said, "I don't know what this is about but I won't get involved in the fight between the two of you."</p>
 <p class="orv_line">"…Huh?"</p>
 <p class="orv_line">"I won't disturb the two of you… what the hell is this?"</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is making a loving smile.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is making a loving smile.</p></div>
 <p class="orv_line">I suddenly got a chill down my spine. What was that angel thinking?</p>
-<div class="orv_system"><p>[The constellation 'Scribe of Heaven' is watching Demon-like Judge of Fire with solemn eyes.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' has jumped and changed her expression.]</p></div>
+<div class="orv_system"><p>The constellation 'Scribe of Heaven' is watching Demon-like Judge of Fire with solemn eyes.</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' has jumped and changed her expression.</p></div>
 <p class="orv_line">"Dokja-ssi." I looked up with astonishment and saw Yoo Sangah smiling calmly at me. "Don't worry. Joonghyuk-ssi isn't a bad person."</p>
 <p class="orv_line">"…I hope so."</p>
 <p class="orv_line">"I'm sure that he is a good friend."</p>
@@ -314,7 +321,7 @@
 <p class="orv_line">I wanted to drink well in this situation but I also thought it was because of this situation that I had to drink.</p>
 <p class="orv_line">It was a world where everything couldn't be endured without drinking. Then small sparks appeared around my glass. The surprised Yoo Sangah looked at me.</p>
 <p class="orv_line">I nodded. It was a good thing I hadn't drank too much alcohol. The alcohol poured down onto the ground.</p>
-<div class="orv_system"><p>[The constellation 'God of Wine and Ecstasy' wants to talk to you.]</p></div>
+<div class="orv_system"><p>The constellation 'God of Wine and Ecstasy' wants to talk to you.</p></div>
 <p class="orv_line">Olympus had finally taken the bait.</p>
 <br>
 <hr>
@@ -323,18 +330,12 @@
             <a href="./ch_110"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_112">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="111" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="314" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="110" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="110" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

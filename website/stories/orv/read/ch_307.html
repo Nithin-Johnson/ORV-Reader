@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 307: Ep. 58 - Context of the Constellations, III</title>
     <meta property="og:title" content="Ch 307: Ep. 58 - Context of the Constellations, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00307.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 307: Ep. 58 - Context of the Constellations, III</h1></div>
 <p class="orv_line">The door shut me out. I held the door handle and glanced back. Jung Heewon was watching to see how I would act while Han Sooyoung's eyes were oddly vigilant. Meanwhile, Lee Hyunsung looked like he would melt from anxiety.</p>
@@ -232,15 +239,15 @@
 <p class="orv_line">Yoo Sangah kept talking. Most of the cases were minor but despite this, they changed things little by little. They were events where someone suffered, someone found their lost rights or someone felt happy.</p>
 <p class="orv_line">"Yoo Sangah-ssi."</p>
 <p class="orv_line">She wasn't a character. Yet in fact, before Ways of Survival arrived, she was like a 'character' to me. It was because I didn't think there was anyone like her in reality.</p>
-<div class="orv_quote"><p>「 "You will be killed." 」</p></div>
+<div class="orv_quote"><p>"You will be killed."</p></div>
 <p class="orv_line">From the moment the first scenario started, I began to know Yoo Sangah. The person who tried to maintain 'ethics' that didn't exist in Ways of Survival.</p>
-<div class="orv_quote"><p>「 "I'll do it Gilyoung. I will do it." 」</p></div>
+<div class="orv_quote"><p>"I'll do it Gilyoung. I will do it."</p></div>
 <p class="orv_line">Without Yoo Sangah, the party would've surely collapsed.</p>
-<div class="orv_quote"><p>「 "You're so inspiring, Dokja-ssi." 」</p></div>
+<div class="orv_quote"><p>"You're so inspiring, Dokja-ssi."</p></div>
 <p class="orv_line">No matter what nonsense I spoke, Yoo Sangah smiled and accepted it.</p>
-<div class="orv_quote"><p>「 "I should also live my own life!" 」</p></div>
+<div class="orv_quote"><p>"I should also live my own life!"</p></div>
 <p class="orv_line">If she hadn't been there, no matter the story I wanted to create…</p>
-<div class="orv_quote"><p>「 "I never hated Dokja-ssi like I do today. Come back, please." 」</p></div>
+<div class="orv_quote"><p>"I never hated Dokja-ssi like I do today. Come back, please."</p></div>
 <p class="orv_line">I wouldn't have been able to make the Outer World Covenant with confidence.</p>
 <p class="orv_line">–I really can't stand it…</p>
 <p class="orv_line">Yoo Sangah's weak words followed.</p>
@@ -250,7 +257,7 @@
 <p class="orv_line">"Wait a minute, Dokja-ssi―!"</p>
 <p class="orv_line">I ignored Jung Heewon's words and forcibly turned the locked door. The door opened and the scene of the room was revealed. Then I saw three dark faces. Lee Seolhwa, Aileen and… my mother. My mother's eyes were saying, 'You came'.</p>
 <p class="orv_line">The three people stood near the bed and Yoo Sangah was lying on the bed. Her face was pallid. Her firmly closed lips had no colour. It was the others who had conveyed her words on her behalf.</p>
-<div class="orv_quote"><p>「 So… 」</p></div>
+<div class="orv_quote"><p>So…</p></div>
 <p class="orv_line">Inside Yoo Sangah, the broken stories were flowing incessantly.</p>
 <br>
 <hr>
@@ -269,19 +276,19 @@
 <p class="orv_line">"Is there a way?"</p>
 <p class="orv_line">"As of right now… there is nothing we can do here."</p>
 <p class="orv_line">"It might be possible somewhere else."</p>
-<div class="orv_system"><p>[The constellation 'Guam Divine Doctor' is nodding.]</p></div>
+<div class="orv_system"><p>The constellation 'Guam Divine Doctor' is nodding.</p></div>
 <p class="orv_line">The sponsor responded on behalf of Lee Seolhwa.</p>
-<div class="orv_system"><p>[The constellation 'Guam Divine Doctor' says Incarnation Yoo Sangah's disease isn't a human disease.]</p></div>
+<div class="orv_system"><p>The constellation 'Guam Divine Doctor' says Incarnation Yoo Sangah's disease isn't a human disease.</p></div>
 <p class="orv_line">Human diseases could be treated using human power.</p>
 <p class="orv_line">…Then what if it was a disease of the gods?</p>
-<div class="orv_system"><p>[The constellation 'Demon King of Salvation' is looking up at the night sky.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon King of Salvation' is looking up at the night sky.</p></div>
 <p class="orv_line">In the dark Star Stream, several small stars shone.</p>
-<div class="orv_system"><p>[The constellation 'Abandoned Lover of the Labyrinth' is looking at you.]</p></div>
-<div class="orv_system"><p>[The constellation 'God of Wine and Ecstasy' is looking at you.]</p></div>
+<div class="orv_system"><p>The constellation 'Abandoned Lover of the Labyrinth' is looking at you.</p></div>
+<div class="orv_system"><p>The constellation 'God of Wine and Ecstasy' is looking at you.</p></div>
 <p class="orv_line">All of them were stars of Olympus with a connection to Yoo Sangah. Suddenly, my anger soared. Certainly, it was Yoo Sangah herself who used the power. Even so, it was Olympus who induced such an absurd contract in the first place.</p>
-<div class="orv_constellation"><p>[Olympus, you can bear the probability.]</p></div>
+<div class="orv_constellation"><p>Olympus, you can bear the probability.</p></div>
 <p class="orv_line">My true voice headed towards the night sky. A few stars shone again.</p>
-<div class="orv_system"><p>[The constellation 'Abandoned Lover of the Labyrinth'…]</p></div>
+<div class="orv_system"><p>The constellation 'Abandoned Lover of the Labyrinth'…</p></div>
 <p class="orv_line">The next moment, the indirect messages were cut off by unknown sparks. The shining stars were no longer visible. Someone had interfered with the indirect message.</p>
 <p class="orv_line">I spoke through gritted teeth. "If it is them, there might be a way."</p>
 <p class="orv_line">There was no one here who didn't know who 'they' were. Jung Heewon's expression darkened. "However, there is no way to ask for help. We made a few attempts but…"</p>
@@ -292,7 +299,7 @@
 <p class="orv_line">"You said Jang Hayoung went to perform another scenario?"</p>
 <p class="orv_line">"…He went pretty far."</p>
 <p class="orv_line">If Jang Hayoung was here, I could've sent messages directly to the constellations… I looked at the face of the sleeping Yoo Sangah and thought.</p>
-<div class="orv_quote"><p>「 How to save Yoo Sangah? 」</p></div>
+<div class="orv_quote"><p>How to save Yoo Sangah?</p></div>
 <p class="orv_line">In the end, there was only one method. I slowly breathed in. "There is still a way. It is a bit earlier than I expected but…"</p>
 <p class="orv_line">"We have to clear the 46th scenario first."</p>
 <p class="orv_line">The low and cold voice interrupted my words. I turned around towards the man.</p>
@@ -310,18 +317,12 @@
             <a href="./ch_306"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_308">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="307" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="380" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="306" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="306" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

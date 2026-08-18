@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 478: Ep. 91 - One Single Story, II</title>
     <meta property="og:title" content="Ch 478: Ep. 91 - One Single Story, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,57 +177,57 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00478.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 478: Ep. 91 - One Single Story, II</h1></div>
 <p class="orv_line">Kwa-aaaaah!</p>
-<p class="orv_line">The Great Sage's Status enveloping my entire body now concentrated on the [Ruyi Jingu Bang] held in my right hand. Just like that day on the Tongtian, when we were fighting against the Constellations.</p>
+<p class="orv_line">The Great Sage's Status enveloping my entire body now concentrated on the <strong>[Ruyi Jingu Bang]</strong> held in my right hand. Just like that day on the Tongtian, when we were fighting against the Constellations.</p>
 <p class="orv_line">If there was one thing different, then I was now using the complete power of that 'Sun Wukong'.</p>
-<div class="orv_system"><p>[Giant Story, 'Liberator of the Forgotten Ones' has completely permeated in you!]</p></div>
+<div class="orv_system"><p>Giant Story, 'Liberator of the Forgotten Ones' has completely permeated in you!</p></div>
 <p class="orv_line">"I shall open up a path."</p>
-<p class="orv_line">I swung the [Ruyi Jingu Bang] and a huge hole opened up in the centre of the tsunami wave. However, it was filled back up in an instant.</p>
-<div class="orv_constellation"><p>[Youcantyoucantyoucantyoucantyoucant]</p></div>
+<p class="orv_line">I swung the <strong>[Ruyi Jingu Bang]</strong> and a huge hole opened up in the centre of the tsunami wave. However, it was filled back up in an instant.</p>
+<div class="orv_constellation"><p>Youcantyoucantyoucantyoucantyoucant</p></div>
 <p class="orv_line">From the island that the 999th turn's Lee Jihye had brought up, the 'Nameless Ones' began crawling out. Their number was so great that fighting them seemed impossible, but even then, the Great Sage didn't panic at all.</p>
-<div class="orv_constellation"><p>[Destroy them.]</p></div>
+<div class="orv_constellation"><p>Destroy them.</p></div>
 <p class="orv_line">I felt this jolt from the arm raised up in the air, and thick, gloomy clouds suddenly filled up the sky. Somersault clouds carrying thunderbolts rang around within the heavens above. Then, blinding blue rays of light crashed on the ocean.</p>
 <p class="orv_line">Kwa-booooom!!</p>
 <p class="orv_line">Several strands of lightning smacked into the sea and tore through everything there to carve out a path. These bolts of lightning continued to smash down many more times. What an enormous amount of Status that was.</p>
 <p class="orv_line">This was the power of the one who had reached the last scenario, the Great Sage Heaven's Equal, often referred to as the strongest Constellation there ever was.</p>
-<div class="orv_constellation"><p>[Gah-gahk, gagagagagahk?]</p></div>
+<div class="orv_constellation"><p>Gah-gahk, gagagagagahk?</p></div>
 <p class="orv_line">However, there were several creatures that managed to withstand the storm of lightning bolts. They were slightly larger than the previous Outer Gods.</p>
-<div class="orv_constellation"><p>[We ki ll the Con stel lat ions]</p></div>
-<div class="orv_constellation"><p>[End of sta rs dra ws ne ar]</p></div>
+<div class="orv_constellation"><p>We ki ll the Con stel lat ions</p></div>
+<div class="orv_constellation"><p>End of sta rs dra ws ne ar</p></div>
 <p class="orv_line">These 'Outer Gods' could string along more concise words. These upper rank creatures travelled through the underwater tunnel and rose up to the ocean's surface.</p>
 <p class="orv_line">"Son of a…!"</p>
 <p class="orv_line">Han Sooyoung next to us cried out.</p>
 <p class="orv_line">Ku-gugugugu!</p>
 <p class="orv_line">The ground beneath the ocean rocked and lava began boiling up to the surface.</p>
 <p class="orv_line">"Everyone, get away!"</p>
-<p class="orv_line">We quickly climbed aboard Lee Jihye's [Turtle Dragon] and rose up to the sky. The hazy surface of the ocean was soon filled up with wiggling creatures.</p>
-<div class="orv_constellation"><p>[De stru cti on of the wor ldli ne is co ming]</p></div>
-<p class="orv_line">The 'Outer Gods' descended to this world while spewing out some ominous-sounding lines. We had encountered a creature like that before – during the earlier days of the scenario, on the battlefield of the [Dark Castle].</p>
-<div class="orv_system"><p>['The Fourth Wall' is faintly stirring.]</p></div>
-<p class="orv_line">Perhaps, the [Devourer of Dreams], now acting as a librarian inside the wall, was watching this spectacle as well.</p>
+<p class="orv_line">We quickly climbed aboard Lee Jihye's <strong>[Turtle Dragon]</strong> and rose up to the sky. The hazy surface of the ocean was soon filled up with wiggling creatures.</p>
+<div class="orv_constellation"><p>De stru cti on of the wor ldli ne is co ming</p></div>
+<p class="orv_line">The 'Outer Gods' descended to this world while spewing out some ominous-sounding lines. We had encountered a creature like that before – during the earlier days of the scenario, on the battlefield of the <strong>[Dark Castle]</strong>.</p>
+<div class="orv_system"><p>'The Fourth Wall' is faintly stirring.</p></div>
+<p class="orv_line">Perhaps, the <strong>[Devourer of Dreams]</strong>, now acting as a librarian inside the wall, was watching this spectacle as well.</p>
 <p class="orv_line">"How are we supposed to kill those things??"</p>
-<p class="orv_line">Han Sooyoung gritted her teeth and emitted [Black Flame] from both of her hands. Tentacles several kilometres long rose up above the ocean at the same time, causing the tidal waves messily mixed in with magma to rise up even taller than mountain ranges.</p>
+<p class="orv_line">Han Sooyoung gritted her teeth and emitted <strong>[Black Flame]</strong> from both of her hands. Tentacles several kilometres long rose up above the ocean at the same time, causing the tidal waves messily mixed in with magma to rise up even taller than mountain ranges.</p>
 <p class="orv_line">For some reason, I recalled a certain sentence from the 'Ways of Survival'.</p>
 <p class="orv_line">⸢The calamity flooding out from the rising island eventually covered up everything on the surface of the planet.⸥</p>
 <p class="orv_line">If this went on, then the Earth of this worldline would end up exactly in that state, too.</p>
@@ -229,11 +236,11 @@
 <p class="orv_line">The Ruyi Jingu Bang grew in size in the blink and began smacking away the 'Nameless Ones' trying to get closer. I destroyed a building-sized wave and smashed apart a tentacle flying in. However, there was no end in sight.</p>
 <p class="orv_line">⸢The tidal wave simply grew larger and larger.⸥</p>
 <p class="orv_line">If I managed to beat back one wave, then the second showed up. When I destroyed that, the third one pounced on us. And at the centre of all these waves were the 'Master of the Sunken Island' and other 'Outer God Kings'.</p>
-<div class="orv_constellation"><p>[…It's not going to be easy this time.]</p></div>
+<div class="orv_constellation"><p>…It's not going to be easy this time.</p></div>
 <p class="orv_line">Even the Great Sage was saying something like that.</p>
 <p class="orv_line">At this rate, we'd be finished even before our enemies get here.</p>
 <p class="orv_line">"Is there any other way to break past that?"</p>
-<div class="orv_constellation"><p>[Need more time.]</p></div>
+<div class="orv_constellation"><p>Need more time.</p></div>
 <p class="orv_line">After leaving those words, the Great Sage began gathering more Status. My heart rapidly grew warmer and the Story in my veins circulated quickly. Since I knew what he was preparing for, I didn't bother to ask anymore. If my thoughts were correct, then he was getting ready to use that skill from the final pages of the 'Ways of the Survival'.</p>
 <p class="orv_line">The question was, could my companions and me last until then?</p>
 <p class="orv_line">⸢In order to buy time, we need to combine our strengths.⸥</p>
@@ -260,14 +267,14 @@
 <p class="orv_line">"I'm sorry, I couldn't break past them."</p>
 <p class="orv_line">She bit her lower lip and muttered out in bitterness. Her voice was thick with despair.</p>
 <p class="orv_line">She couldn't even get near the 999th turn's Uriel and ended up too preoccupied with cutting down these 'Nameless Ones' pouncing on her from the sky.</p>
-<div class="orv_constellation"><p>[Gyah-ahahahah]</p></div>
+<div class="orv_constellation"><p>Gyah-ahahahah</p></div>
 <p class="orv_line">The steel walls shook heavily while emitting crunching noises. 'Outer Gods' were frantically pouncing on them as if they'd devour us in an instant.</p>
 <p class="orv_line">If we took just one step outside these walls, then they'd really rip us apart like piranhas, that's for sure.</p>
 <p class="orv_line">Crunch, cruuuunch…</p>
 <p class="orv_line">The sounds of the 'Nameless Ones' gnawing on the metal walls could be heard next.</p>
 <p class="orv_line">"Danger…!"</p>
 <p class="orv_line">And then, the 'Nameless Ones' rushed towards us from the exit of the tunnel. They pounced on us like rabid dogs, their slobbering tongues wildly wagging.</p>
-<div class="orv_constellation"><p>[Ah, aaaaaah!]</p></div>
+<div class="orv_constellation"><p>Ah, aaaaaah!</p></div>
 <p class="orv_line">In the next second, though, something akin to bright light fell from the sky and sliced apart every single one of them before our eyes. Someone had carved up the tunnel we were standing in from the outside.</p>
 <p class="orv_line">We were treated to the sight of the great apocalypse's battlefield outside the sliced-open tunnel.</p>
 <p class="orv_line">The dead 'Nameless Ones' created huge islands of corpses. While looking at this horrible sight of forgotten Stories dying meaningless deaths, the children began retching uncontrollably.</p>
@@ -278,11 +285,11 @@
 <p class="orv_line">Boooom!!</p>
 <p class="orv_line">There seemed to be flashes of light on one side of the empty sky, only for an echo of explosion noise to reverberate all the way to the other side. Some things moved with speed that my eyes could barely chase after. The ones that sliced apart the tunnel we stood in were engaged in a bitter battle.</p>
 <p class="orv_line">I even forgot that we were in a battlefield and was lost in that scene for a little while.</p>
-<div class="orv_system"><p>[Giant Story, 'Delusional Design', is loudly yapping on!]</p></div>
-<div class="orv_system"><p>[Giant Story, 'Hell of Eternity', is continuing on with its storytelling!]</p></div>
-<p class="orv_line">The strongest beings from the forgotten worldline were busy competing with the Stories. The torrents of [Breaking the Sky Swordsmanship] and the [Hellfire] resisting it, and then the remnants of the [Black Flame] mixed in to create a massive tornado.</p>
+<div class="orv_system"><p>Giant Story, 'Delusional Design', is loudly yapping on!</p></div>
+<div class="orv_system"><p>Giant Story, 'Hell of Eternity', is continuing on with its storytelling!</p></div>
+<p class="orv_line">The strongest beings from the forgotten worldline were busy competing with the Stories. The torrents of <strong>[Breaking the Sky Swordsmanship]</strong> and the <strong>[Hellfire]</strong> resisting it, and then the remnants of the <strong>[Black Flame]</strong> mixed in to create a massive tornado.</p>
 <p class="orv_line">Strong winds generated from the sword images collided among the gloomy clouds, and ancient Stories howled on like aged dragons. Stories were screaming as if to tear the sky apart.</p>
-<p class="orv_line">The living histories were colliding and extinguishing right before our eyes. And at the centre of all the stories was Yoo Joonghyuk's [Black Heavenly Demon Sword].</p>
+<p class="orv_line">The living histories were colliding and extinguishing right before our eyes. And at the centre of all the stories was Yoo Joonghyuk's <strong>[Black Heavenly Demon Sword]</strong>.</p>
 <p class="orv_line">We couldn't afford to waste the precious time he had bought for us. I pointed to our front and spoke. "The cause of these waves is the 'Sunken Island' itself."</p>
 <p class="orv_line">The 'Nameless Ones' flooded in like dust clouds. Then, upper-rank Outer Gods raising up even more waves behind them. And finally, the 'Sunken Island' in the centre of them all.</p>
 <p class="orv_line">Most likely, the 999th turn's Lee Jihye was in the middle of that island.</p>
@@ -296,19 +303,19 @@
 <p class="orv_line">"What about you?"</p>
 <p class="orv_line">"I'll create a path. Heewon-ssi, please come with me."</p>
 <p class="orv_line">The moment Jung Heewon nodded her head, I unleashed my Status.</p>
-<div class="orv_system"><p>[Constellation, 'Demon King of Salvation', is unleashing his Status!]</p></div>
-<p class="orv_line">With excellent timing, I sensed Lee Hyunsung's Story enveloping my body next. The outer layer created through the [Steel Transformation] sprouted above my skin. We certainly made the right call to go to &lt;Oz&gt; first. We definitely needed his [Story metal] in order to efficiently destroy the outer layers of those 'Nameless Ones'.</p>
+<div class="orv_system"><p>Constellation, 'Demon King of Salvation', is unleashing his Status!</p></div>
+<p class="orv_line">With excellent timing, I sensed Lee Hyunsung's Story enveloping my body next. The outer layer created through the <strong>[Steel Transformation]</strong> sprouted above my skin. We certainly made the right call to go to &lt;Oz&gt; first. We definitely needed his <strong>[Story metal]</strong> in order to efficiently destroy the outer layers of those 'Nameless Ones'.</p>
 <p class="orv_line">"Now, everyone!"</p>
 <p class="orv_line">We leapt above the steel walls in the air simultaneously and then, descended towards the tidal wave.</p>
 <p class="orv_line">'Outer Gods' noticed our movements and howled out at the same time.</p>
 <p class="orv_line">Du-dudududu!</p>
-<p class="orv_line">Gong Pildu's shells, now coated with the [Story metal], flew in from afar to penetrate cleanly through the outer layers of the 'Nameless Ones'. Using the sounds of the cannons as our interludes, we ran on top of the waves.</p>
+<p class="orv_line">Gong Pildu's shells, now coated with the <strong>[Story metal]</strong>, flew in from afar to penetrate cleanly through the outer layers of the 'Nameless Ones'. Using the sounds of the cannons as our interludes, we ran on top of the waves.</p>
 <p class="orv_line">Tentacles flew in at us with no gaps in between them, but Han Sooyoung burned them away.</p>
-<div class="orv_system"><p>[Constellation, 'Abyssal Black Flame Dragon' is roaring out!]</p></div>
-<p class="orv_line">The [Black Flame]'s fires caused the Outer Gods to scream in pain.</p>
+<div class="orv_system"><p>Constellation, 'Abyssal Black Flame Dragon' is roaring out!</p></div>
+<p class="orv_line">The <strong>[Black Flame]</strong>'s fires caused the Outer Gods to scream in pain.</p>
 <p class="orv_line">Jung Heewon and I continued to run on this path. We felt the time/space surrounding the island faintly distort. Yoo Sangah was activating her powers now.</p>
 <p class="orv_line">"Dokja-ssi, over there!"</p>
-<p class="orv_line">We saw the gigantic [Turtle Dragon] taking up the highest location of the island in the distance. The 999th turn's Lee Jihye was standing on top of the ship's figurehead to command the 'Outer Gods'.</p>
+<p class="orv_line">We saw the gigantic <strong>[Turtle Dragon]</strong> taking up the highest location of the island in the distance. The 999th turn's Lee Jihye was standing on top of the ship's figurehead to command the 'Outer Gods'.</p>
 <div class="orv_outergod"><p>【Hahaha, where do you think you're going?! As if he was waiting for us, the 999th turn's Kim Namwoon revealed himself. I shall protect our Jihye!】</p></div>
 <p class="orv_line">Even though he was in the middle of fighting Yoo Joonghyuk, he must've had enough leeway to interfere with us. Maybe, Yoo Joonghyuk was in some kind of danger right now. I gave the signal to Jung Heewon.</p>
 <p class="orv_line">"Don't worry about me and go help Yoo Joonghyuk first. I'm sure he's slowly reaching his limit by now."</p>
@@ -322,7 +329,7 @@
 <div class="orv_outergod"><p>【But, it's my first time meeting you?】</p></div>
 <p class="orv_line">"Kim Namwoon, aren't you curious how you of this world died?"</p>
 <p class="orv_line">One of Kim Namwoon's clones frowned after hearing me. 【Who cares how that weakling got killed??】</p>
-<p class="orv_line">I used the [Ruyi Jingu Bang] to deflect the incoming daggers. A few of them still managed to leave behind deep cuts on my thigh and shoulder, but thankfully, Lee Hyunsung's [Story metal] defended against the attacks in my stead.</p>
+<p class="orv_line">I used the <strong>[Ruyi Jingu Bang]</strong> to deflect the incoming daggers. A few of them still managed to leave behind deep cuts on my thigh and shoulder, but thankfully, Lee Hyunsung's <strong>[Story metal]</strong> defended against the attacks in my stead.</p>
 <p class="orv_line">Unfortunately, even his forged steel began developing cracks at the vicious barrage of attacks raining down.</p>
 <p class="orv_line">As if to fully recreate a certain memory, I started evading the incoming attacks.</p>
 <p class="orv_line">⸢Waist, right side.⸥</p>
@@ -339,24 +346,24 @@
 <p class="orv_line">"Oh the sword forged to cut down the sleeping giants. Descend to this place, now!"</p>
 <p class="orv_line">Kwa-aaaaaah!</p>
 <p class="orv_line">Everything before my eyes seemed to wane as the massive storm of aftermath raged on. A steel giant was summoned through the dimensions and it now stood there imposingly.</p>
-<p class="orv_line">The greatest Story weapon in [Tartarus], Pluto. A bright voice belonging to Kim Namwoon came out from its cockpit.</p>
-<div class="orv_constellation"><p>[Hahaha! Hey, Grasshopper man, been a while…]</p></div>
+<p class="orv_line">The greatest Story weapon in <strong>[Tartarus]</strong>, Pluto. A bright voice belonging to Kim Namwoon came out from its cockpit.</p>
+<div class="orv_constellation"><p>Hahaha! Hey, Grasshopper man, been a while…</p></div>
 <p class="orv_line">However, I couldn't smile back to him. Because what I was about to do should prove to be very inhumane to this guy.</p>
-<div class="orv_constellation"><p>[Huh? What's this?]</p></div>
+<div class="orv_constellation"><p>Huh? What's this?</p></div>
 <p class="orv_line">Kim Namwoon discovered something small floating before his nose and tilted his head. Almost at the same time, the other Kim Namwoon muttered in sheer dumbfoundedness.</p>
 <div class="orv_outergod"><p>【…A giant robot???】</p></div>
-<div class="orv_constellation"><p>[Uwaaaaahk?!]</p></div>
+<div class="orv_constellation"><p>Uwaaaaahk?!</p></div>
 <p class="orv_line">Tsu-chuchuchuchut!!</p>
-<div class="orv_system"><p>[Same existences from different worldlines have met for the first time!]</p></div>
+<div class="orv_system"><p>Same existences from different worldlines have met for the first time!</p></div>
 <p class="orv_line">The 999th turn's Kim Namwoon didn't possess a Story of fighting against me. However, what about now?</p>
-<div class="orv_system"><p>['Disconnected Film Theory' is activating!]</p></div>
+<div class="orv_system"><p>'Disconnected Film Theory' is activating!</p></div>
 <p class="orv_line">Memories were connecting; as the two existences from different worldlines met each other, the unconnected Story momentarily would become one.</p>
 <p class="orv_line">The 999th turn's Kim Namwoon, the 'Monarch of the Great Abyss', glared at me with his brows arched up high. It seemed that he had realized everything.</p>
 <div class="orv_outergod"><p>【You…】</p></div>
 <p class="orv_line">"That's right. The one who killed you in this worldline is…"</p>
 <p class="orv_line">The surrounding time and space transformed. Into that of the subway from the first scenario. To the place where I killed Kim Namwoon.</p>
 <p class="orv_line">I grinned and continued on.</p>
-<div class="orv_system"><p>['Stage Transformation' is activating!]</p></div>
+<div class="orv_system"><p>'Stage Transformation' is activating!</p></div>
 <p class="orv_line">"It was none other than me."</p>
 <br>
 <hr>
@@ -365,18 +372,12 @@
             <a href="./ch_477"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_479">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="478" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="791" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="477" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="477" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

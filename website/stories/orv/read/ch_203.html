@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 203: Ep. 38 - Fake Revolutionary, V</title>
     <meta property="og:title" content="Ch 203: Ep. 38 - Fake Revolutionary, V" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,32 +177,32 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00203.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 203: Ep. 38 - Fake Revolutionary, V</h1></div>
 <p class="orv_line">Spy…</p>
 <p class="orv_line">I once read a phrase about the 'spies' in Ways of Survival.</p>
-<div class="orv_quote"><p>「 All positions in the Revolutionary Game belong to either the 'Revolutionary' or the 'Dictator'. There is only one position that isn't fixed and that is the 'Spy'. 」</p></div>
+<div class="orv_quote"><p>All positions in the Revolutionary Game belong to either the 'Revolutionary' or the 'Dictator'. There is only one position that isn't fixed and that is the 'Spy'.</p></div>
 <p class="orv_line">The most dangerous and most cowardly position in this Revolutionary Game. Therefore, Ways of Survival described the spy as followed:</p>
-<div class="orv_quote"><p>「 The team that gets the spy can win the game. 」</p></div>
+<div class="orv_quote"><p>The team that gets the spy can win the game.</p></div>
 <p class="orv_line">In the Revolutionary Game where information was a top priority, the status of the Spy was great.</p>
 <p class="orv_line">It was because the spy could check the position information of the desired person. There was a limit of 10 people a day but this alone was enough for the spy to shake the entire board.</p>
 <p class="orv_line">Right now, a person claiming to be the spy was in front of me. "Are you Yoo Joonghyuk?"</p>
@@ -207,7 +214,7 @@
 <p class="orv_line">Usually he should be asking if I was really the revolutionary. Yet he first confirmed that my name was 'Yoo Joonghyuk'.</p>
 <p class="orv_line">The man shrugged. "Haha, it is a famous name."</p>
 <p class="orv_line">Unlike his words, the man was stubbornly staring at my appearance. It was as if he was contrasting it with something he knew. I became certain.</p>
-<div class="orv_quote"><p>「 This person knows Yoo Joonghyuk. 」</p></div>
+<div class="orv_quote"><p>This person knows Yoo Joonghyuk.</p></div>
 <p class="orv_line">I quickly recalled Ways of Survival but I couldn't make a guess. In the first place, Yoo Joonghyuk was a regressor and this was officially before he entered the Demon Realm.</p>
 <p class="orv_line">There wasn't anyone here who should know Yoo Joonghyuk well. If he was good at observing, he might've seen Yoo Joonghyuk by watching the Earth scenario but… it was unlikely.</p>
 <p class="orv_line">Due to my poor reaction, Jang Hayoung, Aileen and Mark were nervously glancing between me and the man. Maybe they instinctively felt something.</p>
@@ -219,18 +226,18 @@
 <p class="orv_line">"So they tell me."</p>
 <p class="orv_line">"Then you are a spy?"</p>
 <p class="orv_line">"That's right."</p>
-<div class="orv_system"><p>[The exclusive skill 'Lie Detection Lv. 3' is activated!]</p></div>
-<div class="orv_system"><p>[During the Revolutionary scenario, you can't use the Lie Detection skill.]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Lie Detection Lv. 3' is activated!</p></div>
+<div class="orv_system"><p>During the Revolutionary scenario, you can't use the Lie Detection skill.</p></div>
 <p class="orv_line">…As expected, this skill didn't work. I had guessed it.</p>
 <p class="orv_line">There was a scene where Yoo Joonghyuk of the 111th regression had been frustrated after learning that this skill didn't work. I tried it just in case but it was as I figured.</p>
 <p class="orv_line">Well, if Lie Detection could be freely used then the difficulty of this scenario would be very easy. Fortunately, I didn't only have Lie Detection.</p>
-<div class="orv_system"><p>[The exclusive skill 'Character List' is activated!]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Character List' is activated!</p></div>
 <p class="orv_line">Of course, I couldn't discern the exact position of the opponent after using Character List. Nevertheless, I could at least figure out if he had a special position or not.</p>
-<div class="orv_system"><p>[The person's information can't be accessed through Character List.]</p></div>
-<div class="orv_system"><p>[This person isn't registered on the Character List.]</p></div>
+<div class="orv_system"><p>The person's information can't be accessed through Character List.</p></div>
+<div class="orv_system"><p>This person isn't registered on the Character List.</p></div>
 <p class="orv_line">…What? I was confused for a moment.</p>
-<div class="orv_system"><p>[The information on the corresponding person is being updated.]</p></div>
-<div class="orv_system"><p>[This person's information will be added in the next update.]</p></div>
+<div class="orv_system"><p>The information on the corresponding person is being updated.</p></div>
+<div class="orv_system"><p>This person's information will be added in the next update.</p></div>
 <p class="orv_line">It wasn't the first time I heard this message but it was unexpected. The man didn't know my situation and asked,</p>
 <p class="orv_line">"Huh? What's wrong?"</p>
 <p class="orv_line">A person who couldn't be read using Character List. It meant this man was a person who didn't contribute to the original Ways of Survival novel. In other words, the man was a variable I created.</p>
@@ -249,12 +256,12 @@
 <p class="orv_line">Someone even threw stones. To be honest, I was a bit surprised. There was some damage but it wasn't enough for them to come out to such an extreme degree.</p>
 <p class="orv_line">The voices continued, "It was better when the Night came once every three days!"</p>
 <p class="orv_line">Before the Revolutionary scenario was invoked, Night only came once every three days. Now Night was invoked two days in a row. It was natural for people's fears to be heightened.</p>
-<p class="orv_line">Jang Hayoung shouted towards these people. "You crazy… what are you crazy fuckers talking about? Are you so pathetic? It is okay for one person to die every three days?"</p>
+<p class="orv_line">Jang Hayoung shouted towards these people. "You crazy… what are you crazy fuckers talking about? Are you so pathetic? Is it okay for one person to die every three days?"</p>
 <p class="orv_line">Some people heard this and stepped back. Jang Hayoung continued to shout.</p>
 <p class="orv_line">"If you want to live that way then leave the industrial complex!"</p>
 <p class="orv_line">"W-What does a little boy like you know? Do you have any idea of what it is like outside?"</p>
 <p class="orv_line">The voices were frightened. Everyone here was well aware of it.</p>
-<div class="orv_quote"><p>「 Civilians belong to the scenario of the industrial complex. If they leave here, they will be given an exile penalty for leaving the scenario area. 」</p></div>
+<div class="orv_quote"><p>Civilians belong to the scenario of the industrial complex. If they leave here, they will be given an exile penalty for leaving the scenario area.</p></div>
 <p class="orv_line">The exile penalty. There was no one in the Demon Realm who didn't know what it was.</p>
 <p class="orv_line">Thus, people would rather turn the roulette of death once every three days. Now that the revolutionary emerged, the interval of the roulette had decreased from three days to one day.</p>
 <p class="orv_line">"D-Do we have to experience Night every day from now on?"</p>
@@ -293,7 +300,7 @@
 <p class="orv_line">The surprised people screamed and Aileen's shouts could be heard. However, I ignored all sounds and ran to the centre of the crowd. Then I swung myself towards someone in the crowd without hesitation.</p>
 <p class="orv_line">"First one."</p>
 <p class="orv_line">He was one of the men who had been inciting the crowd. The man was pierced in the heart and couldn't even scream. He just watched me with wide eyes as he died.</p>
-<div class="orv_system"><p>[The exclusive skill 'Fourth Wall' is activated!]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Fourth Wall' is activated!</p></div>
 <p class="orv_line">The sensation of murder was gnawing at my hand. Obviously, I was affected by the move to kill someone. It was due to the habit that formed from trying to keep the King of No Killing attribute.</p>
 <p class="orv_line">However, today I didn't hesitate a single bit. It was as if I really had become Yoo Joonghyuk.</p>
 <p class="orv_line">"The second one."</p>
@@ -303,15 +310,15 @@
 <p class="orv_line">I killed three people in an instant and looked around. There were constant screams as the grieving civilians watched me. It wasn't just the citizens.</p>
 <p class="orv_line">Aileen, Jang Hayoung and Mark were the same. They didn't understand what was going on and panic filled their faces.</p>
 <p class="orv_line">The revolutionary killed ordinary civilians. Nothing I said would be a convincing explanation. Nevertheless, this was something I never needed to explain.</p>
-<div class="orv_system"><p>[A change in the Revolutionary scenario has occurred!]</p></div>
+<div class="orv_system"><p>A change in the Revolutionary scenario has occurred!</p></div>
 <p class="orv_line">Everyone looked up as the message was suddenly heard. It was followed by subsequent messages.</p>
-<div class="orv_system"><p>[An executioner has been killed by someone.]</p></div>
-<div class="orv_system"><p>[An executioner has been killed by someone.]</p></div>
-<div class="orv_system"><p>[An executioner has been killed by someone.]</p></div>
+<div class="orv_system"><p>An executioner has been killed by someone.</p></div>
+<div class="orv_system"><p>An executioner has been killed by someone.</p></div>
+<div class="orv_system"><p>An executioner has been killed by someone.</p></div>
 <p class="orv_line">.</p>
 <p class="orv_line">.</p>
 <p class="orv_line">.</p>
-<div class="orv_system"><p>[Current number of executioners remaining: 7.]</p></div>
+<div class="orv_system"><p>Current number of executioners remaining: 7.</p></div>
 <p class="orv_line">People's expressions changed at the messages.</p>
 <p class="orv_line">A total of three people died. The number of dead executioners was also three.</p>
 <p class="orv_line">The people watching me with trembling eyes now screamed and retreated from the dead bodies. It was as if they were looking at something terrible.</p>
@@ -333,18 +340,12 @@
             <a href="./ch_202"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_204">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="203" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="20" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="202" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="202" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

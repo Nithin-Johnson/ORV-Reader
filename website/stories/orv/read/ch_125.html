@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 125: Ep. 24 - Things that Can Be Changed, V</title>
     <meta property="og:title" content="Ch 125: Ep. 24 - Things that Can Be Changed, V" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,54 +177,54 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00125.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 125: Ep. 24 - Things that Can Be Changed, V</h1></div>
 <p class="orv_line">Yamamoto was killed with only three bullets. White smoke emerged from Lee Boksoon's fingertips like she was a Western cowboy. She was a really tough grandmother.</p>
-<div class="orv_system"><p>[A famous disaster has been killed.]</p></div>
-<div class="orv_system"><p>[The disaster called 'Сolonialist' has disappeared.]</p></div>
-<div class="orv_system"><p>[You have earned 5,000 coins.]</p></div>
-<div class="orv_system"><p>[Major contributor: Lee Boksoon, Kim Dokja.]</p></div>
+<div class="orv_system"><p>A famous disaster has been killed.</p></div>
+<div class="orv_system"><p>The disaster called 'Сolonialist' has disappeared.</p></div>
+<div class="orv_system"><p>You have earned 5,000 coins.</p></div>
+<div class="orv_system"><p>Major contributor: Lee Boksoon, Kim Dokja.</p></div>
 <p class="orv_line">It was regrettable that I didn't catch the snake but hunting the prime minister wasn't a bad income. The absence of the prime minister in the upcoming war would greatly undermine the advance of the Japanese army. The compensation was also great.</p>
-<div class="orv_system"><p>[Some constellations are against your excessive nationalistic sentiment.]</p></div>
+<div class="orv_system"><p>Some constellations are against your excessive nationalistic sentiment.</p></div>
 <p class="orv_line">There were many constellations complaining about my scenario but it couldn't be helped. Nationalism on the Korean Peninsula gave coins. If I had to sell a story then it was better to sell it at an expensive price.</p>
-<div class="orv_system"><p>[Many constellations of the Korean Peninsula are cheering for your reenactment.]</p></div>
-<div class="orv_system"><p>[10,000 coins have been sponsored.]</p></div>
+<div class="orv_system"><p>Many constellations of the Korean Peninsula are cheering for your reenactment.</p></div>
+<div class="orv_system"><p>10,000 coins have been sponsored.</p></div>
 <p class="orv_line">Indeed, there were constellations who haven't forgotten the old days. The confused Japanese incarnations ran towards Yamamoto but it was already too late…</p>
 <p class="orv_line">"P-Prime minister!"</p>
 <p class="orv_line">In the meantime, I ran towards Lee Boksoon who was a dozen metres away. Lee Boksoon's body was rapidly shrinking.</p>
-<div class="orv_system"><p>[The character 'Lee Boksoon' has completely abandoned her rights as a disaster.]</p></div>
-<div class="orv_system"><p>[The dokkaebi of the Star Stream sees Lee Boksoon's behavior as taking action against the scenario.]</p></div>
-<div class="orv_system"><p>[The small person transformation will begin.]</p></div>
+<div class="orv_system"><p>The character 'Lee Boksoon' has completely abandoned her rights as a disaster.</p></div>
+<div class="orv_system"><p>The dokkaebi of the Star Stream sees Lee Boksoon's behavior as taking action against the scenario.</p></div>
+<div class="orv_system"><p>The small person transformation will begin.</p></div>
 <p class="orv_line">Lee Boksoon had a tired expression but it seemed to be the aftereffect of using Three Shots. The stigmas of certain constellations could cause severe physical and mental damage to the person who used it. Thus, she was completely exhausted the moment she used the stigma.</p>
 <p class="orv_line">"Young man, give me a lift."</p>
 <p class="orv_line">"Put on the clothes in my pocket first."</p>
 <p class="orv_line">There were a few pieces of clothing I got in return for saving the small people earlier. I put the grandmother in the left pocket of my coat and Lee Jihye helped her dress.</p>
-<div class="orv_system"><p>[Way of the Wind Lv. 8 has been activated.]</p></div>
+<div class="orv_system"><p>Way of the Wind Lv. 8 has been activated.</p></div>
 <p class="orv_line">The remaining time for Bookmark was 10 minutes. Now I had to get out of the forest area in 10 minutes.</p>
 <p class="orv_line">"The prime minister is dead!"</p>
 <p class="orv_line">"Stop them!"</p>
 <p class="orv_line">The Japanese people were angry.</p>
-<div class="orv_system"><p>[You have received the second scenario penalty.]</p></div>
-<div class="orv_system"><p>[Hunt the 'small people' in 5 minutes. Otherwise the Star Stream will determine that you have no intention to carry out the activities of a disaster…]</p></div>
+<div class="orv_system"><p>You have received the second scenario penalty.</p></div>
+<div class="orv_system"><p>Hunt the 'small people' in 5 minutes. Otherwise the Star Stream will determine that you have no intention to carry out the activities of a disaster…</p></div>
 <p class="orv_line">Damn. It was 5 minutes rather than 10 minutes. The time was too short.</p>
 <p class="orv_line">"Take me with you!"</p>
 <p class="orv_line">The Japanese woman inside the cage that Yamamoto had dropped when he died shouted.</p>
@@ -243,11 +250,11 @@
 <p class="orv_line">"Catch him!"</p>
 <p class="orv_line">"Aaaaack!"</p>
 <p class="orv_line">The forest transformation had begun and the Japanese people chasing me seemed lost. Of course, the big disasters couldn't be digested by the forest but there was enough time.</p>
-<div class="orv_system"><p>[Hunt the 'small people' in 3 minutes.]</p></div>
+<div class="orv_system"><p>Hunt the 'small people' in 3 minutes.</p></div>
 <p class="orv_line">I did my best but the maze-like forest area paralyzed my sense of direction. There was no specific way to escape from the night forest in Ways of Survival. Instead…</p>
 <p class="orv_line">"This way!"</p>
 <p class="orv_line">It was written in Ways of Survival:</p>
-<div class="orv_quote"><p>「 The first person to be obtained in Peace Land is Asuka Ren. 」</p></div>
+<div class="orv_quote"><p>The first person to be obtained in Peace Land is Asuka Ren.</p></div>
 <p class="orv_line">I followed Asuka Ren's directions.</p>
 <p class="orv_line">"Run to the right at that tree!"</p>
 <p class="orv_line">"Japanese lady, do you know the way?"</p>
@@ -256,17 +263,17 @@
 <p class="orv_line">"…Yes."</p>
 <p class="orv_line">I knew that Asuka Ren was lying. She couldn't navigate this forest because of a path finding skill. Perhaps as far as Peace Land was concerned, she was as much an expert in it as I was in Ways of Survival. Maybe this was why the Japanese saved her.</p>
 <p class="orv_line">I carried Asuka Ren and used Way of the Wind at its highest level. I ran quickly but the time limit was faster.</p>
-<div class="orv_system"><p>[Hunt the 'small people' in 1 minute.]</p></div>
+<div class="orv_system"><p>Hunt the 'small people' in 1 minute.</p></div>
 <p class="orv_line">A bit more, just a bit more.</p>
 <p class="orv_line">"Catch him!"</p>
 <p class="orv_line">"We must catch him!"</p>
 <p class="orv_line">The number of Japanese people chasing me decreased sharply as the road twisted several times.</p>
 <p class="orv_line">"Almost there!"</p>
 <p class="orv_line">Finally, I reached the end of the forest zone.</p>
-<div class="orv_system"><p>[You were unable to hunt the small people within the time limit.]</p></div>
-<div class="orv_system"><p>[The dokkaebis of the Star Stream have determined you won't carry out the activities of a disaster.]</p></div>
-<div class="orv_system"><p>[You have been given a third scenario penalty.]</p></div>
-<div class="orv_system"><p>[The small person transformation will begin.]</p></div>
+<div class="orv_system"><p>You were unable to hunt the small people within the time limit.</p></div>
+<div class="orv_system"><p>The dokkaebis of the Star Stream have determined you won't carry out the activities of a disaster.</p></div>
+<div class="orv_system"><p>You have been given a third scenario penalty.</p></div>
+<div class="orv_system"><p>The small person transformation will begin.</p></div>
 <p class="orv_line">Damn.</p>
 <p class="orv_line">"Get away from me!"</p>
 <p class="orv_line">My party members noticed something at my shout and removed themselves from my body. It was like my body was being spun in a juicer. The power left my body and there was the sound of thunder in my ears.</p>
@@ -295,25 +302,25 @@
 <p class="orv_line">I had a plan to catch the prime minister with Lee Boksoon but now I had no specific measures. I could somehow buy time by running into the labyrinth forest again or…</p>
 <p class="orv_line">"I will kill him. Chase after the rest!"</p>
 <p class="orv_line">Two of the three Japanese people nodded and chased after the people on the insects. I couldn't let that happen</p>
-<div class="orv_system"><p>[The stigma Non-Violent Zone Lv.1 has been used!]</p></div>
+<div class="orv_system"><p>The stigma Non-Violent Zone Lv.1 has been used!</p></div>
 <p class="orv_line">The Japanese people stopped.</p>
 <p class="orv_line">"Damn, again…!"</p>
 <p class="orv_line">The stuck Japanese people looked back at me with irritation.</p>
 <p class="orv_line">My magic power had been significantly reduced as a result of the small person transformation and it took a considerable amount of magic power juts to block the three of them. My head hurt and blood flowed from my nose.</p>
-<div class="orv_system"><p>[The constellation 'Nation's Independence Activist' has blessed you.]</p></div>
+<div class="orv_system"><p>The constellation 'Nation's Independence Activist' has blessed you.</p></div>
 <p class="orv_line">Along with the message, the magic power required to use the stigma decreased and my body became comfortable. I heard the voice of a constellation in my head.</p>
-<div class="orv_constellation"><p>[Child, this is the only time I will respond to a call.]</p></div>
+<div class="orv_constellation"><p>Child, this is the only time I will respond to a call.</p></div>
 <p class="orv_line">"Thank you, Martyr."</p>
-<div class="orv_constellation"><p>[History is recorded in order to not repeat mistakes. Make sure you don't repeat the past for the sake of individual success.]</p></div>
+<div class="orv_constellation"><p>History is recorded in order to not repeat mistakes. Make sure you don't repeat the past for the sake of individual success.</p></div>
 <p class="orv_line">The constellation seemed to notice that I used her for excessive directing. I used Non-Violent Zone for violence and the constellation became angry. I barely managed to nod and looked around nervously.</p>
-<div class="orv_system"><p>[Non-Violent Zone has 30 seconds left.]</p></div>
+<div class="orv_system"><p>Non-Violent Zone has 30 seconds left.</p></div>
 <p class="orv_line">Once Non-Violent Zone ended, I had to run to the forest area with all my power.</p>
 <p class="orv_line">The swords were filled with a tremendous magic power and were determined to cut me in two. I might not die here but I would be seriously wounded if I made a mistake.</p>
 <p class="orv_line">15 seconds, 14 seconds, 13 seconds…</p>
 <p class="orv_line">Then a questionable message was heard.</p>
-<div class="orv_system"><p>[The constellation 'Defense Master' commiserates with your plight.]</p></div>
+<div class="orv_system"><p>The constellation 'Defense Master' commiserates with your plight.</p></div>
 <p class="orv_line">…Huh? The moment I heard the name of a familiar constellation, there was a strange sound and explosive gunfire was heard.</p>
-<div class="orv_system"><p>[The character 'Gong Pildu' has activated 'Armed Fortress Lv. 1!]</p></div>
+<div class="orv_system"><p>The character 'Gong Pildu' has activated 'Armed Fortress Lv. 1!</p></div>
 <p class="orv_line">Dududududu!</p>
 <br>
 <hr>
@@ -322,18 +329,12 @@
             <a href="./ch_124"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_126">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="125" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="371" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="124" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="124" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

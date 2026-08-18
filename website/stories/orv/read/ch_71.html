@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 71: Ep. 15 – A Kingless World, I</title>
     <meta property="og:title" content="Ch 71: Ep. 15 – A Kingless World, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00071.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 71: Ep. 15 – A Kingless World, I</h1></div>
 <p class="orv_line">The last king's test. It was an extreme trial that had to be overcome with your body only.</p>
@@ -197,7 +204,7 @@
 <p class="orv_line">The Maitreya King Cha Sangkyung.</p>
 <p class="orv_line">Supreme King Yoo Joonghyuk.</p>
 <p class="orv_line">Then the middle-aged man in the corner… He was the Neutral King. The Neutral King raised his hands as he met my eyes.</p>
-<div class="orv_system"><p>[The Neutral King has abstained from fighting for the throne.]</p></div>
+<div class="orv_system"><p>The Neutral King has abstained from fighting for the throne.</p></div>
 <p class="orv_line">As the name suggested, the Neutral King wasn't greedy for the throne. Only the remaining three were greedy.</p>
 <p class="orv_line">One of the three was Yoo Joonghyuk so the fight should've ended in less than a minute. At least, if it was the original story.</p>
 <p class="orv_line">"Die!"</p>
@@ -217,23 +224,23 @@
 <p class="orv_line">Min Jiwon became surprised as she noticed.</p>
 <p class="orv_line">"…How?"</p>
 <p class="orv_line">If I remembered correctly, Yoo Joonghyuk knew the loophole of the last phase. Maybe these messages were currently rising in Yoo Joonghyuk's mind.</p>
-<div class="orv_system"><p>[400 coins have been invested in physique.]</p></div>
-<div class="orv_system"><p>[400 coins have been invested in agility.]</p></div>
-<div class="orv_system"><p>[400 coins have been invested in strength.]</p></div>
+<div class="orv_system"><p>400 coins have been invested in physique.</p></div>
+<div class="orv_system"><p>400 coins have been invested in agility.</p></div>
+<div class="orv_system"><p>400 coins have been invested in strength.</p></div>
 <p class="orv_line">The funny thing was that this battlefield controlled everything except for one factor. It was the use of the coins.</p>
-<div class="orv_system"><p>[The constellation 'Slumbering Lady of Fine Brocade' questions the fairness of the scenario.]</p></div>
+<div class="orv_system"><p>The constellation 'Slumbering Lady of Fine Brocade' questions the fairness of the scenario.</p></div>
 <p class="orv_line">The intermediate dokkaebi laughed.</p>
-<div class="orv_constellation"><p>[Haha, what is your question? It is a natural right to be able to use coins. The 'coins' are the hard-earned work of the incarnations. They worked so hard to gather coins that they should have a chance to use it.]</p></div>
+<div class="orv_constellation"><p>Haha, what is your question? It is a natural right to be able to use coins. The 'coins' are the hard-earned work of the incarnations. They worked so hard to gather coins that they should have a chance to use it.</p></div>
 <p class="orv_line">Yoo Joonghyuk was raising his stats using his coins.</p>
-<div class="orv_constellation"><p>[Oh, the stats increased with the coins will be reset after the scenario is over. So be careful! It is like throwing away coins into the air! Hahaha!]</p></div>
+<div class="orv_constellation"><p>Oh, the stats increased with the coins will be reset after the scenario is over. So be careful! It is like throwing away coins into the air! Hahaha!</p></div>
 <p class="orv_line">Min Jiwon and Cha Sangkyung's complexions darkened once they heard the words of the intermediate dokkaebi. Perhaps they didn't have much coins remaining. It was natural. They wouldn't be able to save coins in the battlefield between kings.</p>
 <p class="orv_line">But Yoo Joonghyuk was different. Yoo Joonghyuk grew by breaking through all types of hidden scenarios from the beginning and always carried an appropriate amount of coins in reserve.</p>
 <p class="orv_line">The original third round Yoo Joonghyuk had around 30,000 coins at this point. Now he had more coins than the original story so… it should be around 40,000?</p>
 <p class="orv_line">There was the loud sound of somebody being hit and Cha Sangkyung's body flew through the air.</p>
-<div class="orv_system"><p>[The Maitreya King Cha Sangkyung is out of combat.]</p></div>
+<div class="orv_system"><p>The Maitreya King Cha Sangkyung is out of combat.</p></div>
 <p class="orv_line">Yoo Joonghyuk looked at the nearby Min Jiwon. She jumped with surprise and hurriedly raised both hands.</p>
 <p class="orv_line">"…I will abstain."</p>
-<div class="orv_system"><p>['King of Beauty' Min Jiwon has abstained from the battle.]</p></div>
+<div class="orv_system"><p>'King of Beauty' Min Jiwon has abstained from the battle.</p></div>
 <p class="orv_line">Finally, Yoo Joonghyuk turned towards me. His angry eyes calmed down. It was understandable. If he took the Absolute Throne, he could control all kings and it wouldn't be a problem to get his sister back from me.</p>
 <p class="orv_line">But would that happen?</p>
 <p class="orv_line">"Yoo Joonghyuk."</p>
@@ -241,26 +248,26 @@
 <p class="orv_line">For the first time, Yoo Joonghyuk's blade was visible. It must be a fake. He was estimating my stats and how much coins I had left.</p>
 <p class="orv_line">He was truly a prudent person. It was a trick to win by investing the minimum amount of coins.</p>
 <p class="orv_line">However, his pride would cause his defeat this time. It was because there wasn't any king in Seoul who had more coins than me right now.</p>
-<div class="orv_system"><p>[Coins Possessed: 80,850 C]</p></div>
+<div class="orv_system"><p>Coins Possessed: 80,850 C</p></div>
 <p class="orv_line">Who would think that I had 80,000 coins? I laughed at Yoo Joonghyuk who was running towards me.</p>
 <p class="orv_line">"I'll hit you gently so please don't die."</p>
 <p class="orv_line">Now was the time to spend big. I invested a large number of coins into 'strength'.</p>
-<div class="orv_system"><p>[4,000 coins have been invested in strength.]</p></div>
-<div class="orv_system"><p>[Strength Lv. 10 -> Strength Lv. 20]</p></div>
-<div class="orv_system"><p>[5,000 coins have been invested in strength.]</p></div>
-<div class="orv_system"><p>[Strength Lv. 20 -> Strength Lv. 30]</p></div>
-<div class="orv_system"><p>[6,000 coins have been invested in strength.]</p></div>
-<div class="orv_system"><p>[Strength Lv. 30 -> Strength Lv. 40]</p></div>
+<div class="orv_system"><p>4,000 coins have been invested in strength.</p></div>
+<div class="orv_system"><p>Strength Lv. 10 -> Strength Lv. 20</p></div>
+<div class="orv_system"><p>5,000 coins have been invested in strength.</p></div>
+<div class="orv_system"><p>Strength Lv. 20 -> Strength Lv. 30</p></div>
+<div class="orv_system"><p>6,000 coins have been invested in strength.</p></div>
+<div class="orv_system"><p>Strength Lv. 30 -> Strength Lv. 40</p></div>
 <p class="orv_line">.</p>
 <p class="orv_line">.</p>
-<div class="orv_system"><p>[11,000 coins have been invested in strength.]</p></div>
-<div class="orv_system"><p>[Strength Lv. 80 -> Strength Lv. 90]</p></div>
-<div class="orv_system"><p>[12,000 coins have been invested in strength.]</p></div>
-<div class="orv_system"><p>[Strength Lv. 90 -> Strength Lv. 100]</p></div>
-<div class="orv_system"><p>[72,000 coins have been consumed.]</p></div>
-<div class="orv_system"><p>[Your 'strength' has broken through the limits of a human.]</p></div>
-<div class="orv_system"><p>[The achievement has been processed! You are the first to achieve a three digit level in strength.]</p></div>
-<div class="orv_system"><p>[30,000 coins have been acquired as a reward.]</p></div>
+<div class="orv_system"><p>11,000 coins have been invested in strength.</p></div>
+<div class="orv_system"><p>Strength Lv. 80 -> Strength Lv. 90</p></div>
+<div class="orv_system"><p>12,000 coins have been invested in strength.</p></div>
+<div class="orv_system"><p>Strength Lv. 90 -> Strength Lv. 100</p></div>
+<div class="orv_system"><p>72,000 coins have been consumed.</p></div>
+<div class="orv_system"><p>Your 'strength' has broken through the limits of a human.</p></div>
+<div class="orv_system"><p>The achievement has been processed! You are the first to achieve a three digit level in strength.</p></div>
+<div class="orv_system"><p>30,000 coins have been acquired as a reward.</p></div>
 <p class="orv_line">I adjusted the power in my fist. A strike containing lvl 100 strength was enormous. It would be difficult if I accidentally killed Yoo Joonghyuk.</p>
 <p class="orv_line">I felt the space around my fist bend slightly. According to Ways of Survival, all stats had different destructive power from the moment they broke through the three digits.</p>
 <p class="orv_line">How did it feel? Of course, it felt like I was a killer. It felt like my fist was holding a check for a billion won.</p>
@@ -282,51 +289,51 @@
 <p class="orv_line">In any case, he was breathing. The bones in his body were broken and he was bleeding…</p>
 <p class="orv_line">It was a situation where he couldn't use the Recovery skill so his life could be in danger.</p>
 <p class="orv_line">I had to do my work quickly.</p>
-<div class="orv_system"><p>[Supreme King Yoo Joonghyuk is out of combat.]</p></div>
-<div class="orv_system"><p>[Congratulations! You have passed all the tests of the Absolute Throne.]</p></div>
+<div class="orv_system"><p>Supreme King Yoo Joonghyuk is out of combat.</p></div>
+<div class="orv_system"><p>Congratulations! You have passed all the tests of the Absolute Throne.</p></div>
 <p class="orv_line">The ward in the air slowly disappeared.</p>
-<div class="orv_system"><p>[The temporary stats added by the coins are reset.]</p></div>
-<div class="orv_system"><p>[All constraints on the kings have disappeared.]</p></div>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' has his hair standing up from excessive carbonic acid.]</p></div>
-<div class="orv_system"><p>[The constellation 'Secretive Plotter' applauds your actions.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' admires your patience.]</p></div>
-<div class="orv_system"><p>[4,500 coins have been sponsored.]</p></div>
+<div class="orv_system"><p>The temporary stats added by the coins are reset.</p></div>
+<div class="orv_system"><p>All constraints on the kings have disappeared.</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' has his hair standing up from excessive carbonic acid.</p></div>
+<div class="orv_system"><p>The constellation 'Secretive Plotter' applauds your actions.</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' admires your patience.</p></div>
+<div class="orv_system"><p>4,500 coins have been sponsored.</p></div>
 <p class="orv_line">I also heard the messages of the historical-grade constellations.</p>
-<div class="orv_system"><p>[The constellation 'Slumbering Lady of Fine Brocade' is regretful.]</p></div>
-<div class="orv_system"><p>[The constellation 'One-eyed Maitreya' has thrown away his eyepatch.]</p></div>
-<div class="orv_system"><p>[The constellation 'Founder of Hannamgun' feels a grudge towards you.]</p></div>
+<div class="orv_system"><p>The constellation 'Slumbering Lady of Fine Brocade' is regretful.</p></div>
+<div class="orv_system"><p>The constellation 'One-eyed Maitreya' has thrown away his eyepatch.</p></div>
+<div class="orv_system"><p>The constellation 'Founder of Hannamgun' feels a grudge towards you.</p></div>
 <p class="orv_line">Of course, the kings of the three kingdoms blamed me. Thanks to me, they missed an opportunity to jump to the 'narrative' grade.</p>
-<div class="orv_constellation"><p>[…Oh, a surprising winner has appeared.]</p></div>
+<div class="orv_constellation"><p>…Oh, a surprising winner has appeared.</p></div>
 <p class="orv_line">The intermediate dokkaebi looked somewhat dissatisfied. He hadn't expected me to win. Yet I had won.</p>
-<div class="orv_constellation"><p>[Well… good. This is the result. Now, I am informing all incarnations of Seoul. Just now, a new owner of the Absolute Throne was born!]</p></div>
+<div class="orv_constellation"><p>Well… good. This is the result. Now, I am informing all incarnations of Seoul. Just now, a new owner of the Absolute Throne was born!</p></div>
 <p class="orv_line">I stopped the intermediate dokkaebi who was about to launch the system messages.</p>
 <p class="orv_line">"Wait a minute."</p>
-<div class="orv_constellation"><p>[…What do you want?]</p></div>
+<div class="orv_constellation"><p>…What do you want?</p></div>
 <p class="orv_line">The dokkaebi's eyebrows twitched.</p>
 <p class="orv_line">"You are too hasty. I haven't even sat on the throne yet. Shouldn't you ask me first?"</p>
-<div class="orv_constellation"><p>[You will go up now so does it matter?]</p></div>
+<div class="orv_constellation"><p>You will go up now so does it matter?</p></div>
 <p class="orv_line">I approached the Absolute Throne. At this moment, I felt all constellations observing the Seoul Dome focus on me.</p>
 <p class="orv_line">The Absolute Throne floating in the sky slowly descended towards me. It showed off its golden charm like it had been waiting for me for a long time.</p>
 <p class="orv_line">I asked the intermediate dokkaebi, "What can I do with this?"</p>
-<div class="orv_constellation"><p>[You can do anything to humans.]</p></div>
+<div class="orv_constellation"><p>You can do anything to humans.</p></div>
 <p class="orv_line">It was short but scary.</p>
-<div class="orv_constellation"><p>[The Absolute Throne is just the name of the item. As long as you sit on the throne, you can become an omnipotent power. No one on this earth can stand against you and everyone will bow before you!]</p></div>
+<div class="orv_constellation"><p>The Absolute Throne is just the name of the item. As long as you sit on the throne, you can become an omnipotent power. No one on this earth can stand against you and everyone will bow before you!</p></div>
 <p class="orv_line">The people looked at me enviously after hearing the dokkaebi's explanation.</p>
 <p class="orv_line">It was natural to envy me. Everybody had run to this place for this reason.</p>
-<div class="orv_system"><p>[The constellation 'Slumbering Lady of Fine Brocade' is licking her lips.]</p></div>
+<div class="orv_system"><p>The constellation 'Slumbering Lady of Fine Brocade' is licking her lips.</p></div>
 <p class="orv_line">Even the constellations…</p>
 <p class="orv_line">It was really pitiful and strange. They felt envious despite knowing the real identity of the item. I really disliked the constellations.</p>
 <p class="orv_line">"Is that all?"</p>
-<div class="orv_constellation"><p>[…Huh?]</p></div>
+<div class="orv_constellation"><p>…Huh?</p></div>
 <p class="orv_line">"It is so good that it's ridiculous. I will enjoy absolute power on the land that I control."</p>
-<div class="orv_constellation"><p>[Isn't it right to receive a reward in return for suffering? How many times have you almost died due to the throne…?]</p></div>
+<div class="orv_constellation"><p>Isn't it right to receive a reward in return for suffering? How many times have you almost died due to the throne…?</p></div>
 <p class="orv_line">"Ah, so the throne can act beyond the constraints of plausibility?"</p>
-<div class="orv_constellation"><p>[What?]</p></div>
+<div class="orv_constellation"><p>What?</p></div>
 <p class="orv_line">"You are good at lying. Aren't you a dokkaebi? Won't the Bureau say something if you scam me like this?"</p>
 <p class="orv_line">The expression of the intermediate dokkaebi hardened. On the other side, Bihyung was looking at me with a pale face.</p>
-<div class="orv_constellation"><p>[I am tired of this talk. I have to finish the scenario. Now sit on the throne. If you talk nonsense one more time, I will break the Absolute Throne.]</p></div>
+<div class="orv_constellation"><p>I am tired of this talk. I have to finish the scenario. Now sit on the throne. If you talk nonsense one more time, I will break the Absolute Throne.</p></div>
 <p class="orv_line">"…Ah, you can do that? Then go ahead."</p>
-<div class="orv_constellation"><p>[Huh?]</p></div>
+<div class="orv_constellation"><p>Huh?</p></div>
 <p class="orv_line">I looked at the dokkaebi and the people staring before opening my mouth.</p>
 <p class="orv_line">"I will never sit on this Absolute Throne."</p>
 <p class="orv_line">A terrible silence swept through Gwanghwamun.</p>
@@ -337,18 +344,12 @@
             <a href="./ch_70"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_72">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="71" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="102" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="70" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="70" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

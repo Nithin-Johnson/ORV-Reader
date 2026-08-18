@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 372: Ep. 70 - A Story that Can't Be Shared, IV</title>
     <meta property="og:title" content="Ch 372: Ep. 70 - A Story that Can't Be Shared, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,54 +177,54 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00372.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 372: Ep. 70 - A Story that Can't Be Shared, IV</h1></div>
-<p class="orv_line">As I slowly regained my consciousness, I decided to activate [Omniscient Reader's Viewpoint].</p>
-<div class="orv_quote"><p>「 Sooo, the method to clear the 'Middle Island No.4' is… 」</p></div>
+<p class="orv_line">As I slowly regained my consciousness, I decided to activate <strong>[Omniscient Reader's Viewpoint]</strong>.</p>
+<div class="orv_quote"><p>Sooo, the method to clear the 'Middle Island No.4' is…</p></div>
 <p class="orv_line">After managing to master the 'Story Control', Jung Heewon had finally entered the Middle Island's scenario and began massacring other participants.</p>
-<div class="orv_quote"><p>「 …I dunno. Well, if they come at me, I'll just kill them all. 」</p></div>
-<div class="orv_quote"><p>「 Our general is also a Narrative-grade, you know? Don't you look down on us! 」</p></div>
-<p class="orv_line">Jung Heewon activated [Hour of Judgement], while Lee Jihye activated [Demon Slaying] as they ran amok in their battlefield; around the same time, the kids began clearing the Middle Island's scenario in their own clever way.</p>
-<div class="orv_quote"><p>「 I've tamed the 'Invisible Wisp'. Let's steal that person's Modifier using this guy. 」</p></div>
-<div class="orv_quote"><p>「 But, we can just send insects over there, though? 」</p></div>
+<div class="orv_quote"><p>…I dunno. Well, if they come at me, I'll just kill them all.</p></div>
+<div class="orv_quote"><p>Our general is also a Narrative-grade, you know? Don't you look down on us!</p></div>
+<p class="orv_line">Jung Heewon activated <strong>[Hour of Judgement]</strong>, while Lee Jihye activated <strong>[Demon Slaying]</strong> as they ran amok in their battlefield; around the same time, the kids began clearing the Middle Island's scenario in their own clever way.</p>
+<div class="orv_quote"><p>I've tamed the 'Invisible Wisp'. Let's steal that person's Modifier using this guy.</p></div>
+<div class="orv_quote"><p>But, we can just send insects over there, though?</p></div>
 <p class="orv_line">What a crafty method of clearing the scenario. So much so that I didn't need to help them out at all.</p>
-<div class="orv_quote"><p>「 Keuh-euhk, keuheuk, groan… 」</p></div>
+<div class="orv_quote"><p>Keuh-euhk, keuheuk, groan…</p></div>
 <p class="orv_line">Lee Hyunsung found himself alone on a different Middle Island and was being severely beaten up by other Constellations and Incarnations. He was in a fetal position while glaring at his enemies with sorrowful eyes, but then, he suddenly roared out like a huge bear.</p>
-<div class="orv_quote"><p>「 The one thing sadder then ending up all alone, is to get beaten up all by yourself! 」</p></div>
+<div class="orv_quote"><p>The one thing sadder then ending up all alone, is to get beaten up all by yourself!</p></div>
 <p class="orv_line">Powerful rays of light exploded out from Lee Hyunsung's body, causing the participants around him to explode en masse.</p>
-<p class="orv_line">I was familiar with that technique. That was one of the special techniques possessed by the 'Master of Steel', [Impact Release], that released all the accumulated damage at once.</p>
+<p class="orv_line">I was familiar with that technique. That was one of the special techniques possessed by the 'Master of Steel', <strong>[Impact Release]</strong>, that released all the accumulated damage at once.</p>
 <p class="orv_line">As expected, the folks from the original storyline were truly cheat characters. In any case, I got to clearly see that Lee Hyunsung had become stronger as well.</p>
-<div class="orv_system"><p>[Character 'Jang Hayoung' has activated 'Breaking the Sky Force Punch']</p></div>
+<div class="orv_system"><p>Character 'Jang Hayoung' has activated 'Breaking the Sky Force Punch'</p></div>
 <p class="orv_line">As for Jang Hayoung, she was clearing the scenario while displaying overwhelming strength. To me, she seemed to be on the path to truly becoming the master of the 'wall' she possessed. Well, she was a talented person from the get-go, and was also capable of absorbing the techniques of others rather quickly, as well.</p>
-<div class="orv_system"><p>['Unidentifiable Wall' is evolving!]</p></div>
+<div class="orv_system"><p>'Unidentifiable Wall' is evolving!</p></div>
 <p class="orv_line">Her 'wall' had become far more stabilised compared to before. She could chat to other Transcendents through her 'wall', and got to learn and understand their abilities. In a way, one could say there were some similarities between her method and me reading the book.</p>
-<div class="orv_system"><p>['Unidentifiable Wall' has sensed your presence.]</p></div>
+<div class="orv_system"><p>'Unidentifiable Wall' has sensed your presence.</p></div>
 <p class="orv_line">My view was instantly filled with white noise.</p>
-<div class="orv_system"><p>['Unidentifiable Wall' is staring at 'The Fourth Wall'.]</p></div>
-<div class="orv_system"><p>['The Fourth Wall' is staring at 'Unidentifiable Wall'.]</p></div>
+<div class="orv_system"><p>'Unidentifiable Wall' is staring at 'The Fourth Wall'.</p></div>
+<div class="orv_system"><p>'The Fourth Wall' is staring at 'Unidentifiable Wall'.</p></div>
 <p class="orv_line">The moment these two walls stared at each other, my view suddenly grew fuzzy, blurry.</p>
-<div class="orv_system"><p>[…The end of the world-line is approaching.]</p></div>
+<div class="orv_system"><p>…The end of the world-line is approaching.</p></div>
 <p class="orv_line">As my view crumbled away, I could hear an unknown voice.</p>
-<div class="orv_constellation"><p>[Kim Dokja, they shall come to find you.]</p></div>
+<div class="orv_constellation"><p>Kim Dokja, they shall come to find you.</p></div>
 <br>
 <hr>
 <br>
@@ -242,19 +249,19 @@
 <p class="orv_line">"…Where are we?"</p>
 <p class="orv_line">"The waiting room of the Main Island. The place where that 'guy' and his castle is."</p>
 <p class="orv_line">It was then, I abruptly remembered something else.</p>
-<div class="orv_system"><p>['Master of the Island' is calling out to Incarnation 'Yoo Sangah'.]</p></div>
+<div class="orv_system"><p>'Master of the Island' is calling out to Incarnation 'Yoo Sangah'.</p></div>
 <p class="orv_line">Back then when that guy was taking Yoo Sangah away, there was another message popping up in front of my eyes, as well.</p>
-<div class="orv_system"><p>['Master of the Island' is inviting you.]</p></div>
+<div class="orv_system"><p>'Master of the Island' is inviting you.</p></div>
 <p class="orv_line">The King of Reincarnators. The third protagonist of the book 'Three Ways to Survive in a Ruined World' had summoned us to their territory.</p>
 <p class="orv_line">"But, I'm pretty sure that I failed to clear the scenario? Don't I need to clear the Middle Island's scenario in order to get here, so how…"</p>
 <p class="orv_line">"Nope, you did clear it."</p>
 <p class="orv_line">I quickly confirmed the message logs.</p>
-<div class="orv_system"><p>[You have cleared Hidden Scenario – 'Snatching Modifiers'!]</p></div>
-<div class="orv_system"><p>[Reward handout is currently on standby.]</p></div>
+<div class="orv_system"><p>You have cleared Hidden Scenario – 'Snatching Modifiers'!</p></div>
+<div class="orv_system"><p>Reward handout is currently on standby.</p></div>
 <p class="orv_line">It's true.</p>
 <p class="orv_line">"But, how? I hadn't collected the syllable 'Vil', so how…"</p>
 <p class="orv_line">Han Sooyoung wordlessly pointed at the necklace hanging around my neck.</p>
-<div class="orv_constellation"><p>[Devil of Lust and Wrath]</p></div>
+<div class="orv_constellation"><p>Devil of Lust and Wrath</p></div>
 <p class="orv_line">The completed necklace of Modifier was emitting a soft glow. Something like this couldn't happen, though. One of the syllables should've been missing on my necklace.</p>
 <p class="orv_line">Han Sooyoung spoke. "Yoo Joonghyuk gave it to you before leaving, saying that it's a leftover."</p>
 <p class="orv_line">…Yoo Joonghyuk did?</p>
@@ -268,8 +275,8 @@
 <p class="orv_line">The sense of emptiness and relief brushed past me simultaneously when I heard her. He again went ahead before everyone in order to clear the scenario.</p>
 <p class="orv_line">"…Who was his target, anyway?"</p>
 <p class="orv_line">"You just woke up, but you're already so full of questions. How annoying."</p>
-<p class="orv_line">I sat on the bed, eyes blinking like an idiot. She pointed to my chest again. Upon taking a closer look, there were two [Modifier Necklaces] hanging around my neck. One of them was Asmodeus's Modifier, [Devil of Lust and Wrath], while the other one was…</p>
-<div class="orv_constellation"><p>[□□ of □□]</p></div>
+<p class="orv_line">I sat on the bed, eyes blinking like an idiot. She pointed to my chest again. Upon taking a closer look, there were two <strong>[Modifier Necklaces]</strong> hanging around my neck. One of them was Asmodeus's Modifier, <strong>[Devil of Lust and Wrath]</strong>, while the other one was…</p>
+<div class="orv_constellation"><p>□□ of □□</p></div>
 <p class="orv_line">The places where my Modifier should've been were replaced by empty holes, instead.</p>
 <p class="orv_line">"No way?"</p>
 <p class="orv_line">"Yes, way."</p>
@@ -287,7 +294,7 @@
 <p class="orv_line">She was right; bits of snowflakes were descending from the sky.</p>
 <p class="orv_line">Originally, this particular world didn't have any snow. Yet, it was doing precisely that.</p>
 <p class="orv_line">Snow fell like starlight. And beyond the tall skies where snowflakes continued to fall, Constellations were watching my tale. No indirect messages reached me, but I could still feel that they were looking at me. Probability they had gathered bit by bit until now was scattering gently in the skies.</p>
-<p class="orv_line">I turned my head to the side to find Han Sooyoung studying me. She grasped my [Modifier Necklace] and grinned. "I guess you're no longer the [Demon King] of [Salvation]. Shouldn't you get yourself a brand-new Modifier now?"</p>
+<p class="orv_line">I turned my head to the side to find Han Sooyoung studying me. She grasped my <strong>[Modifier Necklace]</strong> and grinned. "I guess you're no longer the <strong>[Demon King]</strong> of <strong>[Salvation]</strong>. Shouldn't you get yourself a brand-new Modifier now?"</p>
 <p class="orv_line">I began recalling the days I spent as 'Demon King of Salvation' while listening to her talk.</p>
 <p class="orv_line">It hadn't been that long, but those days were the most brilliant moments in my life.</p>
 <p class="orv_line">As my vision grew wetter and blurrier, I could see Han Sooyoung giggling away.</p>
@@ -308,7 +315,7 @@
 <p class="orv_line">Han Sooyoung rubbed her eyes as she spoke. "I want to see the others already."</p>
 <p class="orv_line">I summoned up every ounce of my strength to make my reply. "…Yeah, me too."</p>
 <p class="orv_line">As if those words became the signal…</p>
-<div class="orv_system"><p>[Revised text has completed its update.]</p></div>
+<div class="orv_system"><p>Revised text has completed its update.</p></div>
 <p class="orv_line">A gift sent by someone arrived at my doorstep.</p>
 <p class="orv_line">– Three Ways to Survive in a Ruined World (Final Revision).txt</p>
 <br>
@@ -323,28 +330,28 @@
 <p class="orv_line">It all happened for an instant, but he found the information he'd been searching for from that wall, as well as the answers he wanted to find. And now, he realized that it was time to put to practice the answers he found.</p>
 <p class="orv_line">"Secretive Plotter."</p>
 <p class="orv_line">He raised his head to greet the gaze of a certain scheming Constellation.</p>
-<div class="orv_system"><p>[Constellation, 'Secretive Plotter', is looking at you.]</p></div>
+<div class="orv_system"><p>Constellation, 'Secretive Plotter', is looking at you.</p></div>
 <p class="orv_line">The 'Secretive Plotter', the Constellation that made its first appearance in this regression. And, an unidentified existence whose information or evidence couldn't be found in any of the 1863 worlds.</p>
-<div class="orv_system"><p>[Constellation, 'Secretive Plotter', is looking at you.]</p></div>
+<div class="orv_system"><p>Constellation, 'Secretive Plotter', is looking at you.</p></div>
 <p class="orv_line">"Haven't I played along with your schemes long enough now? I'm sure that I have the right to ask you a single question or two."</p>
 <p class="orv_line">The 'Secretive Plotter' didn't reply for a brief moment. But then, a portion of the skies suddenly became dyed in darkness, and a ray of black light fell towards Yoo Joonghyuk.</p>
 <p class="orv_line">Tsu-chuchuchuchut!</p>
 <p class="orv_line">As the sparks from Probability crackled all around him, the space-time within the near vicinity began distorting noticeably.</p>
 <p class="orv_line">He was currently in the world ruled by the 'Master of the Island'; no top-ranked Constellation would be able to exert that much Probability in this place. Yet, the 'Secretive Plotter' was an existence who could do exactly that.</p>
 <p class="orv_line">A pitch-black shadow rose up within the darkness.</p>
-<div class="orv_constellation"><p>[What are you curious about, oh, the puppet of the Oldest Dream?]</p></div>
+<div class="orv_constellation"><p>What are you curious about, oh, the puppet of the Oldest Dream?</p></div>
 <p class="orv_line">"Why did you show me that book?"</p>
 <p class="orv_line">The shadow of the 'Secretive Plotter' wavered about as if to mock him.</p>
 <p class="orv_line">Yoo Joonghyuk continued with his questioning. "Did you want me to fall into despair? You wanted me to kill Kim Dokja after reading that book?"</p>
-<div class="orv_constellation"><p>[Maybe. Maybe not.]</p></div>
+<div class="orv_constellation"><p>Maybe. Maybe not.</p></div>
 <p class="orv_line">"Why did you plot something like that?"</p>
-<div class="orv_constellation"><p>[You think you can understand it after hearing the answer?]</p></div>
+<div class="orv_constellation"><p>You think you can understand it after hearing the answer?</p></div>
 <p class="orv_line">Its arrogant voice was filled with the confidence of knowing that a lowly being like him would never understand, even after hearing the truth.</p>
 <p class="orv_line">Yoo Joonghyuk asked another question. "Why did you send Kim Dokja to the 1863rd turn? Why did you order him to kill 'me' there?"</p>
-<div class="orv_constellation"><p>[Let's just say that such a scenario would've been fun to observe.]</p></div>
+<div class="orv_constellation"><p>Let's just say that such a scenario would've been fun to observe.</p></div>
 <p class="orv_line">The shadow wavered around as if it was cackling.</p>
 <p class="orv_line">Yoo Joonghyuk remained calm and spoke his piece. "All of your schemes were to destroy Kim Dokja."</p>
-<div class="orv_constellation"><p>[Why do you think that? Do you have any reasons to believe that's the case?]</p></div>
+<div class="orv_constellation"><p>Why do you think that? Do you have any reasons to believe that's the case?</p></div>
 <p class="orv_line">"Maybe I do. Maybe I do have a pretty good reason."</p>
 <p class="orv_line">This Constellation, holding a mysterious animosity towards Kim Dokja, and at the same time, didn't exist in the 'original work', just like him.</p>
 <p class="orv_line">Yoo Joonghyuk had been chasing after this Constellation for a long time. And he had finally reached the answer to his pursuit in this very moment.</p>
@@ -356,18 +363,12 @@
             <a href="./ch_371"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_373">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="372" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="652" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="371" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="371" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

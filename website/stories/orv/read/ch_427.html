@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 427: Ep. 80 - Our greatest ally, V</title>
     <meta property="og:title" content="Ch 427: Ep. 80 - Our greatest ally, V" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,108 +177,108 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00427.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 427: Ep. 80 - Our greatest ally, V</h1></div>
 <p class="orv_line">Not knowing whether to laugh or cry, all I could do was to look at the kids and reply. "I am."</p>
 <p class="orv_line">And then, I heard the warning message next.</p>
-<div class="orv_system"><p>[Warning! You have come in contact with some of &lt;Kim Dokja's Company&gt;'s members!]</p></div>
-<div class="orv_system"><p>[Chaos residing somewhere deep inside you have begun wiggling.]</p></div>
+<div class="orv_system"><p>Warning! You have come in contact with some of &lt;Kim Dokja's Company&gt;'s members!</p></div>
+<div class="orv_system"><p>Chaos residing somewhere deep inside you have begun wiggling.</p></div>
 <br>
 <hr>
 <br>
-<div class="orv_system"><p>[Judge, 'King of Stone Monkeys', has revealed his displeasure!]</p></div>
-<div class="orv_constellation"><p>[The contest this time doesn't have anything interesting to watch.]</p></div>
+<div class="orv_system"><p>Judge, 'King of Stone Monkeys', has revealed his displeasure!</p></div>
+<div class="orv_constellation"><p>The contest this time doesn't have anything interesting to watch.</p></div>
 <p class="orv_line">A young monkey covered entirely in a coat of rather beautiful golden fur roughly scratched his mane and, while looking at the screens displayed on holographic panels, yawned over and over again.</p>
 <p class="orv_line">Another monkey wearing a cowboy get-up watched that from the sidelines before making a retort.</p>
-<div class="orv_system"><p>[Judge, 'Manager of Heaven's Stables', is chastising the 'King of Stone Monkeys'.]</p></div>
-<div class="orv_constellation"><p>[Meihouwang (Handsome Monkey King), you truly are an impatient one. If you took your time perusing, then you'd have found one or two interesting stories by now.]</p></div>
-<div class="orv_constellation"><p>[Hng, Bimawen (Keeper of Heavenly Horses), so was it your lofty patience that allowed you to clean up horse shit for over two weeks straight?]</p></div>
-<div class="orv_constellation"><p>[…I'd like to talk about only the refined matters in this place, if we could.]</p></div>
-<div class="orv_constellation"><p>[I can already tell what you're going to do with my eyes closed. I mean, you'll just slap high scores to any story that doesn't feature stables in it, anyway.]</p></div>
-<div class="orv_constellation"><p>[But, don't you also lose your mind in excitement whenever a story features Mountain of Flowers and Fruit?]</p></div>
-<div class="orv_constellation"><p>[Oiii, Great Sage! What do you think? Have you found something interesting to watch yet?]</p></div>
+<div class="orv_system"><p>Judge, 'Manager of Heaven's Stables', is chastising the 'King of Stone Monkeys'.</p></div>
+<div class="orv_constellation"><p>Meihouwang (Handsome Monkey King), you truly are an impatient one. If you took your time perusing, then you'd have found one or two interesting stories by now.</p></div>
+<div class="orv_constellation"><p>Hng, Bimawen (Keeper of Heavenly Horses), so was it your lofty patience that allowed you to clean up horse shit for over two weeks straight?</p></div>
+<div class="orv_constellation"><p>…I'd like to talk about only the refined matters in this place, if we could.</p></div>
+<div class="orv_constellation"><p>I can already tell what you're going to do with my eyes closed. I mean, you'll just slap high scores to any story that doesn't feature stables in it, anyway.</p></div>
+<div class="orv_constellation"><p>But, don't you also lose your mind in excitement whenever a story features Mountain of Flowers and Fruit?</p></div>
+<div class="orv_constellation"><p>Oiii, Great Sage! What do you think? Have you found something interesting to watch yet?</p></div>
 <p class="orv_line">That question was directed to a certain pure-blonde haired man yawning loudly with his chin supported by the Ruyi Bang. He lazily opened his lips. </p>
-<div class="orv_constellation"><p>[This year doesn't seem to have anything fresh, that's for sure.]</p></div>
-<div class="orv_constellation"><p>[Thought so.]</p></div>
-<div class="orv_constellation"><p>[We had quite a few people running around with wild imaginations in the past, hadn't we? Like, how we were portrayed as members of a battle-maniac species that grew stronger by overcoming deadly hurdles…]</p></div>
-<div class="orv_constellation"><p>[Hmm, yeah. That was really fun back in the day. But I didn't like the way they portrayed us as humans.]</p></div>
+<div class="orv_constellation"><p>This year doesn't seem to have anything fresh, that's for sure.</p></div>
+<div class="orv_constellation"><p>Thought so.</p></div>
+<div class="orv_constellation"><p>We had quite a few people running around with wild imaginations in the past, hadn't we? Like, how we were portrayed as members of a battle-maniac species that grew stronger by overcoming deadly hurdles…</p></div>
+<div class="orv_constellation"><p>Hmm, yeah. That was really fun back in the day. But I didn't like the way they portrayed us as humans.</p></div>
 <p class="orv_line">Bimawen's words elicited a smirk from the Great Sage. </p>
-<div class="orv_constellation"><p>[Oi, looky here. You guys might be monkeys, but I'm almost human, you know?]</p></div>
-<div class="orv_constellation"><p>[…But you changed only because of that Story's influence, didn't you?]</p></div>
+<div class="orv_constellation"><p>Oi, looky here. You guys might be monkeys, but I'm almost human, you know?</p></div>
+<div class="orv_constellation"><p>…But you changed only because of that Story's influence, didn't you?</p></div>
 <p class="orv_line">Meihouwang, Bimawen, and the Great Sage.</p>
 <p class="orv_line">They were different Story Bodies of the one that enjoyed the true name of 'Sun Wukong'. At first, they were all one being, but after each of the Stories developed separately, the various personalities split apart from one another as well.</p>
-<div class="orv_constellation"><p>[This kid, Fei Hu's rate of growth is no joke… At this rate, we might have ourselves a brand new 'Sun Wukong'.]</p></div>
-<div class="orv_constellation"><p>[Yeaaah, sure. Something that hasn't happened in the last few thousand years will suddenly happen now. Sure thing.]</p></div>
+<div class="orv_constellation"><p>This kid, Fei Hu's rate of growth is no joke… At this rate, we might have ourselves a brand new 'Sun Wukong'.</p></div>
+<div class="orv_constellation"><p>Yeaaah, sure. Something that hasn't happened in the last few thousand years will suddenly happen now. Sure thing.</p></div>
 <p class="orv_line">Three separate Sun Wukongs had gathered inside this large judge's office to take a gander at the various Stories of the 'Journey to the West Remake' being played out on the holographic panels. Some of them were boring, while a few seemed to be promising enough. They even pressed the 'Like' button on a couple of unfamiliar but interesting ones, too. They also didn't forget to assign scores as the three of them constantly bickered among themselves.</p>
 <p class="orv_line">Meihouwang asked.</p>
-<div class="orv_constellation"><p>[Hey, Great Sage. I forgot to ask you. What happened to those guys the last time?]</p></div>
-<div class="orv_constellation"><p>[Which guys?]</p></div>
-<div class="orv_constellation"><p>[You know, back when you asked us for help so Bimawen and I lent you our powers.]</p></div>
-<div class="orv_constellation"><p>[Ahh, you mean the 'Great War of Saints and Demons'? It worked out alright. But their representative went missing.]</p></div>
+<div class="orv_constellation"><p>Hey, Great Sage. I forgot to ask you. What happened to those guys the last time?</p></div>
+<div class="orv_constellation"><p>Which guys?</p></div>
+<div class="orv_constellation"><p>You know, back when you asked us for help so Bimawen and I lent you our powers.</p></div>
+<div class="orv_constellation"><p>Ahh, you mean the 'Great War of Saints and Demons'? It worked out alright. But their representative went missing.</p></div>
 <p class="orv_line">That prompted a retort from Bimawen. </p>
-<div class="orv_constellation"><p>[Are you talking about that fool whom you kept chasing after but never chose you as his sponsor?]</p></div>
-<div class="orv_constellation"><p>[…Hey, I never chased him around, got that? I only responded once or twice at his ardent pleas, that's all.]</p></div>
-<div class="orv_constellation"><p>[Oh, but for that once or twice, I remember you willingly sacrificing some of your scant hair, though?]</p></div>
-<div class="orv_constellation"><p>[Shut up. The Great Sage roughly dug his ear with the Ruyi Bang and changed the topic. By the way, why hasn't Douzhanshengfo (Victorious Fighting Buddha) arrived yet? All the Sun Wukongs have gathered in one place, so how come he's missing from this occasion?]</p></div>
-<div class="orv_constellation"><p>[You know that nerd's always late.]</p></div>
-<div class="orv_constellation"><p>[What about Bajie and Wujing?]</p></div>
-<div class="orv_constellation"><p>[They went to speak to the Heavenly Palace people.]</p></div>
-<div class="orv_constellation"><p>[…That Jade Emperor dude, is he thinking of butting in during the judging again?]</p></div>
-<div class="orv_constellation"><p>[As long as our opinions don't clash, it doesn't matter if that side wishes to interfere.]</p></div>
-<div class="orv_constellation"><p>[But, our opinions have never matched before, so there's our problem.]</p></div>
+<div class="orv_constellation"><p>Are you talking about that fool whom you kept chasing after but never chose you as his sponsor?</p></div>
+<div class="orv_constellation"><p>…Hey, I never chased him around, got that? I only responded once or twice at his ardent pleas, that's all.</p></div>
+<div class="orv_constellation"><p>Oh, but for that once or twice, I remember you willingly sacrificing some of your scant hair, though?</p></div>
+<div class="orv_constellation"><p>Shut up. The Great Sage roughly dug his ear with the Ruyi Bang and changed the topic. By the way, why hasn't Douzhanshengfo (Victorious Fighting Buddha) arrived yet? All the Sun Wukongs have gathered in one place, so how come he's missing from this occasion?</p></div>
+<div class="orv_constellation"><p>You know that nerd's always late.</p></div>
+<div class="orv_constellation"><p>What about Bajie and Wujing?</p></div>
+<div class="orv_constellation"><p>They went to speak to the Heavenly Palace people.</p></div>
+<div class="orv_constellation"><p>…That Jade Emperor dude, is he thinking of butting in during the judging again?</p></div>
+<div class="orv_constellation"><p>As long as our opinions don't clash, it doesn't matter if that side wishes to interfere.</p></div>
+<div class="orv_constellation"><p>But, our opinions have never matched before, so there's our problem.</p></div>
 <p class="orv_line">As if they were waiting for this very moment, the door to the judge's office was pushed open, and Zhu Bajie and Sha Wujing made their entrance.</p>
-<div class="orv_constellation"><p>[Excuse me, hyung-nims. The higher-ups say that it's about time we announce this year's best candidates…]</p></div>
-<div class="orv_constellation"><p>[Shut it. Can't you see we're still busy?]</p></div>
+<div class="orv_constellation"><p>Excuse me, hyung-nims. The higher-ups say that it's about time we announce this year's best candidates…</p></div>
+<div class="orv_constellation"><p>Shut it. Can't you see we're still busy?</p></div>
 <p class="orv_line">Both Zhu Bajie and Sha Wujing flinched from Meihouwang's threatening voice and took hurried steps back.</p>
 <p class="orv_line">The Great Sage asked them.</p>
-<div class="orv_constellation"><p>[By the way, who's the lady behind you?]</p></div>
-<div class="orv_constellation"><p>[Ah, apologies for the late introduction. She's this year's new judge. I heard that she's also Sakyamuni's successor.]</p></div>
-<div class="orv_constellation"><p>[…Sakyamuni had a successor?]</p></div>
+<div class="orv_constellation"><p>By the way, who's the lady behind you?</p></div>
+<div class="orv_constellation"><p>Ah, apologies for the late introduction. She's this year's new judge. I heard that she's also Sakyamuni's successor.</p></div>
+<div class="orv_constellation"><p>…Sakyamuni had a successor?</p></div>
 <p class="orv_line">Someone entered the office in a calm, composed gait.</p>
 <p class="orv_line">However, the moment the Great Sage saw the woman wearing a fine, elegant Buddhist robe and a slender crown, his eyes trembled from shock.</p>
 <p class="orv_line">Bimawen sensed that and asked him. </p>
-<div class="orv_constellation"><p>[Someone you know?]</p></div>
+<div class="orv_constellation"><p>Someone you know?</p></div>
 <p class="orv_line">The Great Sage didn't reply and simply stared at her face for a while. The woman didn't reciprocate that gaze, instead choosing to cross the table and head towards the panel displaying the Stories.</p>
 <p class="orv_line">Bimawen used his chin to point and speak. </p>
-<div class="orv_constellation"><p>[This is actually good news. It might not be a bad idea to hear the newbie's opinion. Hey, Miss Sakyamuni's successor, which Story takes your fancy?]</p></div>
+<div class="orv_constellation"><p>This is actually good news. It might not be a bad idea to hear the newbie's opinion. Hey, Miss Sakyamuni's successor, which Story takes your fancy?</p></div>
 <p class="orv_line">The woman's robe, busy swaying about, came to a stop in a certain spot.</p>
 <p class="orv_line">Sakyamuni's successor stared at a certain story with a pair of still eyes. Her hand slowly reached out and touched the display, causing ripples to spread out like the emotions of longing itself.</p>
-<div class="orv_constellation"><p>[I seem to like this Story the most.]</p></div>
+<div class="orv_constellation"><p>I seem to like this Story the most.</p></div>
 <br>
 <hr>
 <br>
 <p class="orv_line">⸢Y ou kn ew al re ady Kim Dok ja.⸥</p>
-<p class="orv_line">[The Fourth Wall] was right. In a way, you could say that I knew something like this would happen. I kind of suspected that the folks in this Story chamber might be the &lt;Kim Dokja's Company&gt;'s members.</p>
-<div class="orv_system"><p>[The agreement with the Wenny King is in danger!]</p></div>
+<p class="orv_line"><strong>[The Fourth Wall]</strong> was right. In a way, you could say that I knew something like this would happen. I kind of suspected that the folks in this Story chamber might be the &lt;Kim Dokja's Company&gt;'s members.</p>
+<div class="orv_system"><p>The agreement with the Wenny King is in danger!</p></div>
 <p class="orv_line">And also, I thought that it'd give rise to such a result, too. Even then, I couldn't not make this choice.</p>
 <p class="orv_line">– You've been warned not to get in contact with them.</p>
-<p class="orv_line">[999] sitting on my shoulder whispered to me. Just by meeting the kids, a change was already taking place within my Incarnation body.</p>
-<div class="orv_system"><p>[The transformation to the Outer God is accelerating due to the risk to the agreement condition.]</p></div>
-<p class="orv_line">'I haven't gone against the agreement itself. Technically speaking, the content of the deal was to [never reveal my identity to Kim Dokja's Company], wasn't it?'</p>
+<p class="orv_line"><strong>[999]</strong> sitting on my shoulder whispered to me. Just by meeting the kids, a change was already taking place within my Incarnation body.</p>
+<div class="orv_system"><p>The transformation to the Outer God is accelerating due to the risk to the agreement condition.</p></div>
+<p class="orv_line">'I haven't gone against the agreement itself. Technically speaking, the content of the deal was to <strong>[never reveal my identity to Kim Dokja's Company]</strong>, wasn't it?'</p>
 <p class="orv_line">– The moment they find out, everything will be over.</p>
 <p class="orv_line">'I know that already, so stop worrying'.</p>
-<div class="orv_system"><p>[Outer God transformation progress percentage: 3%]</p></div>
+<div class="orv_system"><p>Outer God transformation progress percentage: 3%</p></div>
 <p class="orv_line">Most likely, I'd end up as an Outer God like the 'Secretive Plotter' when that percentage maxes out. I was thinking that honestly, it shouldn't matter as long as I fulfil our agreement before that. For now, I was happy to see the kids walking in front of me in such great harmony.</p>
-<div class="orv_system"><p>[A small number of audience members complain that Sanzang can't be two people.]</p></div>
+<div class="orv_system"><p>A small number of audience members complain that Sanzang can't be two people.</p></div>
 <p class="orv_line">While listening to the messages streaming in, I continued to walk behind the kids leading in the front. I heard that children grow remarkably fast every day; that statement really hit home, after realizing that they indeed had grown so much taller already.</p>
 <p class="orv_line">Now that I thought about it, it sure had been a while since I spent some time with them like this.</p>
 <p class="orv_line">I had no idea what either Lee Gilyoung or Shin Yoosung were thinking about most of the time. It was what the Scenario Master had said. I 'saved' them on my whim, and abandoned them behind with no thoughts of taking any responsibility.</p>
@@ -283,19 +290,19 @@
 <p class="orv_line">"But, Sooyoung noona said I should act like this, you know?"</p>
 <p class="orv_line">"Even then, you should still stick to basic etiquette."</p>
 <p class="orv_line">As expected of my Incarnation.</p>
-<p class="orv_line">She studied me with pitying eyes, before whispering to Lee Gilyoung via [Nebula Chat]. Of course, since I was also a member of the same Nebula, I could hear her words just fine.</p>
+<p class="orv_line">She studied me with pitying eyes, before whispering to Lee Gilyoung via <strong>[Nebula Chat]</strong>. Of course, since I was also a member of the same Nebula, I could hear her words just fine.</p>
 <p class="orv_line">– This way, he'll trust us more, you dummy. What will you do if he decides to wreak havoc later?</p>
 <p class="orv_line">I felt goosebumps break out on my skin.</p>
 <p class="orv_line">– …You're actually scared of him? Look at his current state, will ya?</p>
-<p class="orv_line">For sure, I didn't buy the [Great Sage Heaven's Equal Avatar Set] sold by &lt;Emperor&gt; so my current attire consisted of nothing more than the 500-year old "standard" ragged clothing.</p>
+<p class="orv_line">For sure, I didn't buy the <strong>[Great Sage Heaven's Equal Avatar Set]</strong> sold by &lt;Emperor&gt; so my current attire consisted of nothing more than the 500-year old "standard" ragged clothing.</p>
 <p class="orv_line">Shin Yoosung patted the dirt away on my clothes and politely greeted me. "It's a pleasure to make your acquaintance, Constellation-nim. We'll be in your care."</p>
 <p class="orv_line">"I'll be in yours as well. Ah, also. How should I call you both?"</p>
 <p class="orv_line">Lee Gilyoung replied as if he was waiting for that. "I'm the monk Xuan (玄). And she's the monk Zang (奘). Call us that from now on."</p>
 <p class="orv_line">His voice was full of mischievousness as if he was playing a game.</p>
 <p class="orv_line">So, then. Lee Gilyoung was the monk 'Xuan', while Shin Yoosung was the monk 'Zang', was it? To think, they'd split the name of the monk Xuanzang and give it to the kids. It was indeed a rather adorable idea.</p>
-<div class="orv_system"><p>[A portion of audience members think that the two monks are quite adorable.]</p></div>
-<div class="orv_system"><p>[Portion of judges find the setting of 'Two Monks' interesting.]</p></div>
-<div class="orv_system"><p>[4 points have been acquired.]</p></div>
+<div class="orv_system"><p>A portion of audience members think that the two monks are quite adorable.</p></div>
+<div class="orv_system"><p>Portion of judges find the setting of 'Two Monks' interesting.</p></div>
+<div class="orv_system"><p>4 points have been acquired.</p></div>
 <p class="orv_line">Lee Gilyoung, still drunk on all these new settings, continued to yap about himself. Meanwhile, Shin Yoosung whispered in my ear. "I'm sure you're a little bit confused by all these strange set-ups, yes? I'm really sorry. Our Scenario Master is a bit of an eccentric, so…"</p>
 <p class="orv_line">"No, it's fine."</p>
 <p class="orv_line">I could guess who the Scenario Master was already. Well, there could ever be only one person capable of coming up with such an out-there story in &lt;Kim Dokja's Company&gt;, after all.</p>
@@ -312,8 +319,8 @@
 <p class="orv_line">Shin Yoosung hurriedly approached my side and whispered again. "Please don't panic. We're simply mirroring the original's setting."</p>
 <p class="orv_line">"…Pardon?"</p>
 <p class="orv_line">"I heard that in the original story, all onomatopoeia were written in between quotation marks."</p>
-<div class="orv_system"><p>[A portion of the judges are impressed by the unexpected mirroring of the original work!]</p></div>
-<div class="orv_system"><p>[10 additional points have been acquired!]</p></div>
+<div class="orv_system"><p>A portion of the judges are impressed by the unexpected mirroring of the original work!</p></div>
+<div class="orv_system"><p>10 additional points have been acquired!</p></div>
 <p class="orv_line">What the hell? I thought such a thing was a mistake solely reserved to mass-market fantasy genre novels…</p>
 <p class="orv_line">I wasn't even given enough time to get flustered by the unexpected level of observation by the Scenario Master on the original work. The kids pushed me behind them and took large steps forward.</p>
 <p class="orv_line">Having a look again, I realized that the so-called explosion noises seemed to have originated from a large canyon in front of us.</p>
@@ -334,19 +341,19 @@
 <p class="orv_line">"Ku-kwakwakwakwakwa!!"</p>
 <p class="orv_line">Lee Gilyoung shouted out the onomatopoeia and rushed forward, and the blue Dragon jumping out from the canyon also roared out in response. I immediately recognised who that Dragon was.</p>
 <p class="orv_line">…It's the Chimera Dragon??</p>
-<p class="orv_line">Kids fought with the blue Dragon as if they were having a dance-off in the air, and through [Taming], subjugated the creature in no time at all.</p>
-<div class="orv_system"><p>[Audience members are impressed by the kid Sanzangs' martial prowess!]</p></div>
-<div class="orv_system"><p>[A small number of audience members are lodging a protest, complaining that Sanzangs are too powerful.]</p></div>
-<div class="orv_system"><p>[A portion of judges are surprised by this unexpected turn of events!]</p></div>
+<p class="orv_line">Kids fought with the blue Dragon as if they were having a dance-off in the air, and through <strong>[Taming]</strong>, subjugated the creature in no time at all.</p>
+<div class="orv_system"><p>Audience members are impressed by the kid Sanzangs' martial prowess!</p></div>
+<div class="orv_system"><p>A small number of audience members are lodging a protest, complaining that Sanzangs are too powerful.</p></div>
+<div class="orv_system"><p>A portion of judges are surprised by this unexpected turn of events!</p></div>
 <p class="orv_line">And a short while later.</p>
-<div class="orv_system"><p>['Player 6' -nim has joined the group.]</p></div>
+<div class="orv_system"><p>'Player 6' -nim has joined the group.</p></div>
 <p class="orv_line">The Chimera Dragon was transformed into Xuanzang's white horse, and was dragged over here by the two children.</p>
 <p class="orv_line">While trying to understand this situation, which was resolved without me needing to do anything, I recalled the conversation I had with the Scenario Master earlier.</p>
 <p class="orv_line">– What will the retired Sun Wukong be doing?</p>
 <p class="orv_line">– Nothing.</p>
 <p class="orv_line">Only now did I understand just a little bit. This story seemed to be created for this from the word go. And right in the next instant, a message from a familiar Constellation landed in my ear.</p>
-<div class="orv_system"><p>[Judge, 'Prisoner of the Golden Headband', finds the current Story's plot quite interesting.]</p></div>
-<div class="orv_system"><p>[10 additional points have been acquired.]</p></div>
+<div class="orv_system"><p>Judge, 'Prisoner of the Golden Headband', finds the current Story's plot quite interesting.</p></div>
+<div class="orv_system"><p>10 additional points have been acquired.</p></div>
 <br>
 <hr>
 <br>
@@ -356,15 +363,15 @@
 <p class="orv_line">⸢This Story is 'one for Sun Wukong's benefit'.⸥</p>
 <p class="orv_line">(Sun Wukong was really comfortable.)</p>
 <p class="orv_line">This would be my first time to be all relaxed and leisurely ever since the scenarios began. My brain had almost seized up after it got submerged in the sea of comfort for too long.</p>
-<div class="orv_system"><p>[New Story is germinating in you!]</p></div>
-<div class="orv_system"><p>[Story, 'Sneezing Without Hands', has begun its storytelling.]</p></div>
+<div class="orv_system"><p>New Story is germinating in you!</p></div>
+<div class="orv_system"><p>Story, 'Sneezing Without Hands', has begun its storytelling.</p></div>
 <p class="orv_line">I could just about make a guess as to why Han Sooyoung came up with a scenario like this one.</p>
-<div class="orv_system"><p>[Judge, 'Prisoner of the Golden Headband', likes this plot development very much.]</p></div>
+<div class="orv_system"><p>Judge, 'Prisoner of the Golden Headband', likes this plot development very much.</p></div>
 <p class="orv_line">The Journey to the West was a story built around Sun Wukong's sacrifice. Even the later variations had similar themes, too.</p>
 <p class="orv_line">So, what would happen if a 'Story specifically for Sun Wukong' made its appearance?</p>
-<div class="orv_system"><p>[Judge, 'Prisoner of the Golden Headband', is envious of you.]</p></div>
-<div class="orv_system"><p>[Judge, 'Manager of Heaven's Stables', is envious of you.]</p></div>
-<div class="orv_system"><p>[Score: 312]</p></div>
+<div class="orv_system"><p>Judge, 'Prisoner of the Golden Headband', is envious of you.</p></div>
+<div class="orv_system"><p>Judge, 'Manager of Heaven's Stables', is envious of you.</p></div>
+<div class="orv_system"><p>Score: 312</p></div>
 <p class="orv_line">It seemed that Han Sooyoung's claim of being a popular author was true. The Story's total votes had already surpassed 300 and we were enjoying smooth sailing so far.</p>
 <p class="orv_line">And well, such a plot wasn't necessarily bad for my companions, either.</p>
 <p class="orv_line">Nominally, the MC of the story was Sun Wukong, but as every battle was handled by my companions instead, all the shares of the Story at the end of the scenario would naturally belong to &lt;Kim Dokja's Company&gt; alone. What a well-thought-out scheme this was – get a nice score tally, and also ensure you'd walk away with Story shares, too.</p>
@@ -380,7 +387,7 @@
 <p class="orv_line">Lee Gilyoung liked reading novels? Really? That was an unexpected piece of info.</p>
 <p class="orv_line">He was now really amped up as he continued on. "Can I recommend you a novel?"</p>
 <p class="orv_line">He dared to make a recommendation to me, a veteran of over ten years in reading genre novels? Fine, let's hear him, then.</p>
-<p class="orv_line">"It's [SSSSS-grade Infinite Regressor]. It's a super-duper awesome novel, so make sure to read it later, okay?"</p>
+<p class="orv_line">"It's <strong>[SSSSS-grade Infinite Regressor]</strong>. It's a super-duper awesome novel, so make sure to read it later, okay?"</p>
 <p class="orv_line">Before I noticed it, my second ego jumped out to the fore. "But, as I understand, that novel was a resounding failure."</p>
 <p class="orv_line">"Failure? I heard it was really popular, though? I guess you don't have a discerning eye~."</p>
 <p class="orv_line">Han Sooyoung, that moron. Did she boast her novel to these young, gullible kids?</p>
@@ -409,8 +416,8 @@
 <p class="orv_line">Wondering what on earth was going on here, we quickly sneaked our way inside the factory.</p>
 <p class="orv_line">Not too long afterwards, we got to witness the spectacle of thousands of slaves busy kneading and manufacturing something while sticking very close to the moving conveyor belts.</p>
 <p class="orv_line">"Could that be…?"</p>
-<p class="orv_line">The dumpling [999] on my shoulder whispered.</p>
-<p class="orv_line">– They are making [Murim dumplings].</p>
+<p class="orv_line">The dumpling <strong>[999]</strong> on my shoulder whispered.</p>
+<p class="orv_line">– They are making <strong>[Murim dumplings]</strong>.</p>
 <p class="orv_line">Thousands upon thousands of Murim dumplings were being carried away by the conveyor belts to a destination unknown.</p>
 <p class="orv_line">I stared at the unending 'river' of dumplings and began wondering about the person we were about to meet this time.</p>
 <p class="orv_line">(There was only one creature in the whole of the Journey to the West that lusted after food this badly.)</p>
@@ -422,18 +429,12 @@
             <a href="./ch_426"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_428">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="427" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="851" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="426" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="426" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

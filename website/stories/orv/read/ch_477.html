@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 477: Ep. 91 - One Single Story, I</title>
     <meta property="og:title" content="Ch 477: Ep. 91 - One Single Story, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00477.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 477: Ep. 91 - One Single Story, I</h1></div>
 <p class="orv_line">⸢He took a very long time to get to that decision.⸥</p>
@@ -219,21 +226,21 @@
 <p class="orv_line">– It's fine. This is your choice, after all.</p>
 <p class="orv_line">At a casual glance, Yoo Joonghyuk might seem like a realist, but actually, he was far more of an idealist than anyone out there. From the get-go, there was no way someone would repeatedly regress unless he doggedly held onto his ideals. And in order to protect such a dude's ideals, someone had to take on the role of a realist.</p>
 <p class="orv_line">I took another step forward while looking at the waves of 'Outer Gods', about to rush in full of indignation.</p>
-<div class="orv_constellation"><p>[Yoo Joonghyuk did not choose to forsake your worldline.]</p></div>
+<div class="orv_constellation"><p>Yoo Joonghyuk did not choose to forsake your worldline.</p></div>
 <p class="orv_line">I used every ounce of my energy to use that true voice, causing the 'Outer God Kings' to look at me. The 999th turn's Lee Jihye, Lee Hyunsung, Kim Namwoon, Uriel…</p>
-<div class="orv_constellation"><p>[Have you all forgotten? He was never in a position to choose, but always had it chosen for him.]</p></div>
+<div class="orv_constellation"><p>Have you all forgotten? He was never in a position to choose, but always had it chosen for him.</p></div>
 <p class="orv_line">He had repeatedly regressed, but Yoo Joonghyuk had never regressed because he really wanted to. Even when he had to discard the 3rd turn and regressed to the 4th, and when he gave up on the 4th and chose to go to the 5th, it wasn't out of his will, his desire.</p>
 <p class="orv_line">The regression wasn't his choice, but his fate; what chose 'it' wasn't him, but the 'story' that desired his regression.</p>
-<div class="orv_constellation"><p>[We have no need to fight each other. Why must one tragedy compete against another one? I had no idea whether these words would work or not, but even then, I simply had to say them. We won't forsake you. We do not wish to remember you all as calamities. We want to…]</p></div>
+<div class="orv_constellation"><p>We have no need to fight each other. Why must one tragedy compete against another one? I had no idea whether these words would work or not, but even then, I simply had to say them. We won't forsake you. We do not wish to remember you all as calamities. We want to…</p></div>
 <p class="orv_line">I looked up at the sky. I felt dizzy for a moment there from all the boundless gazes I hadn't seen before bearing down on me, but I didn't avoid meeting them head-on.</p>
 <p class="orv_line">Just like how Yoo Joonghyuk was not the same Yoo Joonghyuk from the 0th turn, I too wasn't Kim Dokja of the 1st scenario.</p>
-<div class="orv_constellation"><p>[We want to fight against that sky together with all of you.]</p></div>
+<div class="orv_constellation"><p>We want to fight against that sky together with all of you.</p></div>
 <p class="orv_line">Beyond the skies, the stars began illuminating in sheer madness.</p>
-<div class="orv_system"><p>[The absolute majority of the Constellations can't understand your declaration!]</p></div>
-<div class="orv_system"><p>[Great Dokkaebis from the Bureau are shocked by your intentions!]</p></div>
+<div class="orv_system"><p>The absolute majority of the Constellations can't understand your declaration!</p></div>
+<div class="orv_system"><p>Great Dokkaebis from the Bureau are shocked by your intentions!</p></div>
 <p class="orv_line">Indirect messages rained down like starlight. If it was before, I'd been too busy reading those messages, but now, I knew the truth.</p>
 <p class="orv_line">The reality was, all those starlights in the sky were nothing more than ornaments to hide the fact that the darkness existed there.</p>
-<div class="orv_system"><p>[The 'King of Stories' is now looking at you.]</p></div>
+<div class="orv_system"><p>The 'King of Stories' is now looking at you.</p></div>
 <p class="orv_line">It was then I heard a very faint chuckle.</p>
 <div class="orv_outergod"><p>【Oii, do you even know what you're talking about? Are you saying that you want to destroy &lt;Star Stream&gt;? The snide voice belonged to the 999th turn's Kim Namwoon. You think we haven't tried that before?】</p></div>
 <p class="orv_line">The depths of emotions contained within his voice was unfathomable.</p>
@@ -248,17 +255,17 @@
 <p class="orv_line">⸢If the &lt;Star Stream&gt; disappears, the whole universe will fall into chaos. Such a world-line must never be created. That is the way of Evil.⸥</p>
 <p class="orv_line">That's what she said when I mentioned my goal of destroying the &lt;Star Stream&gt;.</p>
 <p class="orv_line">Kim Namwoon continued on. 【You know what we saw at the end of the world?】</p>
-<div class="orv_constellation"><p>[You probably saw a massive wall. A great wall that surrounds all of the worlds, the one where you can't even see its beginning or the end.]</p></div>
+<div class="orv_constellation"><p>You probably saw a massive wall. A great wall that surrounds all of the worlds, the one where you can't even see its beginning or the end.</p></div>
 <div class="orv_outergod"><p>【…And how do you even know that?】</p></div>
-<div class="orv_constellation"><p>[Because that's where our true goal is, too. What we want to achieve isn't simply the destruction of &lt;Star Stream&gt;. I repeated with my own voice what the 'Secretive Plotter' told me earlier. And it's to eliminate the ringleader of all these tragedies hiding behind that 'Final Wall'.]</p></div>
+<div class="orv_constellation"><p>Because that's where our true goal is, too. What we want to achieve isn't simply the destruction of &lt;Star Stream&gt;. I repeated with my own voice what the 'Secretive Plotter' told me earlier. And it's to eliminate the ringleader of all these tragedies hiding behind that 'Final Wall'.</p></div>
 <p class="orv_line">The 999th turn's Kim Namwoon stared at me as if he was greatly shocked by this revelation.</p>
 <p class="orv_line">His lips bobbed up and down many times before he finally roared out. 【No one can go past the 'Final Wall'! That's…】</p>
 <div class="orv_outergod"><p>【Namwoon-ah. These people, they possess the 'Final Key' that might allow them to go over the 'Final Wall'.】</p></div>
 <p class="orv_line">Lee Hyunsung raised his voice.</p>
 <p class="orv_line">Kim Namwoon alternated his gaze between Lee Hyunsung and me, looking utterly confused. I simply nodded my head towards him.</p>
-<div class="orv_system"><p>[The 'Outer God Kings' are getting agitated by your announcement!]</p></div>
-<div class="orv_system"><p>[Your declaration is causing a rapid change in the '98th scenario'!]</p></div>
-<div class="orv_system"><p>[A large number of Constellations are indignant of your choice!]</p></div>
+<div class="orv_system"><p>The 'Outer God Kings' are getting agitated by your announcement!</p></div>
+<div class="orv_system"><p>Your declaration is causing a rapid change in the '98th scenario'!</p></div>
+<div class="orv_system"><p>A large number of Constellations are indignant of your choice!</p></div>
 <p class="orv_line">It was fine if the stars didn't want to side with us. It was also fine if other Nebulas didn't want to join us, either.</p>
 <p class="orv_line">However, if these four decided to stand on our side…</p>
 <p class="orv_line">If these 'Kings' that lived through the 999th turn remained in this world-line and fought alongside us, then…</p>
@@ -270,10 +277,10 @@
 <p class="orv_line">The sword's trajectory streaming before my eyes deflected his shortsword.</p>
 <p class="orv_line">As the heavy impact force resounded out, both Yoo Joonghyuk and Kim Namwoon were forced back a couple of steps.</p>
 <div class="orv_outergod"><p>【[Hahaha! This is it! This is that feeling!】</p></div>
-<p class="orv_line">Blood trickled down the 'Monarch of the Great Abyss's' hand after that collision against the [Black Heavenly Demon Sword].</p>
+<p class="orv_line">Blood trickled down the 'Monarch of the Great Abyss's' hand after that collision against the <strong>[Black Heavenly Demon Sword]</strong>.</p>
 <div class="orv_outergod"><p>【Do you have any idea how long I've been waiting for this? Do you know how long I had to wander aimlessly just for a chance to fight against you?!】</p></div>
 <p class="orv_line">The 'Monarch of the Great Abyss', the being who travelled through the inordinate amount of time just to revive that one opponent he had been idolising.</p>
-<div class="orv_system"><p>[Giant Story, 'Delusional Design', has begun its storytelling!]</p></div>
+<div class="orv_system"><p>Giant Story, 'Delusional Design', has begun its storytelling!</p></div>
 <p class="orv_line">The 999th turn's Uriel supported the wobbling Lee Jihye and got into the battle stance as well. 【You told me this once before. If, by any chance, you've become another existence that's not you, you wanted me to kill you personally.】</p>
 <p class="orv_line">Along with the blinding explosion, the sun in the air began emitting light once more.</p>
 <div class="orv_outergod"><p>【Looks like that time is now.】</p></div>
@@ -294,29 +301,29 @@
 <p class="orv_line">Along with the impact force akin to heaven and earth upending, violent tsunami waves and sunlight intermingled. Blades clashing against each other could be spied within the rising white foams trying to blind our view.</p>
 <p class="orv_line">The blackish light sliced into the ocean.</p>
 <p class="orv_line">Yoo Joonghyuk was fighting – while enduring against the combined assaults of the 999th turn's Kim Namwoon and Uriel, he was displaying a shocking level of martial prowess.</p>
-<div class="orv_system"><p>[Giant Story, 'Pilgrim of the Lonely Apocalypse', has begun its storytelling!]</p></div>
-<div class="orv_system"><p>[Story, 'Hell of Eternity', has begun its storytelling!]</p></div>
+<div class="orv_system"><p>Giant Story, 'Pilgrim of the Lonely Apocalypse', has begun its storytelling!</p></div>
+<div class="orv_system"><p>Story, 'Hell of Eternity', has begun its storytelling!</p></div>
 <p class="orv_line">The hidden, shored-up power strong enough to contend with two 'Kings', now that was Yoo Joonghyuk's true strength. Every Story he had built up all this time was exploding forth simultaneously.</p>
-<div class="orv_system"><p>['Disconnected Film Theory's' connection is incomplete!]</p></div>
-<div class="orv_system"><p>[Cracks are developing in the Story's continuity!]</p></div>
+<div class="orv_system"><p>'Disconnected Film Theory's' connection is incomplete!</p></div>
+<div class="orv_system"><p>Cracks are developing in the Story's continuity!</p></div>
 <p class="orv_line">Unfortunately, the balance couldn't be maintained forever.</p>
 <p class="orv_line">"Dokja-ssi."</p>
 <p class="orv_line">I shifted my head to find Jung Heewon there. The Archangel's blinding wings were spreading out from her back.</p>
 <p class="orv_line">The Beast Lord Shin Yoosung, the Naval Admiral Lee Jihye, and the Emperor of Steelsword, Lee Hyunsung. My companions who lived a different life compared to the original storyline, and thus were currently marching towards a different resolution.</p>
 <p class="orv_line">We glanced at each other and nodded.</p>
 <p class="orv_line">"I'll help Joonghyuk-ssi, so the rest of you, please take care of that side!"</p>
-<div class="orv_system"><p>[Constellation, 'Demon-like Judge of Fire', is unleashing her Status!]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon-like Judge of Fire', is unleashing her Status!</p></div>
 <p class="orv_line">Jung Heewon spread her wings wide and flew towards Yoo Joonghyuk under the blessing of Uriel. It seemed that that was the Archangel's choice. She now knew that the 'Outer God King' happened to be herself from the far-flung distant future, so…</p>
 <div class="orv_outergod"><p>【I told you this before. Without the Nebula's grace, you can't oppose me.】</p></div>
-<p class="orv_line">The [Flames of Retribution] soaring through the sky as if to puncture it was now crashing back down towards the ocean.</p>
+<p class="orv_line">The <strong>[Flames of Retribution]</strong> soaring through the sky as if to puncture it was now crashing back down towards the ocean.</p>
 <p class="orv_line">However, we had no time to worry about Jung Heewon. Because there was yet another existence pouring out her boundless Status in our direction at the moment.</p>
 <p class="orv_line">Among the parting, exploding waves, the 999th turn's Lee Jihye was staring at us with her hollow eyes.</p>
 <p class="orv_line">"Everyone, please evade!"</p>
 <p class="orv_line">Yoo Sangah stepped forward and distorted the time and space. Unfortunately, Sakyamuni's ability was useless when facing the true might of that 'Outer God King'.</p>
 <p class="orv_line">Along with the loud ripping noise, the distorted time/space was forcibly spread open.</p>
-<p class="orv_line">The battleship of the 999th turn's Lee Jihye was now rising up from the depths of the ocean. The [Turtle Dragon] of the 'Master of the Sunken Island' resembled more of an island rather than a ship at this stage.</p>
+<p class="orv_line">The battleship of the 999th turn's Lee Jihye was now rising up from the depths of the ocean. The <strong>[Turtle Dragon]</strong> of the 'Master of the Sunken Island' resembled more of an island rather than a ship at this stage.</p>
 <p class="orv_line">"Ahjussi!"</p>
-<p class="orv_line">Sensing the danger, Shin Yoosung had her [Chimera Dragon] spew out its Breath. And when she did, all aquatic creatures hiding below the water's surface rushed out, as well.</p>
+<p class="orv_line">Sensing the danger, Shin Yoosung had her <strong>[Chimera Dragon]</strong> spew out its Breath. And when she did, all aquatic creatures hiding below the water's surface rushed out, as well.</p>
 <p class="orv_line">Gyaaaah-ooooh!</p>
 <p class="orv_line">Monsters screeching out viciously pounced on the battleship's hull. However, the island was simply far too large for them to stop. The loud noises of monsters being crushed could be heard next. The wide expanse of the ocean vibrated heavily and the tsunami wave rolled out.</p>
 <p class="orv_line">"Hyung, take a step back! Hurry!"</p>
@@ -327,39 +334,39 @@
 <p class="orv_line">Kwa-kwakwakwakwa!</p>
 <p class="orv_line">A huge tsunami crashed in, accompanied by the round of cannon shelling vicious enough to blow up the entire ocean. The wave's scale was the largest we had ever seen.</p>
 <p class="orv_line">If that thing continued on its way, then even if my mother was there, the Korean Peninsula was as good as finished.</p>
-<div class="orv_system"><p>[Story, 'Demon King of Salvation', has begun its storytelling!]</p></div>
+<div class="orv_system"><p>Story, 'Demon King of Salvation', has begun its storytelling!</p></div>
 <p class="orv_line">Han Sooyoung's expression changed for the worse as she shouted out. "Kim Dokja! If you do anything stupid…!"</p>
 <p class="orv_line">"Don't worry."</p>
 <p class="orv_line">I lightly patted her shoulder and stepped forward. The scenes of the scenarios we experienced together flitted in and out of my view.</p>
-<div class="orv_system"><p>[Giant Story, 'Demon Realm's Spring', has begun its storytelling!]</p></div>
-<div class="orv_system"><p>[Giant Story, 'Torch that Swallowed the Myth', has begun its storytelling!]</p></div>
-<div class="orv_system"><p>[Giant Story, 'Season of Light and Darkness', has begun its storytelling!]</p></div>
+<div class="orv_system"><p>Giant Story, 'Demon Realm's Spring', has begun its storytelling!</p></div>
+<div class="orv_system"><p>Giant Story, 'Torch that Swallowed the Myth', has begun its storytelling!</p></div>
+<div class="orv_system"><p>Giant Story, 'Season of Light and Darkness', has begun its storytelling!</p></div>
 <p class="orv_line">Every time a new Giant Story was created, I had to risk certain death. I believed that was the only way, and thought that was the correct way.</p>
-<div class="orv_system"><p>[Giant Story, 'Liberator of the Forgotten Ones', is looking at you.]</p></div>
+<div class="orv_system"><p>Giant Story, 'Liberator of the Forgotten Ones', is looking at you.</p></div>
 <p class="orv_line">The constrictive headband, this shackle that my companions personally placed on me, tightened on my head. When I was earning that Giant Story, I didn't die. I knew very well that this was their intentions.</p>
 <p class="orv_line">Kwa-aaaaaah!!</p>
 <p class="orv_line">The tsunami wave got closer and closer. This power wasn't something even a Myth-grade could stop.</p>
 <p class="orv_line">⸢However, Kim Dokja knew a way to deal with this tsunami wave.⸥</p>
 <p class="orv_line">Back during the last scenario of the original storyline, when Yoo Joonghyuk was waging the final war against the 'Outer Gods', there was a similar moment to this one.</p>
 <p class="orv_line">At that time, there was a certain Constellation beside Yoo Joonghyuk.</p>
-<div class="orv_system"><p>[Constellation. 'Most Ancient Liberator', is now looking at you.]</p></div>
+<div class="orv_system"><p>Constellation. 'Most Ancient Liberator', is now looking at you.</p></div>
 <p class="orv_line">A single 'Myth-grade Constellation' couldn't deal with the 'great apocalypse'. However, what if there were two?</p>
-<div class="orv_system"><p>[Constellation, 'Demon King of Salvation', is looking at the 'Most Ancient Liberator'.]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon King of Salvation', is looking at the 'Most Ancient Liberator'.</p></div>
 <p class="orv_line">I would never sacrifice myself ever again. I'd not leave my companions behind. Just like how Yoo Joonghyuk didn't want to give up on this life, I shall not give up even until the end.</p>
-<div class="orv_system"><p>[Giant Story, 'Liberator of the Forgotten Ones', has begun its storytelling!]</p></div>
+<div class="orv_system"><p>Giant Story, 'Liberator of the Forgotten Ones', has begun its storytelling!</p></div>
 <p class="orv_line">The sole 'Giant Story' that I possessed that could become the power to fight off against the 'Outer God King' – however, I wasn't the one possessing the greatest share of this Giant Story.</p>
 <p class="orv_line">"Great Sage!"</p>
 <p class="orv_line">I sensed four rings connecting with each other inside my head.</p>
-<div class="orv_system"><p>['Meihouwang' is agreeing to your request.]</p></div>
-<div class="orv_system"><p>['Bimawen' is agreeing to your request.]</p></div>
-<div class="orv_system"><p>['Douzhanshengfo' is agreeing to your request.]</p></div>
+<div class="orv_system"><p>'Meihouwang' is agreeing to your request.</p></div>
+<div class="orv_system"><p>'Bimawen' is agreeing to your request.</p></div>
+<div class="orv_system"><p>'Douzhanshengfo' is agreeing to your request.</p></div>
 <p class="orv_line">The overflowing Story began transforming my Incarnation Body.</p>
-<div class="orv_system"><p>['Great Sage Heaven's Equal' is agreeing to your request.]</p></div>
+<div class="orv_system"><p>'Great Sage Heaven's Equal' is agreeing to your request.</p></div>
 <p class="orv_line">My hair grew in an instant and changed to platinum colour. The aura of boundless Story flowed like rapid torrents within all of my veins. And then, I felt the fulfilling sensation of the Ruyi Jingu Bang's grip in my hand.</p>
-<div class="orv_system"><p>[The power of five 'Sun Wukongs' have incarnated into your Incarnation Body!]</p></div>
+<div class="orv_system"><p>The power of five 'Sun Wukongs' have incarnated into your Incarnation Body!</p></div>
 <p class="orv_line">The golden-hued Status settled on top of my coat. The battlefield of the Tongtian was being recreated above the surrounding ocean.</p>
 <p class="orv_line">Just as the lightning bolt struck, I heard the familiar voice.</p>
-<div class="orv_constellation"><p>[Let's go, maknae-yah.]</p></div>
+<div class="orv_constellation"><p>Let's go, maknae-yah.</p></div>
 <p class="orv_line">I nodded my head.</p>
 <div class="orv_image"><img src="../../../assets/images/477 - The golden-hued Status settled on top of my coat.jpg" alt="" loading="lazy"></div>
 <div class="orv_notice"><p>* Unofficial fan illustration (non-canonical)</p></div>
@@ -370,18 +377,12 @@
             <a href="./ch_476"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_478">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="477" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="862" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="476" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="476" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

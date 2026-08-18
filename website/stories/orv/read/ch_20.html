@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 20: Ep. 5 – Dark Keeper, I</title>
     <meta property="og:title" content="Ch 20: Ep. 5 – Dark Keeper, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,28 +177,28 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00020.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 20: Ep. 5 – Dark Keeper, I</h1></div>
-<div class="orv_constellation"><p>[T-Then I will let everyone take care of it! Heeheehee—!]</p></div>
+<div class="orv_constellation"><p>T-Then I will let everyone take care of it! Heeheehee—!</p></div>
 <p class="orv_line">The dokkaebi said these words and disappeared.</p>
 <p class="orv_line">A food penalty and survival penalty. I already knew about the former penalty. However, the latter wasn't in the original Ways of Survival. Maybe my contract with Bihyung caused this development. Jung Heewon confirmed that the biscuit in her pocket had disappeared and asked in a soft voice, "Dokja-ssi, did you perhaps know something like this would hap―"</p>
 <p class="orv_line">"I did expect it. I thought about what the dokkaebis would do first to harass humans."</p>
@@ -200,9 +207,9 @@
 <p class="orv_line">"Give back our food!"</p>
 <p class="orv_line">"How, how did this happen?"</p>
 <p class="orv_line">The people of the marginalized group were crying. Cheon Inho and the mainstream group were also devastated by the sudden food shortage. My eyes met Cheon Inho's, who then bit his lip.</p>
-<p class="orv_line">[Perhaps…were you aware of it? No, that's impossible.] If I could read his thoughts then that's what he would be thinking.</p>
-<div class="orv_system"><p>[You have accurately read the thoughts of character 'Cheon Inho'.]</p></div>
-<div class="orv_system"><p>[Your understanding of the character 'Cheon Inho' has increased.]</p></div>
+<p class="orv_line"><strong>[Perhaps…were you aware of it? No, that's impossible.]</strong> If I could read his thoughts then that's what he would be thinking.</p>
+<div class="orv_system"><p>You have accurately read the thoughts of character 'Cheon Inho'.</p></div>
+<div class="orv_system"><p>Your understanding of the character 'Cheon Inho' has increased.</p></div>
 <p class="orv_line">…My understanding rose from this sort of thing? I looked at other people's expressions and tried to guess what they were thinking. However, the previous messages didn't pop up again. Meanwhile, Cheon Inho quickly gathered the people together in order to organize the chaos.</p>
 <p class="orv_line">"Everyone, gather together. I will give you an emergency notice."</p>
 <p class="orv_line">The contents of the notice were simple: The situation had become worse so more 'scouts' from the marginalized group were needed. They had to hurry. Now there was no food underground.</p>
@@ -226,10 +233,10 @@
 <p class="orv_line">After a while, several people from the marginalized group, including myself, were standing in front of the tunnel towards Yaksu Station.</p>
 <p class="orv_line">"I see. You are going to enter the railway track?" I thought Cheon Inho would challenge us when we refused to join the scouting group, but he seemed relieved that I was out of the group. He might think I was a threat to his own power. "Well, looking at it in the long run, a team dedicated to attacking the scenario is required. Come back safely."</p>
 <p class="orv_line">He was a funny guy. He spoke like he was the captain but the time for him to be finished wasn't far off.</p>
-<div class="orv_system"><p>[Your understanding of the character 'Cheon Inho' has increased.]</p></div>
-<div class="orv_system"><p>[Your understanding of the character 'Cheon Inho' has reached a certain level.]</p></div>
+<div class="orv_system"><p>Your understanding of the character 'Cheon Inho' has increased.</p></div>
+<div class="orv_system"><p>Your understanding of the character 'Cheon Inho' has reached a certain level.</p></div>
 <p class="orv_line">I see…I got it now. There were two major cases of character 'understanding' rising. One was when I got the liking or trust of the character. The second was when I accurately guessed what the character was thinking. Maybe now was the latter case.</p>
-<div class="orv_system"><p>[The character 'Cheon Inho' is suspicious of you.]</p></div>
+<div class="orv_system"><p>The character 'Cheon Inho' is suspicious of you.</p></div>
 <p class="orv_line">According to the accumulated understanding value, a vague idea of the person's emotions could be obtained.</p>
 <p class="orv_line">"Oh, can one of my group members join? I'd like to get some information on the attack."</p>
 <p class="orv_line">Indeed, Cheon Inho wouldn't let us go so easily. I stared at the man behind him. It was the person who would go with us and an unlucky fellow.</p>
@@ -244,9 +251,9 @@
 <p class="orv_line">"…Is it okay even if your body isn't fully healed?"</p>
 <p class="orv_line">"This much is fine."</p>
 <p class="orv_line">There was one more. Including Jung Heewon, there were a total of six people in the party. It was a lot for a small party. Of course, the number of people wasn't much in front of the upcoming crisis.</p>
-<div class="orv_system"><p>[A new sub-scenario has arrived!]</p></div>
+<div class="orv_system"><p>A new sub-scenario has arrived!</p></div>
 <div class="orv_window">
-<h3 class="orv_window_title">[Second Scenario – Food Acquisition]</h3>
+<h3 class="orv_window_title">Second Scenario – Food Acquisition</h3>
 <p>Category: Sub</p>
 <p>Difficulty: E</p>
 <p>Clear Conditions: Directly hunt the monsters that can be used as food and cook them.</p>
@@ -255,7 +262,7 @@
 <p>Failure: ???</p>
 </div>
 <p class="orv_line">As soon as they stepped foot in the tunnel, a sub-scenario flew in. Food acquisition. It was a sub-scenario we had to go through before entering the second main scenario.</p>
-<div class="orv_system"><p>[A few constellations are anticipating your performance.]</p></div>
+<div class="orv_system"><p>A few constellations are anticipating your performance.</p></div>
 <p class="orv_line">The darkness of the tunnel became apparent before we even moved 10 steps. I lit up the tunnel with a flashlight but the outline of the surrounding area wasn't visible at all. It was proof of a curtain that was blocking the light. The real thing would be beyond this curtain.</p>
 <p class="orv_line">"Dokja-ssi, wait a minute. It is really dangerous from here on." Jung Heewon, who walked beside me, stopped first. "Are we really going this way? No matter how I look, it seems like suicide. There is also Gilyoung."</p>
 <p class="orv_line">"In fact, I was concerned from the beginning. It's not too late, so how about we leave Gilyoung behind? And if possible, the women…"</p>
@@ -268,10 +275,10 @@
 <p class="orv_line">"S-Shit! Cockroaches!" Han Myungoh cried out with fear.</p>
 <p class="orv_line">The cockroach that appeared in the distance was connected to Lee Gilyoung's fingertips with a faint solid line. The cockroach listened to Lee Gilyoung's words like a well-behaved dog and disappeared into the darkness.</p>
 <p class="orv_line">"My attribute is Insect Collector."</p>
-<p class="orv_line">Insect Collector. Lee Gilyoung possessed the rare ability to communicate simply with insects through his [Diverse Communication] skill.</p>
+<p class="orv_line">Insect Collector. Lee Gilyoung possessed the rare ability to communicate simply with insects through his <strong>[Diverse Communication]</strong> skill.</p>
 <p class="orv_line">"There is nothing in front of us. It is safe for 100 steps forward." Lee Gilyoung showed an overwhelming scouting power and the other people made a stunned expression. Lee Gilyoung spoke to them with a bold expression, "Thank you for your concern. But I didn't follow all of you for you to take care of me."</p>
 <p class="orv_line">"Ah, yes." Jung Heewon nodded with a sour expression. Lee Gilyoung came to my side and I stroked his hair. Lee Gilyoung's attribute hadn't been seen in the original Ways of Survival. It wasn't a wrong choice to save Lee Gilyoung in the beginning. We passed a clear barrier and entered the full-fledged darkness.</p>
-<div class="orv_system"><p>[You have entered a dangerous area.]</p></div>
+<div class="orv_system"><p>You have entered a dangerous area.</p></div>
 <p class="orv_line">"Y-Yoo Sangah-ssi. It is dangerous to hold my hand while walking."</p>
 <p class="orv_line">"…Aren't you more afraid than I am?"</p>
 <p class="orv_line">"N-No!"</p>
@@ -302,9 +309,9 @@
 <p class="orv_line">In fact, this was also my first time trying it. I wouldn't have been able to do it if the details hadn't been included in Ways of Survival. Why wasn't Ways of Survival popular? It was simple. The author wrote too much of the setting.</p>
 <p class="orv_line">"…Dokja-ssi, you are a beginner but you are good at it."</p>
 <p class="orv_line">We sat down and made weapons together. This time it was a spear, not a sword. They didn't have the Kendo skill so I decided it was more stable to make a long spear. Lee Hyunsung's spear was made with the spine of the largest ground rat while Yoo Sangah and Han Myungoh's weapons were made with the spine of average sized ground rats. Finally, Lee Gilyoung's weapon was made with the head bone of a young ground rat.</p>
-<div class="orv_system"><p>[You have succeeded in acquiring weapons by yourself.]</p></div>
-<div class="orv_system"><p>[A very small number of constellations are interested in the primitive nature of humanity.]</p></div>
-<div class="orv_system"><p>[Constellations have sponsored you 100 coins.]</p></div>
+<div class="orv_system"><p>You have succeeded in acquiring weapons by yourself.</p></div>
+<div class="orv_system"><p>A very small number of constellations are interested in the primitive nature of humanity.</p></div>
+<div class="orv_system"><p>Constellations have sponsored you 100 coins.</p></div>
 <p class="orv_line">Everyone received these messages.</p>
 <p class="orv_line">"We receive coins even for this type of thing."</p>
 <p class="orv_line">I asked, "I don't want you to die. You have your own coins?"</p>
@@ -312,7 +319,7 @@
 <p class="orv_line">"Whenever possible, leave enough coins for the survival cost and invest the rest in your strength, physique and agility. Otherwise, you won't survive."</p>
 <p class="orv_line">"Ah, I'll keep that in mind."</p>
 <p class="orv_line">We finished the preparations and started to move forward again. The 100 steps that Lee Gilyoung mentioned ended right in front of us.</p>
-<div class="orv_system"><p>[The sub-scenario – Food Acquisition has begun!]</p></div>
+<div class="orv_system"><p>The sub-scenario – Food Acquisition has begun!</p></div>
 <p class="orv_line">The ground rats crawled out from the ground. I quickly counted their numbers. One, two, three…there were exactly 13. It was more than I thought. The group of ground rats drew a line and started threatening us. The moment we crossed the line, the fight would begin.</p>
 <p class="orv_line">I said, "There is no plan. We are beginners. It might sound cruel but honestly, I don't expect you to survive."</p>
 <p class="orv_line">"T-That…"</p>
@@ -329,18 +336,12 @@
             <a href="./ch_19"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_21">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="20" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="41" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="19" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="19" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

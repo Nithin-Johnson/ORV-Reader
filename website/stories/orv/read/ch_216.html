@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 216: Ep. 41 - Real Revolutionary, II</title>
     <meta property="og:title" content="Ch 216: Ep. 41 - Real Revolutionary, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00216.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 216: Ep. 41 - Real Revolutionary, II</h1></div>
 <p class="orv_line">"…What aren't you saying?"</p>
@@ -199,9 +206,9 @@
 <p class="orv_line">I was somehow hesitant to speak and shook my head lightly. Jang Hayoung stared straight at me and stated, "I would like to hear it."</p>
 <p class="orv_line">There was something familiar about this and I couldn't help smiling. I closely examined Jang Hayoung's face. A sharp nose on pure white skin. Clear and deep eyes below eyebrows that were drawn in a soft line…</p>
 <p class="orv_line">A faint guilt filled my heart.</p>
-<div class="orv_quote"><p>「 He is a kid who likes stories. 」</p></div>
-<div class="orv_quote"><p>「 Because Yoo Joonghyuk is a good person, this person should taste the bitterness of reality… 」</p></div>
-<div class="orv_quote"><p>「 Joonghyuk doesn't listen to people. The other person should be a good listener. 」</p></div>
+<div class="orv_quote"><p>He is a kid who likes stories.</p></div>
+<div class="orv_quote"><p>Because Yoo Joonghyuk is a good person, this person should taste the bitterness of reality…</p></div>
+<div class="orv_quote"><p>Joonghyuk doesn't listen to people. The other person should be a good listener.</p></div>
 <p class="orv_line">The result of all the comments I made was now in front of me. He had eyes to see the world, a nose to breath and ears to hear the story. Perhaps it was because of guilt but I spoke my first words unknowingly. "There are people who think bad things."</p>
 <p class="orv_line">"People?"</p>
 <p class="orv_line">I nodded and continued, "They are overall bad people. They bully or gossip about others and even commit some terrible things."</p>
@@ -220,12 +227,12 @@
 <p class="orv_line">"Just…"</p>
 <p class="orv_line">I couldn't explain it well. It was a helpless feeling that couldn't be described. However, it was when a person became most helpless that they were the most truthful.</p>
 <p class="orv_line">"I think there is a huge wall."</p>
-<div class="orv_system"><p>[The Fourth Wall is looking at you.]</p></div>
+<div class="orv_system"><p>The Fourth Wall is looking at you.</p></div>
 <p class="orv_line">"You and I are talking like this but we're not really communicating. There is no such thing as communication in this world."</p>
-<div class="orv_system"><p>[The 'Unidentified Wall' is looking at the Fourth Wall.]</p></div>
-<div class="orv_quote"><p>「 Kim Dokja thought: Maybe reality or the novel is all the same. 」</p></div>
-<div class="orv_quote"><p>「 I've read it for so long and I still don't know. 」</p></div>
-<div class="orv_quote"><p>「 Maybe I will never know. 」</p></div>
+<div class="orv_system"><p>The 'Unidentified Wall' is looking at the Fourth Wall.</p></div>
+<div class="orv_quote"><p>Kim Dokja thought: Maybe reality or the novel is all the same.</p></div>
+<div class="orv_quote"><p>I've read it for so long and I still don't know.</p></div>
+<div class="orv_quote"><p>Maybe I will never know.</p></div>
 <p class="orv_line">I felt like I was mistaken and that the moment I spoke these words, everything would change. This optical illusion was broken by Jang Hayoung's words."I might be different from others but of course, there is no such thing."</p>
 <p class="orv_line">"What?"</p>
 <p class="orv_line">"Everyone has a wall and communication is impossible… that's obvious."</p>
@@ -245,7 +252,7 @@
 <p class="orv_line">"Did you talk to the constellations in this way?"</p>
 <p class="orv_line">"Ah, that…"</p>
 <p class="orv_line">Judging by his hesitation, I must be correct. I had a bit of understanding of the minds of the constellations. They were the heaviest but at the same time, loneliest beings in the universe. They were writers as well as those who watched the stories. Jang Hayoung would've listened to them as he did to me.</p>
-<div class="orv_system"><p>[The constellation 'Nouveau Richer Snake Boss' is looking at the cheeky incarnation!]</p></div>
+<div class="orv_system"><p>The constellation 'Nouveau Richer Snake Boss' is looking at the cheeky incarnation!</p></div>
 <p class="orv_line">Jang Hayoung looked up at the air at the same time. Thanks to Biyoo's interference, the Nouveau Richer Snake Boss couldn't find my location for a while. Of course, this didn't last long.</p>
 <p class="orv_line">Jang Hayoung asked in an uneasy voice. "…Is that bastard thinking of staying here?"</p>
 <p class="orv_line">"Perhaps."</p>
@@ -257,7 +264,7 @@
 <p class="orv_line">"Who?"</p>
 <p class="orv_line">I didn't know if the constellations would comply with my suggestions. Now that I opened a channel… if that person helped, the Revolutionary scenario would end without any problems.</p>
 <p class="orv_line">Then a message appeared in the air.</p>
-<div class="orv_system"><p>[The fifth Night has arrived.]</p></div>
+<div class="orv_system"><p>The fifth Night has arrived.</p></div>
 <p class="orv_line">Sinister flute sounds were heard. I looked around the industrial complex. In the raging fire, people were screaming. My expression hardened and I spoke towards the scattered Aileen and Mark.</p>
 <p class="orv_line">"Gather all the citizens."</p>
 <br>
@@ -265,9 +272,9 @@
 <br>
 <p class="orv_line">The duke was driven into a corner. It was obvious after the Fourth Night was over. The Factory's operating power had been cut off by the kidnapped slaves. Thus, the duke couldn't come out for the moment.</p>
 <p class="orv_line">However, the duke led the nobles and emerged on this Night.</p>
-<div class="orv_quote"><p>「 Kim Dokja thought: What is he intending? 」</p></div>
+<div class="orv_quote"><p>Kim Dokja thought: What is he intending?</p></div>
 <p class="orv_line">My mind was a bit complicated due to the variable of a new constellation intervening. In addition, the constellation I called hadn't come yet.</p>
-<div class="orv_quote"><p>「 It's fine. Let's think positively. This might be an opportunity. 」</p></div>
+<div class="orv_quote"><p>It's fine. Let's think positively. This might be an opportunity.</p></div>
 <p class="orv_line">Yes, I didn't need to have a weak mind. I was now a constellation. I had done well so far and there wouldn't be a problem.</p>
 <p class="orv_line">"Jang Hayoung! Take care of the executioners! Absolutely don't get involved with the other nobles!"</p>
 <p class="orv_line">"I know!"</p>
@@ -281,28 +288,28 @@
 <p class="orv_line">"You would be the lucky one if I ran away. Omboros."</p>
 <p class="orv_line">"I told you it is Ombros!"</p>
 <p class="orv_line">Instead of answering, I raised the magic power in my body. Last time, I had fought using the status of a constellation. This time, the opponent was great and it wouldn't work against Omboros. Thus, this was an all-out battle.</p>
-<div class="orv_system"><p>[The 5th bookmark, Kyrgios Rodgraim is selected!]</p></div>
-<div class="orv_system"><p>[The exclusive skill 'Miniaturization Lv. 3' is activated!]</p></div>
-<div class="orv_system"><p>[The exclusive skill 'Electrification' Lv. 11 (+1) has been activated.]</p></div>
+<div class="orv_system"><p>The 5th bookmark, Kyrgios Rodgraim is selected!</p></div>
+<div class="orv_system"><p>The exclusive skill 'Miniaturization Lv. 3' is activated!</p></div>
+<div class="orv_system"><p>The exclusive skill 'Electrification' Lv. 11 (+1) has been activated.</p></div>
 <p class="orv_line">A yellow heat wave burst out from Omboros' fist. It was the emergence of Brilliant Explosion, a skill of his story. He had the most impressive explosion stigma in the 73rd Demon Realm. The power was strong but it wasn't difficult to avoid. The explosion range was large so it was considered a long-range attack.</p>
 <p class="orv_line">"You rat…!"</p>
-<div class="orv_system"><p>[The constellation 'Nail-Eating Rat' hates the words of Demon Ombros.]</p></div>
+<div class="orv_system"><p>The constellation 'Nail-Eating Rat' hates the words of Demon Ombros.</p></div>
 <p class="orv_line">Omboros felt it was difficult to deal with the smaller me with a simple explosion and he changed his operation. The heat from his hands rapidly contracted and changed into a small ball.</p>
 <p class="orv_line">"Die!"</p>
 <p class="orv_line">The condensed heat was more intense around his hands. He thought he would push me in strength after reducing the range…</p>
 <p class="orv_line">It was a good plan but he met the wrong opponent. I wasn't an ordinary incarnation. I watched the fierce incoming explosion and stretched out my fist without hesitation. The centre of the explosion was deeply pierced by the blow containing my magic power.</p>
 <p class="orv_line">My ears momentarily buzzed and the fragments caught in the explosion scattered in the air. The flames in the area were swept away and went out. Only a blue-white lightning was scattered everywhere. I heard a sound and my vision blinked white.</p>
-<div class="orv_system"><p>[The constellation 'Nouveau Richer Snake Boss' is astonished at your strength.]</p></div>
+<div class="orv_system"><p>The constellation 'Nouveau Richer Snake Boss' is astonished at your strength.</p></div>
 <p class="orv_line">Omboros couldn't be seen in the place that the blue-white lightning swept through. Maybe he flew away or he might've died.</p>
 <p class="orv_line">"Oh my god…"</p>
 <p class="orv_line">The industrial complex was brutally destroyed. Some of the citizens confirmed my strength and were kneeling. At this point, I didn't know how I was in a fight. If I returned to the scenario properly, could I win one on one with a few constellations?</p>
-<div class="orv_system"><p>[Your incarnation body can't handle the level of force used.]</p></div>
-<div class="orv_system"><p>[A significant portion of your incarnation body has been damaged!]</p></div>
+<div class="orv_system"><p>Your incarnation body can't handle the level of force used.</p></div>
+<div class="orv_system"><p>A significant portion of your incarnation body has been damaged!</p></div>
 <p class="orv_line">…Damn, it was starting again. Still, it was fine. It would be over before my body was in tatters.</p>
 <p class="orv_line">"Waaaaahhhhh!"</p>
 <p class="orv_line">Were they inspired by this situation? The citizens in the surrounding area started shouting.</p>
 <p class="orv_line">"Revolutionary! Revolutionary!"</p>
-<div class="orv_system"><p>[New constellations have entered the #BI-90594 channel.]</p></div>
+<div class="orv_system"><p>New constellations have entered the #BI-90594 channel.</p></div>
 <p class="orv_line">The number of constellations kept increasing. It was a different feeling from Bihyung's channel. Well, maybe because I thought of this as 'my channel'. I went to the forefront of the battlefield and cut at the approaching nobles.</p>
 <p class="orv_line">"Waaaaahhhhh!"</p>
 <p class="orv_line">The duke himself brought about his end by coming out without the Factory. The wave of angry citizens gradually pushed the nobles.</p>
@@ -312,15 +319,15 @@
 <p class="orv_line">My heart suddenly sank.</p>
 <p class="orv_line">…The Factory was operating? How?</p>
 <p class="orv_line">Nevertheless, I couldn't afford to think about it. A giant fist struck my defenseless self. A few buildings were smashed and the steel frames shattered. I momentarily lost consciousness before coming back.</p>
-<div class="orv_system"><p>[Your incarnation body is seriously damaged!]</p></div>
-<div class="orv_system"><p>[Enter the main scenario now to prevent the breakdown of your stories!]</p></div>
+<div class="orv_system"><p>Your incarnation body is seriously damaged!</p></div>
+<div class="orv_system"><p>Enter the main scenario now to prevent the breakdown of your stories!</p></div>
 <p class="orv_line">Blood poured from my body and the stories making up my body were shaken. Damn, my mind was in such a complicated state that I was caught off guard. Making such a mistake…</p>
 <p class="orv_line">Nevertheless, I couldn't understand no matter how hard I thought. How was the Factory operating?</p>
-<div class="orv_system"><p>[The constellation 'Nouveau Richer Snake Boss' is pleased at the sight.]</p></div>
-<div class="orv_system"><p>[The constellation 'Nail-Eating Rat' is enjoying your trials.]</p></div>
-<div class="orv_system"><p>[A few constellations hope that you will suffer more pain.]</p></div>
+<div class="orv_system"><p>The constellation 'Nouveau Richer Snake Boss' is pleased at the sight.</p></div>
+<div class="orv_system"><p>The constellation 'Nail-Eating Rat' is enjoying your trials.</p></div>
+<div class="orv_system"><p>A few constellations hope that you will suffer more pain.</p></div>
 <p class="orv_line">Dammit. I opened the channel but none of these guys were on my side. The moment I gritted my teeth and raised my body, a familiar name was heard.</p>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is holding his hair while closely scrutinizing you.]</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is holding his hair while closely scrutinizing you.</p></div>
 <br>
 <hr>
         </article>
@@ -328,18 +335,12 @@
             <a href="./ch_215"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_217">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="216" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="215" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="215" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="215" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

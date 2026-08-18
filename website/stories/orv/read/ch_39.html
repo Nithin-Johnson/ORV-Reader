@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 39: Ep. 9 – Omniscient Sunfish, III</title>
     <meta property="og:title" content="Ch 39: Ep. 9 – Omniscient Sunfish, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,29 +177,29 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00039.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 39: Ep. 9 – Omniscient Sunfish, III</h1></div>
-<div class="orv_system"><p>[The constellation 'Secretive Plotter' is curious about your scam.]</p></div>
-<div class="orv_system"><p>[Constellations have sponsored you 200 coins.]</p></div>
+<div class="orv_system"><p>The constellation 'Secretive Plotter' is curious about your scam.</p></div>
+<div class="orv_system"><p>Constellations have sponsored you 200 coins.</p></div>
 <p class="orv_line">The winner of the rock paper scissors was decided in an instant. Lee Gilyoung's face was slightly flushed while Jung Heewon had a satisfied expression. Lee Jihye flopped to the ground with a devastated expression.</p>
 <p class="orv_line">"…This is ridiculous!"</p>
 <p class="orv_line">Unfortunately, I couldn't read Lee Gilyoung's mind so two ampoules went to him.</p>
@@ -220,13 +227,13 @@
 <p class="orv_line">Kwiiik.</p>
 <p class="orv_line">He had already given it a name. Unfortunately, monsters created in Theatre Dungeon couldn't move to another floor.</p>
 <p class="orv_line">However, items could be taken to other floors. For example, I had the ampoules that increased stats and the item I was now holding.</p>
-<div class="orv_system"><p>[Tyrant T-Rex's DNA Ampoule]</p></div>
+<div class="orv_system"><p>Tyrant T-Rex's DNA Ampoule</p></div>
 <p class="orv_line">The golden ampoule was the most decisive reason for choosing this movie. It was an item that increased all stats by 10 for 30 minutes after ingestion. Although it had the disadvantage that it could only be used in Theatre Dungeon, it was impossible to break through the last floor of this dungeon without this item.</p>
 <p class="orv_line">Especially if Yoo Joonghyuk was in the worst situation as I thought.</p>
 <p class="orv_line">The praying mantis that Lee Gilyoung released flew in the air and the dark sky started to collapse.</p>
-<div class="orv_system"><p>[The first 'Ending Credit' has been reached.]</p></div>
-<div class="orv_system"><p>[Performers: Kim Dokja, Jung Heewon, Lee Jihye, Lee Gilyoung.]</p></div>
-<div class="orv_system"><p>[You have obtained 500 coins as compensation.]</p></div>
+<div class="orv_system"><p>The first 'Ending Credit' has been reached.</p></div>
+<div class="orv_system"><p>Performers: Kim Dokja, Jung Heewon, Lee Jihye, Lee Gilyoung.</p></div>
+<div class="orv_system"><p>You have obtained 500 coins as compensation.</p></div>
 <p class="orv_line">I felt some dizziness and we appeared on the ground floor again. After we escaped, the movie posted on the wall was torn. It was evidence that we safely cleared it. Lee Jihye was complaining.</p>
 <p class="orv_line">"Do you have to pass a few more floors like this?"</p>
 <p class="orv_line">"Yoo Joonghyuk will have broken most of it so it will be faster than you think."</p>
@@ -250,13 +257,13 @@
 <p class="orv_line">"We are going up faster than I expected?"</p>
 <p class="orv_line">Unlike Jung Heewon's bright voice, I was nervous every time we climbed a floor. Clearing the Theatre Dungeon required some luck. Some of the posters on each floor weren't covered in Ways of Survival. Yoo Joonghyuk didn't clear all movies.</p>
 <p class="orv_line">There was a system message when we entered the fourth floor.</p>
-<div class="orv_system"><p>[You have entered the fourth floor.]</p></div>
+<div class="orv_system"><p>You have entered the fourth floor.</p></div>
 <p class="orv_line">The spotlight poured down without giving me time to look at the posters. Jung Heewon gathered both hands together and prayed.</p>
 <p class="orv_line">"Please don't be a ghost movie…"</p>
 <p class="orv_line">I glanced at Jung Heewon and she gave me an excuse.</p>
 <p class="orv_line">"Ghosts can't be killed with a sword."</p>
 <p class="orv_line">…This was the reason.</p>
-<div class="orv_system"><p>[The screening has started!]</p></div>
+<div class="orv_system"><p>The screening has started!</p></div>
 <p class="orv_line">The background changed and when we opened our eyes, a sea breeze blew on the prow of a ship.</p>
 <p class="orv_line">"This…?"</p>
 <p class="orv_line">Salt was felt in my mouth and the open horizon spread out before me. I was enraptured by the scenery of the sea. I had been working every day and it had been a few years since I've travelled anywhere.</p>
@@ -320,17 +327,17 @@
 <p class="orv_line">The moment I opened my mouth, Lee Jihye hurriedly drew her sword.</p>
 <p class="orv_line">"Sigh, what is this? Master could be dying right now!"</p>
 <p class="orv_line">The blade descended and pierced the man's chest. Blood poured out. It was incredibly realistic. Then a system message was heard.</p>
-<div class="orv_system"><p>[The theater owner is satisfied with the changed ending of the movie.]</p></div>
-<div class="orv_system"><p>[The stern of the ship will lead to the next floor.]</p></div>
+<div class="orv_system"><p>The theater owner is satisfied with the changed ending of the movie.</p></div>
+<div class="orv_system"><p>The stern of the ship will lead to the next floor.</p></div>
 <p class="orv_line">"Look, I did it properly. Right?"</p>
 <p class="orv_line">Lee Jihye shouted triumphantly.</p>
 <p class="orv_line">The answer obviously wasn't wrong. The theater master acknowledged this and the constellations would give coins for our actions. We would survive with these coins.</p>
 <p class="orv_line">It was a way of living that destroyed this world.</p>
-<div class="orv_system"><p>[The second 'Ending Credit' has been reached.]</p></div>
-<div class="orv_system"><p>[Performers: Kim Dokja, Jung Heewon, Lee Jihye, Lee Gilyoung.]</p></div>
-<div class="orv_system"><p>[You have obtained 500 coins as compensation.]</p></div>
+<div class="orv_system"><p>The second 'Ending Credit' has been reached.</p></div>
+<div class="orv_system"><p>Performers: Kim Dokja, Jung Heewon, Lee Jihye, Lee Gilyoung.</p></div>
+<div class="orv_system"><p>You have obtained 500 coins as compensation.</p></div>
 <p class="orv_line">We weren't able to get a reward item from Titanic. Thus, we went straight to the next floor and followed the guidance of the system message.</p>
-<div class="orv_system"><p>[You have entered the fifth floor, the rewards room.]</p></div>
+<div class="orv_system"><p>You have entered the fifth floor, the rewards room.</p></div>
 <p class="orv_line">Once we climbed the escalator, the rewards room finally showed up.</p>
 <p class="orv_line">"Rewards room? It isn't a scary movie?"</p>
 <p class="orv_line">"This is an exhibition hall. It was a place they used to show original movie props."</p>
@@ -339,7 +346,7 @@
 <p class="orv_line">The funny thing was that they were no longer props.</p>
 <p class="orv_line">Jung Heewon approached a glass tube and shouted.</p>
 <p class="orv_line">"Oh my god, look at this!"</p>
-<div class="orv_system"><p>[Mikazuki Munechika – Replica A-grade sword.]</p></div>
+<div class="orv_system"><p>Mikazuki Munechika – Replica A-grade sword.</p></div>
 <p class="orv_line">Jung Heewon's eyes sparkled as she looked at the glass tube and I nodded.</p>
 <p class="orv_line">"You've finally obtained a proper sword, Heewon-ssi."</p>
 <p class="orv_line">"Whoa…"</p>
@@ -347,20 +354,20 @@
 <p class="orv_line">Jung Heewon started to swing the sword in her hand.</p>
 <p class="orv_line">"Isn't this amazing? It is light and moves properly!"</p>
 <p class="orv_line">I had never seen Jung Heewon like this.</p>
-<div class="orv_system"><p>[The character 'Jung Heewon' is deeply grateful to you.]</p></div>
+<div class="orv_system"><p>The character 'Jung Heewon' is deeply grateful to you.</p></div>
 <p class="orv_line">It was nothing.</p>
 <p class="orv_line">The main purpose of targeting the Theatre Dungeon was the 'compensation' of the fifth floor. The Theatre Dungeon was a good place to farm for items early on. In particular, Jung Heewon would become stronger with this weapon.</p>
-<div class="orv_system"><p>[The reward items are limited to two per person.]</p></div>
+<div class="orv_system"><p>The reward items are limited to two per person.</p></div>
 <p class="orv_line">It wasn't a genuine 'star relic', it was just a movie prop, but the replica version had characteristics of the original item. A-grade items were close to a scam in the early stages.</p>
 <p class="orv_line">By the way, Yoo Joonghyuk had already passed through here. Two items were already gone.</p>
 <p class="orv_line">"Pick your items. Each one can only obtain two so choose carefully."</p>
 <p class="orv_line">I told Jung Heewon to pick an item Yoo Sangah could use while I found one for Lee Hyunsung. This one seemed useable.</p>
-<div class="orv_system"><p>[Heracles' Shield- Replica A-grade shield.]</p></div>
+<div class="orv_system"><p>Heracles' Shield- Replica A-grade shield.</p></div>
 <p class="orv_line">Good… It was an item that couldn't be compared with the Old Iron Shield. I thought of how Lee Hyunsung's eyes would shine with loyalty towards me and already felt warm.</p>
 <p class="orv_line">Lee Jihye, who claimed to be a fan of superheroes, was trying to pull an item from the corner.</p>
 <p class="orv_line">"Ah, why can't I hold this?"</p>
 <p class="orv_line">I came closer. This was it.</p>
-<div class="orv_system"><p>[Mjolnir – Replica A-grade blunt weapon.]</p></div>
+<div class="orv_system"><p>Mjolnir – Replica A-grade blunt weapon.</p></div>
 <p class="orv_line">The hammer of the god of lightning, Thor. It would've been an enormous item if it was a genuine star relic… still, the quality of the original was so great that the performance of the replica was significant.</p>
 <p class="orv_line">I watched Lee Jihye groaning as she grabbed the hammer that couldn't be moved.</p>
 <p class="orv_line">"Isn't this an item that only someone special can use?"</p>
@@ -373,11 +380,11 @@
 <p class="orv_line">Lee Jihye once again looked stunned.</p>
 <p class="orv_line">"Only I am unhappy… just me…"</p>
 <p class="orv_line">I ignored her and searched the remaining items. Let's see what was left.</p>
-<div class="orv_system"><p>[External Reinforced Suit – Replica A-grade protective clothing.]</p></div>
+<div class="orv_system"><p>External Reinforced Suit – Replica A-grade protective clothing.</p></div>
 <p class="orv_line">I didn't know what would happen in the future but it would be nice to supplement my defense. Once I wore the suit, it wrapped around my arms and legs.</p>
-<div class="orv_system"><p>[Damage from external attacks is reduced by 10%.]</p></div>
-<div class="orv_system"><p>[The ability to detect enemies is improved.]</p></div>
-<div class="orv_system"><p>[You can move more agilely than before.]</p></div>
+<div class="orv_system"><p>Damage from external attacks is reduced by 10%.</p></div>
+<div class="orv_system"><p>The ability to detect enemies is improved.</p></div>
+<div class="orv_system"><p>You can move more agilely than before.</p></div>
 <p class="orv_line">It was a bit frustrating but it was still better than not wearing it. In particular, I thought about the fight waiting at the end of this.</p>
 <p class="orv_line">Now the preparations were finished.</p>
 <p class="orv_line">Since there were no significant changes in the dungeon, it was clear that Yoo Joonghyuk was alive. If we moved quickly through the sixth floor, we might be able to meet on the seventh floor. In the worst case scenario, if he was fighting the boss on the eighth floor… at least he was still alive.</p>
@@ -389,18 +396,12 @@
             <a href="./ch_38"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_40">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="39" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="94" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="38" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="38" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

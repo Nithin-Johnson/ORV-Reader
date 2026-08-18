@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 112: Ep. 22 - Three Promises, IV</title>
     <meta property="og:title" content="Ch 112: Ep. 22 - Three Promises, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,29 +177,29 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00112.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 112: Ep. 22 - Three Promises, IV</h1></div>
 <p class="orv_line">The God of Wine and Ecstasy. The only person who used such a modifier was Dionysus, one of the 12 gods of Olympus.</p>
-<div class="orv_system"><p>[The constellation 'God of Wine and Ecstasy' is humming.]</p></div>
+<div class="orv_system"><p>The constellation 'God of Wine and Ecstasy' is humming.</p></div>
 <p class="orv_line">I couldn't hear the song but I could see the drops of alcohol dancing to an unknown melody. The bubbles moved like they had life, forming numerous notes on the ground. The notes repeatedly moved between me and Yoo Sangah.</p>
 <p class="orv_line">Yoo Sangah looked at the notes carefully and opened her mouth. "It is the puppy waltz."</p>
 <p class="orv_line">"Can you read musical notes?"</p>
@@ -215,7 +222,7 @@
 <p class="orv_line">It was clearly a face free of makeup but it was hard to find any blemishes. Yoo Sangah slowly leaned towards me. Her face was getting closer and closer.</p>
 <p class="orv_line">A pair of quarter notes and eighth notes danced intensely around us. My heart started to beat faster at the touch against my shoulders.</p>
 <p class="orv_line">…Wait, something was strange.</p>
-<div class="orv_system"><p>[The exclusive skill 'Fourth Wall' has offset some of the drunkenness.]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Fourth Wall' has offset some of the drunkenness.</p></div>
 <p class="orv_line">The message popped up and my mind cleared. Yes, this couldn't happen in reality. Yoo Sangah wasn't such a person. It was only possible because this was Ways of Survival. I firmly held Yoo Sangah's shoulder and urged her, "Yoo Sangah-ssi, stay alert."</p>
 <p class="orv_line">"Huh? Ah… ah?" The startled Yoo Sangah blinked. Her face turned red for the first time. "I-I, what did I…?"</p>
 <p class="orv_line">As expected, it wasn't Yoo Sangah's will. I was in a slightly miserable mood as I opened my mouth and spoke towards the notes hovering on the ground. "Stop playing and get straight to the point."</p>
@@ -257,24 +264,24 @@
 <p class="orv_line">I became dizzy and then suddenly felt drowsy. I realized what was going to happen. Damn, this was why he made me drink.</p>
 <p class="orv_line">I hurriedly spoke. "Yoo Sangah-ssi, wake up the kids."</p>
 <p class="orv_line">Perhaps these were my last words.</p>
-<div class="orv_system"><p>[A new hidden scenario has arrived!]</p></div>
+<div class="orv_system"><p>A new hidden scenario has arrived!</p></div>
 <p class="orv_line">The moment I closed my eyes, the drops of alcohol seemed to be laughing.</p>
 <p class="orv_line">–I hope the Father of the Rich Night will listen to you.</p>
 <br>
 <hr>
 <br>
-<div class="orv_system"><p>[The constellation 'God of Wine and Ecstasy' is guiding your soul.]</p></div>
-<div class="orv_system"><p>[You are free from the physical restraints of your body.]</p></div>
+<div class="orv_system"><p>The constellation 'God of Wine and Ecstasy' is guiding your soul.</p></div>
+<div class="orv_system"><p>You are free from the physical restraints of your body.</p></div>
 <p class="orv_line">Many colours passed through my mind and it was like I was on drugs. There was a sharp pain from my forehead and then a faint voice was heard.</p>
-<div class="orv_constellation"><p>[Who is this?]</p></div>
-<div class="orv_constellation"><p>[…Interesting.]</p></div>
-<div class="orv_constellation"><p>[The soul of an incarnation is walking in the world of the constellation?]</p></div>
-<div class="orv_constellation"><p>[You will regret it.]</p></div>
+<div class="orv_constellation"><p>Who is this?</p></div>
+<div class="orv_constellation"><p>…Interesting.</p></div>
+<div class="orv_constellation"><p>The soul of an incarnation is walking in the world of the constellation?</p></div>
+<div class="orv_constellation"><p>You will regret it.</p></div>
 <p class="orv_line">The voice spoke negative words. Perhaps it was someone from Olympus.</p>
-<div class="orv_system"><p>[The exclusive skill, 'Fourth Wall' is activated.]</p></div>
+<div class="orv_system"><p>The exclusive skill, 'Fourth Wall' is activated.</p></div>
 <p class="orv_line">The noisy voices disappeared like they had been muted.</p>
-<div class="orv_system"><p>[The soul of a living person has entered the Underworld.]</p></div>
-<div class="orv_system"><p>[The judges of the Underworld have noticed your presence.]</p></div>
+<div class="orv_system"><p>The soul of a living person has entered the Underworld.</p></div>
+<div class="orv_system"><p>The judges of the Underworld have noticed your presence.</p></div>
 <p class="orv_line">Once I heard the last message, countless traces disappeared from my surroundings. The world turned around quickly and my body sank heavily. After a while, it felt like I had reached somewhere. It was hard to move but I could guess what I would see when I opened my eyes.</p>
 <p class="orv_line">The air of the Underworld was sticky. The sand at my fingertips was cold. Perhaps I was at the river of the Underworld that Hades ruled. There was Acheron River flowing towards Hades' palace and the Underworld boatman Charon would be waiting for me. And…</p>
 <p class="orv_line">"Hey! Wake up! What are you doing here?"</p>
@@ -292,7 +299,7 @@
 <p class="orv_line">"W-What? This strength…!"</p>
 <p class="orv_line">I couldn't waste time dealing with these small fries. I decided to check the hidden scenario that I had received.</p>
 <div class="orv_window">
-<h3 class="orv_window_title">[Hidden Scenario - Scenic Walk]</h3>
+<h3 class="orv_window_title">Hidden Scenario - Scenic Walk</h3>
 <p>Category: Hidden</p>
 <p>Difficulty: A+</p>
 <p>Clear Conditions: Avoid the eyes of the judges and return safely to the ground.</p>
@@ -323,18 +330,12 @@
             <a href="./ch_111"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_113">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="112" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="322" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="111" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="111" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

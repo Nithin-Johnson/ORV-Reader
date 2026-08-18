@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 299: Ep. 56 - Reader and Writer, V</title>
     <meta property="og:title" content="Ch 299: Ep. 56 - Reader and Writer, V" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00299.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 299: Ep. 56 - Reader and Writer, V</h1></div>
 <p class="orv_line">"What?"</p>
@@ -203,7 +210,7 @@
 <p class="orv_line">I closed my mouth.</p>
 <p class="orv_line">"It is no longer a novel."</p>
 <p class="orv_line">My heart pounded at Han Sooyoung's words.</p>
-<div class="orv_system"><p>[The exclusive skill 'Fourth Wall' is strongly activated!]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Fourth Wall' is strongly activated!</p></div>
 <p class="orv_line">"It isn't about being forgiven for everything. No matter how the developments flow, we should end the story properly."</p>
 <p class="orv_line">Han Sooyoung's face couldn't be seen properly because of the brim of her hat. Before my words finished, Han Sooyoung left the situation room. I saw Han Sooyoung talking to the people outside the situation room. I kept watching.</p>
 <br>
@@ -212,51 +219,51 @@
 <p class="orv_line">Before leaving, there were a few things that needed to be addressed. One of them was Uriel.</p>
 <p class="orv_line">I looked down at the confined Uriel doll. She was currently in a state of calm but once the confinement was over, Uriel would wake up again as the Angel of Flames. She would burn all living things around her.</p>
 <p class="orv_line">Gabriel's true voice entered my ears.</p>
-<div class="orv_constellation"><p>[What are you going to do with Uriel?]</p></div>
+<div class="orv_constellation"><p>What are you going to do with Uriel?</p></div>
 <p class="orv_line">"I am thinking."</p>
 <p class="orv_line">I looked down at Gabriel who was waving her helplessly drooping petals. Perhaps she was shocked by the situation here. According to the original setting, Gabriel was someone who took good care of other angels.</p>
-<div class="orv_constellation"><p>[I'll stay.]</p></div>
+<div class="orv_constellation"><p>I'll stay.</p></div>
 <p class="orv_line">"It isn't possible."</p>
-<div class="orv_constellation"><p>[Why? Is it because I betrayed this place?]</p></div>
+<div class="orv_constellation"><p>Why? Is it because I betrayed this place?</p></div>
 <p class="orv_line">I didn't answer. Gabriel acted like it was unfair.</p>
-<div class="orv_constellation"><p>[Why did I betray Eden?]</p></div>
+<div class="orv_constellation"><p>Why did I betray Eden?</p></div>
 <p class="orv_line">"It must've been an unavoidable decision for you."</p>
-<div class="orv_constellation"><p>[Tell me the details accurately. What happened? You know something!]</p></div>
+<div class="orv_constellation"><p>Tell me the details accurately. What happened? You know something!</p></div>
 <p class="orv_line">"I don't know exactly. If you are curious, go back and talk to Metatron."</p>
 <p class="orv_line">It wasn't good for me to intervene in this thing. There was a possibility that the development of the third round could find unexpected difficulties because of misinterpreted information. Gabriel's leaves trembled.</p>
-<div class="orv_constellation"><p>[If I go back, won't I betray Eden again? Then I would rather remain here―]</p></div>
+<div class="orv_constellation"><p>If I go back, won't I betray Eden again? Then I would rather remain here―</p></div>
 <p class="orv_line">"The future can change. We have to go back." I spoke with confidence. This world wasn't our world.</p>
-<div class="orv_constellation"><p>[Then Uriel…!]</p></div>
+<div class="orv_constellation"><p>Then Uriel…!</p></div>
 <p class="orv_line">"I told you, I'm thinking."</p>
 <p class="orv_line">For now, the best option was to leave Uriel to Han Sooyoung. However, I wasn't sure if she could control the Archangel of Flames.</p>
-<div class="orv_quote"><p>「 The Fourth Wall is saying, "Do you want me to come out?" 」</p></div>
+<div class="orv_quote"><p>The Fourth Wall is saying, "Do you want me to come out?"</p></div>
 <p class="orv_line">There was a way to tell Uriel the story of the third round. However, as I said many times, there was no guarantee that Uriel would hear the story and react like Yoo Joonghyuk. Perhaps the story of my world line might further ruin Uriel's insecure spirit.</p>
 <p class="orv_line">Still, there might be a bigger problem if I really left Gabriel here. Moreover, Gabriel couldn't use Confinement of Good and Evil… I would also like to stay a bit longer and help Uriel…</p>
-<div class="orv_constellation"><p>[I will stay, Gabriel.]</p></div>
+<div class="orv_constellation"><p>I will stay, Gabriel.</p></div>
 <p class="orv_line">The petals of the red cosmos swayed. I reflexively bowed my head and the startled Gabriel shouted,</p>
-<div class="orv_constellation"><p>[…Jophiel?]</p></div>
-<div class="orv_constellation"><p>[It is best that I stay.]</p></div>
+<div class="orv_constellation"><p>…Jophiel?</p></div>
+<div class="orv_constellation"><p>It is best that I stay.</p></div>
 <p class="orv_line">It was an unexpected declaration. Even I was stunned. It wasn't another archangel. Jophiel was declaring to stay here?</p>
-<div class="orv_constellation"><p>[I decided after careful consideration. I can control Uriel through Confinement of Good and Evil. Thus, it is right for me to stay here.]</p></div>
+<div class="orv_constellation"><p>I decided after careful consideration. I can control Uriel through Confinement of Good and Evil. Thus, it is right for me to stay here.</p></div>
 <p class="orv_line">"Jophiel, if you don't return to the original world now, you might never be able to return."</p>
-<div class="orv_constellation"><p>[There are a few ways to cross world lines.]</p></div>
+<div class="orv_constellation"><p>There are a few ways to cross world lines.</p></div>
 <p class="orv_line">"I know but they all require a tremendous price."</p>
-<div class="orv_constellation"><p>[It doesn't matter if I can't go back.]</p></div>
-<div class="orv_constellation"><p>[Jophiel!]</p></div>
+<div class="orv_constellation"><p>It doesn't matter if I can't go back.</p></div>
+<div class="orv_constellation"><p>Jophiel!</p></div>
 <p class="orv_line">Jophiel didn't back down despite Gabriel's cry.</p>
-<div class="orv_constellation"><p>[This world line also has value. I don't want to depend on this insidious guy but I think it is better to find out more about this world. I have an obligation to find out why the Eden here was destroyed, what things will happen in the future and to inform the original world.]</p></div>
+<div class="orv_constellation"><p>This world line also has value. I don't want to depend on this insidious guy but I think it is better to find out more about this world. I have an obligation to find out why the Eden here was destroyed, what things will happen in the future and to inform the original world.</p></div>
 <p class="orv_line">Jophiel's remark was reasonable. This world was very different from the old 1863rd round and it would certainly help if information could be sent to the third round.</p>
-<div class="orv_constellation"><p>[Wait, Jophiel! Why are you making this decision―]</p></div>
-<div class="orv_constellation"><p>[There is no turning back Gabriel.]</p></div>
+<div class="orv_constellation"><p>Wait, Jophiel! Why are you making this decision―</p></div>
+<div class="orv_constellation"><p>There is no turning back Gabriel.</p></div>
 <p class="orv_line">A gleam of light emerged from the red cosmos and this turned into a white light that bound the white lily. It was Confinement of Good and Evil. Gabriel's petals drooped like she fell asleep. Jophiel told me.</p>
-<div class="orv_constellation"><p>[Please look after Gabriel.]</p></div>
+<div class="orv_constellation"><p>Please look after Gabriel.</p></div>
 <p class="orv_line">"Why are you doing this?"</p>
-<div class="orv_constellation"><p>[Uriel needs Gabriel. And Gabriel… both of them are unstable.]</p></div>
+<div class="orv_constellation"><p>Uriel needs Gabriel. And Gabriel… both of them are unstable.</p></div>
 <p class="orv_line">I thought like Archangel Jophiel. Eden was a nebula made up of archangels.</p>
 <p class="orv_line">"Then you?"</p>
-<div class="orv_constellation"><p>[I don't believe in you but I have one thing to ask.]</p></div>
+<div class="orv_constellation"><p>I don't believe in you but I have one thing to ask.</p></div>
 <p class="orv_line">I hesitated before nodding.</p>
-<div class="orv_constellation"><p>[After returning to the original world line, please visit Eden. Then I hope you can tell the scribe what happened here. Can you do that?]</p></div>
+<div class="orv_constellation"><p>After returning to the original world line, please visit Eden. Then I hope you can tell the scribe what happened here. Can you do that?</p></div>
 <p class="orv_line">"I understand."</p>
 <p class="orv_line">Certainly, it wasn't a difficult request. I was already planning to visit Eden.</p>
 <p class="orv_line">Soon after, Jophiel's cosmos flower drooped. It was a seemingly sleepy and tired appearance. I changed the water bottles of the two flowers.</p>
@@ -272,7 +279,7 @@
 <p class="orv_line">"Don't throw it away and look at it whenever you have time."</p>
 <p class="orv_line">Han Sooyoung stared down at the notebook I gave her and asked, "…Is this okay?"</p>
 <p class="orv_line">"What?"</p>
-<div class="orv_system"><p>[The Fourth Wall is strongly activated!]</p></div>
+<div class="orv_system"><p>The Fourth Wall is strongly activated!</p></div>
 <p class="orv_line">Han Sooyoung stared at me carefully as if reading something on my face. Then she shook her head. "No, it's nothing. Never mind."</p>
 <p class="orv_line">…She was unreliable.</p>
 <p class="orv_line">Lee Hyunsung listened to the conversation and opened his mouth. "It would've been nice if we could've carried out the scenario together. It is unfortunate."</p>
@@ -298,8 +305,8 @@
 <p class="orv_line">Han Sooyoung stared at me for a moment before turning her head away. "Quickly get lost. I don't want to see you anymore."</p>
 <p class="orv_line">"I'm going. Stay alive and well."</p>
 <p class="orv_line">I looked up at the sky.</p>
-<div class="orv_system"><p>[The constellation 'Demon King of Salvation' is looking at the night sky.]</p></div>
-<div class="orv_constellation"><p>[Secretive Plotter! Please fulfill the contents of the covenant.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon King of Salvation' is looking at the night sky.</p></div>
+<div class="orv_constellation"><p>Secretive Plotter! Please fulfill the contents of the covenant.</p></div>
 <p class="orv_line">A new portal was created under my feet. It felt like something was pulling at me as the world started to collapse. The world of the 1863rd round was becoming dim.</p>
 <p class="orv_line">A world different from the original that I knew. It was a short time but I felt that many things had changed.</p>
 <p class="orv_line">Lee Hyunsung waved while the others sent me off with complicated expressions. Just like Yoo Joonghyuk did and I did, they would walk through a world different from the original that I knew.</p>
@@ -309,8 +316,8 @@
 <p class="orv_line">The ground disappeared and I was sucked into the portal. The metaphysically distorted pathways narrowed and expanded several times.</p>
 <p class="orv_line">I closed my eyes and let my body flow in an unmeasurable passage of time. I shouldn't have been gone for too long from the third round.</p>
 <p class="orv_line">After a while, I fell to the ground with a loud sound.</p>
-<div class="orv_system"><p>[The Outer World Covenant has been completed!]</p></div>
-<div class="orv_system"><p>[The compensation will be settled.]</p></div>
+<div class="orv_system"><p>The Outer World Covenant has been completed!</p></div>
+<div class="orv_system"><p>The compensation will be settled.</p></div>
 <p class="orv_line">To be precise, it wasn't the ground. It was the galaxy of the Star Stream that I had seen before. My body was floating in the emptiness of the universe. I groaned and saw the hem of a black cloak dragging against the ground.</p>
 <div class="orv_outergod"><p>【 You came. 】</p></div>
 <p class="orv_line">It was Secretive Plotter.</p>
@@ -321,18 +328,12 @@
             <a href="./ch_298"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_300">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="299" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="374" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="298" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="298" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

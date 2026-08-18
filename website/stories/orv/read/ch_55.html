@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 55: Ep. 12 – First Person Protagonist's Point of View, I</title>
     <meta property="og:title" content="Ch 55: Ep. 12 – First Person Protagonist's Point of View, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,43 +177,43 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00055.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 55: Ep. 12 – First Person Protagonist's Point of View, I</h1></div>
 <p class="orv_line">One of the most painful deaths in the world was burning to death and I had just experienced it. The neurons in my brain seemed to emit light at once.</p>
-<div class="orv_system"><p>[The exclusive skill 'Fourth Wall' has attenuated the mental pain.]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Fourth Wall' has attenuated the mental pain.</p></div>
 <p class="orv_line">The pain was slowly reduced. It was once again the Fourth Wall. I always felt strange when I escaped from trouble with the help of this skill.</p>
 <p class="orv_line">Ways of Survival had become a reality and I was living in it. Then… what was this 'wall' that I felt every time?</p>
 <p class="orv_line">·····.</p>
 <p class="orv_line">No, these thoughts were futile. I was safe thanks to the attribute 'King of No Killing' and had to move again.</p>
 <p class="orv_line">It was an attribute that could be gained only when the conditions of King of No Killing was met. Unlike its name, the privilege of the attribute was more like 'immortality' than 'no death'. It was conditional but…</p>
 <p class="orv_line">In any case, I would soon return to my flesh. At least that was what I thought.</p>
-<div class="orv_system"><p>[Due to a conflict error with your exclusive skill, the privilege of King of No Killing would be delayed.]</p></div>
+<div class="orv_system"><p>Due to a conflict error with your exclusive skill, the privilege of King of No Killing would be delayed.</p></div>
 <p class="orv_line">Huh? A skill conflict error?</p>
-<div class="orv_system"><p>[Thanks to your death, your consciousness has been completely liberated from the constraints of your body.]</p></div>
-<div class="orv_system"><p>[Exclusive skill, Omniscient Reader's Viewpoint stage 3 has been activated!]</p></div>
+<div class="orv_system"><p>Thanks to your death, your consciousness has been completely liberated from the constraints of your body.</p></div>
+<div class="orv_system"><p>Exclusive skill, Omniscient Reader's Viewpoint stage 3 has been activated!</p></div>
 <p class="orv_line">I was overcome with a dizzy feeling. No, wait a minute. What was happening this time?</p>
-<div class="orv_quote"><p>「 "Damn, if only it wasn't him." 」</p></div>
+<div class="orv_quote"><p>"Damn, if only it wasn't him."</p></div>
 <p class="orv_line">The dizziness flooded in and my vision brightened. Then I was watching a 'scene'.</p>
-<div class="orv_quote"><p>「 Gong Pildu licked his lips as he observed the people around the platform. Now he couldn't run away. He thought about it but he knew better than anyone that he didn't have the courage to do so. 」</p></div>
+<div class="orv_quote"><p>Gong Pildu licked his lips as he observed the people around the platform. Now he couldn't run away. He thought about it but he knew better than anyone that he didn't have the courage to do so.</p></div>
 <p class="orv_line">"Um… Dokja hyung."</p>
 <p class="orv_line">There was a weight pressing against his knee and Gong Pildu looked down. It was a boy around 10 years or so. There was a boy sleeping on his thigh.</p>
 <p class="orv_line">"Why am I like this…?"</p>
@@ -238,7 +245,7 @@
 <p class="orv_line">Then a sound was heard in the distance. Yoo Sangah's expression hardened while Lee Gilyoung woke up in a flash from where he was sleeping on Gong Pildu's knees. The antennae of the cockroach on his back shook.</p>
 <p class="orv_line">Ku ku ku ku!</p>
 <p class="orv_line">Line 4, the tunnel from Hoehyeong. Something was coming this way. Yoo Sangah stood up while Gong Pildu used a skill.</p>
-<div class="orv_system"><p>[The character 'Gong Pildu' has activated 'Armed Zone Lv. 8!]</p></div>
+<div class="orv_system"><p>The character 'Gong Pildu' has activated 'Armed Zone Lv. 8!</p></div>
 <p class="orv_line">Gong Pildu bit his lips. This might be an intuition only rich land owners got. There was something like that.</p>
 <p class="orv_line">"Hey! Huddle up!"</p>
 <p class="orv_line">It was the feeling of someone trying to take away his land.</p>
@@ -291,7 +298,7 @@
 <p class="orv_line">There was Hamelin's Flute that could control the ground rats and the Magic Power Bullet Shield that could defend against Gong Pildu's attack.</p>
 <p class="orv_line">They really wanted to capture Chungmuro, obtain Yoo Joonghyuk and devour this world.</p>
 <p class="orv_line">But it wouldn't be so easy.</p>
-<div class="orv_quote"><p>「 "W-What? Was the Maritime Admiral this strong in the beginning? Hey, isn't something wrong?" 」</p></div>
+<div class="orv_quote"><p>"W-What? Was the Maritime Admiral this strong in the beginning? Hey, isn't something wrong?"</p></div>
 <p class="orv_line">It was the 7th Apostle who cried out first.</p>
 <p class="orv_line">Lee Jihye's sharp sword pushed the 7th Apostle back little by little. It was natural. The current Lee Jihye was much stronger than the Lee Jihye in the original 'third turn'.</p>
 <p class="orv_line">"Damn, why are these two turrets so hard?"</p>
@@ -301,14 +308,14 @@
 <p class="orv_line">Kwaaaaang―! 」</p>
 <p class="orv_line">There was a loud roar and Chungmuro's platform was covered with explosions. I was startled.</p>
 <p class="orv_line">…This son of a bitch?</p>
-<div class="orv_system"><p>[Mass Destruction Magic Bullet]</p></div>
+<div class="orv_system"><p>Mass Destruction Magic Bullet</p></div>
 <p class="orv_line">It was hard to deal huge damage to top monsters but against humans, it was the most powerful weapon of mass destruction.</p>
 <p class="orv_line">It was a weapon that could be made with some items that appeared in the Gangseo and Gangnam areas, as well as some items bought from the Dokkaebi Bag.</p>
 <p class="orv_line">Then he was the 'king' of the apostles. The purple flag on his back proved it.</p>
 <p class="orv_line">The dust settled down, revealing the Chungmuro platform. My chest was becoming stuffy. If the apostles had this then the situation was unfavourable.</p>
 <p class="orv_line">The dust cleared and the fallen Chungmuro group members were seen. People were coughing up blood.</p>
 <p class="orv_line">Yoo Sangah and Lee Gilyoung were lying on their floor. Even Gong Pildu couldn't completely avoid getting injured despite using Protective Wall.</p>
-<div class="orv_quote"><p>「 "Phew, now it looks good. Right?" 」</p></div>
+<div class="orv_quote"><p>"Phew, now it looks good. Right?"</p></div>
 <p class="orv_line">The 7th Apostle grabbed Lee Jihye's head while her uniform was torn. She was in the front and received the biggest blow from the explosion.</p>
 <p class="orv_line">"Aren't you just a supporting actor, huh?"</p>
 <p class="orv_line">"Bastards…cough!" Lee Jihye screamed as she was punched in the stomach.</p>
@@ -316,13 +323,13 @@
 <p class="orv_line">"What will you do with her? There is no time."</p>
 <p class="orv_line">"What will I do? Looking back, isn't she destined to follow the main character and be miserable? Then I would rather…" 」</p>
 <p class="orv_line">Lee Jihye's small body shook in the air like a rag doll. Her lips were trembling. She was staring at me.</p>
-<div class="orv_quote"><p>「 He…lp…me. 」</p></div>
+<div class="orv_quote"><p>He…lp…me.</p></div>
 <p class="orv_line">Impulsive anger filled my head. It was unlike me. Lee Jihye was clearly just a 'character'.</p>
-<div class="orv_system"><p>[The exclusive skill, 'Fourth Wall' is activated!]</p></div>
-<div class="orv_system"><p>[Excessive immersion has restricted some of the features of Fourth Wall.]</p></div>
+<div class="orv_system"><p>The exclusive skill, 'Fourth Wall' is activated!</p></div>
+<div class="orv_system"><p>Excessive immersion has restricted some of the features of Fourth Wall.</p></div>
 <p class="orv_line">I was too immersed. I became dizzy and nauseous.</p>
-<div class="orv_system"><p>[Excessive immersion leads to a profound increase in the proficiency of Omniscient Reader's Viewpoint.]</p></div>
-<div class="orv_system"><p>[Changing your viewpoint to first person.]</p></div>
+<div class="orv_system"><p>Excessive immersion leads to a profound increase in the proficiency of Omniscient Reader's Viewpoint.</p></div>
+<div class="orv_system"><p>Changing your viewpoint to first person.</p></div>
 <p class="orv_line">My consciousness narrowed and stretched like a rubber band. Then I opened my eyes. I was really in Chungmuro.</p>
 <p class="orv_line">…How? Lee Jihye was looking at me with shaky eyes. It wasn't just her. At this moment, everyone on the platform was watching me.</p>
 <p class="orv_line">My field of view moved slowly. I walked towards Lee Jihye. To be exact, my body was moving regardless of my will.</p>
@@ -352,10 +359,10 @@
 <p class="orv_line">.</p>
 <p class="orv_line">.</p>
 <p class="orv_line">My consciousness escaped from Yoo Joonghyuk's body and slowly returned to its original body.</p>
-<div class="orv_system"><p>[Exclusive skill, Omniscient Reader's Viewpoint stage 3 has been turned off.]</p></div>
-<div class="orv_system"><p>[The skill conflict error is normalized.]</p></div>
-<div class="orv_system"><p>[The delayed privilege of the King of No Killing has reappeared.]</p></div>
-<div class="orv_system"><p>[Your body is resurrected from death.]</p></div>
+<div class="orv_system"><p>Exclusive skill, Omniscient Reader's Viewpoint stage 3 has been turned off.</p></div>
+<div class="orv_system"><p>The skill conflict error is normalized.</p></div>
+<div class="orv_system"><p>The delayed privilege of the King of No Killing has reappeared.</p></div>
+<div class="orv_system"><p>Your body is resurrected from death.</p></div>
 <br>
 <hr>
         </article>
@@ -363,18 +370,12 @@
             <a href="./ch_54"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_56">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="55" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="78" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="54" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="54" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

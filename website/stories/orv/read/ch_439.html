@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 439: Ep. 83 - Dokja's Incarnation, I</title>
     <meta property="og:title" content="Ch 439: Ep. 83 - Dokja's Incarnation, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,34 +177,34 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00439.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 439: Ep. 83 - Dokja's Incarnation, I</h1></div>
 <p class="orv_line">The boiling power of Chaos encroached into the blood vessels in my entire body. One by one, Stories began resisting against the invasion of this foreign power.</p>
-<div class="orv_system"><p>[Story, 'One who opposes Miracles, dreams of miracles.]</p></div>
-<div class="orv_system"><p>[Story, 'One Who Killed an Outer God', is resisting against your change!]</p></div>
-<div class="orv_system"><p>[Giant Story, 'Demon Realm's Spring', is protecting you!]</p></div>
+<div class="orv_system"><p>Story, 'One who opposes Miracles, dreams of miracles.</p></div>
+<div class="orv_system"><p>Story, 'One Who Killed an Outer God', is resisting against your change!</p></div>
+<div class="orv_system"><p>Giant Story, 'Demon Realm's Spring', is protecting you!</p></div>
 <p class="orv_line">I barely managed to hold onto my wavering consciousness and staggered towards the sacred texts.</p>
 <p class="orv_line">⸢…⸥</p>
-<p class="orv_line">I thought I heard voices coming from somewhere, which could've been a side effect of transforming into an Outer God. I figured that my consciousness breaking apart somehow automatically activated [Omniscient Reader's Viewpoint].</p>
+<p class="orv_line">I thought I heard voices coming from somewhere, which could've been a side effect of transforming into an Outer God. I figured that my consciousness breaking apart somehow automatically activated <strong>[Omniscient Reader's Viewpoint]</strong>.</p>
 <p class="orv_line">However, it wasn't only one person this time; as if I was seeing many people's POVs, several voices came at me at the same time.</p>
 <p class="orv_line">⸢…I already knew.⸥</p>
 <p class="orv_line">That was Yoo Joonghyuk.</p>
@@ -216,67 +223,67 @@
 <p class="orv_line">Right, maybe it's for the best that he doesn't find out.</p>
 <p class="orv_line">I sensed my memories beginning to crumble away. Once the transformation into an Outer God was over, all of my memories should scatter away like cosmic dust.</p>
 <p class="orv_line">⸢Kim Dokja was scared.⸥</p>
-<p class="orv_line">[The Fourth Wall] probably was aware of it already – that big talk of mine was nothing more than just a coward pretending to be tough.</p>
+<p class="orv_line"><strong>[The Fourth Wall]</strong> probably was aware of it already – that big talk of mine was nothing more than just a coward pretending to be tough.</p>
 <p class="orv_line">⸢After losing all my memories will I still remain as 'me'?⸥</p>
 <p class="orv_line">I did die a few times so far, but never have I lost all of my memories. What would happen to the 'me' that remembers everything, from here onwards?</p>
 <p class="orv_line">⸢What really scared him was not death.⸥</p>
 <p class="orv_line">Even if I got to read them all again, would I be able to regain the emotions I felt back then in full?</p>
-<div class="orv_system"><p>[Story, 'Life and Death Companions', is looking at you.]</p></div>
-<div class="orv_system"><p>[Story, 'One who Hunted the King of Calamities', is looking at you.]</p></div>
-<div class="orv_system"><p>[Story, 'Liberator of Giants', is looking at you.]</p></div>
+<div class="orv_system"><p>Story, 'Life and Death Companions', is looking at you.</p></div>
+<div class="orv_system"><p>Story, 'One who Hunted the King of Calamities', is looking at you.</p></div>
+<div class="orv_system"><p>Story, 'Liberator of Giants', is looking at you.</p></div>
 <p class="orv_line">Would I really be able to feel the same emotions that I felt during the acquisition of all these precious stories?</p>
 <p class="orv_line">⸢And finally, the 'sacred texts' were waiting for Kim Dokja right before his eyes.⸥</p>
-<p class="orv_line">The [Journey to the West Remake].</p>
+<p class="orv_line">The <strong>[Journey to the West Remake]</strong>.</p>
 <p class="orv_line">That book was the 'Giant Story' itself. The moment I grasp it, this Giant Story would become &lt;Kim Dokja's Company&gt;'s, as well as the Outer Gods.</p>
 <p class="orv_line">⸢Kim Dokja reached out towards the 'sacred texts'.⸥</p>
-<p class="orv_line">With this, we'd be able to complete this [Journey to the West].</p>
+<p class="orv_line">With this, we'd be able to complete this <strong>[Journey to the West]</strong>.</p>
 <p class="orv_line">Tsu-chuchuchuchu…</p>
 <p class="orv_line">It was at this moment that something strange happened.</p>
-<div class="orv_system"><p>[Due to the unexpected event in the scenario, your transformation into the Outer God is being delayed.]</p></div>
+<div class="orv_system"><p>Due to the unexpected event in the scenario, your transformation into the Outer God is being delayed.</p></div>
 <p class="orv_line">…It's being delayed?</p>
 <p class="orv_line">Sparks exploding all around me got even more violent while the roars from the Constellations grew further away. The flow of space-time was being warped strangely. Probability so powerful that it gave me chills and back-wetting goosebumps was being mobilised. It felt as if the entirety of the &lt;Star Stream&gt; was writhing around.</p>
 <p class="orv_line">Someone was intruding into the scenario by breaking through the distorted space.</p>
-<div class="orv_system"><p>[Great Dokkaebi, 'Heoju', has incarnated to the scenario!]</p></div>
-<div class="orv_system"><p>[Great Dokkaebi, 'Heoche', has incarnated to the scenario!]</p></div>
-<div class="orv_system"><p>[Great Dokkaebi, 'Harong', has incarnated to the scenario!]</p></div>
-<div class="orv_system"><p>[Great Dokkaebi, 'Haram', has incarnated to the scenario!]</p></div>
-<div class="orv_system"><p>[Great Dokkaebi, 'Haesol', has incarnated to the scenario!]</p></div>
+<div class="orv_system"><p>Great Dokkaebi, 'Heoju', has incarnated to the scenario!</p></div>
+<div class="orv_system"><p>Great Dokkaebi, 'Heoche', has incarnated to the scenario!</p></div>
+<div class="orv_system"><p>Great Dokkaebi, 'Harong', has incarnated to the scenario!</p></div>
+<div class="orv_system"><p>Great Dokkaebi, 'Haram', has incarnated to the scenario!</p></div>
+<div class="orv_system"><p>Great Dokkaebi, 'Haesol', has incarnated to the scenario!</p></div>
 <p class="orv_line">Several Great Dokkaebis were incarnating before my eyes.</p>
 <p class="orv_line">Tsu-chuchuchuchuchut!</p>
 <p class="orv_line">As if it had turned into stone, my hand reaching out towards the 'sacred texts' froze up in place.</p>
 <p class="orv_line">This shouldn't be happening.</p>
-<div class="orv_constellation"><p>[You cannot acquire that story.]</p></div>
+<div class="orv_constellation"><p>You cannot acquire that story.</p></div>
 <p class="orv_line">Dokkaebis weren't able to interfere with the main scenarios.</p>
 <p class="orv_line">No, actually, some did try indirectly to pick fights with us, but there had never been an instance where a Dokkaebi with "Great" as its classification personally distorted a scenario like this.</p>
 <p class="orv_line">However, these ones had betted away their Probability and did indeed intervene with the scenario.</p>
-<div class="orv_system"><p>[&lt;Star Stream&gt; is violently convulsing!]</p></div>
+<div class="orv_system"><p>&lt;Star Stream&gt; is violently convulsing!</p></div>
 <p class="orv_line">Great Dokkaebis were also a part of the &lt;Star Stream&gt;.</p>
 <p class="orv_line">Even if they were tasked with controlling the system, they were not exempt from the consequences of abnormally abusing the Probability.</p>
 <p class="orv_line">Perhaps that was the reason why the powerful sparks were dancing around wildly on the bodies of the Great Dokkaebis.</p>
-<div class="orv_constellation"><p>[The forgotten ones need to remain forgotten.]</p></div>
+<div class="orv_constellation"><p>The forgotten ones need to remain forgotten.</p></div>
 <p class="orv_line">I thought I could understand just a little why they were willing to go this far. If I took the 'sacred texts' and acquired the 'Giant Story' in the process…</p>
 <div class="orv_outergod"><p>【AhAhAhAhAhAh】</p></div>
 <div class="orv_outergod"><p>【OhOhOhOhOhOh…!】</p></div>
 <p class="orv_line">Then, the Outer Gods they had been excluding from the story would officially be incorporated into a 'Giant Story'.</p>
-<p class="orv_line">Outer Gods were beings that couldn't be controlled fully by the system they possessed. Never mind the mid-to-lower grade [Old Beings], if the higher-ranked Outer Gods were to enter the scenarios indiscriminately, then the &lt;Star Stream&gt; would fall into unbridled chaos.</p>
+<p class="orv_line">Outer Gods were beings that couldn't be controlled fully by the system they possessed. Never mind the mid-to-lower grade <strong>[Old Beings]</strong>, if the higher-ranked Outer Gods were to enter the scenarios indiscriminately, then the &lt;Star Stream&gt; would fall into unbridled chaos.</p>
 <p class="orv_line">Even then, I simply had to complete this task.</p>
-<div class="orv_constellation"><p>[Give up.]</p></div>
+<div class="orv_constellation"><p>Give up.</p></div>
 <p class="orv_line">Statuses from the Great Dokkaebis had tied my entire body down like chains, and my fingertips reaching out to the 'sacred texts' came to a dead stop only a single hand span away. However, I didn't get flustered.</p>
 <p class="orv_line">As the Great Dokkaebis appeared here while going against the Probability, there was no doubt that another creature tasked with fixing the tilted balance of the distorted Probability would appear soon.</p>
 <p class="orv_line">Ku-gugugugu!!</p>
-<p class="orv_line">Speak of the devil – a whirlpool suddenly formed in the middle of the sky. It was the [Great Hole]. And an existence revealed itself and looked down at me from beyond the opening.</p>
-<div class="orv_constellation"><p>[Take the 'sacred texts', oh apostle of ■■.]</p></div>
+<p class="orv_line">Speak of the devil – a whirlpool suddenly formed in the middle of the sky. It was the <strong>[Great Hole]</strong>. And an existence revealed itself and looked down at me from beyond the opening.</p>
+<div class="orv_constellation"><p>Take the 'sacred texts', oh apostle of ■■.</p></div>
 <p class="orv_line">It was none other than the Wenny King, the one I met back in the N'Gai's Forest.</p>
 <p class="orv_line">Great Dokkaebis discovered the Wenny's presence and roared out in sheer astonishment.</p>
-<div class="orv_constellation"><p>[How dare…!]</p></div>
-<div class="orv_constellation"><p>[The devil of the horizon, how dare you show yourself here!]</p></div>
-<div class="orv_constellation"><p>[You do not possess the Probability to appear in this scenario!]</p></div>
+<div class="orv_constellation"><p>How dare…!</p></div>
+<div class="orv_constellation"><p>The devil of the horizon, how dare you show yourself here!</p></div>
+<div class="orv_constellation"><p>You do not possess the Probability to appear in this scenario!</p></div>
 <p class="orv_line">The Wenny King sneered back at them.</p>
-<div class="orv_constellation"><p>[It's the same story for you, too.]</p></div>
+<div class="orv_constellation"><p>It's the same story for you, too.</p></div>
 <p class="orv_line">The Statuses of the Great Dokkaebis and the Wenny King collided, and my previously-restrained body regained its freedom. And my hand crossed that final distance.</p>
-<div class="orv_system"><p>[Outer God transformation has resumed.]</p></div>
+<div class="orv_system"><p>Outer God transformation has resumed.</p></div>
 <p class="orv_line">The Wenny King smiled brightly.</p>
-<div class="orv_constellation"><p>[Oh, dear &lt;Star Stream&gt;. The worlds you have erased shall advance once more.]</p></div>
+<div class="orv_constellation"><p>Oh, dear &lt;Star Stream&gt;. The worlds you have erased shall advance once more.</p></div>
 <p class="orv_line">The moment my hand touched the 'sacred texts', my consciousness faded away within the brightly-lit storm of electricity.</p>
 <p class="orv_line">I could barely sense what might happen from here onwards.</p>
 <p class="orv_line">I looked behind me and slowly closed my eyes.</p>
@@ -286,12 +293,12 @@
 <br>
 <p class="orv_line">Showers of light exploded and scattered in the distant sky.</p>
 <p class="orv_line">Even the Nine Stars, even the 28 Mansions – they all had no choice but to look at the explosion in that moment.</p>
-<div class="orv_system"><p>[Every Constellation of the Nebula, &lt;Emperor&gt;, is freaking out!]</p></div>
+<div class="orv_system"><p>Every Constellation of the Nebula, &lt;Emperor&gt;, is freaking out!</p></div>
 <p class="orv_line">Lee Gilyoung atop the Dragon Horse was busy evading the Nine Stars' attack until then, but even he had to bring his mount to a stop.</p>
 <p class="orv_line">"…Shin Yoosung?"</p>
 <p class="orv_line">Shin Yoosung regained her consciousness and opened her eyes on top of the saddle. The moment she did, her eyes quickly snapped towards the western sky where Lee Gilyoung was also looking at.</p>
 <p class="orv_line">Her heart was beating powerfully.</p>
-<div class="orv_constellation"><p>[Something has gone wrong. Eliminate these small fries quickly, and…]</p></div>
+<div class="orv_constellation"><p>Something has gone wrong. Eliminate these small fries quickly, and…</p></div>
 <p class="orv_line">The Lords of the Nine Stars and &lt;Emperor&gt;'s Historical-grade Constellations recovered from their fluster and hurriedly rushed towards Lee Gilyoung and Shin Yoosung once more.</p>
 <p class="orv_line">The boy spoke up, his gaze still fixed to the western skies. "I'll create a path, so get going."</p>
 <p class="orv_line">No one needed to explain it to them. The story they were searching for was over there.</p>
@@ -336,12 +343,12 @@
 <p class="orv_line">In the end, to every human being, the most precious thing was themselves.</p>
 <p class="orv_line">And Kim Dokja risked everything of his, always.</p>
 <p class="orv_line">It was right at that time that the river water suddenly exploded in front of her eyes. Constellations of &lt;Emperor&gt; vomited out as they crashed back down to earth.</p>
-<div class="orv_constellation"><p>[Come, you disappeared stories!]</p></div>
+<div class="orv_constellation"><p>Come, you disappeared stories!</p></div>
 <p class="orv_line">Accompanied by the voice reverberating throughout the world, the entire world began changing.</p>
-<p class="orv_line">Several [Great Holes] opened up in the various parts of the sky, and creatures possessing unimaginable Statuses started to cross over.</p>
+<p class="orv_line">Several <strong>[Great Holes]</strong> opened up in the various parts of the sky, and creatures possessing unimaginable Statuses started to cross over.</p>
 <p class="orv_line">They were no longer the 'Outer Gods'.</p>
-<div class="orv_system"><p>[■?■?■■ is participating in the role of 'Extra'!]</p></div>
-<div class="orv_system"><p>[■■?■ is participating in the role of 'Extra'!]</p></div>
+<div class="orv_system"><p>■?■?■■ is participating in the role of 'Extra'!</p></div>
+<div class="orv_system"><p>■■?■ is participating in the role of 'Extra'!</p></div>
 <p class="orv_line">They were Yogoes from the Journey to the West.</p>
 <p class="orv_line">(This was the final war to determine the owner of the 'sacred texts'.)</p>
 <p class="orv_line">(The horde of shadowy demonic beings rushed in to put the finishing touches to the final pages of this lengthy tale.)</p>
@@ -351,9 +358,9 @@
 <p class="orv_line">'I need to stop him'.</p>
 <p class="orv_line">On top of the broken Yogoes' path, Shin Yoosung looked down at her small hand. It was a hand that she believed was capable of achieving things far greater than any adult could. And it had done precisely that many times before. However, at least in this moment…</p>
 <p class="orv_line">…She felt that it was nothing but a child's small hand.</p>
-<div class="orv_constellation"><p>[■■■■■■■■■■■■…!!]</p></div>
+<div class="orv_constellation"><p>■■■■■■■■■■■■…!!</p></div>
 <p class="orv_line">The heavens split up and the ground caved in. The Tongtian River's waters overturned in its entirety, and the living creatures atop it died in their droves as blood and Stories flooded out.</p>
-<div class="orv_system"><p>[Judge, 'Sakyamuni's Successor', is looking at you.]</p></div>
+<div class="orv_system"><p>Judge, 'Sakyamuni's Successor', is looking at you.</p></div>
 <p class="orv_line">It was exactly then that she felt someone's gaze and heard that person's voice.</p>
 <p class="orv_line">– Yoosung-ah, only you can do it.</p>
 <p class="orv_line">It was a voice she knew so well.</p>
@@ -367,7 +374,7 @@
 <p class="orv_line">"…Can I really do it?"</p>
 <p class="orv_line">Her voice was trembling.</p>
 <p class="orv_line">Kim Dokja's figure staggered about in the distance.</p>
-<div class="orv_system"><p>[Story, 'Demon King of Salvation', is continuing with its storytelling.]</p></div>
+<div class="orv_system"><p>Story, 'Demon King of Salvation', is continuing with its storytelling.</p></div>
 <p class="orv_line">Finally, the tears she was holding back broke free. "But, that could be what ahjussi wants, you know?"</p>
 <p class="orv_line">And to such a child, Yoo Sangah spoke.</p>
 <p class="orv_line">– He has been alone for a very long time]</p>
@@ -377,14 +384,14 @@
 <p class="orv_line">– You need to tell him, always be next to him, and reaffirm it for him.</p>
 <p class="orv_line">As she cried, Shin Yoosung stepped forward.</p>
 <p class="orv_line">– Until he realizes that he's truly not alone anymore.</p>
-<p class="orv_line">She gathered every little scrap of her Status and began running hard. Just like Kim Dokja using the [Way of the Wind], she too gave everything she had and ran on top of the river.</p>
+<p class="orv_line">She gathered every little scrap of her Status and began running hard. Just like Kim Dokja using the <strong>[Way of the Wind]</strong>, she too gave everything she had and ran on top of the river.</p>
 <p class="orv_line">While stepping on the water's surface sinking in bit by bit, Shin Yoosung shouted out loudly as if to tear out her vocal cords.</p>
 <p class="orv_line">"Ahjussi!!"</p>
 <p class="orv_line">Kim Dokja wasn't listening. In the midst of the bloody battle between Yogoes and the Constellations, he was looking back at her with empty eyes as he slowly morphed into another Yogoe.</p>
 <p class="orv_line">His body was changing. Kim Dokja was scattering away.</p>
 <p class="orv_line">"Don't go! Please!! Please don't go!"</p>
 <p class="orv_line">She watched her Sponsor slowly disappear right before her eyes and shouted even louder and louder. It didn't sound like words, but screams, instead. These were things that couldn't be conveyed with mere words.</p>
-<div class="orv_system"><p>[A brand new Story is sprouting within you!]</p></div>
+<div class="orv_system"><p>A brand new Story is sprouting within you!</p></div>
 <p class="orv_line">Not everyone could use special methods to communicate, and that was why Stories existed. Words that couldn't be conveyed would become stories eventually.</p>
 <p class="orv_line">The golden letters of the Constrictive Sutra had become a Story and they began emitting bright light now.</p>
 <p class="orv_line">⸢I'm not going to give up. Just like how you keep rescuing me, ahjussi, I…!⸥</p>
@@ -397,18 +404,12 @@
             <a href="./ch_438"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_440">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="439" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="489" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="438" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="438" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

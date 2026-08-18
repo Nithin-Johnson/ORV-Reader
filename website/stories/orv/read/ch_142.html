@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 142: Ep. 28 - The Ultimate Sacrifice, II</title>
     <meta property="og:title" content="Ch 142: Ep. 28 - The Ultimate Sacrifice, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,54 +177,54 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00142.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 142: Ep. 28 - The Ultimate Sacrifice, II</h1></div>
 <p class="orv_line">The monsters flocked from the outskirts of Seoul. Maybe there was a gate where they were created and the rating of the monsters would skyrocket in four hour intervals.</p>
 <p class="orv_line">In other words, the time we had was eight hours at the most. I had to lure Nirvana in to make him confront Yoo Joonghyuk.</p>
 <p class="orv_line">"I think I can do it."</p>
 <p class="orv_line">I left the party members and called Bihyung through the dokkaebi communication. However, the voice that came back was from Youngki.</p>
-<div class="orv_constellation"><p>[I'm sorry, Bihyung is a bit busy right now…]</p></div>
+<div class="orv_constellation"><p>I'm sorry, Bihyung is a bit busy right now…</p></div>
 <p class="orv_line">That Bihyung bastard, he became sloppy as soon as he was going to be promoted? He was an ungrateful bastard. I had been trying to raise his performance but he didn't know how to repay favours.</p>
 <p class="orv_line">–There are random boxes in new scenarios right?</p>
-<div class="orv_constellation"><p>[Yes. It came out.]</p></div>
+<div class="orv_constellation"><p>Yes. It came out.</p></div>
 <p class="orv_line">–I'll have 10 of them.</p>
 <p class="orv_line">I thought it was good but Youngki surprisingly hesitated.</p>
-<div class="orv_constellation"><p>[The odds of the random boxes are terrible… will you be okay?]</p></div>
+<div class="orv_constellation"><p>The odds of the random boxes are terrible… will you be okay?</p></div>
 <p class="orv_line">–It will be fine.</p>
 <p class="orv_line">I knew what the dokkaebi was worried about. Could a person like this survive?</p>
-<div class="orv_system"><p>[You have purchased 10 'Main Scenario #8 Special Random Boxes!']</p></div>
-<div class="orv_system"><p>[You have spent 30,000 coins.]</p></div>
+<div class="orv_system"><p>You have purchased 10 'Main Scenario #8 Special Random Boxes!'</p></div>
+<div class="orv_system"><p>You have spent 30,000 coins.</p></div>
 <p class="orv_line">–We will stop here.</p>
-<div class="orv_constellation"><p>[Yes. I wish you the blessing of the story.]</p></div>
+<div class="orv_constellation"><p>Yes. I wish you the blessing of the story.</p></div>
 <p class="orv_line">Youngki's voice disappeared and 10 shiny boxes appeared in the air. They were colourful boxes with large question marks.</p>
 <p class="orv_line">Lee Gilyoung asked me, "Hyung, is that what we see in games? If you open it, you get a random good item…"</p>
 <p class="orv_line">The little kids noticed the fastest.</p>
 <p class="orv_line">"Yes, that's right."</p>
-<div class="orv_system"><p>[Random box.]</p></div>
+<div class="orv_system"><p>Random box.</p></div>
 <p class="orv_line">A gambling item that had a low probability of giving SSS-grade weapons and SSS-grade skills. This was an item designed by dokkaebis to trick the blind constellations. Why did I buy the box?</p>
-<div class="orv_system"><p>[The constellation 'Maritime War God' is a bit disappointed in you.]</p></div>
-<div class="orv_system"><p>[The constellation 'Maritime War God' says that the basis of longevity is integrity.]</p></div>
-<div class="orv_system"><p>[The constellation 'Bald General of Justice' advises you to be wary of luxury.]</p></div>
-<div class="orv_system"><p>[The constellation 'Slumbering Lady of Fine Brocade' wants you to donate if you have coins.]</p></div>
+<div class="orv_system"><p>The constellation 'Maritime War God' is a bit disappointed in you.</p></div>
+<div class="orv_system"><p>The constellation 'Maritime War God' says that the basis of longevity is integrity.</p></div>
+<div class="orv_system"><p>The constellation 'Bald General of Justice' advises you to be wary of luxury.</p></div>
+<div class="orv_system"><p>The constellation 'Slumbering Lady of Fine Brocade' wants you to donate if you have coins.</p></div>
 <p class="orv_line">Min Jiwon's face turned red at the Slumbering Lady of Fine Brocade's message.</p>
 <p class="orv_line">"I-I'm sorry. My sponsor is a bit…"</p>
 <p class="orv_line">"It's fine. In fact, this isn't a very expensive product. Let's do it together. I'll give you one to change your mood."</p>
@@ -247,12 +254,12 @@
 <p class="orv_line">Was it the right choice to take care of this child? Maybe this child would be unhappy because of me. For now, it was unknown. However, I would do my best to protect this child.</p>
 <p class="orv_line">"Then let's try opening them. Think of it as a diversion."</p>
 <p class="orv_line">Everyone nodded and started opening the boxes.</p>
-<div class="orv_system"><p>[The 'Main Scenario #8 Special Random Box' has been used!]</p></div>
-<div class="orv_system"><p>[You have acquired two Ellain Forest Essence.]</p></div>
-<div class="orv_system"><p>[One 'Fairly Usable Pair of Boots (E-grade) have been acquired!]</p></div>
-<div class="orv_system"><p>[Other consumables have been acquired.]</p></div>
+<div class="orv_system"><p>The 'Main Scenario #8 Special Random Box' has been used!</p></div>
+<div class="orv_system"><p>You have acquired two Ellain Forest Essence.</p></div>
+<div class="orv_system"><p>One 'Fairly Usable Pair of Boots (E-grade) have been acquired!</p></div>
+<div class="orv_system"><p>Other consumables have been acquired.</p></div>
 <p class="orv_line">…This was it. The only things that came out were E-grade items and consumables. The situation was the same for the other party members. Well, I expected it. In the first place, the random box…</p>
-<div class="orv_system"><p>[Congratulations! Someone has broken the probability of 0.00001%!]</p></div>
+<div class="orv_system"><p>Congratulations! Someone has broken the probability of 0.00001%!</p></div>
 <p class="orv_line">Grand celebration firecrackers appeared in the air. I turned and saw triumph on Shin Yoosung's face.</p>
 <p class="orv_line">…Don't tell me? Really?</p>
 <p class="orv_line">"A-ahjussi?"</p>
@@ -271,11 +278,11 @@
 <p class="orv_line">Lee Jihye watched like she was jealous. "Ahjussi, why are you doing this? Do you really want to change our mood?"</p>
 <p class="orv_line">"Of course not. Give me the consumables that came out from the box."</p>
 <p class="orv_line">I was aiming for the consumables that came out from the box since the beginning.</p>
-<div class="orv_system"><p>[Loudspeaker (Dome Channels) x 4 have been acquired!]</p></div>
-<div class="orv_system"><p>[Loudspeaker (General Channels) x 4 have been acquired!]</p></div>
-<div class="orv_system"><p>[Loudspeaker (Area Only) x 2 have been acquired!]</p></div>
+<div class="orv_system"><p>Loudspeaker (Dome Channels) x 4 have been acquired!</p></div>
+<div class="orv_system"><p>Loudspeaker (General Channels) x 4 have been acquired!</p></div>
+<div class="orv_system"><p>Loudspeaker (Area Only) x 2 have been acquired!</p></div>
 <p class="orv_line">Yoo Joonghyuk's eyes narrowed. "I know what you want to do."</p>
-<div class="orv_system"><p>[Loudspeaker.]</p></div>
+<div class="orv_system"><p>Loudspeaker.</p></div>
 <p class="orv_line">They were useful consumables that could send messages to specific channels or entire areas depending on the options.</p>
 <p class="orv_line">"However, just saying a few words to that guy…"</p>
 <p class="orv_line">I told Yoo Joonghyuk, "The important thing is what you say."</p>
@@ -286,7 +293,7 @@
 <p class="orv_line">At this time, Nirvana was in the church hideout. Nirvana had his eyes shut while the statue of Avalokiteśvara Bodhisattva looked down on him.</p>
 <p class="orv_line">Don't hang onto the past or look to the future. The past had already disappeared and the future hadn't come yet.</p>
 <p class="orv_line">Nirvana memorized these phrases but the doctrine wasn't spread by voice. Sweat covered his forehead. Sparks bounced all around his body. After a while, his eyes turned white and a message came.</p>
-<div class="orv_system"><p>[You have succeeded in learning a new skill!]</p></div>
+<div class="orv_system"><p>You have succeeded in learning a new skill!</p></div>
 <p class="orv_line">Nirvana opened his eyes. "…It was unreasonable."</p>
 <p class="orv_line">His stigma 'Succession' consumed probability when used. Therefore, he couldn't use Succession unless he used the 'story' that had accumulated through his reincarnations to provide some plausible probability.</p>
 <p class="orv_line">'I've lost too much story'.</p>
@@ -296,7 +303,7 @@
 <p class="orv_line">"I've kept you waiting. Then shall we begin today's session?"</p>
 <p class="orv_line">There were two women sitting at a table in the room. They were the vanished King of Wanderers, Lee Sookyung, and Yoo Sangah. Yoo Sangah's eyes were wide as she stared into the air and Lee Sookyung asked,</p>
 <p class="orv_line">"When will you release the skill on this child?"</p>
-<div class="orv_system"><p>[Thought Infection.]</p></div>
+<div class="orv_system"><p>Thought Infection.</p></div>
 <p class="orv_line">Over a week had passed but Yoo Sangah was still resisting. Nirvana laughed.</p>
 <p class="orv_line">"I'm not releasing it. You have to solve it yourself." It was interesting from Nirvana's standpoint. "It is a foolish thing. She is resisting when she simply has to declare that she will live in the present."</p>
 <p class="orv_line">"The value of the past is different for those who live a short life."</p>
@@ -317,7 +324,7 @@
 <p class="orv_line">"It is a childish threat."</p>
 <p class="orv_line">"You have been giving in to this childish threat. That is what a human is."</p>
 <p class="orv_line">Lee Sookyung stared at Yoo Sangah's blank eyes and sighed. "…Do what you want."</p>
-<div class="orv_system"><p>[The exclusive skill 'Origin of Principle and Secondary Causes Lv. 6' has been activated.]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Origin of Principle and Secondary Causes Lv. 6' has been activated.</p></div>
 <p class="orv_line">Avalokiteśvara's hand firmly dug into Lee Sookyung's head. Lee Sookyung's story flowed and started to entangle with Nirvana's story. There was a sense of being 'one'. Nirvana's senses trembled. He chewed, tasted, ate and enjoyed. He was a genuine epicurean of the Star Stream.</p>
 <p class="orv_line">"It is really amazing. How does a human like you have filtered information of the future?"</p>
 <p class="orv_line">Lee Sookyung desperately tried to protect the memories but the fragmentary future knowledge she obtained from Kim Dokja couldn't rebel against the flow of Origin of Principle and Secondary Causes and they were sucked into Nirvana.</p>
@@ -327,22 +334,22 @@
 <p class="orv_line">Cold anger filled Lee Sookyung's face as she declared, "You won't be able to win against that child."</p>
 <p class="orv_line">"…I admit that he is an interesting incarnation."</p>
 <p class="orv_line">He was one that forced Nirvana to use Succession. However, he was only human. It was just up to here. Then a message rang in the air.</p>
-<div class="orv_constellation"><p>[ Applying for a duel with the Salvation Church's leader, Nirvana Moebius. ]</p></div>
+<div class="orv_constellation"><p>Applying for a duel with the Salvation Church's leader, Nirvana Moebius.</p></div>
 <p class="orv_line">The surprised Nirvana looked up at the air. It was Kim Dokja using the loudspeaker.</p>
 <p class="orv_line">Lee Sookyung spoke like she had been waiting. "That child is strong and wise. He knows what he needs and what he can do best."</p>
-<div class="orv_constellation"><p>[ The place of the duel is Gwanghwamun at 2 p.m. today. The person you will be confronting is the Supreme King Yoo Joonghyuk. The two people closest to being the strongest incarnations will fight to defend Seoul Dome. If you are really living in the present, don't avoid this confrontation. ]</p></div>
+<div class="orv_constellation"><p>The place of the duel is Gwanghwamun at 2 p.m. today. The person you will be confronting is the Supreme King Yoo Joonghyuk. The two people closest to being the strongest incarnations will fight to defend Seoul Dome. If you are really living in the present, don't avoid this confrontation.</p></div>
 <p class="orv_line">Using the 'present' as an excuse? It was a confrontation that couldn't be avoided if he was a real 'savior'. Furthermore, the clever use of the loudspeaker was amazing. If he avoided this confrontation, he would receive the chastisement of all the incarnations in Seoul Dome as well as the Salvation members. However, he would be a fool to go after knowing it was a trap. Nirvana laughed.</p>
 <p class="orv_line">"The provocation is decent. Then what should I do? In any case, my goal isn't to clear the scenario. My purpose is great…"</p>
-<div class="orv_constellation"><p>[ Of course, your great plan won't concent to this confrontation. However… ]</p></div>
+<div class="orv_constellation"><p>Of course, your great plan won't concent to this confrontation. However…</p></div>
 <p class="orv_line">Nirvana stiffened at Kim Dokja's words.</p>
-<div class="orv_constellation"><p>[ If you come now, I will give you a chance to become one with Yoo Joonghyuk. ]</p></div>
+<div class="orv_constellation"><p>If you come now, I will give you a chance to become one with Yoo Joonghyuk.</p></div>
 <p class="orv_line">Nirvana was so astonished that he let go of Origin of Principle and Secondary Causes. He shivered in anger, wonder and an unknown sense of shame and bit his lips.</p>
 <p class="orv_line">Lee Sookyung felt Nirvana's intense urge through the string that connected them. It was a desire to combine with one person for a bigger story.</p>
 <p class="orv_line">Lee Sookyung laughed at the desire. "I told you that you are going to lose."</p>
 <br>
 <hr>
 <br>
-<div class="orv_constellation"><p>[ Okay. ]</p></div>
+<div class="orv_constellation"><p>Okay.</p></div>
 <p class="orv_line">Nirvana's answer came quickly. The party members looked blank, as if they didn't know what to expect.</p>
 <p class="orv_line">I stood up and shook off my dizziness.</p>
 <p class="orv_line">"Dokja-ssi, how… no, are you okay?"</p>
@@ -354,7 +361,7 @@
 <p class="orv_line">"Yes."</p>
 <p class="orv_line">I couldn't laugh. Nirvana would've surely gained new skills and couldn't be challenged as easily as before. Of course, Yoo Joonghyuk would also defend himself so victory or defeat wouldn't be easy to predict. In fact, I wasn't interested in their fight.</p>
 <p class="orv_line">The real problem was the loud message in my head.</p>
-<div class="orv_system"><p>[You are currently the strongest incarnation in Seoul.]</p></div>
+<div class="orv_system"><p>You are currently the strongest incarnation in Seoul.</p></div>
 <p class="orv_line">…Now, what should I do?</p>
 <br>
 <hr>
@@ -363,18 +370,12 @@
             <a href="./ch_141"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_143">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="142" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="545" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="141" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="141" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

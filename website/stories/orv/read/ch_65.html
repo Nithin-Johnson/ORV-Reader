@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 65: Ep. 14 – Master of the Throne, I</title>
     <meta property="og:title" content="Ch 65: Ep. 14 – Master of the Throne, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00065.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 65: Ep. 14 – Master of the Throne, I</h1></div>
 <p class="orv_line">Kim Yushin's stigma 'Gather the Hwarang' was a skill that called the elite Hwarang that died in history, the Dragon Flower Tree.</p>
@@ -207,7 +214,7 @@
 <p class="orv_line">This was Gyebaek. The last master of Baekje, Gyebaek.</p>
 <p class="orv_line">Gyebaek was a constellation that overwhelmed Kim Yushin just in terms of physical buff abilities. In fact, Gyebaek never fought one-on-one against Kim Yushin in the Battle of Hwangsanbeol.</p>
 <p class="orv_line">To be exact, it was right to say that Kim Yushin avoided the confrontation.</p>
-<div class="orv_system"><p>[The character 'Chu Wangin' has used the stigma Prepared to Fight to the Death for the Country Lv. 2!]</p></div>
+<div class="orv_system"><p>The character 'Chu Wangin' has used the stigma Prepared to Fight to the Death for the Country Lv. 2!</p></div>
 <p class="orv_line">In history, Gyebaek's army fought against Kim Yushin's army that outnumbered them by several times and won a few impossible battles.</p>
 <p class="orv_line">The last winner might be Kim Yushin but Gyebaek wasn't defeated until the final battle of Hwangsanbeol was held.</p>
 <p class="orv_line">He united his soldiers with patriotism and his shouts were close to insane.</p>
@@ -223,7 +230,7 @@
 <p class="orv_line">The hundreds of Dragon Flower Tree members clashed fiercely with Gyebaek. His incarnation was so severely hurt that he could no longer survive. His whole body was bloody while there were fatal wounds on his arms, thighs and sides.</p>
 <p class="orv_line">However, Gyebaek kept moving through the crowd of Dragon Flower Tree members towards me.</p>
 <p class="orv_line">"Kim…Yoo…shin…!"</p>
-<div class="orv_system"><p>[The stigma 'Request for Reinforcements' has been activated!]</p></div>
+<div class="orv_system"><p>The stigma 'Request for Reinforcements' has been activated!</p></div>
 <p class="orv_line">Ghost soldiers appeared like shadows from behind Kim Yushin and sprang towards Gyebaek. Based on the different articles of clothing on the soldiers, they might not be Silla troops.</p>
 <p class="orv_line">Perhaps they were the Tang Dynasty troops called to destroy Goguryeo.</p>
 <p class="orv_line">As expected from Kim Yushin. The only thing important to him was winning. Using foreign forces wasn't an important issue for him.</p>
@@ -239,22 +246,22 @@
 <p class="orv_line">Gyebaek had a distant look on his face and then he gave a meaningful smile. Kim Yushin waited before pulling out a blade.</p>
 <p class="orv_line">I hurriedly took back control of my voice.</p>
 <p class="orv_line">"He can't be killed with my hands."</p>
-<div class="orv_constellation"><p>[Why?]</p></div>
+<div class="orv_constellation"><p>Why?</p></div>
 <p class="orv_line">"…There are restrictions."</p>
 <p class="orv_line">The King of No Killing meant I couldn't carry out direct slaughter. As soon as I killed one person, I would lose my throne.</p>
 <p class="orv_line">Kim Yushin nodded like he understood.</p>
-<div class="orv_constellation"><p>[…I see. I roughly understand. Don't worry. The stars will honour your commitment. But it is I, Kim Yushin, who will deal with Gyebaek, not you.]</p></div>
+<div class="orv_constellation"><p>…I see. I roughly understand. Don't worry. The stars will honour your commitment. But it is I, Kim Yushin, who will deal with Gyebaek, not you.</p></div>
 <p class="orv_line">"But…"</p>
-<div class="orv_constellation"><p>[…There is a lingering attachment, please understand.]</p></div>
+<div class="orv_constellation"><p>…There is a lingering attachment, please understand.</p></div>
 <p class="orv_line">Kim Yushin gestured and one of the Dragon Flower Tree members nodded. I handed over my voice to Kim Yushin.</p>
 <p class="orv_line">"Gyebaek, let's meet in the next world."</p>
 <p class="orv_line">Gyebaek's incarnation looked up at us silently. He wanted to say something but he couldn't open his mouth. At the last moment, his face looked like a minor actor who completed his scenes rather than Gyebaek.</p>
 <p class="orv_line">Then the incarnation's head quietly flew through the air.</p>
-<div class="orv_system"><p>[Stage Transformation has ended.]</p></div>
-<div class="orv_system"><p>[You have experienced the Battle of Hwangsanbeol.]</p></div>
-<div class="orv_system"><p>[1,000 coins have been earned as experience compensation.]</p></div>
+<div class="orv_system"><p>Stage Transformation has ended.</p></div>
+<div class="orv_system"><p>You have experienced the Battle of Hwangsanbeol.</p></div>
+<div class="orv_system"><p>1,000 coins have been earned as experience compensation.</p></div>
 <p class="orv_line">I looked around and saw that all of Baekje's army was wiped out.</p>
-<div class="orv_system"><p>[The authority of King of No Killing is retained due to the indirect nature of the killing.]</p></div>
+<div class="orv_system"><p>The authority of King of No Killing is retained due to the indirect nature of the killing.</p></div>
 <p class="orv_line">It was fortunate. King of No Killing was only lost when I killed someone directly with my own hands. The life that the Dragon Flower Tree member took wasn't recognized as me killing someone.</p>
 <p class="orv_line">"Representative-nim! Are you okay?" Lee Sungkook's voice was heard from behind me.</p>
 <p class="orv_line">Yoo Sangah sighed with relief while Lee Gilyoung was disgruntled that he couldn't do much. Then Min Jiwon asked, "What the hell was that…?"</p>
@@ -262,11 +269,11 @@
 <p class="orv_line">I shrugged and said, "You should study history if you want to be a king."</p>
 <p class="orv_line">I might've called Kim Yushin but I didn't belong to Silla or Baekje. I called Kim Yushin because he was the most appropriate one to deal with Gyebaek.</p>
 <p class="orv_line">Anyway, I was glad that the result was better than expected. I was able to thoroughly check the performance of the Ganpyeongui and I could get some coins and items from the Baekje members.</p>
-<div class="orv_system"><p>[You have earned 5,400 coins.]</p></div>
-<div class="orv_system"><p>[Coins Possessed: 74,950 C]</p></div>
+<div class="orv_system"><p>You have earned 5,400 coins.</p></div>
+<div class="orv_system"><p>Coins Possessed: 74,950 C</p></div>
 <p class="orv_line">Now I wasn't afraid of the final phase of the fourth scenario.</p>
 <p class="orv_line">"It is time to go to the north."</p>
-<div class="orv_system"><p>[The remaining duration of the call is three minutes.]</p></div>
+<div class="orv_system"><p>The remaining duration of the call is three minutes.</p></div>
 <p class="orv_line">Kim Yushin's divine blessing still remained. I should take advantage of the remaining time left on the Ganpyeongui. It could only be used seven times so I couldn't waste it.</p>
 <p class="orv_line">"Rise up Dragon Flower Tree!"</p>
 <p class="orv_line">The broken fragments of the Dragon Flower Tree unit rose again and I pointed north with my sword.</p>
@@ -278,56 +285,56 @@
 <p class="orv_line">The incarnations that ran towards me were crushed by the Dragon Flower Tree unit.</p>
 <p class="orv_line">Since I wasn't the one attacking, I didn't get a penalty for killing. Yes, this was an invigorating taste.</p>
 <p class="orv_line">Kim Yushin's holy voice was heard in my head.</p>
-<div class="orv_constellation"><p>[There is something strange about you. Your mind is intact despite hearing my true voice…]</p></div>
+<div class="orv_constellation"><p>There is something strange about you. Your mind is intact despite hearing my true voice…</p></div>
 <p class="orv_line">"I have a strong mentality."</p>
 <p class="orv_line">I was a bit surprised by the words. The constellations used the 'indirect messages' to communicate for a reason.</p>
 <p class="orv_line">Kim Yushin was just a low-ranking constellation but most people would pee their pants or faint hearing his holy voice.</p>
 <p class="orv_line">In fact, I was a bit worried about that too…</p>
-<div class="orv_constellation"><p>[Remember, you owe me a big debt. In order to help you, I had to embrace more probability than necessary.]</p></div>
+<div class="orv_constellation"><p>Remember, you owe me a big debt. In order to help you, I had to embrace more probability than necessary.</p></div>
 <p class="orv_line">There was something sinister about his tone. I quickly expressed my appreciation.</p>
 <p class="orv_line">"I am thankful. I won't forget General's help."</p>
-<div class="orv_constellation"><p>[You are a hasty friend. You don't have anyone to pass it onto yet…]</p></div>
+<div class="orv_constellation"><p>You are a hasty friend. You don't have anyone to pass it onto yet…</p></div>
 <p class="orv_line">"…Won't it happen one day? If I give birth to a child, I will surely tell them what happened today."</p>
-<div class="orv_constellation"><p>[Rather, you don't seem to have a sponsor.]</p></div>
+<div class="orv_constellation"><p>Rather, you don't seem to have a sponsor.</p></div>
 <p class="orv_line">I had an ominous feeling. Damn, this old fox kept talking.</p>
-<div class="orv_constellation"><p>[I like you. If you don't mind, I would like to become your sponsor in this world.]</p></div>
+<div class="orv_constellation"><p>I like you. If you don't mind, I would like to become your sponsor in this world.</p></div>
 <p class="orv_line">His words were nice but it merely meant to be his slave.</p>
 <p class="orv_line">"That will be a problem."</p>
-<div class="orv_constellation"><p>[Why? Isn't my strength enough? You can become the strongest of this age with just my stigma.]</p></div>
+<div class="orv_constellation"><p>Why? Isn't my strength enough? You can become the strongest of this age with just my stigma.</p></div>
 <p class="orv_line">The Gather the Hwarang stigma was good. But that was when applied to Kim Yushin's saga.</p>
 <p class="orv_line">The strongest in this era? He was trying to scam me.</p>
 <p class="orv_line">The words were ridiculous for someone who wasn't a narrative-grade. If the Great Sage Heaven's Equal heard it, he would've squeezed Kim Yushin's head tightly.</p>
 <p class="orv_line">"Now isn't the age of the Three Kingdoms. You are old and should take a break."</p>
 <p class="orv_line">We had fun together but let's not see each other again.</p>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is laughing at 'King Heungmu the Great'.]</p></div>
-<div class="orv_system"><p>[300 coins have been sponsored.]</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is laughing at 'King Heungmu the Great'.</p></div>
+<div class="orv_system"><p>300 coins have been sponsored.</p></div>
 <p class="orv_line">Kim Yunshin was silent for a moment, perhaps because his pride was pricked. I thought he would back off but a sharp pain suddenly shot through my head.</p>
-<div class="orv_constellation"><p>[Have you forgotten that my divine blessing still remains?]</p></div>
+<div class="orv_constellation"><p>Have you forgotten that my divine blessing still remains?</p></div>
 <p class="orv_line">Currently, Kim Yushin and I were connected through the Ganpyeongui. The muscles of my body spasmed in an unusual manner. No matter what, wasn't he a great person of Korea…? No, maybe he could do this because he was a great person of Korea.</p>
 <p class="orv_line">Dammit.</p>
-<div class="orv_constellation"><p>[It would be better to think again.]</p></div>
+<div class="orv_constellation"><p>It would be better to think again.</p></div>
 <p class="orv_line">Yoo Sangah looked at me with worry.</p>
 <p class="orv_line">"Dokja-ssi?"</p>
 <p class="orv_line">"Yoo Sangah-ssi. Get away from me. Quickly!"</p>
 <p class="orv_line">My trembling right hand didn't listen as it raised Unbroken Faith and started pointing it at Yoo Sangah.</p>
 <p class="orv_line">Kim Yushin started to exert control over my body.</p>
-<div class="orv_constellation"><p>[Did you say there was a restriction on your actions? I wonder what the restriction is. What if I kill that woman right now?]</p></div>
+<div class="orv_constellation"><p>Did you say there was a restriction on your actions? I wonder what the restriction is. What if I kill that woman right now?</p></div>
 <p class="orv_line">"Kim Yushin, this is your will. It isn't my karma."</p>
-<div class="orv_constellation"><p>[Huhu, I don't know. What if I disengage the moment I stab the blade? Won't it be recognized as your actions? And this woman seems to be quite precious to you?]</p></div>
+<div class="orv_constellation"><p>Huhu, I don't know. What if I disengage the moment I stab the blade? Won't it be recognized as your actions? And this woman seems to be quite precious to you?</p></div>
 <p class="orv_line">"…Stop."</p>
-<div class="orv_constellation"><p>[Make a promise. In the next Sponsor Selection, you will choose Kim Yushin.]</p></div>
+<div class="orv_constellation"><p>Make a promise. In the next Sponsor Selection, you will choose Kim Yushin.</p></div>
 <p class="orv_line">The intent of this old fox was obvious. The second Sponsor Selection would begin the moment the fourth scenario was over. Kim Yushin wanted to use this pledge as an opportunity to acquire me.</p>
 <p class="orv_line">If I hadn't read Ways of Survival, it might not be a bad choice. Kim Yushin was a fairly decent constellation and there were a few scenarios in the middle that could be cleared with Gather the Hwarang alone.</p>
 <p class="orv_line">However, if I was going to pick a sponsor, I would've picked the Great Sage Heaven's Equal in the beginning. Why should I choose Kim Yushin now?</p>
 <p class="orv_line">"I said no."</p>
 <p class="orv_line">In addition, I had the contract with Bihyung that didn't allow me to choose a sponsor.</p>
 <p class="orv_line">Kim Yushin's voice hardened.</p>
-<div class="orv_constellation"><p>[You are a stubborn young man. But it is the wrong choice. How long can you endure?]</p></div>
+<div class="orv_constellation"><p>You are a stubborn young man. But it is the wrong choice. How long can you endure?</p></div>
 <p class="orv_line">The blade in my hand started moving towards Yoo Sangah.</p>
 <p class="orv_line">"Yoo Sangah-ssi, quickly―!"</p>
 <p class="orv_line">Why didn't the smart Yoo Sangah move? I looked at my right hand moving against my will and finally made a decision. Dammit, I respected him as a great person but he forced me to do this…</p>
 <p class="orv_line">I took a deep breath. This was my body. I would never give it to this guy or any constellation.</p>
-<div class="orv_system"><p>[The exclusive skill, 'Fourth Wall' is activated!]</p></div>
+<div class="orv_system"><p>The exclusive skill, 'Fourth Wall' is activated!</p></div>
 <br>
 <hr>
         </article>
@@ -335,18 +342,12 @@
             <a href="./ch_64"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_66">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="65" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="178" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="64" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="64" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

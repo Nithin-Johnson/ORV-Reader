@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 470: Ep. 89 - Great Apocalypse, IV</title>
     <meta property="og:title" content="Ch 470: Ep. 89 - Great Apocalypse, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,55 +177,55 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00470.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 470: Ep. 89 - Great Apocalypse, IV</h1></div>
 <p class="orv_line">The moment the shelling began, I grabbed Lee Jihye. It felt as if the entire world had us in its crosshairs. Our ship quickly turned its heading. I could only pray that she wasn't too late.</p>
 <div class="orv_outergod"><p>【Fire.】</p></div>
 <p class="orv_line">Kwa-aaaaaaaah!!</p>
-<p class="orv_line">The ear-rending cacophony of cannon firing noises filled up the entire great ocean. Foams around us evaporated into steam. With almost no room left, the [Turtle Dragon] managed to turn around in time. Even then, we couldn't dodge everything.</p>
+<p class="orv_line">The ear-rending cacophony of cannon firing noises filled up the entire great ocean. Foams around us evaporated into steam. With almost no room left, the <strong>[Turtle Dragon]</strong> managed to turn around in time. Even then, we couldn't dodge everything.</p>
 <p class="orv_line">"Hyunsung-ssi!"</p>
-<p class="orv_line">As the acrid burning smell filled up our noses, the Story metal quickly branched out and covered up the entirety of the deck. Soon, it covered the entire hull and started glowing in white-hot heat. So hot, in fact, one's skin would be cooked instantly. As the impact force on the outer layer of the metal decreased, Lee Hyunsung undid the [Steel Transformation].</p>
-<p class="orv_line">When we saw the sky again, we realized that our ship was falling to the bottom as if the ground beneath had disappeared. I quickly activated [Demon King Transformation], spread out my wings, and shouted out.</p>
+<p class="orv_line">As the acrid burning smell filled up our noses, the Story metal quickly branched out and covered up the entirety of the deck. Soon, it covered the entire hull and started glowing in white-hot heat. So hot, in fact, one's skin would be cooked instantly. As the impact force on the outer layer of the metal decreased, Lee Hyunsung undid the <strong>[Steel Transformation]</strong>.</p>
+<p class="orv_line">When we saw the sky again, we realized that our ship was falling to the bottom as if the ground beneath had disappeared. I quickly activated <strong>[Demon King Transformation]</strong>, spread out my wings, and shouted out.</p>
 <p class="orv_line">"Lee Jihye!!"</p>
-<p class="orv_line">She hurriedly grabbed the helm and controlled the movement of the ship. Flames lit up below the hull and the [Turtle Dragon] began flying.</p>
+<p class="orv_line">She hurriedly grabbed the helm and controlled the movement of the ship. Flames lit up below the hull and the <strong>[Turtle Dragon]</strong> began flying.</p>
 <p class="orv_line">Only after securing our balance were we able to take stock of our surroundings. Just what the hell happened here…?</p>
 <p class="orv_line">⸢And then, Kim Dokja couldn't close his slack jaw.⸥</p>
 <p class="orv_line">A ship in the middle of the ocean suddenly fell to the ground – meaning, the water supporting that ship had disappeared.</p>
 <p class="orv_line">Ku-gugugugu!</p>
 <p class="orv_line">The great ocean had been split in half and its deep, dark bottom was now fully exposed. Aquatic creatures were flapping around painfully down there, and we could see the horde of 'Outer Gods' gleefully tearing into those helpless creatures.</p>
-<div class="orv_constellation"><p>[Gyahaaaaaah!]</p></div>
+<div class="orv_constellation"><p>Gyahaaaaaah!</p></div>
 <p class="orv_line">The swarm of Outer Gods were running on the bottom of the ocean, their bodies wriggling like worms. From either side of the now-dry ocean, the huge tsunami waves were flooding in.</p>
 <p class="orv_line">"Move! Hurry!"</p>
 <p class="orv_line">I shouted out and Lee Jihye urgently turned the ship around again.</p>
 <div class="orv_outergod"><p>【Load the cannons.】</p></div>
 <p class="orv_line">It was then that we heard the noises of cannons being loaded for the second time. Just hearing that true voice alone instilled fear deep into the very marrows of our bones.</p>
-<p class="orv_line">I raised my head and saw Lee Hyunsung sweating buckets as well. Even if it was the [Story metal], it wouldn't be able to withstand attacks of such calibre too many times.</p>
+<p class="orv_line">I raised my head and saw Lee Hyunsung sweating buckets as well. Even if it was the <strong>[Story metal]</strong>, it wouldn't be able to withstand attacks of such calibre too many times.</p>
 <p class="orv_line">"Ahjussi! Do something!"</p>
 <p class="orv_line">I was planning to act, anyway.</p>
-<p class="orv_line">I finished my crappy construction effort on the [The White Flag of Complete Surrender] and raised it up high.</p>
-<div class="orv_system"><p>[Item, 'The White Flag of Complete Surrender', is activating!]</p></div>
-<div class="orv_constellation"><p>[Now your enemies should be able to spot your complete surrender from even afar!]</p></div>
-<div class="orv_system"><p>[A portion of Constellations are shocked by your action!]</p></div>
-<div class="orv_system"><p>[A small number of Constellations are pointing accusatory fingers at your cowardice!]</p></div>
+<p class="orv_line">I finished my crappy construction effort on the <strong>[The White Flag of Complete Surrender]</strong> and raised it up high.</p>
+<div class="orv_system"><p>Item, 'The White Flag of Complete Surrender', is activating!</p></div>
+<div class="orv_constellation"><p>Now your enemies should be able to spot your complete surrender from even afar!</p></div>
+<div class="orv_system"><p>A portion of Constellations are shocked by your action!</p></div>
+<div class="orv_system"><p>A small number of Constellations are pointing accusatory fingers at your cowardice!</p></div>
 <p class="orv_line">Cowardice, my foot. You haven't even bothered to show up here.</p>
 <p class="orv_line">I used all of my strength to wave this white flag around.</p>
 <p class="orv_line">"Lee Jihye! Over here!"</p>
@@ -241,9 +248,9 @@
 <div class="orv_outergod"><p>【Flag…】</p></div>
 <p class="orv_line">"That's right, this flag. You remember it?"</p>
 <p class="orv_line">Old pages were flipping past within me. Scenes from the 999th turn were being replayed – the intense stench of blood, the eerie darkness of the subway…</p>
-<div class="orv_system"><p>[Exclusive skill, 'Reading Comprehension', is activating!]</p></div>
-<div class="orv_system"><p>[Attribute, 'Scenario Interpreter', is activating!]</p></div>
-<div class="orv_system"><p>[Your words have awoken the ancient Story within your opponent!]</p></div>
+<div class="orv_system"><p>Exclusive skill, 'Reading Comprehension', is activating!</p></div>
+<div class="orv_system"><p>Attribute, 'Scenario Interpreter', is activating!</p></div>
+<div class="orv_system"><p>Your words have awoken the ancient Story within your opponent!</p></div>
 <p class="orv_line">⸢Within that darkness stood Yoo Joonghyuk.⸥</p>
 <p class="orv_line">Sparks burst out from the shattered, broken headlights of the train; the light flickering intermittently illuminated Yoo Joonghyuk's sword slaughtering the monsters.</p>
 <p class="orv_line">⸢On that day, the wounded Sword Demon met the Supreme King.⸥</p>
@@ -252,12 +259,12 @@
 <p class="orv_line">Tsu-chuchuchuchut!</p>
 <p class="orv_line">Sparks danced violently before my eyes. The vicious storm of Probability's aftermath was so powerful that I couldn't even see my front properly.</p>
 <p class="orv_line">The incoming aquatic creatures and 'Outer Gods' targeting us got sucked into the sparks and writhed in pain.</p>
-<div class="orv_constellation"><p>[Whatsthiswhatsthiswhatsthiswhatsthis]</p></div>
+<div class="orv_constellation"><p>Whatsthiswhatsthiswhatsthiswhatsthis</p></div>
 <p class="orv_line">'Outer Gods' turned to look at their 'King'. However, their king was no longer standing there. As if she was lost within the distant memories, the 999th turn's Lee Jihye was reaching out towards the empty air.</p>
 <div class="orv_outergod"><p>【Mas… ter…】</p></div>
 <p class="orv_line">As I thought.</p>
 <p class="orv_line">I got this impression the first time I met the 'Secretive Plotter' as well as 999th turn's Uriel, that… These people, they were clearly out of their minds.</p>
-<div class="orv_system"><p>[Character, 'Master of the Sunken Island', is painfully baring her teeth.]</p></div>
+<div class="orv_system"><p>Character, 'Master of the Sunken Island', is painfully baring her teeth.</p></div>
 <p class="orv_line">When an existence became an 'Outer God', normally this being would end up as a completely different existence. It'd lose the memories of the life it lived and be reborn as a brand new creature.</p>
 <p class="orv_line">However, that was the story reserved for the regular 'Outer Gods'; 'Kings' played by different rules. They retained the memories and emotions of their previous lives.</p>
 <p class="orv_line">The 'Secretive Plotter' divided his Story into different regression turns and stored them that way, while the 'Living Flame' shoved her own sense of self into her vengeful obsession.</p>
@@ -267,19 +274,19 @@
 <p class="orv_line">I wasn't sure why the 999th turn's Lee Jihye became an 'Outer God'. However, I could think of one possibility.</p>
 <p class="orv_line">"Don't destroy this 'worldline', please! This place is the same as the world you used to live in! Yoo Joonghyuk is here, so is Lee Hyunsung, and so are you, Lee Jihye!"</p>
 <p class="orv_line">Tsu-chuchuchuchut!</p>
-<div class="orv_system"><p>[&lt;Star Stream&gt; is closely observing your actions.]</p></div>
-<div class="orv_system"><p>[A portion of Great Dokkaebis are frowning at your actions.]</p></div>
+<div class="orv_system"><p>&lt;Star Stream&gt; is closely observing your actions.</p></div>
+<div class="orv_system"><p>A portion of Great Dokkaebis are frowning at your actions.</p></div>
 <p class="orv_line">Stories from the 999th turn began flowing in front of my eyes.</p>
 <p class="orv_line">"Don't close your eyes! Make sure you see who you're about to kill!"</p>
 <p class="orv_line">⸢"Don't close your eyes. Make sure to remember who your sword is about to kill.⸥</p>
-<p class="orv_line">Yoo Joonghyuk as how the 999th turn's Lee Jihye remembered him stood there, the man who taught her the ways of the sword and how to survive. The [Struggle for the Flag] began, and after taking over the Chungmuro Station, he said this to her.</p>
+<p class="orv_line">Yoo Joonghyuk as how the 999th turn's Lee Jihye remembered him stood there, the man who taught her the ways of the sword and how to survive. The <strong>[Struggle for the Flag]</strong> began, and after taking over the Chungmuro Station, he said this to her.</p>
 <p class="orv_line">⸢"Remember the deaths of those you've killed. This might hurt you, but that way, you'll avoid becoming a Sword Demon."⸥</p>
 <p class="orv_line">Yoo Joonghyuk's flag, still white and untainted, slowly wavered in that place. It'd become red, then black, later. Lee Jihye looked at the flag proudly gleaning on that man's back and thought to herself.</p>
 <p class="orv_line">⸢I wish to become someone like him.⸥</p>
 <div class="orv_image"><img src="../../../assets/images/470 - I wish to become someone like him.jpg" alt="" loading="lazy"></div>
 <div class="orv_notice"><p>* Unofficial fan illustration (non-canonical)</p></div>
 <p class="orv_line">That was something I also thought about often.</p>
-<div class="orv_system"><p>[Character, 'Master of the Sunken Island's' Story is violently shaking!]</p></div>
+<div class="orv_system"><p>Character, 'Master of the Sunken Island's' Story is violently shaking!</p></div>
 <p class="orv_line">I didn't miss this opening and continued to fire my salvo like a machine gun. I spat out the events of the 999th turn that I remembered without a shred of hesitation. "Have you forgotten everything that Yoo Joonghyuk taught you back then? Let the ones surrendering early go! Those who scheme behind your back are usually the smart ones! We're short on manpower, so we need to utilise even such people, too!"</p>
 <p class="orv_line">Lee Jihye's jaw fell as she watched me from the side. She must've had no clue that I'd come out and persuade our enemy in this manner. Didn't really matter if they slagged me off for being a coward as I simply had no choice. I had to resort to stimulating the memories from the original novel since buying time was the utmost priority for us. I didn't have any guarantee that this method would work, anyway.</p>
 <div class="orv_outergod"><p>【Fire.】</p></div>
@@ -289,32 +296,32 @@
 <p class="orv_line">Although the firepower this time was weaker, the destructive power behind the attack was still too much for us to meet it head-on. The only saving grace was that, rather than 'one big shot', the attack was in the form of scattered rounds, instead.</p>
 <p class="orv_line">I watched the shells cross the vast ocean and bit my lips, hard. "Hyunsung-ssi!"</p>
 <p class="orv_line">"…I'm not finished with my preparations!"</p>
-<p class="orv_line">Was it because he had to lend the [Story metal] to our companions, too? Lee Hyunsung's magical energy recovery rate was extremely slow. The forged steel covering the vessel was only about half compared to before.</p>
-<p class="orv_line">Meaning, we need to withstand this 'turn' without the help from the [Steel Transformation].</p>
-<p class="orv_line">The [Turtle Dragon] began retreating with every ounce of energy in order to dodge the scattered shells. However, Lee Jihye moved in contrast to the ship's direction and stood in front to protect both Lee Hyunsung and me.</p>
+<p class="orv_line">Was it because he had to lend the <strong>[Story metal]</strong> to our companions, too? Lee Hyunsung's magical energy recovery rate was extremely slow. The forged steel covering the vessel was only about half compared to before.</p>
+<p class="orv_line">Meaning, we need to withstand this 'turn' without the help from the <strong>[Steel Transformation]</strong>.</p>
+<p class="orv_line">The <strong>[Turtle Dragon]</strong> began retreating with every ounce of energy in order to dodge the scattered shells. However, Lee Jihye moved in contrast to the ship's direction and stood in front to protect both Lee Hyunsung and me.</p>
 <p class="orv_line">"Ahjussis, stand behind me. I'll do whatever I can about this."</p>
 <p class="orv_line">Her unexpected words made me take another look at her. With an unfamiliar light in her eyes, she was studying the frontline.</p>
 <p class="orv_line">"This fight… It's my fight."</p>
 <p class="orv_line">I didn't know what made her move, but one thing's for certain – Lee Jihye had chosen her battlefield.</p>
 <p class="orv_line">"I don't know what the hell this 999th turn is nor what happened in that place. However, if there is another 'me' trying to destroy this world with the pretext of tragedy from another regression turn…" Ghostly flames burned fiercely within her eyes after she had made up her mind. "I will never forgive another 'me'."</p>
-<div class="orv_system"><p>[Constellation, 'Maritime War God', is unleashing his Status!]</p></div>
+<div class="orv_system"><p>Constellation, 'Maritime War God', is unleashing his Status!</p></div>
 <p class="orv_line">I quietly stared at her.</p>
 <p class="orv_line">The oceans were the most optimal battlefield for her.</p>
 <p class="orv_line">The only things I could trust right now were Lee Jihye and her battleship.</p>
-<div class="orv_system"><p>[Nebula &lt;Kim Dokja's Company&gt;'s Probability is permeating within the Incarnation, 'Lee Jihye'!]</p></div>
+<div class="orv_system"><p>Nebula &lt;Kim Dokja's Company&gt;'s Probability is permeating within the Incarnation, 'Lee Jihye'!</p></div>
 <p class="orv_line">The Giant Stories I possessed poured in all of their Status into her. Blinding golden aura enveloped her body.</p>
 <p class="orv_line">She opened her eyes wide, before smiling refreshingly at me. "Thanks, ahjussi."</p>
 <p class="orv_line">Lee Jihye's battleship dashed forward.</p>
-<p class="orv_line">The [Turtle Dragon] evaded the arcs of the incoming scattered shells and spat out flames from its figurehead.</p>
+<p class="orv_line">The <strong>[Turtle Dragon]</strong> evaded the arcs of the incoming scattered shells and spat out flames from its figurehead.</p>
 <p class="orv_line">"All troops, advance!"</p>
-<div class="orv_system"><p>[Giant Story, 'Torch that Swallowed the Myth', has begun talking a big game!]</p></div>
+<div class="orv_system"><p>Giant Story, 'Torch that Swallowed the Myth', has begun talking a big game!</p></div>
 <p class="orv_line">The flames spat out by the small dragon figurehead collided with the shell fired from the other side and evaporated. The history we lived together became the Story and was colliding against the 999th turn's Story.</p>
-<div class="orv_system"><p>[Giant Story, 'Demon Realm's Spring', is aiding the Incarnation 'Lee Jihye'.]</p></div>
-<div class="orv_system"><p>[Giant Story, 'Season of Light and Darkness', has begun its storytelling!]</p></div>
+<div class="orv_system"><p>Giant Story, 'Demon Realm's Spring', is aiding the Incarnation 'Lee Jihye'.</p></div>
+<div class="orv_system"><p>Giant Story, 'Season of Light and Darkness', has begun its storytelling!</p></div>
 <p class="orv_line">If one looked at the destructive power of Giant Stories alone, then our side shouldn't get pushed around by your run-of-the-mill Nebulas.</p>
-<div class="orv_system"><p>[Constellation, 'Maritime War God', has ceded his command to his Incarnation.]</p></div>
-<div class="orv_system"><p>[Character 'Lee Jihye' is activating 'Ghost Fleet Lv.???'!]</p></div>
-<p class="orv_line">Her speciality, the Ghost Fleet, finally revealed themselves above the great ocean's waters. Each of these vessels had grown past the size of a cruiser and were now almost reaching that of an aircraft carrier. They escorted the [Turtle Dragon] and spat out flames in synch with each other.</p>
+<div class="orv_system"><p>Constellation, 'Maritime War God', has ceded his command to his Incarnation.</p></div>
+<div class="orv_system"><p>Character 'Lee Jihye' is activating 'Ghost Fleet Lv.???'!</p></div>
+<p class="orv_line">Her speciality, the Ghost Fleet, finally revealed themselves above the great ocean's waters. Each of these vessels had grown past the size of a cruiser and were now almost reaching that of an aircraft carrier. They escorted the <strong>[Turtle Dragon]</strong> and spat out flames in synch with each other.</p>
 <p class="orv_line">"Load the cannons!"</p>
 <p class="orv_line">Lee Jihye's Ghost Fleet started their speedy forward march. Unfortunately, that side started firing first.</p>
 <p class="orv_line">Waves of flames rushed in over the vast expanse of the ocean. The fleet headed straight into the wave. The gigantic wall of water blocked our front, but her eyes were focused only on a single point.</p>
@@ -326,18 +333,18 @@
 <p class="orv_line">Lee Jihye's eyes emitting chilling glow were still fixed on one point. On a certain battleship waiting beyond the thick wall of waves.</p>
 <div class="orv_outergod"><p>【Load the cannons.】</p></div>
 <p class="orv_line">"Load the cannons!"</p>
-<div class="orv_system"><p>[Constellation, 'Bald General of Justice', is cheering on the Incarnation, 'Lee Jihye'.]</p></div>
-<div class="orv_system"><p>[Constellation, 'King Heungmu', is cheering on the Incarnation, 'Lee Jihye'.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Joseon's First Sorcerer', is cheering on the Incarnation, 'Lee Jihye'.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Last Hero of Hwangsanbeol', is cheering on the Incarnation, 'Lee Jihye'.]</p></div>
-<div class="orv_system"><p>[Constellation, 'One-eyed Maitreya', is cheering on the Incarnation, 'Lee Jihye'.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Seo-Ae Single Stroke of Brush', is cheering on the Incarnation, 'Lee Jihye'.]</p></div>
+<div class="orv_system"><p>Constellation, 'Bald General of Justice', is cheering on the Incarnation, 'Lee Jihye'.</p></div>
+<div class="orv_system"><p>Constellation, 'King Heungmu', is cheering on the Incarnation, 'Lee Jihye'.</p></div>
+<div class="orv_system"><p>Constellation, 'Joseon's First Sorcerer', is cheering on the Incarnation, 'Lee Jihye'.</p></div>
+<div class="orv_system"><p>Constellation, 'Last Hero of Hwangsanbeol', is cheering on the Incarnation, 'Lee Jihye'.</p></div>
+<div class="orv_system"><p>Constellation, 'One-eyed Maitreya', is cheering on the Incarnation, 'Lee Jihye'.</p></div>
+<div class="orv_system"><p>Constellation, 'Seo-Ae Single Stroke of Brush', is cheering on the Incarnation, 'Lee Jihye'.</p></div>
 <p class="orv_line">The Korean Peninsula's Constellations were now looking at her.</p>
 <p class="orv_line">While watching her pierce her way through this overwhelmingly disadvantageous combat situation, I began recalling a certain page from the now-ancient original novel.</p>
-<div class="orv_system"><p>[Character 'Lee Jihye's' attribute evolution is imminent!]</p></div>
+<div class="orv_system"><p>Character 'Lee Jihye's' attribute evolution is imminent!</p></div>
 <p class="orv_line">Her final attribute evolution, something she also experienced during the original, was about to occur right before my eyes. Such a thing was possible only because of the current situation.</p>
 <p class="orv_line">The Probabilities lent to her by the Korean Peninsula's Constellations, her own Story that she had accumulated with abnormal speed, and finally, Lee Jihye's determination to even risk death all combined to create this miracle.</p>
-<div class="orv_system"><p>[Constellation, 'Maritime War God', is looking at his Incarnation.]</p></div>
+<div class="orv_system"><p>Constellation, 'Maritime War God', is looking at his Incarnation.</p></div>
 <p class="orv_line">From the distant skies, Lee Jihye's Sponsor, the 'Maritime War God', was looking down at her. He was the Constellation that protected and advised her for the longest time.</p>
 <p class="orv_line">I knew what he was thinking right now; I could sense it, because I was also a star like him. He was currently experiencing an event that only the smallest number of Constellations would ever encounter.</p>
 <p class="orv_line">⸢The event of an Incarnation exceeding the Status of her Sponsor.⸥</p>
@@ -345,10 +352,10 @@
 <p class="orv_line">⸢And so – the oceans desired one Monarch to rule over the violent storms.⸥</p>
 <p class="orv_line">The Maritime War God recited the Story as if he was sending the congratulatory message to a young bird taking to the skies for the first time.</p>
 <p class="orv_line">⸢Therefore, there is no need for two Monarchs in this great ocean.⸥</p>
-<div class="orv_system"><p>[Character 'Lee Jihye's' attribute is evolving!]</p></div>
-<div class="orv_system"><p>[Character 'Lee Jihye' has acquired the legendary-grade attribute!]</p></div>
+<div class="orv_system"><p>Character 'Lee Jihye's' attribute is evolving!</p></div>
+<div class="orv_system"><p>Character 'Lee Jihye' has acquired the legendary-grade attribute!</p></div>
 <p class="orv_line">Finally, the wounded Sword Demon was advancing towards her own ocean.</p>
-<div class="orv_system"><p>[Character 'Lee Jihye's' attribute has evolved to the 'Monarch of the Great Sea'!]</p></div>
+<div class="orv_system"><p>Character 'Lee Jihye's' attribute has evolved to the 'Monarch of the Great Sea'!</p></div>
 <div class="orv_outergod"><p>【Fire.】</p></div>
 <p class="orv_line">"Fire!!"</p>
 <p class="orv_line">As the ear-deafening cannon firing resounded out, everything before our eyes was enveloped by the blinding flash of light.</p>
@@ -359,18 +366,12 @@
             <a href="./ch_469"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_471">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="470" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="523" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="469" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="469" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

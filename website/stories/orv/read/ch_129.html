@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 129: Ep. 25 - Those Who Face a God, III</title>
     <meta property="og:title" content="Ch 129: Ep. 25 - Those Who Face a God, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00129.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 129: Ep. 25 - Those Who Face a God, III</h1></div>
 <p class="orv_line">Veronica's high walls. Giants filled the plains below the highlands. They were once humans but were now disasters. Gong Pildu roared as all the turrets on the castle fired. "Damn bastards. This is my land!"</p>
@@ -219,8 +226,8 @@
 <p class="orv_line">There were Gong Pildu's guns and Lee Hyunsung's Great Mountain Smash that dealt effective blows to the disasters. The large number of insects and monsters also bought time.</p>
 <p class="orv_line">At this rate, they might be able to protect the castle. This was what Lee Jihye thought until black clouds covered the horizon.</p>
 <p class="orv_line">"What is that?" Lee Jihye doubted her eyes.</p>
-<div class="orv_system"><p>[The king of disasters has received the scenario buff effect.]</p></div>
-<div class="orv_system"><p>[Some of the probability constraints on the constellation 'Sovereign of Eight Heads' has been lifted.]</p></div>
+<div class="orv_system"><p>The king of disasters has received the scenario buff effect.</p></div>
+<div class="orv_system"><p>Some of the probability constraints on the constellation 'Sovereign of Eight Heads' has been lifted.</p></div>
 <p class="orv_line">"Crazy, how do we defeat that?"</p>
 <p class="orv_line">Something the size of a huge fortress was coming this way. There were eight heads and a tail.</p>
 <p class="orv_line">'Ahjussi! Come quickly!'</p>
@@ -241,7 +248,7 @@
 <p class="orv_line">In the original work, a number of Korean incarnations also chose to be a disaster. This was probably a normal choice for ordinary humans. Han Sooyoung also agreed.</p>
 <p class="orv_line">"To put it bluntly, I didn't choose to be a small person. Kim Dokja's goal also isn't to protect the small people."</p>
 <p class="orv_line">Han Sooyoung's words were sharp.</p>
-<div class="orv_system"><p>[The small planet's constellation is looking at you with hurt eyes.]</p></div>
+<div class="orv_system"><p>The small planet's constellation is looking at you with hurt eyes.</p></div>
 <p class="orv_line">It didn't matter if it was for the sake of the small people or the disasters. In the end, the fight here was a spectacle.</p>
 <p class="orv_line">People became immersed in their role and forgot this fact. They sold their lives to make money. Then that money would be used to buy other stories. Maybe humans always lived this way.</p>
 <p class="orv_line">Then a huge aura rose from the rocky area. It was quite far away but I could feel the formidable aura from here.</p>
@@ -262,7 +269,7 @@
 <p class="orv_line">"I got the impression that Kyrgios liked Dokja-ssi."</p>
 <p class="orv_line">"…Huh?"</p>
 <p class="orv_line">"Kyrgios acts angry when he likes someone.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is listening.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is listening.</p></div>
 <p class="orv_line">That reminded me, Kyrgios treated me quite well despite me not having talent. Despite all the times he swore at me…</p>
 <p class="orv_line">"Dokja-ssi."</p>
 <p class="orv_line">I looked back at Ren's words and my expression stiffened along with the two women. Dark smoke was rising from the place where I was looking. It was in the direction of Veronica Castle. We glanced at each other and started running.</p>
@@ -282,8 +289,8 @@
 <p class="orv_line">The flesh of the small person was sucked into the mouth of the red snake. Nobody was able to stop it. All the small people, including my party members, stood like hardened mannequins and watched the scene.</p>
 <p class="orv_line">I belatedly realized. It wasn't because my party members fought hard that they were unharmed. The gunfire continued but it was resignation, not killing intent that filled Gong Pildu's face. It was the same for Lee Hyunsung, Lee Jihye and the others. The reason they were still alive because they were meals for the narrative-grade constellation.</p>
 <p class="orv_line">Every time the mouth of the snake opened, a few small people would disappear.</p>
-<div class="orv_system"><p>[The small planet's constellation is struggling with pain.]</p></div>
-<div class="orv_system"><p>[The small planet's constellation is screaming.]</p></div>
+<div class="orv_system"><p>The small planet's constellation is struggling with pain.</p></div>
+<div class="orv_system"><p>The small planet's constellation is screaming.</p></div>
 <p class="orv_line">Han Sooyoung muttered. "Shit… what the hell is this?"</p>
 <p class="orv_line">One of Japan's three great villains, the father of Shutendoji, a flood control mythical monster. That monster was the 'Sovereign of Eight Heads', Yamata no Orochi. Maybe I would be torn apart by his teeth if I fought against him.</p>
 <p class="orv_line">"D-Don't fight. We absolutely can't win." Asuka Ren mumbled and the entranced Han Sooyoung grabbed me.</p>
@@ -301,12 +308,12 @@
 <p class="orv_line">Yes, why did he always show up late? I smiled at him. "You are late, Yoo Joonghyuk."</p>
 <p class="orv_line">He had become a small person like me but I felt a strong energy from Yoo Joonghyuk. This person was holding a violet and glossy ornamental knife. As expected, he obtained the knife.</p>
 <p class="orv_line">We stared at each other without speaking before simultaneously turning towards the disaster.</p>
-<div class="orv_system"><p>[The constellation 'Sovereign of Eight Heads' wants your blood.]</p></div>
+<div class="orv_system"><p>The constellation 'Sovereign of Eight Heads' wants your blood.</p></div>
 <p class="orv_line">Yamata no Orochi mealtime has been interrupted and his body started to swell up.</p>
 <p class="orv_line">"Stay away Kim Dokja. I will catch this guy."</p>
 <p class="orv_line">"No, not this time."</p>
 <p class="orv_line">I stepped towards Yoo Joonghyuk.</p>
-<div class="orv_system"><p>[The exclusive skill 'Bookmark' can now be activated.]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Bookmark' can now be activated.</p></div>
 <p class="orv_line">I felt the strong energy seething in my heart.</p>
 <p class="orv_line">"This time I have to catch him."</p>
 <p class="orv_line">In this scenario, I would break the principle of no killing that I had been maintaining.</p>
@@ -317,18 +324,12 @@
             <a href="./ch_128"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_130">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="129" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="416" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="128" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="128" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

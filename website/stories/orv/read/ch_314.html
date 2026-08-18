@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 314: Ep. 59 - Kim Dokja's Company, V</title>
     <meta property="og:title" content="Ch 314: Ep. 59 - Kim Dokja's Company, V" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,39 +177,39 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00314.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 314: Ep. 59 - Kim Dokja's Company, V</h1></div>
 <p class="orv_line">Along with the message, the swirling of the portal quickly subsided. The party members waiting were confused. Jung Heewon was the one who raised the question first. "…Entry was refused? What is this?"</p>
 <p class="orv_line">I once again called out the destination.</p>
-<div class="orv_system"><p>[Olympus is currently refusing all visitors.]</p></div>
-<div class="orv_system"><p>[The Olympus scenario will open after seven days.]</p></div>
+<div class="orv_system"><p>Olympus is currently refusing all visitors.</p></div>
+<div class="orv_system"><p>The Olympus scenario will open after seven days.</p></div>
 <p class="orv_line">After seven days? At this point, something flashed in my mind.</p>
-<div class="orv_constellation"><p>[A small nebula is quite ambitious, actually thinking about going to Olympus.]</p></div>
+<div class="orv_constellation"><p>A small nebula is quite ambitious, actually thinking about going to Olympus.</p></div>
 <p class="orv_line">The true voice came from a constellation sitting at the fountain next to the portal. Based on his calm but violent pressure, he was a warrior who had struggled for a long time before becoming a constellation. His body was bigger than Lee Hyunsung and there was a long spear on his back… wait, a spear?</p>
-<div class="orv_constellation"><p>[Hrmm, your impressions are familiar… where did you come from?]</p></div>
+<div class="orv_constellation"><p>Hrmm, your impressions are familiar… where did you come from?</p></div>
 <p class="orv_line">I replied on behalf of the party members. "Earth."</p>
-<div class="orv_constellation"><p>[Hoh, I'm from there. It's a pleasure. Where on Earth? Is it on the continent side?]</p></div>
+<div class="orv_constellation"><p>Hoh, I'm from there. It's a pleasure. Where on Earth? Is it on the continent side?</p></div>
 <p class="orv_line">"The Korean Peninsula."</p>
-<div class="orv_constellation"><p>["Neighbourhood friends! There seem to be some decent ones there.]</p></div>
+<div class="orv_constellation"><p>"Neighbourhood friends! There seem to be some decent ones there.</p></div>
 <p class="orv_line">I became more convinced after hearing the constellation's easy laugh. A large one-handed spear resembling the head of a snake…</p>
 <p class="orv_line">The man rose from the fountain with a grunt and walked away. Han Sooyoung came to be side and said, "Hey, that constellation? The battle of Changban?"</p>
 <p class="orv_line">"That's right."</p>
@@ -212,8 +219,8 @@
 <p class="orv_line">I could see the status of the Three Kingdoms in South Korea. Even Lee Hyunsung was flustered as he hurriedly took out a soldier's handbook. "Excuse me Dokja-ssi. I'm a big fan of the Three Kingdoms. Can I get his autograph…"</p>
 <p class="orv_line">"You will often experience this in the future. Many of the historical figures we know have become constellations."</p>
 <p class="orv_line">I looked around the square with the party members. The previously quiet square was already crowded with constellations and incarnations.</p>
-<div class="orv_constellation"><p>[Recruiting participants for the 53rd scenario!]</p></div>
-<div class="orv_constellation"><p>[Looking for an incarnation to be a tanker to obtain the story.]</p></div>
+<div class="orv_constellation"><p>Recruiting participants for the 53rd scenario!</p></div>
+<div class="orv_constellation"><p>Looking for an incarnation to be a tanker to obtain the story.</p></div>
 <p class="orv_line">Crude true voices were heard from all over the place. It was possible to build up full-fledged stories after the 47th scenario. Therefore, historical-grade constellations would often organize small parties to target the scenario. Jung Heewon spoke like she couldn't believe these beings had sponsored us so far.</p>
 <p class="orv_line">"All of a sudden, the dignity of the constellations has fallen off."</p>
 <p class="orv_line">"In fact, most of them are low-grade. They haven't fallen. It is just that our status has risen."</p>
@@ -258,11 +265,11 @@
 <br>
 <p class="orv_line">After a while, I took Jung Heewon to a department store. It was one of the branches of the Dokkaebi Mart in the Context of the Constellations city.</p>
 <p class="orv_line">The moment we entered, a large dokkaebi blocked our way.</p>
-<div class="orv_constellation"><p>[I'm sorry but only platinum members can enter.]</p></div>
+<div class="orv_constellation"><p>I'm sorry but only platinum members can enter.</p></div>
 <p class="orv_line">Perhaps it was due to our shabby appearance but there was slight contempt in the dokkaebi's eyes. Rather than arguing, I opened the Dokkaebi Bag to confirm my rating.</p>
-<div class="orv_constellation"><p>[A diamond member?]</p></div>
+<div class="orv_constellation"><p>A diamond member?</p></div>
 <p class="orv_line">The flustered dokkaebi compared my modifier to the list of customers and his eyes widened.</p>
-<div class="orv_constellation"><p>[I-I'm really sorry! Is this your first visit to the store? Hey, call the manager and staff members! If there is any inconvenience in your shopping―]</p></div>
+<div class="orv_constellation"><p>I-I'm really sorry! Is this your first visit to the store? Hey, call the manager and staff members! If there is any inconvenience in your shopping―</p></div>
 <p class="orv_line">"There is no need. Don't call them because it is a hassle."</p>
 <p class="orv_line">I refused and passed the dokkaebi. Jung Heewon spoke in a thrilled manner. "Dokja-ssi is like a third-generation chaebol¹."</p>
 <div class="orv_notice"><p>[1] A Chaebol is a large industrial South Korean conglomerate run and controlled by an individual or family.</p></div>
@@ -289,32 +296,32 @@
 <p class="orv_line">The roof door opened and a panoramic view of the interstellar city could be seen. Jung Heewon gave a short exclamation of admiration but there was no time to admire it.</p>
 <p class="orv_line">I took Jung Heewon to the railing of the roof. "Do you trust me?"</p>
 <p class="orv_line">It was a short exchange. I jumped from the rooftop while holding Jung Heewon's hand. Despite falling down, Jung Heewon maintained her mind. By the time we were halfway to the ground, I glared at the air.</p>
-<div class="orv_system"><p>[The constellation 'Demon King of Salvation' is looking at the hidden portal.]</p></div>
-<div class="orv_system"><p>[The portal requires a password.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon King of Salvation' is looking at the hidden portal.</p></div>
+<div class="orv_system"><p>The portal requires a password.</p></div>
 <p class="orv_line">"Everything that falls down has wings."</p>
 <p class="orv_line">A portal appeared in the air and swallowed our bodies.</p>
-<div class="orv_system"><p>[The nebula has allowed your entry.]</p></div>
+<div class="orv_system"><p>The nebula has allowed your entry.</p></div>
 <p class="orv_line">I felt my feet touching the ground. The wind that gave off a seemingly primal breath grazed the tip of my nose. It was a clear wind I had never encountered before. An idyllic meadow stretched out endlessly and a white castle was built beyond it.</p>
 <p class="orv_line">Jung Heewon was making a stupid expression. "Dokja-ssi, don't tell me this place…"</p>
 <p class="orv_line">"Correct."</p>
 <p class="orv_line">This was the nebula of the mighty archangels. It was cumbersome to enter this way but it minimized the time required for entry. I looked up at the air and muttered, "They probably figured it out by now…"</p>
 <p class="orv_line">Then a cold alarm sounded in my head.</p>
-<div class="orv_constellation"><p>[…Demon king?]</p></div>
+<div class="orv_constellation"><p>…Demon king?</p></div>
 <p class="orv_line">It was an incredibly cruel voice for an archangel. It wasn't the voice I had been waiting for. It seemed that an unwelcome visitor had appeared.</p>
-<div class="orv_constellation"><p>[Your boldness has grown. How did a demon king come here?]</p></div>
+<div class="orv_constellation"><p>Your boldness has grown. How did a demon king come here?</p></div>
 <p class="orv_line">The power of the narrative-grade constellation caused the body to shrink back. Even the brave Jung Heewon had a pale complexion.</p>
-<div class="orv_system"><p>[The constellation 'Demon King of Salvation' is opening his 'status'.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon King of Salvation' is opening his 'status'.</p></div>
 <p class="orv_line">This allowed Jung Heewon to take a breath. I was about to look for the owner of the voice but a hand appeared in front of me and grabbed my chin.</p>
-<div class="orv_system"><p>[Demon King of Salvation?]</p></div>
+<div class="orv_system"><p>Demon King of Salvation?</p></div>
 <p class="orv_line">Only my chin was grabbed but it felt like power was slipping away from my body. The status was too enormous for me to withstand.</p>
-<div class="orv_constellation"><p>[How does a demon king have the modifier of salvation? There has only been one owner of that modifier in the past 1,500 years.]</p></div>
+<div class="orv_constellation"><p>How does a demon king have the modifier of salvation? There has only been one owner of that modifier in the past 1,500 years.</p></div>
 <p class="orv_line">I barely managed to turn my head and saw a blonde-haired man staring at me. They were slightly shining purple eyes. I instantly realized the identity of this constellation.</p>
-<div class="orv_system"><p>[The constellation 'Saviour of Corruption' is looking at you with crazy eyes.]</p></div>
+<div class="orv_system"><p>The constellation 'Saviour of Corruption' is looking at you with crazy eyes.</p></div>
 <p class="orv_line">There was only one existence in Eden with the modifier of both 'good and evil' and he was the strongest of all the archangels in Eden.</p>
 <p class="orv_line">…Dammit, it was the worst opponent. I couldn't believe he was in Eden right now. The purple eyes of the man curved like a crescent moon.</p>
-<div class="orv_constellation"><p>[I don't know what you are but I don't like sharing my modifier. Then you need to die.]</p></div>
+<div class="orv_constellation"><p>I don't know what you are but I don't like sharing my modifier. Then you need to die.</p></div>
 <p class="orv_line">The moment that the man's hand holding my chin glowed with a purple light…</p>
-<div class="orv_constellation"><p>[■■. Take off your hands, Michael. Unless you really want to go to hell.]</p></div>
+<div class="orv_constellation"><p>■■. Take off your hands, Michael. Unless you really want to go to hell.</p></div>
 <p class="orv_line">It was the voice of the archangel I had been waiting for.</p>
 <br>
 <hr>
@@ -323,18 +330,12 @@
             <a href="./ch_313"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_315">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="314" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="387" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="313" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="313" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

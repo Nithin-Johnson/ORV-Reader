@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 528: Epilogue 2 - Not found anywhere, III</title>
     <meta property="og:title" content="Ch 528: Epilogue 2 - Not found anywhere, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00528.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 528: Epilogue 2 - Not found anywhere, III</h1></div>
 <p class="orv_line">I could only stare at the buck-naked man in sheer stupefaction.</p>
@@ -198,34 +205,34 @@
 <p class="orv_line">"It seems that you are not the 《Big Brother》 But, how did you break past the Time Fall and enter here? Besides, what is this train? A subway… Is this yet another type of Tower of Nightmares? How does it even operate?"</p>
 <p class="orv_line">This guy, words were obviously not getting through to him.</p>
 <p class="orv_line">To think, he'd damage someone else's train and barge inside, only to start yapping on and on about his own stuff.</p>
-<p class="orv_line">I activated the [Omniscient Reader's Viewpoint] right away. And then, bore witness to a message I had never seen before.</p>
-<div class="orv_system"><p>[Applicable individual is a 'Character' from a worldview you are not familiar with.]</p></div>
+<p class="orv_line">I activated the <strong>[Omniscient Reader's Viewpoint]</strong> right away. And then, bore witness to a message I had never seen before.</p>
+<div class="orv_system"><p>Applicable individual is a 'Character' from a worldview you are not familiar with.</p></div>
 <p class="orv_line">…A 'Character' from a worldview I wasn't familiar with?</p>
 <p class="orv_line">Almost at the same time, bright light suddenly shone out from the naked man's eyes.</p>
-<div class="orv_system"><p>[Someone is activating a power not registered with the system!]</p></div>
+<div class="orv_system"><p>Someone is activating a power not registered with the system!</p></div>
 <p class="orv_line">Circular disks were vigorously spinning above his retinas.</p>
-<div class="orv_system"><p>[An existence of another dimension is spying on your true nature!]</p></div>
-<div class="orv_system"><p>[Warning! This power cannot be fully blocked by 'The Fourth Wall'!]</p></div>
+<div class="orv_system"><p>An existence of another dimension is spying on your true nature!</p></div>
+<div class="orv_system"><p>Warning! This power cannot be fully blocked by 'The Fourth Wall'!</p></div>
 <p class="orv_line">…Wha?</p>
 <p class="orv_line">Tsu-chuchuchut!</p>
 <p class="orv_line">Along with the sparks going wild in front of my eyes, all the Stories within me exploded forth as if to resist the opposition's power. The ones that reacted most viscerally were…</p>
-<div class="orv_system"><p>[Stigma 'Regression's' essence is writhing.]</p></div>
-<div class="orv_system"><p>[Story, 'Hell of Eternity', is baring its fangs!]</p></div>
+<div class="orv_system"><p>Stigma 'Regression's' essence is writhing.</p></div>
+<div class="orv_system"><p>Story, 'Hell of Eternity', is baring its fangs!</p></div>
 <p class="orv_line">In an instant, a portion of subway's interior transformed into the view of the hellish landscape Yoo Joonghyuk had lived through. The naked man looked at the world submerged in crimson hue and formed a stunned expression.</p>
 <p class="orv_line">"This 'inherent world' is… Could it be, you're a regressor?"</p>
 <p class="orv_line">…Inherent world?</p>
 <p class="orv_line">I was about to throw a tackle, saying that that sounded like what Kim Namwoon might say. But then, the man's black sword suddenly began quivering with hatred.</p>
 <p class="orv_line">"You are a bastard that turned his back on reality. So, die."</p>
 <p class="orv_line">Just as the chilling light permeating within his blade edge moved towards me…</p>
-<div class="orv_system"><p>[The train is re-entering its normal tracks.]</p></div>
-<div class="orv_system"><p>[The authority of the 'Oldest Dream' is activating!]</p></div>
-<div class="orv_system"><p>[The system is ejecting the foreign matter found within!]</p></div>
+<div class="orv_system"><p>The train is re-entering its normal tracks.</p></div>
+<div class="orv_system"><p>The authority of the 'Oldest Dream' is activating!</p></div>
+<div class="orv_system"><p>The system is ejecting the foreign matter found within!</p></div>
 <p class="orv_line">Along with the 'Shu-wuwuk!' noise, the man pointing his sword at me was rapidly sucked out towards the exit.</p>
 <p class="orv_line">"You dare!"</p>
 <p class="orv_line">However, he stabbed his sword into the exit and held on, resolutely enduring the train's acceleration.</p>
 <p class="orv_line">It was right at that moment that my body was transferred to another section of the subway.</p>
-<div class="orv_system"><p>[Emergency combat system is activating!]</p></div>
-<div class="orv_system"><p>[A portion of the subway used in the ejection will be discarded.]</p></div>
+<div class="orv_system"><p>Emergency combat system is activating!</p></div>
+<div class="orv_system"><p>A portion of the subway used in the ejection will be discarded.</p></div>
 <p class="orv_line">I looked back to discover the tail section of the train that naked man was clinging onto had separated from the rest and was now drifting away into the universe. And the furious man began dashing in my direction next.</p>
 <p class="orv_line">That figure of the man, with the muscles in his entire body ballooning up, gave me this sense of inexplicable terror.</p>
 <p class="orv_line">"Hurry up! That bastard is coming after us!"</p>
@@ -239,12 +246,12 @@
 <p class="orv_line">I momentarily doubted my own hearing.</p>
 <p class="orv_line">"How many years did you say?"</p>
 <p class="orv_line">⸢I al so don t kn ow exa ctly he exi sted be fore I was cre ated⸥</p>
-<p class="orv_line">That guy was older than [The Fourth Wall]? I was getting goosebumps just from the mere idea of that incredible length of time.</p>
+<p class="orv_line">That guy was older than <strong>[The Fourth Wall]</strong>? I was getting goosebumps just from the mere idea of that incredible length of time.</p>
 <p class="orv_line">Could a human being endure billions of years without going insane? …No, hang on a second. He didn't seem quite right in his head, actually.</p>
 <p class="orv_line">"Why was he trapped in there for billions of years, though?"</p>
 <p class="orv_line">⸢To des troy the sy stem of the uni ver se he bel ongs to⸥</p>
 <p class="orv_line">"We are not going to run into him again, are we?"</p>
-<p class="orv_line">Maybe [The Fourth Wall] was too tired, as there was no reply. It must've been busy fixing the damaged train.</p>
+<p class="orv_line">Maybe <strong>[The Fourth Wall]</strong> was too tired, as there was no reply. It must've been busy fixing the damaged train.</p>
 <p class="orv_line">I dusted my coat, the one where the sword belonging to a crazy bastard named Jae-Hwan had brushed past a moment earlier. Now that was truly a gob-smacking Stab, alright. No Constellation or Transcendent I've met so far would be able to perform such a powerful stabbing attack.</p>
 <p class="orv_line">Would billions of years leave a human in that wretched state?</p>
 <p class="orv_line">The restoration of the system must've been completed, as Stories from world-lines reappeared one by one on the train's windows. Yoo Joonghyuk from the 1st turn shooting a terrifying glare at the heavens was among them. I quietly glared back at him for a little while, but suddenly grew scared of something.</p>
@@ -293,28 +300,28 @@
 <p class="orv_line">"However, we don't know when the scenarios will begin again! What if Dokkaebis reappear in the world…!"</p>
 <p class="orv_line">Han Sooyoung grinned refreshingly. Since things had come down to this, she figured that this was for the better. "Did you mean someone like her, right?"</p>
 <p class="orv_line">Something resembling a huge hot-air balloon was floating in the location she was looking at. Reporters realizing the identity of that mysterious thing all screamed out in sheer terror.</p>
-<div class="orv_constellation"><p>[I am Biyoo, the Dokkaebi King of this world-line.]</p></div>
+<div class="orv_constellation"><p>I am Biyoo, the Dokkaebi King of this world-line.</p></div>
 <p class="orv_line">She sounded so forceful, as if the scenarios were starting again, reminding them of the starting point of the terror that brought forth the destruction of this world.</p>
 <p class="orv_line">Biyoo began chuckling as if she knew all about their fears.</p>
-<div class="orv_constellation"><p>[Those that were born will eventually be destroyed. However, this planet will be fine. As long as there is no nuclear warfare, it'll last for tens of thousands of years without a problem. Well, you'll still have to occasionally dodge a few wayward asteroids that might come flying in your way, though.]</p></div>
+<div class="orv_constellation"><p>Those that were born will eventually be destroyed. However, this planet will be fine. As long as there is no nuclear warfare, it'll last for tens of thousands of years without a problem. Well, you'll still have to occasionally dodge a few wayward asteroids that might come flying in your way, though.</p></div>
 <p class="orv_line">Having heard what the Dokkaebi was saying, the eyes of the reporters all went round from stupefaction.</p>
 <p class="orv_line">Unfortunately, the real thing hadn't been said yet.</p>
-<div class="orv_constellation"><p>[Your main scenario has indeed ended. However… I still have the authority to issue sub-scenarios.]</p></div>
+<div class="orv_constellation"><p>Your main scenario has indeed ended. However… I still have the authority to issue sub-scenarios.</p></div>
 <p class="orv_line">The complexions of the reporters grew deathly pale from the term 'sub-scenario'.</p>
 <p class="orv_line">"R-run away! That Dokkaebi, it's going to-!"</p>
 <p class="orv_line">And then, a message popped up before their eyes.</p>
-<div class="orv_system"><p>[A ne■w sub scen■ario has arr■ived!]</p></div>
+<div class="orv_system"><p>A ne■w sub scen■ario has arr■ived!</p></div>
 <p class="orv_line">The message window wasn't clear, perhaps due to the collapse of the Bureau. Even then, it wasn't hard to read its contents.</p>
-<div class="orv_constellation"><p>[You aren't forced to participate in this scenario. Only those who wish to will be accepted, and only the qualified volunteers will go through the careful screening.]</p></div>
-<div class="orv_system"><p>[Applicable sub-scenario is for voluntary participation.]</p></div>
-<div class="orv_constellation"><p>[Because &lt;Star Stream&gt; has been destroyed, I don't have any rewards to give you. However, if you help out &lt;Kim Dokja's Company&gt;…]</p></div>
+<div class="orv_constellation"><p>You aren't forced to participate in this scenario. Only those who wish to will be accepted, and only the qualified volunteers will go through the careful screening.</p></div>
+<div class="orv_system"><p>Applicable sub-scenario is for voluntary participation.</p></div>
+<div class="orv_constellation"><p>Because &lt;Star Stream&gt; has been destroyed, I don't have any rewards to give you. However, if you help out &lt;Kim Dokja's Company&gt;…</p></div>
 <p class="orv_line">Biyoo was smiling as if she was satisfied by her own appearance as seen in the display panel.</p>
-<div class="orv_constellation"><p>[At the very least, you'll get to relive those moments you've always regretted about.]</p></div>
+<div class="orv_constellation"><p>At the very least, you'll get to relive those moments you've always regretted about.</p></div>
 <br>
 <hr>
 <br>
 <p class="orv_line">And another week passed by since then.</p>
-<div class="orv_system"><p>[Sub scenario, 'Capture the Squid', has a new volunteer.]</p></div>
+<div class="orv_system"><p>Sub scenario, 'Capture the Squid', has a new volunteer.</p></div>
 <p class="orv_line">The people who managed to survive until the end of the scenarios. These people who had lost something precious to them had been gathering in Seoul one by one.</p>
 <p class="orv_line">Yoo Joonghyuk stared at the incoming waves of people and frowned deeply. "…There are too many. This might get a little difficult."</p>
 <p class="orv_line">"We gotta take as many as we can. That's the only way to save lots of people."</p>
@@ -342,7 +349,7 @@
 <p class="orv_line">"Even then, will you still choose to regress?"</p>
 <p class="orv_line">And this was also the final test to become a regressor.</p>
 <p class="orv_line">People who came here to become exactly that began exchanging glances. Some were scared off by the intimidation and stepped back, while some others, those that had been steeling themselves to what's to come, started taking deep breaths. And then, someone slowly stepped forward.</p>
-<p class="orv_line">It was Asuka Ren, the Japanese who fought together with &lt;Kim Dokja's Company&gt; back in the [Peace Land]. Also, someone who lost more companions than anyone here.</p>
+<p class="orv_line">It was Asuka Ren, the Japanese who fought together with &lt;Kim Dokja's Company&gt; back in the <strong>[Peace Land]</strong>. Also, someone who lost more companions than anyone here.</p>
 <p class="orv_line">"I know that no matter what I do, it still won't bring back all those that I've lost. However, if I regress…" She gripped her katana tightly, raised her head, and spoke up. "At a bare minimum, I might be able to save that world-line."</p>
 <p class="orv_line">And then, people began standing next to her one by one.</p>
 <p class="orv_line">"I don't care if my pain is meaningless. Even if everything was an illusion."</p>
@@ -375,18 +382,12 @@
             <a href="./ch_527"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_529">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="528" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="578" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="527" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="527" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 421: Ep. 79 - The Secretive Plotter, VI</title>
     <meta property="og:title" content="Ch 421: Ep. 79 - The Secretive Plotter, VI" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,34 +177,34 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00421.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 421: Ep. 79 - The Secretive Plotter, VI</h1></div>
 <p class="orv_line">This was a book written by the 'Recorder of Fear'.</p>
 <p class="orv_line">The 'Recorders of Fear' – the very first humans to encounter the Outer Gods, and the writers who also spread the word on their existences.</p>
-<div class="orv_system"><p>[Exclusive skill, 'Reading Comprehension', is activating!]</p></div>
-<div class="orv_system"><p>[Exclusive Attribute, 'Scenario Interpreter', is activating!]</p></div>
+<div class="orv_system"><p>Exclusive skill, 'Reading Comprehension', is activating!</p></div>
+<div class="orv_system"><p>Exclusive Attribute, 'Scenario Interpreter', is activating!</p></div>
 <p class="orv_line">I couldn't help but feel my anticipation grow after seeing the book's title. To think, this would be a story regarding the 'Secretive Plotter' and the 'Oldest Dream'.</p>
 <p class="orv_line">The Plotter often brought up this 'Oldest Dream', so I hoped that this could be an important opportunity to learn more about that 'thing'.</p>
-<p class="orv_line">I didn't even notice that [999] had disappeared by then, all my being focused on reading this book.</p>
+<p class="orv_line">I didn't even notice that <strong>[999]</strong> had disappeared by then, all my being focused on reading this book.</p>
 <br>
 <hr>
 <br>
@@ -208,7 +215,7 @@
 <p class="orv_line">I had no idea who wrote it, but if this book got published in the various platforms of the 21st century, then I was sure of it tanking as badly as the 'Ways of Survival'.</p>
 <p class="orv_line">Not only was it boring, it was also quite a hard read, too.</p>
 <p class="orv_line">"…Just what on earth was it even talking about?"</p>
-<p class="orv_line">However, there was this one thing that I did understand. Which was, there were five great 'Outer Gods' in the expansive [Great Hole].</p>
+<p class="orv_line">However, there was this one thing that I did understand. Which was, there were five great 'Outer Gods' in the expansive <strong>[Great Hole]</strong>.</p>
 <p class="orv_line">⸢The 'Living Flame' that rises up from the east.⸥</p>
 <p class="orv_line">⸢The 'Master of the Sunken Island', the calamity of the world in the west.⸥</p>
 <p class="orv_line">⸢The 'Monarch of the Great Abyss', the ruler of the northern universe.⸥</p>
@@ -217,7 +224,7 @@
 <p class="orv_line">"…This set-up is even cooler than the Ways of Survival."</p>
 <p class="orv_line">In the context of the things so far, this 'Great Plotter' moniker seemed to signify the 'Secretive Plotter'. Actually, there were several interesting parts among the texts related to the Plotter himself.</p>
 <p class="orv_line">⸢A few Recorders of Fear who had encountered the 'Great Plotter' came to learn that he was searching for the 'Oldest Dream'… (Omitted)… Those lucky Recorders were able to ask the Great Plotter about the identity of the 'Oldest Dream'.⸥</p>
-<p class="orv_line">⸢[It is the beginning of this universe and the master of the gigantic cogwheel. My oldest mortal enemy and my parent. And the one who decides the end of everything.]⸥</p>
+<p class="orv_line">⸢<strong>[It is the beginning of this universe and the master of the gigantic cogwheel. My oldest mortal enemy and my parent. And the one who decides the end of everything.]</strong>⸥</p>
 <p class="orv_line">⸢The few Recorders of Fear managed to see the Great Plotter's expression the moment those words were spoken, and they fainted right away. After waking up, they could no longer remember who they were anymore.⸥</p>
 <p class="orv_line">…Records written by a bunch of people who couldn't even remember themselves? Was that why the author of this book was simply stated as a 'Recorder of Fear', instead?</p>
 <p class="orv_line">I wanted to read more about either the 'Great Plotter' or the 'Oldest Dream', but the majority of the book didn't contain records of those two, but rather, a collection of boring anecdotes related to the general overview of the 'Outer Gods', instead.</p>
@@ -233,7 +240,7 @@
 <p class="orv_line">'If the author wanted to convey a message, then he should've written it in a way that others could understand'.</p>
 <p class="orv_line">⸢It's written with the idea that 'Those who can't understand it, will not'.)⸥</p>
 <p class="orv_line">'Pardon?'</p>
-<p class="orv_line">I thought I heard a light sigh, and then tiny sparks danced in front of my eyes. The power leaking out from [The Fourth Wall] flipped through the pages of the book and began extracting several paragraphs.</p>
+<p class="orv_line">I thought I heard a light sigh, and then tiny sparks danced in front of my eyes. The power leaking out from <strong>[The Fourth Wall]</strong> flipped through the pages of the book and began extracting several paragraphs.</p>
 <p class="orv_line">And once those seemingly disparate paragraphs, taken from different short stories, were connected, they formed the following lines of texts.</p>
 <p class="orv_line">⸢Emotions, passed down from the distant, remote universe. That is the flow of the ancient times that this writer could never follow after. We were terrified.⸥</p>
 <p class="orv_line">⸢They were like monsters from a universe we couldn't recognise.⸥</p>
@@ -260,26 +267,26 @@
 <p class="orv_line">Now that I took a closer look, their movements seemed to be rather graceful, too.</p>
 <p class="orv_line">⸢(Only those who reach out can discover the truth.)⸥</p>
 <p class="orv_line">Maybe, there was no need for me to read that book from the get-go. Well, 'Outer Gods' were everywhere in this place, weren't they.</p>
-<p class="orv_line">I sneakily observed my surroundings for a bit, before activating [Miniaturisation] to slip outside the window.</p>
+<p class="orv_line">I sneakily observed my surroundings for a bit, before activating <strong>[Miniaturisation]</strong> to slip outside the window.</p>
 <p class="orv_line">I floated up and approached one of the 'Outer Gods'. It also extended its tentacle towards me. I didn't sense hostility behind that action.</p>
 <p class="orv_line">⸢I d on't car e if yo u reg ret it.⸥</p>
-<p class="orv_line">Even after [The Fourth Wall] warned me, I still reached out towards that tentacle.</p>
+<p class="orv_line">Even after <strong>[The Fourth Wall]</strong> warned me, I still reached out towards that tentacle.</p>
 <p class="orv_line">I always regretted about something in my life. However, my regret over the things I hadn't done was way bigger than for those that I did do.</p>
-<div class="orv_system"><p>[Exclusive skill, 'Reading Comprehension', is activating!]</p></div>
+<div class="orv_system"><p>Exclusive skill, 'Reading Comprehension', is activating!</p></div>
 <p class="orv_line">The very last scenario of this &lt;Star Stream&gt; was a great war against the 'Outer Gods'. And through that war, the 'Outer Gods' would disappear from this world.</p>
 <p class="orv_line">They were the only creatures in the 'Ways of Survival' without any detailed explanation.</p>
 <p class="orv_line">I wanted to ask them. Ask them just where they came from.</p>
 <p class="orv_line">Ask them for what purpose they were fighting against the &lt;Star Stream&gt;.</p>
 <p class="orv_line">Not even once during the original story did the 'Outer Gods' reply to those questions. They only roared on, or spat out incomprehensible utterances and fought against the Constellations. That was all.</p>
 <p class="orv_line">Tsu-chuchuchuchu…</p>
-<div class="orv_system"><p>['The Fourth Wall' is warning you!]</p></div>
+<div class="orv_system"><p>'The Fourth Wall' is warning you!</p></div>
 <p class="orv_line">I grasped the Outer God's tentacle. As if it was responding to my touch, the tentacle wrapped around my hand like a tree's vine.</p>
 <p class="orv_line">The 'Recorder of Fear' said this.</p>
 <p class="orv_line">They said that the 'Outer Gods' were unfathomable, unexplainable existences. They said that no one knew where they came from or what their real identity was.</p>
 <p class="orv_line">They could be right. My current actions might be completely meaningless.</p>
 <p class="orv_line">We might end up fighting each other later, like how it was in the original storyline, and bring forth the wretched destruction and ruination to all.</p>
 <p class="orv_line">Suddenly, my surroundings seemed to be blanketed by a slow-moving melody. Under the brilliant sunlight, 'Outer Gods' were, one by one, bowing their heads in my direction.</p>
-<div class="orv_system"><p>[Story, 'One Who Is Loved by All', has begun its storytelling.]</p></div>
+<div class="orv_system"><p>Story, 'One Who Is Loved by All', has begun its storytelling.</p></div>
 <p class="orv_line">Tiny flowers began blooming on the vines created by the Outer Gods, as if they were giving me their precious hidden something. Fragrance wafted out from those flowers, soon becoming lyrics to a song. And afterwards, it formed a story.</p>
 <p class="orv_line">⸢"Captain."⸥</p>
 <p class="orv_line">It was a fragment of a very old memory.</p>
@@ -297,27 +304,27 @@
 <p class="orv_line">I understood what the 'Outer God' was, why Yoo Joonghyuk from the original story had to become one willingly.</p>
 <p class="orv_line">…And, why he had no choice but to become the 'Secretive Plotter'.</p>
 <p class="orv_line">The story of pain that went on for tens of thousands, hundreds, maybe even for millions of years. Stories discarded by the world-line and couldn't be acknowledged as 'Stories'. And the fragments of Stories that became the subconsciousness of the worlds, drifting around in the universe and ruminating on the ancient memories. Finally, the voices of those that were not saved.</p>
-<div class="orv_constellation"><p>[Oooooooohhhh…]</p></div>
+<div class="orv_constellation"><p>Oooooooohhhh…</p></div>
 <p class="orv_line">Branches of the 'Outer God' enveloping my surroundings like a garden began expanding. I couldn't take my eyes off these memories, even though it felt as if I'd asphyxiate from the crashing waves of them.</p>
 <p class="orv_line">⸢"Please, remember us."⸥</p>
 <p class="orv_line">I grabbed hold of the Stories crumbling away at my touch and began sobbing. These were simply far too precious. And I felt uncontrollable sorrow now that no one remembered them.</p>
 <p class="orv_line">I could neither understand or change this.</p>
 <p class="orv_line">All I could do, whether it was back then or now, was to simply 'read' them.</p>
 <p class="orv_line">'Outer Gods' began screeching out all at the same time.</p>
-<div class="orv_constellation"><p>[YouknowusYouknowusYouknowusYouknowus]</p></div>
-<div class="orv_constellation"><p>[WhoareyouWhoareyouWhoareyouWhoareyou]</p></div>
+<div class="orv_constellation"><p>YouknowusYouknowusYouknowusYouknowus</p></div>
+<div class="orv_constellation"><p>WhoareyouWhoareyouWhoareyouWhoareyou</p></div>
 <p class="orv_line">The vines began tightening around me. I heard sobbing noises coming from the Outer Gods. It sounded like they were happy. Or maybe, sad.</p>
 <p class="orv_line">It was the ancient cry resonating from the distant other side of the universe.</p>
 <p class="orv_line">⸢Tol d y ou not to do it.⸥</p>
 <p class="orv_line">Outer Gods rushing towards me soon formed a dense, impenetrable forest. Vines grew and grew, choking me harder and tighter as if to swallow me whole. As if, they wanted to accept me as one of them. As if, they wanted me to join them and stay forever.</p>
 <p class="orv_line">I somehow managed to regain my wits and struggled hard to get out of there while pushing the vines away. Unfortunately, the more I did that, the tighter their restrictions became.</p>
-<div class="orv_constellation"><p>[DON'T GO]</p></div>
-<div class="orv_constellation"><p>[HOW COME]</p></div>
+<div class="orv_constellation"><p>DON'T GO</p></div>
+<div class="orv_constellation"><p>HOW COME</p></div>
 <p class="orv_line">I couldn't afford to get devoured here.</p>
 <p class="orv_line">If I really wanted what's best for them, then I must not faint here.</p>
-<div class="orv_constellation"><p>[CAN'T GO]</p></div>
+<div class="orv_constellation"><p>CAN'T GO</p></div>
 <p class="orv_line">Even before I could unsheathe the Unbroken Faith, both of my arms were sealed off. Just as I was about to get helplessly dragged into the darkness of the vines, blinding rays of light split them apart.</p>
-<p class="orv_line">It was a mini [Splitting the Sky Sword], visible under the faint sunlight. I raised my head to find the kkoma Yoo Joonghyuk number [999] glaring at me.</p>
+<p class="orv_line">It was a mini <strong>[Splitting the Sky Sword]</strong>, visible under the faint sunlight. I raised my head to find the kkoma Yoo Joonghyuk number <strong>[999]</strong> glaring at me.</p>
 <p class="orv_line">"You bastard, what have you done?"</p>
 <br>
 <hr>
@@ -326,18 +333,12 @@
             <a href="./ch_420"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_422">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="421" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="744" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="420" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="420" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

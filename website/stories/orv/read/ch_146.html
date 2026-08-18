@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 146: Ep. 29 - Constellation Banquet, I</title>
     <meta property="og:title" content="Ch 146: Ep. 29 - Constellation Banquet, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00146.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 146: Ep. 29 - Constellation Banquet, I</h1></div>
 <p class="orv_line">Rain poured down on Gwanghwamun Square. The streets were near ruins thanks to the monsters. The collapsed media logos were broken and trampled on. The King Sejong the Great and Yi Sunsin statues that were the symbols of Gwanghwamun were completely destroyed.</p>
@@ -224,17 +231,17 @@
 <p class="orv_line">"Master can save ahjussi! Where is Seolhwa unni?"</p>
 <p class="orv_line">However, Yoo Joonghyuk wasn't here to hear the blame. Eventually, Lee Jihye also started crying. "Ahjussi…"</p>
 <p class="orv_line">They had to admit it, even if they didn't want to. Kim Dokja was dead and he wouldn't resurrect again.</p>
-<div class="orv_system"><p>[The new main scenario will start soon.]</p></div>
+<div class="orv_system"><p>The new main scenario will start soon.</p></div>
 <p class="orv_line">They now had to live in a world without Kim Dokja.</p>
 <br>
 <hr>
 <br>
-<div class="orv_quote"><p>「 They now had to live in a world without Kim Dokja. 」</p></div>
+<div class="orv_quote"><p>They now had to live in a world without Kim Dokja.</p></div>
 <p class="orv_line">If it was Ways of Survival then this sentence would've been written.</p>
 <p class="orv_line">"Well, don't mourn for me."</p>
 <p class="orv_line">I wanted to shout, but my voice didn't come out. It was because I was in a state where my vocal cords weren't formed. It was comforting to be able to observe the situation as a 'third-party observer' whenever my mental power was restored.</p>
 <p class="orv_line">It would be nice if I could use 'first person's viewpoint' but it wasn't working right now after being overloaded by Yoo Joonghyuk.</p>
-<div class="orv_system"><p>[Excessive immersion has restricted the use of 'first person viewpoint'.]</p></div>
+<div class="orv_system"><p>Excessive immersion has restricted the use of 'first person viewpoint'.</p></div>
 <p class="orv_line">The coffin was covered in dirt and some people shouted,</p>
 <p class="orv_line">"The Ugliest King!"</p>
 <p class="orv_line">Shit. Did the dokkaebis attach the nickname 'the Ugliest King' to me? It must be that bastard Bihyung.</p>
@@ -244,15 +251,15 @@
 <p class="orv_line">"Ahjussiiiii―!"</p>
 <p class="orv_line">She was normally a child who acted angrily towards me so I was touched. It would be a funny scene if I woke up in the coffin right now.</p>
 <p class="orv_line">However, I couldn't do that. It was because I was currently in the so-called 'cooldown' time.</p>
-<div class="orv_system"><p>[The privilege of 'Eight Lives' has been activated.]</p></div>
+<div class="orv_system"><p>The privilege of 'Eight Lives' has been activated.</p></div>
 <p class="orv_line">The resurrection itself was nothing to worry about. I had the attribute Eight Lives that I obtained from Peace Land after giving up King of No Killing. This attribute could be obtained only by drinking the soul and flesh of Yamata no Orochi, literally providing the person with eight lives.</p>
-<div class="orv_system"><p>[The first head of the snake has been sacrificed.]</p></div>
-<div class="orv_system"><p>[The power of this head is Wary Person.]</p></div>
+<div class="orv_system"><p>The first head of the snake has been sacrificed.</p></div>
+<div class="orv_system"><p>The power of this head is Wary Person.</p></div>
 <p class="orv_line">Different types of abilities slept in Yamata no Orochi's heads and after resurrection, I could get a blessing related to the ability. This wasn't bad at all. The problem was that unlike King of No Killing, there was a waiting time with this privilege.</p>
-<div class="orv_system"><p>[72 hours of waiting time are required before the resurrection.]</p></div>
-<div class="orv_system"><p>[Time remaining: 24:07:12]</p></div>
+<div class="orv_system"><p>72 hours of waiting time are required before the resurrection.</p></div>
+<div class="orv_system"><p>Time remaining: 24:07:12</p></div>
 <p class="orv_line">I still had one more day to go and it was time for the next scenario to start. I watched my funeral a bit more before changing my point of view. I couldn't resurrect yet so I felt sorry to watch it any longer.</p>
-<div class="orv_system"><p>[Changing the person observed with 'third person viewpoint'.]</p></div>
+<div class="orv_system"><p>Changing the person observed with 'third person viewpoint'.</p></div>
 <p class="orv_line">Then a new screen popped up. It was a basement with antique finishes. A man and woman were there.</p>
 <p class="orv_line">"…Yoo Joonghyuk-ssi?" The woman was naturally Yoo Sangah. Needless to say, it was Yoo Joonghyuk who released her from where she had been tied up. It was the last favour I asked before leaving his body.</p>
 <p class="orv_line">Yoo Sangah asked, "What happened to Dokja-ssi?"</p>
@@ -268,8 +275,8 @@
 <p class="orv_line">The remark surprised me. This bastard, why was he doing something I didn't ask him to do? Yoo Sangah's face changed at the world 'family member'. She seemed to have something urgent to say.</p>
 <p class="orv_line">"His mother is…"</p>
 <p class="orv_line">Unfortunately, at this moment, the screen was turned off and a message was heard.</p>
-<div class="orv_system"><p>[Your mental power is exhausted.]</p></div>
-<div class="orv_system"><p>[Exclusive skill, Omniscient Reader's Viewpoint stage 3 has been turned off.]</p></div>
+<div class="orv_system"><p>Your mental power is exhausted.</p></div>
+<div class="orv_system"><p>Exclusive skill, Omniscient Reader's Viewpoint stage 3 has been turned off.</p></div>
 <p class="orv_line">This was the bad thing about a soul body. The recovery of exhausted mental power was slow. It was natural since there wasn't a physical body. A soul without a body was like a battery that lost one electrode. The longer the period without a body, the more exhausted the mind became. It was the reason why ghosts went crazy.</p>
 <p class="orv_line">'Did Nirvana kill my mother?'</p>
 <p class="orv_line">I had to keep asking questions in order to keep from going crazy.</p>
@@ -278,36 +285,36 @@
 <p class="orv_line">However, there were the last words that Nirvana spoke. He said that my mother had a secret she kept from me. A secret that my mother was hiding from me? I couldn't get a grip of it at all, no matter how hard I thought.</p>
 <p class="orv_line">…I didn't know. No, maybe I didn't want to know.</p>
 <p class="orv_line">Then an indirect message was heard.</p>
-<div class="orv_system"><p>[The constellation 'Master of Abydos' is calling your soul.]</p></div>
+<div class="orv_system"><p>The constellation 'Master of Abydos' is calling your soul.</p></div>
 <p class="orv_line">I hadn't heard any indirect messages for a while so I was a bit confused.</p>
 <p class="orv_line">…Master of Abydos? I pondered over the contents of Ways of Survival. If I remembered correctly, Abydos was the capital of Ancient Egypt.</p>
-<div class="orv_system"><p>[The nebula 'Papyrus' wants to offer you the 'story of resurrection'.]</p></div>
+<div class="orv_system"><p>The nebula 'Papyrus' wants to offer you the 'story of resurrection'.</p></div>
 <p class="orv_line">Oh, look at this? Papyrus was the nebula for Egyptian mythology.</p>
-<div class="orv_system"><p>[The constellation 'Scribe of Heaven' is calling your soul.]</p></div>
+<div class="orv_system"><p>The constellation 'Scribe of Heaven' is calling your soul.</p></div>
 <p class="orv_line">Eh? Metatron? As soon as I thought about it, the next message appeared.</p>
-<div class="orv_system"><p>[The nebula 'Eden' wants to lead you down Messiah's Path.]</p></div>
+<div class="orv_system"><p>The nebula 'Eden' wants to lead you down Messiah's Path.</p></div>
 <p class="orv_line">The story of resurrection, Messiah…?</p>
-<div class="orv_system"><p>[The constellation 'God of Wine and Ecstasy' wants to take you away from the lower constellations.]</p></div>
-<div class="orv_system"><p>[The nebula 'Olympus' will set the stage for you.]</p></div>
+<div class="orv_system"><p>The constellation 'God of Wine and Ecstasy' wants to take you away from the lower constellations.</p></div>
+<div class="orv_system"><p>The nebula 'Olympus' will set the stage for you.</p></div>
 <p class="orv_line">…What was this?</p>
-<div class="orv_system"><p>[The constellation 'Master of December 25th' is calling you.]</p></div>
-<div class="orv_system"><p>[The nebula 'Vedas' will present you with the 'holiday of resurrection'.]</p></div>
-<div class="orv_system"><p>[The constellation 'Flower Blossom of Seocheon Flower Fields¹' is calling your soul.]</p></div>
-<div class="orv_system"><p>[The nebula 'Tamna' wants you.]</p></div>
+<div class="orv_system"><p>The constellation 'Master of December 25th' is calling you.</p></div>
+<div class="orv_system"><p>The nebula 'Vedas' will present you with the 'holiday of resurrection'.</p></div>
+<div class="orv_system"><p>The constellation 'Flower Blossom of Seocheon Flower Fields¹' is calling your soul.</p></div>
+<div class="orv_system"><p>The nebula 'Tamna' wants you.</p></div>
 <p class="orv_line">From Indian mythology to Korean mythology? Many more indirect messages were pouring in. From huge nebulas to small nebulas, they all sent me love calls.</p>
 <p class="orv_line">I could tell what these constellations were thinking. They were trying to cover me with their myths?</p>
-<div class="orv_system"><p>[Some constellations are facing each other.]</p></div>
-<div class="orv_system"><p>[Some constellations are giving warnings not to steal someone else's myths.]</p></div>
+<div class="orv_system"><p>Some constellations are facing each other.</p></div>
+<div class="orv_system"><p>Some constellations are giving warnings not to steal someone else's myths.</p></div>
 <p class="orv_line">Dionysus, Mithra, Hallakgungi…</p>
 <p class="orv_line">The constellations calling me were all involved in resurrection.</p>
-<div class="orv_system"><p>[Constellations are having a battle of nerves over your resurrection.]</p></div>
+<div class="orv_system"><p>Constellations are having a battle of nerves over your resurrection.</p></div>
 <p class="orv_line">In other words, these guys were trying to step into my narrative. All stories were enhanced through being circulated. The more that humans told the story and passed them on, the stronger the influence of the stories.</p>
 <p class="orv_line">What if one day, the person called 'Kim Dokja' was resurrected after three days and shouted the following words,</p>
 <p class="orv_line">"I am Kim Dokja! I received the blessing of Christ!"</p>
 <p class="orv_line">It didn't matter if Christ was replaced by Dionysus, Mithra or someone else. People would be amazed and a myth would be reproduced on the spot.</p>
 <p class="orv_line">The amazed incarnations would spread the story and the power of the story would exceed imagination. As a result, the nebula related to the story would have more power to intervene in the probability.</p>
 <p class="orv_line">In other words, the nebula were in a frenzy because of this. I had the power to control the scenarios.</p>
-<div class="orv_system"><p>[Constellations of the Korean Peninsula are paying attention to your choice.]</p></div>
+<div class="orv_system"><p>Constellations of the Korean Peninsula are paying attention to your choice.</p></div>
 <br>
 <hr>
         </article>
@@ -315,18 +322,12 @@
             <a href="./ch_145"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_147">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="146" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="131" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="145" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="145" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

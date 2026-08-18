@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 169: Ep. 32 - Kim Dokja's Love, VIII</title>
     <meta property="og:title" content="Ch 169: Ep. 32 - Kim Dokja's Love, VIII" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00169.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 169: Ep. 32 - Kim Dokja's Love, VIII</h1></div>
 <p class="orv_line">Everyone made expressions of belated realization. They understood that they hadn't thought of the fundamental problem. At this moment, Lee Jihye opened her mouth again. "That…"</p>
@@ -228,7 +235,7 @@
 <p class="orv_line">Lee Jihye and Jung Heewon were whispering to each other.</p>
 <p class="orv_line">"…Ah, perhaps."</p>
 <p class="orv_line">"Right? Isn't this right?"</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is nodding violently!]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is nodding violently!</p></div>
 <p class="orv_line">At this time, the quietly listening Shin Yoosung raised her hand. "Excuse me…"</p>
 <p class="orv_line">The party members tacitly realized something. Among them, the one who might know my mind best was my incarnation Shin Yoosung.</p>
 <p class="orv_line">"Y-Yes! Yoosung! Speak!"</p>
@@ -242,11 +249,11 @@
 <br>
 <hr>
 <br>
-<div class="orv_system"><p>[The constellation who doesn't yet have a name is wrong.]</p></div>
+<div class="orv_system"><p>The constellation who doesn't yet have a name is wrong.</p></div>
 <p class="orv_line">"Again."</p>
-<div class="orv_system"><p>[The constellation who doesn't yet have a name is wrong.]</p></div>
+<div class="orv_system"><p>The constellation who doesn't yet have a name is wrong.</p></div>
 <p class="orv_line">"One more time."</p>
-<div class="orv_system"><p>[The constellation who doesn't yet have a name says he was really wrong.]</p></div>
+<div class="orv_system"><p>The constellation who doesn't yet have a name says he was really wrong.</p></div>
 <p class="orv_line">After repeatedly apologizing, the party members―especially Jung Heewon and Yoo Sangah, barely forgave me.</p>
 <p class="orv_line">Jung Heewon said, "Then… who is the person Dokja-ssi loves most?"</p>
 <p class="orv_line">I was about to answer when Lee Hyunsung spoke up. "Come to think of it, it might be no one here."</p>
@@ -254,7 +261,7 @@
 <p class="orv_line">Yoo Sangah's expression hardened at Han Sooyoung's words. "Are you with that woman right now?"</p>
 <p class="orv_line">Yoo Sangah's expression was greatly disappointed because she didn't like Han Sooyoung.</p>
 <p class="orv_line">…I needed to speak before things got worse. I took a deep breath and sent an indirect message.</p>
-<div class="orv_system"><p>[The constellation who doesn't yet have a name says he doesn't love anyone.]</p></div>
+<div class="orv_system"><p>The constellation who doesn't yet have a name says he doesn't love anyone.</p></div>
 <p class="orv_line">An unknown atmosphere covered the party members. Some were disappointed while some were excited. No, why were they so interested in the love life of others?</p>
 <p class="orv_line">Jung Heewon said, "You have to say it precisely. There is no one 'right now'. According to fate, Dokja-ssi will surely love someone."</p>
 <p class="orv_line">Well… she wasn't wrong. Jung Heewon continued speaking. "Then I will change the question. What type of style does Dokja-ssi like? Is it close to one of us?"</p>
@@ -262,27 +269,27 @@
 <p class="orv_line">"I know you are wondering why you should answer but it is important to us. If Dokja-ssi likes one of us, we might be able to stop that fate."</p>
 <p class="orv_line">…It was slightly convincing. Fate was very powerful but as I said, it wasn't inevitable. If I knew who I loved, I might be able to go against fate.</p>
 <p class="orv_line">I felt sorry that the party members were so worried about my death. However…</p>
-<div class="orv_system"><p>[The constellation who doesn't yet have a name isn't sure.]</p></div>
+<div class="orv_system"><p>The constellation who doesn't yet have a name isn't sure.</p></div>
 <p class="orv_line">In the end, Jung Heewon was irritated. "Oh, why are you so frustrating?"</p>
 <p class="orv_line">"Ahjussi, it's fine to tell us! Is it the time to be polite?"</p>
-<div class="orv_system"><p>[The constellation who doesn't yet have a name says there is no such thing.]</p></div>
+<div class="orv_system"><p>The constellation who doesn't yet have a name says there is no such thing.</p></div>
 <p class="orv_line">Damn, I had to use a lot of coins to send the indirect messages.</p>
-<div class="orv_system"><p>[The constellation who doesn't yet have a name doesn't know his heart.]</p></div>
+<div class="orv_system"><p>The constellation who doesn't yet have a name doesn't know his heart.</p></div>
 <p class="orv_line">"Dokja-ssi really…"</p>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is interested in the new story.]</p></div>
-<div class="orv_system"><p>[The constellation 'Secretive Plotter' wonders about your choice.]</p></div>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' is glancing this way.]</p></div>
-<div class="orv_system"><p>[Many constellations are choking on sweet potatoes are your frustrating answer.]</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is interested in the new story.</p></div>
+<div class="orv_system"><p>The constellation 'Secretive Plotter' wonders about your choice.</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' is glancing this way.</p></div>
+<div class="orv_system"><p>Many constellations are choking on sweet potatoes are your frustrating answer.</p></div>
 <p class="orv_line">Even the constellations were listening to our conversation.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is telling you not to deceive yourself on your heart.]</p></div>
-<div class="orv_system"><p>[Some constellations declare there is no one apart from the incarnation 'Yoo Sangah'.]</p></div>
-<div class="orv_system"><p>[Some constellations support the incarnation 'Shin Yoosung'.]</p></div>
-<div class="orv_system"><p>[Some constellations who love true friends support the incarnation 'Lee Hyunsung'.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is telling you not to deceive yourself on your heart.</p></div>
+<div class="orv_system"><p>Some constellations declare there is no one apart from the incarnation 'Yoo Sangah'.</p></div>
+<div class="orv_system"><p>Some constellations support the incarnation 'Shin Yoosung'.</p></div>
+<div class="orv_system"><p>Some constellations who love true friends support the incarnation 'Lee Hyunsung'.</p></div>
 <p class="orv_line">…This was an utter mess.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' has a good idea.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' has a good idea.</p></div>
 <p class="orv_line">The next moment, an item popped out of thin air.</p>
 <div class="orv_window">
-<h3 class="orv_window_title">[Item Information]</h3>
+<h3 class="orv_window_title">Item Information</h3>
 <p>Name: Affection Reader</p>
 <p>Rating: SS</p>
 <p>Description: An item that lets you know what the other person thinks about you. After pressing the button and thinking about the name and appearance of the other person, the affection number will automatically appear in the air.</p>
@@ -290,17 +297,17 @@
 <p class="orv_line">I became distracted the moment I saw this item. The Affection Reader was a luxurious item that could only be purchased by platinum members of the Dokkaebi Bag.</p>
 <p class="orv_line">No, using 100,000 coins for this unhealthy entertainment? Was she crazy?</p>
 <p class="orv_line">"As expected from an archangel! This is big!" Jung Heewon shouted.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' says to try and use it.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' says to try and use it.</p></div>
 <p class="orv_line">"Then who will go first?"</p>
 <p class="orv_line">"It is Heewon unni's sponsor so let her try first."</p>
 <p class="orv_line">"Uh, um. Shall I?"</p>
 <p class="orv_line">Jung Heewon became slightly nervous once it was time to use it. I was also tense. Why was I so nervous when I was finally getting to know my heart?</p>
 <p class="orv_line">…It felt like I was naked. I felt really strange as I saw everyone focus on the Affection Reader. After a while…</p>
 <p class="orv_line">There was a beeping sound and the message slowly appeared.</p>
-<div class="orv_system"><p>[The affection score of the constellation 'Kim Dokja' towards the incarnation 'Jung Heewon' is 54 points.]</p></div>
+<div class="orv_system"><p>The affection score of the constellation 'Kim Dokja' towards the incarnation 'Jung Heewon' is 54 points.</p></div>
 <p class="orv_line">The nervous Jung Heewon was disappointed when she saw the score. "54 points? Is that high?"</p>
 <p class="orv_line">"I want to try next!" Lee Jihye took away the reader and cried out playfully as she pressed the button. "Let me know Kim Dokja's heart!"</p>
-<div class="orv_system"><p>[The affection score of the constellation 'Kim Dokja' towards the incarnation 'Lee Jihye' is 6 points.]</p></div>
+<div class="orv_system"><p>The affection score of the constellation 'Kim Dokja' towards the incarnation 'Lee Jihye' is 6 points.</p></div>
 <p class="orv_line">"…"</p>
 <p class="orv_line">Lee Jihye was in a daze as the other members used the reader. Then it was Lee Gilyoung, Lee Hyunsung and Shin Yoosung. Their scores were 49 points, 50 pints and 56 points respectively. In the corner, Lee Jihye was muttering, "Kim Dokja is trash." On the other hand, Shin Yoosung was excited.</p>
 <p class="orv_line">Finally, only Yoo Sangah and Yoo Joonghyuk were left.</p>
@@ -308,20 +315,20 @@
 <p class="orv_line">"I have no intention of joking around."</p>
 <p class="orv_line">Yoo Joonghyuk went to search the monster corpses in the distance and all eyes naturally turned to Yoo Sangah.</p>
 <p class="orv_line">Yoo Sangah took the reader. Then just before she used it…</p>
-<div class="orv_system"><p>[The constellation 'Queen of the Darkest Spring' presents a special item to incarnation 'Yoo Sangah'.]</p></div>
+<div class="orv_system"><p>The constellation 'Queen of the Darkest Spring' presents a special item to incarnation 'Yoo Sangah'.</p></div>
 <p class="orv_line">Clothes fell out of the air and the clothing of Yoo Sangah changed. It was into a black Chinese dress with a black garter belt.</p>
 <p class="orv_line">Yoo Sangah stuttered at the sudden change. "T-T-This is…"</p>
 <p class="orv_line">I felt desperate at the sight of Yoo Sangah and inwardly cursed. That damn granny of Olympus.</p>
 <p class="orv_line">Jung Heewon, who didn't know anything, nodded. "Ah, it is a constellation event?"</p>
 <p class="orv_line">"Sangah noona, come forward."</p>
 <p class="orv_line">Yoo Sangah pressed the button.</p>
-<div class="orv_system"><p>[The affection score of the constellation 'Kim Dokja' towards the incarnation 'Yoo Sangah' is 481 points.]</p></div>
+<div class="orv_system"><p>The affection score of the constellation 'Kim Dokja' towards the incarnation 'Yoo Sangah' is 481 points.</p></div>
 <p class="orv_line">"4-481 points? Isn't that crazy? Doesn't this confirm it?"</p>
 <p class="orv_line">"Dokja-ssi's favourite person is really…"</p>
 <p class="orv_line">Yoo Sangah was stuttering with a red face when Lee Jihye felt something strange and opened her mouth. "No wait… Sangah unni. Can you lend me those clothes?"</p>
 <p class="orv_line">"Uh, yes."</p>
 <p class="orv_line">Lee Jihye entered a nearby building to change clothes before pressing the button of the reader.</p>
-<div class="orv_system"><p>[The affection score of the constellation 'Kim Dokja' towards the incarnation 'Lee Jihye' is 481 points.]</p></div>
+<div class="orv_system"><p>The affection score of the constellation 'Kim Dokja' towards the incarnation 'Lee Jihye' is 481 points.</p></div>
 <p class="orv_line">Everyone was speechless.</p>
 <p class="orv_line">I couldn't say anything through my shame. Lee Jihye shouted ridicule towards the air, Jung Heewon grabbed her belly and shook as she laughed and Yoo Sangah muttered with blank eyes,</p>
 <p class="orv_line">"It isn't a person he loves most…"</p>
@@ -334,7 +341,7 @@
 <p class="orv_line">…Eh? Shin Yoosung's voice became distance and my vision swirled as I became dizzy.</p>
 <p class="orv_line">Wait. This was perhaps…</p>
 <p class="orv_line">The next moment, my consciousness was cut off along with the message.</p>
-<div class="orv_system"><p>[You have died.]</p></div>
+<div class="orv_system"><p>You have died.</p></div>
 <br>
 <hr>
         </article>
@@ -342,18 +349,12 @@
             <a href="./ch_168"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_170">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="169" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="152" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="168" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="168" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

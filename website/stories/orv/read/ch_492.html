@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 492: Ep. 93 - Omniscient Author's Viewpoint, VI</title>
     <meta property="og:title" content="Ch 492: Ep. 93 - Omniscient Author's Viewpoint, VI" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00492.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 492: Ep. 93 - Omniscient Author's Viewpoint, VI</h1></div>
 <p class="orv_line">The announcement of the paywall brought about a deep silence in the channel.</p>
@@ -199,7 +206,7 @@
 <p class="orv_line">"…It's time you guys pay, too."</p>
 <p class="orv_line">Only then did she figure out Kim Dokja's plan in its entirety. And because she did, she could say this out aloud now.</p>
 <p class="orv_line">Selling off the tragedy of his life lived solely for the purpose of saving his companions, just like how his mother did once upon a time; Kim Dokja wanted to change this scenario by selling the tragedy &lt;Kim Dokja's Company&gt; had created.</p>
-<div class="orv_system"><p>[The absolute majority of Constellations are greatly shocked!]</p></div>
+<div class="orv_system"><p>The absolute majority of Constellations are greatly shocked!</p></div>
 <p class="orv_line">Han Sooyoung's declaration caused the Constellations to grow hesitant.</p>
 <p class="orv_line">She recalled the memories from back when her novel went behind the paywall for the first time ever.</p>
 <p class="orv_line">⸢Author-nim, it'll start from tomorrow.⸥</p>
@@ -208,27 +215,27 @@
 <p class="orv_line">How long would I be able to live on by selling off this story?</p>
 <p class="orv_line">'You stinking Kim Dokja. So, you slapped me with this kind of role, is that it??'</p>
 <p class="orv_line">What she needed to do right now wasn't selling some novels.</p>
-<div class="orv_system"><p>[Giant Story, 'Demon Realm's Spring', wishes to tell the next part of the story!]</p></div>
-<div class="orv_system"><p>[Giant Story, 'Torch That Swallowed the Myth', wishes to tell the next part of the story!]</p></div>
-<div class="orv_system"><p>[Giant Story, 'Season of Light and Darkness', wishes to tell the next part of the story!]</p></div>
-<div class="orv_system"><p>[Giant Story, 'Liberator of the Forgotten Ones', wishes to tell the next part of the story!]</p></div>
+<div class="orv_system"><p>Giant Story, 'Demon Realm's Spring', wishes to tell the next part of the story!</p></div>
+<div class="orv_system"><p>Giant Story, 'Torch That Swallowed the Myth', wishes to tell the next part of the story!</p></div>
+<div class="orv_system"><p>Giant Story, 'Season of Light and Darkness', wishes to tell the next part of the story!</p></div>
+<div class="orv_system"><p>Giant Story, 'Liberator of the Forgotten Ones', wishes to tell the next part of the story!</p></div>
 <p class="orv_line">…The words written by &lt;Kim Dokja's Company&gt;'s blood and tears.</p>
 <p class="orv_line">What she needed to sell was their life story. Stories that she couldn't carelessly change or tell in a jokey manner. Even then, she offered up these Stories for sale to the Constellations.</p>
 <p class="orv_line">Biyoo and her concerned eyes were looking at her from the sky. Han Sooyoung smiled as if to say, don't worry.</p>
 <p class="orv_line">"There's no one? That's too bad. Things are about to get really interesting from now on."</p>
 <p class="orv_line">Only she could do this job. Only Han Sooyoung, designated as the baddie among &lt;Kim Dokja's Company&gt;, could sell this story.</p>
 <p class="orv_line">As if to sympathise with her, the movements of the Outer God King was getting duller. Maybe, he was wallowing in sorrow.</p>
-<div class="orv_constellation"><p>[How laughable. Who do you think will be interested in your measly little story?]</p></div>
+<div class="orv_constellation"><p>How laughable. Who do you think will be interested in your measly little story?</p></div>
 <p class="orv_line">The one to shatter this silence was the Myth-grade Constellation, Poseidon. The figures of other Myth-grade Constellations could be seen in the distance as well. They were all mocking Han Sooyoung.</p>
-<div class="orv_constellation"><p>[Do you really believe that your 'Story' is worth that much?]</p></div>
+<div class="orv_constellation"><p>Do you really believe that your 'Story' is worth that much?</p></div>
 <p class="orv_line">It was the same with the Great Dokkaebis; they all seemed to be thinking that Han Sooyoung's choice was an error in judgement, one made while under the weight of the encroaching end.</p>
 <p class="orv_line">Tsu-chuchuchut!</p>
 <p class="orv_line">Once the Constellations left, the channel's size shrunk down. Some channels even tried to butt in using this opportunity. Channels that belonged to Dokkaebis hostile towards &lt;Kim Dokja's Company&gt;.</p>
-<div class="orv_constellation"><p>[Finish them.]</p></div>
+<div class="orv_constellation"><p>Finish them.</p></div>
 <p class="orv_line">Constellations manning their positions at the back made their moves. They were mostly Myth-grade, or those top-ranked Narrative-grade Constellations that almost equalled them in power.</p>
-<div class="orv_system"><p>[Constellation, 'One Responsible for the Universe's Cycle', is surveying the scenario's battlefield!]</p></div>
-<div class="orv_system"><p>[Constellation, 'Mirror that Emits Smoke', is incarnating into the scenario's battlefield!]</p></div>
-<div class="orv_system"><p>[Constellation, 'Master of Thunder and War', is incarnating into the scenario's battlefield!]</p></div>
+<div class="orv_system"><p>Constellation, 'One Responsible for the Universe's Cycle', is surveying the scenario's battlefield!</p></div>
+<div class="orv_system"><p>Constellation, 'Mirror that Emits Smoke', is incarnating into the scenario's battlefield!</p></div>
+<div class="orv_system"><p>Constellation, 'Master of Thunder and War', is incarnating into the scenario's battlefield!</p></div>
 <p class="orv_line">Indian myth's Brahma.</p>
 <p class="orv_line">Aztec myth's Tezcatlipoca.</p>
 <p class="orv_line">Even Slavic myth's Perun.</p>
@@ -250,11 +257,11 @@
 <p class="orv_line">Kwa-aaaaaah!</p>
 <p class="orv_line">A baptism of Status in the form of Poseidon's wave with Zeus's lightning added on top, crashed in. Outer Gods burning away like meat being grilled by electricity died in their droves. Even those from &lt;Kim Dokja's Company&gt; wouldn't be able to receive that wave with their current body conditions. Even then, Han Sooyoung believed in her companions.</p>
 <p class="orv_line">"Even if I die, I will never stop moving."</p>
-<p class="orv_line">Han Sooyoung fired [Black Flame] with every ounce of her energy. However, its power was less than a quarter after being suppressed by the Probability.</p>
+<p class="orv_line">Han Sooyoung fired <strong>[Black Flame]</strong> with every ounce of her energy. However, its power was less than a quarter after being suppressed by the Probability.</p>
 <p class="orv_line">And just as Poseidon's wave reached the front of their nose and began pouncing on them…</p>
 <p class="orv_line">⸢For a very brief moment there, it felt as if the world came to a standstill.⸥</p>
 <p class="orv_line">Also, it felt like a fundamental something that created this world seemed to have changed, as if a thin brush was painting over it. And then in the following moment, the frozen world began moving forward again.</p>
-<div class="orv_system"><p>[A fatal error has occurred in the Final Scenario!]</p></div>
+<div class="orv_system"><p>A fatal error has occurred in the Final Scenario!</p></div>
 <p class="orv_line">Poseidon's wave and Zeus's lightning pounced on her and &lt;Kim Dokja's Company&gt;.</p>
 <p class="orv_line">Kwa-dudududu!!</p>
 <p class="orv_line">More correctly, pounced on the protective barrier in front of them.</p>
@@ -262,71 +269,71 @@
 <p class="orv_line">But, he should still be under the restrictions by the Bureau. So how could he?</p>
 <p class="orv_line">"Sooyoung-ssi."</p>
 <p class="orv_line">A terrifying amount of sparks was streaming all over Lee Hyunsung's body. But, it wasn't only him. Everyone from &lt;Kim Dokja's Company&gt;, wasting away under the Bureau's restrictions, were now enveloped in the dancing blue-hued sparks. Their once-imprisoned muscles regained their freedom, and the arrested magical energy was being freed as well.</p>
-<div class="orv_system"><p>[The error in the channel's donation payout has been normalised.]</p></div>
+<div class="orv_system"><p>The error in the channel's donation payout has been normalised.</p></div>
 <p class="orv_line">The message entered their ears in the next moment.</p>
-<div class="orv_system"><p>[Delayed donation amounts will now be paid out!]</p></div>
+<div class="orv_system"><p>Delayed donation amounts will now be paid out!</p></div>
 <p class="orv_line">Biyoo could be seen crying softly in the air next. At the same time, an incredible amount of indirect messages smacked Han Sooyoung in her ear.</p>
-<div class="orv_system"><p>[Constellation, 'Demon-like Judge of Fire', happily donates half of the Coins she owns!]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon-like Judge of Fire', happily donates half of the Coins she owns!</p></div>
 <p class="orv_line">Just how much was the half of Coins amassed by a Constellation at the cusp of reaching the Myth-grade? Han Sooyoung couldn't even estimate the amount.</p>
-<div class="orv_system"><p>[Constellation, 'Abyssal Black Flame Dragon', is paying an incredible amount of Coins while grumbling unhappily!]</p></div>
-<div class="orv_system"><p>[Constellation, 'Most Ancient Liberator', is…]</p></div>
+<div class="orv_system"><p>Constellation, 'Abyssal Black Flame Dragon', is paying an incredible amount of Coins while grumbling unhappily!</p></div>
+<div class="orv_system"><p>Constellation, 'Most Ancient Liberator', is…</p></div>
 <p class="orv_line">So, so many stars began glowing brightly.</p>
 <p class="orv_line">The Nebula's safe started filling up rapidly with wealth.</p>
-<div class="orv_system"><p>[Nebula safe total balance: 83,112,540 C]</p></div>
-<div class="orv_system"><p>[Nebula safe total balance: 162,423,800 C]</p></div>
+<div class="orv_system"><p>Nebula safe total balance: 83,112,540 C</p></div>
+<div class="orv_system"><p>Nebula safe total balance: 162,423,800 C</p></div>
 <p class="orv_line">…</p>
 <p class="orv_line">…</p>
-<div class="orv_system"><p>[Nebula safe total balance: 1,041,512,080 C]</p></div>
+<div class="orv_system"><p>Nebula safe total balance: 1,041,512,080 C</p></div>
 <p class="orv_line">The total Coins surpassed 100 million in no time, before breaking past a billion mark.</p>
 <p class="orv_line">That pretty much determined what Han Sooyoung should do next. Which was to spend every single cent of that donated amount into the Probability.</p>
 <p class="orv_line">Tsu-chuchuchuchut!!</p>
 <p class="orv_line">"Everyone, hold on!"</p>
-<div class="orv_system"><p>[Constellation, 'Mass Production Maker', is grinning brightly.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Mass Production Maker', has donated the number of Coins that exceeds the upper donation limit!]</p></div>
+<div class="orv_system"><p>Constellation, 'Mass Production Maker', is grinning brightly.</p></div>
+<div class="orv_system"><p>Constellation, 'Mass Production Maker', has donated the number of Coins that exceeds the upper donation limit!</p></div>
 <p class="orv_line">The geezer wearing the pineapple-themed T-shirt.</p>
-<p class="orv_line">Back when Han Sooyoung went to shoot a commercial for the [Ferrarghini], she had a chance to chat to him for a brief spell.</p>
+<p class="orv_line">Back when Han Sooyoung went to shoot a commercial for the <strong>[Ferrarghini]</strong>, she had a chance to chat to him for a brief spell.</p>
 <p class="orv_line">⸢You really think such adverts will sell your car?⸥</p>
 <p class="orv_line">When Han Sooyoung asked, the Mass Production Maker replied in a somewhat obtuse manner.</p>
 <p class="orv_line">⸢I'm not advertising to sell, but advertising the product about to be sold.⸥</p>
 <p class="orv_line">And now, she thought she could understand that answer just a bit.</p>
-<div class="orv_system"><p>[Constellation, 'Joseon's Number One Sorcerer', is donating 5,000 Coins!]</p></div>
-<div class="orv_system"><p>[Constellation, 'Meirangong Marquis Zhuangmou', is donating 5,100 Coins!]</p></div>
-<div class="orv_system"><p>[Constellation, 'Father of the Rich Night', is donating everything in his secret stash!]</p></div>
-<div class="orv_system"><p>[Constellation, 'Mother of the Darkest Spring', is donating half of the Underworld's balance!]</p></div>
-<div class="orv_system"><p>[Constellation, 'Supreme God of Light', is donating 2,100,000 Coins!]</p></div>
-<div class="orv_system"><p>[Constellation, 'Lily Blooming in Aquarius', is donating 1,500,000 Coins!]</p></div>
+<div class="orv_system"><p>Constellation, 'Joseon's Number One Sorcerer', is donating 5,000 Coins!</p></div>
+<div class="orv_system"><p>Constellation, 'Meirangong Marquis Zhuangmou', is donating 5,100 Coins!</p></div>
+<div class="orv_system"><p>Constellation, 'Father of the Rich Night', is donating everything in his secret stash!</p></div>
+<div class="orv_system"><p>Constellation, 'Mother of the Darkest Spring', is donating half of the Underworld's balance!</p></div>
+<div class="orv_system"><p>Constellation, 'Supreme God of Light', is donating 2,100,000 Coins!</p></div>
+<div class="orv_system"><p>Constellation, 'Lily Blooming in Aquarius', is donating 1,500,000 Coins!</p></div>
 <p class="orv_line">Constellations of familiar Modifiers.</p>
-<div class="orv_system"><p>[Constellation, 'Lame Trickster', is donating 15,000 Coins.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Monarch of Small Fries', is donating 450,000 Coins.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Adventurer that Stands up an Egg', is donating 18,000 Coins!]</p></div>
-<div class="orv_system"><p>[Constellation, 'Master of the Niten Ichu-ryu', is donating 4,000 Coins!]</p></div>
-<div class="orv_system"><p>[All the stars in the Big Dipper are donating 300,000 Coins!]</p></div>
-<div class="orv_system"><p>[A small Constellation from a small planet is donating 300 Coins!]</p></div>
+<div class="orv_system"><p>Constellation, 'Lame Trickster', is donating 15,000 Coins.</p></div>
+<div class="orv_system"><p>Constellation, 'Monarch of Small Fries', is donating 450,000 Coins.</p></div>
+<div class="orv_system"><p>Constellation, 'Adventurer that Stands up an Egg', is donating 18,000 Coins!</p></div>
+<div class="orv_system"><p>Constellation, 'Master of the Niten Ichu-ryu', is donating 4,000 Coins!</p></div>
+<div class="orv_system"><p>All the stars in the Big Dipper are donating 300,000 Coins!</p></div>
+<div class="orv_system"><p>A small Constellation from a small planet is donating 300 Coins!</p></div>
 <p class="orv_line">Constellations that were familiar, but not counted on.</p>
-<div class="orv_system"><p>[A great number of Constellations staying anonymous have added their strength to the Nebula &lt;Kim Dokja's Company&gt;'s Probability!]</p></div>
+<div class="orv_system"><p>A great number of Constellations staying anonymous have added their strength to the Nebula &lt;Kim Dokja's Company&gt;'s Probability!</p></div>
 <p class="orv_line">And finally, even the Constellations they didn't know.</p>
 <p class="orv_line">Every Constellation that came along for the ride with &lt;Kim Dokja's Company&gt;'s Story was now sponsoring their story.</p>
 <p class="orv_line">Light returned to the once-darkened channel, and the broadcast began once more.</p>
-<div class="orv_system"><p>[Channel BY-9158's broadcast will begin again!]</p></div>
+<div class="orv_system"><p>Channel BY-9158's broadcast will begin again!</p></div>
 <p class="orv_line">The story was starting again. All these Coins contained the wills of the Constellations.</p>
 <p class="orv_line">⸢Their desire to see the end of this Story.⸥</p>
 <p class="orv_line">Han Sooyoung too understood this desire. However, there were some who failed to do so.</p>
-<div class="orv_constellation"><p>[What are you all doing?! Could it be that you're sympathising with those Incarnations?? With the ⸢Enemies of the Story⸥?? Everyone, you must wake up!! Have you all forgotten who you are?! Oh, dear Constellations, don't let your eyes be stolen away by a demeaning story like that!]</p></div>
+<div class="orv_constellation"><p>What are you all doing?! Could it be that you're sympathising with those Incarnations?? With the ⸢Enemies of the Story⸥?? Everyone, you must wake up!! Have you all forgotten who you are?! Oh, dear Constellations, don't let your eyes be stolen away by a demeaning story like that!</p></div>
 <p class="orv_line">The Great Dokkaebi roared out. That prompted someone to answer back.</p>
-<div class="orv_constellation"><p>[Constellation, 'Demon-like Judge of Fire', says she's more clear-headed than ever before.]</p></div>
+<div class="orv_constellation"><p>Constellation, 'Demon-like Judge of Fire', says she's more clear-headed than ever before.</p></div>
 <p class="orv_line">Tsu-chuchuchu…!</p>
 <p class="orv_line">An incredible storm of Probability was pushed back, and Poseidon's wave sunk back to the ground.</p>
 <p class="orv_line">Han Sooyoung slowly closed her eyes. A breeze was blowing in.</p>
-<div class="orv_system"><p>[Will of &lt;Star Stream&gt; accepts the new flow of Probability.]</p></div>
+<div class="orv_system"><p>Will of &lt;Star Stream&gt; accepts the new flow of Probability.</p></div>
 <p class="orv_line">Something was changing.</p>
-<div class="orv_system"><p>[&lt;Star Stream&gt; is considering an alteration to the scenario's rules.]</p></div>
+<div class="orv_system"><p>&lt;Star Stream&gt; is considering an alteration to the scenario's rules.</p></div>
 <p class="orv_line">All Probability from the Bureau ruthlessly suppressing her and her companions were dissipating away. The scenario's balance that had been heavily tilted out of equilibrium was regaining itself.</p>
-<div class="orv_system"><p>[You still can't understand 'Enemy of the Story'.]</p></div>
+<div class="orv_system"><p>You still can't understand 'Enemy of the Story'.</p></div>
 <p class="orv_line">Kim Dokja remained difficult. However…</p>
-<div class="orv_system"><p>['Enemy of the Story' wishes to be understood by you.]</p></div>
+<div class="orv_system"><p>'Enemy of the Story' wishes to be understood by you.</p></div>
 <p class="orv_line">…However, it wasn't as if nothing had changed.</p>
-<div class="orv_system"><p>[Scenario's rules are changing.]</p></div>
-<div class="orv_system"><p>[From here on, all Constellations can choose a camp to side with during the Final Scenario!]</p></div>
+<div class="orv_system"><p>Scenario's rules are changing.</p></div>
+<div class="orv_system"><p>From here on, all Constellations can choose a camp to side with during the Final Scenario!</p></div>
 <p class="orv_line">Han Sooyoung slowly looked around her.</p>
 <p class="orv_line">The surrounding view began changing as if a layer of the world had been peeled back.</p>
 <div class="orv_outergod"><p>【■■■■■■… Go!! Fight on! This is our battlefield!】</p></div>
@@ -336,7 +343,7 @@
 <div class="orv_outergod"><p>【Beomgak! Move! This is the Final Scenario we've been dreaming of!】</p></div>
 <div class="orv_outergod"><p>【Mark!】</p></div>
 <p class="orv_line">All those 'Nameless Ones' now had names in this place.</p>
-<div class="orv_system"><p>[You have sided with the 'Enemy of the Story'.]</p></div>
+<div class="orv_system"><p>You have sided with the 'Enemy of the Story'.</p></div>
 <p class="orv_line">These beings rushed towards the Constellations as dusk fell on the battlefield. They formed ranks and advanced towards the Constellations.</p>
 <div class="orv_outergod"><p>【I shall accompany you!】</p></div>
 <p class="orv_line">Among them was a man who resembled Lee Hyunsung, and also a child resembling Shin Yoosung. Even some that resembled Jung Heewon, Lee Gilyoung, and Lee Jihye.</p>
@@ -344,7 +351,7 @@
 <p class="orv_line">For a brief moment there, Han Sooyoung saw a girl who seemed to resemble her, too. And all of them were fighting as the ally of the ⸢Enemy of the Story⸥.</p>
 <p class="orv_line">Her dazed eyes chased after their backs.</p>
 <p class="orv_line">⸢Every abandoned world-line was converging here.⸥</p>
-<p class="orv_line">The world that she couldn't express with mere words. The world that the [Predictive Plagiarism] couldn't read, because it could only be imagined by a reader.</p>
+<p class="orv_line">The world that she couldn't express with mere words. The world that the <strong>[Predictive Plagiarism]</strong> couldn't read, because it could only be imagined by a reader.</p>
 <p class="orv_line">⸢This was the world Kim Dokja had been dreaming of.⸥</p>
 <p class="orv_line">Han Sooyoung slowly turned around towards the spot where the Outer God King was only until a moment ago. And a certain man stood on that very spot where a deep abyss cast by the massive creature's size used to exist.</p>
 <p class="orv_line">⸢"Han Sooyoung, what should an extra do in order to garner attention?"⸥</p>
@@ -367,18 +374,12 @@
             <a href="./ch_491"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_493">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="492" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="542" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="491" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="491" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

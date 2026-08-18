@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 24: Ep. 6 – Judgment Time, I</title>
     <meta property="og:title" content="Ch 24: Ep. 6 – Judgment Time, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,46 +177,46 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00024.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 24: Ep. 6 – Judgment Time, I</h1></div>
 <p class="orv_line">The limited random items box… According to the setting of Ways of Survival, this was a coin item which had been sold as a limited edition in a past 'scenario'.</p>
-<div class="orv_constellation"><p>[Ah, no, why is this thing here?]</p></div>
+<div class="orv_constellation"><p>Ah, no, why is this thing here?</p></div>
 <p class="orv_line">The alarmed Biryu shouted belatedly.</p>
-<div class="orv_constellation"><p>[I-I-It was banned immediately after release!]</p></div>
+<div class="orv_constellation"><p>I-I-It was banned immediately after release!</p></div>
 <p class="orv_line">According to the original Ways of Survival, the setting of this item was quite complicated. This coin item had been released long before the 8612 Planetary scenarios began. It was a product which had been forcefully banned by the Star Stream Administration Bureau.</p>
 <p class="orv_line">If sub-items were put in, it would 'unconditionally' spit out a top item. This would have a tremendous impact on the balance of the scenarios. Additionally, the price of one item box was a huge one million coins. The constellations had been angered by this ridiculous billing policy, so the stupid dokkaebi who invented this item got fired from the Administration Bureau.</p>
-<div class="orv_constellation"><p>[C-Constellations. It is like this… I don't know why it is here… H-Hihihit! Broadcast end!]</p></div>
-<div class="orv_system"><p>[#BI-7623 channel has closed temporarily.]</p></div>
+<div class="orv_constellation"><p>C-Constellations. It is like this… I don't know why it is here… H-Hihihit! Broadcast end!</p></div>
+<div class="orv_system"><p>#BI-7623 channel has closed temporarily.</p></div>
 <p class="orv_line">The delirious sounding Biryu closed the channel, and the voices of the constellations disappeared. I regretted not being able to see the reactions of the constellations, but it couldn't be helped. I looked down at the vibrating box. The random draw was about to start in earnest.</p>
-<div class="orv_system"><p>[A sword type item will be awarded for putting in the same type of items!]</p></div>
-<div class="orv_system"><p>[The random draw has started!]</p></div>
+<div class="orv_system"><p>A sword type item will be awarded for putting in the same type of items!</p></div>
+<div class="orv_system"><p>The random draw has started!</p></div>
 <p class="orv_line">The limited edition random item box randomly spat out items of a higher rank related to the item you put in. There was a chance for anything from a C-grade to an SSS-grade item to emerge. In the end, it was all up to chance.</p>
-<div class="orv_system"><p>[The offered items are related to a certain constellation!]</p></div>
-<div class="orv_system"><p>[The probability that an item associated with this constellation will appear is greatly increased.]</p></div>
+<div class="orv_system"><p>The offered items are related to a certain constellation!</p></div>
+<div class="orv_system"><p>The probability that an item associated with this constellation will appear is greatly increased.</p></div>
 <p class="orv_line">'…Eh?'</p>
 <p class="orv_line">It was an unexpected message, but it didn't seem to be a disadvantage for me. Both my hands were sweating. I hadn't been so nervous when I bought a random chance item in an online game.</p>
 <p class="orv_line">'Please let it be an A-rating'.</p>
-<div class="orv_system"><p>[A top-rated item has appeared!]</p></div>
-<div class="orv_system"><p>[The number of available random item boxes is 0.]</p></div>
+<div class="orv_system"><p>A top-rated item has appeared!</p></div>
+<div class="orv_system"><p>The number of available random item boxes is 0.</p></div>
 <p class="orv_line">The box soon stopped trembling, and the faint light subsided. Then I looked around at Yoo Sangah and Lee Gilyoung, whose eyes were shining.</p>
 <p class="orv_line">"Shall we open it?"</p>
 <p class="orv_line">"Yes!"</p>
@@ -217,7 +224,7 @@
 <p class="orv_line">"W-Wow!" Lee Gilyoung was so surprised that he screamed.</p>
 <p class="orv_line">By the way, it really was amazing. With a luxurious silver guard and a white blade… Its shape was somewhat similar to Broken Faith? I immediately checked the item information.</p>
 <div class="orv_window">
-<h3 class="orv_window_title">[Item Information]</h3>
+<h3 class="orv_window_title">Item Information</h3>
 <p>Name: Unbroken Faith</p>
 <p>Rating: Star Relic</p>
 <p>Description: In the past, it was the sword of the hero 'Kaizenix', who led the Grusiad during the Great Demon Age. The great ether dominance of Kaizenix allowed him to create a 'Blade of Faith' that contained fire, darkness and divine power respectively.</p>
@@ -231,12 +238,12 @@
 <p class="orv_line">Furthermore, it raised the level of my strength and physique by 2. When taking into account that A-grade items increased the total stats value by 1, this must be at least an S-grade item. Yoo Joonghyuk had yet to obtain an item like this.</p>
 <p class="orv_line">I looked around at Yoo Sangah and Lee Gilyoung. "…Can I really have it?"</p>
 <p class="orv_line">"Of course. It naturally belongs to Dokja-ssi," Yoo Sangah responded in advance to his repeated question. Lee Gilyoung also nodded eagerly. I looked at Han Myungoh, but he was just eating the leg of a ground rat with a stupid expression while muttering unknown things to himself. I thought he would insist on having the item… It was strange.</p>
-<div class="orv_system"><p>[You have acquired a star relic.]</p></div>
-<div class="orv_system"><p>[The owner of the star relic is curious about you.]</p></div>
+<div class="orv_system"><p>You have acquired a star relic.</p></div>
+<div class="orv_system"><p>The owner of the star relic is curious about you.</p></div>
 <p class="orv_line">The message showed that the constellation existed somewhere. Later, I would open up Ways of Survival and look for it.</p>
 <p class="orv_line">"Then we should go back. There are plenty of ground rats out there, so we can go back with just the Magic Power Stove."</p>
 <p class="orv_line">"By the way, how do we get back?"</p>
-<p class="orv_line">"It won't be a problem to leave with Gilyoung's power. Use [Diverse Communication] and…"</p>
+<p class="orv_line">"It won't be a problem to leave with Gilyoung's power. Use <strong>[Diverse Communication]</strong> and…"</p>
 <p class="orv_line">However, Lee Gilyoung's expression wasn't bright. "Hyung, I…"</p>
 <p class="orv_line">"Huh?"</p>
 <p class="orv_line">"There aren't any insects nearby."</p>
@@ -267,12 +274,12 @@
 <p class="orv_line">Yoo Sangah wasn't a character in the novel, so I didn't know her attribute. It was like with Lee Gilyoung and Han Myungoh.</p>
 <p class="orv_line">"Uh, that…"</p>
 <p class="orv_line">Yoo Sangah made a difficult expression. It wouldn't have been so frustrating if I could use Character List on Yoo Sangah. I tried to use Character List once again as a test.</p>
-<div class="orv_system"><p>[The exclusive skill, [Character List] is activated.]</p></div>
-<div class="orv_system"><p>[This person isn't registered in [Character List].]</p></div>
+<div class="orv_system"><p>The exclusive skill, [Character List] is activated.</p></div>
+<div class="orv_system"><p>This person isn't registered in [Character List].</p></div>
 <p class="orv_line">Indeed… but there was one more message.</p>
-<div class="orv_system"><p>[Currently collecting information about the corresponding figure.]</p></div>
+<div class="orv_system"><p>Currently collecting information about the corresponding figure.</p></div>
 <p class="orv_line">'…Eh?'</p>
-<p class="orv_line">It was a message that never existed before. Come to think of it, I heard a system message when Yoo Sangah used the [Interpreter] skill. It wasn't something that was originally heard. Was it possible for the [Character List] to be updated after some time? Perhaps…</p>
+<p class="orv_line">It was a message that never existed before. Come to think of it, I heard a system message when Yoo Sangah used the <strong>[Interpreter]</strong> skill. It wasn't something that was originally heard. Was it possible for the <strong>[Character List]</strong> to be updated after some time? Perhaps…</p>
 <p class="orv_line">I organized my thoughts and decided to let Yoo Sangah go. "Forget that I asked. By the way, nice work. In the future, don't let other people know about your personal attribute."</p>
 <p class="orv_line">"That's not it! I trust Dokja-ssi…!" Well, Yoo Sangah's appearance said otherwise.</p>
 <p class="orv_line">At the moment, I got an idea. "Can Yoo Sangah tell me about the nature of your sponsor?"</p>
@@ -286,29 +293,29 @@
 <p class="orv_line">One branch of the thread was connected to me and the other one was connected outside. Maybe it was bound to Lee Hyunsung or Jung Heewon.</p>
 <p class="orv_line">"Let's go."</p>
 <p class="orv_line">There was no reason for Yoo Sangah to have such a skill from the beginning. This was definitely the stigma provided by her sponsor. By the way, it was a 'thread' to escape the labyrinth. This… Somehow, I thought it was a constellation I knew.</p>
-<div class="orv_system"><p>[#BI-7623 channel is open.]</p></div>
+<div class="orv_system"><p>#BI-7623 channel is open.</p></div>
 <p class="orv_line">I started hearing messages from the constellations again.</p>
-<div class="orv_system"><p>[A number of constellations have put a claim on the channel's transmission system!]</p></div>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' is curious about what came out of the random item box.]</p></div>
+<div class="orv_system"><p>A number of constellations have put a claim on the channel's transmission system!</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' is curious about what came out of the random item box.</p></div>
 <p class="orv_line">Ah, they haven't seen it? What a pity.</p>
-<div class="orv_constellation"><p>[Damn! That bastard messed with my channel… Hahaha! Did you stay well while I was away?]</p></div>
+<div class="orv_constellation"><p>Damn! That bastard messed with my channel… Hahaha! Did you stay well while I was away?</p></div>
 <p class="orv_line">The nice… No, a familiar voice was heard.</p>
 <p class="orv_line">Bihyung.</p>
 <br>
 <hr>
 <br>
-<div class="orv_constellation"><p>[…You did such great things while I was gone?]</p></div>
+<div class="orv_constellation"><p>…You did such great things while I was gone?</p></div>
 <p class="orv_line">'Was it because of me that you couldn't come back?'</p>
-<div class="orv_constellation"><p>[It… Yes, it isn't unrelated. I got a warning from the Administration Bureau because the advertisement went on for too long.]</p></div>
+<div class="orv_constellation"><p>It… Yes, it isn't unrelated. I got a warning from the Administration Bureau because the advertisement went on for too long.</p></div>
 <p class="orv_line">Currently, Bihyung's voice was only audible to me. It was the 'dokkaebi communication' that only the dokkaebi could use. Of course, it was an obvious violation of the rules to allow me to use it.</p>
-<div class="orv_constellation"><p>[I have decided not to care about small things now. And I can go back and forth to the Administration Bureau. Rather… how do you know about the 'Random Box'?]</p></div>
+<div class="orv_constellation"><p>I have decided not to care about small things now. And I can go back and forth to the Administration Bureau. Rather… how do you know about the 'Random Box'?</p></div>
 <p class="orv_line">'Just, I found it by chance'.</p>
-<div class="orv_constellation"><p>[Dammit. There are still remnants of the black history left. Why is that box there…]</p></div>
+<div class="orv_constellation"><p>Dammit. There are still remnants of the black history left. Why is that box there…</p></div>
 <p class="orv_line">'Black history?'</p>
-<div class="orv_constellation"><p>[······.]</p></div>
+<div class="orv_constellation"><p>······.</p></div>
 <p class="orv_line">'…Wait. Surely that absurd coin item wasn't planned by you?'</p>
 <p class="orv_line">As a reader of Ways of Survival, I didn't know this.</p>
-<div class="orv_constellation"><p>[Damn! If I wasn't greedy at that time…]</p></div>
+<div class="orv_constellation"><p>Damn! If I wasn't greedy at that time…</p></div>
 <p class="orv_line">Bihyung's grumbling was cut off by Jung Heewon's cry of admiration, "Wow, it really is delicious! What a surprise."</p>
 <p class="orv_line">10 minutes ago, we safely returned to the rest of the party thanks to Yoo Sangah's guidance. Fortunately, Jung Heewon and Lee Hyunsung had maintained the boundary until we came back.</p>
 <p class="orv_line">"You will recover a bit after eating."</p>
@@ -316,7 +323,7 @@
 <p class="orv_line">"Did you get a lot of things in there? In addition to the Magic Power Stove…"</p>
 <p class="orv_line">I looked at Lee Hyunsung and said, "I got a few things."</p>
 <p class="orv_line">Lee Hyunsung put on and removed the Old Steel Shield, which he received from me, repeatedly several times. Now, he was polishing the surface again and again. It was like someone with a new car.</p>
-<div class="orv_system"><p>[The character 'Lee Hyunsung' feels a faint loyalty to you.]</p></div>
+<div class="orv_system"><p>The character 'Lee Hyunsung' feels a faint loyalty to you.</p></div>
 <p class="orv_line">Jung Heewon seemed envious of the scene and asked, "Is there anything I can use?"</p>
 <p class="orv_line">"No."</p>
 <p class="orv_line">"What is that blade?"</p>
@@ -326,8 +333,8 @@
 <p class="orv_line">"But… you are really stingy. Kim Dokja."</p>
 <p class="orv_line">"Let's just say that I have a strong sense of survival."</p>
 <p class="orv_line">As we were passing around a piece of cooked ground rat, the tunnel ended. The surroundings suddenly brightened, and people started to be seen. However, the atmosphere was weird. What was this urgent and bustling mood?</p>
-<div class="orv_system"><p>[There are 20 minutes left until the paid settlement.]</p></div>
-<div class="orv_system"><p>[Prepare the survival fee.]</p></div>
+<div class="orv_system"><p>There are 20 minutes left until the paid settlement.</p></div>
+<div class="orv_system"><p>Prepare the survival fee.</p></div>
 <p class="orv_line">I belatedly noticed the time. That's right. It was already that time. It was amazing that the word 'paid' could sound so scary.</p>
 <p class="orv_line">"Coins, coins, please!"</p>
 <p class="orv_line">"I don't have enough coins! Please, a few coins…"</p>
@@ -338,17 +345,17 @@
 <p class="orv_line">"What…?"</p>
 <p class="orv_line">"I will think again if you will let me put it in one more time. How about it?"</p>
 <p class="orv_line">Jung Heewon pulled out her blade and stared at them. "Those sons of bitches…"</p>
-<div class="orv_system"><p>[The attribute of character 'Jung Heewon' is about to blossom.]</p></div>
+<div class="orv_system"><p>The attribute of character 'Jung Heewon' is about to blossom.</p></div>
 <p class="orv_line">The time had come for Jung Heewon. It wasn't bad if her attribute blossomed now… Yet she needed some patience in order to get the 'attribute' I was thinking about. Then a system message emerged.</p>
-<div class="orv_system"><p>[After a while, the survival settlement will begin.]</p></div>
+<div class="orv_system"><p>After a while, the survival settlement will begin.</p></div>
 <p class="orv_line">"S-Save me! Please, help!"</p>
 <p class="orv_line">The expressions of the party changed. Lee Hyunsung bowed his head sadly, and Jung Heewon bit her lip while holding her blade. Everyone knew what the price of the 'paid settlement' was. There was no one here who hadn't experienced it. Then Yoo Sangah looked at me. "…Dokja-ssi."</p>
 <p class="orv_line">"Yes."</p>
 <p class="orv_line">In this world, coins were power. A person with coins could obtain good items or good stats. Coins were everything.</p>
-<div class="orv_system"><p>[Several constellations with scenario recommendations have been added to the channel.]</p></div>
-<div class="orv_system"><p>[The constellation 'Secretive Plotter' is watching your choice.]</p></div>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is watching your choice.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is watching your choice.]</p></div>
+<div class="orv_system"><p>Several constellations with scenario recommendations have been added to the channel.</p></div>
+<div class="orv_system"><p>The constellation 'Secretive Plotter' is watching your choice.</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is watching your choice.</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is watching your choice.</p></div>
 <p class="orv_line">…And I was currently the person with the highest number of coins in the station.</p>
 <br>
 <hr>
@@ -357,18 +364,12 @@
             <a href="./ch_23"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_25">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="24" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="63" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="23" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="23" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

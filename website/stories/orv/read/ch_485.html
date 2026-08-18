@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 485: Ep. 92 - Final Scenario, IV</title>
     <meta property="og:title" content="Ch 485: Ep. 92 - Final Scenario, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00485.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 485: Ep. 92 - Final Scenario, IV</h1></div>
 <p class="orv_line">"Are you all finished with your preparations?"</p>
@@ -213,10 +220,10 @@
 <p class="orv_line">"It'll be different from how things had been so far. Even I don't know what will happen during the Final Scenario."</p>
 <p class="orv_line">"That's weird. You aren't hiding anything, right?"</p>
 <p class="orv_line">"No, not at all."</p>
-<div class="orv_system"><p>[Character 'Jung Heewon' is activating 'Lie Detection Lv.5'!]</p></div>
-<div class="orv_system"><p>[Your statement has been confirmed as a lie.]</p></div>
+<div class="orv_system"><p>Character 'Jung Heewon' is activating 'Lie Detection Lv.5'!</p></div>
+<div class="orv_system"><p>Your statement has been confirmed as a lie.</p></div>
 <p class="orv_line">"Wowsers, you now even lie with a straight face?"</p>
-<p class="orv_line">…Just when did she learn [Lie Detection]? Dammit.</p>
+<p class="orv_line">…Just when did she learn <strong>[Lie Detection]</strong>? Dammit.</p>
 <p class="orv_line">I hastily made my excuse. "It's difficult to give you a detailed story right now. Things might change later if I tell you something. Regardless of what the scenario is, please choose what you believe to be the right decision. If we succeed, we will be able to survive together."</p>
 <p class="orv_line">"And that 'we' also includes you, Dokja-ssi?"</p>
 <p class="orv_line">I quietly stared at Yoo Sangah before nodding my head.</p>
@@ -227,8 +234,8 @@
 <p class="orv_line">"That's right."</p>
 <p class="orv_line">"Hyung! In that case, can we go to a PC Bang…?!"</p>
 <p class="orv_line">"We can."</p>
-<div class="orv_system"><p>[Character 'Jung Heewon' is activating 'Lie Detection Lv.5'!]</p></div>
-<div class="orv_system"><p>[Your statement has been confirmed as truth.]</p></div>
+<div class="orv_system"><p>Character 'Jung Heewon' is activating 'Lie Detection Lv.5'!</p></div>
+<div class="orv_system"><p>Your statement has been confirmed as truth.</p></div>
 <p class="orv_line">Only then the hints of relief brushed past their expressions.</p>
 <p class="orv_line">I took a look at their faces one at a time – Yoo Sangah, Jung Heewon, Lee Hyunsung, Lee Jihye, Lee Gilyoung, Shin Yoosung, Lee Seolhwa, Gong Pildu, Jang Hayoung, Han Sooyoung…</p>
 <p class="orv_line">"If we're done here, let's get going."</p>
@@ -236,21 +243,21 @@
 <p class="orv_line">Different stories existed for each individual. The stories that I hadn't had the chance to finish reading yet.</p>
 <p class="orv_line">"Let's get going, ahjussi! We haven't even entered the scenario yet, so there's no need to make the heroic determination and stuff now, right?"</p>
 <p class="orv_line">I agreed with Lee Jihye's opinion. The Final Scenario hadn't even begun yet. I slowly breathed in and out deeply, and raised my head to find a portal appearing on a spot high up in the air.</p>
-<div class="orv_system"><p>[Portal leading to '99th scenario' has been generated!]</p></div>
+<div class="orv_system"><p>Portal leading to '99th scenario' has been generated!</p></div>
 <p class="orv_line">Bihyung had created that portal.</p>
 <p class="orv_line">"Let's go."</p>
 <p class="orv_line">We stepped through the portal. The surrounding view crumbled away in an instant, only to be resurrected just as quickly.</p>
 <p class="orv_line">Behind us was the wide, expansive view of &lt;Star Stream&gt;, while the front was dominated by the sight of Dokkaebis waiting for us.</p>
 <p class="orv_line">"Uh? Didn't we come here before?"</p>
 <p class="orv_line">Here was the 'Gate of Star Stream', the very last gateway that led to the final gate, and home to the &lt;Bureau&gt;, the headquarters of all Dokkaebis.</p>
-<div class="orv_system"><p>[&lt;Kim Dokja's Company&gt;, your entry qualification has been confirmed.]</p></div>
+<div class="orv_system"><p>&lt;Kim Dokja's Company&gt;, your entry qualification has been confirmed.</p></div>
 <p class="orv_line">"…It's a straight pass this time."</p>
 <p class="orv_line">Dokkaebis didn't bother with any complicated procedures and let us pass without a fuss.</p>
-<div class="orv_system"><p>[The absolute majority of Constellations are watching your entry into the 'Final Scenario'!]</p></div>
-<div class="orv_system"><p>[Many Nebulas are envious of your collective achievements!]</p></div>
+<div class="orv_system"><p>The absolute majority of Constellations are watching your entry into the 'Final Scenario'!</p></div>
+<div class="orv_system"><p>Many Nebulas are envious of your collective achievements!</p></div>
 <p class="orv_line">I sensed the Constellations and Nebulas watching us from among the darkness of the universe.</p>
-<div class="orv_system"><p>[Constellations within the 'Final Scenario' are growing tense at &lt;Kim Dokja's Company&gt;'s entrance!]</p></div>
-<div class="orv_system"><p>[You and your Nebula have entered the Final Scenario's location!]</p></div>
+<div class="orv_system"><p>Constellations within the 'Final Scenario' are growing tense at &lt;Kim Dokja's Company&gt;'s entrance!</p></div>
+<div class="orv_system"><p>You and your Nebula have entered the Final Scenario's location!</p></div>
 <p class="orv_line">When I opened my eyes again, I was treated to the sight of the galaxy swirling around in a vortex. Countless stars were continuously circulating around while generating auroras.</p>
 <p class="orv_line">They were Final Scenario's Constellations. Stars that had reached the Myth-grade a long time ago, or those that were receiving the graces of such beings.</p>
 <p class="orv_line">However, rather than approaching us, those stars remained circulating on the skies high above an ancient castle.</p>
@@ -260,22 +267,22 @@
 <p class="orv_line">I quietly stared at that wall.</p>
 <p class="orv_line">It was as if that wall spread out within the entire landscape to arrogantly proclaim that this here was the end of this world-line.</p>
 <p class="orv_line">⸢Everything within this world exists to be recorded on it.⸥</p>
-<div class="orv_system"><p>['King of Stories' is now looking at you.]</p></div>
-<div class="orv_system"><p>['King of Stories' has summoned you.]</p></div>
+<div class="orv_system"><p>'King of Stories' is now looking at you.</p></div>
+<div class="orv_system"><p>'King of Stories' has summoned you.</p></div>
 <p class="orv_line">I was greeted by this jolting sensation that caused all the hair on my body to stand up. I could definitely sense it; a creature that moved the ginormous Story called &lt;Star Stream&gt; was waiting by the centre of that 'wall'.</p>
 <p class="orv_line">My companions must've sensed it too, since they all looked tense.</p>
 <p class="orv_line">Only Yoo Joonghyuk maintained that preternaturally calm expression of his. "I don't see any Constellations."</p>
 <p class="orv_line">It was as he said; although we could see the stars spinning around in the skies, not a single Constellation was walking around in their incarnated form. It was as if they knew we were coming so they had all run off to somewhere.</p>
 <p class="orv_line">It was the Great Dokkaebis welcoming us, instead.</p>
-<div class="orv_system"><p>[Great Dokkaebi 'Heoche' is incarnating into the scenario!]</p></div>
-<div class="orv_system"><p>[Great Dokkaebi 'Harong' is incarnating into the scenario!]</p></div>
-<div class="orv_system"><p>[Great Dokkaebi 'Haram' is incarnating into the scenario!]</p></div>
-<div class="orv_system"><p>[Great Dokkaebi 'Horong' is incarnating into the scenario!]</p></div>
-<div class="orv_system"><p>[Great Dokkaebi 'Noksu' is incarnating into the scenario!]</p></div>
+<div class="orv_system"><p>Great Dokkaebi 'Heoche' is incarnating into the scenario!</p></div>
+<div class="orv_system"><p>Great Dokkaebi 'Harong' is incarnating into the scenario!</p></div>
+<div class="orv_system"><p>Great Dokkaebi 'Haram' is incarnating into the scenario!</p></div>
+<div class="orv_system"><p>Great Dokkaebi 'Horong' is incarnating into the scenario!</p></div>
+<div class="orv_system"><p>Great Dokkaebi 'Noksu' is incarnating into the scenario!</p></div>
 <p class="orv_line">When Dokkaebis possessing mighty Statuses appeared all at once, even I couldn't help but feel the oppressive weight from their combined aura.</p>
-<div class="orv_constellation"><p>[You've come, &lt;Kim Dokja's Company&gt;.]</p></div>
+<div class="orv_constellation"><p>You've come, &lt;Kim Dokja's Company&gt;.</p></div>
 <p class="orv_line">The Great Dokkaebi Heoche, the dude who intruded upon the &lt;Great War of Saints and Demons&gt; in order to recruit us, spoke up. He continued on with eyes of disdain squarely locked on us.</p>
-<div class="orv_constellation"><p>[You have all earned the qualifications of the 'Final Scenario'. Since there is no need to test you, it'll be fine to simply enter the 'Ark'. A detailed explanation will be provided afterwards.]</p></div>
+<div class="orv_constellation"><p>You have all earned the qualifications of the 'Final Scenario'. Since there is no need to test you, it'll be fine to simply enter the 'Ark'. A detailed explanation will be provided afterwards.</p></div>
 <p class="orv_line">"…The Ark?"</p>
 <p class="orv_line">Even before my question could end, a loud, visceral boom resounded out from the centre of the ancient castle. Its middle section opened up, and something began rising up from the castle's foundation.</p>
 <p class="orv_line">⸢And it was a massive ship.⸥</p>
@@ -284,29 +291,29 @@
 <p class="orv_line">Indeed, its shape was of the vessel that saved us during the &lt;Great War of Saints and Demons&gt;. It looked uncannily similar to the &lt;Eden&gt;'s Ark that evacuated us away from the fierce battle between the Apocalypse Dragon and the Indescribable Distance.</p>
 <p class="orv_line">The only difference being, this one was much, much bigger and sturdier-looking than the Ark from that time. Its hull, seemingly carved out from the broken fragment of the wall, emitted both the contrasting white and dark rays of light.</p>
 <p class="orv_line">Great Dokkaebi Heoche continued on as he looked at that hull.</p>
-<div class="orv_constellation"><p>[Originally, this world-line was earmarked as the 'Final World-line'. However, things started becoming distorted during the process, and the world-line's distortion is now well beyond salvageable. The Conclusion of this world can't unlock the 'Final Wall'. Meaning, the epic tale that could satisfy the 'Oldest Dream' cannot be completed anymore.]</p></div>
+<div class="orv_constellation"><p>Originally, this world-line was earmarked as the 'Final World-line'. However, things started becoming distorted during the process, and the world-line's distortion is now well beyond salvageable. The Conclusion of this world can't unlock the 'Final Wall'. Meaning, the epic tale that could satisfy the 'Oldest Dream' cannot be completed anymore.</p></div>
 <p class="orv_line">"What rubbish are you talking about??"</p>
-<div class="orv_constellation"><p>[You all shall become the 'seeds'.]</p></div>
+<div class="orv_constellation"><p>You all shall become the 'seeds'.</p></div>
 <p class="orv_line">The seeds. I had heard of that term even back in the 'Ways of Survival'. A term that denoted all the candidates of the 'One Single Story'.</p>
 <p class="orv_line">Violent sparks intermittently exploded in the distant darkness of the universe; they were ominous noises that seemed to imply the end of the distorted world-line.</p>
 <p class="orv_line">A portion of stars got sucked into those deafening booms and were scattered away in flames before falling to the ground as shooting stars.</p>
 <p class="orv_line">The Dokkaebi continued on while looking at the falling stars.</p>
-<div class="orv_constellation"><p>[Think of it as a great honour. It was the will of the 'King of Stories' that you were chosen as the 'seeds' when you are responsible for ruining this world-line. You shall ride on the 'Ark' and move onto a new world-line. And you shall be reborn as the core 'Story' that will become the next worldview. Just like how those crossing over from the previous world have done.]</p></div>
+<div class="orv_constellation"><p>Think of it as a great honour. It was the will of the 'King of Stories' that you were chosen as the 'seeds' when you are responsible for ruining this world-line. You shall ride on the 'Ark' and move onto a new world-line. And you shall be reborn as the core 'Story' that will become the next worldview. Just like how those crossing over from the previous world have done.</p></div>
 <p class="orv_line">Only then did the things he was saying make sense. Basically, he was telling us to escape from this world.</p>
 <p class="orv_line">"You… Are you really going to give up on this world that easily? You want to abandon this world-line and leave with everyone here? You think such a suggestion even makes sense???"</p>
-<div class="orv_constellation"><p>[Surely, there's no need to be that surprised? It shouldn't be such a bad suggestion for you people, too. Your goal is to reach the conclusion where 'no one has been sacrificed', isn't it?]</p></div>
+<div class="orv_constellation"><p>Surely, there's no need to be that surprised? It shouldn't be such a bad suggestion for you people, too. Your goal is to reach the conclusion where 'no one has been sacrificed', isn't it?</p></div>
 <p class="orv_line">For a moment there, I became speechless.</p>
-<div class="orv_system"><p>[You have succeeded, 'Demon King of Salvation'. You and your companions can now leave this world-line and survive together.]</p></div>
+<div class="orv_system"><p>You have succeeded, 'Demon King of Salvation'. You and your companions can now leave this world-line and survive together.</p></div>
 <p class="orv_line">Explosion noises, mixed in with cracking thunderclaps, reverberated from the other side of the distant sky. It was the noise of the Probability the &lt;Bureau&gt; had been protecting crumbling away.</p>
 <p class="orv_line">As I heard those noises, I belatedly began to understand several things.</p>
 <p class="orv_line">Such as, why there were no Constellations to be seen nearby; or, how could the &lt;Bureau&gt; possess such a powerful influence even from the very start of the worlds.</p>
 <p class="orv_line">"…Just how many times have you been repeating this?"</p>
-<div class="orv_constellation"><p>[Is that really important?]</p></div>
+<div class="orv_constellation"><p>Is that really important?</p></div>
 <p class="orv_line">"What happens to those who can't ride on the Ark? Those who didn't get selected – what will happen to them?"</p>
-<div class="orv_constellation"><p>[You probably have guessed it already without asking us.]</p></div>
-<p class="orv_line">Heoche used his chin to point behind us. That's where the [Turtle Dragon] Lee Jihye had summoned earlier just in case was. And on top of that ship's deck, four sealing spheres emitting sparkling light could be seen – the Outer Gods, including the 'Secretive Plotter'.</p>
+<div class="orv_constellation"><p>You probably have guessed it already without asking us.</p></div>
+<p class="orv_line">Heoche used his chin to point behind us. That's where the <strong>[Turtle Dragon]</strong> Lee Jihye had summoned earlier just in case was. And on top of that ship's deck, four sealing spheres emitting sparkling light could be seen – the Outer Gods, including the 'Secretive Plotter'.</p>
 <p class="orv_line">I stared at the characters from the original novel, currently sleeping within the spheres. Those that got excluded by the scenarios would either die or become Outer Gods, instead.</p>
-<div class="orv_system"><p>[New Main Scenario has arrived!]</p></div>
+<div class="orv_system"><p>New Main Scenario has arrived!</p></div>
 <div class="orv_window">
 <p>&lt;Main Scenario #99 – Escape&gt;</p>
 <p>Type: Main</p>
@@ -323,18 +330,12 @@
             <a href="./ch_484"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_486">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="485" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="533" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="484" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="484" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

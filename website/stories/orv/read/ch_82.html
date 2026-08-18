@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 82: Ep. 17 – SSS-grade Talent, I</title>
     <meta property="og:title" content="Ch 82: Ep. 17 – SSS-grade Talent, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00082.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 82: Ep. 17 – SSS-grade Talent, I</h1></div>
 <p class="orv_line">I frowned at Yoo Joonghyuk's words.</p>
@@ -236,7 +243,7 @@
 <p class="orv_line">Shortly after that, we crossed Cheongdam Bridge and entered Gwangjin-gu.</p>
 <p class="orv_line">I felt the surrounding ecology change little by little. Grass was growing on the streets and instead of rotting bodies, the smell of monster feces filled the area.</p>
 <p class="orv_line">The trunk of a huge plant emerged from the ground and wrapped around the surrounding high-rise buildings.</p>
-<div class="orv_system"><p>[The 7th grade plant species 'Yanaspleta' is on the lookout.]</p></div>
+<div class="orv_system"><p>The 7th grade plant species 'Yanaspleta' is on the lookout.</p></div>
 <p class="orv_line">I spoke to Han Sooyoung who was pulling out a weapon. "Don't act so rashly. It is fine as long as we don't attack first."</p>
 <p class="orv_line">"…Don't these types of monsters suddenly attack with tentacles?"</p>
 <p class="orv_line">"That is just in the manhwas. They are gentle. Just be careful not to step on the roots."</p>
@@ -267,7 +274,7 @@
 <p class="orv_line">–If I was going to give up so easily, I wouldn't have started this journey.</p>
 <p class="orv_line">It really felt like the first time I read Ways of Survival. I thought that maybe Han Sooyoung was right. The Yoo Joonghyuk I believed I knew was the Yoo Joonghyuk who easily gave up, easily killed people and repeatedly caused numerous tragedies.</p>
 <p class="orv_line">However, the Yoo Joonghyuk of the third round wasn't yet like that. Maybe I didn't know the Yoo Joonghyuk of the third round.</p>
-<div class="orv_system"><p>[Your understanding of the character 'Yoo Joonghyuk' is increasing.]</p></div>
+<div class="orv_system"><p>Your understanding of the character 'Yoo Joonghyuk' is increasing.</p></div>
 <p class="orv_line">In the meantime, Yoo Joonghyuk said.</p>
 <p class="orv_line">–I thought of you right away. I thought you would be a bit of help since you are the one who smashed the Absolute Throne.</p>
 <p class="orv_line">–You aren't going to say anything about me breaking the throne?</p>
@@ -305,8 +312,8 @@
 <p class="orv_line">–You are talking as if you have regressed before.</p>
 <p class="orv_line">–I don't need to regress to understand.</p>
 <p class="orv_line">I knew that I shouldn't speak about understanding. Still, I wanted to say it. Since he wouldn't receive understanding from anyone in the future, I thought I could say this.</p>
-<div class="orv_system"><p>[The character 'Yoo Joonghyuk' is deeply shaken.]</p></div>
-<div class="orv_system"><p>[The character 'Yoo Joonghyuk' has received a faint consolation.]</p></div>
+<div class="orv_system"><p>The character 'Yoo Joonghyuk' is deeply shaken.</p></div>
+<div class="orv_system"><p>The character 'Yoo Joonghyuk' has received a faint consolation.</p></div>
 <p class="orv_line">–Strange. You obviously aren't a regressor… But I feel like you really understand these emotions. Is this also the power of a prophet?</p>
 <p class="orv_line">I didn't answer, making Yoo Joonghyuk continue speaking.</p>
 <p class="orv_line">–Of course, you aren't a good person. You are the unscrupulous person who kidnapped my sister.</p>
@@ -360,8 +367,8 @@
 <p class="orv_line">All the threads were connected to one woman. The woman wearing a tight black battle suit flew through the air. Two knives stretched out from the fingers of the woman brilliantly riding the thread of magic.</p>
 <p class="orv_line">The woman freely manipulated the length of the thread and she swept away the Poisoner's group in an instant.</p>
 <p class="orv_line">There wasn't any hesitation in her hand. The movements were beyond beautiful. The combination of stats and skills showed that she didn't have an ordinary sponsor.</p>
-<div class="orv_system"><p>[The information of this person can't be read in 'Character List'.]</p></div>
-<div class="orv_system"><p>[This person isn't registered in 'Character List'.]</p></div>
+<div class="orv_system"><p>The information of this person can't be read in 'Character List'.</p></div>
+<div class="orv_system"><p>This person isn't registered in 'Character List'.</p></div>
 <p class="orv_line">She wasn't even on the Character List.</p>
 <p class="orv_line">Han Sooyoung muttered. "Hey, that woman…"</p>
 <p class="orv_line">I knew without her saying anything. It was because this woman was someone I knew.</p>
@@ -376,18 +383,12 @@
             <a href="./ch_81"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_83">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="82" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="111" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="81" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="81" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

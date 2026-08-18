@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 265: Ep. 50 - Dokja's Story, II</title>
     <meta property="og:title" content="Ch 265: Ep. 50 - Dokja's Story, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00265.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 265: Ep. 50 - Dokja's Story, II</h1></div>
 <p class="orv_line">There were a total of three 'reinforcements' that Yoo Joonghyuk invited. Beast Master Shin Yoosung, Steel Sword Lee Hyunsung and…</p>
@@ -196,9 +203,9 @@
 <p class="orv_line">Ariadne's web shot through the air and placed me on Lee Hyunsung's back. A woman in a cat suit was running through the sky with the Hermes Walking Method. It was the incarnation of Olympus, Yoo Sangah.</p>
 <p class="orv_line">"Yoosung, fire the breath from a long distance! Continue until Hyunsung-ssi leaves!"</p>
 <p class="orv_line">The chimera dragon roared and fired a breath. The Apocalypse Imoogi screamed like it was quite painful.</p>
-<div class="orv_system"><p>[The constellation 'Master of Steel' has given a great probability to his incarnation.]</p></div>
-<div class="orv_system"><p>[The constellation 'Abandoned Lover of the Labyrinth' is supporting her incarnation.]</p></div>
-<div class="orv_system"><p>[The constellation 'Master of the Skywalk' is supporting his incarnation.]</p></div>
+<div class="orv_system"><p>The constellation 'Master of Steel' has given a great probability to his incarnation.</p></div>
+<div class="orv_system"><p>The constellation 'Abandoned Lover of the Labyrinth' is supporting her incarnation.</p></div>
+<div class="orv_system"><p>The constellation 'Master of the Skywalk' is supporting his incarnation.</p></div>
 <p class="orv_line">The constellations supporting Lee Hyunsung and Yoo Sangah seemed to be struggling. Thanks to Yoo Sangah's commands, I was forcibly carried on Lee Hyunsung's shoulder.</p>
 <p class="orv_line">"…Lee Hyunsung-ssi."</p>
 <p class="orv_line">"Stay still, Dokja-ssi."</p>
@@ -245,75 +252,75 @@
 <p class="orv_line">The chimera dragon let out a burst of wind and the nearby trees collapsed. The battlefield where the constellations was fighting was clearly revealed.</p>
 <p class="orv_line">"Yoo Joonghyuk!"</p>
 <p class="orv_line">Yoo Joonghyuk glanced this way from where he was surrounded by constellations.</p>
-<div class="orv_quote"><p>「 You're late. 」</p></div>
+<div class="orv_quote"><p>You're late.</p></div>
 <p class="orv_line">He was still arrogant but the blood flowing from his body made him seem like he was dying.</p>
-<div class="orv_constellation"><p>[You! He has a sentence!]</p></div>
+<div class="orv_constellation"><p>You! He has a sentence!</p></div>
 <p class="orv_line">Perhaps there was a special skill to determine this as one constellation screamed.</p>
 <p class="orv_line">Apart from our team, the number of participants remaining was six. Our side had only five people, including the new reinforcements. In addition, Yoo Joonghyuk was in a state where he almost couldn't fight anymore.</p>
-<div class="orv_constellation"><p>[Go!]</p></div>
+<div class="orv_constellation"><p>Go!</p></div>
 <p class="orv_line">As the all-out combat began, the constellations set up a formation centred around the Founder of Humanity and General of Vanara. The first one to run towards them was Steel Sword Lee Hyunsung.</p>
 <p class="orv_line">"I! Won't! Lose! It! Again!"</p>
 <p class="orv_line">Lee Hyunsung flew forward and started to fight with the narrative-grade constellation, Manu.</p>
 <p class="orv_line">Manu frowned like he was displeased to exchange blows with an incarnation. His powerful 'status' burned at Manu's fingertips and the steel shell was slightly softened, but Lee Hyunsung didn't back down.</p>
-<div class="orv_system"><p>[The constellation 'Master of Steel' is looking at the 'Founder of Humanity'.]</p></div>
+<div class="orv_system"><p>The constellation 'Master of Steel' is looking at the 'Founder of Humanity'.</p></div>
 <p class="orv_line">The Founder of Humanity was narrative-grade but so was the Master of Steel. I looked at the thorns of Steel Transformation rising around Lee Hyunsung's body and I could only guess how harsh the personal scenarios that he completed were. It wasn't a position that more than 10 incarnations could reach. The current Lee Hyunsung showed an overwhelming growth potential compared to the Lee Hyunsung of any other rounds.</p>
 <p class="orv_line">Yoo Sangah watched the scene and also ran forward. "I'll take Olympus."</p>
-<div class="orv_constellation"><p>[This girl, are you crazy?]</p></div>
+<div class="orv_constellation"><p>This girl, are you crazy?</p></div>
 <p class="orv_line">King Oedipus discovered Yoo Sangah. The two of them both belonged to Olympus. However, based on what I heard from Dionysus, Olympus was currently in the middle of a civil war.</p>
-<div class="orv_constellation"><p>[Master of the Skywalk! You're making the wrong choice right now!]</p></div>
+<div class="orv_constellation"><p>Master of the Skywalk! You're making the wrong choice right now!</p></div>
 <p class="orv_line">I didn't know the exact situation but it was obvious that a group led by Dionysus and Hermes was trying to be independent from the existing Olympus.</p>
 <p class="orv_line">Yoo Sangah started fighting with King Oedipus while Shin Yoosung moved the chimera dragon.</p>
 <p class="orv_line">The condensed breath covered the battlefield. The constellations who couldn't avoid it screamed.</p>
-<div class="orv_system"><p>[There are 10 minutes remaining.]</p></div>
+<div class="orv_system"><p>There are 10 minutes remaining.</p></div>
 <p class="orv_line">The second round was reaching its end. At this moment, the points of each team were almost equal. The constellations were desperate. Several constellations headed towards the chimera dragon and the dragon and Shin Yoosung were in a crisis.</p>
 <p class="orv_line">The dragon wasn't able to use its force because it consumed quite a lot of power when dealing with the Apocalypse Imoogi.</p>
-<div class="orv_constellation"><p>[A hatchling! It is only big!]</p></div>
+<div class="orv_constellation"><p>A hatchling! It is only big!</p></div>
 <p class="orv_line">It would be our side that was disadvantageous if this round ended in a draw. The game would flow into the third game and if we didn't win, we would have to deal with the constellations on a stage where the penalty had disappeared.</p>
 <p class="orv_line">Yoo Joonghyuk knew this fact and pointed to Duke Bercan. "Kill the duke. He has the sentence."</p>
 <p class="orv_line">I nodded.</p>
 <p class="orv_line">"I will create a path." Yoo Joonghyuk squeezed out his magic power and used Breaking the Sky Swordsmanship.</p>
-<div class="orv_constellation"><p>[They are aiming for the sentence!]</p></div>
+<div class="orv_constellation"><p>They are aiming for the sentence!</p></div>
 <p class="orv_line">Yoo Joonghyuk slashed and slashed again to create a road. He used his last force to draw a huge semicircle on the ground and the constellations rushed at him.</p>
-<div class="orv_quote"><p>「 I'll leave it to you, Kim Dokja. 」</p></div>
+<div class="orv_quote"><p>I'll leave it to you, Kim Dokja.</p></div>
 <p class="orv_line">Yoo Joonghyuk was pierced in the heart by Manu's spear.</p>
-<div class="orv_system"><p>[The helper 'Yoo Joonghyuk' has been killed!]</p></div>
+<div class="orv_system"><p>The helper 'Yoo Joonghyuk' has been killed!</p></div>
 <p class="orv_line">He stood upright even at the moment of death. The constellations turned to me after Yoo Joonghyuk disappeared. The Primitive Spear and a ray of light headed my way. However, the bombardment didn't reach me.</p>
 <p class="orv_line">"Dokja-ssi!"</p>
 <p class="orv_line">Lee Hyunsung activated Steel Transformation to block the attacks of the constellations. The hot heat and shock would be terribly painful but Lee Hyunsung seemed more energetic. Duke Bercan could be seen in the distance.</p>
-<div class="orv_system"><p>[There are five minutes remaining.]</p></div>
+<div class="orv_system"><p>There are five minutes remaining.</p></div>
 <p class="orv_line">"Hyunsung-ssi, throw me."</p>
 <p class="orv_line">"It isn't possible. Doing that again…!"</p>
 <p class="orv_line">"You have to throw the grenade after pulling out the safety pin." I stared into Lee Hyunsung's shaky eyes. "Even if I die here, I won't really die."</p>
 <p class="orv_line">The real death was losing this Demon King Selection. Lee Hyunsung watched for a while before closing and opening his eyes. Lee Hyunsung's eyes returned to that of a soldier. "I won't believe your lie again!"</p>
 <p class="orv_line">"No, now isn't the time to be stubborn—"</p>
 <p class="orv_line">"If you die, we will die together!"</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is greatly pleased.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is greatly pleased.</p></div>
 <p class="orv_line">"I must do this."</p>
 <p class="orv_line">Then Lee Hyunsung started running with me on his back. Manu was hit by the rushing Lee Hyunsung and rolled on the floor like a bowling pin.</p>
-<div class="orv_constellation"><p>[Keeok! Cheeky incarnation…!]</p></div>
+<div class="orv_constellation"><p>Keeok! Cheeky incarnation…!</p></div>
 <p class="orv_line">No one was able to stop the berserk Lee Hyunsung. At least, it looked like that.</p>
-<div class="orv_constellation"><p>[Proud child. As I said earlier, it is barely 'history'.]</p></div>
+<div class="orv_constellation"><p>Proud child. As I said earlier, it is barely 'history'.</p></div>
 <p class="orv_line">Lee Hyunsung's movements were stopped by a powerful 'status'. The Supreme God of Light Surya had recovered his strength and was blocking the way. His Third Eyes might not work properly but he was still a Lokapala of Vedas. He had the power to stop us.</p>
 <p class="orv_line">His four arms moved and the entire ground shook as the running Lee Hyunsung was pushed back. He tried running again but the same thing repeated.</p>
-<div class="orv_constellation"><p>[The place where you are standing now is a place for humans. A human who keeps repeating the same mistakes.]</p></div>
+<div class="orv_constellation"><p>The place where you are standing now is a place for humans. A human who keeps repeating the same mistakes.</p></div>
 <p class="orv_line">I triggered Electrification from Lee Hyunsung's back. My fists stretched out and struck Surya's torso.</p>
 <p class="orv_line">Even so, Surya didn't budge. The transparent shield created by the four arms smothered all my attacks.</p>
-<div class="orv_constellation"><p>[Only this much? Are you really trying to see the end of the scenario?]</p></div>
+<div class="orv_constellation"><p>Only this much? Are you really trying to see the end of the scenario?</p></div>
 <p class="orv_line">It was the power to deny all the history I had accumulated. Electrification and the Purest Sword Force didn't work.</p>
-<div class="orv_constellation"><p>[The times have changed. Only this much history…]</p></div>
+<div class="orv_constellation"><p>The times have changed. Only this much history…</p></div>
 <p class="orv_line">There was such a gap despite only 30% of his power being available. What would happen if 100% of the power was opened?</p>
 <p class="orv_line">Then a new voice was heard. "Don't ignore ahjussi!"</p>
 <p class="orv_line">Shin Yoosung shouted from the head of the chimera dragon. The breath poured out at Shin Yoosung's signal. Surya swung his arms and scattered the breath.</p>
 <p class="orv_line">Lee Hyunsung leapt through this gap. His Steel Transformation body collided with Surya. Surya, who had been unmoved by countless attacks, shook for the first time.</p>
 <p class="orv_line">"Uwaaaaaah!" Lee Hyunsung swung his fists towards Surya like a madman. Lee Hyunsung didn't stop despite the Steel Transformation around his fists cracking, blood splashing and bones breaking.</p>
-<div class="orv_system"><p>[The 73rd Demon Realm is responding to the will of you and your helpers.]</p></div>
-<div class="orv_system"><p>[A new story about you is being made.]</p></div>
+<div class="orv_system"><p>The 73rd Demon Realm is responding to the will of you and your helpers.</p></div>
+<div class="orv_system"><p>A new story about you is being made.</p></div>
 <p class="orv_line">The human's will to challenge a god was causing cracks in the defensive wall. A little break. It was a very small crack that human history created.</p>
 <p class="orv_line">"Hyunsung-ssi."</p>
 <p class="orv_line">Lee Hyunsung and I didn't miss this gap. As if throwing a grenade, Lee Hyunsung threw my body that had become small through Miniaturization. I broke through the barrier created by Surya's arms and rushed to Duke Bercan. Duke Bercan turned his head with surprise while I activated Electrification and my sword pierced his neck.</p>
-<div class="orv_system"><p>[The participant 'Demon King of Salvation' has killed the participant 'Duke Bercan'!]</p></div>
+<div class="orv_system"><p>The participant 'Demon King of Salvation' has killed the participant 'Duke Bercan'!</p></div>
 <p class="orv_line">…I did it. Along with the triumphant victory, countless system messages flowed into my head. Before I could read the messages, a power squeezed at me. At the last moment, I saw Surya's face.</p>
-<div class="orv_system"><p>[You have died.]</p></div>
+<div class="orv_system"><p>You have died.</p></div>
 <br>
 <hr>
         </article>
@@ -321,18 +328,12 @@
             <a href="./ch_264"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_266">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="265" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="337" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="264" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="264" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

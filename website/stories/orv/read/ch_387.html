@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 387: Ep. 74 - Great War of Saints and Demons, II</title>
     <meta property="og:title" content="Ch 387: Ep. 74 - Great War of Saints and Demons, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00387.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 387: Ep. 74 - Great War of Saints and Demons, II</h1></div>
 <p class="orv_line">The first person to raise her voice was Han Sooyoung. "What the hell? How can you even think that? Does one's intelligence get worse the more you regress?"</p>
@@ -224,7 +231,7 @@
 <p class="orv_line">"That's all I've heard from him. That was all the questions I was permitted to ask."</p>
 <p class="orv_line">"You couldn't dig out more info, though?"</p>
 <p class="orv_line">"That means I'll have to make another deal with him. If I do, then I'll have to bear a heavier cost than the last time," said Yoo Joonghyuk, and he shifted his gaze to the sky.</p>
-<p class="orv_line">She also looked up as well and activated [Midday Tryst].</p>
+<p class="orv_line">She also looked up as well and activated <strong>[Midday Tryst]</strong>.</p>
 <p class="orv_line">– Is he looking at us?</p>
 <p class="orv_line">– I can't sense his gaze.</p>
 <p class="orv_line">That was a slightly disappointing result; they were chatting away openly like this so that the subject in question would hear them, but it seemed that he wasn't even watching them right now. Should she say it wasn't like 'Secretive Plotter'?</p>
@@ -243,12 +250,12 @@
 <p class="orv_line">Just before he could grasp the cold hilt of his sword, a rather sly voice came towards them from nearby. "You two seem to be enjoying each other's company."</p>
 <p class="orv_line">Two people's cold, murderous glares squarely landed on Kim Dokja.</p>
 <p class="orv_line">He formed a bitter smile and was about to wave his hands around while backing away, but then, a new scenario message rose up in the empty air.</p>
-<div class="orv_system"><p>[New coordinates for the 113th regional conflict have been set.]</p></div>
+<div class="orv_system"><p>New coordinates for the 113th regional conflict have been set.</p></div>
 <p class="orv_line">The gazes of the group were now fixed on Kim Dokja. Finally, time to make another move had arrived.</p>
 <p class="orv_line">"Well, let's go and cause another scene, then."</p>
 <p class="orv_line">As if they were all waiting for it, Stories of &lt;Kim Dokja's Company&gt; began clamouring loudly.</p>
-<div class="orv_system"><p>[New Story is sprouting in the Demon King, 'Demon King of Salvation'!]</p></div>
-<div class="orv_system"><p>[List of candidates for 'Demon King of Salvation's' second Modifier have been generated.]</p></div>
+<div class="orv_system"><p>New Story is sprouting in the Demon King, 'Demon King of Salvation'!</p></div>
+<div class="orv_system"><p>List of candidates for 'Demon King of Salvation's' second Modifier have been generated.</p></div>
 <br>
 <hr>
 <br>
@@ -259,29 +266,29 @@
 <p class="orv_line">While he tested the qualification of 'Evil', restricted, and even ruled over it, he focused all of his being on only one question.</p>
 <p class="orv_line">What did 'Evil' exist for?</p>
 <p class="orv_line">Every time he ripped apart yet another living being, he immersed himself in that question. It was not important whether this question had an answer or not; no, that question simply enabled him to carry on.</p>
-<div class="orv_system"><p>[113th regional conflict has been forcibly concluded.]</p></div>
-<div class="orv_system"><p>[114th regional conflict has been forcibly concluded.]</p></div>
+<div class="orv_system"><p>113th regional conflict has been forcibly concluded.</p></div>
+<div class="orv_system"><p>114th regional conflict has been forcibly concluded.</p></div>
 <p class="orv_line">However, this was his first time seeing such a spectacle in the thousands of years he'd lived so far.</p>
 <p class="orv_line">– Everyone, be strong for a little bit longer!</p>
 <p class="orv_line">– We've almost suppressed them all!</p>
 <p class="orv_line">There were people rescuing the Reincarnators from the chaotic battlefield. The expendables being sacrificed regardless of the outcome of the great battle between 'Good' and 'Evil' were being saved by someone.</p>
 <p class="orv_line">Now normally, such actions would correspond to the side of 'Good'. However, the problem here was that a Demon King was responsible for performing that very action.</p>
-<div class="orv_system"><p>[Chaos Points have increased by 4.]</p></div>
-<div class="orv_system"><p>[Chaos Points are currently 60.]</p></div>
-<div class="orv_system"><p>[Warning! Chaos Points have exceeded 60!]</p></div>
+<div class="orv_system"><p>Chaos Points have increased by 4.</p></div>
+<div class="orv_system"><p>Chaos Points are currently 60.</p></div>
+<div class="orv_system"><p>Warning! Chaos Points have exceeded 60!</p></div>
 <p class="orv_line">Chaos. Neither 'Good' nor 'Evil', it was 'something' that existed outside of the world's Probability and its natural order.</p>
-<div class="orv_constellation"><p>[You want to increase the Chaos Points and stop the 'Great War of Saints and Demons', is that it?]</p></div>
+<div class="orv_constellation"><p>You want to increase the Chaos Points and stop the 'Great War of Saints and Demons', is that it?</p></div>
 <p class="orv_line">Reddish horns sprouted up below the fedora pushed down deeply on Agares's head, which was his unique quirk whenever he was intrigued by something.</p>
-<div class="orv_constellation"><p>[Stop smaller-scale destruction with the threat of even bigger destruction. It truly is an idea only the 'Demon King of Salvation' can cook up.]</p></div>
+<div class="orv_constellation"><p>Stop smaller-scale destruction with the threat of even bigger destruction. It truly is an idea only the 'Demon King of Salvation' can cook up.</p></div>
 <p class="orv_line">The one to offer his opinion was the 'Devil of Lust and Wrath', Asmodeus.</p>
 <p class="orv_line">Agares spoke, his fingers gripping the throne wagging to and fro.</p>
-<div class="orv_constellation"><p>[Why does he not side with 'Evil'? Surely, he'd not lose out by joining this side.]</p></div>
-<div class="orv_constellation"><p>[Once this 'Great War of Saints and Demons' concludes, his 'Twist' will be completed. It also means that the ■■ he pursues is not on the path of 'Evil'.]</p></div>
-<div class="orv_constellation"><p>[Even then, he doesn't seem to be pursuing the ■■ of 'Good', either.]</p></div>
+<div class="orv_constellation"><p>Why does he not side with 'Evil'? Surely, he'd not lose out by joining this side.</p></div>
+<div class="orv_constellation"><p>Once this 'Great War of Saints and Demons' concludes, his 'Twist' will be completed. It also means that the ■■ he pursues is not on the path of 'Evil'.</p></div>
+<div class="orv_constellation"><p>Even then, he doesn't seem to be pursuing the ■■ of 'Good', either.</p></div>
 <p class="orv_line">This was a far more awkward situation than if he had chosen to side with either the 'Good' or 'Evil'.</p>
 <p class="orv_line">Agares asked again.</p>
-<div class="orv_constellation"><p>[What are your thoughts?]</p></div>
-<div class="orv_constellation"><p>[Metatron will make a move first before we do. There is simply no way that the aged Angel who had been thirsting after this war more than anyone else would let his careful plans get thrown into disarray.]</p></div>
+<div class="orv_constellation"><p>What are your thoughts?</p></div>
+<div class="orv_constellation"><p>Metatron will make a move first before we do. There is simply no way that the aged Angel who had been thirsting after this war more than anyone else would let his careful plans get thrown into disarray.</p></div>
 <p class="orv_line">Almost at the same time as those words came to an end, a single line message arrived through the Demon King's line of transmission.</p>
 <p class="orv_line">– Agares, I've contacted you with a matter I need to discuss.</p>
 <p class="orv_line">The torn corners of Agares's lips curled up in a smile.</p>
@@ -320,20 +327,20 @@
 <br>
 <hr>
 <br>
-<div class="orv_system"><p>[Gate leading to 115th regional conflict has opened!]</p></div>
-<div class="orv_system"><p>[Gate leading to 116th regional conflict has opened!]</p></div>
-<div class="orv_system"><p>[Gate leading to 117th regional conflict…!]</p></div>
+<div class="orv_system"><p>Gate leading to 115th regional conflict has opened!</p></div>
+<div class="orv_system"><p>Gate leading to 116th regional conflict has opened!</p></div>
+<div class="orv_system"><p>Gate leading to 117th regional conflict…!</p></div>
 <p class="orv_line">I chuckled hollowly while watching the Gates blanket space in real-time.</p>
 <p class="orv_line">I knew it. There was just no way that Metatron or Agares would let this matter slide like that.</p>
 <p class="orv_line">Jung Heewon watched the portals that appeared and disappeared in real-time and asked a question. "Dokja-ssi, what's going on?"</p>
 <p class="orv_line">"They've started several regional conflicts at once."</p>
 <p class="orv_line">"But, can that even happen?"</p>
 <p class="orv_line">"Originally, no. Even if it's nominally a regional conflict, it can't start and end that quickly."</p>
-<div class="orv_system"><p>[115th regional conflict has concluded.]</p></div>
-<div class="orv_system"><p>[116th regional conflict has concluded.]</p></div>
+<div class="orv_system"><p>115th regional conflict has concluded.</p></div>
+<div class="orv_system"><p>116th regional conflict has concluded.</p></div>
 <p class="orv_line">Along with the battlefields that were concluding abruptly, the scenario message floated up in the air as well.</p>
 <div class="orv_window">
-<h3 class="orv_window_title">[Current state of Great War's progress]</h3>
+<h3 class="orv_window_title">Current state of Great War's progress</h3>
 <p>Absolute Good Points: 57</p>
 <p>Absolute Evil Points: 57</p>
 <p>Chaos Points: 60</p>
@@ -361,7 +368,7 @@
 <p class="orv_line">This time, Han Sooyoung tackled me. "Who? Who'd wanna become our allies in the current situation?"</p>
 <p class="orv_line">Indeed, no one would want to side with us, normally.</p>
 <p class="orv_line">However, if my thoughts were correct, then at least, there was one. No, make that two.</p>
-<div class="orv_system"><p>[Nebula, &lt;Underworld&gt;, is waiting for you.]</p></div>
+<div class="orv_system"><p>Nebula, &lt;Underworld&gt;, is waiting for you.</p></div>
 <p class="orv_line">I smirked and replied. "My parents."</p>
 <br>
 <hr>
@@ -370,18 +377,12 @@
             <a href="./ch_386"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_388">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="387" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="667" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="386" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="386" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

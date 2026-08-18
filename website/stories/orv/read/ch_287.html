@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 287: Ep. 54 - Demon King Slayer, III</title>
     <meta property="og:title" content="Ch 287: Ep. 54 - Demon King Slayer, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,113 +177,113 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00287.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 287: Ep. 54 - Demon King Slayer, III</h1></div>
-<div class="orv_constellation"><p>[Archangel!]</p></div>
+<div class="orv_constellation"><p>Archangel!</p></div>
 <p class="orv_line">Demon King Ose was looking to this side with eyes that were frightened beyond surprise. It was the same for the constellations of the absolute evil system. For them, the archangels of Eden were the worst enemies.</p>
 <p class="orv_line">It wasn't strange that they would be shocked at the sight of two archangels emerging simultaneously.</p>
-<div class="orv_constellation"><p>[Why are there archangels? The angels of Eden mostly died after that day!]</p></div>
+<div class="orv_constellation"><p>Why are there archangels? The angels of Eden mostly died after that day!</p></div>
 <p class="orv_line">I heard the murmurs and felt regret. This was the world of the 1863rd regression. Gabriel and Jophiel wouldn't know what happened in this round.</p>
-<div class="orv_constellation"><p>[■ck, what nonsense is this?]</p></div>
+<div class="orv_constellation"><p>■ck, what nonsense is this?</p></div>
 <p class="orv_line">Gabriel's true voice rang out like she had been waiting. Like Uriel, swear words emerged from her mouth. I had to stop her before things became bigger.</p>
 <p class="orv_line">"Gabriel. You don't need to listen to their nonsense. Quickly handle them!"</p>
-<div class="orv_constellation"><p>[…Don't whine at me. Cheeky human.]</p></div>
+<div class="orv_constellation"><p>…Don't whine at me. Cheeky human.</p></div>
 <p class="orv_line">There were places to tackle but she had to follow the words this once. Gabriel's power filled my entire body.</p>
-<div class="orv_constellation"><p>[I am the archangel Gabriel.]</p></div>
+<div class="orv_constellation"><p>I am the archangel Gabriel.</p></div>
 <p class="orv_line">I could feel my hairs standing up. Finally, Gabriel's main story was heard.</p>
-<div class="orv_constellation"><p>[I have been sent to tell you this good news.]</p></div>
+<div class="orv_constellation"><p>I have been sent to tell you this good news.</p></div>
 <p class="orv_line">Of course, that 'good news' only applied if Gabriel was on the same side.</p>
-<div class="orv_constellation"><p>[Don't be scared! The archangels are nothing but remnants who have lost their stronghold!]</p></div>
+<div class="orv_constellation"><p>Don't be scared! The archangels are nothing but remnants who have lost their stronghold!</p></div>
 <p class="orv_line">Demon King Ose encouraged the constellations. However, as he was talking, Oso was already moving far away. It happened when the constellations held their star relics and rushed towards me.</p>
-<div class="orv_constellation"><p>[This is about the set end.]</p></div>
+<div class="orv_constellation"><p>This is about the set end.</p></div>
 <p class="orv_line">Gabriel's story, the 'Revelation of the Apocalypse' had begun.</p>
-<div class="orv_quote"><p>「 You have seen a ram with two horns, the great horn between the eyes is the first king. 」</p></div>
+<div class="orv_quote"><p>You have seen a ram with two horns, the great horn between the eyes is the first king.</p></div>
 <p class="orv_line">Golden strings flowed from my body. The size of my body was growing along with the strings. My body was overflowing with power like a ram in breeding season. Pure white horns rose in the place where the demon king's horns had grown.</p>
-<div class="orv_constellation"><p>[U-Uhhhh…]</p></div>
+<div class="orv_constellation"><p>U-Uhhhh…</p></div>
 <p class="orv_line">The constellations of the absolute evil system were frightened just looking at the horns. Some constellations dropped their weapons like helpless incarnations and some of them rushed around screaming.</p>
-<div class="orv_constellation"><p>[Uwaaah!]</p></div>
+<div class="orv_constellation"><p>Uwaaah!</p></div>
 <p class="orv_line">It was like they saw their end.</p>
-<div class="orv_quote"><p>「 He will be stronger and stronger with his own power, not my power. 」</p></div>
+<div class="orv_quote"><p>He will be stronger and stronger with his own power, not my power.</p></div>
 <p class="orv_line">The six wings behind me emitted a brilliant flash of light as the attacks of the constellations poured towards me. Even so, I didn't receive any damage.</p>
 <p class="orv_line">The solid metal summoned before my eyes was neutralizing all types of attacks.</p>
 <p class="orv_line">A weapon that looks like something a giant would use.</p>
 <p class="orv_line">A shining white snake was climbing up the handle, and in its mouth was a dazzling spear reminiscent of a cross.</p>
 <p class="orv_line">This was Gabriel's divine spear, the Preference Scale. I grasped the handle of the spear. All of a sudden, the world felt like it was tilting. All beings in the vicinity were placed on a scale. They were on one side of the scale or the other.</p>
 <p class="orv_line">I turned my head and Gabriel was smiling. Her palms touched my shoulder.</p>
-<div class="orv_quote"><p>「 He will commit terrible destruction and shall destroy the mighty and holy people. 」</p></div>
+<div class="orv_quote"><p>He will commit terrible destruction and shall destroy the mighty and holy people.</p></div>
 <p class="orv_line">The spear shone brilliantly and I threw it with all my might.</p>
 <p class="orv_line">Then part of the world was erased. The constellations attacking me from the sky, those running from the side and even the ones who had lost their fighting spirit and had sunk to the ground. They disappeared like they never existed in this world. The only things left were the existences on this side of the scale.</p>
 <p class="orv_line">This was the true power of the archangel. Gabriel opened her mouth and spoke in a grudging voice.</p>
-<div class="orv_constellation"><p>[…I missed one. There was a limit to the number of petals.]</p></div>
+<div class="orv_constellation"><p>…I missed one. There was a limit to the number of petals.</p></div>
 <p class="orv_line">In fact, Demon King Ose had anticipated the situation in advance and had already fled. He knew that he couldn't cope with an archangel alone as a lower-ranked demon king. However, Jophiel didn't just watch.</p>
 <p class="orv_line">A red fog was generated behind me and followed Ose. The whole world screamed like it was in pain. It was apparently a red fog but when I looked closer, it was an army of small soldiers.</p>
 <p class="orv_line">The 503rd unit of Eden turned the sky red. It was the elite unit that followed the Commander of the Red Cosmos.</p>
-<div class="orv_constellation"><p>[Kueeeeok!]</p></div>
+<div class="orv_constellation"><p>Kueeeeok!</p></div>
 <p class="orv_line">Red thorns rose from the bloody fog that moved like piranhas. A terrible scream was heard in the distance as the soldiers of heaven held a festival of blood. Then after a while, everything became silent.</p>
 <p class="orv_line">The torn incarnation body of the demon king flew in the wind like crumbs. The silent Gabriel moved my feet and trampled on the fragments of the demon king.</p>
-<div class="orv_constellation"><p>[It's nothing.]</p></div>
-<div class="orv_system"><p>[Constellations of the absolute evil system are greatly baffled by the emergence of the archangels.]</p></div>
-<div class="orv_system"><p>[The demon kings are doubting the probability of the Star Stream.]</p></div>
-<div class="orv_system"><p>[Some constellations have condemned the abnormal intervention of the archangels…]</p></div>
-<div class="orv_constellation"><p>[Shut up these ■■.]</p></div>
+<div class="orv_constellation"><p>It's nothing.</p></div>
+<div class="orv_system"><p>Constellations of the absolute evil system are greatly baffled by the emergence of the archangels.</p></div>
+<div class="orv_system"><p>The demon kings are doubting the probability of the Star Stream.</p></div>
+<div class="orv_system"><p>Some constellations have condemned the abnormal intervention of the archangels…</p></div>
+<div class="orv_constellation"><p>Shut up these ■■.</p></div>
 <p class="orv_line">The six wings stretching from my back flew through the wind as countless feathers and the power of the archangels diminished.</p>
 <p class="orv_line">I felt a bit nauseous but the burden on my body wasn't as severe as I thought. Maybe it was because the amount of probability in the 95th scenario was much more abundant or maybe it was the Outer World Covenant with Secretive Plotter. Either way, it was good for me.</p>
-<div class="orv_constellation"><p>[It isn't finished yet.]</p></div>
+<div class="orv_constellation"><p>It isn't finished yet.</p></div>
 <p class="orv_line">However, Jophiel didn't retract her strength. Jophiel continued by giving a command.</p>
-<div class="orv_constellation"><p>[Kill him too.]</p></div>
+<div class="orv_constellation"><p>Kill him too.</p></div>
 <p class="orv_line">She was pointing to Yoo Joonghyuk who was as stiff as a statue. I hurriedly waved my hands. "There is no need. He isn't a bad guy…"</p>
-<div class="orv_constellation"><p>[He is absolutely evil.]</p></div>
+<div class="orv_constellation"><p>He is absolutely evil.</p></div>
 <p class="orv_line">My right eye stung and the world started to look different.</p>
-<div class="orv_system"><p>[The stigma 'Eye of Sin' is triggered!]</p></div>
+<div class="orv_system"><p>The stigma 'Eye of Sin' is triggered!</p></div>
 <p class="orv_line">Eye of Sin. It was Archangel Jophiel's stigma.</p>
-<div class="orv_system"><p>[Measuring the 'sins' of the target.]</p></div>
+<div class="orv_system"><p>Measuring the 'sins' of the target.</p></div>
 <p class="orv_line">The eye that saw the 'sins' accumulated in every existence in the world. There was only a dark abyss in the place where Yoo Joonghyuk had just been standing.</p>
-<div class="orv_system"><p>[The 'sins' of the target can't be converted to a numerical value.]</p></div>
+<div class="orv_system"><p>The 'sins' of the target can't be converted to a numerical value.</p></div>
 <p class="orv_line">A darkness with no end. It was a darkness that got worse just by looking at it. Even the demon kings or constellations of the absolute evil system didn't have such huge sins.</p>
 <p class="orv_line">Jophiel spoke.</p>
-<div class="orv_constellation"><p>[It is an endless sin. I have never seen such a dense sin apart from Baal and Agares. All the sins in the world combined can't go beyond his sins.]</p></div>
+<div class="orv_constellation"><p>It is an endless sin. I have never seen such a dense sin apart from Baal and Agares. All the sins in the world combined can't go beyond his sins.</p></div>
 <p class="orv_line">I knew. Yoo Joonghyuk had committed many sins. He killed many people. He destroyed many worlds. Countless souls cursed him.</p>
-<div class="orv_constellation"><p>[He must die.]</p></div>
+<div class="orv_constellation"><p>He must die.</p></div>
 <p class="orv_line">However—</p>
 <p class="orv_line">"It isn't possible."</p>
 <p class="orv_line">This person, he also saved others.</p>
 <p class="orv_line">"You can't kill him."</p>
 <p class="orv_line">Maybe it was nothing compared to everything he screwed up. Obviously, there were some things he saved.</p>
-<div class="orv_system"><p>[The constellation 'Commander of the Red Cosmos' is looking at you.]</p></div>
+<div class="orv_system"><p>The constellation 'Commander of the Red Cosmos' is looking at you.</p></div>
 <p class="orv_line">In front of that sullen gaze, I gulped and opened my mouth. "This guy is still useful. You shouldn't kill him now."</p>
-<div class="orv_constellation"><p>[…Demon King of Salvation. It is because of the scribe's orders that you are still alive.]</p></div>
+<div class="orv_constellation"><p>…Demon King of Salvation. It is because of the scribe's orders that you are still alive.</p></div>
 <p class="orv_line">"You spared me so you can spare one more person."</p>
 <p class="orv_line">I looked back and saw that Yoo Joonghyuk's body was lightly shaking. His consciousness was somehow struggling to emerge from the water.</p>
 <p class="orv_line">Jophiel spoke towards Yoo Joonghyuk.</p>
-<div class="orv_constellation"><p>[If he wakes up, there is no guarantee that I can stop him. We have to kill him now.]</p></div>
+<div class="orv_constellation"><p>If he wakes up, there is no guarantee that I can stop him. We have to kill him now.</p></div>
 <p class="orv_line">Jophiel tried to summon her fog again. I inwardly sighed. No matter what I thought, this was the only way.</p>
 <p class="orv_line">"What if I can stop him from waking up without killing him?"</p>
 <p class="orv_line">Jophiel's red fog stopped.</p>
 <p class="orv_line">"What if there is a way to stop him from regaining consciousness while controlling his unconscious self?"</p>
-<div class="orv_constellation"><p>[Is there a way to bind him? What trick are you going to use?]</p></div>
+<div class="orv_constellation"><p>Is there a way to bind him? What trick are you going to use?</p></div>
 <p class="orv_line">The moment Jophiel was about to explode again, Gabriel stepped in.</p>
-<div class="orv_constellation"><p>[Jophiel, leave it. In any case, we need time to figure out the situation.]</p></div>
+<div class="orv_constellation"><p>Jophiel, leave it. In any case, we need time to figure out the situation.</p></div>
 <p class="orv_line">Jophiel thought for a moment before responding.</p>
-<div class="orv_constellation"><p>[…If he shows signs of waking up, I will kill him immediately.]</p></div>
+<div class="orv_constellation"><p>…If he shows signs of waking up, I will kill him immediately.</p></div>
 <p class="orv_line">I nodded. Then I ran straight to Yoo Joonghyuk. "Hey."</p>
 <p class="orv_line">The vibrations of his body were becoming stronger. I had seen this scene several times in the original novel. Maybe Yoo Joonghyuk's consciousness would wake up in a few minutes. It was difficult if that happened.</p>
 <p class="orv_line">I slowly moved my hand and grabbed Yoo Joonghyuk's neck. Just as he did to me. It wasn't easy to raise him up because he was bigger than me.</p>
@@ -285,14 +292,14 @@
 <p class="orv_line">I knew how to wake up Yoo Joonghyuk from his regression depression. In other words, it meant I also knew how to sink him deeper into that melancholy.</p>
 <p class="orv_line">I saw Yoo Joonghyuk's fingertips moving and opened my mouth. "Do you remember? The 33rd round. You cleared the 40th scenario and Lee Jihye said this."</p>
 <p class="orv_line">Yoo Joonghyuk's eyes dimmed and his moving fingertips stopped.</p>
-<div class="orv_quote"><p>「 "It would be nice if Master didn't have to go to the next round." 」</p></div>
+<div class="orv_quote"><p>"It would be nice if Master didn't have to go to the next round."</p></div>
 <p class="orv_line">"Think about it. You weren't always unhappy. Right? In all the rounds, there were moments when you were happy."</p>
 <p class="orv_line">Yoo Joonghyuk's expression was becoming stiffer.</p>
 <p class="orv_line">"The 173rd round. You protected Earth for quite some time. You also saw Lee Jihye receiving her high school diploma and Lee Seolhwa smiling at someone's child."</p>
-<div class="orv_quote"><p>「 "Joonghyuk-ssi, are you happy that you're alive?" 」</p></div>
+<div class="orv_quote"><p>"Joonghyuk-ssi, are you happy that you're alive?"</p></div>
 <p class="orv_line">Every time I spoke, Yoo Joonghyuk's expression collapsed. It wasn't despair that broke down Yoo Joonghyuk.</p>
 <p class="orv_line">"The 383rd round. You finally cleared the 75th scenario. Fortunately, nobody died in that round. That was the first time. Then Lee Hyunsung told you."</p>
-<div class="orv_quote"><p>「 "Joonghyuk-ssi, I won't forget today until I die." 」</p></div>
+<div class="orv_quote"><p>"Joonghyuk-ssi, I won't forget today until I die."</p></div>
 <p class="orv_line">The feather-like memories sank into his head.</p>
 <p class="orv_line">"Then the 498th round…"</p>
 <p class="orv_line">Yoo Joonghyuk's palms moved to cover his ears. The usual Yoo Joonghyuk wouldn't have fallen from this much. Now it was different. I held his hands and kept talking. "That happened 10 times."</p>
@@ -305,11 +312,11 @@
 <p class="orv_line">Yoo Joonghyuk's self was sinking into the deep sea. It was to a place that he could never come up from without someone's help.</p>
 <p class="orv_line">"Have you protected all the things you wanted to keep?"</p>
 <p class="orv_line">I looked at Yoo Joonghyuk's miserable face and thought: Don't worry Yoo Joonghyuk. I'll do the rest. You stop and rest.</p>
-<div class="orv_system"><p>[Your understanding of the character 'Yoo Joonghyuk' is increasing explosively.]</p></div>
+<div class="orv_system"><p>Your understanding of the character 'Yoo Joonghyuk' is increasing explosively.</p></div>
 <p class="orv_line">Yoo Joonghyuk's empty eyes were showing memories of losing his master. I didn't use Omniscient Reader's Viewpoint but it wasn't hard to read.</p>
-<div class="orv_quote"><p>「 I want to die. 」</p></div>
-<div class="orv_quote"><p>「 I want to finish all of this. 」</p></div>
-<div class="orv_quote"><p>「 If only I can never wake up. 」</p></div>
+<div class="orv_quote"><p>I want to die.</p></div>
+<div class="orv_quote"><p>I want to finish all of this.</p></div>
+<div class="orv_quote"><p>If only I can never wake up.</p></div>
 <p class="orv_line">A few drops of rain fell from the sky. It was black rain made from the blood of the demon kings and constellations. Liquid also flowed onto Yoo Joonghyuk's face. Yoo Joonghyuk's gaze lowered and finally fell on me.</p>
 <p class="orv_line">I was looking at the moment a human's spirit collapsed. There was a broken voice. Like a creaking machine, Yoo Joonghyuk stammered, "Wh,at… should, I, d…o?"</p>
 <p class="orv_line">I released Yoo Joonghyuk's hands and told him. "I'll finish your story."</p>
@@ -317,7 +324,7 @@
 <div class="orv_notice"><p>* Unofficial fan illustration (non-canonical)</p></div>
 <p class="orv_line">Yoo Joonghyuk looked at me with empty eyes. However, I didn't see him. The sub scenario window had just updated.</p>
 <div class="orv_window">
-<h3 class="orv_window_title">[Sub Scenario (Secretive Plotter) - End of the Regressor]</h3>
+<h3 class="orv_window_title">Sub Scenario (Secretive Plotter) - End of the Regressor</h3>
 <p>Clear Conditions: Yoo Joonghyuk's death.</p>
 </div>
 <p class="orv_line">I reached for Yoo Joonghyuk's Splitting the Sky Sword that was on the ground.</p>
@@ -328,18 +335,12 @@
             <a href="./ch_286"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_288">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="287" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="364" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="286" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="286" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

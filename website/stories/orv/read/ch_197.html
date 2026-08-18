@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 197: Ep. 37 - Landscape of the Demon Realm, IV</title>
     <meta property="og:title" content="Ch 197: Ep. 37 - Landscape of the Demon Realm, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,36 +177,36 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00197.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 197: Ep. 37 - Landscape of the Demon Realm, IV</h1></div>
 <p class="orv_line">Yoo Joonghyuk's comment on becoming the 73rd demon king was a line from Ways of Survival.</p>
 <p class="orv_line">I watched the reactions of the council members with a bit of excitement.</p>
 <p class="orv_line">"That, I mean…"</p>
 <p class="orv_line">It was strange. In Ways of Survival, everyone had clearly gone, "Ohhh!" Everyone didn't show the dramatic reaction I expected. Then I heard a voice.</p>
-<div class="orv_quote"><p>「 The demon king of the 73rd Demon Realm! There was a man who spoke such words. Irene and the other members of the civil council were in great shock. 」</p></div>
+<div class="orv_quote"><p>The demon king of the 73rd Demon Realm! There was a man who spoke such words. Irene and the other members of the civil council were in great shock.</p></div>
 <p class="orv_line">That brat, when did it wake up? It said it was sleepy and then went away…</p>
-<div class="orv_quote"><p>「 On the other hand, Kim Dokja felt somewhat stronger. 」</p></div>
+<div class="orv_quote"><p>On the other hand, Kim Dokja felt somewhat stronger.</p></div>
 <p class="orv_line">…Eh?</p>
-<div class="orv_quote"><p>「 It was a habit he had since his school days. In important moments of his life or in moments when his self-esteem fell, Kim Dokja would say, "I am Yoo Joonghyuk." 」</p></div>
+<div class="orv_quote"><p>It was a habit he had since his school days. In important moments of his life or in moments when his self-esteem fell, Kim Dokja would say, "I am Yoo Joonghyuk."</p></div>
 <p class="orv_line">I had a bitter taste in my mouth as I endured the harassment of the Fourth Wall, who exposed my black history, Damn, I couldn't do anything to this brat.</p>
 <p class="orv_line">"The council members should leave for a moment. I have to talk to him for a while."</p>
 <p class="orv_line">Aileen thought about something before making a decision. Jang Hayoung and the members of the civil council disappeared out the door. Aileen dragged a chair over to my operating table.</p>
@@ -284,17 +291,17 @@
 <p class="orv_line">"Shit, this alcohol tastes sour."</p>
 <p class="orv_line">The sighs of the citizens came from all over the place. It was late in the evening.</p>
 <p class="orv_line">The workers and incarnations who came back from working all day at the Factory gathered over drinks. Their faces were distorted from the bitter aftertaste. The alcohol of the Demon Realm was more bitter than Earth. I remembered reading about it in Ways of Survival.</p>
-<div class="orv_quote"><p>「 Kim Dokja thought: Who among them is the revolutionary? 」</p></div>
+<div class="orv_quote"><p>Kim Dokja thought: Who among them is the revolutionary?</p></div>
 <p class="orv_line">In the Demon Realm, the scenarios still progressed. The Star Stream didn't neglect the story of any area. In particular, one of the main scenarios here, the 'Revolutionary Scenario' was a scenario that the dukes of the Demon Realm were also watching.</p>
 <p class="orv_line">–I don't know how you know about that scenario but it is hard for me to help you right away. I don't know who the 'revolutionary' are. Without the identity of the revolutionary, it isn't possible to transfer the scenario.</p>
 <p class="orv_line">–Do you have no information at all?</p>
 <p class="orv_line">–Even if I receive information, the revolutionary will change every month. Honestly, who would confess to being a revolutionary? It is unknown who is a spy…</p>
 <p class="orv_line">These were Aileen's words. Still, if my prediction was correct, the revolutionary was definitely among them.</p>
-<div class="orv_quote"><p>「 The Revolutionary scenario is the main scenario of the Demon Realm. The scenario number is different every time but those who welcome the scenario event are fixed. They are the ruling classes of the Demon Realm. 」</p></div>
+<div class="orv_quote"><p>The Revolutionary scenario is the main scenario of the Demon Realm. The scenario number is different every time but those who welcome the scenario event are fixed. They are the ruling classes of the Demon Realm.</p></div>
 <p class="orv_line">I felt fortunate to have the Fourth Wall at this time. I might not have the Ways of Survival txt but it would remind me of my memories.</p>
 <p class="orv_line">–The citizens here remember what happened to the last person who declared himself a revolutionary. That's why you shouldn't poke around people. Everyone will be nervous.</p>
 <p class="orv_line">Aileen told me this but I couldn't wait. My body was repaired and I could hold out against the exile penalty, but this was only for a few days.</p>
-<div class="orv_quote"><p>「 Kim Dokja thought: I have to get the Revolutionary scenario so I can go back to the original scenario. 」</p></div>
+<div class="orv_quote"><p>Kim Dokja thought: I have to get the Revolutionary scenario so I can go back to the original scenario.</p></div>
 <p class="orv_line">At this moment, a strange voice entered my ears.</p>
 <p class="orv_line">"Excuse me, this is the first time I'm seeing your face."</p>
 <br>
@@ -304,18 +311,12 @@
             <a href="./ch_196"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_198">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="197" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="189" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="196" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="196" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

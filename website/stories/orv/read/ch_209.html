@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 209: Ep. 39 - Unidentified Wall, VI</title>
     <meta property="og:title" content="Ch 209: Ep. 39 - Unidentified Wall, VI" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,28 +177,28 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00209.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 209: Ep. 39 - Unidentified Wall, VI</h1></div>
-<div class="orv_system"><p>[The character 'Jang Hayoung' has awakened as a 'Fighter!']</p></div>
+<div class="orv_system"><p>The character 'Jang Hayoung' has awakened as a 'Fighter!'</p></div>
 <p class="orv_line">Just as a guardian had the skill 'Guard', a fighter had the skill 'Fighter Transformation'. It was a skill that melted all of their fears and turned it into force. Thanks to this skill, a person who had been exploited for a long time could gain a more powerful force. In that sense, Jang Hayoung was a good candidate to be a fighter even without the Unidentified Wall.</p>
 <p class="orv_line">"Haaaaaap!"</p>
 <div class="orv_image"><img src="../../../assets/images/209 - jang hayoung was a good candidate to be a fighter even without the unidentified wall.jpg" alt="" loading="lazy"></div>
@@ -199,35 +206,35 @@
 <p class="orv_line">The problem was that he was too excited. A sky shattering sound was heard. The fighter was a position capable of exerting as much power as possible against an executioner. Perhaps Jang Hayoung was currently feeling like a constellation.</p>
 <p class="orv_line">"Don't mess around you idiot!" I belatedly raised my voice but Jang Hayoung had already gone out of my reach.</p>
 <p class="orv_line">This was the problem with Jang Hayoung. In fact, I wasn't afraid of Jang Hayoung's talent. I was afraid of him running wild as a result of his talent.</p>
-<div class="orv_quote"><p>「 Kim Dokja thought: Jang Hayoung isn't without talent. Rather, he has too much talent. 」</p></div>
+<div class="orv_quote"><p>Kim Dokja thought: Jang Hayoung isn't without talent. Rather, he has too much talent.</p></div>
 <p class="orv_line">The only all-rounder in Ways of Survival, Jang Hayoung. Jang Hayoung's Unidentified Wall guaranteed a formidable growth only through skills obtained from the wall's transactions.</p>
 <p class="orv_line">Of course, it was impossible to reach the grounds of transcendence but Jang Hayoung could raise his skill level faster than anyone else. It was a talent that could go beyond other people's training in just a few hours. Such talent would inevitably make the owner of the talent dangerous.</p>
-<div class="orv_constellation"><p>[Wh at are yo u…]</p></div>
+<div class="orv_constellation"><p>Wh at are yo u…</p></div>
 <p class="orv_line">I barely managed to catch up with Jang Hayoung where he was already engaged with an executioner. The sparks of a fighter wrapped around Jang Hayoung and protected him from the executioner's scythe.</p>
-<div class="orv_system"><p>[The 'mark' isn't available for this position.]</p></div>
+<div class="orv_system"><p>The 'mark' isn't available for this position.</p></div>
 <p class="orv_line">Perhaps the executioner would be receiving such a message now.</p>
-<div class="orv_constellation"><p>[Th is… are yo u per haps…?]</p></div>
+<div class="orv_constellation"><p>Th is… are yo u per haps…?</p></div>
 <p class="orv_line">However, enlightenment was too late. Jang Hayoung overcame the executioner's scythe and grabbed its neck with a skillful move.</p>
-<div class="orv_constellation"><p>[Ke ok…!]</p></div>
+<div class="orv_constellation"><p>Ke ok…!</p></div>
 <p class="orv_line">It wasn't possible for a fighter to show this much combat power. At most, they were usually one level of power beyond the executioner.</p>
 <p class="orv_line">Now Jang Hayoung was completely overwhelming the executioner. It was only possible because it was Jang Hayoung.</p>
 <p class="orv_line">The caught executioner struggled like a ferocious rat but it couldn't endure Jang Hayoung's slowly tightening grip. There was the sound of bones breaking and the executioner's body dangled down.</p>
 <p class="orv_line">Then the hem of the executioner's clothes started scattering. It was an absurd end for the existences who had dominated the industrial complex's Night for decades.</p>
-<div class="orv_system"><p>[An executioner has been killed by a fighter.]</p></div>
-<div class="orv_system"><p>[Current number of executioners remaining: 6]</p></div>
+<div class="orv_system"><p>An executioner has been killed by a fighter.</p></div>
+<div class="orv_system"><p>Current number of executioners remaining: 6</p></div>
 <p class="orv_line">The citizens injured by the executioners were looking this way. Jang Hayoung's fire lit up the Night. It was like a glowing sun. However, Jang Hayoung wasn't the sun and it was currently Night.</p>
 <p class="orv_line">"A-An executioner has died! An executioner has died!"</p>
 <p class="orv_line">"No way! It is currently Night!"</p>
 <p class="orv_line">"A fighter has appeared!"</p>
 <p class="orv_line">After the end of the executioner, the people hiding in the houses stretched out their heads. They were people who had been living for a long time in the shadow of the Night.</p>
-<div class="orv_system"><p>[The citizens are influenced by the heat of the revolution.]</p></div>
+<div class="orv_system"><p>The citizens are influenced by the heat of the revolution.</p></div>
 <p class="orv_line">They were coming out of their houses one by one. They stared at Jang Hayoung like he was the leader.</p>
-<div class="orv_system"><p>[The character 'Jang Hayoung' has stiffened because of Fighter Transformation.]</p></div>
+<div class="orv_system"><p>The character 'Jang Hayoung' has stiffened because of Fighter Transformation.</p></div>
 <p class="orv_line">…This jerk thought he was a revolutionary. I lightly slapped Jang Hayoung's back.</p>
 <p class="orv_line">"Uh…!"</p>
 <p class="orv_line">Jang Hayoung's red-tinged eyes slowly recovered. Jang Hayoung was belatedly aware of the pain and glared at me as he held the back of his head. "That hurts! Why did you hit me so hard?"</p>
 <p class="orv_line">"Steady your mind. You will be in trouble if you act like an idiot."</p>
-<div class="orv_quote"><p>「 "It should be the crowd that is heated up. If the person who leads is swept away by the heat, the revolution won't be able to tolerate the fire and will go out before it burns properly." 」</p></div>
+<div class="orv_quote"><p>"It should be the crowd that is heated up. If the person who leads is swept away by the heat, the revolution won't be able to tolerate the fire and will go out before it burns properly."</p></div>
 <p class="orv_line">These were Yoo Joonghyuk's words in the 111th regression. It was a shameful line for me to spit out so I kept it to myself.</p>
 <p class="orv_line">Jang Hayoung looked at me disapprovingly and pouted. "It hurts more than the executioner."</p>
 <p class="orv_line">"Then I hit you properly."</p>
@@ -236,50 +243,50 @@
 <p class="orv_line">It was clear what these numbers meant.</p>
 <p class="orv_line">"Let's move."</p>
 <p class="orv_line">Jang Hayoung nodded and we ran through the Night. I looked at Jang Hayoung, who was going ahead again, and heard a message in my mind.</p>
-<div class="orv_system"><p>[The 'Fourth Wall' is looking at 'Jang Hayoung' with a desire to eat.]</p></div>
+<div class="orv_system"><p>The 'Fourth Wall' is looking at 'Jang Hayoung' with a desire to eat.</p></div>
 <p class="orv_line">"No way. Don't even think about it."</p>
 <p class="orv_line">Just like against Nirvana and the outer god, the Fourth Wall coveted Jang Hayoung's story. It probably wasn't just Jang Hayoung but the Unidentified Wall as well.</p>
-<div class="orv_system"><p>[The Fourth Wall is sorry.]</p></div>
+<div class="orv_system"><p>The Fourth Wall is sorry.</p></div>
 <p class="orv_line">"I thought you wanted to make friends with that wall. You shouldn't eat your friend."</p>
-<div class="orv_quote"><p>「 Kim Dokja who wanted to be friends with the Fourth Wall said. 」</p></div>
+<div class="orv_quote"><p>Kim Dokja who wanted to be friends with the Fourth Wall said.</p></div>
 <p class="orv_line">It was a real brat.</p>
 <p class="orv_line">"Waaaaahhhhh!"</p>
 <p class="orv_line">There were screams from the rushing crowd.</p>
 <p class="orv_line">"A fighter has appeared! Hang in there!"</p>
 <p class="orv_line">They screamed while wielding weapons towards the executioners. The fires of magic power popped up in various places around the industrial complex.</p>
 <p class="orv_line">People were fighting back. They were fighting against opponents they couldn't face. I could believe it if one of them was a revolutionary.</p>
-<div class="orv_system"><p>[An executioner has been killed by a fighter.]</p></div>
-<div class="orv_system"><p>[Current number of executioners remaining: 5]</p></div>
+<div class="orv_system"><p>An executioner has been killed by a fighter.</p></div>
+<div class="orv_system"><p>Current number of executioners remaining: 5</p></div>
 <p class="orv_line">Jang Hayoung knocked down another executioner. Now there were only five remaining. Once all the executioners died, the duke would no longer be able to hide. From then on, the real revolution would start.</p>
 <p class="orv_line">"Kill everybody!"</p>
 <p class="orv_line">"Wahhhh!"</p>
 <p class="orv_line">As the citizens' gained courage, the executioners gradually slowed down. No one apart from the fighter could harm an executioner during the Night. Nevertheless, the important thing was atmosphere.</p>
-<div class="orv_constellation"><p>[Fool ish…]</p></div>
+<div class="orv_constellation"><p>Fool ish…</p></div>
 <p class="orv_line">An executioner who swung its scythe was attacked by Jang Hayoung. Two executioners had already died so this one didn't face Jang Hayoung head on. The executioner fled like it was frightened.</p>
 <p class="orv_line">The citizens watched the executioner running away and shouted, "They're going away!"</p>
 <p class="orv_line">Jang Hayoung stepped on the low roofs of the industrial complex and chased after the executioner.</p>
 <p class="orv_line">Everything was flowing smoothly. At this rate, the Night would pass safely. The duke would be forced to recall the Night in order to reduce the damage to the executioners.</p>
-<div class="orv_quote"><p>「 Even so, Kim Dokja was vigilant to the end. 」</p></div>
+<div class="orv_quote"><p>Even so, Kim Dokja was vigilant to the end.</p></div>
 <p class="orv_line">There were countless 'revolutionaries' who died in the history of the Demon Realm. Until the Night was gone, the revolutionary should be vigilant until the end. Even if I was a fake revolutionary.</p>
-<div class="orv_quote"><p>「 Kim Dokja thought: The spy Han Myungoh was caught by me and three executioners died during the day. 」</p></div>
+<div class="orv_quote"><p>Kim Dokja thought: The spy Han Myungoh was caught by me and three executioners died during the day.</p></div>
 <p class="orv_line">The balance of power was collapsing and the atmosphere of the industrial complex was rapidly changing. Under these circumstances, the duke couldn't send the Night again without a plan.</p>
 <p class="orv_line">At least, not the Duke Syswitz I knew…</p>
 <p class="orv_line">Sure enough. I felt something flying towards my neck and reflexively leaned back. Four scythes passed over my head and hit the roofs. My head would be gone if I had been one second slower.</p>
 <p class="orv_line">…They had been hiding. Apart from the executioner that Jang Hayoung was chasing, the four other executioners all aimed for me. It couldn't compare to the first day. I used Bookmark to trigger Way of the Wind but it wasn't enough to avoid all the flying attacks.</p>
 <p class="orv_line">"The guardian!"</p>
-<div class="orv_system"><p>[Someone is using their vitality to protect you.]</p></div>
+<div class="orv_system"><p>Someone is using their vitality to protect you.</p></div>
 <p class="orv_line">The hiding Mark used 'Guard' on me. Now Mark had two points remaining. The executioners didn't leave despite the effect of Guard being applied to me.</p>
-<div class="orv_quote"><p>「 The stupid Kim Dokja started thinking. 」</p></div>
+<div class="orv_quote"><p>The stupid Kim Dokja started thinking.</p></div>
 <p class="orv_line">It felt like they were dragging out the time. I noticed the duke's plan.</p>
-<div class="orv_quote"><p>「 The duke knew a fighter would appear. 」</p></div>
+<div class="orv_quote"><p>The duke knew a fighter would appear.</p></div>
 <p class="orv_line">…Jang Hayoung was in danger. I condensed the wind using Way of the Wind and made a powerful explosion behind me. I shot forward like a comet and the perplexed executioners shouted after me,</p>
-<div class="orv_constellation"><p>[St op!]</p></div>
-<p class="orv_line">I borrowed the power of way of the wind to break through the wall of executioners. Jang Hayoung had gone chasing after one executioner. Presumably, there would also be a―</p>
+<div class="orv_constellation"><p>St op!</p></div>
+<p class="orv_line">I borrowed the power of Way of the Wind to break through the wall of executioners. Jang Hayoung had gone chasing after one executioner. Presumably, there would also be a―</p>
 <p class="orv_line">"Aaack!"</p>
 <p class="orv_line">There was a sharp scream and I saw Jang Hayoung flying back while bleeding. Dammit, this was why I hit him. I controlled the wind and caught the falling body. "Hey, are you okay?"</p>
 <p class="orv_line">"Heook, keok…"</p>
 <p class="orv_line">He was coughing up blood. It wasn't a fatal injury but it would be hard for him to continue fighting. I wanted to know who made the Night's fighter like this but then I saw an oversized executioner walking towards this side.</p>
-<div class="orv_constellation"><p>[Revo lution ary?]</p></div>
+<div class="orv_constellation"><p>Revo lution ary?</p></div>
 <p class="orv_line">It was impossible. An executioner could never win against a fighter at Night. Yet this one…</p>
 <p class="orv_line">The collar of the executioner slowly scattered and the face of a demon was exposed. Now I realized what happened. Jang Hayoung wasn't hit with the power of an executioner. The power of this story was incomparable to the demon baron and earl I first saw when I came here.</p>
 <p class="orv_line">I watched him carefully and asked, "You used your head and used a technique other than 'Execution'. You aren't a duke so you must be a marquis. Am I correct?"</p>
@@ -300,7 +307,7 @@
 <p class="orv_line">Their expressions showed it was annoying to take care of a nuisance. It was understandable since they had been in control of the industrial complex for hundreds of years.</p>
 <p class="orv_line">After already deciding I was dead, the two marquises stared at the other citizens. The surrounding pressure soared and the citizens were forced to kneel. The incarnations trembled and held their breaths.</p>
 <p class="orv_line">The marquises spoke towards them. "This is the price you will receive."</p>
-<div class="orv_system"><p>[The story 'Ruler's Command' is activated.]</p></div>
+<div class="orv_system"><p>The story 'Ruler's Command' is activated.</p></div>
 <p class="orv_line">The edge of the language created by the marquises threatened the citizens. Nothing had happened yet but the words themselves started to dominate the imagination of the citizens.</p>
 <p class="orv_line">"You will lose everything valuable."</p>
 <p class="orv_line">They imagined losing their precious families.</p>
@@ -317,15 +324,15 @@
 <p class="orv_line">The marquises attempted to use their 'status' to pressure me several times. The veins bulged as if they were exerting all their might to reveal their presence.</p>
 <p class="orv_line">"Collapsing…! Collaps…! Um? No, this…?"</p>
 <p class="orv_line">I slowly approached them.</p>
-<div class="orv_quote"><p>「 Kim Dokja thought. 」</p></div>
+<div class="orv_quote"><p>Kim Dokja thought.</p></div>
 <p class="orv_line">Only a fighter could deal with an executioner at Night. The enemies decided to utilize their force instead of using the 'positions of the scenario. Thus, it was necessary to respond to them.</p>
-<div class="orv_quote"><p>「 It can't be avoided this time. 」</p></div>
+<div class="orv_quote"><p>It can't be avoided this time.</p></div>
 <p class="orv_line">If I opened this power, my incarnation body would shake a lot. However, it was inevitable to deal with a marquis. I needed to use the minimum of strength. I had to get rid of them with optimal efficiency.</p>
 <p class="orv_line">"You…?"</p>
 <p class="orv_line">I knew what they wanted to ask and preempted them. "Who am I?"</p>
 <p class="orv_line">A marquis-grade noble was strong. Still, no matter how strong they were, it was just a measurement of the 'incarnations'. They were those who didn't even match the historical-grade constellations.</p>
 <p class="orv_line">I slowly closed my eyes and took a deep breath. I felt somewhat uncomfortable. I had never done this since becoming a constellation.</p>
-<div class="orv_system"><p>[The constellation 'status' is released.]</p></div>
+<div class="orv_system"><p>The constellation 'status' is released.</p></div>
 <p class="orv_line">The 'status', which couldn't be compared to the previous one, crushed the time and space in the area.</p>
 <br>
 <hr>
@@ -334,18 +341,12 @@
             <a href="./ch_208"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_210">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="209" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="204" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="208" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="208" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

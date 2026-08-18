@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 182: Ep. 35 - The 73rd Demon King, I</title>
     <meta property="og:title" content="Ch 182: Ep. 35 - The 73rd Demon King, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,28 +177,28 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00182.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 182: Ep. 35 - The 73rd Demon King, I</h1></div>
-<div class="orv_system"><p>[You have died.]</p></div>
+<div class="orv_system"><p>You have died.</p></div>
 <p class="orv_line">The aftereffect was death. It was the shock from my stories being eaten by the Devourer of Dreams. My stories were quickly recovered with the restoration ability of the Fourth Wall. However, what is assembled from splintered pieces can hardly recover to an ideal state.</p>
 <p class="orv_line">'Ugh, my head…'</p>
 <p class="orv_line">I was in a half-awake state for three days. My consciousness sporadically appeared and disappeared. Every time my consciousness returned, I reflected on what had happened so far.</p>
@@ -212,11 +219,11 @@
 <p class="orv_line">"I'm working hard, but… I still have a long way to go to help Dokja-ssi."</p>
 <p class="orv_line">There are people who perform better when often reminded that they’re doing well.</p>
 <p class="orv_line">Lee Hyunsung-ssi was exactly that type.</p>
-<div class="orv_system"><p>[The constellation who doesn't yet have a name has sponsored 100 coins to Incarnation Lee Hyunsung.]</p></div>
+<div class="orv_system"><p>The constellation who doesn't yet have a name has sponsored 100 coins to Incarnation Lee Hyunsung.</p></div>
 <p class="orv_line">"D-Dokja-ssi?" The perplexed Lee Hyunsung stuttered with wide eyes.</p>
 <p class="orv_line">Jung Heewon clicked her tongue. "Wow, he really is watching. He has the temperament of a stalker, but… isn't 100 coins too stingy?"</p>
 <p class="orv_line">I turned my gaze towards the two children practicing Taming. The children were continuously giving commands to the mighty dragon. Perhaps sensing my gaze, Shin Yoosung turned towards the air and smiled warmly.</p>
-<div class="orv_system"><p>[The constellation who doesn't yet have a name is smiling gently.]</p></div>
+<div class="orv_system"><p>The constellation who doesn't yet have a name is smiling gently.</p></div>
 <p class="orv_line">In Ways of Survival, the relationship between constellation and incarnation was often similar to a parent and child. I never had a child but I knew what it felt like when seeing Shin Yoosung.</p>
 <p class="orv_line">It was a bond that was more solid than blood. It was really tiny and fragile yet so precious that I didn't know what to do…</p>
 <p class="orv_line">Of course, not every father in the world was a good father and not all constellations had the same mind. It was common for incarnations to be stabbed in the back by their sponsors.</p>
@@ -232,7 +239,7 @@
 <p class="orv_line">"It is impossible for you now."</p>
 <p class="orv_line">Yoo Joonghyuk had overcome the regression depression to a certain extent. If they continued to follow Yoo Joonghyuk's route, I didn't have to worry about the survival of the characters.</p>
 <p class="orv_line">Rather, the problem was on my side.</p>
-<div class="orv_system"><p>[A huge fate is hoping for your death.]</p></div>
+<div class="orv_system"><p>A huge fate is hoping for your death.</p></div>
 <p class="orv_line">I looked at the fate message that still hadn't disappeared. I had hoped the fate might be fulfilled after experiencing death because of my mother. Naturally, that didn't happen.</p>
 <p class="orv_line">Maybe the person who would kill me wasn't the significant problem. The important thing was that I couldn't avoid this fate with 'resurrection'.</p>
 <p class="orv_line">'Damn nebulae bastards…'</p>
@@ -241,67 +248,67 @@
 <p class="orv_line">It was true just looking at the Devourer of Dreams. An outer god descended and the party was nearly destroyed.</p>
 <p class="orv_line">It didn't matter since I could resurrect, but the other party members couldn't. None of the party members could die. In particular, everything would be in vain if Yoo Joonghyuk died.</p>
 <p class="orv_line">In the first place, all of this wouldn't have happened if it wasn't for me.</p>
-<div class="orv_system"><p>[The nebula 'Vedas' is waiting for your resurrection.]</p></div>
-<div class="orv_system"><p>[The nebula 'Papyrus' is waiting for your resurrection.]</p></div>
-<div class="orv_system"><p>[The nebula 'Olympus' is waiting for your resurrection.]</p></div>
+<div class="orv_system"><p>The nebula 'Vedas' is waiting for your resurrection.</p></div>
+<div class="orv_system"><p>The nebula 'Papyrus' is waiting for your resurrection.</p></div>
+<div class="orv_system"><p>The nebula 'Olympus' is waiting for your resurrection.</p></div>
 <p class="orv_line">The nebulae were still waiting for a chance. I had attracted their attention and was too weak to stand up against them. How could I protect my party members and shake off the nebulae…</p>
 <p class="orv_line">'Indeed, that is the only way'.</p>
 <p class="orv_line">Then a system message emerged.</p>
-<div class="orv_system"><p>[All the conditions for resurrection have been met!]</p></div>
-<div class="orv_system"><p>[The attribute 'Eight Lives' has been activated!]</p></div>
+<div class="orv_system"><p>All the conditions for resurrection have been met!</p></div>
+<div class="orv_system"><p>The attribute 'Eight Lives' has been activated!</p></div>
 <p class="orv_line">Now it was time to go back.</p>
-<div class="orv_system"><p>[Your body will be resurrected.]</p></div>
+<div class="orv_system"><p>Your body will be resurrected.</p></div>
 <br>
 <hr>
 <br>
 <p class="orv_line">There was the sound of a breath being taken.</p>
 <p class="orv_line">The hardest moment to adapt to was the first breath after the resurrection. I woke up but darkness filled my surroundings. Maybe it was because my party members put me in a coffin.</p>
 <p class="orv_line">Damn, I didn't know why they put a person who would survive inside a coffin. Were they acting sarcastic?</p>
-<div class="orv_system"><p>[The privilege of 'Eight Lives' has been activated.]</p></div>
-<div class="orv_system"><p>[The third head of the snake has been sacrificed.]</p></div>
-<div class="orv_system"><p>[The power of the head is 'fighting spirit'.]</p></div>
+<div class="orv_system"><p>The privilege of 'Eight Lives' has been activated.</p></div>
+<div class="orv_system"><p>The third head of the snake has been sacrificed.</p></div>
+<div class="orv_system"><p>The power of the head is 'fighting spirit'.</p></div>
 <p class="orv_line">Once again, I received a privilege effect. The benefits of Eight Lives were less effective than other high-level privileges but it was better than nothing.</p>
 <p class="orv_line">The legs that had been lost in the process of dying were restored to their original state. Now the only thing left was to kick off the coffin lid.</p>
 <p class="orv_line">"Ohh! The rumor is real!"</p>
 <p class="orv_line">"He really resurrected!"</p>
 <p class="orv_line">As soon as I pushed off the lid of the coffin, the people gathered in the area cheered. Maybe rumours of my resurrection had spread because a variety of incarnations were gathered and watching me.</p>
-<div class="orv_system"><p>[Your resurrection has increased your fame among the incarnations.]</p></div>
-<div class="orv_system"><p>[Your status is rising modestly.]</p></div>
+<div class="orv_system"><p>Your resurrection has increased your fame among the incarnations.</p></div>
+<div class="orv_system"><p>Your status is rising modestly.</p></div>
 <p class="orv_line">Finally, Jung Heewon used Hell Flames Ignition to greet me. She used the skill in a way that would make the constellations of Eden enraged.</p>
 <p class="orv_line">"Congratulations on your resurrection."</p>
 <p class="orv_line">"…Please don't put me in a coffin next time."</p>
 <p class="orv_line">"Just wait. I'll bring the others."</p>
 <p class="orv_line">Jung Heewon left and the indirect messages of the constellations poured into my ears.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' rejoices in your resurrection.]</p></div>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is congratulating you on your return.]</p></div>
-<div class="orv_system"><p>[The constellation 'Goryeo's First Sword' is praising your courage.]</p></div>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' is grumbling and putting his hands in his pockets.]</p></div>
-<div class="orv_system"><p>[Many constellations greatly admire your achievements.]</p></div>
-<div class="orv_system"><p>[90,000 coins have been sponsored.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' rejoices in your resurrection.</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is congratulating you on your return.</p></div>
+<div class="orv_system"><p>The constellation 'Goryeo's First Sword' is praising your courage.</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' is grumbling and putting his hands in his pockets.</p></div>
+<div class="orv_system"><p>Many constellations greatly admire your achievements.</p></div>
+<div class="orv_system"><p>90,000 coins have been sponsored.</p></div>
 <p class="orv_line">90,000 coins…</p>
 <p class="orv_line">Perhaps it was because they weren't able to help me the day before yesterday. It was a bit disappointing but I understood. Rather, it would be more disappointing if they helped me confront the other nebulae.</p>
-<div class="orv_system"><p>[The evaluation of your achievement has been completed.]</p></div>
-<div class="orv_system"><p>[You have earned the 'semi-myth'-grade story.]</p></div>
-<div class="orv_system"><p>[The story 'One Who Killed an Outer God' has been acquired!]</p></div>
+<div class="orv_system"><p>The evaluation of your achievement has been completed.</p></div>
+<div class="orv_system"><p>You have earned the 'semi-myth'-grade story.</p></div>
+<div class="orv_system"><p>The story 'One Who Killed an Outer God' has been acquired!</p></div>
 <p class="orv_line">.</p>
 <p class="orv_line">.</p>
 <p class="orv_line">.</p>
-<div class="orv_system"><p>[Due to the achievement of the story, some outer gods show hostility towards you.]</p></div>
-<div class="orv_system"><p>[Due to the achievement of the story, some outer gods are curious about you.]</p></div>
-<div class="orv_system"><p>[Due to the achievement of the story, some great old ones are watching you.]</p></div>
-<div class="orv_system"><p>[Your modifier will soon be announced.]</p></div>
+<div class="orv_system"><p>Due to the achievement of the story, some outer gods show hostility towards you.</p></div>
+<div class="orv_system"><p>Due to the achievement of the story, some outer gods are curious about you.</p></div>
+<div class="orv_system"><p>Due to the achievement of the story, some great old ones are watching you.</p></div>
+<div class="orv_system"><p>Your modifier will soon be announced.</p></div>
 <p class="orv_line">A semi-myth-grade story…</p>
 <p class="orv_line">It was a bit disappointing that I didn't receive a myth-grade story but it was still satisfactory.</p>
 <p class="orv_line">I would've received a myth rating if I fought a great old one. However, if I actually encountered a great old one, I would've vanished before I could even have a conversation.</p>
-<div class="orv_system"><p>[You have achieved a new story during the evaluation.]</p></div>
-<div class="orv_system"><p>[The acquisition of a story beyond the existing stories means your status will be re-evaluated.]</p></div>
-<div class="orv_system"><p>[The status will be published in the following scenarios.]</p></div>
-<div class="orv_system"><p>[Your fifth story is in progress.]</p></div>
+<div class="orv_system"><p>You have achieved a new story during the evaluation.</p></div>
+<div class="orv_system"><p>The acquisition of a story beyond the existing stories means your status will be re-evaluated.</p></div>
+<div class="orv_system"><p>The status will be published in the following scenarios.</p></div>
+<div class="orv_system"><p>Your fifth story is in progress.</p></div>
 <p class="orv_line">It would be good to start as a historical-grade but at this rate, I might be a considerable level among the historical-grade.</p>
 <p class="orv_line">It would be announced in the following scenarios. The timing was okay.</p>
 <p class="orv_line">The long-awaited tenth main scenario, the 73rd Demon King. This scenario was the last scenario to be carried out in Seoul Dome and the participants were extremely limited.</p>
 <p class="orv_line">Only the first and second place in the Dark Castle rankings could challenge the scenario. Of course, they wouldn't challenge it alone. They could team up with four rankers.</p>
-<div class="orv_system"><p>[Your current Dark Castle ranking is 2nd place.]</p></div>
+<div class="orv_system"><p>Your current Dark Castle ranking is 2nd place.</p></div>
 <p class="orv_line">I could take four people with me. However, it would be difficult to deal with the enemy that would appear on the next floor with them alone.</p>
 <p class="orv_line">In other words, I had to get the help of the first ranked person to complete the Dark Castle scenario.</p>
 <p class="orv_line">Then who was first place?</p>
@@ -334,18 +341,12 @@
             <a href="./ch_181"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_183">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="182" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="165" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="181" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="181" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

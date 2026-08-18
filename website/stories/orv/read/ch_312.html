@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 312: Ep. 59 - Kim Dokja's Company, III</title>
     <meta property="og:title" content="Ch 312: Ep. 59 - Kim Dokja's Company, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00312.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 312: Ep. 59 - Kim Dokja's Company, III</h1></div>
 <p class="orv_line">Fragments of the ceiling fell as Jung Heewon quietly stared through the dust. She could see the collapsed Han Sooyoung through her blurred vision.</p>
@@ -218,9 +225,9 @@
 <p class="orv_line">"…"</p>
 <p class="orv_line">In order to make everyone happy, there were things they put up with because they didn't want to break the harmony. This was especially true for people who kept an eye on the surroundings.</p>
 <p class="orv_line">"Han Sooyoung, if you're an adult then you should act your age. Don't be immature."</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is nodding.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is nodding.</p></div>
 <p class="orv_line">Han Sooyoung's eyes became ferocious.</p>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' is angry.]</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' is angry.</p></div>
 <p class="orv_line">"This person, do you think you're the apostle of justice? It is good to pretend to be cool but think about the time and place. Would Kim Dokja like what you are doing now?"</p>
 <p class="orv_line">"It has nothing to do with Kim Dokja."</p>
 <p class="orv_line">"You said it with your own mouth. You will be Kim Dokja's sword."</p>
@@ -229,7 +236,7 @@
 <p class="orv_line">Jung Heewon activated Hell Flames Ignition. "I will decide who I cut."</p>
 <p class="orv_line">The Sword of Judgment aimed at Han Sooyoung.</p>
 <p class="orv_line">"Now your mischief is over, Han Sooyoung. Bring out all your power."</p>
-<div class="orv_system"><p>[The character 'Jung Heewon' has requested the activation of Judgment Time!]</p></div>
+<div class="orv_system"><p>The character 'Jung Heewon' has requested the activation of Judgment Time!</p></div>
 <br>
 <hr>
 <br>
@@ -237,14 +244,14 @@
 <p class="orv_line">I thought it was time. Han Sooyoung's identity had been concealed for a long time but there was no way it could be maintained forever. Rather, it might be fortunate that the secret was revealed before going to the 47th scenario. This scenario didn't mean anything unless they were honest with each other. The hidden secrets exposed to the dokkaebis would become materials on the screen.</p>
 <p class="orv_line">Yoo Joonghyuk asked, "Aren't you going?"</p>
 <p class="orv_line">I could intervene using Omniscient Reader's Viewpoint. Jung Heewon's confused voice was heard from the screen.</p>
-<div class="orv_system"><p>[Some constellations of the absolute good system have opposed the request.]</p></div>
-<div class="orv_system"><p>[The activation of Judgment Time is cancelled!]</p></div>
+<div class="orv_system"><p>Some constellations of the absolute good system have opposed the request.</p></div>
+<div class="orv_system"><p>The activation of Judgment Time is cancelled!</p></div>
 <p class="orv_line">I glanced over and Yoo Joonghyuk was watching me. "…I can't leave it alone."</p>
 <p class="orv_line">Of course, I didn't intend to interfere in the fight between the two of them. However, I wanted to prevent their battle from spreading to their constellations.</p>
-<div class="orv_system"><p>[The demon king 'Demon King of Salvation' doesn't want the constellations to intervene in the fight between incarnations.]</p></div>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' is dissatisfied with your intervention.]</p></div>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' is reluctantly convinced.]</p></div>
-<div class="orv_system"><p>[The constellation 'Scribe of Heaven' agrees with your thoughts.]</p></div>
+<div class="orv_system"><p>The demon king 'Demon King of Salvation' doesn't want the constellations to intervene in the fight between incarnations.</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' is dissatisfied with your intervention.</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' is reluctantly convinced.</p></div>
+<div class="orv_system"><p>The constellation 'Scribe of Heaven' agrees with your thoughts.</p></div>
 <p class="orv_line">There was no answer from Uriel. She wasn't allowed access to this channel yet.</p>
 <p class="orv_line">Yoo Joonghyuk said. "One of them could die."</p>
 <p class="orv_line">"No, that won't happen."</p>
@@ -257,14 +264,14 @@
 <p class="orv_line">I watched Jung Heewon and Han Sooyoung fighting on the screen. Then Yoo Joonghyuk coldly replied, "It is a situation where future information is actively used to calculate everything. There is no room for the faith of humans to intervene."</p>
 <p class="orv_line">It had been a while since he spoke so much. Certainly, my current appearance looked like I had no countermeasures.</p>
 <p class="orv_line">Thinking about it, I had a similar conversation with Han Sooyoung of the 1863rd round. Han Sooyoung used Predictive Plagiarism and collected, calculated and read the future while collaborating with the 1863rd round Yoo Joonghyuk. I had asked Han Sooyoung,</p>
-<div class="orv_quote"><p>「 "It doesn't make sense no matter how I think about it." 」</p></div>
+<div class="orv_quote"><p>"It doesn't make sense no matter how I think about it."</p></div>
 <p class="orv_line">Predictive Plagiarism was a good story and Yoo Joonghyuk's knowledge was useful. Even so, it was impossible to save everyone up to the 95th scenario, including Kim Namwoon. Numerous variables would've occurred from changing the story and unexpected things would've happened.</p>
 <p class="orv_line">No matter how great Han Sooyoung and Yoo Joonghyuk were, they weren't the writers of Ways of Survival. Not everything could be absolutely controlled. Failure was expected.</p>
-<div class="orv_quote"><p>「 "How did you get here? Tell me honestly. Is there another secret?" 」</p></div>
+<div class="orv_quote"><p>"How did you get here? Tell me honestly. Is there another secret?"</p></div>
 <p class="orv_line">Han Sooyoung looked at me like she was either pitying me or laughing at me.</p>
-<div class="orv_quote"><p>「 "I believed." 」</p></div>
-<div class="orv_quote"><p>「 "What?" 」</p></div>
-<div class="orv_quote"><p>「 "I believed in the characters I created. That's all." 」</p></div>
+<div class="orv_quote"><p>"I believed."</p></div>
+<div class="orv_quote"><p>"What?"</p></div>
+<div class="orv_quote"><p>"I believed in the characters I created. That's all."</p></div>
 <p class="orv_line">This was the answer of the plagiarist writer, although I couldn't remember it well. I told Yoo Joonghyuk.</p>
 <p class="orv_line">"Yoo Joonghyuk, I believe in humans."</p>
 <p class="orv_line">The sword and fist collided and the flames melted everything around them. I watched Jung Heewon and Han Sooyoung bleeding, shouting and rushing at each other. I looked at them and had a faint understanding of the secret behind Han Sooyoung reaching the 95th scenario.</p>
@@ -280,8 +287,8 @@
 <p class="orv_line">–Please apologize properly to the children…</p>
 <p class="orv_line">Jung Heewon staggered and fell forward. The hot temperature of the room gradually cooled down. Han Sooyoung looked down at Jung Heewon's fallen body and carried Jung Heewon on her back. She seemed to mumble something but I couldn't hear Han Sooyoung's voice. Perhaps it was Han Sooyoung's last pride.</p>
 <p class="orv_line">There was a star glowing white at her feet. Han Sooyoung stared at the star and kicked it with her feet.</p>
-<div class="orv_system"><p>[The scenario's time limit has ended.]</p></div>
-<div class="orv_system"><p>[Incarnation Han Sooyoung and Incarnation Jung Heewon have demonstrated their 'trust'.]</p></div>
+<div class="orv_system"><p>The scenario's time limit has ended.</p></div>
+<div class="orv_system"><p>Incarnation Han Sooyoung and Incarnation Jung Heewon have demonstrated their 'trust'.</p></div>
 <p class="orv_line">Han Sooyoung raised her head and looked in my direction.</p>
 <p class="orv_line">–…Is it fun to steal a look?</p>
 <p class="orv_line">I turned my gaze towards other screens.</p>
@@ -292,14 +299,14 @@
 <p class="orv_line">–…Yes.</p>
 <p class="orv_line">–Hyunsung ahjussi! Stop picking your nose and get up. The time is up.</p>
 <p class="orv_line">No one touched the star and it was just a shining decoration. It was so peaceful I doubted it was a scenario.</p>
-<div class="orv_constellation"><p>[I'm sorry Constellations. I made a mistake when distributing the rooms…]</p></div>
+<div class="orv_constellation"><p>I'm sorry Constellations. I made a mistake when distributing the rooms…</p></div>
 <p class="orv_line">The misplaced room seemed to be over there.</p>
-<div class="orv_system"><p>[Incarnation Shin Yoosung and Incarnation Lee Gilyoung have demonstrated their 'trust'.]</p></div>
-<div class="orv_system"><p>[Incarnation Lee Hyunsung and Incarnation Lee Seolhwa have demonstrated their 'trust'.]</p></div>
-<div class="orv_system"><p>[All members of the nebula has met the scenario clear conditions.]</p></div>
-<div class="orv_system"><p>[Main scenario #46 - Context of the Constellation has been completed.]</p></div>
-<div class="orv_system"><p>[None of the nebula members have harmed each other.]</p></div>
-<div class="orv_system"><p>[Compensation for the clearance is prepared.]</p></div>
+<div class="orv_system"><p>Incarnation Shin Yoosung and Incarnation Lee Gilyoung have demonstrated their 'trust'.</p></div>
+<div class="orv_system"><p>Incarnation Lee Hyunsung and Incarnation Lee Seolhwa have demonstrated their 'trust'.</p></div>
+<div class="orv_system"><p>All members of the nebula has met the scenario clear conditions.</p></div>
+<div class="orv_system"><p>Main scenario #46 - Context of the Constellation has been completed.</p></div>
+<div class="orv_system"><p>None of the nebula members have harmed each other.</p></div>
+<div class="orv_system"><p>Compensation for the clearance is prepared.</p></div>
 <p class="orv_line">No one had the same story. Everyone lived a different history and understood things using different contexts.</p>
 <p class="orv_line">There was a dazzling light and the party members were summoned. Shin Yoosung, Lee Gilyoung, Lee Hyunsung, Lee Seolhwa, Lee Jihye, Han Sooyoung, Jung Heewon…</p>
 <p class="orv_line">They were the people who came here with me. The faces of the party members changed as they saw us covered with wounds.</p>
@@ -313,21 +320,21 @@
 <p class="orv_line">"…Isn't this similar to that squid in the past?"</p>
 <p class="orv_line">There was fear in Lee Jihye's voice. I smiled and said, "That's right."</p>
 <p class="orv_line">The next moment, a small star shone in the night sky.</p>
-<div class="orv_quote"><p>「 Between salvation and the demon king. 」</p></div>
+<div class="orv_quote"><p>Between salvation and the demon king.</p></div>
 <p class="orv_line">With this light, several planets started to shine together.</p>
-<div class="orv_quote"><p>「 Between the demon and judgment. 」</p></div>
-<div class="orv_quote"><p>「 Between the steel and master. 」</p></div>
-<div class="orv_quote"><p>「 Between the abyss and black flame dragon. 」</p></div>
+<div class="orv_quote"><p>Between the demon and judgment.</p></div>
+<div class="orv_quote"><p>Between the steel and master.</p></div>
+<div class="orv_quote"><p>Between the abyss and black flame dragon.</p></div>
 <p class="orv_line">I saw the white lines connecting the empty universe. The stars, that seemed like they would never meet each other, were facing each other. At this moment, I understood the context of the modifiers. Perhaps the party members felt the same way.</p>
 <p class="orv_line">Shin Yoosung spoke. "Pretty."</p>
 <p class="orv_line">There were stories between the stars.</p>
-<div class="orv_system"><p>[The nebula 'Kim Dokja's Company' has broken through the 46th scenario!]</p></div>
+<div class="orv_system"><p>The nebula 'Kim Dokja's Company' has broken through the 46th scenario!</p></div>
 <p class="orv_line">There were still vacancies in the constellation of the nebula. One of the vacant places belonged to Yoo Sangah.</p>
 <p class="orv_line">I spoke to the people. "Let's go."</p>
 <p class="orv_line">Our bodies rose into the air and we soon became light. The numerous stars of the Star Stream passed by and the vast landscape of an interstellar city was seen in the distance. It took me a long time but I eventually ended up here.</p>
 <p class="orv_line">Olympus. Vedas. Papyrus. The grudges were piled up in me. I hadn't forgotten. Not at all.</p>
 <p class="orv_line">Shadows were swaying in places where the blinding light diminished. Surprisingly, someone was waiting for us at the entrance to the interstellar city. A huge shadow swaying in the light spoke to me.</p>
-<div class="orv_constellation"><p>[Father.]</p></div>
+<div class="orv_constellation"><p>Father.</p></div>
 <br>
 <hr>
         </article>
@@ -335,18 +342,12 @@
             <a href="./ch_311"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_313">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="312" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="385" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="311" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="311" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

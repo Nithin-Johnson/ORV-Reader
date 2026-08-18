@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 489: Ep. 93 - Omniscient Author's Viewpoint, III</title>
     <meta property="og:title" content="Ch 489: Ep. 93 - Omniscient Author's Viewpoint, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,38 +177,38 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00489.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 489: Ep. 93 - Omniscient Author's Viewpoint, III</h1></div>
 <p class="orv_line">The sight of Jung Heewon running forward could be seen.</p>
 <p class="orv_line">She slid among the 'Nameless Ones' like the moonlight sliding off the blade.</p>
 <p class="orv_line">The answer she was searching for was there.</p>
-<div class="orv_system"><p>[Incarnation Jung Heewon's ■■ is 'Salvation'.]</p></div>
+<div class="orv_system"><p>Incarnation Jung Heewon's ■■ is 'Salvation'.</p></div>
 <p class="orv_line">Everyone had their own ■■. Finally, the moment of choosing their own conclusions had arrived for the &lt;Kim Dokja's Company&gt;'s companions.</p>
 <p class="orv_line">"Jung Heewon!"</p>
-<p class="orv_line">Her [Judge's Sword] drew a spectacular trajectory. The companions watched that sword trajectory and hurriedly chased after her.</p>
+<p class="orv_line">Her <strong>[Judge's Sword]</strong> drew a spectacular trajectory. The companions watched that sword trajectory and hurriedly chased after her.</p>
 <p class="orv_line">Lee Gilyoung was about to leap into the air along with Yoo Sangah, but had to stop because of a girl was about to be left behind.</p>
 <p class="orv_line">"Shin Yoosung…"</p>
 <p class="orv_line">Shin Yoosung standing there all alone, was crying. Standing in the exact same location as before, her feet not going anywhere, and her gaze fixed on one spot – it was quite clear what she was looking at right now.</p>
-<div class="orv_system"><p>[Story, 'Saviour of a Star', is continuing on with its storytelling.]</p></div>
+<div class="orv_system"><p>Story, 'Saviour of a Star', is continuing on with its storytelling.</p></div>
 <p class="orv_line">It was the Story that only Shin Yoosung possessed.</p>
 <p class="orv_line">A Constellation and an Incarnation, connected through that radiating starlight. The light emitted by the Story was so beautiful and radiant that Lee Gilyoung unknowingly reached out towards Shin Yoosung.</p>
 <p class="orv_line">⸢Lee Gilyoung was envious of Shin Yoosung.⸥</p>
@@ -236,9 +243,9 @@
 <p class="orv_line">⸢Did that demon look like Kim Dokja to Shin Yoosung?⸥</p>
 <p class="orv_line">"I…"</p>
 <p class="orv_line">Lee Gilyoung muttered while trying to fight against his body's trembling. Against the fear that that thing might not be Kim Dokja he used to know.</p>
-<div class="orv_constellation"><p>[Do not get fooled!]</p></div>
-<div class="orv_constellation"><p>[That creature will destroy this world!]</p></div>
-<div class="orv_constellation"><p>[He's a being that only cares about himself. To him, your survival holds no meaning at all.]</p></div>
+<div class="orv_constellation"><p>Do not get fooled!</p></div>
+<div class="orv_constellation"><p>That creature will destroy this world!</p></div>
+<div class="orv_constellation"><p>He's a being that only cares about himself. To him, your survival holds no meaning at all.</p></div>
 <p class="orv_line">Actually, the Kim Dokja he had been looking at was wrong.</p>
 <p class="orv_line">⸢"Hyung, are you a god?"</p>
 <p class="orv_line">"…Wha?"</p>
@@ -255,22 +262,22 @@
 <p class="orv_line">– I think I understand.</p>
 <p class="orv_line">He too had his own skill of conversing with the others.</p>
 <p class="orv_line">– It kinda feels different when talking to a praying mantis and a cockroach.</p>
-<p class="orv_line">The [Diverse Communication] was such a skill, that allowed him to communicate with species different than his. However, the boy lacked a skill to understand other human beings.</p>
+<p class="orv_line">The <strong>[Diverse Communication]</strong> was such a skill, that allowed him to communicate with species different than his. However, the boy lacked a skill to understand other human beings.</p>
 <p class="orv_line">What kind of a person was Kim Dokja? He wasn't sure.</p>
 <p class="orv_line">However, there was this one image that popped into his head first when trying to think of the person called Kim Dokja – the sight of people with their heads or bodies blown up.</p>
 <p class="orv_line">⸢"I'm going to trouble you for a bit."⸥</p>
 <p class="orv_line">And then, the face of Kim Dokja as he placed a grasshopper within the boy's grasp.</p>
-<div class="orv_system"><p>[Story, 'Insect King', has begun its storytelling!]</p></div>
+<div class="orv_system"><p>Story, 'Insect King', has begun its storytelling!</p></div>
 <p class="orv_line">Suddenly, the surrounding view shook and a Story began waking up within the boy.</p>
-<div class="orv_system"><p>[Constellation, 'Ruler of the Deepest Pit', is grinning insidiously.]</p></div>
+<div class="orv_system"><p>Constellation, 'Ruler of the Deepest Pit', is grinning insidiously.</p></div>
 <p class="orv_line">A swarm of yellow locusts buzzing in from somewhere swirled like a tornado and began enveloping the entire world.</p>
 <p class="orv_line">⸢On that day, Lee Gilyoung thought to himself that it'd been nicer for the whole subway train to be flipped on its head. Just like the grasshopper that died in his hands.⸥</p>
 <p class="orv_line">This incredible feast of Status caused the 'Outer Gods' to scream.</p>
 <p class="orv_line">Constellations of &lt;Star Stream&gt; began pouring out their messages.</p>
-<div class="orv_system"><p>[Constellations leaning on the Absolute Evil spectrum are warning the 'Ruler of the Deepest Pit'!]</p></div>
-<div class="orv_system"><p>[Portion of Demon Kings are greatly astonished by the Incarnation's power!]</p></div>
+<div class="orv_system"><p>Constellations leaning on the Absolute Evil spectrum are warning the 'Ruler of the Deepest Pit'!</p></div>
+<div class="orv_system"><p>Portion of Demon Kings are greatly astonished by the Incarnation's power!</p></div>
 <p class="orv_line">The Story flowing vigorously ignored the gazes of the Constellations and continued on with its storytelling. This story was something the boy hadn't told any adults yet.</p>
-<p class="orv_line">And it was a story that Shin Yoosung, also a possessor of the [Diverse Communication], knew a little bit of.</p>
+<p class="orv_line">And it was a story that Shin Yoosung, also a possessor of the <strong>[Diverse Communication]</strong>, knew a little bit of.</p>
 <p class="orv_line">⸢"You didn't even have enough money so why did you go and have a kid…"⸥</p>
 <p class="orv_line">This intense stink of the brown coal, the sight of his father and mother lying on the ground like dead cockroaches – memories of him poking on the cold, unmoving flesh. A funeral without portraits came to an end, and the fatigued eyes of his relatives looking at him.</p>
 <p class="orv_line">⸢"That girl Yeong-Mi, I knew she'd do something like this. She was told that that bastard wasn't good for her, yet she…"⸥</p>
@@ -293,12 +300,12 @@
 <p class="orv_line">⸢"When you wish to say something, this hyung will be by your side to listen."⸥</p>
 <p class="orv_line">…That, Dokja hyung wasn't a villain.</p>
 <p class="orv_line">…That, he was a just regular person who happened to rescue the boy from other regular people.</p>
-<div class="orv_constellation"><p>[Kill him! We only have to push a little bit harder!]</p></div>
-<div class="orv_constellation"><p>[They are failures from a different world-line! Do not mind it and push harder! Killing them now will end this!]</p></div>
+<div class="orv_constellation"><p>Kill him! We only have to push a little bit harder!</p></div>
+<div class="orv_constellation"><p>They are failures from a different world-line! Do not mind it and push harder! Killing them now will end this!</p></div>
 <p class="orv_line">The ranks of the 'Outer Gods' fighting out in the front were crumbling now. One of the sides seemed to break down completely, then a group of Incarnations led by the Myth-grade Constellations began advancing towards Kim Dokja. He needed to stop them somehow.</p>
 <p class="orv_line">Tsu-chuchuchut!</p>
-<div class="orv_system"><p>[Applicable action is prohibited by the ⸢Bureau⸥'s Probability.]</p></div>
-<div class="orv_system"><p>[The target you wish to protect is the ⸢Enemy of the Story⸥.]</p></div>
+<div class="orv_system"><p>Applicable action is prohibited by the ⸢Bureau⸥'s Probability.</p></div>
+<div class="orv_system"><p>The target you wish to protect is the ⸢Enemy of the Story⸥.</p></div>
 <p class="orv_line">He needed to convince them that Dokja hyung wasn't a person like that. But, how should he…</p>
 <p class="orv_line">Ku-gugugugu…</p>
 <p class="orv_line">Even as his enemies rushed in, Kim Dokja simply stood there like a wall. He seemed to be saying something every so often, yet those words couldn't be understood. Lee Gilyoung wanted to understand them, though. He hated leaning against the wall, all powerless and helpless. He wanted to stand on Kim Dokja's side.</p>
@@ -310,55 +317,55 @@
 <p class="orv_line">"…You idiot. Wake up."</p>
 <p class="orv_line">The swarm of locusts flying around settled down.</p>
 <p class="orv_line">Shin Yoosung spoke up. "I can't understand ahjussi, either."</p>
-<div class="orv_system"><p>[Exclusive skill, 'Superlative Diverse Communication', is activating!]</p></div>
+<div class="orv_system"><p>Exclusive skill, 'Superlative Diverse Communication', is activating!</p></div>
 <p class="orv_line">"I'm just doing my best trying to understand."</p>
 <p class="orv_line">The skill of these two kids that allowed them to control the Chimera Dragon activated simultaneously. And now, they were in the most optimum state to understand each other.</p>
 <p class="orv_line">Lee Gilyoung couldn't read Kim Dokja. However, Shin Yoosung seemed to know how, at least just a little bit.</p>
 <p class="orv_line">The Story these two read together began rocking the world. And it was as if Kim Dokja's face could be seen ever so faintly now. It seemed like the figure of Kim Dokja they knew was almost within reach.</p>
-<div class="orv_system"><p>[Story, 'Saviour of the Star', is having a chat with the Story, 'Insect King!]</p></div>
+<div class="orv_system"><p>Story, 'Saviour of the Star', is having a chat with the Story, 'Insect King!</p></div>
 <p class="orv_line">"Hey, kids."</p>
 <p class="orv_line">Han Sooyoung stood next to them as if to provide protection. And Lee Hyunsung, Jung Heewon, and Yoo Sangah stood nearby to protect them in turn.</p>
 <p class="orv_line">⸢Adults looking at the world together with the kids were here.⸥</p>
 <p class="orv_line">Lee Jihye's battleship cast a shadow from the air. Both Gong Pildu and Lee Seolhwa could be seen near the cannons of the vessel. Lee Jihye then unsheathed her sword as if to imply that she was ready to fire at any time she wanted to.</p>
 <p class="orv_line">That prompted the Great Dokkaebi Onsae to ask them.</p>
-<div class="orv_constellation"><p>[Are you trying to protect him? Even though you know what kind of existence he is? He's no longer the 'Kim Dokja' that you know. The truth has been exposed to the rest of the world…!]</p></div>
+<div class="orv_constellation"><p>Are you trying to protect him? Even though you know what kind of existence he is? He's no longer the 'Kim Dokja' that you know. The truth has been exposed to the rest of the world…!</p></div>
 <p class="orv_line">"Don't make me laugh. That ain't the truth. You think truth is that simple? What you've shown is simply edited footage. And that's how you've all been creating scenarios so far, right?" Han Sooyoung spoke to the approaching Constellations as if to issue a warning. "Don't care whether he's become the 'Enemy of the Story' or whatever, he's still our companion. So, don't you dare touch him. Got that?"</p>
-<div class="orv_system"><p>[Constellation, 'Abyssal Black Flame Dragon', is roaring out!]</p></div>
-<div class="orv_system"><p>[Constellation, 'Demon-like Judge of Fire', is exposing her Status!]</p></div>
-<div class="orv_system"><p>[Constellation, 'Most Ancient Liberator', is charging up his lightning!]</p></div>
+<div class="orv_system"><p>Constellation, 'Abyssal Black Flame Dragon', is roaring out!</p></div>
+<div class="orv_system"><p>Constellation, 'Demon-like Judge of Fire', is exposing her Status!</p></div>
+<div class="orv_system"><p>Constellation, 'Most Ancient Liberator', is charging up his lightning!</p></div>
 <p class="orv_line">"You touch him, and we'll kill you all."</p>
 <p class="orv_line">The moment the Constellations protecting &lt;Kim Dokja's Company&gt; made a move, the powerful momentum of the opposing Constellations froze still for a moment there.</p>
 <p class="orv_line">Tsu-chuchuchuchut!</p>
-<div class="orv_system"><p>[A portion of Constellations agree with Incarnation 'Han Sooyoung's' words, and…!]</p></div>
+<div class="orv_system"><p>A portion of Constellations agree with Incarnation 'Han Sooyoung's' words, and…!</p></div>
 <p class="orv_line">Great Dokkaebi Harong detected the tremor within the Probability and promptly cut the messages off.</p>
-<div class="orv_constellation"><p>[How laughable. You want to protect him? You lot who can't even understand what he's saying?]</p></div>
-<div class="orv_system"><p>[&lt;Star Stream&gt; is warning the Great Dokkaebis for their interference in the scenario!]</p></div>
+<div class="orv_constellation"><p>How laughable. You want to protect him? You lot who can't even understand what he's saying?</p></div>
+<div class="orv_system"><p>&lt;Star Stream&gt; is warning the Great Dokkaebis for their interference in the scenario!</p></div>
 <p class="orv_line">Frustrated by how the scenario wasn't unfolding in the way they desired, a Great Dokkaebi enduring the aftermath's storm asked them.</p>
-<div class="orv_constellation"><p>[Can you not see his current appearance?]</p></div>
+<div class="orv_constellation"><p>Can you not see his current appearance?</p></div>
 <p class="orv_line">Incarnations that got near Kim Dokja shrunk back and began retreating away. It was the same story whether they were Incarnations hostile towards him or carrying a favourable impression of him.</p>
 <p class="orv_line">The Outer God, now reaching high up into the heavens. The moment everyone looked into his eye containing the abyss itself, they shuddered and collapsed on their butts.</p>
-<div class="orv_constellation"><p>[None of you know what he feels, what he desires, and what he thinks about. Because you are all measly humans. Because you are creatures that can never understand another existence even if you devote your entire lifetime to it.]</p></div>
+<div class="orv_constellation"><p>None of you know what he feels, what he desires, and what he thinks about. Because you are all measly humans. Because you are creatures that can never understand another existence even if you devote your entire lifetime to it.</p></div>
 <p class="orv_line">Everyone from &lt;Kim Dokja's Company&gt; looked up at Kim Dokja. What the Great Dokkaebi said was true. They couldn't understand him.</p>
-<div class="orv_system"><p>[The target you wish to protect is the ⸢Enemy of the Story⸥.]</p></div>
-<p class="orv_line">As if to wake up the characters that had forgotten their roles, the Great Dokkaebi shouted out loudly. [None of you have a choice in this matter! Kill him. If you don't, this scenario will not end!]</p>
-<div class="orv_system"><p>['King of the Stories' is observing the direction of the Final Scenario.]</p></div>
+<div class="orv_system"><p>The target you wish to protect is the ⸢Enemy of the Story⸥.</p></div>
+<p class="orv_line">As if to wake up the characters that had forgotten their roles, the Great Dokkaebi shouted out loudly. <strong>[None of you have a choice in this matter! Kill him. If you don't, this scenario will not end!]</strong></p>
+<div class="orv_system"><p>'King of the Stories' is observing the direction of the Final Scenario.</p></div>
 <p class="orv_line">The oldest storyteller in this world was also watching the unfolding events.</p>
-<p class="orv_line">Along with her companions, Han Sooyoung raised her head, and looked at the place where the 'King of the Stories' was – the being that summarised all the scenarios. She looked at the endlessly-stretching [Final Wall].</p>
+<p class="orv_line">Along with her companions, Han Sooyoung raised her head, and looked at the place where the 'King of the Stories' was – the being that summarised all the scenarios. She looked at the endlessly-stretching <strong>[Final Wall]</strong>.</p>
 <p class="orv_line">⸢That wall is where their story would be recorded.⸥</p>
 <p class="orv_line">"The scenario won't end? Nice. Is that not what every reader wishes for?"</p>
-<div class="orv_constellation"><p>[Incarnation 'Han Sooyoung' has gotten much closer to her ■■.]</p></div>
+<div class="orv_constellation"><p>Incarnation 'Han Sooyoung' has gotten much closer to her ■■.</p></div>
 <p class="orv_line">Han Sooyoung then looked up at Kim Dokja. When she glared continuously at the giant head of the cephalopod, she thought that it began to resemble Kim Dokja's face just a little bit.</p>
 <p class="orv_line">"The story I'm writing definitely requires that idiot Kim Dokja's presence."</p>
-<p class="orv_line">Han Sooyoung roughly unfurled the bandages like an author ripping up the manuscript she didn't like. Her Story dyed in the [Black Flame] spread out in the air like pitch-black ink.</p>
+<p class="orv_line">Han Sooyoung roughly unfurled the bandages like an author ripping up the manuscript she didn't like. Her Story dyed in the <strong>[Black Flame]</strong> spread out in the air like pitch-black ink.</p>
 <p class="orv_line">As if to imply that she could write as long as she wanted to.</p>
-<div class="orv_system"><p>[&lt;Star Stream&gt; is surprised by the Incarnation 'Han Sooyoung's' decision!]</p></div>
-<div class="orv_system"><p>[Many Constellations are astonished by the Incarnation 'Han Sooyoung's' ■■, and…]</p></div>
-<div class="orv_system"><p>[The target you wish to protect is the ⸢Enemy of the Story⸥.]</p></div>
-<div class="orv_system"><p>[Applicable action is prohibited by the ⸢Bureau⸥'s Probab…]</p></div>
+<div class="orv_system"><p>&lt;Star Stream&gt; is surprised by the Incarnation 'Han Sooyoung's' decision!</p></div>
+<div class="orv_system"><p>Many Constellations are astonished by the Incarnation 'Han Sooyoung's' ■■, and…</p></div>
+<div class="orv_system"><p>The target you wish to protect is the ⸢Enemy of the Story⸥.</p></div>
+<div class="orv_system"><p>Applicable action is prohibited by the ⸢Bureau⸥'s Probab…</p></div>
 <p class="orv_line">Tsu-chuchuchuchu…!</p>
-<div class="orv_system"><p>[Constellation, 'Abyssal Black Flame Dragon', is proud of his Incarnation.]</p></div>
+<div class="orv_system"><p>Constellation, 'Abyssal Black Flame Dragon', is proud of his Incarnation.</p></div>
 <p class="orv_line">Han Sooyoung smirked. "Let's not end the scenario, forever."</p>
-<div class="orv_system"><p>[Incarnation Han Sooyoung's ■■ is 'Neverending Story'.]</p></div>
+<div class="orv_system"><p>Incarnation Han Sooyoung's ■■ is 'Neverending Story'.</p></div>
 <br>
 <hr>
         </article>
@@ -366,18 +373,12 @@
             <a href="./ch_488"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_490">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="489" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="537" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="488" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="488" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

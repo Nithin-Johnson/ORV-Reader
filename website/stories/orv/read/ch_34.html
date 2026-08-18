@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 34: Ep. 8 – Emergency Defense, II</title>
     <meta property="og:title" content="Ch 34: Ep. 8 – Emergency Defense, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00034.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 34: Ep. 8 – Emergency Defense, II</h1></div>
 <p class="orv_line">It was finally the promised time.</p>
@@ -214,8 +221,8 @@
 <p class="orv_line">It was the first time I've heard this story. That reminded me, I didn't really know about Lee Hyunsung's army life. Ways of Survival only mentioned it in passing.</p>
 <p class="orv_line">"Once this is over, I want to hear Hyunsung-ssi's story."</p>
 <p class="orv_line">I said it casually but Lee Hyunsung was more shaken than I thought.</p>
-<div class="orv_system"><p>[The character 'Lee Hyunsung' has started to open his heart to you.]</p></div>
-<div class="orv_system"><p>[Your understanding of the character 'Lee Hyunsung' has greatly increased.]</p></div>
+<div class="orv_system"><p>The character 'Lee Hyunsung' has started to open his heart to you.</p></div>
+<div class="orv_system"><p>Your understanding of the character 'Lee Hyunsung' has greatly increased.</p></div>
 <p class="orv_line">"Sometimes I feel strange when talking to Dokja-ssi."</p>
 <p class="orv_line">"Huh? Why…?"</p>
 <p class="orv_line">"It seems like you knew me from a long time ago… I can't explain it well…" Lee Hyunsung scratched his head and trailed off. "Ah, I don't mean anything strange. I just…"</p>
@@ -239,45 +246,45 @@
 <p class="orv_line">It was Lee Hyunsung.</p>
 <p class="orv_line">"Who are you?"</p>
 <p class="orv_line">Lee Hyunsung looked at me after the middle-aged man's question. It was like he was asking for permission. I nodded.</p>
-<div class="orv_system"><p>[The character 'Lee Hyunsung' wants to practice justice of his own will.]</p></div>
-<div class="orv_system"><p>[The character 'Lee Hyunsung' is about to evolve.]</p></div>
+<div class="orv_system"><p>The character 'Lee Hyunsung' wants to practice justice of his own will.</p></div>
+<div class="orv_system"><p>The character 'Lee Hyunsung' is about to evolve.</p></div>
 <p class="orv_line">The allied members pulled out their weapons and exerted a tremendous momentum. I checked the time. It was time to begin. I raised my stats with my coins.</p>
-<div class="orv_system"><p>[1,200 coins have been invested into 'physique'.]</p></div>
-<div class="orv_system"><p>[Physique Lv. 15 -> Physique Lv. 18]</p></div>
-<div class="orv_system"><p>[Your physique level has increased dramatically!]</p></div>
-<div class="orv_system"><p>[1,200 coins have been invested into 'strength'.]</p></div>
-<div class="orv_system"><p>[Strength Lv. 15 -> Strength Lv. 18]</p></div>
-<div class="orv_system"><p>[Your strength level has increased dramatically!]</p></div>
+<div class="orv_system"><p>1,200 coins have been invested into 'physique'.</p></div>
+<div class="orv_system"><p>Physique Lv. 15 -> Physique Lv. 18</p></div>
+<div class="orv_system"><p>Your physique level has increased dramatically!</p></div>
+<div class="orv_system"><p>1,200 coins have been invested into 'strength'.</p></div>
+<div class="orv_system"><p>Strength Lv. 15 -> Strength Lv. 18</p></div>
+<div class="orv_system"><p>Your strength level has increased dramatically!</p></div>
 <p class="orv_line">This was the maximum efficiency with minimal investment.</p>
-<div class="orv_system"><p>[Coins Possessed: 20,350 C]</p></div>
+<div class="orv_system"><p>Coins Possessed: 20,350 C</p></div>
 <p class="orv_line">I had another place to spend the remaining coins.</p>
 <p class="orv_line">Kwaaaang!</p>
 <p class="orv_line">Small blasts were heard all over the subway. A big and small uproar followed. It was the signal.</p>
 <p class="orv_line">"Hyunsung-ssi!"</p>
 <p class="orv_line">Lee Hyunsung nodded. We ran forward towards the men in the front row. The confused alliance members shouted.</p>
 <p class="orv_line">"What, you bastards!"</p>
-<div class="orv_system"><p>[The exclusive skill 'Purest Sword Force' has been activated.]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Purest Sword Force' has been activated.</p></div>
 <p class="orv_line">Sukakak!</p>
 <p class="orv_line">"Kyaaak!"</p>
 <p class="orv_line">The arm of the middle-aged man holding the woman's head flew away. The middle-aged men froze at the blood that emerged. Lee Hyunsung and I ignored them and kept running. The middle-aged men belatedly chased after us.</p>
 <p class="orv_line">"These crazy guys! Stop them!"</p>
 <p class="orv_line">A corridor on B2. It was the private land of Gong Pildu.</p>
-<div class="orv_system"><p>[You have invaded private property!]</p></div>
+<div class="orv_system"><p>You have invaded private property!</p></div>
 <p class="orv_line">"Surround them!"</p>
 <p class="orv_line">The alliance members waiting in front discovered us. Some of the alliance members were missing, so there were less than expected. 20 in the back, 12 in the front. However, it was still a lot of people.</p>
 <p class="orv_line">Well, I had no intention of dealing with all of them.</p>
 <p class="orv_line">The moment I was about to clash with the alliance members, Lee Hyunsung moved ahead of me with a steel shield.</p>
-<div class="orv_system"><p>[The character 'Lee Hyunsung' has used the stigma 'Great Mountain Push Lv. 1'.]</p></div>
+<div class="orv_system"><p>The character 'Lee Hyunsung' has used the stigma 'Great Mountain Push Lv. 1'.</p></div>
 <p class="orv_line">Kwakakakak!</p>
 <p class="orv_line">Lee Hyunsung used his tremendous muscle strength and they fell like dominoes.</p>
-<div class="orv_system"><p>[The character 'Gong Pildu' has activated 'Armed Zone Lv. 4!]</p></div>
+<div class="orv_system"><p>The character 'Gong Pildu' has activated 'Armed Zone Lv. 4!</p></div>
 <p class="orv_line">Turrets started to rise from all over the territory. The turrets were charged with red magic bullets and were prepared to fire. There were five mini-turrets. The level of Armed Zone had risen again.</p>
 <p class="orv_line">"Dokja-ssi!"</p>
 <p class="orv_line">I overtook Lee Hyunsung and at the same time, I received his shield. As soon as the solid shield entered my hand, a stunning shock from a bullet pushed me away.</p>
 <p class="orv_line">Kwang! Kwaang! Kwaang!</p>
 <p class="orv_line">It was heavy, as if I was hit by a cannon. The arm holding the shield was in pain. The level 19 magic power was strong. But I had to hold on.</p>
-<div class="orv_system"><p>[The compensation effect of Unbroken Faith has increased physique to level 20.]</p></div>
-<div class="orv_system"><p>[A toughness that is one step higher has protected your body.]</p></div>
+<div class="orv_system"><p>The compensation effect of Unbroken Faith has increased physique to level 20.</p></div>
+<div class="orv_system"><p>A toughness that is one step higher has protected your body.</p></div>
 <p class="orv_line">"A cheeky tenant is here."</p>
 <p class="orv_line">Beyond the voice, I heard Gong Pildu's gruff voice.</p>
 <p class="orv_line">Our feet were tied up by the powerful magic bullets while the alliance members were still chasing us. The durability of the iron shield was falling. Now it could only block a dozen magic bullets in the future.</p>
@@ -286,10 +293,10 @@
 <p class="orv_line">"Now I will quit being a tenant."</p>
 <p class="orv_line">"How interesting. Are you coveting my land?"</p>
 <p class="orv_line">"We'll see. More than that…"</p>
-<div class="orv_system"><p>[Some of the trespassers' stats are reduced by the effect of Gong Pildu's private land.]</p></div>
+<div class="orv_system"><p>Some of the trespassers' stats are reduced by the effect of Gong Pildu's private land.</p></div>
 <p class="orv_line">…It had started. This was why Gong Pildu's power was scary. The special effect of Armed Zone was a 'private land debuff'.</p>
 <p class="orv_line">Red magic power started condensing on the turrets.</p>
-<div class="orv_system"><p>[The character 'Gong Pildu' is preparing the 'strengthened magic bullets'.]</p></div>
+<div class="orv_system"><p>The character 'Gong Pildu' is preparing the 'strengthened magic bullets'.</p></div>
 <p class="orv_line">As long as the combo of 'private land' and 'armed zone' wasn't broken, there were very few incarnations who could deal with Gong Pildu.</p>
 <p class="orv_line">"Die."</p>
 <p class="orv_line">The moment that the enhanced magic bullets were about to be launched, I heard the screams of people from far away. The wounded landlord alliance members were rushing to this side.</p>
@@ -299,12 +306,12 @@
 <p class="orv_line">Lee Hyunsung's eyes were shaking.</p>
 <p class="orv_line">"Smash it."</p>
 <p class="orv_line">Lee Hyunsung raised his fists up high. He looked uneasy and irritated, but there was also a firm determination not to retreat.</p>
-<div class="orv_system"><p>[The character 'Lee Hyunsung' has evolved.]</p></div>
+<div class="orv_system"><p>The character 'Lee Hyunsung' has evolved.</p></div>
 <p class="orv_line">There was a blinding light and silver aura started to appear around Lee Hyunsung's body.</p>
 <p class="orv_line">I was a bit emotional at the sight. Lee Hyunsung's 'character evolution' was one of the scenes I liked most in Ways of Survival. It was the reason why Steel Sword Lee Hyunsung was called one of the strongest supporting characters. That is―</p>
-<div class="orv_system"><p>[Due to the character evolution, a new stigma has been opened.]</p></div>
+<div class="orv_system"><p>Due to the character evolution, a new stigma has been opened.</p></div>
 <p class="orv_line">When it came to 'one blow', Lee Hyunsung was considered one of the strongest in Ways of Survival.</p>
-<div class="orv_system"><p>[The character 'Lee Hyunsung' has used the stigma 'Great Mountain Smash Lv. 1'.]</p></div>
+<div class="orv_system"><p>The character 'Lee Hyunsung' has used the stigma 'Great Mountain Smash Lv. 1'.</p></div>
 <p class="orv_line">Pale magic power gathered around Lee Hyunsung's fist and within seconds, Lee Hyunsung's arms became big enough to transcend common sense.</p>
 <p class="orv_line">"Haaaat!"</p>
 <p class="orv_line">Lee Hyunsung's fists flammed down onto the ground.</p>
@@ -315,8 +322,8 @@
 <p class="orv_line">Dangerous cracks spread across the ground and the positions of the turrets started to twist. The magic bullets were fired towards the wrong place. An explosion spread and dust clouds rose. Then after a while.</p>
 <p class="orv_line">Ku ku ku ku!</p>
 <p class="orv_line">There was a great vibration and the ground of B2 started to collapse.</p>
-<div class="orv_system"><p>[The green zone has been destroyed.]</p></div>
-<div class="orv_system"><p>[The character Gong Pildu's private land has been destroyed.]</p></div>
+<div class="orv_system"><p>The green zone has been destroyed.</p></div>
+<div class="orv_system"><p>The character Gong Pildu's private land has been destroyed.</p></div>
 <p class="orv_line">I looked at the collapsing ground and grinned towards Gong Pildu.</p>
 <p class="orv_line">"Let's go back to the days when we didn't have our own land."</p>
 <br>
@@ -326,18 +333,12 @@
             <a href="./ch_33"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_35">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="34" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="52" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="33" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="33" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

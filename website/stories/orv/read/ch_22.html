@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 22: Ep. 5 – Dark Keeper, III</title>
     <meta property="og:title" content="Ch 22: Ep. 5 – Dark Keeper, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,32 +177,32 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00022.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 22: Ep. 5 – Dark Keeper, III</h1></div>
 <p class="orv_line">"Hyung! This…"</p>
 <p class="orv_line">Right after Lee Gilyoung discovered the treasure box, I blocked his little mouth. "Shh, wait."</p>
 <p class="orv_line">The world of Ways of Survival was relentless. The constellations enjoyed the adversity of the characters and added obstacles in the scenarios just to fuck with humans. Things saying 'Catch me!' usually contained traps and even system messages couldn't be trusted.</p>
 <p class="orv_line">"The treasure trove doesn't just contain treasures."</p>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' is disappointed.]</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' is disappointed.</p></div>
 <p class="orv_line">Abyssal Black Flame Dragon… He wanted me to die for a while.</p>
 <p class="orv_line">Anyway, I waited. Shortly afterwards, shadows started to emerge around the treasure chest.</p>
 <p class="orv_line">It was the ground rats. They brought something through the tunnel, threw it and exchanged information. Once a certain number of ground rats had gathered, the number of lights illuminating the surroundings increased. It was black fire, flames made with black ether. It was said that this place was the core of Dark Root, which was why it had so much black ether to burn. At that time, someone's voice was heard, "It is all because of Yoo Sangah-ssi!"</p>
@@ -210,27 +217,27 @@
 <p class="orv_line">"W-What is this person? I clearly told you that I would drive you in my car! You should know how to accept favours!"</p>
 <p class="orv_line">"Answer me. Did you steal my bike?"</p>
 <p class="orv_line">All of a sudden, the situation made sense. This was it. It was why a person who drove a Mercedes-Benz S-Class took the subway line 3. Well, it wasn't strange. There were quite a few men who had their eyes on Yoo Sangah, not just at the company but at Geumho Station as well. In fact, Yoo Sangah was a worthy person. Her atmosphere was warm and she knew how to flatter people.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' hates the character 'Han Myungoh'.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' hates the character 'Han Myungoh'.</p></div>
 <p class="orv_line">Han Myungoh's face was so red that it could clearly be seen in the dim lighting. It looked dangerous. "Yes, shit! I did it! So what?"</p>
 <p class="orv_line">"Why are you talking like it isn't a big deal? You took someone else's things, it is theft."</p>
 <p class="orv_line">"Theft? Shit, don't talk bullshit! You should've just got in my car from the beginning!"</p>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' hates this trivial argument.]</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' hates this trivial argument.</p></div>
 <p class="orv_line">I didn't mean to do this but there was no other way now. I quietly gripped the thorn.</p>
 <p class="orv_line">"I didn't ask you just once. I continuously asked to take you home but you kept fucking rejecting me…"</p>
 <p class="orv_line">I threw the thorn as hard as I could. The thorn scratched the corner of Han Myungoh's mouth and continued into the darkness.</p>
 <p class="orv_line">"Uwaaaaack! What?"</p>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is pleased.]</p></div>
-<div class="orv_system"><p>[100 coins have been sponsored.]</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is pleased.</p></div>
+<div class="orv_system"><p>100 coins have been sponsored.</p></div>
 <p class="orv_line">"Dokja-ssi!" Yoo Sangah called out to me. However, I wasn't looking at them.</p>
 <p class="orv_line">Across the habitat of the ground rats, the darkness was split apart by the thorn. Then that damned guy came. There was no way it wouldn't be in Dark Root.</p>
-<div class="orv_system"><p>['Dark Keeper' has appeared!]</p></div>
-<div class="orv_system"><p>[The sub scenario has been updated!]</p></div>
-<div class="orv_system"><p>[Sub scenario 'Kill the Guard' has begun!]</p></div>
+<div class="orv_system"><p>'Dark Keeper' has appeared!</p></div>
+<div class="orv_system"><p>The sub scenario has been updated!</p></div>
+<div class="orv_system"><p>Sub scenario 'Kill the Guard' has begun!</p></div>
 <p class="orv_line">Like slaves surrendering to a king, the terrified ground rats fell to the ground. A dark figure appeared in the dim light. A tentacled monster that was like a grim reaper. Lee Gilyoung's complexion deteriorated sharply.</p>
 <p class="orv_line">"Oof, hyung, that…"</p>
 <p class="orv_line">"It is okay."</p>
 <p class="orv_line">Eventually, Lee Gilyoung fell to the ground and started retching. It wasn't strange. A lot of pressure was felt just looking at it from afar. The cockroaches scattered around the area had their stomachs exploded. Lee Gilyoung, who was connected to the cockroaches, would've suffered considerable mental damage.</p>
-<p class="orv_line">"Gilyoung. How many more times can you use [Diverse Communication]?"</p>
+<p class="orv_line">"Gilyoung. How many more times can you use <strong>[Diverse Communication]</strong>?"</p>
 <p class="orv_line">"…I think I can do it one or two more times."</p>
 <p class="orv_line">"I understand. Then rest here for a while."</p>
 <p class="orv_line">I left Gilyoung leaning against the side and approached Yoo Sangah and Han Myungoh. The panicked Han Myungoh was struggling.</p>
@@ -238,11 +245,11 @@
 <p class="orv_line">I took the Swiss Army knife and cut the branches binding the two of them. I only moved the knife a few times. Then the part of the branch that it touched abruptly corroded and the blade melted away. Yes, this was the power of a demonic species.</p>
 <p class="orv_line">"Stay back."</p>
 <p class="orv_line">I said while raising a weapon made of the spine of a ground rat. The 7th grade demon type species, dark keeper. Among the many monsters that appeared since the start of the destruction, the demon species were toxic. In fact, the treasures of the ground rats were close to 'tributes' to the demon. Even if it was the same grade, the demon species were different from other monster species.</p>
-<div class="orv_system"><p>[The 'Dark Keeper' has received the favour of the demon king it follows.]</p></div>
+<div class="orv_system"><p>The 'Dark Keeper' has received the favour of the demon king it follows.</p></div>
 <p class="orv_line">"Kamyun. Der. Yitur."</p>
 <p class="orv_line">The demon species had their own language, worshipped different demon kings and inherited some of the power of the demon king through Dark Root.</p>
-<div class="orv_system"><p>[The 'Dark Keeper' has emitted 'Fear'.]</p></div>
-<div class="orv_system"><p>[The exclusive skill 'Fourth Wall' has neutralized most of the 'Fear' effect.]</p></div>
+<div class="orv_system"><p>The 'Dark Keeper' has emitted 'Fear'.</p></div>
+<div class="orv_system"><p>The exclusive skill 'Fourth Wall' has neutralized most of the 'Fear' effect.</p></div>
 <p class="orv_line">Therefore, killing one demon meant becoming the adversary of their demon king.</p>
 <p class="orv_line">"Yitur!"</p>
 <p class="orv_line">I didn't know what it was saying but the situation didn't look good. I didn't want to fight if possible.</p>
@@ -254,7 +261,7 @@
 <p class="orv_line">For a moment, I thought I was mistaken. But I didn't hear wrong.</p>
 <p class="orv_line">"Kallitu!"</p>
 <p class="orv_line">Surprisingly, the dark keeper nodded at the end.</p>
-<div class="orv_system"><p>[The character 'Yoo Sangah' has activated [Interpreter] Lv. 3.]</p></div>
+<div class="orv_system"><p>The character 'Yoo Sangah' has activated [Interpreter] Lv. 3.</p></div>
 <p class="orv_line">…Oh my god, she wasn't only good at Spanish. Let's see what would happen. I asked, "What is he saying?"</p>
 <p class="orv_line">"That…it keeps saying 'become Mother'…"</p>
 <p class="orv_line">…Become mother? The dark keeper cried out again and pointed to Yoo Sangah.</p>
@@ -270,48 +277,48 @@
 <p class="orv_line">Yoo Sangah immediately understood the words and stepped back quickly. I swung the ground rat spear and tore at the tentacles attached to Han Myungoh.</p>
 <p class="orv_line">The dark keeper roared angrily, "Kallituo!"</p>
 <p class="orv_line">The tentacles of the demon species were gradually breaking the ground rat spear. Even the stone hog thorn, which broke through the stomach of an ichthyosaur, would've been destroyed the moment it was stuck in a demon's body. Before I knew it, Han Myungoh was far away while Yoo Sangah looked at me.</p>
-<div class="orv_quote"><p>「 Is there a chance? 」</p></div>
+<div class="orv_quote"><p>Is there a chance?</p></div>
 <p class="orv_line">Her eyes seemed to be asking me. To tell the truth, I didn't have a chance.</p>
 <p class="orv_line">Pushu! Pushuu! Teong!</p>
 <p class="orv_line">After a few strikes, the ground rat spear was almost destroyed. The hand holding the spear was in pain. The monster guarding the treasure chest couldn't be caught, just like the ichthyosaur of Dongho Bridge. That's why the original plan wasn't to deal with this monster but to obtain the treasure chest after it disappeared. As always, plans existed for things to go wrong.</p>
 <p class="orv_line">"Dokkaebi. Are you watching?"</p>
-<div class="orv_constellation"><p>[U-Uh. You knew?]</p></div>
+<div class="orv_constellation"><p>U-Uh. You knew?</p></div>
 <p class="orv_line">The dokkaebi showed up in the darkness. I didn't know his name but he seemed to be a cousin of Bihyung.</p>
 <p class="orv_line">"There should be some mail for me by now. I want you to hand it over quickly."</p>
-<div class="orv_constellation"><p>[Hihit. It isn't my responsibility. I-It is Bihyung's thing.]</p></div>
+<div class="orv_constellation"><p>Hihit. It isn't my responsibility. I-It is Bihyung's thing.</p></div>
 <p class="orv_line">"Right now, you are taking Bihyung's place. Don't you see the constellations complaining?"</p>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband wants to scold the dokkaebi 'Biryu'.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' threatens the dokkaebi 'Biryu'.]</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband wants to scold the dokkaebi 'Biryu'.</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' threatens the dokkaebi 'Biryu'.</p></div>
 <p class="orv_line">The dokkaebi Biryu gulped.</p>
-<div class="orv_constellation"><p>[…O-Okay. Instead, it is just this once. I think it will be interesting!]</p></div>
+<div class="orv_constellation"><p>…O-Okay. Instead, it is just this once. I think it will be interesting!</p></div>
 <p class="orv_line">The dokkaebi muttered something and the summoning began.</p>
-<div class="orv_system"><p>[The item has arrived from the exchange.]</p></div>
-<div class="orv_system"><p>[The item 'Broken Faith' has been acquired.]</p></div>
-<div class="orv_system"><p>[The brokerage fee was exempted due to the effect of the contract.]</p></div>
+<div class="orv_system"><p>The item has arrived from the exchange.</p></div>
+<div class="orv_system"><p>The item 'Broken Faith' has been acquired.</p></div>
+<div class="orv_system"><p>The brokerage fee was exempted due to the effect of the contract.</p></div>
 <p class="orv_line">Broken Faith. The item bartered for the 'ichthyosaur core', which was registered on the Dokkaebi Bag' exchange, had finally arrived.</p>
 <p class="orv_line">"Kik."</p>
 <p class="orv_line">The dark keeper saw the item coming out of thin air and laughed. No wonder it was laughing. All I received was a D-grade item. It was a knife broken in half.</p>
-<div class="orv_system"><p>[The item is too old to use. The durability will be poor and it will be difficult to achieve any performance.]</p></div>
+<div class="orv_system"><p>The item is too old to use. The durability will be poor and it will be difficult to achieve any performance.</p></div>
 <p class="orv_line">Even the dokkaebi who gave him the item was giggling.</p>
-<div class="orv_constellation"><p>[H-How can you fight with that old thing? And it can't be used if you don't have a special skill…]</p></div>
+<div class="orv_constellation"><p>H-How can you fight with that old thing? And it can't be used if you don't have a special skill…</p></div>
 <p class="orv_line">I knew that much. I wouldn't have bought it if I didn't know.</p>
 <p class="orv_line">"Sigh…" I sucked in a breath and concentrated my mind.</p>
 <p class="orv_line">Kiiing!</p>
 <p class="orv_line">The hilt started trembling greatly. Biryu shouted with shock.</p>
-<div class="orv_constellation"><p>[Uh? How?]</p></div>
+<div class="orv_constellation"><p>Uh? How?</p></div>
 <p class="orv_line">It was natural to be surprised. It was because this was a skill I bought from his friend for a huge 10,000 coins. Blue ether started to settle slowly on the surface of the broken blade.</p>
-<div class="orv_system"><p>[Purest Sword Force]</p></div>
+<div class="orv_system"><p>Purest Sword Force</p></div>
 <p class="orv_line">After killing the ichthyosaur, I bought this skill from Bihyung. There were a few flaws compared to other superior energy techniques, but they weren't something that could be obtained for the time being.</p>
-<div class="orv_system"><p>[Broken Faith has responded to your star energy!]</p></div>
-<div class="orv_system"><p>[Blade of Faith is activated!]</p></div>
+<div class="orv_system"><p>Broken Faith has responded to your star energy!</p></div>
+<div class="orv_system"><p>Blade of Faith is activated!</p></div>
 <p class="orv_line">Shortly afterwards, a brilliant white virtual blade sprang up from the edge of the broken blade. Broken Faith, its real performance was revealed when star energy was injected into it.</p>
 <p class="orv_line">The number of tentacles increased by dozens and covered my field of view. I wouldn't be safe from these attacks with my current stamina level. It was scary. But now there was a chance. It was because the Blade of Faith was the best quality weapon when it came to demon species.</p>
-<p class="orv_line">The tentacles touched by the blade were oxidized and cut off. The dark keeper let out a terrible scream as its tentacles were destroyed. I felt magic power draining out but I wasn't in a hurry. I calmly moved the blade. I missed the tentacles many times because I didn't have the [Fighting Senses] skill or the [Swordsmanship Training] skill, so the way I wielded the blade was terrible. It was natural. I was a reader, not a swordsman. And a reader fought in the manner of a reader.</p>
-<div class="orv_system"><p>[The attribute effect has improved your memories of the pages already read.]</p></div>
+<p class="orv_line">The tentacles touched by the blade were oxidized and cut off. The dark keeper let out a terrible scream as its tentacles were destroyed. I felt magic power draining out but I wasn't in a hurry. I calmly moved the blade. I missed the tentacles many times because I didn't have the <strong>[Fighting Senses]</strong> skill or the <strong>[Swordsmanship Training]</strong> skill, so the way I wielded the blade was terrible. It was natural. I was a reader, not a swordsman. And a reader fought in the manner of a reader.</p>
+<div class="orv_system"><p>The attribute effect has improved your memories of the pages already read.</p></div>
 <p class="orv_line">The pages of Ways of Survival flashed in my head.</p>
-<div class="orv_quote"><p>「 …The dark keeper's attack pattern is simple. Unconditionally, the tentacle on the upper right will first… 」</p></div>
-<div class="orv_quote"><p>「 …After the attack, a single tentacle at the bottom… 」</p></div>
-<div class="orv_quote"><p>「 …Its tentacles regenerate but it will take a few minutes… 」</p></div>
+<div class="orv_quote"><p>…The dark keeper's attack pattern is simple. Unconditionally, the tentacle on the upper right will first…</p></div>
+<div class="orv_quote"><p>…After the attack, a single tentacle at the bottom…</p></div>
+<div class="orv_quote"><p>…Its tentacles regenerate but it will take a few minutes…</p></div>
 <p class="orv_line">I read diligently and used what I had read.</p>
 <p class="orv_line">"Kuaaah!" The dark keeper shrieked as its tentacles were cut.</p>
 <p class="orv_line">On the other side of my field of view was Lee Gilyoung. The young boy looked at me with awed eyes. Unfortunately, unlike his wishes, I wasn't the main character in this world. Still, I was confident of at least one thing.</p>
@@ -326,18 +333,12 @@
             <a href="./ch_21"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_23">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="22" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="43" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="21" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="21" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

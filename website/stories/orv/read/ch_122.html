@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 122: Ep. 24 - Things that Can Be Changed, II</title>
     <meta property="og:title" content="Ch 122: Ep. 24 - Things that Can Be Changed, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,38 +177,38 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00122.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 122: Ep. 24 - Things that Can Be Changed, II</h1></div>
 <p class="orv_line">In short, the small people were 'human beings' but they weren't from Earth like I was. There was a clear contradiction in opposing the human race of another planet.</p>
 <p class="orv_line">Therefore, my current actions were due to the enormous ethics of 'humanity' or 'justice'. If I opposed the small people here then I would miss out on the achievement I needed for the ending.</p>
 <p class="orv_line">This was the only reason I needed to stab Blade of Faith into the ground.</p>
-<div class="orv_system"><p>[The Star Stream has noticed your anomalous behavior.]</p></div>
-<div class="orv_system"><p>[Warning. Be careful to avoid being hostile to other disasters.]</p></div>
-<div class="orv_system"><p>[If the hostile acts are repeatedly accumulated…]</p></div>
+<div class="orv_system"><p>The Star Stream has noticed your anomalous behavior.</p></div>
+<div class="orv_system"><p>Warning. Be careful to avoid being hostile to other disasters.</p></div>
+<div class="orv_system"><p>If the hostile acts are repeatedly accumulated…</p></div>
 <p class="orv_line">Dust flew up and the Japanese screamed as they lost their vision inside the dust.</p>
 <p class="orv_line">"Uwaaaaack! What's happening?"</p>
 <p class="orv_line">"Cough cough!"</p>
 <p class="orv_line">It was a blow filled with considerable power so the dust didn't sink easily.</p>
-<div class="orv_system"><p>[A small planet's constellation is touching his chest.]</p></div>
+<div class="orv_system"><p>A small planet's constellation is touching his chest.</p></div>
 <p class="orv_line">I was troubled for a moment. If I killed them with my own hands, I would be able to get a new scenario right away.</p>
 <p class="orv_line">However, the penalty for it would be tremendous. I wanted to delay that moment as much as possible. That's why, at least…</p>
 <p class="orv_line">"Ahjussi, I'll do it this time." Shin Yoosung pulled out a dagger that she had received from Yoo Sangah and stepped forward. "I will deal with both of them."</p>
@@ -241,19 +248,19 @@
 <p class="orv_line">"Uh…"</p>
 <p class="orv_line">They were clever people.</p>
 <p class="orv_line">Everywhere in the world, those selected for the sixth scenario were the elites of their country. In Japan, the gap between the first group and those who came afterwards was probably considerable. Similar emotions emerged on the faces of the two Japanese.</p>
-<div class="orv_quote"><p>「 …Should we run away? 」</p></div>
+<div class="orv_quote"><p>…Should we run away?</p></div>
 <p class="orv_line">On the other hand, strange delight spread among the small people as they watched the confrontation between Shin Yoosung and the Japanese.</p>
 <p class="orv_line">"Ah, ahh…"</p>
 <p class="orv_line">"Why…?"</p>
 <p class="orv_line">They were shocked. A small disaster was suddenly fighting against a bigger disaster.</p>
 <p class="orv_line">"Perhaps it is the small savior?"</p>
 <p class="orv_line">"Yes, the prophecy was right!"</p>
-<div class="orv_system"><p>[A small planet's constellation is supporting the incarnation 'Shin Yoosung'.]</p></div>
-<div class="orv_system"><p>[A small planet's constellation has sponsored 10 coins to the incarnation 'Shin Yoosung'.]</p></div>
-<div class="orv_system"><p>[The incarnation 'Shin Yoosung' has received the possibility of a new scenario.]</p></div>
+<div class="orv_system"><p>A small planet's constellation is supporting the incarnation 'Shin Yoosung'.</p></div>
+<div class="orv_system"><p>A small planet's constellation has sponsored 10 coins to the incarnation 'Shin Yoosung'.</p></div>
+<div class="orv_system"><p>The incarnation 'Shin Yoosung' has received the possibility of a new scenario.</p></div>
 <p class="orv_line">I watched the scene while grasping the hilt of my sword. It was a bit underhanded but it was a way to chase them if they ran away.</p>
 <p class="orv_line">As I thought, things wouldn't go so smoothly. The intermediate dokkaebi watched from the air and giggled.</p>
-<div class="orv_constellation"><p>[Japanese incarnations, you might think you are disadvantaged but are you really?]</p></div>
+<div class="orv_constellation"><p>Japanese incarnations, you might think you are disadvantaged but are you really?</p></div>
 <p class="orv_line">In any case, this damn dokkaebi. The Japanese people realized something and muttered, "Ah, that's right! That reminds me, the first group…"</p>
 <p class="orv_line">"Didn't Asuka become affected by a mutation? The Korean people would be affected by the same thing. I'm telling you now…"</p>
 <p class="orv_line">"There is no need to tell me. In any case, she is just a Korean child."</p>
@@ -274,7 +281,7 @@
 <p class="orv_line">The Japanese cried out in an exaggerated tone and aimed at other parts of Shin Yoosung's body. This time Shin Yoosung didn't try to escape.</p>
 <p class="orv_line">Shin Yoosung was weak in strength and lost her grip on her dagger. The Japanese took this chance to dig through the gap.</p>
 <p class="orv_line">However, Shin Yoosung didn't panic.</p>
-<div class="orv_system"><p>[The character 'Shin Yoosung' has used 'Advanced Diverse Communication Lv. 3'.]</p></div>
+<div class="orv_system"><p>The character 'Shin Yoosung' has used 'Advanced Diverse Communication Lv. 3'.</p></div>
 <p class="orv_line">Rather, she turned back and settled on the back of the monster waiting for her. It was a steel wolf.</p>
 <p class="orv_line">"…What?"</p>
 <p class="orv_line">It was the right judgment. The basis of fighting was to minimize the opponent's advantage and maximize your advantages.</p>
@@ -285,36 +292,36 @@
 <p class="orv_line">"Fuck! These bastards!"</p>
 <p class="orv_line">They might be weakened 7th grade monsters but the two people would have to consume a lot of magic power to deal with them.</p>
 <p class="orv_line">It was truly a rewarding sight. However, Shin Yoosung was still unaware of something. This was why I warned her not to waste time.</p>
-<div class="orv_system"><p>[The Star Stream has detected abnormal behaviour from the incarnation 'Shin Yoosung'.]</p></div>
-<div class="orv_system"><p>[Hostile acts against a disaster have been detected.]</p></div>
-<div class="orv_system"><p>[The incarnation 'Shin Yoosung' has been given a first scenario penalty.]</p></div>
+<div class="orv_system"><p>The Star Stream has detected abnormal behaviour from the incarnation 'Shin Yoosung'.</p></div>
+<div class="orv_system"><p>Hostile acts against a disaster have been detected.</p></div>
+<div class="orv_system"><p>The incarnation 'Shin Yoosung' has been given a first scenario penalty.</p></div>
 <p class="orv_line">The penalty had finally begun.</p>
 <p class="orv_line">"Uh…?"</p>
 <p class="orv_line">Shin Yoosung groaned as she suddenly felt less magic power. Some wolves suddenly left Shin Yoosung's control and returned to the forest.</p>
-<div class="orv_system"><p>[The character Shin Yoosung's body size has decreased.]</p></div>
-<div class="orv_system"><p>[The character Shin Yoosung's total stats has decreased.]</p></div>
+<div class="orv_system"><p>The character Shin Yoosung's body size has decreased.</p></div>
+<div class="orv_system"><p>The character Shin Yoosung's total stats has decreased.</p></div>
 <p class="orv_line">The Japanese also noticed it.</p>
 <p class="orv_line">"T-That's it! I knew this would happen!"</p>
 <p class="orv_line">"Just a little longer!"</p>
 <p class="orv_line">…It ended up like this. Shin Yoosung glanced at me with anxious eyes. I approached behind Shin Yoosung using Recluse's Cloak and touched her shoulder.</p>
 <p class="orv_line">Shin Yoosung's trembling subsided. "…Thank you ahjussi."</p>
 <p class="orv_line">Shin Yoosung understood something and bit her lips.</p>
-<div class="orv_system"><p>[The incarnation 'Shin Yoosung' has been given a second scenario penalty.]</p></div>
+<div class="orv_system"><p>The incarnation 'Shin Yoosung' has been given a second scenario penalty.</p></div>
 <p class="orv_line">Shin Yoosung's body size was getting smaller. That's right, this was the result of a disaster abandoning their authority. Still, she had enough power remaining to take away the lives of the Japanese people.</p>
 <p class="orv_line">Shin Yoosung put her high agility level to use and approached their backs using the beast.</p>
 <p class="orv_line">"A-Aaaagh!"</p>
 <p class="orv_line">Did she learn from watching Yoo Sangah? Shin Yoosung stabbed her dagger in a poisonous manner. Her dagger moved and a man's carotid artery was cut.</p>
 <p class="orv_line">"K-Kuoock, r-ridiculous…"</p>
 <p class="orv_line">The man paled as blood gushed from him and he fell to the ground.</p>
-<div class="orv_system"><p>[The character 'Shin Yoosung' has defeated the 'disaster without a name'.]</p></div>
-<div class="orv_system"><p>[Major contributor: Shin Yoosung]</p></div>
+<div class="orv_system"><p>The character 'Shin Yoosung' has defeated the 'disaster without a name'.</p></div>
+<div class="orv_system"><p>Major contributor: Shin Yoosung</p></div>
 <p class="orv_line">Shin Yoosung wiped the blood that splattered onto her cheek and moved to the next target. The man was terrified and stepped back. The steel wolves rushed in and bit his arms and legs.</p>
 <p class="orv_line">"Kuaaack!"</p>
 <p class="orv_line">Shin Yoosung approached to cut off the man's breathing. It all happened in an instant.</p>
-<div class="orv_system"><p>[The incarnation 'Shin Yoosung' has been completely deprived of the rights of a disaster.]</p></div>
-<div class="orv_system"><p>[The dokkaebi of the Star Stream sees Shin Yoosung's behavior as taking action against the scenario.]</p></div>
-<div class="orv_system"><p>[The incarnation 'Shin Yoosung' has been given a third scenario penalty.]</p></div>
-<div class="orv_system"><p>[The small person transformation will begin.]</p></div>
+<div class="orv_system"><p>The incarnation 'Shin Yoosung' has been completely deprived of the rights of a disaster.</p></div>
+<div class="orv_system"><p>The dokkaebi of the Star Stream sees Shin Yoosung's behavior as taking action against the scenario.</p></div>
+<div class="orv_system"><p>The incarnation 'Shin Yoosung' has been given a third scenario penalty.</p></div>
+<div class="orv_system"><p>The small person transformation will begin.</p></div>
 <p class="orv_line">In this scenario, a person who gave up their qualification to be a predatory species would become the prey. Shin Yoosung's body became smaller at an incomparable rate.</p>
 <p class="orv_line">"Ah…?"</p>
 <p class="orv_line">There was a small groan as Shin Yoosung's clothes became too big and her dagger fell to the ground. Shin Yoosung's height shrank from my waist, to my knees and finally to my shins. Then Shin Yoosung's body was buried in her clothes.</p>
@@ -332,11 +339,11 @@
 <p class="orv_line">"Are you going to use this person?" Shin Yoosung asked me.</p>
 <p class="orv_line">"There is a person I have to kill before I change."</p>
 <p class="orv_line">New messages rose as soon as I said this.</p>
-<div class="orv_system"><p>[Be careful to avoid being hostile to other disasters.]</p></div>
-<div class="orv_system"><p>[Those who are hostile to disasters will lose the right to be a disaster.]</p></div>
+<div class="orv_system"><p>Be careful to avoid being hostile to other disasters.</p></div>
+<div class="orv_system"><p>Those who are hostile to disasters will lose the right to be a disaster.</p></div>
 <p class="orv_line">There was still a dokkaebi having fun in the sky. Yes… Laugh while you can.</p>
-<div class="orv_system"><p>[The Star Stream thinks that your aren't performing your disaster duties properly.]</p></div>
-<div class="orv_system"><p>[If you don't kill the rule of Peace Land in the next hour, you will be deemed as unwilling to act as a disaster and will be deprived of the status of a 'disaster'.]</p></div>
+<div class="orv_system"><p>The Star Stream thinks that your aren't performing your disaster duties properly.</p></div>
+<div class="orv_system"><p>If you don't kill the rule of Peace Land in the next hour, you will be deemed as unwilling to act as a disaster and will be deprived of the status of a 'disaster'.</p></div>
 <p class="orv_line">I looked down at the Japanese man and slowly took off my cloak. There was one hour remaining. In this one hour, I had to catch their 'king'.</p>
 <br>
 <hr>
@@ -345,18 +352,12 @@
             <a href="./ch_121"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_123">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="122" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="367" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="121" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="121" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

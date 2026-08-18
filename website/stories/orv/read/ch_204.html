@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 204: Ep. 39 - Unidentified Wall, I</title>
     <meta property="og:title" content="Ch 204: Ep. 39 - Unidentified Wall, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,32 +177,32 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00204.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 204: Ep. 39 - Unidentified Wall, I</h1></div>
 <p class="orv_line">I left Aileen, Mark and Jang Hayoung to clean up outside and dragged the unconscious Han Myungoh back to the office.</p>
 <p class="orv_line">To be honest, it was a revelation. I never thought Han Myungoh would still be alive.</p>
 <p class="orv_line">Department Head Han Myungoh. Before we reached the third scenario, he was cursed by Demon King Asmodeus after killing the dark keeper. I thought he had died before I entered Chungmuro and hadn't expected to meet him in the Demon Realm.</p>
 <p class="orv_line">I placed Han Myungoh on a chair in the meeting room. I used a story suppressor that I had borrowed from Aileen.</p>
-<div class="orv_quote"><p>「 Kim Dokja thought: The department head has aged a lot. 」</p></div>
+<div class="orv_quote"><p>Kim Dokja thought: The department head has aged a lot.</p></div>
 <p class="orv_line">There were many small wrinkles on Han Myungoh's face. Moreover, his whole skin was blackened. Putting aside the wrinkles, the skin discolouration was a sign of a species variation. The longer I looked, the more I could see the old face. Still, many human traces were missing and it was hard to know without looking closely.</p>
 <p class="orv_line">Yoo Sangah. Lee Gilyoung. My mother and Song Minwoo… They were the people I couldn't confirm using Character List.</p>
 <p class="orv_line">All of them were people who were involved with me before the scenario or at the start of the scenario. Han Myungoh was also one of them. They survived in this world because of me. That's why I couldn't read their information with Character List.</p>
@@ -204,9 +211,9 @@
 <p class="orv_line">Han Myungoh… I asked the spy, no, the self-styled Aurelius. "Aurelius. Did you pick the name personally?"</p>
 <p class="orv_line">"…!"</p>
 <p class="orv_line">Han Myungoh opened his eyes and I was filled with a vague feeling of certainty. Aurelius. This was the decisive clue that convinced me this person was Han Myungoh.</p>
-<div class="orv_quote"><p>「 A web novel? Hey Kim Dokja-ssi. How much time do you have to read this shit? 」</p></div>
+<div class="orv_quote"><p>A web novel? Hey Kim Dokja-ssi. How much time do you have to read this shit?</p></div>
 <p class="orv_line">During my days at Mino Soft, I had heard these words after I was caught reading a web novel.</p>
-<div class="orv_quote"><p>「 If you are going to read a book then you should read something like this. Read a good book if you want to build up your specs. 」</p></div>
+<div class="orv_quote"><p>If you are going to read a book then you should read something like this. Read a good book if you want to build up your specs.</p></div>
 <p class="orv_line">Han Myungoh was holding the book called 'Meditations', written by Marcus Aurelius. The first few pages of the book were completely discoloured…</p>
 <p class="orv_line">"You usually carried the Meditations book that you can't read. Your bluffing still remains."</p>
 <p class="orv_line">"W-Who the hell are you?"</p>
@@ -219,9 +226,9 @@
 <p class="orv_line">"Oof. Oof. Ooof!"</p>
 <p class="orv_line">"If you say anything then you will die here. Think to yourself. Do you understand?"</p>
 <p class="orv_line">I was worried about another transcendental existence listening. There were no dokkaebi channels here. However, the lack of a channel didn't mean there was no way for other beings to peep.</p>
-<div class="orv_system"><p>[The Fourth Wall says that the demon king 'Devil of Lust and Wrath' is looking at stupid Kim Dokja.]</p></div>
+<div class="orv_system"><p>The Fourth Wall says that the demon king 'Devil of Lust and Wrath' is looking at stupid Kim Dokja.</p></div>
 <p class="orv_line">…Better than expected. It could tell me something like this?</p>
-<div class="orv_quote"><p>「 A hem. 」</p></div>
+<div class="orv_quote"><p>A hem.</p></div>
 <p class="orv_line">Devil of Lust and Wrath…</p>
 <p class="orv_line">Like constellations, the demon kings had their own modifiers. After all, they were fallen constellations. Of course, there were those who didn't use the modifiers as resistance against the constellations…</p>
 <p class="orv_line">If I remembered correctly, 'Devil of Lust and Wrath' was the nickname for Demon King Asmodeus. Han Myungoh seemed to be his subordinate. It was a high-level position where his vision was shared.</p>
@@ -231,10 +238,10 @@
 <p class="orv_line">I thought for a moment before pulling a sword out of my coat's subspace. It was the Four Yin Demonic Beheading Sword.</p>
 <p class="orv_line">It had been a really long time since I used it to destroy the Absolute Throne. It was a sword that could temporarily evolve to a star relic if the power of the Big Dipper was borrowed.</p>
 <p class="orv_line">It was a sword that could break through the constellation's affinity with the star relic. Originally, I required the help of the Big Dipper to manifest that strength. Now that I was a constellation, I could use the power of this sword without their help.</p>
-<div class="orv_system"><p>[The Four Yin Demonic Beheading Sword has responded to your story!]</p></div>
+<div class="orv_system"><p>The Four Yin Demonic Beheading Sword has responded to your story!</p></div>
 <p class="orv_line">"If you aren't going to pay then get lost."</p>
 <p class="orv_line">I swung the sword over Han Myungoh's head. The message appeared as I swung the sword and strong sparks appeared in the air.</p>
-<div class="orv_system"><p>[The connection between the Demon King 'Asmodeus' and his household member is temporarily disconnected.]</p></div>
+<div class="orv_system"><p>The connection between the Demon King 'Asmodeus' and his household member is temporarily disconnected.</p></div>
 <p class="orv_line">Han Myungoh was now shocked beyond surprise. He never thought I would have the power to break off his link with the demon king. I warned Han Myungoh.</p>
 <p class="orv_line">"Here, my name is Yoo Joonghyuk. Nod if you understand."</p>
 <p class="orv_line">Han Myungoh stared at me with a complicated gaze and barely nodded after thinking about it. He made the correct judgment because he knew that his life was precious. I released his mouth and Han Myungoh gasped as he looked up at me.</p>
@@ -252,7 +259,7 @@
 <p class="orv_line">"What? Then how…"</p>
 <p class="orv_line">My words were true. The descriptions of some executioners appeared in Ways of Survival but it was written in passing and I didn't remember them. It would also be hard to recognize just based on the description.</p>
 <p class="orv_line">I didn't kill them because I knew they were executioners. I just used a skill to figure out that they had a special position.</p>
-<div class="orv_quote"><p>「 That information was enough for Kim Dokja. 」</p></div>
+<div class="orv_quote"><p>That information was enough for Kim Dokja.</p></div>
 <p class="orv_line">Han Myungoh didn't know anything and exclaimed, "The people you killed could've been innocent or have important positions! Y-Yes! For example, a fighter or…!"</p>
 <p class="orv_line">"Stop talking about useless things. If you are trying to drag out the time because you think other nobles will come to rescue you… they won't come."</p>
 <p class="orv_line">"Ha, haha. What do you mean?"</p>
@@ -293,18 +300,12 @@
             <a href="./ch_203"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_205">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="204" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="21" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="203" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="203" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

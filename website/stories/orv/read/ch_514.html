@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 514: Ep. 99 - The Oldest Dream, III</title>
     <meta property="og:title" content="Ch 514: Ep. 99 - The Oldest Dream, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,46 +177,46 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00514.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 514: Ep. 99 - The Oldest Dream, III</h1></div>
 <p class="orv_line">My consciousness kept trying to blank out.</p>
 <p class="orv_line">⸢What would it be like if the 'Ways of Survival' was real?⸥</p>
-<p class="orv_line">Whether that was my own thoughts, or something that was recorded on the [Final Wall], or maybe even…</p>
+<p class="orv_line">Whether that was my own thoughts, or something that was recorded on the <strong>[Final Wall]</strong>, or maybe even…</p>
 <p class="orv_line">⸢If there was a world where I can fight alongside the characters from the 'Ways of Survival'…⸥</p>
 <p class="orv_line">…The imaginations of the 'Oldest Dream', I couldn't be sure.</p>
 <p class="orv_line">Countless memories rushed in like a sudden incoming wave. Imaginations that unfolded in a messy cacophony became the fuel for the stories in another world. The living reality had become the 'tragedy'.</p>
 <p class="orv_line">⸢Wait, now that I think about it, what happens to the old world after Yoo Joonghyuk regresses? …I should ask the author-nim in the comment section.⸥</p>
 <p class="orv_line">I always thought that I remembered the 'Ways of Survival' better than anyone else. I was proud that I had read the novel diligently, much more so than anyone else, too. So why couldn't I recall much about 'myself' that read the novel?</p>
 <p class="orv_line">Maybe, I was…</p>
-<div class="orv_system"><p>[You have become the 'Character'.]</p></div>
-<p class="orv_line">Sparks overflowed above my Incarnation Body. [The Fourth Wall]'s functions were coming to a halt. My heart was madly pounding away, and unidentifiable screams reverberated within my devastated mind. My head faltered, and I somehow managed to suck in several deep breaths.</p>
-<div class="orv_constellation"><p>[The Fourth Wall was right. Maybe, I already knew.]</p></div>
+<div class="orv_system"><p>You have become the 'Character'.</p></div>
+<p class="orv_line">Sparks overflowed above my Incarnation Body. <strong>[The Fourth Wall]</strong>'s functions were coming to a halt. My heart was madly pounding away, and unidentifiable screams reverberated within my devastated mind. My head faltered, and I somehow managed to suck in several deep breaths.</p>
+<div class="orv_constellation"><p>The Fourth Wall was right. Maybe, I already knew.</p></div>
 <p class="orv_line">There were simply too many hints.</p>
 <p class="orv_line">⸢I was far too lucky in this world, and⸥</p>
 <p class="orv_line">⸢Everything in this world seemed to be geared towards my convenience, and⸥</p>
 <p class="orv_line">⸢At times, this world even felt sloppy.⸥</p>
 <p class="orv_line">If all of these were the result of the 'Oldest Dream's blessing, then…</p>
 <p class="orv_line">⸢The genesis of all the world-lines, the original world-line.⸥</p>
-<p class="orv_line">I raised my head back up, then clenched my energyless fists slowly. [The Fourth Wall] was no longer around, but my mind was calm. No, I had to believe that I was calm.</p>
+<p class="orv_line">I raised my head back up, then clenched my energyless fists slowly. <strong>[The Fourth Wall]</strong> was no longer around, but my mind was calm. No, I had to believe that I was calm.</p>
 <p class="orv_line">Only I knew the conclusion of this world.</p>
 <p class="orv_line">Giiiii-iiing…</p>
 <p class="orv_line">The Unbroken Faith screeched out. I slowly walked forward.</p>
@@ -221,11 +228,11 @@
 <p class="orv_line">The boy busy rubbing his eyes hard as if he saw phantoms, was looking at me.</p>
 <p class="orv_line">⸢In order to destroy &lt;Star Stream&gt;, the 'Oldest Dream' must be stopped.⸥</p>
 <p class="orv_line">I had made up my mind at the beginning of &lt;Star Stream&gt;, and even promised the 'Secretive Plotter'. To eliminate the culprit of all these tragedies. And finally, that opportunity had come.</p>
-<div class="orv_system"><p>['Demon King Transformation' is activating.]</p></div>
+<div class="orv_system"><p>'Demon King Transformation' is activating.</p></div>
 <p class="orv_line">Pitch-black wings spread out from the torn shoulder blades. The boy's eyes looking at me widened.</p>
 <p class="orv_line">"Ah, ah…??"</p>
 <p class="orv_line">A voice that felt so ancient. Right, I used to possess such a voice in the past, didn't I? I walked one step at a time towards such a child.</p>
-<div class="orv_system"><p>['Angel Transformation' is activating.]</p></div>
+<div class="orv_system"><p>'Angel Transformation' is activating.</p></div>
 <p class="orv_line">As the child's face grew closer, I got to see so many other things. Such as the notebook the boy was scribbling on. There was a chart recording the power balance of the 'Ways of Survival'; it was the very same chart that I compiled once upon a time.</p>
 <p class="orv_line">Yoo Joonghyuk, Lee Hyunsung, Shin Yoosung, Lee Jihye, Lee Seolhwa, Kim Namwoon, Anna Croft… Next to the densely packed names, their Stigmata and Skills were recorded. And finally, even the bruising on the back of the boy's hand covering up his own untidy handwriting.</p>
 <p class="orv_line">I knew the history this boy had survived, and the future he'd get to live out; what would happen to this child in the future, and what sort of misery lay in wait for him.</p>
@@ -251,10 +258,10 @@
 <p class="orv_line">I shoved her away. And then, took another step forward. Even though the distance was only a few metres, I couldn't easily cross it. All of my Stories were rebelling against me.</p>
 <p class="orv_line">Powerful sparks enveloping my entire frame suppressed me. My feet didn't want to leave the floor, and my hands refused to move.</p>
 <p class="orv_line">The child's expression as he looked at me was one of terror. His chin trembled nonstop, so did his eyes. Those eyes, trying to decipher whether this was reality or not.</p>
-<div class="orv_system"><p>[The 'Oldest Dream' is questioning your existence.]</p></div>
+<div class="orv_system"><p>The 'Oldest Dream' is questioning your existence.</p></div>
 <p class="orv_line">The existence that dreamed of all these worlds. And in his dream, I too was nothing more than just another character.</p>
 <p class="orv_line">Tsu-chuchuchuchut!</p>
-<div class="orv_system"><p>[The 'Oldest Dream' is denying your existence.]</p></div>
+<div class="orv_system"><p>The 'Oldest Dream' is denying your existence.</p></div>
 <p class="orv_line">As if he wanted to reject reality, the child hugged his head and curled up. "I, I'm, I'm Yoo Joonghyuk… I'm…"</p>
 <p class="orv_line">The chant that had been recited tens of thousands of times.</p>
 <p class="orv_line">⸢There is a protective barrier around me.⸥</p>
@@ -283,8 +290,8 @@
 <p class="orv_line">Tsu-chuchuchut!</p>
 <p class="orv_line">There were less than two hand spans of broken blade remaining in the Unbroken Faith. However, that was sufficient enough to carry out my plan.</p>
 <p class="orv_line">⸢The method to end the 'Oldest Dream'.⸥</p>
-<div class="orv_system"><p>[The 'Disconnected Film Theory' is activating!]</p></div>
-<div class="orv_system"><p>[Your existence is resonating with the 'Oldest Dream'!]</p></div>
+<div class="orv_system"><p>The 'Disconnected Film Theory' is activating!</p></div>
+<div class="orv_system"><p>Your existence is resonating with the 'Oldest Dream'!</p></div>
 <p class="orv_line">I then stabbed the blade into my neck with every ounce of my energy.</p>
 <p class="orv_line">The loud 'Puh-wook!' noise resounded out. Crimson blood dripped onto the floor like teardrops.</p>
 <p class="orv_line">"Kim Dokja."</p>
@@ -302,14 +309,14 @@
 <p class="orv_line">I held the sword's hilt even harder. "This is the only way."</p>
 <p class="orv_line">Jang Hayoung shouted out. "Please, please stop!! There's still time! We still have…!"</p>
 <p class="orv_line">No, we didn't have time. The longer we wasted here, the harsher and heavier the sparks surrounding us became.</p>
-<div class="orv_system"><p>[The 'Oldest Dream' is denying your existence.]</p></div>
+<div class="orv_system"><p>The 'Oldest Dream' is denying your existence.</p></div>
 <p class="orv_line">The child would continue to 'deny' us. Then, he'd erase his delusions. He would turn the reality of another world into something that's not reality.</p>
 <p class="orv_line">That was why, the only one who could do this was…</p>
 <p class="orv_line">Ku-gugugu…</p>
 <p class="orv_line">Thick fog suddenly came in from somewhere, and I picked up on the ominous power of Chaos. Yoo Joonghyuk's expression as he held the blade became weird.</p>
 <p class="orv_line">"Y-you bastard…"</p>
 <p class="orv_line">As he staggered about, the pitch-black Story leaked out from his mouth. That Story gurgled out and travelled down his chin, hit the floor, and finally, formed the silhouette of a person.</p>
-<p class="orv_line">The blade of the [Splitting the Sky Sword] gleamed between the jet-black coat; a man who only lived for this moment was standing there now.</p>
+<p class="orv_line">The blade of the <strong>[Splitting the Sky Sword]</strong> gleamed between the jet-black coat; a man who only lived for this moment was standing there now.</p>
 <p class="orv_line">⸢The Secretive Plotter.⸥</p>
 <p class="orv_line">The being who had even forgotten about his real name after experiencing countless regression turns. The man who lived only for the purpose of revenge was here.</p>
 <p class="orv_line">He glanced in my direction, before slowly approaching the protective barrier.</p>
@@ -326,7 +333,7 @@
 <p class="orv_line">"Secretive Plotter!!"</p>
 <p class="orv_line">Han Sooyoung cried out and ran towards him. So did Jung Heewon, Lee Jihye, and even the kids, too. As if they had realized what the horrible thing he was about to commit would be.</p>
 <p class="orv_line">Unfortunately, my companions couldn't approach him as if a transparent wall was blocking them. And only the 'Secretive Plotter' alone crossed the platform and reached the bench with the child sitting on it.</p>
-<p class="orv_line">He wielded the sword loaded with the powers of [Breaking the Sky Energy] and sliced apart the pitch-black sphere. When he did, the child curling up like a newborn baby curled up even further.</p>
+<p class="orv_line">He wielded the sword loaded with the powers of <strong>[Breaking the Sky Energy]</strong> and sliced apart the pitch-black sphere. When he did, the child curling up like a newborn baby curled up even further.</p>
 <p class="orv_line">"I'm Yoo Joonghyuk. I'm Yoo Joonghyuk. I'm…"</p>
 <p class="orv_line">The child continued to tremble under the faint rays of light.</p>
 <div class="orv_outergod"><p>【You are not Yoo Joonghyuk.】</p></div>
@@ -339,18 +346,12 @@
             <a href="./ch_513"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_515">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="514" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="562" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="513" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="513" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

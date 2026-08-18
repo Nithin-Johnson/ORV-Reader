@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 306: Ep. 58 - Context of the Constellations, II</title>
     <meta property="og:title" content="Ch 306: Ep. 58 - Context of the Constellations, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00306.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 306: Ep. 58 - Context of the Constellations, II</h1></div>
 <p class="orv_line">It took less than 30 seconds for the nine people to be lying on the ground.</p>
@@ -196,8 +203,8 @@
 <p class="orv_line">I ignored the groan and wiped the blood off my hands. I used Character List but the answer came out without having to look.</p>
 <p class="orv_line">"The Gyeonggi Alliance. Why did you come here?"</p>
 <p class="orv_line">One of the bleeding bodies started melting down. It seemed to be a technique.</p>
-<div class="orv_system"><p>[The constellation 'Black Sword Assassin' is wary of you!]</p></div>
-<div class="orv_system"><p>[The constellation 'Hunter of the Dark Moon' questions the fairness of the scenario.]</p></div>
+<div class="orv_system"><p>The constellation 'Black Sword Assassin' is wary of you!</p></div>
+<div class="orv_system"><p>The constellation 'Hunter of the Dark Moon' questions the fairness of the scenario.</p></div>
 <p class="orv_line">I frowned towards the air as the messages died down. I thoroughly checked the routes of their movements. I saw someone flying and fleeing through a broken window. I saw the method of running through the air and knew who it was.</p>
 <p class="orv_line">I thought they were mere members of the alliance but one of the 10 Evils was among them. The leader of the Gyeonggi Alliance, one of the 10 Evils Cho Jinchul. The guy who had a sponsor from Murim and was one of the problems of the original 45th scenario.</p>
 <p class="orv_line">Of course, that was according to the original story. The person in front of me right now wasn't worth caring about. There were ranks among the 10 Evils and Cho Jinchul was one of the small fries. For the current party members, there were no incarnations on the Korean Peninsula who could be a match against them. Perhaps if it was the United States or India…</p>
@@ -206,36 +213,36 @@
 <p class="orv_line">I knew it was Seoul. In addition, it was the centre of the industrial complex. Through a contract with Secretive Plotter, the Industrial Complex was transferred to empty Seoul. As I looked at the scenery that seemed to be a combination of reality and fiction, I realized once again that the world had changed.</p>
 <p class="orv_line">The bottom of the fortress had 'Yoo Joonghyuk - Kim Dokja Industrial Complex' engraved.</p>
 <p class="orv_line">…Why was Yoo Joonghyuk first? I would change it later.</p>
-<div class="orv_system"><p>[The constellation 'Guardian of Youths and Travel' is looking at you.]</p></div>
+<div class="orv_system"><p>The constellation 'Guardian of Youths and Travel' is looking at you.</p></div>
 <p class="orv_line">I looked up at the air. Guardian of Youths and Travel. I knew the owner of the modifier.</p>
 <p class="orv_line">"Raphael."</p>
 <p class="orv_line">An archangel of Eden, Raphael. Sparks flew in the air like Raphael was reacting. I thought I would hear from Eden soon. "I was just going to find you. I will give back…"</p>
 <p class="orv_line">I remembered that I still had the symbolic body of Gabriel. Jophiel's confinement effect was over and it was time for Gabriel to wake up. By the way…</p>
-<div class="orv_system"><p>[The constellation 'Guardian of Youths and Travel' says that Gabriel has already been recovered.]</p></div>
+<div class="orv_system"><p>The constellation 'Guardian of Youths and Travel' says that Gabriel has already been recovered.</p></div>
 <p class="orv_line">The lily had disappeared. Come to think of it, I remembered an archangel's hand passing over me when I was sleeping. Maybe one of the constellations of Eden had visited at that time. Since Jung Heewon's sponsor was Uriel then it was likely to be Uriel.</p>
 <p class="orv_line">…By the way, what happened to Uriel? Why wasn't there an indirect message from her?</p>
-<div class="orv_system"><p>[The constellation 'Guardian of Youths and Travel' says that Uriel doesn't yet have authorization to speak in the channel.]</p></div>
+<div class="orv_system"><p>The constellation 'Guardian of Youths and Travel' says that Uriel doesn't yet have authorization to speak in the channel.</p></div>
 <p class="orv_line">Ah, I see.</p>
-<div class="orv_system"><p>[The constellation 'Guardian of Youths and Travel' is curious about you.]</p></div>
-<div class="orv_system"><p>[The constellation 'Guardian of Youths and Travel' says that the red cosmos hasn't returned.]</p></div>
+<div class="orv_system"><p>The constellation 'Guardian of Youths and Travel' is curious about you.</p></div>
+<div class="orv_system"><p>The constellation 'Guardian of Youths and Travel' says that the red cosmos hasn't returned.</p></div>
 <p class="orv_line">At Raphael's message, I hesitated for a moment and opened my mouth. "The Commander of the Red Cosmos didn't come back with me."</p>
 <p class="orv_line">Commander of the Red Cosmos, Jophiel. I wouldn't have been able to return to the third round without her help. "She wanted to remain in the other world line out of her own will."</p>
 <p class="orv_line">There was a wild gust of wind.</p>
-<div class="orv_system"><p>[The constellation 'Guardian of Youths and Travel' distrusts your words!]</p></div>
+<div class="orv_system"><p>The constellation 'Guardian of Youths and Travel' distrusts your words!</p></div>
 <p class="orv_line">Raphael was furious. I calmly continued speaking. "If you use your ability, you would know that I'm not lying."</p>
 <p class="orv_line">Not long after, the winds sweeping around slowly eased.</p>
-<div class="orv_system"><p>[The constellation 'Guardian of Youths and Travel' is looking at you.]</p></div>
-<div class="orv_system"><p>[The constellation 'Guardian of Youths and Travel' is asking you for clarification.]</p></div>
+<div class="orv_system"><p>The constellation 'Guardian of Youths and Travel' is looking at you.</p></div>
+<div class="orv_system"><p>The constellation 'Guardian of Youths and Travel' is asking you for clarification.</p></div>
 <p class="orv_line">"I will go there. The 46th scenario is ahead… we'll be able to talk soon."</p>
 <p class="orv_line">I felt a strange change in Raphael's gaze on me. The archangel knew the contents of the scenario.</p>
 <p class="orv_line">"I will go to Eden as soon as the scenario is over."</p>
-<div class="orv_system"><p>[The constellation 'Guardian of Youths and Travel' will wait for your answer.]</p></div>
+<div class="orv_system"><p>The constellation 'Guardian of Youths and Travel' will wait for your answer.</p></div>
 <p class="orv_line">After the message, Raphael's energy in the area completely disappeared. The status flooding the area was gone and I felt bitter. In the meantime, I had accumulated many stories and became quite strong. I could suppress low to mid-grade constellations and it was almost impossible to find a stronger presence among the constellations. Yet the archangel's status was still too high.</p>
 <p class="orv_line">Guardian of Youths and Travel, Raphael. A powerful adversary who took down Demon King Asmodeus.</p>
-<div class="orv_quote"><p>「 Kim Dokja quietly clenched his fists and repeated. 」</p></div>
+<div class="orv_quote"><p>Kim Dokja quietly clenched his fists and repeated.</p></div>
 <p class="orv_line">I still had a long way to go. However, I didn't have to rush. I was doing well enough right now. That reminded me of Asmodeus… no, Department Head Han. So many things had happened when I was gone. There weren't only one or two things to wonder about. I checked the system messages first.</p>
-<div class="orv_system"><p>[You have missed the dokkaebi communication.]</p></div>
-<div class="orv_system"><p>[Sender: Senior Dokkaebi Bihyung.]</p></div>
+<div class="orv_system"><p>You have missed the dokkaebi communication.</p></div>
+<div class="orv_system"><p>Sender: Senior Dokkaebi Bihyung.</p></div>
 <p class="orv_line">There was a message from Bihyung. I thought it was strange that Bihyung hadn't made a fuss when I came back… he expressed his concerns in this message. I opened the screen and manipulated the message window. The message was long but the contents itself was simple.</p>
 <p class="orv_line">–I'm sorry that I couldn't come. I am busy with some things. I will go see you once things are over.</p>
 <p class="orv_line">These were roughly the contents of the long message.</p>
@@ -253,12 +260,12 @@
 <p class="orv_line">"Excuse me, is anybody there?"</p>
 <p class="orv_line">I had a tendency to get lost in the 'first building I visited'. When I entered elementary school and middle school for the first time, when I got my first placement and when I joined Mino Soft…</p>
 <p class="orv_line">Thinking about it, this was the reason why I first spoke to Yoo Sangah.</p>
-<div class="orv_quote"><p>「 Kim Dokja thought, 'Where is the emergency exit?' 」</p></div>
+<div class="orv_quote"><p>Kim Dokja thought, 'Where is the emergency exit?'</p></div>
 <p class="orv_line">I had never been inside the Factory properly and had no idea where I was. In addition, the structure seemed changed from back then. I decided to open suspicious doors one by one.</p>
 <p class="orv_line">The moment I opened a door, a small tentacled monster and frog stared at me. Some objects were inside test tubes while others were freely roaming the room.</p>
-<div class="orv_system"><p>[Frog Who Could've Been Dokja ahjussi]</p></div>
-<div class="orv_system"><p>[Elephant Monster Who Was Almost Dokja ahjussi]</p></div>
-<div class="orv_system"><p>[Tentacle Monster Who Unfortunately Wasn't Dokja ahjussi]</p></div>
+<div class="orv_system"><p>Frog Who Could've Been Dokja ahjussi</p></div>
+<div class="orv_system"><p>Elephant Monster Who Was Almost Dokja ahjussi</p></div>
+<div class="orv_system"><p>Tentacle Monster Who Unfortunately Wasn't Dokja ahjussi</p></div>
 <p class="orv_line">The frog gazed at me and shot out its tongue. I closed the door with surprise. Wait, this room, perhaps…</p>
 <p class="orv_line">I wanted to check the nameplate when I heard a voice nearby.</p>
 <p class="orv_line">"…Hey! How did you get out?"</p>
@@ -271,8 +278,8 @@
 <p class="orv_line">Lee Hyunsung was talking about the scenarios he experienced. I silently listened to the story while examining Lee Hyunsung's body. His pectoral muscles were more developed than before. The magic power of steel was connecting muscle fibres.</p>
 <p class="orv_line">Now Lee Hyunsung's Steel Transformation had reached the edge of mastery. It wasn't unreasonable if the 46th scenario started right now. It was a bit impressive. While I was away, the party members faithfully trained while following the guidelines I gave them.</p>
 <p class="orv_line">Of course, I wasn't just listening to Lee Hyunsung.</p>
-<div class="orv_system"><p>[Midday Tryst has been activated.]</p></div>
-<div class="orv_system"><p>[Incarnation 'Han Sooyoung' is currently participating in the conversation.]</p></div>
+<div class="orv_system"><p>Midday Tryst has been activated.</p></div>
+<div class="orv_system"><p>Incarnation 'Han Sooyoung' is currently participating in the conversation.</p></div>
 <p class="orv_line">I was fortunate to have met Han Sooyoung first. Preparing for a scenario was always late. For quick preparations, I needed someone who could provide the most accurate information efficiently and there was only one person best suited for it.</p>
 <p class="orv_line">–Where is Jang Hayoung and the Breaking the Sky Master?</p>
 <p class="orv_line">–He went to other scenario areas with the Breaking the Sky Sword Saint and Kyrgios. It seemed to be a scenario only for transcendents.</p>
@@ -301,7 +308,7 @@
 <p class="orv_line">"This way."</p>
 <p class="orv_line">It was very brief but I didn't miss Lee Hyunsung's darkening expression. I followed Lee Hyunsung's big back and we arrived at a small door covered with simple white paint. Unexpectedly, Jung Heewon and Han Sooyoung who left earlier were standing in front of the door.</p>
 <p class="orv_line">…What was with these people? I was about to speak to them but their expressions were a bit strange. It was the first time I had seen Han Sooyoung and Jung Heewon making this expression.</p>
-<div class="orv_quote"><p>「 Kim Dokja thought, 'This isn't any easy task'. 」</p></div>
+<div class="orv_quote"><p>Kim Dokja thought, 'This isn't any easy task'.</p></div>
 <p class="orv_line">Shut up. I sighed lightly and placed my hand on the door handle. Things would be resolved once I met Yoo Sangah. I briefly knocked on the door and heard Yoo Sangah's voice from inside.</p>
 <p class="orv_line">–Who is it?</p>
 <p class="orv_line">"Kim Dokja."</p>
@@ -314,18 +321,12 @@
             <a href="./ch_305"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_307">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="306" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="379" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="305" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="305" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

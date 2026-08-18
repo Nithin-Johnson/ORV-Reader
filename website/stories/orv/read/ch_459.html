@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 459: Ep. 87 - The Heart of Steel, I</title>
     <meta property="og:title" content="Ch 459: Ep. 87 - The Heart of Steel, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,56 +177,56 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00459.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         <div class="orv_cover"><img src="../../../assets/images/Cover%20Part%204%20-%20459%20-%20Vol%204%20-%20Episodes%2087-92.jpg" alt=""></div>
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 459: Ep. 87 - The Heart of Steel, I</h1></div>
 <p class="orv_line">We headed back to Seoul right away.</p>
-<p class="orv_line">The first thing we confirmed was the safety of the [Industrial Complex].</p>
+<p class="orv_line">The first thing we confirmed was the safety of the <strong>[Industrial Complex]</strong>.</p>
 <p class="orv_line">"We haven't detected any other strange phenomena after that event," said Aileen, currently in charge of the central situation room.</p>
 <p class="orv_line">The display panel in the room was showing the footage shot near the Pacific Ocean. A gigantic island was rising up from the part of the ocean close to the American continent. I had no doubt that this was one of the 'calamities' I knew of.</p>
 <p class="orv_line">Back in the 'Ways of Survival', the master of that island was a very powerful upper-rank Outer God. Our issue now would be whether it was the same guy or not,</p>
 <p class="orv_line">"My mother?"</p>
 <p class="orv_line">"She's currently at the Eastern coastline."</p>
 <p class="orv_line">"…Eastern coastline?"</p>
-<div class="orv_system"><p>[The rise of the forgotten island has begun!]</p></div>
+<div class="orv_system"><p>The rise of the forgotten island has begun!</p></div>
 <p class="orv_line">As the system message resounded out, we witnessed the waves rushing in at the other side of the Pacific. An unprecedented scale of terrain alteration had occurred, so it was obvious that an equally-incredible volume of tsunami waves would crash into the various parts of the world pretty soon. Naturally, the one to bear the worst of it was the United States.</p>
 <p class="orv_line">– Kwa-gagagagk!</p>
 <p class="orv_line">Horrible screams of Incarnation Bodies resounded out and the streets of New York were being swept away. Tsunami waves weren't the end – using the waves themselves, the lower-ranked Outer Gods, the 'Nameless Ones' were rushing in, as well. These low-ranked creatures were flooding in unchecked to tear and devour the American mainland.</p>
 <p class="orv_line">There was no time to ask for help, either. Almost half of the continent had disappeared in less than thirty minutes after the calamity began. One hour later, the whole of the USA was covered in a jet-black aura.</p>
-<p class="orv_line">The scale of this calamity was so great that the [Dark Castle] or the [Disaster of Floods] couldn't even remotely compare in the scope.</p>
+<p class="orv_line">The scale of this calamity was so great that the <strong>[Dark Castle]</strong> or the <strong>[Disaster of Floods]</strong> couldn't even remotely compare in the scope.</p>
 <p class="orv_line">"Could it be that my mother…"</p>
 <p class="orv_line">Aileen nodded her head and added something else. "I'm not… entirely sure if it qualifies as a good thing, but."</p>
 <p class="orv_line">Next up, the display panel switched to the eastern coastline of the Korean Peninsula. As expected, the tsunami wave had reached this far, as well. Although the height of the wave was much lower compared to the one that hit America, and there were no 'Nameless Ones' riding on it, a tsunami wave still presented an enormous natural disaster all on its own.</p>
 <p class="orv_line">– Oh, the Wind God of the Heavens!</p>
 <p class="orv_line">As soon as my mother's yell came to an end, powerful gusts of wind exploded out from the folding fan she was holding. Pungbaek who acted all stiff and uptight back in the 'Great War of Saints and Demons', was pulling his weight this time, it seemed.</p>
 <p class="orv_line">Even Jo Yeong-Ran, who could be called my mother's right hand, was taking an active part in the event, as well.</p>
-<div class="orv_system"><p>[Giant Story, 'Shindansu', has begun its storytelling!]</p></div>
-<p class="orv_line">&lt;Hongik&gt; must've been paying attention to this event, because the [Shindansu]'s Story had planted its roots deeply into the ocean and was blocking the disaster by using the Korean Peninsula's Probability.</p>
+<div class="orv_system"><p>Giant Story, 'Shindansu', has begun its storytelling!</p></div>
+<p class="orv_line">&lt;Hongik&gt; must've been paying attention to this event, because the <strong>[Shindansu]</strong>'s Story had planted its roots deeply into the ocean and was blocking the disaster by using the Korean Peninsula's Probability.</p>
 <p class="orv_line">While looking as if she just lost ten years of her life, Han Sooyoung muttered dazedly. "…Anyways, isn't that woman in the United States, too?"</p>
 <p class="orv_line">There was only one person that Han Sooyoung would refer to as 'that woman'.</p>
-<p class="orv_line">"Couldn't she have used her [Precognition] to predict that?"</p>
+<p class="orv_line">"Couldn't she have used her <strong>[Precognition]</strong> to predict that?"</p>
 <p class="orv_line">"I was about to speak to you in regards to that matt…"</p>
-<p class="orv_line">Even before Aileen could finish, the side door to the situation room opened up and a certain someone made her entrance. Confirming the visitor's identity, Yoo Joonghyuk immediately reached towards the [Black Heavenly Demon Sword].</p>
+<p class="orv_line">Even before Aileen could finish, the side door to the situation room opened up and a certain someone made her entrance. Confirming the visitor's identity, Yoo Joonghyuk immediately reached towards the <strong>[Black Heavenly Demon Sword]</strong>.</p>
 <p class="orv_line">"We didn't come to fight, so stay your sword, Supreme King."</p>
-<p class="orv_line">Her [Eye of Great Demon] vibrated brightly.</p>
+<p class="orv_line">Her <strong>[Eye of Great Demon]</strong> vibrated brightly.</p>
 <p class="orv_line">They were the Prophet Anna Croft and the 'Zarathustras' she led.</p>
 <br>
 <hr>
@@ -234,8 +241,8 @@
 <p class="orv_line">The Final Scenario was about to begin. Most likely, not even &lt;Asgard&gt; would have the room to dwell on the fate of some continent from one of the many planets out there.</p>
 <p class="orv_line">Because Earth wouldn't be the only planet experiencing the signs of the impending apocalypse.</p>
 <p class="orv_line">The "Ku-gugugu!!" exploding noise came out of the display panel.</p>
-<div class="orv_constellation"><p>[GaGaGaGaGaGak]</p></div>
-<div class="orv_constellation"><p>[WeareWeareWeareWeareWeare]</p></div>
+<div class="orv_constellation"><p>GaGaGaGaGaGak</p></div>
+<div class="orv_constellation"><p>WeareWeareWeareWeareWeare</p></div>
 <p class="orv_line">The 'Outer Gods' that captured the American coastline began howling out.</p>
 <p class="orv_line">I recalled the 95th scenario I experienced during the 1863rd turn. The invasion of the Outer Gods began sooner in that world-line than ours. And soon, we'd end up in a similar state. Because that's the story the stinking &lt;Bureau&gt; wanted to see, after all.</p>
 <p class="orv_line">"…Does South Korea have any countermeasures?"</p>
@@ -253,13 +260,13 @@
 <p class="orv_line">"You can start with those."</p>
 <p class="orv_line">"…Firstly, the current locations for the 'Great Apocalypse Scenario' are a portion of the Pacific and the American continent."</p>
 <p class="orv_line">I already knew that.</p>
-<div class="orv_system"><p>[Applicable location is currently undergoing the 'Great Apocalypse'.]</p></div>
+<div class="orv_system"><p>Applicable location is currently undergoing the 'Great Apocalypse'.</p></div>
 <p class="orv_line">I confirmed a transparent dome being generated over the American continent as well as the whole of the Pacific Ocean. The 'Nameless Ones' weren't allowed to leave outside the dome, it seemed. That was probably the extent of the Probability the Outer Gods had been permitted at the moment.</p>
 <p class="orv_line">"Secondly, the 'Nameless Ones' can't be hunted down with regular weapons. Obviously, the weapons of the past don't work, and even the Star Relics from lower-graded scenarios are useless, as well."</p>
 <p class="orv_line">Actually, the display panel did catch the sight of several Incarnations desperately struggling against the 'Nameless Ones'. One of them was the owner of a pretty well-known Star Relic, but his axe failed to cut the flesh of the 'Nameless Ones' properly.</p>
 <p class="orv_line">– But, how…?!</p>
 <p class="orv_line">The flesh of the Incarnation Body ripped apart by the sharp fangs splattered onto the screen, causing Lee Jihye to frown and turn her head away. I didn't look away but continued to observe the scene closely.</p>
-<div class="orv_system"><p>[Exclusive skill, 'Comprehension', is activating!]</p></div>
+<div class="orv_system"><p>Exclusive skill, 'Comprehension', is activating!</p></div>
 <p class="orv_line">On the surface of the 'Nameless Ones' carapaces, I spotted faint letters floating around.</p>
 <p class="orv_line">Yoo Joonghyuk spoke up first. "It's a Stigma."</p>
 <p class="orv_line">"It's not just any Stigma, either. If it can stay in an uninterrupted activation like that, then its already in the 'Visualised Story' stage."</p>
@@ -292,8 +299,8 @@
 <p class="orv_line">"I'm not that naïve, but still…"</p>
 <p class="orv_line">"Constellations only subscribe to the channels that meet their tastes. They are no longer entertained, so they simply moved onto other channels. That's all."</p>
 <p class="orv_line">I couldn't be sure whether Han Sooyoung was right or not.</p>
-<div class="orv_system"><p>[Next location for the Great Apocalypse is 'North-East Asia'.]</p></div>
-<div class="orv_system"><p>[Time remaining until the start of the 'Great Apocalypse Scenario' is 14 days,12 hours, and 7 minutes.]</p></div>
+<div class="orv_system"><p>Next location for the Great Apocalypse is 'North-East Asia'.</p></div>
+<div class="orv_system"><p>Time remaining until the start of the 'Great Apocalypse Scenario' is 14 days,12 hours, and 7 minutes.</p></div>
 <p class="orv_line">But, I was sure that the planet Earth would go down the drain if they continued to avoid us.</p>
 <p class="orv_line">Jung Heewon asked a question. "What should we do?"</p>
 <p class="orv_line">"…Well, it's not as if I didn't foresee something like this happening."</p>
@@ -305,7 +312,7 @@
 <p class="orv_line">Asking for &lt;Underworld&gt;'s aid was indeed a priority, but there was something else more urgent than that right now. We had about fourteen days left. With the minimum effort, we needed to get the maximum possible result.</p>
 <p class="orv_line">"We should regain our lost companion first."</p>
 <p class="orv_line">What I was looking at, was the Steelsword hanging on Jung Heewon's hips.</p>
-<div class="orv_system"><p>[Soul of the Character 'Lee Hyunsung' is in slumber.]</p></div>
+<div class="orv_system"><p>Soul of the Character 'Lee Hyunsung' is in slumber.</p></div>
 <p class="orv_line">The after-effects of the Steel Transformation 5th stage was worse than I expected, it seemed.</p>
 <p class="orv_line">"We'll go meet the 'Master of Steel'."</p>
 <p class="orv_line">"The Master of Steel? Will someone like that help us?"</p>
@@ -319,7 +326,7 @@
 <br>
 <hr>
 <br>
-<p class="orv_line">We got in the [X-grade Ferrarghini] immediately and entered the dimensional road network.</p>
+<p class="orv_line">We got in the <strong>[X-grade Ferrarghini]</strong> immediately and entered the dimensional road network.</p>
 <p class="orv_line">Our coordinate was OZ-7611. Resplendent stars of the &lt;Star Stream&gt; brushed past us, and tension gradually dyed the expressions of my companions.</p>
 <p class="orv_line">"You don't have to be that tense, everyone. Just think of it as going out for a fun outing… Take it as an extension of that workers' revolution or whatever you called it."</p>
 <p class="orv_line">"…But, isn't it working hours right now?"</p>
@@ -327,7 +334,7 @@
 <p class="orv_line">"Where exactly are we going?"</p>
 <p class="orv_line">"Mm, well, as I've told you, we're going to the stronghold of the 'Master of Steel'…"</p>
 <p class="orv_line">"Just what the heck is that guy's real identity, anyway??" Han Sooyoung became too frustrated and shot me that question. "It's more or less possible to guess the identities of other Constellations through their Modifiers, right? The 'Prisoner of the Golden Headband' is Sun Wukong, while the 'God of Wine and Ecstasy' is Dionysus. But this guy, I just can't figure it out. And there was no info on him in the parts that I read, either."</p>
-<p class="orv_line">"Well, if you're that curious, why don't you take a guess through the [Predictive Plagiarism]?"</p>
+<p class="orv_line">"Well, if you're that curious, why don't you take a guess through the <strong>[Predictive Plagiarism]</strong>?"</p>
 <p class="orv_line">"You want me to use my ability on something this small??"</p>
 <p class="orv_line">I shrugged my shoulders.</p>
 <p class="orv_line">I took a look at the faces of my companions, and not just Han Sooyoung but everyone seemed to be really curious about who this 'Master of Steel' could be.</p>
@@ -342,11 +349,11 @@
 <p class="orv_line">Lee Jihye frowned deeply and spoke up. "Should I just summon my Geobukseon?"</p>
 <p class="orv_line">"No, don't. We don't have the time to fight them. Step on it, Han Sooyoung!"</p>
 <p class="orv_line">We didn't have too much to go until our destination, anyway.</p>
-<p class="orv_line">In the blink of an eye, the [X-grade Ferrarghini] shot forward and crossed the dimensional road in a shiver-inducing speed. And soon afterwards, a new message popped up in the air.</p>
-<div class="orv_system"><p>[You've arrived in the coordinate 'OZ-1900'!]</p></div>
+<p class="orv_line">In the blink of an eye, the <strong>[X-grade Ferrarghini]</strong> shot forward and crossed the dimensional road in a shiver-inducing speed. And soon afterwards, a new message popped up in the air.</p>
+<div class="orv_system"><p>You've arrived in the coordinate 'OZ-1900'!</p></div>
 <p class="orv_line">Along with the loud screech, the vehicle came to stop in mid-air. The place we arrived in was actually a train station of sorts. And that station was a small wooden house.</p>
 <p class="orv_line">I shouted out. "Everyone, get out quickly! And enter that house!"</p>
-<p class="orv_line">Almost at the same time as everyone filed into this house, the [X-grade Ferrarghini] exploded into bits.</p>
+<p class="orv_line">Almost at the same time as everyone filed into this house, the <strong>[X-grade Ferrarghini]</strong> exploded into bits.</p>
 <p class="orv_line">…Goddammit, I hadn't even driven it that many times, too.</p>
 <p class="orv_line">I confirmed that everyone was inside and closed the front door shut. Right after that, a powerful tornado was stirred up around the wooden house. The structure rose up in the air, before moving at a break-neck pace.</p>
 <p class="orv_line">I shouted again. "Shut the windows and lock them!"</p>
@@ -356,12 +363,12 @@
 <p class="orv_line">"Don't worry. We're safe here."</p>
 <p class="orv_line">Suddenly, the entire house went through a geometric transformation. Its interior expanded rapidly, and accompanied by loud metallic noises, steel pipes suddenly began growing throughout the house.</p>
 <p class="orv_line">"What the heck? Wasn't this a wooden house??"</p>
-<div class="orv_system"><p>[Docking procedure will now commence!]</p></div>
+<div class="orv_system"><p>Docking procedure will now commence!</p></div>
 <p class="orv_line">The house floating in the air was secured to something as the loud docking noises resounded out. And at the same time, the burst of gunfire rained down on us. The firepower on display here was enough to blow away a continent to oblivion.</p>
 <p class="orv_line">But then, an unimaginably humongous steel barrier suddenly grew around the entirety of the planet as noisy exhaust sounds resounded out. Streams of gunfire flying in crashed into that barrier and were extinguished without a trace.</p>
 <p class="orv_line">My companions carried this rather scared-silly look on their faces from the sheer scale of the barrier as they all turned to look at me.</p>
 <p class="orv_line">The exterior of the planet we arrived at could be seen through the windows. It was a city glimmering in a silvery hue. The giant planet that reminded one of a contracting heart.</p>
-<div class="orv_constellation"><p>[Welcome to the Heart of Steel, &lt;Oz&gt;!]</p></div>
+<div class="orv_constellation"><p>Welcome to the Heart of Steel, &lt;Oz&gt;!</p></div>
 <p class="orv_line">The Heart of Steel, &lt;Oz&gt;.</p>
 <p class="orv_line">This was the planet where the strongest metal found in the &lt;Star Stream&gt; 'grew'.</p>
 <br>
@@ -371,18 +378,12 @@
             <a href="./ch_458"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_460">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="459" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="508" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="458" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="458" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

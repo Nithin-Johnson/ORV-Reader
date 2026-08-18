@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 509: Ep. 98 - Have you protected all that you were supposed to protect, II</title>
     <meta property="og:title" content="Ch 509: Ep. 98 - Have you protected all that you were supposed to protect, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,57 +177,57 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00509.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 509: Ep. 98 - Have you protected all that you were supposed to protect, II</h1></div>
 <p class="orv_line">The Dokkaebi King's brows quivered. The Stories from the 999th regression turn were now looming before him.</p>
 <p class="orv_line">The Stories discarded by &lt;Star Stream&gt; had begun telling their stories one by one. They were waking Yoo Joonghyuk up from the depth of 'regression depression'.</p>
 <p class="orv_line">The 'Dokkaebi King' frowned deeply next.</p>
-<div class="orv_constellation"><p>[Why are you here? Did you not make a deal with me? You don't have a pretext to help him.]</p></div>
-<p class="orv_line">Sentences began floating up above the [Final Wall].</p>
+<div class="orv_constellation"><p>Why are you here? Did you not make a deal with me? You don't have a pretext to help him.</p></div>
+<p class="orv_line">Sentences began floating up above the <strong>[Final Wall]</strong>.</p>
 <p class="orv_line">⸢We made a deal with the Dokkaebi King, you see? If we destroy this world-line, he will send us back. He will get in touch with your Sponsor, the 'Oldest Dream', and…⸥</p>
 <p class="orv_line">Those were the words of the 999th turn Lee Jihye.</p>
 <p class="orv_line">The 'Dokkaebi King' spoke once more.</p>
-<div class="orv_constellation"><p>[It was I who summoned you all to this world. Do you wish to be cast out of the world-line again? I ask you, do you wish to taste the everlasting pain while wandering the horrifying gap between dimensions without an end in sight?]</p></div>
+<div class="orv_constellation"><p>It was I who summoned you all to this world. Do you wish to be cast out of the world-line again? I ask you, do you wish to taste the everlasting pain while wandering the horrifying gap between dimensions without an end in sight?</p></div>
 <p class="orv_line">His words continued on as if to threaten them.</p>
-<div class="orv_constellation"><p>[This 'Yoo Joonghyuk' is the enemy you've been searching for. He's the very culprit who destroyed your world-line, the one who thrust your Stories into misery.]</p></div>
+<div class="orv_constellation"><p>This 'Yoo Joonghyuk' is the enemy you've been searching for. He's the very culprit who destroyed your world-line, the one who thrust your Stories into misery.</p></div>
 <p class="orv_line">There was a slight hint of agitation on the expressions of the 'Outer Gods'.</p>
 <p class="orv_line">The 'Dokkaebi King' was right; just like how it was with Yoo Joonghyuk, they too came this far to settle the score from the world they used to live in.</p>
 <p class="orv_line">It was then, someone opened his mouth.</p>
 <div class="orv_outergod"><p>【What dogshit are you yapping on about? It's you, asshole, who dropped us into this damn game, isn't it? If the scenarios didn't start in the first place, would I even be standing here doing this shit?】</p></div>
 <p class="orv_line">The 'Monarch of the Great Abyss', 999th turn's Kim Namwoon spoke with a thuggish attitude. As if he had already finished making up his mind, truly incredible power of Chaos was being unleashed from his entire figure.</p>
-<div class="orv_system"><p>[Giant Story, 'Delusional Design', has begun its storytelling!]</p></div>
+<div class="orv_system"><p>Giant Story, 'Delusional Design', has begun its storytelling!</p></div>
 <div class="orv_outergod"><p>【Keuh-euh, it's been so long since we fought together.】</p></div>
 <p class="orv_line">Kim Namwoon cackled as he undid the bandages from his hands.</p>
 <p class="orv_line">He was a monster that even surpassed his own sponsor, 'Abyssal Black Flame Dragon'. His pitch-black obsidian hand, filled to the brim with thicker, more evil aura than anything Han Sooyoung could ever produce, began sucking in the &lt;Star Stream&gt;'s night.</p>
-<div class="orv_system"><p>[Giant Story, 'Heart Sealing the Sorrow', has begun its storytelling!]</p></div>
+<div class="orv_system"><p>Giant Story, 'Heart Sealing the Sorrow', has begun its storytelling!</p></div>
 <p class="orv_line">Right behind him, there was another man raising his huge figure up as well. It was the 999th turn's Lee Hyunsung, the 'King of the Silver Heart'.</p>
 <p class="orv_line">The completed 'Story metal' armour wrapped around his entire figure.</p>
 <div class="orv_outergod"><p>【Dokkaebi King, I'm excluded from that deal since I have never agreed to it.】</p></div>
 <p class="orv_line">Next up, the 'Master of the Sunken Island', 999th turn's Lee Jihye summoned her gigantic battleship up in the air.</p>
-<div class="orv_system"><p>[Giant Story, 'Wanderer of the Eternal Horizon', has begun its storytelling.]</p></div>
+<div class="orv_system"><p>Giant Story, 'Wanderer of the Eternal Horizon', has begun its storytelling.</p></div>
 <p class="orv_line">The atmosphere of the great ocean could be felt from her Twin Dragon Sword.</p>
 <div class="orv_outergod"><p>【…】</p></div>
 <p class="orv_line">She wordlessly unsheathed her sword and protected Yoo Joonghyuk's right side. With that, the kings' decision became clear.</p>
-<div class="orv_system"><p>[Exclusive skill, 'Omniscient Reader's Viewpoint', is forcibly activating!]</p></div>
+<div class="orv_system"><p>Exclusive skill, 'Omniscient Reader's Viewpoint', is forcibly activating!</p></div>
 <p class="orv_line">Their thoughts and determination were being transmitted to me in full.</p>
 <p class="orv_line">They all hated the 'Secretive Plotter'. However, that hatred was born out from the deep-seated yearning they all held.</p>
 <p class="orv_line">⸢No one treasured 'Yoo Joonghyuk' as much as them in any of the universes out there.⸥</p>
@@ -229,19 +236,19 @@
 <p class="orv_line">⸢It was Yoo Joonghyuk who saved them, and killed them.⸥</p>
 <p class="orv_line">They only lived for Yoo Joonghyuk; how could people like them ever forget about him?</p>
 <p class="orv_line">The wrath that had to be chained within the sinking island, the sorrow that could only be endured after turning your heart into steel; the pain that could only be forgotten by throwing yourself into the abyss.</p>
-<div class="orv_system"><p>[Giant Story, 'Flame of Eternity', has begun its storytelling!]</p></div>
+<div class="orv_system"><p>Giant Story, 'Flame of Eternity', has begun its storytelling!</p></div>
 <p class="orv_line">And the ache that could only be appeased by burning oneself away. They repeatedly connected the film that threatened to be cut off at any time, and eventually reached the final pages of the story.</p>
 <div class="orv_outergod"><p>【Step aside, Dokkaebi King. We only want one thing.】</p></div>
 <p class="orv_line">The 999th turn's Uriel, the 'Living Flame', spoke up.</p>
 <div class="orv_outergod"><p>【And that is to witness the 'end' we didn't get to confirm back in our world-line.】</p></div>
-<p class="orv_line">At the end of her words, the [Flames of Conflagration] moved.</p>
+<p class="orv_line">At the end of her words, the <strong>[Flames of Conflagration]</strong> moved.</p>
 <p class="orv_line">Kwa-kwakwakwakwa!</p>
-<p class="orv_line">The [Hellflame] that utterly devastated the N'Gai's Forest was now burning the interior of the Wall. Almost at the same time, the right hand of the 999th turn's Kim Namwoon stabbed into the Dokkaebi King's thigh.</p>
+<p class="orv_line">The <strong>[Hellflame]</strong> that utterly devastated the N'Gai's Forest was now burning the interior of the Wall. Almost at the same time, the right hand of the 999th turn's Kim Namwoon stabbed into the Dokkaebi King's thigh.</p>
 <div class="orv_outergod"><p>【Hahaha! Let's kill a Dokkaebi for a change!】</p></div>
 <p class="orv_line">Kim Namwoon's madness-filled Stigma sliced past the time and space, destroyed Stories, and aimed at the Dokkaebi King's figure.</p>
 <p class="orv_line">The two exchanged the exact amount of Stories during their attacks and defenses; weapons created from the delusion grew out of Kim Namwoon's right arm, while Star Relics summoned by the 'Dokkaebi King' appeared from several spots of the Wall and blocked off the former's weapons.</p>
 <p class="orv_line">Tsu-chuchuchut!</p>
-<p class="orv_line">The [Final Wall] was the location where the Dokkaebi King's Story could display the greatest level of power. With the stage being what it was, the direction of the battle soon flowed disadvantageously for Kim Namwoon.</p>
+<p class="orv_line">The <strong>[Final Wall]</strong> was the location where the Dokkaebi King's Story could display the greatest level of power. With the stage being what it was, the direction of the battle soon flowed disadvantageously for Kim Namwoon.</p>
 <p class="orv_line">⸢Oh, the spear that rips the oceans apart and draws the borders in the seas.⸥</p>
 <p class="orv_line">⸢Oh, the arrow that shot down the eye of the sun.⸥</p>
 <p class="orv_line">Sentences leaking out from several spots on the Wall soon became reality.</p>
@@ -266,12 +273,12 @@
 <p class="orv_line">Creaaaaaaaaak-!!</p>
 <p class="orv_line">The Dokkaebi King's eyes glowed sharply under the hellish heat.</p>
 <p class="orv_line">Ah, aaaaaaah!</p>
-<p class="orv_line">Countless Stigmata engraved on his body screeched out. They were texts seemingly taken from the [Final Wall]. Giant Stories began directing their exaltation towards them.</p>
+<p class="orv_line">Countless Stigmata engraved on his body screeched out. They were texts seemingly taken from the <strong>[Final Wall]</strong>. Giant Stories began directing their exaltation towards them.</p>
 <p class="orv_line">Even the Stories in my possession were getting agitated, as well.</p>
 <p class="orv_line">⸢The Modifier 'King of the Stories' was not just for a show.⸥</p>
 <p class="orv_line">The 'King of the Stories' that existed at the peak of &lt;Star Stream&gt;. His face looked noble, evil, beautiful and sorrowful all at the same time.</p>
 <p class="orv_line">⸢Once upon a time he too was a human.⸥</p>
-<p class="orv_line">The weapons pouring out from the [Final Wall] collided with the [Flames of Conflagration], and…</p>
+<p class="orv_line">The weapons pouring out from the <strong>[Final Wall]</strong> collided with the <strong>[Flames of Conflagration]</strong>, and…</p>
 <p class="orv_line">⸢He was a demon.⸥</p>
 <p class="orv_line">The ash-coloured Story leaking out from the Dokkaebi King's horn stopped the approaching Uriel's movement.</p>
 <p class="orv_line">⸢He was a saviour, and…⸥</p>
@@ -284,51 +291,51 @@
 <p class="orv_line">⸢You must be the one to finish it.⸥</p>
 <p class="orv_line">⸢You haven't forgotten your promise with us, yes?⸥</p>
 <p class="orv_line">Unfortunately, I couldn't move.</p>
-<div class="orv_system"><p>[Giant Story, 'Guardian of the World', has begun its storytelling!]</p></div>
-<div class="orv_system"><p>[Giant Story, 'Guardian of the World', is now looking at the next Guardian!]</p></div>
+<div class="orv_system"><p>Giant Story, 'Guardian of the World', has begun its storytelling!</p></div>
+<div class="orv_system"><p>Giant Story, 'Guardian of the World', is now looking at the next Guardian!</p></div>
 <p class="orv_line">Because the Dokkaebi King's Story was also looking directly at me.</p>
-<div class="orv_constellation"><p>[…Kim Dokja!!]</p></div>
+<div class="orv_constellation"><p>…Kim Dokja!!</p></div>
 <p class="orv_line">The Dokkaebi King shouted in my direction.</p>
-<div class="orv_constellation"><p>[Do not go against your predetermined destiny. You love the Stories more than anyone in this world. I too was like you. I understand the feelings you have towards this world better than anyone in this universe!]</p></div>
+<div class="orv_constellation"><p>Do not go against your predetermined destiny. You love the Stories more than anyone in this world. I too was like you. I understand the feelings you have towards this world better than anyone in this universe!</p></div>
 <p class="orv_line">The Story extending from his body reached out towards me.</p>
 <p class="orv_line">Han Sooyoung next to me covered my ears and growled angrily. "Don't listen to him. It's not even worth it hearing him out."</p>
 <p class="orv_line">Jung Heewon and Lee Hyunsung stood before me, while Yoo Sangah, Shin Yoosung, and Lee Gilyoung stood around me to protect me. And from behind my back, the howl from Lee Jihye's sword resounded out.</p>
-<div class="orv_system"><p>[All the stars in the Nebula &lt;Kim Dokja's Company&gt; are shining brightly!]</p></div>
+<div class="orv_system"><p>All the stars in the Nebula &lt;Kim Dokja's Company&gt; are shining brightly!</p></div>
 <p class="orv_line">However, there were some things that would become more visible the harder you tried to obscure them. Some words would become clearer the more you tried to cover them up.</p>
-<div class="orv_system"><p>[Exclusive skill, 'Omniscient Reader's Viewpoint', is going out of control!]</p></div>
-<p class="orv_line">⸢[Black Flame Dragon! Black Flame Dragon! Goddammit, open your eyes already!!]⸥</p>
-<p class="orv_line">⸢[Kim Yoo-Shin! Wake up! Our Hwangsanbeol is not yet…]⸥</p>
-<p class="orv_line">⸢[Great Sage!]⸥</p>
-<p class="orv_line">Those were Stories streaming on the [Final Wall].</p>
+<div class="orv_system"><p>Exclusive skill, 'Omniscient Reader's Viewpoint', is going out of control!</p></div>
+<p class="orv_line">⸢<strong>[Black Flame Dragon! Black Flame Dragon! Goddammit, open your eyes already!!]</strong>⸥</p>
+<p class="orv_line">⸢<strong>[Kim Yoo-Shin! Wake up! Our Hwangsanbeol is not yet…]</strong>⸥</p>
+<p class="orv_line">⸢<strong>[Great Sage!]</strong>⸥</p>
+<p class="orv_line">Those were Stories streaming on the <strong>[Final Wall]</strong>.</p>
 <p class="orv_line">Constellations were collapsing on the battlefield where an even fiercer battle than ours was taking place. Stories were endlessly leaking out from the Great Sage's body, now tattered to resemble a torn rag. As if he had lost both of his eyes, his once-blinding 'Golden Gaze Fiery Eyes' were currently not emitting any light.</p>
-<p class="orv_line">⸢[…I can't see my maknae all that well.]⸥</p>
+<p class="orv_line">⸢<strong>[…I can't see my maknae all that well.]</strong>⸥</p>
 <p class="orv_line">Uriel was supporting him. The Archangel with both of her wings torn off held his hand and stroked the nightscape.</p>
 <p class="orv_line">⸢[He's alive. There he is, still shining.⸥</p>
 <p class="orv_line">The Constellations still doggedly surviving until now rushed towards them from among the chaotic night sky.</p>
 <p class="orv_line">The scene then changed to show Persephone embracing the fallen Hades. He was trying to say something, but she simply shook her head.</p>
-<p class="orv_line">⸢[Do not worry, my ancient night.]⸥</p>
+<p class="orv_line">⸢<strong>[Do not worry, my ancient night.]</strong>⸥</p>
 <p class="orv_line">&lt;Olympus&gt;'s sun was setting above her head.</p>
 <p class="orv_line">All these endings became wretched sentences and rushed above the Wall. These sentences were being written only for the purpose of finishing them off.</p>
-<div class="orv_constellation"><p>[Do you not wish to save them?]</p></div>
+<div class="orv_constellation"><p>Do you not wish to save them?</p></div>
 <p class="orv_line">I felt vomit rising up from the deepest part of my body.</p>
 <p class="orv_line">The 'Dokkaebi King' shouted out.</p>
-<div class="orv_constellation"><p>[The current you can't save them. The one who loves the story can never change that very story.]</p></div>
+<div class="orv_constellation"><p>The current you can't save them. The one who loves the story can never change that very story.</p></div>
 <p class="orv_line">Can't change it, because you loved it.</p>
-<div class="orv_constellation"><p>[Only the one who overcomes the story, the one who understands the trivial nature of everything, can escape from the suppression of the Probability.]</p></div>
+<div class="orv_constellation"><p>Only the one who overcomes the story, the one who understands the trivial nature of everything, can escape from the suppression of the Probability.</p></div>
 <p class="orv_line">The surrounding storm of aftermaths was growing even more vicious, accompanied by the 'Kka-gagagaghk!' noise. The power of the Stories flowing out from the 'Dokkaebi King' was gradually overwhelming the combined might of the 999th turn's characters.</p>
 <p class="orv_line">The Dokkaebi King tore off Lee Hyunsung's Story metal and extended his hand in my direction.</p>
-<div class="orv_constellation"><p>[The 'One Single Story' you have compiled is more than enough to inherit the position of &lt;Star Stream&gt;. Take my hand. What you want is the same as what I want. I do not wish to see the stories of those stars be erased.]</p></div>
+<div class="orv_constellation"><p>The 'One Single Story' you have compiled is more than enough to inherit the position of &lt;Star Stream&gt;. Take my hand. What you want is the same as what I want. I do not wish to see the stories of those stars be erased.</p></div>
 <p class="orv_line">His voice even sounded desperate, too. The light in his eyes and his Story all acted as proof of his sincerity.</p>
 <p class="orv_line">The &lt;Star Stream&gt;'s Story glowed brightly from his figure.</p>
 <p class="orv_line">⸢The story he had been reading for a long time had eventually become a part of him.⸥</p>
 <p class="orv_line">He was now the &lt;Star Stream&gt; itself.</p>
 <p class="orv_line">He genuinely didn't want this story to end.</p>
-<div class="orv_constellation"><p>[Continue with… this story. Become the protagonist of a new world-line, and along with the Story you have created, continue the banquet of the 'Oldest Dream'. You are the existence born solely for that purpose. You were able to reach this far, only for that purpose!]</p></div>
+<div class="orv_constellation"><p>Continue with… this story. Become the protagonist of a new world-line, and along with the Story you have created, continue the banquet of the 'Oldest Dream'. You are the existence born solely for that purpose. You were able to reach this far, only for that purpose!</p></div>
 <p class="orv_line">While listening to those words, I began recalling all the lucky moments that happened to me so far.</p>
-<div class="orv_system"><p>[&lt;Star Stream&gt; is looking at you.]</p></div>
+<div class="orv_system"><p>&lt;Star Stream&gt; is looking at you.</p></div>
 <p class="orv_line">Why was the &lt;Star Stream&gt;'s Probability so generous towards me?</p>
 <p class="orv_line">The Dokkaebi King's Story was telling me the reason for that. The lights continued to explode before my eyes.</p>
-<div class="orv_constellation"><p>[Do not forget what you truly want. You're not the 'last verse'. No, you're the 'Eternity'!]</p></div>
+<div class="orv_constellation"><p>Do not forget what you truly want. You're not the 'last verse'. No, you're the 'Eternity'!</p></div>
 <p class="orv_line">The Constellations' Stories streamed behind the Dokkaebi King.</p>
 <p class="orv_line">He was right. I didn't wish for those stories to end.</p>
 <p class="orv_line">⸢The Great Sage Heaven's Equal watched the falling star and sensed his own approaching demise.⸥</p>
@@ -341,18 +348,12 @@
             <a href="./ch_508"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_510">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="509" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="559" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="508" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="508" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

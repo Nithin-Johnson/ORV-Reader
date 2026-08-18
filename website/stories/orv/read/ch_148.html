@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 148: Ep. 29 - Constellation Banquet, III</title>
     <meta property="og:title" content="Ch 148: Ep. 29 - Constellation Banquet, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,39 +177,39 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00148.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 148: Ep. 29 - Constellation Banquet, III</h1></div>
 <p class="orv_line">He stood at the entrance of the banquet hall. If I was right, he was one of the high level constellations who supported me since the beginning of the scenarios.</p>
-<div class="orv_quote"><p>「 There was a mischievous look on the face covered with white-gold hair. One of the most powerful authorities who was imprisoned in the smallest prison of the world. I was unable to breathe as soon as I encountered the noble self and piercing eyes. 」</p></div>
+<div class="orv_quote"><p>There was a mischievous look on the face covered with white-gold hair. One of the most powerful authorities who was imprisoned in the smallest prison of the world. I was unable to breathe as soon as I encountered the noble self and piercing eyes.</p></div>
 <div class="orv_image"><img src="../../../assets/images/148 - There was a mischievous look on the face covered with white-gold hair.jpg" alt="" loading="lazy"></div>
 <div class="orv_notice"><p>* Unofficial fan illustration (non-canonical)</p></div>
 <p class="orv_line">This was the description from Ways of Survival. I watched in a spellbound manner. This was a top presence located at the top of Ways of Survival. I ignored the housekeeper and ran inside. "The Great Sage Heaven's Equal!"</p>
 <p class="orv_line">However, the laughing Great Sage Heaven's Equal disappeared in front of my eyes. He was like smoke. It was as if he was telling me I wasn't qualified to meet him yet.</p>
 <p class="orv_line">…A clone?</p>
 <p class="orv_line">My hand fell in a dejected manner but the situation wasn't over. I suddenly called out the name of the Great Sage Heaven's Equal, making the constellations on the first floor of the banquet hall pay attention to me.</p>
-<div class="orv_constellation"><p>[Who is that person?]</p></div>
+<div class="orv_constellation"><p>Who is that person?</p></div>
 <p class="orv_line">An incarnation called the nickname of a particular constellation. Most of the constellation didn't have great expressions. Gazes focused on me from all over the banquet hall.</p>
-<div class="orv_constellation"><p>[An incarnation?]</p></div>
-<div class="orv_constellation"><p>[What? Who is that incarnation?]</p></div>
+<div class="orv_constellation"><p>An incarnation?</p></div>
+<div class="orv_constellation"><p>What? Who is that incarnation?</p></div>
 <p class="orv_line">Countless gazes gathered, the atmosphere was heating up and I was so stiff that I couldn't move. My mind became blank and I couldn't tell who was looking at me.</p>
 <p class="orv_line">I thought I could hold on after hearing the constellation's true voices. However, it was clearly the influence of Fourth Wall. Just their gazes made me like this.</p>
 <p class="orv_line">Now I realized. I was the only existence in this banquet hall who wasn't a constellation. I finally stood before the constellations.</p>
@@ -258,10 +265,10 @@
 <p class="orv_line">"Do you know me?"</p>
 <p class="orv_line">"Aren't you the representative of the United States? I've heard it before."</p>
 <p class="orv_line">Of course, I didn't really hear it. I just knew her.</p>
-<div class="orv_system"><p>[The exclusive skill 'Character List' is activated!]</p></div>
-<div class="orv_system"><p>[Only randomly specified items will be displayed for the user's convenience.]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Character List' is activated!</p></div>
+<div class="orv_system"><p>Only randomly specified items will be displayed for the user's convenience.</p></div>
 <div class="orv_window">
-<h3 class="orv_window_title">[Character Summary]</h3>
+<h3 class="orv_window_title">Character Summary</h3>
 <p>Character: Selena Kim</p>
 <p>Exclusive Attributes: Animal Lover (Rare) King's Guardian (Hero)</p>
 <p>Sponsor: Ender of Wars</p>
@@ -298,40 +305,40 @@
 <p class="orv_line">…Take the story of a historical-grade constellation? How cute. That reminded me, there was something about the 'Story Succession' at the constellation banquet. Perhaps this was what Iris was alluding to.</p>
 <p class="orv_line">Knock knock.</p>
 <p class="orv_line">The door of the waiting room open and a low-grade dokkaebi appeared. "Incarnations. We will be holding the 'Story Succession' soon. A place has been temporarily set up on the first floor of the banquet hall. For reference, the first floor is only for the historical-grade constellations."</p>
-<div class="orv_system"><p>[Story Succession.]</p></div>
+<div class="orv_system"><p>Story Succession.</p></div>
 <p class="orv_line">It wasn't only through Sponsor Selection that the constellations could influence the incarnations. Despite not being their sponsor, an incarnation could build up strength by inheriting the story of other constellations and showing examples of the story. By widely announcing the story, the constellations broadened their power. This was good for both incarnation and constellation.</p>
 <p class="orv_line">We walked to the banquet hall one by one. The first one to enter was Selena Kim.</p>
-<div class="orv_constellation"><p>[Selena Kim! King's Guardian!]</p></div>
-<div class="orv_constellation"><p>[I've been watching your good performance!]</p></div>
+<div class="orv_constellation"><p>Selena Kim! King's Guardian!</p></div>
+<div class="orv_constellation"><p>I've been watching your good performance!</p></div>
 <p class="orv_line">Unlike before, the reaction of the constellations were favourable. Maybe it was because they met their favourite incarnations. It was like meeting their favourite celebrity.</p>
 <p class="orv_line">Then it was Iris' turn. She walked past the constellations and waved lightly like she was giving them fan service.</p>
-<div class="orv_constellation"><p>[Iris! The Red Square kid!]</p></div>
-<div class="orv_constellation"><p>[Hahaha! Cute.]</p></div>
-<div class="orv_constellation"><p>[Isn't it exactly the same as what I saw on the screen?]</p></div>
+<div class="orv_constellation"><p>Iris! The Red Square kid!</p></div>
+<div class="orv_constellation"><p>Hahaha! Cute.</p></div>
+<div class="orv_constellation"><p>Isn't it exactly the same as what I saw on the screen?</p></div>
 <p class="orv_line">She stood in her place and stared at me. She seemed to be saying to me, 「 Did you see? 」</p>
 <p class="orv_line">…So what? It was soon my turn.</p>
 <p class="orv_line">I walked into the banquet hall and the pressure of the gazes poured towards me again. This time, I could endure it. Maybe because I had experienced it once before or because the gazes contained a different feeling.</p>
 <p class="orv_line">However, the reaction of the constellations was strange. The heated atmosphere was quiet, as if cold water had been poured on it.</p>
 <p class="orv_line">…Perhaps I wasn't popular? Iris seemed to be laughing at me.</p>
 <p class="orv_line">Then someone opened his mouth.</p>
-<div class="orv_constellation"><p>[…That person. He is Kim Dokja of the Korean Peninsula.]</p></div>
-<div class="orv_constellation"><p>[Kim Dokja? That Kim Dokja?]</p></div>
+<div class="orv_constellation"><p>…That person. He is Kim Dokja of the Korean Peninsula.</p></div>
+<div class="orv_constellation"><p>Kim Dokja? That Kim Dokja?</p></div>
 <p class="orv_line">The chatter started again. It was a completely different reaction from the previous incarnations.</p>
-<div class="orv_constellation"><p>[Kim Dokja! That guy is Kim Dokja.]</p></div>
-<div class="orv_constellation"><p>[Kim Dojega! Kim Dojega!]</p></div>
-<div class="orv_constellation"><p>[The King of a Kingless World!]</p></div>
+<div class="orv_constellation"><p>Kim Dokja! That guy is Kim Dokja.</p></div>
+<div class="orv_constellation"><p>Kim Dojega! Kim Dojega!</p></div>
+<div class="orv_constellation"><p>The King of a Kingless World!</p></div>
 <p class="orv_line">The voices of the constellations rose every time I took a step.</p>
-<div class="orv_constellation"><p>[He who opposes the enemy!]</p></div>
+<div class="orv_constellation"><p>He who opposes the enemy!</p></div>
 <p class="orv_line">It was like a wildfire spread throughout the hall as the voices continued.</p>
-<div class="orv_constellation"><p>[Hey, do you remember me? The Bald General of Justice!]</p></div>
-<div class="orv_constellation"><p>[Kim Dokja! I'm King Heungmu the Great!]</p></div>
+<div class="orv_constellation"><p>Hey, do you remember me? The Bald General of Justice!</p></div>
+<div class="orv_constellation"><p>Kim Dokja! I'm King Heungmu the Great!</p></div>
 <p class="orv_line">I silently walked through the middle of the banquet hall.</p>
-<div class="orv_constellation"><p>[I saw Peace Land very well! Child, can you say something?]</p></div>
-<div class="orv_constellation"><p>[Hey! Wave your hand over here! I sponsored you 3,000 coins!]</p></div>
-<div class="orv_constellation"><p>[You came! Kim Dokja!]</p></div>
-<div class="orv_constellation"><p>[Isn't he better than what we watched?]</p></div>
+<div class="orv_constellation"><p>I saw Peace Land very well! Child, can you say something?</p></div>
+<div class="orv_constellation"><p>Hey! Wave your hand over here! I sponsored you 3,000 coins!</p></div>
+<div class="orv_constellation"><p>You came! Kim Dokja!</p></div>
+<div class="orv_constellation"><p>Isn't he better than what we watched?</p></div>
 <p class="orv_line">The whole banquet hall seemed to be a vast melting pot as the constellations forgot their dignity. Their souls seemed to be ripening so I was forced to raise my hand towards them and waved. Then chaos exploded among the constellations.</p>
-<div class="orv_constellation"><p>[Handsome Kim Dokja!]</p></div>
+<div class="orv_constellation"><p>Handsome Kim Dokja!</p></div>
 <p class="orv_line">Iris was looking this way with a dismayed expression. However, I didn't see her. I didn't come here to play.</p>
 <p class="orv_line">The scenario footage was covering the ceiling and walls. Incarnations were screaming and dying while the constellations laughed as they watched.</p>
 <p class="orv_line">I saw this and once again realized what this place was. It was where all human tragedies became dinner.</p>
@@ -344,18 +351,12 @@
             <a href="./ch_147"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_149">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="148" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="133" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="147" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="147" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

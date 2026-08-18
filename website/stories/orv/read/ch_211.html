@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 211: Ep. 40 - Hatching, II</title>
     <meta property="og:title" content="Ch 211: Ep. 40 - Hatching, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,29 +177,29 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00211.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 211: Ep. 40 - Hatching, II</h1></div>
 <p class="orv_line">I suddenly let out a breath. It felt like somebody had taped up my mouth and then ripped it off.</p>
-<div class="orv_system"><p>[The constellation 'Demon King of Salvation' is looking at the Syswitz Industrial Complex.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon King of Salvation' is looking at the Syswitz Industrial Complex.</p></div>
 <p class="orv_line">My field of view widened and I saw things that couldn't be seen by incarnations. The industrial complex seemed like a giant circular dome from up high. A circular city centred around the Factory. All incarnations within the city were looking at the sky.</p>
 <p class="orv_line">"T-This…!"</p>
 <p class="orv_line">"A channel! A channel is open!"</p>
@@ -201,12 +208,12 @@
 <p class="orv_line">Their faces looked thrilled. It was natural. This was a place where people excluded from the scenario gathered. The incarnations, who once hated the constellations and coins, entered the Demon Realm and became the ones who missed them more than anything.</p>
 <p class="orv_line">"Hey! Are you okay? Did you hear the message just now?"</p>
 <p class="orv_line">I barely managed to stand up with the support of Jang Hayoung.</p>
-<div class="orv_system"><p>[Entry into the temporary channel has temporarily delayed the collapse of your incarnation body.]</p></div>
+<div class="orv_system"><p>Entry into the temporary channel has temporarily delayed the collapse of your incarnation body.</p></div>
 <p class="orv_line">I sighed with relief. A channel was an important device that formed the core of a story. My stories started recovering just by entering the channel. Of course, the exile penalty wasn't completely removed but… I could earn some time with this.</p>
-<div class="orv_system"><p>[Enter the main scenario to prevent the breakdown of your stories.]</p></div>
+<div class="orv_system"><p>Enter the main scenario to prevent the breakdown of your stories.</p></div>
 <p class="orv_line">I had to kill the real revolutionary in order to enter the main scenario. I touched my broken arms and legs as a test. Fortunately, the core stories still seemed safe. The broken parts could be somehow repaired.</p>
-<div class="orv_system"><p>[Your current incarnation body is severely damaged.]</p></div>
-<div class="orv_system"><p>[You need more stories to repair it.]</p></div>
+<div class="orv_system"><p>Your current incarnation body is severely damaged.</p></div>
+<div class="orv_system"><p>You need more stories to repair it.</p></div>
 <p class="orv_line">The list wasn't confirmed yet but many stories were taken from the nobles. Most of them were historical-grade with a few legendary grades mixed in. In any case, I had to move fast before the temporary channel closed.</p>
 <p class="orv_line">I asked Aileen who was approaching from the distance. "The injured people?"</p>
 <p class="orv_line">"…There are more than I thought."</p>
@@ -218,15 +225,15 @@
 <p class="orv_line">"T-This… how did you get this?"</p>
 <p class="orv_line">"Don't ask me anything more."</p>
 <p class="orv_line">The startled Aileen received the essences with wide eyes. It was natural to be surprised. It was because the Ellain Forest Essence was something that could only be obtained through the Dokkaebi Bag. It wasn't available in the Demon Realm where there wasn't a channel.</p>
-<div class="orv_system"><p>[The duration of the temporary channel is very short.]</p></div>
+<div class="orv_system"><p>The duration of the temporary channel is very short.</p></div>
 <p class="orv_line">I pulled the Dokkaebi Egg out of my bag. The surface of the egg had fine gold cracks.</p>
 <p class="orv_line">Signs of hatching. A temporary channel was a type of fetal movement for a dokkaebi. It was like breathing exercises.</p>
 <p class="orv_line">I lightly stroked the egg and a small vibration was felt inside the shell.</p>
-<div class="orv_system"><p>[The 'Dokkaebi Egg' will soon hatch!]</p></div>
-<div class="orv_system"><p>[Consume a healthy story.]</p></div>
+<div class="orv_system"><p>The 'Dokkaebi Egg' will soon hatch!</p></div>
+<div class="orv_system"><p>Consume a healthy story.</p></div>
 <p class="orv_line">I quickly pulled out a few story fragments and gave them to the egg. The egg shivered and made some noises.</p>
-<div class="orv_system"><p>[The Dokkaebi Egg is satisfied.]</p></div>
-<div class="orv_system"><p>[The Dokkaebi Egg wants the warmth of parents.]</p></div>
+<div class="orv_system"><p>The Dokkaebi Egg is satisfied.</p></div>
+<div class="orv_system"><p>The Dokkaebi Egg wants the warmth of parents.</p></div>
 <p class="orv_line">It was really fussy. Come to think of it, Bihyung had said something.</p>
 <p class="orv_line">–I'm telling you just in case the egg hatches. Before the hatching, you have to carry the egg in your arms.</p>
 <p class="orv_line">–What? Why?</p>
@@ -247,9 +254,9 @@
 <p class="orv_line">I wasn't happy with the cost to my body. I could barely survive by using good stories. Still, it was better than dying.</p>
 <p class="orv_line">"I still have the legendary stories so it's fine."</p>
 <p class="orv_line">I confirmed the legendary stories I had acquired from killing the marquises.</p>
-<div class="orv_system"><p>[The legendary story 'God of the Dice' has been acquired.]</p></div>
+<div class="orv_system"><p>The legendary story 'God of the Dice' has been acquired.</p></div>
 <p class="orv_line">The legendary story, God of the Dice. According to Ways of Survival, the story was roughly like this:</p>
-<div class="orv_quote"><p>「 One of the stories held by the King of Gambling. The owner of this story said he was about to freely choose the scale of the first dice roll. 」</p></div>
+<div class="orv_quote"><p>One of the stories held by the King of Gambling. The owner of this story said he was about to freely choose the scale of the first dice roll.</p></div>
 <p class="orv_line">Sometimes it was unknown why certain stories were considered legendary grade. It might be a legendary grade but how could it compare to my 'King of a Kingless World'…</p>
 <p class="orv_line">Aileen had an astounded expression on her face as she opened her mouth. "Are you going to use a legendary-grade story as a fragment to repair your body? Don't you know how much it is worth?"</p>
 <p class="orv_line">"…"</p>
@@ -263,7 +270,7 @@
 <p class="orv_line">Jang Hayoung and the other group members had wide eyes at my words.</p>
 <p class="orv_line">"What? Really?"</p>
 <p class="orv_line">I nodded and looked down at the egg. Every time the egg shook, the temporary channel was opened and closed.</p>
-<div class="orv_system"><p>[Number of constellations who have entered the channel: 1 person.]</p></div>
+<div class="orv_system"><p>Number of constellations who have entered the channel: 1 person.</p></div>
 <p class="orv_line">It was currently a lonely number but it wouldn't be long before the channel was full. I would surely make it happen.</p>
 <p class="orv_line">"Wait! This is a real dokkaebi egg? It's not a joke?"</p>
 <p class="orv_line">"Do I look like I'm joking?"</p>
@@ -291,20 +298,20 @@
 <p class="orv_line">"…I think you are misunderstanding something. I didn't give birth to it."</p>
 <p class="orv_line">"I understand."</p>
 <p class="orv_line">It seemed that an uncomfortable consensus was formed. I wanted to explain that I never received the demon king's curse. Then the cracks in the egg became stronger and a dim light started leaking out.</p>
-<div class="orv_system"><p>[The egg's hatching is imminent.]</p></div>
+<div class="orv_system"><p>The egg's hatching is imminent.</p></div>
 <p class="orv_line">The moment I had been waiting for finally came.</p>
-<div class="orv_system"><p>[The Star Stream is watching the birth of a new streamer.]</p></div>
+<div class="orv_system"><p>The Star Stream is watching the birth of a new streamer.</p></div>
 <div class="orv_image"><img src="../../../assets/images/211 - The Star Stream is watching the birth of a new streamer.jpg" alt="" loading="lazy"></div>
 <div class="orv_notice"><p>* Official novel illustration (canonical)</p></div>
 <p class="orv_line">I looked down at the creature that emerged along with Han Myungoh, Jang Hayoung, Mark and Aileen. There was something wonderful about the birth of life. A small back could be seen through the breaking shell. Jang Hayoung made a helpless expression as he stared at the back covered with white fur.</p>
 <p class="orv_line">"…I really hate the dokkaebi. I feel it once again."</p>
 <p class="orv_line">However, this birth wasn't blessed. The newborn dokkaebi cried with a wrinkled face. It was as if just being here was painful. I recalled one paragraph about the Dokkaebi King spoken of in Ways of Survival.</p>
-<div class="orv_quote"><p>「 "Listen. They are born with fate and are inevitably poor people who have to live while loving the story." 」</p></div>
+<div class="orv_quote"><p>"Listen. They are born with fate and are inevitably poor people who have to live while loving the story."</p></div>
 <p class="orv_line">The newborn dokkaebi kept crying. She was born in this world and as long as there were stories in this world, she had to love it.</p>
 <p class="orv_line">Yes, I made you like this. Thus, blame me.</p>
-<div class="orv_system"><p>[The baby dokkaebi is looking at you.]</p></div>
-<div class="orv_system"><p>[The baby dokkaebi recognizes you as a parent.]</p></div>
-<div class="orv_system"><p>[The soul of the baby dokkaebi is communicating with you.]</p></div>
+<div class="orv_system"><p>The baby dokkaebi is looking at you.</p></div>
+<div class="orv_system"><p>The baby dokkaebi recognizes you as a parent.</p></div>
+<div class="orv_system"><p>The soul of the baby dokkaebi is communicating with you.</p></div>
 <p class="orv_line">Then I heard a voice.</p>
 <p class="orv_line">–I've been waiting for a long time, ahjussi.</p>
 <br>
@@ -314,18 +321,12 @@
             <a href="./ch_210"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_212">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="211" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="210" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="210" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="210" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

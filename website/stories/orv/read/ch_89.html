@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 89: Ep. 18 – A Reader's Fight, II</title>
     <meta property="og:title" content="Ch 89: Ep. 18 – A Reader's Fight, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00089.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 89: Ep. 18 – A Reader's Fight, II</h1></div>
 <p class="orv_line">As I felt the refreshing wind wrap around my body, I recalled the sentences that appeared in Ways of Survival.</p>
@@ -196,7 +203,7 @@
 <p class="orv_line">"What? I thought you didn't learn this?"</p>
 <p class="orv_line">"Step back."</p>
 <p class="orv_line">Way of the Wind.</p>
-<div class="orv_quote"><p>「 There is a gale in the right hand and a storm in the left hand. The Way of the Wind will be opened when the straight lines and the curves meet. 」</p></div>
+<div class="orv_quote"><p>There is a gale in the right hand and a storm in the left hand. The Way of the Wind will be opened when the straight lines and the curves meet.</p></div>
 <p class="orv_line">The sentence that I couldn't understand became a reality the moment I felt wind at my toes.</p>
 <p class="orv_line">Myung Ilsang's fist suddenly approached my nose.</p>
 <p class="orv_line">The attack that should've hit was meaningless. The overwhelming power of this skill filled in my lacking stats. This was the secret technique of the Imyuntar.</p>
@@ -210,18 +217,18 @@
 <p class="orv_line">Prince Lycaon of the Imyuntar, Parasite Queen Antinus…</p>
 <p class="orv_line">The fate of those who survived their destroyed world was to be used in the scenarios unfolding on another planet. I would be in the same situation as them if Earth was destroyed.</p>
 <p class="orv_line">A Medium Black Fire Cannon shot from Myung Ilsang's right hand.</p>
-<div class="orv_quote"><p>「 One wind will meet another wind to form ying and yang. Once again, one wind will meet another wind to form the principles of negative and positive. 」</p></div>
+<div class="orv_quote"><p>One wind will meet another wind to form ying and yang. Once again, one wind will meet another wind to form the principles of negative and positive.</p></div>
 <p class="orv_line">I used all my imagination to put these words into images.</p>
 <p class="orv_line">Hot and cold wind swirled in front of me and the direction of the wind started to twist.</p>
 <p class="orv_line">The black fire was deflected once it hit the wind and energy spread in every directions.</p>
 <p class="orv_line">All ether attacks were propagated through a medium. If the root of the medium was dispersed, the attack would have no choice but to go back.</p>
 <p class="orv_line">Myung Ilsang looked surprised. "…Pretty good. You must have some talent?"</p>
 <p class="orv_line">Myung Ilsang once against started to flee.</p>
-<div class="orv_system"><p>[The character 'Myung Ilsang' has used Blink Lv. 4.]</p></div>
+<div class="orv_system"><p>The character 'Myung Ilsang' has used Blink Lv. 4.</p></div>
 <p class="orv_line">It was another Blink. However, it wasn't hard for me to pursue him. Once I closed my eyes and concentrated on the wind, I could read everything near me.</p>
 <p class="orv_line">I ran along the street at a speed that matched Yoo Joonghyuk's Red Phoenix Shunpo and found Myung Ilsang. He was grabbing people randomly and asking them questions.</p>
 <p class="orv_line">I kicked off the steel frame of a building and flew towards Myung Ilsang. It was a blow that would crush bone but he stood up.</p>
-<div class="orv_system"><p>[The twenty-fourth seal of the returnee 'Myung Ilsang' has been released.]</p></div>
+<div class="orv_system"><p>The twenty-fourth seal of the returnee 'Myung Ilsang' has been released.</p></div>
 <p class="orv_line">His next seal was released by a hair's breadth.</p>
 <p class="orv_line">"…It was ticklish?"</p>
 <p class="orv_line">Myung Ilsang spoke in a playful manner. He believed that he would win anyway. His wounds were healed by the seal being released and as time went by, more of my magic power was being consumed.</p>
@@ -240,7 +247,7 @@
 <p class="orv_line">He wasn't badly damaged despite the impact. It was unbelievable that he was on the weak side of the 'returnees' who would appear.</p>
 <p class="orv_line">Myung Ilsang ran forward and Yoo Joonghyuk met him.</p>
 <p class="orv_line">Then I invoked Way of the Wind.</p>
-<div class="orv_quote"><p>「 Four winds meet and form a defense. Then another four winds are added, making it the Eight Trigrams. Therefore, wind is everywhere yet exists nowhere'. 」</p></div>
+<div class="orv_quote"><p>Four winds meet and form a defense. Then another four winds are added, making it the Eight Trigrams. Therefore, wind is everywhere yet exists nowhere'.</p></div>
 <p class="orv_line">It was my turn to use the verse that gave Lycaon enlightenment. The mysterious air wall in the shape of an octagon started to swirl.</p>
 <p class="orv_line">It was a small dome of space. The tight seal choked me.</p>
 <p class="orv_line">From now on, it was a fight against time. Yoo Joonghyuk flew back from a blow while Myung Ilsang's expression hardened. He finally realized that this wasn't a game.</p>
@@ -252,37 +259,37 @@
 <p class="orv_line">He moved his mouth several times but his voice wasn't heard. Sound wasn't possible because there was no medium.</p>
 <p class="orv_line">He was in a complete vacuum. Due to the difference in air pressure, the air in my lungs momentarily escaped. I quickly sucked it back in.</p>
 <p class="orv_line">Outside the dome, Han Sooyoung was shouting something.</p>
-<div class="orv_system"><p>[Exclusive skill, Omniscient Reader's Viewpoint stage 2 has been activated!]</p></div>
-<div class="orv_quote"><p>「 What is this? 」</p></div>
+<div class="orv_system"><p>Exclusive skill, Omniscient Reader's Viewpoint stage 2 has been activated!</p></div>
+<div class="orv_quote"><p>What is this?</p></div>
 <p class="orv_line">I could hear Myung Ilsang's thoughts.</p>
-<div class="orv_quote"><p>「 Why don't I have a voice? Magic? 」</p></div>
+<div class="orv_quote"><p>Why don't I have a voice? Magic?</p></div>
 <p class="orv_line">Myung Ilsang was shouting with confusion. It was natural. All returnees had a penalty. This was especially true for returnees who could quickly recover their original strength under certain conditions.</p>
-<div class="orv_system"><p>[The penalty of the Disaster of Questions is activated.]</p></div>
-<div class="orv_system"><p>[The power of the returnee 'Myung Ilsang' has been weakened.]</p></div>
-<div class="orv_system"><p>[The twenty-fourth seal of the returnee 'Myung Ilsang' has been locked.]</p></div>
-<div class="orv_quote"><p>「 Uwaaah, no! 」</p></div>
+<div class="orv_system"><p>The penalty of the Disaster of Questions is activated.</p></div>
+<div class="orv_system"><p>The power of the returnee 'Myung Ilsang' has been weakened.</p></div>
+<div class="orv_system"><p>The twenty-fourth seal of the returnee 'Myung Ilsang' has been locked.</p></div>
+<div class="orv_quote"><p>Uwaaah, no!</p></div>
 <p class="orv_line">They had the condition of being 'weakened' as easily as they were 'strengthened'.</p>
-<div class="orv_system"><p>[The twenty-third seal of the returnee 'Myung Ilsang' has been locked.]</p></div>
+<div class="orv_system"><p>The twenty-third seal of the returnee 'Myung Ilsang' has been locked.</p></div>
 <p class="orv_line">Why did the Disaster of Questions keep asking questions? It was simple. His abilities would weaken if he didn't ask questions.</p>
-<div class="orv_quote"><p>「 Shit! Release this! Quickly release it! 」</p></div>
+<div class="orv_quote"><p>Shit! Release this! Quickly release it!</p></div>
 <p class="orv_line">His fist hit the wall of air many times but the wall didn't break easily. In a space without a medium, the black flames didn't burn.</p>
-<div class="orv_system"><p>[The twenty-second seal of the returnee 'Myung Ilsang' has been locked.]</p></div>
+<div class="orv_system"><p>The twenty-second seal of the returnee 'Myung Ilsang' has been locked.</p></div>
 <p class="orv_line">A vacuum prison that could be made using Way of the Wind. This was the optimum strategy against the Disaster of Questions that I knew.</p>
-<div class="orv_quote"><p>「 Uwaaaaah! 」</p></div>
+<div class="orv_quote"><p>Uwaaaaah!</p></div>
 <p class="orv_line">Myung Ilsang belatedly rushed towards me. He thought that the vacuum prison would be broken if I died but it wasn't the case. This was a place that I made.</p>
 <p class="orv_line">I used Way of the Wind to avoid his attack and quickly reduced the area of the prison.</p>
 <p class="orv_line">Once the wall shrank, I made a narrow passage and escaped outside the dome with Yoo Joonghyuk. Now Myung Ilsang was the only one left inside the dome.</p>
-<div class="orv_quote"><p>「 …You jerk! 」</p></div>
+<div class="orv_quote"><p>…You jerk!</p></div>
 <p class="orv_line">A returnee wasn't a returnee for nothing. The dome cracked a little bit under his power. I raised my hand and the wind filled in the weak spot. Then the size of the dome started to shrink rapidly.</p>
 <p class="orv_line">Blood flowed from my nose due to my excessive concentration. My ultimate goal was to limit the vacuum prison to his body.</p>
 <p class="orv_line">However, it wasn't easy to control. Shit, Yoo Joonghyuk had managed it easily. Why was this so difficult?</p>
 <p class="orv_line">"Don't try to control it. You must lead the wind." Yoo Joonghyuk's voice was heard.</p>
 <p class="orv_line">At that moment, I received enlightenment. Maybe it was my mistake to make a 'wall'. The important thing was to remove the medium around his body.</p>
-<div class="orv_quote"><p>「 U-Uwaaah, uwaaaaah! I'm choking! 」</p></div>
+<div class="orv_quote"><p>U-Uwaaah, uwaaaaah! I'm choking!</p></div>
 <p class="orv_line">Myung Ilsang frantically scratched at his neck, causing himself to bleed.</p>
 <p class="orv_line">"…Pretty good. Although you still aren't very talented." Yoo Joonghyuk's voice was heard again.</p>
 <p class="orv_line">Then Myung Ilsang attempted his last hurrah.</p>
-<div class="orv_system"><p>[The character 'Myung Ilsang' has used Great Black Fire Cannon Lv. 3.]</p></div>
+<div class="orv_system"><p>The character 'Myung Ilsang' has used Great Black Fire Cannon Lv. 3.</p></div>
 <p class="orv_line">Myung Ilsang's right arm was surrounded by dark flames. To my surprise, the great flames shot through the dome of wind.</p>
 <p class="orv_line">I fell down while protecting Yoo Joonghyuk's body. A dull impact filled my head. Myung Ilsang seemed to be squeezing out his remaining magic power as the black fire cannon continued.</p>
 <p class="orv_line">But the wind wasn't still. Once the black fire cannon was fired through the dome, wind instantly filled up the spot again.</p>
@@ -293,23 +300,23 @@
 <p class="orv_line">The black flames were scattered and twisted by the power of the strongly rotating dome. A terrible pain followed. It was because I intercepted the majority of the black flames.</p>
 <p class="orv_line">The black flames burned my skin and the sensation in my bones faded little by little.</p>
 <p class="orv_line">I could do it. He wasn't strong right now. At this moment, I reached an area beyond my limits. As my senses became faint, my body was like the wind.</p>
-<div class="orv_system"><p>[A constellation who loves effort enjoys your pain.]</p></div>
-<div class="orv_system"><p>[A touch of talent sleeping in your soul has blossomed.]</p></div>
+<div class="orv_system"><p>A constellation who loves effort enjoys your pain.</p></div>
+<div class="orv_system"><p>A touch of talent sleeping in your soul has blossomed.</p></div>
 <p class="orv_line">I controlled the vacuum prison with my left hand while moving the wind with my right hand to dissipate the energy of the black flames. In a complete trance, I tasted new heights in Way of the Wind. The wind at my fingertips was creating a landscape I had never known before.</p>
-<div class="orv_system"><p>[The thickness of the exclusive skill 'Fourth Wall' has temporarily thinned.]</p></div>
+<div class="orv_system"><p>The thickness of the exclusive skill 'Fourth Wall' has temporarily thinned.</p></div>
 <p class="orv_line">It was a strange feeling. This was how the 'characters' saw the world.</p>
 <p class="orv_line">No matter how hard I read the text, I didn't know what to feel. I felt that a part of the narrative that was felt through the pages touching my fingertip, which I could never fully reach, was now completely understood.</p>
 <p class="orv_line">Reading was different from understanding. Maybe I still didn't understand one percentage of this world yet.</p>
 <p class="orv_line">Soon afterwards, I felt the power of Myung Ilsang's black flames weaken.</p>
-<div class="orv_quote"><p>「 Shit! Scum! Die! Diee!! 」</p></div>
+<div class="orv_quote"><p>Shit! Scum! Die! Diee!!</p></div>
 <p class="orv_line">The momentum of the black flames was rapidly declining. In addition, my magic power was still full.</p>
 <p class="orv_line">It was a strange feeling. Even if I was in a trance, how could I have this much magic power left?</p>
 <p class="orv_line">Behind me, Yoo Joonghyuk said, "…I will kill you."</p>
 <p class="orv_line">…Somehow I had absorbed Yoo Joonghyuk's magic power.</p>
 <p class="orv_line">Then after a while, Myung Ilsang's attacks ceased.</p>
-<div class="orv_system"><p>[All seals of the returnee 'Myung Ilsang' have been locked.]</p></div>
+<div class="orv_system"><p>All seals of the returnee 'Myung Ilsang' have been locked.</p></div>
 <p class="orv_line">Yoo Joonghyuk and I looked at each other.</p>
-<div class="orv_system"><p>[The exclusive skill 'Way of the Wind Lv. 8' has been released.]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Way of the Wind Lv. 8' has been released.</p></div>
 <p class="orv_line">The fear-stricken Myung Ilsang stared at us.</p>
 <p class="orv_line">"C-Cough, cough…!"</p>
 <p class="orv_line">I threw Unbroken Faith towards the man who was gasping for air and trying to run away.</p>
@@ -324,21 +331,21 @@
 <p class="orv_line">"Kuaaack!"</p>
 <p class="orv_line">Myung Ilsang looked up at me like it was unfair. I hit him again and again until that fear was completely crushed. The beaten up Myung Ilsang barely managed to say, "I-It can't be like this…"</p>
 <p class="orv_line">I looked at this guy and remembered when he was a warrior.</p>
-<div class="orv_quote"><p>「 "I-I am a warrior? I am a real warrior? Really?" 」</p></div>
+<div class="orv_quote"><p>"I-I am a warrior? I am a real warrior? Really?"</p></div>
 <p class="orv_line">The 17 year old high school student, Myung Ilsang. The innocent boy who was chosen as a warrior to save the world and fell onto Chronos.</p>
 <p class="orv_line">He obviously didn't want to become like this. He didn't want to be a murderer that wiped out life on a continent. But he did so.</p>
 <p class="orv_line">"It is you who chose to become a disaster."</p>
 <p class="orv_line">Now he couldn't change that fact.</p>
-<div class="orv_system"><p>[Your understanding of the character 'Myung Ilsang' has increased.]</p></div>
+<div class="orv_system"><p>Your understanding of the character 'Myung Ilsang' has increased.</p></div>
 <p class="orv_line">Myung Ilsang's face distorted. "I, obviously, p-protagonist, this, world…"</p>
 <p class="orv_line">The man who wanted to become a protagonist but failed in the end. The real protagonist soon approached and slammed a blade into his head.</p>
 <p class="orv_line">I looked into the eyes of the man killed by Yoo Joonghyuk. It was a futile death for the disaster that destroyed a world.</p>
-<div class="orv_system"><p>[You have won against a 'returnee' for the first time in the scenario!]</p></div>
-<div class="orv_system"><p>[Contributor: Kim Dokja, Yoo Joonghyuk]</p></div>
-<div class="orv_system"><p>[You have earned 40,000 coins as an achievement reward.]</p></div>
-<div class="orv_system"><p>[A new item will be added to your story.]</p></div>
-<div class="orv_system"><p>[The Story, 'Person who Opposes the Miracle' has been added.]</p></div>
-<div class="orv_system"><p>[You have obtained the possibility of a new stigma.]</p></div>
+<div class="orv_system"><p>You have won against a 'returnee' for the first time in the scenario!</p></div>
+<div class="orv_system"><p>Contributor: Kim Dokja, Yoo Joonghyuk</p></div>
+<div class="orv_system"><p>You have earned 40,000 coins as an achievement reward.</p></div>
+<div class="orv_system"><p>A new item will be added to your story.</p></div>
+<div class="orv_system"><p>The Story, 'Person who Opposes the Miracle' has been added.</p></div>
+<div class="orv_system"><p>You have obtained the possibility of a new stigma.</p></div>
 <br>
 <hr>
         </article>
@@ -346,18 +353,12 @@
             <a href="./ch_88"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_90">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="89" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="198" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="88" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="88" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 172: Ep. 33 - Reading Again, III</title>
     <meta property="og:title" content="Ch 172: Ep. 33 - Reading Again, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00172.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 172: Ep. 33 - Reading Again, III</h1></div>
 <p class="orv_line">My mother was silent for a moment. The silence cheered me up a bit. The fact that my mother expected me to love her and the idea that I could hurt her feelings excited me.</p>
@@ -223,8 +230,8 @@
 <p class="orv_line">Those who had never experienced it would never know. The world was tenacious. The reporters stood in front of my house and it felt like all eyes in the world were chasing me.</p>
 <p class="orv_line">"Maybe, just maybe, I could've endured it."</p>
 <p class="orv_line">It might've been okay if my mother had said something to me. If she told me to endure it, I could've. If only my mother had told me she was on my side, even if she sold our story for money.</p>
-<div class="orv_system"><p>[The 'Fourth Wall' is shaking violently.]</p></div>
-<div class="orv_system"><p>[The stigma 'Self-rationalization Lv. 2' has been activated!]</p></div>
+<div class="orv_system"><p>The 'Fourth Wall' is shaking violently.</p></div>
+<div class="orv_system"><p>The stigma 'Self-rationalization Lv. 2' has been activated!</p></div>
 <p class="orv_line">I looked at my mother. I hadn't misunderstood. My mother sold our lives to earn money.</p>
 <p class="orv_line">Then my mother opened her mouth. "I wanted to know."</p>
 <p class="orv_line">"Know what?"</p>
@@ -242,19 +249,19 @@
 <p class="orv_line">I tried to ask my mother several times.</p>
 <p class="orv_line">Why didn't you run away with me? Why did you leave the child alone? Why didn't you come see me after you were released?</p>
 <p class="orv_line">The questions piled up inside me and I got the answer on my own.</p>
-<div class="orv_system"><p>[The Fourth Wall's shaking has subsided.]</p></div>
+<div class="orv_system"><p>The Fourth Wall's shaking has subsided.</p></div>
 <p class="orv_line">This was a fear created by the answer. It was an answer that I tried to erase. I was afraid that once the answer was given, I wouldn't be able to accept it.</p>
 <p class="orv_line">In the meantime, my mother had been repeatedly opening and closing her mouth before finally being able to speak. "…It is too late to say anything."</p>
 <p class="orv_line">Yes, I knew.</p>
-<div class="orv_system"><p>[Many constellations have sponsored you 5,000 coins for your family history.]</p></div>
+<div class="orv_system"><p>Many constellations have sponsored you 5,000 coins for your family history.</p></div>
 <p class="orv_line">This was sufficient for the damn drama.</p>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is thirsty from your sweet potato.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' suggests that you think again.]</p></div>
-<div class="orv_system"><p>[The constellation 'Poked Out His Eyes' is smiling in an insidious manner.]</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is thirsty from your sweet potato.</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' suggests that you think again.</p></div>
+<div class="orv_system"><p>The constellation 'Poked Out His Eyes' is smiling in an insidious manner.</p></div>
 <p class="orv_line">This role didn't suit me in the first place.</p>
 <p class="orv_line">"Why do you keep changing the original novel?" My mother changed the topic. "If you let it flow like the original and let people die, the scenarios wouldn't have been so difficult."</p>
 <p class="orv_line">"I have to change it. Mother, you know that Yoo Joonghyuk can't reach the ending in the third regression."</p>
-<div class="orv_system"><p>[Many constellations are frustrated by the filtering.]</p></div>
+<div class="orv_system"><p>Many constellations are frustrated by the filtering.</p></div>
 <p class="orv_line">The story about the original novel was filtered by the constellations.</p>
 <p class="orv_line">"The ending?"</p>
 <p class="orv_line">"Yes. The ending."</p>
@@ -276,15 +283,15 @@
 <p class="orv_line">"Be honest. You think I will be a hindrance. I don't know what your purpose is but I won't ask you anything."</p>
 <p class="orv_line">For the first time, an unfamiliar emotion crossed my mother's face. She looked sad. Sad? What qualifications did she have to feel like this?</p>
 <p class="orv_line">"…Who do you really resemble?" A wave of magic power rose in my mother's body as she spoke. "I dislike this method but it can't be helped.</p>
-<div class="orv_system"><p>[Some constellations like this fighting in a family.]</p></div>
-<div class="orv_system"><p>[Some constellation's who value filial piety dislike this situation.]</p></div>
+<div class="orv_system"><p>Some constellations like this fighting in a family.</p></div>
+<div class="orv_system"><p>Some constellation's who value filial piety dislike this situation.</p></div>
 <p class="orv_line">The furniture of the house was swept away by the magical storm, causing Han Sooyoung to notice and run inside.</p>
 <p class="orv_line">"Kim Dokja!"</p>
 <p class="orv_line">The incarnation of Jeon Woochi, Cho Youngran was also behind Han Sooyoung. The living room quickly changed into a confrontational situation. Cho Youngran was preparing a trick while my mother gazed at me with serene eyes. Jeon Woochi's techniques were tricky but I could somehow defend against them.</p>
 <p class="orv_line">The problem was my mother's side. I didn't yet know who my mother's sponsor was. This was just before my mother's ability was revealed.</p>
-<div class="orv_system"><p>[The exclusive skill 'Bookmark' is activated!]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Bookmark' is activated!</p></div>
 <p class="orv_line">"Selecting the fourth bookmark, 'Lycaon Isparang'."</p>
-<div class="orv_system"><p>[The exclusive skill 'Way of the Wind Lv. 10 (+1) is activated!]</p></div>
+<div class="orv_system"><p>The exclusive skill 'Way of the Wind Lv. 10 (+1) is activated!</p></div>
 <p class="orv_line">Way of the Wind reached its limit and the whole room was caught in a magical storm. I condensed the winds and destroyed the entire living room.</p>
 <p class="orv_line">Then I escaped from the house with Han Sooyoung. As dark smoke covered my field of view, I told Han Sooyoung. "I will finish this right away so get ready."</p>
 <p class="orv_line">"Understood." Han Sooyoung started to generate a powerful 'black fire' in her hand.</p>
@@ -295,15 +302,15 @@
 <p class="orv_line">The surprised Han Sooyoung poured the black flames towards them but they were scattered in all directions by Jeon Woochi's defense. Cho Youngran shouted, "Kim Dokja! Stop! Sookyung is doing this for you!"</p>
 <p class="orv_line">It was my mother who blocked their mouths. She raised a finger to her mouth, telling them not to say anything. Then a grand aura started to emerge from my mother's body.</p>
 <p class="orv_line">Sparks formed due to the excessive use of probability. It was a more intense synchronization than anything I had seen before. My mother was obviously overdoing it.</p>
-<div class="orv_system"><p>[The sponsor of incarnation 'Lee Sookyung' has revealed her modifier.]</p></div>
-<div class="orv_system"><p>[The constellation 'Founder's Mother' feels deep sadness towards you.]</p></div>
+<div class="orv_system"><p>The sponsor of incarnation 'Lee Sookyung' has revealed her modifier.</p></div>
+<div class="orv_system"><p>The constellation 'Founder's Mother' feels deep sadness towards you.</p></div>
 <p class="orv_line">The Founder's Mother? Oh my god. Don't tell me?</p>
-<div class="orv_system"><p>[The constellation 'Founder's Mother' says that your strength is a threat to the Korean Peninsula scenario.]</p></div>
-<div class="orv_system"><p>[The constellation 'Founder's Mother' says that she won't take your life if you don't rebel.]</p></div>
+<div class="orv_system"><p>The constellation 'Founder's Mother' says that your strength is a threat to the Korean Peninsula scenario.</p></div>
+<div class="orv_system"><p>The constellation 'Founder's Mother' says that she won't take your life if you don't rebel.</p></div>
 <p class="orv_line">I hastily used Miniaturization and Electrification at the same time.</p>
-<div class="orv_system"><p>[The energy of the old land has sealed your skills.]</p></div>
+<div class="orv_system"><p>The energy of the old land has sealed your skills.</p></div>
 <p class="orv_line">My vision became dim, as if I had entered a dark cave. Power was extinguished from my body and I became an ordinary human. The helplessness of a small animal captivated me.</p>
-<div class="orv_system"><p>[The energy of the old land seals your 'value'.]</p></div>
+<div class="orv_system"><p>The energy of the old land seals your 'value'.</p></div>
 <p class="orv_line">I knew this stigma. There was only one 'story' regarding sealing on the Korean Peninsula.</p>
 <p class="orv_line">"…I never thought you could use this."</p>
 <p class="orv_line">Yes… it was strange I hadn't thought about it This was the Korean Peninsula. Yet there was one nebula that hadn't contacted me yet. I should've made contact with them first but I hadn't got close to them at this point.</p>
@@ -328,17 +335,17 @@
 <p class="orv_line">"What? Who?"</p>
 <p class="orv_line">If I called him, the seal would somehow be broken. Originally, it was a constellation I didn't dare call but now it was unknown.</p>
 <p class="orv_line">I pulled out Ganpyeongui. I saved it for an important time and now it was the only thing I could believe in.</p>
-<div class="orv_system"><p>[The special option of the 'Ganpyeongui', Echo of the Stars has been activated.]</p></div>
-<div class="orv_system"><p>[Echo of the Stars allows you to ask for help from a historical-grade constellation.]</p></div>
+<div class="orv_system"><p>The special option of the 'Ganpyeongui', Echo of the Stars has been activated.</p></div>
+<div class="orv_system"><p>Echo of the Stars allows you to ask for help from a historical-grade constellation.</p></div>
 <p class="orv_line">"I will call the constellations."</p>
-<div class="orv_system"><p>[In the flow of the stars, the historical-grade constellations hear your voice.]</p></div>
+<div class="orv_system"><p>In the flow of the stars, the historical-grade constellations hear your voice.</p></div>
 <p class="orv_line">I called out the modifier of the constellation.</p>
-<div class="orv_system"><p>[The status of this constellation is too high.]</p></div>
-<div class="orv_system"><p>[Five points on the Sky Disc are required for this constellation. Will you accept this?]</p></div>
+<div class="orv_system"><p>The status of this constellation is too high.</p></div>
+<div class="orv_system"><p>Five points on the Sky Disc are required for this constellation. Will you accept this?</p></div>
 <p class="orv_line">There were only five points left because I had used the rest on calling the Big Dipper and the Nation's Independence Activist.</p>
 <p class="orv_line">Now this constellation required all the remaining star points on the Ganpyeongui.</p>
 <p class="orv_line">It was necessary because this being's strength already surpassed the historical-grade rank.</p>
-<div class="orv_system"><p>[The operation of the stars has begun.]</p></div>
+<div class="orv_system"><p>The operation of the stars has begun.</p></div>
 <p class="orv_line">In the darkness of the deep night sky, a solitary star was shining. I declared towards him. "Goryeo's First Sword, I need your strength."</p>
 <br>
 <hr>
@@ -347,18 +354,12 @@
             <a href="./ch_171"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_173">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="172" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="155" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="171" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="171" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

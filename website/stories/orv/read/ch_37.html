@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 37: Ep. 9 – Omniscient Sunfish, I</title>
     <meta property="og:title" content="Ch 37: Ep. 9 – Omniscient Sunfish, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,29 +177,29 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00037.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 37: Ep. 9 – Omniscient Sunfish, I</h1></div>
 <p class="orv_line">After a while, we moved towards the entrance of the 'hidden dungeon' on the first underground floor. I walked behind Lee Jihye, Lee Gilyoung and Jung Heewon while looking at my smartphone.</p>
-<div class="orv_quote"><p>「 …In the midst of the splitting headache, Yoo Joonghyuk came to his senses. <br>'Give up on this life'.<br>This was the end of Yoo Joonghyuk's eighth life. 」</p></div>
+<div class="orv_quote"><p>…In the midst of the splitting headache, Yoo Joonghyuk came to his senses. <br>'Give up on this life'.<br>This was the end of Yoo Joonghyuk's eighth life.</p></div>
 <p class="orv_line">It couldn't be. This hadn't happened yet.</p>
 <p class="orv_line">…Shit, why was this guy doing this on only the third life? If he moved carefully like his second life, he would've passed through the mid-to-late scenarios.</p>
 <p class="orv_line">I raised my eyes to see Jung Heewon looking at me.</p>
@@ -218,17 +225,17 @@
 <p class="orv_line">"Don't talk nonsense."</p>
 <p class="orv_line">"He is a useful guy."</p>
 <p class="orv_line">"…You sound like Master."</p>
-<div class="orv_system"><p>[The constellation 'Secretive Plotter' is wondering about your heart.]</p></div>
+<div class="orv_system"><p>The constellation 'Secretive Plotter' is wondering about your heart.</p></div>
 <p class="orv_line">Come to think of it, it wasn't just Lee Jihye but the constellations as well who must be wondering about my actions. He was a guy who would kill me if he got a chance. It was strange that I would run to save him.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' likes your desire to rehabilitate a fallen friend.]</p></div>
-<div class="orv_system"><p>[100 coins have been sponsored.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' likes your desire to rehabilitate a fallen friend.</p></div>
+<div class="orv_system"><p>100 coins have been sponsored.</p></div>
 <p class="orv_line">This one misunderstood me. But the Demon-like Judge of Fire… unlike the expectations of the Archangel Uriel, I had a deeply personal reason for saving Yoo Joonghyuk.</p>
 <p class="orv_line">It was to prevent him from 'regressing' after his death.</p>
 <p class="orv_line">Regression after death. It sounded good. A 'regression stigma' that triggered every time you died. The protagonist had a fraudulent ability.</p>
 <p class="orv_line">The problem was that this ability invoked complicated thoughts in the surrounding cast.</p>
-<div class="orv_quote"><p>「 By the way, what happens to the world after you return? 」</p></div>
+<div class="orv_quote"><p>By the way, what happens to the world after you return?</p></div>
 <p class="orv_line">A supporting actor had asked this of Yoo Joonghyuk when Yoo Joonghyuk's number of lives had broken into the double digits. I forgot his name but Yoo Joonghyuk's answer from that time was clear.</p>
-<div class="orv_quote"><p>「 …I also don't know. I always choose a world where more people can live. 」</p></div>
+<div class="orv_quote"><p>…I also don't know. I always choose a world where more people can live.</p></div>
 <p class="orv_line">It was plausible but in fact, Yoo Joonghyuk didn't know about the world he abandoned. In fact, there was no definite theory about what happened to the world in Ways of Survival.</p>
 <p class="orv_line">Science, magic, whatever.</p>
 <p class="orv_line">This was why I was anxious. What happened to the world after the regressor disappeared?</p>
@@ -237,14 +244,14 @@
 <p class="orv_line">"Ah, yes?"</p>
 <p class="orv_line">Lee Gilyoung, who was holding the hem of my clothes, looked up at me with anxious eyes.</p>
 <p class="orv_line">"I think we're here?"</p>
-<div class="orv_system"><p>[You are approaching the outside region. Be careful not to leave the scenario area.]</p></div>
+<div class="orv_system"><p>You are approaching the outside region. Be careful not to leave the scenario area.</p></div>
 <p class="orv_line">This message popped up. It didn't matter. Chungmuro's hidden dungeon was treated as an 'inside' area.</p>
 <p class="orv_line">We turned the corner and Exit 1 appeared. A dungeon entrance with an ominous shade greeted us.</p>
-<div class="orv_system"><p>[You have found a hidden dungeon!]</p></div>
-<div class="orv_system"><p>[This dungeon has already been discovered by someone. You can't get the first discovery achievement.]</p></div>
-<div class="orv_system"><p>[A new hidden scenario has arrived!]</p></div>
+<div class="orv_system"><p>You have found a hidden dungeon!</p></div>
+<div class="orv_system"><p>This dungeon has already been discovered by someone. You can't get the first discovery achievement.</p></div>
+<div class="orv_system"><p>A new hidden scenario has arrived!</p></div>
 <div class="orv_window">
-<h3 class="orv_window_title">[Hidden Scenario – Theatre Dungeon]</h3>
+<h3 class="orv_window_title">Hidden Scenario – Theatre Dungeon</h3>
 <p>Category: Hidden</p>
 <p>Difficulty: A-</p>
 <p>Clear Conditions: Defeat the master of Theatre Dungeon.</p>
@@ -257,7 +264,7 @@
 <p class="orv_line">Lee Gilyoung looked startled. Well, this must be the first time they encountered a hidden scenario. Jung Heewon also spoke.</p>
 <p class="orv_line">"A movie theatre as a dungeon… it sounds romantic."</p>
 <p class="orv_line">Romantic. This was only because she didn't know how scary the movie theatre could be. We entered the theatre. The familiar lobby of the multiplex welcomed us.</p>
-<div class="orv_system"><p>[You have entered Theatre Dungeon.]</p></div>
+<div class="orv_system"><p>You have entered Theatre Dungeon.</p></div>
 <p class="orv_line">We were tense as we entered the bleak dungeon. It was a multiplex consisting of nine floors, from B1 to the 8th floor.</p>
 <p class="orv_line">"Hyung, the posters are torn. Who would do that?"</p>
 <p class="orv_line">"I'm not sure."</p>
@@ -300,8 +307,8 @@
 <p class="orv_line">"Of course. Do you usually like it?"</p>
 <p class="orv_line">"You might hate it after this."</p>
 <p class="orv_line">"What do you―"</p>
-<div class="orv_system"><p>[You have been hit by a projection light.]</p></div>
-<div class="orv_system"><p>[The screening will begin.]</p></div>
+<div class="orv_system"><p>You have been hit by a projection light.</p></div>
+<div class="orv_system"><p>The screening will begin.</p></div>
 <p class="orv_line">The surrounding landscape started to slowly change. It wasn't a simple illusion so Fourth Wall wasn't activated as before. The old linoleum floor became covered with green bushes, while the reception desk and popcorn stand turned into a lush rainforest. The ceiling turned into a blue sky with no clouds and no end in sight. Lee Jihye muttered in a small voice.</p>
 <p class="orv_line">"Where the hell is this place?"</p>
 <p class="orv_line">Lee Jihye shouted and hacked at the surrounding trees and bushes, but nothing changed. Lee Gilyoung started looking for insects with a calm expression.</p>
@@ -355,18 +362,12 @@
             <a href="./ch_36"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_38">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="37" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="56" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="36" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="36" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

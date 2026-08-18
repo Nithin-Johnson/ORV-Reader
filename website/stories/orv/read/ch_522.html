@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 522: Epilogue 1 - The World of Zero, VI</title>
     <meta property="og:title" content="Ch 522: Epilogue 1 - The World of Zero, VI" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,42 +177,42 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00522.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 522: Epilogue 1 - The World of Zero, VI</h1></div>
 <p class="orv_line">It had been a week since Kim Dokja lost his consciousness.</p>
 <p class="orv_line">The companions took turns to nurse him as he remained in a coma. Lee Seolhwa and Aileen continued to administer medical treatment in alternating turns, and many Incarnations blessed with famed healing skills also paid a visit, as well.</p>
 <p class="orv_line">Unfortunately, none of them could discover the reason why Kim Dokja suddenly ended up in this state.</p>
 <p class="orv_line">– His internal structure is becoming unstable. We don't know the reason yet. Maybe, it's related to the &lt;Star Stream System&gt;'s weakening, somehow…</p>
-<p class="orv_line">A few Incarnations cautiously discussed the topic related to the [Avatar].</p>
+<p class="orv_line">A few Incarnations cautiously discussed the topic related to the <strong>[Avatar]</strong>.</p>
 <p class="orv_line">"Ahjussi."</p>
 <p class="orv_line">Kim Dokja remained unconscious, and while staring at him, Shin Yoosung murmured as if to steel herself.</p>
 <p class="orv_line">This person, he's Kim Dokja. Without a doubt, he is the Kim Dokja that I remember.</p>
 <p class="orv_line">However, there was one thing that didn't change no matter how many times she told herself that.</p>
 <p class="orv_line">⸢The power of her 'Constellation sponsor' cannot be felt from this existence before her eyes.⸥</p>
 <p class="orv_line">The Story that warmly embraced her couldn't be felt all that well right now.</p>
-<div class="orv_system"><p>[Story, 'Saviour of the Star', is stuttering during its storytelling.]</p></div>
+<div class="orv_system"><p>Story, 'Saviour of the Star', is stuttering during its storytelling.</p></div>
 <p class="orv_line">Even the Stories that connected her to Kim Dokja were hesitating with their storytelling. As if, this existence before her wasn't suitable as the subject of their story. Shin Yoosung slowly closed her eyes.</p>
-<div class="orv_system"><p>[Currently, the connection to your Constellation sponsor is very faint.]</p></div>
-<div class="orv_system"><p>[Currently, the communication channel to your Constellation sponsor is disconnected.]</p></div>
+<div class="orv_system"><p>Currently, the connection to your Constellation sponsor is very faint.</p></div>
+<div class="orv_system"><p>Currently, the communication channel to your Constellation sponsor is disconnected.</p></div>
 <p class="orv_line">The 'sponsor contract' that tied her to Kim Dokja was still in effect. There it was, the starlight within the night sky, remaining in the exact same spot and watching her as always.</p>
 <p class="orv_line">⸢If that's the case, then just whose starlight was that?⸥</p>
 <p class="orv_line">Shin Yoosung stared at Kim Dokja's shoulder that still hadn't healed yet.</p>
@@ -242,7 +249,7 @@
 <p class="orv_line">"You little!"</p>
 <p class="orv_line">Yoo Mia quickly ran away and hid between the narrow alleyways. She was so unbelievably fast that by the time Han Sooyoung got there, that little kid was already long gone without a trace. However, Yoo Joonghyuk must've been nearby considering his little sister was around here.</p>
 <p class="orv_line">And so, how long did she continue to walk afterwards? An unfamiliar noticeboard appeared before her eyes.</p>
-<div class="orv_constellation"><p>[Kaizenix District]</p></div>
+<div class="orv_constellation"><p>Kaizenix District</p></div>
 <p class="orv_line">A residential area set up on the western sections of the Complex was here. The antique architectural style reminded her of the medieval fantasy setting. She only heard about this place from Lee Sookyung, but now that she had witnessed the view of this rather unexpectedly well-thought-out cityscape, Han Sooyoung couldn't help but be impressed.</p>
 <p class="orv_line">Just as she began thinking that it'd not be so bad to sightsee since she was searching for that fool anyway…</p>
 <p class="orv_line">"Sooyoung-ah!"</p>
@@ -323,7 +330,7 @@
 <p class="orv_line">Unexpectedly, it was he who opened his mouth first. "If you want to rescue him, then you need to get to the subway beyond the 'Final Wall'. The problem with that is you can never reach there through the regular methods of crossing the world-lines."</p>
 <p class="orv_line">Han Sooyoung was surprised for a second there, but still managed to reply quickly enough. "…If we open the 'Final Wall' one more time, we can go there. We need to gather the 'fragments' to open the door, though. And looks like we already have one of the fragments."</p>
 <p class="orv_line">⸢That's what Han Sooyoung said.⸥</p>
-<p class="orv_line">Even she could more or less hear [The Fourth Wall]'s intermittent messages nowadays. These texts butted in irregularly as if to explain the world – perhaps they were sentences currently being recorded on [The Fourth Wall] that this world-line's Kim Dokja possessed.</p>
+<p class="orv_line">Even she could more or less hear <strong>[The Fourth Wall]</strong>'s intermittent messages nowadays. These texts butted in irregularly as if to explain the world – perhaps they were sentences currently being recorded on <strong>[The Fourth Wall]</strong> that this world-line's Kim Dokja possessed.</p>
 <p class="orv_line">"The issue is with the other fragments."</p>
 <p class="orv_line">The 'Wall that Decides Samsara' Yoo Sangah used to possess.</p>
 <p class="orv_line">The 'Wall that Divides Good and Evil' Jung Heewon and Lee Gilyoung used to possess.</p>
@@ -345,7 +352,7 @@
 <p class="orv_line">That prompted him to say this, however.</p>
 <p class="orv_line">"If you run one more time…" Yoo Joonghyuk had come to a stop even before she had noticed it, and he was now asking her. "If you get a chance to run again, do you believe you can see it better the next time?"</p>
 <p class="orv_line">Han Sooyoung also came to a halt right there.</p>
-<div class="orv_system"><p>[Incarnation 'Yoo Joonghyuk's' Stigma is emitting a faint light.]</p></div>
+<div class="orv_system"><p>Incarnation 'Yoo Joonghyuk's' Stigma is emitting a faint light.</p></div>
 <p class="orv_line">In all honesty, she already knew. From a while ago, she realized what he was trying to say. However, she wanted to pretend that she had no clue, instead.</p>
 <p class="orv_line">Because she thought that method was not a good one at all.</p>
 <p class="orv_line">"You…"</p>
@@ -360,13 +367,13 @@
 <p class="orv_line">His calm, collected declaration caused her eyes to blink.</p>
 <p class="orv_line">"That's why I asked you. What did you see?"</p>
 <p class="orv_line">The Status of Transcendence was rousing up from Yoo Joonghyuk's rippling muscles. This transcended form that surpassed Constellations was evolving once more.</p>
-<div class="orv_system"><p>[Incarnation 'Yoo Joonghyuk's' Stigma is evolving.]</p></div>
+<div class="orv_system"><p>Incarnation 'Yoo Joonghyuk's' Stigma is evolving.</p></div>
 <p class="orv_line">Han Sooyoung looked back at the path she had run past and saw the tower's clock hands circling around. She could see the engraving of her own dumb-looking face on the diligently-moving second hand.</p>
 <p class="orv_line">What would happen if she got to run on that 'time' once more? If so, would she be able to run even better than before?</p>
 <p class="orv_line">Maybe, she might be able to – if she made a thorough preparation beforehand. And… if she got to work together with the companions she lived with in this world, too.</p>
 <p class="orv_line">She looked back, only to discover the regressor that had run on that very distance countless times staring right back at her.</p>
 <p class="orv_line">"I need your help, Han Sooyoung."</p>
-<div class="orv_system"><p>[Stigma, 'Regression', has acquired the possibility of 'Group Regression'!]</p></div>
+<div class="orv_system"><p>Stigma, 'Regression', has acquired the possibility of 'Group Regression'!</p></div>
 <br>
 <hr>
         </article>
@@ -374,18 +381,12 @@
             <a href="./ch_521"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_523">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="522" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="574" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="521" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="521" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

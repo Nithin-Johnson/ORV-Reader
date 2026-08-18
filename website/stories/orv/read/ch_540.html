@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 540: Epilogue 4 - The Omniscient Reader's Viewpoint, V</title>
     <meta property="og:title" content="Ch 540: Epilogue 4 - The Omniscient Reader's Viewpoint, V" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,33 +177,33 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00540.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 540: Epilogue 4 - The Omniscient Reader's Viewpoint, V</h1></div>
 <p class="orv_line">Within the space of darkness, as if the curtains had come down on the last act.</p>
-<p class="orv_line">Han Sooyoung opened her eyes within this darkness. The [Eye of Truth] expanded and began emitting faint rays of light, and gradually, she could see her surroundings better.</p>
+<p class="orv_line">Han Sooyoung opened her eyes within this darkness. The <strong>[Eye of Truth]</strong> expanded and began emitting faint rays of light, and gradually, she could see her surroundings better.</p>
 <p class="orv_line">…Just what happened?</p>
-<div class="orv_system"><p>[You have misaligned and broke the world-line's deciding Probability!]</p></div>
-<div class="orv_system"><p>[Your actions have affected the 'Oldest Dream's' ■■!]</p></div>
-<div class="orv_system"><p>[The 'Oldest Dream's' ■■ is changing!]</p></div>
+<div class="orv_system"><p>You have misaligned and broke the world-line's deciding Probability!</p></div>
+<div class="orv_system"><p>Your actions have affected the 'Oldest Dream's' ■■!</p></div>
+<div class="orv_system"><p>The 'Oldest Dream's' ■■ is changing!</p></div>
 <p class="orv_line">Then, indecipherable messages floated up next.</p>
 <p class="orv_line">But none of that mattered. What's important was rescuing Kim Dokja.</p>
 <p class="orv_line">Han Sooyoung focused her sight to the presence she picked up in front of her. When she did, something sooty, darkish could be spotted.</p>
@@ -213,23 +220,23 @@
 <p class="orv_line">With hostile eyes, Han Sooyoung glared at her surroundings. There was only one culprit capable of doing something like this.</p>
 <p class="orv_line">"The Fourth Wall! Stop this and let us leave!"</p>
 <p class="orv_line">Along with 'Tsu-chuchut' noise, a faint, blurry silhouette appeared within the darkness. A boy Dokkaebi wearing a fedora was standing there. Its face was filled with indescribable sadness and purity.</p>
-<p class="orv_line">Han Sooyoung studied [The Fourth Wall] for a little while, before asking it. "…Is that your real appearance?"</p>
+<p class="orv_line">Han Sooyoung studied <strong>[The Fourth Wall]</strong> for a little while, before asking it. "…Is that your real appearance?"</p>
 <p class="orv_line">⸢T hat s ri ght⸥</p>
-<p class="orv_line">It no longer resembled the figure she had spied within her memories. Not a sign of a middle-aged Dokkaebi could be seen on that face. [The Fourth Wall] addressed her.</p>
+<p class="orv_line">It no longer resembled the figure she had spied within her memories. Not a sign of a middle-aged Dokkaebi could be seen on that face. <strong>[The Fourth Wall]</strong> addressed her.</p>
 <p class="orv_line">⸢A rea lly l o n g ti me ha s pas sed by⸥</p>
-<p class="orv_line">Han Sooyoung thought about something. Maybe [The Fourth Wall] was in the same boat as Kim Dokja. It too could have forgotten everything and gradually turned into a child while enduring the untold length of time.</p>
+<p class="orv_line">Han Sooyoung thought about something. Maybe <strong>[The Fourth Wall]</strong> was in the same boat as Kim Dokja. It too could have forgotten everything and gradually turned into a child while enduring the untold length of time.</p>
 <p class="orv_line">While fixing Kim Dokja's clothing, Han Sooyoung asked. "You were protecting Kim Dokja because of my order, weren't you?"</p>
 <p class="orv_line">⸢I th ink I w as⸥</p>
 <p class="orv_line">"You gave Kim Dokja the 'Ways of Survival' text files, right? You kept helping him out afterwards, too."</p>
-<p class="orv_line">[The Fourth Wall] didn't reply. No, it just stared at Kim Dokja with vague eyes of someone digging through very old memories.</p>
+<p class="orv_line"><strong>[The Fourth Wall]</strong> didn't reply. No, it just stared at Kim Dokja with vague eyes of someone digging through very old memories.</p>
 <p class="orv_line">Han Sooyoung's voice now took on the subtle hint of anger. "But, why did you let Kim Dokja end up in this state?"</p>
 <p class="orv_line">⸢…⸥</p>
 <p class="orv_line">"Say something! What were you even thinking to let…"</p>
 <p class="orv_line">⸢You don't know what the reader really wants.⸥</p>
-<p class="orv_line">[The Fourth Wall no longer stammered its words.]</p>
+<p class="orv_line"><strong>[The Fourth Wall no longer stammered its words.]</strong></p>
 <p class="orv_line">⸢You all truly, truly do not know anything.⸥</p>
 <p class="orv_line">"…We'll be taking Kim Dokja with us. We can't sit back and watch this guy live his life as the 'Oldest Dream'."</p>
-<p class="orv_line">At her attitude of willing to start a fight, [The Fourth Wall]'s brows quivered. But rather than Han Sooyoung clenching her fist in nervousness, Yoo Joonghyuk stepped forward, instead.</p>
+<p class="orv_line">At her attitude of willing to start a fight, <strong>[The Fourth Wall]</strong>'s brows quivered. But rather than Han Sooyoung clenching her fist in nervousness, Yoo Joonghyuk stepped forward, instead.</p>
 <p class="orv_line">"If we take him with us, will the position of the 'Oldest Dream' be left vacant?"</p>
 <p class="orv_line">Han Sooyoung's shoulders flinched.</p>
 <p class="orv_line">It wasn't as if she had never thought about that problem.</p>
@@ -239,12 +246,12 @@
 <p class="orv_line">"What the?! Hey! What bullshit are you spewing now?!"</p>
 <p class="orv_line">"I'm trying to say that I will become the new 'Oldest Dream'."</p>
 <p class="orv_line">"How can you pull that off when you don't even have an iota of imagination?! No, let me do it. I can do it so much better than this Kim Dokja here. That's why…"</p>
-<p class="orv_line">Han Sooyoung yapped on and on, even though she didn't really understand what her mouth was saying. She simply blurted out only with the aim of stopping this crazy idiot. And fortunately enough, [The Fourth Wall] wasn't Yoo Joonghyuk's ally in this case, either.</p>
+<p class="orv_line">Han Sooyoung yapped on and on, even though she didn't really understand what her mouth was saying. She simply blurted out only with the aim of stopping this crazy idiot. And fortunately enough, <strong>[The Fourth Wall]</strong> wasn't Yoo Joonghyuk's ally in this case, either.</p>
 <p class="orv_line">⸢Puppet of the 'Oldest Dream', you can't become the dream. Because you don't love this story.⸥</p>
 <p class="orv_line">"In that case, I must-"</p>
 <p class="orv_line">⸢It's the same story for you, Han Sooyoung.⸥</p>
 <p class="orv_line">"Then who's going to take over this guy's role? I'm telling you this right now, but we're definitely taking him with us, you hear? Even if it's you, you can't stop us."</p>
-<p class="orv_line">[The Fourth Wall] stared at Han Sooyoung and Yoo Joonghyuk for a little while.</p>
+<p class="orv_line"><strong>[The Fourth Wall]</strong> stared at Han Sooyoung and Yoo Joonghyuk for a little while.</p>
 <p class="orv_line">⸢Take him.⸥</p>
 <p class="orv_line">"What's that?"</p>
 <p class="orv_line">⸢You can just take him. Even if you take away 'that Kim Dokja', this universe won't be destroyed anymore.⸥</p>
@@ -263,7 +270,7 @@
 <p class="orv_line">In order to save this world, someone must become the 'Oldest Dream'. If Kim Dokja was saved, then someone else must replace him.</p>
 <p class="orv_line">Wouldn't he… Would someone like Kim Dokja really not know that?</p>
 <p class="orv_line">⸢You all have done something terribly stupid. The conclusion the reader wanted was the only conclusion. Why did you try to change it?⸥</p>
-<p class="orv_line">The expression of [The Fourth Wall] staring at her gave her the creeps. A negative emotion that was neither hatred or resentment, not even sadness, was now directed in her and Yoo Joonghyuk's direction.</p>
+<p class="orv_line">The expression of <strong>[The Fourth Wall]</strong> staring at her gave her the creeps. A negative emotion that was neither hatred or resentment, not even sadness, was now directed in her and Yoo Joonghyuk's direction.</p>
 <p class="orv_line">⸢You shouldn't have been greedy. No, y o u sh oul d've be en con te nt wi th 49% Kim Dok ja⸥</p>
 <p class="orv_line">Along with the voice gradually breaking apart, the surrounding time and space began to distort.</p>
 <p class="orv_line">⸢D id y o u re ally thi nk y o ur gro up w as spe cial? D id yo u hon es tly bel ieve th at a pro per con clusion wo uld wa it for y o u lot wh en y o u de str oyed the laws of th is uni ver se?⸥</p>
@@ -320,9 +327,9 @@
 <p class="orv_line">Shin Yoosung continued to shake her head in denial, saying this couldn't be it. Yoo Sangah cautiously wrapped her arm around the girl's shoulders and spoke.</p>
 <p class="orv_line">"Please be honest with us, Seolhwa-ssi."</p>
 <p class="orv_line">Lee Seolhwa dropped her head lower, and placed her hand on Kim Dokja's chest. When she did, a small piece of Story fragment floated up from his frail-looking chest. That was the last remaining Story of Kim Dokja.</p>
-<div class="orv_system"><p>[Constellation, 'Demon King of Salvation', has reached his new ■■.]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon King of Salvation', has reached his new ■■.</p></div>
 <p class="orv_line">His small Story glimmered like a very tiny phrase.</p>
-<div class="orv_system"><p>[Constellation Demon King of Salvation's ■■ is 'Epilogue'.]</p></div>
+<div class="orv_system"><p>Constellation Demon King of Salvation's ■■ is 'Epilogue'.</p></div>
 <p class="orv_line">⸢And so, they had reached the epilogue no one had written.⸥</p>
 <br>
 <hr>
@@ -331,18 +338,12 @@
             <a href="./ch_539"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_541">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="540" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="751" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="539" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="539" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

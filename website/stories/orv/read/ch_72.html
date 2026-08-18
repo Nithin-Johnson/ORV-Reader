@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 72: Ep. 15 – A Kingless World, II</title>
     <meta property="og:title" content="Ch 72: Ep. 15 – A Kingless World, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,45 +177,45 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00072.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 72: Ep. 15 – A Kingless World, II</h1></div>
 <p class="orv_line">There was the sound of thunder in the sky and it started to rain. Light rose from the Absolute Throne to touch the sky. Thick rain clouds swirled around this light. It was a sign of the fifth scenario, the Great Hole.</p>
 <p class="orv_line">The intermediate dokkaebi opened his mouth amidst the rain.</p>
-<div class="orv_constellation"><p>[…What did you say just now?]</p></div>
+<div class="orv_constellation"><p>…What did you say just now?</p></div>
 <p class="orv_line">"The throne, I won't accept it."</p>
-<div class="orv_constellation"><p>[I don't know why you're doing such a thing. Don't you think it will benefit you to gain more coins at this time? Didn't you just use a lot of coins? You should be rewarded. If you don't have the power of the Absolute Throne, the Seoul Dome will never survive the fifth scenario.]</p></div>
+<div class="orv_constellation"><p>I don't know why you're doing such a thing. Don't you think it will benefit you to gain more coins at this time? Didn't you just use a lot of coins? You should be rewarded. If you don't have the power of the Absolute Throne, the Seoul Dome will never survive the fifth scenario.</p></div>
 <p class="orv_line">The people in Gwanghwamun screamed at me once they heard the dokkaebi's words.</p>
 <p class="orv_line">"What? What are you thinking?"</p>
 <p class="orv_line">"Don't be stupid and sit down quickly!"</p>
 <p class="orv_line">"Damn, I will sit…!"</p>
 <p class="orv_line">The dokkaebi kept talking like he thought it was going his own way.</p>
-<div class="orv_constellation"><p>[That throne can give you what you want. Just sitting on the throne will build up your 'narrative' and the sponsor you have contracted with will rise. Don't you know what this means?]</p></div>
+<div class="orv_constellation"><p>That throne can give you what you want. Just sitting on the throne will build up your 'narrative' and the sponsor you have contracted with will rise. Don't you know what this means?</p></div>
 <p class="orv_line">In fact, I could hear the outcry of the constellations in my ears.</p>
-<div class="orv_system"><p>[The constellation 'Adventurer who Stands Up an Egg' wants to be your sponsor.]</p></div>
-<div class="orv_system"><p>[The constellation 'Seo Ae Il Pil' wants to be your sponsor.]</p></div>
+<div class="orv_system"><p>The constellation 'Adventurer who Stands Up an Egg' wants to be your sponsor.</p></div>
+<div class="orv_system"><p>The constellation 'Seo Ae Il Pil' wants to be your sponsor.</p></div>
 <p class="orv_line">·····.</p>
-<div class="orv_system"><p>[500 coins have been sponsored.]</p></div>
+<div class="orv_system"><p>500 coins have been sponsored.</p></div>
 <p class="orv_line">The intermediate dokkaebi continued to speak in a cold voice.</p>
-<div class="orv_constellation"><p>[I will warn you in advance. I'm not like the low level dokkaebis. Don't think that flimsy tricks will work on me.]</p></div>
+<div class="orv_constellation"><p>I will warn you in advance. I'm not like the low level dokkaebis. Don't think that flimsy tricks will work on me.</p></div>
 <p class="orv_line">I looked at the Absolute Throne. As the dokkaebi said, the fifth scenario would be difficult to clear without the Absolute Throne.</p>
 <p class="orv_line">However, I knew what the dokkaebi wasn't saying. If I used this 'Absolute Throne' once, I would never be able to reach the end of the scenarios. In the original work, Yoo Joonghyuk noticed this only at the 14th regression.</p>
 <p class="orv_line">The 'Absolute Throne' was such an item.</p>
@@ -223,7 +230,7 @@
 <p class="orv_line">Then I looked at the throne.</p>
 <p class="orv_line">"Thus, I will never sit on the Absolute Throne. But." I pulled out my blade. "I won't allow other people to sit on the throne."</p>
 <p class="orv_line">Once someone sat down, it meant that no one else could sit. The intermediate dokkaebi's cold eyes flashed.</p>
-<div class="orv_constellation"><p>[You should be careful. I'm not that patient…]</p></div>
+<div class="orv_constellation"><p>You should be careful. I'm not that patient…</p></div>
 <p class="orv_line">I continued to speak as I stared at the dokkaebi.</p>
 <p class="orv_line">"How long will you continue to be drawn helplessly into the dokkaebi's scenarios? Does anyone know what it means to sit on the Absolute Throne?"</p>
 <p class="orv_line">I knew how much the people who were once 'obedient' would pay to leave this obedience.</p>
@@ -231,15 +238,15 @@
 <p class="orv_line">There was an invisible rank among constellations.</p>
 <p class="orv_line">Just as some constellations watched the incarnations, other constellations watched the constellations. To be precise, the low constellations were the ones being watched.</p>
 <p class="orv_line">"But is it enough now? How long will you turn this land into a playground for unhappy guests?"</p>
-<div class="orv_system"><p>[The constellation 'One-eyed Maitreya' is immersed.]</p></div>
+<div class="orv_system"><p>The constellation 'One-eyed Maitreya' is immersed.</p></div>
 <p class="orv_line">"Working up to build up history to become a constellation and then building up narratives to become narrative-grade constellations… then what? The higher the sky, the brighter the star? How long will you continue using the descendants of this land for your own sake?"</p>
-<div class="orv_system"><p>[The constellation 'Slumbering Lady of Fine Brocade' is silent.]</p></div>
+<div class="orv_system"><p>The constellation 'Slumbering Lady of Fine Brocade' is silent.</p></div>
 <p class="orv_line">At this moment, the intermediate dokkaebi acted.</p>
-<div class="orv_constellation"><p>[I can't stand it any longer.]</p></div>
+<div class="orv_constellation"><p>I can't stand it any longer.</p></div>
 <p class="orv_line">A system message arrived at the same time.</p>
-<div class="orv_system"><p>[A new sub scenario has arrived!]</p></div>
+<div class="orv_system"><p>A new sub scenario has arrived!</p></div>
 <div class="orv_window">
-<h3 class="orv_window_title">[Sub Scenario – Forced Succession]</h3>
+<h3 class="orv_window_title">Sub Scenario – Forced Succession</h3>
 <p>Category: Sub</p>
 <p>Difficulty: B</p>
 <p>Clear Conditions: Suppress the incarnation Kim Dokja, who doesn't want to sit on the throne and place him on the throne.</p>
@@ -259,7 +266,7 @@
 <p class="orv_line">"Just this once, I will help you."</p>
 <p class="orv_line">"Your words are convincing."</p>
 <p class="orv_line">They were King of Beauty Min Jiwon and Maitreya King Cha Sangkyung. I didn't know which of my words had moved their hearts. However, it was clear that something had changed. Even so, it was only a handful.</p>
-<div class="orv_constellation"><p>[You are playing well… what are all of you doing? Pull him down now!]</p></div>
+<div class="orv_constellation"><p>You are playing well… what are all of you doing? Pull him down now!</p></div>
 <p class="orv_line">People started running towards the throne. Jung Heewon pushed through the people around me and asked, "Dokja-ssi, do you have an idea?"</p>
 <p class="orv_line">"Yes."</p>
 <p class="orv_line">"What should we do?"</p>
@@ -268,10 +275,10 @@
 <p class="orv_line">"The Four Yin Demonic Beheading Sword!"</p>
 <p class="orv_line">The S+ grade Four Yin Demonic Beheading Sword.</p>
 <p class="orv_line">However, it was an item that could be changed into a star relic if certain conditions were satisfied. It was because the Four Yin Demonic Beheading Sword was an item made with the soul of a constellation.</p>
-<div class="orv_system"><p>[Ganpyeongui's special option 'Echo of the Stars' has been activated.]</p></div>
-<div class="orv_system"><p>['Echo of the Stars' allows you to ask for the help of a constellation.]</p></div>
+<div class="orv_system"><p>Ganpyeongui's special option 'Echo of the Stars' has been activated.</p></div>
+<div class="orv_system"><p>'Echo of the Stars' allows you to ask for the help of a constellation.</p></div>
 <p class="orv_line">"I'll call a constellation."</p>
-<div class="orv_system"><p>[The great constellations hear your voice flowing through the stars.]</p></div>
+<div class="orv_system"><p>The great constellations hear your voice flowing through the stars.</p></div>
 <p class="orv_line">I called out to the constellations like I had memorized a spell.</p>
 <p class="orv_line">"I want the first star of the Big Dipper."</p>
 <p class="orv_line">The Greedy Wolf star (Dubhe).</p>
@@ -285,30 +292,30 @@
 <p class="orv_line">The Clean and Pure star (Alioth).</p>
 <p class="orv_line">"I want the sixth star of the Big Dipper."</p>
 <p class="orv_line">The Military Turn star (Mizar).</p>
-<div class="orv_system"><p>[The star navigation has begun.]</p></div>
-<div class="orv_system"><p>[The six constellations are looking at you.]</p></div>
+<div class="orv_system"><p>The star navigation has begun.</p></div>
+<div class="orv_system"><p>The six constellations are looking at you.</p></div>
 <p class="orv_line">The thousands of constellations disappeared and my mind became heavy like a crowded subway. I felt dizzy while blood flowed from my nose and ears. It was hard to even think. My brain became overloaded the moment I contacted six constellations at the same time. The Great Bear stars started talking.</p>
-<div class="orv_constellation"><p>[What are you thinking?]</p></div>
-<div class="orv_constellation"><p>[You called all of us.]</p></div>
-<div class="orv_constellation"><p>[Your mind will be completely destroyed.]</p></div>
-<div class="orv_constellation"><p>[Why call us?]</p></div>
-<div class="orv_constellation"><p>[Why don't you go the easy path…]</p></div>
-<div class="orv_constellation"><p>[Instead of the thorny path?]</p></div>
+<div class="orv_constellation"><p>What are you thinking?</p></div>
+<div class="orv_constellation"><p>You called all of us.</p></div>
+<div class="orv_constellation"><p>Your mind will be completely destroyed.</p></div>
+<div class="orv_constellation"><p>Why call us?</p></div>
+<div class="orv_constellation"><p>Why don't you go the easy path…</p></div>
+<div class="orv_constellation"><p>Instead of the thorny path?</p></div>
 <p class="orv_line">However, I didn't stop. Yes, one more constellation needed to be called if I wanted to use the Four Yin Demonic Beheading Sword. But there were no constellations left on the Sky Disc.</p>
-<div class="orv_system"><p>[You have exhausted the number of times that Ganpyeongui can be used.]</p></div>
+<div class="orv_system"><p>You have exhausted the number of times that Ganpyeongui can be used.</p></div>
 <p class="orv_line">I pulled out the Dragon Jar that I got from the Tyrant King and dissolved something in it.</p>
 <p class="orv_line">The 7 person dungeon, the dissolving jar. I put two items in the jar.</p>
 <p class="orv_line">"I will sacrifice the S-grade Three Ring Loop and the S-grade Ganpyeongui to call one more constellation."</p>
-<div class="orv_system"><p>[The 'Dissolve' power of the Dragon Jar has shown its strength.]</p></div>
-<div class="orv_system"><p>[The S-grade Three Ring Loop has disappeared as a sacrifice.]</p></div>
-<div class="orv_system"><p>[The S-grade Ganpyeongui has one more use.]</p></div>
+<div class="orv_system"><p>The 'Dissolve' power of the Dragon Jar has shown its strength.</p></div>
+<div class="orv_system"><p>The S-grade Three Ring Loop has disappeared as a sacrifice.</p></div>
+<div class="orv_system"><p>The S-grade Ganpyeongui has one more use.</p></div>
 <p class="orv_line">I once again used Ganpyeongui and called one last constellation.</p>
 <p class="orv_line">"I want the seventh star of the Big Dipper."</p>
 <p class="orv_line">The Broken Army star (Alkaid).</p>
 <p class="orv_line">Seven stars filled the air. The seven stars that made up the Big Dipper were all gathered. At the same time, the seven stars spoke to me.</p>
-<div class="orv_constellation"><p>[What do you want from us?]</p></div>
+<div class="orv_constellation"><p>What do you want from us?</p></div>
 <p class="orv_line">"I want to cut off the signs of the constellations. Lend me your sword."</p>
-<div class="orv_constellation"><p>[…Do you know what this means?]</p></div>
+<div class="orv_constellation"><p>…Do you know what this means?</p></div>
 <p class="orv_line">"I know."</p>
 <p class="orv_line">I did this despite being well aware of the risk.</p>
 <p class="orv_line">The final reward of the fourth scenario was the Absolute Throne.</p>
@@ -316,18 +323,18 @@
 <p class="orv_line">It would be very convenient if I got the throne. I would be able to put restrictions on Yoo Joonghyuk and the enemies threatening me would disappear.</p>
 <p class="orv_line">But Seoul would surely be eliminated. It would be a complete destruction without any salvation or miracles.</p>
 <p class="orv_line">It was the price to be paid for borrowing the power of the throne. In order to obtain the ending I wanted, no one could take this throne.</p>
-<div class="orv_constellation"><p>[Even the heavenly constellations are afraid of the founder of the throne.]</p></div>
-<div class="orv_constellation"><p>[But you, a human, wants to challenge the owner of this thing?]</p></div>
+<div class="orv_constellation"><p>Even the heavenly constellations are afraid of the founder of the throne.</p></div>
+<div class="orv_constellation"><p>But you, a human, wants to challenge the owner of this thing?</p></div>
 <p class="orv_line">"I can do it with your help. And I'm not fighting against the owner. I just want to cut the connection between the owner and this thing."</p>
-<div class="orv_constellation"><p>[It is likely that you can't afford it.]</p></div>
-<div class="orv_constellation"><p>[You will die.]</p></div>
+<div class="orv_constellation"><p>It is likely that you can't afford it.</p></div>
+<div class="orv_constellation"><p>You will die.</p></div>
 <p class="orv_line">"It is something that I've decided. Then I will start now."</p>
 <p class="orv_line">The seven stars were silent. Some time passed. The Big Dipper shone brightly and their signs were engraved onto the sword.</p>
-<div class="orv_constellation"><p>[I shall respect your will.]</p></div>
-<div class="orv_constellation"><p>[Even if you die here.]</p></div>
-<div class="orv_constellation"><p>[We will remember you.]</p></div>
+<div class="orv_constellation"><p>I shall respect your will.</p></div>
+<div class="orv_constellation"><p>Even if you die here.</p></div>
+<div class="orv_constellation"><p>We will remember you.</p></div>
 <p class="orv_line">A dazzling light wrapped around the Four Yin Demonic Beheading Sword and it started to burn with bright flames.</p>
-<div class="orv_system"><p>[The S+ grade Four Yin Demonic Beheading Sword has evolved into the star relic 'Four Yin Demonic Beheading Sword'.]</p></div>
+<div class="orv_system"><p>The S+ grade Four Yin Demonic Beheading Sword has evolved into the star relic 'Four Yin Demonic Beheading Sword'.</p></div>
 <p class="orv_line">The star relic Four Yin Demonic Beheading Sword was originally a ceremonial sword. It was a sword to cut off evil energy and prevent disasters.</p>
 <p class="orv_line">I swung the sword towards the Absolute Throne. There was a loud sound and fire flared.</p>
 <div class="orv_image"><img src="../../../assets/images/072 - I swung the sword towards the Absolute Throne. There was a loud sound and fire flared.jpg" alt="" loading="lazy"></div>
@@ -337,46 +344,46 @@
 <p class="orv_line">As if it started to notice something, an ominous black light floated above the Absolute Throne. I swung it a few more times and the Four Yin Demonic Beheading Sword started to collapse. Now I had to believe in the Big Dipper stars. Yoo Sangah cried out, "Dokja-ssi! Quickly!"</p>
 <p class="orv_line">I wielded the sword like a madman. I ignored the breaking blade and continued to hit the throne. Sparks flashed and the blade broke.</p>
 <p class="orv_line">Then finally.</p>
-<div class="orv_system"><p>[The constellation linked to the star relic 'Absolute Throne' has disappeared.]</p></div>
-<div class="orv_system"><p>[The 'Unknown God' has noticed a change in this world.]</p></div>
+<div class="orv_system"><p>The constellation linked to the star relic 'Absolute Throne' has disappeared.</p></div>
+<div class="orv_system"><p>The 'Unknown God' has noticed a change in this world.</p></div>
 <p class="orv_line">The Absolute Throne became an ordinary chair and lost its light. The intermediate dokkaebi's angry voice was heard.</p>
-<div class="orv_constellation"><p>[You lowlifes can't grasp who you are dealing with…!]</p></div>
-<div class="orv_system"><p>[The sub scenario has ended.]</p></div>
+<div class="orv_constellation"><p>You lowlifes can't grasp who you are dealing with…!</p></div>
+<div class="orv_system"><p>The sub scenario has ended.</p></div>
 <p class="orv_line">People stopped moving. The scenario was over so they didn't have to continue. The Big Dipper stars told me.</p>
-<div class="orv_system"><p>[Incarnation, prepare for the flooding of probabilities.]</p></div>
+<div class="orv_system"><p>Incarnation, prepare for the flooding of probabilities.</p></div>
 <p class="orv_line">As soon as I heard the voice, blood poured from my mouth.</p>
 <p class="orv_line">It felt like something was pulling at my presence. An enormous power that seemed to tear at my flesh surrounded me. I struggled to regain my mind. It was going to be okay.</p>
 <p class="orv_line">The 'probability' would become 'plausibility'. I tried my best to make everything plausible. Thus, I could overcome this.</p>
 <p class="orv_line">I barely held onto consciousness. Then a star in the distant night sky shone quietly.</p>
-<div class="orv_system"><p>[The constellation 'Maritime War God' is looking at you.]</p></div>
+<div class="orv_system"><p>The constellation 'Maritime War God' is looking at you.</p></div>
 <p class="orv_line">It was a calm, lonely but gentle gaze.</p>
-<div class="orv_system"><p>[The constellation 'Bald General of Justice' is looking at you.]</p></div>
+<div class="orv_system"><p>The constellation 'Bald General of Justice' is looking at you.</p></div>
 <p class="orv_line">Then two.</p>
-<div class="orv_system"><p>[The constellation 'Last Hero of Hwangsanbeol' is looking at you.]</p></div>
+<div class="orv_system"><p>The constellation 'Last Hero of Hwangsanbeol' is looking at you.</p></div>
 <p class="orv_line">Three.</p>
-<div class="orv_system"><p>[The constellation 'Slumbering Lady of Fine Brocade' is looking at you.]</p></div>
+<div class="orv_system"><p>The constellation 'Slumbering Lady of Fine Brocade' is looking at you.</p></div>
 <p class="orv_line">·····.</p>
 <p class="orv_line">The intermediate dokkaebi called out when he saw the messages from the constellations.</p>
-<div class="orv_constellation"><p>[Why…?]</p></div>
+<div class="orv_constellation"><p>Why…?</p></div>
 <p class="orv_line">Every time a star was added, my pain diminished a little bit. I realized that the constellations were sharing the 'probabilities' that I had to bear. The 'story that isn't plausible' became a 'plausible story' with the consent of many stars. Numerous stars were wrapping me in their light. The Big Dippers also lent me their strength.</p>
-<div class="orv_constellation"><p>[Is this the story that you wanted to show?]</p></div>
+<div class="orv_constellation"><p>Is this the story that you wanted to show?</p></div>
 <p class="orv_line">I wanted to answer but I didn't have the power.</p>
-<div class="orv_constellation"><p>[We will watch you, king of the world without kings.]</p></div>
+<div class="orv_constellation"><p>We will watch you, king of the world without kings.</p></div>
 <p class="orv_line">The chaotic Seoul night sky. I looked at the stars that sent me light.</p>
-<div class="orv_system"><p>[The constellation 'King Heungmu the Great' is looking at you.]</p></div>
-<div class="orv_system"><p>[The constellation 'One-eyed Maitreya' is looking at you.]</p></div>
+<div class="orv_system"><p>The constellation 'King Heungmu the Great' is looking at you.</p></div>
+<div class="orv_system"><p>The constellation 'One-eyed Maitreya' is looking at you.</p></div>
 <p class="orv_line">·····.</p>
 <p class="orv_line">All the historical-grade constellations of Seoul were shining towards me. There were many stars. Still, it wasn't enough to overturn the dark night sky.</p>
 <p class="orv_line">I looked up at the turbulent clouds that filled the Great Hole.</p>
-<div class="orv_system"><p>[The fourth scenario is forcibly ended.]</p></div>
-<div class="orv_system"><p>[There was an unscheduled incident so it will take time to settle the scenario.]</p></div>
+<div class="orv_system"><p>The fourth scenario is forcibly ended.</p></div>
+<div class="orv_system"><p>There was an unscheduled incident so it will take time to settle the scenario.</p></div>
 <p class="orv_line">I wiped the blood pouring from my nose and the intermediate dokkaebi approached.</p>
-<div class="orv_constellation"><p>[You have made the worst choice. You will regret what you did today for the rest of your life. I will make sure of it.]</p></div>
+<div class="orv_constellation"><p>You have made the worst choice. You will regret what you did today for the rest of your life. I will make sure of it.</p></div>
 <p class="orv_line">I laughed as my vision blurred. The dokkaebi's words meant that I won the game.</p>
-<div class="orv_system"><p>[You have accomplished a non-existent achievement.]</p></div>
-<div class="orv_system"><p>[Your new narrative is created.]</p></div>
-<div class="orv_system"><p>[The story 'King of a Kingless World' has been born.]</p></div>
-<div class="orv_system"><p>[You have obtained the possibility of a stigma.]</p></div>
+<div class="orv_system"><p>You have accomplished a non-existent achievement.</p></div>
+<div class="orv_system"><p>Your new narrative is created.</p></div>
+<div class="orv_system"><p>The story 'King of a Kingless World' has been born.</p></div>
+<div class="orv_system"><p>You have obtained the possibility of a stigma.</p></div>
 <p class="orv_line">I didn't have a next 'regression'. I would reach the end of the story in this world.</p>
 <br>
 <hr>
@@ -385,18 +392,12 @@
             <a href="./ch_71"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_73">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="72" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="104" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="71" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="71" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

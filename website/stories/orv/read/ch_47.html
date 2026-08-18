@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 47: Ep. 10 – Future War, V</title>
     <meta property="og:title" content="Ch 47: Ep. 10 – Future War, V" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00047.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 47: Ep. 10 – Future War, V</h1></div>
 <p class="orv_line">After coming down from the theater, I headed straight to Myeongdong Station with Lee Hyunsung and Yoo Sangah. Dongmyo Station was important but there was something to be done first.</p>
@@ -204,19 +211,19 @@
 <p class="orv_line">"I'm not sure."</p>
 <p class="orv_line">"Even Dokja-ssi doesn't know…"</p>
 <p class="orv_line">Lee Hyunsung gulped nervously. Fortunately, the flag holder of Myeongdong Station was empty.</p>
-<div class="orv_system"><p>[Currently there is no group occupying Myeongdong Station.]</p></div>
-<div class="orv_system"><p>[Are you sure you want to take over the station?]</p></div>
+<div class="orv_system"><p>Currently there is no group occupying Myeongdong Station.</p></div>
+<div class="orv_system"><p>Are you sure you want to take over the station?</p></div>
 <p class="orv_line">I plugged the flag into the flag holder and pulled it out again. Then a flag that was the same as mine appeared in the flag holder.</p>
-<div class="orv_system"><p>[You have occupied Myeongdong Station.]</p></div>
-<div class="orv_system"><p>[A station that has been occupied can't be taken from you unless the 'main base' or flag is taken away.]</p></div>
-<div class="orv_system"><p>[Currently Occupied: Chungmuro (Main Base), Myeongdong]</p></div>
-<div class="orv_system"><p>[The achievement points of the red flag are rising.]</p></div>
+<div class="orv_system"><p>You have occupied Myeongdong Station.</p></div>
+<div class="orv_system"><p>A station that has been occupied can't be taken from you unless the 'main base' or flag is taken away.</p></div>
+<div class="orv_system"><p>Currently Occupied: Chungmuro (Main Base), Myeongdong</p></div>
+<div class="orv_system"><p>The achievement points of the red flag are rising.</p></div>
 <p class="orv_line">The red colour of the flag turned darker.</p>
-<div class="orv_system"><p>[Your influence has expanded by taking over a new station.]</p></div>
-<div class="orv_system"><p>[The hidden scenario has arrived!]</p></div>
-<div class="orv_system"><p>[The King's Road has begun!]</p></div>
+<div class="orv_system"><p>Your influence has expanded by taking over a new station.</p></div>
+<div class="orv_system"><p>The hidden scenario has arrived!</p></div>
+<div class="orv_system"><p>The King's Road has begun!</p></div>
 <div class="orv_window">
-<h3 class="orv_window_title">[Hidden Scenario – King's Road]</h3>
+<h3 class="orv_window_title">Hidden Scenario – King's Road</h3>
 <p>Category: Hidden</p>
 <p>Difficulty: A</p>
 <p>Clear Conditions: Take over a minimum of 10 stations within the time limit.</p>
@@ -226,7 +233,7 @@
 </div>
 <p class="orv_line">I finally arrived at the terrible hidden scenario. Once I started this quest, I couldn't turn back. There were only two fates for a king.</p>
 <p class="orv_line">Become a king or die.</p>
-<div class="orv_system"><p>[The new king candidate has started to walk along his road!]</p></div>
+<div class="orv_system"><p>The new king candidate has started to walk along his road!</p></div>
 <p class="orv_line">From now on, it was the full-fledge flag struggle.</p>
 <br>
 <hr>
@@ -267,10 +274,10 @@
 <p class="orv_line">"Okay, I can trust it if it is Yoo Sangah."</p>
 <p class="orv_line">"King… if you wish then do so…"</p>
 <p class="orv_line">I glared at Jung Heewon. Did she think that was funny right now?</p>
-<div class="orv_system"><p>[You are using the unique permissions of a representative.]</p></div>
-<div class="orv_system"><p>[Chungmuro Station's representative, Kim Dokja is transferring some of his authority to group member 'Yoo Sangah'.]</p></div>
-<div class="orv_system"><p>[Group member 'Yoo Sangah' has become the deputy of Chungmuro Station.]</p></div>
-<div class="orv_system"><p>[In the future, group member 'Yoo Sangah' can deal out punishments on behalf of the representative.]</p></div>
+<div class="orv_system"><p>You are using the unique permissions of a representative.</p></div>
+<div class="orv_system"><p>Chungmuro Station's representative, Kim Dokja is transferring some of his authority to group member 'Yoo Sangah'.</p></div>
+<div class="orv_system"><p>Group member 'Yoo Sangah' has become the deputy of Chungmuro Station.</p></div>
+<div class="orv_system"><p>In the future, group member 'Yoo Sangah' can deal out punishments on behalf of the representative.</p></div>
 <p class="orv_line">Yoo Sangah looked at me with stunned eyes and stuttered. She looked terrified.</p>
 <p class="orv_line">"G-Giving, giving this position to me…"</p>
 <p class="orv_line">"I will leave it to Yoo Sangah-ssi."</p>
@@ -285,7 +292,7 @@
 <p class="orv_line">We had to pass three stops before arriving at Dongmyo. We moved with the fainted Kang Ilhun. Honestly, taking this guy was a burden but I needed him to identify the faces. When I looked back at Chungmuro, I could hear Yoo Sangah's voice.</p>
 <p class="orv_line">"Everyone, please gather!"</p>
 <p class="orv_line">As I expected, Yoo Sangah worked harder in the shadows. The people were already organized and were receiving their orders. Sentries were set up and people were put in charge of different areas. Some of the landlords said they wouldn't listen to Yoo Sangah but…</p>
-<div class="orv_system"><p>[Chungmuro Station's deputy, Yoo Sangah has used the punishment.]</p></div>
+<div class="orv_system"><p>Chungmuro Station's deputy, Yoo Sangah has used the punishment.</p></div>
 <p class="orv_line">I vaguely heard someone moaning.</p>
 <p class="orv_line">…Was this okay? Well, it should be fine.</p>
 <p class="orv_line">Jung Heewon looked at my face and said, "Good job. I felt that Yoo Sangah had been a bit depressed."</p>
@@ -328,8 +335,8 @@
 <p class="orv_line">We nervously stuck to the tunnel wall and looked around. It was in case troops were waiting. But this worry was pointless. Jung Heewon muttered.</p>
 <p class="orv_line">"It is strange. There are no sentries."</p>
 <p class="orv_line">The fact that there was no guards while Struggle for the Flag was ongoing meant that the station had already been eaten by another group. Once we confirmed this, we immediately approached the flag holder.</p>
-<div class="orv_system"><p>[The station has already been occupied by 'Dongmyo Station'.]</p></div>
-<div class="orv_system"><p>[If you want to occupy the station, take the flag of Dongmyo Station or occupy its flag holder.]</p></div>
+<div class="orv_system"><p>The station has already been occupied by 'Dongmyo Station'.</p></div>
+<div class="orv_system"><p>If you want to occupy the station, take the flag of Dongmyo Station or occupy its flag holder.</p></div>
 <p class="orv_line">It was as expected.</p>
 <p class="orv_line">Then Kang Ilhun's body twitched. His body was shaking like he was having seizures and his condition was strange. I released the thread blocking his mouth and Kang Ilhun shouted.</p>
 <p class="orv_line">"N-No…!"</p>
@@ -337,7 +344,7 @@
 <p class="orv_line">"D-Dongdaemun… Dongdaemun Station…!"</p>
 <p class="orv_line">Saliva spilled from Kang Ilhun's mouth as he stuttered. I felt something and unintentionally put a hand on his shoulder.</p>
 <p class="orv_line">Then.</p>
-<div class="orv_system"><p>[The character Kang Ilhun is now a wanderer.]</p></div>
+<div class="orv_system"><p>The character Kang Ilhun is now a wanderer.</p></div>
 <p class="orv_line">It was evident that Kang Ilhun's affiliation to 'Dongdaemun' had changed. Jung Heewon asked, "What is happening?"</p>
 <p class="orv_line">"It seems that Dongdaemun Station has been taken over."</p>
 <p class="orv_line">"…Huh?"</p>
@@ -354,18 +361,18 @@
 <p class="orv_line">The man in the centre of the group spoke to us first. The man had a slim build and wore all types of items on his arms and neck.</p>
 <p class="orv_line">"Eh, Kang Ilhun-ssi? Geez, you brought a needless load of crap to me."</p>
 <p class="orv_line">Kang Ilhun was shaking and he fainted with foam around his mouth. I wondered, perhaps this guy?</p>
-<div class="orv_system"><p>[The exclusive skill, Character List is activated.]</p></div>
+<div class="orv_system"><p>The exclusive skill, Character List is activated.</p></div>
 <p class="orv_line">A moment later, amazing messages were heard.</p>
-<div class="orv_system"><p>[The information of this person can't be read in 'Character List'.]</p></div>
-<div class="orv_system"><p>[This person isn't registered in 'Character List'.]</p></div>
+<div class="orv_system"><p>The information of this person can't be read in 'Character List'.</p></div>
+<div class="orv_system"><p>This person isn't registered in 'Character List'.</p></div>
 <p class="orv_line">Look at this?</p>
 <p class="orv_line">The man looked at us. "Is there going to be a self-introduction? Or…"</p>
 <p class="orv_line">The group of men simultaneously pulled out weapons.</p>
 <p class="orv_line">I took the lead to reply. "We are from Chungmuro."</p>
 <p class="orv_line">"Chungmuro?"</p>
 <p class="orv_line">At this moment, sparks popped in the air.</p>
-<div class="orv_system"><p>[Someone is using Explore Attribute on you.]</p></div>
-<div class="orv_system"><p>[The exclusive skill Fourth Wall has blocked Explore Attribute!]</p></div>
+<div class="orv_system"><p>Someone is using Explore Attribute on you.</p></div>
+<div class="orv_system"><p>The exclusive skill Fourth Wall has blocked Explore Attribute!</p></div>
 <p class="orv_line">The man stumbled like he had been shocked. He hesitated for a moment before turning bewildered eyes towards me.</p>
 <p class="orv_line">"…I'm sorry, what is your name?"</p>
 <p class="orv_line">I glanced at Jung Heewon and Lee Hyunsung once. Then I smiled and said towards the man. I spoke in my coldest and heaviest voice.</p>
@@ -377,18 +384,12 @@
             <a href="./ch_46"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_48">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="47" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="60" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="46" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="46" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

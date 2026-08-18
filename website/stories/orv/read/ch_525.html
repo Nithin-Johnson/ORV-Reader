@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 525: Epilogue 1 - The World of Zero, IX</title>
     <meta property="og:title" content="Ch 525: Epilogue 1 - The World of Zero, IX" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,31 +177,31 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00525.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 525: Epilogue 1 - The World of Zero, IX</h1></div>
 <p class="orv_line">Yoo Joonghyuk planted his sword on the ground as he wobbled. His irises were becoming translucent next. His eyes, exhausted from fighting a lengthy battle, were losing their sights.</p>
 <p class="orv_line">"If I choose you as my Constellation sponsor, will I get to finally meet you?"</p>
-<div class="orv_system"><p>[Constellation, 'Demon King of Salvation', is shaking his head.]</p></div>
-<p class="orv_line">"Just where are you exactly? All the stars in &lt;Star Stream&gt; have fallen, so from where are you watching over me?" Yoo Joonghyuk continued to mutter out. "No, wait. I know the truth already. You are… probably beyond that [Wall], aren't you."</p>
+<div class="orv_system"><p>Constellation, 'Demon King of Salvation', is shaking his head.</p></div>
+<p class="orv_line">"Just where are you exactly? All the stars in &lt;Star Stream&gt; have fallen, so from where are you watching over me?" Yoo Joonghyuk continued to mutter out. "No, wait. I know the truth already. You are… probably beyond that <strong>[Wall]</strong>, aren't you."</p>
 <p class="orv_line">I couldn't say anything. I didn't expect the 0th turn's Yoo Joonghyuk to be able to catch onto that. He continued to speak in the meantime.</p>
 <p class="orv_line">"Something felt off to me about this world."</p>
 <p class="orv_line">It was my first time hearing such a shrewd tone of voice coming from him.</p>
@@ -203,37 +210,37 @@
 <p class="orv_line">"Without any memories of my childhood, I was suddenly cast into this world. I wandered around an illegal work site, and through sheer luck, got spotted by the director, and thus became a pro gamer. But then out of the blue, someone abandoned a child on my doorstep. A child, supposedly my younger sister."</p>
 <p class="orv_line">A conveniently-crafted life, a series of adversities created solely to become a tragedy later.</p>
 <p class="orv_line">"Once, I searched for my parents. However, no matter how hard I searched, I couldn't find them. Even the professionals that could unearth the president's hidden illegitimate child couldn't find my parents. It was as if such things didn't exist in this world, to begin with."</p>
-<div class="orv_system"><p>[Constellation, 'Demon King of Salvation', is…]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon King of Salvation', is…</p></div>
 <p class="orv_line">"So I ask you, 'Demon King of Salvation'. Who am I?"</p>
 <p class="orv_line">My heart was in pain. The fact that Yoo Joonghyuk had eventually reached that question was endlessly tormenting me.</p>
 <p class="orv_line">I needed to say something. Anything…</p>
 <p class="orv_line">"Does the secret of this world lie beyond the wall, where you are?"</p>
-<div class="orv_system"><p>[Constellation, 'Demon King of Salvation', asks you if you're not happy currently.]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon King of Salvation', asks you if you're not happy currently.</p></div>
 <p class="orv_line">"I am happy," he replied without a shred of hesitation. "And that's why I'm even more curious about what lies beyond the wall."</p>
-<div class="orv_system"><p>[Constellation, 'Demon King of Salvation', is…]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon King of Salvation', is…</p></div>
 <p class="orv_line">"I'm curious about the reason behind all the goodwill you've shown me. I'm also curious about the meaning of my life, where I was born, and why I had to come here. If I had one more chance…"</p>
 <p class="orv_line">From somewhere, sounds similar to the ticking clock hands could be heard.</p>
 <p class="orv_line">⸢Kim Dok ja⸥</p>
-<p class="orv_line">I couldn't show Yoo Joonghyuk what's beyond the [Wall]. Even if I was the 'Oldest Dream', that was still impossible.</p>
+<p class="orv_line">I couldn't show Yoo Joonghyuk what's beyond the <strong>[Wall]</strong>. Even if I was the 'Oldest Dream', that was still impossible.</p>
 <p class="orv_line">Yoo Joonghyuk continued on. "You told me this once upon a time. If I sign the contract with you, you will grant any one wish of mine. Back then, I didn't accept your offer because I was suspicious of you. However, if it's not too late…"</p>
 <p class="orv_line">His fingers hovered in the air, searching for a log message that reached him in the distant past.</p>
-<div class="orv_system"><p>[Constellation, 'Demon King of Salvation', wishes to become your Constellation sponsor.]</p></div>
-<div class="orv_system"><p>[Will you accept the offer?]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon King of Salvation', wishes to become your Constellation sponsor.</p></div>
+<div class="orv_system"><p>Will you accept the offer?</p></div>
 <p class="orv_line">"I shall accept it now."</p>
 <p class="orv_line">Dizziness rushed in and the shaking of my surroundings worsened.</p>
-<p class="orv_line">I called out to [The Fourth Wall].</p>
+<p class="orv_line">I called out to <strong>[The Fourth Wall]</strong>.</p>
 <p class="orv_line">'The Fourth Wall'.</p>
 <p class="orv_line">⸢Y ou c a n t⸥</p>
 <p class="orv_line">It already knew what I was going to say.</p>
-<p class="orv_line">The prerequisite condition needed for Yoo Joonghyuk to cross the [Final Wall] was to gather all the 'fragments of the Final Wall'.</p>
-<p class="orv_line">However, [The Fourth Wall] had no intentions of transferring to Yoo Joonghyuk.</p>
+<p class="orv_line">The prerequisite condition needed for Yoo Joonghyuk to cross the <strong>[Final Wall]</strong> was to gather all the 'fragments of the Final Wall'.</p>
+<p class="orv_line">However, <strong>[The Fourth Wall]</strong> had no intentions of transferring to Yoo Joonghyuk.</p>
 <p class="orv_line">I gritted my teeth and sent a message out.</p>
-<div class="orv_system"><p>[Constellation, 'Demon King of Salvation', says that wish can't be granted.]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon King of Salvation', says that wish can't be granted.</p></div>
 <p class="orv_line">"Why not?"</p>
-<div class="orv_system"><p>[Constellation, 'Demon King of Salvation', says that it is a truly arduous path, that's why.]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon King of Salvation', says that it is a truly arduous path, that's why.</p></div>
 <p class="orv_line">"An arduous path?"</p>
-<p class="orv_line">If I couldn't transfer [The Fourth Wall] to him, then there was only one option for him to see the conclusion.</p>
-<div class="orv_system"><p>[The constellation 'Demon King of Salvation', says that if you wish to cross the Wall, you must 'regress' first.]</p></div>
+<p class="orv_line">If I couldn't transfer <strong>[The Fourth Wall]</strong> to him, then there was only one option for him to see the conclusion.</p>
+<div class="orv_system"><p>The constellation 'Demon King of Salvation', says that if you wish to cross the Wall, you must 'regress' first.</p></div>
 <p class="orv_line">"Regress?"</p>
 <p class="orv_line">Along with the 'Tsu-chuchuchut!' noise, my entire figure was dyed in the sparks of Probability.</p>
 <p class="orv_line">The world-line was telling me this.</p>
@@ -241,13 +248,13 @@
 <p class="orv_line">Despite that, I bit down hard on my lip and shook off the world-line's opposition. Even if I had to sacrifice much more Probability, I wanted to show him the truth.</p>
 <p class="orv_line">⸢1 8 6 4⸥</p>
 <p class="orv_line">"1864? What's that supposed to mean?"</p>
-<div class="orv_system"><p>[Constellation, 'Demon King of Salvation', says that is the number of times you must regress before you can witness the conclusion.]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon King of Salvation', says that is the number of times you must regress before you can witness the conclusion.</p></div>
 <p class="orv_line">Memories from the life I had lived became a Story and began unfolding next.</p>
-<div class="orv_system"><p>[Constellation, 'Demon King of Salvation', says that even if you manage to live all those regression turns, the odds of you successfully seeing the conclusion will be extremely low.]</p></div>
+<div class="orv_system"><p>Constellation, 'Demon King of Salvation', says that even if you manage to live all those regression turns, the odds of you successfully seeing the conclusion will be extremely low.</p></div>
 <p class="orv_line">Not only that, the current Yoo Joonghyuk had broken free from the 'original world-line'.</p>
 <p class="orv_line">He was no longer Yoo Joonghyuk from the original novel.</p>
 <p class="orv_line">Time-lines had branched off, and the 'future' no longer existed.</p>
-<p class="orv_line">Even if he did reach the 1864th turn, there was no guarantee that he'd meet 'Kim Dokja' in possession of [The Fourth Wall]…</p>
+<p class="orv_line">Even if he did reach the 1864th turn, there was no guarantee that he'd meet 'Kim Dokja' in possession of <strong>[The Fourth Wall]</strong>…</p>
 <p class="orv_line">⸢Th ere i s⸥</p>
 <p class="orv_line">What?</p>
 <p class="orv_line">⸢Er ase the me mo ries of th is t u r n⸥</p>
@@ -259,27 +266,27 @@
 <p class="orv_line">⸢Why are y ou de ci ding th at?⸥</p>
 <p class="orv_line">I slowly raised my head. Yoo Joonghyuk was still talking to me.</p>
 <p class="orv_line">"I don't care even if the odds are low."</p>
-<div class="orv_system"><p>[Incarnation, 'Yoo Joonghyuk', has accepted your offer.]</p></div>
+<div class="orv_system"><p>Incarnation, 'Yoo Joonghyuk', has accepted your offer.</p></div>
 <p class="orv_line">The Story began its storytelling, and the starlights seemed to extend even further.</p>
-<div class="orv_system"><p>[Your Incarnation is waiting for you to say something.]</p></div>
+<div class="orv_system"><p>Your Incarnation is waiting for you to say something.</p></div>
 <p class="orv_line">I remained silent for a long time. And eventually, I came to a decision.</p>
 <p class="orv_line">I had no choice but to tell him.</p>
 <p class="orv_line">I slowly regulated my breath and opened my mouth.</p>
-<div class="orv_constellation"><p>[Yoo Joonghyuk.]</p></div>
+<div class="orv_constellation"><p>Yoo Joonghyuk.</p></div>
 <p class="orv_line">Been a while since I spoke in my true voice. An incredible storm of Sparks raged on around me. I tried to suppress the incoming waves as much as possible, yet it was still this bad.</p>
 <p class="orv_line">Yoo Joonghyuk opened his eyes wide and looked up at the sky. "Was that your real voice?"</p>
-<div class="orv_constellation"><p>[That's right.]</p></div>
+<div class="orv_constellation"><p>That's right.</p></div>
 <p class="orv_line">"…I can hear it surprisingly well."</p>
 <p class="orv_line">Yoo Joonghyuk, going slowly deaf, muttered softly. A faint crease spread over the old man Yoo Joonghyuk's expression. I pretended to not see that and spoke.</p>
-<div class="orv_constellation"><p>[I can send you back. However, if that happens, I won't be able to help you from the next turn onwards.]</p></div>
+<div class="orv_constellation"><p>I can send you back. However, if that happens, I won't be able to help you from the next turn onwards.</p></div>
 <p class="orv_line">The only way to make him reject the offer was to tell him the truth.</p>
-<div class="orv_constellation"><p>[You'll have to use nothing but your own powers to break past the scenarios. Those scenarios will be far worse than you can ever imagine, and… And, you might end up encountering something you didn't want to at the conclusion you'd eventually reach.]</p></div>
+<div class="orv_constellation"><p>You'll have to use nothing but your own powers to break past the scenarios. Those scenarios will be far worse than you can ever imagine, and… And, you might end up encountering something you didn't want to at the conclusion you'd eventually reach.</p></div>
 <p class="orv_line">I thought back to Yoo Joonghyuk. I thought back to the sorrows of the 3rd turn, the anguish of the 4th, and the despair of the 'Secretive Plotter'.</p>
-<div class="orv_constellation"><p>[And if you do choose 'regression', then… You will lose the majority of your memories as you cross over.]</p></div>
+<div class="orv_constellation"><p>And if you do choose 'regression', then… You will lose the majority of your memories as you cross over.</p></div>
 <p class="orv_line">Those words caused the soft sounds of Yoo Joonghyuk sucking in his breath to come out. No matter how resolute his determination might be, this one should be a hard pill to swallow.</p>
-<div class="orv_system"><p>[Only the tiniest fragmented memories from the scenarios will remain in you.]</p></div>
+<div class="orv_system"><p>Only the tiniest fragmented memories from the scenarios will remain in you.</p></div>
 <p class="orv_line">"…"</p>
-<div class="orv_constellation"><p>[Meaning, everything precious to you will disappear. Lee Seolhwa you remember, Lee Hyunsung, Lee Jihye, all of them will…]</p></div>
+<div class="orv_constellation"><p>Meaning, everything precious to you will disappear. Lee Seolhwa you remember, Lee Hyunsung, Lee Jihye, all of them will…</p></div>
 <p class="orv_line">"Just because I will forget about them, that doesn't mean they'll suddenly stop existing."</p>
 <p class="orv_line">I shut my mouth then.</p>
 <p class="orv_line">"They definitely continue to live in this world."</p>
@@ -288,50 +295,50 @@
 <p class="orv_line">It felt as if a gigantic hand of fate was pouncing upon me.</p>
 <p class="orv_line">⸢At that moment, Kim Dokja realized that this was the true completion of the 0th turn.⸥</p>
 <p class="orv_line">The reason why there was no trace of the 'Oldest Dream' in the 0th turn. The reason why, despite that fact, Yoo Joonghyuk still managed to cross over to the first and then, to the second regression turns. Maybe it was…</p>
-<div class="orv_constellation"><p>[…You dumb bastard.]</p></div>
+<div class="orv_constellation"><p>…You dumb bastard.</p></div>
 <p class="orv_line">I gathered my hands and used the power to manipulate the dream gathered in me.</p>
 <p class="orv_line">The storm of Probability's aftermath crashing in caused my whole arm to scream in pain as if it was getting twisted and torn off from my body. I recalled all of Yoo Joonghyuk's regression turns that I knew. I gathered all the lives he had led, as well as the Stories I knew, and created a certain Stigma.</p>
 <p class="orv_line">A Stigma that acted as the motive power of this world, as well as the source of all of Yoo Joonghyuk's tragedies.</p>
-<div class="orv_system"><p>[Stigma, 'Regression', has been generated!]</p></div>
-<div class="orv_system"><p>[Your Stigma has been transferred to your Incarnation!]</p></div>
+<div class="orv_system"><p>Stigma, 'Regression', has been generated!</p></div>
+<div class="orv_system"><p>Your Stigma has been transferred to your Incarnation!</p></div>
 <p class="orv_line">Looking satisfied, Yoo Joonghyuk accepted the Stigma.</p>
-<div class="orv_system"><p>[Stigma, 'Regression Lv.1', is getting ready to activate.]</p></div>
+<div class="orv_system"><p>Stigma, 'Regression Lv.1', is getting ready to activate.</p></div>
 <p class="orv_line">"You said earlier that I'll lose my memories."</p>
-<div class="orv_constellation"><p>[…I did.]</p></div>
+<div class="orv_constellation"><p>…I did.</p></div>
 <p class="orv_line">"Will I lose everything related to you, too?"</p>
 <p class="orv_line">I hesitated with my answer. Yoo Joonghyuk asked me again.</p>
 <p class="orv_line">"Even all that convenient information you told me, too?"</p>
-<div class="orv_constellation"><p>[…Yes.]</p></div>
+<div class="orv_constellation"><p>…Yes.</p></div>
 <p class="orv_line">"I see."</p>
-<div class="orv_constellation"><p>[If you regret it, then it's not too late to…]</p></div>
+<div class="orv_constellation"><p>If you regret it, then it's not too late to…</p></div>
 <p class="orv_line">"You also said you won't help me from the next regression turn onwards."</p>
-<div class="orv_constellation"><p>[I can't help you.]</p></div>
+<div class="orv_constellation"><p>I can't help you.</p></div>
 <p class="orv_line">"It's fine to help, however."</p>
-<div class="orv_constellation"><p>[Even if I want to, I can't.]</p></div>
+<div class="orv_constellation"><p>Even if I want to, I can't.</p></div>
 <p class="orv_line">"I heard that the scenarios exist not just for the Incarnations, but Constellations, as well. Maybe, it was the same story for you."</p>
-<div class="orv_constellation"><p>[…]</p></div>
+<div class="orv_constellation"><p>…</p></div>
 <p class="orv_line">"Tell me, you fool. If I continue to regress, will I ever get to meet you again?"</p>
 <div class="orv_image"><img src="../../../assets/images/525 - Tell me, you fool. If I continue to regress.jpg" alt="" loading="lazy"></div>
 <div class="orv_notice"><p>* Official novel illustration (canonical)</p></div>
 <p class="orv_line">I couldn't say anything. These were utterances of someone who didn't know anything. In every sense of the word, he was the 0th turn's dumbass continuously babbling on while having no clue about his own future.</p>
 <p class="orv_line">Along with the words that hadn't been said yet, Yoo Joonghyuk's ears began disappearing.</p>
 <p class="orv_line">⸢The night sky was reflected in Yoo Joonghyuk's eyes.⸥</p>
-<p class="orv_line">As if he was a child wondering about his origins, Yoo Joonghyuk estimated where in the sky the [Wall] might be and extended his hand towards it.</p>
+<p class="orv_line">As if he was a child wondering about his origins, Yoo Joonghyuk estimated where in the sky the <strong>[Wall]</strong> might be and extended his hand towards it.</p>
 <p class="orv_line">He'd become the 'Secretive Plotter' someday, and…</p>
 <p class="orv_line">…And at the same time, also become the 1864th turn's Yoo Joonghyuk that I knew.</p>
 <p class="orv_line">He'd grow to resent me, and eventually reach the truth of this world.</p>
-<div class="orv_system"><p>[Stigma, 'Regression Lv.1', is activating!]</p></div>
-<div class="orv_system"><p>[You have agreed to the activation of the Stigma.]</p></div>
+<div class="orv_system"><p>Stigma, 'Regression Lv.1', is activating!</p></div>
+<div class="orv_system"><p>You have agreed to the activation of the Stigma.</p></div>
 <p class="orv_line">Yoo Joonghyuk's body began scattering away little by little. His arms, his legs, and then, his torso, too.</p>
 <p class="orv_line">During the final moments, he called out to me.</p>
 <p class="orv_line">"Demon King of Salvation."</p>
 <p class="orv_line">With a truly strange and mystifying expression…</p>
 <p class="orv_line">"I shall pray that you may continue to exist somewhere, too."</p>
 <p class="orv_line">…Yoo Joonghyuk's Incarnation body scattered into silvery powder and he left this world-line.</p>
-<div class="orv_system"><p>[The influence of the applicable world-line's 'Overwrite' function does not extend towards the character 'Yoo Joonghyuk's' next regression turn.]</p></div>
-<div class="orv_system"><p>[Your Incarnation has forgotten your Modifier.]</p></div>
-<div class="orv_system"><p>[Your Incarnation has forgotten all memories related to you.]</p></div>
-<div class="orv_system"><p>[All information related to you are now marked as '???']</p></div>
+<div class="orv_system"><p>The influence of the applicable world-line's 'Overwrite' function does not extend towards the character 'Yoo Joonghyuk's' next regression turn.</p></div>
+<div class="orv_system"><p>Your Incarnation has forgotten your Modifier.</p></div>
+<div class="orv_system"><p>Your Incarnation has forgotten all memories related to you.</p></div>
+<div class="orv_system"><p>All information related to you are now marked as '???'</p></div>
 <p class="orv_line">All of his memories that couldn't be recorded anywhere would now be lost forever.</p>
 <p class="orv_line">In that case, where would all those memories go?</p>
 <p class="orv_line">I stared at the flickering light for a very long time.</p>
@@ -353,18 +360,12 @@
             <a href="./ch_524"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_526">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="525" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="575" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="524" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="524" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

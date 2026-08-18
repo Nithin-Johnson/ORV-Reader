@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 152: Ep. 30 - Dark Castle, II</title>
     <meta property="og:title" content="Ch 152: Ep. 30 - Dark Castle, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,29 +177,29 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00152.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 152: Ep. 30 - Dark Castle, II</h1></div>
 <p class="orv_line">It had been five days since they entered the first floor of the Dark Castle. Lee Jihye ran down a corridor of the Dark Castle with the injured Lee Gilyoung on her back and Shin Yoosung.</p>
-<div class="orv_system"><p>[The 5th grade demon species, Dark Tracker is chasing you.]</p></div>
+<div class="orv_system"><p>The 5th grade demon species, Dark Tracker is chasing you.</p></div>
 <p class="orv_line">"Jump!"</p>
 <p class="orv_line">Lee Jihye avoided the scythe that appeared from the dark tracker and used Demon Slaying. Magic power scattered through the air as Lee Jihye took the children and ran with all her strength.</p>
 <p class="orv_line">"Damn, Taming doesn't work on them?"</p>
@@ -202,7 +209,7 @@
 <p class="orv_line">'I shouldn't have come in'.</p>
 <p class="orv_line">After Kim Dokja's death, the morale of Kim Dokja's party was completely disturbed. They lost focus and started acting individually. To make matters worse, Yoo Joonghyuk mysteriously went missing while the ninth scenario, Dark Castle appeared.</p>
 <p class="orv_line">The dokkaebi had told them when the scenario first started,</p>
-<div class="orv_constellation"><p>[This scenario… Um. Haha, maybe you'll fail.]</p></div>
+<div class="orv_constellation"><p>This scenario… Um. Haha, maybe you'll fail.</p></div>
 <p class="orv_line">Lee Jihye's reaction had been disbelief. They were going to fail? The scenarios always seemed impossible but they always won. Thus, they could do well this time.</p>
 <p class="orv_line">At least, that's what Lee Jihye had thought then.</p>
 <p class="orv_line">'Go right now. Smash all these scum!'</p>
@@ -218,15 +225,15 @@
 <p class="orv_line">The insects hit by the black liquid experienced bizarre cell deformation and exploded. Thanks to the time bought by the insects, Lee Jihye was able to deal a bit more damage to the dark trackers.</p>
 <p class="orv_line">"Aaaaaaack!"</p>
 <p class="orv_line">The armour around the neck of a dark tracker broke and it fled. However, there were still nine remaining. Besides, the dark trackers were just a joke. The really scary thing was the guy on the other side of the dark trackers.</p>
-<div class="orv_system"><p>[Demon Viscount Noslocke.]</p></div>
+<div class="orv_system"><p>Demon Viscount Noslocke.</p></div>
 <p class="orv_line">He had a human body with a rhinoceros head. Lee Jihye's body shook every time he approached. She had never seen such a monster before.</p>
 <p class="orv_line">In terms of individual strength, he wasn't as strong as the Disasters of Floods. But while the Disaster of Floods had her power suppressed, the demons had no such thing.</p>
 <p class="orv_line">Moreover, Lee Jihye's higher strength had become a poison to her. She knew the opponent's strength and this only raised her fear. Lee Jihye raised the blade and bit her lips. Thus, here…</p>
-<div class="orv_system"><p>[On the first floor of the Dark Castle, the 'Ancient Magic Power Barrier' has been formed.]</p></div>
+<div class="orv_system"><p>On the first floor of the Dark Castle, the 'Ancient Magic Power Barrier' has been formed.</p></div>
 <p class="orv_line">"Unni, over there!"</p>
 <p class="orv_line">A blue room was created at the end of the hallway. It was the only resting place in this Dark Castle.</p>
 <p class="orv_line">Lee Jihye and the children rushed to the room with all their might and barely escaped from the pursuit of the dark trackers. The space was small, not even two square metres, but the three of them managed to squeeze in.</p>
-<div class="orv_system"><p>[You have entered the Ancient Magic Power Barrier. The special barrier will be activated for 30 minutes.]</p></div>
+<div class="orv_system"><p>You have entered the Ancient Magic Power Barrier. The special barrier will be activated for 30 minutes.</p></div>
 <p class="orv_line">If it wasn't for this safe zone being activated three times a day, Lee Jihye and the children might've been killed already.</p>
 <p class="orv_line">The dark trackers groaned as they touched the barrier and retreated. They tried to enter several times before giving up. However, that guy was different.</p>
 <p class="orv_line">"Why isn't he leaving?"</p>
@@ -240,7 +247,7 @@
 <p class="orv_line">Most of them were lesser demons but they were still too much for ordinary incarnations. The demons of Dark Castle devoured and infected the incarnations of Seoul.</p>
 <p class="orv_line">Thanks to this, many of the demon species outside the fortress were people she originally knew.</p>
 <p class="orv_line">Min Jiwon and the Hwarang. The members of Nirvana's Salvation Church. The people she knew were walking down the streets and tearing people apart. All of this was the result of her impatience. If she had been a bit more careful…</p>
-<div class="orv_constellation"><p>[Didn't I tell you? The difficulty of this scenario is on a completely different dimension.]</p></div>
+<div class="orv_constellation"><p>Didn't I tell you? The difficulty of this scenario is on a completely different dimension.</p></div>
 <p class="orv_line">Lee Jihye heard the voice of the dokkaebi in the air and realized. It wasn't because she was strong that she could survive until now. It was because she was lucky.</p>
 <p class="orv_line">'Damn! Damn! Foolish girl!' She blamed her own impatience too late. The people who entered without preparation scattered in the maze of darkness and she met these children. What happened to the other party members? She didn't know. Maybe they were all dead.</p>
 <p class="orv_line">'If only Master was here. No… not Master…'</p>
@@ -259,14 +266,14 @@
 <p class="orv_line">Lee Jihye told Shin Yoosung, "I-It just isn't to my taste."</p>
 <p class="orv_line">"…You cried so much at the funeral."</p>
 <p class="orv_line">"I was acting, you idiot. The constellations gave me a lot of coins at the time."</p>
-<div class="orv_system"><p>[Some constellations ask Lee Jihye if it was really acting.]</p></div>
+<div class="orv_system"><p>Some constellations ask Lee Jihye if it was really acting.</p></div>
 <p class="orv_line">Lee Jihye bit her lips.</p>
 <p class="orv_line">"Unni is still a long way off. People aren't all about faces."</p>
 <p class="orv_line">"You really…" Lee Jihye watched Shin Yoosung for a moment and sighed. "…I know that much."</p>
 <p class="orv_line">She spoke in a small voice. Just because she knew it didn't mean she could admit it. At least for Lee Jihye, who was still immature.</p>
 <p class="orv_line">She owed a lot to Kim Dokja. She survived because of him. She knew. She knew it well but she didn't want to admit it. She wanted to repay her debt while still looking good.</p>
 <p class="orv_line">In fact, he… was a pretty helpful person. Now that opportunity had vanished forever.</p>
-<div class="orv_system"><p>[There is one minute left for the duration of the Ancient Magic Power Barrier.]</p></div>
+<div class="orv_system"><p>There is one minute left for the duration of the Ancient Magic Power Barrier.</p></div>
 <p class="orv_line">Lee Jihye came to her senses as the darkness in front of the barrier shook. The demon's smile widened. Lee Jihye realized it was time.</p>
 <p class="orv_line">"Yoosung. Can you pull Gilyoung up? Take him away at my signal."</p>
 <p class="orv_line">"Huh?"</p>
@@ -289,7 +296,7 @@
 <p class="orv_line">The demon viscount roared angrily. For what? She didn't know. However, one thing was certain…</p>
 <p class="orv_line">This time, the man's face was visible.</p>
 <p class="orv_line">'…Ahjussi, is this your face?'</p>
-<div class="orv_system"><p>[The constellation who doesn't yet have a name is looking at you.]</p></div>
+<div class="orv_system"><p>The constellation who doesn't yet have a name is looking at you.</p></div>
 <p class="orv_line">Lee Jihye listened to the message and smiled as she fell forward.</p>
 <br>
 <hr>
@@ -298,18 +305,12 @@
             <a href="./ch_151"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_153">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="152" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="137" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="151" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="151" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

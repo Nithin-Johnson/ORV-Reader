@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 473: Ep. 90 - One Person, II</title>
     <meta property="og:title" content="Ch 473: Ep. 90 - One Person, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00473.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 473: Ep. 90 - One Person, II</h1></div>
 <p class="orv_line">"Nice work, Sun Wukong!!"</p>
@@ -197,58 +204,62 @@
 <p class="orv_line">Rather than betrayal, it was the sense of wonderment filling up her expression.</p>
 <div class="orv_outergod"><p>【…I can't believe it. Great Sage, even you're taking their side?】</p></div>
 <p class="orv_line">Eventually, that wonderment changed into a longing.</p>
-<p class="orv_line">The Great Sage detected that change and asked her. [Who might you be, acting as if you know me?]</p>
+<p class="orv_line">The Great Sage detected that change and asked her. </p>
+<div class="orv_constellation"><p>Who might you be, acting as if you know me?</p></div>
 <div class="orv_outergod"><p>【I'm simply recalling a companion-in-arms I lost in the past. I don't have any desire to fight against you. Get out of the way. All I want is the 'Secretive Plotter'.】</p></div>
 <p class="orv_line">For sure, no will to battle could be felt from her voice.</p>
-<p class="orv_line">However, the Great Sage still shook his head. [I also dislike that dour bastard, but…]</p>
+<p class="orv_line">However, the Great Sage still shook his head. </p>
+<div class="orv_constellation"><p>I also dislike that dour bastard, but…</p></div>
 <p class="orv_line">As he smiled indifferently, incredible aura exploded forth from his entire figure.</p>
-<div class="orv_constellation"><p>[Our maknae will be troubled if that guy dies.]</p></div>
-<div class="orv_system"><p>[Constellation, 'Most Ancient Liberator', is revealing his Status!]</p></div>
+<div class="orv_constellation"><p>Our maknae will be troubled if that guy dies.</p></div>
+<div class="orv_system"><p>Constellation, 'Most Ancient Liberator', is revealing his Status!</p></div>
 <p class="orv_line">He was the existence who finally liberated his Status previously restricted by the headband, and he even acquired the powers of an Outer God after a partial 'Outer God Transformation' had taken place.</p>
 <p class="orv_line">Yogoes that fought together with him during the ⸢Journey to the West Remake⸥ were exiting from the portal to descend on the Pacific Ocean.</p>
-<div class="orv_system"><p>[Monkeykingmonkeykingmonkeyking]</p></div>
+<div class="orv_constellation"><p>Monkeykingmonkeykingmonkeyking</p></div>
 <p class="orv_line">'Outer Gods' worshipping different kings got into scuffles with one another. The ocean soaked in blood tumbled over violently, and the 999th turn's Uriel began gasping out.</p>
 <p class="orv_line">And finally, the taut equilibrium began tilting to one side.</p>
 <p class="orv_line">"It's working! Keep pushing!"</p>
 <p class="orv_line">Along with Han Sooyoung's voice, &lt;Kim Dokja's Company&gt;'s great Stories began telling their stories at the same time.</p>
-<div class="orv_system"><p>[Giant Story, 'Demon Realm's Spring', has begun its storytelling!]</p></div>
-<div class="orv_system"><p>[Giant Story, 'Torch that Swallowed the Myth', has begun its storytelling!]</p></div>
-<div class="orv_system"><p>[Giant Story, 'Season of Light and Darkness', has begun its storytelling!]</p></div>
-<div class="orv_system"><p>[Giant Story, 'Liberator of the Forgotten Ones', has begun its storytelling!]</p></div>
+<div class="orv_system"><p>Giant Story, 'Demon Realm's Spring', has begun its storytelling!</p></div>
+<div class="orv_system"><p>Giant Story, 'Torch that Swallowed the Myth', has begun its storytelling!</p></div>
+<div class="orv_system"><p>Giant Story, 'Season of Light and Darkness', has begun its storytelling!</p></div>
+<div class="orv_system"><p>Giant Story, 'Liberator of the Forgotten Ones', has begun its storytelling!</p></div>
 <p class="orv_line">Although the main shareholders Kim Dokja and Yoo Joonghyuk were missing, other members still possessed not-too-shabby percentages of the Giant Stories' shares. And also, there were some others who had finished getting ready and were itching to unleash the final strike.</p>
-<div class="orv_constellation"><p>[Only one sun in the sky is enough.]</p></div>
+<div class="orv_constellation"><p>Only one sun in the sky is enough.</p></div>
 <p class="orv_line">First, it was Surya appearing along with his train. And then…</p>
-<div class="orv_constellation"><p>[Cutting down Outer Gods have become quite a habit now.]</p></div>
-<div class="orv_constellation"><p>[Let us combine our strengths, Breaking the Sky Saint.]</p></div>
+<div class="orv_constellation"><p>Cutting down Outer Gods have become quite a habit now.</p></div>
+<div class="orv_constellation"><p>Let us combine our strengths, Breaking the Sky Saint.</p></div>
 <p class="orv_line">"I'm also coming!"</p>
 <p class="orv_line">The Breaking the Sky Sword Saint and Kyrgios, plus Jang Hayoung, all joined in.</p>
 <p class="orv_line">And so, the 999th turn's Uriel was pushed on her back foot. Her expression was gradually being dyed in confusion.</p>
 <div class="orv_outergod"><p>【How… How can all of you be together? What kind of a world-line is this…??】</p></div>
 <p class="orv_line">She was panicking at the Giant Stories rushing in; their sizes were quite large, but their contents proved to be even more problematic. Just how was it possible that such a Story existed?</p>
 <p class="orv_line">Just how…?</p>
-<p class="orv_line">Three Transcendents riding on the train penetrated past the sun's heat barrier. Then, an attack containing the outrageous amount of power that combined [Breaking the Sky Swordsmanship], [Electrification], and even [Breaking the Sky Force Punch] shot out.</p>
+<p class="orv_line">Three Transcendents riding on the train penetrated past the sun's heat barrier. Then, an attack containing the outrageous amount of power that combined <strong>[Breaking the Sky Swordsmanship]</strong>, <strong>[Electrification]</strong>, and even <strong>[Breaking the Sky Force Punch]</strong> shot out.</p>
 <p class="orv_line">Just as that strike was about to sneak in through Uriel's opening and land on her…</p>
 <p class="orv_line">A chilling sensation suddenly enveloped the nape of Han Sooyoung's neck.</p>
 <p class="orv_line">"No, stop!"</p>
-<div class="orv_system"><p>[Story, 'Predictive Plagiarism', is urgently revising the story!]</p></div>
+<div class="orv_system"><p>Story, 'Predictive Plagiarism', is urgently revising the story!</p></div>
 <p class="orv_line">The powerful sensation only she could feel in this whole world arrested her. And right next second, the noise akin to the time/space of the surrounding dimension being squeezed dry rang out loudly.</p>
 <p class="orv_line">Ka-dudududuk.</p>
 <p class="orv_line">Han Sooyoung couldn't tell what was going on before her eyes.</p>
 <div class="orv_outergod"><p>【What's this? Where is 'me' in this regression turn? Could I have been killed already?】</p></div>
 <p class="orv_line">That rebellious voice sounded as if a portion of the abyss had been taken away to mould it into reality.</p>
-<p class="orv_line">The Transcendents approaching the rear of the Outer God to land the final strike were falling to earth along with the destroyed train. Indescribably dark [Black Flames] were burning on the ends of their clothing.</p>
+<p class="orv_line">The Transcendents approaching the rear of the Outer God to land the final strike were falling to earth along with the destroyed train. Indescribably dark <strong>[Black Flames]</strong> were burning on the ends of their clothing.</p>
 <p class="orv_line">A lone man was standing amidst the gloomy, dark clouds in the sky. He was someone Han Sooyoung also knew. She knew him so well that goosebumps were breaking out on her skin.</p>
-<div class="orv_system"><p>[Constellation, 'Abyssal Black Flame Dragon', is warning you of danger!]</p></div>
-<p class="orv_line">The man slowly opened his mouth. 【Chet. I thought it was Jihye, what with this much rampaging Status and all. Made a mistake since it's been so long and all.】</p>
+<div class="orv_system"><p>Constellation, 'Abyssal Black Flame Dragon', is warning you of danger!</p></div>
+<p class="orv_line">The man slowly opened his mouth. </p>
+<div class="orv_outergod"><p>【Chet. I thought it was Jihye, what with this much rampaging Status and all. Made a mistake since it's been so long and all.】</p></div>
 <p class="orv_line">The sun of the 'Living Flame' emitted blinding rays of light. However, the darkness belonging to the man grew even thicker in response, just like the shadow lengthening against the light.</p>
-<p class="orv_line">The 999th turn's Uriel spoke. 【'The Monarch of the Great Abyss'. Just who summoned a bastard like you to this world-line?】</p>
+<p class="orv_line">The 999th turn's Uriel spoke. </p>
+<div class="orv_outergod"><p>【'The Monarch of the Great Abyss'. Just who summoned a bastard like you to this world-line?】</p></div>
 <p class="orv_line">The nape of Han Sooyoung's neck grew icy; she remembered what Kim Dokja told her about the ruler of the northern universe, the 'Monarch of the Great Abyss'.</p>
 <div class="orv_outergod"><p>【Hahah. You finally called me with that title. Besides all that, you look like you're in a bit of trouble? Should I help you out?】</p></div>
 <p class="orv_line">The sun's corona flared up as if it was convulsing.</p>
 <div class="orv_outergod"><p>【I don't need it. Help from a scoundrel like you is…】</p></div>
 <div class="orv_outergod"><p>【Don't be like that. We're 'companions' from the same regression turn, after all.】</p></div>
 <p class="orv_line">The man cackled insidiously.</p>
-<p class="orv_line">He was none other than the Delusion Demon Kim Namwoon who also witnessed the 999th turn's 'Conclusion'.</p>
+<p class="orv_line">He was none other than the Delusional Demon Kim Namwoon who also witnessed the 999th turn's 'Conclusion'.</p>
 <p class="orv_line">And the moment his gaze moved, Han Sooyoung felt a chill run down her entire body.</p>
 <div class="orv_outergod"><p>【I also wanna see the Black Dragon's face, since it's been a while.】</p></div>
 <p class="orv_line">Kim Namwoon was already right by her face and he began studying her with a nefarious gaze.</p>
@@ -257,8 +268,8 @@
 <br>
 <p class="orv_line">When his eyes slowly opened up, Yoo Joonghyuk realized that he was wandering within the darkness alone.</p>
 <p class="orv_line">The last thing he could remember was him researching the sure-kill attack with Kim Dokja. Something went wrong in the middle of that, and he lost his consciousness…</p>
-<div class="orv_system"><p>[Your soul form is currently in an unstable condition!]</p></div>
-<div class="orv_system"><p>[Story, 'Hell of Eternity', is currently in an illegible state.]</p></div>
+<div class="orv_system"><p>Your soul form is currently in an unstable condition!</p></div>
+<div class="orv_system"><p>Story, 'Hell of Eternity', is currently in an illegible state.</p></div>
 <p class="orv_line">⸢When is that idiot Yoo Joonghyuk's birthday, again?⸥</p>
 <p class="orv_line">Fragmented memories occasionally drifted in. He heard a voice in between his blurry consciousness. No, rather than a voice, it was far closer to letters, instead.</p>
 <p class="orv_line">Yoo Joonghyuk quickly recognised whose speech pattern it belonged to.</p>
@@ -296,23 +307,25 @@
 <p class="orv_line">Yoo Joonghyuk grew curious. If he was really nothing more than a 'character' just as Kim Dokja said, then what happened to the 'time' he couldn't remember?</p>
 <p class="orv_line">Where was himself not among the pages that Kim Dokja had read?</p>
 <p class="orv_line">Or, did he not exist from the get-go?</p>
-<div class="orv_system"><p>[Your Sponsor is looking closely at you.]</p></div>
+<div class="orv_system"><p>Your Sponsor is looking closely at you.</p></div>
 <p class="orv_line">Could he really be able to say from where his life had 'existed' and where it ended?</p>
 <p class="orv_line">Tsu-chuchuchut…</p>
 <p class="orv_line">He reflexively looked back at the emptiness as soon as he felt the chilling sensation. He found someone else other than him there.</p>
 <div class="orv_outergod"><p>【Are you doing an introspection of yourself? You don't have the time to waste like this.】</p></div>
 <p class="orv_line">Yoo Joonghyuk immediately recognised who it was.</p>
 <p class="orv_line">'You shouldn't be able to move still'.</p>
-<p class="orv_line">He glared at the 'Secretive Plotter'. He instinctively reached out towards his [Black Heavenly Demon Sword], but the familiar hilt was nowhere to be found.</p>
+<p class="orv_line">He glared at the 'Secretive Plotter'. He instinctively reached out towards his <strong>[Black Heavenly Demon Sword]</strong>, but the familiar hilt was nowhere to be found.</p>
 <p class="orv_line">This place was his imagined world. Items didn't exist here.</p>
-<p class="orv_line">The 'Secretive Plotter' stared back at him and shook his head in disappointment. 【At this rate, all of your companions will be annihilated.】</p>
+<p class="orv_line">The 'Secretive Plotter' stared back at him and shook his head in disappointment. </p>
+<div class="orv_outergod"><p>【At this rate, all of your companions will be annihilated.】</p></div>
 <p class="orv_line">'Annihilated?'</p>
 <p class="orv_line">Cold sensation crept down his back.</p>
 <p class="orv_line">His companions were about to enter a dangerous battle against the 'Outer God King'. He could definitely sense the ominous aura flowing around in the surroundings.</p>
 <p class="orv_line">He needed to wake up at once. He needed to get out of here, and…</p>
 <div class="orv_outergod"><p>【There's no point in going with your current state. If you can't utilise the power of the 1863rd turn, then you won't prove to be any help whatsoever.】</p></div>
 <p class="orv_line">'So what? What are you saying?'</p>
-<p class="orv_line">Yoo Joonghyuk growled menacingly, yet the Secretive Plotter remained unruffled. 【You have another way of utilising the power of the 1863rd turn.】</p>
+<p class="orv_line">Yoo Joonghyuk growled menacingly, yet the Secretive Plotter remained unruffled.</p>
+<div class="orv_outergod"><p>【You have another way of utilising the power of the 1863rd turn.】</p></div>
 <p class="orv_line">Right away, he deciphered the meaning behind those words.</p>
 <p class="orv_line">The only reason why he could regain the power of the 1863rd turn for a short moment was due to Kim Dokja's Story, ⸢Hell of Eternity⸥. And the one who gave that fool his Story was…</p>
 <p class="orv_line">Yoo Joonghyuk gritted his teeth and asked.</p>
@@ -321,7 +334,7 @@
 <p class="orv_line">'…A favour?'</p>
 <div class="orv_outergod"><p>【I'll lend you my powers just this once. I hope that you learn something from this.】</p></div>
 <p class="orv_line">The 'Secretive Plotter' reached out from the darkness. There was no time to dodge, and the cold palm of a boy touched Yoo Joonghyuk's forehead. And then…</p>
-<div class="orv_system"><p>['Disconnected Film Theory' is activating!]</p></div>
+<div class="orv_system"><p>'Disconnected Film Theory' is activating!</p></div>
 <p class="orv_line">Accompanied by pain severe enough to blank out the inside of his head, a humongous Story flooded in. These were memories he already knew. However, they were also the ones he failed to understand. Every Story of 'Secretive Plotter' coursed within his bloodstreams while emitting white-hot heat.</p>
 <p class="orv_line">The 1st turn, 2nd, 3rd, 4th… and then, 1863rd.</p>
 <p class="orv_line">Countless Yoo Joonghyuks were waking up within him.</p>
@@ -337,21 +350,21 @@
 <p class="orv_line">Right. He was born in the summer. A hellishly hot and humid summer, when horrible storms were lashing out.</p>
 <p class="orv_line">He could remember everything so vividly now.</p>
 <p class="orv_line">His birthday that no one celebrated or congratulated him for. All those anniversaries that lost their meanings as he went through 1864 lifetimes.</p>
-<p class="orv_line">Yoo Joonghyuk slowly opened his eyes. The energy of Story completely saturated his whole body. This feeling was something he had not felt before during this '3rd' turn.</p>
+<p class="orv_line">Yoo Joonghyuk slowly opened his eyes. The energy of the Story completely saturated his whole body. This feeling was something he had not felt before during this '3rd' turn.</p>
 <p class="orv_line">He raised his head and sensed the hot rays of the sun.</p>
 <p class="orv_line">Even so far away, he could still clearly sense it – the 'Outer God's' presence calling out to him from beyond the faraway horizon. However, he didn't feel scared.</p>
 <p class="orv_line">He slowly raised his body up and confirmed the condition of his Incarnation Body. Every single part of it was operating at a near-perfection.</p>
 <p class="orv_line">Stories he had compiled so far were permeating within every fibre of his being.</p>
 <p class="orv_line">⸢In that very moment, Yoo Joonghyuk felt as if he was reborn.⸥</p>
-<div class="orv_system"><p>[Giant Story, 'Pilgrim of the Lonely Apocalypse', has recovered its complete Status.]</p></div>
+<div class="orv_system"><p>Giant Story, 'Pilgrim of the Lonely Apocalypse', has recovered its complete Status.</p></div>
 <p class="orv_line">This was the true power he originally possessed, the Status of a being who reached the final turn of the world and witnessed the 'Wall' by himself alone.</p>
-<div class="orv_system"><p>['Disconnected Film Theory' is currently activating in an abnormal manner.]</p></div>
-<div class="orv_system"><p>[Connection between films is incomplete.]</p></div>
-<div class="orv_system"><p>[The entire film may cease to exist if this connection is forcibly maintained.]</p></div>
+<div class="orv_system"><p>'Disconnected Film Theory' is currently activating in an abnormal manner.</p></div>
+<div class="orv_system"><p>Connection between films is incomplete.</p></div>
+<div class="orv_system"><p>The entire film may cease to exist if this connection is forcibly maintained.</p></div>
 <p class="orv_line">He could only rely on this power for a brief time. However, it was more than enough for him. Yoo Joonghyuk raised his head and looked up at the sky.</p>
 <p class="orv_line">The heavens were screaming out. The flashes of lightning strikes vividly illuminated the scars engraved on his face every so often.</p>
-<div class="orv_system"><p>[Story, 'Hell of Eternity', has begun its storytelling!]</p></div>
-<div class="orv_system"><p>[Attribute, 'Terror of the Stars', is activating!]</p></div>
+<div class="orv_system"><p>Story, 'Hell of Eternity', has begun its storytelling!</p></div>
+<div class="orv_system"><p>Attribute, 'Terror of the Stars', is activating!</p></div>
 <p class="orv_line">His glare caused the stars to run away in fear.</p>
 <p class="orv_line">Yoo Joonghyuk stared at them for a moment, before his figure flashed towards the distant sun.</p>
 <br>
@@ -361,18 +374,12 @@
             <a href="./ch_472"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_474">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="473" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="526" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="472" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="472" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

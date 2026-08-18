@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 402: Ep. 76 - Book of Revelation, IV</title>
     <meta property="og:title" content="Ch 402: Ep. 76 - Book of Revelation, IV" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,39 +177,39 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00402.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 402: Ep. 76 - Book of Revelation, IV</h1></div>
-<div class="orv_system"><p>[Every Constellation in the &lt;Star Stream&gt; has detected the existence of the Calamity!]</p></div>
-<div class="orv_system"><p>[Many Constellations have fallen into a state of fear!]</p></div>
+<div class="orv_system"><p>Every Constellation in the &lt;Star Stream&gt; has detected the existence of the Calamity!</p></div>
+<div class="orv_system"><p>Many Constellations have fallen into a state of fear!</p></div>
 <p class="orv_line">As the surrounding atmosphere transformed rapidly, Constellations enjoying the cease-fire all began repeatedly roaring out as well as speaking in their true voices. Some were panicking grandly, wondering what was going on here; some sensed the Status of the Calamity and became scared; some Constellations began lodging inquiries to the Bureau, hoping to escape from this scenario.</p>
 <p class="orv_line">The bitter struggles of the stars trying to survive turned the battlefield into pure pandemonium in no time at all.</p>
-<div class="orv_system"><p>[The Bureau of the Star Stream is responding to the emergency situation!]</p></div>
+<div class="orv_system"><p>The Bureau of the Star Stream is responding to the emergency situation!</p></div>
 <p class="orv_line">Finally, the Bureau was stepping forward.</p>
 <p class="orv_line">Seeing that the messages regarding Constellations had decreased by a whole lot quite rapidly just then, it seemed that the Bureau also found the current situation rather concerning as well.</p>
-<div class="orv_system"><p>[The Bureau of the Star Stream has begun an internal meeting on the applicable issue.]</p></div>
+<div class="orv_system"><p>The Bureau of the Star Stream has begun an internal meeting on the applicable issue.</p></div>
 <p class="orv_line">It was quite likely that even the Bureau didn't expect this 'Great War of Saints and Demons' to become this big.</p>
 <p class="orv_line">Well, from the get-go, the 'Chaos Points' were simply added in as the extra spice for the sake of speedy progress of the 'Great War of Saints and Demons'. But then, that extra points system had surpassed the Good/Evil Points, and it was even trying to awaken the Apocalypse Dragon now.</p>
 <p class="orv_line">If that Dragon did wake up, then countless Constellations would end up getting killed. In other words, it'd be the same thing as the number of the Bureau's customers declining rather precipitously.</p>
-<div class="orv_constellation"><p>[Even if the Bureau steps forward, they won't be able to revert the calamity, as if it never happened in the first place.]</p></div>
+<div class="orv_constellation"><p>Even if the Bureau steps forward, they won't be able to revert the calamity, as if it never happened in the first place.</p></div>
 <p class="orv_line">I agreed with Surya's assertion.</p>
 <p class="orv_line">We were in the 80th main scenario. Even if this was the Bureau, they wouldn't be able to cancel the 'Giant Story'.</p>
 <p class="orv_line">So, now wasn't the time to place our faith in their potential response.</p>
@@ -217,14 +224,14 @@
 <p class="orv_line">Through the 'Ways of Survival', I knew who was on the list of the 'Seekers of the End'. No one on that list was capable of lasting for a long time while inside that sphere.</p>
 <p class="orv_line">Not only were Metatron and Agares were in there, but the highest-grade Constellations in this world were with them, too.</p>
 <p class="orv_line">Even if they were to take their time, Archangels and Demon Kings should've discovered the 'Seeker of the End' and killed it by now. With that, Chaos Points should stop rising up…</p>
-<div class="orv_system"><p>[Members from the same camp have clashed!]</p></div>
-<div class="orv_system"><p>[Current Chaos Points: 91]</p></div>
+<div class="orv_system"><p>Members from the same camp have clashed!</p></div>
+<div class="orv_system"><p>Current Chaos Points: 91</p></div>
 <p class="orv_line">It was around at that time that sparks exploded in the air. The sphere violently shook around before a portion of its side faintly spread open, and something began falling from there.</p>
 <p class="orv_line">There were six torn wings visible on her back; it was an Archangel I knew well.</p>
-<p class="orv_line">I activated [Way of the Wind] and flew up in haste.</p>
+<p class="orv_line">I activated <strong>[Way of the Wind]</strong> and flew up in haste.</p>
 <p class="orv_line">The body of the Archangel I caught was quite light. A certain fragrance wafted into my nose; Stories were falling like flower petals from the deep wound running across her back.</p>
 <p class="orv_line">"Gabriel."</p>
-<div class="orv_system"><p>[Constellation, 'Lily Blooming in Aquarius', is looking at you.]</p></div>
+<div class="orv_system"><p>Constellation, 'Lily Blooming in Aquarius', is looking at you.</p></div>
 <p class="orv_line">She was the Archangel Gabriel, who had experienced the 1863rd turn with me before coming back home; the Constellation who fell into a deep pit of shock after learning that she'd betray &lt;Eden&gt; in the future.</p>
 <p class="orv_line">I momentarily wondered if she was the reason for the unfolding crisis, but I knew that couldn't be the case; even in the original story, there was a very good reason to her betrayal, and technically speaking, you couldn't even really call what she did a betrayal, either.</p>
 <p class="orv_line">Gabriel's lips moved with great difficulty. It was hard to hear her voice.</p>
@@ -238,22 +245,22 @@
 <br>
 <p class="orv_line">Metatron looked at the Angels lining up by his sides, as well as the Demon Kings standing on his opposite side one at a time. They all seemed to be anxious. Also, their expressions displayed their failure at understanding how they arrived at their current situation.</p>
 <p class="orv_line">In the middle of all those faces, the oldest rival to Metatron could be seen.</p>
-<div class="orv_constellation"><p>[To think that we'd be in this place because of a single Nebula. How absurd.]</p></div>
+<div class="orv_constellation"><p>To think that we'd be in this place because of a single Nebula. How absurd.</p></div>
 <p class="orv_line">It was the master of the 2nd Demon Realm, the 'Ruler of the East Hell'.</p>
-<p class="orv_line">While lighting up a thick cigarette, Agares asked his question. [How will we decide on the victors and losers? Will we enter the 3rd 'Great War of Saints and Demons' right away? Honestly speaking, I'm against it. Gathering this much Probability again would be next to impossible, after all.]</p>
+<p class="orv_line">While lighting up a thick cigarette, Agares asked his question. <strong>[How will we decide on the victors and losers? Will we enter the 3rd 'Great War of Saints and Demons' right away? Honestly speaking, I'm against it. Gathering this much Probability again would be next to impossible, after all.]</strong></p>
 <p class="orv_line">To start this 'Great War of Saints and Demons', both &lt;Eden&gt; and the Demon Realm had to swallow huge losses.</p>
 <p class="orv_line">Even among all the 'Giant Stories' of the &lt;Star Stream&gt;, the 'Great War of Saints and Demons' boasted an unparalleled scale. If this scenario ended in annulment, then the 'Story of Good and Evil' they barely managed to scrounge up would scatter again, and both the 'Good' and the 'Evil' could end up on the road to extinction.</p>
 <p class="orv_line">Metatron looked up at the outside sky, faintly visible through the grey sphere. Flashes of lightning could be seen within the dark, gloomy clouds ominously gathering above them. Was it because of the end-of-the-world type vibe? He abruptly recalled an event that had taken place a long time ago.</p>
-<div class="orv_constellation"><p>[Agares. It's already been several thousands of years since the master of the 1st Demon Realm had passed on.]</p></div>
-<div class="orv_constellation"><p>[I don't have the time to leisurely reminisce about the past with you.]</p></div>
-<div class="orv_constellation"><p>[Do you still remember that day?]</p></div>
-<div class="orv_constellation"><p>[It was the day I inherited this abominable 'wall', so how could I have forgotten it?]</p></div>
-<div class="orv_system"><p>['Wall that divides Good and Evil' is growling.]</p></div>
+<div class="orv_constellation"><p>Agares. It's already been several thousands of years since the master of the 1st Demon Realm had passed on.</p></div>
+<div class="orv_constellation"><p>I don't have the time to leisurely reminisce about the past with you.</p></div>
+<div class="orv_constellation"><p>Do you still remember that day?</p></div>
+<div class="orv_constellation"><p>It was the day I inherited this abominable 'wall', so how could I have forgotten it?</p></div>
+<div class="orv_system"><p>'Wall that divides Good and Evil' is growling.</p></div>
 <p class="orv_line">Ominous sparks danced around Agares's Incarnation Body. When that happened, a similar phenomenon happened around Metaron's Incarnation Body, as well.</p>
-<div class="orv_system"><p>['Wall that divides Good and Evil' is falling into a reminiscence of the past.]</p></div>
+<div class="orv_system"><p>'Wall that divides Good and Evil' is falling into a reminiscence of the past.</p></div>
 <p class="orv_line">A wall that was one but at the same time, two. A fragment of the Final Wall, that decided the 'Good' and the 'Evil' of the world.</p>
 <p class="orv_line">With that wall in the middle, the representatives of &lt;Eden&gt; and the Demon Realm were staring at each other.</p>
-<div class="orv_constellation"><p>[For a long time, you and I decided on the 'Good and Evil' of this world, didn't we?]</p></div>
+<div class="orv_constellation"><p>For a long time, you and I decided on the 'Good and Evil' of this world, didn't we?</p></div>
 <p class="orv_line">Just what was 'Good'?</p>
 <p class="orv_line">Even Metatron, the leader of &lt;Eden&gt;, didn't have the answer to that question. Because 'Good' was simply a collection of countless Stories, that was why.</p>
 <p class="orv_line">He read the Stories of his predecessors, figured them out, and learned about 'Good' that way. And those 'Good', rather than explaining themselves, simply pointed to other Stories and spoke like this, instead.</p>
@@ -264,82 +271,82 @@
 <p class="orv_line">That was how 'Good' was created.</p>
 <p class="orv_line">That simple dichotomy had managed to tear the &lt;Star Stream&gt; in half.</p>
 <p class="orv_line">The simpler and more unyielding the principle, the stronger its ability to spread out. Countless Constellations jumped on the bandwagon of the principle of 'Good' and 'Evil'.</p>
-<div class="orv_constellation"><p>[You probably have no idea. No idea about how boring it can get, trying to exist as 'Evil' in this world.]</p></div>
+<div class="orv_constellation"><p>You probably have no idea. No idea about how boring it can get, trying to exist as 'Evil' in this world.</p></div>
 <p class="orv_line">Agares breathed out the cigarette smoke and continued on.</p>
-<div class="orv_constellation"><p>[It was you who forced the 'Good and Evil' into this state. You erased the particulars of 'Evil', and you also spread that damn 'promotion of virtue and disapproval of vice' like some kind of a plague. Indeed, you bastard, are the original culprit who managed to break the Story of 'Good and Evil'.]</p></div>
+<div class="orv_constellation"><p>It was you who forced the 'Good and Evil' into this state. You erased the particulars of 'Evil', and you also spread that damn 'promotion of virtue and disapproval of vice' like some kind of a plague. Indeed, you bastard, are the original culprit who managed to break the Story of 'Good and Evil'.</p></div>
 <p class="orv_line">It didn't really matter what kind of minute details, or whether sadness and pain existed within the scenario. What did matter, however, was the conclusion.</p>
 <p class="orv_line">The 'Good' judged and punished the 'Evil'. That was enough for the others to shed grateful tears and clap their hands. Without a doubt, such a time did exist.</p>
 <p class="orv_line">Metatron spoke up.</p>
-<div class="orv_constellation"><p>[But, you also agreed to do that, didn't you?]</p></div>
-<div class="orv_constellation"><p>[Back then, that was the only way for us to survive.]</p></div>
+<div class="orv_constellation"><p>But, you also agreed to do that, didn't you?</p></div>
+<div class="orv_constellation"><p>Back then, that was the only way for us to survive.</p></div>
 <p class="orv_line">The 'Good' stayed alive by punishing the 'Evil', while the 'Evil' continued to exist by resisting against the 'Good'.</p>
 <p class="orv_line">And so, tens of thousands of years passed by like that. The division between 'Good and Evil' became blurry, and justice/definition had disappeared. The 'Good and Evil' ended up becoming a concept of bored old men.</p>
 <p class="orv_line">No one welcomed the idea of 'promoting virtue and disapproving vice' any more.</p>
 <p class="orv_line">Drop.</p>
 <p class="orv_line">Agares dropped the cigarette he'd been smoking on the floor, and as if he was stepping on an insect, squashed it to kill it.</p>
-<div class="orv_constellation"><p>[Through the repetition of the scenarios, the 'Good' has become a source of stuffy boredom, while the 'Evil' has become an antiquated cliché. I have to wonder, maybe it's about time that we stop with this foolishness.]</p></div>
+<div class="orv_constellation"><p>Through the repetition of the scenarios, the 'Good' has become a source of stuffy boredom, while the 'Evil' has become an antiquated cliché. I have to wonder, maybe it's about time that we stop with this foolishness.</p></div>
 <p class="orv_line">Agares's words prompted the Demon Kings to pull out all of their weapons.</p>
 <p class="orv_line">Metatron spoke again.</p>
-<div class="orv_constellation"><p>[If we fight here, then everyone will perish together.]</p></div>
-<div class="orv_constellation"><p>['Evil' has always been easier than 'Good'. Even if you all disappear, we will still remain.]</p></div>
-<div class="orv_constellation"><p>[The world forgetting about 'Good' does not mean I have forgotten mine.]</p></div>
-<div class="orv_constellation"><p>[Then, prove it. Agares's eyes began burning up. We will no longer be the plaything of the 'promotion of virtue and disapproval of vice' any more. I am 'Evil'. I was born 'Evil', and proving that you exist used to be the reason for my existence. And from today onwards, I shall break free from that reason.]</p></div>
+<div class="orv_constellation"><p>If we fight here, then everyone will perish together.</p></div>
+<div class="orv_constellation"><p>'Evil' has always been easier than 'Good'. Even if you all disappear, we will still remain.</p></div>
+<div class="orv_constellation"><p>The world forgetting about 'Good' does not mean I have forgotten mine.</p></div>
+<div class="orv_constellation"><p>Then, prove it. Agares's eyes began burning up. We will no longer be the plaything of the 'promotion of virtue and disapproval of vice' any more. I am 'Evil'. I was born 'Evil', and proving that you exist used to be the reason for my existence. And from today onwards, I shall break free from that reason.</p></div>
 <p class="orv_line">The Demon Kings all roared out in unison. Their Statuses overflowed as if to sweep away every Archangel present at any given moment.</p>
 <p class="orv_line">But, right at that moment…</p>
-<div class="orv_system"><p>[Members from the same camp have clashed!]</p></div>
-<div class="orv_system"><p>[Current Chaos Points: 83]</p></div>
+<div class="orv_system"><p>Members from the same camp have clashed!</p></div>
+<div class="orv_system"><p>Current Chaos Points: 83</p></div>
 <p class="orv_line">System messages rose up in the air. The sudden spike in the Chaos Points caused the shocked Archangels to exchange glances with each other.</p>
-<div class="orv_constellation"><p>[What's going on?!]</p></div>
-<div class="orv_constellation"><p>[It's the outside! Someone is slaughtering the members from the same side!]</p></div>
+<div class="orv_constellation"><p>What's going on?!</p></div>
+<div class="orv_constellation"><p>It's the outside! Someone is slaughtering the members from the same side!</p></div>
 <p class="orv_line">Agares and the Demon Kings also became flustered. And in the middle of all this confusion, only Metatron maintained his composed chuckle.</p>
-<div class="orv_constellation"><p>[I've been thinking about this for a long time, but it seems that this is the only way forward.]</p></div>
-<div class="orv_constellation"><p>[What are you…?!]</p></div>
-<div class="orv_constellation"><p>[If you want a fight, then I'll give you one. However, what meaning is there for us to fight inside this place and end the 'Great War of Saints and Demons'? Who do you think will remember the 'Good and Evil' that fought inside this tiny little sphere and met its ignoble doom?]</p></div>
+<div class="orv_constellation"><p>I've been thinking about this for a long time, but it seems that this is the only way forward.</p></div>
+<div class="orv_constellation"><p>What are you…?!</p></div>
+<div class="orv_constellation"><p>If you want a fight, then I'll give you one. However, what meaning is there for us to fight inside this place and end the 'Great War of Saints and Demons'? Who do you think will remember the 'Good and Evil' that fought inside this tiny little sphere and met its ignoble doom?</p></div>
 <p class="orv_line">There was a hint of bizarre, creepy madness in Metatron's voice.</p>
 <p class="orv_line">Sensing that something very ominous was about to occur, Agares loudly shouted out.</p>
-<div class="orv_constellation"><p>[Metatron! Just what the hell are you thinking?!]</p></div>
-<div class="orv_constellation"><p>[My thoughts are as thus.]</p></div>
+<div class="orv_constellation"><p>Metatron! Just what the hell are you thinking?!</p></div>
+<div class="orv_constellation"><p>My thoughts are as thus.</p></div>
 <p class="orv_line">As soon as Metatron finished talking, Michael, standing right at the forefront of the Archangels, unsheathed his sword.</p>
 <p class="orv_line">Now that the strongest Archangel had pulled its sword out, Demon Kings didn't hold back and unleashed their Statuses while roaring out, as well. And in the following moment, Michael's sword pierced into someone else.</p>
-<div class="orv_constellation"><p>[…Mi, chael…?]</p></div>
+<div class="orv_constellation"><p>…Mi, chael…?</p></div>
 <p class="orv_line">Eyes trembled softly in sheer disbelief.</p>
 <p class="orv_line">The person Michael had stabbed wasn't a Demon King. He began laughing. </p>
-<div class="orv_constellation"><p>[How regretful. I always wanted to kill Uriel first, though.]</p></div>
+<div class="orv_constellation"><p>How regretful. I always wanted to kill Uriel first, though.</p></div>
 <p class="orv_line">Archangel Raguel continued to shake its head in disbelief but eventually, it died on the spot as the Stories poured out from its wounds.</p>
 <p class="orv_line">Demonic aura began boiling all over Michael's entire frame after he murdered one of his kin. A corrupted Angel's powers would grow stronger by killing fellow Archangels.</p>
-<div class="orv_system"><p>[Members from the same camp have clashed!]</p></div>
-<div class="orv_system"><p>[Current Chaos Points: 87]</p></div>
+<div class="orv_system"><p>Members from the same camp have clashed!</p></div>
+<div class="orv_system"><p>Current Chaos Points: 87</p></div>
 <p class="orv_line">Status that almost reached that of a Myth-grade Constellation exploded forth, and the massacre commenced in earnest. Angels that had no place to run hurriedly unleashed their Statuses, but they couldn't even put up a proper fight before getting killed. Originally, there was a restriction placed on Michael that prevented him from attacking a fellow Angel on the side of Absolute Good.</p>
 <p class="orv_line">Even then, if such a thing was possible, that could only mean…</p>
-<div class="orv_constellation"><p>[Scribe, just why…?!]</p></div>
+<div class="orv_constellation"><p>Scribe, just why…?!</p></div>
 <p class="orv_line">Metatron's book was emitting bright white light. This slaughter was taking place under the tacit approval of 'Scribe of Heaven'.</p>
-<div class="orv_system"><p>[Members from the same camp have clashed!]</p></div>
-<div class="orv_system"><p>[Current Chaos Points: 88]</p></div>
+<div class="orv_system"><p>Members from the same camp have clashed!</p></div>
+<div class="orv_system"><p>Current Chaos Points: 88</p></div>
 <p class="orv_line">The sight of hell itself unfolded as an Angel murdered another Angel.</p>
 <p class="orv_line">Demon Kings watched the proceedings like onlookers spectating on the wildfire on the other side of the river, shook from sheer terror, and hastily stepped back.</p>
 <p class="orv_line">Michael grinned brightly, and while wiping the Angel blood off his cheek, spoke. </p>
-<div class="orv_constellation"><p>[And now, 'Good' will forever be remembered.]</p></div>
-<div class="orv_system"><p>[The Oldest Good has begun its storytelling.]</p></div>
+<div class="orv_constellation"><p>And now, 'Good' will forever be remembered.</p></div>
+<div class="orv_system"><p>The Oldest Good has begun its storytelling.</p></div>
 <p class="orv_line">The battle of Saints and Demons were, in the end, a battle between Stories. And these Stories knew better than anyone on what to do so that they would be remembered forever.</p>
 <p class="orv_line">Agares, enraged beyond means, roared out.</p>
-<div class="orv_constellation"><p>[Could it be that, you bastards, wish to revive the Apocalypse Dragon…?!]</p></div>
+<div class="orv_constellation"><p>Could it be that, you bastards, wish to revive the Apocalypse Dragon…?!</p></div>
 <p class="orv_line">Just as it urgently tried to unleash its Status, something dug deeply into its back – a covert, sneaky demonic energy that could even rival its own Status.</p>
-<div class="orv_system"><p>[The Oldest Evil has begun its storytelling.]</p></div>
+<div class="orv_system"><p>The Oldest Evil has begun its storytelling.</p></div>
 <p class="orv_line">Agares unstably wobbled about and looked behind itself.</p>
-<div class="orv_constellation"><p>[…You bastard, why?]</p></div>
-<div class="orv_constellation"><p>[You said it yourself, haven't you?]</p></div>
+<div class="orv_constellation"><p>…You bastard, why?</p></div>
+<div class="orv_constellation"><p>You said it yourself, haven't you?</p></div>
 <p class="orv_line">The Demon King felt the sensation of the sharp claws cutting out its heart.</p>
 <p class="orv_line">Asmodeus, the 'Seeker of the End', was smiling brightly.</p>
-<div class="orv_constellation"><p>[…That 'Evil' is always easier than 'Good'.]</p></div>
+<div class="orv_constellation"><p>…That 'Evil' is always easier than 'Good'.</p></div>
 <br>
 <hr>
 <br>
 <p class="orv_line">Gabriel's Story was really short. Short, but more than long enough to explain everything. Hell had unfolded inside that sphere already.</p>
 <p class="orv_line">⸢"Run away, Gabriel. Request aid from those people."⸥</p>
 <p class="orv_line">And a small number of Archangels, including Raphael, sacrificed their Statuses at the last moment to send Gabriel outside the sphere.</p>
-<div class="orv_system"><p>[Definition of 'Good' and 'Evil' are rapidly changing!]</p></div>
-<div class="orv_system"><p>[Members from the same camp have clashed!]</p></div>
-<div class="orv_system"><p>[Current Chaos Points: 92]</p></div>
+<div class="orv_system"><p>Definition of 'Good' and 'Evil' are rapidly changing!</p></div>
+<div class="orv_system"><p>Members from the same camp have clashed!</p></div>
+<div class="orv_system"><p>Current Chaos Points: 92</p></div>
 <p class="orv_line">"Kim Dokja."</p>
 <p class="orv_line">Yoo Joonghyuk and Han Sooyoung had arrived by my side already. Their eyes were demanding an explanation.</p>
 <p class="orv_line">Rather than providing a detailed but time-wasting one, I simply spoke of the core of the issue at hand. "It's Metatron. He was planning to wake up the 'Apocalypse Dragon' from the very beginning."</p>
@@ -356,8 +363,8 @@
 <p class="orv_line">And &lt;Eden&gt; and the Demon Realm would forever be etched in everyone's memory.</p>
 <p class="orv_line">Han Sooyoung shuddered uncomfortably at that out-there show of will.</p>
 <p class="orv_line">"Those crazy sons of bitches…"</p>
-<div class="orv_system"><p>[Members from the same camp have clashed!]</p></div>
-<div class="orv_system"><p>[Current Chaos Points: 93]</p></div>
+<div class="orv_system"><p>Members from the same camp have clashed!</p></div>
+<div class="orv_system"><p>Current Chaos Points: 93</p></div>
 <p class="orv_line">I watched the Chaos Points slowly climb up and felt the helplessness creep in bit by bit. All of this was Metatron's scenario.</p>
 <p class="orv_line">"Kim Dokja, what are we going to do?"</p>
 <p class="orv_line">From afar, the rest of our companions, plus Uriel, were flying towards our location.</p>
@@ -366,21 +373,21 @@
 <p class="orv_line">Tsu-chuchuchut!!</p>
 <p class="orv_line">It was at that moment that a portal opened up in the air as sparks wildly danced about.</p>
 <p class="orv_line">"…Dokkaebis?"</p>
-<div class="orv_system"><p>[Great Dokkaebi, 'Heoju' (empty throne) has appeared in the scenario!]</p></div>
-<div class="orv_system"><p>[Great Dokkaebi, 'Heoche' (empty body) has appeared in the scenario!]</p></div>
+<div class="orv_system"><p>Great Dokkaebi, 'Heoju' (empty throne) has appeared in the scenario!</p></div>
+<div class="orv_system"><p>Great Dokkaebi, 'Heoche' (empty body) has appeared in the scenario!</p></div>
 <p class="orv_line">Two Great Dokkaebis, one wearing a formal black suit while the other, a white one, descended from the sky while scattering around dignified Statuses. They must've come here on short notice because their crumpled, untidy shirts and ties were flapping around in the strong winds.</p>
 <p class="orv_line">They approached me immediately and spoke as thus.</p>
-<div class="orv_constellation"><p>['Demon King of Salvation', this 'Dark Stratum' will soon perish. And, it's almost a guarantee that you will die here.]</p></div>
+<div class="orv_constellation"><p>'Demon King of Salvation', this 'Dark Stratum' will soon perish. And, it's almost a guarantee that you will die here.</p></div>
 <p class="orv_line">I figured that the Bureau would start making their move by now. I didn't expect Great Dokkaebis to personally show up here, though.</p>
 <p class="orv_line">"If you came here to prophetise the apocalypse, then I'm afraid you're a bit too late now. The system's been yapping on about it for a while."</p>
 <p class="orv_line">The two Great Dokkaebis looked at each other as if they were taken aback by my composed reply.</p>
-<div class="orv_constellation"><p>[Just as the rumours suggested, he does possess a glib tongue.]</p></div>
-<div class="orv_constellation"><p>[And that's why the King is so interested in him, most likely.]</p></div>
+<div class="orv_constellation"><p>Just as the rumours suggested, he does possess a glib tongue.</p></div>
+<div class="orv_constellation"><p>And that's why the King is so interested in him, most likely.</p></div>
 <p class="orv_line">Just before I could ask for a clarification on that, one of the Great Dokkaebis broke out into a smirk.</p>
 <p class="orv_line">…As if it was about to make an offer that I couldn't possibly refuse.</p>
-<div class="orv_constellation"><p>[Oh, Demon King. Let us get straight to the point. Give up on this 'Great War of Saints and Demons'.]</p></div>
+<div class="orv_constellation"><p>Oh, Demon King. Let us get straight to the point. Give up on this 'Great War of Saints and Demons'.</p></div>
 <p class="orv_line">This Great Dokkaebi laughed as if entertained by something, and while looking at Gabriel lying down on the ground, spoke again.</p>
-<div class="orv_constellation"><p>[If you do, we shall take you to the 'Final Scenario'.]</p></div>
+<div class="orv_constellation"><p>If you do, we shall take you to the 'Final Scenario'.</p></div>
 <br>
 <hr>
         </article>
@@ -388,18 +395,12 @@
             <a href="./ch_401"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_403">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="402" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="465" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="401" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="401" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

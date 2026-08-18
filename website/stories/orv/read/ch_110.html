@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 110: Ep. 22 – Three Promises, II</title>
     <meta property="og:title" content="Ch 110: Ep. 22 – Three Promises, II" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,36 +177,36 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00110.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 110: Ep. 22 – Three Promises, II</h1></div>
 <p class="orv_line">The two executive dokkaebis glanced at each other. How long did this last? Then the two dokkaebis burst out laughing at the same time.</p>
-<div class="orv_constellation"><p>[Kuk. Ahahaha!]</p></div>
-<div class="orv_constellation"><p>[Interesting. Don't tell me…]</p></div>
+<div class="orv_constellation"><p>Kuk. Ahahaha!</p></div>
+<div class="orv_constellation"><p>Interesting. Don't tell me…</p></div>
 <p class="orv_line">The smart executives seemed to have noticed something. Paul watched the scene with a puzzled expression.</p>
-<div class="orv_constellation"><p>[I will allow a solo meeting with the dokkaebi Paul.]</p></div>
-<div class="orv_system"><p>[The free solo time is 20 minutes.]</p></div>
+<div class="orv_constellation"><p>I will allow a solo meeting with the dokkaebi Paul.</p></div>
+<div class="orv_system"><p>The free solo time is 20 minutes.</p></div>
 <p class="orv_line">The executives of the bureau agreed to my request like it was interesting. I figured they would do this.</p>
 <p class="orv_line">Originally, the executives didn't like streamers. They were closer to the 'subscribers' than the 'streamers'. The moment they spoke, a transparent dome formed around me and Paul. The original 'solo meeting right' was a space for constellations and dokkaebis to secretly meet.</p>
-<div class="orv_system"><p>[The solo meeting with the intermediate dokkaebi Paul has begun.]</p></div>
+<div class="orv_system"><p>The solo meeting with the intermediate dokkaebi Paul has begun.</p></div>
 <p class="orv_line">However, the usage could be changed according to the user. I saw Bihyung talking to the executives outside the dome.</p>
 <p class="orv_line">Paul was trapped with me and revealed his hostility. "Why did you want to see me? Did you want to pick a fight?"</p>
 <p class="orv_line">His body was still affected by the executive dokkaebi's Redemption Code. As long as the code existed, Paul wouldn't be able to use his own power as well as the authority of a dokkaebi. In other words, the person in front of me was completely helpless.</p>
@@ -214,29 +221,29 @@
 <p class="orv_line">"Is this the first time you are feeling pain? You must've never been beaten up like this after living as a dokkaebi."</p>
 <p class="orv_line">"K-Kuhut! Kuhuhut…" Paul was still smiling despite his blood dripping down. "You made a mistake just now. There are special rules in place to prevent people like you from exploiting the solo meeting rights."</p>
 <p class="orv_line">Then the system message arrived like it had been waiting.</p>
-<div class="orv_system"><p>[You have injured the dokkaebi in the solo meeting space.]</p></div>
-<div class="orv_system"><p>[500 coins have been consumed as a penalty.]</p></div>
+<div class="orv_system"><p>You have injured the dokkaebi in the solo meeting space.</p></div>
+<div class="orv_system"><p>500 coins have been consumed as a penalty.</p></div>
 <p class="orv_line">These dokkaebi, they were really great. They prepared a penalty in case the constellations tried anything. It was a coins penalty. However, I was aware of the penalty and just shrugged.</p>
 <p class="orv_line">Paul laughed as he wiped off his blood. "Foolish human. You are bringing destruction on yourself with your anger. Yes, try to hit me as many times as you like. The coins you have at the moment…"</p>
 <p class="orv_line">"How much coins do you think I have?" Paul fell silent. "Isn't it strange? How could I become a platinum member when I am an incarnation?"</p>
 <p class="orv_line">I grinned at his shaky eyes. "I have a lot of coins. I made a lot of money thanks to you."</p>
 <p class="orv_line">My fists descended towards the pale Paul. The damn scenarios I experienced so far passed through my head.</p>
-<div class="orv_system"><p>[Coins Possessed: 205,902 C]</p></div>
+<div class="orv_system"><p>Coins Possessed: 205,902 C</p></div>
 <p class="orv_line">I remembered Shin Yoosung's dying appearance. These were among the things I told her:</p>
 <p class="orv_line">–That dokkaebi, I'll beat you to death.</p>
 <p class="orv_line">This was the first promise I would keep.</p>
-<div class="orv_system"><p>[500 coins have been consumed as a penalty.]</p></div>
+<div class="orv_system"><p>500 coins have been consumed as a penalty.</p></div>
 <p class="orv_line">Once again, my fist moved and his nose was broken. I didn't say that it was someone's share. In the first place, this couldn't be anyone's share.</p>
-<div class="orv_system"><p>[500 coins have been consumed as a penalty.]</p></div>
+<div class="orv_system"><p>500 coins have been consumed as a penalty.</p></div>
 <p class="orv_line">"Kuaaak! A-An insignificant human dares…!"</p>
 <p class="orv_line">Peeeok-!</p>
-<div class="orv_system"><p>[500 coins have been consumed as a penalty.]</p></div>
+<div class="orv_system"><p>500 coins have been consumed as a penalty.</p></div>
 <p class="orv_line">"Y-You won't be safe if you do this to me…!"</p>
 <p class="orv_line">Peeeok-!</p>
-<div class="orv_system"><p>[500 coins have been consumed as a penalty.]</p></div>
+<div class="orv_system"><p>500 coins have been consumed as a penalty.</p></div>
 <p class="orv_line">"I'll kill you! I will surely kill you…!"</p>
 <p class="orv_line">Peeeok-!</p>
-<div class="orv_system"><p>[500 coins have been consumed as a penalty.]</p></div>
+<div class="orv_system"><p>500 coins have been consumed as a penalty.</p></div>
 <p class="orv_line">"W-Wait a minute! Wait! Stop…"</p>
 <p class="orv_line">His frightened body curled up and I stopped my fists for the first time. For a moment, hope filled his eyes.</p>
 <p class="orv_line">"Y-Yes. You thought well. There is nothing about doing this here…"</p>
@@ -267,29 +274,29 @@
 <p class="orv_line">I raised my fist and started beating him again.</p>
 <p class="orv_line">Peeeok-!</p>
 <p class="orv_line">The subsequent punches crushed his face, ribs and joints. I didn't have to control my power because there was no fear of him dying. One blow was the best blow. Every time bones broke, something exploded inside of me.</p>
-<div class="orv_system"><p>[500 coins have been consumed as a penalty.]</p></div>
+<div class="orv_system"><p>500 coins have been consumed as a penalty.</p></div>
 <p class="orv_line">In fact, I knew.</p>
-<div class="orv_system"><p>[500 coins have been consumed as a penalty.]</p></div>
+<div class="orv_system"><p>500 coins have been consumed as a penalty.</p></div>
 <p class="orv_line">I knew very well. No matter how hard I beat him up, it wouldn't give me any comfort over Shin Yoosung's death. The dead Shin Yoosung would never see this sight yet I still moved my fists. I hit and hit him again.</p>
 <p class="orv_line">Peeeok-!</p>
 <p class="orv_line">It was just like Yoo Joonghyuk. He kept repeated his regressions until the last moment, even if no one knew his cause.</p>
-<div class="orv_system"><p>[500 coins have been consumed as a penalty.]</p></div>
+<div class="orv_system"><p>500 coins have been consumed as a penalty.</p></div>
 <p class="orv_line">Then the message of a constellation was heard.</p>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is excited about the unseen development.]</p></div>
-<div class="orv_system"><p>[500 coins have been sponsored.]</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is excited about the unseen development.</p></div>
+<div class="orv_system"><p>500 coins have been sponsored.</p></div>
 <p class="orv_line">I stopped punching for a moment and stared up at the sky. Even this was a story to the constellations.</p>
 <p class="orv_line">"It isn't an act this time."</p>
-<div class="orv_system"><p>[You have returned the 500 sponsored coins to the constellation.]</p></div>
-<div class="orv_system"><p>[The constellation 'Prisoner of the Golden Headband' is very embarrassed.]</p></div>
+<div class="orv_system"><p>You have returned the 500 sponsored coins to the constellation.</p></div>
+<div class="orv_system"><p>The constellation 'Prisoner of the Golden Headband' is very embarrassed.</p></div>
 <p class="orv_line">Think of it as a free service. Now things would be good for me.</p>
-<div class="orv_system"><p>[The constellation 'Secretive Plotter' is interested in your actions.]</p></div>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is thrilled with your actions.]</p></div>
+<div class="orv_system"><p>The constellation 'Secretive Plotter' is interested in your actions.</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is thrilled with your actions.</p></div>
 <p class="orv_line">I started punching again. There were only the sounds of the dokkaebi's skin bursting and intermittent groaning.</p>
 <p class="orv_line">The constellations silently watched what I was doing. No one gave me any coins but I could feel them watching me. Sometimes, this alone was sufficient.</p>
 <p class="orv_line">"U-Uhhh… I was wrong. S-Spare me! P-Please! Please!" Paul couldn't endure it anymore and dragged his body to the edge of the dome.</p>
 <p class="orv_line">The wall of the dome made a faint sound but the executives didn't respond. Rather, they were pleased with my actions. Maybe they would be saying something like this:</p>
-<div class="orv_quote"><p>「 That coin making bastard. 」</p></div>
-<div class="orv_quote"><p>「 Damn streamer scum. 」</p></div>
+<div class="orv_quote"><p>That coin making bastard.</p></div>
+<div class="orv_quote"><p>Damn streamer scum.</p></div>
 <p class="orv_line">The executive dokkaebis didn't like streamers. The executives who evolved from constellations were good at fighting but had no talent in leading the scenarios.</p>
 <p class="orv_line">Shortly after, Paul's body became completely ragged. I grabbed at his bloody neck. At this point, I asked what I really wanted to know. "Where is Shin Yoosung's soul right now?"</p>
 <br>
@@ -297,24 +304,24 @@
 <br>
 <p class="orv_line">Dead souls that were part of the scenario couldn't escape from the confines of the contract, even in death. It would've been different if the contract itself had been destroyed.</p>
 <p class="orv_line">The intermediate dokkaebi Paul opened his mouth after he was hit a few more times.</p>
-<div class="orv_constellation"><p>[T…That. I also don't know. You borrowed the power of an archangel and… our contract was destroyed…]</p></div>
+<div class="orv_constellation"><p>T…That. I also don't know. You borrowed the power of an archangel and… our contract was destroyed…</p></div>
 <p class="orv_line">Indeed, it was like this. The dokkaebis had been handed the 'disaster Shin Yoosung' by a great demon. In the course of the transfer, the strings of the contract were created using the great demon's power.</p>
 <p class="orv_line">Then Uriel's Hell Flames Ignition had burned those strings. In other words, Shin Yoosung's soul was now floating around the world.</p>
-<div class="orv_constellation"><p>[Y-You. Absolutely, can't, regain, companion… Her soul, soon, the labyrinth…]</p></div>
+<div class="orv_constellation"><p>Y-You. Absolutely, can't, regain, companion… Her soul, soon, the labyrinth…</p></div>
 <p class="orv_line">Paul finally collapsed.</p>
-<div class="orv_system"><p>[The 'Dokkaebi Solo Meeting Rights' has ended.]</p></div>
+<div class="orv_system"><p>The 'Dokkaebi Solo Meeting Rights' has ended.</p></div>
 <p class="orv_line">The transparent dome disappeared and the executives whistled.</p>
-<div class="orv_constellation"><p>[Oh, you are in terrible shape even before the disciplinary hearing.]</p></div>
+<div class="orv_constellation"><p>Oh, you are in terrible shape even before the disciplinary hearing.</p></div>
 <p class="orv_line">They glanced at me before moving away with delighted smiles. I watched Bihyung hurriedly chase after them and asked,</p>
 <p class="orv_line">'Did you get back the money?'</p>
 <p class="orv_line">–Of course. But didn't you use too many coins?</p>
 <p class="orv_line">'I still have a lot left'.</p>
 <p class="orv_line">I hit Paul exactly 124 times.</p>
-<div class="orv_system"><p>[Coins Possessed: 143,902 C]</p></div>
+<div class="orv_system"><p>Coins Possessed: 143,902 C</p></div>
 <p class="orv_line">Bihyung sighed as he glanced at me.</p>
 <p class="orv_line">–I won't be able to communicate with you after entering the bureau. I will keep the channel open so don't get into trouble in the meantime. Please.</p>
 <p class="orv_line">Watching Bihyung act like a mother-hen, I thought to myself that this was good. Because without him, there wouldn't be anyone who'd question the things I'd do from now on.</p>
-<div class="orv_system"><p>[The scenario error will delay further compensation settlement.]</p></div>
+<div class="orv_system"><p>The scenario error will delay further compensation settlement.</p></div>
 <p class="orv_line">The administrator of the main scenario had completely left the scene and the scenario development was likely to be stagnant for a bit. It should only be a day or two but that was enough time.</p>
 <p class="orv_line">I looked up at the dokkaebis disappearing into the portal and recalled the last conversation I had with Shin Yoosung.</p>
 <p class="orv_line">–Don't worry. You won't die.</p>
@@ -340,18 +347,12 @@
             <a href="./ch_109"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_111">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="110" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="309" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="109" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="109" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

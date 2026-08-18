@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 506: Ep. 97 - The star that can't be seen, III</title>
     <meta property="og:title" content="Ch 506: Ep. 97 - The star that can't be seen, III" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,25 +177,25 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00506.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 506: Ep. 97 - The star that can't be seen, III</h1></div>
 <p class="orv_line">⸢The universe in the beginning was 'one'.⸥</p>
@@ -201,14 +208,14 @@
 <p class="orv_line">An incredible dizziness assaulted me, and I fell down on my hands and knees.</p>
 <p class="orv_line">This was inside the door, the deepest part of the 'Final Wall'. The wall didn't try to suck me in anymore. Maybe, I had already been sucked in.</p>
 <p class="orv_line">I looked around to discover Han Sooyoung collapsed on the floor. I placed her unconscious figure on my back, and stood up. I raised my head to realize that Anna Croft was now standing before me.</p>
-<div class="orv_constellation"><p>[…Looks like you saw the First Story.]</p></div>
+<div class="orv_constellation"><p>…Looks like you saw the First Story.</p></div>
 <p class="orv_line">The Wenny King currently possessing her was smiling in my direction.</p>
-<div class="orv_constellation"><p>[I made the exact same face as you when I first saw it, too.]</p></div>
+<div class="orv_constellation"><p>I made the exact same face as you when I first saw it, too.</p></div>
 <p class="orv_line">I didn't reply. I had no time to shoot breezes with him like this. Where did my companions disappear to?</p>
 <p class="orv_line">Maybe he read my anxiousness, because he continued to speak to me.</p>
-<div class="orv_constellation"><p>[Aren't you curious? Why does this thing called 'Story' exist in this world?]</p></div>
+<div class="orv_constellation"><p>Aren't you curious? Why does this thing called 'Story' exist in this world?</p></div>
 <p class="orv_line">"…I didn't come here to discuss such things with you."</p>
-<div class="orv_constellation"><p>[However, it'll be impossible to go any further without talking about it first. It was the same for me.]</p></div>
+<div class="orv_constellation"><p>However, it'll be impossible to go any further without talking about it first. It was the same for me.</p></div>
 <p class="orv_line">I could hear Han Sooyoung's breathing coming from my back. Her breaths soon became a Story and unfolded before me. The world seemed to distort, and a passage decorated with display shelf-like things appeared next.</p>
 <p class="orv_line">⸢The universe became 'two', and the 'one' grew lonely.⸥</p>
 <p class="orv_line">⸢Things that weren't necessary back when there was only 'one' began appearing.⸥</p>
@@ -216,7 +223,7 @@
 <p class="orv_line">⸢The 'Good and Evil' was created to differentiate the two.⸥</p>
 <p class="orv_line">Agares and Metatron were bitterly fighting each other. That was the 'Great War of Saints and Demons', where angels and demons, even as they bled crimson-coloured Stories, never compromised on their ideals.</p>
 <p class="orv_line">⸢The 'communication' was invented to soothe the two's loneliness.⸥</p>
-<p class="orv_line">Citizens were battling demons within the walls of the [Industrial Complex]. And I saw Jang Hayoung trying to dissuade this battle between those walls.</p>
+<p class="orv_line">Citizens were battling demons within the walls of the <strong>[Industrial Complex]</strong>. And I saw Jang Hayoung trying to dissuade this battle between those walls.</p>
 <p class="orv_line">⸢And 'Samsara', a wish to return to when it was 'one', was created.⸥</p>
 <p class="orv_line">Next up was Sakyamuni gently stroking a certain Incarnation Body trapped within a water tank inside his chamber. It was the Incarnation Body belonging to the now-dead Tang Sanzang, who loved Sakyamuni once upon a time.</p>
 <p class="orv_line">⸢However, 'two' could never go back to being 'one'.⸥</p>
@@ -228,7 +235,7 @@
 <p class="orv_line">⸢The 'Character'.⸥</p>
 <p class="orv_line">I couldn't leisurely watch on anymore.</p>
 <p class="orv_line">The 'Wenny King' walking next to me like a ghost spoke up.</p>
-<div class="orv_constellation"><p>[It's such a malicious joke, don't you agree?]</p></div>
+<div class="orv_constellation"><p>It's such a malicious joke, don't you agree?</p></div>
 <p class="orv_line">He cackled before hiding within my shadow.</p>
 <p class="orv_line">The number of individuals appearing on the display cabinet grew. Some were simply put on display like some plastic figurines, while there were some still trapped in the wall with only their faces exposed as if moulding hadn't been completed yet.</p>
 <p class="orv_line">"…Jihye!! Yoosung-ah!!"</p>
@@ -240,30 +247,30 @@
 <p class="orv_line">And a faint silhouette could be spied below him.</p>
 <p class="orv_line">⸢That was none other than the 'King of the Stories'.⸥</p>
 <p class="orv_line">The fog obscured his face, so I slowly walked over to him.</p>
-<div class="orv_system"><p>[You have encountered the 'King of the Stories'!]</p></div>
-<div class="orv_system"><p>[End of the main scenario is here!]</p></div>
+<div class="orv_system"><p>You have encountered the 'King of the Stories'!</p></div>
+<div class="orv_system"><p>End of the main scenario is here!</p></div>
 <p class="orv_line">There never was much info on the Dokkaebi King within the pages of the 'Ways of Survival'. However, not appearing in the novel didn't mean that no information regarding him could be found elsewhere.</p>
 <p class="orv_line">Because I knew of those that had met him already.</p>
 <p class="orv_line">⸢However, none of them mentioned what the 'Dokkaebi King' looked like.⸥</p>
 <p class="orv_line">At the end of the 'Final Fog', the 'King of the Stories' was waiting for me.</p>
-<div class="orv_system"><p>[The 'King of the Stories' is smiling at you.]</p></div>
+<div class="orv_system"><p>The 'King of the Stories' is smiling at you.</p></div>
 <p class="orv_line">And then…</p>
-<div class="orv_system"><p>['The Fourth Wall' is intensely trembling!]</p></div>
+<div class="orv_system"><p>'The Fourth Wall' is intensely trembling!</p></div>
 <p class="orv_line">I had to doubt my own eyes next.</p>
 <p class="orv_line">⸢This was from a very old memory.⸥</p>
 <p class="orv_line">The head-pounding dizziness assaulted me as my vision shook greatly.</p>
 <p class="orv_line">⸢There is no way. No, such a thing is simply impossible.⸥</p>
-<div class="orv_constellation"><p>[Finally we meet, the apostle of ■■… No, wait.]</p></div>
+<div class="orv_constellation"><p>Finally we meet, the apostle of ■■… No, wait.</p></div>
 <p class="orv_line">Small bits of sparks danced before my eyes and removed the filtering altogether.</p>
-<div class="orv_system"><p>[Oh, the 'apostle of eternity and epilogue'.]</p></div>
+<div class="orv_system"><p>Oh, the 'apostle of eternity and epilogue'.</p></div>
 <p class="orv_line">⸢Kim Dokja roared out like a thunderclap and rushed forward.⸥</p>
 <p class="orv_line">I didn't even have enough time to think. I grabbed him by the scruff of his neck. I wanted to choke him to death right here, right now – but for some reason, my hands wouldn't listen to me.</p>
 <p class="orv_line">⸢That man was tall. He always looked down on his son from high above.⸥</p>
 <p class="orv_line">This man, he couldn't be here.</p>
 <p class="orv_line">⸢The man with an always-flushing face. Always drunk, and because of that, the son never really met gazes with this man. No, the son prayed that their gazes would never meet each other's.⸥</p>
-<div class="orv_constellation"><p>[Dokja-yah. Kim Dokja.]</p></div>
+<div class="orv_constellation"><p>Dokja-yah. Kim Dokja.</p></div>
 <p class="orv_line">⸢The world would turn into a nightmare if their gazes met, that's why.⸥</p>
-<div class="orv_constellation"><p>[I really did come up with a splendid name for you, didn't I?]</p></div>
+<div class="orv_constellation"><p>I really did come up with a splendid name for you, didn't I?</p></div>
 <p class="orv_line">Tsu-chuchuchuchut!!</p>
 <p class="orv_line">I threw out a punch with all my might.</p>
 <p class="orv_line">⸢His height that seemed so tall back then, was now about the same.⸥</p>
@@ -273,47 +280,47 @@
 <p class="orv_line">⸢The son thought he could win now. He was not a powerless little child anymore.⸥</p>
 <p class="orv_line">The fist I swung with all my power was stopped right before his nose.</p>
 <p class="orv_line">Sparks exploding brightly illuminated the man's face. The 'Dokkaebi King', his eyes glowing bright blue, smiled like a devil at me while standing there.</p>
-<div class="orv_constellation"><p>[What do you think you're doing to your own father?]</p></div>
-<p class="orv_line">I roared out. I was not cognizant of what I was saying nor even doing at that moment. [The Fourth Wall] was crumbling down.</p>
+<div class="orv_constellation"><p>What do you think you're doing to your own father?</p></div>
+<p class="orv_line">I roared out. I was not cognizant of what I was saying nor even doing at that moment. <strong>[The Fourth Wall]</strong> was crumbling down.</p>
 <p class="orv_line">"Kim Dokja! Get yourself together!!"</p>
 <p class="orv_line">And then, a voice could be heard.</p>
 <p class="orv_line">There was this warmth still pressing onto my back. Han Sooyoung's Story was being transmitted to me.</p>
 <p class="orv_line">⸢This was the dokja/reader's Story.⸥</p>
 <p class="orv_line">The story that protected me.</p>
 <p class="orv_line">"The Fourth Wall! What are you doing! Wake up!!"</p>
-<div class="orv_system"><p>['The Fourth Wall' is strongly revitalised!]</p></div>
-<div class="orv_system"><p>['The Fourth Wall' is growing as thick as an impregnable fortress!]</p></div>
+<div class="orv_system"><p>'The Fourth Wall' is strongly revitalised!</p></div>
+<div class="orv_system"><p>'The Fourth Wall' is growing as thick as an impregnable fortress!</p></div>
 <p class="orv_line">It was then the expression on the 'Dokkaebi King' changed.</p>
-<div class="orv_constellation"><p>[You're obstructing me?]</p></div>
+<div class="orv_constellation"><p>You're obstructing me?</p></div>
 <p class="orv_line">It seemed that he was now looking not at me, but the thing inside me.</p>
-<div class="orv_constellation"><p>[The last fragment of the Final Wall, your duty is now over.]</p></div>
-<div class="orv_system"><p>['The Fourth Wall' is viciously growling!]</p></div>
-<div class="orv_system"><p>[You have safely reached the end of the entire story. Along with the successor that meets all the requirements.]</p></div>
-<div class="orv_system"><p>[The Fourth Wall was speaking from inside me.]</p></div>
+<div class="orv_constellation"><p>The last fragment of the Final Wall, your duty is now over.</p></div>
+<div class="orv_system"><p>'The Fourth Wall' is viciously growling!</p></div>
+<div class="orv_system"><p>You have safely reached the end of the entire story. Along with the successor that meets all the requirements.</p></div>
+<div class="orv_system"><p>The Fourth Wall was speaking from inside me.</p></div>
 <p class="orv_line">⸢Th at is for Kim Dok ja to de cide⸥</p>
 <p class="orv_line">I gradually regained my calm while listening to those words.</p>
 <p class="orv_line">⸢This creature before me was not my father.⸥</p>
-<p class="orv_line">The memories shared with my mother became a Story and flowed right before my eyes. Her memories got swallowed up by [The Fourth Wall]. Her sentences floated up above that wall and tried to speak to me.</p>
+<p class="orv_line">The memories shared with my mother became a Story and flowed right before my eyes. Her memories got swallowed up by <strong>[The Fourth Wall]</strong>. Her sentences floated up above that wall and tried to speak to me.</p>
 <p class="orv_line">⸢He died on that day.⸥</p>
 <p class="orv_line">"…You are not my father."</p>
-<div class="orv_constellation"><p>[How can you be so sure?]</p></div>
+<div class="orv_constellation"><p>How can you be so sure?</p></div>
 <p class="orv_line">"Stop with your pranks. It's impossible for you to be my father, Probability-wise."</p>
-<div class="orv_constellation"><p>[Probability, is it? Hahah, I've no excuses after hearing that. I thought it'd be the most natural thing to see this face at this point in time.]</p></div>
+<div class="orv_constellation"><p>Probability, is it? Hahah, I've no excuses after hearing that. I thought it'd be the most natural thing to see this face at this point in time.</p></div>
 <p class="orv_line">The Dokkaebi King smiled even as I continued to grab him by his scruff. His face then began transforming.</p>
-<div class="orv_constellation"><p>[In that case, how about this face?]</p></div>
+<div class="orv_constellation"><p>In that case, how about this face?</p></div>
 <p class="orv_line">He morphed into my mother's appearance, and then…</p>
-<div class="orv_constellation"><p>[These faces aren't too bad, either.]</p></div>
+<div class="orv_constellation"><p>These faces aren't too bad, either.</p></div>
 <p class="orv_line">And then, he even changed into Persephone and Hades.</p>
 <p class="orv_line">I swung my fist one more time, but my whole body was flung away in the opposite direction as powerful sparks danced in the air.</p>
 <p class="orv_line">"Show me those faces one more time and I'll kill you."</p>
-<div class="orv_constellation"><p>[Fufu. I guess my pranks have indeed crossed the line. My bad.]</p></div>
+<div class="orv_constellation"><p>Fufu. I guess my pranks have indeed crossed the line. My bad.</p></div>
 <p class="orv_line">"Change back! Show me your true appearance!"</p>
-<div class="orv_constellation"><p>[I'd love to, but I can't. I have already forgotten what my real appearance is like a long time ago. I lived my life as far too many different beings.]</p></div>
+<div class="orv_constellation"><p>I'd love to, but I can't. I have already forgotten what my real appearance is like a long time ago. I lived my life as far too many different beings.</p></div>
 <p class="orv_line">He maintained Hades's appearance and slowly blinked his eyes. When he did, Stories began leaking out from behind him. Stories that were somewhat familiar.</p>
 <p class="orv_line">⸢On that day, the world's most ancient demon ascended in awe.⸥</p>
-<div class="orv_constellation"><p>[I was a king of a Demon Realm once upon a time.]</p></div>
+<div class="orv_constellation"><p>I was a king of a Demon Realm once upon a time.</p></div>
 <p class="orv_line">⸢All the Archangels of &lt;Eden&gt; ceaselessly worshipped him.⸥</p>
-<div class="orv_constellation"><p>[I was also the messiah to the Archangels.]</p></div>
+<div class="orv_constellation"><p>I was also the messiah to the Archangels.</p></div>
 <p class="orv_line">Cold sweat trickled down my back.</p>
 <p class="orv_line">These Stories, they were stories that I had heard before.</p>
 <p class="orv_line">The vanished great Demon King, the messiah of Eden – I also sensed founding Stories of other myth-grade Nebulas from him, too. &lt;Emperor&gt;'s Pangu, &lt;Olympus&gt;'s Cronus… Hairs began standing up all over my body.</p>
@@ -322,37 +329,37 @@
 <p class="orv_line">I remained tense while gripping the Unbroken Faith even tighter.</p>
 <p class="orv_line">"All of those things, they were your doing? Even &lt;Eden&gt;, the &lt;Demon Realm&gt;, all of them? Is that what you want to tell me?"</p>
 <p class="orv_line">My words prompted the 'Dokkaebi King' to vigorously shake his head.</p>
-<div class="orv_constellation"><p>[No. In the end, everything is simply reincarnated from the old stories. We are all nothing more than a part of the massive tale reincarnating itself. You, me.]</p></div>
+<div class="orv_constellation"><p>No. In the end, everything is simply reincarnated from the old stories. We are all nothing more than a part of the massive tale reincarnating itself. You, me.</p></div>
 <p class="orv_line">He was now staring at the flow of &lt;Star Stream&gt; in the distance. The sky where stars had fallen was spreading out in emptiness. That sky resembled a huge wall.</p>
-<p class="orv_line">The [Final Wall], that seemingly stretched on forever.</p>
+<p class="orv_line">The <strong>[Final Wall]</strong>, that seemingly stretched on forever.</p>
 <p class="orv_line">This world was, in the end, a story taking place within that vast, endless wall. I saw faint stars falling down like ink spilt during scribbling. So many stars had fallen by now, yet there were still some remaining up there.</p>
 <p class="orv_line">Stars that couldn't be seen, unless one took a closer look. I remembered the names of those stars. And that reaffirmed what I came here to do.</p>
 <p class="orv_line">"Release my companions."</p>
-<div class="orv_constellation"><p>[They are just the means to an end that served their purpose. What meaning is there for you if I released them?]</p></div>
+<div class="orv_constellation"><p>They are just the means to an end that served their purpose. What meaning is there for you if I released them?</p></div>
 <p class="orv_line">"…They are my everything."</p>
 <p class="orv_line">The 'Dokkaebi King' slowly approached me.</p>
-<p class="orv_line">Han Sooyoung used [Midday Tryst] to talk to me as she stood at my side.</p>
+<p class="orv_line">Han Sooyoung used <strong>[Midday Tryst]</strong> to talk to me as she stood at my side.</p>
 <p class="orv_line">– Kim Dokja.</p>
 <p class="orv_line">She tightened the tattered bandages around her arm and began rousing up the last bits of her fighting spirit.</p>
 <p class="orv_line">– I'll count to three. We subdue him together on the signal. One, two…</p>
-<div class="orv_constellation"><p>[Stop whispering amongst yourselves. I can hear you clearly.]</p></div>
+<div class="orv_constellation"><p>Stop whispering amongst yourselves. I can hear you clearly.</p></div>
 <p class="orv_line">We stood there frozen stiff and exchanged glances.</p>
 <p class="orv_line">All settings found in &lt;Star Stream&gt; had to go through the 'Dokkaebi King' first. In other words, there was no sentence in this world that he couldn't read.</p>
 <p class="orv_line">Han Sooyoung and I gripping my hilt tightly glared at him. Now that our plan had been outed, whatever we did couldn't be called a sneak attack anymore.</p>
 <p class="orv_line">The 'Dokkaebi King' stared at us as if he was greatly amused, before slowly extending his hand towards me.</p>
-<div class="orv_constellation"><p>[The successor of the stories. Only you have arrived here at the perfect timing.]</p></div>
+<div class="orv_constellation"><p>The successor of the stories. Only you have arrived here at the perfect timing.</p></div>
 <p class="orv_line">"…Wha? Son of a bitch, can't you see that I'm also…!"</p>
 <p class="orv_line">Along with the 'Tsu-chuchuchut' noise, Han Sooyoung's voice disappeared. Trapped inside what looked like a water tank, she began pounding on the transparent walls surrounding her.</p>
-<div class="orv_system"><p>[You have cleared all the main scenarios!]</p></div>
-<div class="orv_system"><p>[You will be recorded in the cosmos-spanning unified &lt;Star Stream&gt;.]</p></div>
+<div class="orv_system"><p>You have cleared all the main scenarios!</p></div>
+<div class="orv_system"><p>You will be recorded in the cosmos-spanning unified &lt;Star Stream&gt;.</p></div>
 <p class="orv_line">Accompanying the system messages was a sudden rise in the Status of my existence.</p>
-<div class="orv_constellation"><p>[You've already shown the world such a cool Story, so how come you're still stuck in the old-school mentality? You are in possession of the noble wall's fragment, so I need to ask why you can't detach yourself from this world and watch it from afar?]</p></div>
+<div class="orv_constellation"><p>You've already shown the world such a cool Story, so how come you're still stuck in the old-school mentality? You are in possession of the noble wall's fragment, so I need to ask why you can't detach yourself from this world and watch it from afar?</p></div>
 <p class="orv_line">The owner of the voice seemed to be criticising me. His awe of all these stories could clearly be felt within the depths of that very voice.</p>
 <p class="orv_line">He gazed at the wall near his position. No, more correctly, he seemed to be imagining a certain something beyond the wall itself.</p>
-<div class="orv_constellation"><p>[There is no meaning in the things you treasure. This world is simply a story dedicated to the great, noble existence. Everything in this world is nothing more than a fleeting daydream to the noble existence.]</p></div>
+<div class="orv_constellation"><p>There is no meaning in the things you treasure. This world is simply a story dedicated to the great, noble existence. Everything in this world is nothing more than a fleeting daydream to the noble existence.</p></div>
 <p class="orv_line">The great, noble existence's daydream, was it?</p>
-<p class="orv_line">"Is the [Final Wall] recording the dreams of that 'existence'?"</p>
-<div class="orv_constellation"><p>[Correct.]</p></div>
+<p class="orv_line">"Is the <strong>[Final Wall]</strong> recording the dreams of that 'existence'?"</p>
+<div class="orv_constellation"><p>Correct.</p></div>
 <p class="orv_line">I figured out who that existence was. The instigator of all these tragedies.</p>
 <p class="orv_line">I recalled the 'First Story' I heard when entering this place.</p>
 <p class="orv_line">⸢The universe in the beginning was 'one'.⸥</p>
@@ -366,18 +373,12 @@
             <a href="./ch_505"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_507">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="506" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="859" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="505" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="505" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 

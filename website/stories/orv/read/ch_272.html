@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Ch 272: Ep. 51 - Giant Story, I</title>
     <meta property="og:title" content="Ch 272: Ep. 51 - Giant Story, I" />
     <link rel="manifest" href="../../../assets/manifest.json">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../../assets/reader.css">
     <link rel="stylesheet" href="../../../assets/reader-rich-text.css">
     <meta name="description" content="Read Omniscient Reader's Viewpoint online">
-    
+
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 fill="#e3e3e3">
                 <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z" />
             </svg></a>
-        <a href="#" onclick="openChapters()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+        <a href="#" onclick="event.preventDefault(); openChapters()"><svg xmlns="http://www.w3.org/2000/svg"
+                height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
                 <path
                     d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z" />
             </svg></a>
@@ -97,7 +97,7 @@
             </div>
             <div class="setting_item">Line Height
                 <input type="number" min="1" max="100" value="49" oninput="" id="set-line-height">
-			</div>
+            </div>
             <div class="setting_item">Font Weight
                 <select name="set-font-weight" id="set-font-weight">
                     <option value="normal" style="font-weight: unset;" selected>Normal</option>
@@ -107,46 +107,53 @@
                 </select>
             </div>
             <hr>
-                <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
+            <div class="setting_item">Rich Text Features <input type="checkbox" name="set-rich-text-toggle"
                     id="set-rich-text-toggle" checked></div>
             <div class="setting_item">System Message Style <select name="set-rich-system-msg" id="set-rich-system-msg">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
                     <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
-                    <option value="theme5" selected>Alert</option>
+                    <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">System Window Style <select name="set-rich-system-window"
                     id="set-rich-system-window">
                     <option value="theme1">Disabled</option>
                     <option value="theme2">Brackets</option>
-                    <option value="theme3" selected>Hologram</option>
+                    <option value="theme3">Hologram</option>
                     <option value="theme4">Box</option>
                     <option value="theme5">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Constellations Speech Style <select name="set-rich-const" id="set-rich-const">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Outer God Speech Style <select name="set-rich-outer" id="set-rich-outer">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Quote Style <select name="set-rich-quote" id="set-rich-quote">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Brackets</option>
+                    <option value="theme2">Brackets</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Notice Style <select name="set-rich-notice" id="set-rich-notice">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>Highlighted</option>
+                    <option value="theme2">Highlighted</option>
                     <option value="theme3">Alert</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
             <div class="setting_item">Generic Box Style <select name="set-rich-box" id="set-rich-box">
                     <option value="theme1">Disabled</option>
-                    <option value="theme2" selected>box</option>
+                    <option value="theme2">box</option>
+                    <option value="theme6" selected>ORV Webtoon</option>
                 </select></div>
 
             <input class="setting_reset" type="reset" value="Reset Everything">
@@ -170,119 +177,119 @@
         <a href="https://github.com/Bittu5134/ORV-Reader/edit/main/chapters/side/chap_00272.txt" target="_blank"
             rel="noopener noreferrer"><button>
                 Edit
-        </button></a>
+            </button></a>
         <hr>
         <h1>How to Format Text</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/formatting.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Formatting Guide
-        </button></a>
+            </button></a>
         <hr>
         <h1>Read This First Before Doing Anything</h1>
         <a href="https://github.com/Bittu5134/ORV-Reader/blob/main/CONTRIBUTING.md" target="_blank"
             rel="noopener noreferrer"><button>
                 Contribution Guide
-        </button></a>
+            </button></a>
         <hr>
     </nav>
 
     <div class="main">
         
-        <div class="title_mobile"><img src="../../../../assets/od-stigma.webp" alt="title mobile"></div>
+        <div class="title_mobile"><img src="../../../assets/od-stigma.webp" alt="title mobile"></div>
         <article class="orv_main">
             <div class="orv_title"><h1>Ch 272: Ep. 51 - Giant Story, I</h1></div>
 <p class="orv_line">Archangel Uriel had appeared in the 73rd Demon Realm. In the latter half of the original novel, Uriel had descended directly in an incarnation body. However, now it was only the 25th scenario.</p>
 <p class="orv_line">The confused mutters of the demon kings and constellations could be heard.</p>
-<div class="orv_constellation"><p>[W-What ridiculous…]</p></div>
+<div class="orv_constellation"><p>W-What ridiculous…</p></div>
 <p class="orv_line">The transparent shape of Uriel appeared behind Jung Heewon, who had closed her eyes. Along with a splendid aura, Uriel's long golden hair waved in the air.</p>
 <p class="orv_line">The balance of probability was leaning again. The completely out of equilibrium balance was gradually being restored with the appearance of Uriel. No, now it felt like this side was becoming heavier.</p>
 <p class="orv_line">The even more surprising thing wasn't Uriel's power. All fights on the battlefield ceased. Surya watched with tense eyes while all the fighting constellations stopped. The descent of an archangel was also a tremendous event for the constellations.</p>
 <p class="orv_line">The first one to speak was a demon king with an owl's face who was holding a burning sword.</p>
-<div class="orv_constellation"><p>[Archangel! You dare… you dare appear here?]</p></div>
+<div class="orv_constellation"><p>Archangel! You dare… you dare appear here?</p></div>
 <p class="orv_line">I knew who he was. Maker of Discord. The demon king of the 63rd Demon Realm, Andras. He had cursed Han Sooyoung who once killed his subordinate.</p>
 <p class="orv_line">Then the demon king beside him also opened his mouth.</p>
-<div class="orv_constellation"><p>[D-D-Do you want to be a corpse, archangel?]</p></div>
+<div class="orv_constellation"><p>D-D-Do you want to be a corpse, archangel?</p></div>
 <p class="orv_line">A skeleton wearing a crown and green armour. The Monarch who is a Philosopher about Corpses. He was the demon king of the 54th Demon realm, Murmur.</p>
 <p class="orv_line">They might be lower ranked demon kings but they were both stronger than me. Even so, there was a strange feeling in the expressions of these two strong existences. It was fear.</p>
 <p class="orv_line">After her descent, Uriel slowly opened her eyes. Her stunning emerald eyes took in the world and the colour of the world changed. I felt like my heart was frozen despite not even making eye contact with her.</p>
-<div class="orv_system"><p>[The constellation 'Demon-like Judge of Fire' is looking at the 73rd Demon Realm.]</p></div>
+<div class="orv_system"><p>The constellation 'Demon-like Judge of Fire' is looking at the 73rd Demon Realm.</p></div>
 <p class="orv_line">The archangel's gaze implied 'destruction'. It was a gaze that looked at the last mountain of the world for the sake of purifying the world. The 73rd Demon Realm trembled at her gaze.</p>
-<div class="orv_constellation"><p>[■■. Hasn't it been a while?]</p></div>
+<div class="orv_constellation"><p>■■. Hasn't it been a while?</p></div>
 <p class="orv_line">The two demon kings took a few steps back. Jung Heewon's mouth curved subtly.</p>
-<div class="orv_constellation"><p>[You… didn't I previously tell you not to carry that blade before me? I'm annoyed because of the overlapping characteristics.]</p></div>
+<div class="orv_constellation"><p>You… didn't I previously tell you not to carry that blade before me? I'm annoyed because of the overlapping characteristics.</p></div>
 <p class="orv_line">At the words, Andras slightly lowered the burning sword. Andras' owl eyes blinked rapidly and Murmur's skeletal jaw shook violently. It was Murmur who stepped forward first.</p>
-<div class="orv_constellation"><p>[Foolish archangel! Do you know what your action means? Or… has Eden decided to intervene in the selection…]</p></div>
-<div class="orv_constellation"><p>[■. I came on my own.]</p></div>
+<div class="orv_constellation"><p>Foolish archangel! Do you know what your action means? Or… has Eden decided to intervene in the selection…</p></div>
+<div class="orv_constellation"><p>■. I came on my own.</p></div>
 <p class="orv_line">I was reminded of Uriel's setting. I had forgotten due to Uriel's kindness towards me but she was one of the most fearsome archangels of Eden.</p>
 <p class="orv_line">The Demon-like Judge of Fire. She was crueler than any archangel and slaughtered the most demons. She raised her hand towards the air and a white flame sword appeared. In front of her sword, all flames extinguished like a tribute.</p>
 <p class="orv_line">It was the sword containing the flames of hell. This was Uriel's star relic. The moment she pulled out her sword, the demon kings made an urgent expression.</p>
-<div class="orv_constellation"><p>[Did you forget the agreement?]</p></div>
-<div class="orv_constellation"><p>[Eat ■. ■ ■■ like you.]</p></div>
-<div class="orv_constellation"><p>[What?]</p></div>
-<div class="orv_constellation"><p>[Ah, ■ hit. The ■ filtering…]</p></div>
+<div class="orv_constellation"><p>Did you forget the agreement?</p></div>
+<div class="orv_constellation"><p>Eat ■. ■ ■■ like you.</p></div>
+<div class="orv_constellation"><p>What?</p></div>
+<div class="orv_constellation"><p>Ah, ■ hit. The ■ filtering…</p></div>
 <p class="orv_line">The archangels of Eden had their own filtering in order to preserve the dignity of their nebula. Then Uriel glanced at me.</p>
-<div class="orv_constellation"><p>[Kim Dokja?]</p></div>
+<div class="orv_constellation"><p>Kim Dokja?</p></div>
 <p class="orv_line">Did I look too nervous? Uriel smiled awkwardly at me.</p>
-<div class="orv_constellation"><p>[…Ah, hello?]</p></div>
+<div class="orv_constellation"><p>…Ah, hello?</p></div>
 <p class="orv_line">It was an embarrassing and awkward greeting compared to her former appearance.</p>
-<div class="orv_system"><p>[Many constellations are speechless.]</p></div>
-<div class="orv_system"><p>[The constellation 'Abyssal Black Flame Dragon' is pointing out that it doesn't match.]</p></div>
+<div class="orv_system"><p>Many constellations are speechless.</p></div>
+<div class="orv_system"><p>The constellation 'Abyssal Black Flame Dragon' is pointing out that it doesn't match.</p></div>
 <p class="orv_line">The demon kings, who had just been threatened, watched with an absurd expression. I regained my senses and bowed. "It has been a while, Uriel."</p>
-<div class="orv_constellation"><p>[Yes!]</p></div>
+<div class="orv_constellation"><p>Yes!</p></div>
 <p class="orv_line">Uriel laughed.</p>
-<div class="orv_system"><p>[You are loved by an archangel!]</p></div>
-<div class="orv_system"><p>[You have acquired a new story!]</p></div>
-<div class="orv_system"><p>[The story 'Person Who is Loved by an Archangel' has been acquired!]</p></div>
+<div class="orv_system"><p>You are loved by an archangel!</p></div>
+<div class="orv_system"><p>You have acquired a new story!</p></div>
+<div class="orv_system"><p>The story 'Person Who is Loved by an Archangel' has been acquired!</p></div>
 <p class="orv_line">Maybe she thought I was afraid and bombarded me with indirect messages filled with caring. Frankly, I was a bit impressed. There were a few constellations who favoured me so far. Even so, there was no one who helped me as much as Uriel.</p>
 <p class="orv_line">I didn't do anything for her. I was always the one on the receiving end. Even so, Uriel came here today for me.</p>
 <p class="orv_line">Uriel raised Jung Heewon's arms and exclaimed triumphantly.</p>
-<div class="orv_constellation"><p>[Don't worry Kim Dokja! I'll kill them all for you!]</p></div>
+<div class="orv_constellation"><p>Don't worry Kim Dokja! I'll kill them all for you!</p></div>
 <p class="orv_line">I knew this was a performance. This was the Demon Realm. It was obvious that something would happen if an archangel exerted their power here. Nevertheless, for Uriel to say so…</p>
 <p class="orv_line">"…Uriel?"</p>
 <p class="orv_line">Kwaaaaaaah!</p>
 <p class="orv_line">"Wait a minute! Uriel!"</p>
 <p class="orv_line">Hell flames rose from Uriel's sword and continuously soared towards the sky. This was the true Hell Flames Ignition. It was the real power of Uriel that could turn the world into a sea of flames with one blow.</p>
-<div class="orv_constellation"><p>[T-The archangel is crazy! Run away!]</p></div>
-<div class="orv_constellation"><p>[Completely crazy!]</p></div>
+<div class="orv_constellation"><p>T-The archangel is crazy! Run away!</p></div>
+<div class="orv_constellation"><p>Completely crazy!</p></div>
 <p class="orv_line">The freaked out constellations started to flee. I didn't think Uriel would exert her real power. The hiding Dokgak finally appeared.</p>
-<div class="orv_constellation"><p>[W-Wait a minute. Archangel, please calm down!]</p></div>
+<div class="orv_constellation"><p>W-Wait a minute. Archangel, please calm down!</p></div>
 <p class="orv_line">His cunning face was flushed. The scenario was delayed until the announcement of the winner and now…</p>
 <p class="orv_line">Uriel spoke like she had read my mind.</p>
-<div class="orv_constellation"><p>[■.]</p></div>
-<div class="orv_constellation"><p>[Y-Yes?]</p></div>
-<div class="orv_constellation"><p>[Scenario ■! Dokkaebi ■ck, ■ guys.]</p></div>
+<div class="orv_constellation"><p>■.</p></div>
+<div class="orv_constellation"><p>Y-Yes?</p></div>
+<div class="orv_constellation"><p>Scenario ■! Dokkaebi ■ck, ■ guys.</p></div>
 <p class="orv_line">Uriel had a really angry expression. The sky of the Demon Realm was howling from her rage. The moment that the archangel's sword was going to touch the ground.</p>
-<div class="orv_system"><p>[The demon king 'Immeasurable Austerity' is furious.]</p></div>
+<div class="orv_system"><p>The demon king 'Immeasurable Austerity' is furious.</p></div>
 <p class="orv_line">The black magic power in the sky was raging wildly.</p>
-<div class="orv_system"><p>[The demon king 'Ruler of the East Hell' is staring at the archangel.]</p></div>
-<div class="orv_system"><p>[The demon king 'Devil of Principles' is raising his status.]</p></div>
-<div class="orv_system"><p>[The demon king 'Black Mane Lion' is heading towards Eden.]</p></div>
+<div class="orv_system"><p>The demon king 'Ruler of the East Hell' is staring at the archangel.</p></div>
+<div class="orv_system"><p>The demon king 'Devil of Principles' is raising his status.</p></div>
+<div class="orv_system"><p>The demon king 'Black Mane Lion' is heading towards Eden.</p></div>
 <p class="orv_line">The fearsome and highly ranked demon kings appeared one by one in the channel. Dammit, there was going to be a war in the Demon Realm. However, the demon kings weren't the only ones who appeared.</p>
-<div class="orv_system"><p>[The constellation 'Guardian of Youths and Travel' has entered the channel.]</p></div>
-<div class="orv_system"><p>[The constellation 'Lily Blooming in Aquarius' has entered the channel.]</p></div>
-<div class="orv_system"><p>[The constellation 'Commander of the Red Cosmos' has entered the channel.]</p></div>
+<div class="orv_system"><p>The constellation 'Guardian of Youths and Travel' has entered the channel.</p></div>
+<div class="orv_system"><p>The constellation 'Lily Blooming in Aquarius' has entered the channel.</p></div>
+<div class="orv_system"><p>The constellation 'Commander of the Red Cosmos' has entered the channel.</p></div>
 <p class="orv_line">The highest level constellations who could make everyone nervous just by appearing. The major constellations of Eden entered the channel and the volume of the channel grew drastically. Biyoo trembled like it was painful.</p>
-<div class="orv_system"><p>[The constellation 'Scribe of Heaven' is watching the 'Demon-like Judge of Fire' with severe eyes.]</p></div>
+<div class="orv_system"><p>The constellation 'Scribe of Heaven' is watching the 'Demon-like Judge of Fire' with severe eyes.</p></div>
 <p class="orv_line">Uriel's sword trembled. It felt like time had frozen. All the demon kings and archangels were concentrating on Uriel's sword. The future of the Demon Realm and Eden depended on the direction of this sword.</p>
-<div class="orv_system"><p>[The demon kings of the Demon Realm and the archangels of Eden have opened an emergency meeting.]</p></div>
-<div class="orv_system"><p>[At this time, all demon kings and archangels in the scenario will be urgently summoned.]</p></div>
+<div class="orv_system"><p>The demon kings of the Demon Realm and the archangels of Eden have opened an emergency meeting.</p></div>
+<div class="orv_system"><p>At this time, all demon kings and archangels in the scenario will be urgently summoned.</p></div>
 <p class="orv_line">There was the sound of a great probability moving and Uriel's sword disappeared in the air.</p>
 <p class="orv_line">Jung Heewon's body shook as the energy of the archangel left the Demon Realm. Uriel glanced at me with a light smile.</p>
-<div class="orv_constellation"><p>[I wanted to help you until the end.]</p></div>
+<div class="orv_constellation"><p>I wanted to help you until the end.</p></div>
 <p class="orv_line">In hindsight, I realized Uriel's intentions.</p>
-<div class="orv_constellation"><p>[T-This! This can't be!]</p></div>
+<div class="orv_constellation"><p>T-This! This can't be!</p></div>
 <p class="orv_line">It wasn't just Uriel who disappeared. The demon kings who descended slowly disappeared in the sparks of probability. Uriel sacrificed herself to tie up the hands and feet of all the demon kings here.</p>
-<div class="orv_constellation"><p>[…It is amazing.]</p></div>
+<div class="orv_constellation"><p>…It is amazing.</p></div>
 <p class="orv_line">Cheok Jungyeong muttered to himself with admiration.</p>
-<div class="orv_constellation"><p>[A majestic archangel making such a great sacrifice for you…]</p></div>
+<div class="orv_constellation"><p>A majestic archangel making such a great sacrifice for you…</p></div>
 <p class="orv_line">I could easily predict the great punishment Uriel would face. An archangel who broke the convention of the Good-Evil War with her own will. She would probably receive harsh sanctions from Eden.</p>
-<div class="orv_constellation"><p>[Please win, Kim Dokja.]</p></div>
+<div class="orv_constellation"><p>Please win, Kim Dokja.</p></div>
 <p class="orv_line">I reached out to the disappearing Uriel but she had already scattered into ashes. I quickly embraced the fallen Jung Heewon. Jung Heewon had just taken on Uriel's status and fell asleep with an exhausted face.</p>
 <p class="orv_line">I raised my head as I felt pressure from the sky and saw Surya watching everything.</p>
-<div class="orv_constellation"><p>[My judgment was wrong. I didn't think you were a constellation who could call an archangel here.]</p></div>
+<div class="orv_constellation"><p>My judgment was wrong. I didn't think you were a constellation who could call an archangel here.</p></div>
 <p class="orv_line">Thanks to Uriel, there was no need to worry about the participation of the demon kings. However, there was something worse.</p>
 <p class="orv_line">A more serious light appeared in the eyes of the silent Surya. The same was true for King Oedipus and Manu who were guarding the left and right of Surya.</p>
-<div class="orv_constellation"><p>[From now on, I will be sincere.]</p></div>
+<div class="orv_constellation"><p>From now on, I will be sincere.</p></div>
 <p class="orv_line">Surya's new energy shot through the sky. The surrounding air changed and a huge wind pressure hit the area. After a while…</p>
 <p class="orv_line">"W-What is that?"</p>
 <p class="orv_line">My party members approached me one by one. The first one to speak was the weary Jang Hayoung. "When will this hell end… what the hell is that?"</p>
@@ -294,34 +301,34 @@
 <p class="orv_line">"130,000? Does that make sense?"</p>
 <p class="orv_line">Jang Hayoung asked and Yoo Sangah shook her head. "…That's why it's a myth."</p>
 <p class="orv_line">The Indian myths claimed that giant turtles and elephants held up the earth. Thus, it wasn't strange if a locomotive of such a huge scale appeared. The problem was that we had to deal with that disaster.</p>
-<div class="orv_system"><p>[You have watched a part of the giant story, Vedas.]</p></div>
-<div class="orv_system"><p>[Your story comprehension has increased.]</p></div>
+<div class="orv_system"><p>You have watched a part of the giant story, Vedas.</p></div>
+<div class="orv_system"><p>Your story comprehension has increased.</p></div>
 <p class="orv_line">…Was this the 'sincerity' mentioned by Surya? I admired the 'status' that caused chills to go through my body. I felt overwhelming despair just because it approached this side. I had only watched 'some' of it but this strength was different from an ordinary 'story'. It was the reason why I had to get a giant story.</p>
-<div class="orv_constellation"><p>[Shit, run!]</p></div>
+<div class="orv_constellation"><p>Shit, run!</p></div>
 <p class="orv_line">Some constellations were already hiding from the rushing carriage. There were no constellations who would be safe after being hit by it.</p>
 <p class="orv_line">Cheok Jungyeong muttered,</p>
-<div class="orv_constellation"><p>[Things are really difficult. He seems to truly want to destroy this world.]</p></div>
+<div class="orv_constellation"><p>Things are really difficult. He seems to truly want to destroy this world.</p></div>
 <p class="orv_line">"…Are you scared?"</p>
-<div class="orv_constellation"><p>[No, it's interesting.]</p></div>
+<div class="orv_constellation"><p>No, it's interesting.</p></div>
 <p class="orv_line">Cheok Jungyeong laughed like he was truly having fun. The moment I tried to say something to my party members, someone stood beside me. It wasn't Cheok Jungyeong or a constellation.</p>
 <p class="orv_line">"…You woke up?"</p>
 <p class="orv_line">I looked over and saw Yoo Joonghyuk standing up with the Black Heavenly Demon Sword.</p>
-<div class="orv_system"><p>[The character 'Yoo Joonghyuk' has used Recovery Lv. 10!]</p></div>
+<div class="orv_system"><p>The character 'Yoo Joonghyuk' has used Recovery Lv. 10!</p></div>
 <p class="orv_line">Yoo Joonghyuk's body had finally healed to the point where he could use Recovery. The last of Yoo Joonghyuk's vitality was burning on the dark sword. The mouth and vocal cords were still slow to recover so Yoo Joonghyuk didn't speak. Instead, I heard Yoo Joonghyuk's thoughts through Omniscient Reader's Viewpoint.</p>
-<div class="orv_quote"><p>「 Kim Dokja. 」</p></div>
+<div class="orv_quote"><p>Kim Dokja.</p></div>
 <p class="orv_line">"Yes."</p>
 <p class="orv_line">Perhaps this would be the last fight in the Demon Realm.</p>
-<div class="orv_system"><p>[The 73rd Demon Realm is focused on your choice.]</p></div>
+<div class="orv_system"><p>The 73rd Demon Realm is focused on your choice.</p></div>
 <p class="orv_line">This time, I couldn't guarantee anything. Someone here could die. Maybe Yoo Joonghyuk and I would die. Nevertheless, I declared, "Let's go."</p>
 <p class="orv_line">Yoo Sangah and Lee Hyunsung nodded while Shin Yoosung climbed onto the chimera dragon. Lee Jihye looked at the sky from the moat and also nodded.</p>
 <p class="orv_line">There were no longer any constellations to help us. Now there were only humans here. This didn't mean it was a fight with no chance of winning. It was because I had already bought enough time thanks to Uriel.</p>
-<div class="orv_system"><p>[The 73rd Demon Realm is responding to your choice.]</p></div>
+<div class="orv_system"><p>The 73rd Demon Realm is responding to your choice.</p></div>
 <p class="orv_line">Perhaps it was a mistake for Surya to show his sincerity. In the face of the coming calamity, we wouldn't be the only ones who would come to an end. Just like First Murim in the Destruction Scenario, the 73rd Demon Realm approached the time of choice.</p>
-<div class="orv_system"><p>[Giant Story of the 73rd Demon Realm is germinating.]</p></div>
+<div class="orv_system"><p>Giant Story of the 73rd Demon Realm is germinating.</p></div>
 <p class="orv_line">There was no world that wanted its master to be the one that destroyed itself.</p>
-<div class="orv_system"><p>[The 73rd Demon Realm has chosen its master.]</p></div>
+<div class="orv_system"><p>The 73rd Demon Realm has chosen its master.</p></div>
 <p class="orv_line">The perplexed dokkaebis and constellations let out exclamations at this message. However, I didn't hear any of them. It was because now I wasn't listening to the story, I was talking to the story.</p>
-<div class="orv_system"><p>[Your 'giant story' has started talking.]</p></div>
+<div class="orv_system"><p>Your 'giant story' has started talking.</p></div>
 <br>
 <hr>
         </article>
@@ -329,18 +336,12 @@
             <a href="./ch_271"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" /></svg>Previous</a>
             <a href="./ch_273">Next<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" /></svg></a>
         </div>
-         <div class="evadav">
-          
-		</div>
-        <div id="chapter-banner" data-current="272" data-first="1" data-last="551"></div>
-        <div class="giscus" id="comments" data-repo="Bittu5134/ORV-Reader"
-            data-repo-id="R_kgDOOHNFOQ" data-category="General" data-category-id="DIC_kwDOOHNFOc4CoREL" data-mapping="number"
-            data-term="342" data-reactions-enabled="1" data-emit-metadata="1" data-input-position="top"
-            data-theme="dark" data-lang="en" style="margin-top: -8px;">
+        <div class="evadav">
         </div>
     </div>
 
-    <script id="main-script" data-titles="../../../../meta/orv.json" data-index="271" data-type="orv" src="../../../assets/reader.js"></script>
+    <script id="main-script" data-titles="../../../meta/orv.json" data-index="271" data-type="orv"
+        src="../../../assets/reader.js"></script>
 
 </body>
 
